@@ -29,6 +29,13 @@ MAJOR OVERALL CHANGES
 - New special buildings, such as the Temple of Vesta for the Romans, with new auras and features.
 - Other features.
 
+What is Broken
+================
+- Celtic Rotary Mill aura for Britons and Gauls. For some reason I cannot make the aura work, even though the code is visually correct.
+- Some Fortresses cannot have enough space for garrisoned units to show up on the walls. Some Fortress models may need redesigned for this purpose.
+- Cost.BuildTime effect for auras is broken. This specifically neuters the "Delian League" team bonus foe Athenians and the "Naval Architect" aura for Themistocles.
+- I'll add more things here as I come across them.
+
 NEW UNIT BALANCE
 ===========
 The unit balance has been changed. The following list gives the basic changes, including features like charging that are not yet implemented in the full game.
@@ -254,14 +261,30 @@ An "Egyptian Biome" map like Nile River
 
 CIVILIZATION BONUSES AND CHANGES
 =========================
-The specific bonuses and changes for each civ. Changes or additions will have an asterisk (*).
+The specific bonuses and changes for each civ. Changes from vanilla 0 A.D. or additions will have an asterisk (*).
 
 Athenians
 =======================
-+10% Metal gathering for each passing phase.
+Team Bonuses: 
+- "Delian League": Reduces Build Time for allied Warships by -20%.* This is bugged for some reason.
+Civ Bonuses: 
+- "Silver Mines of Laureion": +10% Metal gathering for each passing phase.
+- "Hellenization": Building a Theatron special building increases territory effect for all buildings +20%.
+Special Buildings:
+- Gymnaseion: Train Epilektoi champion infantry. Research extra City Phase military upgrades.
+- Prytaneion: Train Heroes. Research Iphicratean Reforms, Periclean Strategem, and Athenian Long Walls.
+- Theatron: Build one to unleash the "Hellenization" bonus.
+Notable Technologies:
+- "Iphicratean Reform": Unlocks training Athenian Marines and Cretan Archers from the Trireme.
+- "Periclean Strategem": Walls and Warships +10% Health, Soldiers -5% Health.*
+- "Athenian Long Walls": Build Stone Walls in neutral territory.
+- "Phidean Workshop": Temples and Wonder -25% Build Time, but +10% Stone Cost.*
+- "Zea Ship Sheds": Warships build +25% faster.*
+- "Arsenal of Philon": Warships regenerate Health.*
 
 Britons
 =============
+
 
 Carthaginians
 =============
@@ -292,3 +315,19 @@ Seleucids
 
 Spartans
 =============
+Team Bonuses: 
+- "Peloponnesian League": Allies can train Spartiate champion infantry. NOT IMPLEMENTED.
+Civ Bonuses: 
+- "Laws of Lycurgus": Infantry rank promotion upgrades cost no resources, except time. NOT IMPLEMENTED.
+- "Spartan Womanhood": Spartan women cannot be captured (CAPTURING NOT IMPLEMENTED) and they can build Defense Towers and Palisades.
+- "Hellenization": Building a Theatron special building increases territory effect for all buildings +20%.
+Civ Penalties:
+- "A Wall of Men": Spartans cannot build Stone Walls for defense.
+- "Underdogs": The maximum population cap is reduced -10% for Sparta. 
+Special Buildings:
+- Syssition: Train Spartan heroes and Spartiate champion infantry. Research additional military technologies.
+- Theatron: Build one to unleash the "Hellenization" bonus.
+Notable Technologies:
+- "Tyrtean Paeans": All units +10% walk speed.*
+- "The Agoge": Barracks +5 Population Cap and +1000 Health.
+- "Feminine Mystique": Female Citizens +50% Health, +2 Attack.*
