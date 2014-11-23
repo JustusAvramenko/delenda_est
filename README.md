@@ -266,7 +266,7 @@ The specific bonuses and changes for each civ. Changes from vanilla 0 A.D. or ad
 Athenians
 =======================
 Team Bonuses: 
-- "Delian League": Reduces Build Time for allied Warships by -20%.* This is bugged for some reason.
+- "Delian League": Reduces Build Time for allied Warships by -20%.* THIS IS BUGGED FOR AN UNKNOWN REASON.
 
 Civ Bonuses: 
 - "Silver Mines of Laureion": +10% Metal gathering for each passing phase.
