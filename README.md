@@ -12,6 +12,7 @@ Major unimplemented Features that this document assumes will eventually be imple
 - Charging/Charge Bonus: Like Trample, this would affect Cavalry stats immensely, and it is hoped that this is eventually implemented in the game.
 - Mercenary Camps: This mod starts the process of making Mercenaries a unique class of soldier for the game. It is hoped that either the official team or modders will implement the capturable Mercenary Camp idea talked about on the forum.
 - Building Capturing and Unit Conversion using a "Loyalty" mechanic: Some techs in this mod cannot be implemented yet (or are implemented in a different way) because capturing and loyalty are not implemented. Hopefully this feature is implemented so this mod can add another layer of richness to the gameplay.
+- Tech and Aura Modifications: These new modifications need to be implemented for this mod to reach its full potential: Altering Market Bartering recovery rates, Altering technology costs and speeds, (+ others here).
 
 UNIT BALANCE
 ===========
