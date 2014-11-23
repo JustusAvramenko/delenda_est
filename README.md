@@ -201,7 +201,7 @@ Archer Elephant
 - Hack Armor: High
 - Pierce Armor: Medium
 - Speed: Low
-- 
+
 Citizen-Soldier Ranks/Promotions
 =================================================
 - Each new rank improves all stats by about +10% or 1.1x
