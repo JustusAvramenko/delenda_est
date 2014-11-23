@@ -220,3 +220,15 @@ Champions
 - Some Champions may have training limits, due to their elite status
 - Champions are trained in Battalions/Formations by default (because they don't need to be broken up for fine-tuned economic tasks), except for the Persian Immortals who are trained extremely rapidly individually
 
+Mercenaries
+=========================
+The following would be the ideal implementation of Mercenaries in the game. Some things this mod is in the process of implementing, but capturing Mercenary Camps and other features (like altering the Camp's ProductionQueue based on who owns it) cannot be implemented until these things are added to the core game.
+
+- Types available to players based on map biome and player's civilization
+- Trained at Mercenary Camps dotted around the map, capturable by players. The number of camps determined by the number of players: 1 merc camp for 2 players, 2 merc camps for 3-4 players, 3 merc camps for 5-6 players
+- Cost no population, but can only be trained in limited numbers or are otherwise limited in some way; this is normally the only way a player can train more units above the population cap
+- Metal is almost always one of their costs, usually replacing the Food cost
+- They do not perform economic tasks, but they can build structures
+- They do not contribute to gaining Loot, as they "keep booty for themselves"
+- The rest of their stats are comparable to their citizen-soldier counterparts at the Elite rank, and they do not promote to new ranks
+- Each mercenary soldier comes with 1-2 tech upgrades researchable at the merc camp when captured by the player. For instance, Balearic Slingers and Rhodian Slingers can have a "Lead Sling Bullets" technology at the Merc Camp, a tech not normally available to civs with those mercs
