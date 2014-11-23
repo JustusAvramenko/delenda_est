@@ -5,6 +5,11 @@ OVERVIEW
 ===========
 This is an overhaul mod for 0 A.D. Empires Ascendant. Its goal is to introduce a new balance scheme, a revamped and greatly expanded technology tree, and other customizations to the game. The mod endeavors to push the game's modding capability to the fullest and to make the gameplay as enjoyable and as rich as possible.
 
+Keep in mind:
+- This mod is incomplete. Not every new planned technology or gameplay change has been implemented yet.
+- Many of the planned changes rely upon new features being implemented into the core game or engine.
+- This mod can be used to encourage those new features being implemented either by modders, open-source contributors, or official WFG team.
+
 Major unimplemented Features that this document assumes will eventually be implemented:
 
 - Formations: This mod re-enables the old formations from Alpha 16 and before. Once these are reimplemented by the official WFG team, it is planned to revamp them completely for this mod.
