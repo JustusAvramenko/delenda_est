@@ -201,4 +201,16 @@ Archer Elephant
 - Hack Armor: High
 - Pierce Armor: Medium
 - Speed: Low
+- 
+Citizen-Soldier Ranks/Promotions
+=================================================
+- Each new rank improves all stats by about +10% or 1.1x
+- Each new rank decreases economic usefulness by about -25%.
+
+Champions
+=================================================
+- Most stats +50% or 1.5x over their Citizen-Soldier counterparts of Basic Rank
+- No economic abilities, though may have various kinds of inspiration auras affecting their citizen counterparts or other units
+- Some Champions may have training limits, due to their elite status
+- Champions are trained in Battalions/Formations by default (because they don't need to be broken up for fine-tuned economic tasks), except for the Persian Immortals who are trained extremely rapidly individually
 
