@@ -1,9 +1,8 @@
-DELENDA EST
+DELENDA EST: An overhaul mod for 0 A.D. Empires Ascendant
 ===========
-An overhaul mod for 0 A.D. Empires Ascendant
-===========
-OVERVIEW
 
+OVERVIEW
+===========
 This is an overhaul mod for 0 A.D. Empires Ascendant. Its goal is to introduce a new balance scheme, a revamped and greatly expanded technology tree, and other customizations to the game. The mod endeavors to push the game's modding capability to the fullest and to make the gameplay as enjoyable and as rich as possible.
 
 Major unimplemented Features that this document assumes will eventually be implemented:
@@ -14,17 +13,12 @@ Major unimplemented Features that this document assumes will eventually be imple
 - Mercenary Camps: This mod starts the process of making Mercenaries a unique class of soldier for the game. It is hoped that either the official team or modders will implement the capturable Mercenary Camp idea talked about on the forum.
 - Building Capturing and Unit Conversion using a "Loyalty" mechanic: Some techs in this mod cannot be implemented yet (or are implemented in a different way) because capturing and loyalty are not implemented. Hopefully this feature is implemented so this mod can add another layer of richness to the gameplay.
 
-===========
 UNIT BALANCE
-
+===========
 The unit balance has been changed. The following list gives the basic changes, including features like charging that are not yet implemented in the full game.
 
-CITIZEN INFANTRY STATS
-
-=================================================
-
-MELEE INFANTRY
-
+Melee Citizen-Infantry
+===========
 Sword Infantry
 - Cost: 60F 40M
 - Health: 100
@@ -55,10 +49,8 @@ Pike Infantry
 - Pierce Armor: Medium
 - Speed: Low
 
+Ranged Citizen-Infantry
 =============================
-
-RANGED INFANTRY
-
 Archer Infantry
 - Cost: 40F 60W
 - Health: 80 
@@ -95,17 +87,15 @@ Slinger Infantry
 - Pierce Armor: Low
 - Speed: High
 
-=================================================
-
 CITIZEN CAVALRY STATS
+=================================================
 - Penalty: Horse Cavalry 0.5x vs. Elephants and Camels
 - Penalty: Camel .80x Speed
 - Bonus: Camel 1.5x vs. Horse Cavalry
 - Speed (walk/run/charge): 1.5x Infantry Counterparts
 
-=================================================
-
-MELEE CAVALRY
+Melee Citizen-Cavalry
+=======================
 - Bonus: 2x vs. Siege
 - Special: Trample Aura/Ability
 
@@ -131,10 +121,8 @@ Spear Cavalry:
 - Pierce Armor: High
 - Speed: Medium
 
+Ranged Citizen-Cavalry
 =============================
-
-RANGED CAVALRY
-
 Archer Cavalry
 - Cost: 100F 50W 
 - Health: 130
@@ -159,10 +147,8 @@ Javelin Cavalry
 - Pierce Armor: Low
 - Speed: High
 
+Other Melee Units
 =================================================
-
-OTHER MELEE UNITS
-
 Melee Elephant
 - Cost: 150F 100M
 - Health: 400
@@ -174,9 +160,8 @@ Melee Elephant
 - Pierce Armor: High
 - Speed: Low
 
+Other Ranged Units
 =================================================
-
-OTHER RANGED UNITS
 
 Archer Chariot
 - Cost: 100F 100W
