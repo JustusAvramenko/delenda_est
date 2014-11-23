@@ -19,7 +19,17 @@ Major unimplemented Features that this document assumes will eventually be imple
 - Building Capturing and Unit Conversion using a "Loyalty" mechanic: Some techs in this mod cannot be implemented yet (or are implemented in a different way) because capturing and loyalty are not implemented. Hopefully this feature is implemented so this mod can add another layer of richness to the gameplay.
 - Tech and Aura Modifications: These new modifications need to be implemented for this mod to reach its full potential: Altering Market Bartering recovery rates, Altering technology costs and speeds, (+ others here).
 
-UNIT BALANCE
+MAJOR OVERALL CHANGES
+================
+- Completely new unit balance and countering.
+- A new 4th Phase: Imperial Phase, which unlocks major technologies and abilities. Requires 2000 Metal and 1 Wonder.
+- Civic Centers are now buildable in the 3rd Phase (City Phase). This allows the players time to build up home defenses in Town Phase, or use the stone for a push to City Phase for expansion.
+- A completely redesigned technology tree, customized for each civilization. Blacksmith and Fortress trees are especially new.
+- Naval gameplay revamped with a Shipyard for the non-barbarian civs. Docks are for naval economy and Shipyard for naval warfare.
+- New special buildings, such as the Temple of Vesta for the Romans, with new auras and features.
+- Other features.
+
+NEW UNIT BALANCE
 ===========
 The unit balance has been changed. The following list gives the basic changes, including features like charging that are not yet implemented in the full game.
 
@@ -76,7 +86,7 @@ Javelin Infantry
 - Range: Medium
 - Accuracy: Medium
 - Rate: Medium
-- Bonus: 1.5x vs. Spear Infantry, Ranged Cavalry, and Elephants
+- Bonus: 1.5x vs. Ranged Cavalry, Spear Infantry, and Elephants
 - Hack Armor: Low
 - Pierce Armor: Medium
 - Speed: High
@@ -106,7 +116,7 @@ Melee Citizen-Cavalry
 - Special: Trample Aura/Ability
 
 Sword Cavalry 
-- Cost: 80F 50M
+- Cost: 80F 40M
 - Health: 150
 - Attack: Hack, High
 - Bonus: 1.5x vs. Ranged Infantry and Ranged Cavalry
@@ -241,3 +251,44 @@ An "Egyptian Biome" map like Nile River
 - 2 "Egyptian Biome" Mercs available at the Camps: Libyan Skirmisher, Garamantine Camel Raider
 - Up to 3 Mercs available, based on the capturing player's civilization: Ptolemies (Mercenary Thureophoros, Nubian Archer, Galatian Swordsman); Seleucids (Mercenary Thureophoros, Thracian Swordsman, Tarantine Cavalry); Spartans (Cretan Mercenary Archer, Rhodian Slinger, Tegean Hoplite); Iberians (Balearic Slinger, Greek Settler Hoplite, Gaesatae).
 - None of the mercs cost population room, but all cost an amount of metal, and they are each limited to 20 alive at a time.
+
+CIVILIZATION BONUSES AND CHANGES
+=========================
+The specific bonuses and changes for each civ. Changes or additions will have an asterisk (*).
+
+Athenians
+=======================
++10% Metal gathering for each passing phase.
+
+Britons
+=============
+
+Carthaginians
+=============
+
+Gauls
+=============
+
+Iberians
+=============
+
+Macedonians
+=============
+
+Mauryans
+=============
+
+Persians
+=============
+
+Ptolemies
+=============
+
+Romans
+=============
+
+Seleucids
+=============
+
+Spartans
+=============
