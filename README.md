@@ -8,7 +8,7 @@ OVERVIEW
 
 This is an overhaul mod for 0 A.D. Empires Ascendant. Its goal is to introduce a new balance scheme, a revamped and greatly expanded technology tree, and other customizations to the game. The mod endeavors to push the game's modding capability to the fullest and to make the gameplay as enjoyable and as rich as possible.
 
-Major Unimplemented Features that this document assumes will eventually be Implemented:
+Major unimplemented Features that this document assumes will eventually be implemented:
 
 - Formations: This mod re-enables the old formations from Alpha 16 and before. Once these are reimplemented by the official WFG team, it is planned to revamp them completely for this mod.
 - Trample: Some cavalry are planned to be better tramplers than others, so their stats would be adjusted accordingly. So, until Trample is implemented by the team or by modders some Cavalry stats may be wonky.
