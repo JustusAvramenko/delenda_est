@@ -32,6 +32,7 @@ MAJOR OVERALL CHANGES
 What is Broken
 ================
 - Celtic Rotary Mill aura for Britons and Gauls. For some reason I cannot make the aura work, even though the code is visually correct.
+- - Units trained in batches and rally-pointed to a resource or foundation will go to the rally point and will not begin gathering or building. This is an old bug reintroduced.
 - Some Fortresses cannot have enough space for garrisoned units to show up on the walls. Some Fortress models may need redesigned for this purpose.
 - Cost.BuildTime effect for auras is broken. This specifically neuters the "Delian League" team bonus foe Athenians and the "Naval Architect" aura for Themistocles.
 - I'll add more things here as I come across them.
