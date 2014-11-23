@@ -6,7 +6,7 @@ An overhaul mod for 0 A.D. Empires Ascendant
 ===========
 OVERVIEW
 
-This is an overhaul mod for 0 A.D. Empires Ascendant. Its goal is to introduce a new balance scheme, revamped and greatly expanded technology tree, and other other customizations to the game. The mod endeavors to push the game's modding capability to the fullest and to make the gameplay as enjoyable and as rich as possible.
+This is an overhaul mod for 0 A.D. Empires Ascendant. Its goal is to introduce a new balance scheme, a revamped and greatly expanded technology tree, and other customizations to the game. The mod endeavors to push the game's modding capability to the fullest and to make the gameplay as enjoyable and as rich as possible.
 
 Major Unimplemented Features that this document assumes will eventually be Implemented:
 
