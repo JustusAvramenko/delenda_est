@@ -1,0 +1,18 @@
+{
+	"pair": "hellenes/pair_inf_armor_03",
+	"genericName": "Scale Armor Reinforcement",
+	"description": "Body armor reinforced with bronze scales.",
+	"cost": {"food": 250, "wood": 0, "stone": 0, "metal": 300},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "armor_corselet_scales.png",
+	"researchTime": 40,
+	"tooltip": "All Infantry +1 Hack armor level, -2% walk speed.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 1.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.98},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.98}
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

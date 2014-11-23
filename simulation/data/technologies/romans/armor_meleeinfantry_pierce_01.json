@@ -1,0 +1,18 @@
+{
+	"pair": "romans/pair_inf_armor_01",
+	"genericName": "Laminated Shield Construction",
+	"description": "Plywood construction for large shields.",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "shields_generic_wood.png",
+	"researchTime": 40,
+	"tooltip": "Melee Infantry +2 Pierce Armor Levels, -2% Speed.",
+	"modifications": [
+		{"value": "Armour/Pierce", "add": 2.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.98},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.98}
+	],
+	"affects": ["Infantry Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

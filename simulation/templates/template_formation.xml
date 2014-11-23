@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <!--
+  <VisualActor>
+    <Actor>props/special/common/waypoint_flag.xml</Actor>
+  </VisualActor>
+  -->
+  <Formation>
+    <RequiredMemberCount>1</RequiredMemberCount>
+    <DisabledTooltip></DisabledTooltip>
+    <SpeedMultiplier>1</SpeedMultiplier>
+    <FormationShape>square</FormationShape>
+    <SortingClasses>Hero Champion Cavalry Melee Ranged</SortingClasses>
+    <ShiftRows>false</ShiftRows>
+    <UnitSeparationWidthMultiplier>1</UnitSeparationWidthMultiplier>
+    <UnitSeparationDepthMultiplier>1</UnitSeparationDepthMultiplier>
+    <WidthDepthRatio>1</WidthDepthRatio>
+    <Sloppyness>0</Sloppyness>
+    <Animations/>
+  </Formation>
+  <FormationAttack>
+    <CanAttackAsFormation>false</CanAttackAsFormation>
+  </FormationAttack>
+  <Ownership/>
+  <Position>
+    <Altitude>0</Altitude>
+    <Anchor>upright</Anchor>
+    <Floating>false</Floating>
+    <TurnRate>3.0</TurnRate>
+  </Position>
+  <UnitAI>
+    <AlertReactiveLevel>2</AlertReactiveLevel>
+    <DefaultStance>aggressive</DefaultStance>
+    <FleeDistance>12.0</FleeDistance>
+    <FormationController>true</FormationController>
+    <CanGuard>true</CanGuard>
+  </UnitAI>
+  <UnitMotion>
+    <FormationController>true</FormationController>
+    <WalkSpeed>1.0</WalkSpeed>
+    <PassabilityClass>default</PassabilityClass>
+    <CostClass>default</CostClass>
+  </UnitMotion>
+  <Trader>
+    <GainMultiplier>1.0</GainMultiplier>
+  </Trader>
+</Entity>

@@ -1,0 +1,22 @@
+{
+	"pair": "successors/pair_heal_03",
+	"genericName": "Mystery Cult",
+	"specificName": {
+		"hele": "Pythian Oracle",
+		"spart": "Pythian Oracle",
+		"mace": "Apollo Farseer",
+		"rome": "Dedication to Juno",
+		"athen": "Eleusian Mysteries",
+		"pers": "Zoroastrian Riddles"
+	},
+	"description": "Units garrisoned in a temple are healed faster.",
+	"cost": {"food": 50, "wood": 0, "stone": 0, "metal": 150},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "cauldron.png",
+	"researchTime": 20,
+	"tooltip": "Temples +50% garrisoned healing rate.",
+	"modifications": [{"value": "GarrisonHolder/BuffHeal", "multiply": 1.5}],
+	"affects": ["Temple"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

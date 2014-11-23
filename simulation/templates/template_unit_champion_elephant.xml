@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion">
+  <Armour>
+    <Hack>5</Hack>
+    <Pierce>15</Pierce>
+    <Crush>5</Crush>
+  </Armour>
+  <Cost>
+    <Population>3</Population>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>150</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>150</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.5"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Elephant</VisibleClasses>
+    <GenericName>War Elephant</GenericName>
+    <Icon>gaia/fauna_elephant.png</Icon>
+    <History>War elephants were used by many Eastern and African cultures.</History>
+  </Identity>
+  <Obstruction>
+    <Unit radius="3.0"/>
+  </Obstruction>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>arrow/256x256.png</MainTexture>
+        <MainTextureMask>arrow/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/elephant_select.xml</select>
+      <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
+      <order_attack>actor/fauna/animal/elephant_attack.xml</order_attack>
+      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
+      <attack>actor/fauna/animal/elephant_attack.xml</attack>
+      <walk>actor/mounted/movement/walk.xml</walk>
+      <run>actor/mounted/movement/walk.xml</run>
+      <death>actor/fauna/animal/elephant_death.xml</death>
+      <trained>actor/fauna/animal/elephant_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <Stamina>
+    <Max>2500</Max>
+  </Stamina>
+  <StatusBars>
+    <HeightOffset>6.5</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed>7.0</WalkSpeed>
+    <Run>
+      <Speed>14.0</Speed>
+      <Range>1000.0</Range>
+      <RangeMin>10.0</RangeMin>
+    </Run>
+  </UnitMotion>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/mauryans/champion_elephant.xml</Actor>
+  </VisualActor>
+</Entity>

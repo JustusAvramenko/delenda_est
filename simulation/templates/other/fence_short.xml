@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure">
+  <Armour>
+    <Hack>1</Hack>
+    <Pierce>10</Pierce>
+    <Crush>1</Crush>
+  </Armour>
+  <BuildRestrictions>
+    <Category>Special</Category>
+  </BuildRestrictions>
+  <Footprint>
+    <Square width="0.8" depth="6.5"/>
+    <Height>4.0</Height>
+  </Footprint>
+  <Health>
+    <Max>50</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Fence</GenericName>
+    <SpecificName>Short Wooden Fence</SpecificName>
+    <History>A split rail wooden fence.</History>
+    <Icon>gaia/special_fence.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>1</xp>
+    <food>0</food>
+    <wood>10</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+  </Loot>
+  <Minimap>
+    <Colour r="119" g="82" b="46"/>
+  </Minimap>
+  <Obstruction>
+    <Static width="0.8" depth="6.5"/>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <Vision>
+    <Range>4</Range>
+    <RetainInFog>true</RetainInFog>
+  </Vision>
+  <VisualActor>
+    <Actor>temp/fence_wood_short_a.xml</Actor>
+  </VisualActor>
+</Entity>

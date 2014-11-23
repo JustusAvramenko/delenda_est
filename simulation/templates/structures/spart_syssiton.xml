@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>0</wood>
+      <stone>200</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="20.0" depth="30.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>spart</Civ>
+    <GenericName>Military Mess Hall</GenericName>
+    <SpecificName>Syssítion</SpecificName>
+    <Classes datatype="tokens">
+	  Syssition
+	</Classes>
+    <Tooltip>Train Spartan heroes and Spartiate champion hoplites.</Tooltip>
+    <History>The Syssítia were where full-blooded Spartans, even Spartan kings, were barracked and dined together.</History>
+    <Icon>structures/syssition.png</Icon>
+	<RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Static width="16.0" depth="26.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_gymnasium.xml</select>
+      <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/spart_hero_leonidas
+      units/spart_hero_brasidas
+      units/spart_hero_agis
+      units/spart_champion_infantry_spear
+    </Entities>
+    <Technologies datatype="tokens">
+      hellenes/speed_tyrtean_paeans
+	  hellenes/spartans_agoge
+	  pair_champ_02
+	  hellenes/pair_champions_01
+	  hellenes/attack_inf_spearfighting
+	  upgrade_rank_advanced_infantry
+	  upgrade_rank_elite_infantry
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/spartans/syssiton.xml</Actor>
+    <FoundationActor>structures/fndn_4x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

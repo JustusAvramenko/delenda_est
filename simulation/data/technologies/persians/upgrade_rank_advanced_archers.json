@@ -1,0 +1,14 @@
+{
+	"supersedes": "persians/special_archery_tradition",
+	"genericName": "Advanced Infantry Archers",
+	"description": "Upgrade all of your citizen-soldier infantry archers to Advanced rank.",
+	"cost": {"food": 500, "wood": 500, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "pers"}]},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "upgrade_advanced.png",
+	"researchTime": 40,
+	"tooltip": "Upgrade all of your citizen-soldier infantry archers to Advanced rank. This increases their military prowess, but decreases their resource gathering rates -25%. Unlocks Elite Infantry Archers technology.",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["Infantry Archer Basic"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

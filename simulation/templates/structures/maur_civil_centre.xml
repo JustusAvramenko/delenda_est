@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Footprint>
+    <Square width="40.0" depth="34.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>maur</Civ>
+    <SpecificName>Rajadhanika</SpecificName>
+    <History>Civic Center.</History>
+  </Identity>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_maur_cc</SpawnEntityOnDeath>
+  </Health>
+  <Obstruction>
+    <Static width="36.0" depth="30.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/maur_infantry_spearman_b
+      units/maur_support_elephant
+    </Entities>
+    <Technologies datatype="tokens">
+	  phase_town_generic
+      phase_city_generic
+	  phase_imperial_generic
+	  health_units_01
+	  health_units_02
+	  pair_structures_01
+	  pair_structures_02
+	  health_units_03
+	  vision_treason
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/mauryans/civil_centre.xml</Actor>
+  </VisualActor>
+</Entity>

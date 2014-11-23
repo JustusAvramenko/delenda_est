@@ -1,0 +1,23 @@
+{
+	"pair": "hellenes/pair_01",
+	"genericName": "Side Arm",
+	"specificName": {
+		"hele": "Xíphos",
+		"mace": "Xíphos",
+		"spart": "Xíphos",
+		"athen": "Xíphos",
+		"sele": "Xíphos",
+		"ptol": "Xíphos",
+		"theb": "Xíphos"
+	},
+	"description": "Often, a soldier would carry a secondary weapon in addition to his primary weapon of choice, to be drawn when the primary weapon has failed or been broken. The Greek xiphos was short sword with a leaf-shaped blade used primarily for hacking and stabbing.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 75},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "sword_xiphos.png",
+	"researchTime": 40,
+	"tooltip": "All Melee units +1 hack attack.",
+	"modifications": [{"value": "Attack/Melee/Hack", "add": 1.0}],
+	"affects": ["Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_shipyard">
+  <Footprint>
+    <Square width="30" depth="25"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>maur</Civ>
+    <SpecificName>Naukasthanaka</SpecificName>
+    <History>Shipyard.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="25.0" depth="20.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/maur_ship_bireme
+      units/maur_ship_trireme
+    </Entities>
+    <Technologies datatype="tokens">
+	  pair_naval_02
+	  pair_naval_03
+	  celts/health_warship_oceanic_transports
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/mauryans/dock.xml</Actor>
+  </VisualActor>
+</Entity>

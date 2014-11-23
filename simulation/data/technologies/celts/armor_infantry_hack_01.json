@@ -1,0 +1,18 @@
+{
+	"pair": "celts/pair_inf_armor_01",
+	"genericName": "Leather Body Armor",
+	"description": "Leather body armor for infantrymen.",
+	"cost": {"food": 50, "wood": 50, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_village"},
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "armor_leather.png",
+	"researchTime": 30,
+	"tooltip": "Infantry +1 Hack Armor Level, -5% Movement Speed.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 1.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.95},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.95}
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

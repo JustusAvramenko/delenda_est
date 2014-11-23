@@ -1,0 +1,16 @@
+{
+	"genericName": "Breeding Herd",
+	"description": "Instead of capturing elephants in the wild, which was a dangerous business, a domestic breeding herd can be established in order to meet the demands of the elephant corps.",
+	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "phase_city"}, {"any": [{"civ": "cart"}, {"civ": "maur"},{"civ": "ptol"}, {"civ": "sele"}]}]},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "breeding_herd.png",
+	"researchTime": 40,
+	"tooltip": "Elephant units -10% train time, +5% health.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.9},
+		{"value": "Health/Max", "multiply": 1.05}
+	],
+	"affects": ["Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

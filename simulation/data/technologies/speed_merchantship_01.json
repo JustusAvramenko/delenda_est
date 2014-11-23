@@ -1,0 +1,14 @@
+{
+	"pair": "pair_trade_ships_01",
+	"genericName": "Amphorae",
+	"description": "Increases movement rate of merchant ships, which in turn increases trade income. Amphorae were fired clay jars in which perishable goods can be stored for long journeys.",
+	"cost": {"food": 0, "wood": 150, "stone": 0, "metal": 150},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "amphora.png",
+	"researchTime": 40,
+	"tooltip": "Merchant Ships +20% speed, which quickly increases trade income. TODO: Change this to increased Merchant Ship capacity per trip.",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.20}],
+	"affects": ["MerchantShip"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

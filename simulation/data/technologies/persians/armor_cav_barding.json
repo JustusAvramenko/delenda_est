@@ -1,0 +1,18 @@
+{
+	"pair": "persians/pair_cav_03",
+	"genericName": "Barding Horse Armor",
+	"description": "Later in the Middle Ages, barding would become highly advanced. It had its roots in the steppes cultures of the East, starting with the Scythians and Bactrians. Barding was adopted late by the Persians and developed further by the Seleucids, Parthians, and later the Byzantines for fully-armored cataphract cavalry.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"tech": "phase_imperial"},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "armor_plates_silver_cavalry.png",
+	"researchTime": 40,
+	"tooltip": "Champion Cavalry +2 Hack armor level, but -10% speed.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 2.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.9},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.9}
+	],
+	"affects": ["Champion Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

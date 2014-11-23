@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_aggressive">
+  <Attack>
+    <Melee>
+      <Hack>12.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>4.0</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Circle radius="1.0"/>
+    <Height>3.5</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+	<GenericName>Wild Boar</GenericName>
+    <SpecificName>Sus scrofa</SpecificName>
+    <Icon>gaia/fauna_boar.png</Icon>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Amount>150</Amount>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <StatusBars>
+    <HeightOffset>5.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>fauna/boar.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,15 @@
+{
+	"genericName": "Conscription",
+	"description": "Calling up infantry levies in time of war helps bolster the ranks of a king's army.",
+	"cost": {"food": 100, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "clenched_fist.png",
+	"researchTime": 40,
+	"tooltip": "All infantry and cavalry soldiers -10% train time. Unlocks Levy Infantry and Levy Cavalry.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.9}
+	],
+	"affects": ["Soldier"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

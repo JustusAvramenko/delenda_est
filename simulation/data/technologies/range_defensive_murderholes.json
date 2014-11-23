@@ -1,0 +1,16 @@
+{
+	"pair": "pair_defensive_01",	
+	"genericName": "Murder Holes",
+	"description": "Murder Holes allow defenders to fire or drop projectiles upon enemy units huddled along the base of the defender's wall.",
+	"cost": {"food": 0, "wood": 200, "stone": 100, "metal": 0},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "murder_holes.png",
+	"researchTime": 40,
+	"tooltip": "Towers and Fortresses no longer have a minimum attack range.",
+	"modifications": [
+		{"value": "Attack/Ranged/MinRange", "add": -12.0}
+	],
+	"affects": ["Tower", "Fortress"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

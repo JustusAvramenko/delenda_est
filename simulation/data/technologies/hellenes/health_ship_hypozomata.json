@@ -1,0 +1,25 @@
+{
+	"pair": "hellenes/pair_naval_01",	
+	"genericName": "Undergirding Cables",
+	"specificName": {
+		"hele": "Hypozomata",
+		"mace": "Hypozomata",
+		"spart": "Hypozomata",
+		"athen": "Hypozomata",
+		"sele": "Hypozomata",
+		"ptol": "Hypozomata",
+		"cart": "Hypozomata"
+	},
+	"description": "The hypozomata brace the structure of a ship.",
+	"cost": {"food": 0, "wood": 100, "stone": 0, "metal": 75},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "armor_ship_bronze.png",
+	"researchTime": 40,
+	"tooltip": "Medium Warships +15% Health.",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.15}
+	],
+	"affects": ["Medium Warship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

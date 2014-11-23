@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <BuildRestrictions>
+    <Territory>own ally neutral</Territory>
+    <PlacementType>shore</PlacementType>
+    <Category>Dock</Category>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="15.5"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Island Settlement</GenericName>
+    <Civ>brit</Civ>
+    <Classes datatype="tokens">Naval</Classes>
+    <Tooltip>Increase population limit and defend waterways</Tooltip>
+    <SpecificName>Crannóc</SpecificName>
+    <History>A crannóc (or crannoge) is the name given in Scotland and Ireland to an artificial island or natural island, used for a settlement. The name can also be used to refer to wooden platforms erected on shallow loch floors, although understandably few remains of this sort have been found. The choice of an island as a home is thought to have been for defense as well as the availability of food in the form of fish nearby.</History>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Static width="29.0" depth="29.0"/>
+  </Obstruction>
+  <Position>
+    <Floating>true</Floating>
+  </Position>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/brit_infantry_spearman_b
+      units/{civ}_ship_fishing
+      units/{civ}_ship_merchant
+      units/brit_ship_trireme
+    </Entities>
+  </ProductionQueue>
+  <RallyPointRenderer>
+    <LinePassabilityClass>ship</LinePassabilityClass>
+  </RallyPointRenderer>
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <VisualActor>
+    <Actor>structures/britons/crannog.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

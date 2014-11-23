@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry">
+  <Armour>
+    <Hack>10</Hack>
+    <Pierce>8</Pierce>
+    <Crush>8</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>12.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>8.0</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+	  <Bonuses>
+		<BonusCavMelee>
+		  <Classes>Cavalry</Classes>
+		  <Multiplier>4.0</Multiplier>
+		</BonusCavMelee>
+	  </Bonuses>
+    </Melee>
+    <Charge>
+      <Hack>24.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>8.0</MaxRange>
+      <MinRange>0.0</MinRange>
+	  <Bonuses>
+		<BonusCav>
+		  <Classes>Cavalry</Classes>
+		  <Multiplier>4.0</Multiplier>
+		</BonusCav>
+	  </Bonuses>
+    </Charge>
+  </Attack>
+  <Cost>
+    <Resources>
+      <food>50</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>75</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Melee Spear Pike</VisibleClasses>
+    <GenericName>Champion Pikeman</GenericName>
+	<History>Pike, or sarissa, infantry were developed by Philip II of Macedon based on the hoplite of the Greek city-states. The Macedonian pikemen, or phalangites, wielded an extra long spear (sarissa) approximatly 4 to 7 meters (13–21 feet) in length. Because of it's length and weight, the pike required the use of both hands, so the shield was slung over the pikeman's shoulder with a leather strap. Front-line pikemen of the age were generally highly-armored, while those in the back lines were lightly armored. Such pike-wielding troops were employed by numerous states, from Carthage to Syria, and were used to fix enemy infantry in position while the army's cavalry worked to turn the enemy flanks.</History>
+    <Tooltip>Counters: 4x vs. All Cavalry.
+Countered by: Ranged Units and Sword Infantry.</Tooltip>
+    <Formations datatype="tokens">
+      formations/phalanx
+      formations/syntagma
+    </Formations>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <select>voice/hellenes/civ/civ_male_select.xml</select>
+      <order_walk>voice/hellenes/civ/civ_male_ack.xml</order_walk>
+      <order_attack>voice/hellenes/civ/civ_male_attack.xml</order_attack>
+      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
+      <order_repair>voice/hellenes/civ/civ_male_ack.xml</order_repair>
+      <walk>actor/human/movement/walk.xml</walk>
+      <run>actor/human/movement/walk.xml</run>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/death.xml</death>
+    </SoundGroups>
+  </Sound>
+  <Stamina>
+    <Max>1200</Max>
+  </Stamina>
+  <UnitMotion>
+    <WalkSpeed>6.5</WalkSpeed>
+    <Run>
+      <Speed>13.0</Speed>
+      <Range>600.0</Range>
+      <RangeMin>5.0</RangeMin>
+    </Run>
+  </UnitMotion>
+</Entity>

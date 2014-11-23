@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras>
+    <Aura1>
+      <Type>global</Type>
+      <Affects>Champion</Affects>
+      <Modifications>
+        <UnitMotion.WalkSpeed> <Multiply>1.25</Multiply> </UnitMotion.WalkSpeed>
+        <Attack.Ranged.Pierce> <Add>5</Add> </Attack.Ranged.Pierce>
+        <Attack.Melee.Hack> <Add>5</Add> </Attack.Melee.Hack>
+      </Modifications>
+      <AuraName>Rebellious Rage</AuraName>
+      <AuraDescription>+5 Attack and +25% Speed for Champion Units.</AuraDescription>
+    </Aura1>
+  </Auras>
+  <Armour>
+    <Hack>5</Hack>
+    <Pierce>6</Pierce>
+    <Crush>6</Crush>
+  </Armour>
+  <Identity>
+    <Civ>brit</Civ>
+    <SpecificName>Boudicca</SpecificName>
+    <GenericName>Heroine</GenericName>
+    <Icon>units/celt_hero_boudicca.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/celts/boudicca.xml</Actor>
+  </VisualActor>
+</Entity>

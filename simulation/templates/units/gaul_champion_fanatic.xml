@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_spearman">
+  <Armour>
+    <Hack>2</Hack>
+    <Pierce>4</Pierce>
+  </Armour>
+  <Cost>
+    <Resources>
+      <food>0</food>
+      <metal>80</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>gaul</Civ>
+    <GenericName>Naked Fanatic</GenericName>
+    <SpecificName>Gaesata</SpecificName>
+	<VisibleClasses datatype="tokens">Mercenary</VisibleClasses>
+    <History>A fanatic Celtic warrior, devoted to war and his Celtic liege lord. These bloodthirsty young men roamed Gaul in search of battle.</History>
+    <Icon>units/celt_fanatic.png</Icon>
+  </Identity>
+  <Looter disable=""/>
+  <TrainingRestrictions>
+    <Category>Mercenary20</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed>11.0</WalkSpeed>
+    <Run>
+      <Speed>22.0</Speed>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/celts/fanatic.xml</Actor>
+  </VisualActor>
+</Entity>

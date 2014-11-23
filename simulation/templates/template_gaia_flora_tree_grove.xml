@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_flora_tree">
+  <Footprint replace="">
+    <Circle radius="20.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <Classes datatype="tokens">Grove</Classes>
+    <GenericName>Forrest Grove</GenericName>
+  </Identity>
+  <Obstruction>
+    <Unit radius="15"/>
+  </Obstruction>
+  <ResourceSupply>
+    <Amount>5000</Amount>
+	<MaxGatherers>40</MaxGatherers>
+  </ResourceSupply>
+  <Selectable replace="">
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.4</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>12.0</HeightOffset>
+  </StatusBars>
+</Entity>

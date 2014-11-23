@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Merkāz</SpecificName>
+    <History>Carthiginian's History</History>
+  </Identity>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_kart_cc</SpawnEntityOnDeath>
+  </Health>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/cart_infantry_spearman_b
+    </Entities>
+    <Technologies datatype="tokens">
+      phase_town_generic
+      phase_city_generic
+	  phase_imperial_generic
+	  health_units_01
+	  health_units_02
+	  pair_structures_01
+	  pair_structures_02
+	  health_units_03
+	  health_units_04
+	  health_units_05
+	  pair_structures_03
+	  pair_structures_04
+      carthaginians/special_colonisation
+	  vision_treason
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/carthaginians/civil_centre.xml</Actor>
+  </VisualActor>
+</Entity>

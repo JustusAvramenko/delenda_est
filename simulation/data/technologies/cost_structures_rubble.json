@@ -1,0 +1,18 @@
+{
+	"pair": "pair_structures_01",
+	"genericName": "Rubble Building Materials",
+	"description": "A basic building material was rubble.",
+	"cost": {"food": 0, "wood": 100, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_village"},
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "masonry_rubble.png",
+	"researchTime": 30,
+	"tooltip": "All structures -10% cost.",
+	"modifications": [
+		{"value": "Cost/Resources/wood", "multiply": 0.9},
+		{"value": "Cost/Resources/stone", "multiply": 0.9},
+		{"value": "Cost/Resources/metal", "multiply": 0.9}
+	],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

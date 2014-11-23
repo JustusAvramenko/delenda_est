@@ -1,0 +1,16 @@
+{
+	"genericName": "Salt Curing",
+	"description": "Curing fish with salt helps to preserve the fish for market.",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"supersedes": "gather_fishing_purse_seine",
+	"icon": "fish_salt.png",
+	"researchTime": 40,
+	"tooltip": "Fishing Boats +20 food capacity.",
+	"modifications": [
+		{"value": "ResourceGatherer/Capacities/food", "add": 20}
+	],
+	"affects": ["FishingBoat"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

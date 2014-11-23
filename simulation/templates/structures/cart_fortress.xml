@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <GarrisonHolder>
+    <VisibleGarrisonPoints>
+      <Archer1>
+        <X>9.25</X><Y>17.2</Y><Z>9.25</Z>
+      </Archer1>
+      <Archer2>
+        <X>-9.25</X><Y>17.2</Y><Z>-9.25</Z>
+      </Archer2>
+      <Archer3>
+        <X>-9.25</X><Y>17.2</Y><Z>9.25</Z>
+      </Archer3>
+      <Archer4>
+        <X>9.25</X><Y>17.2</Y><Z>-9.25</Z>
+      </Archer4>
+      <Archer5>
+        <X>-3.5</X><Y>17.2</Y><Z>9.25</Z>
+      </Archer5>
+      <Archer6>
+        <X>3.5</X><Y>17.2</Y><Z>9.25</Z>
+      </Archer6>
+      <Archer7>
+        <X>-2.5</X><Y>17.2</Y><Z>-9.25</Z>
+      </Archer7>
+      <Archer8>
+        <X>3.52</X><Y>17.2</Y><Z>-9.25</Z>
+      </Archer8>
+      <Archer9>
+        <X>-9.25</X><Y>17.2</Y><Z>-3.25</Z>
+      </Archer9>
+      <Archer10>
+        <X>-9.25</X><Y>17.2</Y><Z>3.25</Z>
+      </Archer10>
+      <Archer11>
+        <X>9.25</X><Y>17.2</Y><Z>3.25</Z>
+      </Archer11>
+      <Archer12>
+        <X>9.25</X><Y>17.2</Y><Z>-3.25</Z>
+      </Archer12>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
+  <Footprint>
+    <Square width="30.0" depth="32.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>cart</Civ>
+    <GenericName>Blockhouse Fort</GenericName>
+    <SpecificName>Ḥamet</SpecificName>
+    <History>The Carthaginians built a number of rather 'monolithic' blockhouse forts sited at critical locations in North Africa, sometimes also in conjunction with long lengths of wall intended to keep the wilder people of the desert to the south from freely ranging into the 'civilized' territories under their direct control.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="26.0" depth="28.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/cart_hero_hamilcar
+      units/cart_hero_hannibal
+      units/cart_hero_maharbal
+      units/cart_champion_elephant
+      units/cart_mechanical_siege_ballista_packed
+      units/cart_mechanical_siege_oxybeles_packed
+    </Entities>
+    <Technologies datatype="tokens">
+      unlock_siege_ballistics
+	  pair_siege_ranged_01
+	  siege_packing
+	  carthaginians/speed_elephants_mahouts
+	  carthaginians/special_triple_walls
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/carthaginians/fortress.xml</Actor>
+  </VisualActor>
+</Entity>

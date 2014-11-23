@@ -1,0 +1,13 @@
+{
+	"genericName": "Parade of Daphne",
+	"description": "Significantly increase training speed of champions and siege weapons at the fortress by training them in large batches or battalions. The Parade of Daphne was a strong show of force put on by the Seleucid king Antiochus IV Epiphanes. The grand procession mounted by the king was part of a festival of Apollo. The festival was celebrated before and after the reign of Antiochus, who merely increased its importance and size. Daphne then became a central cult place and oracle of the dynasty’s patron deity Apollo. In the parade, Polybius recounts, the Silver Shields regiment comprised of 5,000 men in their prime, armed in the 'Macedonian' manner, recruited from all reaches of the empire. Another 5,000 were armed in the 'Roman' manner with swords, chain armor, and oblong shields. This indicated that Antiochus may have planned to reform the entire Seleucid army along Roman lines. Included in the parade were 10,000 Gold Shield pikemen, 5,000 Bronze Shield pikemen, and 10,000 light infantry recruited from Arabia and Mesopotamia; 3,000 Thracians and 5,000 Galatians (Celts) recruited from West of the Taurus Mountains, an act in defiance of Rome. Cavalry included Eastern cavalry from Media and Persia, Companion cavalry, Nisean cavalry, the elite Agema cavalry, the heavily armored Cataphracts, and nearly 40 elephants, another contingent in direct violation of a treaty imposed by Rome upon the king's father, Antiochus III the Great.",
+	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_imperial"}, {"civ": "sele"}]},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "parade_of_daphne.png",
+	"researchTime": 60,
+	"tooltip": "Much faster batch training speed for Fortress units.",
+	"modifications": [{"value": "ProductionQueue/BatchTimeModifier", "add": -0.25}],
+	"affects": ["Fortress"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

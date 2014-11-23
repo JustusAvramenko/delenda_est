@@ -1,0 +1,18 @@
+{
+	"pair": "celts/pair_cav_02",
+	"genericName": "Cavalry Shield",
+	"description": ".",
+	"cost": {"food": 0, "wood": 400, "stone": 0, "metal": 50},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "shields_generic_bronze_2.png",
+	"researchTime": 40,
+	"tooltip": "Ranged Cavalry +2 Pierce armor levels, but -5% speed.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 2.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.95},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.95}
+	],
+	"affects": ["Champion Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

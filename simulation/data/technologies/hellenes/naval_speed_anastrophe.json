@@ -1,0 +1,25 @@
+{
+	"pair": "hellenes/pair_naval_01",	
+	"genericName": "Naval Maneuvers",
+	"specificName": {
+		"hele": "Anastrophe",
+		"mace": "Anastrophe",
+		"spart": "Anastrophe",
+		"athen": "Anastrophe",
+		"sele": "Anastrophe",
+		"ptol": "Anastrophe",
+		"cart": "Anastrophe"
+	},
+	"description": "The Anastrophe was a 'sudden turn' ship maneuver in order to take the opponent off-guard.",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "ship_ram.png",
+	"researchTime": 40,
+	"tooltip": "All Warships +10% Rowing Speed.",
+	"modifications": [
+		{"value": "UnitMotion/WalkSpeed", "multiply": 1.1}
+	],
+	"affects": ["Warship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

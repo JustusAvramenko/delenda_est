@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry">
+  <Armour>
+    <Hack>1</Hack>
+    <Pierce>4</Pierce>
+    <Crush>2</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>8.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>6.0</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+	  <Bonuses>
+		<ElephantStench>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</ElephantStench>
+		<CamelStench>
+		  <Classes>Camel</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</CamelStench>
+		<BonusSiege>
+		  <Classes>Siege</Classes>
+		  <Multiplier>2.0</Multiplier>
+		</BonusSiege>
+	  </Bonuses>
+      <PreferredClasses datatype="tokens">Siege</PreferredClasses>
+    </Melee>
+    <Charge>
+      <Hack>30.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>6.0</MaxRange>
+      <MinRange>0.0</MinRange>
+	  <Bonuses>
+		<ElephantStench>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</ElephantStench>
+		<CamelStench>
+		  <Classes>Camel</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</CamelStench>
+	  </Bonuses>
+      <PreferredClasses datatype="tokens">Siege</PreferredClasses>
+    </Charge>
+  </Attack>
+  <Identity>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+    <GenericName>Melee Cavalry</GenericName>
+  </Identity>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+</Entity>

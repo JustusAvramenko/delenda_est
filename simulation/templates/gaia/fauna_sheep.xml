@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_herd_domestic">
+  <Cost>
+    <BuildTime>35</BuildTime>
+    <Resources>
+      <food>50</food>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>gaia</Civ>
+	<GenericName>Sheep</GenericName>
+    <SpecificName>Ovis aries</SpecificName>
+	<VisibleClasses datatype="tokens">Domestic</VisibleClasses>
+    <Icon>gaia/fauna_sheep.png</Icon>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/sheep.xml</select>
+      <order_walk>actor/fauna/animal/sheep.xml</order_walk>
+      <death>actor/fauna/animal/sheep.xml</death>
+      <trained>actor/fauna/animal/sheep.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>5.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed>3.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>fauna/sheep1.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry">
+  <Armour>
+    <Hack>4</Hack>
+    <Pierce>5</Pierce>
+    <Crush>6</Crush>
+  </Armour>
+  <Attack>
+    <Ranged>
+      <Hack>0.0</Hack>
+      <Pierce>25.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>52</MaxRange>
+      <MinRange>0.0</MinRange>
+      <ProjectileSpeed>50.0</ProjectileSpeed>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Spread>1.25</Spread>
+      <Bonuses>
+		<BonusPrimary>
+		  <Classes>Support</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusPrimary>
+		<ElephantStench>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</ElephantStench>
+		<CamelStench>
+		  <Classes>Camel</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</CamelStench>
+      </Bonuses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <food>100</food>
+      <wood>75</wood>
+    </Resources>
+  </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Ranged Javelin</VisibleClasses>
+    <GenericName>Champion Cavalry Skirmisher</GenericName>
+    <Tooltip>Counters: 1.5x vs. Support Units.
+Countered by: Skirmishers, Cavalry Swordsmen, and Elephants.</Tooltip>
+    <Formations datatype="tokens">
+      formations/skirmish
+    </Formations>
+  </Identity>
+  <Obstruction>
+    <Unit radius="1.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <death>actor/fauna/death/death_horse.xml</death>
+      <attack>attack/weapon/arrowfly.xml</attack>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed>14.0</WalkSpeed>
+    <Run>
+      <Speed>28.0</Speed>
+      <Range>1000.0</Range>
+      <RangeMin>10.0</RangeMin>
+    </Run>
+  </UnitMotion>
+</Entity>

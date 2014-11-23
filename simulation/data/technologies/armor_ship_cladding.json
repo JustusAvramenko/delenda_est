@@ -1,0 +1,17 @@
+{
+	"pair": "pair_naval_05",
+	"genericName": "Ship Cladding",
+	"description": "Armor for the flanks of a warship.",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 200},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "ship_cladding.png",
+	"researchTime": 40,
+	"tooltip": "Warships +1 Hack Armor, +2 Pierce Armor Levels.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 1.0},
+		{"value": "Armour/Pierce", "add": 2.0}
+	],
+	"affects": ["Warship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

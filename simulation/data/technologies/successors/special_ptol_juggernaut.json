@@ -1,0 +1,19 @@
+{
+	"genericName": "Juggernaut",
+	"specificName": {
+		"ptol": "Tessarakonterēs"
+	},
+	"description": ".",
+	"cost": {"food": 0, "wood": 600, "stone": 0, "metal": 400},
+	"requirements": {"tech": "phase_imperial"},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "juggernaut.png",
+	"researchTime": 40,
+	"tooltip": "Heavy Warship +50% Health, +2 Default Projectiles.",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.5},
+		{"value": "BuildingAI/DefaultArrowCount", "add": 2.0}
+	],
+	"affects": ["Warship Heavy"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

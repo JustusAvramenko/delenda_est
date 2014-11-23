@@ -1,0 +1,13 @@
+{
+	"genericName": "Naval Construction",
+	"description": "Significantly increase build speed of batches of ships at the Shipyard.",
+	"cost": {"food": 200, "wood": 200, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "calipers.png",
+	"researchTime": 30,
+	"tooltip": "Warships build a lot faster in batches at the Shipyard. Unlocks Naval Commanders.",
+	"modifications": [{"value": "ProductionQueue/BatchTimeModifier", "add": -0.1}],
+	"affects": ["Shipyard"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

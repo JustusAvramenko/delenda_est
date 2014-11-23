@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Footprint>
+    <Square width="24.0" depth="26.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>maur</Civ>
+    <SpecificName>Sainyavasa</SpecificName>
+    <History>Barracks.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="20.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/maur_infantry_spearman_b
+      units/maur_infantry_swordsman_b
+      units/maur_infantry_archer_b
+      units/maur_cavalry_swordsman_b
+      units/maur_cavalry_javelinist_b
+	  units/maur_champion_infantry_barracks
+	  units/maur_champion_maiden_barracks
+	  units/maur_champion_chariot_barracks
+    </Entities>
+    <Technologies datatype="tokens">
+	  mauryans/special_archery_tradition
+	  unlock_champion_units
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/mauryans/barracks.xml</Actor>
+  </VisualActor>
+</Entity>

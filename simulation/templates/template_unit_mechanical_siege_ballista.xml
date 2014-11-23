@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_siege">
+  <Armour>
+    <Hack>2</Hack>
+    <Pierce>10</Pierce>
+    <Crush>5</Crush>
+  </Armour>
+  <Attack>
+    <Ranged>
+      <Hack>0.0</Hack>
+      <Pierce>25.0</Pierce>
+      <Crush>18.0</Crush>
+      <MaxRange>62</MaxRange>
+      <MinRange>8.0</MinRange>
+      <Spread>2.0</Spread>
+      <ProjectileSpeed>60.0</ProjectileSpeed>
+      <PrepareTime>5000</PrepareTime>
+      <RepeatTime>4000</RepeatTime>
+      <Bonuses>
+        <BonusOrganic>
+        <Classes>Organic</Classes>
+        <Multiplier>2.0</Multiplier>
+        </BonusOrganic>
+      </Bonuses>
+      <Splash>
+        <Shape>Linear</Shape>
+        <Range>8</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Hack>0.0</Hack>
+        <Pierce>30.0</Pierce>
+        <Crush>18.0</Crush>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>18</BuildTime>
+    <Resources>
+      <wood>80</wood>
+      <metal>80</metal>
+    </Resources>
+    <Population>2</Population>
+  </Cost>
+  <Footprint replace="">
+    <Square width="5.0" depth="12.0"/>
+    <Height>2.0</Height>
+  </Footprint>
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <GenericName>Bolt Shooter</GenericName>
+    <VisibleClasses datatype="tokens">Ranged BoltShooter</VisibleClasses>
+    <Tooltip>Counters: 2x vs. Infantry and Cavalry units. Also useful vs. Buildings.
+Countered by: Melee Cavalry.</Tooltip>
+    <RequiredTechnology>unlock_siege_ballistics</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+    <food>0</food>
+    <wood>10</wood>
+    <stone>0</stone>
+    <metal>10</metal>
+  </Loot>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <UnitMotion>
+    <WalkSpeed>6.5</WalkSpeed>
+    <Run>
+      <Speed>12.0</Speed>
+    </Run>
+  </UnitMotion>
+  <Vision>
+    <Range>70</Range>
+  </Vision>
+</Entity>

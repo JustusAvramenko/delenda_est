@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_embassy">
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>0</wood>
+      <stone>200</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Iberian Embassy</SpecificName>
+    <History>The Iberians were known as fierce mercenaries, loyal to their paymasters.</History>
+      <Tooltip>Hire Iberian mercenaries. Research improvements for these mercenaries.</Tooltip>
+    <Icon>structures/iberian_embassy.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="16.0" depth="16.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/cart_infantry_javelinist_b
+      units/cart_infantry_slinger_b
+      units/cart_cavalry_swordsman_b
+    </Entities>
+    <Technologies datatype="tokens">
+      carthaginians/pair_iberian_mercs_1
+      carthaginians/pair_iberian_mercs_2
+	  carthaginians/upgrade_rank_advanced_iberian
+	  carthaginians/upgrade_rank_elite_iberian
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/carthaginians/embassy_iberian.xml</Actor>
+  </VisualActor>
+</Entity>

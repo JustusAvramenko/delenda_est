@@ -1,0 +1,17 @@
+{
+	"genericName": "Husbandry",
+	"supersedes": "training_animals_stockbreeding",
+	"description": "The breeding and caring of animals for various purposes.",
+	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "husbandry.png",
+	"researchTime": 40,
+	"tooltip": "Domestic Animals and Cavalry units -10% train time, +10% health.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.9},
+		{"value": "Health/Max", "multiply": 1.1}
+	],
+	"affects": ["Domestic", "Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

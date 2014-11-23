@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras>
+	<Aura1>
+      <Type>range</Type>
+      <Radius>60</Radius>
+      <Affects>Infantry+Javelin</Affects>
+      <Modifications>
+        <Attack.Ranged.Pierce> <Add>2</Add> </Attack.Ranged.Pierce>
+        <Armour.Pierce> <Add>1</Add> </Armour.Pierce>
+        <Armour.Hack>   <Add>1</Add> </Armour.Hack>
+        <Armour.Crush>  <Add>1</Add> </Armour.Crush>
+      </Modifications>
+      <AuraName>"Neodamōdeis" Helot Emancipation</AuraName>
+      <AuraDescription>Helot Skirmishers within sight of him gain +2 attack and +1 all armor types.</AuraDescription>
+    </Aura1>
+  </Auras>
+  <Identity>
+    <Civ>spart</Civ>
+	<GenericName>Brasidas</GenericName>
+    <SpecificName>Brasίdas</SpecificName>
+    <History>Because Brasidas has sponsored their citizenship in return for service, Helot Skirmishers fight longer and harder for Sparta while within range of him.</History>
+    <Icon>units/spart_hero_brasidas.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/spartans/brasidas.xml</Actor>
+  </VisualActor>
+</Entity>

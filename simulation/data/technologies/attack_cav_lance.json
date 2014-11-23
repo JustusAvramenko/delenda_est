@@ -1,0 +1,24 @@
+{
+	"pair": "pair_cav_01",	
+	"genericName": "Cavalry Lance",
+	"specificName": {
+		"hele": "Xyston",
+		"mace": "Xyston",
+		"spart": "Xyston",
+		"athen": "Xyston",
+		"sele": "Xyston",
+		"ptol": "Xyston",
+		"theb": "Xyston",
+		"rome": "Hasta"
+	},
+	"description": "A long spear made specifically for cavalry.",
+	"cost": {"food": 0, "wood": 50, "stone": 0, "metal": 150},
+	"requirements": {"any": [{"tech": "phase_town"},{"civ": "celt"},{"civ": "brit"},{"civ": "gaul"}]},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "spear_cavalry.png",
+	"researchTime": 40,
+	"tooltip": "Equip your melee cavalry with better weapons. Melee Cavalry +2 Hack Attack.",
+	"modifications": [{"value": "Attack/Melee/Hack", "add": 2.0}],
+	"affects": ["Cavalry Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

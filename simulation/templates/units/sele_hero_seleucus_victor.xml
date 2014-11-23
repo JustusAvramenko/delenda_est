@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_elephant_melee">
+  <Auras>
+    <Aura1>
+      <Type>range</Type>
+      <Radius>80</Radius>
+      <Affects>Elephant</Affects>
+      <Modifications>
+        <UnitMotion.WalkSpeed> <Multiply>1.20</Multiply> </UnitMotion.WalkSpeed>
+        <Attack.Melee.Hack> <Multiply>1.20</Multiply> </Attack.Melee.Hack>
+        <Attack.Melee.Crush> <Multiply>1.20</Multiply> </Attack.Melee.Crush>
+      </Modifications>
+      <AuraName>"Zooiarchos" Aura</AuraName>
+      <AuraDescription>War Elephant +20% Attack and Speed within his vision.</AuraDescription>
+    </Aura1>
+  </Auras>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}_civil_centre
+    </Entities>
+  </Builder>
+  <Identity>
+    <Civ>sele</Civ>
+    <GenericName>Seleucus I "The Victor"</GenericName>
+    <SpecificName>Seleukos A' Nikator</SpecificName>
+    <History>"Always lying in wait for the neighboring nations, strong in arms and persuasive in council, he [Seleucus] acquired Mesopotamia, Armenia, 'Seleucid' Cappadocia, Persis, Parthia, Bactria, Arabia, Tapouria, Sogdia, Arachosia, Hyrcania, and other adjacent peoples that had been subdued by Alexander, as far as the river Indus, so that the boundaries of his empire were the most extensive in Asia after that of Alexander. The whole region from Phrygia to the Indus was subject to Seleucus." — Appian, "The Syrian Wars"</History>
+    <Icon>units/cart_hero_hannibal.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/carthaginians/hero_hannibal_mount.xml</Actor>
+  </VisualActor>
+</Entity>

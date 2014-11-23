@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_dock">
+  <Footprint>
+    <Square width="16.0" depth="26.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+<Health>
+    <SpawnEntityOnDeath>rubble/rubble_iber_dock</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>iber</Civ>
+    <SpecificName>Kai</SpecificName>
+    <History>No one really knows how ancient 1st millennium Iberian Peninsular docks or ports looked, though they were probably pretty simple affairs having but a short pier, if even that. However, for the purposes of creating a structure in the game and because the Phoenicians / Carthaginians had such broad influence on the peninsula for a half millennium before the time frame of the game, we have chosen to model something similar to the inner port center at Carthage, with typical Iberian architectural applications applied to it. The largest port that was strictly Iberian, though said to have been founded by the Greeks (defaulting to the Iberian residents when Greek merchants were blocked by Carthage from further trading into the western Mediterranean), was probably only that of Saguntum (and possibly Emporion) on the eastern coast of Spain referred to as the Spanish Levant.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="14.0" depth="24.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/iber_ship_fire
+	  units/iber_ship_trireme
+    </Entities>
+    <Technologies datatype="tokens">
+      celts/unlock_warships
+	  celts/health_warship_oceanic_transports
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/iberians/dock.xml</Actor>
+    <FoundationActor>structures/fndn_dock_iber.xml</FoundationActor>
+  </VisualActor>
+</Entity>

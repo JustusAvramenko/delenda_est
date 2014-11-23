@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_ship">
+  <Armour>
+    <Hack>2</Hack>
+    <Pierce>5</Pierce>
+    <Crush>2</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>10.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>5.0</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">Ship Structure</RestrictedClasses>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Square width="4.0" depth="10.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>1</Max>
+    <EjectHealth>0</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Female Infantry</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>10</LoadingRange>
+    <Pickup>true</Pickup>
+  </GarrisonHolder>
+  <Identity>
+    <GenericName>Fishing Boat</GenericName>
+    <Tooltip>Fish the waters for Food. Garrison a support or infantry unit inside to boost fishing rate.</Tooltip>
+    <VisibleClasses datatype="tokens">FishingBoat</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Unit radius="2.0"/>
+  </Obstruction>
+  <ResourceGatherer>
+    <MaxDistance>6.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.fish>1</food.fish>
+      <treasure disable=""/>
+    </Rates>
+    <Capacities>
+      <food>30</food>
+    </Capacities>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <order_walk>actor/ship/boat_move.xml</order_walk>
+      <order_attack>actor/ship/boat_move.xml</order_attack>
+    </SoundGroups>
+  </Sound>
+  <UnitAI>
+    <CanGuard>false</CanGuard>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>24</Range>
+  </Vision>
+</Entity>

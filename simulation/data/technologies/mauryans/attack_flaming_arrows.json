@@ -1,0 +1,18 @@
+{
+	"genericName": "Flaming Arrows",
+	"description": "Fire was a constant danger in a crowded town or city, even during peace time. In a siege, archers would typically loose flaming arrows over the enemy walls in a bid to set the enemy's buildings on fire.",
+	"cost": {"food": 0, "wood": 1000, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_imperial"}, {"civ": "maur"}]},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "flaming_pitch.png",
+	"researchTime": 40,
+	"tooltip": "Champion Maiden Archers +10 Crush attack (for a strong anti-building attack), but attack rate -50% slower and cost +10 Wood.",
+	"modifications": [
+		{"value": "Attack/Ranged/Crush", "add": 10.0},
+		{"value": "Attack/Ranged/RepeatTime", "multiply": 1.5},
+		{"value": "Cost/Resources/wood", "add": 10},
+		{"value": "VisualActor/Actor", "replace": "units/mauryans/champion_maiden_guard_archer_fire.xml"}
+	],
+	"affects": ["FireArrows"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

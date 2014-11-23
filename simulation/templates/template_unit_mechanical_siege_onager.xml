@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_siege">
+  <Armour>
+    <Hack>2</Hack>
+    <Pierce>20</Pierce>
+    <Crush>10</Crush>
+  </Armour>
+  <Attack>
+    <Ranged>
+      <Hack>0.0</Hack>
+      <Pierce>30.0</Pierce>
+      <Crush>70.0</Crush>
+      <MaxRange>72</MaxRange>
+      <MinRange>12.0</MinRange>
+      <ProjectileSpeed>28.0</ProjectileSpeed>
+      <PrepareTime>5000</PrepareTime>
+      <RepeatTime>5000</RepeatTime>
+      <Spread>6.0</Spread>
+      <Bonuses>
+        <BonusFort>
+          <Classes>Fortress</Classes>
+          <Multiplier>1.25</Multiplier>
+        </BonusFort>
+        <NerfWall>
+          <Classes>StoneWall</Classes>
+          <Multiplier>0.75</Multiplier>
+        </NerfWall>
+      </Bonuses>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>10</Range>
+        <FriendlyFire>true</FriendlyFire>
+        <Hack>0.0</Hack>
+        <Pierce>15.0</Pierce>
+        <Crush>35.0</Crush>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <wood>150</wood>
+      <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="6.0" depth="15.0"/>
+    <Height>4.5</Height>
+  </Footprint>
+  <Health>
+    <Max>180</Max>
+  </Health>
+  <Identity>
+    <GenericName>Siege Catapult</GenericName>
+    <VisibleClasses datatype="tokens">Ranged Catapult</VisibleClasses>
+    <Tooltip>Area (Splash) Damage Effect: 10 meters from impact. Can cause Friendly Fire.
+Counters: Structures and Massed Infantry. 1.25x vs. Fortresses.
+Countered by: Melee Cavalry.</Tooltip>
+    <Classes datatype="tokens">Ranged Catapult</Classes>
+    <RequiredTechnology>unlock_siege_ballistics</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <xp>300</xp>
+    <food>0</food>
+    <wood>20</wood>
+    <stone>10</stone>
+    <metal>0</metal>
+  </Loot>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <attack>attack/siege/ballist_attack.xml</attack>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>4.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed>5.5</WalkSpeed>
+    <Run>
+      <Speed>10.0</Speed>
+    </Run>
+  </UnitMotion>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
+</Entity>

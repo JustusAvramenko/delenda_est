@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_herd_domestic">
+  <Footprint>
+    <Circle radius="0.75"/>
+    <Height>1.5</Height>
+  </Footprint>
+  <Health>
+    <Max>10</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+	<GenericName>Domestic Chicken</GenericName>
+    <SpecificName>Gallus gallus domesticus</SpecificName>
+    <Icon>gaia/fauna_chicken.png</Icon>
+  </Identity>
+  <ResourceSupply>
+    <Amount>40</Amount>
+    <Type>food.meat</Type>
+    <MaxGatherers>5</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <panic>actor/fauna/animal/chickens.xml</panic>
+      <select>actor/fauna/animal/chickens.xml</select>
+      <death>actor/fauna/animal/chickens.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>3.0</HeightOffset>
+  </StatusBars>
+  <UnitAI>
+    <RoamDistance>4.0</RoamDistance>
+    <FleeDistance>12.0</FleeDistance>
+    <RoamTimeMin>2000</RoamTimeMin>
+    <RoamTimeMax>8000</RoamTimeMax>
+    <FeedTimeMin>10000</FeedTimeMin>
+    <FeedTimeMax>40000</FeedTimeMax>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed>1.0</WalkSpeed>
+    <Run>
+      <Speed>6.0</Speed>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>fauna/chicken.xml</Actor>
+  </VisualActor>
+</Entity>

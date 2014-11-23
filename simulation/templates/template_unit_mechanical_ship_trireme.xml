@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_ship">
+  <Attack>
+    <Ranged>
+      <Hack>0.0</Hack>
+      <Pierce>20.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>55.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <ProjectileSpeed>60.0</ProjectileSpeed>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Spread>1.5</Spread>
+    </Ranged>
+  </Attack>
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+	<GarrisonArrowClasses>Infantry Ranged</GarrisonArrowClasses>
+  </BuildingAI>
+  <Cost>
+    <Population>3</Population>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <wood>150</wood>
+      <metal>150</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="10.0" depth="40.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>30</Max>
+    <EjectHealth>0</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Female Infantry</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Cavalry Siege Elephant Dog</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>10</LoadingRange>
+    <Pickup>true</Pickup>
+  </GarrisonHolder>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <GenericName>Medium Warship</GenericName>
+    <Tooltip>Medium Warship, good for naval combat and transporting troops.</Tooltip>
+    <VisibleClasses datatype="tokens">Warship Medium Ranged NavalRam</VisibleClasses>
+	<RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <ResourceGatherer disable=""/>
+  <Sound>
+    <SoundGroups>
+      <attack>attack/weapon/arrowfly.xml</attack>
+      <attack_impact>attack/impact/arrow_metal.xml</attack_impact>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed>15</WalkSpeed>
+    <Run>
+      <Speed>20</Speed>
+    </Run>
+  </UnitMotion>
+</Entity>

@@ -1,0 +1,16 @@
+{
+	"genericName": "Druidic Conclave",
+	"description": ".",
+	"cost": {"food": 200, "wood": 0, "stone": 200, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "conclave.png",
+	"researchTime": 40,
+	"tooltip": "Druides -50% Train Time, but +10 Metal Cost.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.5},
+		{"value": "Cost/Resources/metal", "add": 10}		
+	],
+	"affects": ["Healer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Footprint>
+    <Square width="26.0" depth="28.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>athen</Civ>
+    <SpecificName>Epiteíchisma</SpecificName>
+    <Tooltip>Build siege engines. Garrison up to 20 soldiers inside for stout defense.</Tooltip>
+    <History>Fortresses (also called a "phrourion") were built to guard passes and atop hills in order to command plains and valleys below. One such Athenian fortress, Gyphtokastro, guarded the pass from Attica into Boeotia.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="26.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/athen_champion_ranged
+	  units/athen_mechanical_siege_oxybeles_packed
+      units/athen_mechanical_siege_lithobolos_packed
+    </Entities>
+    <Technologies datatype="tokens">
+      -pair_champ_02
+	  unlock_siege_ballistics
+      pair_siege_ranged_01
+	  hellenes/pair_siege_01
+	  hellenes/siege_buildtime_athen
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/athenians/fortress_up.xml</Actor>
+  </VisualActor>
+</Entity>

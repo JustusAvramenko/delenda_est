@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Cost>
+    <Resources>
+      <wood>100</wood>
+      <stone>200</stone>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>iber</Civ>
+    <SpecificName>Kaserna</SpecificName>
+    <History>The Iberians did not have standing armies in the sense that we know of them elsewhere or of today. Citizens were expected to take up arms whenever called by necessity.</History>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/iber_infantry_spearman_b
+      units/iber_infantry_swordsman_b
+      units/iber_infantry_javelinist_b
+      units/iber_infantry_slinger_b
+      units/iber_cavalry_spearman_b
+      units/iber_cavalry_javelinist_b
+	  units/iber_champion_infantry_barracks
+	  units/iber_champion_cavalry_barracks
+    </Entities>
+    <Technologies datatype="tokens">
+	  upgrade_rank_advanced_infantry
+	  upgrade_rank_advanced_cavalry
+	  unlock_champion_units
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/iberians/barracks.xml</Actor>
+  </VisualActor>
+</Entity>

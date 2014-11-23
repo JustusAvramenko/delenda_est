@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_treasure">
+  <Footprint replace="">
+    <Circle radius="1.0"/>
+    <Height>2.5</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Metal Treasure</GenericName>
+    <SpecificName>Secret Box</SpecificName>
+    <Icon>gaia/special_treasure.png</Icon>
+  </Identity>
+  <ResourceSupply>
+    <Amount>300</Amount>
+    <Type>treasure.metal</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/resource/sel_metal.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>props/special/eyecandy/barrel_a.xml</Actor>
+  </VisualActor>
+</Entity>

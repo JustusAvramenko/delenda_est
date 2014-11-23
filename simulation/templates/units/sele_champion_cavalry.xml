@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry_spearman">
+  <Armour>
+    <Hack>6</Hack>
+    <Pierce>10</Pierce>
+    <Crush>8</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <MaxRange>6.0</MaxRange>
+    </Melee>
+    <Charge>
+      <Hack>50</Hack>
+      <Crush>50</Crush>
+      <MaxRange>6.0</MaxRange>
+    </Charge>
+  </Attack>
+  <Cost>
+    <Resources>
+	  <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>sele</Civ>
+    <GenericName>Seleucid Cataphract</GenericName>
+    <SpecificName>Seleukidón Kataphraktos</SpecificName>
+    <Icon>units/pers_champion_cavalry.png</Icon>
+    <History>Cataphracts were the crushing blow of the Seleucid cavalry. The development of the Seleucid cataphract is not well understood, as is the relationship between these men and future generations of cataphract cavalry. At best it seems the Seleucids adopted the catapharct from encounters with Iranian nomads like the Massagetes, Scythian steppes tribes, or Bactrians in the East.</History>
+    <RequiredTechnology>successors/unlock_reform_army</RequiredTechnology>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed>10</WalkSpeed>
+    <Run>
+      <Speed>22</Speed>
+      <Range>1000</Range>
+      <RangeMin>10</RangeMin>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/persians/champion_unit_2.xml</Actor>
+  </VisualActor>
+</Entity>

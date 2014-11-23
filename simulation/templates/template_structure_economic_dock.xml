@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic">
+  <BuildRestrictions>
+    <Territory>own ally neutral</Territory>
+    <PlacementType>shore</PlacementType>
+    <Category>Dock</Category>
+  </BuildRestrictions>
+  <Cost>
+    <PopulationBonus>5</PopulationBonus>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="18.0" depth="18.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_4x4_dock</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Dock</GenericName>
+    <Tooltip>Build upon a shoreline to construct Fishing Boats and to open sea trade with Merchant Ships.</Tooltip>
+    <Classes datatype="tokens">Naval NavalMarket</Classes>
+    <VisibleClasses datatype="tokens">Economic Village Market Dock</VisibleClasses>
+    <Icon>structures/dock.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <food>0</food>
+    <wood>30</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="18.0" depth="18.0"/>
+  </Obstruction>
+  <Position>
+    <Floating>true</Floating>
+  </Position>
+  <RallyPointRenderer>
+    <LinePassabilityClass>ship</LinePassabilityClass>
+  </RallyPointRenderer>
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_dock.xml</select>
+      <constructed>interface/complete/building/complete_dock.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}_ship_fishing
+      units/{civ}_ship_merchant
+    </Entities>
+    <Technologies datatype="tokens">
+	  pair_dock_01
+	  pair_trade_ships_01
+	  gather_fishing_purse_seine
+	  gather_capacity_fishing
+    </Technologies>
+  </ProductionQueue>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_4x4_dock.xml</FoundationActor>
+  </VisualActor>
+</Entity>

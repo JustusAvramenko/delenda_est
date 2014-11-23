@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_ruins">
+  <Footprint replace="">
+    <Square width="62.0" depth="62.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Pyramid</GenericName>
+    <SpecificName>Great Pyramid</SpecificName>
+    <History>A monumental ornamental structure built by the Egyptians of old.</History>
+    <Icon>gaia/special_pyramid.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+  </Loot>
+  <Obstruction>
+    <Static width="59.0" depth="59.0"/>
+  </Obstruction>
+  <Position>
+    <Altitude>-2.0</Altitude>
+  </Position>
+  <ResourceSupply>
+    <Amount>10000</Amount>
+    <Type>stone.ruins</Type>
+	<MaxGatherers>40</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_temple.xml</select>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>12.0</HeightOffset>
+  </StatusBars>
+  <Vision>
+    <Range>72</Range>
+    <RetainInFog>true</RetainInFog>
+  </Vision>
+  <VisualActor>
+    <Actor>special/pyramid.xml</Actor>
+  </VisualActor>
+</Entity>

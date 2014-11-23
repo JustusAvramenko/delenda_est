@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_house">
+  <Cost>
+    <PopulationBonus>2</PopulationBonus>
+    <Resources>
+      <food>0</food>
+      <wood>50</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="4.5"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>celt</Civ>
+    <SpecificName>Hut</SpecificName>
+    <History>This is a small round Celtic hut.</History>
+	<Tooltip>Add +2 to Population Cap.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="7.0" depth="7.0"/>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>7.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/celts/hut.xml</Actor>
+  </VisualActor>
+</Entity>

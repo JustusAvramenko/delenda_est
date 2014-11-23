@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource_corral">
+  <Footprint>
+    <Square width="18.0" depth="12.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>pers</Civ>
+    <SpecificName>Gaiāšta</SpecificName>
+    <History>A place for a farmer to pen his animals. Garrison a sheep, goat, or cow here to gain a trickle of the food resource. Garrisoning an animal here also "fattens" them so that they may be slaughtered and gathered for a quick burst of food. Camels and horses can be captured in the wild and placed in the Corral. Unlike normal corralled animals, which generate food, the corralled Camel/Horse functions similarly to a relic. As long as it remains in the Corral, the resource cost of training camel-mounted units or horse-mounted units (as appropriate) is reduced by a fixed amount.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="17.0" depth="11.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+      persians/unlock_elephants
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/persians/corral.xml</Actor>
+    <FoundationActor>structures/fndn_4x2.xml</FoundationActor>
+  </VisualActor>
+</Entity>

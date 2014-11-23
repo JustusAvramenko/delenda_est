@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_ship">
+  <Attack>
+    <Melee>
+      <Hack>5</Hack>
+      <Pierce>5</Pierce>
+      <Crush>5</Crush>
+      <MaxRange>8</MaxRange>
+      <RepeatTime>100</RepeatTime>
+    </Melee>
+    <Charge>
+      <Hack>10</Hack>
+      <Pierce>10</Pierce>
+      <Crush>10</Crush>
+      <MaxRange>8.0</MaxRange>
+      <MinRange>0.0</MinRange>
+    </Charge>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="8.0" depth="24.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+    <RegenRate>-3</RegenRate>
+  </Health>
+  <Identity>
+    <GenericName>Fire Ship</GenericName>
+    <VisibleClasses datatype="tokens">Warship Fireship Melee</VisibleClasses>
+    <Tooltip>Rapidly drain the health of enemy ships. Slowly loses health due to being on fire, so use the Fire Ship quickly.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Unit radius="6.0"/>
+  </Obstruction>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <ResourceGatherer disable=""/>
+  <UnitMotion>
+    <WalkSpeed>16.0</WalkSpeed>
+    <Run>
+      <Speed>22.0</Speed>
+    </Run>
+  </UnitMotion>
+  <Vision>
+    <Range>60</Range>
+  </Vision>
+</Entity>

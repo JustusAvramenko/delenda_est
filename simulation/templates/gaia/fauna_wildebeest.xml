@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_skittish">
+  <Footprint>
+    <Circle radius="1.8"/>
+    <Height>1.8</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+	<GenericName>Blue Wildebeest</GenericName>
+    <SpecificName>Connochaetes taurinus</SpecificName>
+    <History>The wildebeest (plural wildebeest, wildebeests or wildebai), also called the gnu, is an antelope of the genus Connochaetes. It is a hooved (ungulate) mammal. Wildebeest are well known for their annual migration to new pastures in which vast numbers of wildebeest can be seen crossing rivers, such as the Mara River and dying in large numbers as they attempt to reach the other side. Many of them are eaten by crocodiles while others simply drown. Herds of wildebeest possesses what is known as "swarm intelligence", whereby the animals systematically explore and overcome obstacles as one when, for instance, crossing a river or defending against predator attacks.</History>
+    <Icon>gaia/fauna_wildebeest.png</Icon>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Amount>150</Amount>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <UnitMotion>
+    <WalkSpeed>6.0</WalkSpeed>
+    <Run>
+      <Speed>15.0</Speed>
+      <Range>600.0</Range>
+      <RangeMin>5.0</RangeMin>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>fauna/wildebeest.xml</Actor>
+  </VisualActor>
+</Entity>

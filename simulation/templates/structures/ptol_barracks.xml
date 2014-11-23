@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+<Footprint>
+    <Square width="23" depth="23"/>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ptol</Civ>
+    <SpecificName>ḥwt-n-mš'</SpecificName>
+    <History>?</History>
+    <Tooltip>Train Egyptian and Middle-Eastern citizen-soldiers. Research training improvements. Garrison: 10.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="20.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/ptol_infantry_spearman_b
+      units/ptol_infantry_archer_b
+      units/ptol_infantry_slinger_b
+	  units/ptol_cavalry_spearman_b
+      units/ptol_cavalry_archer_b
+    </Entities>
+    <Technologies datatype="tokens">
+	  hellenes/health_inf_martial_arts
+	  hellenes/attack_inf_spearfighting
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/ptolemies/barracks.xml</Actor>
+  </VisualActor>
+</Entity>

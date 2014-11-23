@@ -1,0 +1,16 @@
+{
+	"pair": "pair_gather_01",	
+	"genericName": "Iron Pickaxes",
+	"description": "Increases mining rate for stone mines and metal mines.",
+	"cost": {"food": 0, "wood": 50, "stone": 0, "metal": 50},
+	"requirements": {"tech": "phase_village"},
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "mining_pickax.png",
+	"researchTime": 30,
+	"tooltip": "Gatherers +25% mining rate for Stone and Metal.",
+	"modifications": 
+	[{"value": "ResourceGatherer/Rates/stone.rock", "multiply": 1.25},
+	{"value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.25}],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

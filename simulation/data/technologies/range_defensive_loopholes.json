@@ -1,0 +1,16 @@
+{
+	"pair": "pair_defensive_01",	
+	"genericName": "Loopholes",
+	"description": "Loopholes allowed for archers to fire through the wall of a tower or fortress without exposing themselves to incoming enemy projectiles.",
+	"cost": {"food": 0, "wood": 100, "stone": 200, "metal": 0},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "arrow.png",
+	"researchTime": 40,
+	"tooltip": "Towers and Fortresses +10 range for better coverage of fire.",
+	"modifications": [
+		{"value": "Attack/Ranged/MaxRange", "add": 10.0}
+	],
+	"affects": ["Tower", "Fortress"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

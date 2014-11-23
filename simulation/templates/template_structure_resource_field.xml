@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource">
+  <Armour>
+    <Crush>20</Crush>
+  </Armour>
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="28.0" depth="28.0"/>
+    <Height>2.0</Height>
+  </Footprint>
+  <Health>
+    <Max>100</Max>
+    <SpawnEntityOnDeath>rubble/rubble_field</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Field</GenericName>
+	<VisibleClasses datatype="tokens">Field</VisibleClasses>
+	<Classes datatype="tokens">-Structure</Classes>
+    <Tooltip>Harvest vegetables for food. Max gatherers: 5.</Tooltip>
+    <History>Farming originated around 9500 BC in India and the Middle East. The history of agriculture is a central element of human history, as agricultural progress has been a crucial factor in worldwide socio-economic change. Wealth-building and militaristic specializations rarely seen in hunter-gatherer cultures are commonplace in agricultural and agro-industrial societies - when farmers became capable of producing food beyond the needs of their own families, others in the tribe/nation/empire were freed to devote themselves to projects other than food acquisition.</History>
+    <Icon>structures/field.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <food>100</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+  </Loot>
+  <Minimap>
+    <Colour r="119" g="82" b="46"/>
+  </Minimap>
+  <Obstruction>
+    <Static width="22.0" depth="22.0"/>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+  </Obstruction>
+  <RallyPoint disable=""/>
+  <ResourceSupply>
+    <KillBeforeGather>false</KillBeforeGather>
+    <Amount>Infinity</Amount>
+    <Type>food.grain</Type>
+    <MaxGatherers>5</MaxGatherers>
+	<!-- Note to people looking to change this: see the comments
+		 around line 260 in simulation/components/ResourceGatherer.js -->
+    <DiminishingReturns>14</DiminishingReturns>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_field.xml</select>
+      <constructed>interface/complete/building/complete_field.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/plot_field_3D_8x8.xml</Actor>
+    <FoundationActor>structures/plot_field_found.xml</FoundationActor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
+  </VisualActor>
+</Entity>

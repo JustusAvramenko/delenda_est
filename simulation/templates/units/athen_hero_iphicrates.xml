@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_javelinist">
+  <Auras>
+	<Aura1>
+      <Type>formation</Type>
+      <Affects>Unit</Affects>
+      <Modifications>
+        <UnitMotion.WalkSpeed> <Multiply>1.15</Multiply> </UnitMotion.WalkSpeed>
+        <Armour.Pierce> <Add>1</Add> </Armour.Pierce>
+        <Armour.Hack>   <Add>1</Add> </Armour.Hack>
+        <Armour.Crush>  <Add>1</Add> </Armour.Crush>
+      </Modifications>
+      <AuraName>"Formation Reforms"</AuraName>
+      <AuraDescription>All Units in his Formation +15% Speed and +1 Armor.</AuraDescription>
+    </Aura1>
+	<Aura2>
+      <Type>global</Type>
+      <Affects>Infantry+Javelin</Affects>
+      <Modifications>
+        <UnitMotion.WalkSpeed><Multiply>1.15</Multiply></UnitMotion.WalkSpeed>
+      </Modifications>
+      <AuraName>"Peltast Reforms"</AuraName>
+      <AuraDescription>All Peltasts +15% Speed while he lives.</AuraDescription>
+    </Aura2>
+  </Auras>
+  <Identity>
+    <Civ>athen</Civ>
+	<GenericName>Iphicrates</GenericName>
+    <SpecificName>Iphikratēs</SpecificName>
+    <Icon>units/hele_hero_xenophon.png</Icon>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed>10.0</WalkSpeed>
+    <Run>
+      <Speed>18.0</Speed>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/athenians/iphicrates.xml</Actor>
+  </VisualActor>
+</Entity>

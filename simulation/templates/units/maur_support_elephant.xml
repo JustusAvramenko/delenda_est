@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support">
+  <Armour>
+    <Hack>5</Hack>
+    <Pierce>8</Pierce>
+    <Crush>10</Crush>
+  </Armour>
+  <Builder>
+    <Rate>2.0</Rate>
+    <Entities datatype="tokens"/>
+  </Builder>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>150</food>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="4.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>maur</Civ>
+    <Classes datatype="tokens">Elephant</Classes>
+    <GenericName>Worker Elephant</GenericName>
+    <SpecificName>Karmākara Gaja</SpecificName>
+    <Icon>units/maur_support_elephant.png</Icon>
+    <History>Support Elephant.</History>
+    <Tooltip>Mobile dropsite. Can also assist in constructing buildings.</Tooltip>
+    <Formations disable=""/>
+  </Identity>
+  <Loot>
+    <xp>50</xp>
+    <food>25</food>
+    <wood>10</wood>
+    <stone>10</stone>
+    <metal>10</metal>
+  </Loot>
+  <Obstruction>
+    <Unit radius="3.0"/>
+  </Obstruction>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/elephant_select.xml</select>
+      <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
+      <order_attack>actor/fauna/animal/elephant_attack.xml</order_attack>
+      <attack>actor/fauna/animal/elephant_attack.xml</attack>
+      <death>actor/fauna/animal/elephant_death.xml</death>
+      <trained>actor/fauna/animal/elephant_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed>4.0</WalkSpeed>
+    <Run>
+      <Speed>10.0</Speed>
+    </Run>
+  </UnitMotion>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/mauryans/support_elephant.xml</Actor>
+  </VisualActor>
+</Entity>

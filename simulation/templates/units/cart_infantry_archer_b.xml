@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_archer">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/cart_embassy_celtic
+      structures/cart_embassy_iberian
+      structures/cart_embassy_italiote
+      structures/{civ}_wonder
+    </Entities>
+  </Builder>
+  <Identity>
+    <Civ>cart</Civ>
+	<SelectionGroupName>units/cart_infantry_archer_b</SelectionGroupName>
+    <GenericName>Mauritanian Archer</GenericName>
+    <SpecificName>Qešet</SpecificName>
+    <History>A mercenary archer from North Africa.</History>
+    <Icon>units/cart_infantry_archer.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/cart_infantry_archer_a</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/carthaginians/infantry_archer_b.xml</Actor>
+  </VisualActor>
+</Entity>

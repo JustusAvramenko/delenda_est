@@ -1,0 +1,19 @@
+{
+	"pair": "pair_structures_03",
+	"genericName": "Marble Construction",
+	"description": "Marble is a beautiful and durable building material, used in large building projects such as temples and other public buildings.",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "masonry_marble.png",
+	"researchTime": 40,
+	"tooltip": "All structures +10% health, but +5% cost.",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.1},
+		{"value": "Cost/Resources/wood", "multiply": 1.05},
+		{"value": "Cost/Resources/stone", "multiply": 1.05},
+		{"value": "Cost/Resources/metal", "multiply": 1.05}
+	],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

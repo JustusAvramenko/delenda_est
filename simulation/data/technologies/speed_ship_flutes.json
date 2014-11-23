@@ -1,0 +1,23 @@
+{
+	"pair": "pair_naval_05",
+	"genericName": "Flute Players",
+	"specificName": {
+		"hele": "Trièraulès",
+		"mace": "Trièraulès",
+		"spart": "Trièraulès",
+		"athen": "Trièraulès",
+		"ptol": "Trièraulès",
+		"sele": "Trièraulès",
+		"cart": "Trièraulès"
+	},
+	"description": "The flanking maneuver was attempted in order to position the ship for a successful ram.",
+	"cost": {"food": 200, "wood": 300, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "flute.png",
+	"researchTime": 40,
+	"tooltip": "All Ships +10% Rowing Speed.",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.1}],
+	"affects": ["Ship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

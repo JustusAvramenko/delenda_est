@@ -1,0 +1,20 @@
+{
+	"pair": "persians/pair_inf_armor_02",
+	"genericName": "Wicker Shields",
+	"specificName": {
+		"pers": "Taka"
+	},
+	"description": "The best shields have reinforcements either on the corners (Roman scutum) or around the rim (Greek aspis).",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked by Quilted Body Armor or Spara Tower Shields.",
+	"icon": "shields_taka.png",
+	"researchTime": 40,
+	"tooltip": "Ranged Infantry +1 Pierce armor levels, -2% walk speed.",
+	"modifications": [
+		{"value": "Armour/Pierce", "add": 1.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.98}
+	],
+	"affects": ["Infantry Ranged"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

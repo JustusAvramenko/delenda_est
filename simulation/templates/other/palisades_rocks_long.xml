@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wall_long">
+  <Cost>
+    <BuildTime>15</BuildTime>
+    <Resources>
+      <wood>20</wood>
+      <stone>0</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="15" depth="3.0"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <GarrisonHolder disable=""/>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_1x3pal</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <SelectionGroupName>other/wallset_palisade</SelectionGroupName>
+    <SpecificName>Palisade</SpecificName>
+    <GenericName>Wooden Wall</GenericName>
+    <GateConversionTooltip>Convert Wooden Wall into Wooden Gate</GateConversionTooltip>
+    <Classes datatype="tokens">-StoneWall Palisade</Classes>
+    <History>A cheap, quick defensive structure constructed with sharpened tree trunks</History>
+    <Icon>gaia/special_palisade.png</Icon>
+	<RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Static width="14" depth="2.0"/>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>9.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>props/special/palisade_rocks_long.xml</Actor>
+    <FoundationActor>structures/fndn_1x3pal.xml</FoundationActor>
+  </VisualActor>
+  <TerritoryInfluence disable=""/>
+  <WallPiece>
+    <Length>11.0</Length>
+  </WallPiece>
+</Entity>

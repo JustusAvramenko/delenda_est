@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure">
+  <Armour>
+    <Hack>2</Hack>
+    <Pierce>5</Pierce>
+    <Crush>2</Crush>
+  </Armour>
+  <BuildRestrictions>
+    <Category>Special</Category>
+  </BuildRestrictions>
+  <Footprint>
+    <Square width="2.5" depth="12.5"/>
+    <Height>4.0</Height>
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <Civ>hele</Civ>
+    <GenericName>Column</GenericName>
+    <SpecificName>Fallen Doric Column</SpecificName>
+    <History>A column fallen off some Greek ruin.</History>
+    <Icon>gaia/special_fence.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>1</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>20</stone>
+    <metal>0</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="2.0" depth="12.0"/>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <Vision>
+    <Range>4</Range>
+    <RetainInFog>true</RetainInFog>
+  </Vision>
+  <VisualActor>
+    <Actor>props/special/eyecandy/column_doric_fallen.xml</Actor>
+  </VisualActor>
+</Entity>

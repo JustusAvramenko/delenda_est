@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wall_gate">
+  <Cost>
+    <BuildTime>15</BuildTime>
+    <Resources>
+      <wood>50</wood>
+      <stone>0</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="16" depth="3.0"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1200</Max>
+    <SpawnEntityOnDeath>rubble/rubble_1x3pal</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <SpecificName>Palisade Gate</SpecificName>
+    <GenericName>Wooden Gate</GenericName>
+    <Classes datatype="tokens">-StoneWall Palisade</Classes>
+    <History>A cheap, quick wooden gate</History>
+	<Icon>structures/wooden_gate.png</Icon>
+	<RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Right width="2" depth="2" x="6" z="0"/>
+      <Left width="2" depth="2" x="-6" z="0"/>
+      <Door width="10" depth="2" x="0" z="0"/>
+    </Obstructions>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>9.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <FoundationActor>structures/fndn_1x3pal.xml</FoundationActor>
+    <Actor>props/special/palisade_rocks_gate.xml</Actor>
+  </VisualActor>
+  <TerritoryInfluence disable=""/>
+  <WallPiece>
+    <Length>11.0</Length>
+  </WallPiece>
+</Entity>

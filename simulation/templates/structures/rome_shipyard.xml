@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_shipyard">
+  <Footprint>
+    <Square width="26.0" depth="30.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_hele_dock</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>rome</Civ>
+    <SpecificName>Navalia</SpecificName>
+    <History>Being an inland city, Rome was still connected to the port of Ostia through means of the Tiber. Merchant ships from all over the Mediterranean arrived at Ostia, bringing all kinds of luxurious goods. The construction of a reliable harbor was planned by Julius Caesar and carried out by Claudius.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="24.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/rome_ship_bireme
+      units/rome_ship_trireme
+      units/rome_ship_quinquereme
+    </Entities>
+    <Technologies datatype="tokens">
+	  pair_naval_02
+	  pair_naval_03
+	  pair_naval_04
+	  pair_naval_05
+	  romans/attack_warship_oxybeles
+	  romans/special_corvus
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/athenians/dock.xml</Actor>
+    <FoundationActor>structures/fndn_6x4_dock.xml</FoundationActor>
+  </VisualActor>
+</Entity>

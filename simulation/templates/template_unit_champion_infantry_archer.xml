@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry">
+  <Armour>
+    <Hack>4</Hack>
+    <Pierce>5</Pierce>
+    <Crush>6</Crush>
+  </Armour>
+  <Attack>
+    <Ranged>
+      <Hack>0.0</Hack>
+      <Pierce>20.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>58</MaxRange>
+      <MinRange>0.0</MinRange>
+      <ProjectileSpeed>75.0</ProjectileSpeed>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Spread>1.5</Spread>
+	  <Bonuses>
+		<BonusMeleeInfantry>
+		  <Classes>Infantry Melee</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusMeleeInfantry>
+	  </Bonuses>
+      <PreferredClasses datatype="tokens">Organic</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <food>50</food>
+      <wood>75</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>120</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Ranged Archer</VisibleClasses>
+    <GenericName>Champion Archer</GenericName>
+    <Tooltip>Counters: 1.5x vs. Melee Infantry.
+Countered by: Melee Cavalry.</Tooltip>
+    <Formations datatype="tokens">
+      formations/skirmish
+    </Formations>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack>attack/weapon/arrowfly.xml</attack>
+      <attack_impact>attack/impact/impact_arrow_all.xml</attack_impact>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed>9.0</WalkSpeed>
+    <Run>
+      <Speed>18.0</Speed>
+    </Run>
+  </UnitMotion>
+</Entity>

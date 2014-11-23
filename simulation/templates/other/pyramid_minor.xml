@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_ruins">
+  <Footprint replace="">
+    <Square width="38.0" depth="38.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Pyramid</GenericName>
+    <SpecificName>Minor Pyramid</SpecificName>
+    <History>A monumental ornamental structure built by the Egyptians of old.</History>
+    <Icon>gaia/special_pyramid.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="34.0" depth="34.0"/>
+  </Obstruction>
+  <ResourceSupply>
+    <Amount>5000</Amount>
+    <Type>stone.ruins</Type>
+	<MaxGatherers>30</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_temple.xml</select>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>12.0</HeightOffset>
+  </StatusBars>
+  <Vision>
+    <Range>40</Range>
+    <RetainInFog>true</RetainInFog>
+  </Vision>
+  <VisualActor>
+    <Actor>special/pyramid_minor.xml</Actor>
+  </VisualActor>
+</Entity>

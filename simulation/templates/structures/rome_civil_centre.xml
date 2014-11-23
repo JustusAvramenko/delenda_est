@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Auras>
+    <Aura1>
+      <Type>range</Type>
+      <Radius>50</Radius>
+      <Affects>Soldier</Affects>
+      <Modifications>
+        <Attack.Ranged.Pierce>
+		  <Add>1</Add> 
+		</Attack.Ranged.Pierce>
+        <Attack.Melee.Hack>
+		  <Add>1</Add>
+		</Attack.Melee.Hack>
+      </Modifications>
+      <AuraName>"Citizenship" Aura</AuraName>
+      <AuraDescription>+2 attack for Roman soldiers within sight of a Roman Forum.</AuraDescription>
+    </Aura1>
+    <Aura2>
+      <Type>range</Type>
+      <Radius>50</Radius>
+      <Affects>Soldier</Affects>
+	  <AffectedPlayers>MutualAlly</AffectedPlayers>
+      <Modifications>
+        <Attack.Ranged.Pierce>
+		  <Add>1</Add> 
+		</Attack.Ranged.Pierce>
+        <Attack.Melee.Hack>
+		  <Add>1</Add>
+		</Attack.Melee.Hack>
+      </Modifications>
+      <AuraName>"Socii" Aura</AuraName>
+      <AuraDescription>+1 attack for Allied soldiers within sight of a Roman Forum.</AuraDescription>
+    </Aura2>
+  </Auras>
+  <Footprint>
+    <Square width="40.0" depth="40.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>rome</Civ>
+    <SpecificName>Forum</SpecificName>
+    <History>A Roman forum was the center of a city's commercial and public life. The most famous of which was in Rome herself, the Forum Romanum.</History>
+  </Identity>
+  <Health>
+	<SpawnEntityOnDeath>rubble/rubble_rome_cc</SpawnEntityOnDeath>
+  </Health>
+  <Obstruction>
+    <Static width="37.0" depth="37.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/rome_infantry_swordsman_b
+    </Entities>
+    <Technologies datatype="tokens">
+	  phase_town_generic
+      phase_city_generic
+	  phase_imperial_generic
+	  health_units_01
+	  health_units_02
+	  pair_structures_01
+	  pair_structures_02
+	  health_units_03
+	  health_units_04
+	  health_units_05
+	  health_units_06
+	  pair_structures_03
+	  pair_structures_04
+	  vision_treason
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/romans/civic_centre.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

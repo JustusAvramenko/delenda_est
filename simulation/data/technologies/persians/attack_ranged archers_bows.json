@@ -1,0 +1,17 @@
+{
+	"pair": "persians/pair_02_ranged",	
+	"genericName": "Recurved Composite Bows",
+	"description": "The Eastern peoples such as the Persians and Scythians used recurved composite bows which had greater fire power than the straight bows typically used by Western peoples such as the Greeks, Gauls, and Romans.",
+	"cost": {"food": 150, "wood": 250, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "bow_recurved.png",
+	"researchTime": 40,
+	"tooltip": "All Archer units +2 pierce attack and +4 range.",
+	"modifications": [
+		{"value": "Attack/Ranged/Pierce", "add": 2.0},
+		{"value": "Attack/Ranged/MaxRange", "add": 4.0},
+		{"value": "Vision/Range", "add": 2.0}],
+	"affects": ["Archer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

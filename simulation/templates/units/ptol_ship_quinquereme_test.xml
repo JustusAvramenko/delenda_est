@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_ship_quinquereme">
+  <Auras>
+    <Aura1>
+      <Type>garrisonedUnits</Type>
+      <Affects>Unit</Affects>
+      <Modifications>
+        <Armour.Pierce> <Add>1</Add> </Armour.Pierce>
+        <Armour.Hack> <Add>1</Add> </Armour.Hack>
+        <Armour.Crush> <Add>1</Add> </Armour.Crush>
+		<Attack.Ranged.MaxRange> <Add>10</Add> </Attack.Ranged.MaxRange>
+        <Vision.Range> <Add>10</Add> </Vision.Range>
+      </Modifications>
+      <AuraName>"Marines" Special</AuraName>
+      <AuraDescription>Units on ships have +1 extra Armor levels, +10 Range, and +10 Vision.</AuraDescription>
+    </Aura1>
+  </Auras>
+  <GarrisonHolder>
+    <VisibleGarrisonPoints>
+      <Archer1>
+        <X>0</X><Y>8</Y><Z>18.6</Z>
+      </Archer1>
+      <Archer2>
+        <X>0</X><Y>8</Y><Z>1.6</Z>
+      </Archer2>
+      <Archer3>
+        <X>0</X><Y>8</Y><Z>-15</Z>
+      </Archer3>
+      <Archer4>
+        <X>1.25</X><Y>4.3</Y><Z>14.25</Z>
+      </Archer4>
+      <Archer5>
+        <X>-1.25</X><Y>4.3</Y><Z>12.25</Z>
+      </Archer5>
+      <Archer6>
+        <X>1.25</X><Y>4.3</Y><Z>7</Z>
+      </Archer6>
+      <Archer7>
+        <X>-1.25</X><Y>4.3</Y><Z>5</Z>
+      </Archer7>
+      <Archer8>
+        <X>0</X><Y>4.3</Y><Z>-3</Z>
+      </Archer8>
+      <Archer9>
+        <X>0</X><Y>4.3</Y><Z>-6</Z>
+      </Archer9>
+      <Archer10>
+        <X>0</X><Y>4.3</Y><Z>-11</Z>
+      </Archer10>
+      <Archer11>
+        <X>0</X><Y>4.3</Y><Z>-19</Z>
+      </Archer11>
+      <Hero1>
+        <X>0</X><Y>4.4</Y><Z>-22.75</Z>
+      </Hero1>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
+  <Identity>
+    <Civ>ptol</Civ>
+    <SpecificName>Oktērēs</SpecificName>
+    <History>"Octeres" means "eight rows (of oars)", but it has been shown that likely the arrangement was something like three rows of oars, with three rowers on the top oars, three rowers on the middle oars, and two rowers on the bottom oars. The Octeres was the natural extension of the development of larger and larger warships throughout the Hellenistic Age. The Octeres was a slow-moving ship and unable to turn very swiftly, but because of its large mass and consequentially massive amount of momentum its ram could split enemy warships in two, making it a valuable asset to the Ptolemaic fleet.</History>
+    <Icon>units/ptol_ship_quinquereme.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/ptolemies/quinquereme.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,25 @@
+{
+	"pair": "pair_structures_03",	
+	"genericName": "Block Projections",
+	"specificName": {
+		"hele": "Alcones",
+		"athen": "Alcones",
+		"mace": "Alcones",
+		"spart": "Alcones",
+		"ptol": "Alcones",
+		"sele": "Alcones"
+	},
+	"description": "Advanced tools that helped construct buildings.",
+	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 50},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "stone_blocks.png",
+	"researchTime": 40,
+	"tooltip": "All structures -10% build time, but -1 crush armor level.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.9},
+		{"value": "Armour/Crush", "add": -1.0}
+	],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

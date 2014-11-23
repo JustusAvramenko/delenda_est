@@ -1,0 +1,24 @@
+{
+	"pair": "pair_dock_01",	
+	"genericName": "Commercial Port",
+	"specificName": {
+		"rome": "Maritimarum",
+		"hele": "Epíneio",
+		"athen": "Epíneio",
+		"spart": "Epíneio",
+		"mace": "Epíneio",
+		"sele": "Epíneio"
+	},
+	"description": "Commercial seaports, such as that found at Carthage, Athens, and Alexandria, helps connect the entire Mediterranean basin through sea trade and commerce.",
+	"cost": {"food": 0, "wood": 75, "stone": 0, "metal": 75},
+	"requirements": {"tech": "phase_village"},
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "taxes.png",
+	"researchTime": 30,
+	"tooltip": "Merchant Ships -50% train time.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.5}
+	],
+	"affects": ["MerchantShip"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

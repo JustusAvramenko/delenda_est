@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support">
+  <Auras>
+    <Aura1>
+      <Type>range</Type>
+      <Radius>10</Radius>
+      <Affects>Citizen+Soldier</Affects>
+      <Modifications>
+        <Builder.Rate> <Multiply>1.1</Multiply> </Builder.Rate>
+        <ResourceGatherer.BaseSpeed> <Multiply>1.1</Multiply> </ResourceGatherer.BaseSpeed>
+      </Modifications>
+      <AuraName>"Inspiration" Aura</AuraName>
+      <AuraDescription>Nearby males work 10% faster</AuraDescription>
+    </Aura1>
+  </Auras>
+  <Attack>
+    <Melee>
+      <Hack>6.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>4.0</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">Infantry Cavalry Champion Structure CitizenSoldier</RestrictedClasses>
+    </Melee>
+    <Slaughter>
+      <Hack>25.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>4.0</MaxRange>
+    </Slaughter>
+  </Attack>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}_house
+      structures/{civ}_storehouse
+      structures/{civ}_farmstead
+      structures/{civ}_field
+      structures/{civ}_corral
+      structures/{civ}_dock
+      structures/{civ}_temple
+      structures/{civ}_market
+      structures/{civ}_civil_centre
+    </Entities>
+  </Builder>
+  <Cost>
+    <Resources>
+      <food>50</food>
+    </Resources>
+    <BuildTime>10</BuildTime>
+  </Cost>
+  <Health>
+    <Max>50</Max>
+  </Health>
+  <Identity>
+    <GenericName>Female Citizen</GenericName>
+    <History>Women in the ancient world took on a variety of roles - from leadership (Celts) to servant (Greeks). Women are hard workers, the economic backbone of any civilization. In history, it was typical when all the males (capable of fighting) were killed for the females, children, and elderly to be sold as slaves.</History>
+    <VisibleClasses datatype="tokens">Builder Gatherer Female Citizen</VisibleClasses>
+    <Formations disable=""/>
+  </Identity>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.fruit>1</food.fruit>
+      <food.grain>0.5</food.grain>
+      <food.meat>1</food.meat>
+      <wood.tree>0.65</wood.tree>
+      <wood.ruins>5</wood.ruins>
+      <stone.rock>0.5</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ore>0.5</metal.ore>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+      <select>voice/hellenes/civ/female/civ_female_select.xml</select>
+      <order_walk>voice/hellenes/civ/female/civ_female_walk.xml</order_walk>
+      <order_attack>voice/hellenes/civ/female/civ_female_attack.xml</order_attack>
+      <order_build>voice/hellenes/civ/female/civ_female_build.xml</order_build>
+      <order_gather>voice/hellenes/civ/female/civ_female_gather_together.xml</order_gather>
+      <order_repair>voice/hellenes/civ/female/civ_female_repair.xml</order_repair>
+      <order_garrison>voice/hellenes/civ/female/civ_female_garrison.xml</order_garrison>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/female_death.xml</death>
+      <build>resource/construction/con_wood.xml</build>
+      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
+      <gather_grain>resource/farming/farm.xml</gather_grain>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
+      <gather_ore>resource/mining/mining.xml</gather_ore>
+      <gather_ruins>resource/mining/mining.xml</gather_ruins>
+    </SoundGroups>
+  </Sound>
+  <Stamina>
+    <Max>500</Max>
+  </Stamina>
+  <UnitAI>
+    <AlertReactiveLevel>1</AlertReactiveLevel>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed>8.0</WalkSpeed>
+    <Run>
+      <Speed>16.0</Speed>
+      <Range>200.0</Range>
+      <RangeMin>0.0</RangeMin>
+    </Run>
+  </UnitMotion>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+</Entity>

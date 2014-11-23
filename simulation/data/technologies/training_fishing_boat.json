@@ -1,0 +1,24 @@
+{
+	"pair": "pair_dock_01",	
+	"genericName": "Fishing Village",
+	"specificName": {
+		"rome": "Piscandi Vicus",
+		"hele": "Alieías",
+		"athen": "Alieías",
+		"spart": "Alieías",
+		"mace": "Alieías",
+		"sele": "Alieías"
+	},
+	"description": "Fishing villages were an important source of food from the sea.",
+	"cost": {"food": 75, "wood": 75, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_village"},
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "fishing_village.png",
+	"researchTime": 30,
+	"tooltip": "Fishing Boats -50% train time.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.5}
+	],
+	"affects": ["FishingBoat"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

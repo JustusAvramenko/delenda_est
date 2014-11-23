@@ -1,0 +1,22 @@
+{
+	"genericName": "Infantry Spear Training",
+	"specificName": {
+		"hele": "Doratismos",
+		"mace": "Doratismos",
+		"spart": "Doratismos",
+		"athen": "Doratismos",
+		"theb": "Doratismos",
+		"ptol": "Doratismos",
+		"sele": "Doratismos"
+	},
+	"description": "Spear fighting training increases damage of spear-wielding infantry units.",
+	"cost": {"food": 500, "wood": 300, "stone": 0, "metal": 100},
+	"requirements": {"all": [{"tech": "phase_city"}, {"any": [{"civ": "hele"},{"civ": "athen"},{"civ": "mace"},{"civ": "spart"},{"civ": "theb"},{"civ": "ptol"},{"civ": "sele"}]}]},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "armor_plates_spear.png",
+	"researchTime": 40,
+	"tooltip": "Spear Infantry +2 hack attack.",
+	"modifications": [{"value": "Attack/Melee/Hack", "add": 2.0}],
+	"affects": ["Infantry Spear"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

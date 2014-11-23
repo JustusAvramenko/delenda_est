@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_swordsman">
+  <Auras>
+    <Aura1>
+      <Type>global</Type>
+      <Affects>Unit Structure</Affects>
+      <Modifications>
+        <Armour.Pierce> <Add>1</Add> </Armour.Pierce>
+        <Armour.Hack> <Add>1</Add> </Armour.Hack>
+        <Armour.Crush> <Add>1</Add> </Armour.Crush>
+      </Modifications>
+      <AuraName>"Shield of Rome" Aura</AuraName>
+      <AuraDescription>+1 Hack, Pierce, and Crush armor for all units and structures while he lives.</AuraDescription>
+    </Aura1>
+  </Auras>
+  <Identity>
+    <Civ>rome</Civ>
+    <SpecificName>Quintus Fabius Maximus</SpecificName>
+    <Icon>units/rome_hero_maximus.png</Icon>
+    <History>Maximus was dictator of Rome for six months during the Second Punic War. Instead of attacking the most powerful Hannibal, he started a very effective war of attrition against him, securing the nickname "Cunctator" or Delayer.</History>
+  </Identity>
+  <VisualActor>
+    <Actor>units/romans/hero_maximus_horse.xml</Actor>
+  </VisualActor>
+</Entity>

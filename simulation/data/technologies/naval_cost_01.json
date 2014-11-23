@@ -1,0 +1,26 @@
+{
+	"genericName": "Naval Commanders",
+	"specificName": {
+		"hele": "Trièrarkhoi",
+		"mace": "Nauarkhoi",
+		"spart": "Trièrarkhoi",
+		"athen": "Trièrarkhoi",
+		"sele": "Nauarkhoi",
+		"ptol": "Nauarkhoi",
+		"rome": "Praefectus Classis"
+	},
+	"description": ".",
+	"cost": {"food": 0, "wood": 100, "stone": 0, "metal": 50},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Naval Construction.",
+	"supersedes": "training_naval_construction",
+	"icon": "trierarch.png",
+	"researchTime": 40,
+	"tooltip": "All Ships -10% cost.",
+	"modifications": [
+		{"value": "Cost/Resources/wood", "multiply": 0.9},
+		{"value": "Cost/Resources/metal", "multiply": 0.9}
+	],
+	"affects": ["Ship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

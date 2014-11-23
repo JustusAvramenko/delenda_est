@@ -1,0 +1,17 @@
+{
+	"pair": "pair_naval_02",
+	"genericName": "Reinforced hull",
+	"description": "Wooden reinforcement beams for ship hulls.",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "reinforced_hull.png",
+	"researchTime": 40,
+	"tooltip": "Warships +1 Hack Armor, +2 Crush Armor Levels.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 1.0},
+		{"value": "Armour/Crush", "add": 2.0}
+	],
+	"affects": ["Warship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

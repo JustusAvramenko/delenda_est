@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_ship">
+  <Armour>
+    <Hack>2</Hack>
+    <Pierce>5</Pierce>
+    <Crush>2</Crush>
+  </Armour>
+  <Cost>
+    <Resources>
+      <wood>0</wood>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <GarrisonHolder>
+    <Max>15</Max>
+    <EjectHealth>0</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Female Infantry</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Cavalry</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>10</LoadingRange>
+    <Pickup>true</Pickup>
+  </GarrisonHolder>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <GenericName>Merchantman</GenericName>
+    <Tooltip>
+Trade between docks. Garrison a Trader aboard for additional profit (+20% for each garrisoned). Gather profitable aquatic treasures.</Tooltip>
+    <VisibleClasses datatype="tokens">Trader MerchantShip</VisibleClasses>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Formations disable=""/>
+  </Identity>
+  <ResourceGatherer>
+    <MaxDistance>12.0</MaxDistance>
+    <Capacities>
+      <food>75</food>
+      <wood>75</wood>
+      <stone>50</stone>
+      <metal>50</metal>
+    </Capacities>
+  </ResourceGatherer>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <Trader>
+    <GainMultiplier>1.0</GainMultiplier>
+  </Trader>
+  <UnitAI>
+    <CanGuard>false</CanGuard>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed>12</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+</Entity>

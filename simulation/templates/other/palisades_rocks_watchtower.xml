@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wall">
+  <Cost>
+    <BuildTime>18</BuildTime>
+  </Cost>
+  <Footprint>
+    <Square width="5.0" depth="5.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <SpecificName>Watchtower</SpecificName>
+    <GenericName>Wooden Watch Tower</GenericName>
+    <Classes datatype="tokens">-StoneWall Palisade Tower</Classes>
+    <History>A cheap, quick tall structure</History>
+  </Identity>
+  <Obstruction>
+    <Static width="5.0" depth="5.0"/>
+    <ControlPersist/>
+  </Obstruction>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>props/special/palisade_rocks_watchtower.xml</Actor>
+  </VisualActor>
+</Entity>

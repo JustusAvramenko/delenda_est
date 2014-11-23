@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_melee">
+  <Attack>
+    <Melee>
+      <Hack>10.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>6.0</MaxRange>
+	  <Bonuses>
+		<BonusPrimary>
+		  <Classes>Infantry Ranged</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusPrimary>
+		<BonusSecondary>
+		  <Classes>Cavalry Ranged</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusSecondary>
+	  </Bonuses>
+    </Melee>
+    <Charge>
+      <Hack>25.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>6.0</MaxRange>
+      <MinRange>0.0</MinRange>
+	  <Bonuses>
+		<BonusPrimary>
+		  <Classes>Infantry Ranged</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusPrimary>
+		<BonusSecondary>
+		  <Classes>Cavalry Ranged</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusSecondary>
+	  </Bonuses>
+    </Charge>
+  </Attack>
+  <Cost>
+    <Resources>
+      <metal>60</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Sword</VisibleClasses>
+    <GenericName>Cavalry Swordsman</GenericName>
+    <History>Fighting from horseback with a sword is a tricky thing to do. This required usage of a sword that was longer than the typical infantry sword. One needed a good reach to attack from the height of a horse. If you were without spear (the ideal weapon of choice) it was probably because you needed your hands free to do other tasks such as riding hard and fast. It wasn't uncommon for the men to dismount and attack from foot if they were armed with only a sword.</History>
+    <Tooltip>Counters: 2x vs. Siege Weapons, 1.5x vs. Ranged Infantry and Ranged Cavalry.
+Countered by: Spear Infantry, Elephants, and Camels.</Tooltip>
+  </Identity>
+  <Loot>
+    <xp>130</xp>
+    <food>10</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>6</metal>
+  </Loot>
+  <UnitMotion>
+    <WalkSpeed>13.5</WalkSpeed>
+    <Run>
+      <Speed>28.75</Speed>
+      <Range>600.0</Range>
+      <RangeMin>5.0</RangeMin>
+    </Run>
+  </UnitMotion>
+</Entity>

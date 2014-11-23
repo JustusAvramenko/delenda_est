@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_shipyard">
+  <Footprint>
+    <Square width="23.5" depth="16.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_pers_dock</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>pers</Civ>
+    <SpecificName>Nāvašta</SpecificName>
+    <History>Situated on the Mediterranean coast, all Phoenician cities had excellent docks and harbors, the outstanding example being Tyre, which was situated on an island close to the shore.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="23.0" depth="15.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/pers_ship_bireme
+      units/pers_ship_trireme
+    </Entities>
+    <Technologies datatype="tokens">
+	  pair_naval_02
+	  pair_naval_03
+	  pair_naval_04
+	  pair_naval_05
+	  pair_naval_06
+      persians/special_equine_transports
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/persians/dock.xml</Actor>
+  </VisualActor>
+</Entity>

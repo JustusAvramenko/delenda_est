@@ -1,0 +1,21 @@
+{
+	"pair": "pair_heal_03",
+	"genericName": "Mystery Cult",
+	"specificName": {
+		"mace": "Apollo Farseer",
+		"rome": "Dedication to Juno",
+		"athen": "Eleusian Mysteries",
+		"pers": "Zoroastrian Riddles",
+		"sele": "The Cult of Syrian Apollo"
+	},
+	"description": "Units garrisoned in a temple are healed faster.",
+	"cost": {"food": 100, "wood": 0, "stone": 0, "metal": 300},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "cauldron.png",
+	"researchTime": 40,
+	"tooltip": "Temples +50% garrisoned healing rate.",
+	"modifications": [{"value": "GarrisonHolder/BuffHeal", "multiply": 1.5}],
+	"affects": ["Temple"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,16 @@
+{
+	"genericName": "The Agoge",
+	"description": "Spartans were housed and trained from age 6 to be superlative warriors and to endure any hardship a military life can give them.",
+	"cost": {"food": 0, "wood": 200, "stone": 200, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "spart"}]},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "agoge.png",
+	"researchTime": 40,
+	"tooltip": "Barracks +5 Population Cap and +1000 Health.",
+	"modifications": [
+		{"value": "Cost/PopulationBonus", "add": 5.0},
+		{"value": "Health/Max", "add": 1000}
+	],
+	"affects": ["Barracks"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

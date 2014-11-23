@@ -1,0 +1,18 @@
+{
+	"pair": "mauryans/pair_inf_armor_01",
+	"genericName": "Quilted Body Armor",
+	"description": "Quilted linen or leather body armor for infantrymen.",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_town"},{"civ": "maur"}]},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "armor_quilted.png",
+	"researchTime": 40,
+	"tooltip": "All Infantry +1 Hack Armor Level, -2% Movement speed.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 1.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.98},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.98}
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

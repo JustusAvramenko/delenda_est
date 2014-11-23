@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Footprint>
+    <Square width="28.0" depth="28.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>rome</Civ>
+    <SpecificName>Castrum</SpecificName>
+    <History>Romans specialised in the building of military camps and forts. A few of them still survive.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="24.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/rome_infantry_swordsman_b
+      units/rome_infantry_spearman_a
+      units/rome_infantry_javelinist_b
+      units/rome_cavalry_spearman_b
+      units/rome_cavalry_javelinist_b
+	  units/rome_champion_infantry_barracks
+	  units/rome_champion_cavalry_barracks
+    </Entities>
+    <Technologies datatype="tokens">
+	  upgrade_rank_advanced_infantry
+	  upgrade_rank_elite_infantry
+	  unlock_champion_units
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/romans/barracks.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,21 @@
+{
+	"genericName": "Woad Warriors",
+	"specificName": {
+		"brit": "Sevili Dusios",
+		"gaul": "Sevili Dusios"
+	},
+	"description": "The Celts, especially the Britons, were known for 'painting' themselves with woad before battle. This was meant to frighten their enemies.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "woad_warriors.png",
+	"researchTime": 40,
+	"tooltip": "Infantry +10% Health, +10% Walk and Run Speed.",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.1},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 1.1},
+		{"value": "UnitMotion/Run/Speed", "multiply": 1.1}
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

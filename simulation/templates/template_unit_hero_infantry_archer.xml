@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry">
+  <Armour>
+    <Hack>5</Hack>
+    <Pierce>6</Pierce>
+    <Crush>7</Crush>
+  </Armour>
+  <Attack>
+    <Ranged>
+      <Hack>0.0</Hack>
+      <Pierce>20.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>60</MaxRange>
+      <MinRange>0.0</MinRange>
+      <ProjectileSpeed>75.0</ProjectileSpeed>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Spread>1.0</Spread>
+	  <Bonuses>
+		<BonusMeleeInfantry>
+		  <Classes>Infantry Melee</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusMeleeInfantry>
+	  </Bonuses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>35</BuildTime>
+    <Resources>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Identity>
+    <GenericName>Hero Archer</GenericName>
+    <VisibleClasses datatype="tokens">Ranged Archer</VisibleClasses>
+    <Tooltip>Counters: 1.5x vs. Melee Infantry.
+Countered by: Melee Cavalry.</Tooltip>
+    <Formations datatype="tokens">
+      formations/skirmish
+    </Formations>
+  </Identity>
+  <Loot>
+    <xp>350</xp>
+    <food>5</food>
+    <wood>20</wood>
+    <stone>0</stone>
+    <metal>10</metal>
+  </Loot>
+  <Sound>
+    <SoundGroups>
+      <attack_impact>attack/impact/impact_arrow_all.xml</attack_impact>
+      <attack>attack/weapon/arrowfly.xml</attack>
+    </SoundGroups>
+  </Sound>
+</Entity>

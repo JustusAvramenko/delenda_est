@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry_spearman">
+  <Attack>
+    <Melee>
+      <MaxRange>6.0</MaxRange>
+    </Melee>
+    <Charge>
+      <MaxRange>6.0</MaxRange>
+    </Charge>
+  </Attack>
+  <Identity>
+    <Civ>mace</Civ>
+	<GenericName>Companion Cavalry</GenericName>
+    <SpecificName>Hetaîros</SpecificName>
+    <History>The Hetairoi, or Companion cavalry, were a preferred general stand in Macedonian armies. Macedonian noblemen made up this elite cavalry unit, which was key to victory for Macedonian kings starting with Philip II, who increased their number from 600 to several thousand.</History>
+    <Icon>units/hele_champion_cavalry_mace.png</Icon>
+	<SelectionGroupName>units/mace_champion_cavalry</SelectionGroupName>
+  </Identity>
+  <Promotion>
+    <Entity>units/mace_champion_cavalry_e</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/macedonians/champion_cavalry.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple">
+  <Auras>
+    <Aura1>
+      <Type>range</Type>
+      <Radius>60</Radius>
+      <Affects>Structure</Affects>
+      <Modifications>
+        <Health.Max>
+		  <Multiply>1.25</Multiply>
+		</Health.Max>
+      </Modifications>
+      <AuraName>Eternal Fire of Rome</AuraName>
+      <AuraDescription>Structures +25% Health within 60 meters of the Temple of Vesta.</AuraDescription>
+    </Aura1>
+  </Auras>
+  <BuildRestrictions>
+    <Category>Vesta</Category>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="11.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>rome</Civ>
+    <GenericName>Temple of Vesta</GenericName>
+    <SpecificName>Aedes Vestae</SpecificName>
+	<VisibleClasses datatype="tokens">
+	  -Town
+	  City
+	</VisibleClasses>
+    <History>(Insert History)</History>
+    <Tooltip>Build this temple to greatly increase the Health of nearby structures and units.</Tooltip>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Static width="19.0" depth="19.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      -units/{civ}_support_healer_b
+    </Entities>
+    <Technologies datatype="tokens">
+      -pair_heal_01
+      -pair_heal_02
+      -pair_heal_03
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_greek_theater.xml</select>
+      <constructed>interface/complete/building/complete_greek_theater.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/romans/temple_vesta.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

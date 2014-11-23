@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_shipyard">
+  <Footprint>
+    <Square width="26.0" depth="30.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_hele_dock</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>spart</Civ>
+    <SpecificName>Neoreion</SpecificName>
+    <History>.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="22.0" depth="26.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/spart_ship_bireme
+      units/spart_ship_trireme
+    </Entities>
+    <Technologies datatype="tokens">
+	  pair_naval_02
+	  pair_naval_03
+	  pair_naval_04
+	  pair_naval_05
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/spartans/dock.xml</Actor>
+    <FoundationActor>structures/fndn_6x4_dock.xml</FoundationActor>
+  </VisualActor>
+</Entity>

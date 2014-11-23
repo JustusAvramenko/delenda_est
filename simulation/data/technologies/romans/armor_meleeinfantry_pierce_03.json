@@ -1,0 +1,21 @@
+{
+	"pair": "romans/pair_inf_armor_03",
+	"genericName": "Infantry Tower Shields",
+	"specificName": {
+		"rome": "Scuta"
+	},
+	"description": "The famed tall, oval, convex Roman infantry shield.",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 100},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "shield_scutum.png",
+	"researchTime": 40,
+	"tooltip": "Melee Infantry +1 Pierce Armor Level, -5% Movement speed.",
+	"modifications": [
+		{"value": "Armour/Pierce", "add": 1.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.95},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.95}
+	],
+	"affects": ["Infantry Spear"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

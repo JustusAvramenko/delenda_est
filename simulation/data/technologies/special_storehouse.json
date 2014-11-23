@@ -1,0 +1,15 @@
+{
+	"genericName": "Brigandry",
+	"description": "Sometimes a settlement needed to resort to brigandry in order to secure resources.",
+	"cost": {"food": 250, "wood": 250, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_town"}, {"tech": "gather_capacity_wheelbarrow"}]},
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Wheelbarrow.",
+	"icon": "coinage.png",
+	"researchTime": 60,
+	"tooltip": "Build Storehouses in neutral territory.",
+	"modifications": [
+		{"value": "BuildRestrictions/Territory", "replace": ["own", "neutral"]}
+	],
+	"affects": ["Storehouse"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

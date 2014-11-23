@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Footprint>
+    <Square width="26.0" depth="28.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>sele</Civ>
+    <SpecificName>Phrourion</SpecificName>
+    <Tooltip>Build siege engines and train Champions. Garrison up to 20 soldiers inside for stout defense.</Tooltip>
+    <History>Fortresses were built to guard passes and atop hills in order to command plains and valleys below.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="26.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+	  units/sele_champion_infantry_pikeman
+	  units/sele_champion_chariot
+	  units/sele_champion_infantry_swordsman
+	  units/sele_champion_cavalry	
+      units/sele_champion_elephant
+      units/sele_mechanical_siege_lithobolos_packed
+      units/sele_mechanical_siege_tower
+    </Entities>
+    <Technologies datatype="tokens">
+	  successors/pair_unlock_champions
+	  hellenes/pair_champions_01
+	  unlock_siege_ballistics
+      pair_siege_ranged_01
+	  pair_siege_build_armor
+	  siege_packing
+	  successors/special_parade_of_daphne
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/macedonians/fortress_up.xml</Actor>
+  </VisualActor>
+</Entity>

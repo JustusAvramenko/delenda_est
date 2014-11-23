@@ -1,0 +1,25 @@
+{
+	"pair": "pair_naval_03",	
+	"genericName": "Lookouts",
+	"specificName": {
+		"hele": "Prōratēs",
+		"mace": "Prōratēs",
+		"spart": "Prōratēs",
+		"athen": "Prōratēs",
+		"ptol": "Prōratēs",
+		"sele": "Prōratēs"
+	},
+	"description": "Lookouts aboard ship were important for sighting land, spotting navigational hazards, and directing fire in battle.",
+	"cost": {"food": 300, "wood": 200, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "lookouts.png",
+	"researchTime": 40,
+	"tooltip": "All Ships +25% Vision Range, Warships +10% Attack Range.",
+	"modifications": [
+		{"value": "Vision/Range", "multiply": 1.25},
+		{"value": "Attack/Ranged/MaxRange", "multiply": 1.1}
+	],
+	"affects": ["Ship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

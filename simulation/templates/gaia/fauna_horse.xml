@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_skittish">
+  <Footprint>
+    <Circle radius="1.65"/>
+    <Height>3.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+	<GenericName>Horse</GenericName>
+    <SpecificName>Equus ferus caballus</SpecificName>
+    <Icon>gaia/fauna_horse.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Unit radius="1.5"/>
+  </Obstruction>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Amount>200</Amount>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/horse_select.xml</select>
+      <order_walk>actor/fauna/animal/horse_order.xml</order_walk>
+      <order_attack>actor/fauna/animal/horse_attack.xml</order_attack>
+      <attack>actor/fauna/animal/horse_attack.xml</attack>
+      <death>actor/fauna/animal/horse_death.xml</death>
+      <trained>actor/fauna/animal/horse_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed>5.0</WalkSpeed>
+    <Run>
+      <Speed>12.0</Speed>
+      <Range>600.0</Range>
+      <RangeMin>5.0</RangeMin>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>fauna/horse_a.xml</Actor>
+  </VisualActor>
+</Entity>

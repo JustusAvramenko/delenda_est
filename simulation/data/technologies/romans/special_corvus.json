@@ -1,0 +1,19 @@
+{
+	"genericName": "Boarding Ramp",
+	"specificName": {
+		"rome": "Corvus"
+	},
+	"description": "The Corvus was a boarding ramp used by the Romans during the First Punic War with Carthage.",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 100},
+	"requirements": {"tech": "phase_imperial"},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "corvus.png",
+	"researchTime": 40,
+	"tooltip": "Heavy Warship +20 garrison capacity, -10% health.",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 0.9},
+		{"value": "GarrisonHolder/Max", "add": 20}
+	],
+	"affects": ["Heavy Warship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

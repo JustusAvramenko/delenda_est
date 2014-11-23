@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry">
+  <Armour>
+    <Hack>6</Hack>
+    <Pierce>5</Pierce>
+    <Crush>6</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>14.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>5.0</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+	  <Bonuses>
+		<BonusCavMelee>
+		  <Classes>Cavalry</Classes>
+		  <Multiplier>2.0</Multiplier>
+		</BonusCavMelee>
+	  </Bonuses>
+    </Melee>
+    <Charge>
+      <Hack>35.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>5.0</MaxRange>
+      <MinRange>0.0</MinRange>
+	  <Bonuses>
+		<BonusCavMelee>
+		  <Classes>Cavalry</Classes>
+		  <Multiplier>2.0</Multiplier>
+		</BonusCavMelee>
+	  </Bonuses>
+    </Charge>
+  </Attack>
+  <Cost>
+    <Resources>
+      <food>50</food>
+      <metal>75</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <GenericName>Champion Spearman</GenericName>
+    <VisibleClasses datatype="tokens">Melee Spear</VisibleClasses>
+    <Tooltip>Counters: 2x vs. All Cavalry.
+Countered by: Ranged Units and Sword Infantry.</Tooltip>
+    <Formations datatype="tokens">
+      formations/phalanx
+      formations/testudo
+    </Formations>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <select>voice/hellenes/civ/civ_male_select.xml</select>
+      <order_walk>voice/hellenes/civ/civ_male_ack.xml</order_walk>
+      <order_attack>voice/hellenes/civ/civ_male_attack.xml</order_attack>
+      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
+      <order_repair>voice/hellenes/civ/civ_male_ack.xml</order_repair>
+      <walk>actor/human/movement/walk.xml</walk>
+      <run>actor/human/movement/walk.xml</run>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/death.xml</death>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed>7.5</WalkSpeed>
+    <Run>
+      <Speed>15.0</Speed>
+      <Range>600.0</Range>
+      <RangeMin>5.0</RangeMin>
+    </Run>
+  </UnitMotion>
+</Entity>

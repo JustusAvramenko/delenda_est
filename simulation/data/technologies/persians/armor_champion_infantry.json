@@ -1,0 +1,18 @@
+{
+	"genericName": "Iron Scale Armor",
+	"description": "Iron scale armor for the Immortals regiment, which Herodotus described looking like 'fish scales'.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "armor_plates_iron_spear.png",
+	"researchTime": 40,
+	"tooltip": "Champion Infantry (Anusiya) +2 Hack armor levels, but +10 Metal cost.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 2.0},
+		{"value": "Cost/Resources/metal", "add": 5},
+		{"value": "VisualActor/Actor", "replace": "units/persians/champion_unit_1_iron.xml"}
+		
+	],
+	"affects": ["Immortal"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

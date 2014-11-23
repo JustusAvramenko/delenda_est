@@ -1,0 +1,14 @@
+{
+	"pair": "pair_gather_03",	
+	"genericName": "Open Pit Mining",
+	"description": "Use open put mining techniques utilizing slaves.",
+	"cost": {"food": 100, "wood": 200, "stone": 0, "metal": 100},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "mining_pit.png",
+	"researchTime": 40,
+	"tooltip": "Gatherers +25% stone gathering rate.",
+	"modifications": [{"value": "ResourceGatherer/Rates/stone.rock", "multiply": 1.25}],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

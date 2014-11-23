@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_defensive">
+  <Armour>
+    <Hack>3</Hack>
+    <Pierce>4</Pierce>
+    <Crush>5</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>15.0</Hack>
+      <Pierce>10.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>4.0</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Circle radius="2.3"/>
+    <Height>2.5</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+	<GenericName>Walrus</GenericName>
+    <SpecificName>Odobenus rosmarus</SpecificName>
+    <Icon>gaia/fauna_walrus.png</Icon>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Amount>300</Amount>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>fauna/walrus.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,18 @@
+{
+	"genericName": "Oxybeles Towers",
+	"description": "The Greeks pioneered placing siege weapons within fortifications and towers.",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 200},
+	"requirements": {"tech": "phase_imperial"},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "oxybeles_towers.png",
+	"researchTime": 40,
+	"tooltip": "Place Oxybeles bolt shooters in your Defense Towers. Adds splash damage (TBD), +10 pierce attack, and +10 crush attack. Fires -20% fewer projectiles per garrison soldier.",
+	"modifications": [
+		{"value": "Attack/Ranged/Pierce", "add": 10.0},
+		{"value": "Attack/Ranged/Crush", "add": 10.0},
+		{"value": "BuildingAI/GarrisonArrowMultiplier", "multiply": 0.8},
+		{"value": "VisualActor/Actor", "replace": "structures/seleucids/oxybeles_tower.xml"}
+	],
+	"affects": ["DefenseTower"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

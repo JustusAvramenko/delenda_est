@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_geo">
+  <Identity>
+    <GenericName>Rock</GenericName>
+    <SpecificName>Stone Mine</SpecificName>
+    <Tooltip>Mine these to provide Stone building material.</Tooltip>
+    <Icon>gaia/geology_stone_1.png</Icon>
+  </Identity>
+  <Minimap>
+    <Type>stone</Type>
+    <Colour r="128" g="128" b="128"/>
+  </Minimap>
+  <ResourceSupply>
+    <KillBeforeGather>false</KillBeforeGather>
+    <Amount>1000</Amount>
+    <Type>stone.rock</Type>
+	<MaxGatherers>12</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/resource/sel_stone.xml</select>
+    </SoundGroups>
+  </Sound>
+</Entity>

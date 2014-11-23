@@ -1,0 +1,18 @@
+{
+	"pair": "mauryans/pair_armor_imperial_01",
+	"genericName": "Four-Armed Army",
+	"description": "The Indian martial tradition calls for a 'four armed' army, which refers to the four main arms of a combined-arms army.",
+	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 700},
+	"requirements": {"tech": "phase_imperial"},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "armor_plates_swords.png",
+	"researchTime": 40,
+	"tooltip": "All soldiers, except Elephants, +1 Hack, Pierce, and Crush armor levels.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 1.0},
+		{"value": "Armour/Pierce", "add": 1.0},
+		{"value": "Armour/Crush", "add": 1.0}
+	],
+	"affects": ["Soldier -Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Armour>
+    <Hack>7</Hack>
+    <Pierce>3</Pierce>
+    <Crush>1</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>0.0</Hack>
+      <Crush>12.0</Crush>
+	  <Bonuses>
+		<BonusStructures>
+		  <Classes>Structure</Classes>
+		  <Multiplier>2.0</Multiplier>
+		</BonusStructures>
+		<BonusPrimary>
+		  <Classes>Infantry Spear</Classes>
+		  <Multiplier>1.25</Multiplier>
+		</BonusPrimary>
+		<BonusSecondary>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>1.25</Multiplier>
+		</BonusSecondary>
+	  </Bonuses>
+    </Melee>
+    <Charge>
+      <Hack>0.0</Hack>
+      <Crush>20.0</Crush>
+	  <Bonuses>
+		<BonusPrimary>
+		  <Classes>Infantry Spear</Classes>
+		  <Multiplier>1.25</Multiplier>
+		</BonusPrimary>
+		<BonusSecondary>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>1.25</Multiplier>
+		</BonusSecondary>
+	  </Bonuses>
+    </Charge>
+  </Attack>
+  <Identity>
+    <Civ>maur</Civ>
+    <GenericName>Warrior</GenericName>
+    <SpecificName>Yōddha योद्धा</SpecificName>
+	<SelectionGroupName>units/maur_champion_infantry</SelectionGroupName>
+    <VisibleClasses datatype="tokens">Siege -Sword Mace</VisibleClasses>
+    <History>.</History>
+    <Icon>units/maur_champion_maceman.png</Icon>
+	<Tooltip>Counters: 2x vs. Structures, 1.25x vs. Spear Infantry and Elephants.
+Countered by: Archer Infantry and Archer Cavalry.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>units/mauryans/champion_maceman.xml</Actor>
+  </VisualActor>
+</Entity>

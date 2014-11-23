@@ -1,0 +1,16 @@
+{
+	"genericName": "Stronghold",
+	"description": ".",
+	"cost": {"food": 0, "wood": 250, "stone": 300, "metal": 0},
+	"requirements": {"tech": "phase_imperial"},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "celtic_tower.png",
+	"researchTime": 40,
+	"tooltip": "Fortress +50% Health, +100 Stone Cost.",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.5},
+		{"value": "Cost/Resources/stone", "add": 100}
+	],
+	"affects": ["Fortress"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

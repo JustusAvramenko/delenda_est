@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia">
+  <Footprint>
+    <Circle radius="4.0"/>
+    <Height>2.5</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Generic Ruins</GenericName>
+    <SpecificName>Ruins</SpecificName>
+    <Tooltip>These ruins that can be mined for resources.</Tooltip>
+    <Icon>gaia/geology_stone_1.png</Icon>
+  </Identity>
+  <Minimap>
+    <Type>stone</Type>
+    <Colour r="128" g="128" b="128"/>
+  </Minimap>
+  <Obstruction>
+    <Static width="7.0" depth="7.0"/>
+  </Obstruction>
+  <ResourceSupply>
+    <KillBeforeGather>false</KillBeforeGather>
+    <Amount>500</Amount>
+    <Type>stone.ruins</Type>
+	<MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <Selectable>
+    <EditorOnly disable=""/>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.4</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_universal.xml</select>
+      <constructed>interface/complete/building/complete_universal.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+</Entity>

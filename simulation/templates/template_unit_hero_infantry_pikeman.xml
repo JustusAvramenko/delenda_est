@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry">
+  <Armour>
+    <Hack>15</Hack>
+    <Pierce>10</Pierce>
+    <Crush>10</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>15.0</Hack>
+      <Pierce>0.0</Pierce>
+      <MaxRange>8.0</MaxRange>
+	  <Bonuses>
+		<BonusCavMelee>
+		  <Classes>Cavalry</Classes>
+		  <Multiplier>4.0</Multiplier>
+		</BonusCavMelee>
+	  </Bonuses>
+    </Melee>
+    <Charge>
+      <Hack>30.0</Hack>
+      <Pierce>0.0</Pierce>
+      <MaxRange>8.0</MaxRange>
+	  <Bonuses>
+		<BonusCharge>
+		  <Classes>Cavalry</Classes>
+		  <Multiplier>4.0</Multiplier>
+		</BonusCharge>
+	  </Bonuses>
+    </Charge>
+  </Attack>
+  <Identity>
+    <VisibleClasses datatype="tokens">Melee Spear Pike</VisibleClasses>
+    <GenericName>Hero Pikeman</GenericName>
+    <Tooltip>Counters: 4x vs. All Cavalry.
+Countered by: Ranged Units and Sword Infantry.</Tooltip>
+    <Formations datatype="tokens">
+      formations/phalanx
+      formations/syntagma
+    </Formations>
+  </Identity>
+  <Loot>
+    <wood>100</wood>
+    <metal>100</metal>
+  </Loot>
+  <Stamina>
+    <Max>1200</Max>
+  </Stamina>
+  <UnitMotion>
+    <WalkSpeed>7.0</WalkSpeed>
+    <Run>
+      <Speed>13</Speed>
+    </Run>
+  </UnitMotion>
+</Entity>
