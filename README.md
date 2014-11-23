@@ -224,11 +224,20 @@ Mercenaries
 =========================
 The following would be the ideal implementation of Mercenaries in the game. Some things this mod is in the process of implementing, but capturing Mercenary Camps and other features (like altering the Camp's ProductionQueue based on who owns it) cannot be implemented until these things are added to the core game.
 
-- Types available to players based on map biome and player's civilization
+- Mercenary unit-types available to players based on map biome and the civilization of the owning player
 - Trained at Mercenary Camps dotted around the map, capturable by players. The number of camps determined by the number of players: 1 merc camp for 2 players, 2 merc camps for 3-4 players, 3 merc camps for 5-6 players
-- Cost no population, but can only be trained in limited numbers or are otherwise limited in some way; this is normally the only way a player can train more units above the population cap
+- Mercenaries cost no population, but can only be trained in limited numbers or are otherwise limited in some way; this is normally the only way a player can train more units above the population cap
 - Metal is almost always one of their costs, usually replacing the Food cost
 - They do not perform economic tasks, but they can build structures
 - They do not contribute to gaining Loot, as they "keep booty for themselves"
 - The rest of their stats are comparable to their citizen-soldier counterparts at the Elite rank, and they do not promote to new ranks
 - Each mercenary soldier comes with 1-2 tech upgrades researchable at the merc camp when captured by the player. For instance, Balearic Slingers and Rhodian Slingers can have a "Lead Sling Bullets" technology at the Merc Camp, a tech not normally available to civs with those mercs
+
+So, for example: 
+
+An "Egyptian Biome" map like Nile River
+- 4 Players
+- 2 Mercenary Camps on the map, capturable by any player
+- 2 "Egyptian Biome" Mercs available at the Camps: Libyan Skirmisher, Garamantine Camel Raider
+- Up to 3 Mercs available, based on the capturing player's civilization: Ptolemies (Mercenary Thureophoros, Nubian Archer, Galatian Swordsman); Seleucids (Mercenary Thureophoros, Thracian Swordsman, Tarantine Cavalry); Spartans (Cretan Mercenary Archer, Rhodian Slinger, Tegean Hoplite); Iberians (Balearic Slinger, Greek Settler Hoplite, Gaesatae).
+- None of the mercs cost population room, but all cost an amount of metal, and they are each limited to 20 alive at a time.
