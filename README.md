@@ -323,8 +323,8 @@ Team Bonuses:
 - "Peloponnesian League": Allies can train Spartiate champion infantry. NOT IMPLEMENTED.
 
 Civ Bonuses: 
-- "Othismos": Spartans can make use of the Phalanx formation without researching a technology. NOT IMPLEMENTED.
-- "Laws of Lycurgus": Infantry rank promotion upgrades cost no resources, except time. NOT IMPLEMENTED.
+- "Othismos": Spartans can make use of the Phalanx formation without researching a technology. NOT IMPLEMENTED: TECHS UNLOCKING FORMATIONS.
+- "Laws of Lycurgus": Infantry rank promotion upgrades cost no resources, except time.
 - "Spartan Womanhood": Spartan women cannot be captured (CAPTURING NOT IMPLEMENTED) and they can build Defense Towers and Palisades.
 - "Hellenization": Building a Theatron special building increases territory effect for all buildings +20%.
 
