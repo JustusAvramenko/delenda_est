@@ -6,9 +6,10 @@
 	"requirementsTooltip": "Unlocked in Town Phase. Requires Wheelbarrow.",
 	"icon": "coinage.png",
 	"researchTime": 60,
-	"tooltip": "Build Storehouses in neutral territory.",
+	"tooltip": "Build Storehouses in neutral territory and decrease their decay rate by -50%.",
 	"modifications": [
-		{"value": "BuildRestrictions/Territory", "replace": ["own", "neutral"]}
+		{"value": "BuildRestrictions/Territory", "replace": ["own", "neutral"]},
+		{"value": "TerritoryDecay/HealthDecayRate", "multiply": 0.5}
 	],
 	"affects": ["Storehouse"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
