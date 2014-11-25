@@ -340,3 +340,11 @@ Notable Technologies:
 - "Tyrtean Paeans": All units +10% walk speed.*
 - "The Agoge": Barracks +5 Population Cap and +1000 Health.
 - "Feminine Mystique": Female Citizens +50% Health, +2 Attack.*
+
+MISCELLANEOUS ADD-ONS
+=================================================
+- Groves are a new type of tree resource I wish to replace most trees with.
+- I am experimenting trying to help pathfinding performance by allowing units to walk through trees. For the most part this looks okay and doesn't look bad. There are a few ways to make this better though, which can be discussed: Walls should be placeable over trees, removing the trees in the process; Groves could allow for ambush tactics by barbarian cis; Siege weapons should still path around groves at least.
+- Updated Neareastern Badlands (2) to be smaller. The original was too big for 2 players.
+- Updated a lot of the Sandbox demo maps for each civ.
+- Experimented with some of Enrique's new unit meshes. Use keyword "test" in Atlas to find those entities.
