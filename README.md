@@ -344,7 +344,7 @@ Notable Technologies:
 MISCELLANEOUS ADD-ONS
 =================================================
 - Groves are a new type of tree resource I wish to replace most trees with.
-- I am experimenting trying to help pathfinding performance by allowing units to walk through trees. For the most part this looks okay and doesn't look bad. There are a few ways to make this better though, which can be discussed: Walls should be placeable over trees, removing the trees in the process; Groves could allow for ambush tactics by barbarian cis; Siege weapons should still path around groves at least.
+- I am experimenting trying to help pathfinding performance by allowing units to walk through trees. For the most part this looks okay and doesn't look bad. There are a few ways to make this better though, which can be discussed: Walls should be placeable over trees, removing the trees in the process; Groves could allow for ambush tactics by barbarian civs; Siege weapons should still path around groves at least.
 - Updated Neareastern Badlands (2) to be smaller. The original was too big for 2 players.
 - Updated a lot of the Sandbox demo maps for each civ.
 - Experimented with some of Enrique's new unit meshes. Use keyword "test" in Atlas to find those entities.
