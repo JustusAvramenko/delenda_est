@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_infantry_ranged_slinger">
+<Entity parent="template_unit_mercenary_infantry_ranged_slinger">
   <Builder>
     <Entities datatype="tokens">
       structures/cart_embassy_celtic
@@ -8,26 +8,21 @@
       structures/{civ}_wonder
     </Entities>
   </Builder>
-  <Cost>
-    <Resources>
-      <food>0</food>
-	  <stone>40</stone>
-	  <metal>50</metal>
-    </Resources>
-  </Cost>
   <Identity>
     <Civ>cart</Civ>
     <SelectionGroupName>units/cart_infantry_slinger_b</SelectionGroupName>
     <GenericName>Balearic Slinger</GenericName>
     <SpecificName>Qallāʿ Ibušimi</SpecificName>
-    <VisibleClasses datatype="tokens">Iberian Mercenary</VisibleClasses>
+    <VisibleClasses datatype="tokens">Iberian</VisibleClasses>
     <History>Levied from the Balearic Islands off Spain, these slingers proved to be the greatest the world ever produced, capable of hurling jagged rocks over distances that archers could not match. It was a Balearic slinger that heavily wounded the Roman consul Paullus at the beginning of the bloody battle at Cannae. Stones flung from slings were able to crush and puncture through armor at long ranges, be it iron or bronze.</History>
     <Icon>units/cart_infantry_slinger.png</Icon>
   </Identity>
-  <Looter disable=""/>
   <Promotion>
     <Entity>units/cart_infantry_slinger_a</Entity>
   </Promotion>
+  <TrainingRestrictions>
+    <Category>MercIberian</Category>
+  </TrainingRestrictions>
   <VisualActor>
     <Actor>units/carthaginians/infantry_slinger_b.xml</Actor>
   </VisualActor>
