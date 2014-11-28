@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_resource">
+  <Auras>
+    <Aura1>
+      <Type>garrisonedUnits</Type>
+      <Affects>Domestic</Affects>
+      <Modifications>
+        <ResourceTrickle.FoodRate>
+		  <Add>1</Add>
+		</ResourceTrickle.FoodRate>
+      </Modifications>
+      <AuraName>Ranching and Corralling</AuraName>
+      <AuraDescription>Garrison Domestic Animals within the Corral to enable a slow trickle of Food.</AuraDescription>
+    </Aura1>
+  </Auras>
   <Cost>
     <BuildTime>50</BuildTime>
     <Resources>
@@ -12,11 +25,11 @@
   </Footprint>
   <GarrisonHolder>
     <Max>10</Max>
-    <EjectHealth>0.1</EjectHealth>
+    <EjectHealth>0.5</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Animal</List>
+    <List datatype="tokens">Domestic</List>
     <BuffHeal>1</BuffHeal>
-    <LoadingRange>2</LoadingRange>
+    <LoadingRange>4</LoadingRange>
   </GarrisonHolder>
   <Health>
     <Max>500</Max>
