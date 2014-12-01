@@ -1,0 +1,16 @@
+{
+	"genericName": "Antikythera Mechanism",
+	"description": "The Antikythera Mechanism is dated anywhere from 300 BC to 85 BC. It is of Greek origin, based on its numerous Koine Greek inscriptions. It was designed for navigation, accurately predicting the placement of stars and other astronomical objects and events. Created from wood and bronze, the mechanism itself was made up of dozens of gears and wheels with such mathematical precision it is speculated to be the brainchild of the famous Greek mathematician Archimedes. Other speculated origins include the great maritime center, Rhodes, the Library of Pergamon, and the Library of Alexandria. A mechanism of such precision and complexity would not be created in the West for another thousand years.",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 200},
+	"requirements": {"tech": "phase_imperial"},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "antikythera_mechanism.png",
+	"researchTime": 40,
+	"tooltip": "All units +5% speed and +10% vision range.",
+	"modifications": [
+		{"value": "UnitMotion/WalkSpeed", "multiply": 1.05},
+		{"value": "Vision/Range", "multiply": 1.1}
+	],
+	"affects": ["Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
