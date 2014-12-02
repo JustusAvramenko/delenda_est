@@ -44,7 +44,7 @@ The unit balance has been changed. The following list gives the basic changes, i
 Melee Citizen-Infantry
 ===========
 Sword Infantry
-- Cost: 60F 40M
+- Cost: 60F 25M
 - Health: 100
 - Attack: Hack, High
 - Bonus: 1.5x vs. Infantry and Elephants
