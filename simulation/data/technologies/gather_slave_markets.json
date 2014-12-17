@@ -1,0 +1,19 @@
+{
+	"genericName": "Slave Markets",
+	"description": ".",
+	"cost": {"food": 600, "wood": 0, "stone": 0, "metal": 600},
+	"requirements": {"tech": "phase_imperial"},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "population.png",
+	"researchTime": 40,
+	"tooltip": "Gatherers +20% gather rates and +5 carrying capacity for all resources.",
+	"modifications": [
+		{"value": "ResourceGatherer/BaseSpeed", "multiply": 1.2},
+		{"value": "ResourceGatherer/Capacities/food", "add": 5},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 5},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 5},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 5}
+	],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
