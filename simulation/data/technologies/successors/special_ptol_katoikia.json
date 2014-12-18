@@ -1,0 +1,21 @@
+{
+	"genericName": "Katoikia",
+	"description": ".",
+	"cost": {"food": 0, "wood": 500, "stone": 500, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_imperial"}, {"civ": "ptol"}]},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "architecture.png",
+	"researchTime": 40,
+	"tooltip": "Upgrade Military Colonies to Civic Center status, with greater health and territory effects.",
+	"modifications": [
+		{"value": "Health/Max", "add": 1000},
+		{"value": "Cost/BuildTime", "add": 100},
+		{"value": "TerritoryInfluence/Radius", "multiply": 2},
+		{"value": "Cost/Resources/wood", "add": 200},
+		{"value": "Cost/Resources/stone", "add": 200},
+		{"value": "Cost/Resources/metal", "add": 200},
+		{"value": "VisualActor/Actor", "replace": "structures/ptolemies/civic_centre.xml"}
+	],
+	"affects": ["MilitaryColony"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

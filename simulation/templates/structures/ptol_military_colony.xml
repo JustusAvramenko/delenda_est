@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
+  <AlertRaiser>
+    <MaximumLevel>2</MaximumLevel>
+    <Range>140</Range>
+  </AlertRaiser>
   <Attack disable=""/>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
@@ -17,8 +21,8 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="25.0" depth="25.0"/>
-    <Height>12.0</Height>
+    <Square width="42.0" depth="35"/>
+    <Height>8.0</Height>
   </Footprint>
   <Health>
     <Max>2000</Max>
@@ -37,7 +41,7 @@
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
   <Obstruction>
-    <Static width="23.0" depth="23.0"/>
+    <Static width="40.0" depth="37"/>
   </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
@@ -49,6 +53,7 @@
     <Technologies datatype="tokens">
 	  phase_city_generic
 	  phase_imperial_generic
+	  successors/special_ptol_katoikia
 	  upgrade_rank_advanced_infantry
 	  upgrade_rank_elite_infantry
 	  upgrade_rank_advanced_cavalry

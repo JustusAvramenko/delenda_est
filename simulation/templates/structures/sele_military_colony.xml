@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
+  <AlertRaiser>
+    <MaximumLevel>2</MaximumLevel>
+    <Range>140</Range>
+  </AlertRaiser>
   <Attack disable=""/>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
@@ -16,10 +20,6 @@
       <metal>200</metal>
     </Resources>
   </Cost>
-  <Footprint>
-    <Square width="25.5" depth="25.5"/>
-    <Height>12.0</Height>
-  </Footprint>
   <Health>
     <Max>2000</Max>
     <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
@@ -36,9 +36,6 @@
     <Icon>structures/military_settlement.png</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
-  <Obstruction>
-    <Static width="23.0" depth="23.0"/>
-  </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
 	  units/sele_infantry_swordsman_b
@@ -48,6 +45,7 @@
     <Technologies datatype="tokens">
 	  phase_city_generic
 	  phase_imperial_generic
+	  successors/special_sele_tetrapolis
 	  upgrade_rank_advanced_infantry
 	  upgrade_rank_elite_infantry
 	  upgrade_rank_advanced_cavalry
