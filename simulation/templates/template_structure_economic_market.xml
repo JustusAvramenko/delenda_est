@@ -35,6 +35,13 @@
   <Obstruction>
     <Static width="30.0" depth="26.0"/>
   </Obstruction>
+  <ResourceTrickle>
+	<FoodRate>0.0</FoodRate>
+	<WoodRate>0.0</WoodRate>
+	<StoneRate>0.0</StoneRate>
+	<MetalRate>0.0</MetalRate>
+	<Interval>6000</Interval>
+  </ResourceTrickle>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_market.xml</select>
@@ -52,6 +59,7 @@
     <Technologies datatype="tokens">
       speed_trader_01
 	  speed_trader_02
+	  market_taxes
 	  gather_slave_markets
     </Technologies>
     <Entities datatype="tokens">
