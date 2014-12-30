@@ -3,7 +3,7 @@
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
-      <wood>200</wood>
+      <wood>300</wood>
 	  <stone>0</stone>
 	  <metal>0</metal>
     </Resources>
@@ -13,7 +13,7 @@
     <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <Civ>mace</Civ>
+    <Civ>theb</Civ>
     <SpecificName>Synergeíon Poliorkías</SpecificName>
 	<GenericName>Siege Workshop</GenericName>
     <VisibleClasses datatype="tokens">
@@ -21,7 +21,7 @@
 	  City
 	  SiegeWorkshop
 	</VisibleClasses>
-    <History>The Macedonians were innovators in siege craft.</History>
+    <History>At the siege of the Athenian fortress at Delium, the Thebans employed what may be deemed the first recorded use of a flame thrower in warfare.</History>
     <Tooltip>Build siege engines. Research siege technologies.</Tooltip>
     <Icon>structures/siege_workshop.png</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
@@ -29,16 +29,14 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/mace_mechanical_siege_oxybeles_packed
-      units/mace_mechanical_siege_lithobolos_packed
-      units/mace_mechanical_siege_ram
-      units/mace_mechanical_siege_tower
+	  units/theb_mechanical_siege_fireraiser
+	  units/theb_mechanical_siege_oxybeles_packed
+      units/theb_mechanical_siege_lithobolos_packed
     </Entities>
     <Technologies datatype="tokens">
 	  successors/pair_siege_ranged_01_mace
-	  pair_siege_rams_01
-	  pair_siege_build_armor
 	  successors/siege_packing
+	  hellenes/siege_buildtime_athen
     </Technologies>
   </ProductionQueue>
   <VisualActor>

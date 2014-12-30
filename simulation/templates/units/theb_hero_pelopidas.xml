@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras>
+    <Aura1>
+      <Type>formation</Type>
+      <Affects>Infantry+Spear</Affects>
+      <Modifications>
+        <Attack.Melee.Hack>
+		  <Multiply>1.20</Multiply>
+		</Attack.Melee.Hack>
+		<UnitMotion.WalkSpeed>
+		  <Multiply>1.20</Multiply> 
+		</UnitMotion.WalkSpeed>
+      </Modifications>
+      <AuraName>"Oblique Order" Aura</AuraName>
+      <AuraDescription>Sacred Band champions and Boeotian Hoplites +20% attack and +20% speed within his formation.</AuraDescription>
+    </Aura1>
+  </Auras>
+  <Identity>
+    <Civ>theb</Civ>
+	<GenericName>Pelopidas</GenericName>
+    <SpecificName>Pelopidas</SpecificName>
+    <History>Pelopidas (died 364 BC) was an important Theban statesman and general in Greece. He led the Theban Sacred Band to defeat a much larger Spartan force early in his career. Later he accompanied his friend and co-Boeotarch, Epaminondas, in defeating the Spartans at the Battle of Leuktra using the novel Oblique Order phalanx formation, focusing their forces on one part of the Spartan line in order to break it and route the rest of the enemy army. At the end of his life, Pelopidas was called upon by the towns of Thessaly to protect them against the rising ambitions of Alexander of Pharae. He managed to defeat Alexander, but in his haste to strike the final blow on Alexander, Pelopidas was himself slain.</History>
+    <Icon>units/hele_hero_themistocles.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/athenians/themistocles.xml</Actor>
+  </VisualActor>
+</Entity>

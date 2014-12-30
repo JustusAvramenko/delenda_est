@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_spearman">
+  <Attack>
+    <Melee>
+      <MaxRange>6.0</MaxRange>
+	  <Bonuses>
+		<BonusSpartans>
+		  <Civ>spart</Civ>
+		  <Classes></Classes>
+		  <Multiplier>1.2</Multiplier>
+		</BonusSpartans>
+	  </Bonuses>
+    </Melee>
+    <Charge>
+      <MaxRange>6.0</MaxRange>
+	  <Bonuses>
+		<BonusSpartans>
+		  <Civ>spart</Civ>
+		  <Classes></Classes>
+		  <Multiplier>1.2</Multiplier>
+		</BonusSpartans>
+	  </Bonuses>
+    </Charge>
+  </Attack>
+  <Auras>
+	<Aura1>
+      <Type>global</Type>
+	  <AffectedPlayers>Ally</AffectedPlayers>
+      <Affects>Structure</Affects>
+      <Modifications>
+        <Cost.BuildTime><Multiply>0.75</Multiply></Cost.BuildTime>
+      </Modifications>
+      <AuraName>"Alliance Builder" Aura</AuraName>
+      <AuraDescription>Allied buildings construct +25 faster while he lives.</AuraDescription>
+    </Aura1>
+  </Auras>
+  <Identity>
+    <Civ>theb</Civ>
+	<GenericName>Epaminondas</GenericName>
+    <SpecificName>Epameinondas</SpecificName>
+	<History>Leader, statesman, and general of the Boeotian city-state Thebes during its moment of ascendency during the middle decades of the 4th century BC.</History>
+    <Tooltip>Counters: 2x vs. All Cavalry.
+Countered by: Ranged Units and Sword Infantry.
+Special: +20% attack vs. Spartans.</Tooltip>
+    <Icon>units/hele_hero_xenophon.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/athenians/iphicrates.xml</Actor>
+  </VisualActor>
+</Entity>
