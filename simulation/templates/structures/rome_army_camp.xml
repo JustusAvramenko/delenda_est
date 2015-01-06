@@ -13,7 +13,7 @@
   <Attack>
     <Ranged>
       <Hack>0.0</Hack>
-      <Pierce>25.0</Pierce>
+      <Pierce>20.0</Pierce>
       <Crush>0.0</Crush>
       <MaxRange>80.0</MaxRange>
       <MinRange>12.0</MinRange>
@@ -50,7 +50,7 @@
     <LoadingRange>6</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>3600</Max>
+    <Max>3000</Max>
     <Repairable>false</Repairable>
     <SpawnEntityOnDeath>rubble/rubble_rome_sb</SpawnEntityOnDeath>
   </Health>
@@ -79,7 +79,11 @@
   <TerritoryDecay>
     <HealthDecayRate>5</HealthDecayRate>
   </TerritoryDecay>
-  <TerritoryInfluence disable=""/>
+  <TerritoryInfluence>
+    <Root>true</Root>
+    <Radius>0</Radius>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
@@ -93,6 +97,7 @@
     </Entities>
     <Technologies datatype="tokens">
 	  romans/decay_logistics
+	  romans/special_colonia
     </Technologies>
   </ProductionQueue>
   <Vision>

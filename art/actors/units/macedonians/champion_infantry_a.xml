@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="biped/new/inf_sarissa_rest.dae" name="Idle" speed="100"/>
+      </animations>
+      <mesh>skeletal/new/armor/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_newhead.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/sarissa.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/mace_hypaspist.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/heads/hele_su3.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Armor-2">
+      <textures>
+        <texture file="skeletal/hele_pezhetairoi_2.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-3">
+      <textures>
+        <texture file="skeletal/mace_bronzeshield_2.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-4">
+      <textures>
+        <texture file="skeletal/mace_hero_craterus.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-5">
+      <textures>
+        <texture file="skeletal/hele_pezhetairoi.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-6">
+      <textures>
+        <texture file="skeletal/mace_hypaspist_2.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-7">
+      <textures>
+        <texture file="skeletal/hele_pezhetairoi_2.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-8">
+      <textures>
+        <texture file="skeletal/hele_xenophon.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-10">
+      <textures>
+        <texture file="skeletal/spart_phalangite_officer.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
