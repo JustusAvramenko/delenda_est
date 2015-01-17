@@ -401,9 +401,13 @@ function initMain()
 		// to allow easy keyboard selection of maps
 		Engine.GetGUIObjectByName("mapSelection").focus();
 	}
-	// Sync g_GameAttributes to everyone.
+
 	if (g_IsController)
+	{
+		loadGameAttributes();
+		// Sync g_GameAttributes to everyone.
 		updateGameAttributes();
+	}
 }
 
 function handleNetMessage(message)
@@ -688,11 +692,74 @@ function loadMapData(name)
 	return g_MapData[name];
 }
 
+const FILEPATH_MATCHSETTINGS_SP = "config/matchsettings.json";
+const FILEPATH_MATCHSETTINGS_MP = "config/matchsettings.mp.json";
+function loadGameAttributes()
+{
+	if (Engine.ConfigDB_GetValue("user", "persistmatchsettings") != "true")
+		return;
+
+	var settingsFile = g_IsNetworked ? FILEPATH_MATCHSETTINGS_MP : FILEPATH_MATCHSETTINGS_SP;
+	if (!Engine.FileExists(settingsFile))
+		return;
+
+	var attrs = Engine.ReadJSONFile(settingsFile);
+	if (!attrs || !attrs.settings)
+		return;
+
+	g_IsInGuiUpdate = true;
+
+	var mapName = attrs.map || "";
+	var mapSettings = attrs.settings;
+
+	// Assign new seeds and match id
+	attrs.matchID = Engine.GetMatchID();
+	mapSettings.Seed = Math.floor(Math.random() * 65536);
+	mapSettings.AISeed = Math.floor(Math.random() * 65536);
+
+	// TODO: Check new attributes for being semantically correct.
+	g_GameAttributes = attrs;
+
+	var mapFilterSelection = Engine.GetGUIObjectByName("mapFilterSelection");
+	mapFilterSelection.selected = mapFilterSelection.list_data.indexOf(attrs.mapFilter);
+
+	var mapTypeSelection = Engine.GetGUIObjectByName("mapTypeSelection");
+	mapTypeSelection.selected = mapTypeSelection.list_data.indexOf(attrs.mapType);
+
+	initMapNameList();
+
+	var mapSelectionBox = Engine.GetGUIObjectByName("mapSelection");
+	mapSelectionBox.selected = mapSelectionBox.list_data.indexOf(mapName);
+
+	if (mapSettings.PopulationCap)
+	{
+		var populationCapBox = Engine.GetGUIObjectByName("populationCap");
+		populationCapBox.selected = populationCapBox.list_data.indexOf(mapSettings.PopulationCap);
+	}
+	if (mapSettings.StartingResources)
+	{
+		var startingResourcesBox = Engine.GetGUIObjectByName("startingResources");
+		startingResourcesBox.selected = startingResourcesBox.list_data.indexOf(mapSettings.StartingResources);
+	}
+
+	g_IsInGuiUpdate = false;
+
+	onGameAttributesChange();
+}
+
+function saveGameAttributes()
+{
+	var attributes = Engine.ConfigDB_GetValue("user", "persistmatchsettings") == "true" ? g_GameAttributes : {};
+	Engine.WriteJSONFile(g_IsNetworked ? FILEPATH_MATCHSETTINGS_MP : FILEPATH_MATCHSETTINGS_SP, attributes);
+}
 ////////////////////////////////////////////////////////////////////////////////////////////////
 // GUI event handlers
 
 function cancelSetup()
 {
+	if (g_IsController)
+		saveGameAttributes();
+
 	Engine.DisconnectNetworkGame();
 
 	if (Engine.HasXmppClient())
@@ -803,7 +870,6 @@ function selectMapType(type)
 	{
 	case "scenario":
 		// Set a default map
-		// TODO: This should be remembered from the last session
 		g_GameAttributes.mapPath = "maps/scenarios/";
 		g_GameAttributes.map = g_GameAttributes.mapPath + (g_IsNetworked ? DEFAULT_NETWORKED_MAP : DEFAULT_OFFLINE_MAP);
 		g_GameAttributes.settings.AISeed = Math.floor(Math.random() * 65536);
@@ -885,6 +951,10 @@ function selectMap(name)
 		for (var prop in mapSettings)
 			g_GameAttributes.settings[prop] = mapSettings[prop];
 
+	// Ignore gaia
+	if (g_GameAttributes.settings.PlayerData.length && !g_GameAttributes.settings.PlayerData[0])
+		g_GameAttributes.settings.PlayerData.shift();
+
 	// Use default AI if the map doesn't specify any explicitly
 	for (var i = 0; i < g_GameAttributes.settings.PlayerData.length; ++i)
 	{
@@ -926,6 +996,8 @@ function launchGame()
 	// Check that we have a map
 	if (!g_GameAttributes.map)
 		return;
+
+	saveGameAttributes();
 
 	if (g_GameAttributes.map == "random")
 		selectMap(Engine.GetGUIObjectByName("mapSelection").list_data[Math.floor(Math.random() *
@@ -1267,8 +1339,12 @@ function onGameAttributesChange()
 	// Load the description from the map file, if there is one
 	var description = mapSettings.Description ? translate(mapSettings.Description) : translate("Sorry, no description available.");
 
-	// Describe the number of players
-	var playerString = sprintf(translatePlural("%(number)s player. %(description)s", "%(number)s players. %(description)s", numPlayers), { number: numPlayers, description: description });
+	// Describe the number of players and the victory conditions
+	var playerString = sprintf(translatePlural("%(number)s player. ", "%(number)s players. ", numPlayers), { number: numPlayers });
+	let victory = translate(victories.text[victoryIdx]);
+	if (victoryIdx != VICTORY_DEFAULTIDX)
+		victory = "[color=\"orange\"]" + victory + "[/color]";
+	playerString += translate("Victory Condition:") + " " + victory + ".\n\n" + description;
 
 	for (var i = 0; i < MAX_PLAYERS; ++i)
 	{
@@ -1293,7 +1369,7 @@ function onGameAttributesChange()
 		var pDefs = g_DefaultPlayerData ? g_DefaultPlayerData[i] : {};
 
 		// Common to all game types
-		var color = rgbToGuiColor(getSetting(pData, pDefs, "Colour")); 
+		var color = rgbToGuiColor(getSetting(pData, pDefs, "Colour"));
 		pColor.sprite = "colour:" + color + " 100";
 		pName.caption = translate(getSetting(pData, pDefs, "Name"));
 
@@ -1602,7 +1678,7 @@ function addChatMessage(msg)
 		var pData = mapSettings.PlayerData ? mapSettings.PlayerData[player] : {};
 		var pDefs = g_DefaultPlayerData ? g_DefaultPlayerData[player] : {};
 
-		color = rgbToGuiColor(getSetting(pData, pDefs, "Colour")); 
+		color = rgbToGuiColor(getSetting(pData, pDefs, "Colour"));
 	}
 
 	var formatted;
@@ -1862,7 +1938,7 @@ function getVictoryConditions()
 	var r = {};
 	r.text = [translate("None")];
 	r.data = ["endless"];
-	r.scripts = [[]];
+	r.scripts = [[""]];
 	for (var vc in g_VictoryConditions)
 	{
 		r.data.push(vc);

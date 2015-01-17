@@ -2,13 +2,16 @@
 	"pair": "pair_gather_03",	
 	"genericName": "Shaft Mining",
 	"description": "Burrow into mother Earth to mine metal ore.",
-	"cost": {"food": 0, "wood": 200, "stone": 200, "metal": 0},
+	"cost": {"food": 0, "wood": 250, "stone": 250, "metal": 0},
 	"requirements": {"tech": "phase_city"},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "mining_shaft.png",
 	"researchTime": 40,
-	"tooltip": "Develop shaft mining. Gatherers +25% metal gathering rate.",
-	"modifications": [{"value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.25}],
+	"tooltip": "Gatherers +25% metal gathering rate, +10% stone gathering rate.",
+	"modifications": [
+		{"value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.25},
+		{"value": "ResourceGatherer/Rates/stone.rock", "multiply": 1.1}
+	],
 	"affects": ["Gatherer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
