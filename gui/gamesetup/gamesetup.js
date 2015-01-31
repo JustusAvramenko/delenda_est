@@ -12,7 +12,7 @@ const POPULATION_CAP_DATA = [50, 100, 150, 200, 250, 300, 500, 10000];
 const POPULATION_CAP_DEFAULTIDX = 5;
 // Translation: Amount of starting resources.
 const STARTING_RESOURCES = [translateWithContext("startingResources", "Very Low"), translateWithContext("startingResources", "Low"), translateWithContext("startingResources", "Medium"), translateWithContext("startingResources", "High"), translateWithContext("startingResources", "Very High"), translateWithContext("startingResources", "Extremely High")];
-const STARTING_RESOURCES_DATA = [100, 300, 500, 1000, 3000, 50000];
+const STARTING_RESOURCES_DATA = [100, 300, 500, 1000, 3000, 10000];
 const STARTING_RESOURCES_DEFAULTIDX = 1;
 // Max number of players for any map
 const MAX_PLAYERS = 8;
@@ -73,6 +73,9 @@ var g_AssignedCount = 0;
 // we'll start with a 'loading' message and switch to the main screen in the
 // tick handler
 var g_LoadingState = 0; // 0 = not started, 1 = loading, 2 = loaded
+
+// Filled by scripts in victory_conditions/
+var g_VictoryConditions = {};
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -943,6 +946,12 @@ function selectMap(name)
 
 	var mapData = loadMapData(name);
 	var mapSettings = (mapData && mapData.settings ? deepcopy(mapData.settings) : {});
+
+	// Reset victory conditions
+	var victories = getVictoryConditions();
+	var victoryIdx = (mapSettings.GameType !== undefined && victories.data.indexOf(mapSettings.GameType) != -1 ? victories.data.indexOf(mapSettings.GameType) : VICTORY_DEFAULTIDX);
+	g_GameAttributes.settings.GameType = victories.data[victoryIdx];
+	g_GameAttributes.settings.VictoryScripts = victories.scripts[victoryIdx];
 
 	// Copy any new settings
 	g_GameAttributes.map = name;
@@ -1938,7 +1947,7 @@ function getVictoryConditions()
 	var r = {};
 	r.text = [translate("None")];
 	r.data = ["endless"];
-	r.scripts = [[""]];
+	r.scripts = [[]];
 	for (var vc in g_VictoryConditions)
 	{
 		r.data.push(vc);

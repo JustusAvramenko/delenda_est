@@ -2,13 +2,13 @@
 	"pair": "pair_tower_01",	
 	"genericName": "Crenellations",
 	"description": "Crenellations on the battlements allow soldiers wider range of fire in defending a keep.",
-	"cost": {"food": 0, "wood": 0, "stone": 100, "metal": 100},
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 100},
 	"requirements": {"tech": "phase_town"},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "crenelations.png",
 	"researchTime": 40,
-	"tooltip": "Install crenellations on your towers to have 40% more arrows fired per garrisoned soldier.",
-	"modifications": [{"value": "BuildingAI/GarrisonArrowMultiplier", "multiply": 1.4}],
-	"affects": ["Defensive Tower"],
+	"tooltip": "Defense Towers +50% more arrows fired per garrisoned soldier.",
+	"modifications": [{"value": "BuildingAI/GarrisonArrowMultiplier", "multiply": 1.5}],
+	"affects": ["DefenseTower"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

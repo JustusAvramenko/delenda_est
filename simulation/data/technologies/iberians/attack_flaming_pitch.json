@@ -1,0 +1,20 @@
+{
+	"genericName": "Flaming Pitch",
+	"description": "Fire was a constant danger in a crowded town or city, even during peace time. In a siege, an army would typically loose flaming projectiles (like arrows and javelins) over the enemy walls in a bid to set the enemy's buildings on fire.",
+	"cost": {"food": 0, "wood": 1000, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_imperial"},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "flaming_pitch.png",
+	"researchTime": 40,
+	"tooltip": "Infantry Javelinists +10 crush attack (for a strong anti-building attack), but attack rate +50% slower and cost +10 Wood.",
+	"modifications": [
+		{"value": "Attack/Ranged/Crush", "add": 10.0},
+		{"value": "Attack/Ranged/RepeatTime", "multiply": 1.5},
+		{"value": "Cost/Resources/wood", "add": 10},
+		{"value": "VisualActor/Actor", "replace": "units/iberians/infantry_javelinist_b_fire.xml", "affects": "Basic"},
+		{"value": "VisualActor/Actor", "replace": "units/iberians/infantry_javelinist_a_fire.xml", "affects": "Advanced"},
+		{"value": "VisualActor/Actor", "replace": "units/iberians/infantry_javelinist_e_fire.xml", "affects": "Elite"}
+	],
+	"affects": ["Javelin Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
