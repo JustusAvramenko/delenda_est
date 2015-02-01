@@ -3,14 +3,9 @@
 	"specificName": {
 		"athen": "Autokratoría"
 	},
-	"description": "Moves your civilization from urbanism to imperialism, unlocking powerful technologies and abilities not available in earlier phases of expansion.",
-	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 1000},
-	"requirements": { "class": "Wonder", "number": 1 },
-	"requirementsTooltip": "Requires 1 Wonder to be built.",
-	"supersedes": "phase_city_athen",
-	"icon": "imperial_phase.png",
-	"researchTime": 60,
-	"tooltip": "Advance to Imperial Phase, which unlocks powerful technologies and abilities. Territory radius for Civic Centers increased by another +25%. Silver Owls civ bonus grants an extra +10% metal gather rate to all workers.",
+	"description": "Moves your civilization from urbanism to imperialism, unlocking powerful technologies and abilities not available in earlier phases of expansion. This is the Athenian imperial phase, where metal gathering rates are boosted because of the Silver Owls bonus.",
+	"requirements": {"all": [{"civ": "athen"}, {"tech":"phase_imperial_generic"}]},
+	"autoResearch": true,
 	"modifications": [{"value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.1}],
-	"soundComplete": "interface/alarm/alarm_phase.xml"
+	"affects": ["Gatherer"]
 }
