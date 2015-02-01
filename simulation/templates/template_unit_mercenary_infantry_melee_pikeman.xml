@@ -9,10 +9,12 @@
     </Resources>
   </Cost>
   <Identity>
-    <VisibleClasses datatype="tokens">-Citizen -Gatherer Mercenary</VisibleClasses>
+    <VisibleClasses datatype="tokens">-Citizen Mercenary</VisibleClasses>
   </Identity>
   <Looter disable=""/>
-  <ResourceGatherer disable=""/>
+  <ResourceGatherer>
+    <BaseSpeed>0.5</BaseSpeed>
+  </ResourceGatherer>
   <TrainingRestrictions>
     <Category>Mercenary20</Category>
   </TrainingRestrictions>
