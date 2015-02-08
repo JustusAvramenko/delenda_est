@@ -10,7 +10,7 @@
       <ElevationBonus>15</ElevationBonus>
       <ProjectileSpeed>60.0</ProjectileSpeed>
       <PrepareTime>1200</PrepareTime>
-      <RepeatTime>2000</RepeatTime>
+      <RepeatTime>4000</RepeatTime>
       <Spread>1.5</Spread>
       <PreferredClasses datatype="tokens">Organic</PreferredClasses>
       <Bonuses>
@@ -37,7 +37,7 @@
     <BuildTime>120</BuildTime>
     <Resources>
       <wood>100</wood>
-      <stone>100</stone>
+      <stone>0</stone>
     </Resources>
   </Cost>
   <Footprint>
@@ -53,16 +53,16 @@
     <LoadingRange>2</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>1000</Max>
+    <Max>500</Max>
     <SpawnEntityOnDeath>rubble/rubble_stone_2x2</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Defense Tower</GenericName>
     <Tooltip>Shoots arrows. Garrison to provide extra defense.</Tooltip>
     <Classes datatype="tokens">GarrisonTower -ConquestCritical</Classes>
-    <VisibleClasses datatype="tokens">Town Tower DefenseTower Ranged</VisibleClasses>
+    <VisibleClasses datatype="tokens">Village Tower DefenseTower Ranged</VisibleClasses>
     <Icon>structures/defense_tower.png</Icon>
-	<RequiredTechnology>unlock_defenses</RequiredTechnology>
+	<RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Loot>
     <xp>100</xp>
