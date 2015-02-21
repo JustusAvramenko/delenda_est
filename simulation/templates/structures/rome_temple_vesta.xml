@@ -18,7 +18,7 @@
     <Category>Vesta</Category>
   </BuildRestrictions>
   <Footprint replace="">
-    <Circle radius="11.0"/>
+    <Circle radius="60.0"/>
     <Height>12.0</Height>
   </Footprint>
   <Health>
@@ -50,6 +50,14 @@
       -pair_heal_03
     </Technologies>
   </ProductionQueue>
+  <Selectable>
+    <Overlay replace="">
+      <Texture>
+        <MainTexture>auras/test/1024x1024_aura.png</MainTexture>
+        <MainTextureMask>auras/test/1024x1024_aura_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_greek_theater.xml</select>
