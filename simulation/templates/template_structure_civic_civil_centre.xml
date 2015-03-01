@@ -23,7 +23,7 @@
   <Auras>
     <AuraWalls>
       <Type>range</Type>
-      <Radius>150</Radius>
+      <Radius>160</Radius>
       <Affects>StoneWall</Affects>
       <Modifications>
         <Health.Max>
@@ -31,8 +31,20 @@
 		</Health.Max>
       </Modifications>
       <AuraName>"Circuit Walls" Aura</AuraName>
-      <AuraDescription>City Walls +100% health within 150 meters of a Civic Center.</AuraDescription>
+      <AuraDescription>City Walls +100% health within 160 meters of a Civic Center.</AuraDescription>
     </AuraWalls>
+    <AuraCivic>
+      <Type>range</Type>
+      <Radius>40</Radius>
+      <Affects>Gatherer</Affects>
+      <Modifications>
+        <ResourceGatherer.Rates.food..grain>
+		  <Multiply>0.5</Multiply>
+		</ResourceGatherer.Rates.food..grain>
+      </Modifications>
+      <AuraName>"Civic Spaces" Farming Penalty</AuraName>
+      <AuraDescription>Gatherers -50% farm gather rate within 40 meters of Civic Centers and Temples.</AuraDescription>
+    </AuraCivic>
   </Auras>
   <BuildingAI>
     <DefaultArrowCount>3</DefaultArrowCount>

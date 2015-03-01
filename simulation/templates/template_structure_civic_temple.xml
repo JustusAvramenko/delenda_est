@@ -11,6 +11,18 @@
       <AuraName>Healing Aura</AuraName>
       <AuraDescription>Heal units at 1 HP per second to a distance of 40 meters.</AuraDescription>
     </heal>
+    <AuraCivic>
+      <Type>range</Type>
+      <Radius>40</Radius>
+      <Affects>Gatherer</Affects>
+      <Modifications>
+        <ResourceGatherer.Rates.food..grain>
+		  <Multiply>0.5</Multiply>
+		</ResourceGatherer.Rates.food..grain>
+      </Modifications>
+      <AuraName>"Civic Spaces" Farming Penalty</AuraName>
+      <AuraDescription>Gatherers -50% farm gather rate within 40 meters of Civic Centers and Temples.</AuraDescription>
+    </AuraCivic>
   </Auras>
   <BuildRestrictions>
     <Category>Temple</Category>
@@ -22,8 +34,8 @@
       <stone>300</stone>
     </Resources>
   </Cost>
-  <Footprint>
-    <Square width="19.0" depth="31.5"/>
+  <Footprint replace="">
+    <Circle radius="40.0"/>
     <Height>12.0</Height>
   </Footprint>
   <GarrisonHolder>
@@ -58,6 +70,14 @@
   <Obstruction>
     <Static width="17.5" depth="30.0"/>
   </Obstruction>
+  <Selectable>
+    <Overlay replace="">
+      <Texture>
+        <MainTexture>auras/test/1024x1024_aura.png</MainTexture>
+        <MainTextureMask>auras/test/1024x1024_aura_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_temple.xml</select>
