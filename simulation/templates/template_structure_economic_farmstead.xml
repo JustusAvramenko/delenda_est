@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_economic">
   <BuildRestrictions>
-    <Category>Farmstead</Category>
+    <Territory>own neutral</Territory>
+	<Category>Farmstead</Category>
   </BuildRestrictions>
   <Cost>
     <BuildTime>30</BuildTime>
@@ -14,12 +15,12 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <Max>900</Max>
+    <Max>1000</Max>
     <SpawnEntityOnDeath>rubble/rubble_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Farmstead</GenericName>
-    <Tooltip>Dropsite for the food resource. Research food gathering improvements. Unlock 8 Farm Fields for every Farmstead.</Tooltip>
+    <Tooltip>Dropsite for the food resource. Research food gathering improvements. Buildable in neutral and own territory.</Tooltip>
     <Classes datatype="tokens">-ConquestCritical DropsiteFood</Classes>
     <VisibleClasses datatype="tokens">Village Farmstead</VisibleClasses>
     <Icon>structures/farmstead.png</Icon>

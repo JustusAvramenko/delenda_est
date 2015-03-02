@@ -8,15 +8,15 @@
 	  <AffectedPlayers>Enemy</AffectedPlayers>
       <Modifications>
         <ResourceGatherer.Rates.food..grain>
-		  <Multiply>1.25</Multiply>
+		  <Multiply>2</Multiply>
 		</ResourceGatherer.Rates.food..grain>
       </Modifications>
       <AuraName>"Farmland" Aura</AuraName>
-      <AuraDescription>Gatherers +25% Food Gather Rate within 60 meters. This is a hack to create "Farmlands" in the game.</AuraDescription>
+      <AuraDescription>Gatherers +100% Farm Gather Rate within 60 meters. This is a hack to create "Farmlands" in the game.</AuraDescription>
     </Farmland>
   </Auras>
   <Footprint>
-    <Square width="60" depth="60"/>
+    <Square width="120" depth="120"/>
     <Height>9.0</Height>
   </Footprint>
   <Ownership/>
@@ -29,7 +29,6 @@
   <Selectable>
     <EditorOnly/>
 	<Overlay>
-      <AlwaysVisible/>
 	  <Texture>
         <MainTexture>auras/test/1024x1024_aura.png</MainTexture>
         <MainTextureMask>auras/test/1024x1024_aura_mask.png</MainTextureMask>
@@ -39,7 +38,7 @@
   <VisualActor>
     <SilhouetteDisplay>false</SilhouetteDisplay>
     <SilhouetteOccluder>true</SilhouetteOccluder>
-    <Actor>props/special/common/marker_object_char_a.xml</Actor>
+    <Actor>props/special/common/aura_farmland_60.xml</Actor>
     <VisibleInAtlasOnly>true</VisibleInAtlasOnly>
   </VisualActor>
 </Entity>
