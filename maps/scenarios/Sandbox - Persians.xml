@@ -2,38 +2,38 @@
 
 <Scenario version="5">
 	<Environment>
-		<SkySet>cloudless</SkySet>
-		<SunColour r="1.12305" g="0.924862" b="0.352328"/>
+		<SkySet>sunset</SkySet>
+		<SunColour r="1.20245" g="1.06225" b="0.571569"/>
 		<SunElevation angle="0.469398"/>
 		<SunRotation angle="-1.42353"/>
-		<TerrainAmbientColour r="0.329412" g="0.419608" b="0.501961"/>
-		<UnitsAmbientColour r="0.501961" g="0.501961" b="0.501961"/>
+		<TerrainAmbientColour r="0.227451" g="0.286275" b="0.341176"/>
+		<UnitsAmbientColour r="0.356863" g="0.356863" b="0.356863"/>
 		<Fog>
-			<FogFactor>0.00150391</FogFactor>
+			<FogFactor>0.0021875</FogFactor>
 			<FogThickness>0.00195313</FogThickness>
 			<FogColour r="0.866667" g="0.776471" b="0.486275"/>
 		</Fog>
 		<Water>
 			<WaterBody>
 				<Type>lake</Type>
-				<Colour r="0.34902" g="0.294118" b="0.239216"/>
+				<Colour r="0.356863" g="0.356863" b="0.356863"/>
 				<Tint r="0.866667" g="0.776471" b="0.486275"/>
 				<Height>26.3344</Height>
-				<Waviness>4.98047</Waviness>
-				<Murkiness>0.800781</Murkiness>
-				<WindAngle>0</WindAngle>
+				<Waviness>8.96484</Waviness>
+				<Murkiness>0.899414</Murkiness>
+				<WindAngle>0.625864</WindAngle>
 			</WaterBody>
 		</Water>
 		<Postproc>
 			<Brightness>0</Brightness>
-			<Contrast>0.967773</Contrast>
-			<Saturation>0.953125</Saturation>
+			<Contrast>1.00781</Contrast>
+			<Saturation>0.984375</Saturation>
 			<Bloom>0.135742</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="528.701" y="103.816" z="442.149"/>
+		<Position x="465.04" y="122.057" z="496.055"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -41,11 +41,14 @@
 {
   "CircularMap": true,
   "Description": "A sandbox scenario to test out the Achaemenid Persian civilization.",
-  "GameType": "conquest",
-  "Keywords": [],
+  "GameType": "endless",
+  "Keywords": [
+    "demo"
+  ],
   "LockTeams": false,
   "Name": "Sandbox - The Persians",
   "PlayerData": [
+    "",
     {
       "Civ": "pers",
       "Colour": {
@@ -13371,7 +13374,7 @@
 			<Template>structures/pers_shipyard</Template>
 			<Player>1</Player>
 			<Position x="451.11377" z="705.52051"/>
-			<Orientation y="-2.52213"/>
+			<Orientation y="0.68703"/>
 			<Actor seed="64730"/>
 		</Entity>
 		<Entity uid="3057">
