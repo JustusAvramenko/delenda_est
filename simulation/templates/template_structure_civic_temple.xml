@@ -8,7 +8,7 @@
       <Modifications>
         <Health.RegenRate> <Add>1</Add> </Health.RegenRate>
       </Modifications>
-      <AuraName>Healing Aura</AuraName>
+      <AuraName>"Faith Healing" Aura</AuraName>
       <AuraDescription>Heal units at 1 HP per second to a distance of 40 meters.</AuraDescription>
     </heal>
     <AuraCivic>
@@ -21,7 +21,7 @@
 		</ResourceGatherer.Rates.food..grain>
       </Modifications>
       <AuraName>"Civic Spaces" Farming Penalty</AuraName>
-      <AuraDescription>Gatherers -50% farm gather rate within 40 meters of Civic Centers and Temples.</AuraDescription>
+      <AuraDescription>Gatherers -50% farm gather rate within 40 meters of Temples and Civic Centers.</AuraDescription>
     </AuraCivic>
   </Auras>
   <BuildRestrictions>
@@ -34,9 +34,9 @@
       <stone>300</stone>
     </Resources>
   </Cost>
-  <Footprint replace="">
-    <Circle radius="40.0"/>
-    <Height>12.0</Height>
+  <Footprint>
+    <Square width="80.0" depth="80.0"/>
+    <Height>8.0</Height>
   </Footprint>
   <GarrisonHolder>
     <Max>20</Max>
