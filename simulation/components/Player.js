@@ -43,8 +43,8 @@ Player.prototype.Init = function()
 		"stone": markForTranslation("Stone"),
 	}
 	this.disabledTemplates = {};
-	this.disabledTechnologies = {}; 
- 	this.startingTechnologies = {}; 
+	this.disabledTechnologies = {};
+	this.startingTechnologies = [];
 };
 
 Player.prototype.SetPlayerID = function(id)
@@ -571,25 +571,24 @@ Player.prototype.IsNeutral = function(id)
 };
 
 /**
- * Do some map dependant initializations 
- */ 
-Player.prototype.OnGlobalInitGame = function(msg) 
-{ 
-    let cmpTechnologyManager = Engine.QueryInterface(this.entity, IID_TechnologyManager); 
-    if (cmpTechnologyManager) 
-        for (let tech in this.startingTechnologies) 
-            cmpTechnologyManager.ResearchTechnology(tech); 
- 
-    // Replace the "{civ}" code with this civ ID 
-    let disabledTemplates = this.disabledTemplates; 
-    this.disabledTemplates = {}; 
-    for (let template in disabledTemplates) 
-        if (disabledTemplates[template]) 
-            this.disabledTemplates[template.replace(/\{civ\}/g, this.civ)] = true; 
-}; 
- 
-/** 
+ * Do some map dependant initializations
+ */
+Player.prototype.OnGlobalInitGame = function(msg)
+{
+	let cmpTechnologyManager = Engine.QueryInterface(this.entity, IID_TechnologyManager);
+	if (cmpTechnologyManager)
+		for (let tech of this.startingTechnologies)
+			cmpTechnologyManager.ResearchTechnology(tech);
 
+	// Replace the "{civ}" code with this civ ID
+	let disabledTemplates = this.disabledTemplates;
+	this.disabledTemplates = {};
+	for (let template in disabledTemplates)
+		if (disabledTemplates[template])
+			this.disabledTemplates[template.replace(/\{civ\}/g, this.civ)] = true;
+};
+
+/**
  * Keep track of population effects of all entities that
  * become owned or unowned by this player
  */
@@ -741,47 +740,53 @@ Player.prototype.RemoveDisabledTemplate = function(template)
 
 Player.prototype.SetDisabledTemplates = function(templates)
 {
-	this.disabledTemplates = templates;
+	this.disabledTemplates = {};
+	for (let template of templates)
+		this.disabledTemplates[template] = true;
 	Engine.BroadcastMessage(MT_DisabledTemplatesChanged, {});
 	var cmpGuiInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
 	cmpGuiInterface.PushNotification({"type": "resetselectionpannel", "players": [this.GetPlayerID()]});
 };
 
-Player.prototype.GetDisabledTemplates = function(templates)
+Player.prototype.GetDisabledTemplates = function()
 {
 	return this.disabledTemplates;
 };
-Player.prototype.AddDisabledTechnology = function(tech) 
-{ 
-    this.disabledTechnologies[tech] = true; 
-    Engine.BroadcastMessage(MT_DisabledTechnologiesChanged, {}); 
-}; 
- 
-Player.prototype.RemoveDisabledTechnology = function(tech) 
-{ 
-    this.disabledTechnologies[tech] = false; 
-    Engine.BroadcastMessage(MT_DisabledTechnologiesChanged, {}); 
-}; 
- 
-Player.prototype.SetDisabledTechnologies = function(techs) 
-{ 
-    this.disabledTechnologies = techs; 
-    Engine.BroadcastMessage(MT_DisabledTechnologiesChanged, {}); 
-}; 
- 
-Player.prototype.GetDisabledTechnologies = function() 
-{ 
-    return this.disabledTechnologies; 
-}; 
 
-Player.prototype.AddStartingTechnology = function(tech) 
-{ 
-    this.startingTechnologies[tech] = true; 
-}; 
- 
-Player.prototype.SetStartingTechnologies = function(techs) 
-{ 
-    this.startingTechnologies = techs; 
-}; 
- 
+Player.prototype.AddDisabledTechnology = function(tech)
+{
+	this.disabledTechnologies[tech] = true;
+	Engine.BroadcastMessage(MT_DisabledTechnologiesChanged, {});
+};
+
+Player.prototype.RemoveDisabledTechnology = function(tech)
+{
+	this.disabledTechnologies[tech] = false;
+	Engine.BroadcastMessage(MT_DisabledTechnologiesChanged, {});
+};
+
+Player.prototype.SetDisabledTechnologies = function(techs)
+{
+	this.disabledTechnologies = {}
+	for (let tech of techs)
+		this.disabledTechnologies[tech] = true;
+	Engine.BroadcastMessage(MT_DisabledTechnologiesChanged, {});
+};
+
+Player.prototype.GetDisabledTechnologies = function()
+{
+	return this.disabledTechnologies;
+};
+
+Player.prototype.AddStartingTechnology = function(tech)
+{
+	if (this.startingTechnologies.indexOf(tech) == -1)
+		this.startingTechnologies.push(tech);
+};
+
+Player.prototype.SetStartingTechnologies = function(techs)
+{
+	this.startingTechnologies = techs;
+};
+
 Engine.RegisterComponentType(IID_Player, "Player", Player);

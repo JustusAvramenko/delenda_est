@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Cost>
+    <BuildTime>300</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>200</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="15.0" depth="15.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <Civ>cart</Civ>
+    <GenericName>Mausoleum of Ateban</GenericName>
+    <SpecificName>Unknown</SpecificName>
+    <History>A Punic-Libyan monument dedicated to a Numidian prince.</History>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Icon>structures/tholos.png</Icon>
+    <Tooltip>Special Building.</Tooltip>
+    <Classes datatype="tokens">
+	  
+	</Classes>
+    <VisibleClasses datatype="tokens">
+	  
+	</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static width="12.0" depth="12.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_wonder.xml</select>
+      <constructed>interface/complete/building/complete_wonder.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>36</Radius>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/carthaginians/mausoleum.xml</Actor>
+  </VisualActor>
+</Entity>
