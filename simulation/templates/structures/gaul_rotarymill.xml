@@ -14,6 +14,10 @@
       <AuraDescription>Gatherers +20% Food Gather Rate within 60 meters.</AuraDescription>
     </AuraFood>
   </Auras>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+	<Category>RotaryMill</Category>
+  </BuildRestrictions>
   <Cost>
     <BuildTime>100</BuildTime>
     <PopulationBonus>2</PopulationBonus>
@@ -59,9 +63,7 @@
   <StatusBars>
     <HeightOffset>8.0</HeightOffset>
   </StatusBars>
-  <TerritoryInfluence>
-    <Radius>32</Radius>
-  </TerritoryInfluence>
+  <TerritoryDecay disable=""/>
   <VisualActor>
     <Actor>structures/celts/special.xml</Actor>
     <FoundationActor>structures/fndn_4x4.xml</FoundationActor>

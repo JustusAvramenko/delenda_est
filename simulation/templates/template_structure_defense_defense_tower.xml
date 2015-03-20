@@ -28,6 +28,7 @@
   </BuildingAI>
   <BuildRestrictions>
     <Category>DefenseTower</Category>
+	<Territory>own ally</Territory>
     <Distance>
       <FromClass>DefenseTower</FromClass>
       <MinDistance>48</MinDistance>
@@ -58,7 +59,7 @@
   </Health>
   <Identity>
     <GenericName>Defense Tower</GenericName>
-    <Tooltip>Shoots arrows. Garrison to provide extra defense.</Tooltip>
+    <Tooltip>Shoots arrows. Garrison to provide extra defense. Can be built in allied territory for mutual defense.</Tooltip>
     <Classes datatype="tokens">GarrisonTower -ConquestCritical</Classes>
     <VisibleClasses datatype="tokens">Village Tower DefenseTower Ranged</VisibleClasses>
     <Icon>structures/defense_tower.png</Icon>
@@ -95,11 +96,6 @@
     <BarHeight>0.6</BarHeight>
     <HeightOffset>21.0</HeightOffset>
   </StatusBars>
-  <TerritoryInfluence>
-    <Root>false</Root>
-    <Radius>32</Radius>
-    <Weight>30000</Weight>
-  </TerritoryInfluence>
   <Vision>
     <Range>60</Range>
   </Vision>

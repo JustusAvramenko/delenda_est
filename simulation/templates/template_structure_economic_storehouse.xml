@@ -15,7 +15,7 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <Max>1000</Max>
+    <Max>800</Max>
     <SpawnEntityOnDeath>rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
@@ -48,7 +48,6 @@
       pair_gather_03
       pair_gather_wood_01
 	  pair_gather_wood_02
-	  special_storehouse
     </Technologies>
   </ProductionQueue>
   <RallyPoint disable=""/>
@@ -62,11 +61,7 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
-  <TerritoryInfluence>
-    <Root>false</Root>
-    <Radius>0</Radius>
-    <Weight>30000</Weight>
-  </TerritoryInfluence>
+  <TerritoryDecay disable=""/>
   <Vision>
     <Range>20</Range>
   </Vision>
