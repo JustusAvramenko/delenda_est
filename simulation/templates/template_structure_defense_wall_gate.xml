@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defense">
+  <Auras>
+    <Aura1>
+      <Type>garrisonedUnits</Type>
+      <Affects>Unit</Affects>
+      <Modifications>
+        <Armour.Pierce> <Add>3</Add> </Armour.Pierce>
+        <Armour.Hack> <Add>3</Add> </Armour.Hack>
+        <Armour.Crush> <Add>3</Add> </Armour.Crush>
+		<Attack.Ranged.MaxRange> <Add>10</Add> </Attack.Ranged.MaxRange>
+        <Vision.Range> <Add>10</Add> </Vision.Range>
+      </Modifications>
+      <AuraName>Wall Protection</AuraName>
+      <AuraDescription>Units on walls have 3 extra Armor levels, +10 Range, and +10 Vision.</AuraDescription>
+    </Aura1>
+  </Auras>
   <Armour>
     <Hack>5.0</Hack>
   </Armour>
@@ -16,6 +31,28 @@
     <Square width="6.0" depth="6.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <Max>4</Max>
+    <List datatype="tokens">Ranged+Infantry</List>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+    <VisibleGarrisonPoints>
+      <Archer1>
+        <X>0</X><Y>11.5</Y><Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>8</X><Y>11.5</Y><Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-8</X><Y>11.5</Y><Z>0</Z>
+      </Archer3>
+      <Archer4>
+        <X>4</X><Y>11.5</Y><Z>0</Z>
+      </Archer4>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
   <Gate>
     <PassRange>20</PassRange>
   </Gate>
