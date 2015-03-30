@@ -15,15 +15,15 @@
       <Bonuses>
           <NerfSiege>
               <Classes>Siege</Classes>
-              <Multiplier>0.5</Multiplier>
+              <Multiplier>0.75</Multiplier>
           </NerfSiege>
       </Bonuses>
     </Ranged>
   </Attack>
   <BuildingAI>
-    <DefaultArrowCount>0</DefaultArrowCount>
+    <DefaultArrowCount>1</DefaultArrowCount>
     <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
-	<GarrisonArrowClasses>Infantry Ranged</GarrisonArrowClasses>
+	<GarrisonArrowClasses>Infantry+Ranged</GarrisonArrowClasses>
   </BuildingAI>
   <BuildRestrictions>
     <PlacementType>land-shore</PlacementType>
@@ -53,7 +53,7 @@
   </Health>
   <Identity>
     <GenericName>Wall Turret</GenericName>
-    <Tooltip>Shoots arrows. Garrison to defend a city wall against attackers.</Tooltip>
+    <Tooltip>Shoots arrows. Garrison Ranged Infantry fire more arrows.</Tooltip>
     <Classes datatype="tokens">-ConquestCritical</Classes>
 	<VisibleClasses datatype="tokens">StoneWall Tower WallTower Ranged</VisibleClasses>
     <Icon>structures/tower.png</Icon>
