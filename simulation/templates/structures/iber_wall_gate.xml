@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defense_wall_gate">
+  <Auras>
+    <Aura1>
+      <Type>garrisonedUnits</Type>
+      <Affects>Unit</Affects>
+      <Modifications>
+        <Armour.Pierce> <Add>3</Add> </Armour.Pierce>
+        <Armour.Hack> <Add>3</Add> </Armour.Hack>
+        <Armour.Crush> <Add>3</Add> </Armour.Crush>
+		<Attack.Ranged.MaxRange> <Add>12</Add> </Attack.Ranged.MaxRange>
+        <Vision.Range> <Add>12</Add> </Vision.Range>
+      </Modifications>
+      <AuraName>"Wall Battlements"</AuraName>
+      <AuraDescription>Ranged units on walls have 3 extra armor levels, +12 range, and +12 vision.</AuraDescription>
+    </Aura1>
+  </Auras>
   <Footprint>
     <Square width="37.0" depth="9.5"/>
     <Height>9.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <Max>7</Max>
+	<VisibleGarrisonPoints>
+      <Archer1>
+        <X>0</X><Y>11.6</Y><Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>-4</X><Y>11.6</Y><Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>4</X><Y>11.6</Y><Z>0</Z>
+      </Archer3>
+      <Archer4>
+        <X>-8</X><Y>11.6</Y><Z>0</Z>
+      </Archer4>
+      <Archer5>
+        <X>8</X><Y>11.6</Y><Z>0</Z>
+      </Archer5>
+      <Tower1>
+        <X>-14</X><Y>16.9</Y><Z>0</Z>
+      </Tower1>
+      <Tower2>
+        <X>14</X><Y>16.9</Y><Z>0</Z>
+      </Tower2>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
   <Identity>
     <Civ>iber</Civ>
     <SpecificName>Biko Sarbide</SpecificName>
