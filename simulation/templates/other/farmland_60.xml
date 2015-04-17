@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity>
+<Entity parent="template_gaia_farmland">
   <Auras>
     <Farmland>
-      <Type>range</Type>
       <Radius>60</Radius>
-      <Affects>Gatherer</Affects>
-	  <AffectedPlayers>Enemy</AffectedPlayers>
-      <Modifications>
-        <ResourceGatherer.Rates.food..grain>
-		  <Multiply>2</Multiply>
-		</ResourceGatherer.Rates.food..grain>
-      </Modifications>
-      <AuraName>"Farmland" Aura</AuraName>
       <AuraDescription>Gatherers +100% Farm Gather Rate within 60 meters. This is a hack to create "Farmlands" in the game.</AuraDescription>
     </Farmland>
   </Auras>
@@ -19,26 +10,7 @@
     <Square width="120" depth="120"/>
     <Height>9.0</Height>
   </Footprint>
-  <Ownership/>
-  <Position>
-    <Altitude>0</Altitude>
-    <Anchor>upright</Anchor>
-    <Floating>true</Floating>
-    <TurnRate>6.0</TurnRate>
-  </Position>
-  <Selectable>
-    <EditorOnly/>
-	<Overlay>
-	  <Texture>
-        <MainTexture>auras/test/1024x1024_aura.png</MainTexture>
-        <MainTextureMask>auras/test/1024x1024_aura_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
   <VisualActor>
-    <SilhouetteDisplay>false</SilhouetteDisplay>
-    <SilhouetteOccluder>true</SilhouetteOccluder>
     <Actor>props/special/common/aura_farmland_60.xml</Actor>
-    <VisibleInAtlasOnly>true</VisibleInAtlasOnly>
   </VisualActor>
 </Entity>
