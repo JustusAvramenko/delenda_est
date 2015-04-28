@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_military_barracks">
+<Entity parent="template_structure_special">
   <Attack disable=""/>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
@@ -38,18 +38,13 @@
     <Static width="23.5" depth="23.5"/>
   </Obstruction>
   <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}_infantry_spearman_b
-	  units/{civ}_infantry_swordsman_b
-	  units/{civ}_infantry_archer_b
-      units/{civ}_cavalry_spearman_b
-      units/{civ}_cavalry_javelinist_b
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+	<Entities datatype="tokens">
+      units/{civ}_merc_infantry_1
+	  units/{civ}_merc_infantry_2
     </Entities>
     <Technologies datatype="tokens">
-	  upgrade_rank_advanced_infantry
-	  upgrade_rank_elite_infantry
-	  upgrade_rank_advanced_cavalry
-	  upgrade_rank_elite_cavalry
+
     </Technologies>
   </ProductionQueue>
   <Sound>
@@ -60,7 +55,7 @@
     </SoundGroups>
   </Sound>
   <TerritoryDecay>
-    <HealthDecayRate>1</HealthDecayRate>
+    <DecayRate>1</DecayRate>
   </TerritoryDecay>
   <TerritoryInfluence disable=""/>
   <VisualActor>
