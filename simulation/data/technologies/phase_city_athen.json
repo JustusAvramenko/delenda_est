@@ -1,11 +1,23 @@
 {
 	"genericName": "City Phase",
 	"specificName": {
+		"hele": "Megalopolis",
+		"mace": "Megalopolis",
+		"spart": "Megalopolis",
 		"athen": "Megalopolis"
 	},
+	"supersedes": "phase_town_athen",
+	"replaces": ["phase_city"],
 	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology. This is the Athenian city phase, where metal gathering rates are boosted because of the Silver Owls bonus.",
-	"requirements": {"all": [{"civ": "athen"}, {"tech":"phase_city_generic"}]},
-	"autoResearch": true,
-	"modifications": [{"value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.1}],
-	"affects": ["Gatherer"]
+	"cost": {"food": 0, "wood": 0, "stone": 1000, "metal": 1000},
+	"requirements": { "class": "NotField", "number": 15 },
+	"requirementsTooltip": "Requires 15 total Structures (except Walls and Palisades).",
+	"icon": "city_phase.png",
+	"researchTime": 60,
+	"tooltip": "Advance to City Phase, which unlocks more structures and units. Territory radius for Civic Centers increased by another +25%. 'Silver Owls' bonus gives +10% metal gathering rates.",
+	"modifications": [
+		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.1, "affects": "Gatherer"}
+	],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
 }

@@ -27,7 +27,6 @@ Player.prototype.Init = function()
 	this.teamsLocked = false;
 	this.state = "active"; // game state - one of "active", "defeated", "won"
 	this.diplomacy = [];	// array of diplomatic stances for this player with respect to other players (including gaia and self)
-	this.conquestCriticalEntitiesCount = 0; // number of owned units with ConquestCritical class
 	this.formations = [];
 	this.startCam = undefined;
 	this.controlAllUnits = false;
@@ -69,13 +68,13 @@ Player.prototype.GetName = function()
 
 Player.prototype.SetCiv = function(civcode)
 {
-    var oldCiv = this.civ; 
-	    this.civ = civcode; 
-	    // Normally, the civ is only set once 
-	    // But in Atlas, the map designers can change civs at any time 
-	    var playerID = this.GetPlayerID(); 
-	    if (oldCiv && playerID && oldCiv != civcode) 
-	        Engine.BroadcastMessage(MT_CivChanged, {"player": playerID, "from": oldCiv, "to": civcode});
+	var oldCiv = this.civ;
+	this.civ = civcode;
+	// Normally, the civ is only set once
+	// But in Atlas, the map designers can change civs at any time
+	var playerID = this.GetPlayerID();
+	if (oldCiv && playerID && oldCiv != civcode)
+		Engine.BroadcastMessage(MT_CivChanged, {"player": playerID, "from": oldCiv, "to": civcode});
 };
 
 Player.prototype.GetCiv = function()
@@ -335,11 +334,6 @@ Player.prototype.GetState = function()
 Player.prototype.SetState = function(newState)
 {
 	this.state = newState;
-};
-
-Player.prototype.GetConquestCriticalEntitiesCount = function()
-{
-	return this.conquestCriticalEntitiesCount;
 };
 
 Player.prototype.GetTeam = function()
@@ -609,9 +603,6 @@ Player.prototype.OnGlobalOwnershipChanged = function(msg)
 
 	if (msg.from == this.playerID)
 	{
-		if (!cmpFoundation && cmpIdentity && cmpIdentity.HasClass("ConquestCritical"))
-			this.conquestCriticalEntitiesCount--;
-
 		if (cmpCost)
 			this.popUsed -= cmpCost.GetPopCost();
 
@@ -625,9 +616,6 @@ Player.prototype.OnGlobalOwnershipChanged = function(msg)
 	}
 	if (msg.to == this.playerID)
 	{
-		if (!cmpFoundation && cmpIdentity && cmpIdentity.HasClass("ConquestCritical"))
-			this.conquestCriticalEntitiesCount++;
-
 		if (cmpCost)
 			this.popUsed += cmpCost.GetPopCost();
 
