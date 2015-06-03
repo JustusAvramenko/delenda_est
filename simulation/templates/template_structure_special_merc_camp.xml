@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure">
+  <Armour>
+    <Hack>5</Hack>
+    <Pierce>25</Pierce>
+    <Crush>5</Crush>
+    <Foundation>
+      <Hack>3</Hack>
+      <Pierce>10</Pierce>
+      <Crush>3</Crush>
+    </Foundation>
+  </Armour>
+  <Attack disable=""/>
+  <BuildRestrictions>
+    <Category>Special</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>2000</CapturePoints>
+  </Capturable>
+  <Cost>
+    <BuildTime>300</BuildTime>
+    <Resources>
+      <wood>100</wood>
+      <stone>0</stone>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="25.5" depth="25.5"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>5</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Cavalry</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>8000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>merc</Civ>
+	<GenericName>Mercenary Camp</GenericName>
+	<SpecificName>Needs Specific Name</SpecificName>
+    <Classes datatype="tokens">MercenaryCamp</Classes>
+    <Tooltip>Capture this structure to train mercenaries.</Tooltip>
+	<Classes datatype="tokens">MercenaryCamp SpecialBuilding</Classes>
+    <Icon>structures/military_settlement.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="23.5" depth="23.5"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_gymnasium.xml</select>
+      <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay>
+    <DecayRate>1</DecayRate>
+  </TerritoryDecay>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>structures/mercenaries/camp_egyptian.xml</Actor>
+	<FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

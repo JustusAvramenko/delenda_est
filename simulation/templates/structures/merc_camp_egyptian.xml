@@ -1,64 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_special">
-  <Attack disable=""/>
-  <BuildRestrictions>
-    <Territory>own neutral</Territory>
-    <Distance>
-      <FromClass>MercenaryCamp</FromClass>
-      <MinDistance>100</MinDistance>
-    </Distance>
-  </BuildRestrictions>
-  <Cost>
-    <BuildTime>300</BuildTime>
-    <Resources>
-      <wood>100</wood>
-      <stone>0</stone>
-      <metal>100</metal>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Square width="25.5" depth="25.5"/>
-    <Height>12.0</Height>
-  </Footprint>
-  <Health>
-    <Max>1200</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
-  </Health>
+<Entity parent="template_structure_special_merc_camp">
   <Identity>
     <Civ>ptol</Civ>
     <GenericName>Mercenary Camp (Egyptian)</GenericName>
-	<SpecificName>Stratópedo Misthophóron Aigyptiakós</SpecificName>
-    <Classes datatype="tokens">MercenaryCamp</Classes>
+	<SpecificName>Misthophóron Aigyptiakós</SpecificName>
     <History>The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and foreign mercenaries for the bulk of its military force, mainly because the loyalty of native Egyptian units was often suspect. Indeed, during one native uprising, Upper Egypt was lost to the Ptolemies for decades. Mercenaries were often battle-hardened and their loyalty can be bought, sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt under the Ptolemies was so prosperous as to be the richest of Alexander's successor states.</History>
     <Tooltip>Capture this structure to train mercenaries from Hellenistic Egypt.</Tooltip>
-    <Icon>structures/military_settlement.png</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
-  <Obstruction>
-    <Static width="23.5" depth="23.5"/>
-  </Obstruction>
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
 	<Entities datatype="tokens">
 	  units/merc_hele_thorakites
       units/{civ}_merc_infantry_1
 	  units/{civ}_merc_infantry_2
+	  units/{civ}_merc_cavalry_1
+	  units/{civ}_merc_cavalry_2
     </Entities>
     <Technologies datatype="tokens">
 
     </Technologies>
   </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_gymnasium.xml</select>
-      <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
-  <TerritoryDecay>
-    <DecayRate>1</DecayRate>
-  </TerritoryDecay>
-  <TerritoryInfluence disable=""/>
   <VisualActor>
     <Actor>structures/mercenaries/camp_egyptian.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
