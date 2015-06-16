@@ -5,6 +5,7 @@
 	<script file="gui/common/functions_global_object.js"/>
 	<script file="gui/common/functions_utility_error.js"/>
 	<script file="gui/pregame/mainmenu.js"/>
+	<script directory="gui/pregame/backgrounds/"/>
 
 
 	<!--
@@ -18,27 +19,13 @@
 			onTick();
 		</action>
 
-		<object	name="backgroundHele1-1"
-			type="image"
-			sprite="background-hellenes1-1"
-			hidden="true"
-			ghost="true"
-			z="1"
-		/>
-		<object	name="backgroundHele1-2"
-			type="image"
-			sprite="background-hellenes1-2"
-			hidden="true"
-			ghost="true"
-			z="2"
-		/>
-		<object	name="backgroundHele1-3"
-			type="image"
-			sprite="background-hellenes1-3"
-			hidden="true"
-			ghost="true"
-			z="3"
-		/>
+		<repeat count="5">
+			<object	name="background[n]"
+				type="image"
+				hidden="true"
+				ghost="true"
+			/>
+		</repeat>
 		
 		<!--
 		==========================================
@@ -125,6 +112,12 @@
 		==========================================
 		-->
 
+		<object hotkey="cancel">
+			<action on="Press">
+				closeMenu();
+			</action>
+		</object>
+		
 		<!-- hide submenu when user clicks on the background -->
 		<object	name="subMenuScreen" type="button">
 			<action on="Press">
@@ -139,7 +132,7 @@
 			size="60 50%-100 300 50%+100"
 			hidden="true"
 		>
-			<!-- submenuSinglePlayer -->
+			<!-- submenuLearnToPlay -->
 			<object name="submenuLearn"
 				type="image"
 				size="0 4 100%-4 100%-4"
@@ -175,7 +168,7 @@
 					<action on="Press">
 						closeMenu();
 						<![CDATA[
-							Engine.PushGuiPage("page_structree.xml");
+							Engine.PushGuiPage("page_structree.xml", {});
 						]]>
 					</action>
 				</object>
@@ -359,7 +352,7 @@
 					size="0 64 100% 92"
 					tooltip_style="pgToolTip"
 				>
-					<translatableAttribute id="caption">Atlas Map Editor</translatableAttribute>
+					<translatableAttribute id="caption">Scenario Editor</translatableAttribute>
 					<translatableAttribute id="tooltip">Open the Atlas Scenario Editor in a new window. You can run this more reliably by starting the game with the command-line argument &quot;-editor&quot;.</translatableAttribute>
 					<action on="Press">
 						pressedScenarioEditorButton();

@@ -9,10 +9,12 @@
 	"requirementsTooltip": "Unlocked in Imperial Phase.",
 	"icon": "juggernaut.png",
 	"researchTime": 40,
-	"tooltip": "Heavy Warship +50% Health, +2 Default Projectiles.",
+	"tooltip": "Heavy Warship +50% health, +2 default projectiles, but -25% slower speed.",
 	"modifications": [
 		{"value": "Health/Max", "multiply": 1.5},
-		{"value": "BuildingAI/DefaultArrowCount", "add": 2.0}
+		{"value": "BuildingAI/DefaultArrowCount", "add": 2.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.75},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.75}
 	],
 	"affects": ["Warship Heavy"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
