@@ -6,11 +6,11 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "stone_towers.png",
 	"researchTime": 40,
-	"tooltip": "Upgrade wooden defense towers to stone defense towers. +1 default arrows. +100% health. +100 stone cost.",
+	"tooltip": "Upgrade wooden defense towers to stone defense towers. +100% health, +100% capture points, +100 stone cost.",
 	"modifications": [
 		{"value": "Cost/Resources/stone", "add": 100},
-		{"value": "BuildingAI/DefaultArrowCount", "add": 1.0},
 		{"value": "Health/Max", "multiply": 2},
+		{"value": "Capturable/CapturePoints", "multiply": 2},
 		{"value": "VisualActor/Actor", "replace": "structures/gauls/scout_tower.xml"}
 	],
 	"affects": ["DefenseTower"],

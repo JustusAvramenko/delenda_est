@@ -3,9 +3,9 @@
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
-      <wood>0</wood>
-      <stone>200</stone>
-      <metal>200</metal>
+      <wood>200</wood>
+      <stone>100</stone>
+      <metal>0</metal>
     </Resources>
   </Cost>
   <Footprint>
@@ -22,8 +22,9 @@
     <SpecificName>Syssítion</SpecificName>
     <Classes datatype="tokens">
 	  Syssition
+	  Village
 	</Classes>
-    <Tooltip>Train Spartan heroes and Spartiate champion hoplites.</Tooltip>
+    <Tooltip>Train hoplite units such as Perioikoi Hoplites and Spartiate champion infantry, and Spartan heroes.</Tooltip>
     <History>The Syssítia were where full-blooded Spartans, even Spartan kings, were barracked and dined together.</History>
     <Icon>structures/syssition.png</Icon>
 	<RequiredTechnology>phase_village</RequiredTechnology>
@@ -41,18 +42,19 @@
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
+	  units/{civ}_infantry_spearman_b
+	  units/spart_champion_infantry_spear
       units/{civ}_hero_leonidas
       units/{civ}_hero_brasidas
       units/{civ}_hero_agis
-      units/{civ}_champion_infantry_spear
     </Entities>
     <Technologies datatype="tokens">
       hellenes/speed_tyrtean_paeans
 	  hellenes/spartans_agoge
 	  hellenes/spartans_upgrade_rank_advanced_infantry
 	  hellenes/spartans_upgrade_rank_elite_infantry
-	  pair_champ_02
 	  hellenes/pair_champions_01
+	  pair_champ_02
 	  hellenes/attack_inf_spearfighting
     </Technologies>
   </ProductionQueue>

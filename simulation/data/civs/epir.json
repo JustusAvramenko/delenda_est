@@ -1,10 +1,10 @@
 {
-	"Code":"mace",
+	"Code":"epir",
 	"Culture":[ "helle", "succe" ],
 	"Region":[ "medit", "europe" ],
-	"Name":"Macedonians",
-	"Emblem":"session/portraits/emblems/emblem_macedonians.png",
-	"History":"Macedonia was an ancient Greek kingdom, centered in the northeastern part of the Greek peninsula. Under the leadership of Alexander the Great, Macedonian forces and allies took over most of the world they knew, including Egypt, Persia and parts of the Indian subcontinent, allowing a diffusion of Hellenic and eastern cultures for years to come.",
+	"Name":"Epirotes",
+	"Emblem":"session/portraits/emblems/epirotes.png",
+	"History":".",
 	"Music":[
 			{"File":"Rise_of_Macedon.ogg", "Type":"peace"},
 			{"File":"In_the_Shadow_of_Olympus.ogg", "Type":"peace"},
@@ -13,7 +13,7 @@
 	"Factions":
 	[
 		{
-			"Name":"Macedonians",
+			"Name":"Epirotes",
 			"Description":"A Hellenistic kingdom bordering the Greek city-states.",
 			"Technologies":
 			[
@@ -36,25 +36,25 @@
 			"Heroes":
 			[
 				{
-					"Name":"Philip II of Macedon",
+					"Name":"Alexander I 'The Molossian'",
 					"Class":"",
 					"Armament":"",
 					"Emblem":"",
-					"History":"The king of Macedonia (359-336 B.C.), he carried out vast monetary and military reforms in order to make his kingdom the most powerful force in the Greek world. Greatly enlarged the size of Macedonia by conquering much of Thrace and subduing the Greeks. Murdered in Aegae while planning a campaign against Persia."
+					"History":"."
 				},
 				{
-					"Name":"Alexander the Great",
+					"Name":"Pyrrhos A' Epieros",
 					"Class":"",
 					"Armament":"",
 					"Emblem":"",
-					"History":"The most powerful hero of them all - son of Philip II, king of Macedonia (336-323 B.C.). After conquering the rest of the Thracians and quelling the unrest of the Greeks, Alexander embarked on a world-conquest march. Defeating the Persian forces at Granicus (334 B.C.), Issus (333 B.C.) and Gaugamela (331 B.C.), he became master of the Persian Empire. Entering India, he defeated king Porus at Hydaspes (326 B.C.), but his weary troops made him halt. Died in Babylon at the age of 33 while planning a campaign against Arabia."
+					"History":"."
 				},
 				{
-					"Name":"Demetrios the Besieger",
+					"Name":"Alexander II",
 					"Class":"",
 					"Armament":"",
 					"Emblem":"",
-					"History":"One of the Diadochi, king of Macedonia (294-288 B.C.), Demetrios was renowned as one of the bravest and most able successors of Alexander. As the son of Antigonus I Monophthalmus, he fought and won many important battles early on and was proclaimed king, along with his father, in 306 B.C. Losing his Asian possessions after the battle of Ipsos, he later won the Macedonian throne. Fearing lest they should be overpowered by Demetrios, the other Diadochi united against him and defeated him."
+					"History":"."
 				}
 			]
 		}
@@ -62,9 +62,9 @@
 	"CivBonuses":
 	[
 		{
-			"Name":"Hellenic League",
-			"History":"After the unification of Greece, Philip II gathered all the city-states together to form the Hellenic League, with Macedon as the its leader. With this Pan-Hellenic federation he planned to launch an expedition to punish Persia for past wrongs. Although assassinated before he could carry out the invasion, his son Alexander the Great took up the mantle and completed his fathers plans.",
-			"Description":"Macedonian units have +10% attack bonus vs. Persian and Hellenic factions, but -5% attack debonus vs. Romans."
+			"Name":"Epirote League",
+			"History":".",
+			"Description":"."
 		},
 		{
 			"Name":"Syntagma",
@@ -103,16 +103,7 @@
 			"History":"Alexander the Great founded libraries all over his new empire. These became a center of learning for an entirely new synthesized culture: the Hellenistic culture.",
 			"Requirements":"",
 			"Phase":"City",
-			"Special":"All Special Technologies are researched here. Building one reduces the cost of all other remaining technologies by 10%. Build limit: 1."
-		},
-		{
-			"Name":"Siege Workshop",
-			"Class":"",
-			"Emblem":"",
-			"History":"The Macedonians were innovators in area of siegecraft.",
-			"Requirements":"",
-			"Phase":"City",
-			"Special":"Constructs and upgrades all Macedonian siege engines."
+			"Special":"Many Special Technologies are researched here. Building one reduces the cost of all other remaining technologies by 20%. Build limit: 1."
 		}
 	],
 	"StartEntities":
@@ -153,24 +144,13 @@
 	],
 	"AINames":
 	[
-		"Alexander III Megas",
-		"Philip II",
-		"Antipater",
-		"Philip IV",
-		"Lysander",
-		"Lysimachus",
-		"Antigonus II Gonatas",
-		"Demetrius II Aetolicus",
-		"Philip V",
-		"Perseus",
-		"Craterus",
-		"Meleager"
+		"Pyrrhus of Epirus"
 	],
 	"SkirmishReplacements":
 	{
-		"skirmish/units/default_infantry_melee_b": "units/mace_infantry_pikeman_b",
+		"skirmish/units/default_infantry_melee_b": "units/epir_infantry_pikeman_b",
 		"skirmish/structures/default_house_10": "structures/{civ}_house",
-		"skirmish/units/default_cavalry" : "units/mace_cavalry_spearman_b"
+		"skirmish/units/default_cavalry" : "units/epir_cavalry_javelinist_b"
 	},
 	"SelectableInGameSetup": true
 }

@@ -14,7 +14,10 @@
 	"icon": "city_phase.png",
 	"researchTime": 60,
 	"tooltip": "Advance to City Phase, which unlocks more structures and units. Territory radius for Civic Centers increased by another +25%",
-	"modifications": [{"value": "TerritoryInfluence/Radius", "multiply": 1.25}],
+	"modifications": [
+		{"value": "TerritoryInfluence/Radius", "multiply": 1.25},
+		{"value": "Vision/Range", "multiply": 1.25}
+	],
 	"affects": ["CivCentre"],
 	"soundComplete": "interface/alarm/alarm_phase.xml"
 }
