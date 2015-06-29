@@ -567,6 +567,12 @@ function initCivNameList()
 	}
 }
 
+function setCiv(args)
+{
+	var obj = Engine.GetGUIObjectByName("playerCiv["+args.player+"]");
+	obj.selected = obj.list_data.indexOf(args.civ);
+}
+
 // Initialise the list control containing all the available maps
 function initMapNameList()
 {
