@@ -1,0 +1,26 @@
+{
+	"genericName": "Greek Martial Arts",
+	"specificName": {
+		"hele": "Pankrátion",
+		"mace": "Pankrátion",
+		"spart": "Pankrátion",
+		"athen": "Pankrátion",
+		"sele": "Pankrátion",
+		"ptol": "Pankrátion",
+		"theb": "Pankrátion"
+	},
+	"description": "The Greeks invented the martial arts for the Western world.",
+	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase. Requires Elite Spartan Infantry.",
+	"supersedes": "hellenes/spartans_upgrade_rank_elite_infantry",
+	"icon": "pankration.png",
+	"researchTime": 40,
+	"tooltip": "Infantry +10% Health, +1 second Train Time.",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.1},
+		{"value": "Cost/BuildTime", "add": -1}
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
