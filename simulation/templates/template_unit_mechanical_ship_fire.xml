@@ -37,9 +37,6 @@
     <VisibleClasses datatype="tokens">Warship Fireship Melee</VisibleClasses>
     <Tooltip>Rapidly drain the health of enemy ships. Slowly loses health due to being on fire, so use the Fire Ship quickly.</Tooltip>
   </Identity>
-  <Obstruction>
-    <Unit radius="6.0"/>
-  </Obstruction>
   <StatusBars>
     <BarWidth>6.0</BarWidth>
     <BarHeight>0.5</BarHeight>
@@ -47,7 +44,8 @@
   </StatusBars>
   <ResourceGatherer disable=""/>
   <UnitMotion>
-    <WalkSpeed>16.0</WalkSpeed>
+    <PassabilityClass>ship-small</PassabilityClass>
+	<WalkSpeed>16.0</WalkSpeed>
     <Run>
       <Speed>22.0</Speed>
     </Run>

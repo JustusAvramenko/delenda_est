@@ -49,9 +49,6 @@
     <stone>0</stone>
     <metal>0</metal>
   </Loot>
-  <Obstruction>
-    <Unit radius="1.0"/>
-  </Obstruction>
   <Position>
     <Anchor>pitch</Anchor>
   </Position>
@@ -71,6 +68,15 @@
       <metal>30</metal>
     </Capacities>
   </ResourceGatherer>
+  <ResourceTrickle>
+    <Rates> 
+      <food>0</food> 
+      <wood>0</wood> 
+      <stone>0</stone> 
+      <metal>0</metal> 
+    </Rates> 
+    <Interval>10000</Interval> 
+  </ResourceTrickle>
   <Selectable>
     <Overlay>
       <Texture>

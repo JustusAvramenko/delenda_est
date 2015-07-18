@@ -5,7 +5,7 @@
     <Resources>
       <food>0</food>
 	  <wood>0</wood>
-	  <metal>100</metal>
+	  <metal>40</metal>
     </Resources>
   </Cost>
   <Identity>
@@ -17,7 +17,16 @@
   <ResourceGatherer>
     <BaseSpeed>0.75</BaseSpeed>
   </ResourceGatherer>
+  <ResourceTrickle>
+    <Rates>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Rates>
+    <Interval>10000</Interval>
+  </ResourceTrickle>
   <TrainingRestrictions>
-    <Category>Mercenary20</Category>
+    <Category>Mercenary30</Category>
   </TrainingRestrictions>
 </Entity>

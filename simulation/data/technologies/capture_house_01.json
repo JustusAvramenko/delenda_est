@@ -10,8 +10,11 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "figurine.png",
 	"researchTime": 40,
-	"tooltip": "Houses +100% capture points.",
-	"modifications": [{"value": "Capturable/CapturePoints", "multiply": 2}],
+	"tooltip": "Houses +100% capture points, +25% health.",
+	"modifications": [
+		{"value": "Capturable/CapturePoints", "multiply": 2},
+		{"value": "Health/Max", "multiply": 1.25}
+	],
 	"affects": ["House"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

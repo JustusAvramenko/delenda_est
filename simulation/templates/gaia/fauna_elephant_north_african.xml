@@ -37,9 +37,6 @@
   <Loot>
     <xp>50</xp>
   </Loot>
-  <Obstruction>
-    <Unit radius="2.6"/>
-  </Obstruction>
   <ResourceSupply>
     <Amount>500</Amount>
     <Type>food.meat</Type>
@@ -63,10 +60,13 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <WalkSpeed>3.0</WalkSpeed>
+    <WalkSpeed>5.0</WalkSpeed>
     <Run>
       <Speed>10.0</Speed>
+      <Range>1000.0</Range>
+      <RangeMin>10.0</RangeMin>
     </Run>
+	<PassabilityClass>large</PassabilityClass> 
   </UnitMotion>
   <VisualActor>
     <Actor>fauna/elephant_african_forest.xml</Actor>
