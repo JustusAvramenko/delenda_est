@@ -5,12 +5,14 @@
       <Type>range</Type>
       <Radius>70</Radius>
       <AffectedPlayers>Enemy</AffectedPlayers>
-      <Affects>Structure Mechanical</Affects>
+      <Affects>Structure Siege</Affects>
       <Modifications>
-        <Health.Max> <Multiply>0.75</Multiply> </Health.Max>
+        <Capturable.CapturePoints>
+		  <Multiply>0.75</Multiply>
+	    </Capturable.CapturePoints>
       </Modifications>
-      <AuraName>Conquest Aura</AuraName>
-      <AuraDescription>All nearby enemy buildings, siege engines, and ships have their health reduced by 25%.</AuraDescription>
+      <AuraName>"Conquest" Aura</AuraName>
+      <AuraDescription>All nearby enemy buildings and siege engines have -25% capture points.</AuraDescription>
     </Aura1>
   </Auras>
   <Identity>

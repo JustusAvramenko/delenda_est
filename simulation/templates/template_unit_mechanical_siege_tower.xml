@@ -13,7 +13,7 @@
       <MaxRange>55.0</MaxRange>
       <MinRange>2.0</MinRange>
       <ElevationBonus>10</ElevationBonus>
-      <ProjectileSpeed>75.0</ProjectileSpeed>
+      <ProjectileSpeed>50.0</ProjectileSpeed>
       <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
       <Spread>2.0</Spread>
@@ -26,6 +26,11 @@
         </BonusPrimary>
       </Bonuses>
     </Ranged>
+    <Capture>
+      <Value>10</Value>
+      <MaxRange>8</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+    </Capture>
   </Attack>
   <BuildingAI>
     <DefaultArrowCount>0</DefaultArrowCount>
@@ -64,7 +69,7 @@
     <GenericName>Siege Tower</GenericName>
 	<VisibleClasses datatype="tokens">Ranged SiegeTower</VisibleClasses>
     <Tooltip>Garrison up to 20 infantry inside to increase arrow count from 0 to 10.
-Counters: 2x vs. Buildings.
+Counters: 2x vs. Buildings. Good at capturing buildings.
 Countered by: Melee Cavalry, Siege.</Tooltip>
   </Identity>
   <Selectable>

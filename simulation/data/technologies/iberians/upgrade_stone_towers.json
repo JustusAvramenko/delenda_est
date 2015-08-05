@@ -6,12 +6,11 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "stone_towers.png",
 	"researchTime": 40,
-	"tooltip": "Upgrade wooden defense towers to stone defense towers. +1 default arrows, +200% health, +200% capture points, +200 stone cost.",
+	"tooltip": "Upgrade wooden defense towers to stone defense towers. +1 default arrows, +200% health, +200 stone cost.",
 	"modifications": [
 		{"value": "Cost/Resources/stone", "add": 200},
 		{"value": "BuildingAI/DefaultArrowCount", "add": 1},
 		{"value": "Health/Max", "multiply": 3},
-		{"value": "Capturable/CapturePoints", "multiply": 3},
 		{"value": "VisualActor/Actor", "replace": "structures/iberians/scout_tower.xml"}
 	],
 	"affects": ["DefenseTower"],

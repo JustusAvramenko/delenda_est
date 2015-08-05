@@ -6,7 +6,9 @@
     <Category>Special</Category>
   </BuildRestrictions>
   <Capturable>
-    <CapturePoints>2000</CapturePoints>
+    <CapturePoints>2000</CapturePoints> 
+    <RegenRate>0</RegenRate> 
+    <GarrisonRegenRate>3</GarrisonRegenRate> 
   </Capturable>
   <Cost>
     <BuildTime>300</BuildTime>
@@ -36,9 +38,9 @@
     <Civ>merc</Civ>
 	<GenericName>Mercenary Camp</GenericName>
 	<SpecificName>Needs Specific Name</SpecificName>
-    <Classes datatype="tokens">MercenaryCamp</Classes>
+    <VisibleClasses datatype="tokens">MercenaryCamp</VisibleClasses>
     <Tooltip>Capture this structure to train mercenaries.</Tooltip>
-	<Classes datatype="tokens">MercenaryCamp SpecialBuilding</Classes>
+	<Classes datatype="tokens">SpecialBuilding</Classes>
     <Icon>structures/military_settlement.png</Icon>
   </Identity>
   <Obstruction>

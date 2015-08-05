@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_mercenary_infantry_ranged_slinger">
+<Entity parent="template_unit_mercenary_infantry_ranged_archer">
   <Builder>
     <Entities datatype="tokens">
       structures/{civ}_theatron
@@ -7,9 +7,15 @@
     </Entities>
   </Builder>
   <Identity>
-    <Rank>Advanced</Rank>
+    <Civ>epir</Civ>
+	<Lang>greek</Lang>
+    <GenericName>Cretan Archer</GenericName>
+    <SpecificName>Toxótēs Krētikós</SpecificName>
+	<Rank>Elite</Rank>
+    <History>Mercenary archers from the big island of Crete. They were widely regarded as the best archers in all of Hellas and had a long tradition of hiring themselves out to Hellenic states such as Athens for use aboard Triremes naval vessels. Alexander hired them to accompany him on his world conquest march and while in his service they duelled admirably with the greatly feared eastern archers.</History>
+    <Icon>units/hele_infantry_archer.png</Icon>
   </Identity>
   <VisualActor>
-    <Actor>units/macedonians/infantry_slinger_a.xml</Actor>
+    <Actor>units/mercenaries/cret_merc_archer_heavy.xml</Actor>
   </VisualActor>
 </Entity>

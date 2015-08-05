@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_spearman">
+  <Attack>
+    <Melee>
+      <MaxRange>6.0</MaxRange>
+    </Melee>
+    <Charge>
+      <MaxRange>6.0</MaxRange>
+    </Charge>
+  </Attack>
+  <Builder>
+    <Entities datatype="tokens">
+      structures/pers_stables
+      structures/pers_apadana
+      structures/{civ}_wonder
+    </Entities>
+  </Builder>
+  <Identity>
+    <Civ>pers</Civ>
+	<Lang>greek</Lang>
+    <GenericName>Mercenary Hoplite</GenericName>
+    <SpecificName>Hoplites Mistophoros</SpecificName>
+    <History>.</History>
+    <Icon>units/hele_infantry_spearman.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/mercenaries/hele_merc_hoplite.xml</Actor>
+  </VisualActor>
+</Entity>
