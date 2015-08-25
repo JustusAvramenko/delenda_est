@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion_infantry_spearman">
-  <Armour>
-    <Hack>7</Hack>
-    <Pierce>7</Pierce>
-    <Crush>6</Crush>
-  </Armour>
   <Attack>
     <Melee>
-      <Hack>16.0</Hack>
       <MaxRange>6.0</MaxRange>
 	  <Bonuses>
 		<BonusCarths>
@@ -48,7 +42,6 @@
 	  </Bonuses>
     </Melee>
     <Charge>
-      <Hack>40.0</Hack>
       <MaxRange>6.0</MaxRange>
 	  <Bonuses>
 		<BonusCarths>
@@ -89,9 +82,6 @@
 	  </Bonuses>
     </Charge>
   </Attack>
-  <Cost>
-    <BuildTime>15</BuildTime>
-  </Cost>
   <Identity>
     <Civ>spart</Civ>
 	<Lang>greek</Lang>
@@ -106,6 +96,9 @@ Countered by: Ranged Units and Sword Infantry.</Tooltip>
 	<RequiredTechnology>phase_town</RequiredTechnology>
     <Icon>units/spart_champion_infantry_spear.png</Icon>
   </Identity>
+  <TrainingRestrictions>
+    <Category>Spartiates</Category>
+  </TrainingRestrictions>
   <UnitMotion>
     <WalkSpeed>7</WalkSpeed>
     <Run>

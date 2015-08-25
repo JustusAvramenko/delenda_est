@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base">
+      <animations>
+        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="50"/>
+        <animation file="quadraped/horse_walk.psa" name="Walk" speed="120"/>
+        <animation file="quadraped/horse_gallop.psa" name="Run" speed="50"/>
+        <animation file="quadraped/horse_walk.psa" name="carry_meat" speed="120"/>
+        <animation file="quadraped/horse_attack_a.psa" name="attack_melee" speed="20"/>
+        <animation file="quadraped/horse_attack_b.psa" name="attack_melee" speed="20"/>
+        <animation file="quadraped/horse_attack_a.psa" name="attack_slaughter" speed="20"/>
+        <animation file="quadraped/horse_death.psa" name="death" speed="240"/>
+      </animations>
+      <mesh>skeletal/horse.pmd</mesh>
+      <props>
+        <prop actor="units/mercenaries/galatian_cavalry_swordsman_r.xml" attachpoint="rider"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="7" name="feet">
+      <textures><texture file="skeletal/horse_celt_feet_c.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="5" name="blaze">
+      <textures><texture file="skeletal/horse_celt_blaze_c.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="5" name="face">
+      <textures><texture file="skeletal/horse_celt_face_c.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="7" name="star">
+      <textures><texture file="skeletal/horse_celt_star_c.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="3" name="dapple">
+      <textures><texture file="skeletal/horse_celt_dapple_c.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="2" name="snip">
+      <textures><texture file="skeletal/horse_celt_snip_c.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="5" name="stripe">
+      <textures><texture file="skeletal/horse_celt_stripe_c.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="black">
+      <color>81 81 85</color>
+    </variant>
+    <variant frequency="2" name="chocolate">
+      <color>98 68 58</color>
+    </variant>
+    <variant frequency="2" name="chestnut">
+      <color>248 132 86</color>
+    </variant>
+    <variant frequency="2" name="roan">
+      <color>242 219 164</color>
+    </variant>
+    <variant frequency="2" name="liver">
+      <color>172 95 68</color>
+    </variant>
+    <variant frequency="2" name="brown">
+      <color>255 148 89</color>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>objectcolor.xml</material>
+</actor>

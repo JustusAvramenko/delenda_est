@@ -6,11 +6,12 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "agoge.png",
 	"researchTime": 40,
-	"tooltip": "Barracks and Syssition +5 population cap and +1000 capture points.",
+	"tooltip": "Spartiate champion infantry +10% attack and cost 0 population, but +20% increased train time. Unlocks Greek Martial Arts.",
 	"modifications": [
-		{"value": "Cost/PopulationBonus", "add": 5.0},
-		{"value": "Capturable/CapturePoints", "add": 1000}
+		{"value": "Cost/Population", "add": -1},
+		{"value": "Attack/Melee/Hack", "multiply": 1.1},
+		{"value": "Cost/BuildTime", "multiply": 1.2}
 	],
-	"affects": ["Barracks", "Syssition"],
+	"affects": ["Spartiates"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -2,7 +2,7 @@
 
 <Scenario version="6">
 	<Environment>
-		<SkySet>default</SkySet>
+		<SkySet>rain</SkySet>
 		<SunColor r="0.501961" g="0.501961" b="0.501961"/>
 		<SunElevation angle="1.20264"/>
 		<SunRotation angle="-2.06167"/>
@@ -16,24 +16,24 @@
 		<Water>
 			<WaterBody>
 				<Type>lake</Type>
-				<Color r="0.376471" g="0.337255" b="0.211765"/>
-				<Tint r="0.6" g="0.509804" b="0.419608"/>
+				<Color r="0.27451" g="0.211765" b="0.0901961"/>
+				<Tint r="0.443137" g="0.341176" b="0.14902"/>
 				<Height>21.823</Height>
 				<Waviness>4.99023</Waviness>
-				<Murkiness>0.899414</Murkiness>
+				<Murkiness>0.898438</Murkiness>
 				<WindAngle>1.1781</WindAngle>
 			</WaterBody>
 		</Water>
 		<Postproc>
 			<Brightness>-0.0244141</Brightness>
-			<Contrast>1.1084</Contrast>
+			<Contrast>1.20801</Contrast>
 			<Saturation>0.921875</Saturation>
 			<Bloom>0.134961</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="615.698" y="182.846" z="564.778"/>
+		<Position x="816.729" y="91.09" z="283.035"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -1623,42 +1623,49 @@
 			<Player>0</Player>
 			<Position x="760.15894" z="349.87989"/>
 			<Orientation y="-2.74083"/>
+			<Obstruction group="5470"/>
 		</Entity>
 		<Entity uid="341">
 			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
 			<Player>0</Player>
 			<Position x="761.35474" z="336.6464"/>
 			<Orientation y="1.47788"/>
+			<Obstruction group="5470"/>
 		</Entity>
 		<Entity uid="342">
 			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
 			<Player>0</Player>
 			<Position x="765.9228" z="340.64618"/>
 			<Orientation y="2.28739"/>
+			<Obstruction group="5470"/>
 		</Entity>
 		<Entity uid="344">
 			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
 			<Player>0</Player>
 			<Position x="773.12726" z="328.94892"/>
 			<Orientation y="1.65725"/>
+			<Obstruction group="5470"/>
 		</Entity>
 		<Entity uid="345">
 			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
 			<Player>0</Player>
 			<Position x="780.69843" z="331.18088"/>
 			<Orientation y="0.96621"/>
+			<Obstruction group="5470"/>
 		</Entity>
 		<Entity uid="347">
 			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
 			<Player>0</Player>
 			<Position x="785.81452" z="336.20282"/>
 			<Orientation y="0.47306"/>
+			<Obstruction group="5470"/>
 		</Entity>
 		<Entity uid="348">
 			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
 			<Player>0</Player>
 			<Position x="790.36231" z="343.66553"/>
 			<Orientation y="1.49192"/>
+			<Obstruction group="5470"/>
 		</Entity>
 		<Entity uid="349">
 			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
@@ -1671,18 +1678,21 @@
 			<Player>0</Player>
 			<Position x="781.33979" z="355.06443"/>
 			<Orientation y="-0.87894"/>
+			<Obstruction group="5470"/>
 		</Entity>
 		<Entity uid="351">
 			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
 			<Player>0</Player>
 			<Position x="786.36121" z="352.67814"/>
 			<Orientation y="-0.92234"/>
+			<Obstruction group="5470"/>
 		</Entity>
 		<Entity uid="352">
 			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
 			<Player>0</Player>
 			<Position x="772.38941" z="361.10456"/>
 			<Orientation y="-4.63512"/>
+			<Obstruction group="5470"/>
 		</Entity>
 		<Entity uid="353">
 			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
@@ -30066,6 +30076,7 @@
 			<Player>0</Player>
 			<Position x="774.26636" z="343.5886"/>
 			<Orientation y="1.1421"/>
+			<Obstruction group="5470"/>
 			<Actor seed="12558"/>
 		</Entity>
 		<Entity uid="5738">
@@ -30410,6 +30421,20 @@
 			<Position x="426.4257" z="234.02878"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31720"/>
+		</Entity>
+		<Entity uid="5790">
+			<Template>structures/merc_camp_egyptian</Template>
+			<Player>0</Player>
+			<Position x="853.818" z="552.24292"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="25022"/>
+		</Entity>
+		<Entity uid="5791">
+			<Template>structures/merc_camp_egyptian</Template>
+			<Player>0</Player>
+			<Position x="157.25602" z="494.18818"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13074"/>
 		</Entity>
 	</Entities>
 	<Paths/>

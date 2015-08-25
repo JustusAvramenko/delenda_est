@@ -1,30 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_mercenary_infantry_ranged_archer">
-  <Armour>
-    <Hack>2</Hack>
-    <Pierce>3</Pierce>
-    <Crush>4</Crush>
-  </Armour>
+<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
   <Attack>
-    <Ranged>
-      <Spread>1.75</Spread>
-      <MaxRange>54.0</MaxRange>
-    </Ranged>
+    <Melee>
+      <Hack>20.0</Hack>
+    </Melee>
+    <Charge>
+      <Hack>40.0</Hack>
+    </Charge>
   </Attack>
-  <Health>
-    <Max>95</Max>
-  </Health>
+  <Builder>
+    <Entities datatype="tokens">
+	  structures/sele_military_colony
+      structures/sele_library
+      structures/sele_wonder
+    </Entities>
+  </Builder>
+  <Cost>
+    <Resources>
+      <food>0</food>
+      <metal>120</metal>
+    </Resources>
+  </Cost>
   <Identity>
-    <Rank>Advanced</Rank>
-	<Civ>sele</Civ>
-	<Lang>greek</Lang>
-    <GenericName>Medium Cretan Mercenary Archer</GenericName>
-    <SpecificName>Toxótēs Krētikós Mistophoros</SpecificName>
-    <History>Mercenary archers from the big Greek island of Crete. They were widely regarded as the best archers in all of Aegean and had a long tradition of hiring themselves out to Hellenic states such as Athens for use aboard Triremes naval vessels. Alexander hired them to accompany him on his world conquest march and while in his service they dueled admirably with the greatly feared eastern archers. Later, they were often hired by the Successor states, such as the Pergamenes, Hellenistic Spartans, the Ptolemies in Egypt, and Seleucids in Syria.</History>
-    <Icon>units/hele_infantry_archer.png</Icon>
+    <Civ>sele</Civ>
+    <GenericName>Thracian Black Cloak</GenericName>
+    <SpecificName>Rhomphaiaphoros Thrakikós</SpecificName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+	<Rank>Elite</Rank>
+    <History>Thracian tribesmen who wield the fiercesome rhomphaia polearm weapon in combat. They were ubiquitous mercenaries throughout Hellenistic times, sometimes even serving in two opposing armies.</History>
+    <Icon>units/sele_infantry_swordsman.png</Icon>
+	<RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
-  <Promotion disable=""/>
+  <UnitMotion>
+    <WalkSpeed>8.0</WalkSpeed>
+    <Run>
+      <Speed>18.0</Speed>
+    </Run>
+  </UnitMotion>
   <VisualActor>
-    <Actor>units/macedonians/infantry_archer_a.xml</Actor>
+    <Actor>units/hellenes/thracian_blackcloak.xml</Actor>
   </VisualActor>
 </Entity>

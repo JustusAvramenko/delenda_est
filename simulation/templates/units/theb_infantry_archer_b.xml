@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_mercenary_infantry_ranged_archer">
+<Entity parent="template_unit_infantry_ranged_archer">
+  <Attack>
+    <Ranged>
+      <MaxRange>40.0</MaxRange>
+      <Spread>2.5</Spread>
+    </Ranged>
+  </Attack>
   <Builder>
     <Entities datatype="tokens">
       structures/theb_siege_workshop
@@ -11,9 +17,9 @@
     <Civ>theb</Civ>
 	<Lang>greek</Lang>
 	<SelectionGroupName>units/theb_infantry_archer_b</SelectionGroupName>
-    <GenericName>Cretan Mercenary Archer</GenericName>
-    <SpecificName>Toxótēs Krētikós</SpecificName>
-    <History>Mercenary archers from the big island of Crete. They were widely regarded as the best archers in all of Hellas and had a long tradition of hiring themselves out to Hellenic states such as Athens for use aboard Triremes naval vessels. Alexander hired them to accompany him on his world conquest march and while in his service they dueled admirably with the greatly feared eastern archers.</History>
+    <GenericName>Greek Archer</GenericName>
+    <SpecificName>Toxótēs</SpecificName>
+    <History>Archers in Greece were not very numerous and their bows tended to be very simple and short-ranged. They came from the lower classes of a Greek polis and could not afford the armor and weaponry typical of a middle-class hoplite. Some archers did wear light armor of the linen and leather variety and simple inexpensive non-plumed bronze helmets.</History>
     <Icon>units/hele_infantry_archer.png</Icon>
   </Identity>
   <Promotion>

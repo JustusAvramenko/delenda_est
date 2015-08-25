@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_infantry_swordsman">
+<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
   <Attack>
     <Melee>
-      <Hack>25.0</Hack>
+      <Hack>20.0</Hack>
     </Melee>
     <Charge>
-      <Hack>50.0</Hack>
+      <Hack>40.0</Hack>
     </Charge>
   </Attack>
+  <Builder>
+    <Entities datatype="tokens">
+      structures/mace_siege_workshop
+      structures/mace_theatron
+      structures/mace_library
+	  structures/{civ}_wonder
+    </Entities>
+  </Builder>
   <Cost>
     <Resources>
       <food>0</food>
@@ -15,18 +23,16 @@
     </Resources>
   </Cost>
   <Identity>
-    <Civ>mace</Civ>
+    <Rank>Elite</Rank>
+	<Civ>mace</Civ>
 	<Lang>greek</Lang>
     <GenericName>Thracian Black Cloak</GenericName>
     <SpecificName>Rhomphaiaphoros</SpecificName>
-    <VisibleClasses datatype="tokens">Thracian Mercenary</VisibleClasses>
+    <VisibleClasses datatype="tokens">Thracian Guerilla</VisibleClasses>
     <History>Thracian tribesmen who wield the fiercesome rhomphaia polearm weapon in combat. They were ubiquitous mercenaries throughout Hellenistic times, sometimes even serving in two opposing armies.</History>
     <Icon>units/sele_infantry_swordsman.png</Icon>
 	<RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
-  <TrainingRestrictions>
-    <Category>Mercenary20</Category>
-  </TrainingRestrictions>
   <UnitMotion>
     <WalkSpeed>8.0</WalkSpeed>
     <Run>
