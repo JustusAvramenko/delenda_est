@@ -1,0 +1,19 @@
+{
+	"genericName": "The College of Vestal Virgins",
+	"specificName": {
+		"rome": "Collegium Virginum Vestalium"
+	},
+	"description": "In ancient Rome, the Vestals or Vestal Virgins (Vestales, singular Vestalis) were priestesses of Vesta, goddess of the hearth. The College of the Vestals and its well-being was regarded as fundamental to the continuance and security of Rome. They cultivated the sacred fire that was not allowed to go out. The Vestals were freed of the usual social obligations to marry and bear children, and took a vow of chastity in order to devote themselves to the study and correct observance of state rituals that were off-limits to the male colleges of priests.",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "vestals.png",
+	"researchTime": 40,
+	"tooltip": "Female Citizens +50% Health, but +20% train time.",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.50},
+		{"value": "Cost/BuildTime", "multiply": 1.20}
+	],
+	"affects": ["Female Citizen"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

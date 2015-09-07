@@ -1,0 +1,21 @@
+{
+	"genericName": "A Sound Economy",
+	"specificName": {
+		"maur": "Artha"
+	},
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "taxes.png",
+	"researchTime": 60,
+	"tooltip": "The Market building gives the player a trickle of 20 of each resource per minute.",
+	"modifications": [
+		{"value": "ResourceTrickle/FoodRate", "add": 2},
+		{"value": "ResourceTrickle/WoodRate", "add": 2},
+		{"value": "ResourceTrickle/StoneRate", "add": 2},
+		{"value": "ResourceTrickle/MetalRate", "add": 2}
+	],
+	"affects": ["Market"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

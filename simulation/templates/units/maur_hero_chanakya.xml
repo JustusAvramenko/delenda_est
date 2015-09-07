@@ -26,20 +26,28 @@
   <Identity>
     <Civ>maur</Civ>
     <Classes datatype="tokens">Hero Healer Organic</Classes>
-	<GenericName>Acharya Chanakya</GenericName>
-    <SpecificName>Acharya Chāṇakya</SpecificName>
+	<GenericName>Chanakya</GenericName>
+    <SpecificName>Cāṇakya</SpecificName>
     <Icon>units/maur_hero_chanakya.png</Icon>
     <VisibleClasses datatype="tokens">Healer</VisibleClasses>
 	<Tooltip>
 Hero Special: "Healer" - Heal units at a fast rate.
-Hero Special: "Teacher" - Empower a building to research and train +50% faster.
-Hero Special: "Philosopher" - Research 4 special technologies only available to Chanakya.</Tooltip>
-    <History>TBD.</History>
+Hero Special: "Arthashastra" - Research 4 special technologies only available to Chanakya.</Tooltip>
+    <History>Originally a professor of economics and political science at the ancient university of Taxila, Chanakya managed the first Mauryan emperor Chandragupta's rise to power at a young age. He is widely credited for having played an important role in the establishment of the Maurya Empire, which was the first empire in archaeologically recorded history to rule most of the Indian subcontinent. Chanakya served as the chief advisor to both Chandragupta and his son Bindusara.</History>
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
   <Minimap>
     <Type>hero</Type>
   </Minimap>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Technologies datatype="tokens">
+      mauryans/chanakya_economy
+	  mauryans/chanakya_kingship
+	  mauryans/chanakya_law
+	  mauryans/chanakya_animals
+    </Technologies>
+  </ProductionQueue>
   <Selectable>
     <Overlay>
       <AlwaysVisible/>
