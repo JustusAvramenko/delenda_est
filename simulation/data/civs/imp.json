@@ -1,0 +1,173 @@
+{
+	"Code": "imp",
+	"Culture":[ "italy" ],
+	"Region":[ "medit", "europe" ],
+	"Name": "Romans (Principates)",
+	"Emblem": "session/portraits/emblems/emblem_romans.png",
+	"History": "The Romans controlled one of the largest empires of the ancient world, stretching at its peak from southern Scotland to the Sahara Desert, and containing between 60 million and 80 million inhabitants, one quarter of the Earth's population at that time. Rome also remained one of the strongest nations on earth for almost 800 years. The Romans were the supreme builders of the ancient world, excelled at siege warfare and had an exquisite infantry and navy.",
+	"Music":[
+			{"File":"Juno_Protect_You.ogg", "Type":"peace"},
+			{"File":"Elysian_Fields.ogg", "Type":"peace"}
+		],
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Aurelian Walls",
+					"History": "The 'Aurelian Walls' of Rome were an impressive curtain of brick-faced concrete city walls 19 kilometers in length. They encompassed all of Rome's 7 hills and the entire city at a time of increased barbarian attacks on the empire.",
+					"Description": "Stone Walls -75% build time."
+				},
+				{
+					"Name": "Hadrian's Wall",
+					"History": ".",
+					"Description": "Upgrade Siege Walls to Stone Walls, with shooting towers and double health."
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Gaius Julius Caesar Octavianus",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "The first Roman emperor, though he always pretended to 'restore the Republic' even unto his death. Octavian, or 'Augustus', put an end to 50 years of civil war and ushered in an era today we call 'Pax Romana,' or 'The Roman Peace', which lasted for over a century."
+				},
+				{
+					"Name": "Caesar Trajanus Augustus",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "The greatest expansionist emperor of the Roman Empire. Trajan conquered the Dacians, beat back the Germans, and nearly conquered all of the Parthian Empire before having to turn back due to old age."
+				},
+				{
+					"Name": "Titus Flavius Caesar Augustus",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "Titus (Latin: Titus Flavius Caesar Vespasianus Augustus; 30 December 39 – 13 September 81) was Roman Emperor from 79 to 81. A member of the Flavian dynasty, Titus succeeded his father Vespasian upon his death, thus becoming the first Roman Emperor to come to the throne after his own biological father. Prior to becoming Emperor, Titus gained renown as a military commander, serving under his father in Judaea during the First Jewish-Roman War. The campaign came to a brief halt with the death of emperor Nero in 68, launching Vespasian's bid for the imperial power during the Year of the Four Emperors. When Vespasian was declared Emperor on 1 July 69, Titus was left in charge of ending the Jewish rebellion. In 70, he besieged and captured Jerusalem, and destroyed the city and the Second Temple. For this achievement Titus was awarded a triumph: the Arch of Titus commemorates his victory to this day. Under the rule of his father, Titus gained notoriety in Rome serving as prefect of the Praetorian Guard, and for carrying on a controversial relationship with the Jewish queen Berenice. Despite concerns over his character, Titus ruled to great acclaim following the death of Vespasian in 79, and was considered a good emperor by Suetonius and other contemporary historians. As emperor, he is best known for completing the Colosseum and for his generosity in relieving the suffering caused by two disasters, the eruption of Mount Vesuvius in AD 79 and a fire in Rome in 80. After barely two years in office, Titus died of a fever on 13 September 81. He was deified by the Roman Senate and succeeded by his younger brother Domitian. (Wikipedia)"
+				}
+			]
+		} 
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Testudo Formation",
+			"History": "The Romans commonly used the Testudo or 'turtle' formation for defense: Legionaries were formed into hollow squares with twelve men on each side, standing so close together that their shields overlapped like fish scales.",
+			"Description": "Roman Legionaries can form a Testudo."
+		},
+		{
+			"Name": "Imperial Superpower",
+			"History": ".",
+			"Description": "Imperial Phase grants +50% Civic Center radius increase instead of the usual +25% increase for other factions."
+		} 
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Client-States",
+			"History": ".",
+			"Description": "."
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Entrenched Camp",
+			"Class": "",
+			"Emblem": "",
+			"History": "Sometimes it was a temporary camp built facing the route by which the army is to march, other times a defensive or offensive (for sieges) structure. Within the Praetorian gate, which should either front the east or the enemy, the tents of the first centuries or cohorts are pitched, and the dracos (ensigns of cohorts) and other ensigns planted. The Decumane gate is directly opposite to the Praetorian in the rear of the camp, and through this the soldiers are conducted to the place appointed for punishment or execution. It has a turf wall, and it's surrounded by a canal filled with water whenever possible for extra defense. Many towns started up as bigger military camps to evolve to more complicated cities.",
+			"Requirements": "",
+			"Phase": "City",
+			"Special": "Trains citizen-soldiers and siege weapons from neutral or enemy territory."
+		},
+		{
+			"Name": "Siege Walls",
+			"Class": "",
+			"Emblem": "",
+			"History": "Turf walls built by legionaries during sieges.",
+			"Requirements": "",
+			"Phase": "City",
+			"Special": "Can be built in neutral and enemy territory to strangle enemy towns." 
+		},
+		{
+			"Name": "Temple of Vesta",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "City",
+			"Special": "Greatly increase the loyalty of nearby structures and health of nearby units."
+		} 
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/imp_civil_centre"
+		},
+		{
+			"Template": "units/imp_support_female_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/imp_infantry_swordsman_b",
+			"Count": 2
+		},		
+		{
+			"Template": "units/imp_infantry_javelinist_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/imp_cavalry_spearman_b"
+		}
+	],
+	"Formations":
+	[
+		"formations/null",
+		"formations/box",
+		"formations/column_closed",
+		"formations/line_closed",
+		"formations/column_open",
+		"formations/line_open",
+		"formations/flank",
+		"formations/skirmish",
+		"formations/wedge",
+		"formations/battle_line",
+		"formations/testudo"
+	],
+	"AINames":
+	[
+		"Tiberius",
+		"Claudius",
+		"Nero",
+		"Marcus Vipsanius Agrippa",
+		"Julius Caesar",
+		"Galba",
+		"Titus",
+		"Vespasian",
+		"Domitian",
+		"Commodus",
+		"Marcus Aurelius",
+		"Decimus Meridias Maximus",
+		"Lucius Verus",
+		"Septimius Severus",
+		"Caracalla",
+		"Titus Pullo",
+		"Lucius Vorennus",
+		"Tacitus",
+		"Pliny the Elder",
+		"Pliny the Younger",
+		"Sextus Calpurnius Agricola"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_cavalry" : "units/rome_cavalry_spearman_b",
+		"skirmish/units/default_infantry_melee_b": "units/rome_infantry_swordsman_b",
+		"skirmish/structures/default_house_10" : "structures/{civ}_house"
+	},
+	"SelectableInGameSetup": true
+}

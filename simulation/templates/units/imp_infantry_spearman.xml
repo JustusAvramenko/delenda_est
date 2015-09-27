@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_spearman">
+  <Armour>
+    <Hack>2</Hack>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>7.0</Hack>
+    </Melee>
+    <Charge>
+      <Hack>16.0</Hack>
+    </Charge>
+  </Attack>
+  <Cost>
+    <BuildTime>10</BuildTime>
+	<Resources>
+      <wood>40</wood>
+    </Resources>
+  </Cost>
+  <Builder>
+    <Entities datatype="tokens">
+      -other/wallset_palisade
+	  structures/rome_temple_vesta
+      structures/rome_army_camp
+      structures/rome_wallset_siege
+      structures/{civ}_wonder
+    </Entities>
+  </Builder>
+  <Identity>
+    <Civ>rome</Civ>
+	<Lang>latin</Lang>
+    <SelectionGroupName>units/rome_infantry_spearman</SelectionGroupName>
+    <GenericName>Militia Spearman</GenericName>
+    <SpecificName>Rorarius</SpecificName>
+    <Icon>units/rome_infantry_spearman_militia.png</Icon>
+    <History>The Rorarii were soldiers who formed the final lines, or else provided a reserve thereby, in the ancient pre-Marian Roman army. They may have been used with the triarii in battle near the final stages of fighting, since they are recorded as being located at the rear of the main battle formation. (Note that the saying "Going to the Triarii" means that something has gone to the bitter end - as in reached the final line.) They may have been similar in role to the accensi, acting as supernumeraries and filling the places of fallen soldiers as a battle or campaign wore on, or they may have been skirmishers akin to velites as stated by Livy in Book VIII.8. Unfortunately, the evidence is so limited that it is difficult to understand what direct role the rorarii may have had, if any, in fighting. It seems most likely that they were not part of the line in the same way as triarii, principes and hastati were. Source: Wikipedia</History>
+  </Identity>
+  <Promotion disable=""/>
+  <TrainingRestrictions>
+    <Category>Rorarius</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/romans/infantry_spearman.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -15,11 +15,11 @@
 	"requirementsTooltip": "Requires 15 total Structures (except Walls and Palisades).",
 	"icon": "city_phase.png",
 	"researchTime": 60,
-	"tooltip": "Advance to City Phase, which unlocks more structures and units. Territory radius for Civic Centers increased by another +25%",
+	"tooltip": "Advance to City Phase, which unlocks more structures and units. Territory radius for Civic Centers and vision range for units increased by another +25%.",
 	"modifications": [
-		{"value": "TerritoryInfluence/Radius", "multiply": 1.25},
-		{"value": "Vision/Range", "multiply": 1.25}
+		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "Citizen"}
 	],
-	"affects": ["CivCentre"],
 	"soundComplete": "interface/alarm/alarm_phase.xml"
 }

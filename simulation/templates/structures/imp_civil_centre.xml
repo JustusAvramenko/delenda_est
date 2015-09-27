@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Auras>
+    <Aura1>
+      <Type>range</Type>
+      <Radius>50</Radius>
+      <Affects>Soldier</Affects>
+      <Modifications>
+        <Attack.Ranged.Pierce>
+		  <Add>1</Add> 
+		</Attack.Ranged.Pierce>
+        <Attack.Melee.Hack>
+		  <Add>1</Add>
+		</Attack.Melee.Hack>
+      </Modifications>
+      <AuraName>"Citizenship" Aura</AuraName>
+      <AuraDescription>+2 attack for Roman soldiers within sight of a Roman Basilica.</AuraDescription>
+    </Aura1>
+  </Auras>
+  <Footprint>
+    <Square width="40.0" depth="40.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Basilica</SpecificName>
+    <History>.</History>
+  </Identity>
+  <Health>
+	<SpawnEntityOnDeath>rubble/rubble_rome_cc</SpawnEntityOnDeath>
+  </Health>
+  <Obstruction>
+    <Static width="37.0" depth="37.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_infantry_spearman
+    </Entities>
+    <Technologies datatype="tokens">
+	  phase_town
+      phase_city
+	  phase_imperial
+	  health_units_01
+	  health_units_02
+	  pair_structures_01
+	  pair_structures_02
+	  health_units_03
+	  health_units_04
+	  health_units_05
+	  health_units_06
+	  pair_structures_03
+	  pair_structures_04
+	  vision_treason
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/romans/civic_centre.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

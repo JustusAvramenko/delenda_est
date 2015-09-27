@@ -18,11 +18,11 @@
 	"supersedes": "phase_city",
 	"icon": "imperial_phase.png",
 	"researchTime": 10,
-	"tooltip": "Advance to Imperial Phase, which unlocks powerful technologies and abilities. Territory radius for Civic Centers increased by a final +25%",
+	"tooltip": "Advance to Imperial Phase, which unlocks powerful technologies and abilities. Territory radius for Civic Centers and vision range for units increased by a final +25%.",
 	"modifications": [
-		{"value": "TerritoryInfluence/Radius", "multiply": 1.25},
-		{"value": "Vision/Range", "multiply": 1.5}
+		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "Unit"}
 	],
-	"affects": ["CivCentre"],
 	"soundComplete": "interface/alarm/alarm_phase.xml"
 }
