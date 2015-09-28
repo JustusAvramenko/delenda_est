@@ -2,9 +2,9 @@
 	"Code":"ptol",
 	"Culture":[ "egypt", "succe" ],
 	"Region":[ "africa" ],
-	"Name":"Ptolemies",
+	"Name":"Egyptians (Ptolemies)",
 	"Emblem":"session/portraits/emblems/emblem_ptolemies.png",
-	"History":"The Ptolemaic dynasty was a Macedonian Greek royal family which ruled the Ptolemaic Empire in Egypt during the Hellenistic period. Their rule lasted for 275 years, from 305 BC to 30 BC. They were the last dynasty of ancient Egypt.",
+	"History":"The Ptolemaic dynasty was a Macedonian Greek royal family which ruled the Ptolemaic Empire in Egypt during the Hellenistic period. Their rule lasted for 275 years, from 305 BC to 30 BC. They were the last dynasty of ancient Egypt before conquest by the Roman Republic.",
 	"Music":[
 			{"File":"Ammon-Ra.ogg", "Type":"peace"},
 			{"File":"Valley_of_the_Nile.ogg", "Type":"peace"}
@@ -24,12 +24,12 @@
 				{
 					"Name":"Pharaonic Cult.",
 					"History":"The Macedonian-Greek rulers of the Ptolemaic dynasty observed many ancient Egyptian traditions in order to satiate the local populace and ingratiate themselves to the powerful priestly class in the country.",
-					"Description":"Hero aura range boosted by 50%."
+					"Description":"Heroes train nearly instantly and gain +50% health."
 				},
 				{
 					"Name":"Nile Delta",
 					"History":"The Nile Delta had rich soil for farming, due to centuries of seasonal floods from the Nile depositing rich silt across the landscape.",
-					"Description":"The Ptolemaic Egyptians receive 3 additional farming technologies above and beyond the maximum number of farming technologies usually available to a faction."
+					"Description":"The Ptolemaic Egyptians receive 2 additional farming technologies above and beyond the maximum number of farming technologies usually available to a faction."
 				}
 			],
 			"Heroes":
@@ -61,19 +61,24 @@
 	"CivBonuses":
 	[
 		{
+			"Name":"Cleruchy",
+			"History":".",
+			"Description":"This unlocks the Ptolemaic expansion building, the Klēroukhia or Military Colony, similar to Civic Centers for other factions. It is weaker and carries a smaller territory influence, but is cheaper and built faster."
+		},
+		{
 			"Name":"Mercenary Army",
 			"History":"The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and foreign mercenaries for the bulk of its military force, mainly because the loyalty of native Egyptian units was often suspect. Indeed, during one native uprising, Upper Egypt was lost to the Ptolemies for decades. Mercenaries were often battle-hardened and their loyalty can be bought, sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt under the Ptolemies was so prosperous as to be the richest of Alexander's successor states.",
-			"Description":"The Ptolemies receive the Mercenary Camp, a barracks that is constructed in neutral territory and trains mercenary soldiers."
+			"Description":"The Ptolemies can hire mercenaries at a steep 33% discount."
 		},
 		{
 			"Name":"Nile Delta",
-			"History":"Unknown.",
-			"Description":"The Ptolemaic Egyptians receive 3 additional farming technologies."
+			"History":"If Egypt is the breadbasket of the Mediterranean, then the Nile Delta is the breadbasket of Egypt.",
+			"Description":"The Ptolemaic Egyptians receive 2 additional farming technologies."
 		},
 		{
 			"Name":"Roundup",
 			"History":"Unknown.",
-			"Description":"Can capture gaia elephants and camels to reduce their training cost."
+			"Description":"Can capture gaia elephants and camels and garrison them into a corral to reduce their training costs."
 		}
 	],
 	"TeamBonuses":
@@ -87,6 +92,15 @@
 	"Structures":
 	[
 		{
+			"Name":"Military Colony",
+			"Class":"",
+			"Emblem":"structures/military_settlement.png",
+			"History":"The Ptolemaic kings invited Greeks, Macedonians, Galatians (Gauls), Cretans, and Thracians alike to settle in within the vast territories of the empire. They settled in military colonies called cleruchies (klēroukhia). Under this arrangement, the settlers were given a plot of land, or a kleros, and in return were required to serve in the great king's army when called to duty. This created a upper-middle class of military settlers who owed their livelihoods and fortunes to the Ptolemaic kings and helped grow the available manpower for the royal army. A side effect of this system was that it drained the Greek homeland of military-aged men, a contributing factor to Greece's eventual conquest by Rome.",
+			"Requirements":".",
+			"Phase":"Town",
+			"Special":"This is the Ptolemaic expansion building, similar to Civic Centers for other factions. It is weaker and carries a smaller territory influence, but is cheaper and built faster."
+		},
+		{
 			"Name":"Library",
 			"Class":"",
 			"Emblem":"",
@@ -96,22 +110,13 @@
 			"Special":"Maximum of 1 built. All Special Technologies and some regular city-phase technologies are researched here. Building one reduces the cost of all other remaining technologies by 10%."
 		},
 		{
-			"Name":"Stratópedo Misthophóron",
-			"Class":"",
-			"Emblem":"",
-			"History":"The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and foreign mercenaries for the bulk of its military force, mainly because the loyalty of native Egyptian units was often suspect. Indeed, during one native uprising, Upper Egypt was lost to the Ptolemies for decades. Mercenaries were often battle-hardened and their loyalty can be bought, sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt under the Ptolemies was so prosperous as to be the richest of Alexander's successor states.",
-			"Requirements":"",
-			"Phase":"Town",
-			"Special":"Must be constructed in neutral territory. Has no territory radius effect. Trains all 'mercenary' units."
-		},
-		{
 			"Name":"Lighthouse",
 			"Class":"",
 			"Emblem":"",
 			"History":"The Ptolemaic dynasty in Egypt built the magnificent Lighthouse of Alexandria near the harbor mouth of that Nile Delta city. This structure could be seen for many kilometers out to sea and was one of the Seven Wonders of the World.",
 			"Requirements":".",
 			"Phase":"City",
-			"Special":"When built along the shoreline, removes shroud of darkness over all the water, revealing all the coast lines on the map. Limit: 1."
+			"Special":"When built along the shoreline, removes shroud of darkness over all the water, revealing all the coast lines on the map. Also has a very large vision range. Limit: 1."
 		}
 	],
 	"StartEntities":

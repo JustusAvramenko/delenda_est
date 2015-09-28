@@ -1,47 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support">
-  <Builder>
-    <Rate>0.5</Rate>
-    <Entities datatype="tokens">
-      structures/{civ}_house
-      structures/{civ}_storehouse
-      structures/{civ}_farmstead
-      structures/{civ}_field
-      structures/{civ}_corral
-      structures/{civ}_outpost
-      other/wallset_palisade
-      structures/{civ}_dock
-      structures/{civ}_barracks
-      structures/{civ}_blacksmith
-      structures/{civ}_temple
-      structures/{civ}_market
-      structures/{civ}_defense_tower
-      structures/{civ}_wallset_stone
-      structures/{civ}_fortress
-    </Entities>
-  </Builder>
   <Cost>
     <Population>0</Population>
-    <BuildTime>0</BuildTime>
+    <BuildTime>10</BuildTime>
     <Resources>
       <food>0</food>
       <wood>0</wood>
       <stone>0</stone>
-      <metal>50</metal>
+      <metal>25</metal>
     </Resources>
   </Cost>
   <Health>
-    <RegenRate>-0.25</RegenRate>
+    <Max>50</Max>
+	<RegenRate>-0.25</RegenRate>
     <Unhealable>true</Unhealable>
   </Health>
   <Identity>
-    <VisibleClasses datatype="tokens">Slave Builder Gatherer</VisibleClasses>
+    <VisibleClasses datatype="tokens">Gatherer Slave</VisibleClasses>
     <GenericName>Slave</GenericName>
     <Icon>units/global_slave.png</Icon>
-	<Tooltip>Gatherer with a finite life span. Bonused at mining and lumbering.</Tooltip>
+	<Tooltip>A cheap, weak gatherer with a finite life span.</Tooltip>
   </Identity>
   <Loot>
-    <xp>1</xp>
+    <xp>10</xp>
     <food>0</food>
     <wood>1</wood>
     <stone>1</stone>
@@ -52,16 +33,14 @@
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
     <Rates>
-      <food.fish>0.5</food.fish>
-      <food.fruit>0.5</food.fruit>
-      <food.grain>0.35</food.grain>
+      <food.fruit>0.75</food.fruit>
+      <food.grain>0.25</food.grain>
       <food.meat>1</food.meat>
-	  <wood.tree>1.0</wood.tree>
-	  <wood.ruins>5</wood.ruins>
-      <stone.rock>1.0</stone.rock>
-	  <stone.ruins>5</stone.ruins>
-      <metal.ore>1.0</metal.ore>
-	  <treasure disable=""/>
+      <wood.tree>0.75</wood.tree>
+      <wood.ruins>5</wood.ruins>
+      <stone.rock>0.75</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ore>0.75</metal.ore>
     </Rates>
   </ResourceGatherer>
   <Sound>
@@ -89,6 +68,9 @@
   <TrainingRestrictions>
     <Category>Slave30</Category>
   </TrainingRestrictions>
+  <UnitAI>
+    <AlertReactiveLevel>1</AlertReactiveLevel>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed>6.5</WalkSpeed>
     <Run>
@@ -97,4 +79,7 @@
       <RangeMin>8.0</RangeMin>
     </Run>
   </UnitMotion>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
 </Entity>
