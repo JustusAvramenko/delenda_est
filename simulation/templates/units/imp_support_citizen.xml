@@ -31,7 +31,7 @@
     </Aura1>
   </Auras>
   <Builder>
-    <Rate>1.1</Rate>
+    <Rate>1.25</Rate>
 	<Entities datatype="tokens">
 	  structures/{civ}_house
       structures/{civ}_storehouse
@@ -46,39 +46,39 @@
     </Entities>
   </Builder>
   <Cost>
-    <Population>1</Population>
+    <Population>2</Population>
 	<Resources>
       <food>50</food>
     </Resources>
-    <BuildTime>10</BuildTime>
+    <BuildTime>15</BuildTime>
   </Cost>
   <Health>
-    <Max>50</Max>
+    <Max>100</Max>
   </Health>
   <Identity>
     <Civ>imp</Civ>
 	<Lang>latin</Lang>
 	<Gender>male</Gender>
-    <SpecificName>Plebeius</SpecificName>
+    <SpecificName>Civis Romanum</SpecificName>
     <GenericName>Roman Citizen</GenericName>
 	<VisibleClasses datatype="tokens">Builder Gatherer</VisibleClasses>
-	<Tooltip>Build civilian buildings and gather resources. Bonused at farming and foraging.</Tooltip>
+	<Tooltip>Build civilian buildings and gather resources. Command nearby slaves to work faster. Especially good at building.</Tooltip>
     <Icon>units/rome_support_female_citizen.png</Icon>
 	<SelectionGroupName>units/imp_support_citizen</SelectionGroupName>
     <History>.</History>
   </Identity>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
-    <BaseSpeed>1.25</BaseSpeed>
+    <BaseSpeed>1.0</BaseSpeed>
     <Rates>
-      <food.fruit>1</food.fruit>
+      <food.fruit>0.50</food.fruit>
       <food.grain>0.25</food.grain>
       <food.meat>1</food.meat>
       <wood.tree>0.65</wood.tree>
       <wood.ruins>5</wood.ruins>
       <stone.rock>0.5</stone.rock>
       <stone.ruins>2</stone.ruins>
-      <metal.ore>0.5</metal.ore>
+      <metal.ore>0.75</metal.ore>
     </Rates>
   </ResourceGatherer>
   <Sound>

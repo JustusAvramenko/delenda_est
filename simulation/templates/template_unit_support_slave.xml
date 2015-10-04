@@ -7,7 +7,7 @@
       <food>0</food>
       <wood>0</wood>
       <stone>0</stone>
-      <metal>50</metal>
+      <metal>40</metal>
     </Resources>
   </Cost>
   <Health>
@@ -17,9 +17,10 @@
   </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Gatherer Slave</VisibleClasses>
+	<Classes datatype="tokens">Worker</Classes>
     <GenericName>Slave</GenericName>
     <Icon>units/global_slave.png</Icon>
-	<Tooltip>A cheap, weak gatherer with a finite life span. Bonused at mining.</Tooltip>
+	<Tooltip>A cheap, weak gatherer with a finite life span. Good at mining and dying.</Tooltip>
   </Identity>
   <Loot>
     <xp>10</xp>
@@ -33,13 +34,13 @@
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
     <Rates>
-      <food.fruit>0.75</food.fruit>
+      <food.fruit>0.50</food.fruit>
       <food.grain>0.25</food.grain>
-      <food.meat>1</food.meat>
+      <food.meat>1.0</food.meat>
       <wood.tree>0.75</wood.tree>
-      <wood.ruins>5</wood.ruins>
+      <wood.ruins>5.0</wood.ruins>
       <stone.rock>1.25</stone.rock>
-      <stone.ruins>2</stone.ruins>
+      <stone.ruins>2.0</stone.ruins>
       <metal.ore>1.25</metal.ore>
     </Rates>
   </ResourceGatherer>

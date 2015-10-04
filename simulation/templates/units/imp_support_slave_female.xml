@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support_slave">
+  <Cost>
+    <Resources>
+      <food>25</food>
+      <metal>25</metal>
+    </Resources>
+  </Cost>
   <Identity>
     <Civ>imp</Civ>
 	<Lang>latin</Lang>
+	<Gender>female</Gender>
     <SpecificName>Serva</SpecificName>
+	<GenericName>Female Slave</GenericName>
+	<VisibleClasses datatype="tokens">Female</VisibleClasses>
     <History>Slavery played a major role in ancient civilization.</History>
+	<Tooltip>A cheap, weak gatherer with a finite life span. Good at foraging, farming, and dying.</Tooltip>
   </Identity>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.fruit>1.0</food.fruit>
+      <food.grain>0.5</food.grain>
+      <food.meat>1.0</food.meat>
+      <wood.tree>0.65</wood.tree>
+      <wood.ruins>5.0</wood.ruins>
+      <stone.rock>0.50</stone.rock>
+      <stone.ruins>2.0</stone.ruins>
+      <metal.ore>0.50</metal.ore>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+      <select>voice/{lang}/civ/civ_{gender}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{gender}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{gender}_attack.xml</order_attack>
+      <order_build>voice/{lang}/civ/civ_{gender}_build.xml</order_build>
+      <order_gather>voice/{lang}/civ/civ_{gender}_gather.xml</order_gather>
+      <order_repair>voice/{lang}/civ/civ_{gender}_repair.xml</order_repair>
+      <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/{gender}_death.xml</death>
+      <build>resource/construction/con_wood.xml</build>
+      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
+      <gather_grain>resource/farming/farm.xml</gather_grain>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
+      <gather_ore>resource/mining/mining.xml</gather_ore>
+      <gather_ruins>resource/mining/mining.xml</gather_ruins>
+    </SoundGroups>
+  </Sound>
   <VisualActor>
     <Actor>units/romans_imperial/slave_female.xml</Actor>
   </VisualActor>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_house">
   <BuildRestrictions>
-    <Category>HouseBig</Category>
+    <Category>Tenement</Category>
   </BuildRestrictions>
   <Cost>
     <PopulationBonus>25</PopulationBonus>
@@ -10,17 +10,25 @@
       <wood>300</wood>
     </Resources>
   </Cost>
+  <Footprint>
+    <Square width="36.0" depth="18.0"/>
+    <Height>5.0</Height>
+  </Footprint>
   <GarrisonHolder>
     <Max>10</Max>
   </GarrisonHolder>
   <Health>
     <Max>1500</Max>
+	<SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>imp</Civ>
     <SpecificName>Insula</SpecificName>
     <History>.</History>
   </Identity>
+  <Obstruction>
+    <Static width="28.0" depth="14.0"/>
+  </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
       units/{civ}_support_citizen
@@ -31,5 +39,6 @@
   </ProductionQueue>
   <VisualActor>
     <Actor>structures/romans/house.xml</Actor>
+	<FoundationActor>structures/fndn_4x4.xml</FoundationActor>
   </VisualActor>
 </Entity>
