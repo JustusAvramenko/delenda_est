@@ -1,0 +1,21 @@
+{
+	"genericName": "Imperial Phase",
+	"specificName": {
+		"imp": "Imperium Romanum"
+	},
+	"description": "Moves your civilization from urbanism to imperialism, unlocking powerful technologies and abilities not available in earlier phases of expansion.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": { "class": "Wonder", "number": 1 },
+	"requirementsTooltip": "Requires 1 Wonder to be built.",
+	"supersedes": "phase_city_roma",
+	"replaces": ["phase_imperial"],
+	"icon": "imperial_phase.png",
+	"researchTime": 10,
+	"tooltip": "Advance to Imperial Phase, which unlocks powerful technologies and abilities. Territory radius for Civic Centers increased by a final +50% (Imperium Romanum civ bonus) and vision range for units increased by a final +25%.",
+	"modifications": [
+		{"value": "TerritoryInfluence/Radius", "multiply": 1.50, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "Unit"}
+	],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

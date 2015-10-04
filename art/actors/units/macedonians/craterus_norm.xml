@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>skeletal/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_hele_e.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/falcata.xml" attachpoint="r_hand"/>
+        <prop actor="props/units/heads/mace_craterus.xml" attachpoint="helmet"/>
+        <prop actor="props/units/shields/mace_round_craterus.xml" attachpoint="shield"/>
+        <prop actor="props/units/cape_hd.xml" attachpoint="shoulders"/>
+      </props>
+      <textures>
+        <texture file="skeletal/mace_hero_craterus.png" name="baseTex"/>
+        <texture file="skeletal/mace_hero_craterus_spec.png" name="specTex"/>
+        <texture file="skeletal/mace_hero_craterus_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

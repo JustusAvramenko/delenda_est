@@ -27,12 +27,17 @@
 					"Description": "Use of the arch and other techniques increases structure health +15%."
 				},
 				{
-					"Name": "Aqueducts",
+					"Name": "City Watchmen",
 					"History": ".",
-					"Description": "All organic (non-mechanical) units +10% health."
+					"Description": "The Cohortes Vigilum automatically repair buildings +1hp/sec."
 				},
 				{
-					"Name": "Vallum Aelium (Hadrian's Wall)",
+					"Name": "Aqueducts",
+					"History": ".",
+					"Description": "All organic (non-mechanical) units +10 health."
+				},
+				{
+					"Name": "Hadrian's Wall",
 					"History": ".",
 					"Description": "Upgrade Siege Walls to Stone Walls, with shooting towers and double health."
 				},
@@ -91,7 +96,7 @@
 		{
 			"Name": "Client-States",
 			"History": ".",
-			"Description": "Allies gain the protection of Rome by giving an attack bonus to allied Roman units within their territory."
+			"Description": "Allies gain the protection of Rome by giving a +10% attack bonus to allied Roman units within their territory."
 		} 
 	],
 	"Structures":
@@ -140,18 +145,18 @@
 		},
 		{
 			"Template": "units/imp_support_citizen",
-			"Count": 4
+			"Count": 2
 		},
 		{
 			"Template": "units/imp_infantry_swordsman_b",
+			"Count": 4
+		},
+		{
+			"Template": "units/imp_support_slave",
 			"Count": 2
 		},
 		{
-			"Template": "units/imp_infantry_javelinist_b",
-			"Count": 2
-		},
-		{
-			"Template": "units/imp_cavalry_spearman_b"
+			"Template": "units/imp_merc_cavalry_2"
 		}
 	],
 	"Formations":
@@ -176,7 +181,7 @@
 		"Marcus Vipsanius Agrippa",
 		"Julius Caesar",
 		"Galba",
-		"Titus",
+		"Gela",
 		"Vespasian",
 		"Domitian",
 		"Commodus",
@@ -194,8 +199,9 @@
 	],
 	"SkirmishReplacements":
 	{
-		"skirmish/units/default_cavalry" : "units/rome_cavalry_spearman_b",
-		"skirmish/units/default_infantry_melee_b": "units/rome_infantry_swordsman_b",
+		"skirmish/units/default_support_female_citizen" : "units/imp_support_citizen",
+		"skirmish/units/default_cavalry" : "units/imp_merc_cavalry_2",
+		"skirmish/units/default_infantry_melee_b": "units/imp_infantry_swordsman_b",
 		"skirmish/structures/default_house_10" : "structures/{civ}_house"
 	},
 	"SelectableInGameSetup": true

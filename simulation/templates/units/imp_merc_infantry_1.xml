@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_mercenary_infantry_melee_spearman">
-  <Builder disable=""/>
+  <Builder>
+	<Entities datatype="tokens">
+      -structures/{civ}_house
+      -structures/{civ}_storehouse
+      -structures/{civ}_farmstead
+      -structures/{civ}_field
+      -structures/{civ}_corral
+      -structures/{civ}_dock
+      -other/wallset_palisade
+      -structures/{civ}_temple
+      -structures/{civ}_market
+      structures/{civ}_outpost
+	  structures/imp_barracks_aux
+      structures/imp_arch
+	  structures/imp_army_camp
+      structures/imp_wallset_siege
+      structures/{civ}_wonder
+    </Entities>
+  </Builder>
+  <Cost>
+    <Population>1</Population>
+  </Cost>
   <Identity>
     <Civ>imp</Civ>
 	<Lang>latin</Lang>
@@ -9,7 +30,8 @@
     <Icon>units/rome_infantry_spearman.png</Icon>
     <History> .</History>
   </Identity>
+  <ResourceGatherer disable=""/>
   <VisualActor>
-    <Actor>units/romans/infantry_spearman_e.xml</Actor>
+    <Actor>units/romans_imperial/infantry_spearman.xml</Actor>
   </VisualActor>
 </Entity>

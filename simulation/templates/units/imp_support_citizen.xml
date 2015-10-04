@@ -2,18 +2,24 @@
 <Entity parent="template_unit_support">
   <Attack>
     <Melee>
-      <Hack>5.0</Hack>
+      <Hack>6.0</Hack>
       <Pierce>0.0</Pierce>
       <Crush>0.0</Crush>
       <MaxRange>4.0</MaxRange>
       <RepeatTime>1000</RepeatTime>
-      <RestrictedClasses datatype="tokens">Structure MercenaryCamp</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">Infantry Cavalry Champion Structure CitizenSoldier MercenaryCamp</RestrictedClasses>
     </Melee>
+    <Slaughter>
+      <Hack>25.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>4.0</MaxRange>
+    </Slaughter>
   </Attack>
   <Auras>
     <Aura1>
       <Type>range</Type>
-      <Radius>20</Radius>
+      <Radius>15</Radius>
       <Affects>Slave</Affects>
       <Modifications>
         <ResourceGatherer.BaseSpeed>
@@ -21,7 +27,7 @@
 		</ResourceGatherer.BaseSpeed>
       </Modifications>
       <AuraName>"Slave Ownership" Aura</AuraName>
-      <AuraDescription>Nearby slaves work +25% faster.</AuraDescription>
+      <AuraDescription>Nearby slaves gather +25% faster. Range: 15 meters.</AuraDescription>
     </Aura1>
   </Auras>
   <Builder>
@@ -32,42 +38,49 @@
       structures/{civ}_farmstead
       structures/{civ}_field
       structures/{civ}_corral
-      structures/{civ}_outpost
       structures/{civ}_dock
-      structures/{civ}_barracks
-      structures/{civ}_blacksmith
       structures/{civ}_temple
       structures/{civ}_market
-      structures/{civ}_defense_tower
-      structures/{civ}_wallset_stone
-      structures/{civ}_fortress
-      structures/imp_arch
-	  structures/imp_army_camp
-      structures/imp_wallset_siege
+	  structures/{civ}_civil_centre
       structures/{civ}_wonder
     </Entities>
   </Builder>
   <Cost>
-    <Population>2</Population>
+    <Population>1</Population>
 	<Resources>
-      <food>60</food>
+      <food>50</food>
     </Resources>
     <BuildTime>10</BuildTime>
   </Cost>
   <Health>
-    <Max>75</Max>
+    <Max>50</Max>
   </Health>
   <Identity>
-    <Civ>rome</Civ>
+    <Civ>imp</Civ>
 	<Lang>latin</Lang>
 	<Gender>male</Gender>
     <SpecificName>Plebeius</SpecificName>
     <GenericName>Roman Citizen</GenericName>
-	<VisibleClasses datatype="tokens">Builder</VisibleClasses>
+	<VisibleClasses datatype="tokens">Builder Gatherer</VisibleClasses>
+	<Tooltip>Build civilian buildings and gather resources. Bonused at farming and foraging.</Tooltip>
     <Icon>units/rome_support_female_citizen.png</Icon>
 	<SelectionGroupName>units/imp_support_citizen</SelectionGroupName>
     <History>.</History>
   </Identity>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.25</BaseSpeed>
+    <Rates>
+      <food.fruit>1</food.fruit>
+      <food.grain>0.25</food.grain>
+      <food.meat>1</food.meat>
+      <wood.tree>0.65</wood.tree>
+      <wood.ruins>5</wood.ruins>
+      <stone.rock>0.5</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ore>0.5</metal.ore>
+    </Rates>
+  </ResourceGatherer>
   <Sound>
     <SoundGroups>
       <select>voice/{lang}/civ/civ_{gender}_select.xml</select>
@@ -82,6 +95,12 @@
       <death>actor/human/death/{gender}_death.xml</death>
       <build>resource/construction/con_wood.xml</build>
       <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
+      <gather_grain>resource/farming/farm.xml</gather_grain>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
+      <gather_ore>resource/mining/mining.xml</gather_ore>
+      <gather_ruins>resource/mining/mining.xml</gather_ruins>
     </SoundGroups>
   </Sound>
   <UnitAI>

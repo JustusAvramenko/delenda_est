@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base">
+      <animations>
+        <animation file="biped/inf_sword_ready_a.dae" name="Idle" speed="100"/>
+        <animation file="biped/walk_spearshield.psa" name="Walk" speed="120"/>
+        <animation file="infantry/sword/move/run/isw_s_off_01.psa" name="Run" speed="30"/>
+        <animation event="0.5" file="biped/inf_spear_shield_atk_a.psa" name="attack_melee" speed="100"/>
+        <animation event="0.5" file="biped/inf_spear_shield_atk_b.psa" name="attack_melee" speed="100"/>
+        <animation file="infantry/general/death/inf_06.psa" name="Death" speed="300"/>
+        <animation file="infantry/general/death/inf_07.psa" name="Death" speed="300"/>
+        <animation file="biped/inf_salute_a.psa" name="attack_capture" speed="500"/>
+        <animation file="biped/inf_salute_b.psa" name="attack_capture" speed="500"/>
+        <animation file="biped/inf_salute_d.psa" name="attack_capture" speed="500"/>
+        <animation file="biped/inf_salute_e.psa" name="attack_capture" speed="500"/>
+      </animations>
+      <mesh>skeletal/m_hero_cape.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_britomartus.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/celt_britomartus.xml" attachpoint="shield"/>
+        <prop actor="props/units/weapons/spear_gold.xml" attachpoint="r_hand"/>
+        <prop actor="props/temp/l_sheath.xml" attachpoint="l_hip"/>
+        <prop actor="props/units/heads/celt_helmet_brito.xml" attachpoint="helmet"/>
+      </props>
+      <textures><texture file="skeletal/celt_britomartus.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

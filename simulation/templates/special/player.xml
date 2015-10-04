@@ -24,6 +24,7 @@
       <Apadana>1</Apadana>
       <Embassy>2</Embassy>
       <Monument>5</Monument>
+      <Outpost>5</Outpost>
       <Pillar>0</Pillar>
       <WarDog>0</WarDog>
 	  <MolossianDog>0</MolossianDog>
@@ -47,13 +48,14 @@
 	  <MercTarantines>20</MercTarantines>
 	  <MercIberian>25</MercIberian>
 	  <MercItalian>25</MercItalian>
-	  <Slave30>30</Slave30>
+	  <Slave>30</Slave>
 	  <MaceElephant>0</MaceElephant>
 	  <Vesta>1</Vesta>
 	  <ArmyCamp>1</ArmyCamp>
 	  <Tavern>3</Tavern>
 	  <Immortals>30</Immortals>
 	  <Spartiates>0</Spartiates>
+	  <Arch>1</Arch>
     </Limits>
     <LimitChangers>
 	  <MaceElephant>
@@ -89,8 +91,11 @@
     </LimitChangers>
 	<LimitRemovers>
       <CivicCenter>
-       <RequiredTechs datatype="tokens">unlock_civic_center</RequiredTechs> 
+       <RequiredTechs datatype="tokens">unlock_civic_center</RequiredTechs>
       </CivicCenter>
+	  <Arch>
+	    <RequiredTechs datatype="tokens">phase_town_roma</RequiredTechs>
+	  </Arch>
     </LimitRemovers>
   </EntityLimits>
   <Player>

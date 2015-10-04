@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_mercenary_infantry_ranged_archer">
-  <Builder disable=""/>
+  <Builder>
+	<Entities datatype="tokens">
+      -structures/{civ}_house
+      -structures/{civ}_storehouse
+      -structures/{civ}_farmstead
+      -structures/{civ}_field
+      -structures/{civ}_corral
+      -structures/{civ}_dock
+      -other/wallset_palisade
+      -structures/{civ}_temple
+      -structures/{civ}_market
+      structures/{civ}_outpost
+	  structures/imp_barracks_aux
+      structures/imp_arch
+	  structures/imp_army_camp
+      structures/imp_wallset_siege
+      structures/{civ}_wonder
+    </Entities>
+  </Builder>
+  <Cost>
+    <Population>1</Population>
+  </Cost>
   <Identity>
 	<Civ>imp</Civ>
 	<Lang>latin</Lang>
@@ -10,6 +31,7 @@
     <History> .</History>
     <Icon>units/hele_infantry_archer.png</Icon>
   </Identity>
+  <ResourceGatherer disable=""/>
   <VisualActor>
     <Actor>units/macedonians/infantry_archer_b.xml</Actor>
   </VisualActor>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Footprint>
+    <Square width="28.0" depth="28.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Castrum</SpecificName>
+	<GenericName>Auxiliary Barracks</GenericName>
+    <VisibleClasses datatype="tokens">
+	  Town
+	</VisibleClasses>
+    <History>Romans specialised in the building of military camps and forts. A few of them still survive.</History>
+	<RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="24.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+	  -units/{civ}_infantry_spearman_b
+	  -units/{civ}_infantry_pikeman_b
+	  -units/{civ}_infantry_swordsman_b
+	  -units/{civ}_infantry_javelinist_b
+	  -units/{civ}_infantry_slinger_b
+	  -units/{civ}_infantry_archer_b
+	  -units/{civ}_cavalry_swordsman_b
+	  -units/{civ}_cavalry_spearman_b
+	  -units/{civ}_cavalry_javelinist_b
+	  -units/{civ}_cavalry_archer_b
+      units/{civ}_merc_infantry_1
+	  units/{civ}_merc_infantry_2
+	  units/{civ}_merc_cavalry_1
+	  units/{civ}_merc_cavalry_2
+    </Entities>
+    <Technologies datatype="tokens">
+
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/romans/barracks.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

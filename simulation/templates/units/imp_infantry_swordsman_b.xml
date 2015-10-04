@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee_swordsman">
-  <Builder disable=""/>
+  <Builder>
+	<Entities datatype="tokens">
+      -structures/{civ}_house
+      -structures/{civ}_storehouse
+      -structures/{civ}_farmstead
+      -structures/{civ}_field
+      -structures/{civ}_corral
+      -structures/{civ}_dock
+      -structures/{civ}_temple
+      -structures/{civ}_market
+      -other/wallset_palisade
+      structures/{civ}_outpost
+	  structures/imp_barracks_aux
+      structures/imp_arch
+	  structures/imp_army_camp
+      structures/imp_wallset_siege
+      structures/{civ}_wonder
+    </Entities>
+  </Builder>
   <Identity>
-    <Civ>rome</Civ>
+    <Civ>imp</Civ>
 	<Lang>latin</Lang>
 	<SelectionGroupName>units/imp_infantry_swordsman_b</SelectionGroupName>
 	<GenericName>Roman Legionnaire</GenericName>
     <SpecificName>Legionarius</SpecificName>
-    <Icon>units/rome_infantry_swordsman.png</Icon>
+    <Icon>units/imp_infantry_swordsman.png</Icon>
     <History>The hastati were the first line of heavy infantry in the early Republican Roman army. They used pila and gladii as their main weapons, throwing the former into the enemy formation and then closing with the sword. For defense they used a large shield called a scutum and wore the best armor they could afford. Hastati were recruited from the young men of Rome, a small part of the 700,000 troops Rome could bring to bear against its opponents.</History>
   </Identity>
   <Promotion>
-    <Entity>units/rome_infantry_swordsman_a</Entity>
+    <Entity>units/imp_infantry_swordsman_a</Entity>
   </Promotion>
+  <ResourceGatherer disable=""/>
   <VisualActor>
     <Actor>units/romans_imperial/infantry_swordsman_b.xml</Actor>
   </VisualActor>
