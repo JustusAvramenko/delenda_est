@@ -1,0 +1,21 @@
+{
+	"pair": "romans_imperial/pair_soldier_armor_03",
+	"genericName": "Roman Tower Shields",
+	"specificName": {
+		"imp": "Scuta"
+	},
+	"description": "The famed tall, convex Roman infantry shield.",
+	"cost": {"food": 0, "wood": 500, "stone": 0, "metal": 100},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase. Requires Chain Body Armor or Iron Shield Rims.",
+	"icon": "shield_scutum.png",
+	"researchTime": 40,
+	"tooltip": "Legionary soldiers and champion infantry +2 pierce armor, but -5% movement speed.",
+	"modifications": [
+		{"value": "Armour/Pierce", "add": 2.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.95},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.95}
+	],
+	"affects": ["Legion"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

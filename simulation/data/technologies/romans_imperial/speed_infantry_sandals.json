@@ -1,0 +1,18 @@
+{
+	"genericName": "Army Sandals",
+	"specificName": {
+		"imp": "Caligae"
+	},
+	"description": ".",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "caligae.png",
+	"researchTime": 30,
+	"tooltip": "All Infantry +15% walk speed.",
+	"modifications": [
+		{"value": "UnitMotion/WalkSpeed", "multiply": 1.15}	
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

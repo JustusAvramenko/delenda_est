@@ -1,0 +1,20 @@
+{
+	"pair": "romans_imperial/pair_infantry_armor_01",
+	"genericName": "Arm Guards",
+	"specificName": {
+		"imp": "Manicae"
+	},
+	"description": "Iron hoops arrayed along the arms of a soldier. Roman usage attested to famously on the Column of Trajan. Also used by Successor states such as the Seleucids for cavalry and various Eastern peoples such as the Sarmatians and Parthians.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 400},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "manica.png",
+	"researchTime": 35,
+	"tooltip": "Spear and sword infantry +2 hack armor, but -1 hack attack.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 2.0},
+		{"value": "Attack/Melee/Hack", "add": -1}
+	],
+	"affects": ["Melee Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

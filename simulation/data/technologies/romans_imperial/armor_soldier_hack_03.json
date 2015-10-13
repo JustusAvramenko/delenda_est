@@ -1,0 +1,20 @@
+{
+	"pair": "romans_imperial/pair_soldier_armor_03",
+	"genericName": "Scale Body Armor",
+	"specificName": {
+		"imp": "Lorica Squamata"
+	},
+	"description": "Body armor consisting of small overlapping bronze or iron scales.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 600},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase. Requires Chain Body Armor or Iron Shield Rims.",
+	"icon": "armor_plates_gold.png",
+	"researchTime": 40,
+	"tooltip": "Advanced rank soldiers +1 hack armor, Elite rank soldiers +2 hack armor.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 1.0, "affects": "Advanced"},
+		{"value": "Armour/Hack", "add": 1.0, "affects": "Elite"}
+	],
+	"affects": ["Soldier"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

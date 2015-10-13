@@ -1,0 +1,20 @@
+{
+	"pair": "romans_imperial/pair_inf_02",
+	"genericName": "Spanish Sword",
+	"specificName": {
+		"imp": "Gladius Hispaniensis"
+	},
+	"description": "The Gladius Hispaniensis was originally a sword used by the Iberians in what is now known as Spain. The Romans adopted it after coming into military contact with the Iberians during the Second Punic War.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "sword_gladius.png",
+	"researchTime": 20,
+	"tooltip": "All sword units +2 hack attack, but +5 metal cost.",
+	"modifications": [
+		{"value": "Attack/Melee/Hack", "add": 2.0},
+		{"value": "Cost/Resources/metal", "add": 5}
+	],
+	"affects": ["Sword"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

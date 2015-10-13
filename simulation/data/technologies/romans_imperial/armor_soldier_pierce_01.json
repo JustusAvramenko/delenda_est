@@ -1,0 +1,18 @@
+{
+	"pair": "romans_imperial/pair_soldier_armor_01",
+	"genericName": "Laminated Shield Construction",
+	"description": "Plywood construction for shields.",
+	"cost": {"food": 0, "wood": 250, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "shields_generic_wood.png",
+	"researchTime": 35,
+	"tooltip": "All soldiers except archers +1 pierce armor levels, but -5% speed.",
+	"modifications": [
+		{"value": "Armour/Pierce", "add": 1.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.95},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.95}
+	],
+	"affects": ["Spear", "Legion", "Javelin"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

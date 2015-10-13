@@ -64,7 +64,7 @@ Testudo
 - Auto/Manual: Manual
 - Modifiable: No
 - Bonus: +3 Hack Armor, +4 Pierce Armor, +5 Crush Armor
-- Penalty: .25x Speed, Units within it can only respond to direct melee attacks
+- Penalty: .25x Speed, Soldiers within it can only respond to direct melee attacks
 
 Sparabara Wall
 - Civilizations: Pers
@@ -374,11 +374,132 @@ PHASING AFFECTS VISION RANGE
 
 BLACKSMITH
 - Becomes available in Village Phase for "barbarian" civs: Celt, Gaul, Brit, Iber (and later Sueb, Goth, Frank, Sarm, Daci, Huns, et al.)
-- Becomes available in Town Phase for "imperial" civs: Athen, Spart, Mace, Sele, Ptol, Rome, Cart, Pers, Maur (and later RomeImp, Byz, Parth, Sass, et al.)
+- Becomes available in Town Phase for "imperial" civs: Athen, Spart, Mace, Sele, Ptol, Rome, Cart, Pers, Maur (and later Imp, Dom, Parth, Sass, et al.)
 
 =================================================
 
-ROME
+PRINCIPATE ROME
+- Blacksmith Unlocked in Town Phase
+
+=============================
+
+TOWN PHASE
+- Techs cost 200-300 resources
+
+X-1
+Blacksmith Technologies (Forging)
+-25% Cost for all Blacksmith Techs
+vs.
+Blacksmith Technologies (Metallurgy)
+-50% Research Time for all Blacksmith Techs
+
+A-1
+Melee Units ("Pugio" Side Arms)
++1 Hack Attack
+vs.
+Javelin Units ("Lanceae" Heavy Javelins)
++4 Pierce Attack
+
+[[Sword Infantry ("Pila Volley")
+Unlocks an initial ranged attack for Roman sword infantry (i.e., they throw a heavy pilum javelin before moving to within melee range for melee attack) ]]
+
+B-1
+All Soldiers ("Submarlis" Armor Padding)
++1 Hack Armor
+vs.
+All Soldiers except Archers (Laminated Shields)
++2 Pierce Armor
+-5% Speed
+
+B-2
+All Soldiers ("Chain Armor" Lorica Hamata)
++2 Hack Armor
+-5% Speed
+vs.
+All Soldiers except Archers (Iron Shield Rim)
++1 Pierce Armor
+
+C-1
+All Cavalry (Celtic Saddle)
++10% Walk Speed
++10% Run/Charge Speed
+vs.
+All Cavalry (Cavalry Shields)
++2 Pierce Armor
+-10% Walk Speed
+-10% Run/Charge Speed
+
+D-1
+Infantry Units ("Caligae" Army Sandals)
++15% Walk speed
+
+=============================
+
+CITY PHASE
+- Techs cost 400-600 resources
+
+A-2
+Sword Units ("Gladius Hispaniensis")
++2 Hack Attack
++5 Metal Cost
+vs.
+Javelin Units ("Amentum" Javelin Thongs)
++6 Range
++5 Wood Cost
+
+B-3
+Soldiers ("Lorica Squamata" Scale Armor)
++1 Hack Armor
+vs.
+Legionary Soldiers ("Scuta" Roman Shields)
++2 Pierce Armor
+-5% Speed
+
+C-2
+Champion Cavalry ("Spathae" Cavalry Swords)
++2 Hack Attack
++2 Melee Range
+vs.
+All Cavalry ("Chamfron" Facial Horse Armor)
++1 Hack Armor
+
+E-1
+Melee Infantry ("Ocreae" Greaves)
++1 Hack Armor
+-10% speed
+vs.
+Melee Infantry ("Manicae" Arm Guards)
++2 Hack Armor
+-1 Hack Attack
+
+F-1
+Archer, Tower, and Fortress (Recurved Composite Bows)
++4 Pierce Attack
++4 Range
+
+=============================
+
+IMPERIAL PHASE
+- Techs cost 800-1000 resources
+
+B-4
+Legionary Infantry ("Lorica Segmentata" Segmented Iron Armor)
++2 Hack Armor
+vs.
+All Soldiers except Archers ("Umbo" Iron Shield Bosses)
++2 Pierce Armor
+
+H-1
+All Heroes ("Lorica Plumata" Plumed Scale Armor)
++2 Hack Armor
++2 Pierce Armor
++2 Crush Armor
++50 Metal Cost
+
+
+=============================
+
+REPUBLICAN ROME
 - Blacksmith Unlocked in Town Phase
 
 =============================
@@ -994,6 +1115,10 @@ Spear Infantry ("Doratismos" Infantry Spear Training)
 +1 Hack attack
 +1 Second train time
 
+C-1 (Imp)
+Legionary Units ("Aquila" Eagle Standards)
++10% Health
+
 D-1 (Mace)
 Javelin Infantry ("Agrianian Mountain Men")
 +20% Speed
@@ -1111,11 +1236,12 @@ FORTRESS
 - Large territory effect
 - Min distance between Fortresses: 60 meters
 - Training Queues:
-Athen: Catapult, Bolt Shooter
+Athen: 1 Mercenary Champion, Catapult, Bolt Shooter
 Brit: 3 Heroes, 2 Champions, Battering Ram 
 Cart: 3 Heroes, War Elephant, Catapult, Bolt Shooter
 Gaul: 3 Heroes, 2 Champions, Battering Ram
 Iber: 3 Heroes, 2 Champions, Battering Ram
+Imp: 2 Champions, Catapult, Bolt Shooter, Ram, Siege Tower
 Mace: 3 Heroes, 2 Champions
 Maur: 3 Heroes, 4 champions
 Pers: 2 Champions, Battering Ram
@@ -1134,11 +1260,11 @@ Champions and Heroes (Heroism; Athen, Spart, Mace, Ptol, Sele:"Andreia"; Rome:"F
 +2 Hack attack for melee
 +2 Pierce attack for ranged
 vs.
-Citizen-Soldiers (Will to Fight; Athen, Spart, Mace, Ptol, Sele:"Dynamis")
+Citizen-Soldiers (Will to Fight; Athen, Spart, Mace, Ptol, Sele:"Dynamis", Imp:"Donativum")
 +2 Hack attack for melee citizen-soldiers
 +2 Pierce attack for ranged citizen-soldiers
 
-B-1 (Athen, Cart, Ptol, Rome, Sele, Spart)
+B-1 (Athen, Cart, Imp, Ptol, Rome, Sele, Spart)
 Ranged Siege (Ballistics; Athen, Spart, Mace, Ptol, Sele:"Ballistiká")
 Unlocks Ranged Siege weapons at the Fortress
 
@@ -1158,7 +1284,7 @@ vs.
 Champions (Olympic Wrestling)
 +10% Health
 
-C-1 (Athen, Cart, Ptol, Rome, Sele)
+C-1 (Athen, Cart, Imp, Ptol, Rome, Sele)
 Ranged Siege ("Torsion Springs")
 +20% Attack range
 +20% Vision range
@@ -1187,6 +1313,11 @@ vs.
 All Siege (Siegecraft; Athen, Spart, Mace, Sele:"Mechanè")
 -50% Build time
 
+E-1 (Imp, Rome)
+Soldiers ("Sacramentum Militare" Sacred Oath of Service)
++10% Health
+-10% Train time
+
 E-1 (Sele)
 Champions (Traditional Army)
 Unlock Silvershield Pikeman and Scythe Chariot
@@ -1197,9 +1328,9 @@ Unlock Romanized Heavy Swordsman and Cataphract Cavalry
 E-1 (Cart, Ptol)
 War Elephant ("Howdah" Elephant Towers)
 Upgrades War Elephant to Towered War Elephant, with a soldier throwing javelins passively at enemy units
-+10% Health
++20% Health
 +2 Pierce armor
--10% Speed
+-20% Speed
 
 ===============
 
