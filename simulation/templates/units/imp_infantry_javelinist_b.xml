@@ -35,7 +35,18 @@
   <Promotion>
     <Entity>units/imp_infantry_javelinist_a</Entity>
   </Promotion>
-  <ResourceGatherer disable=""/>
+  <ResourceGatherer>
+    <Rates>
+      <food.fruit disable=""/>
+      <food.grain disable=""/>
+      <food.meat disable=""/>
+	  <wood.tree disable=""/>
+	  <wood.ruins disable=""/>
+      <stone.rock disable=""/>
+	  <stone.ruins disable=""/>
+      <metal.ore disable=""/>
+    </Rates>
+  </ResourceGatherer>
   <VisualActor>
     <Actor>units/romans/infantry_javelinist_b.xml</Actor>
   </VisualActor>
