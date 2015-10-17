@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_spearman">
+  <Auras>
+    <Aura1>
+      <Type>range</Type>
+      <Radius>30</Radius>
+      <Affects>Spear+Infantry</Affects>
+      <Modifications>
+        <Attack.Melee.Hack>   <Multiply>1.20</Multiply> </Attack.Melee.Hack>
+      </Modifications>
+      <AuraName>"Last Stand" Aura</AuraName>
+      <AuraDescription>+20% attack for nearby Hoplites and Spartiates.</AuraDescription>
+    </Aura1>
+  </Auras>
+  <Armour>
+    <Hack>10</Hack>
+    <Pierce>10</Pierce>
+    <Crush>10</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>25.0</Hack>
+      <Pierce>0.0</Pierce>
+      <MaxRange>6.0</MaxRange>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>spart</Civ>
+	<Lang>greek</Lang>
+	<GenericName>Leonidas I</GenericName>
+    <SpecificName>Leōnídēs</SpecificName>
+    <History>The king of Sparta, who fought and died at the battle of Thermopylae in 480 BC. He successfully blocked the way of the huge Persian army through the narrow passage with his 7000 men, until Xerxes was made aware of a secret unobstructed path. Finding the enemy at his rear, Leonidas sent home most of his troops, choosing to stay behind with 300 hand-picked hoplites and win time for the others to withdraw.</History>
+    <Icon>units/spart_hero_leonidas.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/spartans/newunit_leonidas.xml</Actor>
+  </VisualActor>
+</Entity>

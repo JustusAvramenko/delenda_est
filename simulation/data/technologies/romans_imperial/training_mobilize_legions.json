@@ -1,0 +1,14 @@
+{
+	"genericName": "Mobilize Legions",
+    "supersedes": "romans_imperial/training_levy_legions",
+	"description": "Significantly increase training speed of soldiers at the barracks by training them in large batches or battalions.",
+	"cost": {"food": 400, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "imp"}]},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "fist_spear.png",
+	"researchTime": 40,
+	"tooltip": "Legionary soldiers train faster in batches at the Legionary Barracks. Unlocks Recall the Evocati.",
+	"modifications": [{"value": "ProductionQueue/BatchTimeModifier", "add": -0.1}],
+	"affects": ["LegionaryBarracks"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

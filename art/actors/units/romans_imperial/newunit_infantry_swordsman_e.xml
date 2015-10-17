@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="biped/new/inf_shield_idle.dae" name="Idle" speed="100"/>
+      </animations>
+      <mesh>skeletal/new/armor/m_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_newhead.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/gladus.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/rome_scutum_legionnaire.xml" attachpoint="shield"/>
+        <prop actor="props/units/heads/imp_imp_gallic_g_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Lorica Segmentata with Manicae">
+      <textures>
+	    <texture file="skeletal/imp_infantry_swordsman_e_1.png" name="baseTex"/>
+	    <texture file="skeletal/imp_infantry_swordsman_e_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Lorica Hamata Bronze with Manicae">
+      <textures>
+	    <texture file="skeletal/imp_armor_scale_bronze_manicae.png" name="baseTex"/>
+	    <texture file="skeletal/imp_armor_scale_bronze_manicae_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>

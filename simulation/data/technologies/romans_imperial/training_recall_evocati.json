@@ -1,0 +1,17 @@
+{
+	"genericName": "Recall the Evocati",
+    "supersedes": "romans_imperial/training_mobilize_legions",
+	"description": "The Evocati are a reserve of veteran legionaries who have already completed their terms of service to the emperor. Many Evocati willingly re-enlist in order to gain extra rank and pay, receiving double the pay of a regular legionary.",
+	"cost": {"food": 800, "wood": 0, "stone": 0, "metal": 800},
+	"requirements": {"all": [{"tech": "phase_imperial"}, {"civ": "imp"}]},
+	"requirementsTooltip": "Unlocked in Imperial Phase.",
+	"icon": "evocati.png",
+	"researchTime": 50,
+	"tooltip": "Legionary soldiers train extremely fast in batches at the Legionary Barracks, but -5% health.",
+	"modifications": [
+		{"value": "ProductionQueue/BatchTimeModifier", "add": -0.2},
+		{"value": "Health/Max", "multiply": 0.95}
+	],
+	"affects": ["LegionaryBarracks"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

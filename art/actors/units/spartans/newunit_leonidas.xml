@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="biped/new/inf_sarissa_rest.dae" name="Idle" speed="100"/>
+      </animations>
+      <mesh>skeletal/new/armor/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_xerxes.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear_long.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/hele_round_leonidas.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/heads/athen_pericles.xml" attachpoint="helmet"/>
+        <prop actor="props/units/cape_long_ragged.xml" attachpoint="cape"/>
+      </props>
+      <textures>
+        <texture file="skeletal/hele_leonidas.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

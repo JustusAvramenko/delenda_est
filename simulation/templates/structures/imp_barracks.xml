@@ -16,6 +16,9 @@
     <Civ>imp</Civ>
     <SpecificName>Castra Militum</SpecificName>
 	<GenericName>Legionary Barracks</GenericName>
+    <VisibleClasses datatype="tokens">
+	  LegionaryBarracks
+	</VisibleClasses>
     <History>Romans specialised in the building of military camps and forts. A few of them still survive.</History>
   </Identity>
   <Obstruction>
@@ -28,6 +31,14 @@
     </Entities>
     <Technologies datatype="tokens">
 	  -pair_levy_01
+	  -training_mobilization
+	  -training_total_war
+	  romans_imperial/training_levy_legions
+	  romans_imperial/training_mobilize_legions
+	  romans_imperial/training_recall_evocati
+	  romans_imperial/upgrade_rank_advanced_legion
+	  romans_imperial/upgrade_rank_elite_legion
+	  romans_imperial/upgrade_rank_cent_legion
 	  romans_imperial/health_legions_eagles
     </Technologies>
   </ProductionQueue>
