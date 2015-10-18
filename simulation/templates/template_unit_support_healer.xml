@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support">
+  <Attack>
+    <Capture>
+      <Value>10</Value>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>2000</RepeatTime>
+    </Capture>
+  </Attack>
   <Heal>
     <Range>12</Range>
     <HP>5</HP>
@@ -19,7 +26,7 @@
   <Identity>
     <VisibleClasses datatype="tokens">Healer</VisibleClasses>
     <GenericName>Healer</GenericName>
-    <Tooltip>Heal units.</Tooltip>
+    <Tooltip>Heal units. Capture civic buildings.</Tooltip>
     <Rank>Basic</Rank>
   </Identity>
   <Promotion>
