@@ -1,0 +1,22 @@
+{
+	"genericName": "Frontier Outpost",
+	"specificName": {
+		"imp": "Limites"
+	},
+	"description": "The limites represented the border line of the Roman Empire at its greatest extent in the 2nd century AD. It stretched over 5,000 km from the Atlantic coast of northern Britain, through Europe to the Black Sea, and from there to the Red Sea and across North Africa to the Atlantic coast. The remains of the limites today consist of vestiges of walls, ditches, forts, fortresses and civilian settlements. Certain elements of the line have been excavated, some reconstructed, and a few destroyed. The two sections of the limes in Germany cover a length of 550 km from the north-west of the country to the Danube in the south-east. The 118 km long Hadrian's Wall was built on the orders of the Emperor Hadrian c. AD 122 at the northernmost limits of the Roman province of Britannia. It is a striking example of the organization of a military zone and illustrates the defensive techniques and geopolitical strategies of ancient Rome. The Antonine Wall, a 60 km-long fortification in Scotland, was started by Emperor Antoninus Pius in AD 142 as a defense against the barbarians of the north. It constitutes the northwestern-most portion of the Roman Limes.",
+	"cost": {"food": 0, "wood": 250, "stone": 250, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "masonry_geometric.png",
+	"researchTime": 40,
+	"tooltip": "Outposts upgrade to Frontier Outposts with +100% health and capture points, and +5 garrison capacity. Cost +100 stone.",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 2},
+		{"value": "Capturable/CapturePoints", "multiply": 1.5},
+		{"value": "Cost/Resources/stone", "add": 100},
+		{"value": "GarrisonHolder/Max", "add": 5},
+		{"value": "VisualActor/Actor", "replace": "structures/romans_imperial/outpost_frontier.xml"}	
+	],
+	"affects": ["Outpost"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
