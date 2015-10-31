@@ -1,0 +1,16 @@
+{
+	"genericName": "Military Hospitals",
+	"specificName": {
+		"imp": "Valetudinaria"
+	},
+	"description": "As with much of the imperial army's organization, it was Augustus who, drawing on the evolved but ad hoc practices of the Republican army, established systematic medical services for the army, with a formal medical hierarchy and the construction of large, fully staffed and well-supplied military hospitals (valetudinaria) in legionary bases.",
+	"cost": {"food": 0, "wood": 200, "stone": 200, "metal": 0},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "hospital.png",
+	"researchTime": 40,
+	"tooltip": "Units slowly heal when garrisoned in a Barracks, Auxiliary Barracks, Fortress, or Army Camp.",
+	"modifications": [{"value": "GarrisonHolder/BuffHeal", "add": 1}],
+	"affects": ["Barracks", "ArmyCamp", "Fortress"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

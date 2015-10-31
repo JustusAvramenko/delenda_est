@@ -1,0 +1,20 @@
+{	
+	"genericName": "Cavalry Tournaments",
+	"specificName": {
+		"imp": "Hippika Gymnasia"
+	},
+	"description": "The hippika gymnasia (Greek: ἱππικὰ γυμνάσια, horse exercises) were ritual displays or tournaments performed by the cavalry of the Roman Empire to display their skill and expertise. They took place on a parade ground situated outside a fort and involved the cavalry practicing maneuvering and the handling of weapons such as javelins and spears. The riders and their mounts wore highly elaborate armour and helmets specially made for display purposes, decorated with images from classical mythology. Such tournaments served several purposes, improving the riders' skills, helping to build unit morale and impressing dignitaries and conquered peoples. (Wikipedia)",
+	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "horse_rider.png",
+	"researchTime": 30,
+	"tooltip": "Melee cavalry +1 hack attack, ranged cavalry +2 pierce attack. All cavalry +20% train time.",
+	"modifications": [
+		{"value": "Attack/Melee/Hack", "add": 1.0, "affects": "Melee"},
+		{"value": "Attack/Ranged/Pierce", "add": 2.0, "affects": "Ranged"},
+		{"value": "Cost/BuildTime", "multiply": 1.2}
+	],
+	"affects": ["Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

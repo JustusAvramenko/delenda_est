@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_cavalry_melee_spearman">
+  <Cost>
+    <Population>0</Population>
+  </Cost>
   <Identity>
     <Civ>cart</Civ>
     <SelectionGroupName>units/cart_cavalry_spearman_2_b</SelectionGroupName>
@@ -11,6 +14,9 @@
   <Promotion>
     <Entity>units/cart_cavalry_spearman_a</Entity>
   </Promotion>
+  <TrainingRestrictions>
+    <Category>CarthageCitizen</Category>
+  </TrainingRestrictions>
   <VisualActor>
     <Actor>units/macedonians/cavalry_spearman_b.xml</Actor>
   </VisualActor>
