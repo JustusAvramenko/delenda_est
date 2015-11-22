@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
   <Armour>
-    <Hack>2</Hack>
+    <Hack>3</Hack>
     <Pierce>1</Pierce>
-    <Crush>1</Crush>
+    <Crush>2</Crush>
   </Armour>
   <Attack>
     <Slaughter>
@@ -68,18 +68,20 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="3.0"/>
-    <Height>3.0</Height>
+    <Circle radius="2.5"/>
+    <Height>2.5</Height>
   </Footprint>
   <Health>
-    <Max>80</Max>
+    <Max>100</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>
     <VisibleClasses datatype="tokens">Dog</VisibleClasses>
     <GenericName>War Dog</GenericName>
     <Rank>Basic</Rank>
-    <Tooltip>Counters: 1.5x vs. Cavalry, Support Units, and Animals. Cannot attack structures.</Tooltip>
+    <Tooltip>Traits: Fast Speed, Low Armor, Raider, Cannot Attack Buildings.
+Strong Against: Support Units (1.5x), Cavalry (1.5x), Animals (1.5x).
+Weak Against: Ranged Units, Elephants.</Tooltip>
 	<RequiredTechnology>phase_town</RequiredTechnology>
 	<Formations disable=""/>
   </Identity>

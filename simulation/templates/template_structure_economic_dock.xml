@@ -5,6 +5,11 @@
     <PlacementType>shore</PlacementType>
     <Category>Dock</Category>
   </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>1000</CapturePoints> 
+    <RegenRate>3</RegenRate> 
+    <GarrisonRegenRate>3</GarrisonRegenRate> 
+  </Capturable>
   <Cost>
     <PopulationBonus>5</PopulationBonus>
     <BuildTime>100</BuildTime>
@@ -61,10 +66,10 @@
       units/{civ}_ship_merchant
     </Entities>
     <Technologies datatype="tokens">
-	  pair_dock_01
-	  pair_trade_ships_01
 	  gather_fishing_purse_seine
 	  gather_capacity_fishing
+	  pair_dock_01
+	  pair_trade_ships_01
     </Technologies>
   </ProductionQueue>
   <Vision>

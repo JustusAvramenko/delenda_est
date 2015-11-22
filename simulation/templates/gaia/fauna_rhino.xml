@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_aggressive">
+  <Attack>
+    <Melee>
+      <Hack>20.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>20.0</Crush>
+      <MaxRange>6.0</MaxRange>
+      <RepeatTime>2000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint replace="">
+    <Square width="4" depth="6"/>
+    <Height>7.5</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Rhinoceros</GenericName>
+    <SpecificName>Diceros bicornis</SpecificName>
+    <Icon>gaia/fauna_bear.png</Icon>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/lion_select.xml</select>
+      <attack>actor/fauna/animal/lion_attack.xml</attack>
+      <death>actor/fauna/animal/lion_select.xml</death>
+    </SoundGroups>
+  </Sound>
+  <ResourceSupply>
+    <Amount>400</Amount>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>fauna/rhino.xml</Actor>
+  </VisualActor>
+</Entity>
