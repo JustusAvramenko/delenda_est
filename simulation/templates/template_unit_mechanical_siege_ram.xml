@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_mechanical_siege">
   <Armour>
-    <Hack>4</Hack>
+    <Hack>5</Hack>
     <Pierce>30</Pierce>
     <Crush>10</Crush>
   </Armour>
@@ -11,7 +11,7 @@
       <Pierce>0.0</Pierce>
       <Crush>80.0</Crush>
       <MaxRange>6.5</MaxRange>
-      <RepeatTime>1500</RepeatTime>
+      <RepeatTime>2000</RepeatTime>
 	  <Bonuses>
 		<BonusGates>
 		  <Classes>Gates</Classes>
@@ -64,8 +64,9 @@
   <Identity>
     <GenericName>Battering Ram</GenericName>
     <VisibleClasses datatype="tokens">Melee Ram</VisibleClasses>
-    <Tooltip>Counters: 1.5x vs. Gates. Generally good vs. Buildings.
-Countered by: Melee Cavalry. Cannot attack organic units (but can attack other siege and ships).</Tooltip>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Garrison Units, Capturable.
+Strong Against: Buildings, Gates (1.5x).
+Weak Against: Melee Cavalry, Melee Infantry.</Tooltip>
   </Identity>
   <Sound>
     <SoundGroups>
