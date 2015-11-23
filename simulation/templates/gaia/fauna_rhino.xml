@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_hunt_aggressive">
+  <Armour>
+    <Hack>3</Hack>
+    <Pierce>4</Pierce>
+    <Crush>5</Crush>
+  </Armour>
   <Attack>
     <Melee>
-      <Hack>20.0</Hack>
+      <Hack>15.0</Hack>
       <Pierce>0.0</Pierce>
-      <Crush>20.0</Crush>
+      <Crush>15.0</Crush>
       <MaxRange>6.0</MaxRange>
       <RepeatTime>2000</RepeatTime>
     </Melee>
@@ -13,6 +18,9 @@
     <Square width="4" depth="6"/>
     <Height>7.5</Height>
   </Footprint>
+  <Health>
+    <Max>200</Max>
+  </Health>
   <Identity>
     <Civ>gaia</Civ>
     <GenericName>Rhinoceros</GenericName>
