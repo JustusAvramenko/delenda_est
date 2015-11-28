@@ -15,8 +15,7 @@ Major unimplemented Features that this document assumes will eventually be imple
 - Formations: This mod re-enables the old formations from Alpha 16 and before. Once these are reimplemented by the official WFG team, it is planned to revamp them completely for this mod.
 - Trample: Some cavalry are planned to be better tramplers than others, so their stats would be adjusted accordingly. So, until Trample is implemented by the team or by modders some Cavalry stats may be wonky.
 - Charging/Charge Bonus: Like Trample, this would affect Cavalry stats immensely, and it is hoped that this is eventually implemented in the game.
-- Mercenary Camps: This mod starts the process of making Mercenaries a unique class of soldier for the game. It is hoped that either the official team or modders will implement the capturable Mercenary Camp idea talked about on the forum.
-- Building Capturing and Unit Conversion using a "Loyalty" mechanic: Some techs in this mod cannot be implemented yet (or are implemented in a different way) because capturing and loyalty are not implemented. Hopefully this feature is implemented so this mod can add another layer of richness to the gameplay.
+- Unit Conversion using a "Loyalty" mechanic: Some techs in this mod cannot be implemented yet (or are implemented in a different way) because capturing/converting units (like Sheep or Female Citizens) is not implemented. Hopefully this feature is implemented so this mod can add another layer of richness to the gameplay.
 - Tech and Aura Modifications: These new modifications need to be implemented for this mod to reach its full potential: Altering Market Bartering recovery rates, Altering technology costs and speeds, (+ others here).
 
 MAJOR OVERALL CHANGES
@@ -27,12 +26,16 @@ MAJOR OVERALL CHANGES
 - A completely redesigned technology tree, customized for each civilization. Blacksmith and Fortress trees are especially new.
 - Naval gameplay revamped with a Shipyard for the non-barbarian civs. Docks are for naval economy and Shipyard for naval warfare.
 - New special buildings, such as the Temple of Vesta for the Romans, with new auras and features.
-- Other features.
+- Completely new "Imperial Romans" civ called the Principate Romans. They have a new slavery mechanic and new unit artwork.
+- Mercenary Camps now added and mercenaries for most civs are in.
+- Capturing buildings is revamped so that only civic buildings (Civic Center, Temple, House) are capturable. All others must be destroyed.
+- New territory mechanics that encourage city-building. Farmsteads and Storehouses can be built outside the city territory, along with Outposts. This creates a "weak countryside" but "strong core" duality for the player.
+- Farmlands are in and work as planned! Build fields on farmland to gain a 2x farming bonus. Building farms around Civic Centers and Temples gives a -50% farming penalty.
+- The right kinds of units now show up on battlements (ranged infantry). This is made possible with a patch submitted by a contributor.
+- New population costs. Support Units (Female Citizens, Healers, Traders) cost 1 pop, Infantry cost 2 pop, Cavalry cost 3 pop, and strong units like chariots, elephants, siege weapons, etc. cost more pop. Consequentually, the default population limit is now 500.
 
 What is Broken
 ================
-- Celtic Rotary Mill aura for Britons and Gauls. For some reason I cannot make the aura work, even though the code is visually correct.
-- Units trained in batches and rally-pointed to a resource or foundation will go to the rally point and will not begin gathering or building. They will just stand there instead. This is an old bug reintroduced somehow.
 - Some Fortresses cannot have enough space for garrisoned units to show up on the walls. Some Fortress models may need redesigned for this purpose.
 - Cost.BuildTime effect for auras is broken. This specifically neuters the "Delian League" team bonus for Athenians and the "Naval Architect" aura for Themistocles.
 - I'll add more things here as I come across them.
@@ -44,8 +47,6 @@ The unit balance has been changed. The following list gives the basic changes, i
 Melee Citizen-Infantry
 ===========
 Sword Infantry
-- Cost: 60F 25M
-- Health: 100
 - Attack: Hack, High
 - Bonus: 1.5x vs. Infantry and Elephants
 - Charge Bonus: 2x
@@ -54,8 +55,6 @@ Sword Infantry
 - Speed: Medium
 
 Spear Infantry
-- Cost: 50F 50W 
-- Health: 100
 - Attack: Hack, Medium
 - Bonus: 2x vs. Cavalry
 - Charge Bonus: 2.5x
@@ -64,8 +63,6 @@ Spear Infantry
 - Speed: Medium
 
 Pike Infantry
-- Cost: 40F 60W
-- Health: 100
 - Attack: Hack, Low
 - Bonus: 4x vs. Cavalry
 - Charge Bonus: 2x
@@ -76,8 +73,6 @@ Pike Infantry
 Ranged Citizen-Infantry
 =============================
 Archer Infantry
-- Cost: 40F 60W
-- Health: 80 
 - Attack: Pierce, Low
 - Range: High
 - Accuracy: Low
@@ -88,8 +83,6 @@ Archer Infantry
 - Speed: Medium
 
 Javelin Infantry
-- Cost: 40F 60W
-- Health: 80
 - Attack: Pierce, Medium
 - Range: Medium
 - Accuracy: Medium
@@ -99,9 +92,7 @@ Javelin Infantry
 - Pierce Armor: Medium
 - Speed: High
 
-Slinger Infantry 
-- Cost: 50F 40S
-- Health: 80
+Slinger Infantry
 - Attack: Pierce, Low
 - Range: Medium
 - Accuracy: High
@@ -123,9 +114,7 @@ Melee Citizen-Cavalry
 - Bonus: 2x vs. Siege
 - Special: Trample Aura/Ability
 
-Sword Cavalry 
-- Cost: 80F 40M
-- Health: 150
+Sword Cavalry
 - Attack: Hack, High
 - Bonus: 1.5x vs. Ranged Infantry and Ranged Cavalry
 - Charge Bonus: 2.5x
@@ -134,9 +123,7 @@ Sword Cavalry
 - Pierce Armor: High
 - Speed: High
 
-Spear Cavalry: 
-- Cost: 80F 50W
-- Health: 150
+Spear Cavalry
 - Attack: Hack, Medium
 - Bonus: 2x vs. Ranged Infantry
 - Charge Bonus: 4x
@@ -148,8 +135,6 @@ Spear Cavalry:
 Ranged Citizen-Cavalry
 =============================
 Archer Cavalry
-- Cost: 100F 50W 
-- Health: 130
 - Attack: Pierce, Low
 - Range: High
 - Accuracy: Low
@@ -160,8 +145,6 @@ Archer Cavalry
 - Speed: High
 
 Javelin Cavalry
-- Cost: 100F 40W
-- Health: 130
 - Attack: Pierce, Medium
 - Range: Medium
 - Accuracy: Low
@@ -174,8 +157,6 @@ Javelin Cavalry
 Other Melee Units
 =================================================
 Melee Elephant
-- Cost: 150F 100M
-- Health: 400
 - Attack: Hack, Medium; Crush, High
 - Bonus: 2x vs. Cavalry, 1.5x vs. Structures
 - Charge Bonus: 3x
@@ -188,8 +169,6 @@ Other Ranged Units
 =================================================
 
 Archer Chariot
-- Cost: 100F 100W
-- Health: 200 
 - Attack: Pierce, Low
 - Range: High
 - Accuracy: Low
@@ -201,8 +180,6 @@ Archer Chariot
 - Speed: Medium
 
 Javelin Chariot
-- Cost: 100F 100W
-- Health: 200
 - Attack: Pierce, Medium
 - Range: Medium
 - Accuracy: Medium
@@ -214,8 +191,6 @@ Javelin Chariot
 - Speed: Medium
 
 Archer Elephant
-- Cost: 150F 75W
-- Health: 300
 - Attack: Pierce, Low
 - Range: High
 - Accuracy: Medium
@@ -240,29 +215,28 @@ Champions
 
 Mercenaries
 =========================
-The following would be the ideal implementation of Mercenaries in the game. Some things this mod is in the process of implementing, but capturing Mercenary Camps and other features (like altering the Camp's ProductionQueue based on who owns it) cannot be implemented until these things are added to the core game.
-
-- Mercenary unit-types available to players based on map biome and the civilization of the owning player
-- Trained at Mercenary Camps dotted around the map, capturable by players. The number of camps determined by the number of players: 1 merc camp for 2 players, 2 merc camps for 3-4 players, 3 merc camps for 5-6 players
-- Mercenaries cost no population, but can only be trained in limited numbers or are otherwise limited in some way; this is normally the only way a player can train more units above the population cap
+The following is a rundown of the Mercenaries and Mercenaries Camp mechanic:
+- Mercenaries are trained at Mercenary Camps dotted around the map, capturable by players. The number of camps determined by the number of players: 2 merc camps for 2 players, 4 merc camps for 3-4 players, 6 merc camps for 5-6 players
+- Mercenaries cost no population and train quickly, but can only be trained in limited numbers (usually 30; todo: make this scale by population cap) and cost a lot of Metal; this is normally the only way a player can train more units above the population cap
 - Metal is almost always one of their costs, usually replacing the Food cost
-- They do not perform economic tasks, but they can build structures
+- They do not perform economic tasks very well, but they can build structures just fine
 - They do not contribute to gaining Loot, as they "keep booty for themselves"
-- The rest of their stats are comparable to their citizen-soldier counterparts at the Elite rank, and they do not promote to new ranks
+- The rest of their stats are comparable to their citizen-soldier counterparts at the Advanced rank, and most of them do not promote to new ranks
 - Each mercenary soldier comes with 1-2 tech upgrades researchable at the merc camp when captured by the player. For instance, Balearic Slingers and Rhodian Slingers can have a "Lead Sling Bullets" technology at the Merc Camp, a tech not normally available to civs with those mercs
+- Task soldiers to capture the Mercenary Camp like they would capture an Civic Center or Temple or House
 
 So, for example: 
 
 An "Egyptian Biome" map like Nile River
 - 4 Players
-- 2 Mercenary Camps on the map, capturable by any player
-- 2 "Egyptian Biome" Mercs available at the Camps: Libyan Skirmisher, Garamantine Camel Raider
-- Up to 3 Mercs available, based on the capturing player's civilization: Ptolemies (Mercenary Thureophoros, Nubian Archer, Galatian Swordsman); Seleucids (Mercenary Thureophoros, Thracian Swordsman, Tarantine Cavalry); Spartans (Cretan Mercenary Archer, Rhodian Slinger, Tegean Hoplite); Iberians (Balearic Slinger, Greek Settler Hoplite, Gaesatae).
-- None of the mercs cost population room, but all cost an amount of metal, and they are each limited to 20 alive at a time.
+- 4 Mercenary Camps on the map, capturable by any player
+- 2 "Egyptian Biome" Mercs available at the Camps: Libyan Skirmisher, Garamantine Camel Raider (not implemented)
+- Up to 4 Mercs available, based on the capturing player's civilization: Ptolemies (Mercenary Thureophoros, Nubian Archer, Galatian Swordsman); Seleucids (Mercenary Thureophoros, Thracian Swordsman, Tarantine Cavalry); Spartans (Cretan Mercenary Archer, Rhodian Slinger, Peloponnesian Hoplite); Iberians (Balearic Slinger, Greek Settler Hoplite, Gaesatae) (mostly implemented!)
+- None of the mercs cost population room, but all cost an amount of metal, and they are limited to 30 total alive at a time.
 
 CIVILIZATION BONUSES AND CHANGES
 =========================
-The specific bonuses and changes for each civ. Changes from vanilla 0 A.D. or additions will have an asterisk (*).
+The specific bonuses and changes for each civ. There are many many new changes and additions for every civ in this mod.
 
 Athenians
 =======================
@@ -280,17 +254,23 @@ Special Buildings:
 
 Notable Technologies:
 - "Iphicratean Reform": Unlocks training Athenian Marines and Cretan Archers from the Trireme.
-- "Periclean Strategem": Walls and Warships +10% Health, Soldiers -5% Health.*
+- "Periclean Strategem": Walls and Warships +10% Health, Soldiers -5% Health.
 - "Athenian Long Walls": Build Stone Walls in neutral territory.
-- "Phidean Workshop": Temples and Wonder -25% Build Time, but +10% Stone Cost.*
-- "Zea Ship Sheds": Warships build +25% faster.*
-- "Arsenal of Philon": Warships regenerate Health.*
+- "Phidean Workshop": Temples and Wonder -25% Build Time, but +10% Stone Cost.
+- "Zea Ship Sheds": Warships build +25% faster.
+- "Arsenal of Philon": Warships regenerate Health.
+- "Othismos": Unlock the Locked Shields formation modifier.
 
 Britons
 =============
 
-
 Carthaginians
+=============
+
+Egyptians (Ptolemies)
+=============
+
+Epirotes - NEW CIV!
 =============
 
 Gauls
@@ -299,19 +279,19 @@ Gauls
 Iberians
 =============
 
+Indians (Mauryans)
+=============
+
 Macedonians
 =============
 
-Mauryans
+Persians (Achaemenids)
 =============
 
-Persians
+Romans (Principates) - NEW CIV!
 =============
 
-Ptolemies
-=============
-
-Romans
+Romans (Republicans)
 =============
 
 Seleucids
@@ -323,9 +303,9 @@ Team Bonuses:
 - "Peloponnesian League": Allies can train Spartiate champion infantry. NOT IMPLEMENTED.
 
 Civ Bonuses: 
-- "Othismos": Spartans can make use of the Phalanx formation without researching a technology. NOT IMPLEMENTED: TECHS UNLOCKING FORMATIONS.
-- "Laws of Lycurgus": Infantry rank promotion upgrades cost no resources, except time.*
-- "Spartan Womanhood": Spartan women cannot be captured (CAPTURING NOT IMPLEMENTED) and they can build Defense Towers and Palisades.
+- "Othismos": Spartans can make use of the Locked Shields formation modifier without researching a technology. NOT IMPLEMENTED: TECHS UNLOCKING FORMATIONS.
+- "Laws of Lycurgus": Hoplite rank promotion upgrades cost no resources, except time.
+- "Spartan Womanhood": Spartan women cannot be captured (UNIT CONVERSION NOT IMPLEMENTED) and they can build Defense Towers and Palisades (these are implemented).
 - "Hellenization": Building a Theatron special building increases territory effect for all buildings +20%.
 
 Civ Penalties:
@@ -333,18 +313,21 @@ Civ Penalties:
 - "Underdogs": The maximum population cap is reduced -10% for Sparta. 
 
 Special Buildings:
-- Syssition: Train Spartan heroes and Spartiate champion infantry. Research additional military technologies.
+- Syssition: Train Spartan heroes, Spartiate champion infantry, and Peroikoi Hoplites. Research additional military technologies. Available in Phase I.
 - Theatron: Build one to unleash the "Hellenization" bonus.
 
 Notable Technologies:
-- "Tyrtean Paeans": All units +10% walk speed.*
-- "The Agoge": Barracks +5 Population Cap and +1000 Health.
-- "Feminine Mystique": Female Citizens +50% Health, +2 Attack.*
+- "Tyrtean Paeans": All units +10% walk speed.
+- "The Agoge": Spartiates -1 pop cost, +10% attack.
+- "Feminine Mystique": Female Citizens +50% Health, +2 Attack.
+
+Thebans - NEW CIV!
+=============
 
 MISCELLANEOUS ADD-ONS
 =================================================
-- Groves are a new type of tree resource I wish to replace most trees with.
-- I am experimenting trying to help pathfinding performance by allowing units to walk through trees. For the most part this looks okay and doesn't look bad. There are a few ways to make this better though, which can be discussed: Walls should be placeable over trees, removing the trees in the process; Groves could allow for ambush tactics by barbarian civs; Siege weapons should still path around groves at least.
+- Groves are a new type of tree resource I wish to replace most trees with. They give 5000 wood, like how Metal Mines give 5000 Metal. Eventually I would like to make small, medium, and large groves for all biomes and tree-types. The currently implemented groves are the small (5000 wood) type. The large groves would be large forests, with infinite wood. 
+- I am experimenting trying to help pathfinding performance by allowing units to walk through trees. For the most part this looks okay and doesn't look bad. There are a few ways to make this better though, which can be discussed: Walls and buildings should be placeable over individual trees, removing the trees in the process; Groves could allow for ambush tactics by barbarian civs (somewhat implemented!); Siege weapons should still path around groves at least, or move extra slow through groves (can be implemented).
 - Updated Neareastern Badlands (2) to be smaller. The original was too big for 2 players.
 - Updated a lot of the Sandbox demo maps for each civ.
 - Experimented with some of Enrique's new unit meshes. Use keyword "test" in Atlas to find those entities.
