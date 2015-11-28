@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defense_wall">
+  <Armour>
+    <Hack>5</Hack>
+    <Pierce>20</Pierce>
+    <Crush>2</Crush>
+    <Foundation>
+      <Hack>1</Hack>
+      <Pierce>1</Pierce>
+      <Crush>1</Crush>
+    </Foundation>
+  </Armour>
   <Cost>
-    <BuildTime>5</BuildTime>
+    <BuildTime>7</BuildTime>
     <Resources>
-      <wood>5</wood>
+      <wood>7</wood>
       <stone>0</stone>
     </Resources>
   </Cost>
@@ -13,7 +23,7 @@
   </Footprint>
   <GarrisonHolder disable=""/>
   <Health>
-    <Max>1000</Max>
+    <Max>750</Max>
     <SpawnEntityOnDeath>rubble/rubble_1x3pal</SpawnEntityOnDeath>
   </Health>
   <Identity>
