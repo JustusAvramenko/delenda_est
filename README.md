@@ -12,22 +12,26 @@ Keep in mind:
 
 Major unimplemented Features that this document assumes will eventually be implemented:
 
-- Formations: This mod re-enables the old formations from Alpha 16 and before. Once these are reimplemented by the official WFG team, it is planned to revamp them completely for this mod.
+- Formations and Battalions: Hopefully either the WFG team agrees to add battalions or I can get some people together to implement Battalions and organized battalion combat. Battalions are based on those found in games like Battle for Middle Earth II or Rome: Total War, with some major and minor differences for 0 A.D. Discussion on Battalions is found in Mod Plan-Military.txt
 - Trample: Some cavalry are planned to be better tramplers than others, so their stats would be adjusted accordingly. So, until Trample is implemented by the team or by modders some Cavalry stats may be wonky.
 - Charging/Charge Bonus: Like Trample, this would affect Cavalry stats immensely, and it is hoped that this is eventually implemented in the game.
 - Unit Conversion using a "Loyalty" mechanic: Some techs in this mod cannot be implemented yet (or are implemented in a different way) because capturing/converting units (like Sheep or Female Citizens) is not implemented. Hopefully this feature is implemented so this mod can add another layer of richness to the gameplay.
 - Tech and Aura Modifications: These new modifications need to be implemented for this mod to reach its full potential: Altering Market Bartering recovery rates, Altering technology costs and speeds, (+ others here).
+- Alternate or Secondary Attacks. Example 1: Roman Swordsman throwing a Pilum before closing in for melee. Example 2: Persian Immortal switching between Bow and Spear.
 
 MAJOR OVERALL CHANGES
 ================
 - Completely new unit balance and countering.
-- A new 4th Phase: Imperial Phase, which unlocks major technologies and abilities. Requires 2000 Metal and 1 Wonder.
+- A new 4th Phase: Imperial Phase, which unlocks major technologies and abilities. Requires 1 Wonder.
 - Civic Centers are now buildable in the 3rd Phase (City Phase). This allows the players time to build up home defenses in Town Phase, or use the stone for a push to City Phase for expansion.
 - A completely redesigned technology tree, customized for each civilization. Blacksmith and Fortress trees are especially new.
 - Naval gameplay revamped with a Shipyard for the non-barbarian civs. Docks are for naval economy and Shipyard for naval warfare.
 - New special buildings, such as the Temple of Vesta for the Romans, with new auras and features.
-- Completely new "Imperial Romans" civ called the Principate Romans. They have a new slavery mechanic and new unit artwork.
-- Mercenary Camps now added and mercenaries for most civs are in.
+- Completely new "Imperial Romans" civ called the Principate Romans. They have a new slavery mechanic and new unit artwork. Their soldiers cannot gather resources, but they can build buildings. To unlock Phase techs, must build Triumphal Arches. This civ is very unique.
+- Completely new Epirotes civ, with Molossian Dogs. Their roster is a mix of Hellenic and Hellenistic units with lots of allied units.
+- Completely new Thebans civ, with the Fire Raiser. They are the Greek civ most like the Macedonians (both have Siege Workshops), but the Thebans have 2 infantry champions and no cavalry champion.
+- Carthaginians revamped considerably. Their Embassy (merc) units cost population, but their citizen-soldier units do not and have a training limit of 30.
+- Mercenary Camps now added and mercenaries for most civs are in!
 - Capturing buildings is revamped so that only civic buildings (Civic Center, Temple, House) are capturable. All others must be destroyed.
 - New territory mechanics that encourage city-building. Farmsteads and Storehouses can be built outside the city territory, along with Outposts. This creates a "weak countryside" but "strong core" duality for the player.
 - Farmlands are in and work as planned! Build fields on farmland to gain a 2x farming bonus. Building farms around Civic Centers and Temples gives a -50% farming penalty.
@@ -221,8 +225,8 @@ The following is a rundown of the Mercenaries and Mercenaries Camp mechanic:
 - Metal is almost always one of their costs, usually replacing the Food cost
 - They do not perform economic tasks very well, but they can build structures just fine
 - They do not contribute to gaining Loot, as they "keep booty for themselves"
-- The rest of their stats are comparable to their citizen-soldier counterparts at the Advanced rank, and most of them do not promote to new ranks
-- Each mercenary soldier comes with 1-2 tech upgrades researchable at the merc camp when captured by the player. For instance, Balearic Slingers and Rhodian Slingers can have a "Lead Sling Bullets" technology at the Merc Camp, a tech not normally available to civs with those mercs
+- The rest of their stats are comparable to their citizen-soldier counterparts at the Advanced rank (some are comparable to Elite rank but cost more), and most of them do not promote to new ranks (though some do)
+- Each mercenary soldier comes with 1-2 tech upgrades researchable at the merc camp when captured by the player. For instance, Balearic Slingers and Rhodian Slingers can have a "Lead Sling Bullets" technology at the Merc Camp, a tech not normally available to civs with those mercs (CANNOT IMPLEMENT YET)
 - Task soldiers to capture the Mercenary Camp like they would capture an Civic Center or Temple or House
 
 So, for example: 
@@ -260,6 +264,19 @@ Notable Technologies:
 - "Zea Ship Sheds": Warships build +25% faster.
 - "Arsenal of Philon": Warships regenerate Health.
 - "Othismos": Unlock the Locked Shields formation modifier.
+
+Heroes and Champions:
+- Pericles
+- Themistocles
+- Iphicrates
+- Epilektos (Champion Spear Infantry)
+- Scythian Archer (Champion Archer Infantry)
+
+Mercenaries:
+- Mercenary Hoplite (Spear Infantry)
+- Cretan Archer (Archer Infantry)
+- Thracian Peltast (Javelin Infantry)
+- Allied Greek Cavalry (Spear Cavalry)
 
 Britons
 =============
@@ -320,6 +337,19 @@ Notable Technologies:
 - "Tyrtean Paeans": All units +10% walk speed.
 - "The Agoge": Spartiates -1 pop cost, +10% attack.
 - "Feminine Mystique": Female Citizens +50% Health, +2 Attack.
+
+Heroes and Champions:
+- Leonidas
+- Agis
+- Brasidas
+- Spartiate (Champion Spear Infantry)
+- Skiritai Commando (Champion Sword Infantry)
+
+Mercenaries:
+- Peloponnesian Hoplite (Spear Infantry)
+- Cretan Archer (Archer Infantry)
+- Rhodian Slinger (Slinger Infantry)
+- Allied Greek Cavalry (Spear Cavalry)
 
 Thebans - NEW CIV!
 =============
