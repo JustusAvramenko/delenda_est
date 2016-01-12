@@ -1,14 +1,14 @@
 {
 	"pair": "pair_heal_03",
-	"genericName": "Physician, Heal Thyself",
-	"description": "Unlock health regeneration for your Healers.",
+	"genericName": "Battlefield Triage",
+	"description": "Unlock idle health regeneration for your soldiers.",
 	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 100},
 	"requirements": {"tech": "phase_city"},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "bandage.png",
 	"researchTime": 40,
-	"tooltip": "When wounded, Healers will regenerate health by 1 health every second.",
-	"modifications": [{"value": "Health/RegenRate", "add": 1}],
-	"affects": ["Healer"],
+	"tooltip": "When idle, wounded soldiers will regenerate 1 health every 2 seconds.",
+	"modifications": [{"value": "Health/IdleRegenRate", "add": 0.5}],
+	"affects": ["Soldier"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

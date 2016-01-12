@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support">
-  <Auras>
-    <Aura1>
-      <Type>range</Type>
-      <Radius>10</Radius>
-      <Affects>Citizen+Soldier</Affects>
-      <Modifications>
-        <Builder.Rate>
-		  <Multiply>1.1</Multiply>
-		</Builder.Rate>
-        <ResourceGatherer.BaseSpeed>
-		  <Multiply>1.1</Multiply>
-		</ResourceGatherer.BaseSpeed>
-      </Modifications>
-      <AuraName>"Inspiration" Aura</AuraName>
-      <AuraDescription>Nearby males work 10% faster.</AuraDescription>
-	  <OverlayIcon>art/textures/ui/session/auras/buildgather_bonus.png</OverlayIcon>
-    </Aura1>
-  </Auras>
   <Attack>
     <Melee>
       <Hack>6.0</Hack>
@@ -60,6 +42,9 @@
   <Identity>
     <GenericName>Female Citizen</GenericName>
 	<Gender>female</Gender>
+	<Tooltip>Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Avoids Death.
+Good at: Foraging, Farming, Lumbering, and Dying.
+Mediocre at: Mining.</Tooltip>
     <History>Women in the ancient world took on a variety of roles - from leadership (Celts) to servant (Greeks). Women are hard workers, the economic backbone of any civilization. In history, it was typical when all the males (capable of fighting) were killed for the females, children, and elderly to be sold as slaves.</History>
     <VisibleClasses datatype="tokens">Builder Gatherer Female Citizen</VisibleClasses>
 	<Classes datatype="tokens">Worker</Classes>
