@@ -17,6 +17,15 @@
   <BuildRestrictions>
     <Category>Vesta</Category>
   </BuildRestrictions>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <food>1000</food>
+	  <wood>500</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
   <Footprint replace="">
     <Circle radius="60.0"/>
     <Height>12.0</Height>
@@ -38,11 +47,12 @@
     <SpecificName>Aedes Vestae</SpecificName>
 	<VisibleClasses datatype="tokens">
 	  -Town
-	  City
+	  Village
+	  Vesta
 	</VisibleClasses>
     <History>(Insert History)</History>
-    <Tooltip>Build this temple to greatly increase the loyalty of nearby structures and health of nearby units.</Tooltip>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>Build 1 to unlock Town Phase, and also greatly increase the loyalty of nearby structures and health of nearby units.</Tooltip>
+    <RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Obstruction>
     <Static width="19.0" depth="19.0"/>
