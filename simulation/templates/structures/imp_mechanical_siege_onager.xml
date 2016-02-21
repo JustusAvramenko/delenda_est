@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_siege_onager">
+  <BuildRestrictions>
+    <PlacementType>land</PlacementType>
+    <Territory>own neutral enemy</Territory>
+	<Category>Onager</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>200</wood>
+      <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="10.0" depth="10.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Onager</SpecificName>
+    <Icon>units/imp_siege_onager.png</Icon>
+    <History> .</History>
+    <Tooltip>Traits: Stationary, Splash Damage (10 meters), Friendly Fire, Capturable.
+Strong Against: Buildings, Fortresses (1.25x), Massed Archers.
+Weak Against: Cavalry, Stone Walls (0.75x).</Tooltip>
+    <RequiredTechnology>romans_imperial/siege_artillery</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Active>true</Active>
+    <BlockMovement>true</BlockMovement>
+    <BlockPathfinding>true</BlockPathfinding>
+    <BlockFoundation>true</BlockFoundation>
+    <BlockConstruction>true</BlockConstruction>
+    <DisableBlockMovement>false</DisableBlockMovement>
+    <DisableBlockPathfinding>false</DisableBlockPathfinding>
+  </Obstruction>
+  <UnitMotion>
+    <WalkSpeed>0.001</WalkSpeed>
+    <Run>
+      <Speed>0.001</Speed>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/romans_imperial/siege_onager.xml</Actor>
+    <FoundationActor>structures/fndn_2x2.xml</FoundationActor>
+  </VisualActor>
+</Entity>
