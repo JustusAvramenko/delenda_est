@@ -6,12 +6,12 @@
 	},
 	"description": "Reduce the experience required to upgrade to Centurion.",
 	"cost": {"food": 700, "wood": 0, "stone": 0, "metal": 500},
-	"requirements": {"tech": "phase_city"},
-	"requirementsTooltip": "Unlocked in City Phase. Elite Legionary Swordsman.",
+	"requirements": {"all": [{"tech": "phase_imperial"}, {"civ": "imp"}]},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires Elite Legionary Swordsman.",
 	"icon": "primus_pilus.png",
 	"researchTime": 60,
-	"tooltip": "Reduce the experience required for Elite Roman Legionnaires to gain promotion to Centurion from 5 kills to 1 kill.",
-	"modifications": [{"value": "Promotion/RequiredXp", "replace": 100}],
+	"tooltip": "Reduce the experience required for Elite Roman Legionnaires to gain promotion to Centurion from 5 kills to 2 kills.",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 200}],
 	"affects": ["Legion Sword Elite"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

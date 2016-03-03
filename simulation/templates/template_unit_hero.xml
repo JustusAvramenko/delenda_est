@@ -3,11 +3,14 @@
   <Auras>
     <AuraA>
       <Type>garrison</Type>
-      <Affects>GarrisonHolder</Affects>
+      <Affects>Structure Mechanical</Affects>
       <Modifications>
-        <Capturable.GarrisonRegenRate> <Multiply>1.5</Multiply> </Capturable.GarrisonRegenRate>      </Modifications>
-      <AuraName>Hero Garrison Aura</AuraName>
-      <AuraDescription>When garrisoned in a structure, a hero galvanizes its defenders with +50% capture resistance.</AuraDescription>
+        <Capturable.GarrisonRegenRate>
+		  <Add>2</Add>
+		</Capturable.GarrisonRegenRate>
+	  </Modifications>	
+      <AuraName>"Stalwart Defense" bonus</AuraName>
+      <AuraDescription>When garrisoned in a structure, ship, or siege weapon, a hero galvanizes its defense with a bonus of +2 capture recovery rate.</AuraDescription>
     </AuraA>    
   </Auras>
   <Attack> 
