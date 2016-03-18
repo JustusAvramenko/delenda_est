@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="17.0"/>
+    <Height>18.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Scythian Hill Fort</SpecificName>
+    <History>.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="29.0" depth="29.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_broch.xml</select>
+      <constructed>interface/complete/building/complete_broch.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_hero_boudicca
+      units/{civ}_hero_caratacos
+      units/{civ}_hero_cynvelin
+      units/{civ}_champion_cavalry
+      units/{civ}_champion_infantry
+      units/{civ}_mechanical_siege_ram
+    </Entities>
+    <Technologies datatype="tokens">
+      pair_siege_rams_01
+	  pair_siege_build_armor
+	  celts/special_woad_warriors
+	  celts/fortress_great_tower
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>structures/britons/fortress_briton.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

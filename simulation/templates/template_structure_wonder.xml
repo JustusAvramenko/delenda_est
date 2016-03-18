@@ -16,11 +16,11 @@
       <Affects>Player</Affects>
       <Modifications>
         <Player.MaxPopulation>
-		  <Add>10</Add>
+		  <Multiply>1.1</Multiply>
 		</Player.MaxPopulation>
       </Modifications>
-      <AuraName>Wonder aura</AuraName>
-      <AuraDescription>Population cap +10 to maximum as long as the Wonder exists, and for every Wonder under the player's control.</AuraDescription>
+      <AuraName>"A Wonder for the Ages"</AuraName>
+      <AuraDescription>Population cap +10% to maximum as long as the Wonder exists, and for every Wonder under the player's control.</AuraDescription>
      </Aura1>
   </Auras>
   <BuildRestrictions>
@@ -58,7 +58,7 @@
   </Health>
   <Identity>
     <GenericName>Wonder</GenericName>
-    <Tooltip>Bring glory to your civilization and unlock Empire Phase.</Tooltip>
+    <Tooltip>Bring glory to your civilization and unlock Empire Phase. Building one also adds +10% to maximum population cap.</Tooltip>
     <VisibleClasses datatype="tokens">
 	  City
 	  Wonder
@@ -79,7 +79,6 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Technologies datatype="tokens">
-	  pop_wonder
     </Technologies>
   </ProductionQueue>
   <RallyPoint/>

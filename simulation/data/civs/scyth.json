@@ -1,0 +1,162 @@
+{
+	"Code": "scyth",
+	"Culture":[ "nomads" ],
+	"Region":[ "asia" ],
+	"Name": "Scythians",
+	"Emblem": "session/portraits/emblems/emblem_britons.png",
+	"History": ".",
+	"Music":[
+			{"File":"Highland_Mist.ogg", "Type":"peace"},
+			{"File":"Water's_Edge.ogg", "Type":"peace"},
+			{"File":"Celtic_Pride.ogg", "Type":"peace"},
+			{"File":"Celtica.ogg", "Type":"peace"}
+		],
+	"Factions":
+	[
+		{
+			"Name": "Scythians",
+			"Description": "The nomadic tribal confederation of central Asia.",
+			"Technologies":
+			[
+				{
+					"Name": "",
+					"History": ".",
+					"Description": "." 
+				},
+				{
+					"Name": "",
+					"History": ".",
+					"Description": "." 
+				} 
+			],
+			"Heroes":
+			[
+				{
+					"Name": "",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "." 
+				},
+				{
+					"Name": "",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "." 
+				},
+				{
+					"Name": "",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": "."
+				} 
+			] 
+		} 
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "",
+			"History": ".",
+			"Description": ". " 
+		},
+		{
+			"Name": "",
+			"History": ".",
+			"Description": "." 
+		} 
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "",
+			"History": ".",
+			"Description": "." 
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "",
+			"Class": "",
+			"Emblem": "",
+			"History": ".",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		},
+		{
+			"Name": "",
+			"Class": "",
+			"Emblem": "",
+			"History": ".",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		} 
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/scyth_civil_centre" 
+		},
+		{
+			"Template": "units/scyth_support_female_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/scyth_infantry_swordsman_b",
+			"Count": 2 
+		},		
+		{
+			"Template": "units/brit_infantry_archer_b",
+			"Count": 2 
+		},		
+		{
+			"Template": "units/scyth_cavalry_archer_b",
+			"Count": 1
+		},
+		{
+			"Template": "units/scyth_ox_cart",
+			"Count": 1
+		}
+	],
+	"Formations":
+	[
+		"formations/null",
+		"formations/box",
+		"formations/column_closed",
+		"formations/line_closed",
+		"formations/column_open",
+		"formations/line_open",
+		"formations/flank",
+		"formations/skirmish",
+		"formations/wedge",
+		"formations/battle_line"
+	],
+	"AINames":
+	[
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_infantry_ranged_b": "units/scyth_infantry_archer_b",
+		"skirmish/units/default_cavalry_ranged_b": "units/scyth_cavalry_archer_b",
+		"skirmish/units/default_infantry_melee_b": "units/scyth_infantry_swordsman_b",
+		"skirmish/units/special_starting_unit": "units/scyth_ox_cart",
+		"skirmish/structures/default_house_5": "structures/{civ}_house"
+	},
+	"SelectableInGameSetup": true
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_wonder">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="30.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Royal Kurgan</SpecificName>
+    <History>Large burial mounds for tribal royalty.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="30.0" depth="30.0"/>
+  </Obstruction>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <FoundationActor>structures/fndn_theatron.xml</FoundationActor>
+    <Actor>structures/celts/stone_monument_new.xml</Actor>
+  </VisualActor>
+</Entity>

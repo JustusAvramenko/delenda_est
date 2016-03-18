@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
+  <Auras>
+    <Aura1>
+      <Type>garrisonedUnits</Type>
+      <Affects>Ship</Affects>
+      <Modifications>
+        <Health.RegenRate>
+		  <Add>3</Add>
+		</Health.RegenRate>
+      </Modifications>
+      <AuraName>"Naval Workshop" Aura</AuraName>
+      <AuraDescription>Heals garrisoned ships at 3 health per second.</AuraDescription>
+    </Aura1>
+  </Auras>
   <BuildRestrictions>
     <Territory>own ally neutral</Territory>
     <PlacementType>shore</PlacementType>
@@ -28,6 +41,9 @@
     <Square width="42.0" depth="58.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <Max>5</Max>
+  </GarrisonHolder>
   <Health>
     <Max>5000</Max>
   </Health>

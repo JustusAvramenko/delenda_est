@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <Resources>
+      <wood>200</wood>
+      <food>200</food>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="22.0" depth="22.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Gwersyllty</SpecificName>
+	<History>.</History>
+	<RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="20.0"/>
+  </Obstruction>
+  <ProductionQueue>
+	<Entities datatype="tokens">
+	  -units/{civ}_cavalry_swordsman_b
+	  -units/{civ}_cavalry_spearman_b
+	  -units/{civ}_cavalry_javelinist_b
+	  -units/{civ}_cavalry_archer_b
+	</Entities>
+    <Technologies datatype="tokens">
+	  persians/special_archery_tradition
+	  persians/upgrade_rank_advanced_archers
+	  persians/upgrade_rank_elite_archers
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>structures/britons/barracks.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

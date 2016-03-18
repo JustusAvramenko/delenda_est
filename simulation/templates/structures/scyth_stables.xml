@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <Resources>
+      <wood>200</wood>
+      <food>200</food>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="22.0" depth="20.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+    <GenericName>Cavalry Stables</GenericName>
+    <SpecificName>Paraspa</SpecificName>
+    <VisibleClasses datatype="tokens">
+	  -Barracks
+	  Stables
+	</VisibleClasses>
+    <History>The Scythians were known for their equestrianism, perhaps even more so than the vaunted Persians and Parthians.</History>
+    <Tooltip>Train citizen-cavalry units.</Tooltip>
+    <Icon>structures/pers_stable.png</Icon>
+	<RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Static width="18.0" depth="16.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+	  -units/{civ}_infantry_spearman_b
+	  -units/{civ}_infantry_pikeman_b
+	  -units/{civ}_infantry_swordsman_b
+	  -units/{civ}_infantry_javelinist_b
+	  -units/{civ}_infantry_slinger_b
+	  -units/{civ}_infantry_archer_b
+    </Entities>
+    <Technologies datatype="tokens">
+	  -pair_levy_01
+	  -training_mobilization
+	  -training_total_war
+	  persians/training_levy_cavalry
+	  persians/training_conscription_cavalry
+	  persians/upgrade_rank_advanced_cavalry
+	  persians/upgrade_rank_elite_cavalry
+	  successors/special_war_horses
+	  persians/upgrade_rank_medium_chariot
+	  persians/upgrade_rank_heavy_chariot
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_cavalry_stables.xml</select>
+      <constructed>interface/complete/building/complete_cavalry_stables.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>structures/persians/stables.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

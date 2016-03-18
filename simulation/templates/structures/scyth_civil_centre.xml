@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="15.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Caer</SpecificName>
+    <History>.</History>
+  </Identity>
+<Health>
+  <SpawnEntityOnDeath>rubble/rubble_celt_cc</SpawnEntityOnDeath>
+  </Health>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_infantry_axeman_b
+    </Entities>
+    <Technologies datatype="tokens">
+      phase_town
+      phase_city
+	  phase_imperial
+	  health_units_01
+	  health_units_02
+	  celts/health_units_03
+	  pair_structures_01
+	  pair_structures_02
+	  vision_treason
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>structures/britons/civic_centre.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>
