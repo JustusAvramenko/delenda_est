@@ -32,6 +32,18 @@
       <textures><texture file="gaia/tree_euro_beech_c_aut.dds" name="baseTex"/></textures>
     </variant>
   </group>
+  <group>
+    <variant frequency="2" name="Falling Leaves">
+      <props>
+        <prop actor="particle/falling_leaf_dry_a.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="3" name="No Falling Leaves">
+      <props>
+        <prop attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
 
   <material>basic_trans_wind.xml</material>
 
