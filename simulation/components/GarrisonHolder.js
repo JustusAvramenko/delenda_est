@@ -108,6 +108,7 @@ GarrisonHolder.prototype.CanPickup = function(ent)
 	return IsOwnedByPlayer(player, ent);
 };
 
+
 /**
  * Return the list of entities garrisoned inside
  */
@@ -195,23 +196,6 @@ GarrisonHolder.prototype.GetGarrisonedEntitiesCount = function()
 };
 
 /**
- * Get number of garrisoned units capable of shooting arrows
- * Not necessarily archers
- */
-GarrisonHolder.prototype.GetGarrisonedArcherCount = function(garrisonArrowClasses)
-{
-	var count = 0;
-	for each (var entity in this.entities)
-	{
-		var cmpIdentity = Engine.QueryInterface(entity, IID_Identity);
-		var classes = cmpIdentity.GetClassesList();
-		if (classes.some(function(c){return garrisonArrowClasses.indexOf(c) > -1;}))
-			count++;
-	}
-	return count;
-};
-
-/**
  * Checks if an entity can be allowed to garrison in the building
  * based on its class
  */
@@ -226,35 +210,6 @@ GarrisonHolder.prototype.AllowedToGarrison = function(entity)
 	var entityClasses = cmpIdentity.GetClassesList();
 	return MatchesClassList(entityClasses, this.template.List._string);
 };
-
-/**
- * Returns an array of restricted classes from the original string.
- */
-GarrisonHolder.prototype.GetVisibleGarrisonAllowedClasses = function(classList)
-{
-	if (classList)
-    return classList._string.split(/\s+/);
-
-	return [];
-};
-
-/**
- * Returns true if the unit is allowed be visible on that garrison point, false otherwise.
- */
-GarrisonHolder.prototype.AllowedToVisibleGarrisoning = function(visibleGarrisonPoint)
-{
-    var allowedClassesList = this.GetVisibleGarrisonAllowedClasses(visibleGarrisonPoint.allowedClass); 
-    //If classlist is empty, everybody can garrison.
-    if (!allowedClassesList) 
-        return true; 
-
-    var entityClasses = (Engine.QueryInterface(visibleGarrisonPoint.entity, IID_Identity)).GetClassesList(); 
-        for (let allowedClasses of allowedClassesList)       
-            if(entityClasses.indexOf(allowedClasses) == -1)
-                return false
-           
-    return true; 
-}
 
 /**
  * Garrison a unit inside.
@@ -282,26 +237,18 @@ GarrisonHolder.prototype.Garrison = function(entity, vgpEntity)
 			break;
 		}
 	}
+
 	if (visibleGarrisonPoint)
 	{
 		visibleGarrisonPoint.entity = entity;
-		let IsAllowed = this.AllowedToVisibleGarrisoning(visibleGarrisonPoint);
-    
-		if (IsAllowed)
-		{
-			cmpPosition.SetTurretParent(this.entity, visibleGarrisonPoint.offset);
-			let cmpUnitAI = Engine.QueryInterface(entity, IID_UnitAI);
-			if (cmpUnitAI)
-				cmpUnitAI.SetTurretStance();
-		}
-		else
-		{
-      visibleGarrisonPoint.entity = undefined; // We have to undefine the garrison point else it's marked as used.
-			cmpPosition.MoveOutOfWorld();
-		}
+		cmpPosition.SetTurretParent(this.entity, visibleGarrisonPoint.offset);
+		let cmpUnitAI = Engine.QueryInterface(entity, IID_UnitAI);
+		if (cmpUnitAI)
+			cmpUnitAI.SetTurretStance();
 	}
 	else
 		cmpPosition.MoveOutOfWorld();
+
 	return true;
 };
 
@@ -548,42 +495,16 @@ GarrisonHolder.prototype.UnloadTemplate = function(extendedTemplate, all, forced
 };
 
 /**
-* Unload all units, that belong to certain player.
-*/
-GarrisonHolder.prototype.UnloadAllByOwner = function(owner, forced)
-{
-	var entities = [];
-	for (var entity of this.entities)
-	{
-		var cmpOwnership = Engine.QueryInterface(entity, IID_Ownership);
-		if (cmpOwnership && cmpOwnership.GetOwner() == owner)
-			entities.push(entity);
-	}
-
-	return this.PerformEject(entities, forced);
-};
-
-/**
- * Unload all units with same owner as the entity
- * and order them to move to the Rally Point
+ * Unload all units, that belong to certain player
+ * and order all own units to move to the Rally Point
  * Returns true if all successful, false if not
  */
-GarrisonHolder.prototype.UnloadAllOwn = function(forced)
+GarrisonHolder.prototype.UnloadAllByOwner = function(owner, forced)
 {
-	var cmpOwnership = Engine.QueryInterface(this.entity, IID_Ownership);
-	if (!cmpOwnership)
-		return false;
-	var owner = cmpOwnership.GetOwner();
-
-	// Make copy of entity list
-	var entities = [];
-	for each (var entity in this.entities)
-	{
-		var cmpOwnership = Engine.QueryInterface(entity, IID_Ownership);
-		if (cmpOwnership && cmpOwnership.GetOwner() == owner)
-			entities.push(entity);
-	}
-
+	var entities = this.entities.filter(ent => {
+		var cmpOwnership = Engine.QueryInterface(ent, IID_Ownership);
+		return cmpOwnership && cmpOwnership.GetOwner() == owner;
+	});
 	return this.PerformEject(entities, forced);
 };
 
@@ -757,16 +678,13 @@ GarrisonHolder.prototype.OnGlobalEntityRenamed = function(msg)
 	}
 };
 
+
 /**
  * Eject all foreign garrisoned entities which are no more allied
- */GarrisonHolder.prototype.OnDiplomacyChanged = function()
+ */
+GarrisonHolder.prototype.OnDiplomacyChanged = function()
 {
-	var entities = [];
-	for each (var entity in this.entities)
-	{
-		if (!IsOwnedByMutualAllyOfEntity(this.entity, entity))
-			entities.push(entity);
-	}
+	var entities = this.entities.filter(ent => !IsOwnedByMutualAllyOfEntity(this.entity, ent));
 	this.EjectOrKill(entities);
 };
 
@@ -788,6 +706,7 @@ GarrisonHolder.prototype.EjectOrKill = function(entities)
 	}
 
 	// And destroy all remaining entities
+	var killedEntities = [];
 	for each (var entity in entities)
 	{
 		var entityIndex = this.entities.indexOf(entity);
@@ -797,9 +716,11 @@ GarrisonHolder.prototype.EjectOrKill = function(entities)
 		if (cmpHealth)
 			cmpHealth.Kill();
 		this.entities.splice(entityIndex, 1);
+		killedEntities.push(entity);
 	}
 
-	Engine.PostMessage(this.entity, MT_GarrisonedUnitsChanged, { "added" : [], "removed" : entities });
+	if (killedEntities.length > 0)
+		Engine.PostMessage(this.entity, MT_GarrisonedUnitsChanged, { "added" : [], "removed" : killedEntities });
 	this.UpdateGarrisonFlag();
 };
 
@@ -829,9 +750,8 @@ GarrisonHolder.prototype.OnGlobalInitGame = function(msg)
 	for (let ent of this.initGarrison)
 	{
 		let cmpUnitAI = Engine.QueryInterface(ent, IID_UnitAI);
-		if (!cmpUnitAI || !cmpUnitAI.CanGarrison(this.entity))
-			continue;
-		this.Garrison(ent);
+		if (cmpUnitAI && cmpUnitAI.CanGarrison(this.entity))
+			this.Garrison(ent);
 	}
 	this.initGarrison = undefined;
 };
