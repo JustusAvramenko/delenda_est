@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_cavalry_swordsman">
-  <Auras>
-    <Aura1>
-      <Type>range</Type>
-      <Radius>60</Radius>
-      <Affects>Soldier</Affects>
-      <Modifications>
-        <Attack.Ranged.Pierce> <Add>5</Add> </Attack.Ranged.Pierce>
-        <Attack.Melee.Hack> <Add>5</Add> </Attack.Melee.Hack>
-      </Modifications>
-      <AuraName>"Sword of Rome" Aura</AuraName>
-      <AuraDescription>+5 attack for Roman soldiers within sight of him.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    rome_hero_marcellus
   </Auras>
   <Identity>
     <Civ>rome</Civ>

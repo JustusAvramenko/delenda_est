@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_shipyard">
-  <Auras>
-    <Aura1>
-      <Type>garrisonedUnits</Type>
-      <Affects>Ship</Affects>
-      <Modifications>
-        <Health.RegenRate>
-		  <Add>3</Add>
-		</Health.RegenRate>
-      </Modifications>
-      <AuraName>"Naval Workshop" Aura</AuraName>
-      <AuraDescription>Heals garrisoned ships at 3 health per second.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    cart_shipyard_repair
   </Auras>
   <Identity>
     <Civ>cart</Civ>

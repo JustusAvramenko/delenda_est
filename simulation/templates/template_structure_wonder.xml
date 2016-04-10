@@ -10,18 +10,8 @@
       <Crush>2</Crush>
     </Foundation>
   </Armour>
-  <Auras>
-    <Aura1>
-      <Type>global</Type>
-      <Affects>Player</Affects>
-      <Modifications>
-        <Player.MaxPopulation>
-		  <Multiply>1.1</Multiply>
-		</Player.MaxPopulation>
-      </Modifications>
-      <AuraName>"A Wonder for the Ages"</AuraName>
-      <AuraDescription>Population cap +10% to maximum as long as the Wonder exists, and for every Wonder under the player's control.</AuraDescription>
-     </Aura1>
+  <Auras datatype="tokens">
+    wonder_pop_1
   </Auras>
   <BuildRestrictions>
     <Category>Wonder</Category>

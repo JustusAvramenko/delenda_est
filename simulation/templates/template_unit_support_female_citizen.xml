@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support">
+  <Auras datatype="tokens">
+    female_inspiration
+  </Auras>
   <Attack>
     <Melee>
       <Hack>6.0</Hack>
@@ -34,7 +37,7 @@
     <Resources>
       <food>50</food>
     </Resources>
-    <BuildTime>10</BuildTime>
+    <BuildTime>12</BuildTime>
   </Cost>
   <Health>
     <Max>50</Max>
@@ -45,7 +48,7 @@
 	<Tooltip>Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Avoids Death.
 Good at: Foraging, Farming, Lumbering, and Dying.
 Mediocre at: Mining.</Tooltip>
-    <History>Women in the ancient world took on a variety of roles - from leadership (Celts) to servant (Greeks). Women are hard workers, the economic backbone of any civilization. In history, it was typical when all the males (capable of fighting) were killed for the females, children, and elderly to be sold as slaves.</History>
+    <History>Women in the ancient world took on a variety of roles - from leadership (Celts) to servant (Greeks). Women are hard workers, the economic backbone of any civilization. In history, it was typical when all the males (capable of fighting) were killed for the women, children, and elderly to be sold as slaves, a valuable economic commodity in the ancient world.</History>
     <VisibleClasses datatype="tokens">Builder Gatherer Female Citizen</VisibleClasses>
 	<Classes datatype="tokens">Worker</Classes>
     <Formations disable=""/>
@@ -85,9 +88,6 @@ Mediocre at: Mining.</Tooltip>
       <gather_ruins>resource/mining/mining.xml</gather_ruins>
     </SoundGroups>
   </Sound>
-  <Stamina>
-    <Max>500</Max>
-  </Stamina>
   <UnitAI>
     <AlertReactiveLevel>1</AlertReactiveLevel>
   </UnitAI>

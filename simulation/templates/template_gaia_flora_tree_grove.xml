@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_gaia_flora_tree">
-  <Auras>
-    <Guerillas>
-      <Type>range</Type>
-      <Radius>20</Radius>
-      <Affects>Guerilla</Affects>
-	  <AffectedPlayers>Enemy</AffectedPlayers>
-      <Modifications>
-        <Attack.Melee.Hack>
-		  <Multiply>1.2</Multiply>
-		</Attack.Melee.Hack>
-      </Modifications>
-      <AuraName>"Guerilla Warfare" Aura</AuraName>
-      <AuraDescription>Celtic, Iberian, and Indian melee soldiers +20% attack. Affects soldiers with "Guerilla" class.</AuraDescription>
-    </Guerillas>
+  <Auras datatype="tokens">
+    guerilla_warfare
   </Auras>
   <Footprint replace="">
     <Circle radius="20.0"/>

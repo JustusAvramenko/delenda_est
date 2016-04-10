@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
-  <Auras>
-    <Aura1>
-      <Type>range</Type>
-      <Radius>30</Radius>
-      <Affects>Unit</Affects>
-      <Modifications>
-        <Attack.Melee.Hack> <Add>2</Add> </Attack.Melee.Hack>
-        <Attack.Ranged.Pierce> <Add>3</Add> </Attack.Ranged.Pierce>
-      </Modifications>
-	  <AuraName>"Homeland Defense" Aura</AuraName>
-      <AuraDescription>Units +2 melee and +3 ranged attack within 30 meters of a Revered Monument.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    iber_monument
   </Auras>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
@@ -64,6 +54,7 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
+  <TerritoryInfluence disable=""/>
   <Vision>
     <Range>60</Range>
   </Vision>

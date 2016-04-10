@@ -1,37 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
-  <Auras>
-    <Aura1>
-      <Type>range</Type>
-      <Radius>50</Radius>
-      <Affects>Soldier</Affects>
-      <Modifications>
-        <Attack.Ranged.Pierce>
-		  <Add>1</Add> 
-		</Attack.Ranged.Pierce>
-        <Attack.Melee.Hack>
-		  <Add>1</Add>
-		</Attack.Melee.Hack>
-      </Modifications>
-      <AuraName>"Citizenship" Aura</AuraName>
-      <AuraDescription>+2 attack for Roman soldiers within sight of a Roman Forum.</AuraDescription>
-    </Aura1>
-    <Aura2>
-      <Type>range</Type>
-      <Radius>50</Radius>
-      <Affects>Soldier</Affects>
-	  <AffectedPlayers>MutualAlly</AffectedPlayers>
-      <Modifications>
-        <Attack.Ranged.Pierce>
-		  <Add>1</Add> 
-		</Attack.Ranged.Pierce>
-        <Attack.Melee.Hack>
-		  <Add>1</Add>
-		</Attack.Melee.Hack>
-      </Modifications>
-      <AuraName>"Socii" Aura</AuraName>
-      <AuraDescription>+1 attack for Allied soldiers within sight of a Roman Forum.</AuraDescription>
-    </Aura2>
+  <Auras datatype="tokens">
+    rome_citizenship
+	rome_socii
   </Auras>
   <Footprint>
     <Square width="40.0" depth="40.0"/>

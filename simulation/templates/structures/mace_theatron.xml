@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
-  <Auras>
-    <Aura1>
-      <Type>global</Type>
-      <Affects>Structure</Affects>
-      <Modifications>
-        <TerritoryInfluence.Radius>
-		  <Multiply>1.2</Multiply>
-		</TerritoryInfluence.Radius>
-      </Modifications>
-	  <AuraName>"Hellenization" Aura</AuraName>
-      <AuraDescription>Civic Centers +20% territory influence while the Theatron exists.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    hellenization
   </Auras>
   <BuildRestrictions>
     <Category>Theater</Category>

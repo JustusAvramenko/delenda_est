@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_resource">
-  <Auras>
-    <Aura1>
-      <Type>garrisonedUnits</Type>
-      <Affects>Domestic</Affects>
-      <Modifications>
-        <ResourceTrickle.FoodRate>
-		  <Add>1</Add>
-		</ResourceTrickle.FoodRate>
-      </Modifications>
-      <AuraName>Ranching and Corralling</AuraName>
-      <AuraDescription>Garrison Domestic Animals within the Corral to enable a slow trickle of Food.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    corral_garrison
   </Auras>
   <BuildRestrictions>
     <Territory>own neutral</Territory>

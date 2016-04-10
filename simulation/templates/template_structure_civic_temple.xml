@@ -1,42 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic">
-  <Auras>
-    <FaithHealing>
-      <Type>range</Type>
-      <Radius>40</Radius>
-      <Affects>Organic NotField</Affects>
-      <Modifications>
-        <Health.RegenRate>
-		  <Add>1</Add>
-		</Health.RegenRate>
-      </Modifications>
-      <AuraName>"Faith Healing" Aura</AuraName>
-      <AuraDescription>Heal units and buildings at 1 HP per second within a distance of 40 meters.</AuraDescription>
-	  <OverlayIcon>art/textures/ui/session/auras/heal.png</OverlayIcon>
-    </FaithHealing>
-    <Culture>
-      <Type>global</Type>
-      <Affects>Structure</Affects>
-      <Modifications>
-        <Capturable.CapturePoints>
-		  <Multiply>1.1</Multiply>
-	    </Capturable.CapturePoints>
-      </Modifications>
-      <AuraName>"Culture" Effect</AuraName>
-      <AuraDescription>Structures +10% capture points as long as a temple exists.</AuraDescription>
-    </Culture>
-    <CivicSpaces>
-      <Type>range</Type>
-      <Radius>40</Radius>
-      <Affects>Gatherer</Affects>
-      <Modifications>
-        <ResourceGatherer.Rates.food..grain>
-		  <Multiply>0.5</Multiply>
-		</ResourceGatherer.Rates.food..grain>
-      </Modifications>
-      <AuraName>"Civic Spaces" Farming Penalty</AuraName>
-      <AuraDescription>Gatherers -50% farm gather rate within 40 meters of Temples and Civic Centers.</AuraDescription>
-    </CivicSpaces>
+  <Auras datatype="tokens">
+    temple_heal
+	temple_culture
+	civic_spaces
   </Auras>
   <BuildRestrictions>
     <Category>Temple</Category>

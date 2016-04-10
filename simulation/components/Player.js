@@ -409,9 +409,8 @@ Player.prototype.GetDiplomacy = function()
 
 Player.prototype.SetDiplomacy = function(dipl)
 {
-	// Should we check for teamsLocked here?
 	this.diplomacy = dipl;
-	Engine.BroadcastMessage(MT_DiplomacyChanged, {"player": this.playerID});
+	Engine.BroadcastMessage(MT_DiplomacyChanged, { "player": this.playerID });
 };
 
 Player.prototype.SetDiplomacyIndex = function(idx, value)
@@ -427,41 +426,12 @@ Player.prototype.SetDiplomacyIndex = function(idx, value)
 	if (this.state != "active" || cmpPlayer.state != "active")
 		return;
 
-	// You can have alliances with other players,
-	if (this.teamsLocked)
-	{
-		// but can't stab your team members in the back
-		if (this.team == -1 || this.team != cmpPlayer.GetTeam())
-		{
-			// Break alliance or declare war
-			if (Math.min(this.diplomacy[idx],cmpPlayer.diplomacy[this.playerID]) > value)
-			{
-				this.diplomacy[idx] = value;
-				cmpPlayer.SetDiplomacyIndex(this.playerID, value);
-			}
-			else
-			{
-				this.diplomacy[idx] = value;
-			}
-			Engine.BroadcastMessage(MT_DiplomacyChanged, {"player": this.playerID});
-		}
-	}
-	else
-	{
-		// Break alliance or declare war (worsening of relations is mutual)
-		if (Math.min(this.diplomacy[idx],cmpPlayer.diplomacy[this.playerID]) > value)
-		{
-			// This is duplicated because otherwise we get too much recursion
-			this.diplomacy[idx] = value;
-			cmpPlayer.SetDiplomacyIndex(this.playerID, value);
-		}
-		else
-		{
-			this.diplomacy[idx] = value;
-		}
+	this.diplomacy[idx] = value;
+	Engine.BroadcastMessage(MT_DiplomacyChanged, { "player": this.playerID });
 
-		Engine.BroadcastMessage(MT_DiplomacyChanged, {"player": this.playerID});
-	}
+	// Mutual worsening of relations
+	if (cmpPlayer.diplomacy[this.playerID] > value)
+		cmpPlayer.SetDiplomacyIndex(this.playerID, value);
 };
 
 Player.prototype.UpdateSharedLos = function()
@@ -554,12 +524,28 @@ Player.prototype.IsAlly = function(id)
 };
 
 /**
+ * Check if given player is our ally excluding ourself
+ */
+Player.prototype.IsExclusiveAlly = function(id)
+{
+	return this.playerID != id && this.IsAlly(id);
+};
+
+/**
  * Check if given player is our ally, and we are its ally
  */
 Player.prototype.IsMutualAlly = function(id)
 {
 	var cmpPlayer = QueryPlayerIDInterface(id);
 	return this.IsAlly(id) && cmpPlayer && cmpPlayer.IsAlly(this.playerID);
+};
+
+/**
+ * Check if given player is our ally, and we are its ally, excluding ourself
+ */
+Player.prototype.IsExclusiveMutualAlly = function(id)
+{
+	return this.playerID != id && this.IsMutualAlly(id);
 };
 
 Player.prototype.SetEnemy = function(id)
@@ -573,7 +559,7 @@ Player.prototype.SetEnemy = function(id)
 Player.prototype.GetEnemies = function()
 {
 	var enemies = [];
-	for (var i = 0; i < this.diplomacy.length; i++)
+	for (var i = 0; i < this.diplomacy.length; ++i)
 		if (this.diplomacy[i] < 0)
 			enemies.push(i);
 	return enemies;

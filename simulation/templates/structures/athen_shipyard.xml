@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_shipyard">
-  <Auras>
-    <Aura1>
-      <Type>global</Type>
-      <Affects>Warship</Affects>
-	  <AffectedPlayers>MutualAlly</AffectedPlayers>
-      <Modifications>
-        <Cost.BuildTime>
-		  <Multiply>0.8</Multiply>
-		</Cost.BuildTime>
-      </Modifications>
-      <AuraName>"Delian League" Team Bonus</AuraName>
-      <AuraDescription>Warships -20% Build Time for all Allies for as long as the Athenian player has a Shipyard. (NOTE: Currently, this is bugged for some reason!)</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    athen_team_bonus_delian_league
   </Auras>
   <Footprint>
     <Square width="26.0" depth="30.0"/>

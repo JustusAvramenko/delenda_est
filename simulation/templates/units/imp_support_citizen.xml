@@ -16,20 +16,8 @@
       <MaxRange>4.0</MaxRange>
     </Slaughter>
   </Attack>
-  <Auras>
-    <Aura1>
-      <Type>range</Type>
-      <Radius>15</Radius>
-      <Affects>Slave</Affects>
-      <Modifications>
-        <ResourceGatherer.BaseSpeed>
-		  <Multiply>1.25</Multiply>
-		</ResourceGatherer.BaseSpeed>
-      </Modifications>
-      <AuraName>"Slave Ownership" Aura</AuraName>
-      <AuraDescription>Nearby slaves gather +25% faster. Range: 15 meters.</AuraDescription>
-	  <OverlayIcon>art/textures/ui/session/auras/buildgather_bonus.png</OverlayIcon>
-    </Aura1>
+  <Auras datatype="tokens">
+    slave_ownership
   </Auras>
   <Builder>
     <Rate>1.25</Rate>

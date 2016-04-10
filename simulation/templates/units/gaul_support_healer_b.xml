@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support_healer">
-  <Auras>
-    <Aura1>
-      <Type>range</Type>
-      <Radius>25</Radius>
-      <Affects>Unit</Affects>
-      <Modifications>
-        <Attack.Ranged.Pierce> <Add>1</Add> </Attack.Ranged.Pierce>
-        <Attack.Melee.Hack> <Add>1</Add> </Attack.Melee.Hack>
-      </Modifications>
-      <AuraName>"Deas Celtica" Aura</AuraName>
-      <AuraDescription>All units within 25 meters +1 Attack.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    celt_healer_1
   </Auras>
   <Identity>
     <Civ>gaul</Civ>

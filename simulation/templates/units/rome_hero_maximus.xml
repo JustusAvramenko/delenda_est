@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_cavalry_swordsman">
-  <Auras>
-    <Aura1>
-      <Type>global</Type>
-      <Affects>Unit Structure</Affects>
-      <Modifications>
-        <Armour.Pierce> <Add>1</Add> </Armour.Pierce>
-        <Armour.Hack> <Add>1</Add> </Armour.Hack>
-        <Armour.Crush> <Add>1</Add> </Armour.Crush>
-      </Modifications>
-      <AuraName>"Shield of Rome" Aura</AuraName>
-      <AuraDescription>+1 Hack, Pierce, and Crush armor for all units and structures while he lives.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    rome_hero_maximus
   </Auras>
   <Identity>
     <Civ>rome</Civ>

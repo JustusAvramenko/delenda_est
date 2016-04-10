@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_elephant_melee">
-  <Auras>
-    <Aura1>
-      <Type>range</Type>
-      <Radius>60</Radius>
-      <Affects>Unit</Affects>
-      <AffectedPlayers>Player Ally</AffectedPlayers>
-      <Modifications>
-        <Attack.Ranged.Pierce> <Add>2</Add> </Attack.Ranged.Pierce>
-        <Attack.Melee.Hack> <Add>2</Add> </Attack.Melee.Hack>
-      </Modifications>
-      <AuraName>"Tactician" Aura</AuraName>
-      <AuraDescription>Nearby Allied Units +2 Attack.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    cart_hero_hannibal
   </Auras>
   <Identity>
     <Civ>cart</Civ>
@@ -20,9 +9,10 @@
     <SpecificName>Ḥannibaʿal Baraq</SpecificName>
     <History>Carthage's most famous son. Hannibal Barca was the eldest son of Hamilcar Barca and proved an even greater commander than his father. Lived 247-182 BC. While he ultimately lost the Second Punic War, his victories at Trebia, Lake Trasimene, and Cannae, and the feat of crossing the Alps have secured his position as among the best tacticians and strategists in history.</History>
     <Icon>units/cart_hero_hannibal.png</Icon>
-    <Tooltip>"Strategist" Ability (TBD): The player can see changes within the fog of war while Hannibal lives.
-Counters: 2x vs. All Cavalry, 1.5x vs. All Structures. Extra 1.5x vs. Gates.
-Countered by: Skirmishers and Swordsmen. Can run amok.</Tooltip>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Heavy Charge, Trample, Run Amok.
+Strong Against: Horse Cavalry (2x), Buildings (1.5x), Gates (3x).
+Weak Against: Javelin Infantry, Sword Infantry.
+"Strategist" Ability: The player can see changes within the fog of war while Hannibal lives. (Not Yet Implemented)</Tooltip>
   </Identity>
   <VisualActor>
     <Actor>units/carthaginians/hero_hannibal_mount.xml</Actor>

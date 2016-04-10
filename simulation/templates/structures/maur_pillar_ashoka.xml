@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
-  <Auras>
-    <Aura1>
-      <Type>range</Type>
-      <Radius>50</Radius>
-      <Affects>Worker</Affects>
-      <Modifications>
-        <Builder.Rate>
-		  <Multiply>1.15</Multiply> 
-		</Builder.Rate>
-        <ResourceGatherer.BaseSpeed>
-		  <Multiply>1.15</Multiply>
-		</ResourceGatherer.BaseSpeed>
-      </Modifications>
-      <AuraName>"Edicts of Ashoka" Aura</AuraName>
-      <AuraDescription>Units +15% Gather Rate and Build Rate within 50 meters.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    maur_pillar
   </Auras>
   <BuildRestrictions>
     <Territory>own neutral ally</Territory>

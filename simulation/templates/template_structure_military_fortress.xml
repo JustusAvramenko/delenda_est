@@ -20,20 +20,8 @@
       </Bonuses>
     </Ranged>
   </Attack>
-  <Auras>
-    <Aura1>
-      <Type>garrisonedUnits</Type>
-      <Affects>Unit</Affects>
-      <Modifications>
-        <Armour.Pierce> <Add>3</Add> </Armour.Pierce>
-        <Armour.Hack> <Add>3</Add> </Armour.Hack>
-        <Armour.Crush> <Add>3</Add> </Armour.Crush>
-		<Attack.Ranged.MaxRange> <Add>10</Add> </Attack.Ranged.MaxRange>
-        <Vision.Range> <Add>10</Add> </Vision.Range>
-      </Modifications>
-      <AuraName>Battlements</AuraName>
-      <AuraDescription>Units standing on Fortress battlements have 3 extra Armor levels, +10 Range, and +10 Vision.</AuraDescription>
-    </Aura1>
+  <Auras datatype="tokens">
+    wall_battlements
   </Auras>
   <BuildingAI>
     <DefaultArrowCount>3</DefaultArrowCount>
@@ -51,7 +39,7 @@
   </BuildRestrictions>
   <Cost>
     <PopulationBonus>10</PopulationBonus>
-    <BuildTime>500</BuildTime>
+    <BuildTime>400</BuildTime>
     <Resources>
       <wood>0</wood>
       <stone>800</stone>

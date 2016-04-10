@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
-  <Auras>
-    <AuraA>
-      <Type>garrison</Type>
-      <Affects>Structure Mechanical</Affects>
-      <Modifications>
-        <Capturable.GarrisonRegenRate>
-		  <Add>2</Add>
-		</Capturable.GarrisonRegenRate>
-	  </Modifications>	
-      <AuraName>"Stalwart Defense" bonus</AuraName>
-      <AuraDescription>When garrisoned in a structure, ship, or siege weapon, a hero galvanizes its defense with a bonus of +2 capture recovery rate.</AuraDescription>
-    </AuraA>    
+  <Auras datatype="tokens">
+    hero_garrison
   </Auras>
   <Attack> 
     <Capture>
