@@ -6,7 +6,7 @@
 	},
 	"description": ".",
 	"cost": {"food": 0, "wood": 0, "stone": 1000, "metal": 500},
-	"requirements": {"tech": "phase_imperial"},
+	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "civ": "imp" }, { "civ": "rome" }] }] },
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"supersedes": "health_units_05",
 	"icon": "aqueducts.png",

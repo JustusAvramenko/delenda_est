@@ -16,7 +16,10 @@
 	"icon": "loom.png",
 	"researchTime": 40,
 	"tooltip": "Females +50% health.",
-	"modifications": [{"value": "Health/Max", "multiply": 1.50}],
+	"requirements": {"all": [
+		{"tech": "phase_town"},
+		{"notciv": "imp"}
+	]},
 	"affects": ["Female"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

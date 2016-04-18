@@ -10,7 +10,7 @@
 	"replaces": ["phase_city"],
 	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology. This is the Athenian city phase, where metal gathering rates are boosted because of the Silver Owls bonus.",
 	"cost": {"food": 0, "wood": 0, "stone": 1000, "metal": 1000},
-	"requirements": { "class": "NotField", "number": 15 },
+	"requirements": {"all": [{"class": "NotField", "number": 15 }, {"civ": "athen"}]},
 	"requirementsTooltip": "Requires 15 total Structures (except Walls and Palisades).",
 	"icon": "city_phase.png",
 	"researchTime": 30,

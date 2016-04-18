@@ -11,14 +11,14 @@
 	},
 	"description": "The Greeks invented the martial arts for the Western world.",
 	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 200},
-	"requirements": {"tech": "phase_city"},
+	"requirements": {"all": [{"tech": "phase_city"}, {"any": [{"civ": "hele"},{"civ": "athen"},{"civ": "mace"},{"civ": "spart"},{"civ": "theb"},{"civ": "ptol"},{"civ": "sele"},{"civ": "epir"}]}]},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "pankration.png",
 	"researchTime": 40,
 	"tooltip": "Infantry +10% Health, +1 second Train Time.",
 	"modifications": [
 		{"value": "Health/Max", "multiply": 1.1},
-		{"value": "Cost/BuildTime", "add": -1}
+		{"value": "Cost/BuildTime", "add": 1}
 	],
 	"affects": ["Infantry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
