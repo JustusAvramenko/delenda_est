@@ -38,7 +38,8 @@
     <metal>25</metal>
   </Loot>
   <Market> 
-	<TradeType>land</TradeType> 
+	<TradeType>land</TradeType>
+	<InternationalBonus>0.2</InternationalBonus>
   </Market> 
   <Obstruction>
     <Static width="30.0" depth="26.0"/>
@@ -47,8 +48,9 @@
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Technologies datatype="tokens">
       speed_trader_01
-	  speed_trader_02
+      speed_trader_02
 	  unlock_shared_los
+	  trade_commercial_treaty
 	  pair_market_01
 	  gather_slave_markets
     </Technologies>
@@ -72,6 +74,9 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
+  <TerritoryDecay>
+    <DecayRate>25</DecayRate>
+  </TerritoryDecay>
   <TerritoryInfluence>
     <Root>false</Root>
     <Radius>30</Radius>

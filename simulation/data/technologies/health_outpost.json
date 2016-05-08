@@ -1,13 +1,16 @@
 {
 	"genericName": "Stone Foundations",
 	"description": "Outposts survive twice as long when under attack.",
-	"cost": {"food": 0, "wood": 0, "stone": 100, "metal": 0},
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 0},
 	"requirements": {"tech": "phase_village"},
 	"requirementsTooltip": "Unlocked in Village Phase.",
 	"icon": "blocks_three.png",
 	"researchTime": 40,
-	"tooltip": "Outposts +100% health.",
-	"modifications": [{"value": "Health/Max", "multiply": 2}],
+	"tooltip": "Outposts +100% health, -33% loyalty decay rate.",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 2},
+		{"value": "TerritoryDecay/DecayRate", "multiply": 0.66}
+	],
 	"affects": ["Outpost"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

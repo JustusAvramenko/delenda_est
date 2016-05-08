@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_ranged_slinger">
+  <Armour>
+    <Hack op="add">-1</Hack>
+  </Armour>
   <Builder>
     <Entities datatype="tokens">
       -structures/{civ}_fortress
@@ -23,9 +26,9 @@
     <Entity>units/celt_infantry_slinger_a</Entity>
   </Promotion>
   <UnitMotion>
-    <WalkSpeed>7.92</WalkSpeed>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
     <Run>
-      <Speed>23.76</Speed>
+      <Speed op="mul">1.1</Speed>
     </Run>
   </UnitMotion>
   <VisualActor>
