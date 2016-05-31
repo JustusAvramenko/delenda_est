@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource_corral">
+  <Footprint>
+    <Square width="18.0" depth="16.5"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <VisibleGarrisonPoints>
+      <Animal1>
+        <X>0</X><Y>0</Y><Z>2</Z>
+      </Animal1>
+      <Animal2>
+        <X>2</X><Y>0</Y><Z>4</Z>
+      </Animal2>
+      <Animal3>
+        <X>-2</X><Y>0</Y><Z>2.75</Z>
+      </Animal3>
+      <Animal4>
+        <X>-5</X><Y>0</Y><Z>2.5</Z>
+      </Animal4>
+      <Animal5>
+        <X>5</X><Y>0</Y><Z>0</Z>
+      </Animal5>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_3x3</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Rēfet</SpecificName>
+    <History>A place for a farmer to pen his animals. Garrison a sheep, goat, or cow here to gain a trickle of the food resource. Garrisoning an animal here also "fattens" them so that they may be slaughtered and gathered for a quick burst of food. Horses or elephants can be captured in the wild and placed in the Corral. Unlike normal corralled animals that generate food, the corralled Horse and Elephant functions similarly to a relic as in AoK. As long as it/they remain(s) in the Corral, the resource cost of training horse-mounted units (cavalry) or War Elephant Super Units is reduced by a fixed amount of -5% per animal corralled appropriate to kind.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="16.0" depth="14.5"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+	  training_animals_elephants
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/carthaginians/corral.xml</Actor>
+    <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
+  </VisualActor>
+</Entity>

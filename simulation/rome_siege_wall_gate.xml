@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wall_gate">
+  <Armour>
+    <Hack>15.0</Hack>
+    <Pierce>35.0</Pierce>
+    <Crush>5.0</Crush>
+    <Foundation>
+      <Hack>4.0</Hack>
+      <Pierce>7.0</Pierce>
+      <Crush>3.0</Crush>
+    </Foundation>
+  </Armour>
+  <BuildRestrictions>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <Resources>
+      <wood>80</wood>
+      <stone>0</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="40.0" depth="8.0"/>
+    <Height>7.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>4</Max>
+	<VisibleGarrisonPoints>
+      <Archer1>
+        <X>-9.5</X><Y>11.5</Y><Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>9.5</X><Y>11.5</Y><Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-9.5</X><Y>7.2</Y><Z>0</Z>
+      </Archer3>
+      <Archer4>
+        <X>9.5</X><Y>7.2</Y><Z>0</Z>
+      </Archer4>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <Civ>rome</Civ>
+    <GenericName>Siege Wall Gate</GenericName>
+    <SpecificName>Porta Circummunitionis</SpecificName>
+    <Classes datatype="tokens">
+	  SiegeWall
+	</Classes>
+    <History>Quick building, but expensive wooden and earthen walls used to surround and siege an enemy town or fortified position. The most famous examples are the Roman sieges of the Iberian stronghold of Numantia and the Gallic stronghold of Alesia.</History>
+	<Icon>structures/wooden_gate.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Right width="13" depth="5" x="12" z="0"/>
+      <Left width="13" depth="5" x="-12" z="0"/>
+      <Door width="11" depth="5" x="0" z="0"/>
+    </Obstructions>
+  </Obstruction>
+  <TerritoryDecay>
+    <DecayRate>1</DecayRate>
+  </TerritoryDecay>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>structures/romans/siege_wall_gate.xml</Actor>
+    <FoundationActor>structures/fndn_wall.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>36.0</Length>
+  </WallPiece>
+</Entity>

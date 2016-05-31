@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wall_gate">
+  <Footprint>
+    <Square width="42.0" depth="14.0"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>7</Max>
+	<VisibleGarrisonPoints>
+      <Archer1>
+        <X>0</X><Y>16.7</Y><Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>-4</X><Y>16.7</Y><Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>4</X><Y>16.7</Y><Z>0</Z>
+      </Archer3>
+      <Archer4>
+        <X>-8</X><Y>16.7</Y><Z>0</Z>
+      </Archer4>
+      <Archer5>
+        <X>8</X><Y>16.7</Y><Z>0</Z>
+      </Archer5>
+      <Tower1>
+        <X>-13.8</X><Y>18.1</Y><Z>0</Z>
+      </Tower1>
+      <Tower2>
+        <X>13.8</X><Y>18.1</Y><Z>0</Z>
+      </Tower2>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
+  <Identity>
+    <Civ>ptol</Civ>
+    <SpecificName>sba-n-njwt</SpecificName>
+    <History>(Insert history)</History>
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Right width="12" depth="6.5" x="12.5" z="0"/>
+      <Left width="12" depth="6.5" x="-12.5" z="0"/>
+      <Door width="13" depth="6.5" x="0" z="0"/>
+    </Obstructions>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/ptolemies/wall_gate.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>38.0</Length>
+  </WallPiece>
+</Entity>

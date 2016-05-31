@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource">
+  <Auras datatype="tokens">
+    corral_garrison
+  </Auras>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+	<Category>Corral</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="12.0" depth="22.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>5</Max>
+    <EjectHealth>0.5</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Domestic</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>4</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>rubble/rubble_2x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Corral</GenericName>
+    <Tooltip>Raise herd animals for food. Task domestic animals here to gain a trickle of food or other bonus (Not yet implemented).</Tooltip>
+    <VisibleClasses datatype="tokens">
+	  Village
+	  Corral
+	</VisibleClasses>
+    <Icon>structures/corral.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <food>0</food>
+    <wood>10</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="9.5" depth="19.75"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      gaia/fauna_sheep
+    </Entities>
+    <Technologies datatype="tokens">
+	  training_animals_husbandry
+	  gather_draft_animals
+      training_animals_stockbreeding
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_corral.xml</select>
+      <constructed>interface/complete/building/complete_corral.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_2x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

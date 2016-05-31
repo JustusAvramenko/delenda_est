@@ -1,0 +1,16 @@
+{
+	"pair": "pair_blacksmith_01",
+	"genericName": "Metallurgy",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_village"},
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "metals_casting.png",
+	"researchTime": 20,
+	"tooltip": "Reduce the research time of Blacksmith techs by -50% and unlock all other blacksmith techs.",
+	"modifications": [
+		{ "value": "ProductionQueue/TechCostMultiplier/time", "multiply": 0.5 }
+	],
+	"affects": ["Blacksmith"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

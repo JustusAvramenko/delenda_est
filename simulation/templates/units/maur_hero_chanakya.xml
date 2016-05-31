@@ -5,13 +5,7 @@
     <Pierce>8.0</Pierce>
     <Crush>4.0</Crush>
   </Armour>
-  <Heal>
-    <Range>20</Range>
-    <HP>10</HP>
-    <Rate>2000</Rate>
-    <UnhealableClasses datatype="tokens"/>
-    <HealableClasses datatype="tokens">Organic</HealableClasses>
-  </Heal>
+  <Auras datatype="tokens">maur_hero_chanakya</Auras>  
   <Cost>
     <Population>2</Population>
     <BuildTime>60</BuildTime>
@@ -20,6 +14,13 @@
       <metal>250</metal>
     </Resources>
   </Cost>
+  <Heal>
+    <Range>20</Range>
+    <HP>10</HP>
+    <Rate>2000</Rate>
+    <UnhealableClasses datatype="tokens"/>
+    <HealableClasses datatype="tokens">Organic</HealableClasses>
+  </Heal>
   <Health>
     <Max>600</Max>
   </Health>
@@ -41,6 +42,13 @@ Hero Special: "Arthashastra" - Research 4 special technologies only available to
   </Minimap>
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
+	<TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <time>1.0</time>
+    </TechCostMultiplier>
     <Technologies datatype="tokens">
       mauryans/chanakya_economy
 	  mauryans/chanakya_kingship
