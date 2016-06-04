@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <GarrisonHolder>
+    <VisibleGarrisonPoints>
+      <Archer1>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>11</X><Y>11.4</Y><Z>11</Z>
+      </Archer1>
+      <Archer2>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>-11</X><Y>11.4</Y><Z>-11</Z>
+      </Archer2>
+      <Archer3>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>-11</X><Y>11.4</Y><Z>11</Z>
+      </Archer3>
+      <Archer4>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>11</X><Y>11.4</Y><Z>-11</Z>
+      </Archer4>
+      <Archer5>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>3.5</X><Y>10.8</Y><Z>8.4</Z>
+      </Archer5>
+      <Archer6>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>-3.5</X><Y>10.8</Y><Z>-8.4</Z>
+      </Archer6>
+      <Archer7>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>8.4</X><Y>10.8</Y><Z>-3.5</Z>
+      </Archer7>
+      <Archer8>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>-8.4</X><Y>10.8</Y><Z>3.5</Z>
+      </Archer8>
+      <Archer9>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>-3.5</X><Y>10.8</Y><Z>8.4</Z>
+      </Archer9>
+      <Archer10>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>3.5</X><Y>10.8</Y><Z>-8.4</Z>
+      </Archer10>
+      <Archer11>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>-8.4</X><Y>10.8</Y><Z>-3.5</Z>
+      </Archer11>
+      <Archer12>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Infantry
+		  Ranged
+		</VisibleGarrisonAllowedClasses>
+        <X>8.4</X><Y>10.8</Y><Z>3.5</Z>
+      </Archer12>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
+  <Identity>
+    <Civ>iber</Civ>
+    <SpecificName>Castro</SpecificName>
+    <History>The Castro can be likened to a more strongly fortified town center than that of the common Oppidum which were also fortified places of habitation. As such it was widely and normally constructed upon a height, and almost always had some sort of an acropolis built at the highest point within its towered walls. In the archaeological record of the Iberian Peninsula, the remnants of as many as a thousand fortified places identifiable as Castros can be found in modern day Portugal alone.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="27.0" depth="27.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_hero_caros
+      units/{civ}_hero_indibil
+      units/{civ}_hero_viriato
+      units/{civ}_champion_infantry
+      units/{civ}_champion_cavalry
+      units/{civ}_mechanical_siege_ram
+    </Entities>
+    <Technologies datatype="tokens">
+      pair_siege_rams_01
+	  pair_siege_build_armor
+	  iberians/fortress_stronghold
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/iberians/fortress.xml</Actor>
+  </VisualActor>
+</Entity>

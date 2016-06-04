@@ -1,68 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_special">
-  <Auras datatype="tokens">
-    rotary_mill
-  </Auras>
-  <BuildRestrictions>
-    <Territory>own neutral</Territory>
-	<Category>RotaryMill</Category>
-  </BuildRestrictions>
-  <Capturable>
-    <CapturePoints>500</CapturePoints>
-    <RegenRate>0</RegenRate>
-    <GarrisonRegenRate>3</GarrisonRegenRate>
-  </Capturable>
-  <Cost>
-    <BuildTime>100</BuildTime>
-    <PopulationBonus>2</PopulationBonus>
-    <Resources>
-      <food>0</food>
-      <wood>200</wood>
-      <stone>100</stone>
-      <metal>0</metal>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Circle radius="60"/>
-    <Height>6.0</Height>
-  </Footprint>
-  <GarrisonHolder disable=""/>
+<Entity parent="template_structure_special_rotarymill">
   <Identity>
     <Civ>celt</Civ>
-    <GenericName>Rotary Mill</GenericName>
-    <SpecificName>Melonas</SpecificName>
-    <Classes datatype="tokens">-ConquestCritical</Classes>
-    <VisibleClasses datatype="tokens">RotaryMill</VisibleClasses>
-    <History>The Celts developed the first rotary flour mill.</History>
-	<Tooltip>Build one of these to increase nearby food production.</Tooltip>
-    <Icon>structures/rotarymill.png</Icon>
   </Identity>
-  <Obstruction>
-    <Static width="16.0" depth="16.0"/>
-  </Obstruction>
-  <RallyPoint disable=""/>
-  <Selectable>
-    <Overlay replace="">
-      <Texture>
-        <MainTexture>auras/test/1024x1024_aura_celt.png</MainTexture>
-        <MainTextureMask>auras/test/1024x1024_aura_celt_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_ffactri.xml</select>
-      <constructed>interface/complete/building/complete_ffactri.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
-  <StatusBars>
-    <HeightOffset>8.0</HeightOffset>
-  </StatusBars>
-  <TerritoryDecay disable=""/>
-  <TerritoryInfluence disable=""/>
-  <VisualActor>
-    <Actor>structures/celts/special.xml</Actor>
-    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
-  </VisualActor>
 </Entity>

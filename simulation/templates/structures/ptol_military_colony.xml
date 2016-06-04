@@ -1,37 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_civic_civil_centre">
-  <AlertRaiser>
-    <MaximumLevel>2</MaximumLevel>
-    <Range>140</Range>
-  </AlertRaiser>
-  <Attack disable=""/>
-  <BuildRestrictions>
-    <Territory>own neutral</Territory>
-	<Category>Colony</Category>
-    <Distance>
-      <FromClass>CivilCentre</FromClass>
-      <MinDistance>300</MinDistance>
-    </Distance>
-  </BuildRestrictions>
-  <Capturable>
-    <CapturePoints>3000</CapturePoints>
-  </Capturable>
-  <Cost>
-    <BuildTime>300</BuildTime>
-    <Resources>
-      <wood>500</wood>
-      <stone>500</stone>
-      <metal>500</metal>
-    </Resources>
-  </Cost>
+<Entity parent="template_structure_civic_civil_centre_military_colony">
   <Footprint>
     <Square width="42.0" depth="35"/>
     <Height>8.0</Height>
   </Footprint>
-  <Health>
-    <Max>2000</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
-  </Health>
   <Identity>
     <Civ>ptol</Civ>
     <GenericName>Military Colony</GenericName>
@@ -39,8 +11,6 @@
     <VisibleClasses datatype="tokens">MilitaryColony</VisibleClasses>
     <History>The Ptolemaic kings invited Greeks, Macedonians, Galatians (Gauls), Cretans, and Thracians alike to settle within Egypt in military colonies called cleruchies (klēroukhia). Under this arrangement, the settlers were given a plot of land, or a kleros, and in return were required to serve in the great king's army when called to duty. This created a upper-middle class of military settlers who owed their livelihoods and fortunes to the Ptolemaic kings and helped grow the available manpower for the imperial Ptolemaic army. A side effect of this system was that it drained the Greek homeland of military-aged men, a contributing factor to Greece's eventual conquest by Rome.</History>
     <Tooltip>This is the Ptolemaic expansion building, similar to Civic Centers for other factions. It is weaker, more prone to capture, and has a smaller territory influence, but is cheaper and builds faster.</Tooltip>
-    <Icon>structures/military_settlement.png</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
   <Obstruction>
     <Static width="40.0" depth="37"/>
@@ -59,19 +29,6 @@
 	  upgrade_rank_elite_cavalry
     </Technologies>
   </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_gymnasium.xml</select>
-      <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
-  <TerritoryDecay>
-    <DecayRate>1</DecayRate>
-  </TerritoryDecay>
-  <TerritoryInfluence>
-    <Radius>100</Radius>
-  </TerritoryInfluence>
   <VisualActor>
     <Actor>structures/seleucids/civic_center.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
