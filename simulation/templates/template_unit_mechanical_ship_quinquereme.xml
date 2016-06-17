@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_mechanical_ship">
+  <Armour>
+    <Pierce>12</Pierce>
+  </Armour>
   <Attack>
     <Ranged>
-      <Hack>30.0</Hack>
+      <Hack>50.0</Hack>
       <Pierce>0.0</Pierce>
-      <Crush>30.0</Crush>
+      <Crush>50.0</Crush>
       <MaxRange>65.0</MaxRange>
       <MinRange>10.0</MinRange>
       <ProjectileSpeed>40.0</ProjectileSpeed>
@@ -23,13 +26,13 @@
     </Ranged>
   </Attack>
   <BuildingAI>
-    <DefaultArrowCount>0</DefaultArrowCount>
+    <DefaultArrowCount>1</DefaultArrowCount>
     <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
 	<MaxArrowCount>5</MaxArrowCount>
     <GarrisonArrowClasses>Catapult</GarrisonArrowClasses>
   </BuildingAI>
   <Cost>
-    <Population>5</Population>
+    <Population>4</Population>
     <BuildTime>30</BuildTime>
     <Resources>
       <wood>200</wood>
@@ -44,7 +47,7 @@
     <Max>50</Max>
     <EjectHealth>0</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Female Infantry</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry Siege Elephant</List>
+    <List datatype="tokens">Support Infantry Cavalry Siege Elephant Dog</List>
     <BuffHeal>1</BuffHeal>
     <LoadingRange>10</LoadingRange>
     <Pickup>true</Pickup>
@@ -56,7 +59,7 @@
     <GenericName>Heavy Warship</GenericName>
     <Tooltip>Garrison with catapults to increase ranged fire power.
 Secondary Attack: Ramming.</Tooltip>
-    <VisibleClasses datatype="tokens">Warship Heavy Ranged NavalSiege</VisibleClasses>
+    <VisibleClasses datatype="tokens">Warship Heavy Siege Ranged NavalSiege</VisibleClasses>
 	<RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
   <Sound>
