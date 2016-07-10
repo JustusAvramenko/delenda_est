@@ -40,6 +40,15 @@
   <Identity>
     <Classes datatype="tokens">LongWall</Classes>
     <Tooltip>Long wall segments can be converted to gates.</Tooltip>
-    <GateConversionTooltip>Convert Stone Wall into City Gate</GateConversionTooltip>
   </Identity>
+  <Upgrade>
+    <Gate> 
+      <Entity>structures/{civ}_wall_gate</Entity> 
+      <Tooltip>Upgrade this long wall section to a passable gate.</Tooltip>
+      <Cost> 
+        <stone>100</stone> 
+      </Cost> 
+      <Time>5</Time> 
+    </Gate> 
+  </Upgrade>
 </Entity>

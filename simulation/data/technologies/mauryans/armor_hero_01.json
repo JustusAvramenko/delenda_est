@@ -6,12 +6,13 @@
 	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
 	"icon": "armor_cuirass_iron.png",
-	"researchTime": 40,
-	"tooltip": "All Heroes +2 hack armor levels and +2 pierce armor levels, but also +50 metal cost.",
+	"researchTime": 60,
+	"tooltip": "All heroes +2 hack armor levels and +2 pierce armor levels, but also +50 metal cost.",
 	"modifications": [
-	{"value": "Armour/Hack", "add": 2.0},
-	{"value": "Armour/Pierce", "add": 2.0},
-	{"value": "Cost/Resources/metal", "add": 50}],
+		{"value": "Armour/Hack", "add": 2.0},
+		{"value": "Armour/Pierce", "add": 2.0},
+		{"value": "Cost/Resources/metal", "add": 50}
+	],
 	"affects": ["Hero"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

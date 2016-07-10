@@ -5,12 +5,18 @@
     <SpecificName>Vigilarium</SpecificName>
     <History>*N/A*</History>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      romans_imperial/upgrade_frontier_outpost
-    </Technologies>
-  </ProductionQueue>
+  <Upgrade>
+    <Watchtower>
+      <Entity>structures/imp_watchtower</Entity>
+      <Tooltip>Upgrade this wooden outpost into a stone watchtower, with +100% health and capture points, and +5 garrison capacity.</Tooltip>
+	  <RequiredTechnology>phase_town</RequiredTechnology>
+      <Cost>
+        <stone>100</stone>
+		<wood>0</wood>
+      </Cost>
+      <Time>10</Time>
+    </Watchtower>
+  </Upgrade>
   <VisualActor>
     <Actor>structures/romans_imperial/outpost.xml</Actor>
   </VisualActor>

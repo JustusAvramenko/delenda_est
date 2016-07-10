@@ -32,7 +32,7 @@
 	<Territory>own ally</Territory>
     <Distance>
       <FromClass>DefenseTower</FromClass>
-      <MinDistance>25</MinDistance>
+      <MinDistance>30</MinDistance>
     </Distance>
   </BuildRestrictions>
   <Cost>
@@ -59,10 +59,10 @@
     <SpawnEntityOnDeath>rubble/rubble_stone_2x2</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Defense Tower</GenericName>
+    <GenericName>Wooden Defense Tower</GenericName>
     <Tooltip>Shoots arrows. Garrison to provide extra defense. Can be built in allied territory for mutual defense.</Tooltip>
     <Classes datatype="tokens">GarrisonTower -ConquestCritical</Classes>
-    <VisibleClasses datatype="tokens">Village Tower DefenseTower Ranged</VisibleClasses>
+    <VisibleClasses datatype="tokens">Village Wood Tower DefenseTower Ranged</VisibleClasses>
     <Icon>structures/defense_tower.png</Icon>
 	<RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
@@ -79,8 +79,6 @@
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Technologies datatype="tokens">
-      pair_tower_01
-	  pair_defensive_01
 	  vision_defense_tower
     </Technologies>
   </ProductionQueue>
@@ -102,6 +100,18 @@
     <Radius>20</Radius>
     <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Upgrade>
+    <Tower>
+      <Entity>structures/{civ}_defense_tower_stone</Entity>
+      <Tooltip>Upgrade this wooden tower into a stone tower, with +100% health.</Tooltip>
+	  <RequiredTechnology>phase_town</RequiredTechnology>
+      <Cost>
+        <stone>100</stone>
+		<wood>0</wood>
+      </Cost>
+      <Time>10</Time>
+    </Tower>
+  </Upgrade>
   <Vision>
     <Range>60</Range>
   </Vision>
