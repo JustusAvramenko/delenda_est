@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+	<castshadow/>
+	<group>
+		<variant frequency="1" name="Base">
+			<mesh>structural/imp_colosseum.dae</mesh>
+			<textures>
+				<texture file="structural/rome_struct_2.png" name="baseTex"/>
+				<texture file="structural/rome_struct_2_norm.png" name="normTex"/>
+				<texture file="structural/rome_struct_2_spec.png" name="specTex"/>
+				<texture file="structural/ao/imp_wonder.png" name="aoTex"/>
+			</textures>
+				<props>
+				<prop actor="props/structures/romans_imperial/imp_colosseum_statues.xml" attachpoint="root"/>
+				<prop actor="props/structures/romans_imperial/imp_colosseum_roof.xml" attachpoint="root"/>
+				<prop actor="props/structures/romans_imperial/imp_colosseum_roof_armature.xml" attachpoint="root"/>
+				<prop actor="props/structures/decals/dirt_7x7.xml" attachpoint="root"/>
+			</props>
+		</variant>
+
+	</group>
+	<group>
+		<variant name="alive" frequency="1"/>
+		<variant name="death">
+			<props>
+				<prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+				<prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+				<prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+				<prop actor="props/structures/decals/dirt_small.xml" attachpoint="root"/>
+			</props>
+		</variant>
+	</group>
+	<material>player_trans_ao_parallax_spec.xml</material>
+</actor>

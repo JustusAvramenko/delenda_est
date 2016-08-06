@@ -17,10 +17,18 @@
     <Icon>units/hele_champion_cavalry_mace.png</Icon>
 	<SelectionGroupName>units/mace_champion_cavalry</SelectionGroupName>
   </Identity>
-  <Promotion>
-    <Entity>units/mace_champion_cavalry_e</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>
+  <Upgrade>
+    <Tower>
+      <Entity>units/mace_champion_cavalry_e</Entity>
+      <Tooltip>This promotion adds greater health, attack, and armor.</Tooltip>
+	  <RequiredTechnology>successors/upgrade_mace_bodyguards</RequiredTechnology>
+      <Cost>
+        <food>10</food>
+        <metal>10</metal>
+      </Cost>
+      <Time>10</Time>
+    </Tower>
+  </Upgrade>
   <VisualActor>
     <Actor>units/macedonians/champion_cavalry.xml</Actor>
   </VisualActor>

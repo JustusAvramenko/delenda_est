@@ -35,10 +35,17 @@
 	<SelectionGroupName>units/mace_champion_infantry_a</SelectionGroupName>
 	<RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
-  <Promotion>
-    <Entity>units/mace_champion_infantry_e</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>
+  <Upgrade>
+    <Tower>
+      <Entity>units/mace_champion_infantry_e</Entity>
+      <Tooltip>This promotion adds greater health, attack, and armor.</Tooltip>
+	  <RequiredTechnology>successors/upgrade_mace_silvershields</RequiredTechnology>
+      <Cost>
+        <metal>10</metal>
+      </Cost>
+      <Time>10</Time>
+    </Tower>
+  </Upgrade>
   <UnitMotion>
     <WalkSpeed>7.0</WalkSpeed>
     <Run>
