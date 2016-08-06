@@ -49,6 +49,11 @@
 		  <Classes></Classes>
 		  <Multiplier>1.1</Multiplier>
 		</BonusPrincipates>
+		<BonusScythians>
+		  <Civ>scyth</Civ>
+		  <Classes></Classes>
+		  <Multiplier>1.1</Multiplier>
+		</BonusScythians>
 	  </Bonuses>
     </Melee>
     <Charge>
@@ -94,6 +99,11 @@
 		  <Classes></Classes>
 		  <Multiplier>1.1</Multiplier>
 		</BonusPrincipates>
+		<BonusScythians>
+		  <Civ>scyth</Civ>
+		  <Classes></Classes>
+		  <Multiplier>1.1</Multiplier>
+		</BonusScythians>
 	  </Bonuses>
     </Charge>
   </Attack>
@@ -105,6 +115,7 @@
     <Classes datatype="tokens">
 	  Spartiates
 	</Classes>
+	<SelectionGroupName>units/spart_champion_infantry_spear</SelectionGroupName>
     <Tooltip>Traits: Slow Speed, Heavy Armor, High Attack.
 Strong Against: All Cavalry (1.5x), Non-Greek Units (1.1x).
 Weak Against: Ranged Units, Sword Infantry.</Tooltip>
@@ -121,6 +132,17 @@ Weak Against: Ranged Units, Sword Infantry.</Tooltip>
       <Speed op="add">-1</Speed>
     </Run>
   </UnitMotion>
+  <Upgrade>
+    <Tower>
+      <Entity>units/spart_champion_infantry_olympian</Entity>
+      <Tooltip>This promotion adds greater health, armor, and speed.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <metal>50</metal>
+      </Cost>
+      <Time>10</Time>
+    </Tower>
+  </Upgrade>
   <VisualActor>
     <Actor>units/spartans/champion_infantry.xml</Actor>
   </VisualActor>

@@ -14,10 +14,6 @@
         <animation file="infantry/general/death/inf_06.psa" name="Death" speed="500"/>
         <animation file="infantry/general/death/inf_07.psa" name="Death" speed="400"/>
         <animation file="biped/inf_hoplite_shield_run_a.psa" name="Run" speed="30"/>
-        <animation file="biped/inf_salute_a.psa" name="attack_capture" speed="500"/>
-        <animation file="biped/inf_salute_b.psa" name="attack_capture" speed="500"/>
-        <animation file="biped/inf_salute_d.psa" name="attack_capture" speed="500"/>
-        <animation file="biped/inf_salute_e.psa" name="attack_capture" speed="500"/>
       </animations>
       <mesh>skeletal/m_tunic_short.dae</mesh>
       <props>
@@ -29,10 +25,10 @@
     </variant>
   </group>
   <group>
-    <variant frequency="10" name="homoioi">
+    <variant frequency="1" name="champion">
       <props>
-        <prop actor="props/units/heads/hele_su1.xml" attachpoint="helmet"/>
-        <prop actor="props/units/shields/hele_aspis_spartan.xml" attachpoint="shield"/>
+        <prop actor="props/units/heads/hele_su1_champ.xml" attachpoint="helmet"/>
+        <prop actor="props/units/shields/hele_round_spartiate_dokana.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
@@ -53,6 +49,7 @@
         <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="r_hand"/>
       </props>
     </variant>
+    <variant file="biped/attack_capture.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
