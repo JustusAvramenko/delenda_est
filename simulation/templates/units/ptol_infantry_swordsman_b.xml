@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_mercenary_infantry_melee_swordsman">
+  <Armour>
+    <Hack op="add">-1</Hack>
+  </Armour>
   <Builder>
     <Entities datatype="tokens">
       structures/ptol_military_colony
@@ -23,6 +26,12 @@
   <TrainingRestrictions>
     <Category>Mercenary20</Category>
   </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+    <Run>
+      <Speed op="mul">1.1</Speed>
+    </Run>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/ptolemies/infantry_swordsman_b.xml</Actor>
   </VisualActor>
