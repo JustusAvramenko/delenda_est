@@ -2,11 +2,11 @@
 
 <Scenario version="6">
 	<Environment>
-		<SkySet>cloudless</SkySet>
-		<SunColor r="0.819608" g="0.784314" b="0.556863"/>
-		<SunElevation angle="0.653476"/>
-		<SunRotation angle="-0.589049"/>
-		<TerrainAmbientColor r="0.329412" g="0.411765" b="0.521569"/>
+		<SkySet>fog</SkySet>
+		<SunColor r="0.796262" g="0.613051" b="0.26777"/>
+		<SunElevation angle="0.515417"/>
+		<SunRotation angle="-1.12901"/>
+		<TerrainAmbientColor r="0.282353" g="0.368627" b="0.568627"/>
 		<UnitsAmbientColor r="0.376471" g="0.392157" b="0.419608"/>
 		<Fog>
 			<FogFactor>0.00298828</FogFactor>
@@ -16,7 +16,7 @@
 		<Water>
 			<WaterBody>
 				<Type>lake</Type>
-				<Color r="0.458824" g="0.592157" b="0.701961"/>
+				<Color r="0.203922" g="0.207843" b="0.239216"/>
 				<Tint r="0.439216" g="0.337255" b="0.14902"/>
 				<Height>174.47</Height>
 				<Waviness>4.53125</Waviness>
@@ -26,14 +26,14 @@
 		</Water>
 		<Postproc>
 			<Brightness>0</Brightness>
-			<Contrast>1.09961</Contrast>
-			<Saturation>1.0625</Saturation>
+			<Contrast>1.29883</Contrast>
+			<Saturation>0.863281</Saturation>
 			<Bloom>0.132031</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="227.182" y="248.755" z="342.015"/>
+		<Position x="188.864" y="225.124" z="353.211"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -46,9 +46,9 @@
     "demo"
   ],
   "LockTeams": true,
-  "Name": "Sandbox - Britons",
+  "Name": "Sandbox - The Britons",
   "PlayerData": [
-    null,
+    "",
     {
       "Civ": "brit",
       "Color": {
@@ -74,7 +74,7 @@
       "Name": "Romans"
     }
   ],
-  "Preview": "britannic_road_2.png",
+  "Preview": "sandbox_britons.png",
   "RevealMap": false
 }
 ]]></ScriptSettings>
@@ -3755,15 +3755,8 @@
 		<Entity uid="600">
 			<Template>structures/gaul_wonder</Template>
 			<Player>0</Player>
-			<Position x="743.4477" z="161.44446"/>
+			<Position x="743.36878" z="161.80863"/>
 			<Orientation y="-0.59548"/>
-			<Actor seed="37966"/>
-		</Entity>
-		<Entity uid="601">
-			<Template>structures/gaul_wonder</Template>
-			<Player>1</Player>
-			<Position x="238.98133" z="854.8628"/>
-			<Orientation y="-7.14683"/>
 			<Actor seed="37966"/>
 		</Entity>
 		<Entity uid="602">
@@ -13361,7 +13354,7 @@
 		<Entity uid="2361">
 			<Template>structures/imp_house</Template>
 			<Player>2</Player>
-			<Position x="774.73157" z="630.55433"/>
+			<Position x="780.43421" z="630.44275"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26184"/>
 		</Entity>
@@ -13658,6 +13651,13 @@
 			<Position x="870.33722" z="513.2425"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51002"/>
+		</Entity>
+		<Entity uid="2404">
+			<Template>structures/brit_wonder</Template>
+			<Player>1</Player>
+			<Position x="235.45582" z="834.46717"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5506"/>
 		</Entity>
 	</Entities>
 	<Paths/>
