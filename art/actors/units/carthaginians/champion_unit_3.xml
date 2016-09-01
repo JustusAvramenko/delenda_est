@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base">
+      <animations>
+        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="50"/>
+        <animation file="quadraped/horse_walk.psa" name="Walk" speed="120"/>
+        <animation file="quadraped/horse_gallop.psa" name="Run" speed="40"/>
+        <animation file="quadraped/horse_walk.psa" name="carry_meat" speed="120"/>
+        <animation event=".5" file="quadraped/horse_idle_a.psa" name="attack_melee" speed="20"/>
+        <animation file="quadraped/horse_death.psa" name="death" speed="240"/>
+      </animations>
+      <mesh>skeletal/horse.pmd</mesh>
+      <props>
+        <prop actor="units/carthaginians/champion_unit_3_r.xml" attachpoint="rider"/>
+        <prop actor="props/units/horse/pers_peytral.xml" attachpoint="chest"/>
+        <prop actor="props/units/horse/crest_1.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Horse Brown">
+      <textures><texture file="skeletal/horse_kart_sacredband_cav_brown.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="Horse White">
+      <textures><texture file="skeletal/horse_kart_sacredband_cav_white.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="Horse Black">
+      <textures><texture file="skeletal/horse_kart_sacredband_cav_black.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>objectcolor.xml</material>
+</actor>
