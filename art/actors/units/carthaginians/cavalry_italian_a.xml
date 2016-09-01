@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base">
+      <animations>
+        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="50"/>
+        <animation file="quadraped/horse_walk.psa" name="Walk" speed="120"/>
+        <animation file="quadraped/horse_gallop.psa" name="Run" speed="40"/>
+        <animation file="quadraped/horse_walk.psa" name="carry_meat" speed="120"/>
+        <animation event=".5" file="quadraped/horse_idle_a.psa" name="attack_melee" speed="20"/>
+        <animation event=".5" file="quadraped/horse_idle_a.psa" name="attack_slaughter" speed="20"/>
+        <animation file="quadraped/horse_death.psa" name="death" speed="240"/>
+      </animations>
+      <mesh>skeletal/horse.pmd</mesh>
+      <props>
+        <prop actor="units/carthaginians/cavalry_italian_a_r.xml" attachpoint="rider"/>
+        <prop actor="props/units/horse/horse_chest_colorband.xml" attachpoint="chest"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="horse-texture-ankles">
+      <textures><texture file="skeletal/horse_kart_csp_a_1.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="horse-color-darkbrown">
+      <color>117 85 38</color>
+    </variant>
+    <variant frequency="1" name="horse-color-lightbrown">
+      <color>254 177 141</color>
+    </variant>
+    <variant frequency="1" name="horse-color-darkgray">
+      <color>116 116 116</color>
+    </variant>
+    <variant frequency="1" name="horse-color-lightgray">
+      <color>214 214 214</color>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>objectcolor.xml</material>
+</actor>
