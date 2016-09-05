@@ -1,0 +1,16 @@
+{
+	"genericName": "Tusk Spikes",
+	"description": "It is reported that in 326 BC at the Battle of the Hydaspes (or Jhelum), King Porus fitted brass plates to the tusks of his war elephants which were covered with sharp iron spikes. Therefore the animals could easily impale their enemies and helped Porus to inflict some of the greatest casualties experienced by Alexander the Great's army.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 800},
+	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }]},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
+	"icon": "tusk_spikes.png",
+	"researchTime": 60,
+	"tooltip": "War Elephants +20% hack attack, but +10% metal cost.",
+	"modifications": [
+		{"value": "Attack/Melee/Hack", "multiply": 1.2},
+		{"value": "Cost/Resources/metal", "multiply": 1.1}
+	],
+	"affects": ["Melee Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
