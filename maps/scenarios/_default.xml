@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="6">
+	<Terrain patches="16" texture="grass1_spring" priority="0" height="5000"/>
+	<Environment>
+		<LightingModel>standard</LightingModel>
+		<SkySet>cumulus</SkySet>
+		<SunColor r="0.749020" g="0.749020" b="0.749020"/>
+		<SunElevation angle="0.785398"/>
+		<SunRotation angle="5.49779"/>
+		<TerrainAmbientColor r="0.501961" g="0.501961" b="0.501961"/>
+		<UnitsAmbientColor r="0.501961" g="0.501961" b="0.501961"/>
+		<Fog>
+			<FogFactor>0.00164062</FogFactor>
+			<FogThickness>0</FogThickness>
+			<FogColor r="0.756863" g="0.784314" b="0.831373"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.3" g="0.35" b="0.7"/>
+				<Height>5</Height>
+				<Shininess>150</Shininess>
+				<Waviness>4.0</Waviness>
+				<Murkiness>0.45</Murkiness>
+				<Tint r="0.28" g="0.3" b="0.59"/>
+				<ReflectionTint r="0.28" g="0.3" b="0.59"/>
+				<ReflectionTintStrength>0</ReflectionTintStrength>
+			</WaterBody>
+		</Water>
+	</Environment>
+	<Camera>
+		<Position x="300" y="300" z="-100"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.45"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+	{
+		"Name": "Unnamed map",
+		"Description": "Give an interesting description of your map.",
+		"PlayerData":
+		[
+			{
+				"Civ": "imp"
+			},
+			{
+				"Civ": "epir"
+			},
+			{
+				"Civ": "theb"
+			},
+			{
+				"Civ": "mace"
+			},
+			{
+				"Civ": "athen"
+			},
+			{
+				"Civ": "brit"
+			},
+			{
+				"Civ": "spart"
+			},
+			{
+				"Civ": "maur"
+			}
+		],
+		"CircularMap": true
+	}
+	]]></ScriptSettings>
+</Scenario>
