@@ -14,6 +14,7 @@
     <Civ>gaia</Civ>
 	<GenericName>Domestic Pig</GenericName>
     <SpecificName>Sus scrofa domesticus</SpecificName>
+    <Tooltip>Slaughter for food or set afire to frighten enemy war elephants.</Tooltip>
     <Icon>gaia/fauna_pig.png</Icon>
   </Identity>
   <Position>
@@ -33,6 +34,17 @@
   <UnitMotion>
     <WalkSpeed>3.0</WalkSpeed>
   </UnitMotion>
+  <Upgrade>
+    <FlamingPig>
+      <Entity>gaia/fauna_pig_flaming</Entity>
+      <Tooltip>Light your pig on fire to frighten War Elephants! This kills the pig.</Tooltip>
+	  <RequiredTechnology>phase_town</RequiredTechnology>
+      <Cost>
+        <wood>10</wood>
+      </Cost>
+      <Time>10</Time>
+    </FlamingPig>
+  </Upgrade>
   <VisualActor>
     <Actor>fauna/pig1.xml</Actor>
   </VisualActor>
