@@ -2,6 +2,7 @@
 <Entity parent="template_structure_resource">
   <Auras datatype="tokens">
     corral_garrison
+	slaughterhouse
   </Auras>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
@@ -14,8 +15,8 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="12.0" depth="22.0"/>
-    <Height>5.0</Height>
+    <Square width="60.0" depth="60.0"/>
+    <Height>8.0</Height>
   </Footprint>
   <GarrisonHolder>
     <Max>5</Max>
@@ -59,6 +60,14 @@
       training_animals_stockbreeding
     </Technologies>
   </ProductionQueue>
+  <Selectable>
+    <Overlay replace="">
+      <Texture>
+        <MainTexture>auras/test/1024x1024_aura.png</MainTexture>
+        <MainTextureMask>auras/test/1024x1024_aura_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_corral.xml</select>
