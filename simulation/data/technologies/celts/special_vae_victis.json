@@ -5,7 +5,7 @@
 	},
 	"description": ".",
 	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 200},
-	"requirements": {"tech": "phase_city"},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "civ": "celt" }, { "civ": "brit" }, { "civ": "gaul" }] }] },
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "coinage.png",
 	"researchTime": 40,

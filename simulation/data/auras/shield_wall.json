@@ -1,0 +1,15 @@
+{
+	"type": "range",
+	"radius": 3,
+	"affects": ["Hoplite"],
+	"affectedPlayers": ["Player", "Ally"],
+	"modifications": [
+		{"value": "Armour/Hack", "add": 1.0},
+		{"value": "Armour/Pierce", "add": 2.0},
+		{"value": "Armour/Crush", "add": 3.0}
+	],
+	"auraName": "Shield Wall",
+	"auraDescription": "Hoplite-style infantry give other Hoplite-style infantry +1 hack, +2 pierce, and +3 crush armor within 3 meters of each other. This does not stack or multiply.",
+	"overlayIcon": "art/textures/ui/session/auras/armor_bonus.png",
+	"stackable": false
+}
