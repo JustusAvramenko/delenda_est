@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="6">
+	<Environment>
+		<SkySet>overcast</SkySet>
+		<SunColor r="0.870956" g="0.807537" b="0.591912"/>
+		<SunElevation angle="0.60132"/>
+		<SunRotation angle="0.478602"/>
+		<TerrainAmbientColor r="0.392157" g="0.47451" b="0.654902"/>
+		<UnitsAmbientColor r="0.501961" g="0.501961" b="0.501961"/>
+		<Fog>
+			<FogFactor>0.00015625</FogFactor>
+			<FogThickness>0.250977</FogThickness>
+			<FogColor r="0.8" g="0.8" b="0.898039"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.372549" g="0.447059" b="0.619608"/>
+				<Tint r="0.752941" g="0.752941" b="0.752941"/>
+				<Height>7.44919</Height>
+				<Waviness>2.7</Waviness>
+				<Murkiness>0.953125</Murkiness>
+				<WindAngle>1.25173</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>0</Brightness>
+			<Contrast>1</Contrast>
+			<Saturation>0.99</Saturation>
+			<Bloom>0.1999</Bloom>
+			<PostEffect>default</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="2261.02" y="1917.76" z="-260.649"/>
+		<Rotation angle="-0.133239"/>
+		<Declination angle="0.858294"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "CircularMap": true,
+  "Description": "A demo map of the British Isles, created with the assistance of a height map.",
+  "GameType": "conquest_structures",
+  "Keywords": [
+    "demo",
+    "naval"
+  ],
+  "LockTeams": false,
+  "Name": "Eire and Albion",
+  "PlayerData": [
+    "",
+    {
+      "Civ": "brit",
+      "Color": {
+        "b": 200,
+        "g": 46,
+        "r": 46
+      },
+      "Name": "Player 1",
+      "Resources": {
+        "food": 100000,
+        "metal": 100000,
+        "stone": 100000,
+        "wood": 100000
+      },
+      "Team": -1
+    },
+    {
+      "Civ": "rome",
+      "Color": {
+        "b": 20,
+        "g": 20,
+        "r": 150
+      },
+      "Name": "Player 2",
+      "Resources": {
+        "food": 100000,
+        "metal": 100000,
+        "stone": 100000,
+        "wood": 100000
+      },
+      "Team": -1
+    }
+  ],
+  "Preview": "eire_and_albion",
+  "RevealMap": false
+}
+]]></ScriptSettings>
+	<Entities/>
+	<Paths/>
+</Scenario>
