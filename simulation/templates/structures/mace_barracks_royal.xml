@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/mace_barracks">
+  <Health>
+    <Max op="add">1000</Max>
+  </Health>
+  <Identity>
+    <GenericName>Royal Barracks</GenericName>
+	<SpecificName>Basilikí Stratónes</SpecificName>
+    <Icon>technologies/helmet_corinthian_crest.png</Icon>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_champion_infantry_a
+      units/{civ}_champion_cavalry
+    </Entities>
+    <Technologies datatype="tokens">
+	  hellenes/health_inf_martial_arts
+	  hellenes/pair_champions_01
+	  successors/upgrade_mace_silvershields
+	  successors/upgrade_mace_bodyguards
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryInfluence>
+    <Radius op="add">10</Radius>
+  </TerritoryInfluence>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>structures/macedonians/barracks.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

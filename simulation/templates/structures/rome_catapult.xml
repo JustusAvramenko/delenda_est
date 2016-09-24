@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_siege_onager_stationary">
+  <Attack>
+    <Ranged>
+      <Hack op="mul">1.1</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush op="mul">1.1</Crush>
+      <MaxRange op="add">8.0</MaxRange>
+      <MinRange op="add">8.0</MinRange>
+      <ProjectileSpeed>22.0</ProjectileSpeed>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>10</Range>
+        <FriendlyFire>true</FriendlyFire>
+        <Hack op="mul">1.1</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush op="mul">1.1</Crush>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <wood>300</wood>
+      <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>rome</Civ>
+    <SpecificName>Ballista</SpecificName>
+    <Icon>units/rome_mechanical_siege_ballista.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/romans/siege_rock.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -10,23 +10,31 @@
   <Identity>
     <Civ>mace</Civ>
     <SpecificName>Stratēgeîon</SpecificName>
+	<SelectionGroupName>structures/mace_barracks</SelectionGroupName>
     <History>The Stratigeion was the main military headquarters, where important decisions were taken and plans for battles discussed by the Hellene Generals, or "Strategoi".</History>
   </Identity>
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
   </Obstruction>
   <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}_champion_infantry_a_barracks
-      units/{civ}_champion_cavalry_barracks
-    </Entities>
     <Technologies datatype="tokens">
-	  successors/speed_agrianians
 	  successors/upgrade_rank_advanced_pez
 	  successors/upgrade_rank_elite_pez
-	  unlock_champion_units
+	  successors/speed_agrianians
     </Technologies>
   </ProductionQueue>
+  <Upgrade>
+    <Tower>
+      <Entity>structures/mace_barracks_royal</Entity>
+      <Tooltip>The Royal Barracks allows training of champions and access to more technologies. The Royal Barracks also has greater health and territory influence than a standard barracks.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <stone>100</stone>
+		<wood>0</wood>
+      </Cost>
+      <Time>30</Time>
+    </Tower>
+  </Upgrade>
   <VisualActor>
     <Actor>structures/macedonians/barracks.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
