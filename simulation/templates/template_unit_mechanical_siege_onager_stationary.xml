@@ -13,7 +13,7 @@
 	<Category>Onager</Category>
   </BuildRestrictions>
   <Cost>
-    <BuildTime>200</BuildTime>
+    <BuildTime>100</BuildTime>
     <Population>3</Population>
     <Resources>
       <wood>200</wood>
@@ -25,18 +25,15 @@
     <Height>5.0</Height>
   </Footprint>
   <Identity>
-    <Civ>imp</Civ>
     <SpecificName>Onager</SpecificName>
-	<GenericName>Field Catapult</GenericName>
-    <Icon>units/imp_siege_onager.png</Icon>
-    <Classes datatype="tokens">Onager</Classes>
-    <History> .</History>
+	<GenericName>Catapult</GenericName>
+    <History>.</History>
     <Tooltip>Traits: Stationary, Splash Damage (10 meters), Friendly Fire, Capturable.
 Strong Against: Buildings, Fortresses (1.25x), Massed Archers.
-Weak Against: Cavalry, Stone Walls (0.75x).</Tooltip>
-    <RequiredTechnology>romans_imperial/siege_artillery</RequiredTechnology>
+Weak Against: Cavalry (speed), Stone Walls (0.75x).</Tooltip>
   </Identity>
   <Obstruction>
+    <Unit disable=""/>
     <Active>true</Active>
     <BlockMovement>true</BlockMovement>
     <BlockPathfinding>true</BlockPathfinding>
@@ -44,6 +41,7 @@ Weak Against: Cavalry, Stone Walls (0.75x).</Tooltip>
     <BlockConstruction>true</BlockConstruction>
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
+    <Static width="6.0" depth="8.0"/>
   </Obstruction>
   <UnitMotion>
     <WalkSpeed>0.001</WalkSpeed>
@@ -53,7 +51,6 @@ Weak Against: Cavalry, Stone Walls (0.75x).</Tooltip>
   </UnitMotion>
   <VisualActor>
     <ConstructionPreview/>
-    <Actor>units/romans_imperial/siege_onager.xml</Actor>
     <FoundationActor>structures/fndn_2x2.xml</FoundationActor>
   </VisualActor>
 </Entity>
