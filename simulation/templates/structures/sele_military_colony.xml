@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre_military_colony">
+  <Footprint>
+    <Square width="31.0" depth="31.0"/>
+    <Height>8.0</Height>
+  </Footprint>
   <Identity>
     <Civ>sele</Civ>
     <GenericName>Military Colony</GenericName>
@@ -9,6 +13,9 @@
 - Train settler-soldiers of various nationalities.
 - Min. distance from other Military Colonies: 120 meters.</Tooltip>
   </Identity>
+  <Obstruction>
+    <Static width="30.0" depth="29.0"/>
+  </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
 	  units/{civ}_infantry_archer_b
@@ -24,7 +31,7 @@
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/macedonians/civic_centre.xml</Actor>
+    <Actor>structures/seleucids/military_colony.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
 </Entity>

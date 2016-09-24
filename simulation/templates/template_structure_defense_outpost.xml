@@ -79,7 +79,6 @@
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Technologies datatype="tokens">
       vision_outpost
-      health_outpost
     </Technologies>
   </ProductionQueue>
   <Sound>
@@ -97,6 +96,18 @@
   <TerritoryDecay>
     <DecayRate>2</DecayRate>
   </TerritoryDecay>
+  <Upgrade>
+    <Outpost>
+      <Entity>structures/{civ}_outpost_stone</Entity>
+      <Tooltip>Stone Outposts have double health and slower loyalty drain.</Tooltip>
+	  <RequiredTechnology>phase_town</RequiredTechnology>
+      <Cost>
+        <stone>50</stone>
+		<wood>0</wood>
+      </Cost>
+      <Time>20</Time>
+    </Outpost>
+  </Upgrade>
   <Vision>
     <Range>80</Range>
   </Vision>
