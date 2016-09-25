@@ -11,7 +11,7 @@
 		<Fog>
 			<FogFactor>0.000996094</FogFactor>
 			<FogThickness>0.00195313</FogThickness>
-			<FogColor r="0.8" g="0.8" b="0.898039"/>
+			<FogColor r="0.8" g="0.8" b="0.894118"/>
 		</Fog>
 		<Water>
 			<WaterBody>
@@ -33,7 +33,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="96.1969" y="95.5316" z="-39.1269"/>
+		<Position x="89.6682" y="95.6405" z="-16.0304"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -49,11 +49,13 @@
   "Name": "Combat Demo (2)",
   "PlayerData": [
     {
-      "Civ": "imp"
+      "Civ": "imp",
+      "Team": 0
     },
     {
       "AI": "",
-      "Civ": "athen"
+      "Civ": "athen",
+      "Team": 1
     }
   ],
   "Preview": "combat_demo.png",
@@ -2091,34 +2093,6 @@
 			<Orientation y="5.47101"/>
 			<Actor seed="46918"/>
 		</Entity>
-		<Entity uid="614">
-			<Template>structures/imp_mechanical_siege_onager</Template>
-			<Player>2</Player>
-			<Position x="25.93462" z="80.0364"/>
-			<Orientation y="1.51464"/>
-			<Actor seed="25840"/>
-		</Entity>
-		<Entity uid="615">
-			<Template>structures/imp_mechanical_siege_onager</Template>
-			<Player>2</Player>
-			<Position x="27.00782" z="93.23771"/>
-			<Orientation y="1.47706"/>
-			<Actor seed="11312"/>
-		</Entity>
-		<Entity uid="616">
-			<Template>structures/imp_mechanical_siege_onager</Template>
-			<Player>1</Player>
-			<Position x="218.93653" z="149.04288"/>
-			<Orientation y="-1.70818"/>
-			<Actor seed="38140"/>
-		</Entity>
-		<Entity uid="617">
-			<Template>structures/imp_mechanical_siege_onager</Template>
-			<Player>1</Player>
-			<Position x="218.95325" z="163.61738"/>
-			<Orientation y="-1.44426"/>
-			<Actor seed="41048"/>
-		</Entity>
 		<Entity uid="618">
 			<Template>structures/imp_temple_vesta</Template>
 			<Player>1</Player>
@@ -2132,6 +2106,34 @@
 			<Position x="31.8694" z="29.05761"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54096"/>
+		</Entity>
+		<Entity uid="620">
+			<Template>structures/imp_catapult</Template>
+			<Player>2</Player>
+			<Position x="27.28313" z="82.36188"/>
+			<Orientation y="1.57081"/>
+			<Actor seed="19354"/>
+		</Entity>
+		<Entity uid="621">
+			<Template>structures/imp_catapult</Template>
+			<Player>2</Player>
+			<Position x="27.31098" z="94.59525"/>
+			<Orientation y="1.02642"/>
+			<Actor seed="24518"/>
+		</Entity>
+		<Entity uid="622">
+			<Template>structures/rome_catapult</Template>
+			<Player>1</Player>
+			<Position x="229.03342" z="78.85737"/>
+			<Orientation y="-1.3976"/>
+			<Actor seed="5538"/>
+		</Entity>
+		<Entity uid="623">
+			<Template>structures/rome_catapult</Template>
+			<Player>1</Player>
+			<Position x="227.35532" z="152.724"/>
+			<Orientation y="-1.45421"/>
+			<Actor seed="34048"/>
 		</Entity>
 	</Entities>
 	<Paths/>
