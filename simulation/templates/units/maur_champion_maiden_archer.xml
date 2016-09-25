@@ -2,7 +2,7 @@
 <Entity parent="template_unit_champion_infantry_archer">
   <Identity>
     <Civ>maur</Civ>
-    <GenericName>Poison Maiden</GenericName>
+    <GenericName>Poison Maiden Archer</GenericName>
     <SpecificName>Vishakanya</SpecificName>
 	<Gender>female</Gender>
 	<Classes datatype="tokens">FireArrows</Classes>
@@ -10,6 +10,16 @@
     <History>Ancient Indian monarchs employed female body guards who were fierce warriors. It is said that they were trained from birth and gradually introduced to poisons as they aged in order to become immune to their effects. The maidens who did not die from this training became great assets to the Mauryan kings.</History>
     <Icon>units/maur_champion_maiden_archer.png</Icon>
   </Identity>
+  <Upgrade>
+    <SwitchToSword>
+      <Entity>units/maur_champion_maiden</Entity>
+      <Tooltip>Switch weapon from longbow (ranged) to sword (melee).</Tooltip>
+      <Cost>
+        <metal>5</metal>
+      </Cost>
+      <Time>5</Time>
+    </SwitchToSword>
+  </Upgrade>
   <VisualActor>
     <Actor>units/mauryans/champion_maiden_guard_archer.xml</Actor>
   </VisualActor>
