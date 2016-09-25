@@ -2,11 +2,12 @@
 <Entity parent="template_unit_mercenary_infantry_melee_swordsman">
   <Attack>
     <Melee>
-      <Hack>20.0</Hack>
+      <Hack op="add">5</Hack>
     </Melee>
   </Attack>
   <Builder>
     <Entities datatype="tokens">
+      structures/{civ}_catapult
 	  structures/sele_military_colony
       structures/sele_library
       structures/sele_wonder
