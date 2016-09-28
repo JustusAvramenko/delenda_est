@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="6">
+	<Environment>
+		<SkySet>sunny</SkySet>
+		<SunColor r="0.870098" g="0.843995" b="0.665625"/>
+		<SunElevation angle="0.743214"/>
+		<SunRotation angle="0.878155"/>
+		<TerrainAmbientColor r="0.376471" g="0.419608" b="0.466667"/>
+		<UnitsAmbientColor r="0.435294" g="0.435294" b="0.435294"/>
+		<Fog>
+			<FogFactor>0</FogFactor>
+			<FogThickness>0</FogThickness>
+			<FogColor r="0.756863" g="0.784314" b="0.831373"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.211765" g="0.254902" b="0.286275"/>
+				<Tint r="0" g="1" b="1"/>
+				<Height>30.0522</Height>
+				<Waviness>4</Waviness>
+				<Murkiness>0.697266</Murkiness>
+				<WindAngle>0.625864</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>0</Brightness>
+			<Contrast>1</Contrast>
+			<Saturation>0.90625</Saturation>
+			<Bloom>0.140234</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="607.663" y="186.16" z="241.921"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "CircularMap": true,
+  "Description": "Give an interesting description of your map.",
+  "GameType": "conquest",
+  "Keywords": [
+    "demo",
+	"new"
+  ],
+  "LockTeams": false,
+  "Name": "<Unfinished> Corinthian Isthmus (4)",
+  "PlayerData": [
+    {
+      "Color": {
+        "b": 255,
+        "g": 0,
+        "r": 0
+      },
+      "Name": "Player 1"
+    },
+    {
+      "Color": {
+        "b": 0,
+        "g": 255,
+        "r": 255
+      },
+      "Name": "Player 2"
+    },
+    {
+      "Color": {
+        "b": 255,
+        "g": 255,
+        "r": 0
+      },
+      "Name": "Player 3"
+    },
+    {
+      "Color": {
+        "b": 0,
+        "g": 0,
+        "r": 255
+      },
+      "Name": "Player 4"
+    }
+  ],
+  "Preview": "",
+  "RevealMap": false
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="11">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>1</Player>
+			<Position x="333.27027" z="559.662"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="57410"/>
+		</Entity>
+		<Entity uid="12">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>3</Player>
+			<Position x="1076.61109" z="211.68238"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="12432"/>
+		</Entity>
+		<Entity uid="13">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>2</Player>
+			<Position x="1567.05567" z="1288.98157"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="2624"/>
+		</Entity>
+		<Entity uid="14">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>4</Player>
+			<Position x="891.9278" z="840.1969"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10812"/>
+		</Entity>
+		<Entity uid="17">
+			<Template>skirmish/structures/default_dock</Template>
+			<Player>4</Player>
+			<Position x="1050.67493" z="759.44312"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49804"/>
+		</Entity>
+		<Entity uid="18">
+			<Template>skirmish/structures/default_dock</Template>
+			<Player>4</Player>
+			<Position x="716.19758" z="1001.31495"/>
+			<Orientation y="-0.58701"/>
+			<Actor seed="32258"/>
+		</Entity>
+		<Entity uid="19">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>1</Player>
+			<Position x="265.73981" z="530.573"/>
+			<Orientation y="-2.39182"/>
+			<Actor seed="53320"/>
+		</Entity>
+		<Entity uid="20">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>1</Player>
+			<Position x="265.44666" z="548.22791"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="21754"/>
+		</Entity>
+		<Entity uid="21">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>1</Player>
+			<Position x="276.44834" z="559.73993"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63664"/>
+		</Entity>
+		<Entity uid="22">
+			<Template>skirmish/structures/default_house_10</Template>
+			<Player>1</Player>
+			<Position x="263.0247" z="533.07514"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63240"/>
+		</Entity>
+		<Entity uid="23">
+			<Template>skirmish/structures/default_house_10</Template>
+			<Player>1</Player>
+			<Position x="281.94516" z="534.83185"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="29908"/>
+		</Entity>
+		<Entity uid="24">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>1</Player>
+			<Position x="282.92441" z="544.72681"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="3230"/>
+		</Entity>
+		<Entity uid="25">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>3</Player>
+			<Position x="1114.22095" z="149.85264"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="3230"/>
+		</Entity>
+		<Entity uid="26">
+			<Template>skirmish/structures/default_house_10</Template>
+			<Player>3</Player>
+			<Position x="1113.2417" z="139.95768"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="29908"/>
+		</Entity>
+		<Entity uid="27">
+			<Template>skirmish/structures/default_house_10</Template>
+			<Player>3</Player>
+			<Position x="1094.3213" z="138.20096"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="63240"/>
+		</Entity>
+		<Entity uid="28">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>3</Player>
+			<Position x="1107.74488" z="164.86576"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="63664"/>
+		</Entity>
+		<Entity uid="29">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>3</Player>
+			<Position x="1096.74317" z="153.35373"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="21754"/>
+		</Entity>
+		<Entity uid="30">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>3</Player>
+			<Position x="1097.03638" z="135.69883"/>
+			<Orientation y="-2.39182"/>
+			<Actor seed="53320"/>
+		</Entity>
+		<Entity uid="31">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>4</Player>
+			<Position x="860.15021" z="886.01282"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="3230"/>
+		</Entity>
+		<Entity uid="32">
+			<Template>skirmish/structures/default_house_10</Template>
+			<Player>4</Player>
+			<Position x="859.17096" z="876.11786"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="29908"/>
+		</Entity>
+		<Entity uid="33">
+			<Template>skirmish/structures/default_house_10</Template>
+			<Player>4</Player>
+			<Position x="840.2505" z="874.36115"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="63240"/>
+		</Entity>
+		<Entity uid="34">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>4</Player>
+			<Position x="853.67414" z="901.02594"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="63664"/>
+		</Entity>
+		<Entity uid="35">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>4</Player>
+			<Position x="842.6725" z="889.51392"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="21754"/>
+		</Entity>
+		<Entity uid="36">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>4</Player>
+			<Position x="842.96558" z="871.85901"/>
+			<Orientation y="-2.39182"/>
+			<Actor seed="53320"/>
+		</Entity>
+		<Entity uid="37">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>2</Player>
+			<Position x="1639.66553" z="1289.05677"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="3230"/>
+		</Entity>
+		<Entity uid="38">
+			<Template>skirmish/structures/default_house_10</Template>
+			<Player>2</Player>
+			<Position x="1638.68628" z="1279.16187"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="29908"/>
+		</Entity>
+		<Entity uid="39">
+			<Template>skirmish/structures/default_house_10</Template>
+			<Player>2</Player>
+			<Position x="1619.76587" z="1277.40503"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="63240"/>
+		</Entity>
+		<Entity uid="40">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>2</Player>
+			<Position x="1633.18946" z="1304.06983"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="63664"/>
+		</Entity>
+		<Entity uid="41">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>2</Player>
+			<Position x="1622.18775" z="1292.55787"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="21754"/>
+		</Entity>
+		<Entity uid="42">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>2</Player>
+			<Position x="1622.48096" z="1274.90296"/>
+			<Orientation y="-2.39182"/>
+			<Actor seed="53320"/>
+		</Entity>
+	</Entities>
+	<Paths/>
+</Scenario>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="6">
+	<Environment>
+		<SkySet>sunset 2</SkySet>
+		<SunColor r="1.1616" g="0.956612" b="0.778955"/>
+		<SunElevation angle="0.441786"/>
+		<SunRotation angle="-0.785396"/>
+		<TerrainAmbientColor r="0.211765" g="0.25098" b="0.345098"/>
+		<UnitsAmbientColor r="0.501961" g="0.501961" b="0.501961"/>
+		<Fog>
+			<FogFactor>0.00402344</FogFactor>
+			<FogThickness>0</FogThickness>
+			<FogColor r="0.803922" g="0.694118" b="0.592157"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.294118" g="0.34902" b="0.694118"/>
+				<Tint r="0.27451" g="0.294118" b="0.584314"/>
+				<Height>5</Height>
+				<Waviness>4</Waviness>
+				<Murkiness>0.45</Murkiness>
+				<WindAngle>0</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>0</Brightness>
+			<Contrast>1</Contrast>
+			<Saturation>0.96875</Saturation>
+			<Bloom>0.140234</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="164.334" y="86.815" z="437.927"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "CircularMap": true,
+  "Description": "Eyecandy for desert maps",
+  "GameType": "endless",
+  "Keywords": [
+    "demo"
+  ],
+  "LockTeams": false,
+  "Name": "POGs - Desert Stuff",
+  "PlayerData": [
+    "",
+    {
+      "Civ": "imp"
+    },
+    {
+      "Civ": "epir"
+    },
+    {
+      "Civ": "theb"
+    },
+    {
+      "Civ": "mace"
+    },
+    {
+      "Civ": "athen"
+    },
+    {
+      "Civ": "brit"
+    },
+    {
+      "Civ": "spart"
+    },
+    {
+      "Civ": "maur"
+    }
+  ],
+  "Preview": "pogs_desert.png",
+  "RevealMap": false
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="11">
+			<Template>actor|structures/wrld_settlement_1.xml</Template>
+			<Position x="287.62775" z="352.6244"/>
+			<Orientation y="2.57441"/>
+			<Actor seed="26778"/>
+		</Entity>
+		<Entity uid="23">
+			<Template>actor|props/structures/ptolemies/settlement_arabtent.xml</Template>
+			<Position x="301.69282" z="395.54987"/>
+			<Orientation y="-0.65555"/>
+			<Actor seed="7796"/>
+		</Entity>
+		<Entity uid="24">
+			<Template>actor|props/structures/ptolemies/settlement_arabtent.xml</Template>
+			<Position x="168.47489" z="475.92261"/>
+			<Orientation y="-7.76601"/>
+			<Actor seed="11686"/>
+		</Entity>
+		<Entity uid="25">
+			<Template>actor|props/structures/ptolemies/settlement_bigtent.xml</Template>
+			<Position x="253.04416" z="416.141"/>
+			<Orientation y="1.38694"/>
+			<Actor seed="61830"/>
+		</Entity>
+		<Entity uid="27">
+			<Template>actor|props/structures/ptolemies/settlement_greektent.xml</Template>
+			<Position x="241.58826" z="410.35022"/>
+			<Orientation y="-4.14101"/>
+			<Actor seed="28418"/>
+		</Entity>
+		<Entity uid="28">
+			<Template>actor|props/structures/ptolemies/settlement_outpost.xml</Template>
+			<Position x="268.49415" z="446.36237"/>
+			<Orientation y="-1.67884"/>
+			<Actor seed="48982"/>
+		</Entity>
+		<Entity uid="29">
+			<Template>actor|props/structures/ptolemies/settlement_outpost.xml</Template>
+			<Position x="282.59318" z="450.94721"/>
+			<Orientation y="-1.89232"/>
+			<Actor seed="32866"/>
+		</Entity>
+		<Entity uid="30">
+			<Template>actor|props/special/eyecandy/well_1_a.xml</Template>
+			<Position x="356.21378" z="376.10035"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58240"/>
+		</Entity>
+		<Entity uid="31">
+			<Template>actor|props/special/eyecandy/well_1_b.xml</Template>
+			<Position x="366.57758" z="377.46018"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="12348"/>
+		</Entity>
+		<Entity uid="32">
+			<Template>actor|props/special/eyecandy/well_water.xml</Template>
+			<Position x="356.3808" z="376.7259"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63402"/>
+		</Entity>
+		<Entity uid="33">
+			<Template>actor|props/special/eyecandy/well_water.xml</Template>
+			<Position x="366.9351" z="377.94184"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="25670"/>
+		</Entity>
+		<Entity uid="34">
+			<Template>actor|structures/tent_arab.xml</Template>
+			<Position x="155.5438" z="495.47214"/>
+			<Orientation y="3.19585"/>
+			<Actor seed="46808"/>
+		</Entity>
+		<Entity uid="35">
+			<Template>actor|structures/tent_big.xml</Template>
+			<Position x="167.18281" z="490.12861"/>
+			<Orientation y="0.68097"/>
+			<Actor seed="11750"/>
+		</Entity>
+		<Entity uid="36">
+			<Template>actor|structures/tent_greek.xml</Template>
+			<Position x="145.9315" z="485.68586"/>
+			<Orientation y="1.49151"/>
+			<Actor seed="28044"/>
+		</Entity>
+		<Entity uid="37">
+			<Template>actor|structures/destruct_rome_camp_tents.xml</Template>
+			<Position x="171.25187" z="375.68458"/>
+			<Orientation y="-3.04825"/>
+			<Actor seed="17674"/>
+		</Entity>
+		<Entity uid="38">
+			<Template>actor|props/structures/ptolemies/merchant_tent.xml</Template>
+			<Position x="206.97904" z="336.48725"/>
+			<Orientation y="1.9815"/>
+			<Actor seed="10262"/>
+		</Entity>
+		<Entity uid="39">
+			<Template>actor|props/structures/romans/camp_tents.xml</Template>
+			<Position x="348.9701" z="349.32685"/>
+			<Orientation y="-2.10845"/>
+			<Actor seed="35182"/>
+		</Entity>
+		<Entity uid="40">
+			<Template>actor|props/structures/romans/camp_tentflaps.xml</Template>
+			<Position x="348.7273" z="349.65198"/>
+			<Orientation y="-2.1221"/>
+			<Actor seed="42242"/>
+		</Entity>
+		<Entity uid="42">
+			<Template>actor|props/special/eyecandy/campfire.xml</Template>
+			<Position x="157.80591" z="485.76444"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="24132"/>
+		</Entity>
+		<Entity uid="43">
+			<Template>actor|props/units/shuttle_wood.xml</Template>
+			<Position x="155.41874" z="482.99036"/>
+			<Orientation y="-2.53562"/>
+			<Actor seed="29824"/>
+		</Entity>
+		<Entity uid="44">
+			<Template>actor|props/special/eyecandy/well_woodbit.xml</Template>
+			<Position x="158.67701" z="471.30405"/>
+			<Orientation y="0.64631"/>
+			<Actor seed="46350"/>
+		</Entity>
+		<Entity uid="46">
+			<Template>units/cart_support_trader</Template>
+			<Player>0</Player>
+			<Position x="156.49656" z="473.01944"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="19084"/>
+		</Entity>
+		<Entity uid="47">
+			<Template>units/pers_support_trader</Template>
+			<Player>0</Player>
+			<Position x="172.71494" z="480.94108"/>
+			<Orientation y="-1.11197"/>
+			<Actor seed="62438"/>
+		</Entity>
+		<Entity uid="49">
+			<Template>actor|props/structures/decals/dirt_6x6.xml</Template>
+			<Position x="0" z="677.38209"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="54394"/>
+		</Entity>
+		<Entity uid="50">
+			<Template>gaia/flora_tree_cretan_date_palm_tall</Template>
+			<Player>0</Player>
+			<Position x="180.2457" z="476.10022"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6356"/>
+		</Entity>
+		<Entity uid="51">
+			<Template>gaia/flora_tree_cretan_date_palm_tall</Template>
+			<Player>0</Player>
+			<Position x="190.57099" z="480.22162"/>
+			<Orientation y="-2.2151"/>
+			<Actor seed="23568"/>
+		</Entity>
+		<Entity uid="52">
+			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
+			<Player>0</Player>
+			<Position x="138.16776" z="504.52903"/>
+			<Orientation y="0.8493"/>
+			<Actor seed="15036"/>
+		</Entity>
+		<Entity uid="53">
+			<Template>gaia/flora_tree_cretan_date_palm_short</Template>
+			<Player>0</Player>
+			<Position x="142.87867" z="503.14277"/>
+			<Orientation y="-1.16283"/>
+			<Actor seed="52428"/>
+		</Entity>
+		<Entity uid="54">
+			<Template>gaia/flora_tree_cretan_date_palm_patch</Template>
+			<Player>0</Player>
+			<Position x="124.16411" z="500.79676"/>
+			<Orientation y="2.34258"/>
+			<Actor seed="25258"/>
+		</Entity>
+		<Entity uid="55">
+			<Template>structures/merc_camp_egyptian</Template>
+			<Player>0</Player>
+			<Position x="236.09842" z="531.29548"/>
+			<Orientation y="2.29412"/>
+			<Actor seed="12758"/>
+		</Entity>
+		<Entity uid="56">
+			<Template>actor|particle/blowing_sand.xml</Template>
+			<Position x="121.4148" z="521.17731"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="25636"/>
+		</Entity>
+		<Entity uid="57">
+			<Template>actor|particle/blowing_sand.xml</Template>
+			<Position x="169.8845" z="509.57071"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7188"/>
+		</Entity>
+		<Entity uid="58">
+			<Template>actor|particle/blowing_snow.xml</Template>
+			<Position x="103.07526" z="490.14567"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="48640"/>
+		</Entity>
+		<Entity uid="73">
+			<Template>gaia/geology_stone_desert_small</Template>
+			<Player>0</Player>
+			<Position x="127.29859" z="508.87632"/>
+			<Orientation y="0.0371"/>
+			<Actor seed="5038"/>
+		</Entity>
+		<Entity uid="74">
+			<Template>gaia/geology_stone_desert_small</Template>
+			<Player>0</Player>
+			<Position x="125.87008" z="518.63501"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="12"/>
+		</Entity>
+		<Entity uid="75">
+			<Template>gaia/geology_stone_desert_small</Template>
+			<Player>0</Player>
+			<Position x="110.85378" z="504.10029"/>
+			<Orientation y="0.39649"/>
+			<Actor seed="36296"/>
+		</Entity>
+		<Entity uid="76">
+			<Template>gaia/geology_stone_desert_small</Template>
+			<Player>0</Player>
+			<Position x="108.22492" z="514.84345"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="15356"/>
+		</Entity>
+		<Entity uid="77">
+			<Template>gaia/geology_stone_desert_small</Template>
+			<Player>0</Player>
+			<Position x="117.15433" z="512.47638"/>
+			<Orientation y="-0.26493"/>
+			<Actor seed="48004"/>
+		</Entity>
+		<Entity uid="78">
+			<Template>gaia/fauna_goat</Template>
+			<Player>0</Player>
+			<Position x="132.66938" z="489.74405"/>
+			<Orientation y="0.61184"/>
+			<Actor seed="55786"/>
+		</Entity>
+		<Entity uid="79">
+			<Template>gaia/fauna_goat</Template>
+			<Player>0</Player>
+			<Position x="132.44053" z="495.30839"/>
+			<Orientation y="2.36472"/>
+			<Actor seed="21466"/>
+		</Entity>
+		<Entity uid="80">
+			<Template>gaia/fauna_goat</Template>
+			<Player>0</Player>
+			<Position x="134.65357" z="496.91721"/>
+			<Orientation y="-2.27222"/>
+			<Actor seed="21920"/>
+		</Entity>
+		<Entity uid="81">
+			<Template>gaia/fauna_goat</Template>
+			<Player>0</Player>
+			<Position x="136.0984" z="489.00818"/>
+			<Orientation y="4.401"/>
+			<Actor seed="30312"/>
+		</Entity>
+		<Entity uid="82">
+			<Template>gaia/fauna_goat</Template>
+			<Player>0</Player>
+			<Position x="147.85901" z="493.23752"/>
+			<Orientation y="4.06432"/>
+			<Actor seed="49954"/>
+		</Entity>
+		<Entity uid="83">
+			<Template>gaia/geology_stonemine_desert_huge</Template>
+			<Player>0</Player>
+			<Position x="181.45057" z="529.66651"/>
+			<Orientation y="-3.13115"/>
+			<Actor seed="44526"/>
+		</Entity>
+		<Entity uid="84">
+			<Template>gaia/geology_stonemine_desert_huge</Template>
+			<Player>0</Player>
+			<Position x="159.13218" z="542.62775"/>
+			<Orientation y="1.4234"/>
+			<Actor seed="19780"/>
+		</Entity>
+		<Entity uid="85">
+			<Template>gaia/geology_stonemine_desert_huge</Template>
+			<Player>0</Player>
+			<Position x="135.67661" z="550.59241"/>
+			<Orientation y="-1.36988"/>
+			<Actor seed="28990"/>
+		</Entity>
+		<Entity uid="86">
+			<Template>gaia/geology_stonemine_desert_huge</Template>
+			<Player>0</Player>
+			<Position x="113.68001" z="552.40809"/>
+			<Orientation y="-0.52768"/>
+			<Actor seed="45110"/>
+		</Entity>
+		<Entity uid="87">
+			<Template>gaia/geology_stonemine_desert_huge</Template>
+			<Player>0</Player>
+			<Position x="142.89905" z="549.22822"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="33524"/>
+		</Entity>
+	</Entities>
+	<Paths/>
+</Scenario>
