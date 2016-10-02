@@ -9,7 +9,7 @@
 		<TerrainAmbientColor r="0.329412" g="0.419608" b="0.501961"/>
 		<UnitsAmbientColor r="0.301961" g="0.384314" b="0.454902"/>
 		<Fog>
-			<FogFactor>0.00402344</FogFactor>
+			<FogFactor>0.00335937</FogFactor>
 			<FogThickness>0</FogThickness>
 			<FogColor r="0.866667" g="0.776471" b="0.486275"/>
 		</Fog>
@@ -33,7 +33,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="501.821" y="111.216" z="618.278"/>
+		<Position x="492.032" y="101.552" z="629.504"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -45,7 +45,7 @@
   "Keywords": [
     "demo",
     "naval",
-	"new"
+    "new"
   ],
   "LockTeams": false,
   "Name": "Sandbox - The Ptolemaic Egyptians",
@@ -81,7 +81,7 @@
     }
   ],
   "Preview": "sandbox_ptolemies.png",
-  "RevealMap": false
+  "RevealMap": true
 }
 ]]></ScriptSettings>
 	<Entities>
@@ -10798,7 +10798,7 @@
 		<Entity uid="1858">
 			<Template>structures/ptol_defense_tower</Template>
 			<Player>1</Player>
-			<Position x="443.29029" z="836.82355"/>
+			<Position x="444.38575" z="834.80127"/>
 			<Orientation y="-2.3871"/>
 			<Actor seed="58322"/>
 		</Entity>
@@ -10924,8 +10924,8 @@
 		<Entity uid="1880">
 			<Template>structures/ptol_field</Template>
 			<Player>1</Player>
-			<Position x="475.99491" z="784.71412"/>
-			<Orientation y="2.35621"/>
+			<Position x="476.054" z="785.07923"/>
+			<Orientation y="2.28357"/>
 			<Actor seed="48778"/>
 		</Entity>
 		<Entity uid="1883">
@@ -11292,7 +11292,7 @@
 		<Entity uid="2037">
 			<Template>structures/merc_camp_egyptian</Template>
 			<Player>0</Player>
-			<Position x="408.76407" z="914.37989"/>
+			<Position x="407.88556" z="909.80079"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50902"/>
 		</Entity>
@@ -11358,6 +11358,36 @@
 			<Position x="532.41254" z="747.99146"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36970"/>
+		</Entity>
+		<Entity uid="2047">
+			<Template>actor|particle/cloud.xml</Template>
+			<Position x="160.5983" z="447.19001"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="2608"/>
+		</Entity>
+		<Entity uid="2048">
+			<Template>actor|particle/cloud.xml</Template>
+			<Position x="740.4698" z="263.71778"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="36204"/>
+		</Entity>
+		<Entity uid="2049">
+			<Template>actor|particle/cloud.xml</Template>
+			<Position x="755.41541" z="527.4004"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31758"/>
+		</Entity>
+		<Entity uid="2050">
+			<Template>actor|particle/cloud.xml</Template>
+			<Position x="179.43168" z="373.86927"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="29328"/>
+		</Entity>
+		<Entity uid="2051">
+			<Template>actor|particle/cloud.xml</Template>
+			<Position x="152.6749" z="403.92701"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="17844"/>
 		</Entity>
 	</Entities>
 	<Paths/>
