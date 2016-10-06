@@ -29,11 +29,11 @@
   </Health>
   <Identity>
     <Civ>maur</Civ>
-    <Classes datatype="tokens">Hero Healer Organic</Classes>
+    <Classes datatype="tokens">Organic Human</Classes>
 	<GenericName>Chanakya</GenericName>
     <SpecificName>Cāṇakya</SpecificName>
     <Icon>units/maur_hero_chanakya.png</Icon>
-    <VisibleClasses datatype="tokens">Healer</VisibleClasses>
+    <VisibleClasses datatype="tokens">Hero Healer Teacher Support</VisibleClasses>
 	<Tooltip>
 Hero Special: "Healer" - Heal units at a fast rate.
 Hero Special: "Arthashastra" - Research 4 special technologies only available to Chanakya.</Tooltip>
@@ -68,6 +68,28 @@ Hero Special: "Arthashastra" - Research 4 special technologies only available to
       </Texture>
     </Overlay>
   </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>voice/{lang}/civ/civ_{gender}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{gender}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{gender}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{gender}_gather.xml</order_gather>
+      <order_repair>voice/{lang}/civ/civ_{gender}_repair.xml</order_repair>
+      <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
+      <walk>actor/human/movement/walk.xml</walk>
+      <run>actor/human/movement/run.xml</run>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/{gender}_death.xml</death>
+      <build>resource/construction/con_wood.xml</build>
+      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
+      <gather_grain>resource/farming/farm.xml</gather_grain>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
+      <gather_ore>resource/mining/mining.xml</gather_ore>
+      <gather_ruins>resource/mining/mining.xml</gather_ruins>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+    </SoundGroups>
+  </Sound>
   <TrainingRestrictions>
     <Category>Hero</Category>
   </TrainingRestrictions>
@@ -80,7 +102,7 @@ Hero Special: "Arthashastra" - Research 4 special technologies only available to
     </Run>
   </UnitMotion>
   <Vision>
-    <Range>30</Range>
+    <Range>60</Range>
   </Vision>
   <VisualActor>
     <Actor>units/mauryans/hero_chanakya.xml</Actor>
