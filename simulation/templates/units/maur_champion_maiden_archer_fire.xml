@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/maur_champion_maiden_archer">
+  <Attack>
+    <Ranged>
+      <Pierce op="add">-10.0</Pierce>
+      <Crush op="add">10.0</Crush>
+      <MaxRange op="add">-4.0</MaxRange>
+      <ProjectileSpeed>40.0</ProjectileSpeed>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>3000</RepeatTime>
+      <Spread op="add">1.5</Spread>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <GenericName>Poison Maiden Archer (Fire)</GenericName>
+	<Classes datatype="tokens">FireArrows</Classes>
+	<SelectionGroupName>units/maur_champion_maiden_archer_fire</SelectionGroupName>
+    <Icon>units/maur_champion_maiden_archer_fire.png</Icon>
+  </Identity>
+  <Upgrade>
+    <UseFireArrows>
+      <Entity>units/maur_champion_maiden_archer</Entity>
+      <Tooltip>Switch from fire arrows (anti-building) to standard arrows (anti-unit).</Tooltip>
+      <Cost>
+        <wood>5</wood>
+      </Cost>
+      <Time>10</Time>
+    </UseFireArrows>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/mauryans/champion_maiden_guard_archer_fire.xml</Actor>
+  </VisualActor>
+</Entity>
