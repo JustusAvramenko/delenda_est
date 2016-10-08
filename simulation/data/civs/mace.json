@@ -18,11 +18,6 @@
 			"Technologies":
 			[
 				{
-					"Name":"Agema",
-					"History":"When Philip II came to the Macedonian throne he began a total reorganization of the Macedonian army. His reforms created a powerful cavalry arm to his army that would prove useful to both himself and his son Alexander's conquests.",
-					"Description":"Unlocks training of Shield Bearer and Companion Cavalry champions at the barracks."
-				},
-				{
 					"Name":"Silver Shields Regiment",
 					"History":"In India near the end of his long anabasis, Alexander gifted to the Royal Hypaspist corps shields of silver for their long and valiant service in his army.",
 					"Description":"Upgrade Shield Bearer champion infantry to Silver Shields, with greater attack, health, and armor."
@@ -35,7 +30,12 @@
 				{
 					"Name":"Hellenistic Metropolises",
 					"History":"Beginning with Alexander, the Hellenistic monarchs founded many cities throughout their empires, where Greek culture and art blended with local customs to create the motley Hellenistic civilization.",
-					"Description":"Civic Centers have double Health and double default arrows."
+					"Description":"Civic Centers have double health and double default arrows."
+				},
+				{
+					"Name":"Antikythera Mechanism",
+					"History":"Engineers and astrologers of the day developed means for mariners to navigate the open seas. This helped facilitate trade and travel all over the Eastern Mediterranean.",
+					"Description":"All units +5% speed and +10% vision range."
 				}
 			],
 			"Heroes":
@@ -69,12 +69,17 @@
 		{
 			"Name":"Hellenic League",
 			"History":"After the unification of Greece, Philip II gathered all the city-states together to form the Hellenic League, with Macedon as the its leader. With this Pan-Hellenic federation he planned to launch an expedition to punish Persia for past wrongs. Although assassinated before he could carry out the invasion, his son Alexander the Great took up the mantle and completed his fathers plans.",
-			"Description":"Macedonian units have +10% attack bonus vs. Persian and Hellenic factions, but -5% attack debonus vs. Romans."
+			"Description":"Macedonian units have +10% attack bonus vs. Persian and Hellenic factions, but -5% attack penalty vs. Romans."
 		},
 		{
 			"Name":"Syntagma",
 			"History":"Based upon the Theban Oblique Order phalanx, the Syntagma was the formation that proved invincible against the armies of Hellas and the East.",
 			"Description":"Infantry pike units can use the slow and powerful Syntagma formation."
+		},
+		{
+			"Name":"Innovators",
+			"History":"The Macedonians were innovators in the area of siege technology and techniques.",
+			"Description":"Macedonians can build ranged siege engines without the need to research Ballistics."
 		},
 		{
 			"Name":"Hellenization",
@@ -108,16 +113,7 @@
 			"History":"Alexander the Great founded libraries all over his new empire. These became a center of learning for an entirely new synthesized culture: the Hellenistic culture.",
 			"Requirements":"",
 			"Phase":"City",
-			"Special":"All Special Technologies are researched here. Building one reduces the cost of all other remaining technologies by 10%. Build limit: 1."
-		},
-		{
-			"Name":"Siege Workshop",
-			"Class":"",
-			"Emblem":"",
-			"History":"The Macedonians were innovators in area of siegecraft.",
-			"Requirements":"",
-			"Phase":"City",
-			"Special":"Constructs and upgrades all Macedonian siege engines."
+			"Special":"Special Technologies are researched here and building one reduces the cost of all other remaining technologies by 10%. Build limit: 1."
 		}
 	],
 	"StartEntities":
@@ -176,7 +172,7 @@
 	"SkirmishReplacements":
 	{
 		"skirmish/units/default_infantry_melee_b": "units/mace_infantry_pikeman_b",
-		"skirmish/structures/default_house_10": "structures/{civ}_house",
+		"skirmish/structures/default_house_10": "structures/mace_house",
 		"skirmish/units/default_cavalry" : "units/mace_cavalry_spearman_b"
 	},
 	"SelectableInGameSetup": true
