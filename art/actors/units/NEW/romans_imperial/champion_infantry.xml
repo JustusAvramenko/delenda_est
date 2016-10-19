@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="biped/new/inf_shield_idle.dae" name="Idle" speed="100"/>
+      </animations>
+      <mesh>skeletal/new/armor/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_dude.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/rome_helmet_hero.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/gladus.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/rome_scutum_marian.xml" attachpoint="shield"/>
+        <prop actor="props/units/cape_m_med.xml" attachpoint="cape"/>
+      </props>
+      <textures>
+		<texture file="skeletal/imp_rome_su1_b.png" name="baseTex"/>
+		<texture file="skeletal/imp_rome_su1_a_spec.png" name="specTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>
