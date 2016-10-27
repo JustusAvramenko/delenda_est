@@ -55,7 +55,27 @@
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
-    <variant file="biped/attack_melee_hoplite.xml"/>
+    <variant name="phalanx_attack">
+      <props>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="r_hand"/>
+      </props>
+    </variant>
+    <variant name="phalanx_idle">
+      <props>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="r_hand"/>
+      </props>
+    </variant>
+    <variant name="phalanx_walk">
+      <props>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="r_hand"/>
+      </props>
+    </variant>
+    <variant name="phalanx_run">
+      <props>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="r_hand"/>
+      </props>
+    </variant>
+    <variant file="biped/attack_melee_spearman.xml"/>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/gather_tree.xml"/>
