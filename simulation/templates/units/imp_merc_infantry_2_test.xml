@@ -1,54 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_mercenary_infantry_ranged_archer">
-  <Builder>
-	<Entities datatype="tokens">
-      -structures/{civ}_house
-      -structures/{civ}_storehouse
-      -structures/{civ}_farmstead
-      -structures/{civ}_field
-      -structures/{civ}_corral
-      -structures/{civ}_dock
-      -other/wallset_palisade
-      -structures/{civ}_temple
-      -structures/{civ}_market
-      structures/{civ}_outpost
-	  structures/imp_barracks_aux
-      structures/imp_arch
-	  structures/imp_army_camp
-      structures/imp_wallset_siege
-      structures/{civ}_wonder
-    </Entities>
-  </Builder>
-  <Cost>
-    <Population>1</Population>
-  </Cost>
-  <Identity>
-	<Civ>imp</Civ>
-	<Lang>latin</Lang>
-	<Rank>Elite</Rank>
-    <GenericName>Syrian Auxiliary Archer</GenericName>
-    <SpecificName>Syrus Auxiliaris Sagittarius</SpecificName>
-    <VisibleClasses datatype="tokens">
-	  -Gatherer
-	</VisibleClasses>
-    <History> .</History>
-    <Icon>units/imp_merc_archer.png</Icon>
-  </Identity>
-  <ResourceGatherer>
-    <Rates>
-      <food.fruit disable=""/>
-      <food.grain disable=""/>
-      <food.meat disable=""/>
-	  <wood.tree disable=""/>
-	  <wood.ruins disable=""/>
-      <stone.rock disable=""/>
-	  <stone.ruins disable=""/>
-      <metal.ore disable=""/>
-    </Rates>
-  </ResourceGatherer>
-  <TrainingRestrictions>
-    <Category>Auxilia</Category>
-  </TrainingRestrictions>
+<Entity parent="units/imp_merc_infantry_2">
   <VisualActor>
     <Actor>units/romans_imperial/newunit_infantry_archer.xml</Actor>
   </VisualActor>
