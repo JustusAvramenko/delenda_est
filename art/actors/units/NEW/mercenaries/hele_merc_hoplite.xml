@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <animations>
+        <animation file="biped/new/inf_sarissa_rest.dae" name="Idle" speed="100"/>
+      </animations>
+      <props>
+        <prop actor="props/units/heads/hele_hoplite_e2.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/new/head_dude.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/hele_round_a.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/weapons/spear_long.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="3" name="tunic">
+      <textures><texture file="skeletal/hele_tunic.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="2" name="tunic 2">
+      <textures><texture file="skeletal/hele_isp_b_2.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="2" name="tunic 3">
+      <textures><texture file="skeletal/hele_isp_b_3.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
