@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Cape">
+      <textures><texture file="props/cape_hd.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="3" name="Cape-hd">
+      <mesh>props/cape_hd.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Animations">
+      <animations>
+        <animation file="test/idle_relax_hoplite.dae" name="Idle" speed="30"/>
+        <animation file="test/idle_relax_hoplite.dae" name="Idle" speed="30"/>
+        <animation file="test/idle_relax_hoplite.dae" name="Idle" speed="30"/>
+        <animation file="test/walk_relax_hoplite.dae" name="Walk" speed="30"/>
+        <animation file="test/run_relax_hoplite.dae" name="Run" speed="5"/>
+        <animation file="test/run_relax_hoplite.dae" name="Run" speed="5"/>
+        <animation file="test/run_relax_hoplite.dae" name="Run" speed="5"/>
+		<animation event="0.5" file="test/attack_hoplite_e.dae" name="Attack_melee" speed="30"/>
+		<animation file="test/idle_ready_hoplite.dae" name="phalanx_idle" speed="30"/>
+		<animation file="test/idle_relax_hoplite.dae" name="phalanx_idle_back" speed="30"/>
+		<animation file="test/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="30"/>
+		<animation file="test/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="30"/>
+		<animation file="test/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="30"/>
+		<animation file="test/run_ready_hoplite.dae" name="phalanx_run" speed="15"/>
+		<animation event="0.5" file="test/attack_hoplite_e.dae" name="phalanx_attack" speed="30"/>
+		<animation file="test/death_a.dae" name="death" speed="60"/>
+		<animation file="test/death_b.dae" name="death" speed="60"/>
+      </animations>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

@@ -4,15 +4,31 @@
   <group>
     <variant frequency="1" name="Base">
       <animations>
-        <animation file="biped/new/inf_sarissa_rest.dae" name="Idle" speed="100"/>
+        <animation file="biped/idle_relax_hoplite.dae" name="Idle" speed="30"/>
+        <animation file="biped/idle_relax_hoplite.dae" name="Idle" speed="31"/>
+        <animation file="biped/idle_relax_hoplite.dae" name="Idle" speed="32"/>
+        <animation file="biped/walk_relax_hoplite.dae" name="Walk" speed="33"/>
+        <animation file="biped/run_relax_hoplite.dae" name="Run" speed="5"/>
+        <animation file="biped/run_relax_hoplite.dae" name="Run" speed="6"/>
+        <animation file="biped/run_relax_hoplite.dae" name="Run" speed="7"/>
+		<animation event="0.5" file="biped/attack_hoplite_e.dae" name="Attack_melee" speed="30"/>
+		<animation file="biped/idle_ready_hoplite.dae" name="phalanx_idle" speed="30"/>
+		<animation file="biped/idle_relax_hoplite.dae" name="phalanx_idle_back" speed="30"/>
+		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="30"/>
+		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="31"/>
+		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="32"/>
+		<animation file="biped/run_ready_hoplite.dae" name="phalanx_run" speed="15"/>
+		<animation event="0.5" file="biped/attack_hoplite_e.dae" name="phalanx_attack" speed="30"/>
+		<animation file="biped/death_a.dae" name="death" speed="60"/>
+		<animation file="biped/death_b.dae" name="death" speed="60"/>		
       </animations>
       <mesh>skeletal/new/armor/m_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/heads/head_newhead.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/sarissa.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/shields/mace_argyraspides.xml" attachpoint="shield_arm"/>
         <prop actor="props/units/heads/mace_su1.xml" attachpoint="helmet"/>
-        <prop actor="props/units/cape_hd.xml" attachpoint="cape"/>
+        <prop actor="props/units/cape_animated_hoplite.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
@@ -66,6 +82,15 @@
       <textures>
         <texture file="skeletal/spart_phalangite_officer.dds" name="baseTex"/>
       </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+        <prop actor="props/units/cape_animated_hoplite.xml" attachpoint="root"/>
+      </props>
     </variant>
   </group>
   <material>player_trans.xml</material>

@@ -2,81 +2,47 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="base">
+    <variant frequency="1" name="Base">
       <animations>
-        <animation file="biped/inf_sword_ready_a.dae" name="Idle" speed="100"/>
-        <animation file="biped/inf_sword_ready_a.dae" name="Idle" speed="90"/>
-        <animation file="biped/inf_sword_ready_a.dae" name="Idle" speed="85"/>
-        <animation file="biped/inf_sword_ready_a.dae" name="Idle" speed="50"/>
-        <animation file="biped/inf_sword_ready_b.dae" name="Idle" speed="110"/>
-        <animation file="biped/walk_spearshield.psa" name="Walk" speed="117"/>
-        <animation file="biped/walk_spearshield.psa" name="Walk" speed="110"/>
-        <animation file="biped/walk_spearshield.psa" name="Walk" speed="115"/>
-        <animation file="infantry/sword/move/run/isw_s_off_01.psa" name="Run" speed="40"/>
-        <animation file="infantry/sword/move/run/isw_s_off_01.psa" name="Run" speed="38"/>
-        <animation file="biped/inf_salute_c.psa" name="Promotion" speed="450"/>
-		<animation file="biped/inf_hoplite_idle_a.psa" name="phalanx_idle" speed="200"/>
-		<animation file="biped/inf_sword_ready_a.dae" name="phalanx_idle_back" speed="100"/>
-		<animation file="biped/inf_hoplite_walk.psa" name="phalanx_walk" speed="130"/>
-		<animation file="biped/inf_hoplite_shield_run_a.psa" name="phalanx_run" speed="30"/>
-		<animation event="0.5" file="biped/inf_hoplite_atk_a.psa" name="phalanx_attack" speed="200"/>
+        <animation file="biped/idle_relax_hoplite.dae" name="Idle" speed="30"/>
+        <animation file="biped/idle_relax_hoplite.dae" name="Idle" speed="30"/>
+        <animation file="biped/idle_relax_hoplite.dae" name="Idle" speed="30"/>
+        <animation file="biped/walk_relax_hoplite.dae" name="Walk" speed="30"/>
+        <animation file="biped/run_relax_hoplite.dae" name="Run" speed="5"/>
+        <animation file="biped/run_relax_hoplite.dae" name="Run" speed="5"/>
+        <animation file="biped/run_relax_hoplite.dae" name="Run" speed="5"/>
+		<animation event="0.5" file="biped/attack_hoplite_e.dae" name="Attack_melee" speed="30"/>
+		<animation file="biped/idle_ready_hoplite.dae" name="phalanx_idle" speed="30"/>
+		<animation file="biped/idle_relax_hoplite.dae" name="phalanx_idle_back" speed="30"/>
+		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="30"/>
+		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="30"/>
+		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="30"/>
+		<animation file="biped/run_ready_hoplite.dae" name="phalanx_run" speed="15"/>
+		<animation event="0.5" file="biped/attack_hoplite_e.dae" name="phalanx_attack" speed="30"/>
+		<animation file="biped/death_a.dae" name="death" speed="60"/>
+		<animation file="biped/death_b.dae" name="death" speed="60"/>
       </animations>
-      <mesh>skeletal/m_tunic_short.dae</mesh>
+      <mesh>skeletal/new/armor/m_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/heads/head_hele_h.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/spear_lance.xml" attachpoint="r_hand"/>
-        <prop actor="props/units/cape_long_ragged.xml" attachpoint="shoulders"/>
+        <prop actor="props/units/heads/new/head_beard_longhair.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/hele_round_spartiate_dokana.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/heads/spart_olympian_pushed_back.xml" attachpoint="helmet"/>
+        <prop actor="props/units/cape_animated_hoplite.xml" attachpoint="root"/>
       </props>
-      <textures><texture file="skeletal/hele_spartitiate_a.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/hele_spartitiate_a.dds" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="champion">
+    <variant frequency="100" name="Idle"/>
+    <variant name="death">
       <props>
-        <prop actor="props/units/heads/hele_su1_champ.xml" attachpoint="helmet"/>
-        <prop actor="props/units/shields/hele_round_spartiate_dokana.xml" attachpoint="shield"/>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+        <prop actor="props/units/cape_animated_hoplite.xml" attachpoint="root"/>
       </props>
     </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="Idle"/>
-    <variant name="phalanx_attack">
-      <props>
-        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="r_hand"/>
-      </props>
-    </variant>
-    <variant name="phalanx_idle">
-      <props>
-        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="r_hand"/>
-      </props>
-    </variant>
-    <variant name="phalanx_walk">
-      <props>
-        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="r_hand"/>
-      </props>
-    </variant>
-    <variant name="phalanx_run">
-      <props>
-        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="r_hand"/>
-      </props>
-    </variant>
-    <variant file="biped/attack_melee_spearman.xml"/>
-    <variant file="biped/attack_capture.xml"/>
-    <variant file="biped/attack_slaughter.xml"/>
-    <variant file="biped/gather_tree.xml"/>
-    <variant file="biped/gather_grain.xml"/>
-    <variant file="biped/gather_fruit.xml"/>
-    <variant file="biped/gather_meat.xml"/>
-    <variant file="biped/gather_rock.xml"/>
-    <variant file="biped/gather_ore.xml"/>
-    <variant file="biped/gather_ruins.xml"/>
-    <variant file="biped/build.xml"/>
-    <variant file="biped/infantry_death.xml"/>
-    <variant file="biped/carry_food.xml"/>
-    <variant file="biped/carry_meat.xml"/>
-    <variant file="biped/carry_wood.xml"/>
-    <variant file="biped/carry_stone.xml"/>
-    <variant file="biped/carry_metal.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>

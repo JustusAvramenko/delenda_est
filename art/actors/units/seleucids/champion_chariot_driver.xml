@@ -22,7 +22,7 @@
         <animation file="biped/inf_sword_ready_a.dae" name="carry_meat" speed="100"/>
       </animations>
       <props>
-        <prop actor="props/units/heads/ptol_thureophoros_a.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/spartan_phalangite_helmet.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/head_hele_b.xml" attachpoint="head"/>
       </props>
     </variant>
@@ -31,12 +31,13 @@
     <variant frequency="1" name="armor long">
       <mesh>skeletal/m_tunic_long.dae</mesh>
       <textures>
-        <texture file="skeletal/mace_bronzeshield_pikeman_a.dds" name="baseTex"/>
+        <texture file="skeletal/ptol_thureophoros_a_1.png" name="baseTex"/>
+        <texture file="skeletal/ptol_thureophoros_a_1_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
   <group>
     <variant frequency="100" name="Idle"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>

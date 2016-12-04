@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Cape">
+      <textures><texture file="props/cape_hd.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="3" name="Cape-hd">
+      <mesh>props/cape_hd.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Animations Jav">
+      <animations>
+        <animation file="biped/jav_idle_ready.dae" name="Idle" speed="30"/>
+        <animation file="biped/jav_idle_ready.dae" name="Idle" speed="30"/>
+        <animation file="biped/jav_idle_ready.dae" name="Idle" speed="30"/>
+        <animation file="biped/jav_shield_walk_relax.dae" name="Walk" speed="15"/>
+        <animation file="biped/jav_shield_walk_relax.dae" name="Walk" speed="15"/>
+        <animation file="biped/jav_shield_walk_relax.dae" name="Walk" speed="15"/>
+        <animation file="biped/jav_shield_run_relax.dae" name="Run" speed="10"/>
+        <animation file="biped/jav_shield_run_relax.dae" name="Run" speed="10"/>
+        <animation file="biped/jav_shield_run_relax.dae" name="Run" speed="10"/>
+        <animation file="biped/death_a.dae" name="Death" speed="60"/>
+        <animation file="biped/death_b.dae" name="Death" speed="75"/>
+        <animation event="0.50" file="biped/jav_attack.dae" load="0.75" name="attack_ranged" speed="100"/>
+      </animations>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
