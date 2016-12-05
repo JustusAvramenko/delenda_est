@@ -11,7 +11,6 @@
         <animation file="biped/run_relax_hoplite.dae" name="Run" speed="5"/>
         <animation file="biped/run_relax_hoplite.dae" name="Run" speed="5"/>
         <animation file="biped/run_relax_hoplite.dae" name="Run" speed="5"/>
-		<animation event="0.5" file="biped/attack_hoplite_e.dae" name="Attack_melee" speed="30"/>
 		<animation file="biped/idle_ready_hoplite.dae" name="phalanx_idle" speed="30"/>
 		<animation file="biped/idle_relax_hoplite.dae" name="phalanx_idle_back" speed="30"/>
 		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="30"/>
@@ -31,8 +30,8 @@
     <variant file="biped/hoplite_attack_melee.xml"/>
 	<variant name="death">
 	  <animations>
-		<animation file="biped/death_a.dae" name="death1" speed="60"/>
-		<animation file="biped/death_b.dae" name="death2" speed="60"/>
+	    <animation file="biped/death_a.dae" frequency="1" name="death1" speed="60"/>
+	    <animation file="biped/death_b.dae" frequency="1" name="death2" speed="60"/>
 	  </animations>
 	</variant>
   </group>

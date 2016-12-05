@@ -38,16 +38,7 @@
   <group>
     <variant frequency="1" name="Idle"/>
     <variant file="biped/hoplite_attack_melee.xml"/>
-	<variant name="death">
-	  <animations>
-		<animation file="biped/death_a.dae" name="death1" speed="60"/>
-		<animation file="biped/death_b.dae" name="death2" speed="60"/>
-	  </animations>
-	  <props>
-		<prop actor="props/units/blood_01.xml" attachpoint="root"/>
-		<prop actor="props/units/cape_animated_01.xml" attachpoint="root"/>
-	  </props>
-	</variant>
+    <variant file="biped/hoplite_death.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
