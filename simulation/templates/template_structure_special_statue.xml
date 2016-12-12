@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">statue_costs</Auras>
+  <BuildRestrictions>
+    <Category>Statue</Category>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="5.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder disable=""/>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Cult Statue</GenericName>
+    <SpecificName>Mnimeíon</SpecificName>
+    <Classes datatype="tokens">-ConquestCritical</Classes>
+    <VisibleClasses datatype="tokens">-City Town Statue</VisibleClasses>
+    <Tooltip>Build these to slowly accrue the Glory resource over time.</Tooltip>
+    <Icon>structures/statue.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>20</stone>
+    <metal>20</metal>
+    <glory>100</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="6.0" depth="6.0"/>
+  </Obstruction>
+  <ResourceTrickle>
+    <Rates>
+      <glory>1.0</glory>
+    </Rates>
+    <Interval>3000</Interval>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_greek_theater.xml</select>
+      <constructed>interface/complete/building/complete_greek_theater.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>props/special/eyecandy/statue_aphrodite_huge.xml</Actor>
+    <FoundationActor>structures/carthaginians/fndn_wooden_tower.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -4,20 +4,24 @@
   <group>
     <variant frequency="1" name="Base">
       <animations>
-        <animation file="biped/idle_relax_hoplite.dae" name="Idle" speed="30"/>
-        <animation file="biped/idle_relax_hoplite.dae" name="Idle" speed="30"/>
-        <animation file="biped/idle_relax_hoplite.dae" name="Idle" speed="30"/>
-        <animation file="biped/walk_relax_hoplite.dae" name="Walk" speed="30"/>
-        <animation file="biped/run_relax_hoplite.dae" name="Run" speed="5"/>
-        <animation file="biped/run_relax_hoplite.dae" name="Run" speed="5"/>
-        <animation file="biped/run_relax_hoplite.dae" name="Run" speed="5"/>
+        <animation file="biped/idle_relax_hoplite.dae" name="Idle" id="idle1" speed="30"/>
+        <animation file="biped/idle_relax_hoplite.dae" name="Idle" id="idle2" speed="31"/>
+        <animation file="biped/idle_relax_hoplite.dae" name="Idle" id="idle3" speed="32"/>
+        <animation file="biped/walk_relax_hoplite.dae" name="Walk" id="walk1" speed="30"/>
+        <animation file="biped/walk_relax_hoplite.dae" name="Walk" id="walk2" speed="32"/>
+        <animation file="biped/run_relax_hoplite.dae" name="Run" id="run1" speed="5"/>
+        <animation file="biped/run_relax_hoplite.dae" name="Run" id="run2" speed="6"/>
+        <animation file="biped/run_relax_hoplite.dae" name="Run" id="run3" speed="7"/>
 		<animation file="biped/idle_ready_hoplite.dae" name="phalanx_idle" speed="30"/>
 		<animation file="biped/idle_relax_hoplite.dae" name="phalanx_idle_back" speed="30"/>
-		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="30"/>
-		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="30"/>
-		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" speed="30"/>
-		<animation file="biped/run_ready_hoplite.dae" name="phalanx_run" speed="15"/>
+		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" id="phalwalk1" speed="30"/>
+		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" id="phalwalk2" speed="31"/>
+		<animation file="biped/walk_ready_hoplite_stand.dae" name="phalanx_walk" id="phalwalk3" speed="32"/>
+		<animation file="biped/run_ready_hoplite.dae" name="phalanx_run" id="phalrun1" speed="15"/>
+		<animation file="biped/run_ready_hoplite.dae" name="phalanx_run" id="phalrun2" speed="16"/>
 		<animation event="0.5" file="biped/attack_hoplite_e.dae" name="phalanx_attack" speed="30"/>
+		<animation file="biped/death_a.dae" name="Death" id="death1" speed="60"/>
+		<animation file="biped/death_b.dae" name="Death" id="death2" speed="60"/>
       </animations>
 	  <mesh>props/cape_hd.dae</mesh>
       <textures>
@@ -28,12 +32,6 @@
   <group>
     <variant frequency="1" name="Idle"/>
     <variant file="biped/hoplite_attack_melee.xml"/>
-	<variant name="death">
-	  <animations>
-	    <animation file="biped/death_a.dae" frequency="1" name="death1" speed="60"/>
-	    <animation file="biped/death_b.dae" frequency="1" name="death2" speed="60"/>
-	  </animations>
-	</variant>
   </group>
   <material>player_trans.xml</material>
 </actor>
