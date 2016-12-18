@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Athena Statue">
+      <mesh>structural/athena_statue.dae</mesh>
+      <textures>
+	    <texture file="structural/athena_statue_color.png" name="baseTex"/>
+		<texture file="structural/athena_statue_normal.png" name="normTex"/> 
+	    <texture file="structural/athena_statue_spec.png" name="specTex"/> 
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>
