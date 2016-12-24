@@ -19,7 +19,7 @@
     <SpecificName>Mnimeíon</SpecificName>
     <Classes datatype="tokens">-ConquestCritical</Classes>
     <VisibleClasses datatype="tokens">-City Town Statue</VisibleClasses>
-    <Tooltip>Build these to slowly accrue the Glory resource over time.</Tooltip>
+    <Tooltip>Build these to generate the Glory resource over time.</Tooltip>
     <Icon>structures/statue.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
@@ -34,6 +34,10 @@
   <Obstruction>
     <Static width="6.0" depth="6.0"/>
   </Obstruction>
+  <ResourceDropsite>
+    <Types>glory</Types>
+	<Sharable>false</Sharable>
+  </ResourceDropsite>
   <ResourceSupply>
     <KillBeforeGather>false</KillBeforeGather>
     <Amount>Infinity</Amount>
@@ -45,7 +49,7 @@
     <Rates>
       <glory>1.0</glory>
     </Rates>
-    <Interval>3000</Interval>
+    <Interval>2000</Interval>
   </ResourceTrickle>
   <Sound>
     <SoundGroups>
