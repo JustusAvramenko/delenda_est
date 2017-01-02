@@ -2,13 +2,13 @@
 	"genericName": "Total War",
     "supersedes": "training_mobilization",
 	"description": "Total war is when the entire culture retools itself in order to win.",
-	"cost": {"food": 1000, "wood": 0, "stone": 0, "metal": 1000},
+	"cost": {"food": 1000, "wood": 0, "metal": 500, "glory": 500},
 	"requirements": {"tech": "phase_imperial"},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "fist_spear_fire.png",
 	"researchTime": 30,
-	"tooltip": "Barracks units train extremely fast in large batches.",
-	"modifications": [{"value": "ProductionQueue/BatchTimeModifier", "add": -0.2}],
+	"tooltip": "Barracks units train EXTREMELY fast in large batches.",
+	"modifications": [{"value": "ProductionQueue/BatchTimeModifier", "add": -0.25}],
 	"affects": ["Barracks"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

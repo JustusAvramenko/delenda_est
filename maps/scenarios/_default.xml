@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Scenario version="6">
-	<Terrain patches="16" texture="grass1_spring" priority="0" height="2048"/>
+	<Terrain patches="16" texture="alpine_grass_fancy" priority="0" height="2048"/>
 	<Environment>
-		<LightingModel>standard</LightingModel>
-		<SkySet>cumulus</SkySet>
-		<SunColor r="0.749020" g="0.749020" b="0.749020"/>
+		<SkySet>default</SkySet>
+		<SunColor r="1.07695" g="1.07695" b="1.07695"/>
 		<SunElevation angle="0.785398"/>
-		<SunRotation angle="5.49779"/>
+		<SunRotation angle="-0.785396"/>
 		<TerrainAmbientColor r="0.501961" g="0.501961" b="0.501961"/>
 		<UnitsAmbientColor r="0.501961" g="0.501961" b="0.501961"/>
 		<Fog>
-			<FogFactor>0.0</FogFactor>
-			<FogThickness>0</FogThickness>
-			<FogColor r="0.756863" g="0.784314" b="0.831373"/>
+			<FogFactor>0.00199219</FogFactor>
+			<FogThickness>0.129883</FogThickness>
+			<FogColor r="0.8" g="0.8" b="0.898039"/>
 		</Fog>
 		<Water>
 			<WaterBody>
 				<Type>ocean</Type>
-				<Color r="0.3" g="0.35" b="0.7"/>
+				<Color r="0.298039" g="0.34902" b="0.698039"/>
+				<Tint r="0.278431" g="0.298039" b="0.588235"/>
 				<Height>5</Height>
-				<Waviness>4.0</Waviness>
+				<Waviness>4</Waviness>
 				<Murkiness>0.45</Murkiness>
-				<Tint r="0.28" g="0.3" b="0.59"/>
+				<WindAngle>0</WindAngle>
 			</WaterBody>
 		</Water>
+		<Postproc>
+			<Brightness>0</Brightness>
+			<Contrast>1</Contrast>
+			<Saturation>0.921875</Saturation>
+			<Bloom>0.140234</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
 	</Environment>
 	<Camera>
 		<Position x="300" y="300" z="-100"/>
 		<Rotation angle="0"/>
-		<Declination angle="0.45"/>
+		<Declination angle="0.523599"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 	{
@@ -38,28 +45,28 @@
 		"PlayerData":
 		[
 			{
-				"Civ": "imp"
+				"Civ": "athen"
 			},
 			{
-				"Civ": "epir"
+				"Civ": "cart"
 			},
 			{
-				"Civ": "theb"
+				"Civ": "gaul"
+			},
+			{
+				"Civ": "iber"
 			},
 			{
 				"Civ": "mace"
 			},
 			{
-				"Civ": "athen"
+				"Civ": "pers"
 			},
 			{
-				"Civ": "brit"
+				"Civ": "rome"
 			},
 			{
 				"Civ": "spart"
-			},
-			{
-				"Civ": "maur"
 			}
 		],
 		"CircularMap": true

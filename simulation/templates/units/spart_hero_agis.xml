@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_infantry_spearman">
+  <Auras datatype="tokens">
+	shield_wall
+  </Auras>
   <Health>
-    <Max>3000</Max>
+    <Max op="mul">3.0</Max>
   </Health>
   <Identity>
     <Civ>spart</Civ>
 	<Lang>greek</Lang>
 	<GenericName>Agis III</GenericName>
     <SpecificName>Agis</SpecificName>
-    <Tooltip>Traits: Medium Speed, Heavy Armor, Strong Attack.
+    <Tooltip>Traits: Medium Speed, High Health, Strong Attack, Hoplite.
 Strong Against: All Cavalry (1.5x).
 Weak Against: Ranged Units, Sword Infantry.
 No hero aura. Has 3x health of other infantry heroes. Basically an extremely tough Hoplite.</Tooltip>

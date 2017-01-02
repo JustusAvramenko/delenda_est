@@ -3,15 +3,26 @@
   <Auras datatype="tokens">statue_costs</Auras>
   <BuildRestrictions>
     <Category>Statue</Category>
+    <Distance>
+      <FromClass>Statue</FromClass>
+      <MinDistance>50</MinDistance>
+    </Distance>
   </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <stone>100</stone>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
   <Footprint replace="">
     <Circle radius="5.0"/>
-    <Height>12.0</Height>
+    <Height>18.0</Height>
   </Footprint>
   <GarrisonHolder disable=""/>
   <Health>
     <Max>1000</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>gaia</Civ>
@@ -19,7 +30,7 @@
     <SpecificName>Mnimeíon</SpecificName>
     <Classes datatype="tokens">-ConquestCritical</Classes>
     <VisibleClasses datatype="tokens">-City Town Statue</VisibleClasses>
-    <Tooltip>Build these to generate the Glory resource over time.</Tooltip>
+    <Tooltip>Build these to generate the Glory resource over time. Task units to pray at the statue to generate Glory even faster. Can only build 1 at a time, one after another.</Tooltip>
     <Icon>structures/statue.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
@@ -32,7 +43,7 @@
     <glory>200</glory>
   </Loot>
   <Obstruction>
-    <Static width="6.0" depth="6.0"/>
+    <Static width="8.0" depth="8.0"/>
   </Obstruction>
   <ResourceDropsite>
     <Types>glory</Types>
@@ -42,7 +53,7 @@
     <KillBeforeGather>false</KillBeforeGather>
     <Amount>Infinity</Amount>
     <Type>glory.praise</Type>
-    <MaxGatherers>10</MaxGatherers>
+    <MaxGatherers>5</MaxGatherers>
 	<DiminishingReturns>0.90</DiminishingReturns>
   </ResourceSupply>
   <ResourceTrickle>
@@ -58,7 +69,7 @@
     </SoundGroups>
   </Sound>
   <VisualActor>
-    <Actor>props/special/eyecandy/statue_aphrodite_huge.xml</Actor>
+    <Actor>structures/athenians/cult_statue.xml</Actor>
     <FoundationActor>structures/carthaginians/fndn_wooden_tower.xml</FoundationActor>
   </VisualActor>
 </Entity>
