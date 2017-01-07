@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="base" frequency="1">
+     <mesh>structural/maur_statue_buddha.dae</mesh>
+    <textures>
+	  	<texture file="structural/maur_buddha.png" name="baseTex"/>
+	  	<texture file="structural/maur_buddha_spec.png" name="specTex"/>
+		 <texture file="structural/maur_buddha_norm.png" name="normTex"/>
+	  </textures>
+      <props>
+        <prop actor="props/structures/mauryans/maur_buddha_flowers.xml" attachpoint="root"/>
+      </props>    
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>
