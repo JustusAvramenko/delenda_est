@@ -37,7 +37,8 @@
   <Identity>
     <GenericName>City Gate</GenericName>
     <Tooltip>Allow units access through a city wall. Can be locked to prevent access.</Tooltip>
-    <Classes datatype="tokens">-ConquestCritical StoneWall Gates</Classes>
+	<VisibleClasses datatype="tokens">Wall StoneWall Gates</VisibleClasses>
+    <Classes datatype="tokens">-ConquestCritical -NotField</Classes>
     <Icon>structures/gate.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
@@ -73,6 +74,6 @@
     <Weight>65535</Weight>
   </TerritoryInfluence>
   <VisualActor>
-    <FoundationActor>structures/fndn_wall.xml</FoundationActor>
+    <FoundationActor>structures/fndn_wall_long.xml</FoundationActor>
   </VisualActor>
 </Entity>

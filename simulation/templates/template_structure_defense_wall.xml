@@ -23,7 +23,8 @@
     <SpawnEntityOnDeath>rubble/rubble_wall</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <Classes datatype="tokens">-ConquestCritical Defensive StoneWall</Classes>
+	<VisibleClasses datatype="tokens">Wall StoneWall</VisibleClasses>
+    <Classes datatype="tokens">-ConquestCritical -NotField</Classes>
     <GenericName>Stone Wall</GenericName>
     <Tooltip>Wall off your town for a stout defense.</Tooltip>
     <Icon>structures/wall.png</Icon>
@@ -56,7 +57,4 @@
   <Vision>
     <Range>20</Range>
   </Vision>
-  <VisualActor>
-    <FoundationActor>structures/fndn_wall.xml</FoundationActor>
-  </VisualActor>
 </Entity>

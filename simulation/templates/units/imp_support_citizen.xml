@@ -7,7 +7,12 @@
       <Crush>0.0</Crush>
       <MaxRange>4.0</MaxRange>
       <RepeatTime>1000</RepeatTime>
-      <RestrictedClasses datatype="tokens">Infantry Cavalry Champion Structure CitizenSoldier MercenaryCamp</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">
+	    Soldier
+		Structure
+		Ships
+		MercenaryCamp
+	  </RestrictedClasses>
     </Melee>
     <Slaughter>
       <Hack>25.0</Hack>
@@ -53,7 +58,7 @@
     <SpecificName>Civis Romanum</SpecificName>
     <GenericName>Roman Citizen</GenericName>
 	<VisibleClasses datatype="tokens">Citizen Builder Gatherer</VisibleClasses>
-	<Classes datatype="tokens">CivisRomanum</Classes>
+	<Classes datatype="tokens">CivisRomanum Worker</Classes>
 	<Tooltip>Build civilian buildings and gather resources. Command nearby slaves to work faster. Especially good at building.</Tooltip>
     <Icon>units/imp_support_citizen.png</Icon>
 	<SelectionGroupName>units/imp_support_citizen</SelectionGroupName>

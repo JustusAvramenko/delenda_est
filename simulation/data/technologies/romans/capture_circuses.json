@@ -1,15 +1,15 @@
 {
 	"genericName": "Bread and Circuses",
 	"description": "Cultural events utilizing religion were intertwined with mass entertainment. Sometimes these events were sponsored by the rich and powerful in order to curry favor with the gods and, of course, with the people.",
-	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 300},
+	"cost": {"food": 500, "wood": 0, "stone": 0, "glory": 500},
 	"requirements": {"tech": "phase_imperial"},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "games.png",
 	"researchTime": 60,
-	"tooltip": "Buildings +50% capture points for more cultural happiness.",
+	"tooltip": "More cultural happiness means capturable units and buildings +50% capture points.",
 	"modifications": [
 		{"value": "Capturable/CapturePoints", "multiply": 1.5}
 	],
-	"affects": ["Structure"],
+	"affects": ["Structure", "Unit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

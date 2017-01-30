@@ -22,44 +22,56 @@
     <VisibleGarrisonPoints>
       <Archer1>
         <X>0</X><Y>11.5</Y><Z>0</Z>
-        <VisibleGarrisonAllowedClasses datatype="tokens">
-          Infantry+Ranged
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
 		  Siege+BoltShooter
-        </VisibleGarrisonAllowedClasses>
+		</VisibleGarrisonAllowedClasses>
       </Archer1>
       <Archer2>
         <X>8</X><Y>11.5</Y><Z>0</Z>
-        <VisibleGarrisonAllowedClasses datatype="tokens">
-          Infantry+Ranged
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
 		  Siege+BoltShooter
-        </VisibleGarrisonAllowedClasses>
+		</VisibleGarrisonAllowedClasses>
       </Archer2>
       <Archer3>
         <X>-8</X><Y>11.5</Y><Z>0</Z>
-        <VisibleGarrisonAllowedClasses datatype="tokens">
-          Infantry+Ranged
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
 		  Siege+BoltShooter
-        </VisibleGarrisonAllowedClasses>
+		</VisibleGarrisonAllowedClasses>
       </Archer3>
       <Archer4>
         <X>4</X><Y>11.5</Y><Z>0</Z>
-        <VisibleGarrisonAllowedClasses datatype="tokens">
-          Infantry+Ranged
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
 		  Siege+BoltShooter
-        </VisibleGarrisonAllowedClasses>
+		</VisibleGarrisonAllowedClasses>
       </Archer4>
       <Archer5>
         <X>-4</X><Y>11.5</Y><Z>0</Z>
-        <VisibleGarrisonAllowedClasses datatype="tokens">
-          Infantry+Ranged
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
 		  Siege+BoltShooter
-        </VisibleGarrisonAllowedClasses>
+		</VisibleGarrisonAllowedClasses>
       </Archer5>
     </VisibleGarrisonPoints>
   </GarrisonHolder>
   <Identity>
     <Classes datatype="tokens">LongWall</Classes>
     <Tooltip>Long wall segments can be converted to gates.</Tooltip>
-    <GateConversionTooltip>Convert Stone Wall into City Gate</GateConversionTooltip>
   </Identity>
+  <Upgrade>
+    <Gate> 
+      <Entity>structures/{civ}_wall_gate</Entity> 
+      <Tooltip>Upgrade this long wall section to a passable gate.</Tooltip>
+      <Cost> 
+        <stone>100</stone> 
+      </Cost> 
+      <Time>5</Time> 
+    </Gate> 
+  </Upgrade>
+  <VisualActor>
+    <FoundationActor>structures/fndn_wall_long.xml</FoundationActor>
+  </VisualActor>
 </Entity>

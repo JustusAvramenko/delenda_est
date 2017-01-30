@@ -31,9 +31,9 @@
     <SelectionGroupName>other/wallset_palisade</SelectionGroupName>
     <SpecificName>Palisade</SpecificName>
     <GenericName>Wooden Wall</GenericName>
-    <Classes datatype="tokens">-StoneWall Palisade</Classes>
+    <VisibleClasses datatype="tokens">-StoneWall Palisade</VisibleClasses>
     <History>A cheap, quick defensive structure constructed with sharpened tree trunks</History>
-    <Icon>gaia/special_palisade.png</Icon>
+    <Icon>structures/palisade_wall.png</Icon>
 	<RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Obstruction>
@@ -42,16 +42,16 @@
   <StatusBars>
     <HeightOffset>9.0</HeightOffset>
   </StatusBars>
-  <Upgrade> 
-    <Gate> 
-      <Entity>other/palisades_rocks_gate</Entity> 
-      <Cost> 
-        <stone>0</stone> 
-        <wood>20</wood> 
-      </Cost> 
-      <Time>5000</Time> 
-    </Gate> 
-  </Upgrade> 
+  <Upgrade>
+    <Gate>
+      <Entity>other/palisades_rocks_gate</Entity>
+      <Cost>
+        <stone>0</stone>
+        <wood>20</wood>
+      </Cost>
+      <Time>5</Time>
+    </Gate>
+  </Upgrade>
   <VisualActor>
     <Actor>props/special/palisade_rocks_long.xml</Actor>
     <FoundationActor>structures/fndn_1x3pal.xml</FoundationActor>

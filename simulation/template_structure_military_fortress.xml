@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military">
+  <Attack>
+    <Ranged>
+      <Hack>0.0</Hack>
+      <Pierce>15.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>50.0</MaxRange>
+      <MinRange>20.0</MinRange>
+      <ProjectileSpeed>50.0</ProjectileSpeed>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Spread>1.5</Spread>
+      <PreferredClasses datatype="tokens">Organic</PreferredClasses>
+      <Bonuses>
+          <NerfSiege>
+              <Classes>Siege</Classes>
+              <Multiplier>0.75</Multiplier>
+          </NerfSiege>
+      </Bonuses>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+    wall_battlements
+  </Auras>
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+    <MaxArrowCount>5</MaxArrowCount>
+	<GarrisonArrowClasses>Soldier Ranged</GarrisonArrowClasses>
+  </BuildingAI>
+  <BuildRestrictions>
+    <Category>Fortress</Category>
+	<Territory>own</Territory>
+    <Distance>
+      <FromClass>Fortress</FromClass>
+      <MinDistance>60</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <PopulationBonus>10</PopulationBonus>
+    <BuildTime>400</BuildTime>
+    <Resources>
+      <wood>0</wood>
+      <stone>650</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="30.0" depth="30.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>20</Max>
+    <EjectHealth>0.075</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Cavalry Siege</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>6</LoadingRange>
+    <VisibleGarrisonPoints>
+      <Archer1>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer1>
+      <Archer2>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer2>
+      <Archer3>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer3>
+      <Archer4>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer4>
+      <Archer5>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer5>
+      <Archer6>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer6>
+      <Archer7>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer7>
+      <Archer8>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer8>
+      <Archer9>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer9>
+      <Archer10>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer10>
+      <Archer11>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer11>
+      <Archer12>
+	    <VisibleGarrisonAllowedClasses datatype="tokens">
+		  Ranged+Infantry
+		  Siege+BoltShooter
+		</VisibleGarrisonAllowedClasses>
+      </Archer12>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
+  <Health>
+    <Max>6000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Fortress</GenericName>
+    <Tooltip>Train heroes, champions, and siege weapons. Research siege weapon improvements. Garrison: 20.</Tooltip>
+    <Classes datatype="tokens">GarrisonFortress</Classes>
+    <VisibleClasses datatype="tokens">
+      Defensive
+      City
+      Fortress
+	  Ranged
+    </VisibleClasses>
+    <Icon>structures/fortress.png</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <xp>500</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>100</stone>
+    <metal>0</metal>
+    <glory>300</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+      pair_champ_02
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_fortress.xml</select>
+      <constructed>interface/complete/building/complete_fortress.xml</constructed>
+      <attack>attack/weapon/arrowfly.xml</attack>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>60</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>70</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

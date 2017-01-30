@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic">
+  <Auras datatype="tokens">
+	greek_architecture
+  </Auras>
+  <BuildRestrictions>
+    <Category>Stoa</Category>
+  </BuildRestrictions>
+  <Capturable disable=""/>
+  <Cost>
+    <PopulationBonus>5</PopulationBonus>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>100</stone>
+      <metal>100</metal>
+      <glory>500</glory>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="28" depth="12.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_6x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Greek Stoa</GenericName>
+    <SpecificName>Hellenic Stoa</SpecificName>
+    <VisibleClasses datatype="tokens">CivBonus</VisibleClasses>
+    <History>A structure built for civic purposes. Stoa eventually became meeting places for philosophy and commerce. They were usually built within the Agora, or city center, of a Greek city.</History>
+    <Tooltip>The Greek Architecture bonus is in effect as long as the Stoa stands.</Tooltip>
+    <Icon>structures/colony.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <food>0</food>
+    <wood>50</wood>
+    <stone>50</stone>
+    <metal>50</metal>
+    <glory>200</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="26.0" depth="10.5"/>
+  </Obstruction>
+  <ProductionQueue disable=""/>
+  <RallyPoint disable=""/>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>36</Radius>
+    <Weight>65535</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>special/greek_stoa.xml</Actor>
+    <FoundationActor>structures/fndn_6x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

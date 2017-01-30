@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="other/palisades_rocks_long">
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <stone>10</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>cart</Civ>
+    <SelectionGroupName>structures/cart_wallset_short</SelectionGroupName>
+    <SpecificName>Low Wall</SpecificName>
+    <GenericName>Stone Palisade</GenericName>
+    <Icon>structures/cart_low_wall.png</Icon>
+  </Identity>
+  <Upgrade>
+    <Gate>
+      <Entity>structures/cart_s_wall_gate</Entity>
+      <Cost>
+        <stone>0</stone>
+        <wood>20</wood>
+      </Cost>
+      <Time>5</Time>
+    </Gate>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/carthaginians/short_wall_long.xml</Actor>
+    <FoundationActor>structures/fndn_1x3pal.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>11.0</Length>
+  </WallPiece>
+</Entity>
