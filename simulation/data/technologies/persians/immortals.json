@@ -1,15 +1,14 @@
 {
 	"genericName": "Immortals",
-	"description": "The Anusiya champion infantry train twice as fast, but lose a little max health.",
+	"description": "The Anusiya champion infantry train twice as fast.",
 	"cost": {"glory": 300, "wood": 0, "stone": 0, "metal": 300},
 	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "pers"}]},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "immortals.png",
 	"researchTime": 40,
-	"tooltip": "Anusiya Champion Infantry -50% train time, but also -5% health.",
+	"tooltip": "Anusiya Champion Infantry -50% train time.",
 	"modifications": [
-		{"value": "Cost/BuildTime", "multiply": 0.5},
-		{"value": "Health/Max", "multiply": 0.95}
+		{"value": "Cost/BuildTime", "multiply": 0.5}
 	],
 	"affects": ["Immortal"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
