@@ -1,49 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_civic_house">
-  <BuildRestrictions>
-    <Category>Tenement</Category>
-  </BuildRestrictions>
-  <Cost>
-    <PopulationBonus>25</PopulationBonus>
-    <BuildTime>100</BuildTime>
-    <Resources>
-      <wood>200</wood>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Square width="34.0" depth="22.0"/>
-    <Height>5.0</Height>
-  </Footprint>
-  <GarrisonHolder>
-    <Max>10</Max>
-  </GarrisonHolder>
-  <Health>
-    <Max>1500</Max>
-	<SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
-  </Health>
+<Entity parent="template_structure_civic_house_big">
   <Identity>
-    <Civ>imp</Civ>
-    <SpecificName>Insula</SpecificName>
-    <History>.</History>
+    <Civ>rome</Civ>
+    <SpecificName>Domus</SpecificName>
+    <History>The word "domus" is the root of the English word "domicile" which means house or home. The typical middle and upper-class Roman Domus had many rooms, a skylight to collect water and provide sunlight, and a tile roof. An attached garden was later included under Hellenistic influence.</History>
   </Identity>
-  <Obstruction>
-    <Static width="32.0" depth="20.0"/>
-  </Obstruction>
   <ProductionQueue>
     <Technologies datatype="tokens">
       -unlock_females_house
 	  -health_females_01
-	  romans_imperial/health_citizens_01
     </Technologies>
   </ProductionQueue>
-  <TerritoryDecay>
-    <DecayRate>200</DecayRate>
-  </TerritoryDecay>
-  <TerritoryInfluence>
-    <Radius>30</Radius>
-  </TerritoryInfluence>
   <VisualActor>
-    <Actor>structures/romans_imperial/insula.xml</Actor>
-	<FoundationActor>structures/fndn_6x4.xml</FoundationActor>
+    <Actor>structures/romans/house.xml</Actor>
   </VisualActor>
 </Entity>

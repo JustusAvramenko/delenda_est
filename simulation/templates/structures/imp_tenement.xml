@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_house">
+  <BuildRestrictions>
+    <Category>Tenement</Category>
+  </BuildRestrictions>
+  <Cost>
+    <PopulationBonus>25</PopulationBonus>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="34.0" depth="22.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>1500</Max>
+	<SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Insula</SpecificName>
+    <GenericName>Tenement Building</GenericName>
+    <VisibleClasses datatype="tokens">-Village City</VisibleClasses>
+    <History>An insula (Latin for "island," plural insulae) was a kind of apartment building that housed most of the urban citizen population of ancient Rome, including ordinary people of lower- or middle-class status (the plebs) and all but the wealthiest from the upper-middle class (the equites). The term was also used to mean a city block.
+
+The traditional elite and the very wealthy lived in a domus, a large single-family residence, but the two kinds of housing were intermingled in the city and not segregated into separate neighborhoods.[4] The ground-level floor of the insula was used for tabernae, shops and businesses, with the living space upstairs. Like modern apartment buildings, an insula might have a name, usually referring to the owner of the building. [wikipedia]</History>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Icon>structures/tenement.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="32.0" depth="20.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+      -unlock_females_house
+	  -health_females_01
+	  romans_imperial/health_citizens_01
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryDecay>
+    <DecayRate>200</DecayRate>
+  </TerritoryDecay>
+  <TerritoryInfluence>
+    <Radius>30</Radius>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/romans_imperial/insula.xml</Actor>
+	<FoundationActor>structures/fndn_6x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>
