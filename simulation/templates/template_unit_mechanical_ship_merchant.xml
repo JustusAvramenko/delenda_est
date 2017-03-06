@@ -28,7 +28,7 @@
     <GenericName>Merchantman</GenericName>
     <Tooltip>
 Trade between docks. Garrison a Trader aboard for additional profit (+20% for each garrisoned). Gather profitable aquatic treasures.</Tooltip>
-    <VisibleClasses datatype="tokens">Trader MerchantShip</VisibleClasses>
+    <VisibleClasses datatype="tokens">Trader MerchantShip Bribable</VisibleClasses>
     <RequiredTechnology>phase_town</RequiredTechnology>
     <Formations disable=""/>
   </Identity>
@@ -60,4 +60,7 @@ Trade between docks. Garrison a Trader aboard for additional profit (+20% for ea
   <Vision>
     <Range>50</Range>
   </Vision>
+  <VisionSharing> 
+    <Bribable>true</Bribable> 
+  </VisionSharing> 
 </Entity>
