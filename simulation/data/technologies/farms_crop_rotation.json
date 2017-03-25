@@ -4,15 +4,16 @@
 		"rome": "Latifundia",
 		"imp": "Latifundia"
 	},
+	"supersedes": "gather_farming_cultivation",
 	"description": "Crop Rotation and Land Reform.",
 	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 500},
 	"requirements": {"tech": "phase_imperial"},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "crop_rotation.png",
 	"researchTime": 60,
-	"tooltip": "Crop Rotation brings +20% farming rate. Land Reform gives -25% Farm Field cost.",
+	"tooltip": "Crop Rotation brings +15% farming rate. Land Reform gives -25% Farm Field cost.",
 	"modifications": [
-		{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.2, "affects": "Gatherer"},
+		{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15, "affects": "Gatherer"},
 		{"value": "Cost/Resources/wood", "multiply": 0.75, "affects": "Field"}
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
