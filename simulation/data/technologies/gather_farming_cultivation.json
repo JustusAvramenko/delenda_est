@@ -6,8 +6,10 @@
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "olives.png",
 	"researchTime": 40,
-	"tooltip": "Gatherers +15% farming rate. Unlocks Crop Rotation and Land Reform.",
-	"modifications": [{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15}],
+	"tooltip": "Gatherers +20 food capacity. Unlocks Crop Rotation and Land Reform for some civilizations.",
+	"modifications": [
+		{"value": "ResourceGatherer/Capacities/food", "add": 20}
+	],
 	"affects": ["Gatherer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

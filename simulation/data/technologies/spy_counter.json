@@ -1,0 +1,13 @@
+{
+	"genericName": "Counter Espionage",
+	"description": "Recruit a network of informants to watch over your people.",
+	"cost": { "food": 400, "wood": 0, "stone": 0, "metal": 400, "glory": 0 },
+	"supersedes": "unlock_spies",
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase. Requires Espionage.",
+	"icon": "vial_poison.png",
+	"researchTime": 60,
+	"tooltip": "Player's units +50% more costly to bribe. It costs the enemy more money to bribe your units",
+	"modifications": [{ "value": "Player/SpyCostMultiplier", "multiply": 1.5 }],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
