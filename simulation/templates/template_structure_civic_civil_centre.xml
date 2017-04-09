@@ -20,6 +20,9 @@
       <Spread>1.5</Spread>
     </Ranged>
   </Attack>
+  <Auras datatype="tokens">
+	civic_spaces
+  </Auras>
   <BuildingAI>
     <DefaultArrowCount>3</DefaultArrowCount>
     <GarrisonArrowMultiplier>0.5</GarrisonArrowMultiplier>
@@ -73,7 +76,7 @@
       CivCentre
 	  CivilCentre
 	</Classes>
-    <VisibleClasses datatype="tokens">City CivicCenter</VisibleClasses>
+    <VisibleClasses datatype="tokens">Dropsite City CivicCenter</VisibleClasses>
     <Icon>structures/civic_centre.png</Icon>
   </Identity>
   <Loot>
@@ -99,6 +102,10 @@
 	  phase_imperial
     </Technologies>
   </ProductionQueue>
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+	<Sharable>false</Sharable>
+  </ResourceDropsite>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_civ_center.xml</select>
