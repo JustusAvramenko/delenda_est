@@ -10,10 +10,9 @@
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "spear.png",
 	"researchTime": 60,
-	"tooltip": "Champion cavalry +2 hack attack, but +10 metal cost. (TODO: Make this a charge bonus instead)",
+	"tooltip": "Champion cavalry +20% hack attack. (TODO: Make this a charge bonus instead)",
 	"modifications": [
-		{"value": "Attack/Melee/Hack", "add": 2.0},
-		{"value": "Cost/Resources/metal", "add": 10}
+		{"value": "Attack/Melee/Hack", "multiply": 1.2}
 	],
 	"affects": ["Champion Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

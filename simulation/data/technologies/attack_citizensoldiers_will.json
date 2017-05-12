@@ -17,10 +17,10 @@
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "payment.png",
 	"researchTime": 40,
-	"tooltip": "All citizen-soldiers +2 attack.",
+	"tooltip": "All citizen-soldiers +20% attack.",
 	"modifications": [
-		{"value": "Attack/Melee/Hack", "add": 2.0, "affects": "CitizenSoldier Melee"},
-		{"value": "Attack/Ranged/Pierce", "add": 2.0, "affects": "CitizenSoldier Ranged"}
+		{"value": "Attack/Melee/Hack", "multiply": 1.2, "affects": "CitizenSoldier Melee"},
+		{"value": "Attack/Ranged/Pierce", "multiply": 1.2, "affects": "CitizenSoldier Ranged"}
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
