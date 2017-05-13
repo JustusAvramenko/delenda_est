@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Han Chinese storehouse">
+      <mesh>structural/chin_storehouse.dae</mesh>
+      <props>
+        <prop actor="props/wooden_planks.xml" attachpoint="below_side_shed"/>
+        <prop actor="props/wooden_cart.xml" attachpoint="main_building_west"/>
+        <prop actor="props/wooden_bars.xml" attachpoint="main_building_east"/>
+        <prop actor="props/wooden_bars.xml" attachpoint="small_wall_infront"/>
+        <prop actor="props/wooden_cart_big.xml" attachpoint="main_building_inside"/>
+        <prop actor="structures/chinese/storehouse_props.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/rome_corral_mud.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/chin_struct2.png" name="baseTex"/>
+        <texture file="structural/chin_struct2_norm.png" name="normTex"/>
+        <texture file="structural/chin_struct2_spec.png" name="specTex"/>
+        <texture file="structural/ao/chin_storehouse_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+
+  <!-- variants of attachments to root -->
+  <group>
+    <variant frequency="50" name="many">
+      <props>
+        <prop actor="structures/chinese/storehouse_props.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/rome_corral_mud.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="50" name="few">
+      <props>
+        <prop actor="props/structures/decals/rome_corral_mud.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  
+  <!-- animation variants -->
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

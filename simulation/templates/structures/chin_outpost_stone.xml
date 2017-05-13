@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/chin_outpost">
+  <Health>
+    <Max>600</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Stone Outpost</GenericName>
+    <VisibleClasses datatype="tokens">-Village Town -Wood Stone</VisibleClasses>
+    <Icon>structures/outpost_stone.png</Icon>
+  </Identity>
+  <TerritoryDecay>
+    <DecayRate op="mul">0.75</DecayRate>
+  </TerritoryDecay>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>structures/chinese/outpost_stone.xml</Actor>
+  </VisualActor>
+</Entity>

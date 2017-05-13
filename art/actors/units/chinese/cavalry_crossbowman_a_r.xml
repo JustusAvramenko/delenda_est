@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+	<castshadow/>
+	<group>
+		<variant frequency="100" name="Base">
+			<animations>
+				<animation file="biped/cavalryidle.psa" name="Idle" speed="50"/>
+				<animation file="biped/cavalryidle.psa" name="Walk" speed="50"/>
+				<animation file="biped/rider_gallop.psa" name="Run" speed="40"/>
+				<animation event="0.84" file="cavalry/arch/attack/rider_archer_atk_a.psa" load="0.16" name="attack_ranged" speed="100"/>
+				<animation event="0.5" file="cavalry/sword/attack/rider_sword_shield_atk_a.psa" name="attack_slaughter" speed="400"/>
+				<animation event="0.5" file="cavalry/sword/attack/rider_sword_shield_atk_a.psa" name="gather_meat" speed="350"/>
+				<animation event="0.5" file="cavalry/spear/attack/rider_spear_shield_atk_a.psa" name="gather_meat" speed="350"/>
+				<animation file="biped/rider_sword_death_a.psa" name="death" speed="230"/>
+			</animations>
+			<mesh>skeletal/m_pants_celt.dae</mesh>
+			<props>
+				<prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
+				<prop actor="props/units/weapons/arrow_back.xml" attachpoint="loaded-r_hand"/>
+				<prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+				<prop actor="props/units/weapons/chin_rcrossbow.xml" attachpoint="l_hand"/>
+				<prop actor="props/units/quiver_hip.xml" attachpoint="l_hip"/>
+			</props>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="Clothes-1">
+			<textures>
+				<texture file="skeletal/chin_isp_b_black.png" name="baseTex"/>
+			</textures>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="cap-var">
+			<props>
+				<prop actor="props/units/heads/chin_cap.xml" attachpoint="helmet"/>
+			</props>
+		</variant>
+		<variant frequency="1" name="open_helmet">
+			<props>
+				<prop actor="props/units/heads/chin_hairbun.xml" attachpoint="helmet"/>
+				<prop actor="props/units/heads/chin_advanced_melee_helmet.xml" attachpoint="helmet"/>				
+			</props>
+		</variant>
+		<variant frequency="1" name="feather_helmet">
+			<props>
+				<prop actor="props/units/heads/chin_heavy_helmet_b.xml" attachpoint="helmet"/>
+			</props>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="100" name="Idle"/>
+		<variant name="attack_ranged">
+			<props>
+				<prop actor="props/units/weapons/chin_rcrossbow.xml" attachpoint="l_hand"/>
+				<prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+			</props>
+		</variant>
+		<variant name="attack_slaughter">
+			<props>
+				<prop actor="props/units/tools/tool_knife.xml" attachpoint="r_hand">
+				</prop>
+			</props>
+		</variant>
+		<variant name="gather_tree">
+			<props>
+				<prop attachpoint="shield"/>
+				<prop attachpoint="r_hand"/>
+				<prop actor="props/units/tools/axe.xml" attachpoint="l_hand"/>
+			</props>
+		</variant>
+		<variant name="gather_grain">
+			<props>
+				<prop attachpoint="shield"/>
+				<prop attachpoint="r_hand"/>
+				<prop actor="props/units/tools/hoe.xml" attachpoint="l_hand"/>
+			</props>
+		</variant>
+		<variant name="gather_fruit">
+			<props>
+				<prop attachpoint="shield"/>
+				<prop attachpoint="r_hand"/>
+				<prop attachpoint="l_hand"/>
+				<prop actor="props/units/tools/basket.xml" attachpoint="l_leg"/>
+			</props>
+		</variant>
+		<variant name="gather_meat">
+			<props>
+				<prop attachpoint="shield"/>
+				<prop attachpoint="r_hand"/>
+				<prop attachpoint="l_hand"/>
+				<prop actor="props/units/tools/basket.xml" attachpoint="l_leg"/>
+			</props>
+		</variant>
+		<variant name="gather_rock">
+			<props>
+				<prop attachpoint="shield"/>
+				<prop attachpoint="r_hand"/>
+				<prop actor="props/units/tools/pick.xml" attachpoint="l_hand"/>
+			</props>
+		</variant>
+		<variant name="gather_ore">
+			<props>
+				<prop attachpoint="shield"/>
+				<prop attachpoint="r_hand"/>
+				<prop actor="props/units/tools/pick.xml" attachpoint="l_hand"/>
+			</props>
+		</variant>
+		<variant name="gather_ruins">
+			<props>
+				<prop attachpoint="shield"/>
+				<prop attachpoint="r_hand"/>
+				<prop actor="props/units/tools/pick.xml" attachpoint="l_hand"/>
+			</props>
+		</variant>
+		<variant name="Build">
+			<props>
+				<prop attachpoint="shield"/>
+				<prop attachpoint="l_hand"/>
+				<prop actor="props/units/tools/mallet.xml" attachpoint="r_hand"/>
+			</props>
+		</variant>
+		<variant name="carry_food">
+			<props>
+				<prop actor="props/units/shuttle_basket.xml" attachpoint="r_hand"/>
+				<prop attachpoint="l_hand"/>
+				<prop attachpoint="helmet"/>
+				<prop attachpoint="shield"/>
+			</props>
+		</variant>
+		<variant name="carry_meat">
+			<props>
+				<prop actor="props/units/shuttle_meat.xml" attachpoint="r_hand"/>
+				<prop attachpoint="l_hand"/>
+				<prop attachpoint="helmet"/>
+				<prop attachpoint="shield"/>
+			</props>
+		</variant>
+		<variant name="carry_wood">
+			<props>
+				<prop actor="props/units/shuttle_wood.xml" attachpoint="r_hand"/>
+				<prop actor="" attachpoint="l_hand"/>
+				<prop attachpoint="helmet"/>
+				<prop attachpoint="shield"/>
+			</props>
+		</variant>
+		<variant name="carry_stone">
+			<props>
+				<prop actor="props/units/shuttle_stone.xml" attachpoint="r_hand"/>
+				<prop actor="" attachpoint="l_hand"/>
+				<prop attachpoint="helmet"/>
+				<prop attachpoint="shield"/>
+			</props>
+		</variant>
+		<variant name="carry_metal">
+			<props>
+				<prop actor="props/units/shuttle_metal.xml" attachpoint="r_hand"/>
+				<prop actor="" attachpoint="l_hand"/>
+				<prop attachpoint="helmet"/>
+				<prop attachpoint="shield"/>
+			</props>
+		</variant>
+	</group>
+	<material>player_trans.xml</material>
+</actor>

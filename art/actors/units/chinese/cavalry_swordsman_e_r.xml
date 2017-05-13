@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+	<castshadow/>
+	<group>
+		<variant frequency="100" name="Base">
+			<animations>
+				<animation file="biped/cavalryidle.psa" name="Idle" speed="50"/>
+				<animation file="biped/cavalryidle.psa" name="Walk" speed="18"/>
+				<animation file="biped/rider_gallop.psa" name="Run" speed="40"/>
+				<animation event="0.5" file="cavalry/sword/attack/rider_sword_shield_atk_a.psa" name="attack_melee" speed="400"/>
+				<animation event="0.5" file="cavalry/sword/attack/rider_sword_shield_atk_a.psa" name="attack_slaughter" speed="400"/>
+				<animation file="biped/rider_sword_death_a.psa" name="death" speed="240"/>
+				<animation event="0.5" file="cavalry/sword/attack/rider_sword_shield_atk_a.psa" name="gather_meat" speed="400"/>
+			</animations>
+			<mesh>skeletal/m_pants_celt.dae</mesh>
+			<props>
+				<prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
+				<prop actor="props/units/weapons/chin_swords_cavalry.xml" attachpoint="r_hand"/>
+				<prop actor="props/units/shields/chin_shield3.xml" attachpoint="shield"/>
+				<prop actor="props/units/heads/chin_cavalry_swordsman_helmet.xml" attachpoint="helmet"/>
+			</props>
+		</variant>
+	</group>
+		<group>
+		<variant frequency="40" name="A">
+			<textures>
+				<texture file="skeletal/chin_isw_e_norm.png" name="normTex"/>
+				<texture file="skeletal/chin_isw_e.png" name="baseTex"/>
+				<texture file="skeletal/chin_isw_e_spec.png" name="specTex"/> 				
+			</textures>
+		</variant>
+		<variant frequency="20" name="B">
+			<textures>
+				<texture file="skeletal/chin_icr_e.png" name="baseTex"/>
+			</textures>
+		</variant>
+		<variant frequency="40" name="C">
+			<textures>
+				<texture file="skeletal/chin_isp_e_norm.png" name="normTex"/>
+				<texture file="skeletal/chin_isp_e_black.png" name="baseTex"/>
+				<texture file="skeletal/chin_isp_e_spec.png" name="specTex"/> 			
+			</textures>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="100" name="Idle"/>
+		<variant name="carry_meat">
+			<props>
+				<prop actor="props/units/shuttle_meat.xml" attachpoint="r_hand"/>
+				<prop attachpoint="l_hand"/>
+				<prop attachpoint="helmet"/>
+				<prop attachpoint="shield"/>
+			</props>
+		</variant>
+	</group>
+	<material>player_trans.xml</material>
+</actor>
+

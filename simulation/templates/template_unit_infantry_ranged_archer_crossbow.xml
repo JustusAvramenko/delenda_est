@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_archer">
+	<Identity>
+		<Classes datatype="tokens">Crossbow</Classes>
+		<GenericName>Crossbowman</GenericName>
+		<History>The crossbow occurred as early as 600BC or earlier in Asia and other places around the world, featuring bronze arrows.</History>
+		<RequiredTechnology>phase_town</RequiredTechnology>
+  	</Identity>
+  	<Attack>
+		<Ranged>
+		  	<Spread>1.9</Spread>  
+		  	<Pierce op="add">3.0</Pierce>
+		  	<MaxRange op="add">4.0</MaxRange>
+		  	<ProjectileSpeed>150.0</ProjectileSpeed>
+		  	<PrepareTime>1200</PrepareTime>
+		  	<RepeatTime>2000</RepeatTime>
+		</Ranged>
+  	</Attack>
+  	<Cost>
+		<BuildTime>5</BuildTime>
+		<Resources>
+		  	<food>30</food>
+		 	<wood>70</wood>
+			<metal>10</metal>
+		</Resources>
+  	</Cost>
+  	<Loot>
+		<wood>20</wood>
+  	</Loot>
+  	<UnitMotion>
+		<WalkSpeed op="add">-1.0</WalkSpeed>
+		<Run>
+	  		<Speed op="add">-1.0</Speed>
+		</Run>
+  	</UnitMotion>
+</Entity>

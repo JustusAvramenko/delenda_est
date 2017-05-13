@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant name="Chinese Towership">
+      <mesh>structural/chin_ship_tower.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+        <prop actor="props/structures/tower_sail.xml" attachpoint="root"/>
+      </props>
+	    <textures>
+        <texture file="structural/chin_ship.png" name="baseTex"/>
+        <texture file="structural/chin_ship_norm.png" name="normTex"/>
+        <texture file="structural/chin_ship_spec.png" name="specTex"/>
+		<texture file="structural/ao/chin_ship_tower_ao.png" name="aoTex"/>
+      </textures>
+	</variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

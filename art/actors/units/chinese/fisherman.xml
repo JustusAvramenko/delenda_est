@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base">
+      <animations>
+        <animation file="biped/fisherman_idle_1.dae" name="Idle" speed="100"/>
+        <animation file="biped/fisherman_idle_2.dae" name="Idle" speed="100"/>
+        <animation file="biped/fisherman_idle_3.dae" name="Idle" speed="100"/>
+        <animation file="biped/fisherman_row.dae" name="Walk" speed="20"/>
+        <animation file="biped/fisherman_row.dae" name="carry_food" speed="20"/>
+        <animation file="biped/fisherman_gather.dae" name="gather_fish" speed="130"/>
+        <animation file="biped/fisherman_death.dae" name="death" speed="100"/>
+      </animations>
+      <mesh>skeletal/m_pants_celt.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
+        <prop actor="props/units/row.xml" attachpoint="l_hand"/>
+        <prop actor="props/units/heads/chin_ricehat.xml" attachpoint="helmet"/>
+      </props>
+      <textures>
+        <texture file="skeletal/chin_iar_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

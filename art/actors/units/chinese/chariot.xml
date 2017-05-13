@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+	<castshadow/>
+	<group>
+		<variant>
+		<animations>
+		   <animation file="mechanical/chin_chariot_walk.dae" name="walk" speed="40"/>
+		   <animation file="mechanical/chin_chariot_walk.dae" name="run" speed="80"/>
+		</animations>
+			<mesh>structural/chin_chariot.dae</mesh>
+			<textures>
+				<texture file="structural/chin_struct2.png" name="baseTex"/>
+				<texture file="structural/chin_struct2_norm.png" name="normTex"/>
+				<texture file="structural/chin_struct2_spec.png" name="specTex"/>
+			</textures>
+			<props>
+			     <prop actor="units/chinese/infantry_driver.xml" attachpoint="rider1"/>
+			     <prop actor="units/chinese/infantry_rider.xml" attachpoint="rider2"/>
+			     <prop actor="units/chinese/chariot_horse.xml" attachpoint="horse1"/>
+			     <prop actor="units/chinese/chariot_horse.xml" attachpoint="horse2"/>
+			     <prop actor="units/chinese/chariot_horse.xml" attachpoint="horse3"/>
+			     <prop actor="units/chinese/chariot_horse.xml" attachpoint="horse4"/>
+				 <prop actor="props/special/common/garrison_flag_chin.xml" attachpoint="flag"/>
+			</props>
+		</variant>
+	</group>	
+	<material>player_trans_parallax_spec.xml</material>
+</actor>

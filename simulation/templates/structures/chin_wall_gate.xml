@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wall_gate">
+  <Footprint>
+    <Square width="38.5" depth="9.0"/>
+    <Height>20.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>3</Max>
+    <List datatype="tokens">Ranged+Infantry</List>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+    <VisibleGarrisonPoints>
+      <Archer1>
+        <X>0</X><Y>12.5</Y><Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>5</X><Y>12.5</Y><Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-5</X><Y>12.5</Y><Z>0</Z>
+      </Archer3>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
+  <Identity>
+    <Civ>chin</Civ>
+    <SpecificName>Chéng Mén</SpecificName>
+    <History>(Insert history)</History>
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Right width="14.5" depth="10" x="12" z="0"/>
+      <Left width="14.5" depth="10" x="-12" z="0"/>
+      <Door width="8" depth="10" x="0" z="0"/>
+    </Obstructions>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/chinese/wall_gate.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>42.0</Length>
+  </WallPiece>
+  <TerritoryInfluence>
+    <Radius>24</Radius>
+  </TerritoryInfluence>
+</Entity>

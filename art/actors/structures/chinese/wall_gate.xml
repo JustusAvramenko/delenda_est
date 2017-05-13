@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Wall gate">
+       <animations>
+        <animation file="mechanical/chin_wall_gate_closed.dae" name="gate_closed" speed="65"/>
+        <animation file="mechanical/chin_wall_gate_opening.dae" name="gate_opening" speed="65"/>
+        <animation file="mechanical/chin_wall_gate_opened.dae" name="gate_open" speed="65"/>
+        <animation file="mechanical/chin_wall_gate_closing.dae" name="gate_closing" speed="65"/>
+      </animations>
+      <mesh>structural/chin_wall_gate.dae</mesh>
+      <textures>
+        <texture file="structural/chin_struct2.png" name="baseTex"/>
+        <texture file="structural/chin_struct2_norm.png" name="normTex"/>
+        <texture file="structural/chin_struct2_spec.png" name="specTex"/>
+      </textures>
+ 		<props>
+			<prop actor="structures/chinese/wall_gate_gutters.xml"  attachpoint="root"/>
+			<prop actor="structures/chinese/wall_gate_struct.xml"  attachpoint="root"/>
+		</props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/gate_door.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="garrisoned">
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

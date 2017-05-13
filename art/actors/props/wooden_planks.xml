@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="base">
+      <mesh>props/wooden_planks.dae</mesh>
+      <textures>
+        <texture file="structural/chin_struct2.png" name="baseTex"/>
+        <texture file="structural/chin_struct2_norm.png" name="normTex"/>
+        <texture file="structural/chin_struct2_spec.png" name="specTex"/>
+        <texture file="structural/ao/chin_storehouse_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/bigflame.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

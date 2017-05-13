@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wall_medium">
+  <Footprint>
+    <Square width="26.5" depth="9.0"/>
+    <Height>9.0</Height>
+  </Footprint>
+   <GarrisonHolder>
+    <VisibleGarrisonPoints>
+      <Archer1>
+        <X>0</X><Y>10</Y><Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>4</X><Y>10</Y><Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-4</X><Y>10</Y><Z>0</Z>
+      </Archer3>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
+  <Identity>
+    <Civ>chin</Civ>
+	<SelectionGroupName>structures/chin_wallset_stone</SelectionGroupName>
+    <SpecificName>Yōng</SpecificName>
+    <History>Few civilizations are as widely recognized for their wall building as the Han Chinese.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="25.0" depth="7.5"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/chinese/wall_medium.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>25.0</Length>
+  </WallPiece>
+</Entity>

@@ -1,0 +1,13 @@
+{
+	"genericName": "Alternating fields",
+	"description": "The farmers divided their land into multiple parts. Every season one part would rest and be fallow. This reduces soil erosion and increases soil fertility.",
+	"cost": {"food": 100, "wood": 200, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "chin"}]},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "alternating_fields.png",
+	"researchTime": 40,
+	"tooltip": "-25% build cost for farms",
+	"modifications": [{"value": "Cost/Resources/wood", "multiply": 0.5}],
+	"affects": ["Field"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

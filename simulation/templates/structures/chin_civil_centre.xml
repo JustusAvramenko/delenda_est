@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Footprint>
+    <Square width="43.0" depth="35.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>chin</Civ>
+    <SpecificName>Guān Sì</SpecificName>
+    <History></History>
+  </Identity>
+  <Obstruction>
+    <Static width="41.0" depth="33.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_infantry_spearman_b
+    </Entities>
+  </ProductionQueue>
+  <VisualActor>
+  	<FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+    <Actor>structures/chinese/civil_centre.xml</Actor>
+  </VisualActor>
+</Entity>

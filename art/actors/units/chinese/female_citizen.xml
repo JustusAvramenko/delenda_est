@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/female_base.xml">
+      <mesh>skeletal/new/f_dress.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_female_chin.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="50" name="texture-01">
+      <textures>
+        <texture file="skeletal/chin_fem.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="50" name="texture-02">
+      <textures>
+        <texture file="skeletal/chin_fem2.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_melee_female.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/female_death.xml"/>
+    <variant file="biped/female_gather_tree.xml"/>
+    <variant file="biped/female_gather_grain.xml">
+      <props>
+        <prop actor="props/units/heads/chin_ricehat.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant file="biped/female_gather_fruit.xml"/>
+    <variant file="biped/female_gather_meat.xml"/>
+    <variant file="biped/female_gather_rock.xml"/>
+    <variant file="biped/female_gather_ore.xml"/>
+    <variant file="biped/female_gather_ruins.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/female_build.xml"/>
+    <variant file="biped/female_build_farm.xml"/>
+    <variant file="biped/female_carry_food.xml">
+      <props>
+        <prop actor="props/units/heads/chin_ricehat.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant file="biped/female_carry_meat.xml"/>
+    <variant file="biped/female_carry_wood.xml"/>
+    <variant file="biped/female_carry_stone.xml"/>
+    <variant file="biped/female_carry_metal.xml"/>
+    <variant file="biped/female_carry_food_idle.xml"/>
+    <variant file="biped/female_carry_meat_idle.xml"/>
+    <variant file="biped/female_carry_wood_idle.xml"/>
+    <variant file="biped/female_carry_stone_idle.xml"/>
+    <variant file="biped/female_carry_metal_idle.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

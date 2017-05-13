@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+	<castshadow/>
+	<group>
+		<variant name="base">
+			<mesh>structural/chin_government.dae</mesh>
+			<props>
+				<prop actor="props/structures/decals/gravel_5x5.xml" attachpoint="root"/>
+				<prop actor="props/structures/chin_government_bixie.xml" attachpoint="root"/>
+			</props>
+			<textures>
+				<texture file="structural/chin_struct2.png" name="baseTex"/>
+				<texture file="structural/chin_struct2_norm.png" name="normTex"/>
+				<texture file="structural/chin_struct2_spec.png" name="specTex"/>
+				<texture file="structural/ao/chin_government_ao.png" name="aoTex"/>
+			</textures>
+		</variant>
+	</group>
+	<material>player_trans_ao_parallax_spec.xml</material>
+</actor>

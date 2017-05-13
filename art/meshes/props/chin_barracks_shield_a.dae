@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Stanislas Dolcini</author>
+      <authoring_tool>Blender 2.71.0 commit date:2014-06-25, commit time:18:36, hash:9337574</authoring_tool>
+    </contributor>
+    <created>2014-07-26T15:07:17</created>
+    <modified>2014-07-26T15:07:17</modified>
+    <unit name="centimeter" meter="0.01"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects/>
+  <library_geometries>
+    <geometry id="Plane02_node-node-Geometry_001-mesh" name="Plane02_node-node-Geometry.001">
+      <mesh>
+        <source id="Plane02_node-node-Geometry_001-mesh-positions">
+          <float_array id="Plane02_node-node-Geometry_001-mesh-positions-array" count="18">-0.1746516 -0.008458316 -0.08388167 0.002178311 -9.78321e-4 0.1939183 -0.00202167 -0.006028234 -0.1938216 0.1747983 0.001451671 0.08396828 -0.08856165 0.003251612 -0.1389915 0.08825832 0.01076161 0.1388083</float_array>
+          <technique_common>
+            <accessor source="#Plane02_node-node-Geometry_001-mesh-positions-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane02_node-node-Geometry_001-mesh-normals">
+          <float_array id="Plane02_node-node-Geometry_001-mesh-normals-array" count="18">-0.1083712 0.9931638 0.04214602 -0.02221745 0.9996643 -0.01278722 -0.02221745 0.9996643 -0.01278722 -0.1081271 0.9932249 0.04208499 0.06421095 0.9956359 -0.06765949 0.06396675 0.9956359 -0.06759846</float_array>
+          <technique_common>
+            <accessor source="#Plane02_node-node-Geometry_001-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane02_node-node-Geometry_001-mesh-map-0">
+          <float_array id="Plane02_node-node-Geometry_001-mesh-map-0-array" count="24">0.49999 1 0.25 1 0.25 0 0.25 0 0.49999 0 0.49999 1 0.25 1 0 1 0 0 0 0 0.25 0 0.25 1</float_array>
+          <technique_common>
+            <accessor source="#Plane02_node-node-Geometry_001-mesh-map-0-array" count="12" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane02_node-node-Geometry_001-mesh-colors-Plane02_node-node-Geometry-color" name="Plane02_node-node-Geometry-color">
+          <float_array id="Plane02_node-node-Geometry_001-mesh-colors-Plane02_node-node-Geometry-color-array" count="36">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Plane02_node-node-Geometry_001-mesh-colors-Plane02_node-node-Geometry-color-array" count="12" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane02_node-node-Geometry_001-mesh-vertices">
+          <input semantic="POSITION" source="#Plane02_node-node-Geometry_001-mesh-positions"/>
+        </vertices>
+        <polylist count="4">
+          <input semantic="VERTEX" source="#Plane02_node-node-Geometry_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane02_node-node-Geometry_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Plane02_node-node-Geometry_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Plane02_node-node-Geometry_001-mesh-colors-Plane02_node-node-Geometry-color" offset="3" set="0"/>
+          <vcount>3 3 3 3 </vcount>
+          <p>1 0 0 0 5 1 1 1 4 2 2 2 4 2 3 3 0 3 4 4 1 0 5 5 5 1 6 6 3 4 7 7 2 5 8 8 2 5 9 9 4 2 10 10 5 1 11 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Plane02_node-node" name="Plane02_node-node" type="NODE">
+        <matrix sid="transform">1.374669 -4.941339 2.066032 8.476666 4.603556 -8.33393e-7 -3.063055 0.6999465 2.737259 2.481572 4.113908 5.555739 0 0 0 1</matrix>
+        <instance_geometry url="#Plane02_node-node-Geometry_001-mesh"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

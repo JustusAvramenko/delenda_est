@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>structural/chin_blacksmith.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/dirt_4x6.xml" attachpoint="root"/>
+		<prop actor="particle/flame.xml" attachpoint="fire001"/>
+		<prop actor="particle/flame.xml" attachpoint="fire002"/>
+		<prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke001"/>
+		<prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke002"/>	
+		<prop actor="props/geology/geo_waterfall_single_water.xml" attachpoint="waterfall"/>		
+		<prop actor="props/structures/chin_blacksmith_water.xml" attachpoint="root"/>		
+		<prop actor="props/structures/chin_blacksmith_wheel.xml" attachpoint="root"/>		
+      </props>	
+      <textures>
+        <texture file="structural/chin_struct2.png" name="baseTex"/>
+        <texture file="structural/chin_struct2_norm.png" name="normTex"/>
+        <texture file="structural/chin_struct2_spec.png" name="specTex"/>
+        <texture file="structural/ao/chin_blacksmith_ao.png" name="aoTex"/>
+      </textures>	  
+    </variant>
+  </group>
+
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

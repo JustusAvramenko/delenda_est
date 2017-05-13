@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Robie</author>
+      <authoring_tool>Feeling ColladaMax v3.02 with FCollada v3.02.</authoring_tool>
+      <comments>ColladaMax Export Options: ExportNormals=1;ExportEPolyAsTriangles=1;ExportXRefs=0;ExportSelected=0;ExportTangents=0;ExportAnimations=0;SampleAnim=0;ExportAnimClip=0;BakeMatrices=0;ExportRelativePaths=1;AnimStart=0;AnimEnd=100;</comments>
+      <source_data>file:///C:/Users/Robie/Documents/3dsmax/scenes/chin_shieldbase.max</source_data>
+    </contributor>
+    <created>2010-02-15T03:20:53Z</created>
+    <modified>2010-02-15T03:20:53Z</modified>
+    <unit meter="0.0254" name="inch"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="ColorMaterial_57E1C600" name="ColorMaterial_57E1C600">
+      <instance_effect url="#ColorMaterial_57E1C600-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="ColorMaterial_57E1C600-fx" name="ColorMaterial_57E1C600">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.341176 0.882353 0.776471 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.341176 0.882353 0.776471 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>33.2193</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>0</float>
+            </transparency>
+            <index_of_refraction>
+              <float>1</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Plane02_node-mesh" name="Plane02_node">
+      <mesh>
+        <source id="Plane02_node-mesh-positions">
+          <float_array id="Plane02_node-mesh-positions-array" count="84">-0.260715 -0.163052 -0.040129 -0.158305 -0.163052 -0.030254 -0.260722 0.166333 -0.040093 -0.158305 0.166333 -0.030254 -0.358976 -0.163052 -0.070576 -0.358976 0.166333 -0.070576 -0.260715 -0.163052 -0.040129 -0.260722 0.166333 -0.040093 -0.276301 0.043255 -0.045847 -0.244129 0.043255 -0.039383 -0.271946 0.043255 -0.067521 -0.239774 0.043255 -0.061057 -0.253751 0.043255 -0.074786 -0.260707 0.043255 -0.040165 -0.246252 -0.045594 -0.057964 -0.25492 -0.045594 -0.068966 -0.267199 -0.045594 -0.062173 -0.258118 -0.045593 -0.053053 -0.246252 0.043253 -0.057964 -0.25492 0.043253 -0.068966 -0.267199 0.043253 -0.062173 -0.258118 0.043253 -0.053053 -0.276301 -0.045597 -0.045847 -0.244129 -0.045597 -0.039383 -0.271946 -0.045597 -0.067521 -0.239774 -0.045597 -0.061057 -0.253751 -0.045597 -0.074786 -0.260707 -0.045597 -0.040165</float_array>
+          <technique_common>
+            <accessor source="#Plane02_node-mesh-positions-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane02_node-mesh-normals">
+          <float_array id="Plane02_node-mesh-normals-array" count="132">0.19693 0.000066 -0.980418 0.19693 0.000066 -0.980418 0.999982 0.005983 0 0.999982 0.005983 0 0 0 1 0.19693 0.000066 -0.980418 1 0 0 0 0 1 0.19693 0.000066 -0.980418 0.19693 0.000066 -0.980418 0.19693 0.000066 -0.980418 1 0 0 -0.19693 -0.000066 0.980418 -0.19693 -0.000066 0.980418 0.999982 0.005983 0 0 0 1 0.999982 0.005983 0 -0.19693 -0.000066 0.980418 0 0 1 1 0 0 -0.19693 -0.000066 0.980418 -0.19693 -0.000066 0.980418 -0.19693 -0.000066 0.980418 1 0 0 0 1 0.000000 0 1 0.000000 -0.000000 1 0.000000 0 1 0.000001 -0.000000 1 0.000000 0 1 0.000001 0.967518 0.000000 0.2528 0.197766 0.000000 -0.980249 0.967518 0.000000 0.252801 0.197766 0.000000 -0.980249 -0.990066 -0.000000 -0.1406 -0.990067 -0.000000 -0.140599 -0.19628 -0.000000 0.980548 -0.19628 -0.000000 0.980548 0.000000 1 0.000000 -0.000000 1 0.000000 -0.000000 1 0.000000 -0.000000 1 0.000000 -0.000000 1 0.000000 -0.000000 1 0.000001</float_array>
+          <technique_common>
+            <accessor source="#Plane02_node-mesh-normals-array" count="44" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane02_node-mesh-map-channel1">
+          <float_array id="Plane02_node-mesh-map-channel1-array" count="96">0.75 0 0 0.499988 0 0 0.499988 0 0 0.499988 1 0 0 0 0 0 1 0 0.25 0 0 0.25 1 0 0.499988 1 0 0.5 0.855195 0 0.55 1 0 0.55 0.855225 0 0.55 0.927 0 0.499988 0.927 0 0.55 0.927 0 0.55 0.855225 0 0.55 0.927 0 0.55 1 0 1 0.927 0 0.99984 0.855225 0 1 0.927 0 1 1 0 0.499988 1 0 0.5 0.855195 0 0.55 1 0 0.55 0.855225 0 0.55 0.927 0 0.499988 0.927 0 0.749558 0.855225 0 0.5 0.855195 0 1 0 0 0.99984 0.855225 0</float_array>
+          <technique_common>
+            <accessor source="#Plane02_node-mesh-map-channel1-array" count="32" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane02_node-mesh-vertices">
+          <input semantic="POSITION" source="#Plane02_node-mesh-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial_57E1C600" count="24">
+          <input semantic="VERTEX" source="#Plane02_node-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane02_node-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Plane02_node-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 0 2 1 28 3 2 29 3 3 29 1 4 2 0 5 0 4 6 30 5 7 31 2 8 28 2 9 28 0 10 0 4 11 30 7 12 7 6 13 6 3 14 3 1 15 1 3 16 3 6 17 6 5 18 5 4 19 4 7 20 7 6 21 6 7 22 7 4 23 4 10 24 10 8 25 8 12 26 12 9 27 9 11 28 11 13 29 13 12 26 12 8 25 8 11 28 11 13 29 13 11 28 11 8 25 8 14 30 14 19 31 19 18 32 18 14 30 14 15 33 15 19 31 19 15 33 15 20 34 20 19 31 19 15 33 15 16 35 16 20 34 20 16 35 16 21 36 21 20 34 20 16 35 16 17 37 17 21 36 21 17 37 17 18 32 18 21 36 21 17 37 17 14 30 14 18 32 18 24 38 24 22 39 22 26 40 26 23 41 23 25 42 25 27 43 27 26 40 26 22 39 22 25 42 25 27 43 27 25 42 25 22 39 22</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="chin_shieldbase_max" name="chin_shieldbase_max">
+      <node id="Plane02_node-node" name="Plane02_node" type="NODE">
+        <translate>1.29561 0.09 -0.044047</translate>
+        <rotate>-0.990249 -0.098504 -0.098504 -90.5614</rotate>
+        <scale>5.52947 5.52947 5.52947</scale>
+        <instance_geometry url="#Plane02_node-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial_57E1C600" target="#ColorMaterial_57E1C600">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0</start_time>
+          <end_time>3.33333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#chin_shieldbase_max"/>
+  </scene>
+</COLLADA>

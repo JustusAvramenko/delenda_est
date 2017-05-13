@@ -1,0 +1,19 @@
+<skeletons>
+	<standard_skeleton title="Armature" id="Armature">
+		<bone name="base">
+			<bone name="wheel">
+				<bone name="pivot2">
+					<bone name="pivot3"></bone>
+				</bone>
+			</bone>
+		</bone>		
+	</standard_skeleton>
+	<skeleton title="Armature" target="Armature">
+		<identifier><root>Armature</root></identifier>
+		<bone name="wheel"><target>wheel</target>
+			<bone name="pivot2"><target>pivot2</target>
+				<bone name="pivot3"><target>pivot3</target></bone>
+			</bone>	  	  
+		</bone>
+	</skeleton>	
+</skeletons>

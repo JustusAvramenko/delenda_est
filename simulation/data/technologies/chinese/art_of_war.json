@@ -1,0 +1,15 @@
+{
+	"genericName": "Sun Tzu's Art of War",
+	"description": "This famous and most important work of the Seven Military Classics teaches Chinese heroes everything about planning battles, maintaining armies, and defeating one's enemies.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500, "glory": 1000},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "chin"}]},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "art_of_war.png",
+	"researchTime": 40,
+	"tooltip": "Heroes -50% train time, remaining Fortress and Barracks technologies -50% cost.",
+	"modifications": [
+		{"value": "Vision/Range", "multiply": 2}
+	],
+	"affects": ["Hero"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

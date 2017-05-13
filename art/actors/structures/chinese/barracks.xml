@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>structural/chin_barracks.dae</mesh>
+      <props>
+        <prop actor="props/structures/barracks_weap.xml" attachpoint="root"/>
+        <prop actor="props/structures/barracks_shield_a.xml" attachpoint="root"/>
+        <prop actor="props/structures/barracks_shield_b.xml" attachpoint="root"/>
+        <prop actor="props/structures/barracks_shield_c.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
+        <prop actor="props/structures/barracks.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/chin_struct2.png" name="baseTex"/>
+        <texture file="structural/chin_struct2_norm.png" name="normTex"/>
+        <texture file="structural/chin_struct2_spec.png" name="specTex"/>
+        <texture file="structural/ao/chin_barracks_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
