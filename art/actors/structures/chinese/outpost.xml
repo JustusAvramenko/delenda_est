@@ -2,34 +2,37 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="chin outpost">
+    <variant frequency="100" name="palisade rocks outpost">
       <animations>
         <animation event="0.5" load="0" name="attack_ranged" speed="100"/>
       </animations>
-      <mesh>structural/chin_outpost.dae</mesh>
+      <mesh>props/palisade_rocks_outpost.dae</mesh>
       <props>
-        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+        <prop actor="props/special/palisade_rocks_outpost_banners.xml" attachpoint="root"/>
         <prop actor="props/units/weapons/arrow_front.xml" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
       </props>
+      <textures><texture file="props/palisade_main.png" name="baseTex"/></textures>
     </variant>
   </group>
   <group>
-    <variant>
-      <textures>
-		<texture file="structural/chin_struct2.png" name="baseTex"/>
-        <texture file="structural/chin_struct2_norm.png" name="normTex"/>
-        <texture file="structural/chin_struct2_spec.png" name="specTex"/>
-		<texture file="structural/ao/chin_outpost_ao.png" name="aoTex"/>
-	 </textures>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="100" name="Idle"/>
+    <variant name="ungarrisoned" frequency="1"/>
     <variant name="garrisoned">
       <props>
         <prop actor="props/special/common/garrison_flag_chin.xml" attachpoint="garrisoned"/>
       </props>
     </variant>
   </group>
-  <material>player_trans_ao_parallax_spec.xml</material>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop attachpoint="garrisoned"/>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+        <prop actor="props/special/palisade_rocks_outpost_banners.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
 </actor>

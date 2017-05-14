@@ -17,8 +17,20 @@
       units/{civ}_infantry_spearman_b
     </Entities>
   </ProductionQueue>
+  <Upgrade>
+    <Colonia>
+      <Entity>structures/chin_civil_centre_fortified</Entity>
+      <Tooltip>Greatly increase the health, capture resistance, and garrison capacity of this Civic Center.</Tooltip>
+	  <RequiredTechnology>phase_town</RequiredTechnology>
+      <Cost>
+        <stone>200</stone>
+		<wood>200</wood>
+      </Cost>
+      <Time>30</Time>
+    </Colonia>
+  </Upgrade>
   <VisualActor>
   	<FoundationActor>structures/fndn_8x8.xml</FoundationActor>
-    <Actor>structures/chinese/civil_centre.xml</Actor>
+    <Actor>structures/chinese/civil_centre_no_towers.xml</Actor>
   </VisualActor>
 </Entity>
