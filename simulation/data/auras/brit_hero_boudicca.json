@@ -1,15 +1,15 @@
 {
 	"type": "range",
-	"radius": 60,
+	"radius": 40,
 	"affects": ["Champion"],
 	"modifications": [
-	{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25 },
-	{ "value": "UnitMotion/Run/Speed", "multiply": 1.25 },
-	{ "value": "Attack/Ranged/Pierce", "add": 2 },
-	{ "value": "Attack/Melee/Hack", "add": 2 },
-	{ "value": "Attack/Capture/Value", "add": 2 }
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.20 },
+		{ "value": "UnitMotion/Run/Speed", "multiply": 1.20 },
+		{ "value": "Attack/Ranged/Pierce", "multiply": 1.20 },
+		{ "value": "Attack/Melee/Hack",    "multiply": 1.20 },
+		{ "value": "Attack/Capture/Value", "multiply": 1.20 }
 	],
 	"auraName": "Rebellious Rage",
-	"auraDescription": "Player's and ally's nearby champions +2 attack, +2 capture and +25% speed.",
+	"auraDescription": "Player's and ally's nearby champions +20% attack, +20% capture and +20% speed.",
 	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
 }
