@@ -51,7 +51,7 @@ function Music()
 Music.prototype.resetTracks = function()
 {
 	this.tracks = {
-		MENU: ["Golden Scarabs.ogg"],
+		MENU: ["Golden_Scarabs.ogg"],
 		PEACE: [],
 		BATTLE: ["Taiko_1.ogg", "Taiko_2.ogg"],
 		VICTORY : ["You_are_Victorious!.ogg"],
