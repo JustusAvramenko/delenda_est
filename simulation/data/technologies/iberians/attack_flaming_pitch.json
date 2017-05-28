@@ -1,6 +1,7 @@
 {
 	"genericName": "Flaming Pitch",
-	"description": "Fire was a constant danger in a crowded town or city, even during peace time. In a siege, an army would typically loose flaming projectiles (like arrows and javelins) over the enemy walls in a bid to set the enemy's buildings on fire.",
+	"specificName": {"generic": "Suzko Txabalina"},
+	"description": "Iberian tribesmen were noted for wrapping bundles of grass about the shafts of their throwing spears, soaking that in some sort of flammable pitch, then setting it afire just before throwing. Fire was a constant danger in a crowded town or city, even during peace time. In a siege, an army would typically loose flaming projectiles (like arrows and javelins) over the enemy walls in a bid to set the enemy's buildings on fire.",
 	"cost": {"food": 0, "wood": 800, "stone": 0, "metal": 0},
 	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
@@ -15,6 +16,6 @@
 		{"value": "VisualActor/Actor", "replace": "units/iberians/infantry_javelinist_a_fire.xml", "affects": "Advanced"},
 		{"value": "VisualActor/Actor", "replace": "units/iberians/infantry_javelinist_e_fire.xml", "affects": "Elite"}
 	],
-	"affects": ["Javelin Infantry"],
+	"affects": ["Javelin Citizen Infantry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
