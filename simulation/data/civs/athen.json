@@ -1,8 +1,8 @@
 {
 	"Name":"Athenians",
 	"Code":"athen",
-	"Culture":[ "helle" ],
-	"Region":[ "medit", "europe", "greece" ],
+	"Culture":[ "greek" ],
+	"Region":[ "mediterranean", "europe", "greece" ],
 	
 	"Emblem":"session/portraits/emblems/emblem_athenians.png",
 	
@@ -22,17 +22,32 @@
 				{
 					"Name":"Iphicratean Reforms",
 					"History":"",
-					"Description":"Athenian triremes can train Marines (Epibates Athenaikos)."
+					"Description":"All ranged infantry +10% attack, all melee infantry +10% speed. Also unlocks the Athenian Marine at the Shipyard."
 				},
 				{
 					"Name":"Long Walls",
 					"History":"The Long Walls of Athens were constructed under the auspices of the wily Themistocles and extended 6 km from the city to the port of Piraeus. This secured the city's sea supply routes and prevented an enemy from starving out the city during a siege.",
-					"Description":"Stone walls can be built in neutral territory. Construction time for walls is reduced by 50%."
+					"Description":"Build stone walls in neutral territory."
 				},
 				{
-					"Name":"Othismos",
-					"History":"The classical phalanx formation was developed about VIII century BC. It was eight men deep and up to eight hundred men wide. The men within overlapped their shields, presenting a formidable shield wall brimming with 8 foot spears.",
-					"Description":"The player gains the ability to order spear-armed troops into Phalanx formation, providing greater attack and armor."
+					"Name":"Arsenal of Philon",
+					"History":".",
+					"Description":"Warships slowly regenerate when damaged."
+				},
+				{
+					"Name":"Elected General",
+					"History":"The Athenians elected 10 men to command their army for a term of 1 year, a man from each of the 10 traditional Attic tribes. The annual election of the strategoi was held in the spring, and their term of office coincided with the ordinary Athenian year, from midsummer to midsummer. If a strategos died or was dismissed from office, a by-election might be held to replace him. In the early part of the 5th century, several strategoi combined their military office with a political role, e.g. Themistocles, Aristides, Cimon, or Pericles; nevertheless their power derived not from their office, but from their own personal political charisma. As political power passed to the rhetores in the later 5th century, the strategoi were limited to their military duties.",
+					"Description":"All heroes +25% health, -25% training time."
+				},
+				{
+					"Name":"Periclean Strategem",
+					"History":"At the outbreak of the Peloponnesean War with Sparta, Pericles instituted a strategy that emphasized Athenian strengths: the city's walls and her mighty fleet.",
+					"Description":"Stone Walls and Warships +10% Health, Soldiers -5% Health."
+				},
+				{
+					"Name":"Pheidian Workshop",
+					"History":"Pheidias (c. 480 – 430 BC) was a Greek sculptor, painter and architect, who lived in the 5th century BC, and is commonly regarded as one of the greatest of all sculptors of Classical Greece: Phidias' Statue of Zeus at Olympia was one of the Seven Wonders of the Ancient World. Phidias designed the statues of the goddess Athena on the Athenian Acropolis, namely the Athena Parthenos inside the Parthenon and the Athena Promachos, a colossal bronze statue of Athena which stood between it and the Propylaea, a monumental gateway that served as the entrance to the Acropolis in Athens. Phidias was the son of Charmides of Athens. The ancients believed that his masters were Hegias and Hageladas. Source: Wikipedia",
+					"Description":"Temples and Wonder -25% Build Time, but +10% Stone Cost."
 				}
 			],
 			"Heroes":
@@ -56,7 +71,7 @@
 					"Class":"",
 					"Armament":"",
 					"Emblem":"",
-					"History":"."
+					"History":"Iphicrates (c. 418 BC – c. 353 BC) was an Athenian general, the son of a shoemaker, who flourished in the earlier half of the 4th century BC. He owes his fame as much to the improvements he made in the equipment of the peltasts or light-armed mercenaries (named for their small pelte shield) as to his military successes. Historians have debated about just what kind of 'peltasts' were affected by his reforms; one of the most popular positions is that he improved the performance of the Greek skirmishers so that they would be able to engage in prolonged hand-to-hand fighting as part of the main battle line, while another strong opinion posits that he worked his changes upon the mercenary hoplites that were an important factor in late 5th and early 4th century B.C. Greek land warfare. A third possibility is that his reforms were limited to hoplites serving as marines on board ships of the Athenian navy."
 				}
 			]
 		}
@@ -66,12 +81,12 @@
 		{
 			"Name":"Silver Owls",
 			"History":"The mines at Laureion in Attica provided Athens with a wealth of silver from which to mint her famous and highly prized coin, The Athenian Owl.",
-			"Description":"Metal mining gathering rates increased by +10% for each passing age."
+			"Description":"Metal mining gathering rates increased by +10% for each passing phase."
 		},
 		{
 			"Name":"Hellenization",
 			"History":"The Greeks were highly successful in Hellenising various foreigners. During the Hellenistic Age, Greek was the lingua franca of the Ancient World, spoken widely from Spain to India.",
-			"Description":"Constructing a Theatron increases the territory expanse of all buildings by +20%."
+			"Description":"Buildings +20% territory influence while the Theatron stands."
 		}
 	],
 	"TeamBonuses":
@@ -79,7 +94,7 @@
 		{
 			"Name":"Delian League",
 			"History":"Shortly after the great naval victories at Salamis and Mykale, the Greek city-states instituted the so-called Delian League in 478 B.C., whose purpose was to push the Persians out of the Aegean region. The allied states contributed ships and money, while the Athenians offered their entire navy.",
-			"Description":"Ships construct 25% faster."
+			"Description":"Ships -25% build time."
 		}
 	],
 	"Structures":
@@ -88,10 +103,10 @@
 			"Name":"Theatron",
 			"Class":"",
 			"Emblem":"",
-			"History":"Greek theatres were places where the immortal tragedies of Aeschylus, Sophocles and many other talented dramatists were staged to the delight of the populace. They were instrumental in enriching Hellenic culture.",
+			"History":"Greek theaters were places where the immortal tragedies of Aeschylus, Sophocles and many other talented dramatists were staged to the delight of the populace. They were instrumental in enriching Hellenic culture and spreading its influence.",
 			"Requirements":"",
 			"Phase":"City",
-			"Special":"The Hellenization civ bonus. Building a Theatron increases the territory effect of all buildings by 25%."
+			"Special":"Build a Theater to increase the territory influence of your buildings."
 		},
 		{
 			"Name":"Gymnasion",

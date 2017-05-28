@@ -1,7 +1,7 @@
 {
 	"Name": "Chinese (Han)",
 	"Code": "chin",
-	"Culture": "chin",
+	"Culture": "chinese",
 	"Region":[ "asia", "china" ],
 	
 	"Emblem": "session/portraits/emblems/emblem_chinese.png",
@@ -20,20 +20,25 @@
 			"Technologies":
 			[
 				{
+					"Name": "Sun Tzu's Art of War",
+					"History": "This famous and most important work of the Seven Military Classics teaches Chinese commanders everything about planning battles, maintaining armies, and defeating one's enemies.",
+					"Description": "Chinese Heroes -75% train time, remaining Fortress and Barracks technologies -50% cost." 
+				},
+				{
 					"Name": "Jun Chuan",
 					"History": "The use of flaming boats by the Chinese was made famous by during The Battle Of The Red Cliffs where the general Huang Gai attacked the enemy navy with flaming canoes.",
-                    "Description": "Fire Ships are used as kamikaze units, launched at targets which when struck will become engulfed in flames and incur constant damage until healed or repaired, as appropriate."
+                    "Description": "Fire Ships +25% speed."
 				},
 				{
 					"Name": "Zhu Cheng",
 					"History": "",
-					"Description": "20% increase of defences of all walls and fortresses." 
+					"Description": "Fortresses +25% health."
 				},
 				{
-					"Name": "Cast Iron",
-					"History": "Chinese were the first to use that technology for agriculture 2000 years before it was discovered in Europe.",
-					"Description": "" 
-				} 
+					"Name": "Nationalized Industries",
+					"History": "",
+					"Description": "All gather rates +25%, but trading and bartering penalized with -50% profit."
+				}
 			],
 			"Heroes":
 			[
@@ -49,14 +54,14 @@
 					"Class": "Cavalry Hero",
 					"Armament": "Lian Nu",
 					"Emblem": "",
-					"History": "As a general of the Han Dynasty, Wei Qing is best acclaimed for his campaigns against Xiongnu, a series of nomadic tribes residing in northern China during the time period. In addition to his unmatched quality as a leader of men, he was a brilliant marksman and possessed remarkable horsemanship." 
+					"History": "As a general of the Han Dynasty, Wei Qing is best acclaimed for his campaigns against Xiongnu, a confederation of nomadic tribes residing in northern China and Mongolia during the time period. In addition to his unmatched quality as a leader of men, he was a brilliant marksman and possessed remarkable horsemanship."
 				},
 				{
 					"Name": "Han Xin",
 					"Class": "Infantry Hero",
 					"Armament": "Qiang",
 					"Emblem": "",
-					"History": "Han Xin was an able military general, recommended several times by Xiao He, a close advisor to Liu Bang, who finally served next to and under the much older Liu Bang, and is renowned as one of the Three Heroes of the early Han Dynasty due to conquering almost all of Liu's opponents. Many Chinese idioms originated from his specific warfare strategies. Thanks to Han Xin's brilliant flanking manuevers against Zhang Han, Han forces emerged victorious over the Three Qins in late BC 206. His 'attack from 10 sides' guerilla-like tactics during the decisive battle against the Chu general Xiang Yu, one of the most capable military leaders of the time, in BC 202 lead to the piecemeal and finally encirclement of the numerous Chu forces and to the Fall of Western Chu, unifying China for the second time. The careful Han Xin, though aware of being more and more mistrusted by Liu, who replaced all his kings, including Han Xin, by his own relatives over time, was finally accused of high treason due to the danger that emerged from his military genious and executed by being hung in a bell and being pierced by bamboo swords by Liu Bang's Empress and supposedly Xiao He in absence of Liu Bang. In an earlier trial Han Xin noted 'It is true when people say: The hunting dog becomes food as well after it is used to hunt game; a good bow is discarded when there are no birds left for shooting; an advisor dies after he helps his lord conquer a rival kingdom. Now that the empire is in place, I no longer serve any purpose!'. His last words - supposedly aged 31 - are supposed to be 'I regret not listening to Kuai Tong`s advice'. His wife and parents, and all of his clan was wiped out too by the power-hungry Liu."
+					"History": "Han Xin was an able military general, recommended several times by Xiao He, a close advisor to Liu Bang, who finally served next to and under the much older Liu Bang, and is renowned as one of the Three Heroes of the early Han Dynasty due to conquering almost all of Liu's opponents. Many Chinese idioms originated from his specific warfare strategies. Thanks to Han Xin's brilliant flanking manuevers against Zhang Han, Han forces emerged victorious over the Three Qins in late BC 206. His 'attack from 10 sides' guerilla-like tactics during the decisive battle against the Chu general Xiang Yu, one of the most capable military leaders of the time, in BC 202 lead to the piecemeal and finally encirclement of the numerous Chu forces and to the Fall of Western Chu, unifying China for the second time. The careful Han Xin, though aware of being more and more mistrusted by Liu, who replaced all his kings, including Han Xin, by his own relatives over time, was finally accused of high treason due to the danger that emerged from his military genius and executed by being hung in a bell and being pierced by bamboo swords by Liu Bang's Empress and supposedly Xiao He in absence of Liu Bang. In an earlier trial Han Xin noted 'It is true when people say: The hunting dog becomes food as well after it is used to hunt game; a good bow is discarded when there are no birds left for shooting; an advisor dies after he helps his lord conquer a rival kingdom. Now that the empire is in place, I no longer serve any purpose!'. His last words - supposedly aged 31 - are supposed to be 'I regret not listening to Kuai Tong`s advice'. His wife and parents, and all of his clan was wiped out too by the power-hungry Liu."
 				}
 			]
 		}
@@ -64,14 +69,19 @@
 	"CivBonuses":
 	[
 		{
-			"Name": "Defensive Walls",
-			"History": "The Chinese may have been best known for their immeasurably fortified defenses that kept enemy forces at bay long enough to obliterate them.",
-			"Description": "All walls and outposts are significantly cheaper and available earlier." 
+			"Name": "Federated States",
+			"History": "By uniting China under one emperor, the Han Dynasty ruled over 40 million people, one of the largest empires of antiquity by population.",
+			"Description": "The Han Chinese have a +10% population cap bonus (i.e., 550 pop cap instead of the usual 500)."
 		},
 		{
-			"Name": "Naval Prowess",
-			"History": "The Han Chinese developed some of the most underrated and innovative naval tactics of the era, including unmanned Fire Ships set adrift to destroy warring nations' sea vessels and shoreline structures.",
-			"Description": "A diverse navy will grant the Chinese a generously favorable position at sea." 
+			"Name": "Great Walls of China",
+			"History": "The Chinese may have been best known for their immeasurably fortified defenses that kept enemy forces at bay long enough to obliterate them.",
+			"Description": "Walls +20% Health, but also +10% stone cost and +10% build time." 
+		},
+		{
+			"Name": "Chinese Masons",
+			"History": "The Han Chinese were skilled masons and prolific builders",
+			"Description": "Buildings +10% health, but also +5% build time."
 		} 
 	],
 	"TeamBonuses":
@@ -79,19 +89,19 @@
 		{
 			"Name": "Taoism",
 			"History": "The Three Jewels of Taoism: compassion, moderation and humility. These pinnacles will dictate the nature of relations between allies of the Chinese.",
-			"Description": "Traders for all allies are 50% cheaper."
-		} 
+			"Description": "Traders for all allies -50% cost."
+		}
 	],
 	"Structures":
 	[
 		{
-			"Name": "Zhi Hui Zhong Xin",
+			"Name": "Government Center",
 			"Class": "",
 			"Emblem": "",
-			"History": "'Government Center' As a genuinely sophisticated educational society, China revered government very highly. This structure will provide tech upgrades for economic factors, specifically trade.",
+			"History": "As a genuinely sophisticated educational society, China revered government very highly. This structure will provide tech upgrades for economic factors, specifically trade.",
 			"Requirements": "",
-			"Phase": "",
-			"Special": "" 
+			"Phase": "Town",
+			"Special": "Train up to 9 Ministers, who administrate the economy with wisdom."
 		} 
 	],
 	"StartEntities":

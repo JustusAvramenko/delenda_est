@@ -1,8 +1,8 @@
 {
 	"Name": "Carthaginians",
 	"Code": "cart",
-	"Culture":[ "punic" ],
-	"Region":[ "medit", "africa" ],
+	"Culture":[ "phoenician" ],
+	"Region":[ "mediterranean", "africa" ],
 	
 	"Emblem": "session/portraits/emblems/emblem_carthaginians.png",
 	
@@ -26,12 +26,17 @@
 				{
 					"Name": "Colonization",
 					"History": "Carthaginians established many trading centers as colonies and ultimately held dominion over 300 cities and towns in North Africa alone.",
-					"Description": "Civic Centers, Temples, and Houses -25% build time."
+					"Description": "Civic Centers, Temples, and Houses -20% build time."
 				},
 				{
 					"Name": "Triple Walls of Carthage",
-					"History": "Carthaginians built triple city walls.",
-					"Description": "Carthaginian walls, gates, and towers have 3x health of a standard wall, but also greater cost and build time."
+					"History": "The walls of Carthage were famous for their height and width, not to mention the entire city was encircled by 3 of them. Walls extended even along the coast and surrounded the city's famous double harbors. The walls were never breached. Only when the Romans made a daring and successful raid into the city's commercial harbor did Carthage finally fall.",
+					"Description": "Stone Walls 3x Health, 2x Build time, +50% Cost."
+				},
+				{
+					"Name": "Numidian Mahouts",
+					"History": "The Numidians were adept at training and driving elephants.",
+					"Description": "War Elephants +20% Speed."
 				}
 			],
 			"Heroes":
@@ -73,7 +78,7 @@
 		{
 			"Name": "Trademasters",
 			"History": "The Phoenicians and Carthaginians were broadly known as the greatest trading civilization of the ancient and classical world.",
-			"Description": "+33% trade profit international routes."
+			"Description": "Exclusive allies with Carthage gain +20% trade profit for ‘international’ routes, via land and sea."
 		}
 	],
 	"Structures":
@@ -84,17 +89,8 @@
 			"Emblem":"",
 			"History":"The Celts supplied fierce warrior mercenaries for Carthaginian armies.",
 			"Requirements":".",
-			"Phase":"",
+			"Phase":"Village",
 			"Special":"Hire Celtic mercenaries."
-		},
-		{
-			"Name":"Italiote Embassy",
-			"Class":"",
-			"Emblem":"",
-			"History":"When Hannibal invaded Italy and defeated the Romans in a series of battles, many of the Italian peoples subject to Rome, including the Italian Greeks and powerful Samnites, revolted and joined the Carthaginian cause.",
-			"Requirements":".",
-			"Phase":"",
-			"Special":"Hire Italian mercenaries."
 		},
 		{
 			"Name":"Iberian Embassy",
@@ -102,9 +98,18 @@
 			"Emblem":"",
 			"History":"The Iberians were known as fierce mercenaries, loyal to their paymasters.",
 			"Requirements":".",
-			"Phase":"",
+			"Phase":"Town",
 			"Special":"Hire Iberian mercenaries."
-		}		
+		},
+		{
+			"Name":"Italiote Embassy",
+			"Class":"",
+			"Emblem":"",
+			"History":"When Hannibal invaded Italy and defeated the Romans in a series of battles, many of the Italian peoples subject to Rome, including the Italian Greeks and powerful Samnites, revolted and joined the Carthaginian cause.",
+			"Requirements":".",
+			"Phase":"City",
+			"Special":"Hire Italian mercenaries."
+		}	
 	],
 	"StartEntities":
 	[
