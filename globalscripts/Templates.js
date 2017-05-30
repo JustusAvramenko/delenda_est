@@ -360,6 +360,30 @@ function GetTemplateDataHelper(template, player, auraTemplates, resources, modif
 			ret.speed.run = getEntityValue("UnitMotion/Run/Speed");
 	}
 
+	if (template.Upgrade)
+	{
+		ret.upgrades = [];
+		for (let upgradeName in template.Upgrade)
+		{
+			let upgrade = template.Upgrade[upgradeName];
+
+			let cost = {};
+			if (upgrade.Cost)
+				for (let res in upgrade.Cost)
+					cost[res] = getEntityValue("Upgrade/" + upgradeName + "/Cost/" + res, "Upgrade/Cost/" + res);
+			if (upgrade.Time)
+				cost.time = getEntityValue("Upgrade/" + upgradeName + "/Time", "Upgrade/Time");
+
+			ret.upgrades.push({
+				"entity": upgrade.Entity,
+				"tooltip": upgrade.Tooltip,
+				"cost": cost,
+				"icon": upgrade.Icon || undefined,
+				"requiredTechnology": upgrade.RequiredTechnology || undefined
+			});
+		}
+	}
+
 	if (template.ProductionQueue)
 	{
 		ret.techCostMultiplier = {};
@@ -424,7 +448,7 @@ function GetTechnologyDataHelper(template, civ, resources)
 
 	ret.cost = { "time": template.researchTime ? +template.researchTime : 0 };
 	for (let type of resources.GetCodes())
-		ret.cost[type] = template.cost && template.cost[type] ? +template.cost[type] : 0;
+		ret.cost[type] = +(template.cost && template.cost[type] || 0);
 
 	ret.tooltip = template.tooltip;
 	ret.requirementsTooltip = template.requirementsTooltip || "";
@@ -449,3 +473,4 @@ function calculateCarriedResources(carriedResources, tradingGoods)
 
 	return resources;
 }
+
