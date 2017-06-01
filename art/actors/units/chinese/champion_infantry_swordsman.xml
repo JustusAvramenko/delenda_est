@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_swordsman_shield_ready.xml">
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/chin_shield3.xml" attachpoint="shield"/>
+        <prop actor="props/units/weapons/chin_swords.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="open_helmet">
+      <props>
+        <prop actor="props/units/helmet/new/chin_hairbun.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmet/new/chin_advanced_melee_helmet.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="feather_helmet">
+      <props>
+        <prop actor="props/units/helmet/new/chin_heavy_helmet_b.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="iron-armor-a">
+      <textures>
+        <texture file="skeletal/chin_icr_e.png" name="baseTex"/>
+        <texture file="skeletal/chin_icr_e_norm.png" name="normTex"/>
+        <texture file="skeletal/chin_icr_e_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="iron-armor-b">
+      <textures>
+        <texture file="skeletal/chin_isp_e_norm.png" name="normTex"/>
+        <texture file="skeletal/chin_isp_e_black.png" name="baseTex"/>
+        <texture file="skeletal/chin_isp_e_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
