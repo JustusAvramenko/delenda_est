@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry_archer">
+  <Armour>
+    <Hack>6.0</Hack>
+  </Armour>
+  <Attack>
+    <Ranged>
+      <Pierce>35.0</Pierce>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+	chariot_trample_e
+  </Auras>
+  <Cost>
+    <Population>4</Population>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>150</food>
+      <wood>150</wood>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="5" depth="10.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>280</Max>
+  </Health>
+  <Identity>
+    <Civ>chin</Civ>
+    <SelectionGroupName>units/chin_cavalry_archer_b</SelectionGroupName>
+    <VisibleClasses datatype="tokens">Chariot Trample</VisibleClasses>
+    <GenericName>War Chariot</GenericName>
+	<SpecificName>Zhàn Chē</SpecificName>
+    <History>.</History>
+    <Icon>units/chin_cavalry_archer.png</Icon>
+    <Tooltip>Traits: Long Range, Fast Speed, Heavy Armor, Harassment, Trample, Heavy Charge.
+Strong Against: Pike Infantry, Spear Infantry, Sword Infantry.
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/chinese/chariot.xml</Actor>
+  </VisualActor>
+</Entity>
