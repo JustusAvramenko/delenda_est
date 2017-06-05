@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic">
+  <Footprint>
+    <Square width="36.0" depth="40.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <BuildRestrictions>
+    <Category>GovernmentCenter</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>3000</CapturePoints>
+  </Capturable>
+  <Cost>
+    <PopulationBonus>20</PopulationBonus>
+    <BuildTime>400</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>200</wood>
+      <stone>200</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>chin</Civ>
+    <GenericName>Imperial Court</GenericName>
+    <SpecificName>Cháotíng</SpecificName>
+    <History>As a genuinely sophisticated educational society, China revered government and administration very highly.</History>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <VisibleClasses datatype="tokens">Town Research</VisibleClasses>
+    <Icon>structures/tholos.png</Icon>
+  </Identity>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+  </Health>
+  <Obstruction>
+    <Static width="32.0" depth="36.0"/>
+  </Obstruction>
+  <Loot>
+    <xp>200</xp>
+    <food>0</food>
+    <wood>50</wood>
+    <stone>50</stone>
+    <metal>50</metal>
+  </Loot>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/chin_champion_chariot
+    </Entities>
+    <Technologies datatype="tokens">
+	  health_units_01
+	  health_units_02
+	  health_units_03
+	  health_units_04
+	  pair_structures_01
+	  pair_structures_02
+	  pair_structures_03
+	  pair_structures_04
+	  unlock_spies
+	  spy_counter
+    </Technologies>
+  </ProductionQueue>
+  <Vision>
+    <Range>90</Range>
+  </Vision>
+  <VisualActor>
+  	<FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+    <Actor>structures/chinese/government_center.xml</Actor>
+  </VisualActor>
+</Entity>
