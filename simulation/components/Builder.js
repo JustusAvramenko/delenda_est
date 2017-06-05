@@ -48,7 +48,8 @@ Builder.prototype.GetEntitiesList = function()
 	return entities.filter(ent => !disabledTemplates[ent] && cmpTemplateManager.TemplateExists(ent));
 };
 
-Builder.prototype.GetRange = function(){
+Builder.prototype.GetRange = function()
+{
 	let max = 2;
 	let cmpObstruction = Engine.QueryInterface(this.entity, IID_Obstruction);
 	if (cmpObstruction)
