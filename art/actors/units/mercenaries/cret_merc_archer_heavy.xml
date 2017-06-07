@@ -5,14 +5,40 @@
     <variant file="biped/base_archer_ready.xml">
       <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
-        <prop actor="props/units/heads/hele_iar_e.xml" attachpoint="helmet"/>
-        <prop actor="props/units/heads/new/head_hele_e.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/weapons/bow_short.xml" attachpoint="weapon_L"/>
+        <prop actor="props/units/weapons/weap_greek_bow.xml" attachpoint="weapon_bow"/>
         <prop actor="props/temp/quiver.xml" attachpoint="back"/>
         <prop actor="props/units/shields/iberian_buckler_adv.xml" attachpoint="shield_arm"/>
       </props>
-      <textures><texture file="skeletal/hele_iar_e.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/hele_iar_e.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="50" name="chalcidean">
+      <props>
+        <prop actor="props/units/heads/hele_chalcidean.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+      </props> 
+    </variant>
+    <variant frequency="50" name="chalcidean_ornate">
+      <props>
+        <prop actor="props/units/heads/hele_chalcidean_ornate.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+      </props> 
+    </variant>
+    <variant frequency="50" name="beotian">
+      <props>
+        <prop actor="props/units/heads/hele_beotian.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/head_hele_e.xml" attachpoint="head"/>
+      </props> 
+    </variant>
+    <variant frequency="50" name="pilos">
+      <props>
+        <prop actor="props/units/heads/hele_pilos.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/head_hele_e.xml" attachpoint="head"/>
+      </props> 
     </variant>
   </group>
   <group>
