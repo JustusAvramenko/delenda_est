@@ -1,21 +1,17 @@
 {
 	"genericName": "City Phase",
 	"specificName": {
-		"hele": "Megalopolis",
-		"mace": "Megalopolis",
-		"spart": "Megalopolis",
-		"athen": "Megalopolis",
-		"epir": "Megalopolis",
-		"theb": "Megalopolis",
 		"chin": "Dà Chéngshì"
 	},
-	"supersedes": "phase_town",
+	"supersedes": "phase_town_china",
+	"replaces": ["phase_city"],
 	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology.",
-	"cost": {"food": 0, "wood": 0, "stone": 1000, "metal": 1000},
-	"requirements": {"all": [{"entity": {"class": "NotField", "number": 15 }}, {"notciv": "athen"}, {"notciv": "imp"}, {"notciv": "chin"}]},
-	"requirementsTooltip": "Requires 15 total Buildings (except Walls and Fields).",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0, "glory": 0 },
+	"requirements": {"all": [{"entity": {"class": "CultStatue", "number": 4 }}, {"civ": "chin"}]},
+	"autoResearch": false,
+	"requirementsTooltip": "Requires 4 Cult Statues to be built.",
 	"icon": "city_phase.png",
-	"researchTime": 30,
+	"researchTime": 0,
 	"tooltip": "Advance to City Phase, which unlocks more structures and units. Territory radius for Civic Centers and vision range for units increased by another +25%.",
 	"modifications": [
 		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
