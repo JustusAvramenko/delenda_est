@@ -1,0 +1,19 @@
+{
+	"genericName": "Household Administration - Level 2",
+	"specificName": {
+		"chin": "Jiātíng Guǎnlǐ"
+	},
+	"supersedes": "chinese/admin_household_01",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 200, "glory": 300},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "chin"}]},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "chinese_household_2.png",
+	"researchTime": 40,
+	"tooltip": "Female Citizens and Houses -20% cost.",
+	"modifications": [
+		{"value": "Cost/Resources/food", "multiply": 0.8, "affects": "FemaleCitizen"},
+		{"value": "Cost/Resources/wood", "multiply": 0.8, "affects": "House"}
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

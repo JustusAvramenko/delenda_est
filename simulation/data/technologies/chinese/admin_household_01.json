@@ -1,0 +1,18 @@
+{
+	"genericName": "Household Administration - Level 1",
+	"specificName": {
+		"chin": "Jiātíng Guǎnlǐ"
+	},
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0, "glory": 0},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "chin"}]},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "chinese_household_1.png",
+	"researchTime": 80,
+	"tooltip": "Female Citizens -20% train time and Houses -20% build time.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.8, "affects": "FemaleCitizen"},
+		{"value": "Cost/BuildTime", "multiply": 0.8, "affects": "House"}
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

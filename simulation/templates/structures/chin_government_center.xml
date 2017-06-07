@@ -12,11 +12,11 @@
   </Capturable>
   <Cost>
     <PopulationBonus>20</PopulationBonus>
-    <BuildTime>400</BuildTime>
+    <BuildTime>200</BuildTime>
     <Resources>
-      <food>0</food>
-      <wood>200</wood>
-      <stone>200</stone>
+      <food>800</food>
+      <wood>800</wood>
+      <stone>0</stone>
       <metal>0</metal>
     </Resources>
   </Cost>
@@ -25,9 +25,10 @@
     <GenericName>Imperial Court</GenericName>
     <SpecificName>Cháotíng</SpecificName>
     <History>As a genuinely sophisticated educational society, China revered government and administration very highly.</History>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <VisibleClasses datatype="tokens">Town Research</VisibleClasses>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <VisibleClasses datatype="tokens">Research ImperialCourt</VisibleClasses>
     <Icon>structures/tholos.png</Icon>
+    <Tooltip>Build to unlock the Town Phase for the Han Chinese. Train the Nine Ministers. Research a powerful suite of Administrative technologies.</Tooltip>
   </Identity>
   <Health>
     <Max>3000</Max>
@@ -49,31 +50,20 @@
       units/chin_champion_chariot
     </Entities>
     <Technologies datatype="tokens">
-	  health_units_01
-	  health_units_02
-	  health_units_03
-	  health_units_04
-	  pair_structures_01
-	  pair_structures_02
-	  pair_structures_03
-	  pair_structures_04
-	  unlock_spies
-	  spy_counter
+	  chinese/admin_household_01
+	  chinese/admin_household_02
+	  chinese/admin_household_03
     </Technologies>
   </ProductionQueue>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_civ_center.xml</select>
-      <constructed>interface/complete/building/complete_civ_center.xml</constructed>
-      <attack>attack/weapon/arrowfly.xml</attack>
+      <constructed>interface/alarm/alarm_phase.xml</constructed>
       <death>attack/destruction/building_collapse_large.xml</death>
-	  <alert0>interface/alarm/alarm_alert_0.xml</alert0>
-	  <alert1>interface/alarm/alarm_alert_1.xml</alert1>
-	  <alert2>interface/alarm/alarm_alert_2.xml</alert2>
     </SoundGroups>
   </Sound>
   <Vision>
-    <Range>90</Range>
+    <Range>60</Range>
   </Vision>
   <VisualActor>
   	<FoundationActor>structures/fndn_8x8.xml</FoundationActor>
