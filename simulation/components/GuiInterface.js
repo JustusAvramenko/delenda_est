@@ -32,8 +32,6 @@ GuiInterface.prototype.Init = function()
 	this.timeNotificationID = 1;
 	this.timeNotifications = [];
 	this.entsRallyPointsDisplayed = [];
-	this.targetMarker = undefined;
-	this.targetMarkerTimer = undefined;
 	this.entsWithAuraAndStatusBars = new Set();
 	this.enabledVisualRangeOverlayTypes = {};
 };
@@ -1038,32 +1036,24 @@ GuiInterface.prototype.DisplayRallyPoint = function(player, cmd)
 
 GuiInterface.prototype.AddTargetMarker = function(player, cmd)
 {
-	if (this.targetMarker)
-		Engine.DestroyEntity(this.targetMarker);
+	let targetMarker = Engine.AddLocalEntity(cmd.template);
+	if (!targetMarker)
+		return;
 
-	this.targetMarker = Engine.AddLocalEntity(cmd.template);
-	if(this.targetMarker)
-	{
-		let pos = Engine.QueryInterface(this.targetMarker, IID_Position);
-		if (pos)
-		{
-			pos.JumpTo(cmd.x, cmd.z);
-			pos.SetYRotation(0);
-		}
+	let cmpPosition = Engine.QueryInterface(targetMarker, IID_Position);
+	cmpPosition.JumpTo(cmd.x, cmd.z);
 
-		let cmpOwnership = Engine.QueryInterface(this.targetMarker, IID_Ownership);
-		cmpOwnership.SetOwner(player);
+	let cmpOwnership = Engine.QueryInterface(targetMarker, IID_Ownership);
+	cmpOwnership.SetOwner(player);
 
-		let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
-		cmpTimer.SetTimeout(SYSTEM_ENTITY, IID_GuiInterface, "RemoveTargetMarker", 1100, {});
-	}
+	let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
+	cmpTimer.SetTimeout(SYSTEM_ENTITY, IID_GuiInterface, "RemoveTargetMarker", 1100, targetMarker);
 };
 
-GuiInterface.prototype.RemoveTargetMarker = function()
+GuiInterface.prototype.RemoveTargetMarker = function(targetMarker)
 {
-	if (this.targetMarker)
-		Engine.DestroyEntity(this.targetMarker);
-}
+	Engine.DestroyEntity(targetMarker);
+};
 
 
 /**
@@ -2012,13 +2002,13 @@ let exposedFunctions = {
 	"GetFormationInfoFromTemplate": 1,
 	"IsStanceSelected": 1,
 
-	"AddTargetMarker": 1,
 	"SetSelectionHighlight": 1,
 	"GetAllBuildableEntities": 1,
 	"SetStatusBars": 1,
 	"GetPlayerEntities": 1,
 	"GetNonGaiaEntities": 1,
 	"DisplayRallyPoint": 1,
+	"AddTargetMarker": 1,
 	"SetBuildingPlacementPreview": 1,
 	"SetWallPlacementPreview": 1,
 	"GetFoundationSnapData": 1,
@@ -2040,7 +2030,7 @@ let exposedFunctions = {
 	"SetRangeOverlays": 1,
 
 	"GetTraderNumber": 1,
-	"GetTradingGoods": 1
+	"GetTradingGoods": 1,
 };
 
 GuiInterface.prototype.ScriptCall = function(player, name, args)

@@ -1487,8 +1487,7 @@ function isUndeletable(entState)
 
 function DrawTargetMarker(target)
 {
-	Engine.GuiInterfaceCall("AddTargetMarker", 
-	{
+	Engine.GuiInterfaceCall("AddTargetMarker", {
 		"template": "other/target_marker",
 		"x": target.x,
 		"z": target.z
