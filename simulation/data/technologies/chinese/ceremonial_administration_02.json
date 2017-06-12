@@ -1,0 +1,20 @@
+{
+	"genericName": "Ceremonial Administration - Level 2",
+	"specificName": {
+		"chin": "Yíshì Guǎnlǐ"
+	},
+	"supersedes": "chinese/ceremonial_administration_01",
+	"description": ".",
+	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 0, "glory": 300},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "chin"}]},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "chinese_ceremonial_02.png",
+	"researchTime": 90,
+	"tooltip": "Ministers and Healers +25% range and +25% affect.",
+	"modifications": [
+		{"value": "Heal/Range", "multiply": 1.25},
+		{"value": "Heal/Rate", "multiply": 0.75}
+	],
+	"affects": ["Minister", "Healer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

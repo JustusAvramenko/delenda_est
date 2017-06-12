@@ -1,0 +1,20 @@
+{
+	"genericName": "Civil Engineering - Level 3",
+	"specificName": {
+		"chin": "Gōngchéng"
+	},
+	"supersedes": "chinese/civil_engineering_02",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 700, "metal": 0, "glory": 500},
+	"requirements": {"all": [{"tech": "phase_imperial"}, {"civ": "chin"}]},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "chinese_engineering_03.png",
+	"researchTime": 90,
+	"tooltip": "All structures -20% build time and +20% health.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.9},
+		{"value": "Health/Max", "multiply": 1.2}
+	],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
