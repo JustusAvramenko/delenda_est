@@ -212,6 +212,10 @@ function unravelPhases(techs)
 			phaseList.splice(reqPhasePos+1, 0, myPhase);
 			phaseList.splice(myPhasePos, 1);
 		}
+        else if (reqPhasePos < 0 && myPhasePos < 0)
+                // If neither phase is in the list, then add them both to the end
+                // and hope that later iterations will relocate them if incorrect.
+                phaseList.push(reqPhase, myPhase);
 	}
 
 	return phaseList;
