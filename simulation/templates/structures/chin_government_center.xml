@@ -20,6 +20,14 @@
       <metal>0</metal>
     </Resources>
   </Cost>
+  <GarrisonHolder>
+    <Max>5</Max>
+    <EjectHealth>0</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Minister</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>1</LoadingRange>
+  </GarrisonHolder>
   <Identity>
     <Civ>chin</Civ>
     <GenericName>Imperial Court</GenericName>
@@ -47,7 +55,7 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/chin_champion_chariot
+      units/chin_minister
     </Entities>
     <Technologies datatype="tokens">
 	  chinese/civil_service_01

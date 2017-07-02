@@ -20,5 +20,20 @@
       </textures>
     </variant>
   </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+        <prop actor="props/structures/barracks_weap.xml" attachpoint="root"/>
+        <prop actor="props/structures/barracks_shield_a.xml" attachpoint="root"/>
+        <prop actor="props/structures/barracks_shield_b.xml" attachpoint="root"/>
+        <prop actor="props/structures/barracks_shield_c.xml" attachpoint="root"/>
+        <prop actor="props/structures/barracks.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
   <material>player_trans_ao_parallax_spec.xml</material>
 </actor>

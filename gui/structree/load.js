@@ -16,7 +16,7 @@ function loadUnit(templateName)
 			{
 				build = build.replace("{civ}", g_SelectedCiv);
 				unit.production.units.push(build);
-				if (g_Lists.units.indexOf(build) < 0)
+				if (Engine.TemplateExists(build) && g_Lists.structures.indexOf(build) < 0)
 					g_Lists.units.push(build);
 			}
 		}
@@ -65,7 +65,7 @@ function loadStructure(templateName)
 			{
 				build = build.replace("{civ}", g_SelectedCiv);
 				structure.production.units.push(build);
-				if (g_Lists.units.indexOf(build) < 0)
+				if (Engine.TemplateExists(build) && g_Lists.units.indexOf(build) < 0)
 					g_Lists.units.push(build);
 			}
 
@@ -168,7 +168,7 @@ function loadTechnologyPair(pairCode)
 }
 
 /**
- * Loads the names of all phases required to research the given technologies.
+ * Determine order of phases.
  *
  * @param techs The current available store of techs
  *
