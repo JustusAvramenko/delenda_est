@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/kush_outpost">
+  <Health>
+    <Max op="mul">2.0</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kush</Civ>
+    <GenericName>Stone Outpost</GenericName>
+    <SpecificName>Karavokyrós</SpecificName>
+    <VisibleClasses datatype="tokens">-Village Town -Wood Stone</VisibleClasses>
+    <Icon>structures/outpost_stone.png</Icon>
+  </Identity>
+  <TerritoryDecay>
+    <DecayRate op="mul">0.75</DecayRate>
+  </TerritoryDecay>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>structures/kushites/outpost_stone.xml</Actor>
+  </VisualActor>
+</Entity>
