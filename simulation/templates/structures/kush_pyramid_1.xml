@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Cost>
+    <BuildTime>300</BuildTime>
+    <Resources>
+      <food>500</food>
+      <wood>0</wood>
+      <stone>500</stone>
+      <metal>0</metal>
+      <glory>0</glory>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="36.0" depth="36.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>kush</Civ>
+    <GenericName>Kushite Pyramid</GenericName>
+    <SpecificName>Kushite Pyramid</SpecificName>
+    <Classes datatype="tokens">-ConquestCritical Pyramid_1</Classes>
+    <VisibleClasses datatype="tokens">-City Village Pyramid</VisibleClasses>
+    <History>?</History>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Icon>gaia/special_pyramid.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="32.0" depth="32.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_greek_theater.xml</select>
+      <constructed>interface/complete/building/complete_greek_theater.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>12.0</HeightOffset>
+  </StatusBars>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>special/pyramid_minor.xml</Actor>
+  </VisualActor>
+</Entity>

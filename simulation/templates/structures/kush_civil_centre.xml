@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Footprint>
+    <Square width="42.0" depth="35"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Obstruction>
+    <Static width="40.0" depth="37"/>
+  </Obstruction>
+  <Identity>
+    <Civ>kush</Civ>
+    <SpecificName>pr-'a</SpecificName>
+    <History>?</History>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_infantry_spearman_b
+    </Entities>
+    <Technologies datatype="tokens">
+	  health_units_01
+	  health_units_02
+	  health_units_03
+	  pair_structures_01
+	  pair_structures_02
+	  pair_structures_03
+	  unlock_spies
+	  spy_counter
+	  successors/health_heroes
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/ptolemies/civic_centre.xml</Actor>
+  </VisualActor>
+</Entity>

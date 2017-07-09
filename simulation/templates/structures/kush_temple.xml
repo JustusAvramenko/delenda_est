@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple">
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kush</Civ>
+    <SpecificName>ḥwt-nṯr</SpecificName>
+    <History>?</History>
+  </Identity>
+  <Obstruction>
+    <Static width="20" depth="21"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+      successors/special_pharaonic_cult
+      capture_games
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/ptolemies/temple.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>
