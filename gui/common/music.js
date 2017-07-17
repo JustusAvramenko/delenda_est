@@ -51,11 +51,11 @@ function Music()
 Music.prototype.resetTracks = function()
 {
 	this.tracks = {
-		MENU: ["Golden_Scarabs.ogg"],
-		PEACE: [],
+		"MENU": ["Golden_Scarabs.ogg"],
+		"PEACE": [],
 		BATTLE: ["Taiko_1.ogg", "Taiko_2.ogg"],
-		VICTORY : ["You_are_Victorious!.ogg"],
-		DEFEAT : ["Dried_Tears.ogg"]
+		VICTORY : ["Going_Home.ogg"],
+		DEFEAT : ["Tonight_We_Dine_In_Hell.ogg"]
 	};
 };
 
@@ -79,23 +79,23 @@ Music.prototype.updateState = function()
 			break;
 
 		case this.states.MENU:
-			this.switchMusic(pickRandom(this.tracks.MENU), 0, true);
+			this.startPlayList(this.tracks.MENU, 0, true);
 			break;
 
 		case this.states.PEACE:
-			this.startPlayList(this.tracks.PEACE, 3.0, true);
+			this.startPlayList(shuffleArray(this.tracks.PEACE), 3.0, true);
 			break;
 
 		case this.states.BATTLE:
-			this.startPlayList(this.tracks.BATTLE, 2.0, true);
+			this.startPlayList(shuffleArray(this.tracks.BATTLE), 2.0, true);
 			break;
 
 		case this.states.VICTORY:
-			this.startPlayList(this.tracks.VICTORY, 2.0, true);
+			this.startPlayList(shuffleArray(this.tracks.VICTORY), 2.0, true);
 			break;
 
 		case this.states.DEFEAT:
-			this.startPlayList(this.tracks.DEFEAT, 2.0, true);
+			this.startPlayList(shuffleArray(this.tracks.DEFEAT), 2.0, true);
 			break;
 
 		default:
@@ -108,7 +108,7 @@ Music.prototype.updateState = function()
 Music.prototype.storeTracks = function(civMusic)
 {
 	this.resetTracks();
-	for each (var music in civMusic)
+	for (var music of civMusic)
 	{
 		var type = undefined;
 		for (var i in this.MUSIC)
@@ -138,13 +138,6 @@ Music.prototype.startPlayList = function(tracks, fadeInPeriod, isLooping)
 		Engine.AddPlaylistItem( this.RELATIVE_MUSIC_PATH + tracks[i] );
 	}
 
-	Engine.StartPlaylist(isLooping);
-};
-
-Music.prototype.switchMusic = function(track, fadeInPeriod, isLooping)
-{
-  Engine.ClearPlaylist();
-	Engine.AddPlaylistItem( this.RELATIVE_MUSIC_PATH + track );
 	Engine.StartPlaylist(isLooping);
 };
 
