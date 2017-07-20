@@ -3,11 +3,11 @@
   <castshadow/>
   <group>
     <variant file="biped/female_base.xml" name="Base">
-      <mesh>skeletal/new/f_tunic_short.dae</mesh>
     </variant>
   </group>
   <group>
-	<variant frequency="2" name="Light Skin">
+	<variant frequency="2" name="Skirt Light Skin">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_kush_fem_light.xml" attachpoint="head"/>
       </props>
@@ -16,7 +16,8 @@
         <texture file="skeletal/kush_support_female_citizen_spec.png" name="specTex"/>
       </textures>
     </variant>
-	<variant frequency="5" name="Medium Skin">
+	<variant frequency="5" name="Skirt Medium Skin">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_kush_fem_medium.xml" attachpoint="head"/>
       </props>
@@ -25,13 +26,44 @@
         <texture file="skeletal/kush_support_female_citizen_spec.png" name="specTex"/>
       </textures>
     </variant>
-	<variant frequency="3" name="Dark Skin">
+	<variant frequency="3" name="Skirt Dark Skin">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_kush_fem_dark.xml" attachpoint="head"/>
       </props>
       <textures>
         <texture file="skeletal/kush_support_female_citizen_dark.png" name="baseTex"/>
         <texture file="skeletal/kush_support_female_citizen_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+	<variant frequency="2" name="White Dress Light Skin">
+      <mesh>skeletal/new/f_dress.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_fem_light.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_support_female_citizen_dress_01_light.png" name="baseTex"/>
+        <texture file="skeletal/kush_support_female_citizen_dress_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+	<variant frequency="5" name="White Dress Medium Skin">
+      <mesh>skeletal/new/f_dress.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_fem_medium.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_support_female_citizen_dress_01_medium.png" name="baseTex"/>
+        <texture file="skeletal/kush_support_female_citizen_dress_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+	<variant frequency="3" name="White Dress Dark Skin">
+      <mesh>skeletal/new/f_dress.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_fem_dark.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_support_female_citizen_dress_01_dark.png" name="baseTex"/>
+        <texture file="skeletal/kush_support_female_citizen_dress_01_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
