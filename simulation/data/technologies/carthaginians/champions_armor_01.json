@@ -7,11 +7,12 @@
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "shields_hellenes.png",
 	"researchTime": 40,
-	"tooltip": "Temple Champions +1 Hack Armor and +1 Pierce Armor, but also +10 Metal Cost.",
+	"tooltip": "Temple Champions +1 hack armor and +1 pierce armor, but also +10% metal cost.",
 	"modifications": [
-	{"value": "Armour/Hack", "add": 1.0},
-	{"value": "Armour/Pierce", "add": 1.0},
-	{"value": "Cost/Resources/metal", "add": 10}],
+		{"value": "Armour/Hack", "add": 1.0},
+		{"value": "Armour/Pierce", "add": 1.0},
+		{"value": "Cost/Resources/metal", "multiply": 1.1}
+	],
 	"affects": ["Champion Infantry", "Champion Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
