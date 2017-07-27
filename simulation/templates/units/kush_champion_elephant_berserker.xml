@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/kush_champion_elephant">
+  <Armour>
+    <Hack op="add">-1</Hack>
+    <Pierce op="add">-2</Pierce>
+    <Crush op="add">-1</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>50.0</Hack>
+      <Crush>50.0</Crush>
+      <PreferredClasses datatype="tokens">Unit</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+	-elephant_trample
+	elephant_trample_berserk
+  </Auras>
+  <Health>
+    <RegenRate>-5</RegenRate>
+    <Unhealable>true</Unhealable>
+  </Health>
+  <Identity>
+	<GenericName>Berserker War Elephant</GenericName>
+    <VisibleClasses datatype="tokens">Berserk</VisibleClasses>
+  </Identity>
+  <UnitAI>
+    <DefaultStance>violent</DefaultStance>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed op="add">2.0</WalkSpeed>
+    <Run>
+      <Speed op="add">2.0</Speed>
+    </Run>
+  </UnitMotion>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>units/carthaginians/champion_unit_2.xml</Actor>
+  </VisualActor>
+</Entity>
