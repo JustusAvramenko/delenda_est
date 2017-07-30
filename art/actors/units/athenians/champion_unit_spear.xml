@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_hoplite.xml">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/hele_su3.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/athen_round_epilektos.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="epilektos-01">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-02">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi2.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-03">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi3.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-04">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi4.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-05">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi5.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-06">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi6.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-07">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi7.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-08">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi8.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-09">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi9.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-10">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi10.png" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
