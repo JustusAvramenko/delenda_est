@@ -1,0 +1,18 @@
+{
+	"pair": "kushites/pair_heroes_01",
+	"genericName": "Elephant Armor",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500, "glory": 200},
+	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
+	"icon": "armor_elephant.png",
+	"researchTime": 60,
+	"tooltip": "War Elephants +2 hack armor and +2 pierce armor, but +20% metal cost.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 2.0},
+		{"value": "Armour/Pierce", "add": 2.0},
+		{"value": "Cost/Resources/metal", "multiply": 1.2}	
+	],
+	"affects": ["Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

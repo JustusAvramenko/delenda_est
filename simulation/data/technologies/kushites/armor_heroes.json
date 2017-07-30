@@ -1,0 +1,17 @@
+{
+	"pair": "kushites/pair_heroes_01",
+	"genericName": "Ceremonial Armor",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500, "glory": 400},
+	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
+	"icon": "armor_cuirass_iron.png",
+	"researchTime": 60,
+	"tooltip": "Heroes +2 hack armor and +2 pierce armor.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 2.0},
+		{"value": "Armour/Pierce", "add": 2.0}
+	],
+	"affects": ["Hero"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
