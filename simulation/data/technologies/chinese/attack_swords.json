@@ -1,0 +1,14 @@
+{
+	"pair": "chinese/pair_melee_01",
+	"genericName": "Chinese Iron Swords",
+	"description": "Often, an infantryman would carry a secondary weapon in addition to his primary weapon of choice, to be drawn when the primary weapon has failed or been broken.",
+	"cost": {"food": 100, "wood": 0, "stone": 0, "metal": 100, "glory": 0},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
+	"icon": "falcata.png",
+	"researchTime": 60,
+	"tooltip": "Sword units +10% hack attack.",
+	"modifications": [{"value": "Attack/Melee/Hack", "multiply": 1.1}],
+	"affects": ["Sword"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

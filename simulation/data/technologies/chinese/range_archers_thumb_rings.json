@@ -1,0 +1,17 @@
+{
+	"pair": "chinese/pair_archers_01",
+	"genericName": "Thumb Rings",
+	"description": "Thumb rings give archers greater grip on the bow string.",
+	"cost": {"food": 0, "wood": 100, "stone": 0, "metal": 100, "glory": 0},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
+	"icon": "archery_tradition.png",
+	"researchTime": 60,
+	"tooltip": "Archer Infantry and Archer Cavalry +10% range and +10% attack rate.",
+	"modifications": [
+		{"value": "Attack/Ranged/MaxRange", "multiply": 1.1},
+		{"value": "Attack/Ranged/RepeatTime", "multiply": 0.9}
+	],
+	"affects": ["Archer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,18 @@
+{
+	"pair": "chinese/pair_cav_armor_01",
+	"genericName": "Padded Cavalry Armor",
+	"description": "Cotton or linen stitched body armor for cavalrymen.",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 0},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
+	"icon": "armor_quilted.png",
+	"researchTime": 60,
+	"tooltip": "All Cavalry +1 hack armor level, -2% walk speed.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 1.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.95},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.95}
+	],
+	"affects": ["Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

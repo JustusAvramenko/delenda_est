@@ -1,0 +1,17 @@
+{
+	"genericName": "Composite Bows",
+	"description": ".",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 0, "glory": 300},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "chin"}]},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "archery_tradition.png",
+	"researchTime": 60,
+	"tooltip": "Cavalry Archers +20% range and +25% accuracy.",
+	"modifications": [
+		{"value": "Attack/Ranged/Spread", "multiply": 0.75},
+		{"value": "Attack/Ranged/MaxRange", "multiply": 1.2},
+		{"value": "Vision/Range", "multiply": 1.1}
+	],
+	"affects": ["Cavalry Archer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,14 @@
+{
+	"pair": "chinese/pair_melee_01",
+	"genericName": "Chinese Pikes",
+	"description": "Using iron instead of bronze gave spears additional piercing power.",
+	"cost": {"food": 0, "wood": 100, "stone": 0, "metal": 100},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
+	"icon": "spear.png",
+	"researchTime": 60,
+	"tooltip": "All Spear units +10% hack attack.",
+	"modifications": [{"value": "Attack/Melee/Hack", "multiply": 1.1}],
+	"affects": ["Spear"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

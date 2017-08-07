@@ -1,0 +1,16 @@
+{
+	"genericName": "Javelin Thongs",
+	"description": "The javelin thong (the Greeks also called them loops, or bronkhos) increased the fulcrum action of the throwing arm mid-throw, increasing speed and range of the javelin.",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 0, "glory": 0},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
+	"icon": "javelin_thong.png",
+	"researchTime": 60,
+	"tooltip": "All Javelin units +10% pierce attack and +20% range.",
+	"modifications": [
+		{"value": "Attack/Ranged/Pierce", "multiply": 1.1},
+		{"value": "Attack/Ranged/MaxRange", "multiply": 1.2},
+		{"value": "Vision/Range", "multiply": 1.1}],
+	"affects": ["Javelin"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

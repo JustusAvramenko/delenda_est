@@ -1,0 +1,18 @@
+{
+	"pair": "chinese/pair_inf_armor_01",
+	"genericName": "Wicker and Hide Shields",
+	"description": "Wicker shield base with hide stretched over the front face.",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 0, "glory": 0},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
+	"icon": "shields_taka.png",
+	"researchTime": 60,
+	"tooltip": "All Infantry +1 pierce armor level, -5% walk speed.",
+	"modifications": [
+		{"value": "Armour/Pierce", "add": 1.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.95},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.95}
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

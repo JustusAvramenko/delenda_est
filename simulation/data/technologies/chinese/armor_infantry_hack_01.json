@@ -1,0 +1,18 @@
+{
+	"pair": "chinese/pair_inf_armor_01",
+	"genericName": "Leather Armor",
+	"description": "Leather body armor for infantrymen.",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 0},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
+	"icon": "armor_leather.png",
+	"researchTime": 60,
+	"tooltip": "All Infantry +1 hack armor level, -2% walk speed.",
+	"modifications": [
+		{"value": "Armour/Hack", "add": 1.0},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 0.95},
+		{"value": "UnitMotion/Run/Speed", "multiply": 0.95}
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
