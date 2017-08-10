@@ -175,7 +175,7 @@ Player.prototype.SetMaxPopulation = function(max)
 
 Player.prototype.GetMaxPopulation = function()
 {
-	return Math.round(ApplyValueModificationsToPlayer("Player/MaxPopulation", this.maxPop, this.entity, this.playerID));
+	return Math.round(ApplyValueModificationsToEntity("Player/MaxPopulation", this.maxPop, this.entity));
 };
 
 Player.prototype.GetBarterMultiplier = function()
@@ -368,7 +368,7 @@ Player.prototype.SetTradingGoods = function(tradingGoods)
 	let sumProba = 0;
 	for (let resource in tradingGoods)
 	{
-		if (resCodes.indexOf(resource) == -1)
+		if (resCodes.indexOf(resource) == -1 || tradingGoods[resource] < 0)
 		{
 			error("Invalid trading goods: " + uneval(tradingGoods));
 			return;
@@ -395,7 +395,13 @@ Player.prototype.GetState = function()
 	return this.state;
 };
 
-Player.prototype.SetState = function(newState, resign)
+/**
+ * @param {string} newState - Either "defeated" or "won".
+ * @param {string|undefined} message - A string to be shown in chat, for example
+ *     markForTranslation("%(player)s has been defeated (failed objective).").
+ *     If it is undefined, the caller MUST send that GUI notification manually.
+ */
+Player.prototype.SetState = function(newState, message)
 {
 	if (this.state != "active")
 		return;
@@ -438,17 +444,21 @@ Player.prototype.SetState = function(newState, resign)
 	Engine.BroadcastMessage(won ? MT_PlayerWon : MT_PlayerDefeated, { "playerId": this.playerID });
 
 	let cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
-	if (won)
-		cmpGUIInterface.PushNotification({
-			"type": "won",
-			"players": [this.playerID]
-		});
-	else
-		cmpGUIInterface.PushNotification({
-			"type": "defeat",
-			"players": [this.playerID],
-			"resign": resign
-		});
+	if (message)
+		if (won)
+			cmpGUIInterface.PushNotification({
+				"type": "won",
+				"players": [this.playerID],
+				"allies": [this.playerID],
+				"message": message
+			});
+		else
+			cmpGUIInterface.PushNotification({
+				"type": "defeat",
+				"players": [this.playerID],
+				"allies": [this.playerID],
+				"message": message
+			});
 };
 
 Player.prototype.GetTeam = function()
@@ -763,7 +773,7 @@ Player.prototype.OnValueModification = function(msg)
 		return;
 
 	if (msg.valueNames.indexOf("Player/SpyCostMultiplier") != -1)
-		this.spyCostMultiplier = ApplyValueModificationsToPlayer("Player/SpyCostMultiplier", +this.template.SpyCostMultiplier, this.entity, this.playerID);
+		this.spyCostMultiplier = ApplyValueModificationsToEntity("Player/SpyCostMultiplier", +this.template.SpyCostMultiplier, this.entity);
 
 	if (msg.valueNames.some(mod => mod.startsWith("Player/BarterMultiplier/")))
 		for (let res in this.template.BarterMultiplier.Buy)
@@ -802,9 +812,17 @@ Player.prototype.TributeResource = function(player, amounts)
 	if (this.state != "active" || cmpPlayer.state != "active")
 		return;
 
+	for (let resCode in amounts)
+		if (Resources.GetCodes().indexOf(resCode) == -1 ||
+		    !Number.isInteger(amounts[resCode]) ||
+		    amounts[resCode] < 0)
+		{
+			warn("Invalid tribute amounts: " + uneval(amounts));
+			return;
+		}
+
 	if (!this.SubtractResourcesOrNotify(amounts))
 		return;
-
 	cmpPlayer.AddResources(amounts);
 
 	var total = Object.keys(amounts).reduce((sum, type) => sum + amounts[type], 0);
