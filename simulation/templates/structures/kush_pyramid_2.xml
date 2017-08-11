@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+    kush_pyramids_territory
+  </Auras>
+  <BuildRestrictions>
+    <Category>PyramidLarge</Category>
+  </BuildRestrictions>
   <Cost>
     <BuildTime>300</BuildTime>
     <Resources>
@@ -11,37 +17,39 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="36.0" depth="36.0"/>
-    <Height>10.0</Height>
+    <Square width="22.0" depth="26.0"/>
+    <Height>20.0</Height>
   </Footprint>
   <Identity>
     <Civ>kush</Civ>
-    <GenericName>Kushite Pyramid</GenericName>
-    <SpecificName>Kushite Pyramid</SpecificName>
-    <Classes datatype="tokens">-ConquestCritical Pyramid_2</Classes>
+    <GenericName>Large Kushite Pyramid</GenericName>
+    <SpecificName>Large Kushite Pyramid</SpecificName>
+    <Classes datatype="tokens">-ConquestCritical PyramidLarge</Classes>
     <VisibleClasses datatype="tokens">-City Town Pyramid</VisibleClasses>
     <History>?</History>
+    <Tooltip>Build 1 to automatically research City Phase. Increase territory radius of Civic Centers for each one built.</Tooltip>
     <RequiredTechnology>phase_town</RequiredTechnology>
     <Icon>gaia/special_pyramid.png</Icon>
   </Identity>
   <Obstruction>
-    <Static width="32.0" depth="32.0"/>
+    <Static width="20.0" depth="24.0"/>
   </Obstruction>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_greek_theater.xml</select>
-      <constructed>interface/complete/building/complete_greek_theater.xml</constructed>
+      <constructed>interface/alarm/alarm_phase.xml</constructed>
     </SoundGroups>
   </Sound>
   <StatusBars>
     <BarWidth>6.0</BarWidth>
     <BarHeight>0.6</BarHeight>
-    <HeightOffset>12.0</HeightOffset>
+    <HeightOffset>15.0</HeightOffset>
   </StatusBars>
   <Vision>
     <Range>40</Range>
   </Vision>
   <VisualActor>
-    <Actor>special/pyramid_minor.xml</Actor>
+    <Actor>structures/kushites/pyramid.xml</Actor>
+    <FoundationActor>structures/fndn_4x6.xml</FoundationActor>
   </VisualActor>
 </Entity>

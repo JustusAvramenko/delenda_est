@@ -1,0 +1,18 @@
+{
+	"genericName": "Empire Phase",
+	"supersedes": "phase_city_kush",
+	"replaces": ["phase_imperial"],
+	"description": "Moves your civilization from urbanism to imperialism, unlocking powerful technologies and abilities not available in earlier phases of expansion.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"entity": {"class": "Wonder", "number": 1 }}, {"civ": "kush"}]},
+	"autoResearch": true,
+	"requirementsTooltip": "Requires 1 Wonder to be built.",
+	"icon": "imperial_phase.png",
+	"researchTime": 0,
+	"tooltip": "Advance to Empire Phase, which unlocks powerful technologies and abilities. Vision range for units increased by a final +25%.",
+	"modifications": [
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "Unit"}
+	],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}
