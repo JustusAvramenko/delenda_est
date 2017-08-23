@@ -2,44 +2,61 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="Edfu">
-      <mesh>structural/ptol_edfu_struct.dae</mesh>
+    <variant name="base">
       <props>
-        <prop actor="props/structures/ptolemies/edfu_paintings.xml" attachpoint="root"/>
-		<prop actor="props/structures/kushites/victory_paintings_b.xml" attachpoint="root"/>
-        <prop actor="props/structures/ptolemies/edfu_statues.xml" attachpoint="root"/>
-        <prop actor="props/structures/decals/dirt_3x3.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+        <prop actor="props/structures/kushites/wonder_paintings.xml" attachpoint="root"/>
+        <prop actor="props/flora/decal_palms_patch.xml" attachpoint="bush" minheight=""/>
+        <prop actor="props/flora/decal_palms_patch.xml" attachpoint="bush_1" minheight=""/>
+        <prop actor="props/flora/decal_palms_patch.xml" attachpoint="bush_2" minheight=""/>
+        <prop actor="props/flora/decal_palms_patch.xml" attachpoint="bush_3" minheight=""/>
+        <prop actor="props/flora/decal_palms_patch.xml" attachpoint="bush_4" minheight=""/>
+        <prop actor="props/flora/decal_palms_patch.xml" attachpoint="bush_5" minheight=""/>
+        <prop actor="props/flora/decal_palms_patch.xml" attachpoint="bush_6" minheight=""/>
+        <prop actor="props/flora/decal_palms_patch.xml" attachpoint="bush_7" minheight=""/>
+        <prop actor="flora/trees/palm_cretan_date_short_building.xml" attachpoint="bush" maxheight="20" minheight="-20"/>
+        <prop actor="flora/trees/palm_cretan_date_short_building.xml" attachpoint="bush_1" maxheight="20" minheight="-20"/>
+        <prop actor="flora/trees/palm_cretan_date_short_building.xml" attachpoint="bush_2" maxheight="20" minheight="-20"/>
+        <prop actor="flora/trees/palm_cretan_date_short_building.xml" attachpoint="bush_3" maxheight="20" minheight="-20"/>
+        <prop actor="flora/trees/palm_cretan_date_short_building.xml" attachpoint="bush_4" maxheight="20" minheight="-20"/>
+        <prop actor="flora/trees/palm_cretan_date_short_building.xml" attachpoint="bush_5" maxheight="20" minheight="-20"/>
+        <prop actor="flora/trees/palm_cretan_date_short_building.xml" attachpoint="bush_6" maxheight="20" minheight="-20"/>
+        <prop actor="flora/trees/palm_cretan_date_short_building.xml" attachpoint="bush_7" maxheight="20" minheight="-20"/>
       </props>
       <textures>
         <texture file="structural/kush_struct_2.png" name="baseTex"/>
-        <texture file="structural/ptol_struct_norm.png" name="normTex"/>
         <texture file="structural/ptol_struct_spec.png" name="specTex"/>
-        <texture file="structural/ao/ptol_edfu.png" name="aoTex"/>
+        <texture file="structural/ptol_struct_norm.png" name="normTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant name="ungarrisoned" frequency="1"/>
+    <variant frequency="1" name="wonder">
+      <mesh>structural/kush_wonder.dae</mesh>
+      <textures>
+        <texture file="structural/ao/kush_wonder_AO.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
     <variant name="garrisoned">
       <props>
-        <prop actor="props/special/common/garrison_flag_ptol.xml" attachpoint="garrisoned"/>
-		<prop actor="props/special/common/garrison_flag_ptol.xml" attachpoint="garrisoned2"/>
-		<prop actor="props/special/common/garrison_flag_ptol.xml" attachpoint="garrisoned3"/>
-		<prop actor="props/special/common/garrison_flag_ptol.xml" attachpoint="garrisoned4"/>
+        <prop actor="props/special/common/garrison_flag_kart.xml" attachpoint="garrisoned"/>
+        <prop actor="props/special/common/garrison_flag_kart.xml" attachpoint="garrisoned_1"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant name="alive" frequency="1"/>
+    <variant frequency="1" name="alive"/>
     <variant name="death">
       <props>
         <prop attachpoint="garrisoned"/>
-        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
-        <prop actor="props/structures/ptolemies/edfu_paintings.xml" attachpoint="root"/>
-		<prop actor="props/structures/ptolemies/edfu_paintings_b.xml" attachpoint="root"/>
-        <prop actor="props/structures/ptolemies/edfu_statues.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+        <prop actor="props/structures/kushites/temple_paintings.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_3x3.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>

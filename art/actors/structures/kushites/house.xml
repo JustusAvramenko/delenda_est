@@ -2,59 +2,60 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant name="base" frequency="1">
+    <variant name="base">
+      <props>
+        <prop actor="props/structures/decals/dirt_2x2.xml" attachpoint="root"/>
+      </props>
       <textures>
         <texture file="structural/kush_struct.png" name="baseTex"/>
+        <texture file="structural/kush_struct_spec.png" name="specTex"/>
         <texture file="structural/kush_struct_norm.png" name="normTex"/>
-	    <texture file="structural/kush_struct_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Kushites House 1">
+    <variant frequency="1" name="1">
       <mesh>structural/kush_house_1.dae</mesh>
-      <props>
-        <prop actor="props/structures/decals/dirt_small.xml" attachpoint="root"/>
-      </props>
       <textures>
-	    <texture file="structural/ao/kush_house_1_ao.png" name="aoTex"/>
+        <texture file="structural/ao/kush_house_1_AO.png" name="aoTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="Kushites House 2">
+    <variant frequency="1" name="2">
       <mesh>structural/kush_house_2.dae</mesh>
-      <props>
-        <prop actor="props/structures/decals/dirt_small.xml" attachpoint="root"/>
-      </props>
       <textures>
-	    <texture file="structural/ao/kush_house_2_ao.png" name="aoTex"/>
+        <texture file="structural/ao/kush_house_2_AO.png" name="aoTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="Kushites House 3">
+    <variant frequency="1" name="3">
       <mesh>structural/kush_house_3.dae</mesh>
-      <props>
-        <prop actor="props/structures/decals/dirt_small.xml" attachpoint="root"/>
-      </props>
       <textures>
-	    <texture file="structural/ao/kush_house_3_ao.png" name="aoTex"/>
+        <texture file="structural/ao/kush_house_3_AO.png" name="aoTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="Kushites House 4">
+    <variant frequency="1" name="4">
       <mesh>structural/kush_house_4.dae</mesh>
-      <props>
-        <prop actor="props/structures/decals/dirt_small.xml" attachpoint="root"/>
-      </props>
       <textures>
-	    <texture file="structural/ao/kush_house_4_ao.png" name="aoTex"/>
+        <texture file="structural/ao/kush_house_4_AO.png" name="aoTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant name="alive" frequency="1"/>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_kart.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
     <variant name="death">
       <props>
+        <prop attachpoint="garrisoned"/>
         <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
         <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
         <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_1x1.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
