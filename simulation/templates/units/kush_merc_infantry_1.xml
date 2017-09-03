@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_mercenary_infantry_ranged_archer">
+<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
+  <Attack>
+    <Melee>
+      <Hack>3.0</Hack>
+      <Crush>5.0</Crush>
+	  <Bonuses>
+		<BonusAllInfantry>
+		  <Classes>Infantry</Classes>
+		  <Multiplier>1.25</Multiplier>
+		</BonusAllInfantry>
+		<BonusElephant>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>1.25</Multiplier>
+		</BonusElephant>
+	  </Bonuses>
+    </Melee>
+  </Attack>
   <Identity>
     <Civ>kush</Civ>
 	<SelectionGroupName>units/kush_merc_infantry_1</SelectionGroupName>
-    <GenericName>Nubian Mercenary Archer</GenericName>
-    <SpecificName>Kousít Misthophóros Toxóti̱s</SpecificName>
+    <GenericName>Nuba Clubman</GenericName>
+    <SpecificName>Nuba Clubman</SpecificName>
     <History>?</History>
     <Icon>units/ptol_infantry_archer.png</Icon>
   </Identity>
@@ -15,6 +31,6 @@
     </Run>
   </UnitMotion>
   <VisualActor>
-    <Actor>units/mercenaries/nubian_archer.xml</Actor>
+    <Actor>units/mercenaries/nuba_clubman.xml</Actor>
   </VisualActor>
 </Entity>

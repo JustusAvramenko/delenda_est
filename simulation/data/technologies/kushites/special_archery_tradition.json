@@ -1,16 +1,17 @@
 {
 	"genericName": "Archery Tradition",
 	"description": "The Kushites and Nubians had a tradition of fine archery and a penchant for using massed archers in battle.",
-	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 0, "glory": 200},
-	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "kush"}]},
-	"requirementsTooltip": "Unlocked in Village Phase.",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 0, "glory": 300},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "kush"}]},
+	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "archery_tradition.png",
 	"researchTime": 60,
-	"tooltip": "Archer Infantry and Archer Cavalry -20% train time, but -5% health.",
+	"tooltip": "Archer Infantry -20% train time, +20% walking speed, and +20% accuracy.",
 	"modifications": [
 		{"value": "Cost/BuildTime", "multiply": 0.8},
-		{"value": "Health/Max", "multiply": 0.95}
+		{"value": "Attack/Ranged/Spread", "multiply": 0.80},
+		{"value": "UnitMotion/WalkSpeed", "multiply": 1.20}
 	],
-	"affects": ["Archer"],
+	"affects": ["Infantry Archer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

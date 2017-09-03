@@ -1,0 +1,15 @@
+{
+	"genericName": "Trade Caravans",
+	"description": "Decreases train time for Traders by half.",
+	"cost": {"food": 100, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "trade_caravan.png",
+	"researchTime": 40,
+	"tooltip": "Traders -50% train time. Unlocks Trade Routes.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.5}
+	],
+	"affects": ["Trader"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

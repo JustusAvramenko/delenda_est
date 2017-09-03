@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_siege_onager_stationary">
+  <Attack>
+    <Ranged>
+      <MaxRange>120</MaxRange>
+      <MinRange>60.0</MinRange>
+      <PrepareTime>3000</PrepareTime>
+      <RepeatTime>6000</RepeatTime>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>10</Range>
+        <FriendlyFire>true</FriendlyFire>
+        <Hack>40.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>40.0</Crush>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <wood>300</wood>
+      <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="10.0" depth="10.0"/>
+    <Height>15.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>rome</Civ>
+    <SpecificName>Trebuchet</SpecificName>
+  </Identity>
+  <VisualActor>
+	<Actor>units/special/Trebuchet.xml</Actor>
+  </VisualActor>
+</Entity>

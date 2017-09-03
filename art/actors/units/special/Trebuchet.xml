@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Trebuchet">
+      <mesh>structural/Trebuchet.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/rock.xml" attachpoint="projectile"/>
+        <prop actor="props/units/weapons/rock.xml" attachpoint="loaded-projectile"/>
+      </props>
+      <textures>
+      	  <texture file="structural/Trebuchet.png" name="baseTex"/>
+	  </textures>
+	  <animations>
+        <animation file="mechanical/Trebuchet_idle.dae" name="idle" speed="100"/>
+		<animation file="mechanical/Trebuchet_attack.dae"  load="0.01" event="0.138" name="attack_ranged" speed="100"/>
+		<animation file="mechanical/Trebuchet_unpacking.dae" name="unpacking" speed="100"/>
+      </animations>
+    </variant>
+  </group>
+</actor>
