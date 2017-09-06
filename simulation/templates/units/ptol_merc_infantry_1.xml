@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_mercenary_infantry_melee_swordsman">
+  <Armour>
+    <Hack op="add">-1</Hack>
+  </Armour>
   <Cost>
 	<BuildTime>0</BuildTime>
   </Cost>
@@ -12,6 +15,12 @@
     <History></History>
     <Icon>units/cart_infantry_swordsman.png</Icon>
   </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+    <Run>
+      <Speed op="mul">1.2</Speed>
+    </Run>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/mercenaries/galatian_infantry_swordsman.xml</Actor>
   </VisualActor>
