@@ -7,20 +7,22 @@
   </Armour>
   <Attack>
     <Melee>
-      <Hack>15.0</Hack>
+      <Hack>10.0</Hack>
       <Pierce>10.0</Pierce>
       <Crush>0.0</Crush>
       <MaxRange>4.0</MaxRange>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">Structure Ship Siege</RestrictedClasses>
     </Melee>
   </Attack>
-  <Footprint>
-    <Circle radius="2.3"/>
-    <Height>2.5</Height>
+  <Footprint replace="">
+    <Square width="3.2" depth="6.4"/>
+    <Height>2.0</Height>
   </Footprint>
   <Identity>
     <Civ>gaia</Civ>
-	<GenericName>Walrus</GenericName>
+    <GenericName>Walrus</GenericName>
     <SpecificName>Odobenus rosmarus</SpecificName>
     <Icon>gaia/fauna_walrus.png</Icon>
   </Identity>
@@ -31,6 +33,14 @@
     <Amount>300</Amount>
     <Type>food.meat</Type>
   </ResourceSupply>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <VisualActor>
     <Actor>fauna/walrus.xml</Actor>
   </VisualActor>
