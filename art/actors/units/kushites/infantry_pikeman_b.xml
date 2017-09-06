@@ -5,22 +5,18 @@
     <variant file="biped/pikeman_base.xml">
       <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
-        <prop actor="props/units/heads/new/head_egyptian_e.xml" attachpoint="head"/>
-        <prop actor="props/units/heads/ptol_quilted_b.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/head_kush_nubian.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="head"/>
         <prop actor="props/units/shields/pelte_simple_player.xml" attachpoint="shield_arm"/>
         <prop actor="props/units/weapons/sarissa.xml" attachpoint="weapon_R"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Tunic 1">
+    <variant name="Kushite Basic Pike Infantry 01">
       <textures>
-        <texture file="skeletal/ptol_tunic_1.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Tunic 2">
-      <textures>
-        <texture file="skeletal/ptol_tunic_2.png" name="baseTex"/>
+        <texture file="skeletal/ptol_iar_01.png" name="baseTex"/>
+        <texture file="skeletal/ptol_iar_01_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -50,5 +46,5 @@
     <variant file="biped/carry_metal_idle.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
