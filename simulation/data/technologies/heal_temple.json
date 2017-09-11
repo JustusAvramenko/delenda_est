@@ -10,13 +10,15 @@
 		"imp": "Mithraic Mysteries"
 	},
 	"description": "Units garrisoned in a temple are healed faster.",
-	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 300},
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 0, "glory": 200},
 	"requirements": {"tech": "phase_city"},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "cauldron.png",
 	"researchTime": 40,
 	"tooltip": "Temples +100% garrisoned healing rate.",
-	"modifications": [{"value": "GarrisonHolder/BuffHeal", "multiply": 2}],
+	"modifications": [
+		{"value": "GarrisonHolder/BuffHeal", "multiply": 2}
+	],
 	"affects": ["Temple"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
