@@ -5,7 +5,8 @@
   </Health>
   <Identity>
     <Civ>kush</Civ>
-    <SpecificName>ḥwt-nṯr</SpecificName>
+    <GenericName>Kushite Temple</GenericName>
+    <SpecificName>Kushite Temple</SpecificName>
     <History>?</History>
   </Identity>
   <Obstruction>
@@ -17,6 +18,26 @@
       capture_games
     </Technologies>
   </ProductionQueue>
+  <Upgrade>
+    <Amun>
+      <Entity>structures/kush_temple_3</Entity>
+      <Tooltip>Reaffirm the cult of Amun and unlock the Napatan Temple Guard and special technologies.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <metal>100</metal>
+      </Cost>
+      <Time>50</Time>
+    </Amun>
+    <Apedemak>
+      <Entity>structures/kush_temple_2</Entity>
+      <Tooltip>Break with the Napatan priesthood and unlock the Apedemak Temple Guard and special technologies.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <glory>100</glory>
+      </Cost>
+      <Time>50</Time>
+    </Apedemak>
+  </Upgrade>
   <VisualActor>
     <Actor>structures/kushites/temple.xml</Actor>
     <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
