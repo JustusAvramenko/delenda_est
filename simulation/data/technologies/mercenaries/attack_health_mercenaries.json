@@ -1,0 +1,18 @@
+{
+	"genericName": "Martial Expertise",
+	"description": "Mercenaries were very experienced at warfare.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500, "glory": 500},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "pankration.png",
+	"researchTime": 40,
+	"tooltip": "All mercenaries +20% attack and +10% health, but take twice at long to recruit.",
+	"modifications": [
+		{"value": "Attack/Melee/Hack", "multiply": 1.2},
+		{"value": "Attack/Ranged/Pierce", "multiply": 1.2},
+		{"value": "Health/Max", "multiply": 1.1},
+		{"value": "Cost/BuildTime", "multiply": 2.0}
+	],
+	"affects": ["Mercenary"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
