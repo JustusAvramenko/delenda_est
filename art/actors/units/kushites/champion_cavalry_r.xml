@@ -3,6 +3,7 @@
   <castshadow/>
   <group>
     <variant frequency="100" name="Base">
+      <mesh>skeletal/m_tunic_long.dae</mesh>
       <animations>
         <animation file="biped/cavalryidle.psa" name="Idle" speed="50"/>
         <animation file="biped/cavalryidle.psa" name="Walk" speed="18"/>
@@ -13,66 +14,19 @@
         <animation file="biped/rider_sword_death_a.psa" name="death" speed="230"/>
       </animations>
       <props>
-        <prop actor="props/units/heads/new/head_african_1.xml" attachpoint="head"/>
-        <prop actor="props/units/heads/ptol_quilted_b.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmet/kush_metal_01.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/head_kush_meroitic.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/spear_lance.xml" attachpoint="r_hand"/>
         <prop actor="props/units/shields/numidian_round_3.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Armour-Linen-Quilted">
-      <mesh>skeletal/m_tunic_long.dae</mesh>
+    <variant name="Kushite Champion Noble Cavalry 01">
       <textures>
-        <texture file="skeletal/ptol_pikeman_a.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 1">
-      <mesh>skeletal/m_tunic_short.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_isp_a_1.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 2">
-      <mesh>skeletal/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_2.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 3">
-      <mesh>skeletal/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_3.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 4">
-      <mesh>skeletal/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_4.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 5">
-      <mesh>skeletal/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_5.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 6">
-      <mesh>skeletal/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_6.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 7">
-      <mesh>skeletal/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_7.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 8">
-      <mesh>skeletal/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_8.png" name="baseTex"/>
+        <texture file="skeletal/kush_champion_archer_01.png" name="baseTex"/>
+        <texture file="skeletal/kush_pike_a_01_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -91,5 +45,5 @@
       </props>
     </variant>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
