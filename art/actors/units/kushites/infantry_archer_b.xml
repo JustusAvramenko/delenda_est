@@ -8,7 +8,7 @@
         <prop actor="props/units/heads/head_kush_nubian_red.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/bow_short.xml" attachpoint="weapon_bow"/>
-        <prop actor="props/units/quiver_hip.xml" attachpoint="sheath_L"/>
+        <prop actor="props/units/quiver_back_bamboo.xml" attachpoint="sheath_L"/>
       </props>
     </variant>
   </group>
@@ -45,7 +45,11 @@
     <variant file="biped/carry_wood_idle.xml"/>
     <variant file="biped/carry_stone_idle.xml"/>
     <variant file="biped/carry_metal_idle.xml"/>
-    <variant file="biped/death_infantry.xml"/>
+    <variant file="biped/death_infantry.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+	</variant>
   </group>
   <material>player_trans_spec.xml</material>
 </actor>
