@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_elephant_melee">
+<Entity parent="template_unit_champion_elephant_melee_large">
   <Armour>
     <Hack op="add">1</Hack>
-    <Pierce op="add">2</Pierce>
+    <Pierce op="add">1</Pierce>
     <Crush op="add">1</Crush>
   </Armour>
   <Cost>
@@ -18,6 +18,12 @@
 	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
     <History>Painted Indian war elephant with driver and bow rider. Has some armor on its chest and forehead, and swords on its tusks.</History>
   </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.9</WalkSpeed>
+    <Run>
+      <Speed op="mul">0.9</Speed>
+    </Run>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/mauryans/champion_elephant_armored.xml</Actor>
   </VisualActor>

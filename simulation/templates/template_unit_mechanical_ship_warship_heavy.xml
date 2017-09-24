@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_mechanical_ship">
+<Entity parent="template_unit_mechanical_ship_warship">
   <Armour>
     <Pierce>12</Pierce>
   </Armour>
@@ -62,7 +62,7 @@
     <GenericName>Heavy Warship</GenericName>
     <Tooltip>Garrison with ranged siege weapons to increase ranged fire power.
 Secondary Attack: Ramming.</Tooltip>
-    <VisibleClasses datatype="tokens">Warship Heavy Siege Ranged NavalSiege</VisibleClasses>
+    <VisibleClasses datatype="tokens">Heavy Siege Ranged NavalSiege</VisibleClasses>
     <Classes datatype="tokens">NavalSiege</Classes>
 	<RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
@@ -72,7 +72,6 @@ Secondary Attack: Ramming.</Tooltip>
       <attack_impact>attack/impact/siegeprojectilehit.xml</attack_impact>
     </SoundGroups>
   </Sound>
-  <ResourceGatherer disable=""/>
   <StatusBars>
     <BarWidth>6.0</BarWidth>
     <BarHeight>0.5</BarHeight>
