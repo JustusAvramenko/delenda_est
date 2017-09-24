@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="special_units/imp_mechanical_siege_ballista_common">
+<Entity parent="template_unit_mechanical_siege_onager">
+  <Cost>
+    <Resources>
+      <wood>300</wood>
+      <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="10.0" depth="10.0"/>
+    <Height>5.0</Height>
+  </Footprint>
   <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Ballista</SpecificName>
     <Icon>units/rome_mechanical_siege_ballista_packed.png</Icon>
   </Identity>
   <Pack>

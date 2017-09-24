@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_mechanical_siege">
+<Entity parent="template_unit_mechanical_siege_ram">
+  <Armour>
+    <Hack>5</Hack>
+    <Pierce>20</Pierce>
+    <Crush>5</Crush>
+  </Armour>
   <Attack>
     <Melee>
       <Hack>5</Hack>
@@ -8,32 +13,28 @@
       <MaxRange>10</MaxRange>
       <PrepareTime>100</PrepareTime>
       <RepeatTime>100</RepeatTime>
-	  <Delay>0</Delay>
+      <RestrictedClasses datatype="tokens">-Organic</RestrictedClasses>
     </Melee>
   </Attack>
   <Capturable disable=""/>
-  <Cost>
-    <BuildTime>24</BuildTime>
-    <Resources>
-      <wood>300</wood>
-    </Resources>
-  </Cost>
   <Footprint replace="">
     <Square width="6.0" depth="20.0"/>
     <Height>4.5</Height>
   </Footprint>
+  <GarrisonHolder disable=""/>
   <Health>
-    <Max>500</Max>
-    <RegenRate>-3</RegenRate>
+    <Max>600</Max>
+    <RegenRate>-5</RegenRate>
   </Health>
   <Identity>
     <Civ>theb</Civ>
 	<Lang>greek</Lang>
     <GenericName>Fire Raiser</GenericName>
     <SpecificName>Pyrobolos</SpecificName>
-	<VisibleClasses datatype="tokens">Melee Fire</VisibleClasses>
-	<Tooltip>No bonuses. Causes a large amount of damage to units and buildings in a short time.
-Loses health over time.</Tooltip>
+	<VisibleClasses datatype="tokens">Fire</VisibleClasses>
+    <Tooltip>Traits: Slow Speed, Medium Armor, Fire Thrower.
+Strong Against: Buildings, Gates (1.5x).
+Weak Against: Melee Cavalry, Melee Infantry.</Tooltip>
     <Icon>units/theb_mechanical_siege_fireraiser.png</Icon>
   </Identity>
   <Vision>
