@@ -2,19 +2,12 @@
 <Entity parent="template_unit_infantry_melee_swordsman">
   <Attack>
     <Melee>
-      <Hack>14.0</Hack>
+      <Hack op="mul">1.1</Hack>
     </Melee>
   </Attack>
-  <Builder>
-    <Entities datatype="tokens">
-	  structures/spart_syssiton
-      structures/spart_theatron
-	  structures/{civ}_wonder
-    </Entities>
-  </Builder>
   <Cost>
     <Resources>
-      <metal>60</metal>
+      <metal op="add">30</metal>
     </Resources>
   </Cost>
   <Identity>
@@ -23,12 +16,12 @@
 	<GenericName>Skiritai Commando</GenericName>
     <SpecificName>Ékdromos Skiritis</SpecificName>
     <Rank>Elite</Rank>
-    <History>Skiritae were some of the most reliable allied soldiers serving in the Spartan military.  They always had the honor of remaining on the left flank of a Spartan phalanx and (Thucydides 5.67) were deployed to face the any problem which could come to bear the army.  (Xenophon 4.2.1-4)</History>
+    <History>Skiritae were some of the most reliable allied soldiers serving in the Spartan military.  They always had the honor of remaining on the left flank of a Spartan phalanx (Thucydides 5.67) and were deployed to face the any problem which could come to bear the army.  (Xenophon 4.2.1-4)</History>
     <Icon>units/spart_champion_infantry_sword.png</Icon>
   </Identity>
   <Promotion disable=""/>
   <UnitMotion>
-    <WalkSpeed>10.0</WalkSpeed>
+    <WalkSpeed>11.0</WalkSpeed>
     <Run>
       <Speed>20.0</Speed>
     </Run>
