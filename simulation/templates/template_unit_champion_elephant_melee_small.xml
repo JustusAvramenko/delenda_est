@@ -5,14 +5,14 @@
   </Armour>
   <Attack>
     <Melee>
-      <Hack>30.0</Hack>
+      <Hack op="mul">0.8</Hack>
       <Pierce>0.0</Pierce>
-      <Crush>10.0</Crush>
+      <Crush op="mul">0.8</Crush>
     </Melee>
   </Attack>
   <Cost>
     <Population>3</Population>
-    <BuildTime>25</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>150</food>
       <wood>0</wood>
@@ -21,7 +21,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>400</Max>
+    <Max op="mul">0.8</Max>
   </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Small</VisibleClasses>
@@ -42,9 +42,9 @@ Weak Against: Javelin Infantry, Sword Infantry.</Tooltip>
     </BerserkerElephants>
   </Upgrade>
   <UnitMotion>
-    <WalkSpeed>8.0</WalkSpeed>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
     <Run>
-      <Speed>16.0</Speed>
+      <Speed op="mul">1.2</Speed>
     </Run>
   </UnitMotion>
 </Entity>

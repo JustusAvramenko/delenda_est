@@ -39,15 +39,13 @@
 Strong Against: All Cavalry (2x).
 Weak Against: Ranged Units, Sword Infantry.</Tooltip>
     <Formations datatype="tokens">
-      formations/syntagma
+      special/formations/syntagma
     </Formations>
   </Identity>
   <UnitMotion>
-    <WalkSpeed>7</WalkSpeed>
+    <WalkSpeed op="mul">0.7</WalkSpeed>
     <Run>
-      <Speed>14.0</Speed>
-      <Range>600.0</Range>
-      <RangeMin>5.0</RangeMin>
+      <Speed op="mul">0.7</Speed>
     </Run>
   </UnitMotion>
 </Entity>

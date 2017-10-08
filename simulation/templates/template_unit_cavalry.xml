@@ -36,7 +36,7 @@
     <GenericName>Cavalry</GenericName>
     <Rank>Basic</Rank>
     <Formations datatype="tokens">
-      formations/wedge
+      special/formations/wedge
     </Formations>
 	<RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
@@ -107,11 +107,9 @@
     <Category>Cavalry</Category>
   </TrainingRestrictions>
   <UnitMotion>
-    <WalkSpeed>15.0</WalkSpeed>
+    <WalkSpeed op="mul">1.5</WalkSpeed>
     <Run>
-      <Speed>30.0</Speed>
-      <Range>600.0</Range>
-      <RangeMin>5.0</RangeMin>
+      <Speed op="mul">1.5</Speed>
     </Run>
   </UnitMotion>
   <Vision>
