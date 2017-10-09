@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Spartan Siege Ram a">
+      <animations>
+        <animation file="mechanical/spart_siege_ram_idle.dae" name="Idle" speed="100"/>
+        <animation file="mechanical/spart_siege_ram_move.dae" name="Walk" speed="15"/>
+        <animation file="mechanical/spart_siege_ram_move.dae" name="Run" speed="30"/>
+        <animation event="0.3" file="mechanical/spart_siege_ram_attack.dae" name="attack_melee" speed="100"/>
+      </animations>
+      <mesh>structural/spart_siege_ram.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/spart_aspis_a.xml" attachpoint="shield_left_front"/>
+        <prop actor="props/units/shields/spart_aspis_b.xml" attachpoint="shield_right_front"/>
+        <prop actor="props/units/shields/spart_aspis_b.xml" attachpoint="shield_left_back"/>
+        <prop actor="props/units/shields/spart_aspis_skiritai.xml" attachpoint="shield_right_back"/>
+      </props>
+      <textures><texture file="structural/spart_siege_ram.png" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="100" name="Spartan Siege Ram b">
+      <animations>
+        <animation file="mechanical/spart_siege_ram_idle.dae" name="Idle" speed="100"/>
+        <animation file="mechanical/spart_siege_ram_move.dae" name="Walk" speed="15"/>
+        <animation file="mechanical/spart_siege_ram_move.dae" name="Run" speed="30"/>
+        <animation event="0.3" file="mechanical/spart_siege_ram_attack.dae" name="attack_melee" speed="100"/>
+      </animations>
+      <mesh>structural/spart_siege_ram.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/spart_aspis_b.xml" attachpoint="shield_left_front"/>
+        <prop actor="props/units/shields/spart_aspis_a.xml" attachpoint="shield_right_front"/>
+        <prop actor="props/units/shields/spart_aspis_skiritai.xml" attachpoint="shield_left_back"/>
+        <prop actor="props/units/shields/spart_aspis_b.xml" attachpoint="shield_right_back"/>
+      </props>
+      <textures><texture file="structural/spart_siege_ram.png" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+</actor>
