@@ -23,10 +23,13 @@
     <Civ>spart</Civ>
     <GenericName>Military Mess Hall</GenericName>
     <SpecificName>Syssítion</SpecificName>
-    <Classes datatype="tokens">
-	  Syssition
+    <VisibleClasses datatype="tokens">
 	  Village
-	</Classes>
+	  Special
+	  Syssition
+	  Barracks
+	  -City
+	</VisibleClasses>
     <Tooltip>Train hoplite units such as Perioikoi Hoplites and Spartiate champion infantry, and Spartan heroes.</Tooltip>
     <History>The Syssítia were where full-blooded Spartans, even Spartan kings, barracked and dined together.</History>
     <Icon>structures/syssition.png</Icon>
@@ -37,8 +40,8 @@
   </Obstruction>
   <Sound>
     <SoundGroups>
-      <select>interface/select/building/sel_gymnasium.xml</select>
-      <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
+      <select>interface/select/building/sel_broch.xml</select>
+      <constructed>interface/complete/building/complete_broch.xml</constructed>
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
@@ -60,7 +63,6 @@
 	  hellenes/pair_champions_01_spartans
 	  hellenes/speed_tyrtean_paeans
 	  hellenes/attack_inf_spearfighting
-	  pair_champ_02
     </Technologies>
   </ProductionQueue>
   <VisualActor>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/mace_barracks">
   <Health>
-    <Max op="add">1000</Max>
+    <Max op="mul">1.5</Max>
   </Health>
   <Identity>
     <GenericName>Royal Barracks</GenericName>
@@ -10,6 +10,9 @@
   </Identity>
   <ProductionQueue>
     <Entities datatype="tokens">
+	  -units/{civ}_infantry_spearman_b
+	  -units/{civ}_infantry_pikeman_b
+	  -units/{civ}_infantry_swordsman_b
       units/{civ}_champion_infantry_a
       units/{civ}_champion_cavalry
     </Entities>
@@ -21,7 +24,7 @@
     </Technologies>
   </ProductionQueue>
   <TerritoryInfluence>
-    <Radius op="add">10</Radius>
+    <Radius op="mul">1.5</Radius>
   </TerritoryInfluence>
   <Upgrade disable=""/>
   <VisualActor>

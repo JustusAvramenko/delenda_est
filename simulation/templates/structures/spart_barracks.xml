@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
-  <Cost>
-    <Resources>
-      <stone>150</stone>
-    </Resources>
-  </Cost>
   <Footprint>
     <Square width="25.0" depth="25.0"/>
     <Height>12.0</Height>
   </Footprint>
-  <Health>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
-  </Health>
   <Identity>
     <Civ>spart</Civ>
     <SpecificName>Stratēgeîon</SpecificName>
@@ -22,11 +14,8 @@
   </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
-      -units/{civ}_infantry_spearman_b
-	  -units/{civ}_cavalry_spearman_b
     </Entities>
     <Technologies datatype="tokens">
-	  
     </Technologies>
   </ProductionQueue>
   <VisualActor>

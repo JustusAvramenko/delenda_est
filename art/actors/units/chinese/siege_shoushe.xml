@@ -3,15 +3,21 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="Shoushe Nu">
-      <mesh>structural/chin_siege_shoushe.dae</mesh>
+      <mesh>structural/Chin_Shoushe.dae</mesh>
+	  <animations>
+			<animation event="0.0" file="mechanical/Shoushe_attack.dae" load="0.70" name="attack_ranged" speed="130"/>
+			<animation file="mechanical/Shoushe_idle.dae" name="idle" speed="100"/>
+			<animation file="mechanical/Shoushe_walk.dae" name="walk" speed="20"/>
+			<animation file="mechanical/Shoushe_death.dae" name="death" speed="80"/>
+	  </animations>
       <props>
         <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+		<prop actor="props/units/weapons/arrow_back.xml" attachpoint="loaded-projectile"/>
       </props>
       <textures>
-		<texture file="structural/chin_siege_shoushe.png" name="baseTex"/>
-		<texture file="structural/ao/chin_siege_shoushe_ao.png" name="aoTex"/>		
+		<texture file="structural/chin_siege_shoushe.png" name="baseTex"/>	
 	  </textures>
     </variant>
   </group>
-  <material>player_trans_ao.xml</material>
+  <material>player_trans.xml</material>
 </actor>

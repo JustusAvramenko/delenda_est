@@ -7,10 +7,10 @@
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "population.png",
 	"researchTime": 40,
-	"tooltip": "Train an unlimited number of Slaves, but they cost more.",
+	"tooltip": "Train an unlimited number of Slaves, but they cost twice as much.",
 	"modifications": [
-		{"value": "Cost/Resources/metal", "add": 10},
-		{"value": "Cost/Resources/food", "add": 10}
+		{"value": "Cost/Resources/metal", "multiply": 2},
+		{"value": "Cost/Resources/food", "multiply": 2}
 	],
 	"affects": ["Slave"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
