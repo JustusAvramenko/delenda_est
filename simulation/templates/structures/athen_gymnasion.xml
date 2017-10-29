@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_special">
+<Entity parent="template_structure_military_barracks">
   <Cost>
-    <BuildTime>200</BuildTime>
     <Resources>
-      <wood>0</wood>
-      <stone>100</stone>
+      <stone>200</stone>
       <metal>100</metal>
     </Resources>
   </Cost>
@@ -13,36 +11,33 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <Max>2000</Max>
+    <Max>1500</Max>
   </Health>
   <Identity>
     <Civ>athen</Civ>
     <GenericName>Gymnasium</GenericName>
     <SpecificName>Gymnásieon</SpecificName>
-    <Tooltip>Train champion units.</Tooltip>
-    <History>The gymnasion was a vital place in Athens, where physical exercises were performed and social contacts established.</History>
+    <Tooltip>Train hoplites and champion units.</Tooltip>
+    <VisibleClasses datatype="tokens">
+	  Gymnasium
+	</VisibleClasses>
+    <History>The gymnasieon was a vital place in Athens, where physical exercises were performed and social contacts established.</History>
     <Icon>structures/gymnasion.png</Icon>
   </Identity>
   <Obstruction>
     <Static width="28.0" depth="28.0"/>
   </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_broch.xml</select>
-      <constructed>interface/complete/building/complete_broch.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
       units/{civ}_champion_infantry
     </Entities>
     <Technologies datatype="tokens">
-	  pair_champ_02
+	  hellenes/upgrade_rank_advanced_hoplites
+	  hellenes/upgrade_rank_elite_hoplites
 	  hellenes/health_inf_martial_arts
-      hellenes/pair_champions_01
 	  hellenes/attack_inf_spearfighting
+      hellenes/pair_champions_01
     </Technologies>
   </ProductionQueue>
   <VisualActor>

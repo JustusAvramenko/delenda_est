@@ -53,22 +53,30 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
+      units/{civ}_champion_ranged_gastraphetes
+	  units/{civ}_mechanical_siege_fireraiser
+      units/{civ}_mechanical_siege_ram
       units/{civ}_mechanical_siege_ballista_packed
       units/{civ}_mechanical_siege_scorpio_packed
       units/{civ}_mechanical_siege_oxybeles_packed
       units/{civ}_mechanical_siege_lithobolos_packed
       units/{civ}_mechanical_siege_polybolos_packed
-	  units/{civ}_mechanical_siege_fireraiser
-      units/{civ}_mechanical_siege_ram
       units/{civ}_mechanical_siege_tower
     </Entities>
     <Technologies datatype="tokens">
       unlock_siege_ballistics
     </Technologies>
   </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_broch.xml</select>
+      <constructed>interface/complete/building/complete_broch.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
   <TerritoryInfluence>
     <Root>false</Root>
-    <Radius>30</Radius>
+    <Radius>40</Radius>
     <Weight>20000</Weight>
   </TerritoryInfluence>
   <Vision>

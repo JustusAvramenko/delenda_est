@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_melee">
+  <Attack>
+    <Melee>
+      <Hack>8.0</Hack>
+    </Melee>
+  </Attack>
+  <Armour>
+    <Pierce>5</Pierce>
+    <Crush>1</Crush>
+  </Armour>
+  <Cost>
+    <Population>2</Population>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>100</food>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>120</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Scout Sword</VisibleClasses>
+    <GenericName>Scout</GenericName>
+    <History>Scouts are the unsung heroes of many campaigns.</History>
+    <Tooltip>Traits: Scouting, Good Hunter, Fast Speed, Trample.
+Strong Against: Nothing.
+Weak Against: Everything.</Tooltip>
+	<RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <food>10</food>
+    <metal>0</metal>
+  </Loot>
+  <Promotion disable=""/>
+  <ResourceGatherer>
+    <Rates>
+      <food.meat>2.5</food.meat>
+    </Rates>
+    <Capacities>
+      <food>30</food>
+    </Capacities>
+  </ResourceGatherer>
+  <TrainingRestrictions>
+    <Category>Scout</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+    <Run>
+      <Speed op="mul">1.1</Speed>
+    </Run>
+  </UnitMotion>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/hellenes/cavalry_scout.xml</Actor>
+  </VisualActor>
+</Entity>

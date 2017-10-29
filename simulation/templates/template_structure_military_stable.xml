@@ -6,6 +6,7 @@
   <Cost>
     <BuildTime>100</BuildTime>
     <Resources>
+      <food>100</food>
       <stone>200</stone>
     </Resources>
   </Cost>
@@ -29,14 +30,14 @@
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Cavalry Stables</GenericName>
+    <GenericName>Cavalry Stable</GenericName>
     <VisibleClasses datatype="tokens">
-	  Town
-	  Stables
+	  Village
+	  CavalryStable
 	</VisibleClasses>
     <Tooltip>Train citizen-soldier cavalry. Research training improvements for cavalry.</Tooltip>
     <Icon>structures/pers_stable.png</Icon>
-	<RequiredTechnology>phase_town</RequiredTechnology>
+	<RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Loot>
     <xp>300</xp>
@@ -52,6 +53,7 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
+	  units/{civ}_cavalry_scout
 	  units/{civ}_cavalry_swordsman_b
 	  units/{civ}_cavalry_spearman_b
 	  units/{civ}_cavalry_javelinist_b
@@ -59,7 +61,7 @@
 	  units/{civ}_cavalry_crossbowman_b
     </Entities>
     <Technologies datatype="tokens">
-	  
+	  training_levy_cavalry	  
     </Technologies>
   </ProductionQueue>
   <Sound>

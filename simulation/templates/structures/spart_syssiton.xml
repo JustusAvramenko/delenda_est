@@ -4,11 +4,11 @@
     <Category>Syssition</Category>
   </BuildRestrictions>
   <Cost>
-    <BuildTime>150</BuildTime>
+    <BuildTime>100</BuildTime>
     <Resources>
       <wood>0</wood>
       <stone>200</stone>
-      <metal>0</metal>
+      <metal>200</metal>
     </Resources>
   </Cost>
   <Footprint>
@@ -16,7 +16,7 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <Max>2000</Max>
+    <Max>1500</Max>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
@@ -38,13 +38,6 @@
   <Obstruction>
     <Static width="16.0" depth="26.0"/>
   </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_broch.xml</select>
-      <constructed>interface/complete/building/complete_broch.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
@@ -65,6 +58,13 @@
 	  hellenes/attack_inf_spearfighting
     </Technologies>
   </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_barracks.xml</select>
+      <constructed>interface/complete/building/complete_barracks.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
   <VisualActor>
     <Actor>structures/spartans/syssiton.xml</Actor>
     <FoundationActor>structures/fndn_4x6.xml</FoundationActor>

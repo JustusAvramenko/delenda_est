@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_stable">
+  <Footprint>
+    <Square width="22.0" depth="20.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>chin</Civ>
+    <SpecificName>Chinese Cavalry Stables</SpecificName>
+    <History>.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="18.0" depth="16.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      -units/{civ}_cavalry_archer_b
+    </Entities>
+    <Technologies datatype="tokens">
+	  upgrade_rank_advanced_cavalry
+	  upgrade_rank_elite_cavalry
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/persians/stables.xml</Actor>
+  </VisualActor>
+</Entity>

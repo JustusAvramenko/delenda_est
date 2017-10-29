@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_special">
+<Entity parent="template_structure_military">
+  <BuildRestrictions>
+    <Category>Elephant_Stables</Category>
+  </BuildRestrictions>
   <Cost>
-    <BuildTime>300</BuildTime>
+    <BuildTime>200</BuildTime>
     <Resources>
       <food>0</food>
       <wood>0</wood>
@@ -10,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="29.0" depth="27.0"/>
+    <Square width="34.0" depth="32.0"/>
     <Height>8.0</Height>
   </Footprint>
   <GarrisonHolder>
@@ -22,25 +25,29 @@
     <LoadingRange>1</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>3000</Max>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <Civ>maur</Civ>
-    <GenericName>Elephant Stables</GenericName>
-    <SpecificName>Vāraṇaśālā</SpecificName>
-    <History>Elephant Stables.</History>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <GenericName>Elephant Stable</GenericName>
+    <History>Elephant Stable.</History>
+    <RequiredTechnology>phase_city</RequiredTechnology>
     <Icon>structures/elephant_stables.png</Icon>
     <Tooltip>Train elephant units.</Tooltip>
-    <Classes datatype="tokens">
-	</Classes>
     <VisibleClasses datatype="tokens">
-	  -City
-	  Town
+	  City
+	  Elephant_Stable
 	</VisibleClasses>
   </Identity>
+  <Loot>
+    <xp>200</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>20</stone>
+    <metal>20</metal>
+  </Loot>
   <Obstruction>
-    <Static width="30.0" depth="29.0"/>
+    <Static width="30.0" depth="28.0"/>
   </Obstruction>
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
@@ -60,7 +67,13 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>40</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
   <VisualActor>
     <Actor>structures/mauryans/stables.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
   </VisualActor>
 </Entity>

@@ -38,7 +38,7 @@
     <Formations datatype="tokens">
       special/formations/wedge
     </Formations>
-	<RequiredTechnology>phase_village</RequiredTechnology>
+	<RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <Loot>
     <xp>130</xp>
@@ -58,13 +58,13 @@
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
     <Rates>
-      <food.meat>2</food.meat>
+      <food.meat>1.5</food.meat>
     </Rates>
     <Capacities>
-      <food>30</food>
-      <wood>30</wood>
-      <stone>30</stone>
-      <metal>30</metal>
+      <food>20</food>
+      <wood>20</wood>
+      <stone>20</stone>
+      <metal>20</metal>
     </Capacities>
   </ResourceGatherer>
   <ResourceTrickle>
@@ -95,7 +95,9 @@
       <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
       <walk>actor/mounted/movement/walk.xml</walk>
       <run>actor/mounted/movement/walk.xml</run>
-      <attack>attack/weapon/sword.xml</attack>
+	  <attack_impact_ranged>attack/impact/impact_arrow_all.xml</attack_impact_ranged>
+	  <attack_melee>attack/weapon/sword.xml</attack_melee>
+	  <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
       <death>actor/fauna/death/death_horse.xml</death>
       <trained>interface/alarm/alarm_create_cav.xml</trained>
     </SoundGroups>

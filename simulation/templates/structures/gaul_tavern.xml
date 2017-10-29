@@ -23,7 +23,7 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>1500</Max>
+    <Max>1000</Max>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
@@ -36,7 +36,7 @@
 	  Tavern
 	</VisibleClasses>
     <History>Taverns are where Celtic warriors go for a tall glass of mead after a hard-won battle. Some might even find rest in one of the back rooms for rent in this seedy establishment.</History>
-    <Tooltip>Add +10 to Population Cap. Recruit Naked Fanatics.</Tooltip>
+    <Tooltip>Add +10 to Population Cap. Celtic mercenaries.</Tooltip>
     <Icon>structures/celtic_embassy.png</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
@@ -52,18 +52,8 @@
 	  -units/{civ}_infantry_spearman_b
 	  -units/{civ}_infantry_pikeman_b
 	  -units/{civ}_infantry_swordsman_b
-	  -units/{civ}_infantry_javelinist_b
-	  -units/{civ}_infantry_slinger_b
-	  -units/{civ}_infantry_archer_b
-	  -units/{civ}_cavalry_swordsman_b
-	  -units/{civ}_cavalry_spearman_b
-	  -units/{civ}_cavalry_javelinist_b
-	  -units/{civ}_cavalry_archer_b
     </Entities>
     <Technologies datatype="tokens">
-	  -training_levy_infantry
-	  -training_mobilization
-	  -training_total_war
     </Technologies>
   </ProductionQueue>
   <Sound>
