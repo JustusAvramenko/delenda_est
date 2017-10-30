@@ -4,6 +4,19 @@
     <Civ>mace</Civ>
     <SpecificName>Stábloi Alógon</SpecificName>
   </Identity>
+  <Upgrade>
+    <RoyalBarracks>
+      <Entity>structures/mace_stable_royal</Entity>
+      <Tooltip>The Royal Stable trains only Hetairoi champion cavalry and gives access to more technologies. The Royal Stable also has greater health and territory influence than a standard stable.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>100</food>
+        <glory>200</glory>
+		<wood>0</wood>
+      </Cost>
+      <Time>45</Time>
+    </RoyalBarracks>
+  </Upgrade>
   <VisualActor>
     <Actor>structures/spartans/stable.xml</Actor>
   </VisualActor>

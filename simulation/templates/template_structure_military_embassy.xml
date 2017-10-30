@@ -2,6 +2,7 @@
 <Entity parent="template_structure_special">
   <BuildRestrictions>
     <Category>Embassy</Category>
+	<Territory>own ally</Territory>
   </BuildRestrictions>
   <Cost>
     <PopulationBonus>0</PopulationBonus>
@@ -49,11 +50,7 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
-  <TerritoryInfluence>
-    <Root>false</Root>
-    <Radius>20</Radius>
-    <Weight>20000</Weight>
-  </TerritoryInfluence>
+  <TerritoryInfluence disable=""/>
   <Vision>
     <Range>24</Range>
   </Vision>

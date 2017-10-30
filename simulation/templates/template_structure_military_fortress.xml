@@ -65,7 +65,7 @@
   </Health>
   <Identity>
     <GenericName>Fortress</GenericName>
-    <Tooltip>Train heroes, champions, and siege weapons. Research siege weapon improvements. Garrison: 20.</Tooltip>
+    <Tooltip>Train Heroes and Champions.</Tooltip>
     <Classes datatype="tokens">GarrisonFortress</Classes>
     <VisibleClasses datatype="tokens">
       Defensive
@@ -89,6 +89,9 @@
   </Obstruction>
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}_champion_ranged_gastraphetes
+    </Entities>
     <Technologies datatype="tokens">
       pair_champ_02
     </Technologies>

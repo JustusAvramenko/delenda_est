@@ -14,13 +14,13 @@
 	  -units/{civ}_infantry_pikeman_b
 	  -units/{civ}_infantry_swordsman_b
       units/{civ}_champion_infantry_a
-      units/{civ}_champion_cavalry
     </Entities>
     <Technologies datatype="tokens">
+	  -successors/upgrade_rank_advanced_pez
+	  -successors/upgrade_rank_elite_pez
 	  hellenes/health_inf_martial_arts
 	  hellenes/pair_champions_01
 	  successors/upgrade_mace_silvershields
-	  successors/upgrade_mace_bodyguards
     </Technologies>
   </ProductionQueue>
   <TerritoryInfluence>
@@ -29,6 +29,5 @@
   <Upgrade disable=""/>
   <VisualActor>
     <Actor>structures/macedonians/barracks.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
 </Entity>

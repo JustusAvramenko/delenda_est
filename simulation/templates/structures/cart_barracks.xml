@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
+  <BuildRestrictions>
+    <Category>CarthaginianBarracks</Category>
+  </BuildRestrictions>
   <Footprint>
     <Square width="24.0" depth="25.0"/>
     <Height>15.0</Height>
@@ -9,6 +12,7 @@
   </Health>
   <Identity>
     <Civ>cart</Civ>
+    <GenericName>Citizen Barracks</GenericName>
     <SpecificName>Maḥanēt</SpecificName>
     <History>The Carthaginians incorporated stables and barracks into their city walls.</History>
     <Tooltip>Train North African citizen-soldiers. Research improvements for North African units.</Tooltip>
@@ -17,10 +21,11 @@
     <Static width="22.0" depth="23.0"/>
   </Obstruction>
   <ProductionQueue>
-    <Technologies datatype="tokens">
-	  -training_total_war
-	  -training_mobilization
-	  carthaginians/training_total_war	  
+    <Entities datatype="tokens">
+	  units/{civ}_infantry_javelinist_b
+	  units/{civ}_cavalry_spearman_b
+    </Entities>
+    <Technologies datatype="tokens">  
     </Technologies>
   </ProductionQueue>
   <VisualActor>

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_special">
+<Entity parent="template_structure_special_statue">
   <Cost>
-    <BuildTime>300</BuildTime>
+    <BuildTime>180</BuildTime>
     <Resources>
-      <food>0</food>
-      <wood>0</wood>
-      <stone>200</stone>
-      <metal>200</metal>
+      <stone>180</stone>
+      <metal>180</metal>
     </Resources>
   </Cost>
   <Footprint>
@@ -14,33 +12,30 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <Max>2000</Max>
+    <Max>1000</Max>
   </Health>
   <Identity>
     <Civ>cart</Civ>
-    <GenericName>Mausoleum of Ateban</GenericName>
-    <SpecificName>Unknown</SpecificName>
+    <SpecificName>Mausoleum</SpecificName>
     <History>A Punic-Libyan monument dedicated to a Numidian prince.</History>
-    <RequiredTechnology>phase_city</RequiredTechnology>
-    <Icon>structures/tholos.png</Icon>
-    <Tooltip>Special Building.</Tooltip>
-    <Classes datatype="tokens">
-	  
-	</Classes>
-    <VisibleClasses datatype="tokens">
-	  
-	</VisibleClasses>
   </Identity>
+  <Loot>
+    <xp>400</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>40</stone>
+    <metal>40</metal>
+    <glory>400</glory>
+  </Loot>
   <Obstruction>
     <Static width="12.0" depth="12.0"/>
   </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_wonder.xml</select>
-      <constructed>interface/complete/building/complete_wonder.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
+  <ResourceSupply>
+    <MaxGatherers>10</MaxGatherers>
+  </ResourceSupply>
+  <ResourceTrickle>
+    <Interval>1000</Interval>
+  </ResourceTrickle>
   <VisualActor>
     <Actor>structures/carthaginians/mausoleum.xml</Actor>
   </VisualActor>

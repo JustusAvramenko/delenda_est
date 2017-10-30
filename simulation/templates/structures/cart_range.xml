@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_range">
+  <Footprint>
+    <Square width="28.0" depth="26.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Carthaginian Archery Range</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="22.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+	  persians/special_archery_tradition
+	  persians/upgrade_rank_advanced_archers
+	  persians/upgrade_rank_elite_archers
+	  persians/attack_fire_arrows
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/persians/range.xml</Actor>
+  </VisualActor>
+</Entity>
