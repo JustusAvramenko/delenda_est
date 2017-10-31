@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_defense_wall">
+<Entity parent="template_structure_defense_wall_short">
   <Armour>
     <Hack>5</Hack>
     <Pierce>20</Pierce>
@@ -10,9 +10,6 @@
       <Crush>1</Crush>
     </Foundation>
   </Armour>
-  <Auras datatype="tokens">
-    -wall_battlements
-  </Auras>
   <Cost>
     <BuildTime>5</BuildTime>
     <Resources>
@@ -25,7 +22,7 @@
     <Height>9.0</Height>
   </Footprint>
   <Health>
-    <Max>500</Max>
+    <Max>125</Max>
     <SpawnEntityOnDeath>rubble/rubble_stone_wall_short</SpawnEntityOnDeath>
   </Health>
   <Identity>

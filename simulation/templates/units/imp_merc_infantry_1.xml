@@ -2,14 +2,6 @@
 <Entity parent="template_unit_mercenary_infantry_melee_spearman">
   <Builder>
 	<Entities datatype="tokens">
-      -structures/{civ}_house
-      -structures/{civ}_storehouse
-      -structures/{civ}_farmstead
-      -structures/{civ}_field
-      -structures/{civ}_corral
-      -structures/{civ}_dock
-      -structures/{civ}_temple
-      -structures/{civ}_market
     </Entities>
   </Builder>
   <Cost>
@@ -21,23 +13,10 @@
     <GenericName>Auxiliary Spearman</GenericName>
     <SpecificName>Pedites Auxiliares</SpecificName>
     <VisibleClasses datatype="tokens">
-	  -Gatherer
+	  Auxiliary
 	</VisibleClasses>
     <Icon>units/imp_merc_spearman.png</Icon>
-    <History> .</History>
   </Identity>
-  <ResourceGatherer>
-    <Rates>
-      <food.fruit disable=""/>
-      <food.grain disable=""/>
-      <food.meat disable=""/>
-	  <wood.tree disable=""/>
-	  <wood.ruins disable=""/>
-      <stone.rock disable=""/>
-	  <stone.ruins disable=""/>
-      <metal.ore disable=""/>
-    </Rates>
-  </ResourceGatherer>
   <TrainingRestrictions>
     <Category>Auxilia</Category>
   </TrainingRestrictions>

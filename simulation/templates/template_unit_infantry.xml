@@ -22,40 +22,24 @@
       structures/{civ}_pyramid_1
       structures/{civ}_pyramid_2
       structures/{civ}_military_colony
-      structures/{civ}_house
-      structures/{civ}_tenement
-      structures/{civ}_storehouse
-      structures/{civ}_farmstead
-      structures/{civ}_field
-      structures/{civ}_corral
-      structures/{civ}_rotarymill
-      structures/{civ}_dock
-      structures/{civ}_shipyard
-      structures/{civ}_market
-      structures/{civ}_pillar_ashoka
-      structures/{civ}_outpost
-      structures/{civ}_defense_tower
-      structures/{civ}_wallset_stone
-      structures/{civ}_wallset_siege
       structures/{civ}_barracks
       structures/{civ}_barracks_aux
       structures/{civ}_syssiton
       structures/{civ}_gymnasion
       structures/{civ}_range
       structures/{civ}_stable
-      structures/{civ}_elephant_stable
       structures/{civ}_embassy_celtic
       structures/{civ}_embassy_iberian
       structures/{civ}_embassy_italiote
-      structures/{civ}_blacksmith
+      structures/{civ}_outpost
+      structures/{civ}_defense_tower
+      structures/{civ}_shipyard
       structures/{civ}_kennel
-      structures/{civ}_statue
-      structures/{civ}_temple
-      structures/{civ}_temple_vesta
+      structures/{civ}_blacksmith
+      structures/{civ}_elephant_stable
+      structures/{civ}_wallset_stone
+      structures/{civ}_wallset_siege
       structures/{civ}_arch
-      structures/{civ}_theatron
-      structures/{civ}_library
-      structures/{civ}_lighthouse
       structures/{civ}_apadana
       structures/{civ}_prytaneion
       structures/{civ}_workshop
@@ -85,7 +69,7 @@
   <Identity>
     <GenericName>Infantry</GenericName>
     <Classes datatype="tokens">CitizenSoldier Organic Worker Human</Classes>
-    <VisibleClasses datatype="tokens">Builder Gatherer Infantry Citizen Soldier</VisibleClasses>
+    <VisibleClasses datatype="tokens">Builder Infantry Citizen Soldier</VisibleClasses>
     <Rank>Basic</Rank>
   </Identity>
   <Loot>
@@ -101,17 +85,15 @@
     <RequiredXp>100</RequiredXp>
   </Promotion>
   <ResourceGatherer>
-    <MaxDistance>2.0</MaxDistance>
-    <BaseSpeed>1.0</BaseSpeed>
     <Rates>
-      <food.fruit>0.4</food.fruit>
-      <food.grain>0.1</food.grain>
-      <food.meat>1</food.meat>
-      <wood.tree>0.75</wood.tree>
-      <wood.ruins>5</wood.ruins>
-      <stone.rock>0.5</stone.rock>
-      <stone.ruins>2</stone.ruins>
-      <metal.ore>0.5</metal.ore>
+      <food.fruit disable=""/>
+      <food.grain disable=""/>
+      <food.meat disable=""/>
+	  <wood.tree disable=""/>
+	  <wood.ruins disable=""/>
+      <stone.rock disable=""/>
+	  <stone.ruins disable=""/>
+      <metal.ore disable=""/>
     </Rates>
   </ResourceGatherer>
   <ResourceTrickle>

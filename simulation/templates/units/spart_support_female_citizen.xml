@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_support_female_citizen">
+<Entity parent="template_unit_support_citizen_female">
   <Attack>
     <Melee>
       <Bonuses>
@@ -8,15 +8,23 @@
           <Multiplier>2.5</Multiplier>
         </BonusSiege>
       </Bonuses>
-      <RestrictedClasses datatype="tokens">-Infantry -Cavalry -Champion -CitizenSoldier -Hero</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">
+	    -Soldier
+	  </RestrictedClasses>
     </Melee>
   </Attack>
+  <Auras datatype="tokens">
+    slave_ownership
+  </Auras>
   <Builder>
     <Entities datatype="tokens">
       other/wallset_palisade
 	  structures/{civ}_defense_tower
     </Entities>
   </Builder>
+  <Cost>
+    <BuildTime>15</BuildTime>
+  </Cost>
   <Capturable disable=""/>
   <Identity>
     <Civ>spart</Civ>
@@ -28,6 +36,7 @@
     <Tooltip>Gather resources, build structures, and inspire nearby males to work faster. Bonused at foraging and farming.
 Counters: 2.5x vs. Siege.</Tooltip>
     <SelectionGroupName>units/spart_support_female_citizen</SelectionGroupName>
+    <RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <UnitAI> 
     <DefaultStance>standground</DefaultStance> 

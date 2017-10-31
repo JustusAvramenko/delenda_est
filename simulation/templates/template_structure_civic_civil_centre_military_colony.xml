@@ -1,57 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
-  <AlertRaiser>
-    <MaximumLevel>2</MaximumLevel>
-    <Range>140</Range>
-  </AlertRaiser>
   <Attack disable=""/>
   <BuildRestrictions>
-    <Territory>own neutral</Territory>
 	<Category>Colony</Category>
     <Distance>
       <FromClass>CivilCentre</FromClass>
-      <MinDistance>280</MinDistance>
+      <MinDistance>250</MinDistance>
     </Distance>
   </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>2000</CapturePoints>
+  </Capturable>
   <Cost>
-    <BuildTime>300</BuildTime>
+    <PopulationBonus>10</PopulationBonus>
+    <BuildTime>200</BuildTime>
     <Resources>
-      <wood>500</wood>
-      <stone>500</stone>
-      <metal>0</metal>
+      <wood>400</wood>
+      <stone>400</stone>
     </Resources>
   </Cost>
   <Health>
     <Max>1000</Max>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <Civ>gaia</Civ>
     <GenericName>Military Colony</GenericName>
 	<SpecificName>Klēroukhia</SpecificName>
     <VisibleClasses datatype="tokens">City MilitaryColony</VisibleClasses>
     <History>The Seleucid kings invited Greeks, Macedonians, Galatians (Gauls), Cretans, and Thracians alike to settle in within the vast territories of the empire. They settled in military colonies called cleruchies (klēroukhia). Under this arrangement, the settlers were given a plot of land, or a kleros, and in return were required to serve in the great king's army when called to duty. This created a upper-middle class of military settlers who owed their livelihoods and fortunes to the Syrian kings and helped grow the available manpower for the imperial Seleucid army. A side effect of this system was that it drained the Greek homeland of military-aged men, a contributing factor to Greece's eventual conquest by Rome.</History>
-    <Tooltip>This is the Seleucid expansion building, similar to Civic Centers for other factions. It is weaker and carries a smaller territory influence, but is cheaper and built faster.
-- Train settler-soldiers of various nationalities.
-- Min. distance from other Military Colonies: 120 meters.</Tooltip>
+    <Tooltip>This is the Seleucid expansion building, similar to Civic Centers for other factions. It is weaker and carries a smaller territory influence, but is cheaper and built faster.</Tooltip>
     <Icon>structures/military_settlement.png</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_gymnasium.xml</select>
-      <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
   <TerritoryDecay>
     <DecayRate>1</DecayRate>
   </TerritoryDecay>
   <TerritoryInfluence>
-    <Radius>100</Radius>
+    <Radius>80</Radius>
   </TerritoryInfluence>
   <VisualActor>
-    <Actor>structures/macedonians/civic_centre.xml</Actor>
     <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
   </VisualActor>
 </Entity>

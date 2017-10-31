@@ -2,14 +2,6 @@
 <Entity parent="template_unit_mercenary_infantry_ranged_archer">
   <Builder>
 	<Entities datatype="tokens">
-      -structures/{civ}_house
-      -structures/{civ}_storehouse
-      -structures/{civ}_farmstead
-      -structures/{civ}_field
-      -structures/{civ}_corral
-      -structures/{civ}_dock
-      -structures/{civ}_temple
-      -structures/{civ}_market
     </Entities>
   </Builder>
   <Cost>
@@ -22,23 +14,10 @@
     <GenericName>Syrian Auxiliary Archer</GenericName>
     <SpecificName>Syrus Auxiliaris Sagittarius</SpecificName>
     <VisibleClasses datatype="tokens">
-	  -Gatherer
+	  Auxiliary
 	</VisibleClasses>
-    <History> .</History>
     <Icon>units/imp_merc_archer.png</Icon>
   </Identity>
-  <ResourceGatherer>
-    <Rates>
-      <food.fruit disable=""/>
-      <food.grain disable=""/>
-      <food.meat disable=""/>
-	  <wood.tree disable=""/>
-	  <wood.ruins disable=""/>
-      <stone.rock disable=""/>
-	  <stone.ruins disable=""/>
-      <metal.ore disable=""/>
-    </Rates>
-  </ResourceGatherer>
   <TrainingRestrictions>
     <Category>Auxilia</Category>
   </TrainingRestrictions>

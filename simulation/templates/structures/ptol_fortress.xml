@@ -2,7 +2,7 @@
 <Entity parent="template_structure_military_fortress">
   <Footprint>
     <Square width="26.0" depth="28.0"/>
-    <Height>8.0</Height>
+    <Height>15.0</Height>
   </Footprint>
   <GarrisonHolder>
     <VisibleGarrisonPoints>
@@ -47,7 +47,6 @@
   <Identity>
     <Civ>ptol</Civ>
     <SpecificName>mktr-'a</SpecificName>
-    <History>?</History>
   </Identity>
   <Obstruction>
     <Static width="24.0" depth="26.0"/>
@@ -56,15 +55,12 @@
     <Entities datatype="tokens">
       units/{civ}_champion_infantry_pikeman
       units/{civ}_champion_cavalry
-      units/{civ}_champion_elephant
-      units/{civ}_mechanical_siege_polybolos_packed
-      units/{civ}_mechanical_siege_tower
+	  units/{civ}_hero_ptolemy_I
+	  units/{civ}_hero_ptolemy_IV
+	  units/{civ}_hero_cleopatra
     </Entities>
     <Technologies datatype="tokens">
-	  unlock_siege_ballistics
-      pair_siege_ranged_01
-	  pair_siege_build_armor
-	  hellenes/pair_siege_01
+	  successors/health_heroes
     </Technologies>
   </ProductionQueue>
   <VisualActor>

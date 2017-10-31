@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic">
+  <AlertRaiser>
+    <MaximumLevel>2</MaximumLevel>
+    <Range>140</Range>
+  </AlertRaiser>
   <Armour>
     <Foundation>
       <Hack>5</Hack>
@@ -45,7 +49,7 @@
   </Capturable>
   <Cost>
     <PopulationBonus>25</PopulationBonus>
-    <BuildTime>500</BuildTime>
+    <BuildTime>400</BuildTime>
     <Resources>
       <food>0</food>
       <wood>800</wood>
@@ -96,8 +100,7 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/{civ}_support_female_citizen
-	  units/{civ}_support_citizen
+	  units/{civ}_support_male_citizen
     </Entities>
     <Technologies datatype="tokens">
       phase_town
@@ -137,10 +140,6 @@
     <Radius>120</Radius>
     <Weight>10000</Weight>
   </TerritoryInfluence>
-  <AlertRaiser>
-    <MaximumLevel>2</MaximumLevel>
-    <Range>140</Range>
-  </AlertRaiser>
   <Vision>
     <Range>60</Range>
   </Vision>

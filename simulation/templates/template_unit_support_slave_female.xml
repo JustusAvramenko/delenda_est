@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_slave">
+  <Identity>
+	<GenericName>Female Slave</GenericName>
+	<Gender>female</Gender>
+	<VisibleClasses datatype="tokens">Woman</VisibleClasses>
+	<Classes datatype="tokens">Female</Classes>
+	<Tooltip>A cheap, weak gatherer with a finite life span. Good at foraging, farming, and dying.</Tooltip>
+    <Icon>units/imp_support_slave_female.png</Icon>
+  </Identity>
+  <ResourceGatherer>
+    <Rates>
+      <food.fruit>1.0</food.fruit>
+      <food.grain>0.5</food.grain>
+      <food.meat>1.0</food.meat>
+      <wood.tree>0.65</wood.tree>
+      <wood.ruins>5.0</wood.ruins>
+      <stone.rock>0.50</stone.rock>
+      <stone.ruins>2.0</stone.ruins>
+      <metal.ore>0.50</metal.ore>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/romans_imperial/slave_female.xml</Actor>
+  </VisualActor>
+</Entity>

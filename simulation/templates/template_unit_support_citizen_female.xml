@@ -8,7 +8,12 @@
       <MaxRange>4.0</MaxRange>
 	  <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
-      <RestrictedClasses datatype="tokens">Infantry Cavalry Champion Structure CitizenSoldier MercenaryCamp Ship Hero</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">
+	    Soldier
+		Structure
+		Ship
+		MercenaryCamp
+	  </RestrictedClasses>
     </Melee>
     <Slaughter>
       <Hack>25.0</Hack>
@@ -21,17 +26,29 @@
     female_inspiration
   </Auras>
   <Builder>
-    <Rate>1.0</Rate>
+    <Rate>1.25</Rate>
     <Entities datatype="tokens">
-      structures/{civ}_civil_centre
+	  structures/{civ}_civil_centre
+      structures/{civ}_temple_vesta
+      structures/{civ}_government_center
+      structures/{civ}_pyramid_1
+      structures/{civ}_pyramid_2
       structures/{civ}_house
+	  structures/{civ}_tenement
       structures/{civ}_storehouse
       structures/{civ}_farmstead
       structures/{civ}_field
+      structures/{civ}_rotarymill
       structures/{civ}_corral
       structures/{civ}_dock
-      structures/{civ}_temple
       structures/{civ}_market
+      structures/{civ}_pillar_ashoka
+      structures/{civ}_statue
+      structures/{civ}_temple
+      structures/{civ}_theatron
+      structures/{civ}_library
+      structures/{civ}_lighthouse
+      structures/{civ}_wonder
     </Entities>
   </Builder>
   <Capturable>
@@ -40,6 +57,7 @@
     <GarrisonRegenRate>0</GarrisonRegenRate>
   </Capturable>
   <Cost>
+    <BuildTime>60</BuildTime>
     <Resources>
       <food>50</food>
     </Resources>
@@ -50,12 +68,14 @@
   <Identity>
     <GenericName>Female Citizen</GenericName>
 	<Gender>female</Gender>
-	<Tooltip>Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Avoids Death.
+	<Tooltip>Build civilian buildings and gather resources. Command nearby Men to build faster. Especially good at building.
+Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Avoids Death.
 Good at: Foraging, Farming, Lumbering, and Dying.
 Mediocre at: Mining.</Tooltip>
     <History>Women in the ancient world took on a variety of roles - from leadership (Celts) to servant (Greeks). Women are hard workers, the economic backbone of any civilization. In history, it was typical when all the males (capable of fighting) were killed for the women, children, and elderly to be sold as slaves, a valuable economic commodity in the ancient world.</History>
     <VisibleClasses datatype="tokens">Builder Gatherer FemaleCitizen Citizen</VisibleClasses>
 	<Classes datatype="tokens">Woman Worker</Classes>
+    <RequiredTechnology>unlock_females_house</RequiredTechnology>
     <Formations disable=""/>
   </Identity>
   <RangeVisualization/>

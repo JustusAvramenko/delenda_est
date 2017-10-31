@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
+  <Cost>
+    <PopulationBonus>10</PopulationBonus>
+  </Cost>
   <Footprint>
     <Square width="42.0" depth="35"/>
     <Height>8.0</Height>
@@ -10,14 +13,10 @@
   <Identity>
     <Civ>ptol</Civ>
     <SpecificName>pr-'a</SpecificName>
-    <History>?</History>
   </Identity>
   <ProductionQueue>
     <Entities datatype="tokens">
       units/{civ}_infantry_spearman_b
-	  units/{civ}_hero_ptolemy_I
-	  units/{civ}_hero_ptolemy_IV
-	  units/{civ}_hero_cleopatra
     </Entities>
     <Technologies datatype="tokens">
 	  health_units_01

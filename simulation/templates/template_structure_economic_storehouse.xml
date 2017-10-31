@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_economic">
+  <AlertRaiser>
+    <MaximumLevel>1</MaximumLevel>
+    <Range>40</Range>
+  </AlertRaiser>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
 	<Category>Storehouse</Category>
@@ -14,13 +18,20 @@
     <Square width="15.0" depth="15.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Slave Minister</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
   <Health>
     <Max>400</Max>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Storehouse</GenericName>
-    <Tooltip>Dropsite for wood, stone, and metal resources. Research gathering improvements for these resources.</Tooltip>
     <Classes datatype="tokens">
 	  DropsiteWood
 	  DropsiteMetal
@@ -28,6 +39,8 @@
 	  -ConquestCritical
 	</Classes>
     <VisibleClasses datatype="tokens">Dropsite Village Storehouse</VisibleClasses>
+    <History>Resources and building materials were kept in warehouses.</History>
+    <Tooltip>Dropsite for wood, stone, and metal resources. Research gathering improvements for these resources.</Tooltip>
     <Icon>structures/storehouse.png</Icon>
   </Identity>
   <Loot>
@@ -43,6 +56,9 @@
   </Obstruction>
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
+	<Entities datatype="tokens">
+	  units/{civ}_support_slave_male
+    </Entities>
     <Technologies datatype="tokens">
       pair_gather_01
       pair_gather_02
@@ -53,7 +69,7 @@
 	  gather_capacity_handcarts
     </Technologies>
   </ProductionQueue>
-  <RallyPoint disable=""/>
+  <RallyPoint/>
   <ResourceDropsite>
     <Types>wood stone metal</Types>
 	<Sharable>true</Sharable>
@@ -63,6 +79,8 @@
       <select>interface/select/building/sel_storehouse.xml</select>
       <constructed>interface/complete/building/complete_storehouse.xml</constructed>
       <death>attack/destruction/building_collapse_large.xml</death>
+	  <alert0>interface/alarm/alarm_alert_0.xml</alert0>
+	  <alert1>interface/alarm/alarm_alert_1.xml</alert1>
     </SoundGroups>
   </Sound>
   <TerritoryDecay disable=""/>

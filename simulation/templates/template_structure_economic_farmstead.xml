@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_economic">
+  <AlertRaiser>
+    <MaximumLevel>1</MaximumLevel>
+    <Range>40</Range>
+  </AlertRaiser>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
 	<Category>Farmstead</Category>
@@ -14,6 +18,14 @@
     <Square width="14.0" depth="14.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Slave Minister</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
   <Health>
     <Max>400</Max>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
@@ -38,6 +50,9 @@
   </Obstruction>
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
+	<Entities datatype="tokens">
+	  units/{civ}_support_slave_female
+    </Entities>
     <Technologies datatype="tokens">
       pair_gather_food_01
 	  pair_farming_01
@@ -49,7 +64,7 @@
 	  health_siege_rations
     </Technologies>
   </ProductionQueue>
-  <RallyPoint disable=""/>
+  <RallyPoint/>
   <ResourceDropsite>
     <Types>food</Types>
 	<Sharable>true</Sharable>
@@ -59,6 +74,8 @@
       <select>interface/select/building/sel_farmstead.xml</select>
       <constructed>interface/complete/building/complete_farmstead.xml</constructed>
       <death>attack/destruction/building_collapse_large.xml</death>
+	  <alert0>interface/alarm/alarm_alert_0.xml</alert0>
+	  <alert1>interface/alarm/alarm_alert_1.xml</alert1>
     </SoundGroups>
   </Sound>
   <TerritoryDecay disable=""/>
