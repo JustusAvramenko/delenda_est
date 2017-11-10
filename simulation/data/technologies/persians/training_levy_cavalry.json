@@ -2,8 +2,13 @@
 	"genericName": "Levy Cavalry",
 	"description": "Calling up cavalry levies in time of war helps bolster the ranks of a king's army.",
 	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 0},
-	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "pers"}]},
-	"requirementsTooltip": "Unlocked in Town Phase.",
+	"requirements": {"all": [
+		{"tech": "phase_town"},
+		{"entity": {"class": "Corral", "number": 1 }},
+		{"any": [
+			{"civ": "pers"}
+		]}]},
+	"requirementsTooltip": "Unlocked in Town Phase after building an Animal Corral.",
 	"icon": "horse_trainer.png",
 	"researchTime": 40,
 	"tooltip": "All cavalry -20% train time. Unlocks Cavalry Conscription.",

@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_support">
+<Entity parent="template_unit_support_citizen">
   <Attack>
     <Melee>
-      <Hack>6.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>4.0</MaxRange>
-	  <PrepareTime>500</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
-      <RestrictedClasses datatype="tokens">
-	    Soldier
-		Structure
-		Ship
-		MercenaryCamp
-	  </RestrictedClasses>
+      <Hack>5.0</Hack>
     </Melee>
-    <Slaughter>
-      <Hack>25.0</Hack>
-      <Pierce>0.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>4.0</MaxRange>
-    </Slaughter>
   </Attack>
   <Auras datatype="tokens">
     female_inspiration
   </Auras>
   <Builder>
-    <Rate>1.25</Rate>
     <Entities datatype="tokens">
 	  structures/{civ}_civil_centre
       structures/{civ}_temple_vesta
@@ -58,9 +40,6 @@
   </Capturable>
   <Cost>
     <BuildTime>60</BuildTime>
-    <Resources>
-      <food>50</food>
-    </Resources>
   </Cost>
   <Health>
     <Max>50</Max>
@@ -68,17 +47,14 @@
   <Identity>
     <GenericName>Female Citizen</GenericName>
 	<Gender>female</Gender>
-	<Tooltip>Build civilian buildings and gather resources. Command nearby Men to build faster. Especially good at building.
+    <History>Women in the ancient world took on a variety of roles - from leadership (Celts and Kushites) to essentially baby-making machines (Greeks and Romans). Women are hard workers, the economic backbone of any civilization. In history, it was typical when all the males (capable of fighting) were killed for the women, children, and elderly to be sold as slaves, a valuable economic commodity in the ancient world.</History>
+	<Tooltip>Build civilian buildings and gather resources. Command nearby Men and Slaves to work faster. Especially good at building.
 Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Avoids Death.
-Good at: Foraging, Farming, Lumbering, and Dying.
-Mediocre at: Mining.</Tooltip>
-    <History>Women in the ancient world took on a variety of roles - from leadership (Celts) to servant (Greeks). Women are hard workers, the economic backbone of any civilization. In history, it was typical when all the males (capable of fighting) were killed for the women, children, and elderly to be sold as slaves, a valuable economic commodity in the ancient world.</History>
-    <VisibleClasses datatype="tokens">Builder Gatherer FemaleCitizen Citizen</VisibleClasses>
-	<Classes datatype="tokens">Woman Worker</Classes>
+Good at: Building, Foraging, Farming, and Dying.
+Mediocre at: Lumbering and Mining.</Tooltip>
+    <VisibleClasses datatype="tokens">FemaleCitizen Woman</VisibleClasses>
     <RequiredTechnology>unlock_females_house</RequiredTechnology>
-    <Formations disable=""/>
   </Identity>
-  <RangeVisualization/>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
@@ -93,38 +69,7 @@ Mediocre at: Mining.</Tooltip>
       <metal.ore>0.35</metal.ore>
     </Rates>
   </ResourceGatherer>
-  <Sound>
-    <SoundGroups>
-      <trained>interface/alarm/alarm_create_female.xml</trained>
-      <select>voice/{lang}/civ/civ_{gender}_select.xml</select>
-      <order_walk>voice/{lang}/civ/civ_{gender}_walk.xml</order_walk>
-      <order_attack>voice/{lang}/civ/civ_{gender}_attack.xml</order_attack>
-      <order_build>voice/{lang}/civ/civ_{gender}_build.xml</order_build>
-      <order_gather>voice/{lang}/civ/civ_{gender}_gather.xml</order_gather>
-      <order_repair>voice/{lang}/civ/civ_{gender}_repair.xml</order_repair>
-      <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
-      <attack>attack/weapon/sword.xml</attack>
-      <death>actor/human/death/{gender}_death.xml</death>
-      <build>resource/construction/con_wood.xml</build>
-      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
-      <gather_grain>resource/farming/farm.xml</gather_grain>
-      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
-      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
-      <gather_ore>resource/mining/mining.xml</gather_ore>
-      <gather_ruins>resource/mining/mining.xml</gather_ruins>
-    </SoundGroups>
-  </Sound>
-  <UnitAI>
-    <AlertReactiveLevel>1</AlertReactiveLevel>
-	<CanPatrol>false</CanPatrol>
-  </UnitAI>
-  <UnitMotion>
-    <WalkSpeed op="mul">0.8</WalkSpeed>
-    <Run>
-      <Speed op="mul">0.6</Speed>
-    </Run>
-  </UnitMotion>
-  <Vision>
-    <Range>30</Range>
-  </Vision>
+  <VisualActor>
+    <Actor>units/athenians/female_citizen.xml</Actor>
+  </VisualActor>
 </Entity>

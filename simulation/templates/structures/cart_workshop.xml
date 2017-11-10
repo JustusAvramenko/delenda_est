@@ -1,9 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_workshop">
+  <Footprint>
+    <Square width="32.0" depth="32.0"/>
+    <Height>12.0</Height>
+  </Footprint>
   <Identity>
     <Civ>cart</Civ>
     <SpecificName>Carthaginian Siege Workshop</SpecificName>
   </Identity>
+  <Obstruction>
+    <Static width="29.0" depth="29.0"/>
+  </Obstruction>
   <ProductionQueue>
     <Technologies datatype="tokens">
       pair_siege_ranged_01
@@ -11,6 +18,6 @@
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/seleucids/workshop.xml</Actor>
+    <Actor>structures/carthaginians/workshop.xml</Actor>
   </VisualActor>
 </Entity>
