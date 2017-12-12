@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_fauna_hunt_skittish">
+<Entity parent="template_unit_fauna_herd_domestic">
+  <Cost>
+    <BuildTime>75</BuildTime>
+    <Resources>
+      <food>150</food>
+    </Resources>
+  </Cost>
   <Footprint replace="">
-    <Square width="1.9" depth="3.8"/>
-    <Height>2.0</Height>
+    <Square width="2.2" depth="4.4"/>
+    <Height>3.0</Height>
   </Footprint>
   <Identity>
     <Civ>gaia</Civ>
@@ -13,13 +19,13 @@
     <Anchor>pitch</Anchor>
   </Position>
   <ResourceSupply>
-    <Amount>150</Amount>
+    <Amount>300</Amount>
     <Type>food.meat</Type>
   </ResourceSupply>
   <UnitMotion>
-    <WalkSpeed>6.0</WalkSpeed>
+    <WalkSpeed>4.0</WalkSpeed>
     <Run>
-      <Speed>15.0</Speed>
+      <Speed>10.0</Speed>
       <Range>600.0</Range>
       <RangeMin>5.0</RangeMin>
     </Run>

@@ -41,20 +41,20 @@
   <Fogging/>
   <Guard/>
   <Health>
-	<DamageVariants> 
-		<lightdamage>0.85</lightdamage>  
-		<mediumdamage>0.65</mediumdamage>  
-		<heavydamage>0.35</heavydamage>  
-	</DamageVariants>
+    <DamageVariants> 
+      <lightdamage>0.85</lightdamage>  
+      <mediumdamage>0.65</mediumdamage>  
+      <heavydamage>0.35</heavydamage>  
+    </DamageVariants>
     <DeathType>corpse</DeathType>
     <RegenRate>0</RegenRate>
     <IdleRegenRate>0</IdleRegenRate>
     <Unhealable>true</Unhealable>
-	<Undeletable>false</Undeletable>
   </Health>
   <Identity>
     <GenericName>Structure</GenericName>
     <Classes datatype="tokens">Structure ConquestCritical NotField</Classes>
+    <Undeletable>false</Undeletable>
   </Identity>
   <Minimap>
     <Type>structure</Type>
@@ -68,6 +68,7 @@
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
   </Obstruction>
+  <OverlayRenderer/>
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
 	<TechCostMultiplier>
@@ -79,7 +80,6 @@
       <time>1.0</time>
     </TechCostMultiplier>
   </ProductionQueue>
-  <OverlayRenderer/>
   <RallyPoint/>
   <RallyPointRenderer>
     <MarkerTemplate>special/rallypoint</MarkerTemplate>
@@ -91,6 +91,8 @@
     <LineEndCap>round</LineEndCap>
     <LinePassabilityClass>default</LinePassabilityClass>
   </RallyPointRenderer>
+  <RangeOverlayManager/>
+  <RangeOverlayRenderer/>
   <Repairable>
     <RepairTimeRatio>2.0</RepairTimeRatio>
   </Repairable>

@@ -6,6 +6,7 @@
       <MinRange>26.0</MinRange>
       <ProjectileSpeed>29.0</ProjectileSpeed>
 	  <Gravity>9.81</Gravity>
+      <PrepareTime>3000</PrepareTime>
       <RepeatTime>6000</RepeatTime>
       <Splash>
         <Shape>Circular</Shape>
@@ -31,6 +32,7 @@
   <Identity>
     <Civ>rome</Civ>
     <SpecificName>Onager</SpecificName>
+    <Icon>units/rome_siege_onager.png</Icon>
   </Identity>
   <VisualActor>
     <Actor>units/romans/siege_onager.xml</Actor>
@@ -41,4 +43,7 @@
       <Speed>0.001</Speed>
     </Run>
   </UnitMotion>
+  <VisualActor>
+    <Actor>units/romans/siege_onager_pivot.xml</Actor>
+  </VisualActor>
 </Entity>

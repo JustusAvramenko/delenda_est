@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_slave_male.xml">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_meroitic.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="Kushite Advanced Sword Infantry Leather 01">
+      <textures>
+        <texture file="skeletal/kush_pike_a_01.png" name="baseTex"/>
+        <texture file="skeletal/kush_pike_a_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_ranged_lithobolos_fire_b.xml"/>
+    <variant file="biped/death_infantry.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+	</variant>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>

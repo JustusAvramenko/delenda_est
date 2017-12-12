@@ -3,6 +3,12 @@
   <BuildRestrictions>
     <Category>AuxiliaryBarracks</Category>
   </BuildRestrictions>
+  <Cost>
+    <Resources>
+      <stone>0</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
   <Footprint>
     <Square width="28.0" depth="28.0"/>
     <Height>5.0</Height>
@@ -19,7 +25,7 @@
 	  Town
 	</VisibleClasses>
     <History>Romans specialised in the building of military camps and forts. A few of them still survive.</History>
-	<RequiredTechnology>phase_town</RequiredTechnology>
+	<RequiredTechnology>phase_village</RequiredTechnology>
     <Icon>structures/pers_stable.png</Icon>
   </Identity>
   <Obstruction>
@@ -30,6 +36,7 @@
 	  -units/{civ}_infantry_spearman_b
 	  -units/{civ}_infantry_pikeman_b
 	  -units/{civ}_infantry_swordsman_b
+      units/{civ}_cavalry_scout
       units/{civ}_merc_infantry_1
 	  units/{civ}_merc_infantry_2
 	  units/{civ}_merc_cavalry_1

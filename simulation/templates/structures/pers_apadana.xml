@@ -4,13 +4,14 @@
     <Category>Apadana</Category>
   </BuildRestrictions>
   <Cost>
-    <BuildTime>300</BuildTime>
+    <BuildTime>200</BuildTime>
     <PopulationBonus>10</PopulationBonus>
     <Resources>
       <food>0</food>
       <wood>0</wood>
       <stone>300</stone>
-      <metal>200</metal>
+      <metal>0</metal>
+      <glory>300</glory>
     </Resources>
   </Cost>
   <Footprint>
@@ -18,22 +19,20 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <Max>3000</Max>
+    <Max>1500</Max>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>pers</Civ>
     <GenericName>Persian Palace</GenericName>
     <SpecificName>Apadana</SpecificName>
-    <Classes datatype="tokens">
-	  Apadana
-	</Classes>
     <VisibleClasses datatype="tokens">
+	  Apadana
 	  Palace
 	</VisibleClasses>
     <History>The term Apadana designates a large hypostyle palace found in Persia. The best known example, and by far the largest, was the great Apadana at Persepolis. Functioning as the empire's central audience hall, the palace is famous for the reliefs of the tribute-bearers and of the army, including the Immortals. The annual tribute that the Persians received from their satrapies and vassal states, as regularised by Darius the Great, accounted for incredible annual revenue.</History>
     <Icon>structures/lamassu.png</Icon>
-    <Tooltip>"Satrapy Tribute": Gain a trickle of food, wood, stone, and metal resources. Train Persian heroes and their "Immortals" bodyguards.</Tooltip>
+    <Tooltip>Train Persian heroes and their "Immortals" bodyguards. Research "Satrapy Tribute", which gives you a trickle of free resources for as long as the Apadana stands.</Tooltip>
   </Identity>
   <Obstruction>
     <Static width="30.0" depth="30.0"/>
@@ -41,22 +40,24 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
+      units/{civ}_champion_infantry
       units/{civ}_hero_cyrus
       units/{civ}_hero_darius
       units/{civ}_hero_xerxes
-      units/{civ}_champion_infantry
     </Entities>
     <Technologies datatype="tokens">
 	  persians/immortals
+	  persians/special_satrapy_tribute
 	  persians/persian_architecture
     </Technologies>
   </ProductionQueue>
   <ResourceTrickle>
     <Rates>
-      <food>5.0</food>
-      <wood>5.0</wood>
-      <stone>0.3</stone>
-      <metal>0.3</metal>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+      <glory>0</glory>
     </Rates>
     <Interval>5000</Interval>
   </ResourceTrickle>

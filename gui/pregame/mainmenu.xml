@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <objects>
-	<script file="gui/common/music.js"/>
-	<script file="gui/common/functions_global_object.js"/>
-	<script file="gui/pregame/mainmenu.js"/>
-	<script directory="gui/pregame/backgrounds/"/>
 
+	<script directory="gui/common/"/>
+	<script directory="gui/pregame/"/>
+	<script directory="gui/pregame/backgrounds/"/>
 
 	<!--
 	==========================================
@@ -364,7 +363,7 @@
 					size="0 96 100% 124"
 					tooltip_style="pgToolTip"
 				>
-					<translatableAttribute id="caption">Atlas Scenario Editor</translatableAttribute>
+					<translatableAttribute id="caption">Scenario Editor</translatableAttribute>
 					<translatableAttribute id="tooltip">Open the Atlas Scenario Editor in a new window. You can run this more reliably by starting the game with the command-line argument &quot;-editor&quot;.</translatableAttribute>
 					<action on="Press">
 						pressedScenarioEditorButton();

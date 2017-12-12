@@ -15,11 +15,12 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "loom.png",
 	"researchTime": 40,
-	"tooltip": "Females +50% health.",
+	"tooltip": "Women +50% health.",
 	"requirements": {"all": [
 		{"tech": "phase_town"},
 		{"notciv": "imp"}
 	]},
-	"affects": ["FemaleCitizen"],
+	"modifications": [{"value": "Health/Max", "multiply": 1.5}],
+	"affects": ["Woman"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
