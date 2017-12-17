@@ -1,32 +1,5 @@
 {
 	"genericName": "Town Phase",
-	"specificName": {
-		"athen": "Komópolis",
-		"hele": "Komópolis",
-		"mace": "Komópolis",
-		"spart": "Komópolis",
-		"theb": "Komópolis",
-		"epir": "Komópolis",
-		"chin": "Zhèn"
-	},
-	"description": "Advances from a small village to a bustling town, ready to expand rapidly.",
-	"cost": { "food": 1000, "wood": 500, "stone": 0, "metal": 0 },
-	"requirements": {"all": [
-		{"entity": {"class": "NotField", "number": 10 }}, 
-		{"notciv": "athen"}, 
-		{"notciv": "imp"}, 
-		{"notciv": "chin"}, 
-		{"notciv": "kush"}]
-	},
-	"requirementsTooltip": "Requires 10 total Buildings (except Fields).",
-	"supersedes": "phase_village",
-	"icon": "town_phase.png",
-	"researchTime": 60,
-	"tooltip": "Advance to Town Phase, which unlocks more structures and units. Territory radius for Civic Centers and vision range for units increased by +25%.",
-	"modifications": [
-		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
-		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
-		{"value": "Vision/Range", "multiply": 1.25, "affects": "Citizen"}
-	],
-	"soundComplete": "interface/alarm/alarm_phase.xml"
+	"description": "Dummy technology for use in templates requirements, replaced by phase_town_generic or phase_town_{civ}.",
+	"icon": "town_phase.png"
 }

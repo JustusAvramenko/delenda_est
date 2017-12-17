@@ -1,30 +1,5 @@
 {
 	"genericName": "Empire Phase",
-	"specificName": {
-		"hele": "Autokratoría",
-		"mace": "Autokratoría",
-		"spart": "Autokratoría",
-		"athen": "Autokratoría",
-		"theb": "Autokratoría",
-		"epir": "Autokratoría",
-		"sele": "Arkhe Seleúkeia",
-		"ptol": "Ptolemaïke Basileía",
-		"rome": "Imperium Romanum",
-		"chin": "Huáng Chéng"
-	},
-	"description": "Moves your civilization from urbanism to imperialism, unlocking powerful technologies and abilities not available in earlier phases of expansion.",
-	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
-	"requirements": {"all": [{"entity": {"class": "Wonder", "number": 1}}, {"notciv": "athen"}, {"notciv": "imp"}, {"notciv": "chin"}, {"notciv": "kush"}]},
-	"autoResearch": true,
-	"requirementsTooltip": "Requires 1 Wonder to be built.",
-	"supersedes": "phase_city",
-	"icon": "imperial_phase.png",
-	"researchTime": 0,
-	"tooltip": "Advance to Empire Phase, which unlocks powerful technologies and abilities. Territory radius for Civic Centers and vision range for units increased by a final +25%.",
-	"modifications": [
-		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
-		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
-		{"value": "Vision/Range", "multiply": 1.25, "affects": "Unit"}
-	],
-	"soundComplete": "interface/alarm/alarm_phase.xml"
+	"description": "Dummy technology for use in templates requirements, replaced by phase_imperial_generic or phase_imperial_{civ}.",
+	"icon": "phase_imperial.png"
 }

@@ -1,0 +1,22 @@
+{
+	"genericName": "City Phase",
+	"specificName": {
+		"chin": "Dà Chéngshì"
+	},
+	"supersedes": "phase_town_china",
+	"replaces": ["phase_city"],
+	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0, "glory": 0 },
+	"requirements": {"entity": {"class": "CultStatue", "number": 4 }},
+	"autoResearch": false,
+	"requirementsTooltip": "Requires 4 Cult Statues to be built.",
+	"icon": "phase_city.png",
+	"researchTime": 0,
+	"tooltip": "Advance to City Phase, which unlocks more structures and units. Territory radius for Civic Centers and vision range for units increased by another +25%.",
+	"modifications": [
+		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "Citizen"}
+	],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

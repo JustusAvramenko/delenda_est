@@ -1,21 +1,22 @@
 {
 	"genericName": "Town Phase",
 	"specificName": {
-		"kush": "Town Phase"
+		"chin": "Zhèn"
 	},
 	"supersedes": "phase_village",
 	"replaces": ["phase_town"],
 	"description": "Advances from a quiet village to a large town.",
 	"cost": { "food": 0, "wood": 0, "stone": 0, "metal": 0, "glory": 0 },
-	"requirements": {"entity": {"class": "PyramidSmall", "number": 2 }},
+	"requirements": {"entity": {"class": "ImperialCourt", "number": 1 }},
 	"autoResearch": true,
-	"requirementsTooltip": "Requires 2 Small Pyramids to be built.",
+	"requirementsTooltip": "Requires 1 Imperial Court to be built.",
 	"icon": "phase_town.png",
 	"researchTime": 0,
-	"tooltip": "Advance to Town Phase, which unlocks more structures and units. Vision range for units increased by +25%.",
+	"tooltip": "Advance to Town Phase, which unlocks more structures and units. Territory radius for Civic Centers and vision range for units increased by +25%.",
 	"modifications": [
+		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
 		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
-		{"value": "Vision/Range", "multiply": 1.25, "affects": "Unit"}
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "Citizen"}
 	],
 	"soundComplete": "interface/alarm/alarm_phase.xml"
 }
