@@ -6,7 +6,7 @@
 	
 	"Emblem":"session/portraits/emblems/emblem_thebans.png",
 	
-	"History":"The great power of Central Greece and leader of the Boeotian confederacy, Thebes is a force to be reckoned with. It is a major rival of ancient Athens, and sided with the Persians during the 480 BC invasion under Xerxes. Theban forces ended the power of Sparta at the Battle of Leuctra in 371 BC under the command of Epaminondas. The Sacred Band of Thebes (an elite military unit) famously fell at the battle of Chaeronea in 338 BC against Philip II and Alexander the Great. Prior to its destruction by Alexander in 335 BC, Thebes was a major force in Greek history, and was the most dominant city-state at the time of the Macedonian conquest of Greece.",
+	"History":"The Thebans are a strong land power with access to the unique \"Fire Raiser\" siege weapon. Their hoplites utilize the strong phalanx formation and they receive 1 extra hoplite at the beginning of a standard match. They also receive a free Stoa building, which grants +20% health for all buildings, and the Greek Theater, which increases territory influence for their buildings.",
 	"Music":[
 			{"File":"The_Hellespont.ogg", "Type":"peace"},
 			{"File":"Harvest_Festival.ogg", "Type":"peace"},
@@ -18,7 +18,7 @@
 	[
 		{
 			"Name":"Thebans",
-			"Description":"The great power of Central Greece and leader of the Boeotian Confederacy.",
+			"Description":"The great power of Central Greece and leader of the Boeotian confederacy, Thebes is a force to be reckoned with. It is a major rival of ancient Athens, and sided with the Persians during the 480 BC invasion under Xerxes. Theban forces ended the power of Sparta at the Battle of Leuctra in 371 BC under the command of Epaminondas. The Sacred Band of Thebes (an elite military unit) famously fell at the battle of Chaeronea in 338 BC against Philip II and Alexander the Great. Prior to its destruction by Alexander in 335 BC, Thebes was a major force in Greek history, and was the most dominant city-state at the time of the Macedonian conquest of Greece.",
 			"Technologies":
 			[
 				{
@@ -112,7 +112,7 @@
 		},
 		{
 			"Template": "units/theb_infantry_spearman_b",
-			"Count": 2
+			"Count": 3
 		},
 		{
 			"Template": "units/theb_infantry_javelinist_b",
@@ -144,6 +144,7 @@
 	],
 	"SkirmishReplacements":
 	{
+		"skirmish/units/special_starting_unit": "units/theb_infantry_spearman_b",
 		"skirmish/structures/default_stoa": "structures/theb_stoa"
 	},
 	"SelectableInGameSetup": true
