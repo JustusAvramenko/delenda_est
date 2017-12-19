@@ -2,7 +2,7 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/female_base.xml">
+    <variant>
       <mesh>skeletal/new/f_dress.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_female_chin.xml" attachpoint="head"/>
@@ -10,12 +10,12 @@
     </variant>
   </group>
   <group>
-    <variant frequency="50" name="texture-01">
+    <variant frequency="1" name="Female Dress 1">
       <textures>
         <texture file="skeletal/chin_fem.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="50" name="texture-02">
+    <variant frequency="1" name="Female Dress 2">
       <textures>
         <texture file="skeletal/chin_fem2.png" name="baseTex"/>
       </textures>
@@ -24,10 +24,11 @@
   <group>
     <!-- In this group, defined overloads for "Idle", "Walk" and "Run" -->
     <variant file="biped/female_base_walk.xml"/>
-    <variant file="biped/female_carry_food.xml"/>
+    <variant file="biped/female_carry_food.xml">
       <props>
         <prop actor="props/units/heads/chin_ricehat.xml" attachpoint="helmet"/>
       </props>
+    </variant>
     <variant file="biped/female_carry_meat.xml"/>
     <variant file="biped/female_carry_wood.xml"/>
     <variant file="biped/female_carry_stone.xml"/>
@@ -40,14 +41,16 @@
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/female_death.xml"/>
     <variant file="biped/female_gather_tree.xml"/>
-    <variant file="biped/female_gather_grain.xml"/>
+    <variant file="biped/female_gather_grain.xml">
       <props>
         <prop actor="props/units/heads/chin_ricehat.xml" attachpoint="helmet"/>
       </props>
-    <variant file="biped/female_gather_fruit.xml"/>
+    </variant>
+    <variant file="biped/female_gather_fruit.xml">
       <props>
         <prop actor="props/units/heads/chin_ricehat.xml" attachpoint="helmet"/>
       </props>
+    </variant>
     <variant file="biped/female_gather_meat.xml"/>
     <variant file="biped/female_gather_rock.xml"/>
     <variant file="biped/female_gather_ore.xml"/>
