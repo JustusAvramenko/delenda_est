@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_mercenary_infantry_melee_spearman">
-  <Attack>
-    <Melee>
-      <MaxRange>6.0</MaxRange>
-    </Melee>
-  </Attack>
-  <Auras datatype="tokens">
-    shield_wall
-  </Auras>
+<Entity parent="template_unit_mercenary_infantry_melee_hoplite">
   <Builder>
     <Entities datatype="tokens">
       -structures/{civ}_barracks
@@ -18,12 +10,8 @@
 	<Lang>greek</Lang>
     <GenericName>Peloponnesian Hoplite</GenericName>
     <SpecificName>Hoplites Peloponnesos</SpecificName>
-    <VisibleClasses datatype="tokens">Hoplite</VisibleClasses>
     <History>.</History>
-    <Icon>units/hele_merc_hoplite.png</Icon>
-    <Formations datatype="tokens">
-      formations/phalanx
-    </Formations>
+    <Icon>units/theb_merc_hoplite.png</Icon>
   </Identity>
   <VisualActor>
     <Actor>units/mercenaries/hele_merc_hoplite.xml</Actor>

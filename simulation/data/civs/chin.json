@@ -6,7 +6,7 @@
 	
 	"Emblem": "session/portraits/emblems/emblem_chinese.png",
 	
-	"History": "The Han Chinese utilize crossbows in large numbers, with access to both infantry and cavalry crossbowmen. They start a standard match with 1 Minister, a unique unit that boosts the efficiency of buildings and units and they have access to the Imperial Court building, which trains additional Ministers. Like the Persians and Indians, the Chinese also have a +10% population cap bonus.",
+	"History": "The Han Chinese utilize crossbows in large numbers, with access to both infantry and cavalry crossbowmen. They start a standard match with 1 Minister, a unique unit that boosts the efficiency of buildings and units and they have access to the Imperial Court building, which trains additional Ministers. Like the Persians and Indians, the Chinese have a +10% population cap bonus for massive armies.",
 	"Music":[
 		{"File":"Hill_of_Sorrows.ogg", "Type":"peace"},
 		{"File":"Red_Dawn.ogg", "Type":"peace"},
@@ -125,7 +125,7 @@
 			"Count": 2
 		},
 		{
-			"Template": "units/{civ}_cavalry_scout"
+			"Template": "units/chin_cavalry_scout"
 		},
 		{
 			"Template": "units/chin_minister"
@@ -159,8 +159,8 @@
 	"SkirmishReplacements":
 	{
 		"skirmish/units/default_infantry_ranged_b": "units/chin_infantry_crossbowman_b",
-		"skirmish/units/default_cavalry": "units/{civ}_cavalry_scout",
-		"skirmish/units/special_starting_unit": "units/chin_minister"
+		"skirmish/units/special_starting_unit": "units/chin_minister",
+		"skirmish/structures/default_stoa": "structures/chin_gate"
 	},
 	"SelectableInGameSetup": true
 }

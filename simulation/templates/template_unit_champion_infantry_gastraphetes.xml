@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_archer">
+  <Attack>
+    <Ranged>
+      <Crush>20.0</Crush>
+      <MaxRange>60</MaxRange>
+      <ProjectileSpeed>50.0</ProjectileSpeed>
+	  <Gravity>9.81</Gravity>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>4000</RepeatTime>
+      <Spread>3.0</Spread>
+      <PreferredClasses datatype="tokens">Structure Soldier</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <wood>90</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max op="mul">1.2</Max>
+  </Health>
+  <Identity>
+    <Lang>greek</Lang>
+    <GenericName>Belly Bow</GenericName>
+    <SpecificName>Gastraphetes</SpecificName>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+    <History></History>
+    <Tooltip>Traits: Long Range, Medium Armor, Siege.
+Strong Against: Melee Infantry (1.25x), Structures (Crush Damage).
+Weak Against: Spear Cavalry, Sword Cavalry.</Tooltip>
+    <RequiredTechnology>phase_imperial</RequiredTechnology>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.75</WalkSpeed>
+    <Run>
+      <Speed op="mul">0.75</Speed>
+    </Run>
+  </UnitMotion>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+</Entity>

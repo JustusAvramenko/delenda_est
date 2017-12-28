@@ -1,9 +1,12 @@
 {
 	"type": "global",
-	"affects": ["Structure"],
+	"affects": ["Soldier"],
 	"modifications": [
-	  {"value": "Capturable/CapturePoints", "multiply": 1.25}
+		{ "value": "Attack/Ranged/Pierce", "multiply": 1.05 },
+		{ "value": "Attack/Melee/Hack",    "multiply": 1.05 }
 	],
 	"auraName": "Roma Triumphant",
-	"auraDescription": "All capturable structures +25% capture points as long as the arch exists."
+	"auraDescription": "Soldiers +5% attack for as long as a Triumphal Arch stands.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png",
+	"stackable": false
 }

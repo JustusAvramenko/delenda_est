@@ -6,7 +6,7 @@
 	
 	"Emblem":"session/portraits/emblems/emblem_spartans.png",
 	
-	"History":"The Spartans have some of the strongest infantry in the game, with Perioikoi hoplites and Spartiate champions, who both utilize the strong phalanx formation. They also receive a free Stoa building, which grants +20% health for all buildings, and the Greek Theater, which increases territory influence for their buildings. Lastly, they receive 1 free Spartiate champion at the start of the standard match.",
+	"History":"The Spartans have some of the strongest infantry in the game, with Perioikoi hoplites and Spartiate champions, who both utilize the strong phalanx formation. They also receive a free Stoa building, which grants +20% health for all buildings, and the Greek Theater, which increases territory influence for their buildings. Lastly, they receive 1 free Spartiate champion at the start of a standard match.",
 	"Music":[
 			{"File":"Helen_Leaves_Sparta.ogg", "Type":"peace"},
 			{"File":"Forging_a_City-State.ogg", "Type":"peace"},
@@ -128,7 +128,7 @@
 			"Count": 4
 		},
 		{
-			"Template": "units/spart_infantry_spearman_b",
+			"Template": "units/spart_infantry_hoplite_b",
 			"Count": 2
 		},		
 		{
@@ -139,7 +139,7 @@
 			"Template": "units/spart_champion_infantry_spear"
 		},
 		{
-			"Template": "units/{civ}_cavalry_scout"
+			"Template": "units/spart_cavalry_scout"
 		}
 	],
 	"Formations":
@@ -169,6 +169,7 @@
 	{
 		"skirmish/structures/default_house_10" : "structures/{civ}_house",
 		"skirmish/units/special_starting_unit": "units/spart_champion_infantry_spear",
+		"skirmish/units/default_infantry_melee_b": "units/spart_infantry_hoplite_b",
 		"skirmish/structures/default_stoa": "structures/spart_stoa"
 	},
 	"SelectableInGameSetup": true

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Kushite Statue">
+      <mesh>structural/kush_statue_big.dae</mesh>
+      <textures>
+	    <texture file="structural/kush_statue.png" name="baseTex"/>
+		<texture file="structural/kush_statue_norm.png" name="normTex"/> 
+	    <texture file="structural/kush_statue_spec.png" name="specTex"/> 
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

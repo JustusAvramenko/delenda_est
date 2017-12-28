@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry">
+  <Armour>
+    <Hack>8</Hack>
+    <Pierce>8</Pierce>
+    <Crush>7</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>20.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>6.0</MaxRange>
+	  <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+	  <Bonuses>
+		<BonusCavMelee>
+		  <Classes>Cavalry</Classes>
+		  <Multiplier>1.25</Multiplier>
+		</BonusCavMelee>
+	  </Bonuses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    shield_wall
+  </Auras>
+  <Identity>
+    <VisibleClasses datatype="tokens">Melee Spear Hoplite</VisibleClasses>
+    <GenericName>Hero Hoplite Infantry</GenericName>
+    <Tooltip>Traits: Medium Speed, Heavy Armor, Strong Attack, Shield Wall.
+Strong Against: All Cavalry (1.5x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.8</WalkSpeed>
+    <Run>
+      <Speed op="mul">0.8</Speed>
+    </Run>
+  </UnitMotion>
+</Entity>

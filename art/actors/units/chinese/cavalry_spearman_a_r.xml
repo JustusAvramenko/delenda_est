@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <actor version="1">
-
   <castshadow/>
-
   <group>
     <variant frequency="100" name="Base">
       <animations>
@@ -23,24 +21,25 @@
       </props>
     </variant>
   </group>
-  
   <group>
   	<variant frequency="1" name="Ji">
-  		<props>
-	        <prop actor="props/units/weapons/chin_ji.xml" attachpoint="r_hand"/>
-  		</props>
+      <props>
+	    <prop actor="props/units/weapons/chin_ji.xml" attachpoint="r_hand"/>
+      </props>
   	</variant>
   </group>
-
   <group>
     <variant frequency="1" name="BRider-Texture_1">
-      <textures><texture file="skeletal/chin_icr_a.png" name="baseTex"/></textures>
+      <textures>
+	    <texture file="skeletal/chin_icr_a.png" name="baseTex"/>
+	  </textures>
     </variant>
     <variant frequency="1" name="B">
-      <textures><texture file="skeletal/chin_isp_a_black.png" name="baseTex"/></textures>
+      <textures>
+	    <texture file="skeletal/chin_isp_a_black.png" name="baseTex"/>
+	  </textures>
     </variant>
   </group>
-  
   <group>
     <variant frequency="100" name="Idle"/>
     <variant name="carry_meat">
@@ -52,7 +51,5 @@
       </props>
     </variant>
   </group>
-
   <material>player_trans.xml</material>
-
 </actor>

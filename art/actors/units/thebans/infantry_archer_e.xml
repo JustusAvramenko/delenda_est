@@ -5,13 +5,34 @@
     <variant file="biped/base_archer_ready.xml">
       <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/heads/hele_straw.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmets/hele_boeotian.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/new/head_hele_e.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_bow"/>
-        <prop actor="props/units/shields/iberian_buckler_adv.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/weapons/bow_short.xml" attachpoint="weapon_L"/>
+        <prop actor="props/temp/quiver.xml" attachpoint="back"/>
       </props>
-      <textures><texture file="skeletal/mace_thorakites_2.png" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="epilektos-06">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi6.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-07">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi7.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-08">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi8.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="epilektos-09">
+      <textures>
+	    <texture file="skeletal/athen_epilektoi9.png" name="baseTex"/>
+	  </textures>
     </variant>
   </group>
   <group>

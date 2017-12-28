@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_hero_infantry_spearman">
+<Entity parent="template_unit_hero_infantry_hoplite">
   <Auras datatype="tokens">
     spart_hero_leonidas
-	shield_wall
   </Auras>
   <Armour>
     <Hack op="add">1</Hack>
@@ -13,7 +12,6 @@
     <Melee>
       <Hack op="add">5</Hack>
       <Pierce>0.0</Pierce>
-      <MaxRange op="add">1</MaxRange>
     </Melee>
   </Attack>
   <Identity>
@@ -21,12 +19,8 @@
 	<Lang>greek</Lang>
 	<GenericName>Leonidas I</GenericName>
     <SpecificName>Leōnídās</SpecificName>
-    <VisibleClasses datatype="tokens">Hoplite</VisibleClasses>
     <History>The king of Sparta, who fought and died at the battle of Thermopylae in 480 BC. He successfully blocked the way of the huge Persian army through the narrow passage with his 7000 men, until Xerxes was made aware of a secret unobstructed path. Finding the enemy at his rear, Leonidas sent home most of his troops, choosing to stay behind with 300 hand-picked hoplites and win time for the others to withdraw.</History>
     <Icon>units/spart_hero_leonidas.png</Icon>
-    <Formations datatype="tokens">
-      special/formations/phalanx
-    </Formations>
   </Identity>
   <VisualActor>
     <Actor>units/spartans/leonidas.xml</Actor>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee">
+  <Armour>
+    <Hack>4</Hack>
+    <Pierce>3</Pierce>
+    <Crush>3</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>10.0</Hack>
+      <Pierce>0.0</Pierce>
+      <MaxRange>6.0</MaxRange>
+	  <Bonuses>
+		<BonusCavalry>
+		  <Classes>Cavalry</Classes>
+		  <Multiplier>1.25</Multiplier>
+		</BonusCavalry>
+	  </Bonuses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    shield_wall
+  </Auras>
+  <Cost>
+    <Resources>
+      <wood>60</wood>
+    </Resources>
+  </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Spear Hoplite</VisibleClasses>
+    <GenericName>Hoplite Infantry</GenericName>
+    <History>Hoplites were the very symbol of prestige and citizenship, armed with a spear and a large round bronze-coated shield known as an aspis. Armor was heavy, with bronze helmets and a cuirass of either bronze, thick leather, or layered linen, in addition to greaves for the shins. Hoplites fought in a tight formation called a phalanx, guarding each other with their shields while they attacked the enemy with their 2.5 meter spear or short iron sword.</History>
+    <Tooltip>Traits: Medium Speed, Medium Armor, Medium Attack, Shield Wall.
+Strong Against: All Cavalry (1.25x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </Identity>
+  <Loot>
+    <wood>5</wood>
+  </Loot>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.8</WalkSpeed>
+    <Run>
+      <Speed op="mul">0.8</Speed>
+    </Run>
+  </UnitMotion>
+</Entity>

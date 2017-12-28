@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Scenario version="6">
-	<Terrain patches="16" texture="alpine_grass_fancy" priority="0" height="2048"/>
+	<Terrain patches="16" texture="desert_sand_ripples" priority="0" height="2048"/>
 	<Environment>
-		<SkySet>default</SkySet>
-		<SunColor r="1.07695" g="1.07695" b="1.07695"/>
-		<SunElevation angle="0.785398"/>
-		<SunRotation angle="-0.785396"/>
-		<TerrainAmbientColor r="0.501961" g="0.501961" b="0.501961"/>
-		<UnitsAmbientColor r="0.501961" g="0.501961" b="0.501961"/>
+		<SkySet>cirrus</SkySet>
+		<SunColor r="1.03107" g="0.921898" b="0.578208"/>
+		<SunElevation angle="0.638136"/>
+		<SunRotation angle="-0.909753"/>
+		<TerrainAmbientColor r="0.294118" g="0.337255" b="0.356863"/>
+		<UnitsAmbientColor r="0.356863" g="0.356863" b="0.356863"/>
 		<Fog>
-			<FogFactor>0.00199219</FogFactor>
-			<FogThickness>0.129883</FogThickness>
-			<FogColor r="0.8" g="0.8" b="0.898039"/>
+			<FogFactor>0.00195313</FogFactor>
+			<FogThickness>0.0351563</FogThickness>
+			<FogColor r="0.839216" g="0.866667" b="0.882353"/>
 		</Fog>
 		<Water>
 			<WaterBody>
 				<Type>ocean</Type>
-				<Color r="0.298039" g="0.34902" b="0.698039"/>
-				<Tint r="0.278431" g="0.298039" b="0.588235"/>
-				<Height>5</Height>
-				<Waviness>4</Waviness>
-				<Murkiness>0.45</Murkiness>
-				<WindAngle>0</WindAngle>
+				<Color r="0.0784314" g="0.247059" b="0.419608"/>
+				<Tint r="0" g="1" b="0.501961"/>
+				<Height>20.0394</Height>
+				<Waviness>3.02734</Waviness>
+				<Murkiness>0.882813</Murkiness>
+				<WindAngle>0.233165</WindAngle>
 			</WaterBody>
 		</Water>
 		<Postproc>
-			<Brightness>0</Brightness>
-			<Contrast>1</Contrast>
-			<Saturation>0.921875</Saturation>
-			<Bloom>0.140234</Bloom>
+			<Brightness>-0.015625</Brightness>
+			<Contrast>0.984375</Contrast>
+			<Saturation>0.8125</Saturation>
+			<Bloom>0.160156</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
