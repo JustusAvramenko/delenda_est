@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_cavalry_swordsman_relax.xml" frequency="100" name="Base">
+      <mesh>skeletal/new/m_naked.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_nuba_painted.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/mace_nubian.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="4" name="Painted skin 1">
+      <textures>
+        <texture file="skeletal/kush_nuba_painted_1.png" name="baseTex"/>
+        <texture file="skeletal/ptol_iar_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Painted skin 2">
+      <textures>
+        <texture file="skeletal/kush_nuba_painted_2.png" name="baseTex"/>
+        <texture file="skeletal/ptol_iar_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="2" name="Painted skin 3">
+      <textures>
+        <texture file="skeletal/kush_nuba_painted_3.png" name="baseTex"/>
+        <texture file="skeletal/ptol_iar_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="2" name="Painted skin 3 Red">
+      <textures>
+        <texture file="skeletal/kush_nuba_painted_3_red.png" name="baseTex"/>
+        <texture file="skeletal/ptol_iar_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+	<variant file="biped/rider_promotion.xml" name="promotion"/>
+	<variant file="biped/attack_slaughter_cavalry.xml" name="attack_slaughter">
+      <props>
+        <prop actor="props/units/weapons/knife.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant name="gather_meat">
+      <props>
+        <prop actor="props/units/weapons/knife.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant name="carry_meat">
+      <props>
+        <prop actor="props/units/shuttle_meat_male_R.xml" attachpoint="weapon_R"/>
+        <prop attachpoint="shield"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

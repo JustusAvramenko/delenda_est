@@ -2,28 +2,8 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="Base">
-      <animations>
-        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="800"/>
-        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="400"/>
-        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="350"/>
-        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="600"/>
-        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="666"/>
-        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="333"/>
-        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="222"/>
-        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="250"/>
-        <animation file="quadraped/horse_idle_a.psa" name="Idle" speed="50"/>
-        <animation file="quadraped/horse_walk.psa" name="carry_meat" speed="120"/>
-        <animation file="quadraped/horse_attack_a.psa" name="Idle" speed="400"/>
-        <animation file="quadraped/horse_attack_b.psa" name="Idle" speed="300"/>
-        <animation file="quadraped/horse_gallop.psa" name="Run" speed="50"/>
-        <animation file="quadraped/horse_walk.psa" name="Walk" speed="100"/>
-        <animation file="quadraped/horse_attack_a.psa" name="attack_melee" speed="300"/>
-        <animation file="quadraped/horse_attack_b.psa" name="attack_melee" speed="250"/>
-        <animation file="quadraped/horse_attack_a.psa" name="attack_slaughter" speed="300"/>
-        <animation file="quadraped/horse_death.psa" name="death" speed="230"/>
-      </animations>
-      <mesh>skeletal/horse.pmd</mesh>
+    <variant file="quadraped/base_horse_archer.xml" frequency="100" name="Base">
+      <mesh>skeletal/horse.dae</mesh>
       <props>
         <prop actor="units/chinese/cavalry_crossbowman_a_r.xml" attachpoint="rider"/>
         <prop actor="props/units/horse/horse_chest_colorband.xml" attachpoint="chest"/>
@@ -31,19 +11,19 @@
     </variant>
   </group>
   <group>
-    <variant name="horse-texture-1">
-      <textures><texture file="skeletal/horse_celt_dapple_a.dds" name="baseTex"/></textures>
+    <variant frequency="1" name="hyppikon-horse-texture-plain">
+      <textures><texture file="skeletal/horse_hele_csw_e_1.dds" name="baseTex"/></textures>
     </variant>
-    <variant name="horse-texture-2">
-      <textures><texture file="skeletal/horse_celt_dapple_a.dds" name="baseTex"/></textures>
+    <variant frequency="1" name="hyppikon-horse-texture-plain2">
+      <textures><texture file="skeletal/horse_hele_csw_e_2.png" name="baseTex"/></textures>
     </variant>
-    <variant name="horse-texture-3">
-      <textures><texture file="skeletal/horse_celt_dapple_a.dds" name="baseTex"/></textures>
+    <variant frequency="1" name="hyppikon-horse-texture-blaze">
+      <textures><texture file="skeletal/horse_hele_csw_e_3.png" name="baseTex"/></textures>
     </variant>
   </group>
   <group>
     <variant frequency="1" name="horse-color-black">
-      <color>46 46 46</color>
+      <color>41 41 41</color>
     </variant>
     <variant frequency="1" name="horse-color-biege">
       <color>247 213 111</color>
@@ -60,6 +40,11 @@
     <variant name="Run">
       <props>
         <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="Death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
