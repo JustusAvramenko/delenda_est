@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_hunt_skittish">
   <Footprint>
-    <Circle radius="1.65"/>
+    <Circle radius="1.75"/>
     <Height>3.0</Height>
   </Footprint>
   <Identity>
@@ -27,14 +27,12 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <WalkSpeed>5.0</WalkSpeed>
+    <WalkSpeed op="mul">0.8</WalkSpeed>
     <Run>
-      <Speed>12.0</Speed>
-      <Range>600.0</Range>
-      <RangeMin>5.0</RangeMin>
+      <Speed op="mul">0.8</Speed>
     </Run>
   </UnitMotion>
   <VisualActor>
-    <Actor>fauna/horse_a.xml</Actor>
+    <Actor>fauna/horse.xml</Actor>
   </VisualActor>
 </Entity>
