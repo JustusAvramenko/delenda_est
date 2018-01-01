@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="units/imp_infantry_swordsman_e">
   <Armour>
-    <Hack>5</Hack>
-    <Pierce>2</Pierce>
-    <Crush>4</Crush>
+    <Hack op="add">2</Hack>
+    <Pierce op="add">1</Pierce>
+    <Crush op="add">1</Crush>
   </Armour>
   <Attack>
     <Capture>
@@ -13,7 +13,7 @@
     </Capture>
   </Attack>
   <Health>
-    <Max>110</Max>
+    <Max op="mul">1.1</Max>
   </Health>
   <Identity>
     <SpecificName>Centurion</SpecificName>

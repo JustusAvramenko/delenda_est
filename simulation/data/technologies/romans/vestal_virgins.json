@@ -10,11 +10,11 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "vestals.png",
 	"researchTime": 40,
-	"tooltip": "Women +50% Health, but +50% train time.",
+	"tooltip": "Citizen Women and Slave Women +20% capture resistance and -10% train time.",
 	"modifications": [
-		{"value": "Health/Max", "multiply": 1.50},
-		{"value": "Cost/BuildTime", "multiply": 1.50}
+		{"value": "Capturable/CapturePoints", "multiply": 1.20},
+		{"value": "Cost/BuildTime", "multiply": 0.9}
 	],
-	"affects": ["FemaleCitizen"],
+	"affects": ["Female"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
