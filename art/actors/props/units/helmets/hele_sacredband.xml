@@ -2,32 +2,22 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="Boeotian helmet with plume">
+    <variant frequency="3" name="Boeotian helmet with plume">
       <mesh>props/helmet/hele_boeotian.dae</mesh>
-      <textures>
-        <texture file="props/helmet/hele_boeotian_gold.png" name="baseTex"/>
-      </textures>
       <props>
         <prop actor="props/units/helmets/props/boeotian_crest.xml" attachpoint="root"/>
       </props>
+      <textures>
+        <texture file="props/helmet/hele_boeotian_gold.png" name="baseTex"/>
+      </textures>
     </variant>
-    <variant frequency="1" name="Boeotian helmet">
+    <variant frequency="3" name="Boeotian helmet">
       <mesh>props/helmet/hele_boeotian.dae</mesh>
       <textures>
         <texture file="props/helmet/hele_boeotian_gold.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="2" name="Boeotian helmet tinned with laurels and high crest">
-      <mesh>props/helmet/hele_boeotian.dae</mesh>
-      <textures>
-        <texture file="props/helmet/hele_boeotian_laurel.png" name="baseTex"/>
-        <texture file="props/helmet/hele_a-h_spec.png" name="specTex"/>
-      </textures>
-      <props>
-        <prop actor="props/units/helmets/props/boeotian_highcrest.xml" attachpoint="root"/>
-      </props>
-    </variant>
-    <variant frequency="2" name="Boeotian helmet with plume tinned">
+    <variant frequency="1" name="Boeotian helmet with plume tinned">
       <mesh>props/helmet/hele_boeotian.dae</mesh>
       <props>
         <prop actor="props/units/helmets/props/boeotian_crest.xml" attachpoint="root"/>
@@ -65,10 +55,16 @@
         <texture file="props/helmet/hele_h1.dds" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="2" name="Helmet-UnknownStyle-Crested">
-      <mesh>props/helmet/mace_helmet_m.dae</mesh>
+    <variant frequency="2" name="Helmet-Pilos-Crested">
+      <mesh>props/helmet/hele_helmet_j.dae</mesh>
       <textures>
-        <texture file="props/helmet/mace-h.dds" name="baseTex"/>
+        <texture file="props/helmet/hele_a3.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="4" name="Helmet-Boeotian-HighCrest">
+      <mesh>props/helmet/hele_boeotian_highcrest.dae</mesh>
+      <textures>
+        <texture file="props/helmet/mace_d1.dds" name="baseTex"/>
       </textures>
     </variant>
   </group>

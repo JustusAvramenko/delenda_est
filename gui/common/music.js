@@ -55,11 +55,7 @@ Music.prototype.resetTracks = function()
 {
 	this.tracks = {
 		"MENU": ["Golden_Scarabs.ogg"],
-		"PEACE": [
-			"Tale_of_Warriors.ogg",
-			"Tavern_in_the_Mist.ogg",
-			"The_Road_Ahead.ogg"
-		],
+		"PEACE": [],
 		"BATTLE": ["Taiko_1.ogg", "Taiko_2.ogg"],
 		"VICTORY": ["Going_Home.ogg"],
 		"DEFEAT": ["Tonight_We_Dine_In_Hell.ogg"],
