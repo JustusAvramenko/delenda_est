@@ -1,17 +1,18 @@
 {
-	"genericName": "Iron Scale Armor",
-	"description": "Iron scale armor for the Immortals regiment, which Herodotus described looking like 'fish scales'.",
-	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 600},
-	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
-	"requirementsTooltip": "Unlocked in City Phase. Requires Forging or Metallurgy",
+	"genericName": "Campaign Panoply",
+	"description": "Scale armor for the Immortals regiment, which Herodotus described looking like 'fish scales'.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500, "glory": 200},
+	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
 	"icon": "armor_plates_iron_spear.png",
 	"researchTime": 60,
-	"tooltip": "Champion infantry (Anusiya) +2 hack armor levels, but +10 metal cost.",
+	"tooltip": "Immortals champion infantry (\"Anusiya\") +2 hack armor and +1 pierce and crush armor, but also +10 metal cost.",
 	"modifications": [
+		{"value": "Cost/Resources/metal", "add": 10},
+		{"value": "VisualActor/Actor", "replace": "units/persians/champion_unit_1_iron.xml"},
 		{"value": "Armour/Hack", "add": 2.0},
-		{"value": "Cost/Resources/metal", "add": 5},
-		{"value": "VisualActor/Actor", "replace": "units/persians/champion_unit_1_iron.xml"}
-		
+		{"value": "Armour/Pierce", "add": 1.0},
+		{"value": "Armour/Crush", "add": 1.0}
 	],
 	"affects": ["Immortal"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
