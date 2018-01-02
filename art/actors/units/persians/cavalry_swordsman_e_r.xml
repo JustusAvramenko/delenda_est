@@ -2,39 +2,40 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_cavalry_spearman_ready_shieldsmall.xml" frequency="100" name="Base">
-      <mesh>skeletal/new/m_pants.dae</mesh>
+    <variant file="biped/base_cavalry_swordsman_shield_relax.xml" frequency="100" name="Base">
+      <mesh>skeletal/new/m_armor_pants.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_pers_a.xml" attachpoint="head"/>
-        <prop actor="props/units/helmets/pers_cav_round.xml" attachpoint="helmet"/>
-        <prop actor="props/units/weapons/spear_ball.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/pers_conical_plume.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/axe_sagaris.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/pers_back_curved_iron.xml" attachpoint="back"/>
         <prop actor="props/units/shields/pers_buckler_1.xml" attachpoint="shield"/>
-        <prop actor="props/units/cape_cav_animated_pers_spearman.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Rider-Texture-1">
+    <variant frequency="1" name="Scale-Iron">
       <textures>
-	    <texture file="skeletal/pers_su1_anusiya.dds" name="baseTex"/>
+	    <texture file="skeletal/pers_su1_anusiya_iron.dds" name="baseTex"/>
 	  </textures>
     </variant>
-    <variant frequency="1" name="quilted corselet 1">
+    <variant frequency="2" name="Scale-Bronze">
       <textures>
-	    <texture file="skeletal/pers_isp_a_new_1.png" name="baseTex"/>
-	  </textures>
+        <texture file="skeletal/pers_su1_anusiya.dds" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>
     <variant frequency="100" name="Idle"/>
     <variant file="biped/rider_promotion_shield.xml" name="promotion"/>
-    <variant file="biped/attack_slaughter_spear_shield_cavalry.xml" name="attack_slaughter"/>
+    <variant file="biped/attack_slaughter_shield_cavalry.xml" name="attack_slaughter"/>
     <variant name="carry_meat">
       <props>
         <prop actor="props/units/shuttle_meat_male_R.xml" attachpoint="weapon_R"/>
         <prop attachpoint="shield"/>
       </props>
     </variant>
+    <variant name="gather_meat"/>
   </group>
   <material>player_trans.xml</material>
 </actor>

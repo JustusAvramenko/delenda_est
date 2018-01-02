@@ -2,69 +2,23 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/pikeman_base.xml">
-      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+    <variant file="biped/base_spearman_relax.xml">
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
-        <prop actor="props/units/shields/mace_pez_adv.xml" attachpoint="shield_arm"/>
-        <prop actor="props/units/weapons/sarissa.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/heads/spartan_phalangite_helmet.xml" attachpoint="helmet"/>
-        <prop actor="props/units/heads/new/head_egyptian_e.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/ptol_romanized_iron.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/ptol_thureos_adv.xml" attachpoint="shield"/>
+        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/jav_ammo.xml" attachpoint="ammo"/>
+        <prop actor="props/units/cape_animated_spearman_shield_relax.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Armour-Linen-Quilted">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+    <variant frequency="1" name="Thureophoros Tunic">
       <textures>
-        <texture file="skeletal/ptol_pikeman_a.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 1">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_isp_a_1.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 2">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_2.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 3">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_3.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 4">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_4.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 5">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_5.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 6">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_6.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 7">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_7.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Armour-Linen-Quilted 8">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_pikeman_a_8.png" name="baseTex"/>
+        <texture file="skeletal/ptol_thureophoros_a_1.png" name="baseTex"/>
+        <texture file="skeletal/ptol_thureophoros_a_1_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -94,9 +48,10 @@
     <variant file="biped/carry_metal_idle.xml"/>
     <variant file="biped/death_infantry.xml">
       <props>
+        <prop actor="props/units/cape_animated_spearman_shield_relax.xml" attachpoint="root"/>
         <prop actor="props/units/blood_01.xml" attachpoint="root"/>
       </props>
 	</variant>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
