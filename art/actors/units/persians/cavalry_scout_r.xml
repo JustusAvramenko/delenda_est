@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_cavalry_swordsman_relax.xml" frequency="100" name="Base">
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/akin.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/quiver_hip.xml" attachpoint="sheath_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="tunic">
+      <props>
+        <prop actor="props/units/heads/new/head_pers_tiara_y.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/pers_kidaris_tied_yellow.xml" attachpoint="helmet"/>
+      </props>
+      <textures>
+	    <texture file="skeletal/pers_car_b_1.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="tunic 2">
+      <props>
+        <prop actor="props/units/heads/new/head_pers_tiara.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/pers_kidaris_tied.xml" attachpoint="helmet"/>
+      </props>
+      <textures>
+	    <texture file="skeletal/pers_car_b_r_2.png" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+	<variant file="biped/rider_promotion.xml" name="promotion"/>
+	<variant file="biped/attack_slaughter_cavalry.xml" name="attack_slaughter">
+      <props>
+        <prop actor="props/units/weapons/knife.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant name="gather_meat">
+      <props>
+        <prop actor="props/units/weapons/spartan_sword.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant name="carry_meat">
+      <props>
+        <prop actor="props/units/shuttle_meat_male_R.xml" attachpoint="weapon_R"/>
+        <prop attachpoint="shield"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
