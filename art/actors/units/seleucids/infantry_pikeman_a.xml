@@ -3,7 +3,6 @@
   <castshadow/>
   <group>
     <variant file="biped/pikeman_base.xml">
-      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
         <prop actor="props/units/helmets/sele_chalkaspides_a.xml" attachpoint="helmet"/>
@@ -14,8 +13,15 @@
   </group>
   <group>
     <variant frequency="1" name="armor long">
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
       <textures>
         <texture file="skeletal/mace_bronzeshield_pikeman_a.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="armor short">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/mace_bronzeshield_2.png" name="baseTex"/>
       </textures>
     </variant>
   </group>

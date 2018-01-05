@@ -6,12 +6,12 @@
 	},
 	"description": "Upgrade all of your citizen-soldier hoplites to Advanced rank.",
 	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 0, "glory": 300},
-	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "civ": "athen" }, { "civ": "theb" }] }] },
-	"requirementsTooltip": "Unlocked in Town Phase.",
+	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "civ": "athen" }, { "civ": "theb" }] }] },
+	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "upgrade_advanced.png",
 	"researchTime": 50,
-	"tooltip": "Upgrade hoplites to Advanced rank. This increases their military prowess, but decreases their resource gathering rates -25%. Unlocks Elite Hoplites technology.",
+	"tooltip": "Upgrade Hoplites to Advanced rank. This increases their military prowess, but decreases their resource gathering rates -25%. Unlocks Elite Hoplites technology.",
 	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
-	"affects": ["Citizen Infantry Spear Basic"],
+	"affects": ["Citizen Infantry Hoplite Basic"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

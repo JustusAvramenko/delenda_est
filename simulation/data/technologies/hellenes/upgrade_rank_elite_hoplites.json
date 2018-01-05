@@ -7,12 +7,12 @@
 	},
 	"description": "Upgrade all of your citizen-soldier infantrymen to Elite rank.",
 	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 400, "glory": 400},
-	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "civ": "athen" }, { "civ": "theb" }] }] },
-	"requirementsTooltip": "Unlocked in City Phase. Requires Advanced Hoplites.",
+	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "civ": "athen" }, { "civ": "theb" }] }] },
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires Advanced Hoplites.",
 	"icon": "upgrade_elite.png",
 	"researchTime": 70,
-	"tooltip": "Upgrade hoplites to Elite rank. This increases their military prowess, but decreases their resource gathering rates another -25%.",
+	"tooltip": "Upgrade Hoplites to Elite rank. This increases their military prowess, but decreases their resource gathering rates another -25%.",
 	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
-	"affects": ["Citizen Infantry Spear Advanced"],
+	"affects": ["Citizen Infantry Hoplite Advanced"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
