@@ -1,0 +1,27 @@
+{
+	"genericName": "Sun Tzu's \"The Art of War\"",
+	"specificName": {
+		"chin": "Sūnzi de zhànzhēng yìshù"
+	},
+	"description": "This famous and most important work of the Seven Military Classics teaches Chinese commanders everything about planning battles, maintaining armies, and defeating one's enemies.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0, "glory": 1000},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "han"}]},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "sibylline_books.png",
+	"researchTime": 40,
+	"tooltip": "Chinese Heroes -75% train time, remaining Fortress and Barracks technologies -50% cost.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.25, "affects": "Hero"},
+		{ "value": "ProductionQueue/TechCostMultiplier/wood", "multiply": 0.5, "affects": "Fortress" },
+		{ "value": "ProductionQueue/TechCostMultiplier/food", "multiply": 0.5, "affects": "Fortress" },
+		{ "value": "ProductionQueue/TechCostMultiplier/metal", "multiply": 0.5, "affects": "Fortress" },
+		{ "value": "ProductionQueue/TechCostMultiplier/stone", "multiply": 0.5, "affects": "Fortress" },
+		{ "value": "ProductionQueue/TechCostMultiplier/glory", "multiply": 0.5, "affects": "Fortress" },
+		{ "value": "ProductionQueue/TechCostMultiplier/wood", "multiply": 0.5, "affects": "Barracks" },
+		{ "value": "ProductionQueue/TechCostMultiplier/food", "multiply": 0.5, "affects": "Barracks" },
+		{ "value": "ProductionQueue/TechCostMultiplier/metal", "multiply": 0.5, "affects": "Barracks" },
+		{ "value": "ProductionQueue/TechCostMultiplier/stone", "multiply": 0.5, "affects": "Barracks" },
+		{ "value": "ProductionQueue/TechCostMultiplier/glory", "multiply": 0.5, "affects": "Barracks" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

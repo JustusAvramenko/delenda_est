@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_blacksmith">
+  <Footprint>
+    <Square width="24.0" depth="24.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>han</Civ>
+    <SpecificName>Tiě Zuò Fāng</SpecificName>
+    <History>The Chinese were the first to use cast iron.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="24.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+	  chinese_han/pair_archers_01
+	  chinese_han/pair_archers_02
+	  chinese_han/pair_melee_01
+	  chinese_han/pair_champions_01
+	  chinese_han/pair_inf_armor_01
+	  chinese_han/pair_soldier_armor
+	  chinese_han/pair_cav_armor_01
+	  chinese_han/pair_heroes_01
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/chinese_han/blacksmith.xml</Actor>
+  </VisualActor>
+</Entity>

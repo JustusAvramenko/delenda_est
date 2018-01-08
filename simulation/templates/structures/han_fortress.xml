@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Footprint>
+    <Square width="38.0" depth="39.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>han</Civ>
+    <SpecificName>Yào Sài</SpecificName>
+    <History>(History goes here.)</History>
+  </Identity>
+  <Obstruction>
+    <Static width="34.0" depth="34.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_champion_infantry_archer
+	  units/{civ}_champion_chariot
+      units/{civ}_hero_han_xin
+    </Entities>
+    <Technologies datatype="tokens">
+      chinese/art_of_war
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/chinese_han/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+   <Length>34.0</Length>
+    <Indent>6.4</Indent>
+  </WallPiece>
+</Entity>
