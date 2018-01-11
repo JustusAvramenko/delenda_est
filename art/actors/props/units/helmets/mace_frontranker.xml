@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Phrygian Plumed Crested">
+      <mesh>props/helmet/mace_helmet_a.dae</mesh>
+      <textures>
+        <texture file="props/helmet/mace_a.dds" name="baseTex"/>
+        <texture file="props/helmet/sele_phrygian_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="100" name="Phrygian Plain">
+      <mesh>props/helmet/sele_phrygian.dae</mesh>
+      <textures>
+        <texture file="props/helmet/sele_phrygian_spec.png" name="specTex"/>
+        <texture file="props/helmet/sele_phrygian_bronze.png" name="baseTex"/>
+      </textures>
+      <props>
+        <prop actor="props/units/helmets/props/phrygian_mask.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>playercolor_spec.xml</material>
+</actor>
