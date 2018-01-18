@@ -2,7 +2,8 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant name="base">
+    <variant frequency="1" name="Base">
+      <mesh>structural/kush_temple_amun.dae</mesh>
       <props>
         <prop actor="props/structures/decals/dirt_3x3.xml" attachpoint="root"/>
         <prop actor="props/structures/kushites/temple_amun_paintings.xml" attachpoint="root"/>
@@ -11,14 +12,7 @@
         <texture file="structural/kush_struct_2.png" name="baseTex"/>
         <texture file="structural/ptol_struct_spec.png" name="specTex"/>
         <texture file="structural/ptol_struct_norm.png" name="normTex"/>
-      </textures>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="1">
-      <mesh>structural/kush_temple_amun.dae</mesh>
-      <textures>
-        <texture file="structural/ao/kush_temple_amun_AO.png" name="aoTex"/>
+        <texture file="structural/ao/kush_temple_amun.png" name="aoTex"/>
       </textures>
     </variant>
   </group>
@@ -26,7 +20,7 @@
     <variant frequency="1" name="ungarrisoned"/>
     <variant name="garrisoned">
       <props>
-        <prop actor="props/special/common/garrison_flag_kart.xml" attachpoint="garrisoned"/>
+        <prop actor="props/special/common/garrison_flag_kush.xml" attachpoint="garrisoned"/>
       </props>
     </variant>
   </group>
