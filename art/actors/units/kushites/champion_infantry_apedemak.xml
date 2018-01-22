@@ -3,22 +3,36 @@
   <castshadow/>
   <group>
     <variant file="biped/base_swordsman_shield_relax.xml">
-      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/helmets/kush_metal_01.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/rome_helmet_wolfskin.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/head_kush_meroitic.xml" attachpoint="head"/>
         <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/axe_twohanded_mauryan.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/shields/rome_scutum_su.xml" attachpoint="shield"/>
+        <prop actor="props/units/shields/nubian_oval_advanced.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant name="Kushite Champion Sword Infantry 01">
+    <variant name="Tunic Short">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+    </variant>
+    <variant name="Armor Tunic Short">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant name="Kushite Champion Axe Infantry 01">
       <textures>
-        <texture file="skeletal/kush_pike_e_01.png" name="baseTex"/>
-        <texture file="skeletal/kush_pike_e_01_spec.png" name="specTex"/>
+        <texture file="skeletal/kush_champion_infantry_01.png" name="baseTex"/>
+        <texture file="skeletal/kush_champion_infantry_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant name="Kushite Champion Axe Infantry 02">
+      <textures>
+        <texture file="skeletal/kush_champion_infantry_02.png" name="baseTex"/>
+        <texture file="skeletal/kush_champion_infantry_02_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -52,5 +66,5 @@
       </props>
 	</variant>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>

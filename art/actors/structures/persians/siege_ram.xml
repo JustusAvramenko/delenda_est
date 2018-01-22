@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Assyrian Ram">
+      <animations>
+        <animation file="mechanical/pers_ram_idle.dae" name="idle" speed="5"/>
+        <animation file="mechanical/pers_ram_walk.dae" name="walk" speed="25"/>
+        <animation file="mechanical/pers_ram_walk.dae" name="run" speed="25"/>
+        <animation event="0.41" file="mechanical/pers_ram.dae" name="attack_melee" speed="50"/>
+      </animations>
+      <mesh>structural/pers_ram.dae</mesh>
+      <textures>
+        <texture file="structural/assyrian_ram_2.png" name="baseTex"/>
+        <texture file="structural/assyrian_ram_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+   <variant name="ungarrisoned" frequency="1"/>
+   <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_persians.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="alive"/>
+    <variant name="death">
+      <props>
+        <prop attachpoint="garrisoned"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>

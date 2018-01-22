@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_dog">
+  <Health>
+    <Max op="mul">0.9</Max>
+  </Health>
   <Identity>
     <Civ>brit</Civ>
-	<SelectionGroupName>units/brit_war_dog_b</SelectionGroupName>
+	<SelectionGroupName>units/brit_war_dog_wolfhound</SelectionGroupName>
 	<SpecificName>Coun</SpecificName>
-    <GenericName>Mastiff War Dog</GenericName>
+    <GenericName>Wolfhound War Dog</GenericName>
 	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
     <History>The Celts used large dogs such as mastiffs or wolfhounds in combat, especially against enemy cavalry. The Romans were very impressed with the strength and ferocity of these dogs. Many were brought back to Rome for the gladiator arena or to serve as guard dogs.</History>
-    <Icon>units/brit_war_dog.png</Icon>
+    <Icon>units/brit_wolfhound.png</Icon>
   </Identity>
-  <Promotion>
-    <Entity>units/brit_war_dog_a</Entity>
-  </Promotion>
+  <Promotion disable=""/>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+    <Run>
+      <Speed op="mul">1.1</Speed>
+    </Run>
+  </UnitMotion>
   <VisualActor>
-    <Actor>units/celts/cavalry_spearman_b.xml</Actor>
+    <Actor>units/celts/wolfhound.xml</Actor>
   </VisualActor>
 </Entity>

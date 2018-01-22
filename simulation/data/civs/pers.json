@@ -136,7 +136,8 @@
 			"Count": 2 
 		},
 		{
-			"Template": "units/pers_cavalry_scout" 
+			"Template": "units/pers_camelry_scout",
+			"Count": 2
 		}
 	],
 	"Formations":
@@ -166,9 +167,10 @@
 	],
 	"SkirmishReplacements":
 	{
+		"skirmish/units/default_cavalry": "units/pers_camelry_scout",
 		"skirmish/units/default_infantry_ranged_b": "units/pers_infantry_archer_b",
-		"skirmish/units/special_starting_unit": "units/{civ}_cavalry_scout",
-		"skirmish/structures/default_house_10" : "structures/{civ}_house"
+		"skirmish/units/special_starting_unit": "units/pers_camelry_scout",
+		"skirmish/structures/default_house_10" : "structures/pers_house"
 	},
 	"SelectableInGameSetup": true
 }
