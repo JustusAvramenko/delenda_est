@@ -2,23 +2,12 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="camel">
-      <animations>
-        <animation file="quadraped/camel_walk.dae" name="Walk" speed="50"/>
-        <animation file="quadraped/camel_walk.dae" name="carry_meat" speed="50"/>
-        <animation file="quadraped/camel_run.dae" name="Run" speed="30"/>
-        <animation file="quadraped/camel_death.dae" name="Death" speed="90"/>
-        <animation file="quadraped/camel_idle_01.dae" name="Idle" speed="50"/>
-        <animation file="quadraped/camel_idle_02.dae" name="Idle" speed="50"/>
-      </animations>
-      <mesh>skeletal/camel_1.dae</mesh>
+    <variant frequency="1" file="quadraped/base_camel_archer.xml" name="Base">
+      <mesh>skeletal/camel.dae</mesh>
       <props>
-        <prop actor="units/mercenaries/sudan_camelry_raider_r.xml" attachpoint="props_main"/>
+        <prop actor="units/mercenaries/sudan_camelry_raider_r.xml" attachpoint="rider"/>
+        <prop actor="props/camel/camel_rein.xml" attachpoint="head"/>
       </props>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="100" name="texture">
       <textures>
         <texture file="skeletal/ptol_camel_e.png" name="baseTex"/>
       </textures>
