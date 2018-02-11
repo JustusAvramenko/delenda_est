@@ -2,7 +2,7 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="Kushite Defense Tower">
+    <variant frequency="1" name="Base">
       <animations>
         <animation event="0.5" load="0" name="attack_ranged" speed="100"/>
       </animations>
@@ -15,8 +15,8 @@
       <textures>
         <texture file="structural/kush_struct.png" name="baseTex"/>
         <texture file="structural/kush_struct_norm.png" name="normTex"/>
-	    <texture file="structural/kush_struct_spec.png" name="specTex"/>
-	    <texture file="structural/ao/kush_defense_tower_AO.png" name="aoTex"/>
+        <texture file="structural/kush_struct_spec.png" name="specTex"/>
+        <texture file="structural/ao/kush_defense_tower.png" name="aoTex"/>
       </textures>
     </variant>
   </group>
@@ -24,7 +24,7 @@
     <variant name="ungarrisoned" frequency="1"/>
     <variant name="garrisoned">
       <props>
-        <prop actor="props/special/common/garrison_flag_hele.xml" attachpoint="garrisoned"/>
+        <prop actor="props/special/common/garrison_flag_kush.xml" attachpoint="garrisoned"/>
       </props>
     </variant>
   </group>

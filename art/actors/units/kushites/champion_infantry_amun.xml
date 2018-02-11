@@ -3,21 +3,45 @@
   <castshadow/>
   <group>
     <variant file="biped/base_swordsman_shield_relax.xml">
-      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/helmets/kush_metal_01.xml" attachpoint="helmet"/>
-        <prop actor="props/units/heads/head_kush_nubian.xml" attachpoint="head"/>
-        <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/khopesh_bronze.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/shields/egyptian_shield_b.xml" attachpoint="shield"/>
+        <prop actor="props/units/helmets/kush_skull_cap.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/head_kush_meroitic.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/kush_khopesh_bronze.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/kush_egyptian_leopard.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant name="Kushite Champion Axe Infantry 01">
+    <variant frequency="1" name="kush_champion_01">
       <textures>
-        <texture file="skeletal/kush_pike_e_01.png" name="baseTex"/>
-        <texture file="skeletal/kush_pike_e_01_spec.png" name="specTex"/>
+        <texture file="skeletal/kush_champion_infantry_01.png" name="baseTex"/>
+        <texture file="skeletal/kush_champion_infantry_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="kush_champion_02">
+      <textures>
+        <texture file="skeletal/kush_champion_infantry_02.png" name="baseTex"/>
+        <texture file="skeletal/kush_champion_infantry_02_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="kush_champion_03_lightskin">
+      <props>
+        <prop actor="props/units/heads/head_kush_nubian.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_champion_infantry_03.png" name="baseTex"/>
+        <texture file="skeletal/kush_champion_infantry_03_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="kush_champion_04_lightskin">
+      <props>
+        <prop actor="props/units/heads/head_kush_nubian.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_champion_infantry_04.png" name="baseTex"/>
+        <texture file="skeletal/kush_champion_infantry_04_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -45,11 +69,7 @@
     <variant file="biped/carry_wood_idle.xml"/>
     <variant file="biped/carry_stone_idle.xml"/>
     <variant file="biped/carry_metal_idle.xml"/>
-    <variant file="biped/death_infantry.xml">
-      <props>
-        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
-      </props>
-	</variant>
+    <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>

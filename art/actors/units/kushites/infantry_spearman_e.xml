@@ -3,19 +3,28 @@
   <castshadow/>
   <group>
     <variant file="biped/base_spearman_relax.xml">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
-        <prop actor="props/units/heads/head_kush_nubian_red.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/head_kush_nubian.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/kush_dread_hair.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/kush_nubian_ostrich_feathers_e.xml" attachpoint="head"/>
         <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="helmet"/>
-        <prop actor="props/units/shields/nubian_oval_advanced.xml" attachpoint="shield"/>
+        <prop actor="props/units/shields/kush_nubian_thureos.xml" attachpoint="shield"/>
         <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant name="Kushite Elite Spear Infantry Leather 01">
+    <variant frequency="1" name="Kushite Elite Spear Infantry Leather 01">
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <textures>
         <texture file="skeletal/kush_iar_e_01.png" name="baseTex"/>
+        <texture file="skeletal/kush_iar_e_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Kushite Elite Spear Infantry Leather 02">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/kush_pike_a_02.png" name="baseTex"/>
         <texture file="skeletal/kush_iar_e_01_spec.png" name="specTex"/>
       </textures>
     </variant>
