@@ -2,45 +2,45 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" file="quadraped/base_horse_spearman.xml" name="Base">
+    <variant file="quadraped/base_horse_spearman.xml" frequency="1" name="Base">
       <mesh>skeletal/horse.dae</mesh>
       <props>
         <prop actor="units/kushites/champion_cavalry_r.xml" attachpoint="rider"/>
-        <prop actor="props/units/horse_back_blanket.xml" attachpoint="rider"/>
-        <prop actor="props/units/horse/horse_chest_colorband.xml" attachpoint="chest"/>
-        <prop actor="props/units/horse/crest_1.xml" attachpoint="head"/>
+        <prop actor="props/horse/kush_crest_black.xml" attachpoint="head"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="3" name="horse texture black">
-      <textures><texture file="skeletal/horse_black_a.dds" name="baseTex"/></textures>
+    <variant frequency="3" name="kush-cavalry-champion-black">
+      <textures>
+        <texture file="skeletal/kush_horse_black_champ.png" name="baseTex"/>
+      </textures>
     </variant>
-    <variant frequency="2" name="horse texture brown">
-      <textures><texture file="skeletal/horse_brown_a.dds" name="baseTex"/></textures>
+    <variant frequency="2" name="kush-cavalry-champion-brown">
+      <textures>
+        <texture file="skeletal/kush_horse_brown_champ.png" name="baseTex"/>
+      </textures>
     </variant>
-    <variant frequency="4" name="horse texture chestnut">
-      <textures><texture file="skeletal/horse_chestnut_a.dds" name="baseTex"/></textures>
+    <variant frequency="4" name="kush-cavalry-champion-chestnut">
+      <textures>
+        <texture file="skeletal/kush_horse_chestnut_champ.png" name="baseTex"/>
+      </textures>
     </variant>
-    <variant frequency="3" name="horse texture dun">
-      <textures><texture file="skeletal/horse_dun_a.dds" name="baseTex"/></textures>
+    <variant frequency="3" name="kush-cavalry-champion-dun">
+      <textures>
+        <texture file="skeletal/kush_horse_dun_champ.png" name="baseTex"/>
+      </textures>
     </variant>
-    <variant frequency="1" name="horse texture white">
-      <textures><texture file="skeletal/horse_white_a.dds" name="baseTex"/></textures>
+    <variant frequency="1" name="kush-cavalry-champion-white">
+      <textures>
+        <texture file="skeletal/kush_horse_white_champ.png" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>
     <variant frequency="100" name="Idle"/>
-    <variant name="Run">
-      <props>
-        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
-      </props>
-    </variant>
-    <variant name="Death">
-      <props>
-        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
-      </props>
-    </variant>
+    <variant file="quadraped/base_horse_death.xml"/>
+    <variant file="quadraped/base_horse_run.xml"/>
   </group>
   <material>objectcolor.xml</material>
 </actor>

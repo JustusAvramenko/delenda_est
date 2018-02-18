@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_cavalry_melee_scout">
+  <Auras datatype="tokens">
+    camel_stench
+  </Auras>
   <Identity>
     <Civ>ptol</Civ>
 	<Lang>greek</Lang>
@@ -8,7 +11,10 @@
     <History>.</History>
     <Icon>units/athen_cavalry_scout.png</Icon>
   </Identity>
+  <StatusBars>
+    <HeightOffset>8.5</HeightOffset>
+  </StatusBars>
   <VisualActor>
-    <Actor>units/hellenes/cavalry_scout.xml</Actor>
+    <Actor>units/mercenaries/sudan_camelry_raider.xml</Actor>
   </VisualActor>
 </Entity>

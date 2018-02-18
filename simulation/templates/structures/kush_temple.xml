@@ -1,44 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_temple">
   <Health>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>kush</Civ>
-    <GenericName>Kushite Temple</GenericName>
-    <SpecificName>Kushite Temple</SpecificName>
-    <History>?</History>
+    <GenericName>Temple of Apedemak</GenericName>
+    <SpecificName>Pr-‘Iprmk</SpecificName>
   </Identity>
   <Obstruction>
     <Static width="20.0" depth="30.0"/>
   </Obstruction>
   <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_champion_infantry_apedemak
+    </Entities>
     <Technologies datatype="tokens">
       successors/special_pharaonic_cult
       capture_games
     </Technologies>
   </ProductionQueue>
-  <Upgrade>
-    <Amun>
-      <Entity>structures/kush_temple_3</Entity>
-      <Tooltip>Reaffirm the cult of Amun and unlock the Napatan Temple Guard and special technologies.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
-      <Cost>
-        <metal>100</metal>
-      </Cost>
-      <Time>30</Time>
-    </Amun>
-    <Apedemak>
-      <Entity>structures/kush_temple_2</Entity>
-      <Tooltip>Break with the Napatan priesthood and unlock the Meroe Temple Guard and special technologies.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
-      <Cost>
-        <glory>100</glory>
-      </Cost>
-      <Time>30</Time>
-    </Apedemak>
-  </Upgrade>
   <VisualActor>
     <Actor>structures/kushites/temple.xml</Actor>
+    <FoundationActor>structures/fndn_4x6.xml</FoundationActor>
   </VisualActor>
 </Entity>
