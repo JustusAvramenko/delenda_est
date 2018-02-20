@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="carthaginian ballista">
+      <animations>
+        <animation event="0.58" file="mechanical/kart_ballista.dae" load="0.44" name="attack_ranged" speed="100"/>
+      </animations>
+      <mesh>structural/kart_ballista.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/rock_flaming.xml" attachpoint="projectile"/>
+        <prop actor="props/units/weapons/rock.xml" attachpoint="loaded-projectile"/>
+      </props>
+      <textures>
+        <texture file="structural/hele_siege.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

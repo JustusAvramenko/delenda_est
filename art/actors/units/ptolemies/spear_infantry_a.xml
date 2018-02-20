@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_slave_male.xml">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/spartan_phalangite_helmet.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/new/head_egyptian_e.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/ptol_isp_a_1.png" name="baseTex"/>
+        <texture file="skeletal/ptol_isp_a_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_ranged_polybolos_fire_a.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>
