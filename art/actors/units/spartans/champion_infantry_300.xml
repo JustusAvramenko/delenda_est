@@ -15,7 +15,7 @@
       <props>
         <prop actor="props/units/heads/new/head_corinthian.xml" attachpoint="head"/>
         <prop actor="props/units/helmets/hele_hoplite_a.xml" attachpoint="head"/>
-        <prop actor="props/units/cape_animated_hoplite.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/hoplite.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
@@ -46,12 +46,7 @@
     <variant file="biped/carry_wood.xml"/>
     <variant file="biped/carry_stone.xml"/>
     <variant file="biped/carry_metal.xml"/>
-    <variant file="biped/death_infantry.xml">
-      <props>
-        <prop actor="props/units/cape_animated_hoplite.xml" attachpoint="root"/>
-        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
-      </props>
-	</variant>
+    <variant file="biped/hoplite_death.xml"/>
   </group>
   <material>player_trans_spec.xml</material>
 </actor>
