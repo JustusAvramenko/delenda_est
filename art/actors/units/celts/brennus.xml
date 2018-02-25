@@ -10,9 +10,11 @@
         <prop actor="props/units/shields/celt_brennus.xml" attachpoint="shield"/>
         <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
         <prop actor="props/temp/l_sheath.xml" attachpoint="sheath_L"/>
-        <prop actor="props/units/cape_animated_swordsman_shield_ready_fast.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/swordsman_shield_ready_fast.xml" attachpoint="root"/>
       </props>
-      <textures><texture file="skeletal/celt_brennus.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/celt_brennus.dds" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -36,9 +38,9 @@
     <variant file="biped/carry_metal.xml"/>
     <variant file="biped/death_infantry.xml">
       <props>
-        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/swordsman_shield_ready_fast.xml" attachpoint="root"/>
       </props>
-	</variant>
+    </variant>
   </group>
   <material>player_trans.xml</material>
 </actor>
