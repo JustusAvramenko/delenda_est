@@ -10,7 +10,9 @@
         <prop actor="props/units/weapons/bow_short.xml" attachpoint="weapon_L"/>
         <prop actor="props/units/quiver_hip.xml" attachpoint="sheath_L"/>
       </props>
-      <textures><texture file="skeletal/kart_iar_b.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/kart_iar_b.dds" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -33,11 +35,7 @@
     <variant file="biped/carry_wood.xml"/>
     <variant file="biped/carry_stone.xml"/>
     <variant file="biped/carry_metal.xml"/>
-    <variant file="biped/death_infantry.xml">
-      <props>
-        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
-      </props>
-	</variant>
+    <variant file="biped/death_infantry.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
