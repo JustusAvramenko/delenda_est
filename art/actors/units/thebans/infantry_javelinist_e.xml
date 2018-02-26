@@ -10,22 +10,28 @@
         <prop actor="props/units/shields/hele_pelta_e.xml" attachpoint="shield"/>
         <prop actor="props/units/weapons/jav_loaded.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/jav_ammo.xml" attachpoint="ammo"/>
-        <prop actor="props/units/cape_animated_jav_thracian.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/javelinist_thracian.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
   <group>
     <variant frequency="1" name="Tunic-1">
       <mesh>skeletal/new/m_tunic_long.dae</mesh>
-      <textures><texture file="skeletal/hele_su1_01.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/hele_su1_01.dds" name="baseTex"/>
+      </textures>
     </variant>
     <variant frequency="1" name="Tunic-2">
       <mesh>skeletal/new/m_tunic_long.dae</mesh>
-      <textures><texture file="skeletal/hele_su1_02.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/hele_su1_02.dds" name="baseTex"/>
+      </textures>
     </variant>
     <variant frequency="1" name="Tunic-3">
       <mesh>skeletal/new/m_tunic_long.dae</mesh>
-      <textures><texture file="skeletal/hele_su1_03.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/hele_su1_03.dds" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -50,9 +56,9 @@
     <variant file="biped/carry_metal.xml"/>
     <variant file="biped/death_infantry.xml">
       <props>
-        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/javelinist_thracian.xml" attachpoint="root"/>
       </props>
-	</variant>
+    </variant>
   </group>
   <material>player_trans.xml</material>
 </actor>

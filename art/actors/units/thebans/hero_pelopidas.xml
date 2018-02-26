@@ -9,7 +9,7 @@
         <prop actor="props/units/heads/new/head_athen_pericles.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/shields/theb_aspis_pelopidas.xml" attachpoint="shield_arm"/>
-        <prop actor="props/units/cape_animated_hoplite.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/hoplite.xml" attachpoint="root"/>
       </props>
       <textures>
         <texture file="skeletal/hele_xenophon.dds" name="baseTex"/>
@@ -35,11 +35,7 @@
     <variant file="biped/carry_wood.xml"/>
     <variant file="biped/carry_stone.xml"/>
     <variant file="biped/carry_metal.xml"/>
-    <variant file="biped/death_infantry.xml">
-      <props>
-        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
-      </props>
-	</variant>
+    <variant file="biped/hoplite_death.xml"/>
   </group>
   <material>playercolor_spec.xml</material>
 </actor>

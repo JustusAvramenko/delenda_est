@@ -10,7 +10,9 @@
         <prop actor="props/units/weapons/jav_loaded.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/jav_ammo.xml" attachpoint="ammo"/>
       </props>
-      <textures><texture file="skeletal/hele_tunic.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/hele_tunic.dds" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -33,11 +35,7 @@
     <variant file="biped/carry_wood.xml"/>
     <variant file="biped/carry_stone.xml"/>
     <variant file="biped/carry_metal.xml"/>
-    <variant file="biped/death_infantry.xml">
-      <props>
-        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
-      </props>
-	</variant>
+    <variant file="biped/death_infantry.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
