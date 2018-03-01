@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+	<object hotkey="cancel">
+		<action on="Press">closeOpenDialogs();</action>
+	</object>
+
+	<object hotkey="chat">
+		<action on="Press">openChat();</action>
+	</object>
+
+	<object hotkey="teamchat">
+		<action on="Press">openChat(g_IsObserver ? "/observers" : "/allies");</action>
+	</object>
+
+	<object hotkey="privatechat">
+		<action on="Press">openChat(g_LastChatAddressee);</action>
+	</object>
+
+	<object hotkey="session.gui.toggle">
+		<action on="Press">g_ShowGUI = !g_ShowGUI;</action>
+	</object>
+
+	<object hotkey="session.gui.menu.toggle">
+		<action on="Press">toggleMenu();</action>
+	</object>
+
+	<object hotkey="session.gui.barter.toggle">
+		<action on="Press">toggleTrade();</action>
+	</object>
+
+	<object hotkey="session.gui.tutorial.toggle">
+		<action on="Press">toggleTutorial();</action>
+	</object>
+
+	<object hotkey="summary">
+		<action on="Press">openGameSummary();</action>
+	</object>
+
+	<object	hotkey="civinfo">
+		<action on="Press">
+			Engine.PushGuiPage("page_civinfo.xml", { "civ": g_CivInfo.code, "callback": "storeCivInfoPage" });
+		</action>
+	</object>
+
+	<object	hotkey="structree">
+		<action on="Press">
+			Engine.PushGuiPage("page_structree.xml", { "civ": g_CivInfo.code, "callback": "storeCivInfoPage" });
+		</action>
+	</object>
+
+	<object hotkey="silhouettes">
+		<action on="Press">toggleConfigBool("silhouettes");</action>
+	</object>
+
+	<object hotkey="showsky">
+		<action on="Press">
+			var newSetting = !Engine.Renderer_GetShowSkyEnabled();
+			Engine.Renderer_SetShowSkyEnabled(newSetting);
+		</action>
+	</object>
+
+	<object hotkey="pause">
+		<action on="Press">togglePause();</action>
+	</object>
+
+	<object hotkey="quicksave">
+		<action on="Press">Engine.QuickSave();</action>
+	</object>
+
+	<object hotkey="quickload">
+		<action on="Press">Engine.QuickLoad();</action>
+	</object>
+
+	<object hotkey="session.kill">
+		<action on="Press">performCommand(g_Selection.toList().map(ent => GetEntityState(ent)), "delete");</action>
+	</object>
+
+	<object hotkey="session.unload">
+		<action on="Press">unloadAll();</action>
+	</object>
+
+	<object hotkey="session.stop">
+		<action on="Press">stopUnits(g_Selection.toList());</action>
+	</object>
+
+	<object hotkey="session.backtowork">
+		<action on="Press">backToWork();</action>
+	</object>
+
+
+	<!-- Find idle warrior - TODO: Potentially move this to own UI button? -->
+	<object hotkey="selection.idlewarrior">
+		<action on="Press">findIdleUnit(g_MilitaryTypes);</action>
+	</object>
+
+	<object hotkey="selection.idleunit">
+		<action on="Press">findIdleUnit(["!Domestic"]);</action>
+	</object>
+
+	<object hotkey="selection.cancel">
+		<action on="Press">clearSelection();</action>
+	</object>
+
+	<object hotkey="session.toggleattackrange">
+		<action on="Press">toggleRangeOverlay("Attack");</action>
+	</object>
+
+	<object hotkey="session.toggleaurasrange">
+		<action on="Press">toggleRangeOverlay("Auras");</action>
+	</object>
+
+	<object hotkey="session.togglehealrange">
+		<action on="Press">toggleRangeOverlay("Heal");</action>
+	</object>
+
+	<object hotkey="session.showstatusbars">
+		<action on="Press">
+			g_ShowAllStatusBars = !g_ShowAllStatusBars;
+			recalculateStatusBarDisplay();
+		</action>
+	</object>
+</object>
