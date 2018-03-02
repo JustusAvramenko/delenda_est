@@ -1,0 +1,26 @@
+{
+	"genericName": "The Loom",
+	"specificName": {
+		"hele": "Argaleiós",
+		"mace": "Argaleiós",
+		"spart": "Argaleiós",
+		"athen": "Argaleiós",
+		"sele": "Argaleiós",
+		"rome": "Textrinum",
+		"imp": "Textrinum"
+	},
+	"description": "The Loom allowed the creation of finer clothing to clothe citizens in the settlement. Women of the household were taught from a young age how to weave on the loom, and subsequently spent a large  share of their lives working with it.",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "loom.png",
+	"researchTime": 40,
+	"tooltip": "Civilian Citizens +50% health.",
+	"requirements": {"all": [
+		{"tech": "phase_town"},
+		{"notciv": "imp"}
+	]},
+	"modifications": [{"value": "Health/Max", "multiply": 1.5}],
+	"affects": ["Citizen Support"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

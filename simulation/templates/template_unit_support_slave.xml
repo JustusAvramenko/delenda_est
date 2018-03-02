@@ -27,10 +27,11 @@
   <Identity>
     <VisibleClasses datatype="tokens">Gatherer Slave</VisibleClasses>
 	<Classes datatype="tokens">Worker</Classes>
+	<Gender>female</Gender>
     <GenericName>Slave</GenericName>
     <History>Slavery played a major role in ancient civilization.</History>
-	<Tooltip>A cheap gatherer with a finite life span. 
-Good for: Mining stone and metal. Also good at dying.
+	<Tooltip>A good and cheap gatherer with a finite life span who cannot build buildings. 
+Good for: Gathering Resources and Defecting.
 Bad for: Defense.</Tooltip>
     <Icon>units/global_slave.png</Icon>
     <RequiredTechnology>unlock_slave_trade</RequiredTechnology>
@@ -47,14 +48,14 @@ Bad for: Defense.</Tooltip>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
     <Rates>
-      <food.fruit>0.50</food.fruit>
-      <food.grain>0.25</food.grain>
+      <food.fruit>1.0</food.fruit>
+      <food.grain>0.5</food.grain>
       <food.meat>1.0</food.meat>
-      <wood.tree>0.75</wood.tree>
+      <wood.tree>1.0</wood.tree>
       <wood.ruins>5.0</wood.ruins>
-      <stone.rock>1.25</stone.rock>
+      <stone.rock>1.0</stone.rock>
       <stone.ruins>2.0</stone.ruins>
-      <metal.ore>1.25</metal.ore>
+      <metal.ore>1.0</metal.ore>
 	  <glory disable=""/>
     </Rates>
   </ResourceGatherer>

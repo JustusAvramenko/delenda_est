@@ -27,6 +27,31 @@
   </Auras>
   <Builder>
     <Rate>1.25</Rate>
+	<Entities datatype="tokens">
+      structures/{civ}_civil_centre
+      structures/{civ}_military_colony
+      structures/{civ}_temple_vesta
+      structures/{civ}_government_center
+      structures/{civ}_pyramid_1
+      structures/{civ}_pyramid_2
+      structures/{civ}_house
+      structures/{civ}_tenement
+      structures/{civ}_storehouse
+      structures/{civ}_farmstead
+      structures/{civ}_field
+      structures/{civ}_rotarymill
+      structures/{civ}_corral
+      structures/{civ}_dock
+      structures/{civ}_market
+      structures/{civ}_pillar_ashoka
+      structures/{civ}_statue
+      structures/{civ}_temple
+      structures/{civ}_temple_amun
+      structures/{civ}_theatron
+      structures/{civ}_library
+      structures/{civ}_lighthouse
+      structures/{civ}_wonder
+    </Entities>
   </Builder>
   <Cost>
     <Population>1</Population>
@@ -36,17 +61,17 @@
     <BuildTime>15</BuildTime>
   </Cost>
   <Health>
-    <Max>100</Max>
+    <Max>80</Max>
   </Health>
   <Identity>
-    <GenericName>Male Citizen</GenericName>
-	<Gender>male</Gender>
+    <GenericName>Citizen</GenericName>
+	<Gender>female</Gender>
 	<VisibleClasses datatype="tokens">Builder Gatherer Citizen</VisibleClasses>
 	<Classes datatype="tokens">Worker Civilian</Classes>
 	<Tooltip>Build civilian buildings and gather resources. Command nearby Slaves to work faster. Especially good at building.
 Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Avoids Death.
-Good at: Building, Mining, Lumbering, and Dying.
-Mediocre at: Foraging and Farming.</Tooltip>
+Good at: Building and Dying.
+Mediocre at: Gathering Resources.</Tooltip>
     <Icon>units/imp_support_citizen.png</Icon>
 	<Formations disable=""/>
   </Identity>
@@ -55,14 +80,14 @@ Mediocre at: Foraging and Farming.</Tooltip>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
     <Rates>
-      <food.fruit>0.50</food.fruit>
+      <food.fruit>0.5</food.fruit>
       <food.grain>0.25</food.grain>
-      <food.meat>1</food.meat>
-      <wood.tree>0.65</wood.tree>
-      <wood.ruins>5</wood.ruins>
+      <food.meat>0.5</food.meat>
+      <wood.tree>0.5</wood.tree>
+      <wood.ruins>5.0</wood.ruins>
       <stone.rock>0.5</stone.rock>
       <stone.ruins>2</stone.ruins>
-      <metal.ore>0.75</metal.ore>
+      <metal.ore>0.5</metal.ore>
     </Rates>
   </ResourceGatherer>
   <Sound>
