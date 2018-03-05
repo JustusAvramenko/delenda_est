@@ -9,11 +9,17 @@
 		"ptol": "Ballistiká"
 	},
 	"description": "The study of the behavior of projectiles and how to throw them began with the Greeks.",
-	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 250, "glory": 250},
-	"requirements": {"tech": "phase_city"},
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500, "glory": 500},
 	"requirementsTooltip": "Unlocked in City Phase.",
+	"requirements": {"all": [
+		{"tech": "phase_city" },
+		{"all": [
+			{"notciv": "maur"},
+			{"notciv": "pers"}]
+		}
+	]},
 	"icon": "calipers.png",
 	"researchTime": 40,
-	"tooltip": "Unlock Catapults and Bolt Shooters at the Siege Workshop; Unlock field Catapults, which can be built anywhere, even in enemy territory.",
+	"tooltip": "Unlock ranged siege weapon technologies.",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -45,26 +45,16 @@
     </variant>
   </group>
   <group>
-    <variant frequency="100" name="Idle"/>
-    <variant file="biped/rider_promotion_shield.xml" name="promotion"/>
-    <variant file="biped/attack_ranged_cavalry_javelin.xml" name="attack_ranged"/>
-    <variant file="biped/attack_slaughter_shield_cavalry.xml" name="attack_slaughter">
-      <props>
-        <prop actor="props/units/weapons/akin.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
-    <variant name="carry_meat">
-      <props>
-        <prop actor="props/units/shuttle_meat_male_R.xml" attachpoint="weapon_R"/>
-        <prop attachpoint="ammo"/>
-        <prop attachpoint="shield"/>
-      </props>
-    </variant>
-    <variant name="gather_meat">
-      <props>
-        <prop actor="props/units/weapons/akin.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
+    <variant file="biped/base_cavalry_javelin_ready_shield.xml"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_ranged_cavalry_javelin.xml"/>
+    <variant file="biped/rider/promotion_shield.xml" />
+    <variant file="biped/rider/attack_slaughter_shield_pers.xml"/>
+    <variant file="biped/rider/gather_meat_pers.xml"/>
+    <variant file="biped/rider/death.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>

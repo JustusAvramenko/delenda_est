@@ -32,21 +32,11 @@
   </group>
   <group>
     <variant frequency="100" name="Idle"/>
-	<variant file="biped/rider_promotion.xml" name="promotion"/>
-	<variant file="biped/attack_slaughter_cavalry.xml" name="attack_slaughter">
-      <props>
-        <prop actor="props/units/weapons/knife.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
-    <variant name="gather_meat">
-      <props>
-        <prop actor="props/units/weapons/spartan_sword.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
+	<variant file="biped/rider/attack_slaughter.xml" name="attack_slaughter"/>
+    <variant name="gather_meat"/>
     <variant name="carry_meat">
       <props>
         <prop actor="props/units/shuttle_meat_male_R.xml" attachpoint="weapon_R"/>
-        <prop attachpoint="shield"/>
       </props>
     </variant>
   </group>

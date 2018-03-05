@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_cavalry_melee_scout">
+  <Auras datatype="tokens">
+    camel_stench
+  </Auras>
   <Identity>
     <Civ>pers</Civ>
-	<GenericName>Scout Cavalry</GenericName>
-    <SpecificName>Próskopos</SpecificName>
+	<GenericName>Scout Camelry</GenericName>
+    <SpecificName>Scout Camelry</SpecificName>
+    <VisibleClasses datatype="tokens">Camel</VisibleClasses>
     <History>.</History>
     <Icon>units/pers_cavalry_scout.png</Icon>
   </Identity>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/camel_select.xml</select>
+      <order_walk>actor/fauna/movement/camel_order.xml</order_walk>
+      <death>actor/fauna/death/death_camel.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.5</HeightOffset>
+  </StatusBars>
   <VisualActor>
-    <Actor>units/persians/cavalry_scout.xml</Actor>
+    <Actor>units/persians/camelry_scout.xml</Actor>
   </VisualActor>
 </Entity>

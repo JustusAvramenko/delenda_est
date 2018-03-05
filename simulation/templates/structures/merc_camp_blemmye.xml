@@ -2,10 +2,16 @@
 <Entity parent="template_structure_special_merc_camp">
   <Identity>
     <Civ>gaia</Civ>
-    <GenericName>Mercenary Camp</GenericName>
-	<SpecificName>Misthophóron</SpecificName>
+    <GenericName>Blemmye Encampment</GenericName>
+	<SpecificName>Blemmye Encampment</SpecificName>
     <History>.</History>
   </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+	  kush_merc_camelry_1
+	  kush_merc_camelry_2
+    </Entities>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/mercenaries/camp_blemmye.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>

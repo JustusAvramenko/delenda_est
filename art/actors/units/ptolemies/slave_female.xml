@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="15" name="Egyptian Skirt Light Skin">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_ptol_fem.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/ptol_slave_female_01.png" name="baseTex"/>
+        <texture file="skeletal/maur_fem_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+	<variant frequency="2" name="Kushite Skirt Light Skin">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_fem_light.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_support_female_citizen_light.png" name="baseTex"/>
+        <texture file="skeletal/kush_support_female_citizen_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+	<variant frequency="5" name="Kushite Skirt Medium Skin">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_fem_medium.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_support_female_citizen_medium.png" name="baseTex"/>
+        <texture file="skeletal/kush_support_female_citizen_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+	<variant frequency="3" name="Kushite Skirt Dark Skin">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_fem_dark.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_support_female_citizen_dark.png" name="baseTex"/>
+        <texture file="skeletal/kush_support_female_citizen_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Nuba Naked">
+      <mesh>skeletal/new/f_naked.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_fem_dark_nuba.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/kush_dread_hair_fem.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_support_female_nuba_dark.png" name="baseTex"/>
+        <texture file="skeletal/kush_support_female_nuba_dark_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <!-- In this group, defined overloads for "Idle", "Walk" and "Run" -->
+    <variant file="biped/female_base_walk.xml"/>
+    <variant file="biped/female_carry_food.xml"/>
+    <variant file="biped/female_carry_meat.xml"/>
+    <variant file="biped/female_carry_wood.xml"/>
+    <variant file="biped/female_carry_stone.xml"/>
+    <variant file="biped/female_carry_metal.xml"/>
+  </group>
+  <group>
+    <!-- In this group, define overloads for other animation types, since they presumably do not collide with each other -->
+    <variant name="Idle" frequency="1"/>
+    <variant file="biped/attack_melee_female.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/female_death.xml"/>
+    <variant file="biped/female_gather_tree.xml"/>
+    <variant file="biped/female_gather_grain.xml"/>
+    <variant file="biped/female_gather_fruit.xml"/>
+    <variant file="biped/female_gather_meat.xml"/>
+    <variant file="biped/female_gather_rock.xml"/>
+    <variant file="biped/female_gather_ore.xml"/>
+    <variant file="biped/female_gather_ruins.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/female_build.xml"/>
+    <variant file="biped/female_build_farm.xml"/>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>
