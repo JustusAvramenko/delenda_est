@@ -28,13 +28,9 @@
   </group>
   <group>
     <variant frequency="100" name="Idle"/>
-	<variant file="biped/attack_ranged_cavalry_archer_hip_nomad.xml" frequency="100" name="attack_ranged"/>
-    <variant file="biped/attack_slaughter_shield_cavalry.xml" name="attack_slaughter">
-      <props>
-        <prop actor="props/units/weapons/spartan_sword.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
-	<variant file="biped/rider_promotion.xml" name="promotion">
+	<variant file="biped/attack_ranged_cavalry_archer_hip_nomad.xml" name="attack_ranged"/>
+    <variant file="biped/rider/attack_slaughter_shield_spart.xml"/>
+    <variant file="biped/rider/promotion_shield.xml">
       <props>
         <prop attachpoint="weapon_bow"/>
 		<prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_R"/>
@@ -48,7 +44,7 @@
     </variant>
     <variant name="gather_meat">
       <props>
-        <prop actor="props/units/weapons/spartan_sword.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/knife.xml" attachpoint="weapon_R"/>
       </props>
     </variant>
     <variant name="carry_meat">

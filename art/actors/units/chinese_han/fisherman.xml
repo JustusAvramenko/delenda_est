@@ -14,5 +14,22 @@
       </textures>
     </variant>
   </group>
+  <group>
+    <variant file="biped/fisher/base_ptol.xml"/>
+    <variant file="biped/fisher/carry_ptol.xml">
+      <props>
+        <prop actor="props/units/row.xml" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/fisher/gather_fish.xml"/>
+    <variant file="biped/fisher/walk.xml">
+      <props>
+        <prop actor="props/units/row.xml" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+  </group>
   <material>player_trans.xml</material>
 </actor>

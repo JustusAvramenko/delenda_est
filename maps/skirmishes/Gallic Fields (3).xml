@@ -41,7 +41,6 @@
 {
   "CircularMap": true,
   "Description": "Defend your Gallic outpost against attacks from your treacherous neighbors!\n\nEach player begins the match with a wooden palisade and some guard towers atop a low embankment.\n\nWatch out for Romans passing by!",
-  "GameType": "conquest_civic_centers",
   "Keywords": [
     "trigger"
   ],
@@ -97,6 +96,9 @@
   ],
   "Preview": "gallic_fields.png",
   "RevealMap": false,
+  "VictoryConditions": [
+    "conquest_civic_centers"
+  ],
   "TriggerScripts": [
     "scripts/TriggerHelper.js",
     "skirmishes/Gallic Fields (3).js"
