@@ -2,11 +2,11 @@
 <Entity parent="units/rome_legionnaire_imperial">
   <Attack>
     <Melee>
-      <Hack>20.0</Hack>
+      <Hack op="mul">1.1</Hack>
     </Melee>
   </Attack>
   <Health>
-    <Max>140</Max>
+    <Max op="mul">1.1</Max>
   </Health>
   <Identity>
     <Civ>rome</Civ>
@@ -18,6 +18,6 @@
   </Identity>
   <Promotion disable=""/>
   <VisualActor>
-    <Actor>units/romans/imp_rome_champion_1.xml</Actor>
+    <Actor>units/romans/champion_infantry_imperial_centurion.xml</Actor>
   </VisualActor>
 </Entity>

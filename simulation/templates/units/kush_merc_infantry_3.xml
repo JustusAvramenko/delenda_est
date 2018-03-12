@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
+  <Armour>
+    <Hack op="add">-1</Hack>
+  </Armour>
+  <Cost>
+    <Resources>
+	  <wood>50</wood>
+	  <metal>50</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>kush</Civ>
+	<SelectionGroupName>units/kush_merc_infantry_3</SelectionGroupName>
+    <GenericName>Blemmye Swordsman</GenericName>
+    <SpecificName>Blemmye Swordsman</SpecificName>
+    <History>?</History>
+    <Icon>units/kush_merc_infantry_3.png</Icon>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+    <Run>
+      <Speed op="mul">1.2</Speed>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/sudan_blemmye_swordsman.xml</Actor>
+  </VisualActor>
+</Entity>

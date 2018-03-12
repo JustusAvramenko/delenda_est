@@ -6,9 +6,23 @@
       <mesh>skeletal/horse.dae</mesh>
       <props>
         <prop actor="units/carthaginians/cavalry_italian_e_r.xml" attachpoint="rider"/>
-		<prop actor="props/units/horse/crest_1.xml" attachpoint="head"/>
+        <prop actor="props/units/horse/crest_1.xml" attachpoint="head"/>
+        <prop actor="props/horse/cav_armor_kart.xml" attachpoint="root"/>
       </props>
-	  <textures><texture file="skeletal/horse_kart_csp_e_1.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="horse-color-darkbrown">
+      <color>117 85 38</color>
+    </variant>
+    <variant frequency="1" name="horse-color-lightbrown">
+      <color>254 177 141</color>
+    </variant>
+    <variant frequency="1" name="horse-color-darkgray">
+      <color>116 116 116</color>
+    </variant>
+    <variant frequency="1" name="horse-color-lightgray">
+      <color>214 214 214</color>
     </variant>
   </group>
   <group>
@@ -27,8 +41,16 @@
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
-    <variant file="quadraped/base_horse_death.xml"/>
-    <variant file="quadraped/base_horse_run.xml"/>
+    <variant file="quadraped/base_horse_death.xml">
+      <props>
+        <prop actor="props/horse/cav_armor_kart.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant file="quadraped/base_horse_run.xml">
+      <props>
+        <prop actor="props/horse/cav_armor_kart.xml" attachpoint="root"/>
+      </props>
+    </variant>
   </group>
   <material>objectcolor.xml</material>
 </actor>

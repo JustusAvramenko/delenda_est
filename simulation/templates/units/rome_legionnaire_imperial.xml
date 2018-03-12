@@ -2,9 +2,12 @@
 <Entity parent="units/rome_legionnaire_marian">
   <Attack>
     <Melee>
-      <Hack>18.0</Hack>
+      <Hack op="mul">1.1</Hack>
     </Melee>
   </Attack>
+  <Health>
+    <Max op="mul">1.1</Max>
+  </Health>
   <Identity>
     <Civ>rome</Civ>
 	<Lang>latin</Lang>
@@ -18,6 +21,6 @@
     <RequiredXp>300</RequiredXp>
   </Promotion>
   <VisualActor>
-    <Actor>units/romans/champion_unit_4_imp_legion.xml</Actor>
+    <Actor>units/romans/champion_infantry_imperial.xml</Actor>
   </VisualActor>
 </Entity>

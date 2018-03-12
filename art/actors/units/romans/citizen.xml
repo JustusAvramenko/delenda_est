@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/celt_trader.dae</mesh>
+      <textures>
+        <texture file="null_white.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="45" name="Male">
+      <props>
+        <prop actor="units/romans/citizen_male.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="55" name="Female">
+      <props>
+        <prop actor="units/romans/citizen_female.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>
