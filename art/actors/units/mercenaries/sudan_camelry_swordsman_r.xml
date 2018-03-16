@@ -6,8 +6,7 @@
       <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_kush_blemmeye.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/longsword_mauryan.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/shields/kush_beja_rhino.xml" attachpoint="shield"/>
+        <prop actor="props/units/weapons/kush_gladius.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/kush_meroitic_scabbard.xml" attachpoint="back"/>
       </props>
       <textures>
@@ -28,6 +27,18 @@
         <texture file="skeletal/kush_merc_cavalry_r_02.png" name="baseTex"/>
         <texture file="skeletal/kush_merc_cavalry_r_02_spec.png" name="specTex"/>
       </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="beja-shield-large">
+      <props>
+        <prop actor="props/units/shields/kush_beja_rhino.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="beja-shield-small">
+      <props>
+        <prop actor="props/units/shields/kush_beja_small_rhino.xml" attachpoint="shield"/>
+      </props>
     </variant>
   </group>
   <group>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" file="quadraped/base_horse_swordsman.xml" name="Base">
+      <mesh>skeletal/horse.dae</mesh>
+      <props>
+        <prop actor="units/ptolemies/hero_cavalry_swordsman_ptolemy_IV_r.xml" attachpoint="rider"/>
+        <prop actor="props/units/horse/sele_crest.xml" attachpoint="head"/>
+        <prop actor="props/horse/cav_front_armor_bronze.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_ptol.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="skeletal/horse_rome_maximus.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="quadraped/base_horse_death.xml">
+      <props>
+        <prop actor="props/horse/cav_front_armor_bronze.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_ptol.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant file="quadraped/base_horse_run.xml">
+      <props>
+        <prop actor="props/horse/cav_front_armor_bronze.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_ptol.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

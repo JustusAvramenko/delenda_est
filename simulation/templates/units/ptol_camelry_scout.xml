@@ -3,18 +3,33 @@
   <Auras datatype="tokens">
     camel_stench
   </Auras>
+  <Cost>
+	<BuildTime>5</BuildTime>
+    <Resources>
+      <food>0</food>
+	  <wood>0</wood>
+	  <metal>60</metal>
+    </Resources>
+  </Cost>
   <Identity>
     <Civ>ptol</Civ>
 	<Lang>greek</Lang>
-	<GenericName>Scout Cavalry</GenericName>
-    <SpecificName>Kataskopos</SpecificName>
+	<GenericName>Scout Camelry</GenericName>
+    <SpecificName>Kamálos Proskópon</SpecificName>
     <History>.</History>
-    <Icon>units/athen_cavalry_scout.png</Icon>
+    <Icon>units/kush_merc_cavalry_1.png</Icon>
   </Identity>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/camel_select.xml</select>
+      <order_walk>actor/fauna/movement/camel_order.xml</order_walk>
+      <death>actor/fauna/death/death_camel.xml</death>
+    </SoundGroups>
+  </Sound>
   <StatusBars>
     <HeightOffset>8.5</HeightOffset>
   </StatusBars>
   <VisualActor>
-    <Actor>units/mercenaries/sudan_camelry_raider.xml</Actor>
+    <Actor>units/mercenaries/sudan_camelry_swordsman.xml</Actor>
   </VisualActor>
 </Entity>

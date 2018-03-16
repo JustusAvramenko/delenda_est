@@ -13,11 +13,11 @@
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "helmet_corinthian_crest.png",
 	"researchTime": 40,
-	"tooltip": "Unlock the ability to train Champions at the barracks. Barracks cost +100 wood, +50% build time.",
+	"tooltip": "Unlock the ability to train Champions at the Barracks and Stable. Barracks and Stables cost +50% stone and +50% build time.",
 	"modifications": [
 		{"value": "Cost/BuildTime", "multiply": 1.5},
-		{"value": "Cost/Resources/wood", "add": 100}
+		{"value": "Cost/Resources/stone", "multiply": 1.5}
 	],
-	"affects": ["Barracks"],
+	"affects": ["Barracks", "Stable"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
