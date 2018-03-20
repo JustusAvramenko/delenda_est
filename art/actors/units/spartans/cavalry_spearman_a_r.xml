@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_hele_a.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/hele_straw.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/spear_lance_cavalry.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/capes/rider/spearman_ready.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="skeletal/mace_bronzeshield_2.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_cavalry_spearman_ready.xml"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/attack_slaughter_shield_spart.xml"/>
+    <variant file="biped/rider/promotion_shield.xml" />
+    <variant file="biped/rider/gather_meat_spart.xml"/>
+    <variant file="biped/rider/death.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
