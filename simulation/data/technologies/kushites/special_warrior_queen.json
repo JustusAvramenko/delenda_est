@@ -1,0 +1,23 @@
+{
+	"genericName": "Warrior Queen",
+	"specificName": {
+		"kush": "Kandake"
+	},
+	"description": "The Kushite queens were very important regents, with the power to overrule even the king in times of war.",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 0, "glory": 300},
+	"requirements": {"all": [
+		{"tech": "phase_city"}, 
+		{"civ": "kush"}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "warrior_queen.png",
+	"researchTime": 50,
+	"tooltip": "Female Heroes +10% attack damage, +90% more bow accuracy.",
+	"modifications": [
+		{"value": "Attack/Ranged/Spread", "multiply": 0.1},
+		{"value": "Attack/Ranged/Pierce", "multiply": 1.1}
+	],
+	"affects": ["Female Hero"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
