@@ -3,7 +3,7 @@
 <Scenario version="6">
 	<Environment>
 		<SkySet>cloudless</SkySet>
-		<SunColor r="0.968627" g="0.713726" b="0.556863"/>
+		<SunColor r="0.964706" g="0.713726" b="0.556863"/>
 		<SunElevation angle="0.668816"/>
 		<SunRotation angle="-2.50346"/>
 		<TerrainAmbientColor r="0.192157" g="0.329412" b="0.376471"/>
@@ -11,7 +11,7 @@
 		<Fog>
 			<FogFactor>0.00179687</FogFactor>
 			<FogThickness>0</FogThickness>
-			<FogColor r="0.960784" g="0.921569" b="0.796078"/>
+			<FogColor r="0.956863" g="0.921569" b="0.792157"/>
 		</Fog>
 		<Water>
 			<WaterBody>
@@ -33,7 +33,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="580.217" y="269.138" z="4.17311"/>
+		<Position x="401.586" y="142.113" z="32.5178"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -41,7 +41,9 @@
 {
   "CircularMap": true,
   "Description": "In the land of the Kushites, near the Blue Nile in Africa...\n\nYour attempt at colonizing the area has been a disaster. On the brink of starvation, your colonists find themselves stranded with meager supplies in the middle of a salt flat. Pack up what you can and try to find a suitable place to colonize closer to fresh water and natural resources before it's too late.\n\nBut beware of the local Nubian and Kushite tribesmen, who do not suffer invaders willingly. They will offer constant harrassment and a challenge to your early colonizing efforts.\n\nNotes for Game Host: Start the map on a low resource setting and with some kind of ceasefire.",
-  "Keywords": ["new"],
+  "Keywords": [
+    "new"
+  ],
   "LockTeams": false,
   "Name": "Blue Nile Nomads (6)",
   "PlayerData": [
@@ -7811,34 +7813,6 @@
 			<Position x="405.27216" z="1046.65943"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27772"/>
-		</Entity>
-		<Entity uid="18291">
-			<Template>gaia/special_ruins</Template>
-			<Player>0</Player>
-			<Position x="371.55771" z="832.6399"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="45642"/>
-		</Entity>
-		<Entity uid="18292">
-			<Template>gaia/special_ruins</Template>
-			<Player>0</Player>
-			<Position x="738.32496" z="439.72355"/>
-			<Orientation y="-2.1522"/>
-			<Actor seed="61320"/>
-		</Entity>
-		<Entity uid="18293">
-			<Template>gaia/special_ruins</Template>
-			<Player>0</Player>
-			<Position x="1087.77271" z="880.19434"/>
-			<Orientation y="-0.11095"/>
-			<Actor seed="10876"/>
-		</Entity>
-		<Entity uid="18294">
-			<Template>gaia/special_ruins</Template>
-			<Player>0</Player>
-			<Position x="629.53412" z="1131.24463"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="15602"/>
 		</Entity>
 		<Entity uid="18296">
 			<Template>actor|geology/stone_savanna_med.xml</Template>
@@ -24591,20 +24565,6 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="26114"/>
 		</Entity>
-		<Entity uid="21182">
-			<Template>structures/kush_barracks</Template>
-			<Player>0</Player>
-			<Position x="245.36982" z="820.4026"/>
-			<Orientation y="-2.53367"/>
-			<Actor seed="212"/>
-		</Entity>
-		<Entity uid="21183">
-			<Template>structures/kush_barracks</Template>
-			<Player>0</Player>
-			<Position x="939.09534" z="222.40336"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="33598"/>
-		</Entity>
 		<Entity uid="21184">
 			<Template>structures/kush_house</Template>
 			<Player>0</Player>
@@ -24758,20 +24718,6 @@
 			<Position x="1007.70221" z="779.66474"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34626"/>
-		</Entity>
-		<Entity uid="21206">
-			<Template>structures/kush_barracks</Template>
-			<Player>0</Player>
-			<Position x="731.72834" z="1144.43787"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="13234"/>
-		</Entity>
-		<Entity uid="21207">
-			<Template>structures/kush_barracks</Template>
-			<Player>0</Player>
-			<Position x="1214.3462" z="731.016"/>
-			<Orientation y="-2.17437"/>
-			<Actor seed="1894"/>
 		</Entity>
 		<Entity uid="21208">
 			<Template>structures/kush_defense_tower_stone</Template>
@@ -25830,13 +25776,6 @@
 			<Orientation y="0.58053"/>
 			<Actor seed="19960"/>
 		</Entity>
-		<Entity uid="21359">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="946.48346" z="212.05369"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="26638"/>
-		</Entity>
 		<Entity uid="21360">
 			<Template>units/ptol_merc_infantry_3</Template>
 			<Player>0</Player>
@@ -25907,27 +25846,6 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="24870"/>
 		</Entity>
-		<Entity uid="21370">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="723.73139" z="1134.79493"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="22514"/>
-		</Entity>
-		<Entity uid="21371">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="737.39728" z="1134.84668"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="6552"/>
-		</Entity>
-		<Entity uid="21372">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="741.96174" z="1138.51111"/>
-			<Orientation y="-2.60932"/>
-			<Actor seed="24798"/>
-		</Entity>
 		<Entity uid="21373">
 			<Template>units/ptol_merc_infantry_3</Template>
 			<Player>0</Player>
@@ -25948,27 +25866,6 @@
 			<Position x="515.66016" z="1158.74292"/>
 			<Orientation y="-2.29654"/>
 			<Actor seed="49430"/>
-		</Entity>
-		<Entity uid="21376">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="240.72706" z="811.11097"/>
-			<Orientation y="-2.63578"/>
-			<Actor seed="42280"/>
-		</Entity>
-		<Entity uid="21377">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="228.25904" z="831.24415"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="37538"/>
-		</Entity>
-		<Entity uid="21378">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="258.26172" z="814.08411"/>
-			<Orientation y="-2.06783"/>
-			<Actor seed="56452"/>
 		</Entity>
 		<Entity uid="21379">
 			<Template>units/ptol_merc_infantry_3</Template>
@@ -26005,47 +25902,12 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="42938"/>
 		</Entity>
-		<Entity uid="21384">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="1205.63965" z="721.45752"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="56938"/>
-		</Entity>
-		<Entity uid="21385">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="1223.03992" z="713.29609"/>
-			<Orientation y="-1.88415"/>
-			<Actor seed="59794"/>
-		</Entity>
-		<Entity uid="21386">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="1225.39014" z="718.72596"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="28874"/>
-		</Entity>
 		<Entity uid="21387">
 			<Template>units/ptol_merc_infantry_3</Template>
 			<Player>0</Player>
 			<Position x="1063.12024" z="158.48365"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15852"/>
-		</Entity>
-		<Entity uid="21388">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="952.8661" z="215.24012"/>
-			<Orientation y="-2.0743"/>
-			<Actor seed="6026"/>
-		</Entity>
-		<Entity uid="21389">
-			<Template>units/ptol_merc_infantry_3</Template>
-			<Player>0</Player>
-			<Position x="950.33326" z="212.83136"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="2962"/>
 		</Entity>
 		<Entity uid="21390">
 			<Template>units/ptol_ship_fishing</Template>
@@ -26074,6 +25936,335 @@
 			<Position x="391.36765" z="903.45075"/>
 			<Orientation y="1.04587"/>
 			<Actor seed="36384"/>
+		</Entity>
+		<Entity uid="21394">
+			<Template>structures/merc_camp_nuba</Template>
+			<Player>0</Player>
+			<Position x="932.94977" z="220.36927"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="60944"/>
+		</Entity>
+		<Entity uid="21395">
+			<Template>structures/merc_camp_nuba</Template>
+			<Player>0</Player>
+			<Position x="1151.50306" z="887.7295"/>
+			<Orientation y="-2.29986"/>
+			<Actor seed="20742"/>
+		</Entity>
+		<Entity uid="21396">
+			<Template>structures/merc_camp_nuba</Template>
+			<Player>0</Player>
+			<Position x="293.42341" z="746.48414"/>
+			<Orientation y="0.55362"/>
+			<Actor seed="26188"/>
+		</Entity>
+		<Entity uid="21397">
+			<Template>structures/merc_camp_nuba</Template>
+			<Player>0</Player>
+			<Position x="729.80622" z="1157.11353"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="24946"/>
+		</Entity>
+		<Entity uid="21398">
+			<Template>structures/merc_camp_blemmye</Template>
+			<Player>0</Player>
+			<Position x="682.04932" z="1419.89405"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46302"/>
+		</Entity>
+		<Entity uid="21399">
+			<Template>structures/merc_camp_blemmye</Template>
+			<Player>0</Player>
+			<Position x="1407.53443" z="899.29523"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="22566"/>
+		</Entity>
+		<Entity uid="21400">
+			<Template>structures/merc_camp_blemmye</Template>
+			<Player>0</Player>
+			<Position x="806.14271" z="96.85369"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="19992"/>
+		</Entity>
+		<Entity uid="21401">
+			<Template>structures/merc_camp_blemmye</Template>
+			<Player>0</Player>
+			<Position x="226.2999" z="503.41901"/>
+			<Orientation y="-2.01432"/>
+			<Actor seed="44618"/>
+		</Entity>
+		<Entity uid="21402">
+			<Template>units/kush_merc_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="304.62006" z="729.95881"/>
+			<Orientation y="2.91805"/>
+			<Actor seed="28362"/>
+		</Entity>
+		<Entity uid="21403">
+			<Template>units/kush_merc_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="307.19733" z="734.58594"/>
+			<Orientation y="1.68148"/>
+			<Actor seed="50946"/>
+		</Entity>
+		<Entity uid="21404">
+			<Template>units/kush_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="274.1732" z="753.23261"/>
+			<Orientation y="-0.90841"/>
+			<Actor seed="50188"/>
+		</Entity>
+		<Entity uid="21405">
+			<Template>units/kush_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="276.51813" z="755.0511"/>
+			<Orientation y="-0.53104"/>
+			<Actor seed="22130"/>
+		</Entity>
+		<Entity uid="21406">
+			<Template>units/kush_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="944.35346" z="207.67402"/>
+			<Orientation y="3.08974"/>
+			<Actor seed="18438"/>
+		</Entity>
+		<Entity uid="21407">
+			<Template>units/kush_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="947.71204" z="210.66547"/>
+			<Orientation y="1.73641"/>
+			<Actor seed="46252"/>
+		</Entity>
+		<Entity uid="21408">
+			<Template>units/kush_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="951.05915" z="213.06592"/>
+			<Orientation y="-2.04319"/>
+			<Actor seed="56342"/>
+		</Entity>
+		<Entity uid="21409">
+			<Template>units/kush_merc_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="916.51044" z="210.03095"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="22008"/>
+		</Entity>
+		<Entity uid="21410">
+			<Template>units/kush_merc_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="913.1454" z="214.24497"/>
+			<Orientation y="-1.1917"/>
+			<Actor seed="31218"/>
+		</Entity>
+		<Entity uid="21411">
+			<Template>units/kush_merc_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="1148.50062" z="864.46247"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="57912"/>
+		</Entity>
+		<Entity uid="21412">
+			<Template>units/kush_merc_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="1159.95362" z="870.07227"/>
+			<Orientation y="-2.8307"/>
+			<Actor seed="30570"/>
+		</Entity>
+		<Entity uid="21413">
+			<Template>units/kush_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="1134.72828" z="876.3318"/>
+			<Orientation y="-2.2841"/>
+			<Actor seed="20676"/>
+		</Entity>
+		<Entity uid="21414">
+			<Template>units/kush_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="1140.63611" z="871.87653"/>
+			<Orientation y="-2.21932"/>
+			<Actor seed="50734"/>
+		</Entity>
+		<Entity uid="21415">
+			<Template>units/kush_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="1165.84888" z="900.8772"/>
+			<Orientation y="0.90574"/>
+			<Actor seed="14586"/>
+		</Entity>
+		<Entity uid="21416">
+			<Template>units/kush_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="717.81452" z="1143.95887"/>
+			<Orientation y="-3.0113"/>
+			<Actor seed="57432"/>
+		</Entity>
+		<Entity uid="21417">
+			<Template>units/kush_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="720.08149" z="1138.94251"/>
+			<Orientation y="3.03443"/>
+			<Actor seed="80"/>
+		</Entity>
+		<Entity uid="21418">
+			<Template>units/kush_merc_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="712.73993" z="1145.96875"/>
+			<Orientation y="-1.15122"/>
+			<Actor seed="40474"/>
+		</Entity>
+		<Entity uid="21419">
+			<Template>units/kush_merc_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="745.74732" z="1144.01185"/>
+			<Orientation y="1.6357"/>
+			<Actor seed="43882"/>
+		</Entity>
+		<Entity uid="21420">
+			<Template>units/kush_merc_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="749.85901" z="1150.00074"/>
+			<Orientation y="1.38514"/>
+			<Actor seed="21822"/>
+		</Entity>
+		<Entity uid="21421">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="689.3664" z="1408.28296"/>
+			<Orientation y="2.89266"/>
+			<Actor seed="39530"/>
+		</Entity>
+		<Entity uid="21422">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="692.68641" z="1410.68702"/>
+			<Orientation y="1.2447"/>
+			<Actor seed="32732"/>
+		</Entity>
+		<Entity uid="21423">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="668.3971" z="1408.07898"/>
+			<Orientation y="-2.85318"/>
+			<Actor seed="41812"/>
+		</Entity>
+		<Entity uid="21424">
+			<Template>units/kush_merc_camelry_1</Template>
+			<Player>0</Player>
+			<Position x="661.03132" z="1419.52894"/>
+			<Orientation y="-1.60102"/>
+			<Actor seed="620"/>
+		</Entity>
+		<Entity uid="21425">
+			<Template>units/kush_merc_camelry_2</Template>
+			<Player>0</Player>
+			<Position x="690.18683" z="1434.74231"/>
+			<Orientation y="2.05628"/>
+			<Actor seed="34972"/>
+		</Entity>
+		<Entity uid="21426">
+			<Template>units/kush_merc_camelry_2</Template>
+			<Player>0</Player>
+			<Position x="1424.70582" z="891.81385"/>
+			<Orientation y="-2.02196"/>
+			<Actor seed="60024"/>
+		</Entity>
+		<Entity uid="21427">
+			<Template>units/kush_merc_camelry_1</Template>
+			<Player>0</Player>
+			<Position x="1416.2356" z="909.86976"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49608"/>
+		</Entity>
+		<Entity uid="21428">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="1393.5741" z="890.81867"/>
+			<Orientation y="-2.9172"/>
+			<Actor seed="17474"/>
+		</Entity>
+		<Entity uid="21429">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="1399.02112" z="884.99506"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="53944"/>
+		</Entity>
+		<Entity uid="21430">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="1416.35376" z="889.62732"/>
+			<Orientation y="-2.5561"/>
+			<Actor seed="36266"/>
+		</Entity>
+		<Entity uid="21431">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="809.62494" z="83.29114"/>
+			<Orientation y="2.86161"/>
+			<Actor seed="25904"/>
+		</Entity>
+		<Entity uid="21432">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="815.22053" z="85.51288"/>
+			<Orientation y="-0.30575"/>
+			<Actor seed="37746"/>
+		</Entity>
+		<Entity uid="21433">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="788.75574" z="89.8735"/>
+			<Orientation y="0.17774"/>
+			<Actor seed="148"/>
+		</Entity>
+		<Entity uid="21434">
+			<Template>units/kush_merc_camelry_1</Template>
+			<Player>0</Player>
+			<Position x="786.78821" z="102.64138"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="44814"/>
+		</Entity>
+		<Entity uid="21435">
+			<Template>units/kush_merc_camelry_2</Template>
+			<Player>0</Player>
+			<Position x="817.83075" z="109.1398"/>
+			<Orientation y="1.28304"/>
+			<Actor seed="43512"/>
+		</Entity>
+		<Entity uid="21436">
+			<Template>units/kush_merc_camelry_2</Template>
+			<Player>0</Player>
+			<Position x="236.19544" z="489.73865"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="24592"/>
+		</Entity>
+		<Entity uid="21437">
+			<Template>units/kush_merc_camelry_1</Template>
+			<Player>0</Player>
+			<Position x="215.92643" z="516.38648"/>
+			<Orientation y="-0.78856"/>
+			<Actor seed="9856"/>
+		</Entity>
+		<Entity uid="21438">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="209.25751" z="500.68354"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38684"/>
+		</Entity>
+		<Entity uid="21439">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="241.76621" z="507.77555"/>
+			<Orientation y="1.00213"/>
+			<Actor seed="19516"/>
+		</Entity>
+		<Entity uid="21440">
+			<Template>units/kush_merc_infantry_3</Template>
+			<Player>0</Player>
+			<Position x="239.27717" z="515.11036"/>
+			<Orientation y="-0.5504"/>
+			<Actor seed="36270"/>
 		</Entity>
 	</Entities>
 	<Paths/>
