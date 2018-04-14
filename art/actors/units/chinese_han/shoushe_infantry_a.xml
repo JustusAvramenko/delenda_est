@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+	<castshadow/>
+	<group>
+    <variant>
+			<mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
+			<props>
+				<prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
+			</props>
+			<animations>
+				<animation file="biped/new/shoushe_walk_a.dae" name="walk" speed="20"/>
+				<animation file="biped/new/shoushe_walk_a.dae" name="run" speed="36"/>
+    <animation file="biped/new/fem_idle_relax.dae" name="Idle" speed="100"/>
+    <animation file="biped/new/fem_idle_relax.dae" name="Idle" speed="100"/>
+    <animation file="biped/new/fem_idle_relax.dae" name="Idle" speed="100"/>
+    <animation file="biped/new/fem_idle_relax.dae" name="Idle" speed="100"/>
+    <animation file="biped/new/fem_idle_relax.dae" name="Idle" speed="100"/>
+    <animation file="biped/new/fem_idle_relax.dae" name="Idle" speed="100"/>
+    <animation file="biped/new/fem_idle_relax.dae" name="Idle" speed="100"/>
+    <animation file="biped/new/fem_idle_relax.dae" name="Idle" speed="100"/>
+    <animation file="biped/new/fem_idle_long.dae" name="Idle" speed="100"/>
+    <animation file="biped/new/fem_idle_short.dae" name="Idle" speed="100"/>
+    <animation file="biped/new/fem_idle_relax_b.dae" name="Idle" speed="100"/>
+    <animation file="biped/new/fem_idle_relax_long.dae" name="Idle" speed="100"/>
+			</animations>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="Clothing-1a">
+			<textures>
+				<texture file="skeletal/han_icr_a.png" name="baseTex"/>
+			</textures>
+		</variant>
+		<variant frequency="2" name="Clothing-2a">
+			<textures>
+				<texture file="skeletal/han_isp_a_black.png" name="baseTex"/>
+			</textures>
+		</variant>	
+	</group>
+	<group>
+		<variant frequency="1" name="cap-var1">
+			<props>
+				<prop actor="props/units/helmets/chin_cap.xml" attachpoint="helmet"/>
+			</props>
+		</variant>
+		<variant frequency="1" name="open_helmet1">
+			<props>
+				<prop actor="props/units/helmets/chin_hairbun.xml" attachpoint="helmet"/>
+				<prop actor="props/units/helmets/chin_advanced_melee_helmet.xml" attachpoint="helmet"/>				
+			</props>
+		</variant>
+		<variant frequency="1" name="feather_helmet1">
+			<props>
+				<prop actor="props/units/helmets/chin_heavy_helmet_b.xml" attachpoint="helmet"/>
+			</props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_ranged_shoushe_fire_a.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+	<material>player_trans.xml</material>
+</actor>

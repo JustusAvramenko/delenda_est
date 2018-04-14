@@ -3,16 +3,17 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="Shoushe Nu">
-      <mesh>structural/Chin_Shoushe.dae</mesh>
-	  <animations>
-			<animation event="0.85" file="mechanical/Shoushe_attack.dae" load="0.6" name="attack_ranged" speed="130"/>
-			<animation file="mechanical/Shoushe_idle.dae" name="idle" speed="100"/>
-			<animation file="mechanical/Shoushe_walk.dae" name="walk" speed="20"/>
-			<animation file="mechanical/Shoushe_death.dae" name="death" speed="80"/>
-	  </animations>
+      <mesh>structural/chin_shoushe.dae</mesh>
+      <animations>
+        <animation file="mechanical/Shoushe_attack.dae" load="0.70" event="0.87" name="attack_ranged" speed="130"/>
+        <animation file="mechanical/Shoushe_idle.dae" name="idle" speed="100"/>
+        <animation file="mechanical/Shoushe_walk.dae" name="walk" speed="20"/>
+        <animation file="mechanical/Shoushe_walk.dae" name="run" speed="40"/>
+        <animation file="mechanical/Shoushe_death.dae" name="death" speed="80"/>
+      </animations>
       <props>
-        <prop actor="props/units/weapons/bolt.xml" attachpoint="projectile"/>
-		<prop actor="" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+        <prop actor="props/units/weapons/arrow_back.xml" attachpoint="loaded-projectile"/>
       </props>
       <textures>
 		<texture file="structural/chin_siege_shoushe.png" name="baseTex"/>	

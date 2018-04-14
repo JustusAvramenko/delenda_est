@@ -2,27 +2,30 @@
 <actor version="1">
 	<castshadow/>
 	<group>
-    	<variant file="biped/base_archer_ready.xml">
+    	<variant file="biped/base_crossbowman_ready.xml">
 			<mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
 			<props>
 				<prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
-				<prop actor="props/units/weapons/chin_crossbow.xml" attachpoint="weapon_L"/>
+				<prop actor="props/units/weapons/chin_crossbow.xml" attachpoint="weapon_R"/>
 				<prop actor="props/units/quiver_hip.xml" attachpoint="sheath_L"/>
 			</props>
+			<animations>
+				<animation event="0.85" file="biped/new/crossbow_attack_a.dae" load="0.47" name="attack_ranged" speed="15"/>
+			</animations>
 		</variant>
 	</group>
-  <group>
-    <variant frequency="50" name="Clothes-1">
-      <textures>
-        <texture file="skeletal/han_iar_e.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="50" name="Clothes-2">
-      <textures>
-        <texture file="skeletal/han_isp_b_black.png" name="baseTex"/>
-      </textures>
-    </variant>
-  </group>
+	<group>
+		<variant frequency="1" name="Clothing-1">
+			<textures>
+				<texture file="skeletal/han_icr_a.png" name="baseTex"/>
+			</textures>
+		</variant>
+		<variant frequency="2" name="Clothing-2">
+			<textures>
+				<texture file="skeletal/han_isp_a_black.png" name="baseTex"/>
+			</textures>
+		</variant>	
+	</group>
 	<group>
 		<variant frequency="1" name="cap-var">
 			<props>
@@ -43,7 +46,11 @@
 	</group>	
   <group>
     <variant frequency="1" name="Idle"/>
-    <variant file="biped/attack_ranged_archer.xml"/>
+    <variant name="attack_ranged">
+		<props>
+			<prop actor="props/units/weapons/arrow_back.xml" attachpoint="loaded-weapon_L"/>
+		</props>
+	</variant>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/gather_tree.xml"/>

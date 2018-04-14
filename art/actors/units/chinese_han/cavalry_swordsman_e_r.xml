@@ -1,56 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <actor version="1">
-  <castshadow/>
-  <group>
-    <variant file="biped/base_cavalry_swordsman_shield_relax.xml" frequency="100" name="Base">
-      <mesh>skeletal/new/m_armor_pants_tunic_short.dae</mesh>
-      <props>
-        <prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/chin_swords_cavalry.xml" attachpoint="weapon_R"/>
-        <prop actor="props/temp/l_sheath.xml" attachpoint="sheath_L"/>
-        <prop actor="props/units/shields/chin_shield3.xml" attachpoint="shield"/>
-      </props>
-    </variant>
+	<castshadow/>
+	<group>
+		<variant frequency="1" name="Base">
+			<mesh>skeletal/new/m_pants.dae</mesh>
+			<props>
+				<prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
+				<prop actor="props/units/weapons/chin_swords_cavalry.xml" attachpoint="weapon_R"/>
+				<prop actor="props/units/shields/chin_shield3.xml" attachpoint="shield"/>
+				<prop actor="props/units/heads/chin_cavalry_swordsman_helmet.xml" attachpoint="helmet"/>
+			</props>
+		</variant>
+	</group>
+		<group>
+		<variant frequency="40" name="A">
+			<textures>
+				<texture file="skeletal/han_isw_e_norm.png" name="normTex"/>
+				<texture file="skeletal/han_isw_e.png" name="baseTex"/>
+				<texture file="skeletal/han_isw_e_spec.png" name="specTex"/> 				
+			</textures>
+		</variant>
+		<variant frequency="20" name="B">
+			<textures>
+				<texture file="skeletal/han_icr_e.png" name="baseTex"/>
+			</textures>
+		</variant>
+		<variant frequency="40" name="C">
+			<textures>
+				<texture file="skeletal/han_isp_e_norm.png" name="normTex"/>
+				<texture file="skeletal/han_isp_e_black.png" name="baseTex"/>
+				<texture file="skeletal/han_isp_e_spec.png" name="specTex"/> 			
+			</textures>
+		</variant>
+	</group>
+	<group>
+    <variant file="biped/base_cavalry_swordsman_shield_relax.xml"/>
+    <variant file="biped/rider/carry_meat.xml"/>
   </group>
   <group>
-    <variant frequency="1" name="open_helmet">
-      <props>
-        <prop actor="props/units/helmets/chin_hairbun.xml" attachpoint="helmet"/>
-        <prop actor="props/units/helmets/chin_advanced_melee_helmet.xml" attachpoint="helmet"/>
-      </props>
-    </variant>
-    <variant frequency="1" name="feather_helmet">
-      <props>
-        <prop actor="props/units/helmets/chin_heavy_helmet_b.xml" attachpoint="helmet"/>
-      </props>
-    </variant>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/promotion_shield.xml"/>
+    <variant file="biped/rider/attack_slaughter_shield_hele.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/rider/death_shield_a.xml"/>
   </group>
-  <group>
-    <variant frequency="1" name="B">
-      <textures>
-        <texture file="skeletal/han_isw_e.png" name="baseTex"/>
-        <texture file="skeletal/han_isw_e_norm.png" name="normTex"/>
-        <texture file="skeletal/han_isw_e_spec.png" name="specTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="C">
-      <textures>
-        <texture file="skeletal/han_isp_e_norm.png" name="normTex"/>
-        <texture file="skeletal/han_isp_e_black.png" name="baseTex"/>
-        <texture file="skeletal/han_isp_e_spec.png" name="specTex"/>
-      </textures>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="100" name="Idle"/>
-    <variant file="biped/rider/promotion.xml"/>
-    <variant file="biped/rider/attack_slaughter_shield.xml"/>
-    <variant name="carry_meat">
-      <props>
-        <prop actor="props/units/shuttle_meat_male_R.xml" attachpoint="weapon_R"/>
-        <prop attachpoint="shield"/>
-      </props>
-    </variant>
-  </group>
-  <material>player_trans_parallax_spec.xml</material>
+	<material>player_trans.xml</material>
 </actor>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+	<castshadow/>
+	<group>
+    <variant>
+			<mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
+			<props>
+				<prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
+				<prop actor="props/units/quiver_back_bamboo.xml" attachpoint="back"/>
+			</props>
+			<animations>
+				<animation file="biped/new/shoushe_walk_b.dae" name="walk" speed="24"/>
+				<animation file="biped/new/shoushe_walk_b.dae" name="run" speed="30"/>
+				<animation file="biped/new/sword_shield_idle_ready.dae" name="idle" speed="50"/>
+			</animations>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="Clothing-1">
+			<textures>
+				<texture file="skeletal/han_icr_a.png" name="baseTex"/>
+			</textures>
+		</variant>
+		<variant frequency="2" name="Clothing-2">
+			<textures>
+				<texture file="skeletal/han_isp_a_black.png" name="baseTex"/>
+			</textures>
+		</variant>	
+	</group>
+	<group>
+		<variant frequency="1" name="cap-var">
+			<props>
+				<prop actor="props/units/helmets/chin_cap.xml" attachpoint="helmet"/>
+			</props>
+		</variant>
+		<variant frequency="1" name="open_helmet">
+			<props>
+				<prop actor="props/units/helmets/chin_hairbun.xml" attachpoint="helmet"/>
+				<prop actor="props/units/helmets/chin_advanced_melee_helmet.xml" attachpoint="helmet"/>				
+			</props>
+		</variant>
+		<variant frequency="1" name="feather_helmet">
+			<props>
+				<prop actor="props/units/helmets/chin_heavy_helmet_b.xml" attachpoint="helmet"/>
+			</props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_ranged_shoushe_fire_b.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+	<material>player_trans.xml</material>
+</actor>

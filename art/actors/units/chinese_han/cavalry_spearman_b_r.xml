@@ -1,44 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <actor version="1">
-  <castshadow/>
-  <group>
-    <variant file="biped/base_cavalry_2_handed_spearman_ready.xml" frequency="100" name="Base">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
-      <props>
-        <prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/chin_ji.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
+	<castshadow/> 
+	<group>
+		<variant frequency="1" name="Base">
+			<mesh>skeletal/new/m_tunic_short.dae</mesh>
+			<props>
+				<prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
+			</props>
+			<textures>
+				<texture file="skeletal/han_isp_b_black.png" name="baseTex"/>
+			</textures>
+		</variant>
+	</group>
+	<group>
+		<variant frequency="1" name="Ji">
+			<props>
+				<prop actor="props/units/weapons/chin_ji.xml" attachpoint="weapon_R"/>
+			</props>
+		</variant>
+		<variant frequency="1" name="Halb">
+			<props>
+				<prop actor="props/units/weapons/chin_halb.xml" attachpoint="weapon_R"/>
+			</props>
+		</variant>	
+	</group>
+	<group>
+		<variant frequency="33" name="cap-var">
+			<props>
+				<prop actor="props/units/helmets/chin_cap.xml" attachpoint="helmet"/>
+			</props>
+		</variant>
+		<variant frequency="33" name="bun-var">
+			<props>
+				<prop actor="props/units/helmets/chin_hairbun.xml" attachpoint="helmet"/>
+			</props>
+		</variant>
+		<variant frequency="33" name="bandana_var">
+			<props>
+				<prop actor="props/units/helmets/chin_bandana.xml" attachpoint="helmet"/>
+				<prop actor="props/units/helmets/chin_hairbun.xml" attachpoint="helmet"/>
+			</props>
+		</variant>
+	</group>
+	<group>
+    <variant file="biped/base_cavalry_spearman_ready.xml"/>
+    <variant file="biped/rider/carry_meat.xml"/>
   </group>
   <group>
-    <variant frequency="1" name="hair bun">
-      <props>
-        <prop actor="props/units/helmets/chin_hairbun.xml" attachpoint="helmet"/>
-      </props>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="uniform-a">
-      <textures>
-	    <texture file="skeletal/han_isp_b_black.png" name="baseTex"/>
-	  </textures>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="100" name="Idle"/>
-    <variant file="biped/rider/promotion.xml" name="promotion"/>
-    <variant file="biped/rider/attack_slaughter_shield.xml"/>
-    <variant name="gather_meat">
-      <props>
-        <prop actor="props/units/weapons/knife.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
-    <variant name="carry_meat">
-      <props>
-        <prop actor="props/units/shuttle_meat_male_R.xml" attachpoint="weapon_R"/>
-        <prop attachpoint="shield"/>
-      </props>
-    </variant>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/promotion.xml"/>
+    <variant file="biped/rider/attack_slaughter_hele.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/rider/death.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>

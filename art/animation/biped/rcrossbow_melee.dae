@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Robie</author>
+      <authoring_tool>Feeling ColladaMax v3.02 with FCollada v3.02.</authoring_tool>
+      <comments>ColladaMax Export Options: ExportNormals=1;ExportEPolyAsTriangles=1;ExportXRefs=0;ExportSelected=1;ExportTangents=0;ExportAnimations=1;SampleAnim=1;ExportAnimClip=0;BakeMatrices=0;ExportRelativePaths=1;AnimStart=0;AnimEnd=30;</comments>
+      <source_data>file:///C:/Users/Robie/Documents/3dsmax/scenes/crossbowanim.max</source_data>
+    </contributor>
+    <created>2010-03-30T03:45:40Z</created>
+    <modified>2010-03-30T03:45:41Z</modified>
+    <unit meter="0.0254" name="inch"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_animations>
+    <animation id="Bone07-node-ry">
+      <source id="Bone07-node-ry_Bone07-node_RotY_ANGLE-input">
+        <float_array id="Bone07-node-ry_Bone07-node_RotY_ANGLE-input-array" count="31">0 0.033333 0.066666 0.1 0.133333 0.166667 0.2 0.233333 0.266667 0.3 0.333333 0.366667 0.4 0.433333 0.466667 0.5 0.533333 0.566667 0.6 0.633333 0.666667 0.7 0.733333 0.766667 0.8 0.833333 0.866667 0.9 0.933333 0.966667 1</float_array>
+        <technique_common>
+          <accessor source="#Bone07-node-ry_Bone07-node_RotY_ANGLE-input-array" count="31" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="MAYA">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="Bone07-node-ry_Bone07-node_RotY_ANGLE-output">
+        <float_array id="Bone07-node-ry_Bone07-node_RotY_ANGLE-output-array" count="31">-127.807 -125.602 -119.62 -110.803 -100.097 -88.4461 -76.7954 -66.0893 -57.2725 -51.2897 -49.0855 -49.1958 -49.818 -51.3892 -54.3466 -59.1273 -69.9011 -87.1499 -105.779 -120.692 -126.796 -126.793 -126.785 -126.773 -126.758 -126.743 -126.727 -126.713 -126.701 -126.693 -126.69</float_array>
+        <technique_common>
+          <accessor source="#Bone07-node-ry_Bone07-node_RotY_ANGLE-output-array" count="31" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Bone07-node-ry_Bone07-node_RotY_ANGLE-interpolations">
+        <Name_array id="Bone07-node-ry_Bone07-node_RotY_ANGLE-interpolations-array" count="31">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#Bone07-node-ry_Bone07-node_RotY_ANGLE-interpolations-array" count="31" stride="1">
+            <param name="INTERPOLATION" type="Name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Bone07-node-ry_Bone07-node_RotY_ANGLE-sampler">
+        <input semantic="INPUT" source="#Bone07-node-ry_Bone07-node_RotY_ANGLE-input"/>
+        <input semantic="OUTPUT" source="#Bone07-node-ry_Bone07-node_RotY_ANGLE-output"/>
+        <input semantic="INTERPOLATION" source="#Bone07-node-ry_Bone07-node_RotY_ANGLE-interpolations"/>
+      </sampler>
+      <channel source="#Bone07-node-ry_Bone07-node_RotY_ANGLE-sampler" target="Bone07-node/RotY.ANGLE"/>
+    </animation>
+    <animation id="Bone08-node-transform">
+      <source id="Bone08-node-transform_Bone08-node_transform-input">
+        <float_array id="Bone08-node-transform_Bone08-node_transform-input-array" count="31">0 0.033333 0.066666 0.1 0.133333 0.166667 0.2 0.233333 0.266667 0.3 0.333333 0.366667 0.4 0.433333 0.466667 0.5 0.533333 0.566667 0.6 0.633333 0.666667 0.7 0.733333 0.766667 0.8 0.833333 0.866667 0.9 0.933333 0.966667 1</float_array>
+        <technique_common>
+          <accessor source="#Bone08-node-transform_Bone08-node_transform-input-array" count="31" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="MAYA">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="Bone08-node-transform_Bone08-node_transform-output">
+        <float_array id="Bone08-node-transform_Bone08-node_transform-output-array" count="496">0.987054 0.160388 0 0.128128 -0.160388 0.987054 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.991891 0.127092 0 0.128128 -0.127092 0.991891 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.999369 0.035521 0 0.128128 -0.035521 0.999369 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.994836 -0.101497 0 0.128128 0.101497 0.994836 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.963339 -0.268286 0 0.128128 0.268286 0.963339 0.000000 0.000000 -0.000000 -0.000000 1 0 0 0 0 1 0.895367 -0.44533 0 0.128128 0.44533 0.895367 0.000000 0.000000 -0.000000 -0.000000 1 0 0 0 0 1 0.791437 -0.61125 0 0.128128 0.61125 0.791437 0.000000 0.000000 -0.000000 -0.000000 1 0 0 0 0 1 0.664402 -0.747376 -0.000000 0.128128 0.747376 0.664402 0.000000 0.000000 -0.000000 -0.000000 1 0 0 0 0 1 0.538066 -0.842903 -0.000000 0.128128 0.842903 0.538066 0.000000 0.000000 -0.000000 -0.000000 1 0 0 0 0 1 0.441996 -0.897017 -0.000000 0.128128 0.897017 0.441996 0.000000 0.000000 -0.000000 -0.000000 1 0 0 0 0 1 0.404661 -0.914467 0.000000 0.128128 0.914467 0.404661 0.000000 0.000000 -0.000000 0 1 0 0 0 0 1 0.406552 -0.913628 0.000000 0.128128 0.913628 0.406552 0.000000 0.000000 -0.000000 0 1 0 0 0 0 1 0.417178 -0.908825 0.000000 0.128128 0.908825 0.417178 0.000000 0.000000 -0.000000 0 1 0 0 0 0 1 0.443657 -0.896196 -0.000000 0.128128 0.896196 0.443657 0.000000 0.000000 -0.000000 -0.000000 1 0 0 0 0 1 0.492074 -0.870553 -0.000000 0.128128 0.870553 0.492074 0.000000 0.000000 -0.000000 -0.000000 1 0 0 0 0 1 0.566199 -0.824269 -0.000000 0.128128 0.824269 0.566199 0.000000 0.000000 -0.000000 -0.000000 1 0 0 0 0 1 0.713034 -0.701129 0 0.128128 0.701129 0.713034 0.000000 0.000000 -0.000000 -0.000000 1 0 0 0 0 1 0.885589 -0.464469 0 0.128128 0.464469 0.885589 0.000000 0.000000 -0.000000 -0.000000 1 0 0 0 0 1 0.983677 -0.179941 0 0.128128 0.179941 0.983677 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.998644 0.052049 0 0.128128 -0.052049 0.998644 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.989409 0.145151 0 0.128128 -0.145151 0.989409 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.989416 0.145107 0 0.128128 -0.145107 0.989416 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.989434 0.144985 0 0.128128 -0.144985 0.989434 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.98946 0.144805 0 0.128128 -0.144805 0.98946 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.989492 0.144587 0 0.128128 -0.144587 0.989492 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.989527 0.144349 0 0.128128 -0.144349 0.989527 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.989561 0.144112 0 0.128128 -0.144112 0.989561 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.989593 0.143894 0 0.128128 -0.143894 0.989593 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.989619 0.143714 0 0.128128 -0.143714 0.989619 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.989637 0.143593 0 0.128128 -0.143593 0.989637 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1 0.989644 0.143547 0 0.128128 -0.143547 0.989644 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#Bone08-node-transform_Bone08-node_transform-output-array" count="31" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Bone08-node-transform_Bone08-node_transform-interpolations">
+        <Name_array id="Bone08-node-transform_Bone08-node_transform-interpolations-array" count="31">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#Bone08-node-transform_Bone08-node_transform-interpolations-array" count="31" stride="1">
+            <param name="INTERPOLATION" type="Name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Bone08-node-transform_Bone08-node_transform-sampler">
+        <input semantic="INPUT" source="#Bone08-node-transform_Bone08-node_transform-input"/>
+        <input semantic="OUTPUT" source="#Bone08-node-transform_Bone08-node_transform-output"/>
+        <input semantic="INTERPOLATION" source="#Bone08-node-transform_Bone08-node_transform-interpolations"/>
+      </sampler>
+      <channel source="#Bone08-node-transform_Bone08-node_transform-sampler" target="Bone08-node/transform"/>
+    </animation>
+    <animation id="Bone09-node-transform">
+      <source id="Bone09-node-transform_Bone09-node_transform-input">
+        <float_array id="Bone09-node-transform_Bone09-node_transform-input-array" count="31">0 0.033333 0.066666 0.1 0.133333 0.166667 0.2 0.233333 0.266667 0.3 0.333333 0.366667 0.4 0.433333 0.466667 0.5 0.533333 0.566667 0.6 0.633333 0.666667 0.7 0.733333 0.766667 0.8 0.833333 0.866667 0.9 0.933333 0.966667 1</float_array>
+        <technique_common>
+          <accessor source="#Bone09-node-transform_Bone09-node_transform-input-array" count="31" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="MAYA">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="Bone09-node-transform_Bone09-node_transform-output">
+        <float_array id="Bone09-node-transform_Bone09-node_transform-output-array" count="496">0.688343 -0.725385 0.000000 -0.543423 0.725385 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725385 0.000000 -0.543423 0.725385 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543423 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543423 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543423 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543423 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725385 0.000000 -0.543424 0.725385 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543423 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725385 0.000000 -0.543424 0.725385 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725385 0.000000 -0.543423 0.725385 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725386 0.000000 -0.543424 0.725386 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1 0.688343 -0.725385 0.000000 -0.543424 0.725385 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#Bone09-node-transform_Bone09-node_transform-output-array" count="31" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Bone09-node-transform_Bone09-node_transform-interpolations">
+        <Name_array id="Bone09-node-transform_Bone09-node_transform-interpolations-array" count="31">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#Bone09-node-transform_Bone09-node_transform-interpolations-array" count="31" stride="1">
+            <param name="INTERPOLATION" type="Name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Bone09-node-transform_Bone09-node_transform-sampler">
+        <input semantic="INPUT" source="#Bone09-node-transform_Bone09-node_transform-input"/>
+        <input semantic="OUTPUT" source="#Bone09-node-transform_Bone09-node_transform-output"/>
+        <input semantic="INTERPOLATION" source="#Bone09-node-transform_Bone09-node_transform-interpolations"/>
+      </sampler>
+      <channel source="#Bone09-node-transform_Bone09-node_transform-sampler" target="Bone09-node/transform"/>
+    </animation>
+  </library_animations>
+  <library_visual_scenes>
+    <visual_scene id="crossbowanim_max" name="crossbowanim_max">
+      <node id="Bone01-node" name="Bone01" type="JOINT">
+        <translate>-0.002569 -1.0619 -0.262851</translate>
+        <rotate>-0.141768 0.141962 -0.979668 -90.9457</rotate>
+        <node id="Bone02-node" name="Bone02" type="JOINT">
+          <translate>1.42445 0 0</translate>
+        </node>
+        <node id="Bone05-node" name="Bone05" type="JOINT">
+          <translate>0.345955 0.052101 0</translate>
+          <rotate>0 0 -1 -68.901</rotate>
+          <node id="Bone06-node" name="Bone06" type="JOINT">
+            <translate>0.551962 0 0</translate>
+          </node>
+        </node>
+        <node id="Bone03-node" name="Bone03" type="JOINT">
+          <translate>0.349884 -0.055304 0</translate>
+          <rotate>0 0 1 -69.976</rotate>
+          <node id="Bone04-node" name="Bone04" type="JOINT">
+            <translate>0.606736 0.000000 0</translate>
+          </node>
+        </node>
+      </node>
+      <node id="Bone07-node" name="Bone07" type="JOINT">
+        <translate>0 -0.534655 -0.105199</translate>
+        <rotate sid="RotZ">0 0 1 90</rotate>
+        <rotate sid="RotY">0 1 0 -52.1933</rotate>
+        <rotate sid="RotX">1 0 0 -90</rotate>
+        <node id="Bone08-node" name="Bone08" type="JOINT">
+          <matrix sid="transform">0.987054 0.160388 0 0.128128 -0.160388 0.987054 0.000000 0.000000 0 -0.000000 1 0 0 0 0 1</matrix>
+          <node id="Bone09-node" name="Bone09" type="JOINT">
+            <matrix sid="transform">0.688343 -0.725385 0.000000 -0.543423 0.725385 0.688343 -0.000000 -0.569106 0 0.000000 1 0 0 0 0 1</matrix>
+          </node>
+        </node>
+      </node>
+      <node id="IK_Chain01-node" name="IK_Chain01" type="NODE">
+        <matrix>1 0 0 0 0 1 0 -1.23437 0 0 1 -0.213963 0 0 0 1</matrix>
+        <extra>
+          <technique profile="MAX3D">
+            <helper>
+              <bounding_min>100000 100000 100000</bounding_min>
+              <bounding_max>-100000 -100000 -100000</bounding_max>
+            </helper>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0</start_time>
+          <end_time>1</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#crossbowanim_max"/>
+  </scene>
+</COLLADA>
