@@ -16,7 +16,7 @@
   <EntityLimits>
     <Limits>
       <Apadana>1</Apadana>
-	  <Arch>1</Arch>
+	  <Arch>2</Arch>
 	  <ArmyCamp>1</ArmyCamp>
 	  <AuxiliaryBarracks>1</AuxiliaryBarracks>
 	  <Auxilia>30</Auxilia>
@@ -41,6 +41,7 @@
       <Lighthouse>1</Lighthouse>
 	  <MaceElephant>0</MaceElephant>
 	  <Market>0</Market>
+	  <Mars>1</Mars>
 	  <MercCelt>100</MercCelt>
 	  <Mercenary>20</Mercenary>
 	  <Mercenary10>10</Mercenary10>
@@ -63,7 +64,7 @@
       <PyramidLarge>3</PyramidLarge>
 	  <Rorarius>20</Rorarius>
 	  <Scout>2</Scout>
-	  <Slave>30</Slave>
+	  <Slave>0</Slave>
 	  <Spartiates>0</Spartiates>
 	  <Stoa>1</Stoa>
 	  <Syssition>3</Syssition>
@@ -137,6 +138,9 @@
 	  <Onager>
 	    <Workshop>10</Workshop>
 	  </Onager>
+	  <Slave>
+	    <Market>30</Market>
+	  </Slave>
     </LimitChangers>
 	<LimitRemovers>
       <CivicCenter>
@@ -151,15 +155,15 @@
       <Syssition>
         <RequiredTechs datatype="tokens">phase_city</RequiredTechs>
       </Syssition>
-      <Slave>
-        <RequiredTechs datatype="tokens">limit_remover_slave_markets</RequiredTechs>
-      </Slave>
       <Spartiates>
         <RequiredTechs datatype="tokens">phase_imperial</RequiredTechs>
       </Spartiates>
 	  <CarthageCitizen>
 	    <RequiredTechs datatype="tokens">carthaginians/training_total_war</RequiredTechs>
 	  </CarthageCitizen>
+	  <Slave>
+	    <RequiredTechs datatype="tokens">unlock_slaves</RequiredTechs>
+	  </Slave>
     </LimitRemovers>
   </EntityLimits>
   <Identity>

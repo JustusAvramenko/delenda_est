@@ -1,25 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_military_barracks">
+<Entity parent="template_structure_special">
+  <BuildRestrictions>
+    <Category>Syssition</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <wood>0</wood>
+      <stone>200</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
   <Footprint>
-    <Square width="25.0" depth="25.0"/>
-    <Height>12.0</Height>
+    <Square width="20.0" depth="30.0"/>
+    <Height>8.0</Height>
   </Footprint>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x6</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>spart</Civ>
-    <SpecificName>Stratēgeîon</SpecificName>
-    <History>The Stratigeion was the main military headquarters, where important decisions were taken and plans for battles discussed by the Greek generals, or "strategoi".</History>
+    <GenericName>Military Mess Hall</GenericName>
+    <SpecificName>Syssítion</SpecificName>
+    <VisibleClasses datatype="tokens">
+	  Military
+	  Village
+	  Special
+	  Syssition
+	  Barracks
+	  -City
+	</VisibleClasses>
+    <Tooltip>Train hoplite units such as Perioikoi Hoplites and Spartiate champion infantry, and Spartan heroes.</Tooltip>
+    <History>The Syssítia were where full-blooded Spartans, even Spartan kings, barracked and dined together.</History>
+    <Icon>structures/syssition.png</Icon>
+	<RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Obstruction>
-    <Static width="20.0" depth="20.0"/>
+    <Static width="16.0" depth="26.0"/>
   </Obstruction>
   <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
+	  units/spart_infantry_hoplite_b
+	  units/spart_champion_infantry_hoplite
+      units/spart_hero_leonidas
+      units/spart_hero_brasidas
+      units/spart_hero_agis
     </Entities>
     <Technologies datatype="tokens">
+	  hellenes/attack_inf_spearfighting
+      hellenes/spartans_upgrade_rank_advanced_infantry
+	  hellenes/spartans_upgrade_rank_elite_infantry
+	  hellenes/spartans_agoge
+	  hellenes/spartans_health_inf_martial_arts
+	  hellenes/spartans_secret_police
+	  hellenes/pair_champions_01_spartans
+	  hellenes/speed_tyrtean_paeans
     </Technologies>
   </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_barracks.xml</select>
+      <constructed>interface/complete/building/complete_barracks.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
   <VisualActor>
-    <Actor>structures/spartans/barracks.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+    <Actor>structures/spartans/syssiton.xml</Actor>
+    <FoundationActor>structures/fndn_4x6.xml</FoundationActor>
   </VisualActor>
 </Entity>

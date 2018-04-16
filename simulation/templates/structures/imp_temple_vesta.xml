@@ -7,6 +7,7 @@
     <Category>Vesta</Category>
   </BuildRestrictions>
   <Cost>
+    <PopulationBonus>0</PopulationBonus>
     <BuildTime>200</BuildTime>
     <Resources>
       <food>750</food>
@@ -23,7 +24,7 @@
     <Max>10</Max>
     <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">-Support -Infantry -Cavalry FemaleCitizen</List>
+    <List datatype="tokens">-Support -Infantry -Cavalry Support+Citizen</List>
     <BuffHeal>3</BuffHeal>
     <LoadingRange>2</LoadingRange>
   </GarrisonHolder>
@@ -37,10 +38,10 @@
 	<VisibleClasses datatype="tokens">
 	  -Town
 	  Village
-	  Vesta
+	  TempleofVesta
 	</VisibleClasses>
     <History>(Insert History)</History>
-    <Tooltip>Build 1 to unlock Town Phase, and also greatly increase the loyalty of nearby structures and health of nearby units.</Tooltip>
+    <Tooltip>Build this temple to greatly increase the loyalty of nearby structures and health of nearby units.</Tooltip>
     <RequiredTechnology>phase_village</RequiredTechnology>
     <Icon>structures/vesta.png</Icon>
   </Identity>
@@ -71,7 +72,7 @@
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_greek_theater.xml</select>
-      <constructed>interface/alarm/alarm_phase.xml</constructed>
+      <constructed>interface/complete/building/complete_greek_theater.xml</constructed>
     </SoundGroups>
   </Sound>
   <VisualActor>

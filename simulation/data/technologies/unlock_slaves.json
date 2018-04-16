@@ -1,0 +1,16 @@
+{
+	"genericName": "Slave Markets",
+	"description": "Slave markets were ubiquitous throughout the ancient world. It is notable that the Persians stood out as one of the few cultures who did not practice slavery in a form that we recognize. The lifestyle of a slave depended a lot upon the position of their master. State-owned slaves usually had lower lifespans and a much lower standard of living than those owned by private citizens.",
+	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 400, "glory": 0},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "population.png",
+	"researchTime": 40,
+	"tooltip": "Purchase an unlimited number of Slaves at Storehouses and Farmsteads, but they cost twice as much.",
+	"modifications": [
+		{"value": "Cost/Resources/metal", "multiply": 2},
+		{"value": "Cost/Resources/food", "multiply": 2}
+	],
+	"affects": ["Slave"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
