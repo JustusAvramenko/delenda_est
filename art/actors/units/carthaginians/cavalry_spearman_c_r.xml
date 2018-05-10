@@ -2,12 +2,12 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_cavalry_2_handed_spearman_relax.xml" frequency="1" name="Base">
+    <variant file="biped/base_cavalry_2_handed_spearman.xml" frequency="1" name="Base">
       <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_pers_a.xml" attachpoint="head"/>
         <prop actor="props/units/heads/pers_conical_plume.xml" attachpoint="helmet"/>
-        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/spear_lance_cavalry_reverse.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/capes/rider/spearman_two_handed.xml" attachpoint="root"/>
       </props>
       <textures>
@@ -17,7 +17,7 @@
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
-    <variant file="biped/rider/death.xml"/>
+    <variant file="biped/rider/death_2h.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>

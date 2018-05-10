@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_blemmeye.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/knife.xml" attachpoint="weapon_R"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_merc_cavalry_r_01.png" name="baseTex"/>
+        <texture file="skeletal/kush_merc_cavalry_r_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="tunic">
+      <textures>
+        <texture file="skeletal/kush_merc_cavalry_r_01.png" name="baseTex"/>
+        <texture file="skeletal/kush_merc_cavalry_r_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic 2">
+      <textures>
+        <texture file="skeletal/kush_merc_cavalry_r_02.png" name="baseTex"/>
+        <texture file="skeletal/kush_merc_cavalry_r_02_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_cavalry_swordsman_relax.xml"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/attack_slaughter.xml"/>
+    <variant file="biped/rider/promotion_shield.xml"/>
+    <variant file="biped/rider/gather_meat_hele.xml"/>
+    <variant file="biped/rider/death.xml"/>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>
