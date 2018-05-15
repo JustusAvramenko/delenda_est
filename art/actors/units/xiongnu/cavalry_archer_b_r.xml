@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_nomad_a.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/xion_head.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/xion_bow.xml" attachpoint="weapon_L"/>
+        <prop actor="props/units/weapons/xion_quiver_cloth_cavalry_left.xml" attachpoint="sheath_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="gray light">
+      <textures>
+        <texture file="skeletal/xion_cloth_a.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="brown dark">
+      <textures>
+        <texture file="skeletal/xion_cloth_b.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="brown light">
+      <textures>
+        <texture file="skeletal/xion_cloth_c.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="15" name="Longhair">
+      <props>
+          <prop actor="props/units/heads/xion_head_bald_longhair.xml" attachpoint="head"/>
+      </props>
+    </variant>
+    <variant frequency="3" name="Helmet_a">
+      <props>
+          <prop actor="props/units/helmets/xion_cloth.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="6" name="No_helmet">
+      <props>
+          <prop actor="" attachpoint="helmet"/>
+      </props>
+    </variant>
+
+    <variant frequency="2" name="Helmet_b">
+      <props>
+          <prop actor="props/units/helmets/xion_hide.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_cavalry_archer_relax.xml"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_ranged_cavalry_archer_hip.xml"/>
+    <variant file="biped/rider/promotion_shield.xml"/>
+    <variant file="biped/rider/attack_slaughter_shield_xion.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/rider/death_archer.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

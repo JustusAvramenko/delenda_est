@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="100" name="Base">
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+
+  <group>
+    <variant name="med">
+      <mesh>props/weap_xion_sword_a_sheath_right.dae</mesh>
+    </variant>
+    <variant name="light">
+      <mesh>props/weap_xion_sword_b_sheath_right.dae</mesh>
+    </variant>
+    <variant name="Small">
+      <mesh>props/weap_xion_sword_d_sheath_right.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="idle">
+      <props>
+	        <prop actor="" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="attack_ranged">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="attack_melee">
+      <props>
+	        <prop actor="" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="walk">
+      <props>
+	        <prop actor="" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="run">
+      <props>
+	        <prop actor="" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="gather_meat">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="gather_wood">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="gather_metal">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="gather_fruit">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="gather_grain">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant name="build">
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant name="carry_meat_idle">
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant name="carry_meat">
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant name="carry_fruit_idle">
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant name="carry_meat">
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant name="carry_metal_idle">
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant name="carry_metal">
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant name="carry_wood_idle">
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant name="carry_wood">
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="gather_tree">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="gather_rock">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="gather_ore">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="carry_fruit">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="carry_grain">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="carry_tree">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="carry_rock">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="carry_ore">
+      <props>
+	        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+  </group>
+	 <material>player_trans_spec.xml</material>
+</actor>

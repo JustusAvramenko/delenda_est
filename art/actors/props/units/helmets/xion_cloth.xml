@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="base">
+      <mesh>props/helmet/xion_cloth.dae</mesh>
+      <textures>
+        <texture file="skeletal/xion_cloth_a.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="gray light">
+      <textures>
+        <texture file="skeletal/xion_cloth_a.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="brown dark">
+      <textures>
+        <texture file="skeletal/xion_cloth_b.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="brown light">
+      <textures>
+        <texture file="skeletal/xion_cloth_c.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

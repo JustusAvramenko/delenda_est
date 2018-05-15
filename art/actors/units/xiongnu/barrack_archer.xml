@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Idle">
+      <mesh>skeletal/new/m_armor_nomad_a.dae</mesh>
+      <animations>
+        <animation event="0.35" file="biped/xion_barrack_archer.dae" load="0.75" name="idle" speed="100"/>
+      </animations>
+      <props>
+        <prop actor="props/units/heads/xion_head.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/xion_bow_barracks.xml" attachpoint="weapon_L"/>
+        <prop actor="props/units/weapons/xion_arrow_back.xml" attachpoint="weapon_R"/>
+      </props>
+      <textures>
+        <texture file="skeletal/xion_cloth_a.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+	<variant frequency="15" name="Longhair">
+		<props>
+			<prop actor="props/units/heads/xion_head_bald_longhair.xml" attachpoint="head"/>
+		</props>
+	</variant>
+    <variant frequency="3" name="Helmet_a">
+		<props>
+			<prop actor="props/units/helmets/xion_cloth.xml" attachpoint="helmet"/>
+		</props>
+	</variant>
+	<variant frequency="6" name="No_helmet">
+		<props>
+			<prop actor="" attachpoint="helmet"/>
+		</props>
+	</variant>
+	<variant frequency="2" name="Helmet_b">
+		<props>
+			<prop actor="props/units/helmets/xion_hide.xml" attachpoint="helmet"/>
+		</props>
+	</variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

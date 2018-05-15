@@ -1,0 +1,130 @@
+{
+	"Code": "xion",
+	"Culture": "Nomads",
+	"Name": "Xiongnu",
+	"Emblem": "session/portraits/emblems/emblem_xiongnu.png",
+	"History": "The Xiongnu were formidable warriors whose most fearsome weapon was the double-curved bow with bone ends. They lived on horseback, from which they took advantage of everything, they dressed and wore leather, they wore helmet, breastplate, shield along with the quiver and curved saber. Their squads evolved to the sound of hunting horns and their charges and sudden withdrawals surprised their enemies. They were careful not to ever sell whole horses or mares to China. During these centuries, the Xiongnu (hsiung-nu) gathered under their rule other steppe tribes, forming a large confederation. In 209 BC, just three years before the founding of the Han Dynasty, the Xiongnu were assembled into a powerful confederation under a new chanyu .",
+	"Music":[
+		{"File":"Omri Lahav - Hill of Sorrows.ogg", "Type":"peace"},
+		{"File":"Omri Lahav - Red Dawn", "Type":"peace"}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Nomads Tribes",
+			"History": "Xiongnu were nomadic pastoral people.",
+			"Description": "Ignore phase requirements."
+		},
+		{
+			"Name": "Parthian Tactics",
+			"History": "Xiongnu practiced the parthian shot tactics.",
+			"Description": "-15% ranged cavalry tech cost.."
+		}
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Horse Breeding",
+			"History": "The Xiongnu were pastoral nomadic people wandering in search of grazing lands for their herds of horses.",
+			"Description": "Cavalry is 15% cheaper."
+		}
+	],
+	"Factions":
+	[
+		{
+			"Name": "Xiongnu",
+			"Description": "",
+			"Technologies":
+			[
+			],
+			"Heroes":
+			[
+			] 
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Corral",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		}
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/xion_civil_centre",
+			"Count": 1
+		},
+		{
+			"Template": "units/xion_support_wagon",
+			"Count": 1
+		},
+		{
+			"Template": "units/xion_support_female_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/xion_cavalry_archer_b",
+			"Count": 1
+		},
+		{
+			"Template": "units/xion_infantry_archer_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/xion_infantry_spearman_b",
+			"Count": 2
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Màodùn",
+		"Tóumàn",
+		"Lǎoshàng"
+	],
+		"SkirmishReplacements":
+	{	
+		"skirmish/units/default_support_female_citizen" : "units/xion_support_female_citizen",
+		"skirmish/units/default_cavalry": "units/xion_cavalry_archer_b",
+		"skirmish/units/default_infantry_ranged_b": "units/xion_infantry_archer_b",
+		"skirmish/structures/default_corral": "structures/xion_corral",
+		"skirmish/structures/default_defense_tower": "",
+		"skirmish/structures/default_fortress": "",
+		"skirmish/structures/default_house_5": "structures/xion_house_unpacked",
+		"skirmish/structures/default_house_10": "",
+		"skirmish/structures/default_wall_tower": "",
+		"skirmish/structures/default_wall_gate": "",
+		"skirmish/structures/default_wall_short": "",
+		"skirmish/structures/default_wall_medium": "",
+		"skirmish/structures/default_wall_long": "",
+		"skirmish/structures/default_field": "",
+		"skirmish/structures/default_farmstead": "structures/xion_market",
+		"skirmish/structures/default_market": "structures/xion_market",
+		"skirmish/structures/default_storehouse": "structures/xion_storehouse",
+		"skirmish/structures/default_dock": "",
+		"skirmish/units/special_starting_unit": "units/xion_support_wagon",
+		"skirmish/structures/default_civil_centre": "structures/xion_civil_centre",
+		"skirmish/structures/default_barracks": "structures/xion_barracks",
+		"skirmish/structures/default_barracks": "structures/xion_corral",
+		"skirmish/structures/default_temple": "structures/xion_temple"
+	},
+	"SelectableInGameSetup": true
+}

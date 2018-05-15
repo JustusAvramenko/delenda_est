@@ -2,25 +2,33 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="Base">
-      <animations>
-        <animation file="biped/fisherman_idle_1.dae" name="Idle" speed="100"/>
-        <animation file="biped/fisherman_idle_2.dae" name="Idle" speed="100"/>
-        <animation file="biped/fisherman_idle_3.dae" name="Idle" speed="100"/>
-        <animation file="biped/fisherman_row.dae" name="Walk" speed="20"/>
-        <animation file="biped/fisherman_row.dae" name="carry_food" speed="20"/>
-        <animation file="biped/fisherman_gather.dae" name="gather_fish" speed="130"/>
-        <animation file="biped/fisherman_death.dae" name="death" speed="100"/>
-      </animations>
-      <mesh>skeletal/m_tunic_long.dae</mesh>
+    <variant>
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
-        <prop actor="props/units/row.xml" attachpoint="l_hand"/>
+        <prop actor="props/units/row.xml" attachpoint="weapon_L"/>
         <prop actor="props/units/helmets/chin_ricehat.xml" attachpoint="helmet"/>
       </props>
       <textures>
         <texture file="skeletal/han_iar_b.png" name="baseTex"/>
       </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/fisher/base_ptol.xml"/>
+    <variant file="biped/fisher/carry_ptol.xml">
+      <props>
+        <prop actor="props/units/row.xml" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/fisher/gather_fish.xml"/>
+    <variant file="biped/fisher/walk.xml">
+      <props>
+        <prop actor="props/units/row.xml" attachpoint="weapon_L"/>
+      </props>
     </variant>
   </group>
   <material>player_trans.xml</material>

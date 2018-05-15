@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Skin_a">
+      <mesh>props/shield/xion_shield_round.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/xion_shield_handler.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Skin_a">
+      <textures>
+        <texture file="props/shield/shield_cooper_round.dds" name="baseTex"/>
+        <texture file="props/shield/shield_cooper_round_norm.png" name="normTex"/>
+        <texture file="props/shield/shield_cooper_round_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+   <material>player_trans_parallax_spec.xml</material>
+</actor>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="100" name="Base">
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+
+  <group>
+    <variant name="med">
+      <mesh>props/weap_xion_sword_a_sheath_right.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant name="light">
+      <mesh>props/weap_xion_sword_b_sheath_right.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+    <variant name="Small">
+      <mesh>props/weap_xion_sword_d_sheath_right.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/xion_sword.xml" attachpoint="sword"/>
+      </props>
+    </variant>
+  </group>
+	 <material>player_trans_spec.xml</material>
+</actor>

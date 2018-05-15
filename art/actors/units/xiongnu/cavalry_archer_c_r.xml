@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_cavalry_archer_relax.xml" frequency="1" name="base">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/xion_head.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/xion_bow.xml" attachpoint="weapon_bow"/>
+        <prop actor="props/units/weapons/xion_sword_sheath_left.xml" attachpoint="sheath_L"/>
+        <prop actor="props/units/helmets/xion_neck_guard.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/xion_quiver_cavalry_right.xml" attachpoint="sheath_R"/>
+      </props>
+      <textures>
+        <texture file="skeletal/xion_warlord.png" name="baseTex"/>
+        <texture file="skeletal/xion_elite_norm.png" name="normTex"/>
+        <texture file="skeletal/xion_elite_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="5" name="Helmet_a">
+      <props>
+        <prop actor="props/units/helmets/xion_warlord.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_cavalry_archer_relax.xml"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_ranged_cavalry_archer_hip.xml"/>
+    <variant file="biped/rider/promotion_shield.xml"/>
+    <variant file="biped/rider/attack_slaughter_shield_xion.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/rider/death_archer.xml"/>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>
