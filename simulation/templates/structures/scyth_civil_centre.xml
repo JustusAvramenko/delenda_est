@@ -1,49 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
-  <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
-  </BuildRestrictions>
-  <Footprint replace="">
-    <Circle radius="15.0"/>
-    <Height>8.0</Height>
-  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>scyth</Civ>
-    <SpecificName>Caer</SpecificName>
-    <History>.</History>
+    <SpecificName>Chanyu's Hall</SpecificName>
   </Identity>
-<Health>
-  <SpawnEntityOnDeath>decay|rubble/rubble_celt_cc</SpawnEntityOnDeath>
-  </Health>
+  <Attack disable=""/>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_support_citizen_female
+    </Entities>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>0.0001</TurnRate>
+  </Position>
+  <Footprint replace="">
+    <Circle radius="16.0"/>
+    <Height>8.0</Height>
+  </Footprint>
   <Obstruction>
     <Static width="25.0" depth="25.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-	  structures/scyth_civil_centre_packed
-    </Entities>
-    <Technologies datatype="tokens">
-	  health_units_01
-	  health_units_02
-	  celts/health_units_03
-	  pair_structures_01
-	  pair_structures_02
-	  unlock_spies
-	  spy_counter
-	  successors/health_heroes
-    </Technologies>
-  </ProductionQueue>
   <TerritoryDecay disable=""/>
   <Upgrade>
-    <Pack>
+    <Unpack>
       <Entity>structures/scyth_civil_centre_packed</Entity>
-      <Tooltip>The Civic Center wagon can move to a new area and upgrade back to a Civic Center.</Tooltip>
-	  <RequiredTechnology>phase_village</RequiredTechnology>
       <Time>30</Time>
-    </Pack>
+      <CheckPlacementRestrictions/>
+    </Unpack>
   </Upgrade>
   <VisualActor>
-    <Actor>structures/britons/civic_centre.xml</Actor>
-    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/royal_yurt_charioth_unpacked.xml</Actor>
+    <FoundationActor>structures/xiongnu/civic_centre_foundation.xml</FoundationActor>
   </VisualActor>
 </Entity>

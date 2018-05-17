@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wall_gate">
+  <Armour>
+    <Hack>4.0</Hack>
+    <Pierce>25.0</Pierce>
+    <Crush>2.0</Crush>
+  </Armour>
+  <Footprint>
+    <Square width="16" depth="3.0"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <Health>
+    <Max op="mul">0.25</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_wall_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <SpecificName>Palisade Gate</SpecificName>
+    <GenericName>Wooden Gate</GenericName>
+    <VisibleClasses datatype="tokens">-StoneWall Palisade</VisibleClasses>
+    <Icon>structures/wooden_gate.png</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Right width="2" depth="2" x="6" z="0"/>
+      <Left width="2" depth="2" x="-6" z="0"/>
+      <Door width="10" depth="2" x="0" z="0"/>
+    </Obstructions>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>9.0</HeightOffset>
+  </StatusBars>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <FoundationActor>structures/fndn_1x3pal.xml</FoundationActor>
+    <Actor>props/special/palisade_rocks_gate.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>11.0</Length>
+  </WallPiece>
+</Entity>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="xion_training_ground">
+      <mesh>structural/xion_training_ground.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
+        <prop actor="props/special/eyecandy/Box_Pile.xml" attachpoint="crates" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/weapons/xion_bow.xml" attachpoint="bow_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_d" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/archery_target.xml" attachpoint="dummie_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/archery_target.xml" attachpoint="dummie_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/armor_stand.xml" attachpoint="armor_stand" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_d" maxheight="20" minheight="-20"/>
+        <prop actor="structures/xiongnu/barrack_yurt_a.xml" attachpoint="yurt_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrack_yurt_b_foundation_base.xml" attachpoint="yurt_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/low_table.xml" attachpoint="table_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/low_table.xml" attachpoint="table_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/decals/dirt_small.xml" attachpoint="yurt_decal"/>
+        <prop actor="props/structures/decals/dirt_2x2.xml" attachpoint="yurt_b"/>
+        <prop actor="props/structures/decals/dirt_1x1.xml" attachpoint="firepit"/>
+      </props>
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+        <texture file="structural/ao/xion_blacksmith_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1">
+      <props>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_b" maxheight="20" minheight="-20"/>
+      </props>
+    </variant>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

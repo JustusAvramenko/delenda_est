@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Cost>
+    <Resources>
+      <wood>150</wood>
+      <stone>150</stone>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="21.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <TerritoryDecay disable=""/>
+  <Identity>
+    <Civ>xion</Civ>
+    <GenericName>Training Grounds</GenericName>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_infantry_archer_b
+    </Entities>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <Obstruction>
+    <Static width="35.0" depth="35.0"/>
+  </Obstruction>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Upgrade>
+    <BarracksPacked>
+      <Entity>structures/xion_barracks_packed</Entity>
+      <Time>20</Time>
+    </BarracksPacked>
+  </Upgrade>
+  <VisualActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/barracks.xml</Actor>
+    <FoundationActor>structures/xiongnu/barracks_foundation.xml</FoundationActor>
+  </VisualActor>
+</Entity>

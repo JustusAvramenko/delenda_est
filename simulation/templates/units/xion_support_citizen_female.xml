@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_archer">
+  <Attack>
+    <Ranged>
+      <Hack>0</Hack>
+      <Pierce>3.0</Pierce>
+      <Crush>0</Crush>
+      <MaxRange>45.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <ProjectileSpeed>75.0</ProjectileSpeed>
+      <PrepareTime>600</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Spread>3.0</Spread>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+    units/female_inspiration
+  </Auras>
+  <Cost>
+    <Resources>
+      <food>50</food>
+    </Resources>
+  </Cost>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}_civil_centre
+      structures/{civ}_government_center
+      structures/{civ}_pyramid_1
+      structures/{civ}_pyramid_2
+      structures/{civ}_temple_vesta
+      structures/{civ}_military_colony
+      structures/{civ}_house
+      structures/{civ}_tenement
+      structures/{civ}_storehouse
+      structures/{civ}_farmstead
+      structures/{civ}_field
+      structures/{civ}_corral
+      structures/{civ}_rotarymill
+      structures/{civ}_dock
+      structures/{civ}_shipyard
+      structures/{civ}_market
+      structures/{civ}_pillar_ashoka
+      structures/{civ}_outpost
+      structures/{civ}_defense_tower
+      structures/{civ}_wallset_stone
+      structures/{civ}_wallset_siege
+      structures/{civ}_barracks
+      structures/{civ}_barracks_aux
+      structures/{civ}_syssiton
+      structures/{civ}_gymnasion
+      structures/{civ}_range
+      structures/{civ}_stable
+      structures/{civ}_embassy_celtic
+      structures/{civ}_embassy_iberian
+      structures/{civ}_embassy_italiote
+      structures/{civ}_blacksmith
+      structures/{civ}_kennel
+      structures/{civ}_elephant_stables
+      structures/{civ}_statue
+      structures/{civ}_temple
+      structures/{civ}_arch
+      structures/{civ}_theatron
+      structures/{civ}_library
+      structures/{civ}_lighthouse
+      structures/{civ}_apadana
+      structures/{civ}_prytaneion
+      structures/{civ}_workshop
+      structures/{civ}_catapult
+      structures/{civ}_army_camp
+      structures/{civ}_fortress
+      structures/{civ}_wonder
+    </Entities>
+  </Builder>
+  <Health>
+    <Max>25</Max>
+  </Health>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.fruit>1</food.fruit>
+      <food.grain>0.5</food.grain>
+      <food.meat>1</food.meat>
+      <wood.tree>0.7</wood.tree>
+      <wood.ruins>5</wood.ruins>
+      <stone.rock>0.35</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ore>0.35</metal.ore>
+    </Rates>
+  </ResourceGatherer>
+  <Promotion disable=""/>
+  <Identity>
+    <Civ>xion</Civ>
+    <GenericName>Xiongnu Woman</GenericName>
+    <Icon>units/spart_support_female_citizen.png</Icon>
+    <SelectionGroupName>units/xion_support_citizen_female</SelectionGroupName>
+    <Gender>female</Gender>
+    <Classes datatype="tokens">FemaleCitizen</Classes>
+    <VisibleClasses datatype="tokens">Citizen Worker</VisibleClasses>
+    <Formations disable=""/>
+  </Identity>
+  <VisualActor>
+    <Actor>units/xiongnu/female_citizen.xml</Actor>
+  </VisualActor>
+</Entity>

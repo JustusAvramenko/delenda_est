@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry_spearman">
+  <Identity>
+    <Civ>xion</Civ>
+    <GenericName>Xion Warlord</GenericName>
+    <SelectionGroupName>units/xion_champion_cavalry</SelectionGroupName>
+    <Icon>units/xion_champion_cavalry.png</Icon>
+	<RequiredTechnology>unlock_champion_units_xion</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <Ranged>
+      <Entity>units/xion_champion_cavalry_archer</Entity>
+      <Time>10</Time>
+    </Ranged>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/xiongnu/cavalry_spearman_c_m.xml</Actor>
+  </VisualActor>
+</Entity>

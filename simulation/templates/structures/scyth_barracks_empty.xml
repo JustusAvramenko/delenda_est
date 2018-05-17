@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/xion_barracks">
+  <Cost>
+    <Resources>
+      <wood>150</wood>
+      <stone>150</stone>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="21.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Upgrade>
+    <BarracksReconstructed>
+      <Entity>structures/xion_barracks</Entity>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Time>25</Time>
+    </BarracksReconstructed>
+  </Upgrade>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      -units/{civ}_infantry_spearman_b
+      -units/{civ}_infantry_pikeman_b
+      -units/{civ}_infantry_swordsman_b
+    </Entities>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <TerritoryDecay disable=""/>
+  <Identity>
+    <Civ>scyth</Civ>
+    <GenericName>Training Grounds</GenericName>
+  </Identity>
+  <Obstruction>
+    <Static width="35.0" depth="35.0"/>
+  </Obstruction>
+  <VisualActor>
+	<ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/barracks_empty.xml</Actor>
+  </VisualActor>
+</Entity>

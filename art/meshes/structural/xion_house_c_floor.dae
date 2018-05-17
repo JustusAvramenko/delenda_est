@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.78.0 commit date:2016-10-24, commit time:12:20, hash:e8299c8</authoring_tool>
+    </contributor>
+    <created>2017-09-10T21:26:31</created>
+    <modified>2017-09-10T21:26:31</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="House_hun_a_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.2132231 0.2132231 0.2132231 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="House_hun_a_002-material" name="House_hun_a_002">
+      <instance_effect url="#House_hun_a_002-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="house_2_celtMesh_000-mesh" name="house_2_celtMesh.000">
+      <mesh>
+        <source id="house_2_celtMesh_000-mesh-positions">
+          <float_array id="house_2_celtMesh_000-mesh-positions-array" count="57">-0.4098457 3.789716 0.04645007 -1.799061 3.521026 0.04645007 -2.976636 2.736526 0.04645007 -3.822266 1.602057 0.04645007 -4.333959 0.2434749 0.04634231 -4.024635 -1.1791 0.04645007 -3.07056 -2.143777 0.04645007 -2.543052 -2.776478 0.04645007 2.151765 2.857363 0.04645007 3.228982 1.84855 0.04634231 3.646423 0.4236421 0.04634231 3.359637 -1.01194 0.04645007 2.738817 -2.283436 0.04645007 1.847728 -3.430823 0.04634231 0.3760184 -3.39823 0.04645007 -0.4347659 -3.543831 0.04645007 -2.330374 -3.087992 0.04625713 -0.8002347 -3.634206 0.04625713 0.9643824 3.580212 0.04645007</float_array>
+          <technique_common>
+            <accessor source="#house_2_celtMesh_000-mesh-positions-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="house_2_celtMesh_000-mesh-normals">
+          <float_array id="house_2_celtMesh_000-mesh-normals-array" count="45">0 0 1 -2.9241e-4 -8.19067e-4 0.9999997 6.99659e-5 -1.48287e-4 1 -3.14392e-4 -8.63789e-4 0.9999997 0 0 1 0 0 1 1.46687e-4 4.57885e-5 1 1.37892e-4 4.04014e-5 1 0 0 1 0 0 1 -1.37444e-4 -2.75813e-5 1 0 0 1 9.81945e-5 9.71323e-5 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#house_2_celtMesh_000-mesh-normals-array" count="15" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="house_2_celtMesh_000-mesh-map-0">
+          <float_array id="house_2_celtMesh_000-mesh-map-0-array" count="102">0.4816012 0.5819445 0.2337601 0.07913774 0.5181068 0.07913774 0.3127191 0.02997761 0.4386734 0.03075784 0.2889655 0.04703223 0.5181068 0.07913774 0.6261857 0.1157862 0.6606785 0.2230013 0.4386734 0.03075784 0.4629016 0.04703229 0.2889655 0.04703223 0.2889655 0.04703223 0.4629016 0.04703229 0.5181068 0.07913774 0.5181068 0.07913774 0.6606785 0.2230013 0.6721912 0.3320916 0.6721912 0.3320916 0.6550187 0.4442785 0.4816012 0.5819445 0.586826 0.5370149 0.4816012 0.5819445 0.6550187 0.4442785 0.3759334 0.6031205 0.2702653 0.5819446 0.4816012 0.5819445 0.1761849 0.525535 0.1111994 0.43716 0.2337601 0.07913774 0.07967585 0.3320913 0.07842206 0.2195504 0.2337601 0.07913774 0.2337601 0.07913774 0.2889655 0.04703223 0.5181068 0.07913774 0.07842206 0.2195504 0.1386765 0.1241171 0.2337601 0.07913774 0.2702653 0.5819446 0.1761849 0.525535 0.2337601 0.07913774 0.6721912 0.3320916 0.4816012 0.5819445 0.5181068 0.07913774 0.2337601 0.07913774 0.4816012 0.5819445 0.2702653 0.5819446 0.1111994 0.43716 0.07967585 0.3320913 0.2337601 0.07913774</float_array>
+          <technique_common>
+            <accessor source="#house_2_celtMesh_000-mesh-map-0-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="house_2_celtMesh_000-mesh-map-1">
+          <float_array id="house_2_celtMesh_000-mesh-map-1-array" count="102">0.4350289 0.2076978 0.01839065 0.2779409 0.07996213 0.07199817 0 0.2100716 0.02783691 0.1190167 0.007168054 0.2309809 0.07996213 0.07199817 0.1298213 0.001684367 0.2146879 0 0.02783691 0.1190167 0.04483163 0.105005 0.007168054 0.2309809 0.007168054 0.2309809 0.04483163 0.105005 0.07996213 0.07199817 0.07996213 0.07199817 0.2146879 0 0.2959321 0.01536703 0.2959321 0.01536703 0.3732002 0.05218291 0.4350289 0.2076978 0.4253796 0.1217243 0.4350289 0.2076978 0.3732002 0.05218291 0.4274346 0.2888311 0.389267 0.3607614 0.4350289 0.2076978 0.3281735 0.4166428 0.2503048 0.4445057 0.01839065 0.2779409 0.1676306 0.4445058 0.08611685 0.4209589 0.01839065 0.2779409 0.01839065 0.2779409 0.007168054 0.2309809 0.07996213 0.07199817 0.08611685 0.4209589 0.03027182 0.3565807 0.01839065 0.2779409 0.389267 0.3607614 0.3281735 0.4166428 0.01839065 0.2779409 0.2959321 0.01536703 0.4350289 0.2076978 0.07996213 0.07199817 0.01839065 0.2779409 0.4350289 0.2076978 0.389267 0.3607614 0.2503048 0.4445057 0.1676306 0.4445058 0.01839065 0.2779409</float_array>
+          <technique_common>
+            <accessor source="#house_2_celtMesh_000-mesh-map-1-array" count="51" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="house_2_celtMesh_000-mesh-vertices">
+          <input semantic="POSITION" source="#house_2_celtMesh_000-mesh-positions"/>
+        </vertices>
+        <polylist material="House_hun_a_002-material" count="17">
+          <input semantic="VERTEX" source="#house_2_celtMesh_000-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#house_2_celtMesh_000-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#house_2_celtMesh_000-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#house_2_celtMesh_000-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>8 0 0 6 0 1 14 0 2 16 1 3 17 1 4 7 1 5 14 2 6 13 2 7 12 2 8 17 3 9 15 3 10 7 3 11 7 4 12 15 4 13 14 4 14 14 5 15 12 5 16 11 5 17 11 6 18 10 6 19 8 6 20 9 7 21 8 7 22 10 7 23 18 8 24 0 8 25 8 8 26 1 9 27 2 9 28 6 9 29 3 10 30 4 10 31 6 10 32 6 11 33 7 11 34 14 11 35 4 12 36 5 12 37 6 12 38 0 11 39 1 11 40 6 11 41 11 11 42 8 11 43 14 11 44 6 13 45 8 13 46 0 13 47 2 14 48 3 14 49 6 14 50</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="House_c_hun_001" name="House_c_hun_001" type="NODE">
+        <matrix sid="transform">1.664108 -0.6056859 0 -0.1259251 0.6056859 1.664108 0 0.04998589 0 0 1.770906 0.03068237 0 0 0 1</matrix>
+        <instance_geometry url="#house_2_celtMesh_000-mesh" name="House_c_hun_001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="House_hun_a_002-material" target="#House_hun_a_002-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

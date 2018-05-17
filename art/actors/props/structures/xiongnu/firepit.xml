@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Firepit">
+      <mesh>props/xion_firepit.dae</mesh>
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+      </textures>
+      <props>
+        <prop actor="particle/smoke_light.xml" attachpoint="root"/>
+        <prop actor="particle/flame_firepit_2.xml" attachpoint="root"/>
+        <prop actor="props/special/eyecandy/campfire_decal.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

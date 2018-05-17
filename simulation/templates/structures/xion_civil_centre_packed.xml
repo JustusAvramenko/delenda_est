@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support">
+  <Footprint>
+    <Circle radius="16.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>xion</Civ>
+    <GenericName>Chanyu's Hall</GenericName>
+    <Icon>structures/military_settlement.png</Icon>
+  </Identity>
+  <Capturable disable=""/>
+  <UnitMotion>
+    <FormationController>false</FormationController>
+    <WalkSpeed>3.0</WalkSpeed>
+    <PassabilityClass>large</PassabilityClass>
+  </UnitMotion>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <order_walk>actor/singlesteps/steps_grass.xml</order_walk>
+      <run>actor/singlesteps/steps_grass.xml</run>
+      <select>attack/siege/siege_select.xml</select>
+      <walk>actor/singlesteps/steps_grass.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Unpack>
+      <Entity>structures/xion_civil_centre</Entity>
+      <Time>30</Time>
+    </Unpack>
+  </Upgrade>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>0.20</TurnRate>
+  </Position>
+  <VisualActor>
+    <Actor>structures/xiongnu/royal_yurt_charioth_pivot.xml</Actor>
+  </VisualActor>
+</Entity>

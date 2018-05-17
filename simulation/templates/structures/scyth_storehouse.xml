@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_economic_storehouse">
-  <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
-  </BuildRestrictions>
+   <Footprint replace="">
+    <Circle radius="7.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Upgrade>
+    <Pack>
+      <Entity>units/xion_support_wagon</Entity>
+      <Time>25</Time>
+      <CheckPlacementRestrictions/>
+      <RequiredTechnology>nomadism</RequiredTechnology>
+    </Pack>
+  </Upgrade>
   <Identity>
     <Civ>scyth</Civ>
-    <SpecificName>Ystordy</SpecificName>
-    <History>In southern parts of the country, most of the wildwood had been cleared and given way to farming or coppice management. In northern parts, or where the ground was particularly unsuitable for agriculture, wildwood remained, but under constant threat. Land around the farmsteads was usually enclosed by hazel fencing or hedging.</History>
   </Identity>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <TerritoryDecay disable=""/>
   <VisualActor>
-    <Actor>structures/celts/storehouse.xml</Actor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/storehouse.xml</Actor>
+    <FoundationActor>structures/xiongnu/storehouse_foundation.xml</FoundationActor>
   </VisualActor>
 </Entity>

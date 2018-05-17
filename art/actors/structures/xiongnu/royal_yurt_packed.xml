@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Royal Yurt">
+      <mesh>structural/xion_royal_yurt.dae</mesh>
+      <props>
+        <prop actor="" attachpoint="cloth_a"/>
+        <prop actor="" attachpoint="cloth_b"/>
+        <prop actor="" attachpoint="leather"/>
+        <prop actor="props/structures/xiongnu/sack_big.xml" attachpoint="sack_b"/>
+        <prop actor="props/structures/xiongnu/sack_bigger.xml" attachpoint="sack_a"/>
+        <prop actor="props/structures/xiongnu/sack_extra_big.xml" attachpoint="sack_c"/>
+        <prop actor="props/structures/xiongnu/sack_bigger.xml" attachpoint="sack_d"/>
+        <prop actor="props/structures/xiongnu/carpet_big_b.xml" attachpoint="rugs_a"/>
+        <prop actor="props/structures/xiongnu/carpet_big_a.xml" attachpoint="rugs_b"/>
+        <prop actor="props/structures/xiongnu/carpet_big_b.xml" attachpoint="rugs_c"/>
+        <prop actor="props/structures/xiongnu/pot.xml" attachpoint="pot_a"/>
+        <prop actor="props/structures/xiongnu/pot.xml" attachpoint="pot_b"/>
+        <prop actor="props/structures/xiongnu/jar.xml" attachpoint="pot_c"/>
+        <prop actor="props/structures/xiongnu/chin_chest.xml" attachpoint="chest_a"/>
+        <prop actor="props/structures/xiongnu/chin_chest.xml" attachpoint="chest_b"/>
+        <prop actor="props/structures/xiongnu/chin_chest.xml" attachpoint="chest_c"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="barrel_a"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="barrel_b"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="barrel_c"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="barrel_d"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="barrel_e"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="crate_a"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="crate_b"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="crate_c"/>
+        <prop actor="props/structures/xiongnu/royal_yurt_decoration.xml" attachpoint="root"/>
+        <prop actor="particle/smoke_curved.xml" attachpoint="smoke"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="pelt_a"/>
+        <prop actor="props/structures/xiongnu/pelt_a.xml" attachpoint="pelt_b"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="pelt_d"/>
+        <prop actor="props/structures/xiongnu/pelt_a.xml" attachpoint="pelt_c"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="pelt_e"/>
+        <prop actor="props/structures/xiongnu/pelt_a.xml" attachpoint="pelt_f"/>
+        <prop actor="" attachpoint="stairs"/>
+      </props>
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+        <texture file="structural/ao/xion_civic_centre_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="dust"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="dust"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="dust"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

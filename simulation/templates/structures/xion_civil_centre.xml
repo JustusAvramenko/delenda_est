@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>xion</Civ>
+    <SpecificName>Chanyu's Hall</SpecificName>
+  </Identity>
+  <Attack disable=""/>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_support_citizen_female
+      units/{civ}_support_wagon
+    </Entities>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>0.0001</TurnRate>
+  </Position>
+  <Footprint replace="">
+    <Circle radius="16.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Upgrade>
+    <Unpack>
+      <Entity>structures/xion_civil_centre_packed</Entity>
+      <Time>30</Time>
+      <CheckPlacementRestrictions/>
+    </Unpack>
+  </Upgrade>
+  <VisualActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/royal_yurt_charioth_unpacked.xml</Actor>
+    <FoundationActor>structures/xiongnu/civic_centre_foundation.xml</FoundationActor>
+  </VisualActor>
+</Entity>

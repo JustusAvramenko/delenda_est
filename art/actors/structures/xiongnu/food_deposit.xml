@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="xion_food_deposit">
+      <mesh>structural/xion_food_deposit.dae</mesh>
+      <props>
+        <prop actor="props/structures/xiongnu/skin.xml" attachpoint="skin_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/skin.xml" attachpoint="skin_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_table.xml" attachpoint="table" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/low_table.xml" attachpoint="table_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_pot.xml" attachpoint="food_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_sack_small.xml" attachpoint="food_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_crate.xml" attachpoint="food_e" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_crate.xml" attachpoint="food_f" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_sack_big.xml" attachpoint="food_g" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_crate.xml" attachpoint="food_h" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_sack_small.xml" attachpoint="food_i" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_pot.xml" attachpoint="food_j" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_sack_big.xml" attachpoint="food_k" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_sack_big.xml" attachpoint="food_l" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pot.xml" attachpoint="food_m" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_crate.xml" attachpoint="food_n" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pot.xml" attachpoint="food_d" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_stall.xml" attachpoint="stall" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="crate_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="crate_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_crate.xml" attachpoint="crate_d" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="crate_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/meat_steak.xml" attachpoint="meat_big_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/meat_steak.xml" attachpoint="meat_big_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/meat_steak.xml" attachpoint="meat_big_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/meat_pieces.xml" attachpoint="meat_pieces_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/meat_pieces.xml" attachpoint="meat_pieces_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/meat_pieces.xml" attachpoint="meat_pieces_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/meat_pieces.xml" attachpoint="meat_pieces_d" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/meat_stand.xml" attachpoint="meat_stand" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_deposit_prop.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_3x3.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+        <texture file="structural/ao/xion_food_deposit_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="wagon_a">
+      <mesh>structural/xion_house_wagon.dae</mesh>
+      <props>
+        <prop actor="fauna/zebu.xml" attachpoint="shield_left_front"/>
+        <prop actor="props/structures/xiongnu/xion_house_wagon_props.xml" attachpoint="garrisoned"/>
+        <prop actor="" attachpoint="shield_left_back"/>
+        <prop actor="" attachpoint="shield_left_mback"/>
+        <prop actor="" attachpoint="shield_left_back"/>
+        <prop actor="" attachpoint="shield_right_mback"/>
+        <prop actor="" attachpoint="shield_right_back"/>
+        <prop actor="fauna/zebu_b.xml" attachpoint="shield_right_front"/>
+        <prop actor="" attachpoint="shield_right_back"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="wagon_b">
+      <mesh>structural/xion_house_wagon_b.dae</mesh>
+      <props>
+        <prop actor="fauna/zebu.xml" attachpoint="shield_left_front"/>
+        <prop actor="props/structures/xiongnu/xion_house_wagon_props.xml" attachpoint="garrisoned"/>
+        <prop actor="" attachpoint="shield_left_back"/>
+        <prop actor="" attachpoint="shield_left_mback"/>
+        <prop actor="" attachpoint="shield_left_back"/>
+        <prop actor="" attachpoint="shield_right_mback"/>
+        <prop actor="" attachpoint="shield_right_back"/>
+        <prop actor="fauna/zebu_b.xml" attachpoint="shield_right_front"/>
+        <prop actor="" attachpoint="shield_right_back"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant>
+	  <animations>
+		<animation file="mechanical/xion_house_wagon_walk.dae" name="Walk" speed="12"/>
+		<animation file="mechanical/xion_house_wagon_walk.dae" name="Run" speed="13"/>
+		<animation file="mechanical/xion_house_wagon_idle.dae" name="idle" speed="120"/>
+		<animation file="mechanical/xion_house_wagon_death.dae" name="death" speed="100"/>
+	  </animations>
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>

@@ -1,17 +1,17 @@
 {
-	"Name": "Scythians",
+	"Name": "Nomads (Scythians)",
 	"Code": "scyth",
 	"Culture":[ "nomadic" ],
 	"Region":[ "asia", "steppes" ],
 	
 	"Emblem": "session/portraits/emblems/scythians.png",
 	
-	"History": "The Scythians are a nomadic faction which can build its cheap, weak buildings anywhere on the map. They have limited infantry, but a full roster of light and heavy cavalry. They have a raiding and looting bonus, and are excellent herders and hunters.",
+	"History": "The Scythians are a nomadic faction which can build its buildings anywhere on the map. Their buildings cost -50% resources and build time, but have -50% health and capture resistance. They have limited infantry, but a full roster of light and heavy cavalry. They have a raiding and looting bonus, and are excellent herders and hunters.",
 	"Music":[
-			{"File":"Highland_Mist.ogg", "Type":"peace"},
-			{"File":"Water's_Edge.ogg", "Type":"peace"},
-			{"File":"Celtic_Pride.ogg", "Type":"peace"},
-			{"File":"Celtica.ogg", "Type":"peace"}
+			{"File":"Eastern_Thought.ogg", "Type":"peace"},
+			{"File":"Asian_Drums.ogg", "Type":"peace"},
+			{"File":"Opium.ogg", "Type":"peace"},
+			{"File":"Ripples.ogg", "Type":"peace"}
 		],
 	"Factions":
 	[
@@ -118,7 +118,7 @@
 			"Count": 2 
 		},		
 		{
-			"Template": "units/brit_infantry_archer_b",
+			"Template": "units/scyth_infantry_archer_b",
 			"Count": 2 
 		},		
 		{
@@ -126,7 +126,7 @@
 			"Count": 1
 		},
 		{
-			"Template": "units/scyth_ox_cart",
+			"Template": "units/scyth_support_wagon",
 			"Count": 1
 		}
 	],
@@ -154,11 +154,12 @@
 	],
 	"SkirmishReplacements":
 	{
+		"skirmish/units/default_support_citizen" : "units/scyth_support_citizen_female",
 		"skirmish/units/default_infantry_ranged_b": "units/scyth_infantry_archer_b",
 		"skirmish/units/default_cavalry_ranged_b": "units/{civ}_cavalry_scout",
 		"skirmish/units/default_infantry_melee_b": "units/scyth_infantry_swordsman_b",
-		"skirmish/units/special_starting_unit": "units/scyth_ox_cart",
+		"skirmish/units/special_starting_unit": "units/scyth_support_wagon",
 		"skirmish/structures/default_house_5": "structures/{civ}_house"
 	},
-	"SelectableInGameSetup": false
+	"SelectableInGameSetup": true
 }

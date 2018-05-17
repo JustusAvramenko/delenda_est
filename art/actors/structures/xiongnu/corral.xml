@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="xion_blacksmith">
+      <mesh>structural/xion_corral.dae</mesh>
+      <props>
+        <prop actor="props/special/eyecandy/waterbin_a.xml" attachpoint="waterbin_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/waterbin_a.xml" attachpoint="waterbin_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="barrel_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="barrel_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="barrel_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/hay_small.xml" attachpoint="hay_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/hay_large.xml" attachpoint="hay_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/hay_small.xml" attachpoint="hay_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="crate_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="crate_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_crate.xml" attachpoint="crate_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_sack_small.xml" attachpoint="food_sack_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_sack_big.xml" attachpoint="food_sack_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_sack_small.xml" attachpoint="food_sack_c" maxheight="20" minheight="-20"/>
+        <prop actor="" attachpoint="rug" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/horse_corral_a.xml" attachpoint="horse_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/horse_corral_b.xml" attachpoint="horse_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/horse_corral_c.xml" attachpoint="horse_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/corral_rugs.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+        <texture file="structural/ao/xion_corral_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

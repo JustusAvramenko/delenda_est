@@ -1,27 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_blacksmith">
-  <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
-  </BuildRestrictions>
-  <Identity>
-    <Civ>scyth</Civ>
-    <SpecificName>Amoridas</SpecificName>
-	<History>.</History>
-  </Identity>
+  <Cost>
+    <PopulationBonus>2</PopulationBonus>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="16.0"/>
+    <Height>8.0</Height>
+  </Footprint>
   <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/xion_support_wagon
+    </Entities>
     <Technologies datatype="tokens">
-	  celts/pair_inf_01
-	  celts/pair_inf_02
-	  celts/pair_inf_armor_01
-	  celts/pair_inf_armor_02
-	  celts/pair_cav_01
-	  celts/pair_cav_02
-	  celts/pair_champs_01
-	  armor_hero_01
+      unlock_champion_units_xion
     </Technologies>
   </ProductionQueue>
-  <TerritoryInfluence disable=""/>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Upgrade>
+    <BlacksmithPacked>
+      <Entity>structures/xion_blacksmith_packed</Entity>
+      <Time>20</Time>
+    </BlacksmithPacked>
+  </Upgrade>
+  <Identity>
+    <Civ>scyth</Civ>
+  </Identity>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <TerritoryDecay disable=""/>
   <VisualActor>
-    <Actor>structures/celts/blacksmith.xml</Actor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/blacksmith.xml</Actor>
+    <FoundationActor>structures/xiongnu/blacksmith_foundation.xml</FoundationActor>
   </VisualActor>
 </Entity>

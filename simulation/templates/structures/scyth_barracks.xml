@@ -1,42 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
-  <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
-  </BuildRestrictions>
   <Cost>
     <Resources>
-      <wood>200</wood>
-      <food>200</food>
+      <wood>150</wood>
+      <stone>150</stone>
     </Resources>
   </Cost>
-  <Footprint>
-    <Square width="22.0" depth="22.0"/>
-    <Height>5.0</Height>
+  <Footprint replace="">
+    <Circle radius="21.0"/>
+    <Height>8.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <TerritoryDecay disable=""/>
   <Identity>
     <Civ>scyth</Civ>
-    <SpecificName>Gwersyllty</SpecificName>
-	<History>.</History>
-	<RequiredTechnology>phase_town</RequiredTechnology>
+    <GenericName>Training Grounds</GenericName>
   </Identity>
+  <Upgrade>
+    <BarracksPacked>
+      <Entity>structures/xion_barracks_packed</Entity>
+      <Time>20</Time>
+    </BarracksPacked>
+  </Upgrade>
   <Obstruction>
-    <Static width="20.0" depth="20.0"/>
+    <Static width="35.0" depth="35.0"/>
   </Obstruction>
-  <ProductionQueue>
-	<Entities datatype="tokens">
-	</Entities>
-    <Technologies datatype="tokens">
-	  persians/special_archery_tradition
-	  persians/upgrade_rank_advanced_archers
-	  persians/upgrade_rank_elite_archers
-    </Technologies>
-  </ProductionQueue>
-  <TerritoryInfluence disable=""/>
   <VisualActor>
-    <Actor>structures/britons/barracks.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/barracks.xml</Actor>
+    <FoundationActor>structures/xiongnu/barracks_foundation.xml</FoundationActor>
   </VisualActor>
 </Entity>

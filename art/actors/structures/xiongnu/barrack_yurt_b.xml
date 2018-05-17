@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="2" name="xion_barrack_house_b">
+      <mesh>structural/xion_barrack_house_b.dae</mesh>
+      <props>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/sack_med.xml" attachpoint="sack_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/sack_big.xml" attachpoint="sack_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/sack_bigger.xml" attachpoint="sack_d" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/sack_extra_big.xml" attachpoint="sack_e" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/Box_Pile.xml" attachpoint="box_pile" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/sword_barrel.xml" attachpoint="cloth_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="Carpets_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="meat_stand_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/low_table.xml" attachpoint="meat_stand_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_a.xml" attachpoint="meat_stand_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="rug" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="rug_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_a.xml" attachpoint="rug_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/table_round.xml" attachpoint="table" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/meat_pieces.xml" attachpoint="meat_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/meat_pieces.xml" attachpoint="meat_b" maxheight="20" minheight="-20"/>
+      </props>
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+        <texture file="structural/ao/xion_house_c_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

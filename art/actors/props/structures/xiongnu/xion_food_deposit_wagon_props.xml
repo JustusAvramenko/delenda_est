@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="15" name="wagon_b">
+      <mesh>props/xion_food_deposit_wagon_props.dae</mesh>
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+      </textures>
+      <props>
+        <prop actor="props/structures/xiongnu/meat_steak.xml" attachpoint="meat_a"/>
+        <prop actor="props/structures/xiongnu/meat_steak.xml" attachpoint="meat_b"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

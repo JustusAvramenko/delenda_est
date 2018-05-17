@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/xion_corral">
+  <Footprint replace="">
+    <Circle radius="15.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Upgrade>
+    <CorralReconstructed>
+      <Entity>structures/xion_corral</Entity>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Time>25</Time>
+    </CorralReconstructed>
+  </Upgrade>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+	  -units/{civ}_champion_cavalry
+	  -gaia/fauna_sheep_trainable
+  	</Entities>
+    <Technologies datatype="tokens">
+	  -gather_animals_stockbreeding 
+  	</Technologies>
+  </ProductionQueue>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <TerritoryDecay disable=""/>
+  <Identity>
+    <Civ>scyth</Civ>
+  </Identity>
+  <Obstruction>
+    <Static width="26.0" depth="26.0"/>
+  </Obstruction>
+  <VisualActor>
+	<ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/corral_empty.xml</Actor>
+  </VisualActor>
+</Entity>

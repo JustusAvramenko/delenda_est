@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="xion_training_ground">
+      <mesh>structural/xion_training_ground.dae</mesh>
+      <props>
+        <prop actor="props/structures/xiongnu/firepit.xml" attachpoint="firepit" maxheight="20" minheight="-20"/>
+        <prop actor="particle/flame_firepit_1.xml" attachpoint="torch_a"/>
+        <prop actor="particle/flame_firepit_1.xml" attachpoint="torch_b"/>
+        <prop actor="particle/flame_firepit_1.xml" attachpoint="torch_c"/>
+        <prop actor="particle/flame_firepit_1.xml" attachpoint="torch_d"/>
+        <prop actor="particle/flame_firepit_1.xml" attachpoint="torch_e"/>
+        <prop actor="particle/flame_firepit_1.xml" attachpoint="torch_f"/>
+        <prop actor="particle/flame_firepit_1.xml" attachpoint="torch_g"/>
+        <prop actor="props/structures/decals/dirt_1x1.xml" attachpoint="firepit"/>
+      </props>
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+        <texture file="structural/ao/xion_blacksmith_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1">
+    </variant>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="dust"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="dust"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="dust"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

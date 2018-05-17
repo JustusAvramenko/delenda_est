@@ -1,76 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit">
-  <Armour>
-    <Hack>2.0</Hack>
-    <Pierce>4.0</Pierce>
-    <Crush>8.0</Crush>
-  </Armour> 
-  <Cost>
-    <Population>2</Population>
-    <BuildTime>60</BuildTime>
-    <Resources>
-      <food>300</food>
-	  <wood>300</wood>
-      <metal>300</metal>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Square width="4.0" depth="8.0"/>
-    <Height>3.0</Height>
+<Entity parent="template_unit_support">
+  <Footprint>
+    <Circle radius="16.0"/>
+    <Height>8.0</Height>
   </Footprint>
-  <Heal>
-    <Range>20</Range>
-    <HP>10</HP>
-    <Rate>2000</Rate>
-    <UnhealableClasses datatype="tokens"/>
-    <HealableClasses datatype="tokens">Organic</HealableClasses>
-  </Heal>
   <Health>
-    <Max>600</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <Civ>maur</Civ>
-    <Classes datatype="tokens">Unit</Classes>
-	<GenericName>Civic Center Wagon</GenericName>
-    <SpecificName>Unknown</SpecificName>
-    <Icon>units/maur_hero_chanakya.png</Icon>
-    <VisibleClasses datatype="tokens">CivicCenter Wagon</VisibleClasses>
-	<Tooltip>Revert back to a Civic Center to resettle a new area.</Tooltip>
-    <History>.</History>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Civ>scyth</Civ>
+    <GenericName>Chanyu's Hall</GenericName>
+    <Icon>structures/military_settlement.png</Icon>
   </Identity>
-  <Minimap>
-    <Type>structure</Type>
-  </Minimap>
+  <Capturable disable=""/>
+  <UnitMotion>
+    <FormationController>false</FormationController>
+    <WalkSpeed>3.0</WalkSpeed>
+    <PassabilityClass>large</PassabilityClass>
+  </UnitMotion>
   <Selectable>
     <Overlay>
-      <AlwaysVisible/>
       <Texture>
-        <MainTexture>star/256x256.png</MainTexture>
-        <MainTextureMask>star/256x256_mask.png</MainTextureMask>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
       </Texture>
     </Overlay>
   </Selectable>
-  <UnitMotion>
-    <WalkSpeed>8</WalkSpeed>
-    <Run>
-      <Speed>16.0</Speed>
-      <Range>200.0</Range>
-      <RangeMin>0.0</RangeMin>
-    </Run>
-  </UnitMotion>
+  <Sound>
+    <SoundGroups>
+      <order_walk>actor/singlesteps/steps_grass.xml</order_walk>
+      <run>actor/singlesteps/steps_grass.xml</run>
+      <select>attack/siege/siege_select.xml</select>
+      <walk>actor/singlesteps/steps_grass.xml</walk>
+    </SoundGroups>
+  </Sound>
   <Upgrade>
     <Unpack>
-      <Entity>structures/scyth_civil_centre</Entity>
-      <Tooltip>The Civic Center wagon can move to a new area and upgrade back to a Civic Center.</Tooltip>
-	  <RequiredTechnology>phase_village</RequiredTechnology>
+      <Entity>structures/xion_civil_centre</Entity>
       <Time>30</Time>
     </Unpack>
   </Upgrade>
   <Vision>
-    <Range>30</Range>
+    <Range>0</Range>
   </Vision>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>0.20</TurnRate>
+  </Position>
   <VisualActor>
-    <Actor>units/mauryans/trader.xml</Actor>
+    <Actor>structures/xiongnu/royal_yurt_charioth_pivot.xml</Actor>
   </VisualActor>
 </Entity>

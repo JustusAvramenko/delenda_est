@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="xion_market">
+      <mesh>structural/foundation/xion_blacksmith_foundation.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1">
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="idle">
+      <props>
+        <prop actor="props/structures/xiongnu/blacksmith_foundation.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator001"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator002"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator003"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator004"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator005"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator006"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator007"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator008"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="handcart001"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="brick_pile002" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="woodpile001" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="woodpile002" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="woodpile003" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_a.xml" attachpoint="brick_pile001" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_a_leather.xml" attachpoint="brick_pile001" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_b.xml" attachpoint="root" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_b_leather.xml" attachpoint="root" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick001" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick006" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick004" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="brick002" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="brick_pile003" maxheight="20" minheight="-20"/>
+      </props>
+    </variant>
+    <variant name="heavydamage">
+      <props>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+        <prop actor="particle/construction_dust.xml" attachpoint="root"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator001"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator002"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator003"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator004"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator005"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator006"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator007"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator008"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_a.xml" attachpoint="brick_pile001" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_a_leather.xml" attachpoint="brick_pile001" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="woodpile001" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="woodpile002" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="woodpile003" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="brick002" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="brick_pile003" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="handcart001" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="brick_pile002" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick001" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick006" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick004" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_b.xml" attachpoint="root" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_b_leather.xml" attachpoint="root" maxheight="20" minheight="-20"/>
+      </props>
+    </variant>
+    <variant name="mediumdamage">
+      <props>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+        <prop actor="particle/construction_dust.xml" attachpoint="root"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator001"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator002"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator003"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator004"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator005"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator006"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator007"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator008"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/blacksmith_foundation_med.xml" attachpoint="root"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="handcart001" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="brick_pile002" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="woodpile001" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="woodpile002" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="woodpile003" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick001" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick006" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick004" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_b.xml" attachpoint="root" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_b_leather.xml" attachpoint="root" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="brick002" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="brick_pile003" maxheight="20" minheight="-20"/>
+      </props>
+    </variant>
+    <variant name="lightdamage">
+      <props>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+        <prop actor="particle/construction_dust.xml" attachpoint="root"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator001"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator002"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator003"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator004"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator005"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator006"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator007"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator008"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/blacksmith_foundation_med.xml" attachpoint="root"/>
+        <prop actor="props/structures/xiongnu/blacksmith_foundation_light.xml" attachpoint="root"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="brick_pile002" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick001" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick006" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick004" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_b_leather.xml" attachpoint="root" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="root" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/blacksmith_fence.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="alive">
+      <props>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+        <prop actor="particle/construction_dust.xml" attachpoint="root"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator001"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator002"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator003"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator004"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator005"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator006"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator007"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/construction/post_a.xml" attachpoint="Delimitator008"  maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/blacksmith_foundation_med.xml" attachpoint="root"/>
+        <prop actor="props/structures/xiongnu/blacksmith_foundation_light.xml" attachpoint="root"/>
+        <prop actor="props/structures/xiongnu/crate_large.xml" attachpoint="brick_pile002" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick001" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick006" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/barrel.xml" attachpoint="brick004" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/yurt_materials_b_leather.xml" attachpoint="root" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="root" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/blacksmith_fence.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+</actor>

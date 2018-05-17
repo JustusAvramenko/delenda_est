@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Royal Yurt">
+      <mesh>structural/xion_royal_yurt_charioth.dae</mesh>
+      <props>
+        <prop actor="structures/xiongnu/royal_yurt_packed.xml" attachpoint="garrisoned"/>
+      </props>
+      <animations>
+        <animation file="mechanical/xion_charioth_move.dae" name="Walk" speed="12"/>
+        <animation file="mechanical/xion_charioth_move.dae" name="Run" speed="13"/>
+        <animation file="mechanical/xion_charioth_idle.dae" name="idle" speed="120"/>
+      </animations>
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>

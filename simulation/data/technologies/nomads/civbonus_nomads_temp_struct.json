@@ -1,15 +1,17 @@
 {
 	"genericName": "Nomadic Ways",
 	"autoResearch": true,
-	"description": "Scythian structures were mostly made of animal hide stretched over post and beam framing or of wattle. Many of their structures were intended to be temporary and collapsible for ease of transportation to a new area.",
-	"requirements": {"any": [{"civ": "scyth"},{"civ": "sarm"},{"civ": "hun"}]},
+	"description": "Nomadic structures were mostly made of animal hide stretched over post and beam framing or of wattle. Many of their structures were intended to be temporary and collapsible for ease of transportation to a new area.",
+	"requirements": {"any": [{"civ": "scyth"},{"civ": "sarm"},{"civ": "hun"},{"civ": "xion"}]},
 	"modifications": [
 		{"value": "Health/Max", "multiply": 0.5},
+		{"value": "Cost/BuildTime", "multiply": 0.5},
 		{"value": "Cost/Resources/food", "multiply": 0.5},
 		{"value": "Cost/Resources/wood", "multiply": 0.5},
 		{"value": "Cost/Resources/stone", "multiply": 0.5},
 		{"value": "Cost/Resources/metal", "multiply": 0.5},
-		{"value": "Capturable/CapturePoints", "multiply": 0.75}
+		{"value": "Cost/Resources/glory", "multiply": 0.5},
+		{"value": "Capturable/CapturePoints", "multiply": 0.5}
 	],
 	"affects": ["Structure"]
 }

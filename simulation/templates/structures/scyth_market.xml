@@ -1,27 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_economic_market">
-  <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
-  </BuildRestrictions>
-  <Footprint>
-    <Square width="26.0" depth="24.0"/>
+<Entity parent="template_structure_economic_farmstead">
+  <Footprint replace="">
+    <Circle radius="11.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
   <Health>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x2</SpawnEntityOnDeath>
   </Health>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
   <Identity>
     <Civ>scyth</Civ>
-    <SpecificName>Marchnaty</SpecificName>
-    <History>.</History>
+    <GenericName>Food deposit</GenericName>
+    <Classes datatype="tokens">BarterMarket</Classes>
+    <VisibleClasses datatype="tokens">Village Farmstead Market</VisibleClasses>
   </Identity>
-  <Obstruction>
-    <Static width="25.0" depth="23.0"/>
-  </Obstruction>
+  <Market>
+    <TradeType>land</TradeType>
+    <InternationalBonus>0.2</InternationalBonus>
+  </Market>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Technologies datatype="tokens">
+      gather_wicker_baskets
+      unlock_shared_los
+      unlock_shared_dropsites
+      trade_convoys_speed
+      trade_convoys_armor
+      trade_gain_01
+      trade_gain_02
+      trade_commercial_treaty
+    </Technologies>
+  </ProductionQueue>
+  <ResourceDropsite>
+    <Types>food</Types>
+    <Sharable>true</Sharable>
+  </ResourceDropsite>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>0.0001</TurnRate>
+  </Position>
   <TerritoryDecay disable=""/>
-  <TerritoryInfluence disable=""/>
+  <Upgrade>
+    <Pack>
+      <Entity>structures/xion_market_packed</Entity>
+      <Time>20</Time>
+    </Pack>
+  </Upgrade>
+  <Obstruction>
+    <Static width="13.0" depth="13.0"/>
+  </Obstruction>
   <VisualActor>
-    <Actor>structures/britons/market.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/food_deposit.xml</Actor>
+    <FoundationActor>structures/xiongnu/food_deposit_foundation.xml</FoundationActor>
   </VisualActor>
 </Entity>

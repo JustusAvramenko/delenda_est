@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="10.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>xion</Civ>
+  </Identity>
+  <Obstruction>
+    <Static width="14.0" depth="14.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    </Entities>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Upgrade>
+    <Unpack>
+      <Entity>structures/xion_temple_packed</Entity>
+      <Time>20</Time>
+    </Unpack>
+  </Upgrade>
+  <VisualActor>
+	<ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/temple.xml</Actor>
+	<FoundationActor>structures/xiongnu/temple_foundation.xml</FoundationActor>
+  </VisualActor>
+</Entity>

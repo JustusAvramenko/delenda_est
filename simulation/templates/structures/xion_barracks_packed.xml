@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support">
+  <Footprint replace="">
+    <Square width="8" depth="14"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>xion</Civ>
+    <SpecificName>Training Grounds Packed</SpecificName>
+	<Icon>units/xion_house_packed.png</Icon>
+  </Identity>
+  <Capturable disable=""/>
+  <Position>
+    <Anchor>pitch</Anchor>
+	<TurnRate>2.0</TurnRate>
+  </Position>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <order_walk>actor/singlesteps/steps_grass.xml</order_walk>
+      <run>actor/singlesteps/steps_grass.xml</run>
+      <select>attack/siege/siege_select.xml</select>
+      <walk>actor/singlesteps/steps_grass.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <UnitMotion>
+    <FormationController>false</FormationController>
+    <WalkSpeed>5.5</WalkSpeed>
+    <PassabilityClass>large</PassabilityClass>
+  </UnitMotion>
+  <Upgrade>
+    <BarracksUnpacked>
+      <Entity>structures/xion_barracks</Entity>
+      <Time>20</Time>
+    </BarracksUnpacked>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/xiongnu/xion_wagon_barracks.xml</Actor>
+  </VisualActor>
+</Entity>

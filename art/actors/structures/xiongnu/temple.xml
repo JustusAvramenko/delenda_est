@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="2" name="xion_House_A">
+      <mesh>structural/xion_temple.dae</mesh>
+      <props>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_sack_big.xml" attachpoint="sack_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/food_sack_big.xml" attachpoint="sack_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pot.xml" attachpoint="jar" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/carpet_barrel.xml" attachpoint="carpet_barrel" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pot.xml" attachpoint="Barrel_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/jar.xml" attachpoint="Barrel_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/firepit.xml" attachpoint="firepit" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/zebu_head.xml" attachpoint="zebu_head_a"/>
+        <prop actor="props/units/zebu_head.xml" attachpoint="zebu_head_b"/>
+        <prop actor="particle/smoke_curved.xml" attachpoint="smoke"/>
+        <prop actor="props/structures/decals/dirt_3x3.xml" attachpoint="root"/>
+        <prop actor="props/structures/xiongnu/temple_decoration.xml" attachpoint="root"/>
+        <prop actor="props/structures/xiongnu/temple_props.xml" attachpoint="root"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="chaman_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="chaman_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="chaman_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_b.xml" attachpoint="chaman_d" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_a.xml" attachpoint="pelt_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_a.xml" attachpoint="pelt_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/pelt_a.xml" attachpoint="pelt_c" maxheight="20" minheight="-20"/>
+      </props>
+      <textures>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure_norm.png" name="normTex"/>
+        <texture file="structural/xion_structure_spec.png" name="specTex"/>
+        <texture file="structural/ao/xion_temple_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

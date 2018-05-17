@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wall_tower">
+  <Armour>
+    <Hack>5</Hack>
+    <Pierce>20</Pierce>
+    <Crush>2</Crush>
+    <Foundation>
+      <Hack>1</Hack>
+      <Pierce>1</Pierce>
+      <Crush>1</Crush>
+    </Foundation>
+  </Armour>
+  <Cost>
+    <BuildTime>5</BuildTime>
+    <Resources>
+      <wood>5</wood>
+      <stone>0</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="5" depth="5"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <Health>
+    <Max>250</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <SelectionGroupName>other/wallset_palisade</SelectionGroupName>
+    <SpecificName>Palisade</SpecificName>
+    <GenericName>Wooden Wall</GenericName>
+    <VisibleClasses datatype="tokens">-StoneWall Palisade Tower</VisibleClasses>
+    <History>A cheap, quick defensive structure constructed with sharpened tree trunks</History>
+    <Icon>structures/palisade_wall.png</Icon>
+	<RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Static width="2.5" depth="2.5"/>
+    <ControlPersist/>
+  </Obstruction>
+  <RallyPoint disable=""/>
+  <StatusBars>
+    <HeightOffset>9.0</HeightOffset>
+  </StatusBars>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>props/special/palisade_rocks_tower.xml</Actor>
+    <FoundationActor>structures/fndn_1x1pal.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>4.0</Length>
+  </WallPiece>
+</Entity>

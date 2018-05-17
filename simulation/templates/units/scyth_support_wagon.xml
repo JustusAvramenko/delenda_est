@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support">
+  <Armour>
+    <Hack>5</Hack>
+    <Pierce>8</Pierce>
+    <Crush>10</Crush>
+  </Armour>
+  <Cost>
+    <BuildTime>35</BuildTime>
+    <Resources>
+      <food>50</food>
+	  <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Height>2.0</Height>
+    <Square width="7.0" depth="14.0"/>
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+    <Classes datatype="tokens">Wagon</Classes>
+    <GenericName>Wagon</GenericName>
+    <Icon>units/xion_support_wagon.png</Icon>
+    <Tooltip>Mobile dropsite.</Tooltip>
+    <Formations disable=""/>
+  </Identity>
+  <Loot>
+    <xp>50</xp>
+    <food>25</food>
+    <wood>10</wood>
+    <stone>10</stone>
+    <metal>10</metal>
+  </Loot>
+  <Position>
+    <Anchor>pitch</Anchor>
+	<TurnRate>2.0</TurnRate>
+  </Position>
+  <ResourceDropsite>
+    <Types>wood stone metal</Types>
+    <Sharable>false</Sharable>
+  </ResourceDropsite>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <order_walk>actor/singlesteps/steps_grass.xml</order_walk>
+      <run>actor/singlesteps/steps_grass.xml</run>
+      <select>attack/siege/siege_select.xml</select>
+      <walk>actor/singlesteps/steps_grass.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitAI>
+    <CanPatrol>false</CanPatrol>
+  </UnitAI>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed>5.0</WalkSpeed>
+    <Run>
+      <Speed>10.0</Speed>
+    </Run>
+  </UnitMotion>
+  <Upgrade>
+    <UnPack>
+      <Entity>structures/xion_storehouse</Entity>
+      <Time>45</Time>
+    </UnPack>
+  </Upgrade>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/xiongnu/xion_wagon.xml</Actor>
+  </VisualActor>
+</Entity>
