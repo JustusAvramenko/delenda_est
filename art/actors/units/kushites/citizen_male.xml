@@ -11,9 +11,55 @@
     </variant>
   </group>
   <group>
-    <variant name="Kushite Male Citizen 01">
+    <variant frequency="2" name="Kushite Male Citizen 01">
       <textures>
         <texture file="skeletal/kush_citizen_male_01.png" name="baseTex"/>
+        <texture file="skeletal/kush_pike_b_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="kush_pikeman_01">
+      <textures>
+        <texture file="skeletal/kush_isw_b_01.png" name="baseTex"/>
+        <texture file="skeletal/kush_isw_b_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="kush_pikesman_02_lightskin">
+      <props>
+        <prop actor="props/units/heads/head_kush_nubian.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_isw_b_02.png" name="baseTex"/>
+        <texture file="skeletal/kush_isw_b_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="kush_pikesman_03_lightskin">
+      <props>
+        <prop actor="props/units/heads/head_kush_nubian.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_isw_b_03.png" name="baseTex"/>
+        <texture file="skeletal/kush_isw_b_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="kush_pikesman_04">
+      <textures>
+        <texture file="skeletal/kush_isw_b_04.png" name="baseTex"/>
+        <texture file="skeletal/kush_isw_b_02_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="kush_pikesman_05">
+      <textures>
+        <texture file="skeletal/kush_isw_b_05.png" name="baseTex"/>
+        <texture file="skeletal/kush_isw_b_02_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="kush_pikesman_06_lightskin">
+      <props>
+        <prop actor="props/units/heads/head_kush_nubian.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_isw_b_06.png" name="baseTex"/>
+        <texture file="skeletal/kush_isw_b_02_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -40,5 +86,5 @@
     <variant file="biped/build_farm.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
