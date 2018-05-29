@@ -23,37 +23,16 @@
     </variant>
   </group>
   <group>
-    <variant frequency="100" name="Idle"/>
-	<variant file="biped/attack_ranged_cavalry_archer_hip_nomad.xml" frequency="100" name="attack_ranged"/>
-    <variant file="biped/rider/attack_slaughter_shield_spart.xml" name="attack_slaughter">
-      <props>
-        <prop actor="props/units/weapons/spartan_sword.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
-	<variant file="biped/rider/promotion.xml" name="promotion">
-      <props>
-        <prop attachpoint="weapon_bow"/>
-		<prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
-	<variant name="attack_capture">
-      <props>
-        <prop attachpoint="weapon_bow"/>
-		<prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
-    <variant name="gather_meat">
-      <props>
-        <prop actor="props/units/weapons/spartan_sword.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
-    <variant name="carry_meat">
-      <props>
-        <prop actor="props/units/shuttle_meat_male_R.xml" attachpoint="weapon_R"/>
-		<prop attachpoint="weapon_bow"/>
-        <prop attachpoint="shield"/>
-      </props>
-    </variant>
+    <variant file="biped/base_cavalry_archer_relax.xml"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_ranged_cavalry_archer_hip.xml"/>
+    <variant file="biped/rider/promotion_shield.xml"/>
+    <variant file="biped/rider/attack_slaughter_shield_hele.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/rider/death_archer.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
