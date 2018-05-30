@@ -3,7 +3,7 @@
   <castshadow/>
   <group>
     <variant file="biped/base_spearman_relax.xml">
-      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
         <prop actor="props/units/shields/chin_shield3.xml" attachpoint="shield"/>
@@ -12,9 +12,22 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Clothes-1">
+    <variant frequency="1" name="old-b1">
       <textures>
         <texture file="skeletal/han_isp_b_black.png" name="baseTex"/>
+        <texture file="skeletal/han_icr_e_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="chin-spearman-advanced-a">
+      <textures>
+        <texture file="skeletal/han_isp_a_a.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_a_b_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chin-spearman-advanced-b">
+      <textures>
+        <texture file="skeletal/han_isp_a_b.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_a_b_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -25,7 +38,7 @@
     <variant file="biped/gather_tree.xml"/>
     <variant file="biped/gather_grain.xml">
       <props>
-        <prop actor="props/units/helmets/chin_ricehat.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmet/new/chin_ricehat.xml" attachpoint="helmet"/>
       </props>
     </variant>
     <variant file="biped/gather_fruit.xml"/>
@@ -38,7 +51,7 @@
     <variant file="biped/build_farm.xml"/>
     <variant file="biped/carry_food.xml">
       <props>
-        <prop actor="props/units/helmets/chin_ricehat.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmet/new/chin_ricehat.xml" attachpoint="helmet"/>
       </props>
     </variant>
     <variant file="biped/carry_meat.xml"/>
@@ -47,5 +60,5 @@
     <variant file="biped/carry_metal.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>

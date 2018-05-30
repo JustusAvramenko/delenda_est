@@ -1,62 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <actor version="1">
-	<castshadow/>
-	<group>
-    	<variant file="biped/base_crossbowman_ready.xml">
-			<mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
-			<props>
-				<prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
-				<prop actor="props/units/weapons/chin_crossbow.xml" attachpoint="weapon_R"/>
-				<prop actor="props/units/quiver_hip.xml" attachpoint="sheath_L"/>
-			</props>
-			<animations>
-				<animation event="0.85" file="biped/new/crossbow_attack_a.dae" load="0.47" name="attack_ranged" speed="15"/>
-			</animations>
-		</variant>
-	</group>
-	<group>
-		<variant frequency="1" name="Clothing-1">
-			<textures>
-				<texture file="skeletal/han_icr_a.png" name="baseTex"/>
-			</textures>
-		</variant>
-		<variant frequency="2" name="Clothing-2">
-			<textures>
-				<texture file="skeletal/han_isp_a_black.png" name="baseTex"/>
-			</textures>
-		</variant>	
-	</group>
-	<group>
-		<variant frequency="1" name="cap-var">
-			<props>
-				<prop actor="props/units/helmets/chin_cap.xml" attachpoint="helmet"/>
-			</props>
-		</variant>
-		<variant frequency="1" name="open_helmet">
-			<props>
-				<prop actor="props/units/helmets/chin_hairbun.xml" attachpoint="helmet"/>
-				<prop actor="props/units/helmets/chin_advanced_melee_helmet.xml" attachpoint="helmet"/>				
-			</props>
-		</variant>
-		<variant frequency="1" name="feather_helmet">
-			<props>
-				<prop actor="props/units/helmets/chin_heavy_helmet_b.xml" attachpoint="helmet"/>
-			</props>
-		</variant>
-	</group>	
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/chin_rcrossbow.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/quiver_hip.xml" attachpoint="sheath_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="old-b1">
+      <textures>
+        <texture file="skeletal/han_isp_b_black.png" name="baseTex"/>
+        <texture file="skeletal/han_icr_e_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="chin-spearman-advanced-a">
+      <textures>
+        <texture file="skeletal/han_isp_a_a.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_a_b_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="cap-var">
+      <props>
+        <prop actor="props/units/helmets/chin_cap.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="open_helmet">
+      <props>
+        <prop actor="props/units/helmets/chin_hairbun.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmets/chin_advanced_melee_helmet.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="feather_helmet">
+      <props>
+        <prop actor="props/units/helmets/chin_heavy_helmet_b.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_crossbowman_ready.xml"/>
+    <variant file="biped/carry_food.xml">
+      <props>
+        <prop actor="props/units/helmet/new/chin_ricehat.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant file="biped/carry_meat.xml"/>
+    <variant file="biped/carry_wood.xml"/>
+    <variant file="biped/carry_stone.xml"/>
+    <variant file="biped/carry_metal.xml"/>
+  </group>
   <group>
     <variant frequency="1" name="Idle"/>
-    <variant name="attack_ranged">
-		<props>
-			<prop actor="props/units/weapons/arrow_back.xml" attachpoint="loaded-weapon_L"/>
-		</props>
-	</variant>
+    <variant file="biped/attack_ranged_crossbowman_hip.xml" name="attack_ranged"/>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/gather_tree.xml"/>
     <variant file="biped/gather_grain.xml">
       <props>
-        <prop actor="props/units/helmets/chin_ricehat.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmet/new/chin_ricehat.xml" attachpoint="helmet"/>
       </props>
     </variant>
     <variant file="biped/gather_fruit.xml"/>
@@ -67,16 +74,7 @@
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/build.xml"/>
     <variant file="biped/build_farm.xml"/>
-    <variant file="biped/carry_food.xml">
-      <props>
-        <prop actor="props/units/helmets/chin_ricehat.xml" attachpoint="helmet"/>
-      </props>
-    </variant>
-    <variant file="biped/carry_meat.xml"/>
-    <variant file="biped/carry_wood.xml"/>
-    <variant file="biped/carry_stone.xml"/>
-    <variant file="biped/carry_metal.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
-	<material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>

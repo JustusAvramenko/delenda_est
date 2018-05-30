@@ -2,24 +2,24 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" file="quadraped/base_horse_spearman.xml" name="Base">
+    <variant file="quadraped/base_horse_spearman.xml" frequency="1" name="Base">
       <mesh>skeletal/horse.dae</mesh>
     </variant>
   </group>
   <group>
     <variant frequency="1" name="rider_a">
-	    <props>
+      <props>
         <prop actor="units/xiongnu/cavalry_spearman_e_r.xml" attachpoint="rider"/>
-	    	<prop actor="props/horse/cav_blanket_leather_02.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_leather_02.xml" attachpoint="root"/>
         <prop actor="props/horse/cav_straps_head.xml" attachpoint="head"/>
         <prop actor="props/horse/cav_straps_xion.xml" attachpoint="root"/>
         <prop actor="props/horse/cav_rein_spearman.xml" attachpoint="head"/>
       </props>
     </variant>
     <variant frequency="1" name="rider_b">
-	    <props>
+      <props>
         <prop actor="units/xiongnu/cavalry_spearman_e_r_2.xml" attachpoint="rider"/>
-	    	<prop actor="props/horse/cav_blanket_leather_02.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_leather_02.xml" attachpoint="root"/>
         <prop actor="props/horse/cav_straps_head.xml" attachpoint="head"/>
         <prop actor="props/horse/cav_straps_xion.xml" attachpoint="root"/>
         <prop actor="props/horse/cav_rein_spearman.xml" attachpoint="head"/>
@@ -28,13 +28,19 @@
   </group>
   <group>
     <variant frequency="1" name="Horse-Texture-Plain">
-      <textures><texture file="skeletal/horse_kart_cjv_b_1.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/horse_kart_cjv_b_1.dds" name="baseTex"/>
+      </textures>
     </variant>
     <variant frequency="1" name="Horse-Texture-Snipe">
-      <textures><texture file="skeletal/horse_kart_cjv_b_2.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/horse_kart_cjv_b_2.dds" name="baseTex"/>
+      </textures>
     </variant>
     <variant frequency="1" name="Horse-Texture-Boots">
-      <textures><texture file="skeletal/horse_kart_cjv_b_3.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/horse_kart_cjv_b_3.dds" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -91,7 +97,7 @@
     <variant name="gather_meat">
       <props>
         <prop actor="" attachpoint="rider"/>
-        <prop actor="units/xiongnu/cavalry_spearman_e_r.xml" attachpoint="rider_R"/>
+        <prop actor="units/xion/cavalry_spearman_e_r.xml" attachpoint="rider_R"/>
       </props>
     </variant>
   </group>

@@ -3,7 +3,7 @@
   <castshadow/>
   <group>
     <variant file="biped/base_spearman_relax.xml">
-      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
         <prop actor="props/units/shields/chin_shield3.xml" attachpoint="shield"/>
@@ -25,18 +25,48 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="B">
+    <variant frequency="0" name="old-a1">
       <textures>
         <texture file="skeletal/han_icr_e.png" name="baseTex"/>
         <texture file="skeletal/han_icr_e_norm.png" name="normTex"/>
         <texture file="skeletal/han_icr_e_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="C">
+    <variant frequency="0" name="old-a2">
       <textures>
         <texture file="skeletal/han_isp_e_norm.png" name="normTex"/>
         <texture file="skeletal/han_isp_e_black.png" name="baseTex"/>
         <texture file="skeletal/han_isp_e_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chin-spearman-elite-b">
+      <textures>
+        <texture file="skeletal/han_isp_e_b.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_e_b_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chin-spearman-elite-c">
+      <textures>
+        <texture file="skeletal/han_isp_e_c.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_e_c_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chin-spearman-elite-d">
+      <textures>
+        <texture file="skeletal/han_isp_e_d.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_e_d_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chin-spearman-elite-e">
+      <textures>
+        <texture file="skeletal/han_isp_e_e.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_e_e_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chin-spearman-elite-f">
+      <textures>
+        <texture file="skeletal/han_isp_e_f.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_e_f_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -47,7 +77,7 @@
     <variant file="biped/gather_tree.xml"/>
     <variant file="biped/gather_grain.xml">
       <props>
-        <prop actor="props/units/helmets/chin_ricehat.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmet/new/chin_ricehat.xml" attachpoint="helmet"/>
       </props>
     </variant>
     <variant file="biped/gather_fruit.xml"/>
@@ -60,7 +90,7 @@
     <variant file="biped/build_farm.xml"/>
     <variant file="biped/carry_food.xml">
       <props>
-        <prop actor="props/units/helmets/chin_ricehat.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmet/new/chin_ricehat.xml" attachpoint="helmet"/>
       </props>
     </variant>
     <variant file="biped/carry_meat.xml"/>

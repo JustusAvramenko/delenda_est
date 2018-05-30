@@ -2,62 +2,62 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_archer_ready.xml" frequency="1" name="Idle">
-		<mesh>skeletal/new/m_armor_nomad_a.dae</mesh>
+    <variant file="biped/base_archer_ready.xml" frequency="1">
+      <mesh>skeletal/new/m_armor_nomad_b.dae</mesh>
       <props>
         <prop actor="props/units/heads/xion_head.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/xion_arrow_back.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/xion_bow.xml" attachpoint="weapon_L"/>
         <prop actor="props/units/weapons/xion_quiver.xml" attachpoint="sheath_L"/>
       </props>
-      <textures>
-        <texture file="skeletal/xion_advanced_d.png" name="baseTex"/>
-      </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="15" name="Longhair">
+    <variant frequency="2" name="Longhair">
       <props>
         <prop actor="" attachpoint="helmet"/>
         <prop actor="props/units/heads/xion_head_bald_longhair.xml" attachpoint="head"/>
       </props>
     </variant>
-	 <variant frequency="35" name="Helmet_Hide">
+    <variant frequency="2" name="Helmet_Hide">
       <props>
         <prop actor="props/units/helmets/xion_hide.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="25" name="Helmet_iron">
+    <variant frequency="6" name="Helmet_iron">
       <props>
         <prop actor="props/units/helmets/xion_hide_iron.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="35" name="Helmet_b">
+    <variant frequency="6" name="Helmet_b">
       <props>
         <prop actor="props/units/helmets/xion_hide.xml" attachpoint="helmet"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Cloth_A">
+    <variant frequency="1" name="Cloth_E">
       <textures>
-        <texture file="skeletal/xion_advanced_d.png" name="baseTex"/>
-        <texture file="skeletal/xion_advanced_norm.png" name="normTex"/>
-        <texture file="skeletal/xion_elite_spec.png" name="specTex"/>
+        <texture file="skeletal/xion_advanced_e.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_a_b_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="Cloth_B">
+    <variant frequency="1" name="Cloth_F">
       <textures>
-        <texture file="skeletal/xion_advanced_b.png" name="baseTex"/>
-        <texture file="skeletal/xion_advanced_norm.png" name="normTex"/>
-        <texture file="skeletal/xion_elite_spec.png" name="specTex"/>
+        <texture file="skeletal/xion_advanced_f.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_a_b_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="Cloth_C">
+    <variant frequency="1" name="Cloth_G">
       <textures>
-        <texture file="skeletal/xion_advanced_c.png" name="baseTex"/>
-        <texture file="skeletal/xion_advanced_norm.png" name="normTex"/>
-        <texture file="skeletal/xion_elite_spec.png" name="specTex"/>
+        <texture file="skeletal/xion_advanced_g.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_a_b_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Cloth_H">
+      <textures>
+        <texture file="skeletal/xion_advanced_h.png" name="baseTex"/>
+        <texture file="skeletal/han_isp_a_b_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
