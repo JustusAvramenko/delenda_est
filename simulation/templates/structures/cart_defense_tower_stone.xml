@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/cart_defense_tower">
+  <Attack>
+    <Ranged>
+      <MaxRange>60</MaxRange>
+    </Ranged>
+  </Attack>
   <Health>
     <Max op="mul">2.0</Max>
   </Health>
@@ -19,11 +24,11 @@
     <HeightOffset>20.0</HeightOffset>
   </StatusBars>
   <TerritoryInfluence>
-    <Radius>25</Radius>
+    <Radius>30</Radius>
   </TerritoryInfluence>
   <Upgrade disable=""/>
   <Vision>
-    <Range op="add">10</Range>
+    <Range>70</Range>
   </Vision>
   <VisualActor>
     <Actor>structures/carthaginians/scout_tower.xml</Actor>

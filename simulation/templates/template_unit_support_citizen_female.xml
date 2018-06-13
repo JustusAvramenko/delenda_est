@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support_citizen">
-  <Attack>
-    <Melee>
-      <Hack>5.0</Hack>
-    </Melee>
-  </Attack>
   <Auras datatype="tokens">
     female_inspiration
   </Auras>
@@ -18,37 +13,13 @@
     <RegenRate>0.5</RegenRate>
     <GarrisonRegenRate>0</GarrisonRegenRate>
   </Capturable>
-  <Cost>
-    <BuildTime>60</BuildTime>
-  </Cost>
-  <Health>
-    <Max>50</Max>
-  </Health>
   <Identity>
     <GenericName>Female Citizen</GenericName>
 	<Gender>female</Gender>
     <History>Women in the ancient world took on a variety of roles - from leadership (Celts and Kushites) to essentially baby-making machines (Greeks and Romans). Women are hard workers, the economic backbone of any civilization. In history, it was typical when all the males (capable of fighting) were killed for the women, children, and elderly to be sold as slaves, a valuable economic commodity in the ancient world.</History>
-	<Tooltip>Build civilian buildings and gather resources. Command nearby Men and Slaves to work faster. Especially good at building.
-Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Avoids Death.
-Good at: Building, Foraging, Farming, and Dying.
-Mediocre at: Lumbering and Mining.</Tooltip>
     <VisibleClasses datatype="tokens">FemaleCitizen Woman</VisibleClasses>
     <RequiredTechnology>unlock_females_house_small</RequiredTechnology>
   </Identity>
-  <ResourceGatherer>
-    <MaxDistance>2.0</MaxDistance>
-    <BaseSpeed>1.0</BaseSpeed>
-    <Rates>
-      <food.fruit>0.8</food.fruit>
-      <food.grain>0.25</food.grain>
-      <food.meat>1</food.meat>
-      <wood.tree>0.65</wood.tree>
-      <wood.ruins>5</wood.ruins>
-      <stone.rock>0.35</stone.rock>
-      <stone.ruins>2</stone.ruins>
-      <metal.ore>0.35</metal.ore>
-    </Rates>
-  </ResourceGatherer>
   <Sound>
     <SoundGroups>
       <trained>interface/alarm/alarm_create_female.xml</trained>
