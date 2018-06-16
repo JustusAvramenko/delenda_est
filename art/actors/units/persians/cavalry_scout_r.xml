@@ -2,7 +2,7 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_cavalry_swordsman_relax.xml" frequency="100" name="Base">
+    <variant frequency="100" name="Base">
       <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/weapons/akin.xml" attachpoint="weapon_R"/>
@@ -31,14 +31,14 @@
     </variant>
   </group>
   <group>
-    <variant frequency="100" name="Idle"/>
-	<variant file="biped/rider/attack_slaughter.xml" name="attack_slaughter"/>
-    <variant name="gather_meat"/>
-    <variant name="carry_meat">
-      <props>
-        <prop actor="props/units/shuttle_meat_male_R.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
+    <variant file="biped/base_cavalry_swordsman_relax.xml"/>
+    <variant file="biped/rider/camelry/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/camelry/promotion.xml"/>
+    <variant file="biped/rider/camelry/attack_slaughter_ptol.xml"/>
+    <variant file="biped/rider/camelry/gather_meat_ptol.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
