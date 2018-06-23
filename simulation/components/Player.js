@@ -87,7 +87,7 @@ Player.prototype.Init = function()
 	for (let i in resCodes)
 	{
 		let res = resCodes[i];
-		this.resourceCount[res] = 300;
+		this.resourceCount[res] = 500;
 		this.resourceNames[res] = Resources.GetResource(res).name;
 		this.tradingGoods.push({
 			"goods": res,
@@ -497,7 +497,7 @@ Player.prototype.SetState = function(newState, message)
 			});
 	}
 
-	Engine.BroadcastMessage(won ? MT_PlayerWon : MT_PlayerDefeated, { "playerId": this.playerID });
+	Engine.PostMessage(this.entity, won ? MT_PlayerWon : MT_PlayerDefeated, { "playerId": this.playerID });
 
 	if (message)
 	{
