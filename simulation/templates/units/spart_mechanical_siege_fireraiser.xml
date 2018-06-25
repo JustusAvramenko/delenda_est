@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_siege_ram">
+  <Armour>
+    <Hack>5</Hack>
+    <Pierce>20</Pierce>
+    <Crush>5</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>5</Hack>
+      <Pierce>5</Pierce>
+      <Crush>5</Crush>
+      <MaxRange>10</MaxRange>
+      <PrepareTime>100</PrepareTime>
+      <RepeatTime>100</RepeatTime>
+      <RestrictedClasses datatype="tokens">-Organic</RestrictedClasses>
+    </Melee>
+  </Attack>
+  <Capturable disable=""/>
+  <Footprint replace="">
+    <Square width="6.0" depth="20.0"/>
+    <Height>4.5</Height>
+  </Footprint>
+  <GarrisonHolder disable=""/>
+  <Health>
+    <Max>700</Max>
+    <RegenRate>-5</RegenRate>
+  </Health>
+  <Identity>
+    <Civ>spart</Civ>
+	<Lang>greek</Lang>
+    <GenericName>Fire Raiser</GenericName>
+    <SpecificName>Pyrobolos</SpecificName>
+	<VisibleClasses datatype="tokens">Fire</VisibleClasses>
+    <Tooltip>Traits: Slow Speed, Medium Armor, Fire Thrower.
+Strong Against: Buildings, Gates (1.5x).
+Weak Against: Melee Cavalry, Melee Infantry.</Tooltip>
+    <Icon>units/theb_mechanical_siege_fireraiser.png</Icon>
+  </Identity>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/thebans/siege_fireraiser.xml</Actor>
+  </VisualActor>
+</Entity>
