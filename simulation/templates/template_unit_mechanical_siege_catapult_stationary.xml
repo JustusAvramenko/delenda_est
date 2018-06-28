@@ -31,9 +31,6 @@
     <SpecificName>Onager</SpecificName>
 	<GenericName>Catapult</GenericName>
     <History>.</History>
-    <Tooltip>Traits: Stationary, Splash Damage (10 meters), Friendly Fire, Capturable.
-Strong Against: Buildings, Fortresses (1.25x), Massed Archers.
-Weak Against: Cavalry (speed), Stone Walls (0.75x).</Tooltip>
   </Identity>
   <Obstruction>
     <Unit disable=""/>
@@ -46,7 +43,9 @@ Weak Against: Cavalry (speed), Stone Walls (0.75x).</Tooltip>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
     <Static width="6.0" depth="8.0"/>
   </Obstruction>
-  <Pack disable=""/>
+  <Pack>
+    <State>unpacked</State>
+  </Pack>
   <UnitMotion>
     <WalkSpeed>0.001</WalkSpeed>
     <Run>
