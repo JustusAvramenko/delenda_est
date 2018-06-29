@@ -70,7 +70,8 @@
 	<Tooltip>Build civilian buildings and gather resources. Command nearby Slaves to work faster. Especially good at building.
 Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Avoids Death.
 Good at: Building and Dying.
-Mediocre at: Gathering Resources.</Tooltip>
+Mediocre at: Gathering Resources.
+Bad at: Fighting.</Tooltip>
     <Icon>units/imp_support_citizen.png</Icon>
 	<Formations disable=""/>
   </Identity>
@@ -78,6 +79,13 @@ Mediocre at: Gathering Resources.</Tooltip>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>10</food>
+      <wood>10</wood>
+      <stone>10</stone>
+      <metal>10</metal>
+      <glory>1</glory>
+    </Capacities>
     <Rates>
       <food.fruit>0.5</food.fruit>
       <food.grain>0.25</food.grain>

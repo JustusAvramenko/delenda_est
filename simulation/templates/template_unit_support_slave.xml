@@ -21,7 +21,6 @@
   </Cost>
   <Health>
     <Max>50</Max>
-	<RegenRate>-0.05</RegenRate>
     <Unhealable>true</Unhealable>
   </Health>
   <Identity>
@@ -29,11 +28,12 @@
 	<Classes datatype="tokens">Worker</Classes>
 	<Gender>female</Gender>
     <GenericName>Slave</GenericName>
+	<SelectionGroupName>units/{civ}_support_slave</SelectionGroupName>
     <History>Slavery played a major role in ancient civilization.</History>
-	<Tooltip>A good and cheap gatherer with a finite life span who cannot build buildings. 
+	<Tooltip>A cheap and very good gatherer unit who cannot build buildings. 
 Traits: Low Cost, Low Health, Slow Speed, Capturable, No Attack.
-Good for: Gathering Resources and Defecting.
-Bad for: Defense.</Tooltip>
+Good at: Gathering Resources and Defecting.
+Bad at: Defense and Loyalty.</Tooltip>
     <Icon>units/global_slave.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
 	<Formations disable=""/>
@@ -91,6 +91,17 @@ Bad for: Defense.</Tooltip>
       <Speed op="mul">0.7</Speed>
     </Run>
   </UnitMotion>
+  <Upgrade>
+    <ForcedLabor>
+      <Entity>units/{civ}_support_slave_forced_labor</Entity>
+      <Tooltip>Slaves under forced labor gather resources 100% faster, but die quickly from overwork.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <glory>100</glory>
+      </Cost>
+      <Time>5</Time>
+    </ForcedLabor>
+  </Upgrade>
   <Vision>
     <Range>20</Range>
   </Vision>
