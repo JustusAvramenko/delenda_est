@@ -3,15 +3,27 @@
   <Armour>
     <Hack op="add">-1</Hack>
   </Armour>
+  <Attack>
+    <Melee>
+      <Hack>7.0</Hack>
+    </Melee>
+    <Capture>
+      <RepeatTime>3500</RepeatTime>
+    </Capture>
+  </Attack>
+  <Builder>
+    <Rate>0.5</Rate>
+  </Builder>
   <Cost>
-    <BuildTime>10</BuildTime>
+    <Population>1</Population>
+	<BuildTime>8</BuildTime>
     <Resources>
-      <food>50</food>
-      <wood>40</wood>
+      <food>30</food>
+      <wood>30</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>80</Max>
+    <Max>70</Max>
   </Health>
   <Identity>
     <Civ>maur</Civ>
@@ -21,6 +33,9 @@
     <Icon>units/maur_infantry_spearman.png</Icon>
 	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
     <History>Bamboo Spearman.</History>
+    <Tooltip>Traits: Low Cost, Low Health, Slow Builder, Medium Speed, Medium Armor, Low Attack, Massable.
+Strong Against: All Cavalry (1.5x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
   </Identity>
   <Promotion>
     <Entity>units/maur_infantry_spearman_a</Entity>

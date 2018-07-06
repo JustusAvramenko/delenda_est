@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Identity>
+    <Civ>iber</Civ>
+    <SpecificName>Castro</SpecificName>
+    <History>The Castro can be likened to a more strongly fortified town center than that of the common Oppidum which were also fortified places of habitation. As such it was widely and normally constructed upon a height, and almost always had some sort of an acropolis built at the highest point within its towered walls. In the archaeological record of the Iberian Peninsula, the remnants of as many as a thousand fortified places identifiable as Castros can be found in modern day Portugal alone.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="27.0" depth="27.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_champion_infantry
+      units/{civ}_champion_cavalry
+      units/{civ}_hero_caros
+      units/{civ}_hero_indibil
+      units/{civ}_hero_viriato
+    </Entities>
+    <Technologies datatype="tokens">
+      attack_capture_siege_ladders
+	  iberians/fortress_stronghold
+	  unlock_spies
+	  spy_counter
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/iberians/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+   <Length>24.5</Length>
+  </WallPiece>
+</Entity>
