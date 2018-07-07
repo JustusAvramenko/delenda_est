@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skeletons>
+  <standard_skeleton id="chariot" title="chariot">
+    <bone name="base">
+      <bone name="chariot">
+        <bone name="right_wheel">
+          <bone name="Bone" />
+        </bone>
+        <bone name="left_wheel">
+          <bone name="Bone.001" />
+        </bone>
+      </bone>
+    </bone>
+  </standard_skeleton>
+  <skeleton target="chariot" title="chariot">
+    <identifier>
+      <root>base</root>
+    </identifier>
+    <bone name="base">
+      <target>base</target>
+      <bone name="chariot">
+        <target>chariot</target>
+        <bone name="right_wheel">
+          <target>right_wheel</target>
+          <bone name="Bone">
+            <target>Bone</target>
+          </bone>
+        </bone>
+        <bone name="left_wheel">
+          <target>left_wheel</target>
+          <bone name="Bone.001">
+            <target>Bone.001</target>
+          </bone>
+        </bone>
+      </bone>
+    </bone>
+  </skeleton>
+</skeletons>
