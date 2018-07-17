@@ -47,17 +47,16 @@ Bad at: Defense and Loyalty.</Tooltip>
   </Loot>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
-    <BaseSpeed>1.0</BaseSpeed>
+    <BaseSpeed>1.5</BaseSpeed>
     <Rates>
-      <food.fruit>1.0</food.fruit>
-      <food.grain>0.5</food.grain>
-      <food.meat>1.0</food.meat>
-      <wood.tree>1.0</wood.tree>
+      <food.fruit>0.5</food.fruit>
+      <food.grain>0.25</food.grain>
+      <food.meat>0.5</food.meat>
+      <wood.tree>0.5</wood.tree>
       <wood.ruins>5.0</wood.ruins>
-      <stone.rock>1.0</stone.rock>
-      <stone.ruins>2.0</stone.ruins>
-      <metal.ore>1.0</metal.ore>
-	  <glory disable=""/>
+      <stone.rock>0.5</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ore>0.5</metal.ore>
     </Rates>
   </ResourceGatherer>
   <Sound>
@@ -88,13 +87,13 @@ Bad at: Defense and Loyalty.</Tooltip>
   <UnitMotion>
     <WalkSpeed op="mul">0.7</WalkSpeed>
     <Run>
-      <Speed op="mul">0.7</Speed>
+      <Speed op="mul">0.6</Speed>
     </Run>
   </UnitMotion>
   <Upgrade>
     <ForcedLabor>
       <Entity>units/{civ}_support_slave_forced_labor</Entity>
-      <Tooltip>Slaves under forced labor gather resources 100% faster, but die quickly from overwork.</Tooltip>
+      <Tooltip>Slaves under forced labor gather resources much faster, but die quickly from overwork.</Tooltip>
 	  <RequiredTechnology>phase_city</RequiredTechnology>
       <Cost>
         <glory>100</glory>
