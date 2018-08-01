@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="6">
+	<Environment>
+		<SkySet>cirrus</SkySet>
+		<SunColor r="1.03107" g="0.921898" b="0.578208"/>
+		<SunElevation angle="0.638136"/>
+		<SunRotation angle="-0.909753"/>
+		<TerrainAmbientColor r="0.294118" g="0.337255" b="0.356863"/>
+		<UnitsAmbientColor r="0.356863" g="0.356863" b="0.356863"/>
+		<Fog>
+			<FogFactor>0.00195313</FogFactor>
+			<FogThickness>0.0351563</FogThickness>
+			<FogColor r="0.839216" g="0.866667" b="0.882353"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.0784314" g="0.247059" b="0.419608"/>
+				<Tint r="0" g="1" b="0.501961"/>
+				<Height>20.0394</Height>
+				<Waviness>3.02734</Waviness>
+				<Murkiness>0.882813</Murkiness>
+				<WindAngle>0.233165</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>-0.015625</Brightness>
+			<Contrast>0.984375</Contrast>
+			<Saturation>0.8125</Saturation>
+			<Bloom>0.160156</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="257.115" y="82.0233" z="30.9669"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "AISeed": 0,
+  "CircularMap": true,
+  "Description": "Give an interesting description of your map.",
+  "Keywords": [
+    "demo"
+  ],
+  "LockTeams": false,
+  "Name": "Skirmish Starting Units",
+  "PlayerData": [
+    {
+      "Civ": "athen"
+    }
+  ],
+  "Preview": "",
+  "RevealMap": false,
+  "VictoryConditions": []
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="11">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>1</Player>
+			<Position x="256.31296" z="112.17692"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="44762"/>
+		</Entity>
+		<Entity uid="12">
+			<Template>skirmish/units/default_support_citizen</Template>
+			<Player>1</Player>
+			<Position x="266.26227" z="91.96662"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37148"/>
+		</Entity>
+		<Entity uid="13">
+			<Template>skirmish/units/default_support_citizen</Template>
+			<Player>1</Player>
+			<Position x="269.21357" z="94.96743"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58774"/>
+		</Entity>
+		<Entity uid="14">
+			<Template>skirmish/units/default_support_citizen</Template>
+			<Player>1</Player>
+			<Position x="272.29328" z="98.23522"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10356"/>
+		</Entity>
+		<Entity uid="15">
+			<Template>skirmish/units/default_support_citizen</Template>
+			<Player>1</Player>
+			<Position x="275.90217" z="101.63212"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="23516"/>
+		</Entity>
+		<Entity uid="16">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>1</Player>
+			<Position x="238.47922" z="100.37758"/>
+			<Orientation y="-2.64208"/>
+			<Actor seed="55988"/>
+		</Entity>
+		<Entity uid="17">
+			<Template>skirmish/units/default_infantry_melee_b</Template>
+			<Player>1</Player>
+			<Position x="242.72181" z="95.58938"/>
+			<Orientation y="-2.49357"/>
+			<Actor seed="44932"/>
+		</Entity>
+		<Entity uid="18">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>1</Player>
+			<Position x="272.63059" z="124.79522"/>
+			<Orientation y="0.86017"/>
+			<Actor seed="12124"/>
+		</Entity>
+		<Entity uid="19">
+			<Template>skirmish/units/default_infantry_ranged_b</Template>
+			<Player>1</Player>
+			<Position x="268.58655" z="129.21415"/>
+			<Orientation y="0.61223"/>
+			<Actor seed="870"/>
+		</Entity>
+		<Entity uid="20">
+			<Template>skirmish/units/default_cavalry</Template>
+			<Player>1</Player>
+			<Position x="237.60538" z="125.57287"/>
+			<Orientation y="-0.76699"/>
+			<Actor seed="17818"/>
+		</Entity>
+		<Entity uid="21">
+			<Template>skirmish/units/special_starting_unit</Template>
+			<Player>1</Player>
+			<Position x="242.13743" z="129.2063"/>
+			<Orientation y="-0.78179"/>
+			<Actor seed="12070"/>
+		</Entity>
+		<Entity uid="22">
+			<Template>skirmish/structures/default_stoa</Template>
+			<Player>1</Player>
+			<Position x="287.4133" z="139.93201"/>
+			<Orientation y="-2.33724"/>
+			<Actor seed="12744"/>
+		</Entity>
+	</Entities>
+	<Paths/>
+</Scenario>
