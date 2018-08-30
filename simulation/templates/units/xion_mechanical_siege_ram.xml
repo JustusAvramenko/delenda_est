@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_siege_ram">
+  <Attack>
+    <Melee>
+      <Hack>0.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>75.0</Crush>
+      <MaxRange>7.5</MaxRange>
+      <PrepareTime>950</PrepareTime>
+      <RepeatTime>1700</RepeatTime>
+    </Melee>
+  </Attack>
+  <Armour>
+    <Hack>2</Hack>
+    <Pierce>10</Pierce>
+    <Crush>8</Crush>
+  </Armour>
+  <Footprint replace="">
+    <Square width="6.75" depth="9.0"/>
+    <Height>3.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>xion</Civ>
+    <SpecificName>Battering Ram</SpecificName>
+    <Icon>units/iber_mechanical_siege_ram.png</Icon>
+  </Identity>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Sound>
+    <SoundGroups>
+      <select>voice/{lang}/civ/civ_{gender}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{gender}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{gender}_attack.xml</order_attack>
+      <order_garrison>voice/{lang}/civ/civ_{gender}_garrison.xml</order_garrison>
+      <walk>actor/human/movement/walk.xml</walk>
+      <run>actor/human/movement/run.xml</run>
+      <death>actor/human/death/{gender}_death.xml</death>
+    </SoundGroups>
+  </Sound>
+  <Cost>
+    <Resources>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <UnitMotion>
+    <WalkSpeed>4</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>structures/xion/siege_ram_pivot.xml</Actor>
+  </VisualActor>
+</Entity>

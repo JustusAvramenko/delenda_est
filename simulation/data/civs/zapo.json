@@ -1,0 +1,81 @@
+﻿{
+	"Code": "zapo",
+	"Culture": "zapo",
+	"Name": "Zapotecs",
+	"Emblem": "session/portraits/emblems/emblem_zapotecs.png",
+	"History": "The Zapotec civilization was an indigenous pre-Columbian civilization that flourished in the Valley of Oaxaca in Mesoamerica.",
+	"Music":[
+			{"File":"Forgotten_Tribe.ogg", "Type":"peace"},
+			{"File":"Lost_World.ogg", "Type":"peace"},
+			{"File":"Jaws_of_the_Jaguar.ogg", "Type":"peace"}
+		],
+	"Factions":
+	[],
+	"CivBonuses":
+	[
+		{
+			"Name": "Traditional Tactics.",
+			"History": "Zapotec soldiers favored melee and wore light armor.",
+			"Description": "Zapotec melee infantry have +1.5 walk speed and do +1 hack damage at the cost of 1 pierce armor level."
+		}
+	],
+	"TeamBonuses":
+	[],
+	"Structures":
+	[
+		{
+			"Name":"Ball Court",
+			"Class":"SB",
+			"Emblem":"",
+			"History":".",
+			"Requirements":".",
+			"Phase":"City",
+			"Special":"."
+		}
+	],
+	"WallSets":
+	[
+		"other/wallset_palisade",
+		"structures/zapo_wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/zapo_civil_centre"
+		},
+		{
+			"Template": "units/zapo_support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/zapo_infantry_swordsman_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/zapo_infantry_javelinist_b",
+			"Count": 3
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/line_closed",
+		"special/formations/line_open",
+		"special/formations/column_closed"
+	],
+	"AINames":
+	[
+		"Ozomatli",
+		"Huijatoo",
+		"Zaachila",
+		"Cosijoeza",
+		"Cocijopij"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_cavalry": "units/zapo_infantry_swordsman_b",
+		"skirmish/units/default_infantry_ranged_b": "units/zapo_infantry_javelinist_b",
+		"skirmish/structures/default_house_10": "structures/{civ}_house"
+	},
+	"SelectableInGameSetup": true
+}

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_healer">
+  <Auras datatype="tokens">zapo_priest</Auras>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>300</food>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>zapo</Civ>
+    <SelectionGroupName>units/zapo_champion_healer</SelectionGroupName>
+    <GenericName>Zapotec Battle Priest</GenericName>
+    <SpecificName>Ba’ate’e K’iin</SpecificName>
+    <Icon>units/zapo_champion_healer.png</Icon>
+    <Rank>Elite</Rank>
+  </Identity>
+  <Promotion disable=""/>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <VisualActor>
+    <Actor>units/zapotecs/champion_support_healer.xml</Actor>
+  </VisualActor>
+  <UnitMotion>
+    <WalkSpeed>11</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
+</Entity>

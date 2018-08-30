@@ -5,4 +5,9 @@ g_BackgroundLayerData.push(
 			"sprite": "background-hannibal1-1",
 			"tiling": false,
 		},
+		{
+			"offset": (time, width) => 0.16 * width * Math.cos(0.08 * time) + width/16,
+			"sprite": "background-spartans1-smoke",
+			"tiling": false, 
+		},
 	]);

@@ -130,7 +130,7 @@
 							>
 								<translatableAttribute id="tooltip">Configure AI settings.</translatableAttribute>
 							</object>
-							<object name="playerCiv[n]" type="dropdown" style="ModernDropDown" size="50%+69 2 85% 30" tooltip_style="onscreenToolTip" dropdown_size="500">
+							<object name="playerCiv[n]" type="dropdown" style="ModernDropDown" size="50%+69 2 85% 30" tooltip_style="onscreenToolTip" dropdown_size="600">
 								<translatableAttribute id="tooltip">Select player's civilization.</translatableAttribute>
 							</object>
 							<object name="playerCivText[n]" type="text" style="ModernLabelText" size="50%+65 0 85% 30"/>
@@ -266,14 +266,7 @@
 				size="100%-164 100%-52 100%-24 100%-24"
 				tooltip_style="onscreenToolTip"
 				z="21"
-			>
-				<action on="Press">
-					if (g_IsController)
-						launchGame();
-					else
-						toggleReady();
-				</action>
-			</object>
+			/>
 
 			<!-- Cancel Button -->
 			<object

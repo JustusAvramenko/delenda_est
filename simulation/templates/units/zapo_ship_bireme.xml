@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_ship_bireme">
+  <Attack>
+    <Ranged>
+      <Hack>0.0</Hack>
+      <Pierce>24.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>60.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <ProjectileSpeed>30.0</ProjectileSpeed>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Spread>1.5</Spread>
+      <PreferredClasses datatype="tokens">Ship Human</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Footprint>
+    <Square width="5.0" depth="12.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Cost>
+    <Population>1</Population>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <wood>100</wood>
+      <metal>0</metal>
+      <food>100</food>
+    </Resources>
+  </Cost>
+  <GarrisonHolder>
+    <Max>1</Max>
+    <EjectHealth>0</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Female Infantry</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>10</LoadingRange>
+    <Pickup>true</Pickup>
+  </GarrisonHolder>
+  <BuildingAI disable=""/>
+  <Identity>
+    <Civ>zapo</Civ>
+    <GenericName>Battle Canoe</GenericName>
+    <SpecificName>Battle Canoe</SpecificName>
+    <Icon>units/zapo_ship_canoe.png</Icon>
+    <Classes datatype="tokens">FishingBoat</Classes>
+  </Identity>
+  <Loot>
+    <xp>1</xp>
+    <wood>20</wood>
+    <metal>0</metal>
+  </Loot>
+  <ResourceGatherer>
+    <MaxDistance>6.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>40</food>
+    </Capacities>
+    <Rates>
+      <food.fish>1.8</food.fish>
+      <treasure disable=""/>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <order_walk>actor/ship/boat_move.xml</order_walk>
+      <order_attack>actor/ship/boat_move.xml</order_attack>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/zapotecs/canoe.xml</Actor>
+  </VisualActor>
+  <UnitMotion>
+    <PassabilityClass>ship-small</PassabilityClass>
+    <WalkSpeed>10</WalkSpeed>
+  </UnitMotion>
+</Entity>

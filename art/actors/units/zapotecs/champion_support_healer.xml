@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_swordsman_shieldarm_fast.xml" frequency="100" name="Base">
+      <animations>
+        <animation file="biped/new/healer_heal.dae" name="heal" speed="100"/>
+      </animations>
+      <mesh>skeletal/new/armor/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_zapo_priest.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/zapo_plume_priest.xml" attachpoint="helmet"/>
+        <prop actor="props/units/shields/zapo_tiny.xml" attachpoint="shield"/>
+        <prop actor="props/units/zapo_priest_staff.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/zapo_back_banner_priest.xml" attachpoint="back"/>
+      </props>
+      <textures>
+        <texture file="skeletal/zapo_sh.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle">
+      <animations>
+        <animation file="biped/new/promotion.dae" name="idle" speed="100"/>
+        <animation file="biped/new/promotion.dae" name="idle" speed="50"/>
+      </animations>
+    </variant>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_tree.xml"/>
+    <variant file="biped/gather_grain.xml"/>
+    <variant file="biped/gather_fruit.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/gather_rock.xml"/>
+    <variant file="biped/gather_ore.xml"/>
+    <variant file="biped/gather_ruins.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+    <variant file="biped/carry_food.xml"/>
+    <variant file="biped/carry_meat.xml"/>
+    <variant file="biped/carry_wood.xml"/>
+    <variant file="biped/carry_stone.xml"/>
+    <variant file="biped/carry_metal.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
