@@ -1,0 +1,15 @@
+{	
+	"genericName": "Parthian Tactics",
+	"description": "Parthian Tactics allowed cavalry archers to fire while moving.",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 0, "glory": 300},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "bow_recurved.png",
+	"researchTime": 40,
+	"tooltip": "Cavalry Archers will kite away from approaching targets if the enemy targets get within 15 meters.",
+	"modifications": [
+		{"value": "Attack/Ranged/MinRange", "replace": 15}
+	],
+	"affects": ["Cavalry Archer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

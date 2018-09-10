@@ -1,0 +1,16 @@
+{   
+	"genericName": "Falconry",
+	"description": "Falconry is a steppe tradition.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"tech": "training_animals_husbandry"},
+	"requirementsTooltip": "Unlocked in Village Phase. Requires Husbandry.",
+	"icon": "falconry.png",
+	"researchTime": 30,
+	"tooltip": "All Structures and Cavalry +25% vision range. Cavalry +25% meat gathering rate.",
+	"modifications": [
+		{"value": "Vision/Range", "multiply": 1.25},
+		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.25}
+	],
+	"affects": ["Structure", "Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -22,7 +22,7 @@
   <Identity>
     <Civ>xion</Civ>
     <Classes datatype="tokens">Wagon</Classes>
-    <GenericName>Wagon</GenericName>
+    <GenericName>Resource Wagon</GenericName>
     <Icon>units/xion_support_wagon.png</Icon>
     <Tooltip>Mobile dropsite.</Tooltip>
     <Formations disable=""/>
@@ -89,6 +89,17 @@
       <Speed>10.0</Speed>
     </Run>
   </UnitMotion>
+  <Upgrade>
+    <UnPackStorehouse>
+      <Entity>structures/xion_storehouse</Entity>
+      <Tooltip>Storehouses can train Slaves, while the Resource Wagon cannot.</Tooltip>
+      <Time>10</Time>
+    </UnPackStorehouse>
+    <UnPackHouse>
+      <Entity>structures/xion_house</Entity>
+      <Time>10</Time>
+    </UnPackHouse>
+  </Upgrade>
   <Vision>
     <Range>30</Range>
   </Vision>

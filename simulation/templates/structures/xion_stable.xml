@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_stable">
   <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
+    <Territory>own neutral ally enemy</Territory>
   </BuildRestrictions>
-  <Cost>
-    <PopulationBonus>8</PopulationBonus>
-  </Cost>
   <Footprint replace="">
     <Circle radius="15.0"/>
     <Height>8.0</Height>
@@ -14,18 +11,14 @@
     <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Corral</GenericName>
     <Civ>xion</Civ>
 	<VisibleClasses datatype="tokens">Corral</VisibleClasses>
     <Icon>structures/pers_stable.png</Icon>
+    <Tooltip>Train cavalry soldiers. Raise herd animals for food. Research improvements for cavalry and ranching. </Tooltip>
   </Identity>
   <Obstruction>
     <Static width="26.0" depth="26.0"/>
   </Obstruction>
-  <Position>
-    <Anchor>pitch</Anchor>
-	<TurnRate>0.0001</TurnRate>
-  </Position>
   <ProductionQueue>
     <Entities datatype="tokens">
       units/{civ}_champion_cavalry
@@ -33,10 +26,16 @@
       gaia/fauna_pig
   	</Entities>
     <Technologies datatype="tokens">
+	  -training_levy_cavalry
+	  persians/training_levy_cavalry
+	  persians/training_conscription_cavalry
+	  persians/upgrade_rank_advanced_cavalry
+	  persians/upgrade_rank_elite_cavalry
+	  nomads/range_cavalry_archers_parthian_tactics
 	  training_animals_husbandry
 	  gather_draft_animals
       training_animals_stockbreeding
-  	</Technologies>
+    </Technologies>
   </ProductionQueue>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>

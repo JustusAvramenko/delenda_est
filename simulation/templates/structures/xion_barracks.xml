@@ -2,8 +2,8 @@
 <Entity parent="template_structure_military_barracks">
   <Cost>
     <Resources>
-      <wood>150</wood>
-      <stone>150</stone>
+      <wood>200</wood>
+      <stone>100</stone>
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -20,10 +20,13 @@
   <Identity>
     <Civ>xion</Civ>
     <GenericName>Training Grounds</GenericName>
+    <VisibleClasses datatype="tokens">
+	  ArcheryRange
+	</VisibleClasses>
   </Identity>
   <ProductionQueue>
     <Entities datatype="tokens">
-      units/{civ}_infantry_archer_b
+	  units/xion_infantry_archer_b
     </Entities>
     <Technologies datatype="tokens">
     </Technologies>
