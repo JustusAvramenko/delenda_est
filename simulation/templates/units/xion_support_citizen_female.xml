@@ -17,8 +17,11 @@
     units/female_inspiration
   </Auras>
   <Cost>
-    <Resources>
-      <food>50</food>
+    <BuildTime>10</BuildTime>
+    <Population>1</Population>
+	<Resources>
+      <food>40</food>
+      <wood>20</wood>
     </Resources>
   </Cost>
   <Builder>
@@ -44,6 +47,7 @@
       structures/{civ}_outpost
       structures/{civ}_defense_tower
       structures/{civ}_wallset_stone
+      -other/wallset_palisade
       structures/{civ}_wallset_siege
       structures/{civ}_barracks
       structures/{civ}_barracks_aux
@@ -75,21 +79,6 @@
   <Health>
     <Max>25</Max>
   </Health>
-  <ResourceGatherer>
-    <MaxDistance>2.0</MaxDistance>
-    <BaseSpeed>1.0</BaseSpeed>
-    <Rates>
-      <food.fruit>1</food.fruit>
-      <food.grain>0.5</food.grain>
-      <food.meat>1</food.meat>
-      <wood.tree>0.7</wood.tree>
-      <wood.ruins>5</wood.ruins>
-      <stone.rock>0.35</stone.rock>
-      <stone.ruins>2</stone.ruins>
-      <metal.ore>0.35</metal.ore>
-    </Rates>
-  </ResourceGatherer>
-  <Promotion disable=""/>
   <Identity>
     <Civ>xion</Civ>
     <GenericName>Xiongnu Woman</GenericName>
@@ -100,6 +89,35 @@
     <VisibleClasses datatype="tokens">Citizen Worker</VisibleClasses>
     <Formations disable=""/>
   </Identity>
+  <Promotion disable=""/>
+  <RangeOverlayRenderer/>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>10</food>
+      <wood>10</wood>
+      <stone>10</stone>
+      <metal>10</metal>
+      <glory>1</glory>
+    </Capacities>
+    <Rates>
+      <food.fruit>0.5</food.fruit>
+      <food.grain>0.25</food.grain>
+      <food.meat>0.75</food.meat>
+      <wood.tree>0.5</wood.tree>
+      <wood.ruins>5.0</wood.ruins>
+      <stone.rock>0.5</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ore>0.5</metal.ore>
+    </Rates>
+  </ResourceGatherer>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.8</WalkSpeed>
+    <Run>
+      <Speed op="mul">0.6</Speed>
+    </Run>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/xiongnu/female_citizen.xml</Actor>
   </VisualActor>
