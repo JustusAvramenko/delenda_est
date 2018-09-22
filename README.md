@@ -1,1 +1,3 @@
-This repository exists only as an archive for the now-defunct development of Delenda Est, a mod for 0 A.D. Empires Ascendant. I did not delete this archive so that other modders may have access to the files contained within.
+Check out 0ad.mod.io for the latest Delenda Est release for the official releases of 0 A.D.
+
+This repository is a work in progress and is not guaranteed to work with the latest "release" of 0 A.D. Rather, it is more compatible with the "SVN" or "Development" version of the game, which is bleeding edge. 
