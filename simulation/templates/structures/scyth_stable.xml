@@ -1,44 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_stable">
   <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
+    <Territory>own neutral ally enemy</Territory>
   </BuildRestrictions>
-  <Cost>
-    <Resources>
-      <wood>200</wood>
-      <food>200</food>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Square width="22.0" depth="20.0"/>
-    <Height>5.0</Height>
+  <Footprint replace="">
+    <Circle radius="15.0"/>
+    <Height>8.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>scyth</Civ>
-    <SpecificName>Paraspa</SpecificName>
-    <History>The Scythians were known for their equestrianism, perhaps even more so than the vaunted Persians and Parthians.</History>
-	<RequiredTechnology>phase_village</RequiredTechnology>
+	<VisibleClasses datatype="tokens">Corral</VisibleClasses>
+    <Icon>structures/pers_stable.png</Icon>
+    <Tooltip>Train cavalry soldiers. Raise herd animals for food. Research improvements for cavalry and ranching. </Tooltip>
   </Identity>
   <Obstruction>
-    <Static width="18.0" depth="16.0"/>
+    <Static width="26.0" depth="26.0"/>
   </Obstruction>
   <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_champion_cavalry
+      gaia/fauna_sheep
+      gaia/fauna_pig
+  	</Entities>
     <Technologies datatype="tokens">
+	  -training_levy_cavalry
 	  persians/training_levy_cavalry
 	  persians/training_conscription_cavalry
 	  persians/upgrade_rank_advanced_cavalry
 	  persians/upgrade_rank_elite_cavalry
-	  successors/special_war_horses
-	  persians/upgrade_rank_medium_chariot
-	  persians/upgrade_rank_heavy_chariot
+	  nomads/range_cavalry_archers_parthian_tactics
+	  training_animals_husbandry
+	  gather_draft_animals
+      training_animals_stockbreeding
     </Technologies>
   </ProductionQueue>
+  <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Upgrade>
+    <Pack>
+      <Entity>structures/scyth_stable_packed</Entity>
+      <Time>20</Time>
+    </Pack>
+  </Upgrade>
   <VisualActor>
-    <Actor>structures/persians/stables.xml</Actor>
-    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/corral.xml</Actor>
+    <FoundationActor>structures/xiongnu/corral_foundation.xml</FoundationActor>
   </VisualActor>
 </Entity>

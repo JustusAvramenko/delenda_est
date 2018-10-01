@@ -6,10 +6,10 @@
     <Crush>10</Crush>
   </Armour>
   <Cost>
-    <BuildTime>35</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>50</food>
-	  <wood>150</wood>
+	  <wood>50</wood>
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -22,7 +22,7 @@
   <Identity>
     <Civ>scyth</Civ>
     <Classes datatype="tokens">Wagon</Classes>
-    <GenericName>Wagon</GenericName>
+    <GenericName>Resource Wagon</GenericName>
     <Icon>units/xion_support_wagon.png</Icon>
     <Tooltip>Mobile dropsite.</Tooltip>
     <Formations disable=""/>
@@ -33,14 +33,35 @@
     <wood>10</wood>
     <stone>10</stone>
     <metal>10</metal>
+    <glory>10</glory>
   </Loot>
   <Position>
     <Anchor>pitch</Anchor>
 	<TurnRate>2.0</TurnRate>
   </Position>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+	<TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Technologies datatype="tokens">
+      pair_gather_01
+      pair_gather_02
+      pair_gather_03
+	  gather_lumbering_bowsaw
+	  gather_lumbering_twomansaw
+	  gather_capacity_wheelbarrow
+	  gather_capacity_handcarts
+    </Technologies>
+  </ProductionQueue>
   <ResourceDropsite>
-    <Types>wood stone metal</Types>
-    <Sharable>false</Sharable>
+    <Types>food wood stone metal</Types>
+    <Sharable>true</Sharable>
   </ResourceDropsite>
   <Selectable>
     <Overlay>
@@ -69,13 +90,18 @@
     </Run>
   </UnitMotion>
   <Upgrade>
-    <UnPack>
-      <Entity>structures/xion_storehouse</Entity>
-      <Time>45</Time>
-    </UnPack>
+    <UnPackStorehouse>
+      <Entity>structures/scyth_storehouse</Entity>
+      <Tooltip>Storehouses can train Slaves, while the Resource Wagon cannot.</Tooltip>
+      <Time>10</Time>
+    </UnPackStorehouse>
+    <UnPackHouse>
+      <Entity>structures/scyth_house</Entity>
+      <Time>10</Time>
+    </UnPackHouse>
   </Upgrade>
   <Vision>
-    <Range>50</Range>
+    <Range>30</Range>
   </Vision>
   <VisualActor>
     <Actor>structures/xiongnu/xion_wagon.xml</Actor>

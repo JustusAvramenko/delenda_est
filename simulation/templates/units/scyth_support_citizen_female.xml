@@ -17,32 +17,68 @@
     units/female_inspiration
   </Auras>
   <Cost>
-    <Resources>
-      <food>50</food>
+    <BuildTime>10</BuildTime>
+    <Population>1</Population>
+	<Resources>
+      <food>40</food>
+      <wood>20</wood>
     </Resources>
   </Cost>
   <Builder>
+    <Rate>1.0</Rate>
     <Entities datatype="tokens">
+      structures/{civ}_civil_centre
+      structures/{civ}_government_center
+      structures/{civ}_pyramid_1
+      structures/{civ}_pyramid_2
+      structures/{civ}_temple_vesta
+      structures/{civ}_military_colony
+      structures/{civ}_house
+      structures/{civ}_tenement
+      structures/{civ}_storehouse
+      structures/{civ}_farmstead
+      structures/{civ}_field
+      structures/{civ}_corral
+      structures/{civ}_rotarymill
+      structures/{civ}_dock
+      structures/{civ}_shipyard
+      structures/{civ}_market
+      structures/{civ}_pillar_ashoka
+      structures/{civ}_outpost
+      structures/{civ}_defense_tower
+      structures/{civ}_wallset_stone
+      -other/wallset_palisade
+      structures/{civ}_wallset_siege
+      structures/{civ}_barracks
+      structures/{civ}_barracks_aux
+      structures/{civ}_syssiton
+      structures/{civ}_gymnasion
+      structures/{civ}_range
+      structures/{civ}_stable
+      structures/{civ}_embassy_celtic
+      structures/{civ}_embassy_iberian
+      structures/{civ}_embassy_italiote
+      structures/{civ}_blacksmith
+      structures/{civ}_kennel
+      structures/{civ}_elephant_stables
+      structures/{civ}_statue
+      structures/{civ}_temple
+      structures/{civ}_arch
+      structures/{civ}_theatron
+      structures/{civ}_library
+      structures/{civ}_lighthouse
+      structures/{civ}_apadana
+      structures/{civ}_prytaneion
+      structures/{civ}_workshop
+      structures/{civ}_catapult
+      structures/{civ}_army_camp
+      structures/{civ}_fortress
+      structures/{civ}_wonder
     </Entities>
   </Builder>
   <Health>
     <Max>25</Max>
   </Health>
-  <ResourceGatherer>
-    <MaxDistance>2.0</MaxDistance>
-    <BaseSpeed>1.0</BaseSpeed>
-    <Rates>
-      <food.fruit>1</food.fruit>
-      <food.grain>0.5</food.grain>
-      <food.meat>1</food.meat>
-      <wood.tree>0.7</wood.tree>
-      <wood.ruins>5</wood.ruins>
-      <stone.rock>0.35</stone.rock>
-      <stone.ruins>2</stone.ruins>
-      <metal.ore>0.35</metal.ore>
-    </Rates>
-  </ResourceGatherer>
-  <Promotion disable=""/>
   <Identity>
     <Civ>scyth</Civ>
     <GenericName>Scythian Woman</GenericName>
@@ -53,6 +89,35 @@
     <VisibleClasses datatype="tokens">Citizen Worker</VisibleClasses>
     <Formations disable=""/>
   </Identity>
+  <Promotion disable=""/>
+  <RangeOverlayRenderer/>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>10</food>
+      <wood>10</wood>
+      <stone>10</stone>
+      <metal>10</metal>
+      <glory>1</glory>
+    </Capacities>
+    <Rates>
+      <food.fruit>0.5</food.fruit>
+      <food.grain>0.25</food.grain>
+      <food.meat>0.75</food.meat>
+      <wood.tree>0.5</wood.tree>
+      <wood.ruins>5.0</wood.ruins>
+      <stone.rock>0.5</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ore>0.5</metal.ore>
+    </Rates>
+  </ResourceGatherer>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.8</WalkSpeed>
+    <Run>
+      <Speed op="mul">0.6</Speed>
+    </Run>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/xiongnu/female_citizen.xml</Actor>
   </VisualActor>

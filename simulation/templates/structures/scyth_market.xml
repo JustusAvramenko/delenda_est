@@ -11,16 +11,18 @@
     </Resources>
   </Cost>
   <Health>
+    <Max>1600</Max>
     <SpawnEntityOnDeath>rubble/rubble_stone_4x2</SpawnEntityOnDeath>
   </Health>
   <BuildRestrictions>
-    <Territory>own neutral</Territory>
+    <Territory>own neutral ally</Territory>
   </BuildRestrictions>
   <Identity>
     <Civ>scyth</Civ>
-    <GenericName>Food deposit</GenericName>
+    <GenericName>Market Depot</GenericName>
     <Classes datatype="tokens">BarterMarket</Classes>
-    <VisibleClasses datatype="tokens">Village Farmstead Market</VisibleClasses>
+    <VisibleClasses datatype="tokens">Village LandTrade Market</VisibleClasses>
+    <Icon>structures/market.png</Icon>
   </Identity>
   <Market>
     <TradeType>land</TradeType>
@@ -28,15 +30,25 @@
   </Market>
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}_support_trader
+  	</Entities>
     <Technologies datatype="tokens">
-      gather_wicker_baskets
-      unlock_shared_los
-      unlock_shared_dropsites
-      trade_convoys_speed
-      trade_convoys_armor
-      trade_gain_01
-      trade_gain_02
-      trade_commercial_treaty
+      -pair_gather_food_01
+	  -pair_farming_01
+	  -pair_farming_02
+	  -gather_farming_cultivation
+      -successors/special_water_wheel
+	  -successors/special_well_sweep
+	  -farms_crop_rotation
+      nomads/gather_wicker_baskets
+      training_trader_01
+      speed_trader_01
+	  unlock_shared_los
+	  pair_market_01
+	  unlock_slaves
+	  market_taxes
+	  -health_siege_rations
     </Technologies>
   </ProductionQueue>
   <ResourceDropsite>
@@ -48,9 +60,10 @@
     <TurnRate>0.0001</TurnRate>
   </Position>
   <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
   <Upgrade>
     <Pack>
-      <Entity>structures/xion_market_packed</Entity>
+      <Entity>structures/scyth_market_packed</Entity>
       <Time>20</Time>
     </Pack>
   </Upgrade>

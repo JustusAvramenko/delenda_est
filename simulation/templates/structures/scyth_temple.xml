@@ -1,35 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_temple">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+    <Category>CultStatue</Category>
+    <Distance>
+      <FromClass>CultStatue</FromClass>
+      <MinDistance>30</MinDistance>
+    </Distance>
+  </BuildRestrictions>
   <Footprint replace="">
     <Circle radius="10.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Identity>
     <Civ>scyth</Civ>
+    <VisibleClasses datatype="tokens">CultStatue</VisibleClasses>
   </Identity>
-  <BuildRestrictions>
-    <Territory>own neutral</Territory>
-  </BuildRestrictions>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      -units/{civ}_support_healer_b
-    </Entities>
-    <Technologies datatype="tokens">
-      heal_temple
-      health_regen_units
-    </Technologies>
-  </ProductionQueue>
-  <Upgrade>
-    <Unpack>
-      <Entity>structures/xion_temple_packed</Entity>
-      <Time>20</Time>
-    </Unpack>
-  </Upgrade>
   <Obstruction>
     <Static width="14.0" depth="14.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    </Entities>
+    <Technologies datatype="tokens">
+	  unlock_spies
+	  spy_counter
+    </Technologies>
+  </ProductionQueue>
+  <ResourceDropsite>
+    <Types>glory</Types>
+	<Sharable>false</Sharable>
+  </ResourceDropsite>
+  <ResourceSupply>
+    <KillBeforeGather>false</KillBeforeGather>
+    <Amount>Infinity</Amount>
+    <Type>glory.praise</Type>
+    <MaxGatherers>5</MaxGatherers>
+	<DiminishingReturns>0.90</DiminishingReturns>
+  </ResourceSupply>
+  <ResourceTrickle>
+    <Rates>
+      <glory>1.0</glory>
+    </Rates>
+    <Interval>2000</Interval>
+  </ResourceTrickle>
   <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Upgrade>
+    <Unpack>
+      <Entity>structures/scyth_temple_packed</Entity>
+      <Time>20</Time>
+    </Unpack>
+  </Upgrade>
   <VisualActor>
 	<ConstructionPreview disable=""/>
     <Actor>structures/xiongnu/temple.xml</Actor>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense_wall">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>12</BuildTime>
+  </Cost>
+  <Footprint>
+    <Square width="3.0" depth="11.0"/>
+    <Height>2.0</Height>
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+    <SpawnEntityOnDeath disable=""/>
+  </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Spikes Small</SpecificName>
+    <GenericName>Small Spikes</GenericName>
+    <VisibleClasses datatype="tokens">-StoneWall Palisade</VisibleClasses>
+    <Icon>structures/palisade_wall.png</Icon>
+	<RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Static width="3.0" depth="11.0"/>
+  </Obstruction>
+  <RallyPoint disable=""/>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>props/special/palisade_small_spikes.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>11</Length>
+    <Orientation>0.5</Orientation>
+  </WallPiece>
+</Entity>

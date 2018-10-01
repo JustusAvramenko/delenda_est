@@ -1,30 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_house">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
   <Footprint replace="">
     <Circle radius="10.0"/>
     <Height>10.0</Height>
   </Footprint>
+  <Cost>
+    <Resources>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
   <Identity>
     <Civ>scyth</Civ>
     <GenericName>Yurt</GenericName>
     <VisibleClasses datatype="tokens">Village House Yurt</VisibleClasses>
   </Identity>
-  <BuildRestrictions>
-    <Territory>own neutral</Territory>
-  </BuildRestrictions>
   <Obstruction>
     <Static width="14.0" depth="14.0"/>
   </Obstruction>
-  <ResourceDropsite>
-    <Types>food wood</Types>
-    <Sharable>false</Sharable> 
-  </ResourceDropsite>
+  <ProductionQueue>
+    <BatchTimeModifier>0.9</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}_support_citizen_house
+    </Entities>
+    <Technologies datatype="tokens">
+      -unlock_citizens_house_small
+	  -pop_house_01
+    </Technologies>
+  </ProductionQueue>
   <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
   <Upgrade>
-    <Pack>
-      <Entity>structures/xion_house_packed</Entity>
+    <PackHouse>
+      <Entity>structures/scyth_house_packed</Entity>
       <Time>10</Time>
-    </Pack>
+    </PackHouse>
+    <PackStorehouse>
+      <Entity>units/scyth_support_wagon</Entity>
+      <Time>10</Time>
+    </PackStorehouse>
   </Upgrade>
   <VisualActor>
 	<ConstructionPreview disable=""/>

@@ -150,7 +150,7 @@
 						Engine.PushGuiPage("page_manual.xml", {
 							"page": "manual/intro",
 							"title": getManual(),
-							"url": "http://trac.wildfiregames.com/wiki/0adManual"
+							"url": "https://trac.wildfiregames.com/wiki/0adManual"
 						});
 					</action>
 				</object>
@@ -165,7 +165,7 @@
 					<translatableAttribute id="caption">Tutorial</translatableAttribute>
 					<translatableAttribute id="tooltip">Start the economic tutorial.</translatableAttribute>
 					<action on="Press">
-						Engine.SwitchGuiPage("page_gamesetup.xml", { "type": "offline", "tutorial": true });
+						Engine.SwitchGuiPage("page_gamesetup.xml", { "tutorial": true });
 					</action>
 				</object>
 
@@ -219,7 +219,7 @@
 					<translatableAttribute id="caption">Matches</translatableAttribute>
 					<translatableAttribute id="tooltip">Click here to start a new single player game.</translatableAttribute>
 					<action on="Press">
-						Engine.SwitchGuiPage("page_gamesetup.xml", { "type": "offline" });
+						Engine.SwitchGuiPage("page_gamesetup.xml", {});
 					</action>
 				</object>
 
@@ -394,7 +394,7 @@
 					tooltip_style="pgToolTip"
 				>
 					<translatableAttribute id="caption">Mod Selection</translatableAttribute>
-					<translatableAttribute id="tooltip">Select mods to use.</translatableAttribute>
+					<translatableAttribute id="tooltip">Select and download mods for the game.</translatableAttribute>
 					<action on="Press">
 						Engine.SwitchGuiPage("page_modmod.xml");
 					</action>
@@ -544,11 +544,10 @@
 			</object>
 
 			<!-- PRE-RELEASE INFO -->
-			<object size="8 100%-390 100%-8 100%-100"
+			<object size="8 100%-420 100%-8 100%-94"
 				type="image"
 				style="TranslucentPanelThinBorder"
 			>
-
 				<!-- PRE-RELEASE WARNING -->
 				<object
 					font="sans-14"
@@ -570,24 +569,36 @@
 				<object type="button"
 					style="StoneButton"
 					tooltip_style="pgToolTip"
-					size="8 100%-144 50%-4 100%-116"
+					size="8 100%-180 50%-4 100%-152"
 				>
 					<translatableAttribute id="caption">Website</translatableAttribute>
 					<translatableAttribute id="tooltip">Click to open play0ad.com in your web browser.</translatableAttribute>
 					<action on="Press">
-						openURL("http://play0ad.com/");
+						openURL("https://play0ad.com/");
 					</action>
 				</object>
 
 				<object type="button"
 					style="StoneButton"
 					tooltip_style="pgToolTip"
-					size="50%+4 100%-144 100%-8 100%-116"
+					size="50%+4 100%-180 100%-8 100%-152"
 				>
 					<translatableAttribute id="caption">Chat</translatableAttribute>
 					<translatableAttribute id="tooltip">Click to open the 0 A.D. IRC chat in your browser. (#0ad on webchat.quakenet.org)</translatableAttribute>
 					<action on="Press">
-						openURL("http://webchat.quakenet.org/?channels=0ad");
+						openURL("https://webchat.quakenet.org/?channels=0ad");
+					</action>
+				</object>
+
+				<object type="button"
+					style="StoneButton"
+					tooltip_style="pgToolTip"
+					size="8 100%-144 100%-8 100%-116"
+				>
+					<translatableAttribute id="caption">Report a Bug</translatableAttribute>
+					<translatableAttribute id="tooltip">Click to visit 0 A.D. Trac to report a bug, crash, or error.</translatableAttribute>
+					<action on="Press">
+						openURL("https://trac.wildfiregames.com/wiki/ReportingErrors/");
 					</action>
 				</object>
 
@@ -596,10 +607,10 @@
 					tooltip_style="pgToolTip"
 					size="8 100%-108 100%-8 100%-80"
 				>
-					<translatableAttribute id="caption">Report a Bug</translatableAttribute>
-					<translatableAttribute id="tooltip">Click to visit 0 A.D. Trac to report a bug, crash, or error.</translatableAttribute>
+					<translatableAttribute id="caption">Translate the Game</translatableAttribute>
+					<translatableAttribute id="tooltip">Click to open the 0 A.D. translate page in your browser.</translatableAttribute>
 					<action on="Press">
-						openURL("http://trac.wildfiregames.com/wiki/ReportingErrors/");
+						openURL("https://trac.wildfiregames.com/wiki/Localization");
 					</action>
 				</object>
 
@@ -608,10 +619,10 @@
 					tooltip_style="pgToolTip"
 					size="8 100%-72 100%-8 100%-44"
 				>
-					<translatableAttribute id="caption">Translate the Game</translatableAttribute>
-					<translatableAttribute id="tooltip">Click to open the 0 A.D. translate page in your browser.</translatableAttribute>
+					<translatableAttribute id="caption">Donate</translatableAttribute>
+					<translatableAttribute id="tooltip">Help with the project expenses by donating.</translatableAttribute>
 					<action on="Press">
-						openURL("http://trac.wildfiregames.com/wiki/Localization");
+						openURL("https://play0ad.com/community/donate/");
 					</action>
 				</object>
 

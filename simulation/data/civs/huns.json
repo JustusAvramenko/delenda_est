@@ -1,0 +1,141 @@
+{
+	"Name": "Huns",
+	"Code": "huns",
+	"Culture":[ "nomadic" ],
+	"Region":[ "asia", "steppes", "europe" ],
+	
+	"Emblem": "session/portraits/emblems/emblem_xiongnu.png",
+	
+	"History": "The Huns are the consummate rushing faction.",
+	"Music":[
+		{"File":"Eastern_Thought.ogg", "Type":"peace"},
+		{"File":"Asian_Drums.ogg", "Type":"peace"},
+		{"File":"Opium.ogg", "Type":"peace"},
+		{"File":"Ripples.ogg", "Type":"peace"}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Nomadism",
+			"History": "The Huns were nomadic pastoral people.",
+			"Description": "Hunnic structures have no territory bonus and are weak, but are very cheap and quick to build."
+		},
+		{
+			"Name": "Parthian Tactics",
+			"History": "The Huns practice \"Parthian Shot\" tactics.",
+			"Description": "Ranged cavalry will automatically run away when enemies are near and turn to shoot them once minimum range has been met."
+		},
+		{
+			"Name": "Plunderers",
+			"History": "The Huns sustained their empire through tribute and plunder.",
+			"Description": "Every enemy unit killed or building destroyed gives additional resources to the Huns' treasury."
+		}
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Winds of the Steppe",
+			"History": ".",
+			"Description": "Allied cavalry move +20% faster and have +1 pierce armor."
+		}
+	],
+	"Factions":
+	[
+		{
+			"Name": "Huns",
+			"Description": "",
+			"Technologies":
+			[
+			],
+			"Heroes":
+			[
+			] 
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Corral",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		}
+	],
+	"WallSets":
+	[
+		"structures/huns_wallset_palisade"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/huns_civil_centre",
+			"Count": 1
+		},
+		{
+			"Template": "units/huns_support_wagon",
+			"Count": 1
+		},
+		{
+			"Template": "units/huns_support_citizen_female",
+			"Count": 4
+		},
+		{
+			"Template": "units/huns_champion_cavalry_archer",
+			"Count": 1
+		},
+		{
+			"Template": "units/huns_infantry_archer_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/huns_infantry_spearman_b",
+			"Count": 2
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/line_closed",
+		"special/formations/line_open",
+		"special/formations/column_closed",
+		"special/formations/wedge"
+	],
+	"AINames":
+	[
+		"Balamir",
+		"Oebarsius",
+		"Tuldila"
+	],
+		"SkirmishReplacements":
+	{	
+		"skirmish/units/default_support_female_citizen" : "units/huns_support_citizen_female",
+		"skirmish/units/default_support_citizen" : "units/huns_support_citizen_female",
+		"skirmish/units/default_cavalry": "units/huns_champion_cavalry_archer",
+		"skirmish/units/default_infantry_ranged_b": "units/huns_infantry_archer_b",
+		"skirmish/structures/default_corral": "structures/huns_stable",
+		"skirmish/structures/default_defense_tower": "structures/huns_outpost",
+		"skirmish/structures/default_fortress": "",
+		"skirmish/structures/default_house_5": "structures/huns_house",
+		"skirmish/structures/default_stoa": "structures/huns_house",
+		"skirmish/structures/default_house_10": "",
+		"skirmish/structures/default_wall_tower": "",
+		"skirmish/structures/default_wall_gate": "",
+		"skirmish/structures/default_wall_short": "",
+		"skirmish/structures/default_wall_medium": "",
+		"skirmish/structures/default_wall_long": "",
+		"skirmish/structures/default_field": "",
+		"skirmish/structures/default_farmstead": "structures/huns_market",
+		"skirmish/structures/default_market": "structures/huns_market",
+		"skirmish/structures/default_storehouse": "structures/huns_storehouse",
+		"skirmish/structures/default_dock": "",
+		"skirmish/units/special_starting_unit": "units/huns_support_wagon",
+		"skirmish/structures/default_civil_centre": "structures/huns_civil_centre",
+		"skirmish/structures/default_barracks": "structures/huns_barracks",
+		"skirmish/structures/default_stable": "structures/huns_stable",
+		"skirmish/structures/default_temple": "structures/huns_temple"
+	},
+	"SelectableInGameSetup": true
+}

@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defense_outpost">
-  <BuildRestrictions>
-    <Territory>own neutral enemy ally</Territory>
-  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>800</CapturePoints>
+  </Capturable>
   <Identity>
     <Civ>scyth</Civ>
-    <SpecificName>Scythian Outpost</SpecificName>
-    <History>.</History>
+    <SpecificName>Prophylax</SpecificName>
+    <History>*N/A*</History>
   </Identity>
-  <TerritoryInfluence disable=""/>
-  <Upgrade>
-    <Tower>
-      <Entity>structures/{civ}_defense_tower</Entity>
-      <Tooltip>Wooden Defense Towers offer greater protection than simple outposts, but have less scouting range.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
-      <Cost>
-        <wood>100</wood>
-      </Cost>
-      <Time>10</Time>
-    </Tower>
-  </Upgrade>
+  <Upgrade disable=""/>
   <VisualActor>
-    <Actor>structures/celts/outpost.xml</Actor>
+    <Actor>structures/hellenes/outpost.xml</Actor>
   </VisualActor>
 </Entity>

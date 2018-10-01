@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_blacksmith">
+  <BuildRestrictions>
+    <Territory>own neutral ally enemy</Territory>
+  </BuildRestrictions>
   <Cost>
     <PopulationBonus>2</PopulationBonus>
   </Cost>
@@ -7,31 +10,32 @@
     <Circle radius="16.0"/>
     <Height>8.0</Height>
   </Footprint>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/xion_support_wagon
-    </Entities>
-    <Technologies datatype="tokens">
-      unlock_champion_units_xion
-    </Technologies>
-  </ProductionQueue>
-  <BuildRestrictions>
-    <Territory>own neutral</Territory>
-  </BuildRestrictions>
-  <Upgrade>
-    <BlacksmithPacked>
-      <Entity>structures/xion_blacksmith_packed</Entity>
-      <Time>20</Time>
-    </BlacksmithPacked>
-  </Upgrade>
   <Identity>
     <Civ>scyth</Civ>
+    <VisibleClasses datatype="tokens">
+	  SiegeWorkshop
+	</VisibleClasses>
   </Identity>
   <Obstruction>
     <Static width="25.0" depth="25.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/scyth_support_wagon
+	  units/scyth_mechanical_siege_ram
+    </Entities>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
   <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Upgrade>
+    <BlacksmithPacked>
+      <Entity>structures/scyth_blacksmith_packed</Entity>
+      <Time>20</Time>
+    </BlacksmithPacked>
+  </Upgrade>
   <VisualActor>
     <ConstructionPreview disable=""/>
     <Actor>structures/xiongnu/blacksmith.xml</Actor>
