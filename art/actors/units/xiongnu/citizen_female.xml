@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/xion_bow.xml" attachpoint="weapon_L"/>
+        <prop actor="props/units/weapons/xion_bow_holder_fem.xml" attachpoint="sheath_R"/>
+        <prop actor="props/units/weapons/xion_quiver_cloth_cavalry_left.xml" attachpoint="sheath_L"/>
+        <prop actor="props/units/heads/head_female_xion.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="helmet">
+      <props>
+        <prop actor="props/units/helmets/xion_fem.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/head_female_xion.xml" attachpoint="head"/>
+      </props>
+    </variant>
+    <variant frequency="2" name="no helmet">
+      <props>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="gray light">
+      <textures>
+        <texture file="skeletal/xion_cloth_a.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="brown dark">
+      <textures>
+        <texture file="skeletal/xion_cloth_b.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="brown light">
+      <textures>
+        <texture file="skeletal/xion_cloth_c.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle">
+      <props>
+        <prop actor="" attachpoint="weapon_R"/>
+        <prop actor="" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="walk">
+      <props>
+        <prop actor="" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="run">
+      <props>
+        <prop actor="props/units/weapons/xion_bow.xml" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+   </group>
+   <group>
+    <variant file="biped/female_base_walk.xml"/>
+    <variant file="biped/female_carry_food.xml"/>
+    <variant file="biped/female_carry_meat.xml"/>
+    <variant file="biped/female_carry_wood.xml"/>
+    <variant file="biped/female_carry_stone.xml"/>
+    <variant file="biped/female_carry_metal.xml"/>
+  </group>
+  <group>
+    <variant name="Idle" frequency="1"/>
+    <variant file="biped/attack_ranged_archer_hip.xml">
+      <props>
+        <prop actor="props/units/weapons/xion_bow.xml" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/female_death.xml"/>
+    <variant file="biped/female_gather_tree.xml"/>
+    <variant file="biped/female_gather_grain.xml"/>
+    <variant file="biped/female_gather_fruit.xml"/>
+    <variant file="biped/female_gather_meat.xml"/>
+    <variant file="biped/female_gather_rock.xml"/>
+    <variant file="biped/female_gather_ore.xml"/>
+    <variant file="biped/female_gather_ruins.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/female_build.xml"/>
+    <variant file="biped/female_build_farm.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

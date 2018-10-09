@@ -9,8 +9,22 @@
   </Footprint>
   <Identity>
     <Civ>huns</Civ>
-    <Tooltip>Dropsite for food, wood, stone, and metal resources. Research gathering improvements for these resources. Train Slaves after building a Market.</Tooltip>
+    <Classes datatype="tokens">
+	  DropsiteFood
+	</Classes>
+    <Tooltip>Dropsite for food, wood, stone, and metal resources. Train Slaves after building a Market.</Tooltip>
   </Identity>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+      -pair_gather_01
+      -pair_gather_02
+      -pair_gather_03
+	  -gather_lumbering_bowsaw
+	  -gather_lumbering_twomansaw
+	  -gather_capacity_wheelbarrow
+	  -gather_capacity_handcarts
+    </Technologies>
+  </ProductionQueue>
   <ResourceDropsite>
     <Types>food wood stone metal</Types>
     <Sharable>true</Sharable>
