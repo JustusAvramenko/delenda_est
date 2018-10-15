@@ -21,11 +21,6 @@
 			"Description": "Hunnic structures have no territory bonus and are weak, but are very cheap and quick to build."
 		},
 		{
-			"Name": "Parthian Tactics",
-			"History": "The Huns practice \"Parthian Shot\" tactics.",
-			"Description": "Ranged cavalry will automatically run away when enemies are near and turn to shoot them once minimum range has been met."
-		},
-		{
 			"Name": "Plunderers",
 			"History": "The Huns sustained their empire through tribute and plunder.",
 			"Description": "Every enemy unit killed or building destroyed gives additional resources to the Huns' treasury."
@@ -36,7 +31,7 @@
 		{
 			"Name": "Winds of the Steppe",
 			"History": ".",
-			"Description": "Allied cavalry move +20% faster and have +1 pierce armor."
+			"Description": "Allied cavalry +10% faster and +1 pierce armor."
 		}
 	],
 	"Factions":
@@ -46,6 +41,16 @@
 			"Description": "",
 			"Technologies":
 			[
+				{
+					"Name": "Falconry",
+					"History": "Falconry is a steppe tradition.",
+					"Description": "All Structures and Cavalry +25% vision range. Cavalry +25% meat gathering rate."
+				},
+				{
+					"Name": "Parthian Tactics",
+					"History": "The Scythians practiced \"Parthian Shot\" tactics.",
+					"Description": "Ranged cavalry will automatically run away when enemies are near and turn to shoot them once minimum range has been met."
+				}
 			],
 			"Heroes":
 			[
@@ -71,7 +76,7 @@
 	"StartEntities":
 	[
 		{
-			"Template": "structures/huns_civil_centre",
+			"Template": "structures/huns_civil_centre_packed",
 			"Count": 1
 		},
 		{
@@ -79,7 +84,7 @@
 			"Count": 1
 		},
 		{
-			"Template": "units/huns_support_citizen_female",
+			"Template": "units/huns_support_citizen",
 			"Count": 4
 		},
 		{
@@ -112,14 +117,14 @@
 		"SkirmishReplacements":
 	{	
 		"skirmish/units/default_support_female_citizen" : "units/huns_support_citizen_female",
-		"skirmish/units/default_support_citizen" : "units/huns_support_citizen_female",
+		"skirmish/units/default_support_citizen" : "units/huns_support_citizen",
 		"skirmish/units/default_cavalry": "units/huns_champion_cavalry_archer",
 		"skirmish/units/default_infantry_ranged_b": "units/huns_infantry_archer_b",
 		"skirmish/structures/default_corral": "structures/huns_stable",
 		"skirmish/structures/default_defense_tower": "structures/huns_outpost",
 		"skirmish/structures/default_fortress": "",
 		"skirmish/structures/default_house_5": "structures/huns_house",
-		"skirmish/structures/default_stoa": "structures/huns_house",
+		"skirmish/structures/default_stoa": "units/huns_support_wagon",
 		"skirmish/structures/default_house_10": "",
 		"skirmish/structures/default_wall_tower": "",
 		"skirmish/structures/default_wall_gate": "",
@@ -132,7 +137,7 @@
 		"skirmish/structures/default_storehouse": "structures/huns_storehouse",
 		"skirmish/structures/default_dock": "",
 		"skirmish/units/special_starting_unit": "units/huns_support_wagon",
-		"skirmish/structures/default_civil_centre": "structures/huns_civil_centre",
+		"skirmish/structures/default_civil_centre": "structures/huns_civil_centre_packed",
 		"skirmish/structures/default_barracks": "structures/huns_barracks",
 		"skirmish/structures/default_stable": "structures/huns_stable",
 		"skirmish/structures/default_temple": "structures/huns_temple"
