@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>structural/chin_workshop.dae</mesh>
+      <props>
+        <prop actor="props/structures/chinese/workshop_cloth.xml" attachpoint="root"/>
+        <prop actor="props/structures/chinese/workshop_shoushe.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke01"/>
+        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke02"/>
+      </props>
+      <textures>
+        <texture file="structural/chin_struct2.png" name="baseTex"/>
+        <texture file="structural/chin_struct2_norm.png" name="normTex"/>
+        <texture file="structural/chin_struct2_spec.png" name="specTex"/>
+        <texture file="structural/ao/chin_workshop.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+   <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_chin.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
