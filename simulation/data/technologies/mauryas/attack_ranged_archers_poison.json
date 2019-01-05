@@ -1,0 +1,16 @@
+{
+	"pair": "mauryas/pair_03_ranged",	
+	"genericName": "Poison Arrows",
+	"description": ".",
+	"cost": {"food": 300, "wood": 300, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "arrow_poison.png",
+	"researchTime": 60,
+	"tooltip": "All archer units +20% pierce attack. TODO: Change this to be +15% Bonus vs. Infantry and Support units when possible.",
+	"modifications": [
+		{"value": "Attack/Ranged/Pierce", "multiply": 1.2}
+	],
+	"affects": ["Archer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

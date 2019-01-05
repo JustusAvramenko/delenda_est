@@ -1,0 +1,17 @@
+{
+	"pair": "mauryas/pair_armor_imperial_02",
+	"genericName": "Warrior Scale Armor",
+	"description": "Scale armor for the Yoddha Warrior.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 800},
+	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
+	"icon": "armor_plates_iron.png",
+	"researchTime": 60,
+	"tooltip": "Warrior champion infantry +2 hack armor levels and +2 crush armor Levels, but also +10 metal cost.",
+	"modifications": [
+	{"value": "Armour/Hack", "add": 2.0},
+	{"value": "Armour/Crush", "add": 2.0},
+	{"value": "Cost/Resources/metal", "add": 10}],
+	"affects": ["Mace"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
