@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_entity_full">
+<Entity>
+  <AIProxy/>
   <Armour>
     <Hack>1</Hack>
     <Pierce>1</Pierce>
@@ -53,9 +54,11 @@
   </Health>
   <Identity>
     <GenericName>Structure</GenericName>
+	<Civ>gaia</Civ>
     <Classes datatype="tokens">Structure ConquestCritical NotField</Classes>
     <Undeletable>false</Undeletable>
   </Identity>
+  <Looter/>
   <Minimap>
     <Type>structure</Type>
   </Minimap>
@@ -70,6 +73,14 @@
     <DeleteUponConstruction>false</DeleteUponConstruction>
   </Obstruction>
   <OverlayRenderer/>
+  <Ownership/>
+  <Position>
+    <Altitude>0</Altitude>
+    <Anchor>upright</Anchor>
+    <Floating>false</Floating>
+	<FloatDepth>0.0</FloatDepth>
+    <TurnRate>6.0</TurnRate>
+  </Position>
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
 	<TechCostMultiplier>
