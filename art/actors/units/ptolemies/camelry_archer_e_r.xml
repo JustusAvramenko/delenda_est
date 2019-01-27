@@ -2,14 +2,90 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="Base">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+    <variant frequency="1" name="Helmet+Coif-b">
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
       <props>
+        <prop actor="props/units/helmets/arab_helmet_basic.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/new/head_pers_a.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_bow"/>
+        <prop actor="props/units/helmets/arab_coif_camelry_archer_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet+Coif-e">
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/helmets/arab_helmet_basic.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmets/arab_coif_camelry_archer_e.xml" attachpoint="root"/>
         <prop actor="props/units/heads/new/head_pers_a.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_bow"/>
       </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="chainmail1a">
       <textures>
-        <texture file="skeletal/pers_car_a_r.png" name="baseTex"/>
+        <texture file="skeletal/arab/elite/chainmail1a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail1b">
+      <textures>
+        <texture file="skeletal/arab/elite/chainmail1b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail1c">
+      <textures>
+        <texture file="skeletal/arab/elite/chainmail1c.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail1d">
+      <textures>
+        <texture file="skeletal/arab/elite/chainmail1d.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail1e">
+      <textures>
+        <texture file="skeletal/arab/elite/chainmail1e.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail1f">
+      <textures>
+        <texture file="skeletal/arab/elite/chainmail1f.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail2a">
+      <mesh>skeletal/new/m_armor_dress.dae</mesh>
+      <textures>
+        <texture file="skeletal/arab/elite/chainmail2a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail2b">
+      <mesh>skeletal/new/m_armor_dress.dae</mesh>
+      <textures>
+        <texture file="skeletal/arab/elite/chainmail2b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail2c">
+      <mesh>skeletal/new/m_armor_dress.dae</mesh>
+      <textures>
+        <texture file="skeletal/arab/elite/chainmail2c.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail2d">
+      <mesh>skeletal/new/m_armor_dress.dae</mesh>
+      <textures>
+        <texture file="skeletal/arab/elite/chainmail2d.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail2e">
+      <mesh>skeletal/new/m_armor_dress.dae</mesh>
+      <textures>
+        <texture file="skeletal/arab/elite/chainmail2e.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail2f">
+      <mesh>skeletal/new/m_armor_dress.dae</mesh>
+      <textures>
+        <texture file="skeletal/arab/elite/chainmail2f.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
