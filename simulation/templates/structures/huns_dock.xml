@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_dock">
+  <Footprint>
+    <Square width="12.0" depth="24.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+<Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_celt_dock</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>huns</Civ>
+    <SpecificName>Counos</SpecificName>
+    <VisibleClasses datatype="tokens"></VisibleClasses>
+    <History></History>
+  </Identity>
+  <Obstruction>
+    <Static width="10.0" depth="22.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+    </Entities>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/britons/dock.xml</Actor>
+    <FoundationActor>structures/fndn_celt_dock.xml</FoundationActor>
+  </VisualActor>
+</Entity>
