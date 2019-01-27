@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_swordsman_shield_ready.xml">
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_celt_su3.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/celt_dip.xml" attachpoint="shield"/>
+        <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
+        <prop actor="props/temp/l_sheath.xml" attachpoint="sheath_L"/>
+        <prop actor="props/units/capes/swordsman_shield_ready_celt.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Celtic Ciumesti Helmet">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_ciumesti.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celtic Berru Helmet">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_berru.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celtic Marne Helmet">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_marne.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="chainmail-1">
+      <textures>
+        <texture file="skeletal/celt_su3_soldurii_1.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail-2">
+      <textures>
+        <texture file="skeletal/celt_su3_soldurii_2.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail-3">
+      <textures>
+        <texture file="skeletal/celt_su3_soldurii_3.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/death_infantry.xml">
+      <props>
+        <prop actor="props/units/capes/swordsman_shield_ready_celt.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
