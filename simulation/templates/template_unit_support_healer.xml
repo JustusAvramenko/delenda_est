@@ -30,6 +30,20 @@
     <Tooltip>Heal nearby units. Gather Glory at Cult Statues.</Tooltip>
     <Rank>Basic</Rank>
   </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+	<TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Technologies datatype="tokens">
+	  health_regen_units
+    </Technologies>
+  </ProductionQueue>
   <Promotion>
     <RequiredXp>200</RequiredXp>
   </Promotion>
