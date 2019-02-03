@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+   <script directory="gui/common/"/>
+   <script directory="gui/civsel/"/>
+   
+   <!-- Add a translucent black background to fade out the menu page -->
+   <object type="image" sprite="ModernFade"/>
+   
+   <object type="image" style="ModernDialog" size="50%-488 50%-360 50%+488 50%+360">
+	    <object style="ModernLabelText" type="text" size="50%-128 -18 50%+128 14">
+			<translatableAttribute id="caption">Civilization Selection</translatableAttribute>
+		</object>
+         <!-- draw space -->
+		<object type="image" size="0 40 100% 100%">
+			<repeat count="32" var="em">
+			    <object name="civ[em]" size="4 8 4+80 8+100">
+					<object name="emblem[em]" size="4 8 4+80 8+80">
+						<object type="image" style="EmblemImage" name="emblem[em]_img"/>
+						<object type="button" style="EmblemButton" name="emblem[em]_btn"/>
+					</object>
+					<object type="text" font="sans-bold-12" name="emblem[em]_name" textcolor="white" text_align="center"  size="4 8+80 100% 8+80+20"/>
+				</object>
+			</repeat>
+		</object>
+		<object sprite="ModernDarkBoxGold" type="image" size="70%+8 32 100%-16 100%-70">
+			<!-- Selection Details -->
+			<object
+				name="selected_heading"
+				type="text"
+				font="sans-bold-24"
+				textcolor="white"
+				text_align="center"
+				size="0 12 100% 40"
+			/>
+			
+			<object
+				name="selected_civs"
+				type="text"
+				font="sans-16"
+				textcolor="white"
+				text_align="center"
+				size="4 44 100%-4 100%-4"
+			/>
+			
+			<object size="8 48 100%-8 100%-8" type="image" sprite="ModernDarkBoxGold">
+				<object
+					name="selected_history"
+					type="text"
+					font="sans-14"
+					textcolor="white"
+					text_align="center"
+					size="4 4 100%-4 100%-4"
+				/>
+			</object>
+			
+		</object>
+		<object
+			name="selected_text"
+			type="text"
+			font="sans-12"
+			textcolor="green"
+			text_align="center"
+			text_valign="bottom"
+			size="70%+8 100%-64 100%-16 100%-48"
+		/>
+		<object type="button" style="ModernButtonRed" size="18 100%-45 50%-5 100%-17">
+			<translatableAttribute id="caption">Cancel</translatableAttribute>
+			<action on="Press">returnCiv(false);</action>
+		</object>
+		<object type="button" style="ModernButtonRed" size="50%+5 100%-45 100%-18 100%-17">
+		<translatableAttribute id="caption">Confirm</translatableAttribute>
+			<action on="Press">returnCiv(true);</action>
+		</object>
+   </object>
+</objects>
