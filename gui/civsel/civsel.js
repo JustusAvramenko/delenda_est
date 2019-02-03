@@ -14,7 +14,7 @@ var g_PlayerSlot;
 var g_Selected = {
 	"code": "athen"
 };
-var g_margin = 8;
+var g_margin = 16;
 function init(settings)
 {
 	g_PlayerSlot = settings.playerSlot;
