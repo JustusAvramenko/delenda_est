@@ -1639,6 +1639,9 @@ function onClientJoin(newGUID, newAssignments)
 		"guid": newGUID,
 		"username": playername
 	});
+	
+	    if (newGUID != Engine.GetPlayerGUID() && Object.keys(g_PlayerAssignments).length)
+	        soundNotification("gamesetup.join");
 
 	let isRejoiningPlayer = newAssignments[newGUID].player != -1;
 
