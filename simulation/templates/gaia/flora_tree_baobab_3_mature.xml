@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_flora_tree">
+  <Footprint>
+    <Circle radius="8.0"/>
+    <Height>15.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Baobab</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="12.0" depth="12.0"/>
+    <BlockFoundation>true</BlockFoundation>
+    <BlockConstruction>true</BlockConstruction>
+	<DeleteUponConstruction>false</DeleteUponConstruction>
+  </Obstruction>
+  <ResourceSupply>
+    <Amount>600</Amount>
+    <MaxGatherers>12</MaxGatherers>
+  </ResourceSupply>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <VisualActor>
+    <Actor>flora/trees/baobab_new.xml</Actor>
+  </VisualActor>
+</Entity>

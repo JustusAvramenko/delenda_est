@@ -299,7 +299,7 @@ var g_GameAttributes = { "settings": {} };
 
 /**
  * List of translated words that can be used to autocomplete titles of settings
- * and their values (for example playernames).
+ * and their values (for example player names).
  */
 var g_Autocomplete = [];
 
@@ -997,7 +997,7 @@ var g_MiscControls = {
 		},
 	},
 	"chatInput": {
-		"tooltip": () => colorizeAutocompleteHotkey(translate("Press %(hotkey)s to autocomplete playernames or settings.")),
+		"tooltip": () => colorizeAutocompleteHotkey(translate("Press %(hotkey)s to autocomplete player names or settings.")),
 	},
 	"cheatWarningText": {
 		"hidden": () => !g_IsNetworked || !g_GameAttributes.settings.CheatsEnabled,
@@ -2280,7 +2280,7 @@ function launchGame()
 			});
 	}
 
-	// Copy playernames for the purpose of replays
+	// Copy player names for the purpose of replays
 	for (let guid in g_PlayerAssignments)
 	{
 		let player = g_PlayerAssignments[guid];
@@ -2698,7 +2698,7 @@ function resetReadyData()
 }
 
 /**
- * Send a list of playernames and distinct between players and observers.
+ * Send a list of player names and distinct between players and observers.
  * Don't send teams, AIs or anything else until the game was started.
  * The playerData format from g_GameAttributes is kept to reuse the GUI function presenting the data.
  */
@@ -2782,7 +2782,7 @@ function sendRegisterGameStanza()
 
 /**
  * Figures out all strings that can be autocompleted and sorts
- * them by priority (so that playernames are always autocompleted first).
+ * them by priority (so that player names are always autocompleted first).
  */
 function updateAutocompleteEntries()
 {
