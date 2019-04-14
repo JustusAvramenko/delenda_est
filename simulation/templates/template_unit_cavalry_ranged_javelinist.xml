@@ -6,11 +6,15 @@
   </Armour>
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
+      <Hack>0</Hack>
       <Pierce>20.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>40</MaxRange>
-      <ProjectileSpeed>40.0</ProjectileSpeed>
+      <Crush>0</Crush>
+      <MaxRange>40.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <Projectile>
+        <Speed>40.0</Speed>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Support</PreferredClasses>
 	  <Bonuses>
 		<BonusPrimary>
 		  <Classes>Support</Classes>
@@ -25,7 +29,6 @@
 		  <Multiplier>0.5</Multiplier>
 		</CamelStench>
 	  </Bonuses>
-      <PreferredClasses datatype="tokens">Support</PreferredClasses>
     </Ranged>
   </Attack>
   <Cost>

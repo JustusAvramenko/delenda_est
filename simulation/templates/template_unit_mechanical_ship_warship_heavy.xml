@@ -10,20 +10,23 @@
       <Crush>50.0</Crush>
       <MaxRange>65.0</MaxRange>
       <MinRange>10.0</MinRange>
-      <ProjectileSpeed>40.0</ProjectileSpeed>
-	  <Gravity>9.81</Gravity>
       <PrepareTime>2000</PrepareTime>
       <RepeatTime>4000</RepeatTime>
-      <Spread>6.0</Spread>
-	  <Delay>0</Delay>
+      <Delay>0</Delay>
       <Splash>
         <Shape>Circular</Shape>
-        <Range>6</Range>
-        <FriendlyFire>true</FriendlyFire>
+        <Range>10.0</Range>
+        <FriendlyFire>false</FriendlyFire>
         <Hack>25.0</Hack>
         <Pierce>0.0</Pierce>
         <Crush>25.0</Crush>
       </Splash>
+      <Projectile>
+        <Speed>40.0</Speed>
+        <Spread>5.0</Spread>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+      </Projectile>
 	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
 	  <PreferredClasses datatype="tokens">Ship Structure</PreferredClasses>
     </Ranged>

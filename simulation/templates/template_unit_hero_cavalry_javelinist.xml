@@ -10,14 +10,19 @@
       <Hack>0.0</Hack>
       <Pierce>40.0</Pierce>
       <Crush>0.0</Crush>
-      <MaxRange>56</MaxRange>
+      <MaxRange>56.0</MaxRange>
       <MinRange>0.0</MinRange>
-      <ProjectileSpeed>40.0</ProjectileSpeed>
-	  <Gravity>9.81</Gravity>
       <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
-      <Spread>1.25</Spread>
-	  <Delay>0</Delay>
+      <Delay>0</Delay>
+      <Projectile>
+        <Speed>40.0</Speed>
+        <Spread>1.25</Spread>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+      </Projectile>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
 	  <Bonuses>
 		<BonusPrimary>
 		  <Classes>Support</Classes>
@@ -32,8 +37,6 @@
 		  <Multiplier>0.5</Multiplier>
 		</CamelStench>
 	  </Bonuses>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
-      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
     </Ranged>
   </Attack>
   <Identity>

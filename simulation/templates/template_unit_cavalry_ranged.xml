@@ -7,19 +7,22 @@
   </Armour>
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
+      <Hack>0</Hack>
       <Pierce>10.0</Pierce>
-      <Crush>0.0</Crush>
+      <Crush>0</Crush>
       <MaxRange>16.0</MaxRange>
       <MinRange>0.0</MinRange>
-      <ProjectileSpeed>25.0</ProjectileSpeed>
-	  <Gravity>9.81</Gravity>
       <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
+      <Delay>0</Delay>
+      <Projectile>
+        <Speed>25.0</Speed>
+        <Spread>1.75</Spread>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+      </Projectile>
       <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
 	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
-      <Spread>1.75</Spread>
-	  <Delay>0</Delay>
       <Bonuses>
         <Hunting>
           <Classes>Animal</Classes>

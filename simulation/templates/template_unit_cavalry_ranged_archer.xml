@@ -2,12 +2,17 @@
 <Entity parent="template_unit_cavalry_ranged">
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
+      <Hack>0</Hack>
       <Pierce>15.0</Pierce>
-      <Crush>0.0</Crush>
+      <Crush>0</Crush>
       <MaxRange>50.0</MaxRange>
-      <ProjectileSpeed>50.0</ProjectileSpeed>
-      <Spread>2.0</Spread>
+      <MinRange>0.0</MinRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Projectile>
+        <Speed>50.0</Speed>
+        <Spread>2.0</Spread>
+      </Projectile>
 	  <Bonuses>
 		<BonusPrimary>
 		  <Classes>Infantry Melee</Classes>

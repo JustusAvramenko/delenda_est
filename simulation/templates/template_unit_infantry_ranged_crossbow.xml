@@ -10,12 +10,20 @@ Weak Against: Spear Cavalry, Sword Cavalry.</Tooltip>
   </Identity>
   <Attack>
     <Ranged>
-      <Spread>1.8</Spread>  
       <Pierce op="mul">1.5</Pierce>
       <MaxRange op="mul">1.2</MaxRange>
-      <ProjectileSpeed>70.0</ProjectileSpeed>
       <PrepareTime>1500</PrepareTime>
       <RepeatTime>3000</RepeatTime>
+      <Projectile>
+        <Speed>70.0</Speed>
+        <Spread>1.8</Spread>
+      </Projectile>
+	  <Bonuses>
+		<BonusMeleeInfantry>
+		  <Classes>Infantry Melee</Classes>
+		  <Multiplier>1.25</Multiplier>
+		</BonusMeleeInfantry>
+	  </Bonuses>
     </Ranged>
   </Attack>
   <Cost>

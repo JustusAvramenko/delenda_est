@@ -10,18 +10,29 @@
       <Hack>0.0</Hack>
       <Pierce>0.0</Pierce>
       <Crush>100.0</Crush>
-      <MaxRange>80</MaxRange>
+      <MaxRange>80.0</MaxRange>
       <MinRange>16.0</MinRange>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>4000</RepeatTime>
+      <Delay>0</Delay>
       <Projectile>
+        <Speed>25.0</Speed>
+        <Spread>10.0</Spread>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
         <ImpactActorName>props/units/weapons/rock_explosion.xml</ImpactActorName>
         <ImpactAnimationLifetime>0.1</ImpactAnimationLifetime>
       </Projectile>
-      <ProjectileSpeed>25.0</ProjectileSpeed>
-	  <Gravity>9.81</Gravity>
-      <PrepareTime>2000</PrepareTime>
-      <RepeatTime>4000</RepeatTime>
-      <Spread>10.0</Spread>
-	  <Delay>0</Delay>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>10</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Hack>0.0</Hack>
+        <Pierce>15.0</Pierce>
+        <Crush>35.0</Crush>
+      </Splash>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
+	  <PreferredClasses datatype="tokens">Structure</PreferredClasses>
       <Bonuses>
         <BonusFort>
           <Classes>Fortress</Classes>
@@ -32,16 +43,6 @@
           <Multiplier>0.75</Multiplier>
         </NerfWall>
       </Bonuses>
-      <Splash>
-        <Shape>Circular</Shape>
-        <Range>10</Range>
-        <FriendlyFire>true</FriendlyFire>
-        <Hack>0.0</Hack>
-        <Pierce>15.0</Pierce>
-        <Crush>35.0</Crush>
-      </Splash>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
-	  <PreferredClasses datatype="tokens">Structure</PreferredClasses>
     </Ranged>
   </Attack>
   <Cost>

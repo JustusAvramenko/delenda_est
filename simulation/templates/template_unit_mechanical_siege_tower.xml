@@ -13,12 +13,15 @@
       <MaxRange>55.0</MaxRange>
       <MinRange>8.0</MinRange>
       <ElevationBonus>10</ElevationBonus>
-      <ProjectileSpeed>50.0</ProjectileSpeed>
-	  <Gravity>9.81</Gravity>
       <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
-      <Spread>2.0</Spread>
-	  <Delay>0</Delay>
+      <Delay>0</Delay>
+      <Projectile>
+        <Speed>50.0</Speed>
+        <Spread>2.0</Spread>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+      </Projectile>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
 	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
       <Bonuses>
@@ -27,6 +30,11 @@
           <Multiplier>2.0</Multiplier>
         </BonusPrimary>
       </Bonuses>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.175</LineThickness>
+      </RangeOverlay>
     </Ranged>
     <Capture>
       <Value>10</Value>
@@ -34,12 +42,6 @@
       <RepeatTime>1000</RepeatTime>
     </Capture>
   </Attack>
-  <BuildingAI>
-    <DefaultArrowCount>1</DefaultArrowCount>
-    <GarrisonArrowMultiplier>0.5</GarrisonArrowMultiplier>
-	<MaxArrowCount>10</MaxArrowCount>
-	<GarrisonArrowClasses>Infantry</GarrisonArrowClasses>
-  </BuildingAI>
   <Capturable>
     <CapturePoints>1000</CapturePoints>
     <RegenRate>0</RegenRate>
@@ -66,12 +68,12 @@
     <LoadingRange>2</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>500</Max>
+    <Max>800</Max>
   </Health>
   <Identity>
     <GenericName>Siege Tower</GenericName>
 	<VisibleClasses datatype="tokens">Ranged SiegeTower</VisibleClasses>
-    <Tooltip>Traits: Slow Speed, Heavy Armor, Capturable, Garrison up to 20 infantry inside to increase arrow count from 0 to 10.
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Capturable, Garrison up to 20 infantry inside.
 Strong Against: Buildings (2x attack, 10 capture).
 Weak Against: Melee Cavalry, Elephants, Siege Weapons.</Tooltip>
     <RequiredTechnology>phase_imperial</RequiredTechnology>

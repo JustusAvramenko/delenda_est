@@ -7,17 +7,20 @@
   </Armour>
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
+      <Hack>0</Hack>
       <Pierce>30.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>60</MaxRange>
+      <Crush>0</Crush>
+      <MaxRange>60.0</MaxRange>
       <MinRange>0.0</MinRange>
-      <ProjectileSpeed>50.0</ProjectileSpeed>
-	  <Gravity>9.81</Gravity>
       <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
-      <Spread>1.0</Spread>
-	  <Delay>0</Delay>
+      <Delay>0</Delay>
+      <Projectile>
+        <Speed>75.0</Speed>
+        <Spread>0.5</Spread>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+      </Projectile>
 	  <Bonuses>
 		<BonusMeleeInfantry>
 		  <Classes>Infantry Melee</Classes>

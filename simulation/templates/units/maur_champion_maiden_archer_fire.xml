@@ -5,10 +5,15 @@
       <Pierce op="add">-10.0</Pierce>
       <Crush op="add">10.0</Crush>
       <MaxRange op="add">-4.0</MaxRange>
-      <ProjectileSpeed>40.0</ProjectileSpeed>
-      <PrepareTime>2000</PrepareTime>
+      <PrepareTime>1500</PrepareTime>
       <RepeatTime>3000</RepeatTime>
-      <Spread op="add">1.5</Spread>
+      <Delay>0</Delay>
+      <Projectile>
+        <Speed>30.0</Speed>
+        <Spread>3.0</Spread>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+      </Projectile>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
     </Ranged>
   </Attack>

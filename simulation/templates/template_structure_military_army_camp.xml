@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military">
+  <Armour>
+    <Hack>10.0</Hack>
+    <Pierce>40.0</Pierce>
+    <Crush>10.0</Crush>
+    <Foundation>
+      <Hack>3.0</Hack>
+      <Pierce>8.0</Pierce>
+      <Crush>3.0</Crush>
+    </Foundation>
+  </Armour>
+  <Attack>
+    <Ranged>
+      <Hack>0.0</Hack>
+      <Pierce>20.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>50.0</MaxRange>
+      <MinRange>20.0</MinRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Delay>0</Delay>
+      <Projectile>
+        <Speed>50.0</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.175</LineThickness>
+      </RangeOverlay>
+    </Ranged>
+  </Attack>
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowMultiplier>0.5</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <BuildRestrictions>
+    <Territory>own neutral enemy ally</Territory>
+    <Category>ArmyCamp</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>2000</CapturePoints> 
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>5</GarrisonRegenRate> 
+  </Capturable>
+  <Cost>
+    <PopulationBonus>5</PopulationBonus>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <wood>400</wood>
+      <stone>0</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="40.0" depth="40.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>40</Max>
+    <List datatype="tokens">Support Infantry Cavalry Siege</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>6</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_rome_sb</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Entrenched Army Camp</GenericName>
+    <SpecificName>Castrum Vallum</SpecificName>
+    <VisibleClasses datatype="tokens">
+	  Military
+	  ArmyCamp
+	</VisibleClasses>
+    <Icon>structures/roman_camp.png</Icon>
+    <Tooltip>Build anywhere on the map, even in enemy territory. Construct siege weapons and train citizen-soldiers. Heal garrisoned units slowly.</Tooltip>
+    <History>Sometimes it was a temporary camp built facing the route by which the army is to march, other times a defensive or offensive (for sieges) structure. Within this gate the tents of the first centuries or cohorts are pitched, and the dragons (ensigns of cohorts) and other ensigns planted. The Decumane gate is directly opposite to the Praetorian in the rear of the camp, and through this the soldiers are conducted to the place appointed for punishment or execution.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="36.0" depth="36.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_broch.xml</select>
+      <constructed>interface/complete/building/complete_broch.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay>
+    <DecayRate>5</DecayRate>
+  </TerritoryDecay>
+  <TerritoryInfluence>
+    <Root>true</Root>
+    <Radius>0</Radius>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+  </ProductionQueue>
+  <Vision>
+    <Range>60</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/romans/camp.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+   <Length>29.5</Length>
+    <Indent>8.0</Indent>
+  </WallPiece>
+</Entity>

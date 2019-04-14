@@ -2,12 +2,14 @@
 <Entity parent="template_unit_cavalry_ranged_archer">
   <Attack>
     <Ranged>
-      <Spread>1.8</Spread>  
       <Pierce op="mul">1.5</Pierce>
       <MaxRange op="mul">1.2</MaxRange>
-      <ProjectileSpeed>70.0</ProjectileSpeed>
       <PrepareTime>1500</PrepareTime>
       <RepeatTime>3000</RepeatTime>
+      <Projectile>
+        <Speed>60.0</Speed>
+        <Spread>2.0</Spread>
+      </Projectile>
     </Ranged>
   </Attack>
   <Cost>

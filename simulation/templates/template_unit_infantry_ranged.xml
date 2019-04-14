@@ -2,25 +2,28 @@
 <Entity parent="template_unit_infantry">
   <Attack>
     <Ranged>
-      <Hack>0.0</Hack>
+      <Hack>0</Hack>
       <Pierce>1.0</Pierce>
-      <Crush>0.0</Crush>
-      <MaxRange>1.0</MaxRange>
-      <MinRange>1.0</MinRange>
-      <ProjectileSpeed>28.0</ProjectileSpeed>
-	  <Gravity>9.81</Gravity>
+      <Crush>0</Crush>
+      <MaxRange>10.0</MaxRange>
+      <MinRange>0.0</MinRange>
       <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
-      <Spread>2.0</Spread>
-	  <Delay>0</Delay>
+      <Delay>0</Delay>
+      <Projectile>
+        <Speed>30.0</Speed>
+        <Spread>2.0</Spread>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
       <Bonuses>
         <Hunting>
           <Classes>Animal</Classes>
           <Multiplier>2</Multiplier>
         </Hunting>
       </Bonuses>
-      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
     </Ranged>
   </Attack>
   <Cost>
