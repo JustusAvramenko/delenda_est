@@ -30,6 +30,7 @@
     <Height>2.5</Height>
   </Footprint>
   <Garrisonable/>
+  <Guard/>
   <Health>
     <DeathType>corpse</DeathType>
     <Max>100</Max>
@@ -115,18 +116,11 @@
     <CanGuard>true</CanGuard>
 	<CanPatrol>true</CanPatrol>
   </UnitAI>
-  <Guard/>
   <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
     <FormationController>false</FormationController>
     <WalkSpeed>10.0</WalkSpeed>
-    <Run>
-      <Speed>20.0</Speed>
-      <Range>50.0</Range>
-      <RangeMin>0.0</RangeMin>
-      <RegenTime>0.1</RegenTime>
-      <DecayTime>0.2</DecayTime>
-    </Run>
-    <PassabilityClass>default</PassabilityClass>
+    <RunMultiplier>1.67</RunMultiplier>
   </UnitMotion>
   <Visibility>
 	<RetainInFog>false</RetainInFog>
