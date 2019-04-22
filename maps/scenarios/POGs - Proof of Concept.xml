@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="6">
+	<Environment>
+		<SkySet>cirrus</SkySet>
+		<SunColor r="1.03107" g="1.03107" b="1.03107"/>
+		<SunElevation angle="0.885898"/>
+		<SunRotation angle="-0.61562"/>
+		<TerrainAmbientColor r="0.219608" g="0.294118" b="0.403922"/>
+		<UnitsAmbientColor r="0.372549" g="0.376471" b="0.419608"/>
+		<Fog>
+			<FogFactor>0.00195313</FogFactor>
+			<FogThickness>0.0351563</FogThickness>
+			<FogColor r="0.839216" g="0.866667" b="0.882353"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.0784314" g="0.247059" b="0.419608"/>
+				<Tint r="0" g="1" b="0.501961"/>
+				<Height>20.0394</Height>
+				<Waviness>3.02734</Waviness>
+				<Murkiness>0.882813</Murkiness>
+				<WindAngle>0.233165</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>-0.015625</Brightness>
+			<Contrast>0.984375</Contrast>
+			<Saturation>0.957031</Saturation>
+			<Bloom>0.160156</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="300.906" y="63.584" z="329.088"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "Name": "Unnamed map",
+  "Description": "Give an interesting description of your map.",
+  "PlayerData": [
+    null,
+    {
+      "Civ": "athen"
+    },
+    {
+      "Civ": "brit"
+    },
+    {
+      "Civ": "cart"
+    },
+    {
+      "Civ": "epir"
+    },
+    {
+      "Civ": "gaul"
+    },
+    {
+      "Civ": "han"
+    },
+    {
+      "Civ": "iber"
+    },
+    {
+      "Civ": "kush"
+    }
+  ],
+  "CircularMap": true,
+  "VictoryConditions": [
+    "conquest_structures"
+  ]
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="15">
+			<Template>gaia/ruins/column_doric</Template>
+			<Player>0</Player>
+			<Position x="313.14765" z="369.70798"/>
+			<Orientation y="2.75431"/>
+			<Actor seed="51784"/>
+		</Entity>
+		<Entity uid="16">
+			<Template>gaia/ruins/column_doric</Template>
+			<Player>0</Player>
+			<Position x="281.47718" z="373.53095"/>
+			<Orientation y="4.78774"/>
+			<Actor seed="52488"/>
+		</Entity>
+		<Entity uid="17">
+			<Template>gaia/ruins/unfinished_greek_temple</Template>
+			<Player>0</Player>
+			<Position x="310.24747" z="392.30652"/>
+			<Orientation y="-2.54122"/>
+			<Actor seed="50902"/>
+		</Entity>
+		<Entity uid="18">
+			<Template>gaia/ruins/stone_statues_roman</Template>
+			<Player>0</Player>
+			<Position x="281.75745" z="383.0409"/>
+			<Orientation y="-2.72448"/>
+			<Actor seed="12318"/>
+		</Entity>
+		<Entity uid="20">
+			<Template>gaia/treasure/stone</Template>
+			<Player>0</Player>
+			<Position x="292.10425" z="379.22529"/>
+			<Orientation y="-2.80945"/>
+		</Entity>
+		<Entity uid="22">
+			<Template>actor|structures/destruct_rome_cc.xml</Template>
+			<Position x="309.84675" z="393.23676"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="24024"/>
+		</Entity>
+		<Entity uid="23">
+			<Template>gaia/flora_tree_date_palm_dead</Template>
+			<Player>0</Player>
+			<Position x="285.53425" z="392.40342"/>
+			<Orientation y="-1.14925"/>
+			<Actor seed="41680"/>
+		</Entity>
+		<Entity uid="24">
+			<Template>gaia/flora_tree_date_palm_dead</Template>
+			<Player>0</Player>
+			<Position x="323.54361" z="378.27405"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="59770"/>
+		</Entity>
+		<Entity uid="25">
+			<Template>gaia/flora_tree_date_palm_dead</Template>
+			<Player>0</Player>
+			<Position x="328.8924" z="384.02582"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="21124"/>
+		</Entity>
+		<Entity uid="26">
+			<Template>gaia/flora_tree_cedar_atlas_4_dead</Template>
+			<Player>0</Player>
+			<Position x="290.10572" z="399.9604"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="3342"/>
+		</Entity>
+		<Entity uid="27">
+			<Template>gaia/flora_tree_oak_dead</Template>
+			<Player>0</Player>
+			<Position x="328.80173" z="407.14625"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="43650"/>
+		</Entity>
+		<Entity uid="28">
+			<Template>actor|props/structures/decals/spart_footpath.xml</Template>
+			<Position x="297.50162" z="377.37989"/>
+			<Orientation y="-2.47916"/>
+			<Actor seed="30070"/>
+		</Entity>
+		<Entity uid="29">
+			<Template>actor|props/structures/decals/spart_footpath.xml</Template>
+			<Position x="292.01078" z="373.01413"/>
+			<Orientation y="1.12687"/>
+			<Actor seed="10638"/>
+		</Entity>
+		<Entity uid="30">
+			<Template>actor|props/structures/decals/spart_footpath.xml</Template>
+			<Position x="285.1844" z="370.03418"/>
+			<Orientation y="-2.10744"/>
+			<Actor seed="60702"/>
+		</Entity>
+		<Entity uid="31">
+			<Template>actor|particle/flame_firepit_1.xml</Template>
+			<Position x="290.08982" z="391.38465"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="44324"/>
+		</Entity>
+		<Entity uid="32">
+			<Template>actor|particle/flame_firepit_2.xml</Template>
+			<Position x="283.53309" z="373.32798"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="18064"/>
+		</Entity>
+		<Entity uid="34">
+			<Template>actor|props/structures/xiongnu/firepit.xml</Template>
+			<Position x="321.6967" z="371.34607"/>
+			<Orientation y="-2.56615"/>
+			<Actor seed="14284"/>
+		</Entity>
+	</Entities>
+	<Paths/>
+</Scenario>

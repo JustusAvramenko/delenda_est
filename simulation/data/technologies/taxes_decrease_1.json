@@ -1,0 +1,17 @@
+{
+	"pair": "pair_taxes_01",
+	"genericName": "Decrease Taxes -20%",
+	"description": "Lower taxes may negatively affect the kingdom's treasury, but improve the economy in other areas.",
+	"cost": {"glory": 100},
+	"requirements": {"tech": "phase_village"},
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "coins.png",
+	"researchTime": 10,
+	"tooltip": "Tax paying units -10% coin trickle rate, but also +5% resource gathering rates.",
+	"modifications": [
+		{"value": "ResourceTrickle/Rates/coin", "multiply": 0.8},
+		{"value": "ResourceGatherer/BaseSpeed", "multiply": 1.1}
+	],
+	"affects": ["Citizen"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

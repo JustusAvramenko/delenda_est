@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_treasure">
+  <Footprint replace="">
+    <Circle radius="4.0"/>
+    <Height>2.0</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Stone Treasure</GenericName>
+    <Tooltip>A stony treasure that can be quickly gathered.</Tooltip>
+    <Icon>gaia/geology_stone_1.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="6.5" depth="6.5"/>
+  </Obstruction>
+  <ResourceSupply>
+    <Amount>300</Amount>
+    <Type>treasure.stone</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/resource/sel_stone.xml</select>
+    </SoundGroups>
+  </Sound>
+</Entity>
