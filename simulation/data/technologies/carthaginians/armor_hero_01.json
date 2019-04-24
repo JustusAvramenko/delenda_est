@@ -5,16 +5,16 @@
 		"sele": "Sidi̱ró Panoplía"
 	},
 	"description": "Body armor fashioned completely of iron, the hardest workable metal known to the ancients.",
-	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 800},
+	"cost": {"metal": 800},
 	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
 	"icon": "armor_cuirass_iron.png",
 	"researchTime": 60,
-	"tooltip": "All heroes +2 hack armor and +2 pierce armor, but also +50 metal cost.",
+	"tooltip": "All heroes +2 hack armor and +2 pierce armor, but also +50 coin cost.",
 	"modifications": [
 	{"value": "Armour/Hack", "add": 2.0},
 	{"value": "Armour/Pierce", "add": 2.0},
-	{"value": "Cost/Resources/metal", "add": 50}],
+	{"value": "Cost/Resources/coin", "add": 50}],
 	"affects": ["Hero"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

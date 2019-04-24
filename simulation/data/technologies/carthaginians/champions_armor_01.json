@@ -2,16 +2,16 @@
 	"pair": "carthaginians/pair_champs_temple_01",
 	"genericName": "State-Issued Armor",
 	"description": "Armor for the Sacred Band, provided by the Carthaginian state.",
-	"cost": {"food": 0, "wood": 0, "glory": 200, "metal": 300},
+	"cost": {"glory": 200, "metal": 300},
 	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "cart"}]},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "shields_hellenes.png",
 	"researchTime": 40,
-	"tooltip": "Temple Champions +1 hack armor and +1 pierce armor, but also +10% metal cost.",
+	"tooltip": "Temple Champions +1 hack armor and +1 pierce armor, but also +10% coin cost.",
 	"modifications": [
 		{"value": "Armour/Hack", "add": 1.0},
 		{"value": "Armour/Pierce", "add": 1.0},
-		{"value": "Cost/Resources/metal", "multiply": 1.1}
+		{"value": "Cost/Resources/coin", "multiply": 1.1}
 	],
 	"affects": ["Champion Infantry", "Champion Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

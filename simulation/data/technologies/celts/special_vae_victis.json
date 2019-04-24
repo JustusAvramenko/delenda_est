@@ -4,14 +4,14 @@
 		"gaul": "Vae Victis"
 	},
 	"description": ".",
-	"cost": {"food": 500, "wood": 0, "stone": 0, "glory": 250},
+	"cost": {"food": 500, "glory": 250},
 	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "civ": "celt" }, { "civ": "brit" }, { "civ": "gaul" }] }] },
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "coinage.png",
 	"researchTime": 40,
-	"tooltip": "All Soldiers +10 metal loot for every enemy unit killed or structure destroyed.",
+	"tooltip": "All Soldiers +10 coin loot for every enemy unit killed or structure destroyed.",
 	"modifications": [
-		{"value": "Looter/Resource/metal", "add": 10}
+		{"value": "Looter/Resource/coin", "add": 10}
 	],
 	"affects": ["Soldier"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
