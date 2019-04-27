@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive">
+  <Armour>
+    <Hack>4</Hack>
+    <Pierce>20</Pierce>
+    <Crush>2</Crush>
+  </Armour>
+  <BuildRestrictions>
+    <PlacementType>land-shore</PlacementType>
+    <Category>Wall</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <wood>10</wood>
+    </Resources>
+  </Cost>
+  <GarrisonHolder disable=""/>
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Palisade</VisibleClasses>
+    <GenericName>Wooden Wall</GenericName>
+    <SpecificName>Palisade</SpecificName>
+    <SelectionGroupName>other/wallset_palisade</SelectionGroupName>
+    <Tooltip>A wooden palisade, little better than a fence.</Tooltip>
+    <Icon>structures/palisade_wall.png</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <wood>5</wood>
+  </Loot>
+  <ProductionQueue disable=""/>
+  <RallyPoint disable=""/>
+  <Repairable>
+    <RepairTimeRatio>4.5</RepairTimeRatio>
+  </Repairable>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_wall.xml</select>
+      <constructed>interface/complete/building/complete_wall.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence disable=""/>
+  <Vision>
+    <Range>10</Range>
+  </Vision>
+</Entity>
