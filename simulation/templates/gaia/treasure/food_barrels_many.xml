@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_treasure_food">
+  <Footprint replace="">
+    <Circle radius="4.0"/>
+    <Height>2.5</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Casks of Wine</SpecificName>
+  </Identity>
+  <ResourceSupply>
+    <Amount>300</Amount>
+  </ResourceSupply>
+  <Selectable replace="">
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <VisualActor>
+    <Actor>props/structures/britons/workshop_barrels_01.xml</Actor>
+  </VisualActor>
+</Entity>
