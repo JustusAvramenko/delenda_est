@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/pers_apadana">
+  <Identity>
+    <Icon>structures/lamassu_stone.png</Icon>
+  </Identity>
+  <ResourceTrickle>
+    <Rates>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>50</stone>
+      <metal>0</metal>
+      <coin>0</coin>
+      <glory>0</glory>
+    </Rates>
+    <Interval>5000</Interval>
+  </ResourceTrickle>
+  <Upgrade>
+    <TributeStone disable=""/>
+    <TributeFood>
+      <Entity>structures/pers_apadana_food</Entity>
+      <Tooltip>Receive free Food tribute to your treasury from your subject peoples.</Tooltip>
+	  <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
+      <Cost>
+        <glory>100</glory>
+      </Cost>
+      <Time>5</Time>
+    </TributeFood>
+    <TributeWood>
+      <Entity>structures/pers_apadana_wood</Entity>
+      <Tooltip>Receive free Wood tribute to your treasury from your subject peoples.</Tooltip>
+	  <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
+      <Cost>
+        <glory>100</glory>
+      </Cost>
+      <Time>5</Time>
+    </TributeWood>
+    <TributeMetal>
+      <Entity>structures/pers_apadana_metal</Entity>
+      <Tooltip>Receive free Metal tribute to your treasury from your subject peoples.</Tooltip>
+	  <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
+      <Cost>
+        <glory>100</glory>
+      </Cost>
+      <Time>5</Time>
+    </TributeMetal>
+    <TributeCoin>
+      <Entity>structures/pers_apadana_coin</Entity>
+      <Tooltip>Receive free Coin tribute to your treasury from your subject peoples.</Tooltip>
+	  <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
+      <Cost>
+        <glory>100</glory>
+      </Cost>
+      <Time>5</Time>
+    </TributeCoin>
+  </Upgrade>
+</Entity>
