@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special_theatron">
+  <Auras disable=""/>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>300</wood>
+      <stone>300</stone>
+      <metal>0</metal>
+      <coin>0</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>gaul</Civ>
+    <GenericName>Assembly of Princes</GenericName>
+    <SpecificName>Remogantion</SpecificName>
+    <Tooltip>Train Heroes and the Carnyx special soldier.</Tooltip>
+    <Icon>structures/tholos.png</Icon>
+  </Identity>
+  <Footprint replace="">
+    <Circle radius="16"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+	<TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <coin>1.0</coin>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Entities datatype="tokens">
+      units/{civ}_champion_infantry_carnyx
+      units/{civ}_hero_brennus
+      units/{civ}_hero_viridomarus
+      units/{civ}_hero_vercingetorix
+    </Entities>
+    <Technologies datatype="tokens">
+	  celts/special_vae_victis
+	  unlock_spies
+	  spy_counter
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_tholos.xml</select>
+      <constructed>interface/complete/building/complete_tholos.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <Obstruction>
+    <Static width="30" depth="30"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/gauls/theatron.xml</Actor>
+    <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
+  </VisualActor>
+</Entity>

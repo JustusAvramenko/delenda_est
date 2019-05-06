@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_carnyx.xml">
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/celt_scabbard_iron.xml" attachpoint="sheath_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Carnyx 01">
+      <props>
+        <prop actor="props/units/celt_carnyx_a.xml" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Carnyx 02">
+      <props>
+        <prop actor="props/units/celt_carnyx_b.xml" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Celtic Alesia-01">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_alesia_01.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celtic Alesia-02">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_alesia_02.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celtic Alesia-03">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_alesia_03.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="armour-1">
+      <textures>
+        <texture file="skeletal/gaul_chainmail4.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="armour-2">
+      <textures>
+        <texture file="skeletal/gaul_chainmail5.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="armour-3">
+      <textures>
+        <texture file="skeletal/gaul_chainmail6.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="armour-4">
+      <textures>
+        <texture file="skeletal/gaul_chainmail7.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
