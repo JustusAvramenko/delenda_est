@@ -1,38 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" file="quadraped/base_horse_spearman.xml" name="Base">
-      <mesh>skeletal/horse.dae</mesh>
+    <variant frequency="1" file="quadraped/base_horse_spearman.xml" name="Spearman Horse">
+      <mesh>skeletal/horse_lusitano.dae</mesh>
       <props>
         <prop actor="units/romans_imperial/cavalry_spearman_aux_r.xml" attachpoint="rider"/>
-        <prop actor="props/units/horse/horse_chest_colorband.xml" attachpoint="chest"/>
-        <prop actor="props/horse/cav_saddle_rome.xml" attachpoint="root"/>
         <prop actor="props/horse/cav_blanket_rome.xml" attachpoint="root"/>
+        <prop actor="props/horse/chest_colorband_01.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_rein_spearman.xml" attachpoint="root"/>
       </props>
-      <textures>
-        <texture file="skeletal/horse_rome_su2_01.dds" name="baseTex"/>
-      </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="horse-color-black">
-      <color>35 35 35</color>
-    </variant>
-    <variant frequency="1" name="horse-color-brown">
-      <color>145 85 45</color>
-    </variant>
-    <variant frequency="1" name="horse-color-roan">
-      <color>210 190 125</color>
-    </variant>
-    <variant frequency="1" name="horse-color-white">
-      <color>255 255 255</color>
-    </variant>
+    <variant file="quadraped/horse/black.xml" frequency="1" name="black"/>
+    <variant file="quadraped/horse/brown.xml" frequency="1" name="brown"/>
+    <variant file="quadraped/horse/beige.xml" frequency="1" name="beige"/>
+    <variant file="quadraped/horse/tan.xml" frequency="1" name="tan"/>
+    <variant file="quadraped/horse/cherrybay.xml" frequency="1" name="cherrybay"/>
+    <variant file="quadraped/horse/white.xml" frequency="1" name="white"/>
+    <variant file="quadraped/horse/gray.xml" frequency="1" name="gray"/>
+    <variant file="quadraped/horse/halflinger.xml" frequency="1" name="halflinger"/>
+    <variant file="quadraped/horse/brown_spotted_01.xml" frequency="1" name="Brown-Spotted-01"/>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
     <variant file="quadraped/base_horse_death.xml"/>
     <variant file="quadraped/base_horse_run.xml"/>
+    <variant name="gather_meat">
+      <props>
+        <prop actor="" attachpoint="rider"/>
+        <prop actor="units/romans_imperial/cavalry_spearman_aux_r.xml" attachpoint="rider_R"/>
+      </props>
+    </variant>
   </group>
-  <material>objectcolor.xml</material>
+  <material>basic_trans_parallax_spec.xml</material>
 </actor>

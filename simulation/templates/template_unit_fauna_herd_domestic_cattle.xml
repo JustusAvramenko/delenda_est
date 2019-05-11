@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_fauna_hunt">
+<Entity parent="template_unit_fauna_herd_domestic">
+  <Cost>
+    <BuildTime>90</BuildTime>
+    <Resources>
+      <food>150</food>
+    </Resources>
+  </Cost>
   <Footprint>
     <Circle radius="2.0"/>
     <Height>3.0</Height>
@@ -11,7 +17,4 @@
     <WalkSpeed op="mul">0.4</WalkSpeed>
     <RunMultiplier>1.4</RunMultiplier>
   </UnitMotion>
-  <UnitAI>
-    <NaturalBehaviour>passive</NaturalBehaviour>
-  </UnitAI>
 </Entity>
