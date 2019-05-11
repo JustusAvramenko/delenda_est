@@ -10,10 +10,44 @@
         <prop actor="props/units/weapons/jav_loaded.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/jav_ammo.xml" attachpoint="ammo"/>
         <prop actor="props/units/capes/rider/javelinist_ready_shield.xml" attachpoint="root"/>
-        <prop actor="props/units/shields/cart_tarantine_a.xml" attachpoint="shield"/>
+        <prop actor="props/units/shields/cart_tarantine_a.xml" attachpoint="shield_arm"/>
       </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="psiloi-padded1a">
       <textures>
-        <texture file="skeletal/hele_cjv_a_1.dds" name="baseTex"/>
+        <texture file="skeletal/hele_psiloi_padded_1_a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="psiloi-2">
+      <textures>
+        <texture file="skeletal/hele_psiloi_e.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="psiloi-3">
+      <textures>
+        <texture file="skeletal/hele_psiloi_padded_1_d.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="psiloi-4">
+      <textures>
+        <texture file="skeletal/hele_slinger_e2.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="psiloi-5">
+      <textures>
+        <texture file="skeletal/hele_epilektoi_6.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="psiloi-6">
+      <textures>
+        <texture file="skeletal/hele_epilektoi_8.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="psiloi-7">
+      <textures>
+        <texture file="skeletal/hele_epilektoi_9.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
@@ -23,7 +57,7 @@
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
-    <variant file="biped/attack_ranged_cavalry_javelin_cape.xml"/>
+    <variant file="biped/attack_ranged_cavalry_javelin.xml"/>
     <variant file="biped/rider/promotion_shield.xml" />
     <variant file="biped/rider/attack_slaughter_shield.xml"/>
     <variant file="biped/gather_meat.xml"/>
