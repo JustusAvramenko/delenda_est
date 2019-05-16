@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special_merc_camp">
   <Identity>
-    <Civ>kush</Civ>
-    <GenericName>Blemmye Desert Encampment</GenericName>
-	<SpecificName>Blemmye Desert Encampment</SpecificName>
-    <History>.</History>
+    <GenericName>Mercenary Camp</GenericName>
+	<SpecificName>Misthophóron</SpecificName>
+    <History>Mercenaries were ubiquitous in the armies of the Hellenistic age.</History>
   </Identity>
-  <Obstruction>
-    <Static width="28.0" depth="28.0"/>
-  </Obstruction>
   <ProductionQueue>
 	<Entities datatype="tokens">
-	  units/mercenaries/blemm_infantry_1
-	  units/mercenaries/blemm_camelry_1
-	  units/mercenaries/blemm_camelry_2
 	  units/{civ}_merc_infantry_1
 	  units/{civ}_merc_infantry_2
 	  units/{civ}_merc_infantry_3
@@ -26,6 +19,7 @@
 	</Entities>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/mercenaries/camp_blemmye.xml</Actor>
+    <Actor>structures/mercenaries/camp_successor.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
 </Entity>

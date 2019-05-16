@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_cavalry_melee_swordsman">
+  <Auras datatype="tokens">
+    camel_stench
+  </Auras>
+  <Identity>
+    <GenericName>Blemmye Camelry Swordsman</GenericName>
+    <SpecificName>Blemmye Camelry Swordsman</SpecificName>
+    <VisibleClasses datatype="tokens">Camel</VisibleClasses>
+    <Icon>units/kush_merc_cavalry_1.png</Icon>
+    <Tooltip>Traits: Fast Speed, Charge, Trample, Stench.
+Strong Against: Ranged Infantry (1.5x), Ranged Cavalry (1.5x), Siege Weapons (2x), All Cavalry.
+Weak Against: Pike Infantry, Spear Infantry, Elephants, Other Camels.</Tooltip>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/camel_select.xml</select>
+      <order_walk>actor/fauna/movement/camel_order.xml</order_walk>
+      <death>actor/fauna/death/death_camel.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.5</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.85</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/sudan_camelry_swordsman.xml</Actor>
+  </VisualActor>
+</Entity>

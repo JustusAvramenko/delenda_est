@@ -12,11 +12,13 @@
   </Capturable>
   <Cost>
     <PopulationBonus>10</PopulationBonus>
-	<BuildTime>300</BuildTime>
+	<BuildTime>200</BuildTime>
     <Resources>
-      <wood>100</wood>
+      <wood>200</wood>
       <stone>0</stone>
-      <metal>100</metal>
+      <metal>0</metal>
+      <coin>100</coin>
+      <glory>0</glory>
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -36,7 +38,7 @@
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <Civ>merc</Civ>
+    <Civ>gaia</Civ>
 	<GenericName>Mercenary Camp</GenericName>
 	<SpecificName>Needs Specific Name</SpecificName>
     <VisibleClasses datatype="tokens">MercenaryCamp</VisibleClasses>
@@ -50,17 +52,6 @@
   </Obstruction>
   <ProductionQueue>
 	<BatchTimeModifier>0.8</BatchTimeModifier>
-	<Entities datatype="tokens">
-	  units/{civ}_merc_infantry_1
-	  units/{civ}_merc_infantry_2
-	  units/{civ}_merc_infantry_3
-	  units/{civ}_merc_cavalry_1
-	  units/{civ}_merc_cavalry_2
-	  units/{civ}_merc_cavalry_3
-	  units/{civ}_merc_camelry_1
-	  units/{civ}_merc_camelry_2
-	  units/{civ}_merc_camelry_3
-	</Entities>
 	<Technologies datatype="tokens">
 	  mercenaries/attack_health_mercenaries
 	  mercenaries/athen_reforms
@@ -82,6 +73,6 @@
   <TerritoryInfluence disable=""/>
   <VisualActor>
     <Actor>structures/mercenaries/camp_egyptian.xml</Actor>
-	<FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+	<FoundationActor>structures/fndn_6x6.xml</FoundationActor>
   </VisualActor>
 </Entity>

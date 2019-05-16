@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special_merc_camp">
   <Identity>
-    <Civ>gaia</Civ>
-    <GenericName>Mercenary Camp</GenericName>
-	<SpecificName>Misthophóron</SpecificName>
-    <History>.</History>
+    <SpecificName>Bedouin Encampment</SpecificName>
   </Identity>
   <Obstruction>
     <Static width="28.0" depth="28.0"/>
   </Obstruction>
+  <ProductionQueue>
+	<Entities datatype="tokens">
+	  units/mercenaries/bedouin_infantry_1
+	  units/mercenaries/bedouin_infantry_2
+	  units/mercenaries/bedouin_camelry_1
+	</Entities>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/mercenaries/camp_blemmye.xml</Actor>
   </VisualActor>

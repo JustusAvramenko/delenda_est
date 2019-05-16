@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_cavalry_ranged_archer">
+  <Auras datatype="tokens">
+    camel_stench
+  </Auras>
+  <Identity>
+    <GenericName>Bedouin Camelry Archer</GenericName>
+	<Icon>units/ptol_camelry_archer.png</Icon>
+    <Tooltip>Traits: Long Range, Medium Speed, Light Armor, Harassment.
+Strong Against: Pike Infantry, Spear Infantry, Sword Infantry.
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants.</Tooltip>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/camel_select.xml</select>
+      <order_walk>actor/fauna/movement/camel_order.xml</order_walk>
+      <death>actor/fauna/death/death_camel.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.5</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.85</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/ptolemies/camelry_archer_a_m.xml</Actor>
+  </VisualActor>
+</Entity>
