@@ -1,32 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <actor version="1">
   <castshadow/>
   <group>
     <variant frequency="1" file="quadraped/base_horse_swordsman.xml" name="Base">
-      <mesh>skeletal/horse.dae</mesh>
+      <mesh>skeletal/horse_barb.dae</mesh>
       <props>
         <prop actor="units/chinese_han/cavalry_scout_r.xml" attachpoint="rider"/>
-        <prop actor="props/horse/cav_rein_swordsman.xml" attachpoint="head"/>
+        <prop actor="props/horse/cav_blanket_kush.xml" attachpoint="root"/>
+        <prop actor="props/horse/chest_colorband_01.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_rein_spearman.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="2" name="horse-color-palamino">
-      <color>206 199 147</color>
-      <textures><texture file="skeletal/horse_hele_b.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="horse-color-strawberryroan">
-      <color>210 166 136</color>
-      <textures><texture file="skeletal/horse_hele_c.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="2" name="horse-color-dun">
-      <color>196 145 111</color>
-      <textures><texture file="skeletal/horse_hele_a.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="horse-color-gray">
-      <color>212 212 212</color>
-      <textures><texture file="skeletal/horse_hele_a.dds" name="baseTex"/></textures>
-    </variant>
+    <variant file="quadraped/horse/brown.xml" frequency="1" name="brown"/>
+    <variant file="quadraped/horse/dark_chestnut.xml" frequency="1" name="dark_chestnut"/>
+    <variant file="quadraped/horse/fading_black.xml" frequency="1" name="fading_black"/>
+    <variant file="quadraped/horse/black_spotted.xml" frequency="1" name="black_spotted"/>
+    <variant file="quadraped/horse/cherrybay.xml" frequency="1" name="cherrybay"/>
+    <variant file="quadraped/horse/gray.xml" frequency="1" name="gray"/>
+    <variant file="quadraped/horse/halflinger.xml" frequency="1" name="halflinger"/>
+    <variant file="quadraped/horse/chestnut_02.xml" frequency="1" name="chestnut-02"/>
+    <variant file="quadraped/horse/chestnut_01.xml" frequency="1" name="chestnut-01"/>
+    <variant file="quadraped/horse/bay_01.xml" frequency="1" name="bay_01"/>
+    <variant file="quadraped/horse/bay_02.xml" frequency="1" name="bay_02"/>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
@@ -35,9 +32,9 @@
     <variant name="gather_meat">
       <props>
         <prop actor="" attachpoint="rider"/>
-        <prop actor="units/hellenes/cavalry_scout_r.xml" attachpoint="rider_R"/>
+        <prop actor="units/chinese_han/cavalry_scout_r.xml" attachpoint="rider_R"/>
       </props>
     </variant>
   </group>
-  <material>objectcolor.xml</material>
+  <material>basic_trans_parallax_spec.xml</material>
 </actor>

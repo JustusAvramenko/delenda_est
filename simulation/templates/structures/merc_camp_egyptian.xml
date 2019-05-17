@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special_merc_camp">
   <Identity>
-	<SpecificName>Misthophóron</SpecificName>
+	<SpecificName>Egyptian Encampment</SpecificName>
     <History>The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and foreign mercenaries for the bulk of its military force, mainly because the loyalty of native Egyptian units was often suspect. Indeed, during one native uprising, Upper Egypt was lost to the Ptolemies for decades. Mercenaries were often battle-hardened and their loyalty can be bought, sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt under the Ptolemies was so prosperous as to be the richest of Alexander's successor states.</History>
   </Identity>
   <ProductionQueue>
 	<Entities datatype="tokens">
-	  units/{civ}_merc_infantry_1
-	  units/{civ}_merc_infantry_2
-	  units/{civ}_merc_infantry_3
-	  units/{civ}_merc_cavalry_1
-	  units/{civ}_merc_cavalry_2
-	  units/{civ}_merc_cavalry_3
-	  units/{civ}_merc_camelry_1
-	  units/{civ}_merc_camelry_2
-	  units/{civ}_merc_camelry_3
+	  units/mercenaries/egypt_infantry_1
+	  units/mercenaries/egypt_infantry_2
+	  units/mercenaries/egypt_cavalry_1
 	</Entities>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/mercenaries/camp_egyptian.xml</Actor>
+    <Actor>structures/mercenaries/camp_blemmye.xml</Actor>
   </VisualActor>
 </Entity>

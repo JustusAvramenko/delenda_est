@@ -1,62 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <actor version="1">
   <castshadow/>
   <group>
     <variant frequency="1" file="quadraped/base_horse_swordsman.xml" name="Base">
-      <mesh>skeletal/horse.dae</mesh>
+      <mesh>skeletal/horse_barb.dae</mesh>
       <props>
         <prop actor="units/chinese_han/hero_liu_bang.xml" attachpoint="rider"/>
-        <prop actor="props/horse/cav_rein_swordsman_shield.xml" attachpoint="head"/>
+        <prop actor="props/horse/cav_blanket_kush.xml" attachpoint="root"/>
+        <prop actor="props/horse/chest_colorband_01.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_rein_spearman.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="7" name="feet">
-      <textures><texture file="skeletal/horse_celt_feet_a.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="5" name="blaze">
-      <textures><texture file="skeletal/horse_celt_blaze_a.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="5" name="face">
-      <textures><texture file="skeletal/horse_celt_face_a.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="7" name="star">
-      <textures><texture file="skeletal/horse_celt_star_a.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="3" name="dapple">
-      <textures><texture file="skeletal/horse_celt_dapple_a.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="2" name="snip">
-      <textures><texture file="skeletal/horse_celt_snip_a.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="5" name="stripe">
-      <textures><texture file="skeletal/horse_celt_stripe_a.dds" name="baseTex"/></textures>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="2" name="black">
-      <color>81 81 85</color>
-    </variant>
-    <variant frequency="2" name="chocolate">
-      <color>98 68 58</color>
-    </variant>
-    <variant frequency="2" name="chestnut">
-      <color>248 132 86</color>
-    </variant>
-    <variant frequency="2" name="roan">
-      <color>242 219 164</color>
-    </variant>
-    <variant frequency="2" name="liver">
-      <color>172 95 68</color>
-    </variant>
-    <variant frequency="2" name="brown">
-      <color>255 148 89</color>
-    </variant>
+    <variant file="quadraped/horse/brown.xml" frequency="1" name="brown"/>
+    <variant file="quadraped/horse/dark_chestnut.xml" frequency="1" name="dark_chestnut"/>
+    <variant file="quadraped/horse/fading_black.xml" frequency="1" name="fading_black"/>
+    <variant file="quadraped/horse/black_spotted.xml" frequency="1" name="black_spotted"/>
+    <variant file="quadraped/horse/cherrybay.xml" frequency="1" name="cherrybay"/>
+    <variant file="quadraped/horse/gray.xml" frequency="1" name="gray"/>
+    <variant file="quadraped/horse/halflinger.xml" frequency="1" name="halflinger"/>
+    <variant file="quadraped/horse/chestnut_02.xml" frequency="1" name="chestnut-02"/>
+    <variant file="quadraped/horse/chestnut_01.xml" frequency="1" name="chestnut-01"/>
+    <variant file="quadraped/horse/bay_01.xml" frequency="1" name="bay_01"/>
+    <variant file="quadraped/horse/bay_02.xml" frequency="1" name="bay_02"/>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
     <variant file="quadraped/base_horse_death.xml"/>
     <variant file="quadraped/base_horse_run.xml"/>
   </group>
-  <material>objectcolor.xml</material>
+  <material>basic_trans_parallax_spec.xml</material>
 </actor>

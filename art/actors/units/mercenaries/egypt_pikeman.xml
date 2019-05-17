@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/ptol_pike_e.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/weapons/sarissa.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/new/head_egyptian_e.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/ptol_quilted_b.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Armor-Linen-Quilted-01">
+      <textures>
+        <texture file="skeletal/ptol_pikeman_a_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Linen-Quilted-02">
+      <textures>
+        <texture file="skeletal/ptol_pikeman_a_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Linen-Quilted-03">
+      <textures>
+        <texture file="skeletal/ptol_pikeman_a_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Linen-Quilted-04">
+      <textures>
+        <texture file="skeletal/ptol_pikeman_a_04.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Linen-Quilted-05">
+      <textures>
+        <texture file="skeletal/ptol_pikeman_a_05.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Linen-Quilted-06">
+      <textures>
+        <texture file="skeletal/ptol_pikeman_a_06.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Linen-Quilted-07">
+      <textures>
+        <texture file="skeletal/ptol_pikeman_a_07.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Linen-Quilted-08">
+      <textures>
+        <texture file="skeletal/ptol_pikeman_a_08.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Linen-Quilted-09">
+      <textures>
+        <texture file="skeletal/ptol_pikeman_a_09.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_pikeman.xml"/>
+    <variant file="biped/carry_food.xml"/>
+    <variant file="biped/carry_meat.xml"/>
+    <variant file="biped/carry_wood.xml"/>
+    <variant file="biped/carry_stone.xml"/>
+    <variant file="biped/carry_metal.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_tree.xml"/>
+    <variant file="biped/gather_grain.xml"/>
+    <variant file="biped/gather_fruit.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/gather_rock.xml"/>
+    <variant file="biped/gather_ore.xml"/>
+    <variant file="biped/gather_ruins.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
