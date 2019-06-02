@@ -118,30 +118,27 @@
 	"WallSets":
 	[
 		"other/wallset_palisade",
-		"structures/gaul_wallset_stone"
+		"structures/sueb_wallset_stone"
 	],
 	"StartEntities":
 	[
 		{
-			"Template": "structures/gaul_civil_centre" 
+			"Template": "structures/sueb_civil_centre" 
 		},
 		{
-			"Template": "units/gaul_support_citizen_female",
+			"Template": "units/sueb_support_citizen",
 			"Count": 4
 		},
 		{
-			"Template": "units/gaul_infantry_swordsman_b",
+			"Template": "units/sueb_infantry_spearman_b",
 			"Count": 2 
 		},
 		{
-			"Template": "units/gaul_infantry_javelinist_b",
+			"Template": "units/sueb_infantry_swordsman_b",
 			"Count": 2 
 		},
 		{
-			"Template": "units/gaul_cavalry_scout" 
-		},
-		{
-			"Template": "units/gaul_champion_infantry_carnyx" 
+			"Template": "units/sueb_cavalry_scout" 
 		}
 	],
 	"Formations":
@@ -168,9 +165,9 @@
 	],
 	"SkirmishReplacements":
 	{
-		"skirmish/units/default_infantry_melee_b": "units/gaul_infantry_swordsman_b",
-		"skirmish/structures/default_house_5": "structures/{civ}_house",
-		"skirmish/units/special_starting_unit": "units/gaul_champion_infantry_carnyx",
+		"skirmish/units/default_infantry_melee_b": "units/sueb_infantry_swordsman_b",
+		"skirmish/units/default_infantry_ranged_b": "units/sueb_infantry_spearman_b",
+		"skirmish/structures/default_house_5": "structures/sueb_house",
 		"skirmish/structures/default_defense_tower": "structures/{civ}_defense_tower"
 	},
 	"SelectableInGameSetup": true
