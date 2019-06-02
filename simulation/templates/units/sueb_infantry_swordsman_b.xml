@@ -7,10 +7,13 @@
     <Civ>sueb</Civ>
     <SelectionGroupName>units/sueb_infantry_swordsman</SelectionGroupName>
     <GenericName>Suebian Axeman</GenericName>
-    <SpecificName>Tenkhleg</SpecificName>
+    <SpecificName>Axtwerfer</SpecificName>
+	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
     <Icon>units/gaul_infantry_swordsman.png</Icon>
   </Identity>
-  <Promotion disable=""/>
+  <Promotion>
+    <Entity>units/sueb_infantry_swordsman_a</Entity>
+  </Promotion>
   <UnitMotion>
     <WalkSpeed op="mul">1.2</WalkSpeed>
   </UnitMotion>
