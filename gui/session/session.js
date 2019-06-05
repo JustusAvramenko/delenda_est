@@ -1388,7 +1388,8 @@ function recalculateStatusBarDisplay(remove = false)
 	Engine.GuiInterfaceCall("SetStatusBars", {
 		"entities": entities,
 		"enabled": g_ShowAllStatusBars && !remove,
-		"showRank": Engine.ConfigDB_GetValue("user", "gui.session.rankabovestatusbar") == "true"
+		"showRank": Engine.ConfigDB_GetValue("user", "gui.session.rankabovestatusbar") == "true",
+        "showExperience": Engine.ConfigDB_GetValue("user", "gui.session.experiencestatusbar") == "true"
 	});
 }
 
@@ -1482,14 +1483,6 @@ function updateAdditionalHighlight()
 function playAmbient()
 {
 	Engine.PlayAmbientSound(pickRandom(g_Ambient), true);
-}
-
-function getBuildString()
-{
-	return sprintf(translate("Build: %(buildDate)s (%(revision)s)"), {
-		"buildDate": Engine.GetBuildTimestamp(0),
-		"revision": Engine.GetBuildTimestamp(2)
-	});
 }
 
 function showTimeWarpMessageBox()

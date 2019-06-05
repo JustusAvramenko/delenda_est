@@ -2,16 +2,14 @@
 	"pair": "mauryas/pair_inf_armor_02",
 	"genericName": "Leather Armor",
 	"description": "Armor was generally not worn in the hot latitudes of India, but when armor was worn it was usually made of light linen or leather materials.",
-	"cost": {"food": 200, "wood": 200},
+	"cost": {"food": 300, "wood": 300},
 	"requirements": {"all": [{"tech": "phase_city"},{"civ": "maur"}]},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "armor_leather.png",
 	"researchTime": 60,
-	"tooltip": "All infantry +1 hack armor, -2% speed.",
+	"tooltip": "All infantry +1 hack armor.",
 	"modifications": [
-		{"value": "Armour/Hack", "add": 1.0},
-		{"value": "UnitMotion/WalkSpeed", "multiply": 0.98},
-		{"value": "UnitMotion/Run/Speed", "multiply": 0.98}
+		{"value": "Armour/Hack", "add": 1.0}
 	],
 	"affects": ["Infantry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

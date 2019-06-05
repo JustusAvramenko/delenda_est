@@ -5,16 +5,14 @@
 		"kush": "Baju Wesi Kulit"
 	},
 	"description": "Leather body armor for soldiers.",
-	"cost": {"food": 300, "wood": 400},
+	"cost": {"food": 400, "wood": 400},
 	"requirements": {"tech": "phase_city"},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "armor_leather.png",
 	"researchTime": 60,
-	"tooltip": "Melee and Ranged Soldiers +1 hack armor level, -5% walk speed.",
+	"tooltip": "Melee and Ranged Soldiers +1 hack armor level.",
 	"modifications": [
-		{"value": "Armour/Hack", "add": 1.0},
-		{"value": "UnitMotion/WalkSpeed", "multiply": 0.95},
-		{"value": "UnitMotion/Run/Speed", "multiply": 0.95}
+		{"value": "Armour/Hack", "add": 1.0}
 	],
 	"affects": ["Soldier"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

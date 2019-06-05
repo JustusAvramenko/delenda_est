@@ -2,15 +2,14 @@
 	"pair": "celts/pair_inf_armor_01",
 	"genericName": "Leather Boots",
 	"description": "The Celts and Iberians wore various styles of soft leather boots.",
-	"cost": {"food": 50, "wood": 50},
+	"cost": {"food": 100, "wood": 100},
 	"requirements": { "all": [{ "tech": "phase_village" }, { "any": [{ "tech": "techs_blacksmith_cost" }, { "tech": "techs_blacksmith_speed" }] }] },
 	"requirementsTooltip": "Unlocked in Village Phase. Requires Forging or Metallurgy",
 	"icon": "leather_boots.png",
 	"researchTime": 40,
-	"tooltip": "All infantry +10% walk and run speed.",
+	"tooltip": "All Infantry +10% walk and run speed.",
 	"modifications": [
-		{"value": "UnitMotion/WalkSpeed", "multiply": 1.1},
-		{"value": "UnitMotion/Run/Speed", "multiply": 1.1}		
+		{"value": "UnitMotion/WalkSpeed", "multiply": 1.1}	
 	],
 	"affects": ["Infantry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
