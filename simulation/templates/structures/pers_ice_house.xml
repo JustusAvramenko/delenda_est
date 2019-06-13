@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+	pers_ice_house_1
+  </Auras>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <stone>100</stone>
+      <wood>100</wood>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="10.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>400</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>pers</Civ>
+    <GenericName>Ice House</GenericName>
+    <SpecificName>Yakhchāl</SpecificName>
+	<VisibleClasses datatype="tokens">Village IceHouse</VisibleClasses>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <History>A yakhchāl is an ancient type of evaporative cooler. Above ground, the structure had a domed shape, but has a subterranean storage space; it was often used to create and store ice, but sometimes was used to store food, such as meat, as well. The subterranean space coupled with the thick heat-resistant construction material insulated the storage space year round. These structures were mainly built and used in Persia. Many that were built hundreds of years ago remain standing.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="16.0" depth="16.0"/>
+  </Obstruction>
+  <Position>
+    <Altitude>2.0</Altitude>
+  </Position>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Technologies datatype="tokens">
+	  persians/health_units_01
+	  persians/health_units_02
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Rates> 
+      <food>1.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>0.0</coin>
+      <glory>0.0</glory>
+    </Rates> 
+    <Interval>6000</Interval> 
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_farmstead.xml</select>
+      <constructed>interface/complete/building/complete_farmstead.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/persians/ice_house.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>
