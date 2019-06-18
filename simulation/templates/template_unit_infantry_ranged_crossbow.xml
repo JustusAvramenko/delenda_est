@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_ranged_archer">
-  <Identity>
-    <VisibleClasses datatype="tokens">Crossbow</VisibleClasses>
-    <GenericName>Crossbow Infantry</GenericName>
-    <History>The crossbow occurred as early as 600BC or earlier in Asia and other places around the world, featuring bronze arrows.</History>
-    <Tooltip>Traits: Long Range, Light Armor, Fast Training.
-Strong Against: Melee Infantry (1.25x).
-Weak Against: Spear Cavalry, Sword Cavalry.</Tooltip>
-  </Identity>
   <Attack>
     <Ranged>
-      <Pierce op="mul">1.5</Pierce>
+      <Damage>
+        <Pierce op="mul">1.5</Pierce>
+      </Damage>
       <MaxRange op="mul">1.2</MaxRange>
       <PrepareTime>1500</PrepareTime>
       <RepeatTime>3000</RepeatTime>
       <Projectile>
-        <Speed>70.0</Speed>
+        <Speed>60.0</Speed>
         <Spread>1.8</Spread>
       </Projectile>
-	  <Bonuses>
-		<BonusMeleeInfantry>
-		  <Classes>Infantry Melee</Classes>
-		  <Multiplier>1.25</Multiplier>
-		</BonusMeleeInfantry>
-	  </Bonuses>
     </Ranged>
   </Attack>
   <Cost>
@@ -33,4 +21,12 @@ Weak Against: Spear Cavalry, Sword Cavalry.</Tooltip>
       <wood>75</wood>
     </Resources>
   </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Crossbow</VisibleClasses>
+    <GenericName>Crossbow Infantry</GenericName>
+    <History>The crossbow occurred as early as 600 BC or earlier in Asia and other places around the world, featuring bronze arrows.</History>
+    <Tooltip>Traits: Long Range, Light Armor, Fast Training.
+Strong Against: Melee Infantry (1.25x).
+Weak Against: Spear Cavalry, Sword Cavalry.</Tooltip>
+  </Identity>
 </Entity>
