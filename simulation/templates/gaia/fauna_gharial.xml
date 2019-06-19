@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_wild_aggressive">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>30.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>8.0</MaxRange>
+      <RepeatTime>2000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint replace="">
+    <Square width="5" depth="8"/>
+    <Height>1.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <SpecificName>Gavialis gangeticus</SpecificName>
+	<GenericName>Gharial</GenericName>
+    <Icon>gaia/fauna_crocodile.png</Icon>
+  </Identity>
+  <Position>
+    <Anchor>pitch-roll</Anchor>
+  </Position>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/128x128.png</MainTexture>
+        <MainTextureMask>circle/128x128_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/lion_select.xml</select>
+      <attack_melee>actor/fauna/animal/lion_attack.xml</attack_melee>
+      <death>actor/fauna/animal/lion_death.xml</death>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed>2.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>fauna/crocodile.xml</Actor>
+  </VisualActor>
+</Entity>

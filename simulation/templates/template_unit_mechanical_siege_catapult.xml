@@ -26,12 +26,14 @@
         <ImpactAnimationLifetime>0.1</ImpactAnimationLifetime>
       </Projectile>
       <Splash>
+        <Damage>
+	      <Hack>25.0</Hack>
+          <Pierce>0.0</Pierce>
+          <Crush>25.0</Crush>
+        </Damage>
         <Shape>Circular</Shape>
         <Range>10</Range>
         <FriendlyFire>false</FriendlyFire>
-        <Hack>0.0</Hack>
-        <Pierce>15.0</Pierce>
-        <Crush>35.0</Crush>
       </Splash>
 	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
 	  <PreferredClasses datatype="tokens">Structure</PreferredClasses>
@@ -62,7 +64,8 @@
     <Max>300</Max>
   </Health>
   <Identity>
-    <GenericName>Catapult</GenericName>
+    <SpecificName>Onager</SpecificName>
+	<GenericName>Catapult</GenericName>
     <VisibleClasses datatype="tokens">Ranged Catapult StoneThrower</VisibleClasses>
     <Tooltip>Traits: Slow Speed, Must Pack, Splash Damage, Friendly Fire, Capturable.
 Strong Against: Buildings, Fortresses (1.25x), Massed Archers.
