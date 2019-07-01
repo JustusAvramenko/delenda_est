@@ -1226,7 +1226,7 @@ UnitAI.prototype.UnitFsmSpec = {
 			}
 			// Move a tile outside the building
 			let range = 4;
-			if (this.CheckTargetRangeExplicit(msg.data.target, range, range))
+			if (this.CheckTargetRangeExplicit(msg.data.target, range, -1))
 			{
 				// We are already at the target, or can't move at all
 				this.FinishOrder();
@@ -2212,6 +2212,18 @@ UnitAI.prototype.UnitFsmSpec = {
 								this.SetNextState("APPROACHING");
 								return;
 							}
+
+                            // Our target is no longer visible - go to its last known position first
+                            // and then hopefully it will become visible.
+                            if (!this.CheckTargetVisible(target) && this.order.data.lastPos)
+                            {
+                                this.PushOrderFront("Walk", {
+                                    "x": this.order.data.lastPos.x,
+                                    "z": this.order.data.lastPos.z,
+                                    "force": this.order.data.force
+                                });
+                                return;
+                            }
 						}
 					}
 
@@ -2957,17 +2969,14 @@ UnitAI.prototype.UnitFsmSpec = {
 
 		"Order.LeaveFoundation": function(msg) {
 			// Move a tile outside the building
-			var range = 4;
-			if (this.CheckTargetRangeExplicit(msg.data.target, range, range))
+			let range = 4;
+			if (this.CheckTargetRangeExplicit(msg.data.target, range, -1))
 			{
 				this.FinishOrder();
 				return;
 			}
-			else
-			{
-				this.order.data.min = range;
-				this.SetNextState("WALKING");
-			}
+            this.order.data.min = range;
+            this.SetNextState("WALKING");	
 		},
 
 		"IDLE": {
@@ -5779,7 +5788,7 @@ UnitAI.prototype.MoveRandomly = function(distance)
 	// Then second half of the rotation
 	ang += halfDelta;
 	let dist = randFloat(0.5, 1.5) * distance;
-	cmpUnitMotion.MoveToPointRange(pos.x - 0.5 * Math.sin(ang), pos.z - 0.5 * Math.cos(ang), dist, dist);
+	cmpUnitMotion.MoveToPointRange(pos.x - 0.5 * Math.sin(ang), pos.z - 0.5 * Math.cos(ang), dist, -1);
 };
 
 UnitAI.prototype.SetFacePointAfterMove = function(val)
