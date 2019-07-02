@@ -188,7 +188,7 @@ UnitAI.prototype.UnitFsmSpec = {
 	// Called when being told to walk as part of a formation
 	"Order.FormationWalk": function(msg) {
 		// Let players move captured domestic animals around
-		if (this.IsTurret())
+		if (this.IsAnimal() && !this.IsTurret())
 		{
 			this.FinishOrder();
 			return;
@@ -234,7 +234,6 @@ UnitAI.prototype.UnitFsmSpec = {
 	// (these will switch the unit out of formation mode)
 
 	"Order.Stop": function(msg) {
-
 		// Stop moving immediately.
 		this.StopMoving();
 		this.FinishOrder();
@@ -249,7 +248,7 @@ UnitAI.prototype.UnitFsmSpec = {
 
 	"Order.Walk": function(msg) {
 		// Let players move captured domestic animals around
-		if (this.IsTurret())
+		if (this.IsAnimal() && !this.IsTurret())
 		{
 			this.FinishOrder();
 			return;
@@ -273,7 +272,7 @@ UnitAI.prototype.UnitFsmSpec = {
 
 	"Order.WalkAndFight": function(msg) {
 		// Let players move captured domestic animals around
-		if (this.IsTurret())
+		if (this.IsAnimal() && !this.IsTurret())
 		{
 			this.FinishOrder();
 			return;
@@ -298,7 +297,7 @@ UnitAI.prototype.UnitFsmSpec = {
 
 	"Order.WalkToTarget": function(msg) {
 		// Let players move captured domestic animals around
-		if (this.IsTurret())
+		if (this.IsAnimal() && !this.IsTurret())
 		{
 			this.FinishOrder();
 			return;
@@ -965,8 +964,8 @@ UnitAI.prototype.UnitFsmSpec = {
 				delete this.patrolStartPosOrder;
 			},
 
-			"MovementUpdate": function() {
-				if (!this.CheckRange(this.order.data))
+			"MovementUpdate": function(msg) {
+				if (!msg.error && !this.CheckRange(this.order.data))
 					return;
 				/**
 				 * A-B-A-B-..:
@@ -1059,7 +1058,7 @@ UnitAI.prototype.UnitFsmSpec = {
 			},
 
 			"MovementUpdate": function(msg) {
-				if (!this.CheckRange(this.order.data))
+				if (!msg.error && !this.CheckRange(this.order.data))
 					return;
 
 				if (this.FinishOrder())
@@ -1556,8 +1555,8 @@ UnitAI.prototype.UnitFsmSpec = {
 				this.FindWalkAndFightTargets();
 			},
 
-			"MovementUpdate": function() {
-				if (!this.CheckRange(this.order.data))
+			"MovementUpdate": function(msg) {
+				if (!msg.error && !this.CheckRange(this.order.data))
 					return;
 
 				if (this.orderQueue.length == 1)
@@ -1622,8 +1621,8 @@ UnitAI.prototype.UnitFsmSpec = {
 					this.SetDefaultAnimationVariant();
 				},
 
-				"MovementUpdate": function() {
-					if (this.CheckTargetRangeExplicit(this.isGuardOf, 0, this.guardRange))
+				"MovementUpdate": function(msg) {
+					if (msg.error || this.CheckTargetRangeExplicit(this.isGuardOf, 0, this.guardRange))
 						this.SetNextState("GUARDING");
 				},
 			},
@@ -1706,9 +1705,9 @@ UnitAI.prototype.UnitFsmSpec = {
 				this.StopMoving();
 			},
 
-			"MovementUpdate": function() {
+			"MovementUpdate": function(msg) {
 				// When we've run far enough, stop fleeing
-				if (this.CheckTargetRangeExplicit(this.order.data.target, this.order.data.distanceToFlee, -1))
+				if (msg.error || this.CheckTargetRangeExplicit(this.order.data.target, this.order.data.distanceToFlee, -1))
 					this.FinishOrder();
 			},
 
@@ -2213,17 +2212,17 @@ UnitAI.prototype.UnitFsmSpec = {
 								return;
 							}
 
-                            // Our target is no longer visible - go to its last known position first
-                            // and then hopefully it will become visible.
-                            if (!this.CheckTargetVisible(target) && this.order.data.lastPos)
-                            {
-                                this.PushOrderFront("Walk", {
-                                    "x": this.order.data.lastPos.x,
-                                    "z": this.order.data.lastPos.z,
-                                    "force": this.order.data.force
-                                });
-                                return;
-                            }
+							// Our target is no longer visible - go to its last known position first
+							// and then hopefully it will become visible.
+							if (!this.CheckTargetVisible(this.gatheringTarget) && this.order.data.lastPos)
+							{
+								this.PushOrderFront("Walk", {
+									"x": this.order.data.lastPos.x,
+									"z": this.order.data.lastPos.z,
+									"force": this.order.data.force
+								});
+								return;
+							}
 						}
 					}
 
@@ -2489,8 +2488,8 @@ UnitAI.prototype.UnitFsmSpec = {
 					this.StopMoving();
 				},
 
-				"MovementUpdate": function() {
-					if (!this.CheckTargetRange(this.order.data.target, IID_Trader))
+				"MovementUpdate": function(msg) {
+					if (!msg.error && !this.CheckTargetRange(this.order.data.target, IID_Trader))
 						return;
 
 					if (this.waypoints && this.waypoints.length)
@@ -2530,8 +2529,7 @@ UnitAI.prototype.UnitFsmSpec = {
 				},
 
 				"MovementUpdate": function() {
-					if (this.CheckRange(this.order.data, IID_Builder))
-						this.SetNextState("REPAIRING");
+					this.SetNextState("REPAIRING");
 				},
 			},
 
@@ -2734,8 +2732,7 @@ UnitAI.prototype.UnitFsmSpec = {
 				},
 
 				"MovementUpdate": function() {
-					if (this.CheckGarrisonRange(this.order.data.target))
-						this.SetNextState("GARRISONED");
+					this.SetNextState("GARRISONED");
 				},
 			},
 
@@ -2918,8 +2915,7 @@ UnitAI.prototype.UnitFsmSpec = {
 				},
 
 				"MovementUpdate": function() {
-					if (this.CheckRange(this.order.data))
-						this.SetNextState("LOADING");
+					this.SetNextState("LOADING");
 				},
 
 				"PickupCanceled": function() {
@@ -2975,8 +2971,8 @@ UnitAI.prototype.UnitFsmSpec = {
 				this.FinishOrder();
 				return;
 			}
-            this.order.data.min = range;
-            this.SetNextState("WALKING");	
+			this.order.data.min = range;
+			this.SetNextState("WALKING");
 		},
 
 		"IDLE": {
@@ -3930,7 +3926,7 @@ UnitAI.prototype.FindNearestDropsite = function(genericType)
 	if (!cmpOwnership || cmpOwnership.GetOwner() == INVALID_PLAYER)
 		return undefined;
 
-	let cmpPosition = Engine.QueryInterface(this.entity, IID_Position)
+	let cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
 	if (!cmpPosition || !cmpPosition.IsInWorld())
 		return undefined;
 
@@ -4377,24 +4373,29 @@ UnitAI.prototype.CheckTargetVisible = function(target)
 	return true;
 };
 
+/**
+ * Let an entity face its target.
+ * @param {number} target - The entity-ID of the target.
+ */
 UnitAI.prototype.FaceTowardsTarget = function(target)
 {
-	var cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
-	if (!cmpPosition || !cmpPosition.IsInWorld())
-		return;
-	var cmpTargetPosition = Engine.QueryInterface(target, IID_Position);
+	let cmpTargetPosition = Engine.QueryInterface(target, IID_Position);
 	if (!cmpTargetPosition || !cmpTargetPosition.IsInWorld())
 		return;
-	var targetpos = cmpTargetPosition.GetPosition2D();
-	var angle = cmpPosition.GetPosition2D().angleTo(targetpos);
-	var rot = cmpPosition.GetRotation();
-	var delta = (rot.y - angle + Math.PI) % (2 * Math.PI) - Math.PI;
-	if (Math.abs(delta) > 0.2)
+
+	let targetPosition = cmpTargetPosition.GetPosition2D();
+
+	// Use cmpUnitMotion for units that support that, otherwise try cmpPosition (e.g. turrets)
+	let cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
+	if (cmpUnitMotion)
 	{
-		var cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
-		if (cmpUnitMotion)
-			cmpUnitMotion.FaceTowardsPoint(targetpos.x, targetpos.y);
+		cmpUnitMotion.FaceTowardsPoint(targetPosition.x, targetPosition.y);
+		return;
 	}
+
+	let cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
+	if (cmpPosition && cmpPosition.IsInWorld())
+		cmpPosition.TurnTo(cmpPosition.GetPosition2D().angleTo(targetPosition));
 };
 
 UnitAI.prototype.CheckTargetDistanceFromHeldPosition = function(target, iid, type)
