@@ -1,53 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_civic">
-  <Armour>
-    <Hack>20.0</Hack>
-    <Pierce>40.0</Pierce>
-    <Crush>10.0</Crush>
-  </Armour>
-  <BuildRestrictions>
-    <Category>Stoa</Category>
-  </BuildRestrictions>
-  <Cost>
-    <PopulationBonus>10</PopulationBonus>
-    <BuildTime>150</BuildTime>
-    <Resources>
-      <food>0</food>
-      <wood>0</wood>
-      <stone>100</stone>
-      <metal>150</metal>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Square width="29" depth="21.0"/>
-    <Height>10.0</Height>
-  </Footprint>
-  <Health>
-    <Max>1500</Max>
-  </Health>
-  <Identity>
-    <Civ>hele</Civ>
-    <GenericName>Stoa</GenericName>
-    <SpecificName>Hellenic Royal Stoa</SpecificName>
-    <History>A structure built for civic purposes. Stoas eventually became meeting places for philosophy and commerce. They were usually built within the Agora, or city center, of a Greek city.</History>
-    <Tooltip>Add +10 to Population Cap. Recruit special units.</Tooltip>
-    <Icon>structures/tholos.png</Icon>
-  </Identity>
-  <Loot>
-    <xp>10</xp>
-    <food>0</food>
-    <wood>0</wood>
-    <stone>10</stone>
-    <metal>15</metal>
-  </Loot>
-  <Obstruction>
-    <Static width="28.0" depth="20.0"/>
-  </Obstruction>
-  <TerritoryInfluence>
-    <Root>false</Root>
-    <Radius>40</Radius>
-    <Weight>65535</Weight>
-  </TerritoryInfluence>
+<Entity parent="template_structure_civic_royal_stoa">
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
@@ -56,9 +8,6 @@
       units/thrace_black_cloak
     </Entities>
   </ProductionQueue>
-  <Vision>
-    <Range>40</Range>
-  </Vision>
   <VisualActor>
     <Actor>special/greek_stoa_great.xml</Actor>
     <FoundationActor>structures/fndn_6x4.xml</FoundationActor>
