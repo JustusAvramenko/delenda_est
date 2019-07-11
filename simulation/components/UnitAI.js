@@ -234,13 +234,6 @@ UnitAI.prototype.UnitFsmSpec = {
 	// (these will switch the unit out of formation mode)
 
 	"Order.Stop": function(msg) {
-		// Turrets can't walk.
-		if (this.IsTurret())
-		{
-			this.FinishOrder();
-			return;
-		}
-
 		// Stop moving immediately.
 		this.StopMoving();
 		this.FinishOrder();
@@ -254,7 +247,7 @@ UnitAI.prototype.UnitFsmSpec = {
 	},
 
 	"Order.Walk": function(msg) {
-		// Turrets can't move.
+		// Turrets can't walk.
 		if (this.IsTurret())
 		{
 			this.FinishOrder();
@@ -278,7 +271,7 @@ UnitAI.prototype.UnitFsmSpec = {
 	},
 
 	"Order.WalkAndFight": function(msg) {
-		// Turrets can't move.
+		// Turrets can't walk.
 		if (this.IsTurret())
 		{
 			this.FinishOrder();
@@ -303,8 +296,8 @@ UnitAI.prototype.UnitFsmSpec = {
 
 
 	"Order.WalkToTarget": function(msg) {
-		// Let players move captured domestic animals around
-		if (this.IsAnimal() && !this.IsDomestic() || this.IsTurret())
+		// Turrets can't walk.
+		if (this.IsTurret())
 		{
 			this.FinishOrder();
 			return;
@@ -772,7 +765,7 @@ UnitAI.prototype.UnitFsmSpec = {
 					return;
 				}
 
-				this.PushOrderFront("Attack", { "target": msg.data.target, "force": !!msg.data.force, "hunting": true, "allowCapture": false });
+				this.PushOrderFront("Attack", { "target": msg.data.target, "force": !!msg.data.force, "hunting": true, "allowCapture": false, "min": 0, "max": 10 });
 				return;
 			}
 
@@ -1218,10 +1211,7 @@ UnitAI.prototype.UnitFsmSpec = {
 			}
 
 			// No orders left, we're an individual now
-			if (this.IsAnimal())
-				this.SetNextState("ANIMAL.IDLE");
-			else
-				this.SetNextState("INDIVIDUAL.IDLE");
+			this.SetNextState("INDIVIDUAL.IDLE");
 		},
 
 		// Override the LeaveFoundation order since we're not doing
@@ -1250,48 +1240,56 @@ UnitAI.prototype.UnitFsmSpec = {
 			}
 		},
 
+		"enter": function() {
+			if (this.IsAnimal())
+			{
+				// Animals can't go in formation.
+				warn("Entity " + this.entity + " was put in FORMATIONMEMBER state but is an animal");
+				this.FinishOrder();
+				this.SetNextState("ANIMAL.IDLE");
+				return true;
+			}
+
+			let cmpFormation = Engine.QueryInterface(this.formationController, IID_Formation);
+			if (cmpFormation)
+				this.SetAnimationVariant(cmpFormation.GetFormationAnimation(this.entity));
+		},
+
+		"leave": function() {
+			this.SetDefaultAnimationVariant();
+		},
 
 		"IDLE": {
-			"enter": function() {
-				if (this.IsAnimal())
-					this.SetNextState("ANIMAL.IDLE");
-				else
-					this.SetNextState("INDIVIDUAL.IDLE");
-				return true;
-			},
+			// Formation members do nothing while Idle, but we need the state
+			// so that they keep the formation variant.
 		},
 
 		"WALKING": {
 			"enter": function() {
-				var cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
+				let cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
 				cmpUnitMotion.MoveToFormationOffset(this.order.data.target, this.order.data.x, this.order.data.z);
+			},
 
-				var cmpFormation = Engine.QueryInterface(this.formationController, IID_Formation);
-				var cmpVisual = Engine.QueryInterface(this.entity, IID_Visual);
-				if (cmpFormation && cmpVisual)
-				{
-					cmpVisual.ReplaceMoveAnimation("walk", cmpFormation.GetFormationAnimation(this.entity, "walk"));
-					cmpVisual.ReplaceMoveAnimation("run", cmpFormation.GetFormationAnimation(this.entity, "run"));
-				}
-				this.SelectAnimation("move");
+			"leave": function() {
+				this.StopMoving();
 			},
 
 			// Occurs when the unit has reached its destination and the controller
 			// is done moving. The controller is notified.
 			"MovementUpdate": function(msg) {
 				// We can only finish this order if the move was really completed.
-				if (!this.CheckRange(this.order.data) || msg.error)
+				let cmpPosition = Engine.QueryInterface(this.formationController, IID_Position);
+				let atDestination = cmpPosition && cmpPosition.IsInWorld();
+				if (!atDestination && cmpPosition)
+				{
+					let pos = cmpPosition.GetPosition2D();
+					atDestination = this.CheckPointRangeExplicit(pos.X + this.order.data.x, pos.Y + this.order.data.z, 0, 0);
+				}
+				if (!atDestination && !msg.error)
 					return;
 
 				if (this.FinishOrder())
 					return;
-
-				let cmpVisual = Engine.QueryInterface(this.entity, IID_Visual);
-				if (cmpVisual)
-				{
-					cmpVisual.ResetMoveAnimation("walk");
-					cmpVisual.ResetMoveAnimation("run");
-				}
 
 				let cmpFormation = Engine.QueryInterface(this.formationController, IID_Formation);
 				if (cmpFormation)
@@ -1305,12 +1303,12 @@ UnitAI.prototype.UnitFsmSpec = {
 				var cmpFormation = Engine.QueryInterface(this.formationController, IID_Formation);
 				if (cmpFormation)
 					cmpFormation.UnsetInPosition(this.entity);
+
 				if (!this.MoveTo(this.order.data))
 				{
 					this.FinishOrder();
 					return true;
 				}
-				this.SelectAnimation("move");
 			},
 
 			"MovementUpdate": function() {
@@ -1393,24 +1391,53 @@ UnitAI.prototype.UnitFsmSpec = {
 
 		"IDLE": {
 			"enter": function() {
+				if (this.formationController)
+				{
+					this.SetNextState("FORMATIONMEMBER.IDLE");
+					return true;
+				}
+
 				// Switch back to idle animation to guarantee we won't
 				// get stuck with an incorrect animation
 				var animationName = "idle";
-				if (this.IsFormationMember())
-				{
-					var cmpFormation = Engine.QueryInterface(this.formationController, IID_Formation);
-					if (cmpFormation)
-						animationName = cmpFormation.GetFormationAnimation(this.entity, animationName);
-				}
 				this.SelectAnimation(animationName);
 
-				// Idle is the default state. If units try, from the IDLE.enter sub-state, to
-				// begin another order, and that order fails (calling FinishOrder), they might
-				// end up in an infinite loop. To avoid this, all methods that could put the unit in
-				// a new state are done on the next turn.
-				// Further, the GUI and AI want to know when a unit is idle,
-				// but sending this info in Idle.enter will send spurious messages.
-				this.StartTimer(200);
+				// If we have some orders, it is because we are in an intermediary state
+				// from FinishOrder (SetNextState("IDLE") is only executed when we get
+				// a ProcessMessage), and thus we should not start another order which could
+				// put us in a weird state
+				if (this.orderQueue.length > 0 && !this.IsGarrisoned())
+					return false;
+
+				// If the unit is guarding/escorting, go back to its duty
+				if (this.isGuardOf)
+				{
+					this.Guard(this.isGuardOf, false);
+					return true;
+				}
+
+				// The GUI and AI want to know when a unit is idle, but we don't
+				// want to send frequent spurious messages if the unit's only
+				// idle for an instant and will quickly go off and do something else.
+				// So we'll set a timer here and only report the idle event if we
+				// remain idle
+				this.StartTimer(1000);
+
+				// If a unit can heal and attack we first want to heal wounded units,
+				// so check if we are a healer and find whether there's anybody nearby to heal.
+				// (If anyone approaches later it'll be handled via LosHealRangeUpdate.)
+				// If anyone in sight gets hurt that will be handled via LosHealRangeUpdate.
+				if (this.IsHealer() && this.FindNewHealTargets())
+					return true; // (abort the FSM transition since we may have already switched state)
+
+				// If we entered the idle state we must have nothing better to do,
+				// so immediately check whether there's anybody nearby to attack.
+				// (If anyone approaches later, it'll be handled via LosRangeUpdate.)
+				if (this.FindNewTargets())
+					return true; // (abort the FSM transition since we may have already switched state)
+
+				// Nobody to attack - stay in idle
+				return false;
 			},
 
 			"leave": function() {
@@ -1441,10 +1468,6 @@ UnitAI.prototype.UnitFsmSpec = {
 				this.RespondToHealableEntities(msg.data.added);
 			},
 
-			"MoveCompleted": function() {
-				this.SelectAnimation("idle");
-			},
-
 			"Timer": function(msg) {
 				if (!this.isIdle)
 				{
@@ -1461,11 +1484,9 @@ UnitAI.prototype.UnitFsmSpec = {
 					this.FinishOrder();
 					return true;
 				}
-				this.SelectAnimation("move");
 			},
 
 			"leave": function () {
-				this.SelectAnimation("idle");
 				this.StopMoving();
 			},
 
@@ -1486,7 +1507,6 @@ UnitAI.prototype.UnitFsmSpec = {
 				this.SetAnimationVariant("combat");
 
 				this.StartTimer(0, 1000);
-				this.SelectAnimation("move");
 			},
 
 			"Timer": function(msg) {
@@ -1525,7 +1545,6 @@ UnitAI.prototype.UnitFsmSpec = {
 
 				this.StartTimer(0, 1000);
 				this.SetAnimationVariant("combat");
-				this.SelectAnimation("move");
 			},
 
 			"leave": function() {
@@ -1569,7 +1588,6 @@ UnitAI.prototype.UnitFsmSpec = {
 					this.SetAnimationVariant("combat");
 
 					this.StartTimer(0, 1000);
-					this.SelectAnimation("move");
 					this.SetHeldPositionOnEntity(this.isGuardOf);
 					return false;
 				},
@@ -1617,7 +1635,6 @@ UnitAI.prototype.UnitFsmSpec = {
 					this.StartTimer(1000, 1000);
 					this.SetHeldPositionOnEntity(this.entity);
 					this.SetAnimationVariant("combat");
-					this.SelectAnimation("idle");
 					return false;
 				},
 
@@ -1676,7 +1693,6 @@ UnitAI.prototype.UnitFsmSpec = {
 				this.PlaySound("panic");
 
 				// Run quickly
-				this.SelectAnimation("move");
 				this.SetSpeedMultiplier(this.GetRunMultiplier());
 			},
 
@@ -1722,7 +1738,6 @@ UnitAI.prototype.UnitFsmSpec = {
 					// Show weapons rather than carried resources.
 					this.SetAnimationVariant("combat");
 
-					this.SelectAnimation("move");
 					this.StartTimer(1000, 1000);
 				},
 
@@ -1832,19 +1847,12 @@ UnitAI.prototype.UnitFsmSpec = {
 						prepare = Math.max(prepare, repeatLeft);
 					}
 
+					if (!this.IsFormationMember())
+						this.SetAnimationVariant("combat");
+
 					this.oldAttackType = this.order.data.attackType;
 					// add prefix + no capital first letter for attackType
-					let animationName = "attack_" + this.order.data.attackType.toLowerCase();
-					if (this.IsFormationMember())
-					{
-						let cmpFormationController = Engine.QueryInterface(this.formationController, IID_Formation);
-						if (cmpFormationController)
-							animationName = cmpFormationController.GetFormationAnimation(this.entity, animationName);
-					}
-
-					this.SetAnimationVariant("combat");
-
-					this.SelectAnimation(animationName);
+					this.SelectAnimation("attack_" + this.order.data.attackType.toLowerCase());
 					this.SetAnimationSync(prepare, this.attackTimers.repeat);
 					this.StartTimer(prepare, this.attackTimers.repeat);
 					// TODO: we should probably only bother syncing projectile attacks, not melee
@@ -1865,6 +1873,7 @@ UnitAI.prototype.UnitFsmSpec = {
 						cmpBuildingAI.SetUnitAITarget(0);
 					this.StopTimer();
 					this.SetDefaultAnimationVariant();
+					this.ResetAnimation();
 				},
 
 				"Timer": function(msg) {
@@ -1984,7 +1993,6 @@ UnitAI.prototype.UnitFsmSpec = {
 					// Show weapons rather than carried resources.
 					this.SetAnimationVariant("combat");
 
-					this.SelectAnimation("move");
 					var cmpUnitAI = Engine.QueryInterface(this.order.data.target, IID_UnitAI);
 					if (cmpUnitAI && cmpUnitAI.IsFleeing())
 					{
@@ -2038,8 +2046,6 @@ UnitAI.prototype.UnitFsmSpec = {
 						this.SetNextState("GATHERING");
 						return true;
 					}
-
-					this.SelectAnimation("move");
 					return false;
 				},
 
@@ -2071,7 +2077,6 @@ UnitAI.prototype.UnitFsmSpec = {
 						this.FinishOrder();
 						return true;
 					}
-					this.SelectAnimation("move");
 				},
 
 				"leave": function() {
@@ -2158,6 +2163,7 @@ UnitAI.prototype.UnitFsmSpec = {
 					delete this.gatheringTarget;
 
 					// Show the carried resource, if we've gathered anything.
+					this.ResetAnimation();
 					this.SetDefaultAnimationVariant();
 				},
 
@@ -2330,7 +2336,6 @@ UnitAI.prototype.UnitFsmSpec = {
 						return true;
 					}
 
-					this.SelectAnimation("move");
 					this.StartTimer(1000, 1000);
 				},
 
@@ -2381,6 +2386,7 @@ UnitAI.prototype.UnitFsmSpec = {
 				},
 
 				"leave": function() {
+					this.ResetAnimation();
 					this.StopTimer();
 				},
 
@@ -2441,13 +2447,10 @@ UnitAI.prototype.UnitFsmSpec = {
 						this.FinishOrder();
 						return true;
 					}
-					this.SelectAnimation("move");
 				},
 
 				"leave": function() {
-					// Switch back to idle animation to guarantee we won't
-					// get stuck with the carry animation after stopping moving
-					this.SelectAnimation("idle");
+					this.StopMoving();
 				},
 
 				"MovementUpdate": function() {
@@ -2506,7 +2509,6 @@ UnitAI.prototype.UnitFsmSpec = {
 						this.FinishOrder();
 						return true;
 					}
-					this.SelectAnimation("move");
 				},
 
 				"leave": function() {
@@ -2546,7 +2548,6 @@ UnitAI.prototype.UnitFsmSpec = {
 						this.FinishOrder();
 						return true;
 					}
-					this.SelectAnimation("move");
 				},
 
 				"leave": function() {
@@ -2608,6 +2609,7 @@ UnitAI.prototype.UnitFsmSpec = {
 						cmpBuilderList.RemoveBuilder(this.entity);
 					delete this.repairTarget;
 					this.StopTimer();
+					this.ResetAnimation();
 				},
 
 				"Timer": function(msg) {
@@ -2752,7 +2754,6 @@ UnitAI.prototype.UnitFsmSpec = {
 						this.FinishOrder();
 						return true;
 					}
-					this.SelectAnimation("move");
 				},
 
 				"leave": function() {
@@ -2766,9 +2767,8 @@ UnitAI.prototype.UnitFsmSpec = {
 
 			"GARRISONED": {
 				"enter": function() {
-					if (this.order.data.target)
-						var target = this.order.data.target;
-					else
+					let target = this.order.data.target;
+					if (!target)
 					{
 						this.FinishOrder();
 						return true;
@@ -2779,7 +2779,6 @@ UnitAI.prototype.UnitFsmSpec = {
 
 					// Check that we can garrison here
 					if (this.CanGarrison(target))
-					{
 						// Check that we're in range of the garrison target
 						if (this.CheckGarrisonRange(target))
 						{
@@ -2830,7 +2829,10 @@ UnitAI.prototype.UnitFsmSpec = {
 								}
 
 								if (this.IsTurret())
+								{
 									this.SetNextState("IDLE");
+									return true;
+								}
 
 								return false;
 							}
@@ -2849,13 +2851,9 @@ UnitAI.prototype.UnitFsmSpec = {
 								}
 
 							}
-							if (!this.CheckTargetRangeExplicit(target, 0, 0) && this.MoveToTarget(target))
-							{
-								this.SetNextState("APPROACHING");
-								return false;
-							}
+							this.SetNextState("APPROACHING");
+							return true;
 						}
-					}
 					// Garrisoning failed for some reason, so finish the order
 					this.FinishOrder();
 					return true;
@@ -2878,6 +2876,7 @@ UnitAI.prototype.UnitFsmSpec = {
 
 			"leave": function() {
 				this.StopTimer();
+				this.ResetAnimation();
 				var cmpDamageReceiver = Engine.QueryInterface(this.entity, IID_DamageReceiver);
 				cmpDamageReceiver.SetInvulnerability(false);
 			},
@@ -2935,7 +2934,6 @@ UnitAI.prototype.UnitFsmSpec = {
 						this.FinishOrder();
 						return true;
 					}
-					this.SelectAnimation("move");
 				},
 
 				"leave": function() {
@@ -2955,7 +2953,6 @@ UnitAI.prototype.UnitFsmSpec = {
 			"LOADING": {
 				"enter": function() {
 					this.StopMoving();
-					this.SelectAnimation("idle");
 					var cmpGarrisonHolder = Engine.QueryInterface(this.entity, IID_GarrisonHolder);
 					if (!cmpGarrisonHolder || cmpGarrisonHolder.IsFull())
 					{
@@ -3016,7 +3013,6 @@ UnitAI.prototype.UnitFsmSpec = {
 		"ROAMING": {
 			"enter": function() {
 				// Walk in a random direction
-				this.SelectAnimation("walk", false, 1);
 				this.SetFacePointAfterMove(false);
 				this.MoveRandomly(+this.template.RoamDistance);
 				// Set a random timer to switch to feeding state
@@ -3069,6 +3065,7 @@ UnitAI.prototype.UnitFsmSpec = {
 			},
 
 			"leave": function() {
+				this.ResetAnimation();
 				this.StopTimer();
 			},
 
@@ -4092,20 +4089,20 @@ UnitAI.prototype.SetDefaultAnimationVariant = function()
 	this.SetAnimationVariant("");
 };
 
-UnitAI.prototype.SelectAnimation = function(name, once = false, speed = 1.0)
+UnitAI.prototype.ResetAnimation = function()
 {
 	let cmpVisual = Engine.QueryInterface(this.entity, IID_Visual);
 	if (!cmpVisual)
 		return;
 
-	// Special case: the "move" animation gets turned into a special
-	// movement mode that deals with speeds and walk/run automatically
-	if (name == "move")
-	{
-		// Speed to switch from walking to running animations
-		cmpVisual.SelectMovementAnimation(this.GetWalkSpeed());
+	cmpVisual.SelectAnimation("idle", false, 1.0);
+};
+
+UnitAI.prototype.SelectAnimation = function(name, once = false, speed = 1.0)
+{
+	let cmpVisual = Engine.QueryInterface(this.entity, IID_Visual);
+	if (!cmpVisual)
 		return;
-	}
 
 	cmpVisual.SelectAnimation(name, once, speed);
 };
@@ -5170,7 +5167,7 @@ UnitAI.prototype.MoveToMarket = function(targetMarket)
 	}
 
 	this.waypoints = undefined;
-	return this.MoveToTarget(targetMarket);
+	return this.MoveToTargetRange(targetMarket, IID_Trader);
 };
 
 UnitAI.prototype.PerformTradeAndMoveToNextMarket = function(currentMarket)
