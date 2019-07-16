@@ -2,21 +2,21 @@
 
 <Scenario version="6">
 	<Environment>
-		<SkySet>rain</SkySet>
-		<SunColor r="0.501961" g="0.501961" b="0.501961"/>
-		<SunElevation angle="1.20264"/>
-		<SunRotation angle="-2.06167"/>
-		<TerrainAmbientColor r="0.337255" g="0.337255" b="0.337255"/>
+		<SkySet>cirrus</SkySet>
+		<SunColor r="0.956863" g="0.92549" b="0.807843"/>
+		<SunElevation angle="0.800738"/>
+		<SunRotation angle="-1.17885"/>
+		<TerrainAmbientColor r="0.32549" g="0.290196" b="0.25098"/>
 		<UnitsAmbientColor r="0.439216" g="0.439216" b="0.439216"/>
 		<Fog>
-			<FogFactor>0</FogFactor>
-			<FogThickness>0.5</FogThickness>
+			<FogFactor>0.000185547</FogFactor>
+			<FogThickness>0</FogThickness>
 			<FogColor r="0.866667" g="0.858824" b="0.937255"/>
 		</Fog>
 		<Water>
 			<WaterBody>
 				<Type>lake</Type>
-				<Color r="0.27451" g="0.211765" b="0.0901961"/>
+				<Color r="0.372549" g="0.376471" b="0.419608"/>
 				<Tint r="0.439216" g="0.337255" b="0.14902"/>
 				<Height>21.823</Height>
 				<Waviness>4.99023</Waviness>
@@ -25,26 +25,28 @@
 			</WaterBody>
 		</Water>
 		<Postproc>
-			<Brightness>-0.0244141</Brightness>
-			<Contrast>1.20801</Contrast>
+			<Brightness>0.00878906</Brightness>
+			<Contrast>1.13965</Contrast>
 			<Saturation>0.921875</Saturation>
 			<Bloom>0.134961</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="241.515" y="79.6185" z="548.691"/>
+		<Position x="629.734" y="1596.56" z="-1409.19"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
+  "AISeed": 0,
   "CircularMap": true,
   "Description": "Northwest India. Nearby rivers swell with monsoon rains, allowing for only a few treacherous crossings.\n\nThe rivers are heavily forested, while grasslands carpet the surrounding countryside. Watch out for Tigers in the tall grass! Asian elephants are also a common sight.",
   "Keywords": [],
   "LockTeams": false,
-  "Name": "Punjab (2) - Isometric",
+  "Name": "Punjab (2) - Isometric Camera",
   "PlayerData": [
+    "",
     {
       "Name": "Player 1"
     },
@@ -11678,8 +11680,8 @@
 		<Entity uid="2317">
 			<Template>gaia/geology_stonemine_tropic_quarry</Template>
 			<Player>0</Player>
-			<Position x="877.0619" z="625.37647"/>
-			<Orientation y="-2.20232"/>
+			<Position x="876.95801" z="625.47791"/>
+			<Orientation y="-3.31772"/>
 		</Entity>
 		<Entity uid="2318">
 			<Template>gaia/geology_stonemine_tropic_quarry</Template>
@@ -30214,20 +30216,6 @@
 			<Orientation y="-2.21316"/>
 			<Actor seed="7426"/>
 		</Entity>
-		<Entity uid="5779">
-			<Template>gaia/treasure/wood_shipwreck_debris</Template>
-			<Player>0</Player>
-			<Position x="444.30008" z="819.57154"/>
-			<Orientation y="-1.36191"/>
-			<Actor seed="43610"/>
-		</Entity>
-		<Entity uid="5780">
-			<Template>gaia/treasure/wood_shipwreck_debris</Template>
-			<Player>0</Player>
-			<Position x="594.36902" z="94.91536"/>
-			<Orientation y="-0.30265"/>
-			<Actor seed="40454"/>
-		</Entity>
 		<Entity uid="5781">
 			<Template>gaia/treasure/shipwreck_ram_bow</Template>
 			<Player>0</Player>
@@ -30318,6 +30306,159 @@
 			<Position x="252.28946" z="653.16816"/>
 			<Orientation y="-2.35184"/>
 			<Actor seed="49684"/>
+		</Entity>
+		<Entity uid="5794">
+			<Template>units/mercenaries/indian_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="444.75947" z="234.12262"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="82"/>
+		</Entity>
+		<Entity uid="5795">
+			<Template>units/mercenaries/indian_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="441.624" z="244.66587"/>
+			<Orientation y="1.26668"/>
+			<Actor seed="36934"/>
+		</Entity>
+		<Entity uid="5796">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="418.13328" z="215.5525"/>
+			<Orientation y="3.03751"/>
+			<Actor seed="53000"/>
+		</Entity>
+		<Entity uid="5797">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="430.5554" z="214.01722"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38338"/>
+		</Entity>
+		<Entity uid="5798">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="409.71772" z="245.69678"/>
+			<Orientation y="-0.91095"/>
+			<Actor seed="31448"/>
+		</Entity>
+		<Entity uid="5799">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="411.85154" z="253.75037"/>
+			<Orientation y="-0.07547"/>
+			<Actor seed="22956"/>
+		</Entity>
+		<Entity uid="5800">
+			<Template>units/mercenaries/indian_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="629.34687" z="805.33851"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="48928"/>
+		</Entity>
+		<Entity uid="5801">
+			<Template>units/mercenaries/indian_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="632.91816" z="802.77576"/>
+			<Orientation y="3.05573"/>
+			<Actor seed="11410"/>
+		</Entity>
+		<Entity uid="5802">
+			<Template>units/mercenaries/indian_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="635.83509" z="798.92237"/>
+			<Orientation y="1.23934"/>
+			<Actor seed="56290"/>
+		</Entity>
+		<Entity uid="5803">
+			<Template>units/mercenaries/indian_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="641.80164" z="795.71802"/>
+			<Orientation y="-1.63788"/>
+			<Actor seed="46562"/>
+		</Entity>
+		<Entity uid="5804">
+			<Template>units/mercenaries/indian_infantry_1</Template>
+			<Player>0</Player>
+			<Position x="649.11731" z="791.58149"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="33654"/>
+		</Entity>
+		<Entity uid="5805">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="655.8985" z="795.39277"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="982"/>
+		</Entity>
+		<Entity uid="5806">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="659.0293" z="799.32526"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5990"/>
+		</Entity>
+		<Entity uid="5807">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="662.34797" z="802.01996"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="23884"/>
+		</Entity>
+		<Entity uid="5808">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="664.00074" z="804.95643"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="9654"/>
+		</Entity>
+		<Entity uid="5809">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="631.16895" z="824.36744"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10872"/>
+		</Entity>
+		<Entity uid="5810">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="632.60297" z="826.99512"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="64782"/>
+		</Entity>
+		<Entity uid="5811">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="634.28486" z="828.88929"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="29208"/>
+		</Entity>
+		<Entity uid="5812">
+			<Template>units/mercenaries/indian_infantry_2</Template>
+			<Player>0</Player>
+			<Position x="636.19343" z="831.5138"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7804"/>
+		</Entity>
+		<Entity uid="5813">
+			<Template>structures/maur_farmstead</Template>
+			<Player>0</Player>
+			<Position x="601.1808" z="802.84272"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="584"/>
+		</Entity>
+		<Entity uid="5814">
+			<Template>structures/maur_house</Template>
+			<Player>0</Player>
+			<Position x="664.20582" z="782.05512"/>
+			<Orientation y="2.96436"/>
+			<Actor seed="37432"/>
+		</Entity>
+		<Entity uid="5816">
+			<Template>actor|structures/mauryas/statue_buddha.xml</Template>
+			<Position x="703.83155" z="959.69422"/>
+			<Orientation y="-2.6609"/>
+			<Actor seed="43452"/>
 		</Entity>
 	</Entities>
 	<Paths/>
