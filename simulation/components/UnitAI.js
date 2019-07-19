@@ -313,7 +313,7 @@ UnitAI.prototype.UnitFsmSpec = {
 		}
 
 
-		if (this.CheckTargetRangeExplicit(this.order.data.target, 0, 0))
+		if (this.CheckRange(this.order.data))
 		{
 			// We are already at the target, or can't move at all
 			this.FinishOrder();
@@ -327,29 +327,28 @@ UnitAI.prototype.UnitFsmSpec = {
 	},
 
 	"Order.PickupUnit": function(msg) {
-		var cmpGarrisonHolder = Engine.QueryInterface(this.entity, IID_GarrisonHolder);
+		let cmpGarrisonHolder = Engine.QueryInterface(this.entity, IID_GarrisonHolder);
 		if (!cmpGarrisonHolder || cmpGarrisonHolder.IsFull())
 		{
 			this.FinishOrder();
 			return;
 		}
 
-		if (this.CheckTargetRangeExplicit(this.order.data.target, 0, 0))
+		if (this.CheckRange(this.order.data))
 		{
 			this.FinishOrder();
 			return;
 		}
 
-		// Check if we need to move     TODO implement a better way to know if we are on the shoreline
-		var needToMove = true;
-		var cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
-		if (this.lastShorelinePosition && cmpPosition && (this.lastShorelinePosition.x == cmpPosition.GetPosition().x)
-		    && (this.lastShorelinePosition.z == cmpPosition.GetPosition().z))
-		{
+		// Check if we need to move
+		// TODO implement a better way to know if we are on the shoreline
+		let needToMove = true;
+		let cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
+		if (this.lastShorelinePosition && cmpPosition && (this.lastShorelinePosition.x == cmpPosition.GetPosition().x) &&
+		   (this.lastShorelinePosition.z == cmpPosition.GetPosition().z))
 			// we were already on the shoreline, and have not moved since
 			if (DistanceBetweenEntities(this.entity, this.order.data.target) < 50)
 				needToMove = false;
-		}
 
 		if (needToMove)
 			this.SetNextState("INDIVIDUAL.PICKUP.APPROACHING");
@@ -658,21 +657,21 @@ UnitAI.prototype.UnitFsmSpec = {
 
 		// Only used by other orders to walk there in formation
 		"Order.WalkToTargetRange": function(msg) {
-			if (!this.CheckTargetRangeExplicit(this.order.data.target, this.order.data.min, this.order.data.max))
+			if (!this.CheckRange(this.order.data))
 				this.SetNextState("WALKING");
 			else
 				this.FinishOrder();
 		},
 
 		"Order.WalkToTarget": function(msg) {
-			if (!this.CheckTargetRangeExplicit(this.order.data.target, 0, 0))
+			if (!this.CheckRange(this.order.data))
 				this.SetNextState("WALKING");
 			else
 				this.FinishOrder();
 		},
 
 		"Order.WalkToPointRange": function(msg) {
-			if (!this.CheckPointRangeExplicit(this.order.data.x, this.order.data.z, this.order.data.min, this.order.data.max))
+			if (!this.CheckRange(this.order.data))
 				this.SetNextState("WALKING");
 			else
 				this.FinishOrder();
@@ -1260,13 +1259,11 @@ UnitAI.prototype.UnitFsmSpec = {
 			this.SetDefaultAnimationVariant();
 		},
 
-		"IDLE": {
-			// Formation members do nothing while Idle, but we need the state
-			// so that they keep the formation variant.
-		},
+		"IDLE": "INDIVIDUAL.IDLE",
 
 		"WALKING": {
 			"enter": function() {
+				this.formationOffset = { "x": this.order.data.x, "z": this.order.data.z };
 				let cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
 				cmpUnitMotion.MoveToFormationOffset(this.order.data.target, this.order.data.x, this.order.data.z);
 			},
@@ -1284,7 +1281,7 @@ UnitAI.prototype.UnitFsmSpec = {
 				if (!atDestination && cmpPosition)
 				{
 					let pos = cmpPosition.GetPosition2D();
-					atDestination = this.CheckPointRangeExplicit(pos.X + this.order.data.x, pos.Y + this.order.data.z, 0, 0);
+					atDestination = this.CheckPointRangeExplicit(pos.X + this.order.data.x, pos.Y + this.order.data.z, 0, 1);
 				}
 				if (!atDestination && !msg.error)
 					return;
@@ -1396,12 +1393,6 @@ UnitAI.prototype.UnitFsmSpec = {
 				// get stuck with an incorrect animation
 				this.SelectAnimation("idle");
 
-				if (this.formationController)
-				{
-					this.SetNextState("FORMATIONMEMBER.IDLE");
-					return true;
-				}
-
 				// Idle is the default state. If units try, from the IDLE.enter sub-state, to
 				// begin another order, and that order fails (calling FinishOrder), they might
 				// end up in an infinite loop. To avoid this, all methods that could put the unit in
@@ -1461,6 +1452,16 @@ UnitAI.prototype.UnitFsmSpec = {
 				// (If anyone approaches later, it'll be handled via LosRangeUpdate.)
 				if (this.FindNewTargets())
 					return; // (abort the FSM transition since we may have already switched state)
+
+				if (this.formationOffset && this.formationController)
+				{
+					this.PushOrder("FormationWalk", {
+						"target": this.formationController,
+						"x": this.formationOffset.x,
+						"z": this.formationOffset.z,
+					});
+					return;
+				}
 
 				if (!this.isIdle)
 				{
@@ -1628,6 +1629,7 @@ UnitAI.prototype.UnitFsmSpec = {
 					this.StartTimer(1000, 1000);
 					this.SetHeldPositionOnEntity(this.entity);
 					this.SetAnimationVariant("combat");
+					this.FaceTowardsTarget(this.order.data.target);
 					return false;
 				},
 
@@ -1651,6 +1653,7 @@ UnitAI.prototype.UnitFsmSpec = {
 						this.SetNextState("ESCORTING");
 					else
 					{
+						this.FaceTowardsTarget(this.order.data.target);
 						// if nothing better to do, check if the guarded needs to be healed or repaired
 						var cmpHealth = Engine.QueryInterface(this.isGuardOf, IID_Health);
 						if (cmpHealth && cmpHealth.IsInjured())
@@ -2139,8 +2142,8 @@ UnitAI.prototype.UnitFsmSpec = {
 					{
 						this.StopMoving();
 						this.SetDefaultAnimationVariant();
-						var typename = "gather_" + this.order.data.type.specific;
-						this.SelectAnimation(typename);
+						this.FaceTowardsTarget(this.order.data.target);
+						this.SelectAnimation("gather_" + this.order.data.type.specific);
 					}
 					return false;
 				},
@@ -2185,6 +2188,8 @@ UnitAI.prototype.UnitFsmSpec = {
 							// drop them first to ensure we're only ever carrying one type
 							if (cmpResourceGatherer.IsCarryingAnythingExcept(resourceType.generic))
 								cmpResourceGatherer.DropResources();
+
+							this.FaceTowardsTarget(this.order.data.target);
 
 							// Collect from the target
 							let status = cmpResourceGatherer.PerformGather(this.gatheringTarget);
@@ -2591,6 +2596,8 @@ UnitAI.prototype.UnitFsmSpec = {
 					if (cmpBuilderList)
 						cmpBuilderList.AddBuilder(this.entity);
 
+					this.FaceTowardsTarget(this.order.data.target);
+
 					this.SelectAnimation("build");
 					this.StartTimer(1000, 1000);
 					return false;
@@ -2614,7 +2621,9 @@ UnitAI.prototype.UnitFsmSpec = {
 						return;
 					}
 
-					var cmpBuilder = Engine.QueryInterface(this.entity, IID_Builder);
+					this.FaceTowardsTarget(this.order.data.target);
+
+					let cmpBuilder = Engine.QueryInterface(this.entity, IID_Builder);
 					cmpBuilder.PerformBuilding(this.repairTarget);
 					// if the building is completed, the leave() function will be called
 					// by the ConstructionFinished message
@@ -4140,7 +4149,7 @@ UnitAI.prototype.MoveTo = function(data, iid, type)
 UnitAI.prototype.MoveToPoint = function(x, z)
 {
 	var cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
-	return cmpUnitMotion.MoveToPointRange(x, z, 0, 0);
+	return cmpUnitMotion.MoveToPointRange(x, z, 0, 0); // For point goals, allow a max range of 0.
 };
 
 UnitAI.prototype.MoveToPointRange = function(x, z, rangeMin, rangeMax)
@@ -4155,7 +4164,7 @@ UnitAI.prototype.MoveToTarget = function(target)
 		return false;
 
 	var cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
-	return cmpUnitMotion.MoveToTargetRange(target, 0, 0);
+	return cmpUnitMotion.MoveToTargetRange(target, 0, 1);
 };
 
 UnitAI.prototype.MoveToTargetRange = function(target, iid, type)
@@ -4261,7 +4270,7 @@ UnitAI.prototype.CheckRange = function(data, iid, type)
 		if (data.min || data.max)
 			return this.CheckTargetRangeExplicit(data.target, data.min || -1, data.max || -1);
 		else if (!iid)
-			return this.CheckTargetRangeExplicit(data.target, 0, 0);
+			return this.CheckTargetRangeExplicit(data.target, 0, 1);
 
 		return this.CheckTargetRange(data.target, iid, type);
 	}
