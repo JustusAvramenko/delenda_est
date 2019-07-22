@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+	<castshadow/>
+	<group>
+		<variant frequency="1" name="Base">
+			<animations>
+				<animation file="biped/blacksmith_idle.dae" name="Idle" speed="100"/>
+			</animations>
+			<mesh>skeletal/new/m_tunic_short.dae</mesh>
+			<props>
+				<prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
+				<prop actor="props/units/weapons/norse_forge_hammer.xml" attachpoint="weapon_R"/>
+				<prop actor="props/units/weapons/norse_sword.xml" attachpoint="weapon_L"/>
+			</props>
+			<textures>
+				<texture file="skeletal/norse/basic/transparent_pants1.png" name="baseTex"/>
+			</textures>
+		</variant>
+	</group>
+	 <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+	<material>player_trans.xml</material>
+</actor>
