@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+	<castshadow/>
+	<group>
+		<variant name="Norse Fish Hut">
+			<mesh>structural/norse_fish_hut.dae</mesh>
+		  <props>
+        <prop actor="props/structures/decals/dirt_2x2.xml" attachpoint="root"/>
+        <prop actor="props/fauna/fish_captured.xml" attachpoint="fish_captured_a"/>
+        <prop actor="props/fauna/fish_captured.xml" attachpoint="fish_captured_b"/>
+        <prop actor="props/fauna/fish_captured.xml" attachpoint="fish_captured_c"/>
+        <prop actor="props/fauna/fish_captured.xml" attachpoint="fish_captured_d"/>
+        <prop actor="props/fauna/fish_captured.xml" attachpoint="fish_captured_e"/>
+        <prop actor="props/fauna/fish_captured.xml" attachpoint="fish_captured_f"/>
+        <prop actor="props/structures/norse/table.xml" attachpoint="table_a"/>
+        <prop actor="props/structures/norse/table.xml" attachpoint="table_b"/>
+        <prop actor="props/special/eyecandy/sack_1.xml" attachpoint="sack_a"/>
+        <prop actor="props/special/eyecandy/sack_1.xml" attachpoint="sack_b"/>
+        <prop actor="props/special/eyecandy/sack_1.xml" attachpoint="sack_c"/>
+        <prop actor="props/special/eyecandy/sack_1.xml" attachpoint="sack_d"/>
+      </props>
+			<textures>
+        <texture file="structural/norse_struct.png" name="baseTex"/>
+        <texture file="structural/norse_struct_norm.png" name="normTex"/>
+        <texture file="structural/norse_struct_spec.png" name="specTex"/>
+        <texture file="structural/ao/norse_fish_hut.png" name="aoTex"/>
+			</textures>
+		</variant>
+	</group>
+  <material>basic_trans_ao_parallax_spec.xml</material>
+</actor>

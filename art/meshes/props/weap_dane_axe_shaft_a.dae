@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Daniel Morgado</author>
+      <authoring_tool>Blender 2.79.0 commit date:2018-03-22, commit time:14:10, hash:f4dc9f9d68b</authoring_tool>
+    </contributor>
+    <created>2018-05-27T01:05:06</created>
+    <modified>2018-05-27T01:05:06</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects/>
+  <library_geometries>
+    <geometry id="Box001-mesh" name="Box001">
+      <mesh>
+        <source id="Box001-mesh-positions">
+          <float_array id="Box001-mesh-positions-array" count="60">0.1175 -8.515143 0.3227014 0.3432 -8.515143 -0.01199859 0.3432 11.16986 -0.01199859 0.1175 11.16986 0.3227014 0.09469997 -8.515143 -0.3300986 0.09469997 11.16986 -0.3300986 -0.2847 -8.515143 -0.1920986 -0.2847 11.16986 -0.1920986 -0.2706 -8.515143 0.2114014 -0.2706 11.16986 0.2115014 0.1175 -8.515143 0.3227014 0.3432 -8.515143 -0.01199859 0.3432 11.16986 -0.01199859 0.1175 11.16986 0.3227014 0.09469997 -8.515143 -0.3300986 0.09469997 11.16986 -0.3300986 -0.2847 -8.515143 -0.1920986 -0.2847 11.16986 -0.1920986 -0.2706 -8.515143 0.2114014 -0.2706 11.16986 0.2115014</float_array>
+          <technique_common>
+            <accessor source="#Box001-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box001-mesh-normals">
+          <float_array id="Box001-mesh-normals-array" count="27">0.2757408 0 -0.9612321 0.9993904 0 -0.03491318 -0.8289906 0 -0.5592627 -0.7880077 0 0.6156654 0.3420567 0 0.9396793 -0.7879402 0 0.6157519 0.3421474 0 0.9396464 0 1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#Box001-mesh-normals-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box001-mesh-map-0">
+          <float_array id="Box001-mesh-map-0-array" count="96">0.2366234 0.4065455 0.2285764 0.9294921 0.2287082 0.4065419 0.2246807 0.4065492 0.2364913 0.9294958 0.2366234 0.4065455 0.2128756 0.4065344 0.2246807 0.9294809 0.2246807 0.4065306 0.2207925 0.4065382 0.2127421 0.9294847 0.2128756 0.4065344 0.2287082 0.4065419 0.2206593 0.9294884 0.2207925 0.4065382 0.7234855 0.282167 0.7085531 0.3027197 0.7234852 0.3075683 0.7236602 0.282167 0.7087278 0.3027157 0.7087278 0.2870149 0.7234855 0.282167 0.7234852 0.3075683 0.7327113 0.294867 0.732886 0.294867 0.7236598 0.3075683 0.7087278 0.3027157 0.2366234 0.4065455 0.2364913 0.9294958 0.2285764 0.9294921 0.2246807 0.4065492 0.2246807 0.9294995 0.2364913 0.9294958 0.2128756 0.4065344 0.2127421 0.9294847 0.2246807 0.9294809 0.2207925 0.4065382 0.2206593 0.9294884 0.2127421 0.9294847 0.2287082 0.4065419 0.2285764 0.9294921 0.2206593 0.9294884 0.7234855 0.282167 0.7085531 0.287015 0.7085531 0.3027197 0.7236602 0.282167 0.732886 0.294867 0.7087278 0.3027157</float_array>
+          <technique_common>
+            <accessor source="#Box001-mesh-map-0-array" count="48" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Box001-mesh-vertices">
+          <input semantic="POSITION" source="#Box001-mesh-positions"/>
+        </vertices>
+        <triangles count="16">
+          <input semantic="VERTEX" source="#Box001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Box001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Box001-mesh-map-0" offset="2" set="0"/>
+          <p>4 0 0 2 1 1 1 1 2 6 2 3 5 0 4 4 0 5 8 3 6 7 2 7 6 2 8 0 4 9 9 5 10 8 3 11 1 1 12 3 6 13 0 4 14 15 7 15 19 7 16 13 7 17 14 8 18 18 8 19 16 8 20 15 7 21 13 7 22 12 7 23 11 8 24 10 8 25 18 8 26 4 0 27 5 0 28 2 1 29 6 2 30 7 2 31 5 0 32 8 3 33 9 5 34 7 2 35 0 4 36 3 6 37 9 5 38 1 1 39 2 1 40 3 6 41 15 7 42 17 7 43 19 7 44 14 8 45 11 8 46 18 8 47</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="weap_dane_axe" name="weap_dane_axe" type="NODE">
+        <matrix sid="transform">-6.77527e-9 -6.22076e-8 -0.155 0 -0.155 -4.61936e-9 6.77527e-9 0 -4.61936e-9 0.155 -6.22076e-8 0 0 0 0 1</matrix>
+        <instance_geometry url="#Box001-mesh" name="weap_dane_axe"/>
+        <node id="prop_blade" name="prop_blade" type="NODE">
+          <matrix sid="transform">-2.82009e-7 -6.451613 -1.92273e-7 -3.07471e-7 -2.58929e-6 -1.92273e-7 6.451613 10.31702 -6.451613 2.82009e-7 -2.58929e-6 -4.14062e-6 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

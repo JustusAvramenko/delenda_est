@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
   <Footprint>
-    <Square width="28.0" depth="28.0"/>
+    <Square width="40.0" depth="28.0"/>
     <Height>8.0</Height>
   </Footprint>
   <Identity>
     <Civ>sueb</Civ>
-    <SpecificName>Lissos</SpecificName>
+    <SpecificName>Stadtzentrum</SpecificName>
     <History>This was be the center of the town, a great hall where the clan leader resided. All political matters were probably decided inside such a structure.</History>
   </Identity>
   <Obstruction>
-    <Static width="25.0" depth="25.0"/>
+    <Static width="36.0" depth="24.0"/>
   </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
+	  sueb_support_wagon
     </Entities>
     <Technologies datatype="tokens">
 	  health_units_01
@@ -25,6 +26,6 @@
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/gauls/civic_centre.xml</Actor>
+    <Actor>structures/germans/civic_center.xml</Actor>
   </VisualActor>
 </Entity>

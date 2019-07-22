@@ -1,32 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_gate">
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <wood>40</wood>
-      <stone>40</stone>
-    </Resources>
-  </Cost>
   <Footprint>
-    <Square width="38.5" depth="9.0"/>
+    <Square width="39.0" depth="8.0"/>
     <Height>9.0</Height>
   </Footprint>
   <Identity>
     <Civ>sueb</Civ>
-    <SpecificName>Duoricos</SpecificName>
-    <History>The Romans called this wall 'Murus Gallicus'. Translated, it means 'gaulish wall'. It was extremely resistant to assault by battering ram. Julius Caesar described a type of wood and stone wall, known as a Murus Gallicus, in his account of the Gallic Wars. These walls were made of a stone wall filled with rubble, with wooden logs inside for stability. Caesar noted how the flexibility of the wood added to the strength of the fort in case of battering ram attack.</History>
+    <SpecificName>Stadttor</SpecificName>
   </Identity>
   <Obstruction>
     <Obstructions>
-      <Right width="11" depth="8" x="13" z="0"/>
-      <Left width="11" depth="8" x="-13" z="0"/>
-      <Door width="15" depth="8" x="0" z="0"/>
+      <Right width="12" depth="6.5" x="12.5" z="0"/>
+      <Left width="12" depth="6.5" x="-12.5" z="0"/>
+      <Door width="13" depth="6.5" x="0" z="0"/>
     </Obstructions>
   </Obstruction>
+  <GarrisonHolder>
+    <Max>11</Max>
+    <List datatype="tokens">Ranged+Infantry</List>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <BuffHeal>0</BuffHeal>
+	<LoadingRange>0.5</LoadingRange>
+    <VisibleGarrisonPoints>
+      <Archer1>
+        <X>0</X><Y>9.7</Y><Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>12</X><Y>9.7</Y><Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-12</X><Y>9.7</Y><Z>0</Z>
+      </Archer3>
+      <Archer4>
+        <X>4</X><Y>9.7</Y><Z>0</Z>
+      </Archer4>
+      <Archer5>
+        <X>-4</X><Y>9.7</Y><Z>0</Z>
+      </Archer5>
+	  <Archer6>
+        <X>0</X><Y>10.3</Y><Z>4</Z>
+      </Archer6>
+	  <Archer7>
+        <X>4</X><Y>10.3</Y><Z>4</Z>
+      </Archer7>
+      <Archer8>
+        <X>-4</X><Y>10.3</Y><Z>4</Z>
+	  </Archer8>
+	  <Archer9>
+        <X>0</X><Y>10.3</Y><Z>6</Z>
+      </Archer9>
+	  <Archer10>
+        <X>4</X><Y>10.3</Y><Z>6</Z>
+      </Archer10>
+      <Archer11>
+        <X>-4</X><Y>10.3</Y><Z>6</Z>
+      </Archer11>
+    </VisibleGarrisonPoints>
+  </GarrisonHolder>
   <VisualActor>
-    <Actor>structures/celts/wall_gate.xml</Actor>
+    <Actor>structures/germans/wall_gate.xml</Actor>
   </VisualActor>
   <WallPiece>
-    <Length>25.0</Length>
+    <Length>37.5</Length>
   </WallPiece>
 </Entity>

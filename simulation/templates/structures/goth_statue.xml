@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special_statue">
+  <BuildRestrictions>
+    <Category>CultStatue</Category>
+    <Distance>
+      <FromClass>CultStatue</FromClass>
+      <MinDistance>20</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>80</BuildTime>
+    <Resources>
+      <wood>200</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+      <coin>0</coin>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="3.0"/>
+    <Height>10.0</Height>
+  </Footprint>
   <Identity>
     <Civ>goth</Civ>
     <SpecificName>Ruhmesstatue</SpecificName>
   </Identity>
+  <Obstruction>
+    <Static width="4.5" depth="4.5"/>
+  </Obstruction>
+  <StatusBars>
+    <BarWidth>5.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>14.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/gauls/cult_statue_1.xml</Actor>
+    <FoundationActor>structures/carthaginians/fndn_wooden_tower.xml</FoundationActor>
+  </VisualActor>
 </Entity>

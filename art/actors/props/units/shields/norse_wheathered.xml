@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="base">
+      <mesh>props/shield/shield_norse_round_e.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="50" name="weathered_dark">
+      <textures>
+        <texture file="props/shields/shield_damaged_weathered_dark.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="50" name="weathered_light">
+      <textures>
+        <texture file="props/shields/shield_damaged_weathered_light.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

@@ -1,35 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_medium">
   <Footprint>
-    <Square width="26.5" depth="8.5"/>
+    <Square width="26.0" depth="7.0"/>
     <Height>9.0</Height>
   </Footprint>
+  <Identity>
+    <Civ>sueb</Civ>
+    <SpecificName>Stadtmauer</SpecificName>
+    <SelectionGroupName>structures/sueb_wallset_stone</SelectionGroupName>
+  </Identity>
   <GarrisonHolder>
+    <Max>3</Max>
+    <List datatype="tokens">Ranged+Infantry</List>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
     <VisibleGarrisonPoints>
       <Archer1>
-        <X>0</X><Y>9.3</Y><Z>0</Z>
+        <X>0</X><Y>9.5</Y><Z>0</Z>
       </Archer1>
       <Archer2>
-        <X>4</X><Y>9.3</Y><Z>0</Z>
+        <X>4</X><Y>9.5</Y><Z>0</Z>
       </Archer2>
       <Archer3>
-        <X>-4</X><Y>9.3</Y><Z>0</Z>
+        <X>-4</X><Y>9.5</Y><Z>0</Z>
       </Archer3>
     </VisibleGarrisonPoints>
   </GarrisonHolder>
-  <Identity>
-    <Civ>sueb</Civ>
-	<SelectionGroupName>structures/celt_wallset_stone</SelectionGroupName>
-    <SpecificName>Rate</SpecificName>
-    <History>The Romans called this wall 'Murus Gallicus'. Translated, it means 'gaulish wall'. It was extremely resistant to assault by battering ram. Julius Caesar described a type of wood and stone wall, known as a Murus Gallicus, in his account of the Gallic Wars. These walls were made of a stone wall filled with rubble, with wooden logs inside for stability. Caesar noted how the flexibility of the wood added to the strength of the fort in case of battering ram attack.</History>
-  </Identity>
   <Obstruction>
-    <Static width="25.0" depth="7.0"/>
+    <Static width="24.0" depth="6.0"/>
   </Obstruction>
   <VisualActor>
-    <Actor>structures/celts/wall_medium.xml</Actor>
+    <Actor>structures/germans/wall_medium.xml</Actor>
   </VisualActor>
   <WallPiece>
-    <Length>25.0</Length>
+    <Length>23.8</Length>
   </WallPiece>
 </Entity>

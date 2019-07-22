@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant name="Norse sail">
+      <mesh>props/norse_knarr_sail.dae</mesh>
+      <animations>
+        <animation file="other/norse_sail_idle.dae" name="idle" speed="50"/>
+        <animation file="other/norse_sail_move.dae" name="Walk" speed="5"/>
+      </animations>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Norse sail_a">
+      <textures>
+        <texture file="props/norse_ship_sail_a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Norse sail_b">
+      <textures>
+        <texture file="props/norse_ship_sail_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Norse sail_c">
+      <textures>
+        <texture file="props/norse_ship_sail_c.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

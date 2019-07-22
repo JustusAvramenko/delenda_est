@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+	<castshadow/>
+	<group>
+		<variant name="Norse Dock">
+			<mesh>structural/norse_dock_struct.dae</mesh>
+			<props>
+        <prop actor="props/structures/decals/dirt_2x4.xml" attachpoint="root"/>
+				<prop actor="props/structures/norse/barrel.xml" attachpoint="barrel_1"/>
+        <prop actor="props/structures/norse/barrel.xml" attachpoint="barrel_2"/>
+        <prop actor="props/structures/norse/barrel.xml" attachpoint="barrel_3"/>
+        <prop actor="props/structures/norse/barrel.xml" attachpoint="barrel_4"/>
+        <prop actor="props/structures/norse/barrel.xml" attachpoint="barrel_5"/>
+        <prop actor="props/structures/norse/barrel.xml" attachpoint="barrel_6"/>
+        <prop actor="props/structures/norse/barrel.xml" attachpoint="barrel_7"/>
+        <prop actor="props/special/eyecandy/crate_a.xml" attachpoint="crate_a"/>
+        <prop actor="props/special/eyecandy/crate_a.xml" attachpoint="crate_b"/>
+        <prop actor="props/special/eyecandy/crate_a.xml" attachpoint="crate_c"/>
+        <prop actor="props/special/eyecandy/handcart_1.xml" attachpoint="handcart"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="wood_pile_a"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="wood_pile_b"/>
+        <prop actor="props/special/eyecandy/wood_pile_1_c.xml" attachpoint="wood_pile_c"/>
+        <prop actor="props/special/eyecandy/crate_a.xml" attachpoint="crate_c"/>
+        <prop actor="props/special/eyecandy/crate_a.xml" attachpoint="crate_c"/>
+        <prop actor="props/units/shields/norse_ship_shield_a.xml" attachpoint="shield"/>
+        <prop actor="props/units/shields/norse_ship_shield_c.xml" attachpoint="building_shield"/>
+			</props>
+			<textures>
+        <texture file="structural/norse_struct.png" name="baseTex"/>
+        <texture file="structural/norse_struct_norm.png" name="normTex"/>
+        <texture file="structural/norse_struct_spec.png" name="specTex"/>
+        <texture file="structural/ao/norse_dock_struct.png" name="aoTex"/>
+			</textures>
+		</variant>
+	</group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
