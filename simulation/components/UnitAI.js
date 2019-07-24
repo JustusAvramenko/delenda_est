@@ -264,6 +264,8 @@ UnitAI.prototype.UnitFsmSpec = {
 		}
 
 		this.SetHeldPosition(this.order.data.x, this.order.data.z);
+		// It's not too bad if we don't arrive at exactly the right position.
+		this.order.data.relaxed = true;
 		if (this.IsAnimal())
 			this.SetNextState("ANIMAL.WALKING");
 		else
@@ -288,6 +290,8 @@ UnitAI.prototype.UnitFsmSpec = {
 		}
 
 		this.SetHeldPosition(this.order.data.x, this.order.data.z);
+		// It's not too bad if we don't arrive at exactly the right position.
+		this.order.data.relaxed = true;
 		if (this.IsAnimal())
 			this.SetNextState("ANIMAL.WALKING");   // WalkAndFight not applicable for animals
 		else
@@ -319,6 +323,9 @@ UnitAI.prototype.UnitFsmSpec = {
 			this.FinishOrder();
 			return true;
 		}
+
+		// It's not too bad if we don't arrive at exactly the right position.
+		this.order.data.relaxed = true;
 
 		if (this.IsAnimal())
 			this.SetNextState("ANIMAL.WALKING");
@@ -395,6 +402,8 @@ UnitAI.prototype.UnitFsmSpec = {
 		this.order.data.attackType = type;
 
 		this.RememberTargetPosition();
+		if (this.order.data.hunting && this.orderQueue.length > 1 && this.orderQueue[1].type === "Gather")
+			this.RememberTargetPosition(this.orderQueue[1].data);
 
 		// If we are already at the target, try attacking it from here
 		if (this.CheckTargetAttackRange(this.order.data.target, this.order.data.attackType))
@@ -450,6 +459,9 @@ UnitAI.prototype.UnitFsmSpec = {
 			this.PushOrderFront("Pack", { "force": true });
 			return;
 		}
+
+		// It's not too bad if we don't arrive at exactly the right position.
+		this.order.data.relaxed = true;
 
 		this.SetNextState("INDIVIDUAL.PATROL");
 	},
@@ -533,6 +545,7 @@ UnitAI.prototype.UnitFsmSpec = {
 	"Order.GatherNearPosition": function(msg) {
 		this.SetNextState("INDIVIDUAL.GATHER.WALKING");
 		this.order.data.initPos = { 'x': this.order.data.x, 'z': this.order.data.z };
+		this.order.data.relaxed = true;
 	},
 
 	"Order.ReturnResource": function(msg) {
@@ -897,8 +910,11 @@ UnitAI.prototype.UnitFsmSpec = {
 			},
 
 			"MovementUpdate": function(msg) {
-				if (this.CheckRange(this.order.data) && this.FinishOrder())
+				if (msg.likelyFailure || this.CheckRange(this.order.data))
+				{
+					this.FinishOrder();
 					this.CallMemberFunction("ResetFinishOrder", []);
+				}
 			},
 		},
 
@@ -926,8 +942,11 @@ UnitAI.prototype.UnitFsmSpec = {
 			},
 
 			"MovementUpdate": function(msg) {
-				if (this.CheckRange(this.order.data) && this.FinishOrder())
+				if (msg.likelyFailure || this.CheckRange(this.order.data))
+				{
+					this.FinishOrder();
 					this.CallMemberFunction("ResetFinishOrder", []);
+				}
 			},
 		},
 
@@ -971,7 +990,7 @@ UnitAI.prototype.UnitFsmSpec = {
 			},
 
 			"MovementUpdate": function(msg) {
-				if (!msg.error && !this.CheckRange(this.order.data))
+				if (!msg.likelyFailure && !this.CheckRange(this.order.data))
 					return;
 				/**
 				 * A-B-A-B-..:
@@ -1029,7 +1048,8 @@ UnitAI.prototype.UnitFsmSpec = {
 				},
 
 				"MovementUpdate": function(msg) {
-					this.SetNextState("GARRISONING");
+					if (msg.likelyFailure || msg.likelySuccess)
+						this.SetNextState("GARRISONING");
 				},
 			},
 
@@ -1064,7 +1084,7 @@ UnitAI.prototype.UnitFsmSpec = {
 			},
 
 			"MovementUpdate": function(msg) {
-				if (!msg.error && !this.CheckRange(this.order.data))
+				if (!msg.likelyFailure && !this.CheckRange(this.order.data))
 					return;
 
 				if (this.FinishOrder())
@@ -1283,7 +1303,7 @@ UnitAI.prototype.UnitFsmSpec = {
 					let pos = cmpPosition.GetPosition2D();
 					atDestination = this.CheckPointRangeExplicit(pos.X + this.order.data.x, pos.Y + this.order.data.z, 0, 1);
 				}
-				if (!atDestination && !msg.error)
+				if (!atDestination && !msg.likelyFailure)
 					return;
 
 				if (this.FinishOrder())
@@ -1480,12 +1500,15 @@ UnitAI.prototype.UnitFsmSpec = {
 				}
 			},
 
-			"leave": function () {
+			"leave": function() {
 				this.StopMoving();
 			},
 
 			"MovementUpdate": function(msg) {
-				if (msg.error || this.CheckRange(this.order.data))
+				// If it looks like the path is failing, and we are close enough (3 tiles)
+				// stop anyways. This avoids pathing for an unreachable goal and reduces lag considerably.
+				if (msg.likelyFailure || msg.obstructed && this.RelaxedMaxRangeCheck(this.order.data, 12) ||
+					 this.CheckRange(this.order.data))
 					this.FinishOrder();
 			},
 		},
@@ -1514,7 +1537,10 @@ UnitAI.prototype.UnitFsmSpec = {
 			},
 
 			"MovementUpdate": function(msg) {
-				if (msg.error || this.CheckRange(this.order.data))
+				// If it looks like the path is failing, and we are close enough (3 tiles)
+				// stop anyways. This avoids pathing for an unreachable goal and reduces lag considerably.
+				if (msg.likelyFailure || msg.obstructed && this.RelaxedMaxRangeCheck(this.order.data, 12) ||
+					 this.CheckRange(this.order.data))
 					this.FinishOrder();
 			},
 		},
@@ -1553,8 +1579,9 @@ UnitAI.prototype.UnitFsmSpec = {
 			},
 
 			"MovementUpdate": function(msg) {
-				if (!msg.error && !this.CheckRange(this.order.data))
-					return;
+				if (msg.likelyFailure || msg.obstructed && this.RelaxedMaxRangeCheck(this.order.data, 12) ||
+					 this.CheckRange(this.order.data))
+					this.FinishOrder();
 
 				if (this.orderQueue.length == 1)
 					this.PushOrder("Patrol", this.patrolStartPosOrder);
@@ -1618,7 +1645,7 @@ UnitAI.prototype.UnitFsmSpec = {
 				},
 
 				"MovementUpdate": function(msg) {
-					if (msg.error || this.CheckTargetRangeExplicit(this.isGuardOf, 0, this.guardRange))
+					if (msg.likelyFailure || this.CheckTargetRangeExplicit(this.isGuardOf, 0, this.guardRange))
 						this.SetNextState("GUARDING");
 				},
 			},
@@ -1703,7 +1730,7 @@ UnitAI.prototype.UnitFsmSpec = {
 
 			"MovementUpdate": function(msg) {
 				// When we've run far enough, stop fleeing
-				if (msg.error || this.CheckTargetRangeExplicit(this.order.data.target, this.order.data.distanceToFlee, -1))
+				if (msg.likelyFailure || this.CheckTargetRangeExplicit(this.order.data.target, this.order.data.distanceToFlee, -1))
 					this.FinishOrder();
 			},
 
@@ -1755,11 +1782,16 @@ UnitAI.prototype.UnitFsmSpec = {
 							this.WalkToHeldPosition();
 					}
 					else
+					{
 						this.RememberTargetPosition();
+						if (this.order.data.hunting && this.orderQueue.length > 1 &&
+						     this.orderQueue[1].type === "Gather")
+							this.RememberTargetPosition(this.orderQueue[1].data);
+					}
 				},
 
 				"MovementUpdate": function(msg) {
-					if (msg.error)
+					if (msg.likelyFailure)
 					{
 						// This also handles hunting.
 						if (this.orderQueue.length > 1)
@@ -1779,22 +1811,21 @@ UnitAI.prototype.UnitFsmSpec = {
 						return;
 					}
 
-					if (!this.CheckTargetAttackRange(this.order.data.target, this.order.data.attackType))
+					if (this.CheckTargetAttackRange(this.order.data.target, this.order.data.attackType))
 					{
+						// If the unit needs to unpack, do so
+						if (this.CanUnpack())
+						{
+							this.PushOrderFront("Unpack", { "force": true });
+							return;
+						}
+						this.SetNextState("ATTACKING");
+					}
+					else if (msg.likelySuccess)
 						// Try moving again,
 						// attack range uses a height-related formula and our actual max range might have changed.
 						if (!this.MoveToTargetAttackRange(this.order.data.target, this.order.data.attackType))
 							this.FinishOrder();
-						return;
-					}
-
-					// If the unit needs to unpack, do so
-					if (this.CanUnpack())
-					{
-						this.PushOrderFront("Unpack", { "force": true });
-						return;
-					}
-					this.SetNextState("ATTACKING");
 				},
 			},
 
@@ -1896,6 +1927,8 @@ UnitAI.prototype.UnitFsmSpec = {
 					}
 
 					this.RememberTargetPosition();
+					if (this.order.data.hunting && this.orderQueue.length > 1 && this.orderQueue[1].type === "Gather")
+						this.RememberTargetPosition(this.orderQueue[1].data);
 
 					let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
 					this.lastAttacked = cmpTimer.GetTime() - msg.lateness;
@@ -2019,8 +2052,22 @@ UnitAI.prototype.UnitFsmSpec = {
 					}
 				},
 
-				"MovementUpdate": function() {
-					this.SetNextState("ATTACKING");
+				"MovementUpdate": function(msg) {
+					if (this.CheckTargetAttackRange(this.order.data.target, this.order.data.attackType))
+					{
+						// If the unit needs to unpack, do so
+						if (this.CanUnpack())
+						{
+							this.PushOrderFront("Unpack", { "force": true });
+							return;
+						}
+						this.SetNextState("ATTACKING");
+					}
+					else if (msg.likelySuccess)
+						// Try moving again,
+						// attack range uses a height-related formula and our actual max range might have changed.
+						if (!this.MoveToTargetAttackRange(this.order.data.target, this.order.data.attackType))
+							this.FinishOrder();
 				},
 			},
 		},
@@ -2047,7 +2094,8 @@ UnitAI.prototype.UnitFsmSpec = {
 
 				"MovementUpdate": function(msg) {
 					// The GATHERING timer will handle finding a valid resource.
-					this.SetNextState("GATHERING");
+					if (msg.likelyFailure || this.CheckRange(this.order.data, IID_ResourceGatherer))
+						this.SetNextState("GATHERING");
 				},
 
 				"leave": function() {
@@ -2081,7 +2129,8 @@ UnitAI.prototype.UnitFsmSpec = {
 
 				"MovementUpdate": function(msg) {
 					// If we failed, the GATHERING timer will handle finding a valid resource.
-					if (msg.error || this.CheckRange(this.order.data))
+					if (msg.likelyFailure || msg.obstructed && this.RelaxedMaxRangeCheck(this.order.data, 8) ||
+						 this.CheckRange(this.order.data))
 						this.SetNextState("GATHERING");
 				},
 			},
@@ -2322,7 +2371,7 @@ UnitAI.prototype.UnitFsmSpec = {
 
 			"APPROACHING": {
 				"enter": function() {
-					if (this.CheckTargetRange(this.order.data.target, IID_Heal))
+					if (this.CheckRange(this.order.data, IID_Heal))
 					{
 						this.SetNextState("HEALING");
 						return true;
@@ -2330,7 +2379,7 @@ UnitAI.prototype.UnitFsmSpec = {
 
 					if (!this.MoveTo(this.order.data, IID_Heal))
 					{
-						this.FinishOrder();
+						this.SetNextState("FINDINGNEWTARGET");
 						return true;
 					}
 
@@ -2344,21 +2393,31 @@ UnitAI.prototype.UnitFsmSpec = {
 
 				"Timer": function(msg) {
 					if (this.ShouldAbandonChase(this.order.data.target, this.order.data.force, IID_Heal, null))
-					{
-						// Return to our original position unless we have a better order.
-						if (!this.FinishOrder() && this.GetStance().respondHoldGround)
-							this.WalkToHeldPosition();
-					}
+						this.SetNextState("FINDINGNEWTARGET");
 				},
 
-				"MovementUpdate": function() {
-					this.SetNextState("HEALING");
+				"MovementUpdate": function(msg) {
+					if (msg.likelyFailure || this.CheckRange(this.order.data, IID_Heal))
+						this.SetNextState("HEALING");
 				},
 			},
 
 			"HEALING": {
 				"enter": function() {
-					var cmpHeal = Engine.QueryInterface(this.entity, IID_Heal);
+					if (!this.CheckRange(this.order.data, IID_Heal))
+					{
+						this.SetNextState("APPROACHING");
+						return true;
+					}
+
+					if (!this.TargetIsAlive(this.order.data.target) ||
+					    !this.CanHeal(this.order.data.target))
+					{
+						this.SetNextState("FINDINGNEWTARGET");
+						return true;
+					}
+
+					let cmpHeal = Engine.QueryInterface(this.entity, IID_Heal);
 					this.healTimers = cmpHeal.GetTimers();
 
 					// If the repeat time since the last heal hasn't elapsed,
@@ -2371,14 +2430,12 @@ UnitAI.prototype.UnitFsmSpec = {
 						prepare = Math.max(prepare, repeatLeft);
 					}
 
-					this.StopMoving();
-
 					this.SelectAnimation("heal");
 					this.SetAnimationSync(prepare, this.healTimers.repeat);
 					this.StartTimer(prepare, this.healTimers.repeat);
 
 					// If using a non-default prepare time, re-sync the animation when the timer runs.
-					this.resyncAnimation = (prepare != this.healTimers.prepare) ? true : false;
+					this.resyncAnimation = prepare != this.healTimers.prepare;
 
 					this.FaceTowardsTarget(this.order.data.target);
 				},
@@ -2389,30 +2446,19 @@ UnitAI.prototype.UnitFsmSpec = {
 				},
 
 				"Timer": function(msg) {
-					var target = this.order.data.target;
+					let target = this.order.data.target;
 					// Check the target is still alive and healable
-					if (this.TargetIsAlive(target) && this.CanHeal(target))
+					if (!this.TargetIsAlive(target) || !this.CanHeal(target))
 					{
-						// Check if we can still reach the target
-						if (this.CheckTargetRange(target, IID_Heal))
-						{
-							var cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
-							this.lastHealed = cmpTimer.GetTime() - msg.lateness;
-
-							this.FaceTowardsTarget(target);
-							var cmpHeal = Engine.QueryInterface(this.entity, IID_Heal);
-							cmpHeal.PerformHeal(target);
-
-							if (this.resyncAnimation)
-							{
-								this.SetAnimationSync(this.healTimers.repeat, this.healTimers.repeat);
-								this.resyncAnimation = false;
-							}
-							return;
-						}
-						// Can't reach it - try to chase after it
+						this.SetNextState("FINDINGNEWTARGET");
+						return;
+					}
+					// Check if we can still reach the target
+					if (!this.CheckRange(this.order.data, IID_Heal))
+					{
 						if (this.ShouldChaseTargetedEntity(target, this.order.data.force))
 						{
+							// Can't reach it - try to chase after it
 							if (this.CanPack())
 							{
 								this.PushOrderFront("Pack", { "force": true });
@@ -2420,18 +2466,42 @@ UnitAI.prototype.UnitFsmSpec = {
 							}
 							this.SetNextState("HEAL.APPROACHING");
 						}
-					}
-					// Can't reach it, healed to max hp or doesn't exist any more - give up
-					if (this.FinishOrder())
+						else
+							this.SetNextState("FINDINGNEWTARGET");
 						return;
+					}
+
+					let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
+					this.lastHealed = cmpTimer.GetTime() - msg.lateness;
+
+					this.FaceTowardsTarget(target);
+					let cmpHeal = Engine.QueryInterface(this.entity, IID_Heal);
+					cmpHeal.PerformHeal(target);
+
+					if (this.resyncAnimation)
+					{
+						this.SetAnimationSync(this.healTimers.repeat, this.healTimers.repeat);
+						this.resyncAnimation = false;
+					}
+				},
+			},
+
+			"FINDINGNEWTARGET": {
+				"enter": function() {
+					// If we have another order, do that instead.
+					if (this.FinishOrder())
+						return true;
 
 					// Heal another one
 					if (this.FindNewHealTargets())
-						return;
+						return true;
 
 					// Return to our original position
 					if (this.GetStance().respondHoldGround)
 						this.WalkToHeldPosition();
+
+					// We quit this state right away.
+					return true;
 				},
 			},
 		},
@@ -2451,18 +2521,18 @@ UnitAI.prototype.UnitFsmSpec = {
 					this.StopMoving();
 				},
 
-				"MovementUpdate": function() {
+				"MovementUpdate": function(msg) {
 					// Check the dropsite is in range and we can return our resource there
 					// (we didn't get stopped before reaching it)
 					if (this.CheckTargetRange(this.order.data.target, IID_ResourceGatherer) && this.CanReturnResource(this.order.data.target, true))
 					{
-						var cmpResourceDropsite = Engine.QueryInterface(this.order.data.target, IID_ResourceDropsite);
+						let cmpResourceDropsite = Engine.QueryInterface(this.order.data.target, IID_ResourceDropsite);
 						if (cmpResourceDropsite)
 						{
 							// Dump any resources we can
-							var dropsiteTypes = cmpResourceDropsite.GetTypes();
+							let dropsiteTypes = cmpResourceDropsite.GetTypes();
 
-							var cmpResourceGatherer = Engine.QueryInterface(this.entity, IID_ResourceGatherer);
+							let cmpResourceGatherer = Engine.QueryInterface(this.entity, IID_ResourceGatherer);
 							cmpResourceGatherer.CommitResources(dropsiteTypes);
 
 							// Stop showing the carried resource animation.
@@ -2475,12 +2545,16 @@ UnitAI.prototype.UnitFsmSpec = {
 						}
 					}
 
-					// The dropsite was destroyed, or we couldn't reach it, or ownership changed
+					if (msg.obstructed)
+						return;
+
+					// If we are here: we are in range but not carrying the right resources (or resources at all),
+					// the dropsite was destroyed, or we couldn't reach it, or ownership changed.
 					// Look for a new one.
 
-					var cmpResourceGatherer = Engine.QueryInterface(this.entity, IID_ResourceGatherer);
-					var genericType = cmpResourceGatherer.GetMainCarryingType();
-					var nearby = this.FindNearestDropsite(genericType);
+					let cmpResourceGatherer = Engine.QueryInterface(this.entity, IID_ResourceGatherer);
+					let genericType = cmpResourceGatherer.GetMainCarryingType();
+					let nearby = this.FindNearestDropsite(genericType);
 					if (nearby)
 					{
 						this.FinishOrder();
@@ -2514,7 +2588,7 @@ UnitAI.prototype.UnitFsmSpec = {
 				},
 
 				"MovementUpdate": function(msg) {
-					if (!msg.error && !this.CheckTargetRange(this.order.data.target, IID_Trader))
+					if (!msg.likelyFailure && !this.CheckTargetRange(this.order.data.target, IID_Trader))
 						return;
 
 					if (this.waypoints && this.waypoints.length)
@@ -2552,8 +2626,9 @@ UnitAI.prototype.UnitFsmSpec = {
 					this.StopMoving();
 				},
 
-				"MovementUpdate": function() {
-					this.SetNextState("REPAIRING");
+				"MovementUpdate": function(msg) {
+					if (msg.likelyFailure || msg.likelySuccess)
+						this.SetNextState("REPAIRING");
 				},
 			},
 
@@ -2762,8 +2837,9 @@ UnitAI.prototype.UnitFsmSpec = {
 					this.StopMoving();
 				},
 
-				"MovementUpdate": function() {
-					this.SetNextState("GARRISONED");
+				"MovementUpdate": function(msg) {
+					if (msg.likelyFailure || msg.likelySuccess)
+						this.SetNextState("GARRISONED");
 				},
 			},
 
@@ -2942,8 +3018,9 @@ UnitAI.prototype.UnitFsmSpec = {
 					this.StopMoving();
 				},
 
-				"MovementUpdate": function() {
-					this.SetNextState("LOADING");
+				"MovementUpdate": function(msg) {
+					if (msg.likelyFailure || msg.likelySuccess)
+						this.SetNextState("LOADING");
 				},
 
 				"PickupCanceled": function() {
@@ -3786,11 +3863,9 @@ UnitAI.prototype.StopTimer = function()
 	this.timer = undefined;
 };
 
-//// Message handlers /////
-
-UnitAI.prototype.OnMotionChanged = function(msg)
+UnitAI.prototype.OnMotionUpdate = function(msg)
 {
-	this.UnitFsm.ProcessMessage(this, { "type": "MovementUpdate", "error": msg.error });
+	this.UnitFsm.ProcessMessage(this, Object.assign({ "type": "MovementUpdate" }, msg));
 };
 
 UnitAI.prototype.OnGlobalConstructionFinished = function(msg)
@@ -4390,6 +4465,20 @@ UnitAI.prototype.CheckTargetVisible = function(target)
 
 	// Either visible directly, or visible in fog
 	return true;
+};
+
+/**
+ * @returns true if the unit is in the relaxed-range from the target.
+ */
+UnitAI.prototype.RelaxedMaxRangeCheck = function(data, relaxedRange)
+{
+	if (!data.relaxed)
+		return false;
+
+	let ndata = data;
+	ndata.min = 0;
+	ndata.max = relaxedRange;
+	return this.CheckRange(ndata);
 };
 
 /**
