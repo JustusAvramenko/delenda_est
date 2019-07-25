@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_economic_farmstead">
-	<Footprint>
-		<Square width="24" depth="24"/>
-		<Height>8.0</Height>
-	</Footprint>
-	<Identity>
-		<Civ>sueb</Civ>
-		<SpecificName>Kornspeicher</SpecificName>
-		<History>Farming typically revolved around small hamlets and farmsteads with enclosed rectilinear fields - each having areas of pasture, farmland and wood. Ploughing became more efficient with the arrival of the iron share and a two field rotation was introduced; crops one year followed by a fallow that was grazed by livestock. This lead to surprisingly high yields and fuelled population growth. The image of a farmstead would most likely be a house with some out-buildings. Storage of crops was either in pits or in raised stores and harvest was over several months - weeds, grain and then straw.</History>
-	</Identity>
-	<Obstruction>
-		<Static width="20" depth="20"/>
-	</Obstruction>
-	<VisualActor>
-		<FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-		<Actor>structures/germans/corral.xml</Actor>
-	</VisualActor>
+  <Auras datatype="tokens">
+    corral_garrison
+	slaughterhouse
+  </Auras>
+  <Footprint>
+    <Square width="24" depth="24"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">Slave Minister Civilian+Citizen Domestic</List>
+  </GarrisonHolder>
+  <Identity>
+    <Civ>sueb</Civ>
+    <SpecificName>Kornspeicher</SpecificName>
+    <History>Farming typically revolved around small hamlets and farmsteads with enclosed rectilinear fields - each having areas of pasture, farmland and wood. Ploughing became more efficient with the arrival of the iron share and a two field rotation was introduced; crops one year followed by a fallow that was grazed by livestock. This lead to surprisingly high yields and fuelled population growth. The image of a farmstead would most likely be a house with some out-buildings. Storage of crops was either in pits or in raised stores and harvest was over several months - weeds, grain and then straw.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="20" depth="20"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+	  gaia/fauna_pig
+      gaia/fauna_sheep
+    </Entities>
+    <Technologies datatype="tokens">
+	  training_animals_husbandry
+	  gather_draft_animals
+      training_animals_stockbreeding
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+    <Actor>structures/germans/corral.xml</Actor>
+  </VisualActor>
 </Entity>
