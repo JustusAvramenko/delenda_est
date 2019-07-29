@@ -4,6 +4,16 @@
 
 ---
 
+### 0 A.D. Delenda Est on youtube (click picture below) -- Isometric View with the ATHENIANS
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=KfQcZtOLaAQ
+" target="_blank"><img src="https://i.ytimg.com/vi/KfQcZtOLaAQ/maxresdefault.jpg" 
+alt="0 A.D. Delenda Est -- Isometric View with the ATHENIANS" width="750" height="500" border="50" /></a>
+
+---
+
+### Gameplay screenshhot of Suebian Germans
+
 ![Delenda Est](https://github.com/psypherium/delenda_est/blob/patch-1/.github/delenda_est_screenshot.jpg "Delenda Est")
 
 ---
