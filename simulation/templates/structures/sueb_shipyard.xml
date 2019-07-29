@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_economic_dock">
+<Entity parent="template_structure_military_shipyard">
   <Footprint>
-    <Square width="12.0" depth="24.0"/>
+    <Square width="40.0" depth="44.0"/>
     <Height>8.0</Height>
   </Footprint>
   <Health>
@@ -9,10 +9,10 @@
   </Health>
   <Identity>
     <Civ>sueb</Civ>
-    <SpecificName>Anklagebank</SpecificName>
+    <SpecificName>Werft</SpecificName>
   </Identity>
   <Obstruction>
-    <Static width="10.0" depth="22.0"/>
+    <Static width="36.0" depth="40.0"/>
   </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
@@ -21,7 +21,7 @@
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/britons/dock.xml</Actor>
-    <FoundationActor>structures/fndn_celt_dock.xml</FoundationActor>
+    <Actor>structures/germans/dock_base.xml</Actor>
+    <FoundationActor>structures/fndn_6x4_dock.xml</FoundationActor>
   </VisualActor>
 </Entity>
