@@ -7,7 +7,7 @@
 
 To download the latest code, run this command: ```git clone https://github.com/JustusAvramenko/delenda_est.git```
 
-To update the code quickly, downloading only the new and changed files, run ```git pull```
+To update the code quickly, downloading only the new and changed files, run ```git pull``` inside the "delenda_est" directory.
 
 ----
 
