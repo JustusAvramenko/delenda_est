@@ -12,7 +12,7 @@ alt="0 A.D. Delenda Est -- Isometric View with the ATHENIANS" width="750" height
 
 ---
 
-### Gameplay screenshhot of Suebian Germans
+### Gameplay screenshot of Suebian Germans
 
 ![Delenda Est](https://github.com/psypherium/delenda_est/blob/patch-1/.github/delenda_est_screenshot.jpg "Delenda Est")
 
