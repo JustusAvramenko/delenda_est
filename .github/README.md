@@ -4,6 +4,10 @@
 
 ---
 
+![Delenda Est](https://github.com/psypherium/delenda_est/blob/patch-1/.github/delenda_est_screenshot.jpg "Delenda Est")
+
+---
+
 
 To download the latest code, run this command: ```git clone https://github.com/JustusAvramenko/delenda_est.git```
 
