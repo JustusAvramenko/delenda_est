@@ -6,7 +6,6 @@
       <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_hele_e.xml" attachpoint="head"/>
-        <prop actor="props/units/helmets/hele_sacredband.xml" attachpoint="helmet"/>
         <prop actor="props/units/shields/thebes_sacred_band.xml" attachpoint="shield_arm"/>
         <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/capes/hoplite.xml" attachpoint="root"/>
@@ -14,6 +13,98 @@
     </variant>
   </group>
   <group>
+    <variant frequency="1" name="Helmets-Chalcidean-A3">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_a3.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmets-Chalcidean-A5">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_a5.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmets-Chalcidean-S3">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_s3.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmets-Chalcidean-S5">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_s5.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmets-Thracian-B">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_b.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmets-Thracian-B-crested">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_b_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmets-Thracian-01">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_b5_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="2" name="Helmet Boeotian Bronze-00">
+      <props>
+        <prop actor="props/units/helmets/hele_boeotian.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet Boeotian Bronze-01">
+      <props>
+        <prop actor="props/units/helmets/hele_boeotian_b2.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet Boeotian Bronze-02">
+      <props>
+        <prop actor="props/units/helmets/hele_boeotian_b2_laurel.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet Boeotian Silver-01">
+      <props>
+        <prop actor="props/units/helmets/hele_boeotian_s2.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet Boeotian Silver-02">
+      <props>
+        <prop actor="props/units/helmets/hele_boeotian_s2_laurel.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="cuirass-2a">
+      <textures>
+        <texture file="skeletal/hele_cuirass_2_a.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="cuirass-2b">
+      <textures>
+        <texture file="skeletal/hele_cuirass_2_b.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="cuirass-2c">
+      <textures>
+        <texture file="skeletal/hele_cuirass_2_c.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="cuirass-2d">
+      <textures>
+        <texture file="skeletal/hele_cuirass_2_d.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="cuirass-2e">
+      <textures>
+        <texture file="skeletal/hele_cuirass_2_e.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
     <variant frequency="3" name="armour-var-f">
       <textures>
         <texture file="skeletal/hele_isp_e_f.dds" name="baseTex"/>
@@ -39,6 +130,16 @@
         <texture file="skeletal/hele_csw_a_2.dds" name="baseTex"/>
       </textures>
     </variant>
+    <variant frequency="1" name="armour-epilektoi-7">
+      <textures>
+        <texture file="skeletal/hele_epilektoi_7.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="armour-epilektoi-10">
+      <textures>
+        <texture file="skeletal/hele_epilektoi_10.png" name="baseTex"/>
+      </textures>
+    </variant>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
@@ -59,7 +160,7 @@
     <variant file="biped/carry_wood.xml"/>
     <variant file="biped/carry_stone.xml"/>
     <variant file="biped/carry_metal.xml"/>
-    <variant file="biped/hoplite_death.xml"/>
+    <variant file="biped/death_hoplite.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
