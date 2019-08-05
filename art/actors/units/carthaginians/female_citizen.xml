@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <actor version="1">
   <castshadow/>
   <group>
-    <variant>
+    <variant frequency="1" name="Base-Female">
+      <mesh>skeletal/new/f_dress.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_kart_fem_1.xml" attachpoint="head"/>
       </props>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="Peplos-DarkBrown">
-      <mesh>skeletal/new/f_dress.dae</mesh>
       <textures>
         <texture file="skeletal/kart_fem_01.dds" name="baseTex"/>
       </textures>
@@ -41,6 +37,7 @@
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/female_build.xml"/>
     <variant file="biped/female_build_farm.xml"/>
+    <variant file="biped/female_death.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
