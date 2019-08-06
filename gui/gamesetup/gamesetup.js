@@ -1164,7 +1164,7 @@ function init(attribs)
 
 	// Replace empty playername when entering a singleplayermatch for the first time
 	if (!g_IsNetworked)
-		saveSettingAndWriteToUserConfig("playername.singleplayer", singleplayerName());
+		Engine.ConfigDB_CreateAndWriteValueToFile("user", "playername.singleplayer", singleplayerName(), "config/user.cfg");
 
 	initDefaults();
 	supplementDefaults();
