@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_stable">
+  <Footprint replace="">
+    <Circle radius="15.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>sueb</Civ>
     <SpecificName>Pferdeställe</SpecificName>
   </Identity>
+  <Obstruction>
+    <Static width="26.0" depth="26.0"/>
+  </Obstruction>
   <ProductionQueue>
     <Technologies datatype="tokens">
 	  upgrade_rank_advanced_cavalry
@@ -11,6 +21,7 @@
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/gauls/stable.xml</Actor>
+    <Actor>structures/xiongnu/corral.xml</Actor>
+    <FoundationActor>structures/xiongnu/corral_foundation.xml</FoundationActor>
   </VisualActor>
 </Entity>
