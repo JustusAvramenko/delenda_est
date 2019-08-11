@@ -6,15 +6,25 @@
 	},
 	"icon": "laurel_wreath.png",
 	"description": "While the Colosseum stands, Rome shall stand. When the Colosseum falls, Rome shall fall.",
-	"cost": {"glory": 2000},
+	"cost": {
+		"glory": 2000
+	},
 	"researchTime": 10,
-	"requirements": {"all": [
-		{"tech": "phase_imperial" },
-		{"any": [
-			{"civ": "imp"},
-			{"civ": "rome"}]
-		}
-	]},
+	"requirements": {
+		"all": [{
+				"tech": "phase_imperial"
+			},
+			{
+				"any": [{
+						"civ": "imp"
+					},
+					{
+						"civ": "rome"
+					}
+				]
+			}
+		]
+	},
 	"tooltip": "Unlock the \"Eternal City\" aura for the Amphitheatrum Flavium wonder, which grants a large territory increase for Civic Centers as long as the wonder stands.",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

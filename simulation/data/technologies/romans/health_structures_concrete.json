@@ -2,7 +2,7 @@
 	"genericName": "Brick-Faced Concrete",
 	"description": "The Romans extensively used fired brick to face concrete and vice versa for hundreds of years. The merits of this construction technique are evident in the hundreds of brick-faced Roman structures that have survived into modern times. While the Romans were by all means not the first people to use concrete or fired bricks, like the arch, the Romans expanded and innovated their usage to new heights.",
 	"cost": {"wood": 100, "stone": 300},
-	"requirements": {"tech": "phase_town"},
+	"requirements": {"all": [{"tech": "phase_town"}, {"any":[{"civ": "imp"},{"civ": "rome"}]}]},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "bricks.png",
 	"researchTime": 40,
