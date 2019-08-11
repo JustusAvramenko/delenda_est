@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/celt_trader.dae</mesh>
+      <textures>
+        <texture file="null_white.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Stall Small A">
+      <props>
+        <prop actor="structures/ptolemies/stall_small_a.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Stall Small B">
+      <props>
+        <prop actor="structures/ptolemies/stall_small_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Stall Medium">
+      <props>
+        <prop actor="structures/ptolemies/stall_med.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Stall Big">
+      <props>
+        <prop actor="structures/ptolemies/stall_big.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Food Big">
+      <props>
+        <prop actor="props/special/eyecandy/treasure_persian_food_big.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>
