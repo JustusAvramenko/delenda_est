@@ -1,0 +1,11 @@
+{
+	"genericName": "Wooden Walls",
+	"autoResearch": true,
+	"description": "The Germans built their city walls out of wood, an abundant natural resource in the lands East of the Rhine. Consequently, German city walls have -40% health, but build 40% faster.",
+	"requirements": {"any": [{"civ": "sueb"},{"civ": "goth"}]},
+	"modifications": [
+		{"value": "Health/Max", "multiply": 0.75},
+		{"value": "Cost/BuildTime", "multiply": 0.75}
+	],
+	"affects": ["StoneWall"]
+}
