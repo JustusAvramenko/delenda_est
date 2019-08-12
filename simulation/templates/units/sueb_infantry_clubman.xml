@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_swordsman">
+  <Armour>
+    <Hack op="add">-1</Hack>
+    <Pierce op="add">-1</Pierce>
+  </Armour>
+  <Attack>
+    <Melee>
+	  <Bonuses>
+		<BonusAllInfantry>
+		  <Classes>Infantry</Classes>
+		  <Multiplier>1.0</Multiplier>
+		</BonusAllInfantry>
+		<BonusElephant>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>1.0</Multiplier>
+		</BonusElephant>
+	  </Bonuses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Population>1</Population>
+	<BuildTime>2</BuildTime>
+    <Resources>
+      <food>30</food>
+	  <wood>30</wood>
+	  <metal>0</metal>
+	  <coin>0</coin>
+    </Resources>
+  </Cost>
+  <Health>
+    <RegenRate>-1.2</RegenRate>
+  </Health>
+  <Identity>
+    <Civ>sueb</Civ>
+    <GenericName>Suebian Militia Clubman</GenericName>
+    <SpecificName>Suebische Bürgerwehr</SpecificName>
+	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Tooltip>Traits: Fast Training, Fast Speed, Low Armor, Medium Attack, Short Lifespan.
+Strong Against: Nothing.
+Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.</Tooltip>
+    <Icon>units/gaul_infantry_swordsman.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/germans/infantry_clubman.xml</Actor>
+  </VisualActor>
+</Entity>
