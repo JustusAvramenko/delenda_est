@@ -2,6 +2,10 @@
 <Entity parent="template_structure_economic">
   <BuildRestrictions>
     <Category>MarketStall</Category>
+    <Distance>
+      <FromClass>Market</FromClass>
+      <MaxDistance>40</MaxDistance>
+    </Distance>
   </BuildRestrictions>
   <Capturable>
     <CapturePoints>100</CapturePoints> 
@@ -25,7 +29,7 @@
   </Health>
   <Identity>
     <GenericName>Market Vendor</GenericName>
-    <Tooltip>Economic activity brings a trickle of Coin resource.</Tooltip>
+    <Tooltip>Economic activity brings a trickle of Coin resource through taxes.</Tooltip>
     <Classes datatype="tokens">-ConquestCritical</Classes>
     <VisibleClasses datatype="tokens">Town Stall TaxPayer</VisibleClasses>
     <Icon>gaia/special_treasure_coin.png</Icon>

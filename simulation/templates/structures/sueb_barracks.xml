@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
+  <Cost>
+    <BuildTime>120</BuildTime>
+    <Resources>
+      <wood>200</wood>
+      <stone>200</stone>
+    </Resources>
+  </Cost>
   <Footprint>
     <Square width="24.0" depth="40.0"/>
     <Height>5.0</Height>
@@ -15,6 +22,19 @@
   <Obstruction>
     <Static width="20.0" depth="36.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+	  units/{civ}_infantry_javelinist_b
+	  units/{civ}_infantry_slinger_b
+	  units/{civ}_infantry_archer_b
+	  units/{civ}_infantry_crossbowman_b
+    </Entities>
+    <Technologies datatype="tokens">
+	  training_levy_infantry_ranged
+	  special_archery_tradition
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/germans/barracks.xml</Actor>
     <FoundationActor>structures/fndn_5x9.xml</FoundationActor>
