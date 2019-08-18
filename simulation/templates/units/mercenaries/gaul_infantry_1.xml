@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_spearman">
+  <Armour>
+    <Hack op="add">-2</Hack>
+    <Pierce op="add">-1</Pierce>
+  </Armour>
+  <Cost>
+	<BuildTime>5</BuildTime>
+    <Population>0</Population>
+    <Resources>
+      <food>0</food>
+      <coin>100</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <GenericName>Celtic Naked Fanatic</GenericName>
+    <SpecificName>Gaesata</SpecificName>
+	<VisibleClasses datatype="tokens">Mercenary Guerilla</VisibleClasses>
+    <History>A fanatic Celtic warrior, devoted to war and his Celtic liege lord. Gesatae were young men who often served as mercenaries for other tribes. They were the last Celts to fight stark naked to show their courage, often carrying only a shield with several javelins and a regular Celtic spear. More often than not they were covered in geometric designs painted in woad, a blue dye. These bloodthirsty young men roamed Gaul in search of battle.</History>
+    <Icon>units/celt_fanatic.png</Icon>
+	<RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Looter disable=""/>
+  <TrainingRestrictions>
+    <Category>Mercenary</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.25</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/gauls/fanatic.xml</Actor>
+  </VisualActor>
+</Entity>
