@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_siege_ram">
+  <Armour>
+    <Hack>5</Hack>
+    <Pierce>30</Pierce>
+    <Crush>10</Crush>
+  </Armour>
+  <Cost>
+    <Resources>
+      <wood>200</wood>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <GarrisonHolder>
+    <Max>5</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <GenericName>Covered Battering Ram</GenericName>
+    <VisibleClasses datatype="tokens">Covered</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <select>attack/siege/siege_select.xml</select>
+      <order_walk>attack/siege/ram_move.xml</order_walk>
+      <order_attack>attack/siege/ram_attack_order.xml</order_attack>
+	  <trained>attack/siege/ram_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed>5</WalkSpeed>
+  </UnitMotion>
+</Entity>
