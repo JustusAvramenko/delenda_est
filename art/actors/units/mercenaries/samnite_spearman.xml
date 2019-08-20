@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_hoplite.xml">
+      <props>
+        <prop actor="props/units/shields/cart_tarantine_e.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+        <prop actor="props/units/capes/hoplite.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Samnite-Attic-A1">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_a1.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Samnite-Attic-A2">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_a2.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Samnite-Attic-A3">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_a3.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Samnite-Attic-A4">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_a4.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Samnite-Attic-B1">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_b1.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Samnite-Attic-B2">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_b2.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Samnite-Attic-B3">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_b3.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Samnite-Attic-B4">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_b4.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Cuirass">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <textures><texture file="skeletal/samnite_isp_e_1.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="pectoral-tripledisc">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures><texture file="skeletal/kart_csp_a_1.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="pectoral-square">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures><texture file="skeletal/kart_csp_a_2.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="pectoral-muscle">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures><texture file="skeletal/kart_csp_a_3.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="Roman Scale Mail">
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <textures><texture file="skeletal/rome_su1_extraordinarii.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="Roman Chainmail">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures><texture file="skeletal/rome_su3_marian_legion.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="Tunic-1">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures>
+	    <texture file="skeletal/kart_csp_b_1.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="Tunic-2">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures>
+	    <texture file="skeletal/kart_csp_b_2.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="Tunic-3">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures>
+	    <texture file="skeletal/kart_csp_b_3.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="Tunic-4">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures>
+	    <texture file="skeletal/kart_csp_b_4.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/hoplite_death.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

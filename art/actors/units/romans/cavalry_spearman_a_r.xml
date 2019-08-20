@@ -5,28 +5,70 @@
     <variant frequency="1" name="Base">
       <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/helmets/rome_boeotian.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
         <prop actor="props/units/shields/rome_parma_a.xml" attachpoint="shield_arm"/>
         <prop actor="props/units/weapons/spear_lance_cavalry_reverse.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/capes/rider/spearman_ready_shield.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/rider/spearman_relax_shield.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Chainmail-Plain">
+    <variant frequency="1" name="Boeotian-01">
+      <props>
+        <prop actor="props/units/helmets/hele_boeotian_g.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="0" name="chain hauberk">
       <textures>
-        <texture file="skeletal/rome_csp_a.dds" name="baseTex"/>
+        <texture file="skeletal/rome_isw_a.dds" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="Chainmail-Shoulder detail">
+    <variant frequency="0" name="chain thorax">
       <textures>
-        <texture file="skeletal/rome_isp_e_2.dds" name="baseTex"/>
+        <texture file="skeletal/rome_isw_e.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="rome-chainmail-2a">
+      <textures>
+        <texture file="skeletal/rome_chainmail_2_a.png" name="baseTex"/>
+        <texture file="skeletal/rome_chainmail_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="rome-chainmail-2b">
+      <textures>
+        <texture file="skeletal/rome_chainmail_2_b.png" name="baseTex"/>
+        <texture file="skeletal/rome_chainmail_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="rome-chainmail-2c">
+      <textures>
+        <texture file="skeletal/rome_chainmail_2_c.png" name="baseTex"/>
+        <texture file="skeletal/rome_chainmail_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="rome-chainmail-3a">
+      <textures>
+        <texture file="skeletal/rome_chainmail_3_a.png" name="baseTex"/>
+        <texture file="skeletal/rome_chainmail_3_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="rome-chainmail-3b">
+      <textures>
+        <texture file="skeletal/rome_chainmail_3_b.png" name="baseTex"/>
+        <texture file="skeletal/rome_chainmail_3_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="rome-chainmail-3c">
+      <textures>
+        <texture file="skeletal/rome_chainmail_3_c.png" name="baseTex"/>
+        <texture file="skeletal/rome_chainmail_3_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant file="biped/base_cavalry_spearman_ready_shield.xml"/>
+    <variant file="biped/base_cavalry_spearman_relax_shield_a.xml"/>
     <variant file="biped/rider/carry_meat.xml"/>
   </group>
   <group>
@@ -34,7 +76,7 @@
     <variant file="biped/rider/attack_slaughter_shield_rome.xml"/>
     <variant file="biped/rider/promotion_shield.xml" />
     <variant file="biped/gather_meat.xml"/>
-    <variant file="biped/rider/death.xml"/>
+    <variant file="biped/rider/death_shield.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
