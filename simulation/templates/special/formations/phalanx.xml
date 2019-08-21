@@ -3,20 +3,20 @@
   <Formation>
     <Icon>formations/phalanx.png</Icon>
     <RequiredMemberCount>10</RequiredMemberCount>
-    <DisabledTooltip>At least 10 hoplite infantry required.</DisabledTooltip>
+    <DisabledTooltip>Requires at least 10 Infantry Hoplites.</DisabledTooltip>
     <FormationName>Phalanx</FormationName>
     <UnitSeparationWidthMultiplier>0.6</UnitSeparationWidthMultiplier>
     <UnitSeparationDepthMultiplier>0.6</UnitSeparationDepthMultiplier>
     <WidthDepthRatio>4</WidthDepthRatio>
+    <ShiftRows>true</ShiftRows>
     <MinColumns>5</MinColumns>
     <MaxColumns>20</MaxColumns>
     <MaxRows>8</MaxRows>
-	<SpeedMultiplier>0.9</SpeedMultiplier>
     <Animations>
-      1..2,1..-1: phalanx_front;
-      3..4,1..-1: phalanx_center;
-      5..6,1..-1: phalanx_back
-    </Animations>  
+      1..1,1..-1: phalanx_front;
+      2..2,1..-1: phalanx_mid;
+      3..-1,1..-1: phalanx_back
+    </Animations>
   </Formation>
   <FormationAttack>
     <CanAttackAsFormation>false</CanAttackAsFormation>
