@@ -2,13 +2,46 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/pikeman_base.xml">
+    <variant file="biped/base_pikeman.xml">
       <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/shields/hele_round_spartiate_pike.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/shields/aspis_spart_p.xml" attachpoint="shield_arm"/>
         <prop actor="props/units/weapons/sarissa.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/heads/spartan_phalangite_helmet.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+        <prop actor="props/units/armor/greave_03_bronze_r.xml" attachpoint="leg_R"/>
+        <prop actor="props/units/armor/greave_03_bronze_l.xml" attachpoint="leg_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="Helmet Pilos Plain">
+      <props>
+        <prop actor="props/units/helmets/hele_pilos.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet Pilos A2">
+      <props>
+        <prop actor="props/units/helmets/hele_pilos_a2.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet Pilos B2">
+      <props>
+        <prop actor="props/units/helmets/hele_pilos_b2.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Thracian Helmet-05">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_b.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Thracian Helmet-02">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_b2_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Thracian Helmet-05">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_b5_crested.xml" attachpoint="helmet"/>
       </props>
     </variant>
   </group>
@@ -36,7 +69,17 @@
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
+    <variant file="biped/formations/syntagma_front.xml"/>
+    <variant file="biped/formations/syntagma_01.xml"/>
+    <variant file="biped/formations/syntagma_02.xml"/>
+    <variant file="biped/formations/syntagma_03.xml"/>
+    <variant file="biped/formations/syntagma_04.xml"/>
+    <variant file="biped/formations/syntagma_back.xml"/>
     <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
   <material>player_trans.xml</material>
