@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military">
   <BuildRestrictions>
-    <Category>Elephant_Stables</Category>
+    <Category>ElephantStable</Category>
   </BuildRestrictions>
   <Cost>
     <BuildTime>200</BuildTime>
@@ -30,14 +30,11 @@
   </Health>
   <Identity>
     <GenericName>Elephant Stable</GenericName>
-    <History>Elephant Stable.</History>
+    <Class datatype="tokens">ElephantStable</Class>
+    <VisibleClasses datatype="tokens">City</VisibleClasses>
     <RequiredTechnology>phase_city</RequiredTechnology>
     <Icon>structures/elephant_stables.png</Icon>
-    <Tooltip>Train elephant units.</Tooltip>
-    <VisibleClasses datatype="tokens">
-	  City
-	  ElephantStables
-	</VisibleClasses>
+    <Tooltip>Train Elephants. Research Elephant technologies.</Tooltip>
   </Identity>
   <Loot>
     <xp>200</xp>
@@ -57,14 +54,14 @@
       units/{civ}_champion_elephant
     </Entities>
     <Technologies datatype="tokens">
-	  training_animals_elephants
+      training_animals_elephants
     </Technologies>
   </ProductionQueue>
   <Sound>
     <SoundGroups>
-      <select>interface/select/building/sel_elephant_stables.xml</select>
       <constructed>interface/complete/building/complete_elephant_stables.xml</constructed>
       <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_elephant_stables.xml</select>
     </SoundGroups>
   </Sound>
   <TerritoryInfluence>
@@ -73,7 +70,6 @@
     <Weight>20000</Weight>
   </TerritoryInfluence>
   <VisualActor>
-    <Actor>structures/mauryas/stables.xml</Actor>
     <FoundationActor>structures/fndn_9x8.xml</FoundationActor>
   </VisualActor>
 </Entity>
