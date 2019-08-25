@@ -2445,22 +2445,20 @@ function openAIConfig(playerSlot)
 	g_LastViewedAIPlayer = playerSlot;
 
 	Engine.PushGuiPage("page_aiconfig.xml", {
-		"callback": "AIConfigCallback",
 		"playerSlot": playerSlot,
 		"id": g_GameAttributes.settings.PlayerData[playerSlot].AI,
 		"difficulty": g_GameAttributes.settings.PlayerData[playerSlot].AIDiff,
 		"behavior": g_GameAttributes.settings.PlayerData[playerSlot].AIBehavior
-	});
+	}, AIConfigCallback);
 }
 
 function openCivSel(playerSlot)
 {
 	g_LastViewedAIPlayer = playerSlot;
 	Engine.PushGuiPage("page_civsel.xml", {
-		"callback": "CivSelCallback",
 		"playerSlot": playerSlot,
 		"id": g_GameAttributes.settings.PlayerData[playerSlot].Civ
-	});
+	}, CivSelCallback);
 }
 
 /**
@@ -2813,3 +2811,4 @@ function storeCivInfoPage(data)
 	g_CivInfo.code = data.civ;
 	g_CivInfo.page = data.page;
 }
+

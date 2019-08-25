@@ -200,7 +200,7 @@ function selectCiv(code)
 
 function returnCiv(choosed)
 {
-	Engine.PopGuiPageCB({
+	Engine.PopGuiPage({
 		"code": g_Selected.code,
 		"playerSlot": g_PlayerSlot,
 		"change": choosed
