@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military">
   <BuildRestrictions>
-    <Category>Stables</Category>
+    <Category>Stable</Category>
   </BuildRestrictions>
   <Cost>
     <BuildTime>100</BuildTime>
@@ -19,11 +19,11 @@
     <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
     <List datatype="tokens">
-	  Cavalry
-	  Minister
-	  Horse
-	  Camel
-	</List>
+      Cavalry
+      Minister
+      Horse
+      Camel
+    </List>
     <BuffHeal>0</BuffHeal>
     <LoadingRange>2</LoadingRange>
   </GarrisonHolder>
@@ -32,23 +32,20 @@
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Cavalry Stable</GenericName>	
-    <Classes datatype="tokens">Stables</Classes>
-    <VisibleClasses datatype="tokens">
-	  Village
-	  CavalryStable
-	</VisibleClasses>
-    <Tooltip>Train citizen-soldier cavalry. Research training improvements for cavalry.</Tooltip>
+    <GenericName>Cavalry Stable</GenericName>  
+    <Classes datatype="tokens">Stable</Classes>
+    <VisibleClasses datatype="tokens">Village</VisibleClasses>
+    <Tooltip>Train Citizen Cavalry. Research Cavalry technologies.</Tooltip>
     <Icon>structures/pers_stable.png</Icon>
-	<RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Loot>
-    <xp>300</xp>
     <food>100</food>
     <wood>0</wood>
     <stone>0</stone>
     <metal>0</metal>
     <glory>300</glory>
+    <xp>300</xp>
   </Loot>
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
@@ -56,28 +53,28 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
-	  units/{civ}_cavalry_scout
-	  units/{civ}_camelry_scout
-	  units/{civ}_cavalry_swordsman_b
-	  units/{civ}_camelry_swordsman_b
-	  units/{civ}_cavalry_spearman_b
-	  units/{civ}_camelry_spearman_b
-	  units/{civ}_cavalry_javelinist_b
-	  units/{civ}_camelry_javelinist_b
-	  units/{civ}_cavalry_archer_b
-	  units/{civ}_camelry_archer_b
-	  units/{civ}_cavalry_crossbowman_b
-	  units/{civ}_camelry_crossbowman_b
+      units/{civ}_cavalry_scout
+      units/{civ}_camelry_scout
+      units/{civ}_cavalry_swordsman_b
+      units/{civ}_camelry_swordsman_b
+      units/{civ}_cavalry_spearman_b
+      units/{civ}_camelry_spearman_b
+      units/{civ}_cavalry_javelinist_b
+      units/{civ}_camelry_javelinist_b
+      units/{civ}_cavalry_archer_b
+      units/{civ}_camelry_archer_b
+      units/{civ}_cavalry_crossbowman_b
+      units/{civ}_camelry_crossbowman_b
     </Entities>
     <Technologies datatype="tokens">
-	  training_levy_cavalry
+      training_levy_cavalry
     </Technologies>
   </ProductionQueue>
   <Sound>
     <SoundGroups>
-      <select>interface/select/building/sel_cavalry_stables.xml</select>
       <constructed>interface/complete/building/complete_cavalry_stables.xml</constructed>
       <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_cavalry_stables.xml</select>
     </SoundGroups>
   </Sound>
   <TerritoryInfluence>
