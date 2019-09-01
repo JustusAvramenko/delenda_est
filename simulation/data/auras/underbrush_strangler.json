@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 8,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+	  {"value": "UnitMotion/WalkSpeed", "multiply": 0.67},
+	  {"value": "Attack/Ranged/MaxRange", "multiply": 0.67},
+	  {"value": "Vision/Range", "multiply": 0.67}
+	],
+	"auraName": "Underbrush",
+	"auraDescription": "Thick forest undergrowth reduces the speed, range, and vision of units traversing a forest by -33%.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

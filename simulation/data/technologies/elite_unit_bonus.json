@@ -18,13 +18,16 @@
 		{"value": "Heal/Range",                 	"multiply": 1.2,  "affects": "Healer"  },
 		{"value": "Vision/Range",               	"multiply": 1.2,  "affects": "Healer"  },
 		{"value": "Heal/HP",                    	"multiply": 1.2,  "affects": "Healer"  },
-		{"value": "Cost/Resources/food",        	"multiply": 1.1},
-		{"value": "Cost/Resources/wood",        	"multiply": 1.1},
-		{"value": "Cost/Resources/stone",       	"multiply": 1.1},
-		{"value": "Cost/Resources/metal",       	"multiply": 1.1},
-		{"value": "Cost/Resources/coin",        	"multiply": 1.2},
-		{"value": "Cost/Resources/glory",       	"multiply": 1.2},
-		{"value": "Cost/BuildTime", 				"multiply": 1.1}
+		{"value": "Cost/Resources/food",			"add": 5},
+		{"value": "Cost/Resources/wood",			"add": 5,  		  "affects": "Archer"  },
+		{"value": "Cost/Resources/wood",			"add": 5,  		  "affects": "Spear"   },
+		{"value": "Cost/Resources/wood",			"add": 5,  		  "affects": "javelin" },
+		{"value": "Cost/Resources/wood",			"add": 5,  		  "affects": "crossbow"},
+		{"value": "Cost/Resources/metal",			"add": 5,  		  "affects": "sword"   },
+		{"value": "Cost/Resources/metal",			"add": 5,  		  "affects": "sling"   },
+		{"value": "Cost/Resources/coin",			"add": 5,  		  "affects": "mercenary"},
+		{"value": "Cost/Resources/glory",			"add": 5,  		  "affects": "healer"  },
+		{"value": "Cost/BuildTime",					"add": 2}
 	],
 	"affects": ["Elite Unit"]
 }
