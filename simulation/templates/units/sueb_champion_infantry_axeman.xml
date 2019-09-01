@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Armour>
+    <Hack op="add">-1</Hack>
+  </Armour>
+  <Cost>
+    <Resources>
+      <food op="add">10</food>
+      <coin op="add">-10</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>sueb</Civ>
+    <GenericName>Wolf Warrior</GenericName>
+    <SpecificName>Wulfaharjaz</SpecificName>
+	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Icon>units/sueb_champion_infantry_axeman.png</Icon>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/germans/infantry_axeman_c.xml</Actor>
+  </VisualActor>
+</Entity>
