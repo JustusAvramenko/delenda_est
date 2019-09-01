@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_flora_tree">
+  <Auras datatype="tokens">
+    guerilla_warfare
+	underbrush_strangler
+  </Auras>
+  <Footprint>
+    <Circle radius="8.0"/>
+    <Height>15.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Banyan</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="6.0" depth="6.0"/>
+  </Obstruction>
+  <ResourceSupply>
+    <Amount>400</Amount>
+    <MaxGatherers>10</MaxGatherers>
+  </ResourceSupply>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <VisualActor>
+    <Actor>flora/trees/banyan.xml</Actor>
+  </VisualActor>
+</Entity>
