@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_wonder">
-  <Footprint replace="">
-    <Circle radius="30.0"/>
+  <Footprint>
+    <Square width="60.0" depth="30.0"/>
     <Height>10.0</Height>
   </Footprint>
+  <GarrisonHolder disable=""/>
   <Identity>
     <Civ>sueb</Civ>
-    <SpecificName>Stonehenge</SpecificName>
-    <History>Stonehenge is a monumental structure built by pre-historic peoples from Britain from approximately 2500 BC to 2000 BC. Evidence suggests that the structure and the surrounding site served as a place of religious significance, time-keeping, and other societal functions, like burial.</History>
+    <SpecificName>Uffington White Horse</SpecificName>
+    <History>.</History>
   </Identity>
   <Obstruction>
-    <Static width="55.0" depth="55.0"/>
+    <Static width="40.0" depth="20.0"/>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
   </Obstruction>
+  <ProductionQueue disable=""/>
+  <RallyPoint disable=""/>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
   <VisualActor>
-    <FoundationActor>structures/fndn_theatron.xml</FoundationActor>
-    <Actor>structures/celts/stone_monument.xml</Actor>
+    <FoundationActor>structures/fndn_stonehenge.xml</FoundationActor>
+    <Actor>structures/britons/wonder.xml</Actor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
   </VisualActor>
 </Entity>
