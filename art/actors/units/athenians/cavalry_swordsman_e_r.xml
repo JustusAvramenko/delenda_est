@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_hele_e.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/xiphos.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/sheath_xiphos_e.xml" attachpoint="sheath_01_L"/>
+      </props>
+    </variant>
+  </group>
+    <variant frequency="1" name="Helmet Illyrian crested">
+      <props>
+        <prop actor="props/units/helmets/hele_illyrian_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet Illyrian b1 crested">
+      <props>
+        <prop actor="props/units/helmets/hele_illyrian_b1_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet Illyrian b2 crested">
+      <props>
+        <prop actor="props/units/helmets/hele_illyrian_b2_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet Illyrian b3 crested">
+      <props>
+        <prop actor="props/units/helmets/hele_illyrian_b3_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  <group>
+    <variant frequency="0" name="cuirass-old">
+      <textures>
+        <texture file="skeletal/hele_isp_e_1.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="cuirass-2a">
+      <textures>
+        <texture file="skeletal/hele_cuirass_2_a.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="cuirass-2b">
+      <textures>
+        <texture file="skeletal/hele_cuirass_2_b.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="cuirass-2c">
+      <textures>
+        <texture file="skeletal/hele_cuirass_2_c.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="cuirass-2d">
+      <textures>
+        <texture file="skeletal/hele_cuirass_2_d.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="cuirass-2e">
+      <textures>
+        <texture file="skeletal/hele_cuirass_2_e.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="scale-old">
+      <textures>
+        <texture file="skeletal/hele_linothorax_scale.dds" name="baseTex"/>
+        <texture file="skeletal/hele_scale_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="scale-1-a">
+      <textures>
+        <texture file="skeletal/hele_scale_1_a.png" name="baseTex"/>
+        <texture file="skeletal/hele_scale_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="lamellar-1a">
+      <textures>
+        <texture file="skeletal/hele_lamellar_1_a.png" name="baseTex"/>
+        <texture file="skeletal/hele_lamellar_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="linothorax-lamellar-1a">
+      <textures>
+        <texture file="skeletal/hele_linothorax_lamelar_1_a.png" name="baseTex"/>
+        <texture file="skeletal/hele_linothorax_lamellar_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="linothorax-lamellar-1b">
+      <textures>
+        <texture file="skeletal/hele_linothorax_lamelar_1_b.png" name="baseTex"/>
+        <texture file="skeletal/hele_linothorax_lamellar_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_cavalry_swordsman_relax.xml"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/promotion.xml"/>
+    <variant file="biped/rider/attack_slaughter_hele.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/rider/death.xml"/>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>

@@ -2,16 +2,16 @@
 
 <Scenario version="6">
 	<Environment>
-		<SkySet>mountainous</SkySet>
-		<SunColor r="1.14749" g="0.973483" b="0.710126"/>
-		<SunElevation angle="0.463273"/>
-		<SunRotation angle="0.597969"/>
-		<TerrainAmbientColor r="0.372549" g="0.376471" b="0.419608"/>
-		<UnitsAmbientColor r="0.372549" g="0.376471" b="0.419608"/>
+		<SkySet>default</SkySet>
+		<SunColor r="0.654902" g="0.654902" b="0.654902"/>
+		<SunElevation angle="0.849825"/>
+		<SunRotation angle="2.09849"/>
+		<TerrainAmbientColor r="0.47451" g="0.486275" b="0.501961"/>
+		<UnitsAmbientColor r="0.537255" g="0.486275" b="0.439216"/>
 		<Fog>
-			<FogFactor>4.88281e-05</FogFactor>
-			<FogThickness>0</FogThickness>
-			<FogColor r="1" g="1" b="1"/>
+			<FogFactor>0.00155273</FogFactor>
+			<FogThickness>0.0541992</FogThickness>
+			<FogColor r="0.501961" g="0.556863" b="0.619608"/>
 		</Fog>
 		<Water>
 			<WaterBody>
@@ -26,32 +26,58 @@
 		</Water>
 		<Postproc>
 			<Brightness>0.00292969</Brightness>
-			<Contrast>0.972656</Contrast>
-			<Saturation>0.931641</Saturation>
-			<Bloom>0.156445</Bloom>
+			<Contrast>1.07324</Contrast>
+			<Saturation>0.853516</Saturation>
+			<Bloom>0.196094</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="303.402" y="286.618" z="205.473"/>
-		<Rotation angle="-0.0571354"/>
-		<Declination angle="0.623427"/>
+		<Position x="295.66" y="328.24" z="191.997"/>
+		<Rotation angle="0.53881"/>
+		<Declination angle="0.655811"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
   "AISeed": 0,
   "CircularMap": true,
   "Description": "Farmland in Eastern Europe.",
-  "Keywords": ["new"],
+  "Keywords": [
+    "new"
+  ],
   "LockTeams": false,
   "Name": "Farmland (2)",
   "PlayerData": [
-    "",
+    null,
     {
-      "Name": "Player 1"
+      "Civ": "athen",
+      "StartingCamera": {
+        "Position": {
+          "x": 187.512,
+          "y": 178.087,
+          "z": 395.377
+        },
+        "Rotation": {
+          "x": -145,
+          "y": -25.0331,
+          "z": -180
+        }
+      }
     },
     {
-      "Name": "Player 2"
+      "Civ": "cart",
+      "StartingCamera": {
+        "Position": {
+          "x": 822.783,
+          "y": 178.087,
+          "z": 668.128
+        },
+        "Rotation": {
+          "x": 32.6701,
+          "y": -8.55636,
+          "z": 2.15846e-7
+        }
+      }
     }
   ],
   "Preview": "farmland.png",

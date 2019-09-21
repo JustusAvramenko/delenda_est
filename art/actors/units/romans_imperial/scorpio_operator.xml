@@ -5,20 +5,32 @@
     <variant file="biped/base_slave_male.xml">
       <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/heads/head_hele_b.xml" attachpoint="head"/>
-        <prop actor="props/units/heads/imp_imp_gallic_g_bronze.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Helmet Gallic Type B">
+      <props>
+        <prop actor="props/units/helmets/rome_gallic_type_b.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet Gallic Type F">
+      <props>
+        <prop actor="props/units/helmets/rome_gallic_type_f.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet Gallic Type H">
+      <props>
+        <prop actor="props/units/helmets/rome_gallic_type_h.xml" attachpoint="helmet"/>
       </props>
     </variant>
   </group>
   <group>
     <variant frequency="1" name="chain hauberk">
       <textures>
-        <texture file="skeletal/rome_isw_a.dds" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="chain thorax">
-      <textures>
-        <texture file="skeletal/rome_isw_e.dds" name="baseTex"/>
+        <texture file="skeletal/imp_infantry_swordsman_b.png" name="baseTex"/>
+        <texture file="skeletal/imp_infantry_swordsman_b_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -30,5 +42,5 @@
     <variant file="biped/build.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
