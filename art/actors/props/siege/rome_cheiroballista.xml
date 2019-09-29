@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Type-A">
+      <mesh>props/siege/rome_cheiroballista.dae</mesh>
+      <textures>
+        <texture file="props/siege/rome_cheiroballista.png" name="baseTex"/>
+        <texture file="props/siege/rome_cheiroballista_norm.png" name="normTex"/>
+        <texture file="props/siege/rome_cheiroballista_spec.png" name="specTex"/>
+      </textures>
+      <animations>
+        <animation file="mechanical/cheiroballista_idle.dae" name="Idle" speed="100" />
+        <animation event="0.93" load="0.81" file="mechanical/cheiroballista_attack_ranged.dae" name="attack_ranged" speed="80"/>
+        <animation file="mechanical/cheiroballista_death.dae" name="Death" speed="100" />
+      </animations>
+      <props>
+        <prop actor="props/siege/rome_cheiroballista_weapon.xml" attachpoint="weapon"/>
+        <prop actor="props/units/weapons/arrow_back.xml" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_parallax_spec.xml</material>
+</actor>

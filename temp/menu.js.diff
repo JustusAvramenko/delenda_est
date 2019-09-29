@@ -1,0 +1,13 @@
+--- /tmp/menu.js_orig	2019-09-07 01:04:59.261486333 +0200
++++ /tmp/menu.js_de	2019-09-07 01:03:29.124822542 +0200
+@@ -849,7 +849,9 @@
+ 		});
+ 	};
+ 
+-	barterButton.Buy.hidden = isSelected;
++	if (g_BarterSell == "coin"){
++		barterButton.Buy.hidden = isSelected;}
++	else {barterButton.Buy.hidden = resourceCode != "coin";}
+ 	barterButton.Buy.enabled = controlsPlayer(player);
+ 	barterButton.Sell.hidden = false;
+ 	selectionIcon.hidden = !isSelected;

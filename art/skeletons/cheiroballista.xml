@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skeletons>
+  <standard_skeleton id="Cheiroballista-Armature" title="Cheiroballista-Armature">
+    <bone name="Ch_Ballista_Root">
+      <bone name="Ch_Ballista_Plank_Rotation_Base" />
+      <bone name="Ch_Ballista_Plank_Middle">
+        <bone name="Ch_Ballista_Weap">
+          <bone name="Ch_Ballista_Weap_Holder_Bottom">
+            <bone name="Ch_Ballista_Cilinder_R">
+              <bone name="Ch_Ballista_Arm_R">
+                <bone name="Ch_Ballista_Sling_01_R">
+                  <bone name="Ch_Ballista_Sling_02_R">
+                    <bone name="Ch_Ballista_Sling_03_R">
+                      <bone name="Ch_Ballista_Sling_04_R" />
+                    </bone>
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+            <bone name="Ch_Ballista_Cilinder_L">
+              <bone name="Ch_Ballista_Arm_L">
+                <bone name="Ch_Ballista_Sling_01_L">
+                  <bone name="Ch_Ballista_Sling_02_L">
+                    <bone name="Ch_Ballista_Sling_03_L">
+                      <bone name="Ch_Ballista_Sling_04_L" />
+                    </bone>
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+          </bone>
+          <bone name="Ch_Ballista_Plank_Rotation_Weap" />
+          <bone name="Ch_Ballista_Weap_Wheel">
+            <bone name="Ch_Ballista_Weap_Wheel_Tool" />
+          </bone>
+          <bone name="Ch_Ballista_Weap_Crank_Lock" />
+          <bone name="Ch_Ballista_Sling" />
+          <bone name="Ch_Ballista_Sling_Rail">
+            <bone name="Ch_Ballista_Trigger_Sling" />
+            <bone name="Ch_Ballista_Trigger" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="Ch_Ballista_Slider" />
+    </bone>
+    <bone name="Rome-Cheiroballista" />
+  </standard_skeleton>
+  <skeleton target="Cheiroballista-Armature" title="Cheiroballista-Armature">
+    <identifier>
+      <root>Ch_Ballista_Root</root>
+    </identifier>
+    <bone name="Ch_Ballista_Root">
+      <target>Ch_Ballista_Root</target>
+      <bone name="Ch_Ballista_Plank_Rotation_Base">
+        <target>Ch_Ballista_Plank_Rotation_Base</target>
+      </bone>
+      <bone name="Ch_Ballista_Plank_Middle">
+        <target>Ch_Ballista_Plank_Middle</target>
+        <bone name="Ch_Ballista_Weap">
+          <target>Ch_Ballista_Weap</target>
+          <bone name="Ch_Ballista_Weap_Holder_Bottom">
+            <target>Ch_Ballista_Weap_Holder_Bottom</target>
+            <bone name="Ch_Ballista_Cilinder_R">
+              <target>Ch_Ballista_Cilinder_R</target>
+              <bone name="Ch_Ballista_Arm_R">
+                <target>Ch_Ballista_Arm_R</target>
+                <bone name="Ch_Ballista_Sling_01_R">
+                  <target>Ch_Ballista_Sling_01_R</target>
+                  <bone name="Ch_Ballista_Sling_02_R">
+                    <target>Ch_Ballista_Sling_02_R</target>
+                    <bone name="Ch_Ballista_Sling_03_R">
+                      <target>Ch_Ballista_Sling_03_R</target>
+                      <bone name="Ch_Ballista_Sling_04_R">
+                        <target>Ch_Ballista_Sling_04_R</target>
+                      </bone>
+                    </bone>
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+            <bone name="Ch_Ballista_Cilinder_L">
+              <target>Ch_Ballista_Cilinder_L</target>
+              <bone name="Ch_Ballista_Arm_L">
+                <target>Ch_Ballista_Arm_L</target>
+                <bone name="Ch_Ballista_Sling_01_L">
+                  <target>Ch_Ballista_Sling_01_L</target>
+                  <bone name="Ch_Ballista_Sling_02_L">
+                    <target>Ch_Ballista_Sling_02_L</target>
+                    <bone name="Ch_Ballista_Sling_03_L">
+                      <target>Ch_Ballista_Sling_03_L</target>
+                      <bone name="Ch_Ballista_Sling_04_L">
+                        <target>Ch_Ballista_Sling_04_L</target>
+                      </bone>
+                    </bone>
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+          </bone>
+          <bone name="Ch_Ballista_Plank_Rotation_Weap">
+            <target>Ch_Ballista_Plank_Rotation_Weap</target>
+          </bone>
+          <bone name="Ch_Ballista_Weap_Wheel">
+            <target>Ch_Ballista_Weap_Wheel</target>
+            <bone name="Ch_Ballista_Weap_Wheel_Tool">
+              <target>Ch_Ballista_Weap_Wheel_Tool</target>
+            </bone>
+          </bone>
+          <bone name="Ch_Ballista_Weap_Crank_Lock">
+            <target>Ch_Ballista_Weap_Crank_Lock</target>
+          </bone>
+          <bone name="Ch_Ballista_Sling">
+            <target>Ch_Ballista_Sling</target>
+          </bone>
+          <bone name="Ch_Ballista_Sling_Rail">
+            <target>Ch_Ballista_Sling_Rail</target>
+            <bone name="Ch_Ballista_Trigger_Sling">
+              <target>Ch_Ballista_Trigger_Sling</target>
+            </bone>
+            <bone name="Ch_Ballista_Trigger">
+              <target>Ch_Ballista_Trigger</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="Ch_Ballista_Slider">
+        <target>Ch_Ballista_Slider</target>
+      </bone>
+    </bone>
+    <bone name="Rome-Cheiroballista">
+      <target>Rome-Cheiroballista</target>
+    </bone>
+  </skeleton>
+</skeletons>

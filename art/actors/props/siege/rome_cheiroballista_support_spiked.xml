@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Type-A">
+      <mesh>props/siege/rome_cheiroballista_support_spiked.dae</mesh>
+      <textures>
+        <texture file="props/siege/rome_cheiroballista.png" name="baseTex"/>
+        <texture file="props/siege/rome_cheiroballista_norm.png" name="normTex"/>
+        <texture file="props/siege/rome_cheiroballista_spec.png" name="specTex"/>
+      </textures>
+      <props>
+        <prop actor="props/siege/rome_cheiroballista.xml" attachpoint="weapon"/>
+        <prop actor="props/siege/rome_stake_a.xml" attachpoint="stake_a"/>
+        <prop actor="props/siege/rome_stake_b.xml" attachpoint="stake_b"/>
+        <prop actor="props/siege/rome_stake_c.xml" attachpoint="stake_c"/>
+        <prop actor="props/siege/rome_stake_a.xml" attachpoint="stake_d"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_parallax_spec.xml</material>
+</actor>
