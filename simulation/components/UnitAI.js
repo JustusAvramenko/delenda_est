@@ -5403,7 +5403,7 @@ UnitAI.prototype.Flee = function(target, queued)
  */
 UnitAI.prototype.Cheer = function()
 {
-	this.AddOrder("Cheering", { "force": true }, false);
+	this.PushOrderFront("Cheering", { "force": true });
 };
 
 UnitAI.prototype.Pack = function(queued)

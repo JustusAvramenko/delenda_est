@@ -2,24 +2,24 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_spearman_ready_fast.xml">
+    <variant>
       <mesh>skeletal/new/m_naked.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
-        <prop actor="props/temp/l_sheath.xml" attachpoint="sheath_L"/>
+        <prop actor="props/units/weapons/sheath_celt_iron.xml" attachpoint="sheath_01_L"/>
         <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/shields/gaul_shield_spear_oval_b_03.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="6" name="No helmet 1">
+    <variant frequency="4" name="No helmet 1">
       <props>
         <prop actor="" attachpoint="helmet"/>
         <prop actor="props/units/heads/new/head_celt_fanatic.xml" attachpoint="head"/>
       </props>
     </variant>
-    <variant frequency="6" name="No helmet 2">
+    <variant frequency="4" name="No helmet 2">
       <props>
         <prop actor="" attachpoint="helmet"/>
         <prop actor="props/units/heads/new/head_lime.xml" attachpoint="head"/>
@@ -77,9 +77,29 @@
         <texture file="skeletal/gaul_naked_2.png" name="baseTex"/>
       </textures>
     </variant>
+    <variant frequency="1" name="nekkid 03">
+      <textures>
+        <texture file="skeletal/kart_isw_a_01.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="nekkid 04">
+      <textures>
+        <texture file="skeletal/kart_isw_a_02.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="nekkid 05">
+      <textures>
+        <texture file="skeletal/celt_ijv_e_01.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="nekkid 06">
+      <textures>
+        <texture file="skeletal/celt_ijv_e_02.dds" name="baseTex"/>
+      </textures>
+    </variant>
   </group>
   <group>
-    <variant frequency="1" name="Idle"/>
+    <variant file="biped/base_spearman_shield_relax_celt_fast.xml" name="Spearman-Shield-Relax-Fast"/>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
