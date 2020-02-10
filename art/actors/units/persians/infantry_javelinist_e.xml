@@ -1,21 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <actor version="1">
   <castshadow/>
   <group>
     <variant frequency="1" name="Base">
-      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/imp_cavalry_javelinist_1.png" name="baseTex"/>
-        <texture file="skeletal/imp_cavalry_javelinist_1_spec.png" name="specTex"/>
-      </textures>
+      <mesh>skeletal/new/m_pants_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/heads/new/rome_head_veteran.xml" attachpoint="head"/>
-        <prop actor="props/units/helmets/rome_gallic_type_h_cent.xml" attachpoint="helmet"/>
-        <prop actor="props/units/shields/rome_scutum_legionnaire_a.xml" attachpoint="shield"/>
+        <prop actor="props/units/heads/new/head_pers_a.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/pers_kidaris_loose_tan.xml" attachpoint="helmet"/>
+        <prop actor="props/units/shields/pers_taka_e.xml" attachpoint="shield"/>
         <prop actor="props/units/weapons/jav_loaded.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/jav_ammo.xml" attachpoint="ammo"/>
-        <prop actor="props/units/capes/cape_med_player_skirmisher.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/cape_long_player_skirmisher.xml" attachpoint="root"/>
       </props>
+      <textures>
+        <texture file="skeletal/pers_ijv_e_3.dds" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -51,5 +50,5 @@
     <variant file="biped/build_farm.xml"/>
     <variant file="biped/death_cape_long.xml"/>
   </group>
-  <material>player_trans_spec.xml</material>
+  <material>player_trans.xml</material>
 </actor>
