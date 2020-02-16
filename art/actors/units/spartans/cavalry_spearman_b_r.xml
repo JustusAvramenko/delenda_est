@@ -6,8 +6,8 @@
       <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/spear_lance_cavalry_reverse.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/capes/rider/spearman_ready.xml" attachpoint="root"/>
+        <prop actor="props/units/weapons/spear_lance_cavalry.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/capes/rider/cape_long_player.xml" attachpoint="root"/>
       </props>
       <textures>
         <texture file="skeletal/hele_tunic.dds" name="baseTex"/>
@@ -15,14 +15,14 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/base_cavalry_spearman_ready.xml"/>
+    <variant file="biped/rider/cavalry/base_spearman_relax_reverse_02.xml" name="Spearman-Relax-Reverse-02" frequency="1"/>
     <variant file="biped/rider/carry_meat.xml"/>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
-    <variant file="biped/rider/attack_slaughter_shield_spart.xml"/>
-    <variant file="biped/rider/promotion_shield.xml" />
-    <variant file="biped/rider/gather_meat_spart.xml"/>
+    <variant file="biped/rider/attack_slaughter_spart.xml"/>
+    <variant file="biped/rider/promotion.xml" />
+    <variant file="biped/gather_meat.xml"/>
     <variant file="biped/rider/death.xml"/>
   </group>
   <material>default.xml</material>
