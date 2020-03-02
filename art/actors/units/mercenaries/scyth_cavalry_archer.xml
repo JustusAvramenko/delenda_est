@@ -7,8 +7,8 @@
       <props>
         <prop actor="units/mercenaries/scyth_cavalry_archer_r.xml" attachpoint="rider"/>
         <prop actor="props/horse/chest_colorband_01.xml" attachpoint="root"/>
-        <prop actor="props/horse/cav_blanket_pers_basic.xml" attachpoint="root"/>
         <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_pers.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
@@ -22,15 +22,9 @@
     <variant file="quadraped/horse/gray.xml" frequency="1" name="gray"/>
   </group>
   <group>
-    <variant frequency="1" name="Idle"/>
+    <variant file="quadraped/base_horse_pace.xml" name="Horse-Pace" frequency="1"/>
     <variant file="quadraped/base_horse_death.xml"/>
     <variant file="quadraped/base_horse_run.xml"/>
-    <variant name="gather_meat">
-      <props>
-        <prop actor="" attachpoint="rider"/>
-        <prop actor="units/mercenaries/scyth_cavalry_archer_r.xml" attachpoint="rider_R"/>
-      </props>
-    </variant>
   </group>
   <material>basic_trans_parallax_spec.xml</material>
 </actor>

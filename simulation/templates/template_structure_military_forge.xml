@@ -26,12 +26,15 @@
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Blacksmith</GenericName>
+    <GenericName>Forge</GenericName>
     <Tooltip>Research weapons and armor improvements.</Tooltip>
-    <Classes datatype="tokens">-ConquestCritical</Classes>
+    <Classes datatype="tokens">
+	  -ConquestCritical
+	  Blacksmith
+	</Classes>
     <VisibleClasses datatype="tokens">
 	  Town
-	  Blacksmith
+	  Forge
 	</VisibleClasses>
     <Icon>structures/blacksmith.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
