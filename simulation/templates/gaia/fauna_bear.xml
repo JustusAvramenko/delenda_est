@@ -1,37 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_fauna_hunt_aggressive">
-  <Attack>
-    <Melee>
-      <Damage>
-        <Hack>10.0</Hack>
-        <Pierce>0.0</Pierce>
-        <Crush>10.0</Crush>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <RepeatTime>2000</RepeatTime>
-    </Melee>
-  </Attack>
+<Entity parent="template_fauna_hunt_aggressive_bear">
   <Identity>
-    <Civ>gaia</Civ>
-    <GenericName>Eurasian Brown Bear</GenericName>
-    <SpecificName>Ursus arctos arctos</SpecificName>
-    <Icon>gaia/fauna_bear.png</Icon>
+    <GenericName>Brown Bear</GenericName>
+    <SpecificName>Ursus arctos</SpecificName>
+    <Icon>gaia/fauna_bear_brown.png</Icon>
   </Identity>
-  <Position>
-    <Anchor>pitch</Anchor>
-  </Position>
-  <Sound>
-    <SoundGroups>
-      <select>actor/fauna/animal/lion_select.xml</select>
-      <attack_melee>actor/fauna/animal/lion_attack.xml</attack_melee>
-      <death>actor/fauna/animal/lion_death.xml</death>
-    </SoundGroups>
-  </Sound>
-  <ResourceSupply>
-    <Amount>300</Amount>
-    <Type>food.meat</Type>
-  </ResourceSupply>
   <VisualActor>
-    <Actor>fauna/bear.xml</Actor>
+    <Actor>fauna/bear_brown.xml</Actor>
   </VisualActor>
 </Entity>

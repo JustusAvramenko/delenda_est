@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military">
+  <Auras datatype="tokens">
+    structures/barracks_xp_trickle
+  </Auras>
   <BuildRestrictions>
     <Category>Barracks</Category>
   </BuildRestrictions>
@@ -26,7 +29,7 @@
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Barracks</GenericName>
+    <GenericName>Infantry Barracks</GenericName>
     <Tooltip>Train melee citizen-infantry. Research training improvements for melee infantry.</Tooltip>
     <VisibleClasses datatype="tokens">
 	  Village
