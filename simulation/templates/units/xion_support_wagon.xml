@@ -69,8 +69,8 @@
   <Selectable>
     <Overlay>
       <Texture>
-        <MainTexture>circle/256x256.png</MainTexture>
-        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+        <MainTexture>ellipse/128x256.png</MainTexture>
+        <MainTextureMask>ellipse/128x256_mask.png</MainTextureMask>
       </Texture>
     </Overlay>
   </Selectable>
@@ -94,10 +94,12 @@
       <Entity>structures/xion_storehouse</Entity>
       <Tooltip>Storehouses can train Slaves, while the Resource Wagon cannot.</Tooltip>
       <Time>10</Time>
+      <CheckPlacementRestrictions/>
     </UnPackStorehouse>
     <UnPackHouse>
       <Entity>structures/xion_house</Entity>
       <Time>10</Time>
+      <CheckPlacementRestrictions/>
     </UnPackHouse>
   </Upgrade>
   <Vision>
