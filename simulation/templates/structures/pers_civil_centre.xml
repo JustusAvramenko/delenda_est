@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
+  <Footprint>
+    <Square width="40.0" depth="24.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_pers_cc</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>pers</Civ>
     <GenericName>Provincial Governor</GenericName>
     <SpecificName>Xšaçapāvan</SpecificName>
     <History>Possibly of Median origin, the word 'satrapy' means province. Soon after coming to the throne, Darius the Great carried out a vast administrative reform, dividing the huge empire into 20 satrapies governed by satraps.</History>
   </Identity>
-  <Health>
-    <SpawnEntityOnDeath>decay|rubble/rubble_pers_cc</SpawnEntityOnDeath>
-  </Health>
+  <Obstruction>
+    <Static width="38.5" depth="22.5"/>
+  </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
     </Entities>
@@ -21,6 +28,7 @@
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/persians/civil_centre.xml</Actor>
+    <Actor>structures/persians/palace.xml</Actor>
+    <FoundationActor>structures/fndn_9x6.xml</FoundationActor>
   </VisualActor>
 </Entity>
