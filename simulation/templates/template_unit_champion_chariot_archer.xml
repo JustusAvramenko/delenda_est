@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry">
+  <Armour>
+    <Hack>6</Hack>
+    <Pierce>10</Pierce>
+    <Crush>6</Crush>
+  </Armour>
+  <Attack>
+    <Ranged>
+      <Damage>
+	    <Hack>0.0</Hack>
+        <Pierce>25.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>76.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Delay>0</Delay>
+      <Projectile>
+        <Speed>50.0</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>9.81</Gravity>
+		<FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+	  <Bonuses>
+		<BonusPrimary>
+		  <Classes>Infantry Melee</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusPrimary>
+		<ElephantStench>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</ElephantStench>
+		<CamelStench>
+		  <Classes>Camel</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</CamelStench>
+	  </Bonuses>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+	chariot_trample_e
+  </Auras>
+  <Cost>
+    <Population>4</Population>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>150</food>
+      <wood>150</wood>
+      <metal>0</metal>
+      <coin>0</coin>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="9" depth="15.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>280</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Ranged Archer Chariot Trample</VisibleClasses>
+    <GenericName>Champion Archer Chariot.</GenericName>
+    <History>Expensive "suicide" unit. Mostly used to rush into infantry and cavalry formations to slaughter a bunch of enemies with scythes ("Trample Damage" aura) before getting destroyed themselves.</History>
+    <Tooltip>Traits: Long Range, Fast Speed, Heavy Armor, Harassment, Trample, Heavy Charge.
+Strong Against: Pike Infantry (1.5x), Spear Infantry (1.5x), Sword Infantry (1.5x).
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+    <food>0</food>
+    <wood>20</wood>
+    <stone>0</stone>
+    <metal>20</metal>
+    <coin>20</coin>
+  </Loot>
+  <UnitMotion>
+    <WalkSpeed>16.0</WalkSpeed>
+	<PassabilityClass>large</PassabilityClass> 
+  </UnitMotion>
+</Entity>

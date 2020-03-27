@@ -1,59 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_cavalry_archer">
-  <Armour>
-    <Hack>6.0</Hack>
-  </Armour>
-  <Attack>
-    <Ranged>
-      <Damage>
-	    <Hack>0.0</Hack>
-        <Pierce>35.0</Pierce>
-        <Crush>0.0</Crush>
-      </Damage>
-    </Ranged>
-  </Attack>
-  <Auras datatype="tokens">
-	chariot_trample_e
-  </Auras>
-  <Cost>
-    <Population>4</Population>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>150</food>
-      <wood>150</wood>
-      <metal>0</metal>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Square width="9" depth="15.0"/>
-    <Height>5.0</Height>
-  </Footprint>
-  <Health>
-    <Max>280</Max>
-  </Health>
+<Entity parent="template_unit_champion_chariot_archer">
   <Identity>
     <Civ>sele</Civ>
-    <VisibleClasses datatype="tokens">Chariot Trample</VisibleClasses>
 	<GenericName>Scythed Chariot</GenericName>
     <SpecificName>Drepanèphoros</SpecificName>
-    <History>Expensive "suicide" unit. Mostly used to rush into infantry and cavalry formations to slaughter a bunch of enemies with scythes ("Trample Damage" aura) before getting destroyed themselves.</History>
 	<Icon>units/sele_champion_chariot.png</Icon>
-    <Tooltip>Traits: Long Range, Fast Speed, Heavy Armor, Harassment, Trample, Heavy Charge.
-Strong Against: Pike Infantry (1.5x), Spear Infantry (1.5x), Sword Infantry (1.5x).
-Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
     <RequiredTechnology>successors/unlock_traditional_army</RequiredTechnology>
   </Identity>
-  <Loot>
-    <xp>200</xp>
-    <food>0</food>
-    <wood>20</wood>
-    <stone>0</stone>
-    <metal>20</metal>
-  </Loot>
-  <UnitMotion>
-    <WalkSpeed>16.0</WalkSpeed>
-	<PassabilityClass>large</PassabilityClass> 
-  </UnitMotion>
   <VisualActor>
     <Actor>units/seleucids/chariot_archer_c_m.xml</Actor>
   </VisualActor>
