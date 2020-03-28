@@ -1,71 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_cavalry_ranged_archer">
-  <Armour>
-    <Hack op="add">2</Hack>
-    <Pierce op="add">2</Pierce>
-    <Crush op="add">4</Crush>
-  </Armour>
-  <Attack>
-    <Ranged>
-      <Damage>
-	    <Hack>0.0</Hack>
-        <Pierce>15.0</Pierce>
-        <Crush>0.0</Crush>
-      </Damage>
-    </Ranged>
-  </Attack>
-  <Auras datatype="tokens">
-	chariot_trample_b
-  </Auras>
-  <Cost>
-    <Population>4</Population>
-    <Resources>
-      <food>100</food>
-      <wood>100</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Square width="5.5" depth="10.0"/>
-    <Height>5.0</Height>
-  </Footprint>
-  <Health>
-    <Max>250</Max>
-  </Health>
   <Identity>
     <Civ>pers</Civ>
-	<Lang>persian</Lang>
-    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
 	<SelectionGroupName>units/pers_cavalry_archer_b</SelectionGroupName>
-	<GenericName>Babylonian Scythed Chariot</GenericName>
-    <SpecificName>Raθa Bābiruviya</SpecificName>
-    <History>Chariots were obsolete by the 5th and 4th centuries BC, but they were viewed as symbols of rank and class, hence their continued deployment on the battlefield in extremely limited roles well after their obsolescence. The crew was made up of an archer and a driver who rode in an armored car equipped with scythe-like blades underneath the chassis and the axels themselves sported a pair of the deadly knives.</History>
-    <Tooltip>Traits: Long Range, Fast Speed, Heavy Armor, Harassment, Trample.
-Strong Against: Pike Infantry (1.5x), Spear Infantry (1.5x), Sword Infantry (1.5x).
-Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
-	<Icon>units/pers_chariot_archer.png</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+	<GenericName>Dahae Horse Archer</GenericName>
+    <SpecificName>Hippotoxotès Dahai</SpecificName>
+    <History>The Dahae or Dahaeans were a confederacy of three Ancient Iranian tribes who lived in the region to the immediate east of the Caspian Sea. They spoke an Eastern Iranian language. Known as the Dāha to the Persians, they were a staple of many Persian armies until the fall of the Achaemenid Empire. Later they freely joined the armies of Alexander as he invaded India and the armies of the Seleucids in their many battles with the other Successor states. The Dahae of the Parni clan, under Arsaces, would later invade the land of Parthia, depose its ruler, and found a dynasty that would eventually grow into the famed Parthian Empire.</History>
+	<Icon>units/pers_cavalry_archer.png</Icon>
   </Identity>
-  <Loot>
-    <xp>200</xp>
-    <food>0</food>
-    <wood>20</wood>
-    <stone>0</stone>
-    <metal>20</metal>
-  </Loot>
   <Promotion>
     <Entity>units/pers_cavalry_archer_a</Entity>
-    <RequiredXp>10000</RequiredXp>
   </Promotion>
-  <ResourceGatherer>
-    <MaxDistance>5.0</MaxDistance>
-    <Capacities>
-      <food>50</food>
-    </Capacities>
-  </ResourceGatherer>
-  <UnitMotion>
-	<PassabilityClass>large</PassabilityClass> 
-  </UnitMotion>
   <VisualActor>
-    <Actor>units/persians/chariot_archer_b_m.xml</Actor>
+    <Actor>units/persians/cavalry_archer_b_m.xml</Actor>
   </VisualActor>
 </Entity>

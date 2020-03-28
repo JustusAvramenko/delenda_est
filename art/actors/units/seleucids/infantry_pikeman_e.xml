@@ -9,7 +9,7 @@
         <prop actor="props/units/helmets/old/sele_chalkaspides_e.xml" attachpoint="helmet"/>
         <prop actor="props/units/shields/pelte_sele_gold.xml" attachpoint="shield_arm"/>
         <prop actor="props/units/weapons/sarissa.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/capes/pikeman.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
@@ -46,7 +46,7 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Idle"/>
+    <variant file="biped/base_pikeman_relax.xml" name="Pikeman-Shield-Relax" frequency="1"/>
     <variant file="biped/formations/syntagma_front.xml"/>
     <variant file="biped/formations/syntagma_01.xml"/>
     <variant file="biped/formations/syntagma_02.xml"/>
@@ -55,14 +55,14 @@
     <variant file="biped/formations/syntagma_back.xml"/>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/death_cape_long.xml"/>
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/build.xml"/>
     <variant file="biped/build_farm.xml"/>
-    <variant file="biped/death_infantry.xml">
-      <props>
-        <prop actor="props/units/capes/pikeman.xml" attachpoint="root"/>
-      </props>
-	</variant>
+    <variant file="biped/approach_praise.xml"/>
+  </group>
+  <group>
+    <variant name="Idle"/>
   </group>
   <material>player_trans_spec.xml</material>
 </actor>

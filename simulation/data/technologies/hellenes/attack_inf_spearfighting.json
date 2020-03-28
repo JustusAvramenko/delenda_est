@@ -16,8 +16,11 @@
 	"requirementsTooltip": "Unlocked in Village Phase.",
 	"icon": "armor_plates_spear.png",
 	"researchTime": 50,
-	"tooltip": "Spear, Pike, and Hoplite infantry -50% experience required to gain higher rank.",
-	"modifications": [{"value": "Promotion/RequiredXp", "multiply": 0.5}],
+	"tooltip": "Spear, Pike, and Hoplite infantry -50% experience required to gain higher rank and +10% attack speed.",
+	"modifications": [
+			{"value": "Promotion/RequiredXp", "multiply": 0.5},
+			{"value": "Attack/Melee/RepeatTime", "multiply": 0.9}
+		],
 	"affects": ["Infantry Spear"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
