@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_archer">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>12.0</Pierce>
+      </Damage>
+      <MaxRange>32.0</MaxRange>
+    </Ranged>
+  </Attack>
+  <Builder disable=""/>
+  <Cost>
+    <BuildTime>8</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <glory>100</glory>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>scyth</Civ>
+    <GenericName>Maiden Archer</GenericName>
+	<RequiredTechnology>phase_town</RequiredTechnology>
+	<Phenotype>female</Phenotype>
+    <Icon>units/xion_infantry_archer.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/scythians/maiden_archer.xml</Actor>
+  </VisualActor>
+</Entity>

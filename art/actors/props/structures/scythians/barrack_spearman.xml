@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Idle">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <animations>
+        <animation event="0.5" file="biped/infantry/spearman/attack_melee_01.dae" name="Idle" id="Idle1" speed="100"/>
+        <animation event="0.5" file="biped/infantry/spearman/attack_melee_smallshield.dae" name="Idle" id="Idle2" speed="100"/>
+        <animation event="0.5" file="biped/infantry/swordsman/attack_melee_shield_01.dae" name="Idle" id="Idle3" speed="100"/>
+      </animations>
+      <props>
+        <prop actor="props/units/heads/new/head_pers_b.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/xion_spear_infantry.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/xion_shield_infantry_wood.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Hat-Kidaris">
+      <props>
+        <prop actor="props/units/helmets/pers_kidaris_loose_all.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hat-Thracian-Leather">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_cap_leather.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="3" name="scyth-tunic-2a">
+      <textures>
+        <texture file="skeletal/scyth_tunic_basic_1_a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="scyth-tunic-2b">
+      <textures>
+        <texture file="skeletal/scyth_tunic_basic_1_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="scyth-tunic-2c">
+      <textures>
+        <texture file="skeletal/scyth_tunic_basic_1_c.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

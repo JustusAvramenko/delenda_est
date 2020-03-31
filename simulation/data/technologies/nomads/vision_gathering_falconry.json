@@ -1,8 +1,17 @@
 {   
 	"genericName": "Falconry",
 	"description": "Falconry is a steppe tradition.",
-	"cost": {"food": 200},
-	"requirements": {"tech": "training_animals_husbandry"},
+	"cost": {"food": 200, "glory": 100},
+	"requirements": { "all": [
+		{ "tech": "training_animals_husbandry" }, 
+		{ "any": 
+			[
+				{ "civ": "huns" }, 
+				{ "civ": "scyth" }, 
+				{ "civ": "xion" }, 
+				{ "civ": "pers" }
+			] 
+		}]},
 	"requirementsTooltip": "Unlocked in Village Phase. Requires Husbandry.",
 	"icon": "falconry.png",
 	"researchTime": 30,

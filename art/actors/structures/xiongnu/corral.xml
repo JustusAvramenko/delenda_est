@@ -23,9 +23,6 @@
         <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_a" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_b" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_c" maxheight="20" minheight="-20"/>
-        <prop actor="fauna/horse.xml" attachpoint="horse_a" maxheight="20" minheight="-20"/>
-        <prop actor="fauna/horse_breed.xml" attachpoint="horse_b" maxheight="20" minheight="-20"/>
-        <prop actor="fauna/horse_celtic.xml" attachpoint="horse_c" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/xiongnu/corral_rugs.xml" attachpoint="root"/>
         <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
       </props>
@@ -38,7 +35,13 @@
     </variant>
   </group>
   <group>
-    <variant name="alive" frequency="1"/>
+    <variant name="alive" frequency="1">
+      <props>
+        <prop actor="props/structures/xiongnu/horse_corral_a.xml" attachpoint="horse_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/horse_corral_b.xml" attachpoint="horse_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/xiongnu/horse_corral_c.xml" attachpoint="horse_c" maxheight="20" minheight="-20"/>
+      </props>
+    </variant>
     <variant name="death">
       <props>
         <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
