@@ -2,7 +2,7 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_cavalry_spearman_ready.xml" frequency="1" name="ready">
+    <variant>
       <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/xion_head.xml" attachpoint="head"/>
@@ -25,5 +25,16 @@
       </props>
     </variant>
   </group>
-  <material>player_trans_spec.xml</material>
+  <group>
+    <variant file="biped/rider/cavalry/base_spearman_ready.xml" name="Spearman-Ready" frequency="1"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/promotion.xml"/>
+    <variant file="biped/rider/attack_slaughter_xion.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/rider/death.xml"/>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
 </actor>

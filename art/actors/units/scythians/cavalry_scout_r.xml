@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_armor_nomad_b.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/xion_head.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/hele_thracian_cap_player.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/spartan_sword.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="gray light">
+      <textures>
+        <texture file="skeletal/xion_cloth_a.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="brown dark">
+      <textures>
+        <texture file="skeletal/xion_cloth_b.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="brown light">
+      <textures>
+        <texture file="skeletal/xion_cloth_c.png" name="baseTex"/>
+        <texture file="skeletal/xion_cloth_norm.png" name="specTex"/>
+        <texture file="skeletal/xion_cloth_spec.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/rider/cavalry/base_swordsman_relax.xml" frequency="1" name="Swordsman-Relax"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/promotion.xml"/>
+    <variant file="biped/rider/attack_slaughter_hele.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/rider/death.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
