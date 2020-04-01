@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <BuildRestrictions>
+    <Territory>own neutral ally enemy</Territory>
+  </BuildRestrictions>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Didā</SpecificName>
+    <VisibleClasses datatype="tokens">
+	  SiegeWorkshop
+	</VisibleClasses>
+    <History>Scythian Neapolis was a settlement that existed from the end of the 3rd century BC until the second half of the 3rd century AD. Anciently, it was considered a town of the Tauric Chersonesus (Crimea). The archeological ruins sit on the outskirts of the present-day Simferopol. This city was the center of the Crimean Scythian tribes, led by Skilurus and Palacus (who were probably buried at the local mausoleum). The town ruled over a small kingdom, covering the lands between the lower Dnieper river and Crimea. In the 3rd and 2nd centuries BC, it was a city "with a mixed Scythian-Greek population, strong defensive walls and large public buildings constructed using the orders of Greek architecture". Neapolis was destroyed halfway through the 3rd century AD by the Goths.</History>
+    <Tooltip>Train Champion Cavalry and Construct Siege Rams.</Tooltip>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/scyth_champion_cavalry
+      units/scyth_champion_cavalry_archer
+	  units/scyth_siege_ram
+    </Entities>
+    <Technologies datatype="tokens">
+      attack_capture_siege_ladders
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>structures/scythians/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+   <Length>24.5</Length>
+    <Indent>7.6</Indent>
+  </WallPiece>
+</Entity>
