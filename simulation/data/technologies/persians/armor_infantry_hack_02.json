@@ -5,16 +5,14 @@
 		"pers": "Linothorakes"
 	},
 	"description": "Linen or leather body armor, glued and/or stitched together in multiple layers. The ancient world's Kevlar body armor. This type of armor, made famous by the Greeks, is thought to have originated in Asia Minor sometime in the 6th century BC under the rule of the Persians.",
-	"cost": {"food": 200, "wood": 200},
+	"cost": {"glory": 400, "metal": 400},
 	"requirements": {"tech": "phase_town"},
 	"requirementsTooltip": "Unlocked by Quilted Body Armor or Spara Tower Shields.",
 	"icon": "armor_pteruges.png",
 	"researchTime": 60,
-	"tooltip": "Melee infantry +1 hack armor level, -2% Speed.",
+	"tooltip": "Melee Infantry +1 hack armor level.",
 	"modifications": [
-		{"value": "Armour/Hack", "add": 1.0},
-		{"value": "UnitMotion/WalkSpeed", "multiply": 0.98},
-		{"value": "UnitMotion/Run/Speed", "multiply": 0.98}
+		{"value": "Armour/Hack", "add": 1.0}
 	],
 	"affects": ["Melee Infantry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

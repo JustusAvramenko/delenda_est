@@ -2,16 +2,14 @@
 	"pair": "persians/pair_armor_03",
 	"genericName": "Shield Wall",
 	"description": "Wooden or wicker tower shields used by masses of Persian spearmen and archers.",
-	"cost": {"wood": 500},
+	"cost": {"glory": 400, "metal": 400},
 	"requirements": {"all": [{"tech": "phase_city"},{"civ": "pers"}]},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "shields_generic_bronze.png",
 	"researchTime": 60,
-	"tooltip": "Spear infantry +1 pierce armor level, -2% speed.",
+	"tooltip": "Spear Infantry +1 pierce armor level, -2% speed.",
 	"modifications": [
-		{"value": "Armour/Pierce", "add": 1.0},
-		{"value": "UnitMotion/WalkSpeed", "multiply": 0.98},
-		{"value": "UnitMotion/Run/Speed", "multiply": 0.98}
+		{"value": "Armour/Pierce", "add": 1.0}
 	],
 	"affects": ["Infantry Spear"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
