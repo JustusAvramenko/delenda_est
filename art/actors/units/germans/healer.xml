@@ -8,7 +8,7 @@
         <prop actor="props/units/heads/new/head_celt_su3.xml" attachpoint="head"/>
         <prop actor="props/units/heads/celt_hood_priest.xml" attachpoint="helmet"/>
         <prop actor="props/units/staff.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/capes/druid.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
@@ -25,14 +25,10 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Idle"/>
+    <variant file="biped/base_healer_male.xml" name="Healer-Male" frequency="1"/>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
-    <variant file="biped/death_infantry.xml">
-      <props>
-        <prop actor="props/units/capes/druid.xml" attachpoint="root"/>
-      </props>
-    </variant>
+    <variant file="biped/death_cape_long.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
