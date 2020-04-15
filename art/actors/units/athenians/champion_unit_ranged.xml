@@ -3,11 +3,11 @@
   <castshadow/>
   <group>
     <variant>
-      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_thrace.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_L"/>
+        <prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_bow"/>
         <prop actor="props/units/quiver_hip.xml" attachpoint="sheath_L"/>
         <prop actor="props/units/capes/cape_med_player_archer_hip.xml" attachpoint="root"/>
       </props>
@@ -87,13 +87,10 @@
   </group>
   <group>
     <variant file="biped/base_archer_relax.xml" name="Archer-Relax" frequency="1"/>
-    <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_ranged_archer_hip.xml"/>
-    <variant file="biped/death_infantry.xml">
-      <props>
-        <prop actor="props/units/capes/cape_med_player_archer_hip.xml" attachpoint="root"/>
-      </props>
-    </variant>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/death_cape_med.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
