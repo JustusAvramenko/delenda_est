@@ -3,9 +3,9 @@
   <Auras datatype="tokens">
     camel_stench
   </Auras>
-  <Footprint>
-    <Circle radius="2.5"/>
-    <Height>7.5</Height>
+  <Footprint replace="">
+    <Square width="4.0" depth="8.0"/>
+    <Height>3.0</Height>
   </Footprint>
   <Identity>
     <Civ>pers</Civ>
@@ -17,6 +17,14 @@
     <Icon>units/pers_support_trader.png</Icon>
     <Tooltip>Trade resources between your own markets and those of your allies. Persians have a +25% land trading bonus.</Tooltip>
   </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>ellipse/128x256.png</MainTexture>
+        <MainTextureMask>ellipse/128x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>actor/fauna/animal/camel_select.xml</select>
