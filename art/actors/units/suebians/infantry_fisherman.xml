@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_fisherman.xml">
+      <mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_celt.xml" attachpoint="head"/>
+		<prop actor="props/units/weapons/norse_reverse_spear.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="transparent_shirt1">
+      <textures>
+        <texture file="skeletal/norse/basic/transparent_shirt1.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="transparent_shirt2">
+      <textures>
+        <texture file="skeletal/norse/basic/transparent_shirt2.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="transparent_shirt3">
+      <textures>
+        <texture file="skeletal/norse/basic/transparent_shirt3.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="0" name="footwraps1">
+      <textures>
+        <texture file="skeletal/norse/basic/footwraps1.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="0" name="footwraps2">
+      <textures>
+        <texture file="skeletal/norse/basic/footwraps2.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="0" name="footwraps3">
+      <textures>
+        <texture file="skeletal/norse/basic/footwraps3.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_fisherman.xml"/>
+  </group>
+	<group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/base_fisherman_gather_fish.xml"></variant>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_tree.xml"/>
+    <variant file="biped/gather_grain.xml"/>
+    <variant file="biped/gather_fruit.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/gather_rock.xml"/>
+    <variant file="biped/gather_ore.xml"/>
+    <variant file="biped/gather_ruins.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="green_light">
+      <color>208 222 165</color>
+    </variant>
+    <variant frequency="1" name="green_dark">
+      <color>132 142 100</color>
+    </variant>
+    <variant frequency="1" name="brown_light">
+      <color>210 192 157</color>
+    </variant>
+    <variant frequency="1" name="brown_dark">
+      <color>147 116 87</color>
+    </variant>
+  </group>
+  <material>objectcolor.xml</material>
+</actor>

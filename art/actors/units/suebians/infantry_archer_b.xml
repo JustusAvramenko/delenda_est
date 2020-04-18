@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_archer_ready.xml">
+      <mesh>skeletal/new/m_pants.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/germ_01.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/bow_short.xml" attachpoint="weapon_L"/>
+        <prop actor="props/temp/quiver.xml" attachpoint="back"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="pants-basic-1">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_1.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="pants-basic-2">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_2.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="pants-basic-3">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_3.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="pants-basic-4">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_4.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="pants-basic-5">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_5.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="pants-basic-6">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_6.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_ranged_archer.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
