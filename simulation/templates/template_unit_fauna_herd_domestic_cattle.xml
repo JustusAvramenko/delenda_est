@@ -6,9 +6,9 @@
       <food>200</food>
     </Resources>
   </Cost>
-  <Footprint>
-    <Circle radius="2.0"/>
-    <Height>3.0</Height>
+  <Footprint replace="">
+    <Square width="2.5" depth="5"/>
+    <Height>3</Height>
   </Footprint>
   <Identity>
     <GenericName>Cattle</GenericName>
@@ -17,6 +17,14 @@
   <ResourceSupply>
     <Amount>400</Amount>
   </ResourceSupply>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>ellipse/128x256.png</MainTexture>
+        <MainTextureMask>ellipse/128x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>actor/fauna/animal/cattle_select.xml</select>
