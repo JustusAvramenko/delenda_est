@@ -8,11 +8,19 @@
         <prop actor="props/units/helmets/hele_thracian_b7_crested.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/new/head_athen_pericles.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_01_L"/>
         <prop actor="props/units/shields/theb_aspis_epaminondas.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/armor/greave_09_bronze_r.xml" attachpoint="leg_R"/>
+        <prop actor="props/units/armor/greave_09_bronze_l.xml" attachpoint="leg_L"/>
         <prop actor="props/units/capes/hoplite.xml" attachpoint="root"/>
       </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="cuirass-2a">
       <textures>
-        <texture file="skeletal/mace_thorakites_2.png" name="baseTex"/>
+        <texture file="skeletal/hele_scale_1_a.png" name="baseTex"/>
+        <texture file="skeletal/hele_scale_1_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -26,7 +34,7 @@
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/build.xml"/>
     <variant file="biped/build_farm.xml"/>
-    <variant file="biped/death_hoplite.xml"/>
+    <variant file="biped/hoplite_death.xml"/>
   </group>
-  <material>playercolor_spec.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
