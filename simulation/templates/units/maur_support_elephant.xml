@@ -19,9 +19,9 @@
       <food>100</food>
     </Resources>
   </Cost>
-  <Footprint>
-    <Circle radius="4.0"/>
-    <Height>6.0</Height>
+  <Footprint replace="">
+    <Square width="5" depth="9"/>
+    <Height>6</Height>
   </Footprint>
   <Health>
     <Max>300</Max>
@@ -38,12 +38,12 @@
   </Identity>
   <Loot>
     <xp>50</xp>
-    <food>25</food>
-    <wood>10</wood>
-    <stone>10</stone>
-    <metal>10</metal>
-    <coin>10</coin>
-    <glory>10</glory>
+    <food>20</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <coin>0</coin>
+    <glory>20</glory>
   </Loot>
   <Position>
     <Anchor>pitch</Anchor>
@@ -76,8 +76,8 @@
   <Selectable>
     <Overlay>
       <Texture>
-        <MainTexture>circle/256x256.png</MainTexture>
-        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+        <MainTexture>ellipse/128x256.png</MainTexture>
+        <MainTextureMask>ellipse/128x256_mask.png</MainTextureMask>
       </Texture>
     </Overlay>
   </Selectable>
@@ -91,6 +91,9 @@
       <trained>actor/fauna/animal/elephant_trained.xml</trained>
     </SoundGroups>
   </Sound>
+  <StatusBars>
+    <HeightOffset>9.5</HeightOffset>
+  </StatusBars>
   <UnitMotion>
     <PassabilityClass>large</PassabilityClass>
 	<WalkSpeed>6.0</WalkSpeed>
