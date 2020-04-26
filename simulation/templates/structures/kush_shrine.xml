@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_temple">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
   <Footprint>
     <Square width="24.0" depth="25.0"/>
     <Height>8.0</Height>
@@ -27,6 +30,8 @@
 	  -attack_military_cult
     </Technologies>
   </ProductionQueue>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
   <VisualActor>
     <Actor>structures/kushites/shrine.xml</Actor>
     <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
