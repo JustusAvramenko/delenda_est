@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_tower">
   <Armour>
-    <Hack>15.0</Hack>
-    <Pierce>35.0</Pierce>
-    <Crush>5.0</Crush>
+    <Hack>15</Hack>
+    <Pierce>35</Pierce>
+    <Crush>5</Crush>
     <Foundation>
-      <Hack>4.0</Hack>
-      <Pierce>7.0</Pierce>
-      <Crush>3.0</Crush>
+      <Hack>4</Hack>
+      <Pierce>7</Pierce>
+      <Crush>3</Crush>
     </Foundation>
   </Armour>
   <BuildRestrictions>
@@ -15,33 +15,39 @@
   </BuildRestrictions>
   <Cost>
     <Resources>
-      <wood>50</wood>
+      <wood>100</wood>
       <stone>0</stone>
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="10.0" depth="10.0"/>
-    <Height>14.0</Height>
+    <Square width="8" depth="8"/>
+    <Height>12.5</Height>
   </Footprint>
   <Health>
-    <Max op="mul">0.5</Max>
+    <Max op="mul">0.75</Max>
   </Health>
   <Identity>
     <Civ>rome</Civ>
-	<GenericName>Siege Wall Tower</GenericName>
+    <GenericName>Siege Wall Tower</GenericName>
     <SpecificName>Turris Circummūnītiōnis</SpecificName>
+    <Classes datatype="tokens">SiegeWall</Classes>
+    <Icon>structures/siege_wall.png</Icon>
   </Identity>
+  <Loot>
+    <wood>20</wood>
+    <stone>0</stone>
+  </Loot>
   <Obstruction>
-    <Static width="7.0" depth="7.0"/>
+    <Static width="6" depth="6"/>
   </Obstruction>
-  <TerritoryDecay>
-    <DecayRate>1</DecayRate>
-  </TerritoryDecay>
+  <StatusBars>
+    <HeightOffset>13.5</HeightOffset>
+  </StatusBars>
   <TerritoryInfluence disable=""/>
   <VisualActor>
     <Actor>structures/romans/siege_wall_tower.xml</Actor>
   </VisualActor>
   <WallPiece>
-    <Length>6.0</Length>
+    <Length>6</Length>
   </WallPiece>
 </Entity>

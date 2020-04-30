@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_medium">
   <Armour>
-    <Hack>15.0</Hack>
-    <Pierce>35.0</Pierce>
-    <Crush>5.0</Crush>
+    <Hack>15</Hack>
+    <Pierce>35</Pierce>
+    <Crush>5</Crush>
     <Foundation>
-      <Hack>4.0</Hack>
-      <Pierce>7.0</Pierce>
-      <Crush>3.0</Crush>
+      <Hack>4</Hack>
+      <Pierce>7</Pierce>
+      <Crush>3</Crush>
     </Foundation>
   </Armour>
   <BuildRestrictions>
@@ -20,48 +20,52 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="28.0" depth="8.0"/>
-    <Height>7.0</Height>
+    <Square width="25" depth="5"/>
+    <Height>6.7</Height>
   </Footprint>
-  <Health>
-    <Max op="mul">0.5</Max>
-  </Health>
   <GarrisonHolder>
     <VisibleGarrisonPoints>
       <Archer1>
-        <X>0</X><Y>5.7</Y><Z>0</Z>
+        <X>0</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
       </Archer1>
       <Archer2>
-        <X>4</X><Y>5.7</Y><Z>0</Z>
+        <X>4</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
       </Archer2>
       <Archer3>
-        <X>-4</X><Y>5.7</Y><Z>0</Z>
+        <X>-4</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
       </Archer3>
     </VisibleGarrisonPoints>
   </GarrisonHolder>
+  <Health>
+    <Max op="mul">0.75</Max>
+  </Health>
   <Identity>
     <Civ>rome</Civ>
-	<SelectionGroupName>structures/rome_wallset_siege</SelectionGroupName>
-	<GenericName>Siege Wall</GenericName>
+    <SelectionGroupName>structures/rome_wallset_siege</SelectionGroupName>
+    <GenericName>Siege Wall</GenericName>
     <SpecificName>Mūrus Circummūnītiōnis</SpecificName>
-    <Classes datatype="tokens">
-	  SiegeWall
-	</Classes>
+    <Classes datatype="tokens">SiegeWall</Classes>
     <Icon>structures/siege_wall.png</Icon>
-	<Tooltip>A wooden and turf palisade buildable in enemy and neutral territories.</Tooltip>
-    <History>Quick building, but expensive wooden and earthen walls used to surround and siege an enemy town or fortified position. The most famous examples are the Roman sieges of the Iberian stronghold of Numantia and the Gallic stronghold of Alesia.</History>
+    <Tooltip>A wooden and turf palisade buildable in enemy and neutral territories.</Tooltip>
   </Identity>
+  <Loot>
+    <wood>8</wood>
+    <stone>0</stone>
+  </Loot>
   <Obstruction>
-    <Static width="25.0" depth="5.0"/>
+    <Static width="24" depth="4"/>
   </Obstruction>
-  <TerritoryDecay>
-    <DecayRate>1</DecayRate>
-  </TerritoryDecay>
+  <StatusBars>
+    <HeightOffset>7.7</HeightOffset>
+  </StatusBars>
   <TerritoryInfluence disable=""/>
   <VisualActor>
     <Actor>structures/romans/siege_wall_medium.xml</Actor>
   </VisualActor>
-  <WallPiece>
-    <Length>24.0</Length>
-  </WallPiece>
 </Entity>

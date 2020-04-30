@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_gate">
   <Armour>
-    <Hack>15.0</Hack>
-    <Pierce>35.0</Pierce>
-    <Crush>5.0</Crush>
+    <Hack>15</Hack>
+    <Pierce>35</Pierce>
+    <Crush>5</Crush>
     <Foundation>
-      <Hack>4.0</Hack>
-      <Pierce>7.0</Pierce>
-      <Crush>3.0</Crush>
+      <Hack>4</Hack>
+      <Pierce>7</Pierce>
+      <Crush>3</Crush>
     </Foundation>
   </Armour>
   <BuildRestrictions>
@@ -20,37 +20,35 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="40.0" depth="8.0"/>
-    <Height>7.0</Height>
+    <Square width="37" depth="7"/>
+    <Height>12.5</Height>
   </Footprint>
   <Health>
-    <Max op="mul">0.5</Max>
+    <Max op="mul">0.75</Max>
   </Health>
   <Identity>
     <Civ>rome</Civ>
     <GenericName>Siege Wall Gate</GenericName>
     <SpecificName>Porta Circummūnītiōnis</SpecificName>
-    <Classes datatype="tokens">
-	  SiegeWall
-	</Classes>
-    <History>Quick building, but expensive wooden and earthen walls used to surround and siege an enemy town or fortified position. The most famous examples are the Roman sieges of the Iberian stronghold of Numantia and the Gallic stronghold of Alesia.</History>
-	<Icon>structures/wooden_gate.png</Icon>
+    <Classes datatype="tokens">SiegeWall</Classes>
+    <Icon>structures/wooden_gate.png</Icon>
   </Identity>
+  <Loot>
+    <wood>16</wood>
+    <stone>0</stone>
+  </Loot>
   <Obstruction>
     <Obstructions>
-      <Right width="13" depth="5" x="12" z="0"/>
-      <Left width="13" depth="5" x="-12" z="0"/>
-      <Door width="11" depth="5" x="0" z="0"/>
+      <Right width="11.5" depth="5" x="12.25" z="0"/>
+      <Left width="11.5" depth="5" x="-12.25" z="0"/>
+      <Door width="13" depth="5" x="0" z="0"/>
     </Obstructions>
   </Obstruction>
-  <TerritoryDecay>
-    <DecayRate>1</DecayRate>
-  </TerritoryDecay>
+  <StatusBars>
+    <HeightOffset>13.5</HeightOffset>
+  </StatusBars>
   <TerritoryInfluence disable=""/>
   <VisualActor>
     <Actor>structures/romans/siege_wall_gate.xml</Actor>
   </VisualActor>
-  <WallPiece>
-    <Length>36.0</Length>
-  </WallPiece>
 </Entity>

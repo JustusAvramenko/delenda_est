@@ -38,6 +38,7 @@
   <Identity>
     <GenericName>City Gate</GenericName>
     <Tooltip>Allow units access through a city wall. Can be locked to prevent access.</Tooltip>
+    <SelectionGroupName>template_structure_defensive_wall_gate</SelectionGroupName>
 	<VisibleClasses datatype="tokens">Wall StoneWall Gates</VisibleClasses>
     <Classes datatype="tokens">-ConquestCritical -NotField</Classes>
     <Icon>structures/gate.png</Icon>
@@ -75,6 +76,9 @@
     <Weight>65535</Weight>
   </TerritoryInfluence>
   <VisualActor>
-    <FoundationActor>structures/fndn_wall_long.xml</FoundationActor>
+    <FoundationActor>structures/fndn_9x3_wall.xml</FoundationActor>
   </VisualActor>
+  <WallPiece>
+    <Length>36</Length>
+  </WallPiece>
 </Entity>

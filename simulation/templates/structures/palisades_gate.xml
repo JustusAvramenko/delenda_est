@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_palisade">
+  <Cost>
+    <BuildTime>11</BuildTime>
+    <Resources>
+      <wood>20</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="15" depth="3"/>
+    <Height>7</Height>
+  </Footprint>
+  <Gate>
+    <PassRange>20</PassRange>
+  </Gate>
+  <Health>
+    <Max op="mul">0.64</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Gates</Classes>
+    <SpecificName>Palisade Gate</SpecificName>
+    <SelectionGroupName>structures/palisades_gate</SelectionGroupName>
+    <Icon>structures/wooden_gate.png</Icon>
+    <Tooltip>Allow units access through a palisade wall. Can be locked to prevent access.</Tooltip>
+  </Identity>
+  <Loot>
+    <wood>4</wood>
+  </Loot>
+  <Obstruction>
+    <Obstructions>
+      <Right width="2" depth="2" x="6" z="0"/>
+      <Left width="2" depth="2" x="-6" z="0"/>
+      <Door width="10" depth="2" x="0" z="0"/>
+    </Obstructions>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_gate.xml</select>
+      <constructed>interface/complete/building/complete_gate.xml</constructed>
+      <gate_closing>actor/gate/stonegate_close.xml</gate_closing>
+      <gate_opening>actor/gate/stonegate_open.xml</gate_opening>
+      <gate_locked>interface/select/building/sel_gate.xml</gate_locked>
+      <gate_unlocked>interface/select/building/sel_gate.xml</gate_unlocked>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <FoundationActor>structures/fndn_3x1.xml</FoundationActor>
+    <Actor>props/special/palisade_rocks_gate.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>14</Length>
+  </WallPiece>
+</Entity>
