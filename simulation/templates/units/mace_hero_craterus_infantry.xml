@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    mace_hero_craterus
+  </Auras>
+  <Identity>
+    <Civ>mace</Civ>
+	<Lang>greek</Lang>
+    <GenericName>Craterus</GenericName>
+    <SpecificName>Kraterós</SpecificName>
+    <History>Craterus or Krateros (Greek: Κρατερός; c. 370 BC – 321 BC) was a Macedonian general under Alexander the Great and one of the Diadochi.
+
+He was the son of a Macedonian nobleman named Alexander from Orestis and brother of admiral Amphoterus. Craterus commanded the phalanx and all infantry on the left wing in Battle of Issus (333 BC). In Hyrcania he was sent on a mission against the Tapurians, his first independent command with the Macedonian army. At the Battle of the Hydaspes River (326 BC, near modern Jhelum) he commanded the rearguard, which stayed on the western bank; his men crossed the river only during the final stages of the battle.
+
+At the festivities in Susa, Craterus married princess Amastris, daughter of Oxyathres, the brother of Darius III. Craterus and Polyperchon were appointed to lead 11,500 veteran soldiers back to Macedonia. Craterus was in Cilicia, where he was building the fleet to return home, when Alexander unexpectedly died in Babylon.
+
+In 322 BC Craterus aided Antipater in the Lamian War against Athens. He sailed with his Cilician navy to Greece and led troops at the Battle of Crannon in 322 BC. When Antigonus rose in rebellion against Perdiccas and Eumenes, Craterus joined him, alongside Antipater and Ptolemy. He married Antipater's daughter Phila. He was killed in battle against Eumenes in Asia Minor when his charging horse fell over him, somewhere near the Hellespont, in 321 BC. (Wikipedia.org)</History>
+    <Icon>units/mace_hero_craterus_infantry.png</Icon>
+  </Identity>
+  <Upgrade>
+    <CraterusMount>
+      <Entity>units/mace_hero_craterus_mounted</Entity>
+      <Tooltip>This gives Craterus his mount, with trample effects, greater health, and the "Hammer and Anvil" cavalry aura.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>500</food>
+        <glory>500</glory>
+      </Cost>
+      <Time>10</Time>
+    </CraterusMount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/macedonians/hero_infantry_swordsman_craterus.xml</Actor>
+  </VisualActor>
+</Entity>

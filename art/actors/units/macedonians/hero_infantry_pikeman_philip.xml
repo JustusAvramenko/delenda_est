@@ -2,7 +2,7 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/pikeman_base.xml">
+    <variant>
       <props>
         <prop actor="props/units/heads/new/head_philip.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/sarissa.xml" attachpoint="weapon_R"/>
@@ -37,15 +37,19 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/pikeman_base.xml"/>
-    <variant file="biped/attack_capture.xml"/>
-    <variant file="biped/death_infantry.xml"/>
+    <variant file="biped/base_pikeman_relax.xml"/>
     <variant file="biped/formations/syntagma_front.xml"/>
     <variant file="biped/formations/syntagma_01.xml"/>
     <variant file="biped/formations/syntagma_02.xml"/>
     <variant file="biped/formations/syntagma_03.xml"/>
     <variant file="biped/formations/syntagma_04.xml"/>
     <variant file="biped/formations/syntagma_back.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
   </group>
   <material>player_trans_spec.xml</material>
 </actor>
