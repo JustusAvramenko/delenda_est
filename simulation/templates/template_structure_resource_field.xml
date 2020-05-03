@@ -22,13 +22,14 @@
     <Height>2.0</Height>
   </Footprint>
   <Health>
-    <Max>100</Max>
-	<SpawnEntityOnDeath>decay|decay|rubble/rubble_field</SpawnEntityOnDeath>
+    <Max>200</Max>
+	<SpawnEntityOnDeath>decay|rubble/rubble_field</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Farm Field</GenericName>
 	<VisibleClasses datatype="tokens">Field DiminishingReturns</VisibleClasses>
 	<Classes datatype="tokens">-NotField</Classes>
+    <SelectionGroupName>template_structure_resource_field</SelectionGroupName>
     <Tooltip>Build in neutral or own territory to harvest vegetables for food. Build on farmland terrain to gain a +100% farming boost. Max gatherers: 5. There is a diminishing return effect where it is more efficient to use fewer gatherers per field.</Tooltip>
     <History>Farming originated around 9500 BC in India and the Middle East. The history of agriculture is a central element of human history, as agricultural progress has been a crucial factor in worldwide socio-economic change. Wealth-building and militaristic specializations rarely seen in hunter-gatherer cultures are commonplace in agricultural and agro-industrial societies - when farmers became capable of producing food beyond the needs of their own families, others in the tribe/nation/empire were freed to devote themselves to projects other than food acquisition.</History>
     <Icon>structures/field.png</Icon>
@@ -64,6 +65,7 @@
       <wood>0.0</wood>
       <stone>0.0</stone>
       <metal>0.0</metal>
+      <coin>0.0</coin>
       <glory>0.0</glory>
     </Rates> 
     <Interval>6000</Interval> 
