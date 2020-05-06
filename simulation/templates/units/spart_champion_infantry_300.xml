@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_infantry_spearman">
+<Entity parent="template_unit_champion_infantry_hoplite">
   <Armour>
     <Hack op="add">1</Hack>
     <Pierce op="add">1</Pierce>
@@ -7,69 +7,89 @@
   </Armour>
   <Attack>
     <Melee>
-      <MaxRange>6.0</MaxRange>
-	  <Bonuses>
-		<BonusCarths>
-		  <Civ>cart</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusCarths>
-		<BonusBritons>
-		  <Civ>brit</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusBritons>
-		<BonusGauls>
-		  <Civ>gaul</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusGauls>
-		<BonusMauryans>
-		  <Civ>maur</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusMauryans>
-		<BonusIberians>
-		  <Civ>iber</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusIberians>
-		<BonusPersians>
-		  <Civ>pers</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusPersians>
-		<BonusRomans>
-		  <Civ>rome</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusRomans>
-		<BonusPrincipates>
-		  <Civ>imp</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusPrincipates>
-	  </Bonuses>
+      <Bonuses>
+        <BonusCarths>
+          <Civ>cart</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusCarths>
+        <BonusBritons>
+          <Civ>brit</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusBritons>
+        <BonusHan>
+          <Civ>han</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusHan>
+        <BonusGauls>
+          <Civ>gaul</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusGauls>
+        <BonusMauryans>
+          <Civ>maur</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusMauryans>
+        <BonusKushites>
+          <Civ>kush</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusKushites>
+        <BonusIberians>
+          <Civ>iber</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusIberians>
+        <BonusPersians>
+          <Civ>pers</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusPersians>
+        <BonusRomans>
+          <Civ>rome</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusRomans>
+        <BonusPrincipates>
+          <Civ>imp</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusPrincipates>
+        <BonusScythians>
+          <Civ>scyth</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusScythians>
+        <BonusHuns>
+          <Civ>huns</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusHuns>
+        <BonusXion>
+          <Civ>xion</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusXion>
+      </Bonuses>
     </Melee>
   </Attack>
-  <Auras datatype="tokens">
-    shield_wall
-  </Auras>
   <Identity>
     <Civ>spart</Civ>
 	<Lang>greek</Lang>
 	<GenericName>Spartan Hoplite</GenericName>
-    <SpecificName>Spartiáti̱s</SpecificName>
+    <SpecificName>Spartiátēs</SpecificName>
     <VisibleClasses datatype="tokens">
 	  Spartiates
-	  Hoplite
 	</VisibleClasses>
-    <Tooltip>Traits: Medium Speed, Heavy Armor, High Attack.
+    <Tooltip>Traits: Medium Speed, Heavy Armor, High Attack, Shield Wall.
 Strong Against: All Cavalry (1.5x), Non-Greek Units (1.1x).
 Weak Against: Ranged Units, Sword Infantry.</Tooltip>
     <History>The Spartans had a very peculiar form of government which enabled them to be professional soldiers. It not only enabled them, but actually forced them to be superior soldiers as a small group of Spartans had to dominate an enormous number of subjects and unwilling allies. The Spartan army was superior in Hellas, and in the rest of the known world. No other army was so well trained, and had such excellent equipment. They believed that traditional training was the key to success, and for centuries they were correct, as they rarely lost a battle in spite of their small numbers. Ironic enough, this concept ended the Spartan supremacy, as the Spartan phalanx could not resist the new sloped Theban phalanx and the invading integrated Macedonian forces. The end of the Spartan power marked the decline of the domination of traditional phalanx warfare.</History>
 	<RequiredTechnology>phase_town</RequiredTechnology>
-    <Icon>units/spart_champion_infantry_spear.png</Icon>
+    <Icon>units/spart_champion_infantry_spear_300.png</Icon>
     <Formations datatype="tokens">
       special/formations/phalanx
     </Formations>
