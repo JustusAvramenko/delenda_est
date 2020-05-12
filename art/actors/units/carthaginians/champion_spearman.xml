@@ -11,8 +11,11 @@
         <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_02_L"/>
         <prop actor="props/units/armor/greave_02_white_r.xml" attachpoint="leg_R"/>
         <prop actor="props/units/armor/greave_02_white_l.xml" attachpoint="leg_L"/>
-        <prop actor="props/units/capes/hoplite.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
       </props>
+      <textures>
+        <texture file="skeletal/hele_linothorax_1_spec.png" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -33,6 +36,21 @@
     </variant>
   </group>
   <group>
+    <variant frequency="1" name="Linothorax-1a">
+      <textures>
+        <texture file="skeletal/cart_linothorax_champion_1_a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Linothorax-1b">
+      <textures>
+        <texture file="skeletal/cart_linothorax_champion_1_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Linothorax-1c">
+      <textures>
+        <texture file="skeletal/cart_linothorax_champion_1_c.png" name="baseTex"/>
+      </textures>
+    </variant>
     <variant frequency="1" name="Armor-1">
       <textures>
         <texture file="skeletal/kart_su1_sacredband_1.dds" name="baseTex"/>
@@ -60,7 +78,7 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/base_hoplite.xml"/>
+    <variant file="biped/base_hoplite.xml" name="Hoplite-Relax" frequency="1"/>
     <variant file="biped/formations/phalanx_front.xml"/>
     <variant file="biped/formations/phalanx_mid.xml"/>
     <variant file="biped/formations/phalanx_back.xml"/>
@@ -75,5 +93,5 @@
       </props>
     </variant>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>

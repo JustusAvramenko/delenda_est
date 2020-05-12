@@ -9,9 +9,6 @@
         <prop actor="props/units/weapons/spear_lance_cavalry.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/capes/rider/cape_med_player.xml" attachpoint="root"/>
       </props>
-      <textures>
-        <texture file="skeletal/spart_phalangite_officer.dds" name="baseTex"/>
-      </textures>
     </variant>
   </group>
   <group>
@@ -19,6 +16,14 @@
       <props>
         <prop actor="props/units/helmets/hele_boeotian_b2.xml" attachpoint="helmet"/>
       </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="armor-mace_splint_1_a">
+      <textures>
+        <texture file="skeletal/mace_splint_1_a.png" name="baseTex"/>
+        <texture file="skeletal/mace_splint_1_spec.png" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -32,5 +37,5 @@
     <variant file="biped/gather_meat.xml"/>
     <variant file="biped/rider/death.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>

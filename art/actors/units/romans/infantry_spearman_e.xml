@@ -7,7 +7,6 @@
       <props>
         <prop actor="props/units/helmets/rome_helmet_apulo_corinthian.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/new/rome_head_veteran.xml" attachpoint="head"/>
-        <prop actor="props/units/shields/rome_scutum_e.xml" attachpoint="shield"/>
         <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/sheath_gladius.xml" attachpoint="sheath_01_R"/>
       </props>
@@ -41,6 +40,43 @@
     </variant>
   </group>
   <group>
+    <variant frequency="1" name="Scutum-01">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_08.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Scutum-02">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_09.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Scutum-03">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_10.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Scutum-04">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_11.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Scutum-05">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_12.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Scutum-06">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_13.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Scutum-07">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_14.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+  </group>
+  <group>
     <variant frequency="1" name="Greave-01">
       <props>
         <prop actor="props/units/armor/greave_06_bronze_r.xml" attachpoint="leg_R"/>
@@ -55,12 +91,17 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="armour-texture-Color root">
+    <variant frequency="2" name="armor-rome_chainmail_4_padded_a">
+      <textures>
+        <texture file="skeletal/rome_chainmail_4_padded_a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="2" name="armour-texture-Color">
       <textures>
         <texture file="skeletal/rome_isp_e_1.dds" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="armour-texture-White root">
+    <variant frequency="3" name="armour-texture-White">
       <textures>
         <texture file="skeletal/rome_isp_e_2.dds" name="baseTex"/>
       </textures>
