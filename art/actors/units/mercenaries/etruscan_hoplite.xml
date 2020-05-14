@@ -3,11 +3,25 @@
   <castshadow/>
   <group>
     <variant>
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/shields/cart_tarantine_e.xml" attachpoint="shield_arm"/>
         <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
         <prop actor="props/units/capes/hoplite.xml" attachpoint="root"/>
+        <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_02_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Shield-aspis_athen_a">
+      <props>
+        <prop actor="props/units/shields/aspis_athen_a.xml" attachpoint="shield_arm"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Shield-aspis_athen_b">
+      <props>
+        <prop actor="props/units/shields/aspis_athen_b.xml" attachpoint="shield_arm"/>
       </props>
     </variant>
   </group>
@@ -94,54 +108,70 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Cuirass">
-      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
-      <textures><texture file="skeletal/samnite_isp_e_1.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="pectoral-tripledisc">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
-      <textures><texture file="skeletal/kart_csp_a_1.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="pectoral-square">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
-      <textures><texture file="skeletal/kart_csp_a_2.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="pectoral-muscle">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
-      <textures><texture file="skeletal/kart_csp_a_3.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="lamelar-thorax">
-      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
-      <textures><texture file="skeletal/hele_linothorax_lamelar_1_a.png" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="Tunic-1">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+    <variant frequency="1" name="armor-ital_cuirass_1_a">
       <textures>
-	    <texture file="skeletal/kart_csp_b_1.dds" name="baseTex"/>
+        <texture file="skeletal/ital_cuirass_1_a.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="armor-ital_cuirass_1_b">
+      <textures>
+        <texture file="skeletal/ital_cuirass_1_b.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="armor-ital_cuirass_1_c">
+      <textures>
+        <texture file="skeletal/ital_cuirass_1_c.png" name="baseTex"/>
+        <texture file="skeletal/hele_cuirass_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="ital-linothorax-1a">
+      <textures>
+        <texture file="skeletal/ital_linothorax_1_a.png" name="baseTex"/>
+        <texture file="skeletal/hele_linothorax_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="ital-linothorax-1b">
+      <textures>
+        <texture file="skeletal/ital_linothorax_1_b.png" name="baseTex"/>
+        <texture file="skeletal/hele_linothorax_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="ital-linothorax-1b">
+      <textures>
+        <texture file="skeletal/ital_linothorax_1_b.png" name="baseTex"/>
+        <texture file="skeletal/hele_linothorax_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="ital-linothorax-1d">
+      <textures>
+        <texture file="skeletal/ital_linothorax_1_d.png" name="baseTex"/>
+        <texture file="skeletal/hele_linothorax_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="cardiopylax-2-c-a">
+      <textures>
+        <texture file="skeletal/rome_cardiopylax_2_champion_a.png" name="baseTex"/>
+        <texture file="skeletal/rome_cardiopylax_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="cardiopylax-2-c-b">
+      <textures>
+        <texture file="skeletal/rome_cardiopylax_2_champion_b.png" name="baseTex"/>
+        <texture file="skeletal/rome_cardiopylax_2_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="armor-theb_linothorax_1_a">
+      <textures>
+	    <texture file="skeletal/theb_linothorax_1_a.png" name="baseTex"/>
+        <texture file="skeletal/hele_linothorax_1_spec.png" name="specTex"/>
 	  </textures>
     </variant>
-    <variant frequency="1" name="Tunic-2">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+    <variant frequency="1" name="armor-theb_linothorax_1_b">
       <textures>
-	    <texture file="skeletal/kart_csp_b_2.dds" name="baseTex"/>
-	  </textures>
-    </variant>
-    <variant frequency="1" name="Tunic-3">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
-      <textures>
-	    <texture file="skeletal/kart_csp_b_3.dds" name="baseTex"/>
-	  </textures>
-    </variant>
-    <variant frequency="1" name="Tunic-4">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
-      <textures>
-	    <texture file="skeletal/kart_csp_b_4.dds" name="baseTex"/>
-	  </textures>
-    </variant>
-    <variant frequency="3" name="Thorax-Tube and Yoke Corselet">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
-      <textures>
-	    <texture file="skeletal/mace_thorakites_2.png" name="baseTex"/>
+	    <texture file="skeletal/theb_linothorax_1_b.png" name="baseTex"/>
+        <texture file="skeletal/hele_linothorax_1_spec.png" name="specTex"/>
 	  </textures>
     </variant>
   </group>
@@ -162,5 +192,5 @@
   <group>
     <variant name="Idle"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>

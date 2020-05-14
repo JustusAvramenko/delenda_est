@@ -2,15 +2,15 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_swordsman_shield_fast.xml">
+    <variant>
       <mesh>skeletal/new/m_hero_tunic.dae</mesh>
       <props>
         <prop actor="props/units/helmets/celt_helmet_agris.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/new/head_celt_brennus.xml" attachpoint="head"/>
-        <prop actor="props/units/shields/celt_brennus.xml" attachpoint="shield"/>
+        <prop actor="props/units/shields/gaul_shield_spear_oval_c_03.xml" attachpoint="shield"/>
         <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
         <prop actor="props/temp/l_sheath.xml" attachpoint="sheath_L"/>
-        <prop actor="props/units/capes/swordsman_shield_ready_fast.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
       </props>
       <textures>
         <texture file="skeletal/celt_brennus.dds" name="baseTex"/>
@@ -18,13 +18,14 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Idle"/>
+    <variant file="biped/base_swordsman_shield_relax_celt.xml" name="Swordsman-Shield-Relax-Celt" frequency="1"/>
     <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/gather_praise.xml"/>
     <variant file="biped/death_infantry.xml">
       <props>
-        <prop actor="props/units/capes/swordsman_shield_ready_fast.xml" attachpoint="root"/>
+        <prop actor="props/units/capes/swordsman_shield_relax_celt.xml" attachpoint="root"/>
       </props>
-    </variant>
+	</variant>
   </group>
   <material>player_trans.xml</material>
 </actor>

@@ -2,7 +2,7 @@
 	"pair": "pair_blacksmith_01",
 	"genericName": "Forging",
 	"description": ".",
-	"cost": {"metal": 500},
+	"cost": {"metal": 200},
 	"requirements": {"tech": "phase_village"},
 	"requirementsTooltip": "Unlocked in Village Phase.",
 	"icon": "forging.png",
@@ -11,8 +11,9 @@
 	"modifications": [
 		{ "value": "ProductionQueue/TechCostMultiplier/wood", "multiply": 0.75 },
 		{ "value": "ProductionQueue/TechCostMultiplier/food", "multiply": 0.75 },
-		{ "value": "ProductionQueue/TechCostMultiplier/metal", "multiply": 0.75 },
 		{ "value": "ProductionQueue/TechCostMultiplier/stone", "multiply": 0.75 },
+		{ "value": "ProductionQueue/TechCostMultiplier/metal", "multiply": 0.75 },
+		{ "value": "ProductionQueue/TechCostMultiplier/coin", "multiply": 0.75 },
 		{ "value": "ProductionQueue/TechCostMultiplier/glory", "multiply": 0.75 }
 	],
 	"affects": ["Blacksmith"],

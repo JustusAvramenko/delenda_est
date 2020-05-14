@@ -3,7 +3,7 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="Base">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_spart_e.xml" attachpoint="head"/>
         <prop actor="props/units/helmets/hele_pilos.xml" attachpoint="helmet"/>
@@ -12,7 +12,28 @@
         <prop actor="props/units/shields/pelta_spart_elite.xml" attachpoint="shield"/>
         <prop actor="props/units/capes/slinger_pelt.xml" attachpoint="root"/>
       </props>
-      <textures><texture file="skeletal/mace_ijv_b.png" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="hele-tunic">
+      <textures>
+        <texture file="skeletal/hele_tunic.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="hele-tunic-fur-1-a">
+      <textures>
+        <texture file="skeletal/hele_tunic_fur_1_a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="hele-tunic-fur-1-b">
+      <textures>
+        <texture file="skeletal/hele_tunic_fur_1_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="hele-tunic-fur-1-c">
+      <textures>
+        <texture file="skeletal/hele_tunic_fur_1_c.png" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>

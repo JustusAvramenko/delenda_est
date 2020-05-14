@@ -5,23 +5,53 @@
     <variant>
       <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/helmets/old/sele_romanized_visor_crest_brass.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
         <prop actor="props/units/shields/sele_thureos_romanized_face.xml" attachpoint="shield"/>
         <prop actor="props/units/weapons/xiphos.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
+        <prop actor="props/units/weapons/sheath_xiphos_e.xml" attachpoint="sheath_01_R"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Thorax-Chainmail">
+    <variant frequency="1" name="Hele Thracian Helmet-01">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_b2_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Thracian Helmet-02">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_b4_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Thracian Helmet-03">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_romanized_b2_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Thracian Helmet-04">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_romanized_s2_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="sele-chainmail-3a">
       <textures>
-        <texture file="skeletal/mace_thoakrites.dds" name="baseTex"/>
+        <texture file="skeletal/sele_chainmail_3_a.png" name="baseTex"/>
+        <texture file="skeletal/rome_chainmail_3_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="Thorax-Tube and Yoke Corselet">
+    <variant frequency="1" name="sele-chainmail-3b">
       <textures>
-        <texture file="skeletal/mace_thorakites_2.png" name="baseTex"/>
+        <texture file="skeletal/sele_chainmail_3_b.png" name="baseTex"/>
+        <texture file="skeletal/rome_chainmail_3_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="sele-chainmail-3c">
+      <textures>
+        <texture file="skeletal/sele_chainmail_3_c.png" name="baseTex"/>
+        <texture file="skeletal/rome_chainmail_3_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -31,5 +61,5 @@
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/death_cape_long.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
