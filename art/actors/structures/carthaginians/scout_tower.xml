@@ -6,7 +6,6 @@
       <animations>
         <animation event="0.5" load="0" name="attack_ranged" speed="100"/>
       </animations>
-      <mesh>structural/kart_tower_bolt.dae</mesh>
       <props>
         <prop actor="props/structures/decals/spart_1x1.xml" attachpoint="root"/>
         <prop actor="props/units/weapons/arrow_front.xml" attachpoint="loaded-projectile"/>
@@ -16,8 +15,36 @@
         <texture file="structural/kart_struct.dds" name="baseTex"/>
         <texture file="structural/kart_struct_norm.png" name="specTex"/>
         <texture file="structural/kart_struct_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Stone_Tower_1">
+      <mesh>structural/kart_scout_tower.dae</mesh>
+      <textures>
+        <texture file="structural/ao/kart_scout_tower.png" name="aoTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Stone_Tower_2">
+      <mesh>structural/kart_tower_bolt.dae</mesh>
+      <textures>
         <texture file="structural/ao/kart_tower_bolt_AO.png" name="aoTex"/>
       </textures>
+    </variant>
+    <variant frequency="1" name="Stone_Tower_3">
+      <mesh>structural/kart_tower_artillery.dae</mesh>
+      <textures>
+        <texture file="structural/ao/cart_tower_artillery_AO.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="upgrading">
+      <props>
+        <prop actor="props/structures/construction/scaf_3x3_tower.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+      </props>
     </variant>
   </group>
   <group>
