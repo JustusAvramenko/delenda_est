@@ -10,6 +10,9 @@
         <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_02_L"/>
       </props>
+      <textures>
+        <texture file="skeletal/hele_linothorax_1_spec.png" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -62,52 +65,62 @@
   <group>
     <variant frequency="1" name="Linothorax 1">
       <textures>
-	    <texture file="skeletal/hele_isp_a_1.dds" name="baseTex"/>
-	  </textures>
+        <texture file="skeletal/hele_isp_a_1.png" name="baseTex"/>
+      </textures>
     </variant>
     <variant frequency="1" name="Linothorax 2">
       <textures>
-	    <texture file="skeletal/hele_isp_a_2.dds" name="baseTex"/>
-	  </textures>
+        <texture file="skeletal/hele_isp_a_2.png" name="baseTex"/>
+      </textures>
     </variant>
     <variant frequency="1" name="Linothorax 3">
       <textures>
-	    <texture file="skeletal/hele_isp_a_3.dds" name="baseTex"/>
-	  </textures>
-    </variant>
-    <variant frequency="1" name="psiloi-5">
-      <textures>
-        <texture file="skeletal/hele_epilektoi_7.png" name="baseTex"/>
+        <texture file="skeletal/hele_isp_a_3.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="psiloi-6">
+    <variant frequency="1" name="athen-linothorax-1a">
       <textures>
-        <texture file="skeletal/hele_epilektoi_4.png" name="baseTex"/>
+        <texture file="skeletal/athen_linothorax_1_a.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="psiloi-7">
+    <variant frequency="1" name="athen-linothorax-1b">
       <textures>
-        <texture file="skeletal/hele_epilektoi_9.png" name="baseTex"/>
+        <texture file="skeletal/athen_linothorax_1_b.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="psiloi-8">
+    <variant frequency="1" name="athen-linothorax-1c">
       <textures>
-        <texture file="skeletal/hele_epilektoi_10.png" name="baseTex"/>
+        <texture file="skeletal/athen_linothorax_1_c.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="athen-linothorax-1d">
+      <textures>
+        <texture file="skeletal/athen_linothorax_1_d.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="athen-linothorax-1e">
+      <textures>
+        <texture file="skeletal/athen_linothorax_1_e.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="athen-linothorax-1f">
+      <textures>
+        <texture file="skeletal/athen_linothorax_1_f.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Greave-01">
+    <variant frequency="1" name="Greave-11">
       <props>
         <prop actor="props/units/armor/greave_11_bronze_l.xml" attachpoint="leg_L"/>
       </props>
     </variant>
-    <variant frequency="1" name="Greave-02">
+    <variant frequency="1" name="Greave-07">
       <props>
         <prop actor="props/units/armor/greave_07_bronze_l.xml" attachpoint="leg_L"/>
       </props>
     </variant>
-    <variant frequency="1" name="Greave-03">
+    <variant frequency="1" name="Greave-09">
       <props>
         <prop actor="props/units/armor/greave_09_bronze_l.xml" attachpoint="leg_L"/>
       </props>
@@ -125,5 +138,5 @@
     <variant file="biped/formations/phalanx_mid.xml"/>
     <variant file="biped/formations/phalanx_back.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
