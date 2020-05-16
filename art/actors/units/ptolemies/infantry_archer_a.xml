@@ -2,25 +2,14 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant>
+    <variant file="biped/base_archer_ready.xml">
       <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/spear_lance_cavalry_reverse.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/capes/rider/cape_med_player.xml" attachpoint="root"/>
-        <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_02_L"/>
-      </props>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="Straw hat">
-      <props>
-        <prop actor="props/units/helmets/old/hele_straw.xml" attachpoint="helmet"/>
-      </props>
-    </variant>
-    <variant frequency="1" name="Kausia cap">
-      <props>
         <prop actor="props/units/helmets/hele_kausia_cap.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_bow"/>
+        <prop actor="props/units/quiver_greek_back.xml" attachpoint="back"/>
       </props>
     </variant>
   </group>
@@ -57,15 +46,26 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/rider/cavalry/base_spearman_ready.xml" name="Spearman-Ready" frequency="1"/>
-    <variant file="biped/rider/carry_meat.xml"/>
-  </group>
-  <group>
     <variant frequency="1" name="Idle"/>
-    <variant file="biped/rider/attack_slaughter_hele.xml"/>
-    <variant file="biped/rider/promotion.xml" />
+    <variant file="biped/attack_ranged_archer_hip.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_tree.xml"/>
+    <variant file="biped/gather_grain.xml"/>
+    <variant file="biped/gather_fruit.xml"/>
     <variant file="biped/gather_meat.xml"/>
-    <variant file="biped/rider/death.xml"/>
+    <variant file="biped/gather_rock.xml"/>
+    <variant file="biped/gather_ore.xml"/>
+    <variant file="biped/gather_ruins.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/carry_food.xml"/>
+    <variant file="biped/carry_meat.xml"/>
+    <variant file="biped/carry_wood.xml"/>
+    <variant file="biped/carry_stone.xml"/>
+    <variant file="biped/carry_metal.xml"/>
+    <variant file="biped/death_infantry.xml"/>
   </group>
   <material>player_trans_spec.xml</material>
 </actor>
