@@ -2,12 +2,23 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_swordsman_shield_relax.xml">
+    <variant file="biped/base_swordsman_shield_relax_celt.xml">
       <mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_lime.xml" attachpoint="head"/>
-        <prop actor="props/units/shields/celt_scutum_a.xml" attachpoint="shield"/>
         <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="shield-gaul_shield_spear_oval_b_02">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_oval_b_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="shield-gaul_shield_spear_oval_c_02">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_oval_c_02.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
