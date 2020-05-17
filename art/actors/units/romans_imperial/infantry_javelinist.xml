@@ -4,18 +4,39 @@
   <group>
     <variant frequency="1" name="Base">
       <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
-      <textures>
-        <texture file="skeletal/imp_cavalry_javelinist_1.png" name="baseTex"/>
-        <texture file="skeletal/imp_cavalry_javelinist_1_spec.png" name="specTex"/>
-      </textures>
       <props>
         <prop actor="props/units/heads/new/rome_head_veteran.xml" attachpoint="head"/>
         <prop actor="props/units/helmets/rome_gallic_type_h_cent.xml" attachpoint="helmet"/>
-        <prop actor="props/units/shields/rome_scutum_legionnaire_a.xml" attachpoint="shield"/>
         <prop actor="props/units/weapons/jav_loaded.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/jav_ammo.xml" attachpoint="ammo"/>
         <prop actor="props/units/weapons/sheath_gladius.xml" attachpoint="sheath_01_R"/>
         <prop actor="props/units/capes/cape_med_player_skirmisher.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="skeletal/imp_cavalry_javelinist_1.png" name="baseTex"/>
+        <texture file="skeletal/imp_cavalry_javelinist_1_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="shield-scutum_rome_imp_rect_01">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_imp_rect_01.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="shield-scutum_rome_imp_rect_02">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_imp_rect_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="shield-scutum_rome_imp_rect_03">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_imp_rect_03.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="shield-scutum_rome_imp_rect_04">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_imp_rect_04.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
