@@ -19,6 +19,16 @@
     </Melee>
   </Attack>
   <Capturable disable=""/>
+  <DeathDamage>
+    <Shape>Circular</Shape>
+    <Range>20</Range>
+    <FriendlyFire>true</FriendlyFire>
+    <Damage>
+      <Hack>200.0</Hack>
+      <Pierce>200.0</Pierce>
+      <Crush>200.0</Crush>
+    </Damage>
+  </DeathDamage>
   <Footprint replace="">
     <Square width="6.0" depth="20.0"/>
     <Height>4.5</Height>
@@ -39,6 +49,14 @@ Strong Against: Buildings, Gates (1.5x).
 Weak Against: Melee Cavalry, Melee Infantry.</Tooltip>
     <Icon>units/theb_mechanical_siege_fireraiser.png</Icon>
   </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x512/rounded_rectangle.png</MainTexture>
+        <MainTextureMask>128x512/rounded_rectangle_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Vision>
     <Range>50</Range>
   </Vision>

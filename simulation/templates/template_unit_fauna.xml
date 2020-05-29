@@ -7,6 +7,7 @@
     <Circle radius="1.5"/>
     <Height>2.25</Height>
   </Footprint>
+  <Guard disable=""/>
   <Identity>
     <GenericName>Fauna</GenericName>
     <Classes datatype="tokens">Organic Fauna -ConquestCritical</Classes>
@@ -22,6 +23,14 @@
     <Color b="30" g="70" r="115"/>
   </Minimap>
   <ResourceGatherer disable=""/>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/ellipse.png</MainTexture>
+        <MainTextureMask>128x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <UnitAI>
     <CanGuard>false</CanGuard>
 	<CanPatrol>false</CanPatrol>
@@ -32,7 +41,6 @@
     <FeedTimeMin>15000</FeedTimeMin>
     <FeedTimeMax>60000</FeedTimeMax>
   </UnitAI>
-  <Guard disable=""/>
   <UnitMotion>
     <WalkSpeed op="mul">0.35</WalkSpeed>
     <RunMultiplier>2</RunMultiplier>

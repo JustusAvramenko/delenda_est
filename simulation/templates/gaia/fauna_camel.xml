@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_hunt_skittish">
-  <Footprint>
-    <Circle radius="2.5"/>
+  <Footprint replace="">
+    <Square width="2.5" depth="5.0"/>
     <Height>3.0</Height>
   </Footprint>
   <Identity>
@@ -19,14 +19,6 @@
   <ResourceSupply>
     <Amount>200</Amount>
   </ResourceSupply>
-  <Selectable>
-    <Overlay>
-      <Texture>
-        <MainTexture>circle/256x256.png</MainTexture>
-        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
   <Sound>
     <SoundGroups>
       <select>actor/fauna/animal/camel_select.xml</select>

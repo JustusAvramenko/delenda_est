@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero">
+  <Armour>
+    <Hack>4</Hack>
+    <Pierce>8</Pierce>
+    <Crush>4</Crush>
+  </Armour>
+  <Attack disable=""/>
+  <Cost>
+    <Resources>
+      <food>200</food>
+      <wood>150</wood>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Heal>
+    <Range>20</Range>
+    <HP>6</HP>
+    <Rate>2000</Rate>
+    <UnhealableClasses datatype="tokens"/>
+    <HealableClasses datatype="tokens">Human</HealableClasses>
+    <RangeOverlay>
+      <LineTexture>heal_overlay_range.png</LineTexture>
+      <LineTextureMask>heal_overlay_range_mask.png</LineTextureMask>
+      <LineThickness>0.35</LineThickness>
+    </RangeOverlay>
+  </Heal>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">-Soldier Healer Support</VisibleClasses>
+  </Identity>
+  <Position>
+    <Anchor>upright</Anchor>
+  </Position>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x128/star.png</MainTexture>
+        <MainTextureMask>128x128/star_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+</Entity>
