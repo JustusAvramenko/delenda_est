@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_mechanical_ship_warship_medium">
   <Footprint>
-    <Square width="18.0" depth="40.0"/>
+    <Square width="18.0" depth="36.0"/>
     <Height>8.0</Height>
   </Footprint>
   <Identity>
@@ -12,6 +12,14 @@
     <Icon>units/celt_ship_trireme.png</Icon>
 	<RequiredTechnology>celts/unlock_warships</RequiredTechnology>
   </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/ellipse.png</MainTexture>
+        <MainTextureMask>128x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <UnitMotion>
     <WalkSpeed>12.5</WalkSpeed>
   </UnitMotion>

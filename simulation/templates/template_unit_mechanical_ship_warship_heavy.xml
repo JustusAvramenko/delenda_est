@@ -51,7 +51,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="12.0" depth="48.0"/>
+    <Square width="14.0" depth="56.0"/>
     <Height>8.0</Height>
   </Footprint>
   <GarrisonHolder>
@@ -74,6 +74,14 @@ Secondary Attack: Ramming.</Tooltip>
     <Classes datatype="tokens">NavalSiege</Classes>
 	<RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x512/cartouche.png</MainTexture>
+        <MainTextureMask>128x512/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
