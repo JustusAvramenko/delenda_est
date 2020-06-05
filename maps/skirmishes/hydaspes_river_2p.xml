@@ -3,7 +3,7 @@
 <Scenario version="6">
 	<Environment>
 		<SkySet>sunny</SkySet>
-		<SunColor r="1.05859" g="1.01708" b="0.86348"/>
+		<SunColor r="1.05859" g="1.01708" b="0.859326"/>
 		<SunElevation angle="0.810195"/>
 		<SunRotation angle="-0.503626"/>
 		<TerrainAmbientColor r="0.219608" g="0.294118" b="0.403922"/>
@@ -33,7 +33,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="792.701" y="91.2899" z="372.568"/>
+		<Position x="684.15" y="252.936" z="380.963"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -60,7 +60,7 @@
   "Preview": "hydaspes_river_2p.png",
   "RevealMap": false,
   "VictoryConditions": [
-    "conquest_structures"
+    "conquest_civic_centers
   ]
 }
 ]]></ScriptSettings>
@@ -12642,7 +12642,7 @@
 		</Entity>
 		<Entity uid="2014">
 			<Template>gaia/flora_tree_banyan</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="887.00367" z="526.86316"/>
 			<Orientation y="3.88807"/>
 			<Actor seed="64424"/>
@@ -22965,6 +22965,74 @@
 			<Position x="832.31196" z="446.70408"/>
 			<Orientation y="-2.27262"/>
 			<Actor seed="37632"/>
+		</Entity>
+		<Entity uid="3601">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>1</Player>
+			<Position x="263.52253" z="581.4173"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="194"/>
+		</Entity>
+		<Entity uid="3602">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>1</Player>
+			<Position x="185.26627" z="508.54175"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37446"/>
+		</Entity>
+		<Entity uid="3603">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>1</Player>
+			<Position x="263.43207" z="432.37607"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46352"/>
+		</Entity>
+		<Entity uid="3604">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>1</Player>
+			<Position x="343.44468" z="495.3042"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="60688"/>
+		</Entity>
+		<Entity uid="3605">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>2</Player>
+			<Position x="781.85486" z="574.95289"/>
+			<Orientation y="2.45174"/>
+			<Actor seed="194"/>
+		</Entity>
+		<Entity uid="3606">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>2</Player>
+			<Position x="699.53803" z="517.51294"/>
+			<Orientation y="2.45174"/>
+			<Actor seed="37446"/>
+		</Entity>
+		<Entity uid="3607">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>2</Player>
+			<Position x="773.53272" z="430.66123"/>
+			<Orientation y="2.45174"/>
+			<Actor seed="46352"/>
+		</Entity>
+		<Entity uid="3608">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>2</Player>
+			<Position x="849.85108" z="487.4292"/>
+			<Orientation y="2.45174"/>
+			<Actor seed="60688"/>
+		</Entity>
+		<Entity uid="3609">
+			<Template>gaia/fauna_hawk</Template>
+			<Position x="284.28763" z="768.14081"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="36136"/>
+		</Entity>
+		<Entity uid="3610">
+			<Template>gaia/fauna_hawk</Template>
+			<Position x="860.09302" z="756.00342"/>
+			<Orientation y="-1.98752"/>
+			<Actor seed="52460"/>
 		</Entity>
 	</Entities>
 	<Paths/>
