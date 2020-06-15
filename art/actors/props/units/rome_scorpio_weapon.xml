@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="bolt shooter">
+    <variant frequency="1" name="Scorpio">
       <animations>
-        <animation event=".66" file="mechanical/hele_oxybeles.dae" load=".58" name="attack_ranged" speed="250"/>
+        <animation event=".68" file="mechanical/rome_scorpio.dae" load=".55" name="attack_ranged" speed="250"/>
       </animations>
-      <mesh>structural/hele_oxybeles.dae</mesh>
+      <mesh>props/special/rome_scorpio.dae</mesh>
       <props>
         <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="projectile"/>
         <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="loaded-projectile"/>
@@ -16,4 +16,5 @@
       </textures>
     </variant>
   </group>
+  <material>player_trans.xml</material>
 </actor>
