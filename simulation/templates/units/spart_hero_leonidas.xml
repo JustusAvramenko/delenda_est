@@ -3,15 +3,10 @@
   <Auras datatype="tokens">
     units/heroes/spart_hero_leonidas
   </Auras>
-  <Armour>
-    <Hack op="add">1</Hack>
-    <Pierce op="add">1</Pierce>
-    <Crush op="add">1</Crush>
-  </Armour>
   <Attack>
     <Melee>
       <Damage>
-	    <Hack op="add">5.0</Hack>
+	    <Hack op="mul">1.2</Hack>
       </Damage>
     </Melee>
   </Attack>
@@ -21,6 +16,7 @@
 	<SpecificName>Leonidas I</SpecificName>
     <History>The king of Sparta, who fought and died at the battle of Thermopylae in 480 BC. He successfully blocked the way of the huge Persian army through the narrow passage with his 7000 men, until Xerxes was made aware of a secret unobstructed path. Finding the enemy at his rear, Leonidas sent home most of his troops, choosing to stay behind with 300 hand-picked hoplites and win time for the others to withdraw.</History>
     <Icon>units/spart_hero_leonidas.png</Icon>
+    <RequiredTechnology>civ_choices/spart/leonidas</RequiredTechnology>
   </Identity>
   <VisualActor>
     <Actor>units/spartans/hero_infantry_spearman_leonidas.xml</Actor>
