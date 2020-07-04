@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <PopulationBonus>10</PopulationBonus>
+    <Resources>
+      <stone>200</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="40.0" depth="16.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>maur</Civ>
+    <Classes datatype="tokens">ConquestCritical</Classes>
+    <SpecificName>Harmya</SpecificName>
+    <Icon>structures/maur_palace.png</Icon>
+    <Tooltip>Train Heroes and Maiden Archers.</Tooltip>
+  </Identity>
+  <Loot>
+    <stone>40</stone>
+    <metal>40</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="36.0" depth="12.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}_champion_maiden_archer
+      units/{civ}_hero_chanakya
+      units/{civ}_hero_maurya
+      units/{civ}_hero_ashoka
+    </Entities>
+  </ProductionQueue>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>38</Radius>
+    <Weight>65535</Weight>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/mauryas/misc_structure_01.xml</Actor>
+  </VisualActor>
+</Entity>
