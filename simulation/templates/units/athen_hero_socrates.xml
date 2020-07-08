@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_hero_infantry_hoplite">
+<Entity parent="template_unit_hero">
   <Auras datatype="tokens">
-    units/heroes/athen_hero_pericles_1
-    units/heroes/athen_hero_pericles_2
   </Auras>
   <Cost>
     <Resources>
@@ -13,10 +11,13 @@
     <Civ>athen</Civ>
     <Lang>greek</Lang>
     <SpecificName>Socrates</SpecificName>
-    <Icon>units/athen_hero_pericles.png</Icon>
+    <Icon>units/athen_hero_socrates.png</Icon>
     <RequiredTechnology>civ_choices/athen/socrates</RequiredTechnology>
   </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.7</WalkSpeed>
+  </UnitMotion>
   <VisualActor>
-    <Actor>units/athenians/hero_infantry_hoplite_pericles.xml</Actor>
+    <Actor>units/athenians/hero_support_socrates.xml</Actor>
   </VisualActor>
 </Entity>
