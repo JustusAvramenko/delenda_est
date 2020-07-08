@@ -27,6 +27,18 @@
     <Icon>units/athen_hero_miltiades.png</Icon>
     <RequiredTechnology>civ_choices/athen/miltiades</RequiredTechnology>
   </Identity>
+  <Upgrade>
+    <MiltiadesMount>
+      <Entity>units/athen_hero_miltiades_mounted</Entity>
+      <Tooltip>This gives Miltiades his mount, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </MiltiadesMount>
+  </Upgrade>
   <VisualActor>
     <Actor>units/athenians/hero_infantry_hoplite_miltiades.xml</Actor>
   </VisualActor>
