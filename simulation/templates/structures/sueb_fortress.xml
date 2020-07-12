@@ -5,10 +5,17 @@
       <MinRange>20.0</MinRange>
     </Ranged>
   </Attack>
+  <Footprint replace="">
+    <Circle radius="16.0"/>
+    <Height>10.0</Height>
+  </Footprint>
   <Identity>
     <Civ>sueb</Civ>
     <SpecificName>Festung</SpecificName>
   </Identity>
+  <Obstruction>
+    <Static width="28.0" depth="28.0"/>
+  </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
       units/{civ}_champion_infantry_axeman
@@ -20,7 +27,7 @@
     </Technologies>
   </ProductionQueue>
   <VisualActor>
-    <Actor>structures/gauls/fortress.xml</Actor>
+    <Actor>structures/suebians/fortress.xml</Actor>
   </VisualActor>
   <WallPiece>
    <Length>16.8</Length>

@@ -4,8 +4,9 @@
 	"description": "Celtic and Germanic structures were mostly made of wood with rubble foundations. Consequently, their structures have -20% less health than other cultures do, but they also construct 20% faster.",
 	"requirements": {"any": [{"civ": "celt"},{"civ": "brit"},{"civ": "gaul"},{"civ": "sueb"},{"civ": "goth"}]},
 	"modifications": [
-		{"value": "Health/Max", "multiply": 0.8},
-		{"value": "Cost/BuildTime", "multiply": 0.8}
+		{ "value": "Health/Max", "multiply": 0.8 },
+		{ "value": "Capturable/CapturePoints", "multiply": 0.8 },
+		{ "value": "Cost/BuildTime", "multiply": 0.8 }
 	],
-	"affects": ["NotField"]
+	"affects": ["NotField !Wonder"]
 }
