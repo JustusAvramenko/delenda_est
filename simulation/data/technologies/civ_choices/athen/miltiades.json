@@ -3,6 +3,16 @@
 	"description": "Miltiades.",
 	"icon": "athen_hero_miltiades_card.png",
 	"tooltip": "Select Miltiades the Younger to lead your civilization.",
-	"modifications": [],
-	"affects": []
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/athen_hero_iphicrates -units/athen_hero_themistocles -units/athen_hero_pericles",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/athen_hero_socrates",
+			"affects": "Stoa"
+		}
+	]
 }

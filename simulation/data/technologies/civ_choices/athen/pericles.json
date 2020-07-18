@@ -3,6 +3,16 @@
 	"description": "Pericles.",
 	"icon": "athen_hero_pericles_card.png",
 	"tooltip": "Select Pericles to lead your civilization.",
-	"modifications": [],
-	"affects": []
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/athen_hero_miltiades_infantry -units/athen_hero_themistocles -units/athen_hero_iphicrates",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/athen_hero_socrates",
+			"affects": "Stoa"
+		}
+	]
 }
