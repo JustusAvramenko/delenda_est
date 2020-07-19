@@ -3,6 +3,11 @@
 	"description": "Alexander the Great.",
 	"icon": "mace_hero_alexander_card.png",
 	"tooltip": "Select Alexander the Great to lead your civilization.",
-	"modifications": [],
-	"affects": []
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/mace_hero_philip_infantry -units/mace_hero_demetrius_infantry -units/mace_hero_craterus_infantry",
+			"affects": "CivilCentre"
+		}
+	]
 }

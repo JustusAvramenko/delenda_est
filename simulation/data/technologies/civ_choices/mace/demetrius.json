@@ -3,6 +3,11 @@
 	"description": "Demetrius the Besieger.",
 	"icon": "mace_hero_demetrius_card.png",
 	"tooltip": "Select Demetrius the Besieger to lead your civilization.",
-	"modifications": [],
-	"affects": []
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/mace_hero_philip_infantry -units/mace_hero_alexander_infantry -units/mace_hero_craterus_infantry",
+			"affects": "CivilCentre"
+		}
+	]
 }
