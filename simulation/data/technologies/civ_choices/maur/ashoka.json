@@ -3,6 +3,11 @@
 	"description": "Ashoka the Great.",
 	"icon": "maur_hero_ashoka_card.png",
 	"tooltip": "Select Ashoka the Great to lead your civilization.",
-	"modifications": [],
-	"affects": []
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/maur_hero_chandragupta_infantry -units/maur_hero_chanakya",
+			"affects": "Palace"
+		}
+	]
 }
