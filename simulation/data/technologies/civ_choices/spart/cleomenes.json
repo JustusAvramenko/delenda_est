@@ -3,6 +3,11 @@
 	"description": "Cleomenes III.",
 	"icon": "spart_hero_cleomenes_card.png",
 	"tooltip": "Select Cleomenes III to lead your civilization.",
-	"modifications": [],
-	"affects": []
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/spart_hero_leonidas -units/spart_hero_lysander -units/spart_hero_brasidas -units/spart_champion_infantry_hoplite units/spart_champion_infantry_pikeman",
+			"affects": "Syssition"
+		}
+	]
 }

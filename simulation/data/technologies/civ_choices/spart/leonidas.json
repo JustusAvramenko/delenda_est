@@ -3,6 +3,16 @@
 	"description": "Leonidas.",
 	"icon": "spart_hero_leonidas_card.png",
 	"tooltip": "Select Leonidas to lead your civilization.",
-	"modifications": [],
-	"affects": []
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/spart_hero_brasidas -units/spart_hero_lysander -units/spart_hero_cleomenes",
+			"affects": "Syssition"
+		},
+		{
+			"value": "Builder/Entities/_string",
+			"tokens": "-structures/{civ}_wallset_stone",
+			"affects": "CitizenSoldier"
+		}
+	]
 }
