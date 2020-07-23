@@ -3,6 +3,11 @@
 	"description": "Epaminondas.",
 	"icon": "theb_hero_epaminondas_card.png",
 	"tooltip": "Select Epaminondas to lead your civilization.",
-	"modifications": [],
-	"affects": []
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}_hero_gorgidas -units/{civ}_hero_pelopidas",
+			"affects": "CivilCentre"
+		}
+	]
 }

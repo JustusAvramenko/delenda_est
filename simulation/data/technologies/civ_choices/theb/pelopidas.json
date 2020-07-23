@@ -3,6 +3,11 @@
 	"description": "Pelopidas.",
 	"icon": "theb_hero_pelopidas_card.png",
 	"tooltip": "Select Pelopidas to lead your civilization.",
-	"modifications": [],
-	"affects": []
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}_hero_gorgidas -units/{civ}_hero_epaminondas",
+			"affects": "CivilCentre"
+		}
+	]
 }
