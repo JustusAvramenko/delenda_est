@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Mesh">
+      <animations>
+        <animation file="quadraped/peacock_idle.dae" name="idle" speed="15"/>
+        <animation file="quadraped/peacock_idle_transition.dae" name="idle_transition" speed="60"/>
+        <animation file="quadraped/peacock_feeding.dae" name="feeding" speed="15"/>
+        <animation file="quadraped/peacock_feeding_transition.dae" name="feeding_transition" speed="60"/>
+        <animation file="quadraped/peacock_walk.dae" name="walk" speed="25"/>
+        <animation file="quadraped/peacock_walk.dae" name="run" speed="30"/>
+        <animation file="quadraped/peacock_walk_feeding.dae" name="walk_feeding" speed="25"/>
+        <animation file="quadraped/peacock_death.dae" name="death" speed="75"/>
+      </animations>
+      <mesh>skeletal/peacock.dae</mesh>
+      <textures><texture file="skeletal/animal_peacock.png" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="10" name="Blue">
+      <textures>
+        <texture file="skeletal/animal_peacock.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="White">
+      <textures>
+        <texture file="skeletal/animal_peacock_white.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>
