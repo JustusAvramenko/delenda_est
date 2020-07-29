@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_farmstead">
+  <Footprint replace="">
+    <Circle radius="4.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>kush</Civ>
+    <SpecificName>snwt</SpecificName>
+    <GenericName>Granary</GenericName>
+  </Identity>
+  <Obstruction>
+    <Static width="8.0" depth="8.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+      -pair_gather_food_01
+	  -pair_farming_01
+	  -pair_farming_02
+	  -celts/gather_farming_harvester
+	  -gather_farming_cultivation
+      -successors/special_water_wheel
+	  -successors/special_well_sweep
+	  -farms_crop_rotation
+	  -health_siege_rations
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Rates> 
+      <food>1.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>0.0</coin>
+      <glory>0.0</glory>
+    </Rates> 
+    <Interval>1000</Interval> 
+  </ResourceTrickle>
+  <VisualActor>
+    <Actor>props/structures/kushites/nuba_granary.xml</Actor>
+  </VisualActor>
+</Entity>
