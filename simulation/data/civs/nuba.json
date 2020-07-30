@@ -84,21 +84,7 @@
 			"Heroes":
 			[
 				{
-					"Name":"Nastasen",
-					"Class":"",
-					"Armament":"",
-					"Emblem":"emblem.png",
-					"History":"History."
-				},
-				{
-					"Name":"Arakamani",
-					"Class":"",
-					"Armament":"",
-					"Emblem":"emblem.png",
-					"History":"History."
-				},
-				{
-					"Name":"Amanirenas",
+					"Name":"",
 					"Class":"",
 					"Armament":"",
 					"Emblem":"emblem.png",
@@ -110,83 +96,54 @@
 	"CivBonuses":
 	[
 		{
-			"Name":"The Pyramids of Meroe",
+			"Name":"",
 			"History":"History.",
-			"Description":"Building a Kushite pyramid increases Civic Center territory influence by +10% for each one built."
-		},
-		{
-			"Name":"Mineral Deposits",
-			"History":"History.",
-			"Description":"Kushite players receive a free extra Metal Mine somewhere in their home territory."
-		},
-		{
-			"Name":"Elephant Roundup",
-			"History":"History.",
-			"Description":"Can capture Gaia elephants and garrison them into a corral to reduce training costs for War Elephants."
+			"Description":"."
 		}
 	],
 	"TeamBonuses":
 	[
 		{
-			"Name":"Iron Mongers",
-			"History":"The Kushites had access to vast amounts of iron ore, and subsequent to learning the craft of iron working from the Assyrians they became exporters of iron goods.",
-			"Description":"Players allied with Kush gain a free slow trickle of the metal resource for each Market the Kushite player builds."
+			"Name":"",
+			"History":".",
+			"Description":"."
 		}
 	],
 	"Structures":
 	[
 		{
-			"Name":"Temple of Amun",
+			"Name":"",
 			"Class":"",
 			"Emblem":"emblem.png",
 			"History":"History.",
 			"Requirements":".",
-			"Phase":"City",
-			"Special":"The Kushites can upgrade individual Temples to Temples of Amun, which can train Napatan Temple Guard champions and heal units faster."
-		},
-		{
-			"Name":"Temple of Apedemak",
-			"Class":"",
-			"Emblem":"emblem.png",
-			"History":"History.",
-			"Requirements":".",
-			"Phase":"City",
-			"Special":"The Kushites can upgrade individual Temples to Temples of Apedemak, which can train Meroe Temple Guard champions and heal units faster."
-		},
-		{
-			"Name":"Kushite Pyramids",
-			"Class":"",
-			"Emblem":"emblem.png",
-			"History":"The Kushites built over 200 pyramids in Nubia.",
-			"Requirements":".",
-			"Phase":"Village",
-			"Special":"Building a Small Kushite Pyramid unlocks the Town Phase. Building a Large Kushite Pyramid unlocks the City Phase. And each pyramid built adds +10% territory effect to Civic Centers."
+			"Phase":".",
+			"Special":"."
 		}
 	],
 	"WallSets":
 	[
-		"structures/wallset_palisade",
-		"structures/kush_wallset_stone"
+		"structures/wallset_palisade"
 	],
 	"StartEntities":
 	[
 		{
-			"Template": "structures/kush_civil_centre"
+			"Template": "structures/nuba_civil_centre"
 		},
 		{
-			"Template": "units/kush_support_citizen",
+			"Template": "units/nuba_support_citizen",
 			"Count": 4
 		},
 		{
-			"Template": "units/kush_infantry_spearman_b",
+			"Template": "units/nuba_infantry_clubman",
 			"Count": 2
 		},
 		{
-			"Template": "units/kush_infantry_archer_b",
+			"Template": "units/nuba_infantry_javelinist",
 			"Count": 2
 		},
 		{
-			"Template": "units/kush_cavalry_scout"
+			"Template": "units/nuba_cavalry_scout"
 		}
 	],
 	"Formations":
@@ -216,22 +173,22 @@
 	],
 	"SkirmishReplacements":
 	{
-		"skirmish/units/default_hero_1": "units/kush_hero_amanirenas",
-		"skirmish/units/default_hero_2": "units/kush_hero_piye",
-		"skirmish/units/default_hero_3": "units/kush_hero_nastasen",
-		"skirmish/units/default_hero_4": "units/kush_hero_arakamani",
-		"skirmish/units/default_hero_5": "units/kush_hero_amanitore",
-		"skirmish/units/default_champion_infantry_1": "units/kush_champion_infantry_archer",
-		"skirmish/units/default_champion_infantry_2": "units/kush_champion_infantry_amun",
-		"skirmish/units/default_champion_infantry_3": "units/kush_champion_infantry_apedemak",
+		"skirmish/units/default_hero_1": "",
+		"skirmish/units/default_hero_2": "",
+		"skirmish/units/default_hero_3": "",
+		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "",
+		"skirmish/units/default_champion_infantry_2": "",
+		"skirmish/units/default_champion_infantry_3": "",
 		"skirmish/units/default_champion_infantry_4": "",
-		"skirmish/units/default_champion_cavalry_1": "units/kush_champion_cavalry",
+		"skirmish/units/default_champion_cavalry_1": "",
 		"skirmish/units/default_champion_cavalry_2": "",
-		"skirmish/units/default_infantry_melee_b": "units/kush_infantry_spearman_b",
-		"skirmish/units/default_infantry_ranged_b": "units/kush_infantry_archer_b",
-		"skirmish/structures/default_house_10": "structures/{civ}_house",
-		"skirmish/structures/special_starting_structure": "structures/kush_pyramid_1",
-		"skirmish/structures/default_defense_tower": "structures/{civ}_defense_tower"
+		"skirmish/units/default_infantry_melee_b": "units/nuba_infantry_clubman",
+		"skirmish/units/default_infantry_ranged_b": "units/nuba_infantry_javelinist",
+		"skirmish/structures/default_house_5": "structures/{civ}_house",
+		"skirmish/structures/special_starting_structure": "structures/nuba_granary",
+		"skirmish/structures/default_defense_tower": ""
 	},
-	"SelectableInGameSetup": false
+	"SelectableInGameSetup": true
 }

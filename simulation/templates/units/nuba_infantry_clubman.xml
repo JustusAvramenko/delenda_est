@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_swordsman">
+  <Armour>
+    <Hack op="add">-1</Hack>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>3.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>5.0</Crush>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>nuba</Civ>
+    <SpecificName>Nuba Clubman</SpecificName>
+    <GenericName>Club Infantry</GenericName>
+    <Icon>units/kush_merc_infantry_1.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/nuba_clubman.xml</Actor>
+  </VisualActor>
+</Entity>
