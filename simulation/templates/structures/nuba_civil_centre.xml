@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Footprint replace="">
+    <Circle radius="20.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Obstruction>
+    <Static width="32.0" depth="32.0"/>
+  </Obstruction>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>nuba</Civ>
+    <SpecificName>Pr-nsw</SpecificName>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+    </Entities>
+    <Technologies datatype="tokens">
+      -phase_town_{civ}
+      -phase_city_{civ}
+      -phase_imperial_{civ}
+	  -pair_taxes_01
+	  -pair_taxes_02
+	  -pair_taxes_03
+	  -pair_taxes_04
+	  health_units_01
+	  successors/health_heroes
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryInfluence>
+    <Root>true</Root>
+    <Radius>60</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/nubas/civic_center.xml</Actor>
+  </VisualActor>
+</Entity>

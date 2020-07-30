@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_economic_farmstead">
   <Footprint replace="">
-    <Circle radius="4.0"/>
+    <Circle radius="3.0"/>
     <Height>6.0</Height>
   </Footprint>
+  <Health>
+    <Max>400</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
   <Identity>
-    <Civ>kush</Civ>
+    <Civ>nuba</Civ>
     <SpecificName>snwt</SpecificName>
     <GenericName>Granary</GenericName>
+    <Classes datatype="tokens">
+	  DropsiteWood
+	  DropsiteMetal
+	  DropsiteStone
+	</Classes>
+    <VisibleClasses datatype="tokens">
+	  Storehouse
+	</VisibleClasses>
+    <Tooltip>Dropsite for food, wood, stone, and metal resources. Research gathering improvements. Buildable in neutral and own territory.</Tooltip>
   </Identity>
   <Obstruction>
-    <Static width="8.0" depth="8.0"/>
+    <Static width="4.0" depth="4.0"/>
   </Obstruction>
   <ProductionQueue>
     <Technologies datatype="tokens">
@@ -25,6 +38,9 @@
 	  -health_siege_rations
     </Technologies>
   </ProductionQueue>
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
   <ResourceTrickle>
     <Rates> 
       <food>1.0</food>
@@ -37,6 +53,7 @@
     <Interval>1000</Interval> 
   </ResourceTrickle>
   <VisualActor>
-    <Actor>props/structures/kushites/nuba_granary.xml</Actor>
+    <Actor>structures/nubas/granary.xml</Actor>
+    <FoundationActor>structures/fndn_1x1.xml</FoundationActor>
   </VisualActor>
 </Entity>

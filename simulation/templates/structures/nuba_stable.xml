@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_stable">
+  <Footprint replace="">
+    <Circle radius="15.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>nuba</Civ>
+	<VisibleClasses datatype="tokens">Corral</VisibleClasses>
+    <Tooltip>Train cavalry soldiers. Raise herd animals for food. Research improvements for cavalry and ranching.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="26.0" depth="26.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      gaia/fauna_pig
+      gaia/fauna_goat
+      gaia/fauna_cattle_sanga
+  	</Entities>
+    <Technologies datatype="tokens">
+	  -training_levy_cavalry
+	  training_animals_husbandry
+	  gather_draft_animals
+      training_animals_stockbreeding
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryInfluence>
+    <Radius>20</Radius>
+  </TerritoryInfluence>
+  <VisualActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/nubas/stable.xml</Actor>
+    <FoundationActor>structures/xiongnu/corral_foundation.xml</FoundationActor>
+  </VisualActor>
+</Entity>

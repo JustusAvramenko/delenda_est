@@ -1,0 +1,237 @@
+{
+	"Name": "Nubas",
+	"Code": "nuba",
+	"Culture":[ "egyptian", "nubian" ],
+	"Region":[ "africa" ],
+	
+	"Emblem": "session/portraits/emblems/nubas.png",
+	
+	"History": "",
+	"Music":[
+			{"File":"The_Blue_Nile.ogg", "Type":"peace"},
+			{"File":"African_Lions.ogg", "Type":"peace"},
+			{"File":"Warrior_Queen.ogg", "Type":"peace"},
+			{"File":"Watering_Hole.ogg", "Type":"peace"}
+		],
+	"Factions":
+	[
+		{
+			"Name":"Nuba Africans",
+			"Description":"",
+			"Technologies":
+			[
+				{
+					"Name":"Saqiya Water Wheel",
+					"History":"History.",
+					"Description":"Workers +20% farming rate."
+				},
+				{
+					"Name":"Cattlemen",
+					"History":"History.",
+					"Description":"Batches of domestic Cattle train much faster."
+				},
+				{
+					"Name":"Iron Smelting",
+					"History":"History.",
+					"Description":"Technologies and Units -20% metal cost."
+				},
+				{
+					"Name":"Fervor for Amun",
+					"History":"History.",
+					"Description":"Napatan Temple Guard +10% attack, +10% attack rate, and +10% movement speed."
+				},
+				{
+					"Name":"Apedemak's Faithful",
+					"History":"History.",
+					"Description":"Meroe Temple Guard +10% attack, +10% attack rate, and +10% movement speed."
+				},
+				{
+					"Name":"Royal Archers",
+					"History":"History.",
+					"Description":"Upgrade Noble Archers to Royal Archers, who have +2 all armor, but +25% metal cost."
+				},
+				{
+					"Name":"Royal Cavalry",
+					"History":"History.",
+					"Description":"Upgrade Noble Cavalry to Royal Cavalry, who have +2 all armor, but +25% metal cost."
+				},
+				{
+					"Name":"Fired Bricks",
+					"History":"History.",
+					"Description":"Structures -10% cost and +10% health."
+				},
+				{
+					"Name":"Jewelry Making",
+					"History":"History.",
+					"Description":"Traders +10% profit for each trip."
+				},
+				{
+					"Name":"Royal Baths",
+					"History":"History.",
+					"Description":"Heroes and Champions +20% health."
+				},
+				{
+					"Name":"Warrior Queen",
+					"History":"History.",
+					"Description":"Female Heroes +10% attack, nearly 100% bow accuracy."
+				},
+				{
+					"Name":"Nuba Wrestling",
+					"History":"History.",
+					"Description":"Mercenaries +15% health."
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name":"Nastasen",
+					"Class":"",
+					"Armament":"",
+					"Emblem":"emblem.png",
+					"History":"History."
+				},
+				{
+					"Name":"Arakamani",
+					"Class":"",
+					"Armament":"",
+					"Emblem":"emblem.png",
+					"History":"History."
+				},
+				{
+					"Name":"Amanirenas",
+					"Class":"",
+					"Armament":"",
+					"Emblem":"emblem.png",
+					"History":"History."
+				}
+			]
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name":"The Pyramids of Meroe",
+			"History":"History.",
+			"Description":"Building a Kushite pyramid increases Civic Center territory influence by +10% for each one built."
+		},
+		{
+			"Name":"Mineral Deposits",
+			"History":"History.",
+			"Description":"Kushite players receive a free extra Metal Mine somewhere in their home territory."
+		},
+		{
+			"Name":"Elephant Roundup",
+			"History":"History.",
+			"Description":"Can capture Gaia elephants and garrison them into a corral to reduce training costs for War Elephants."
+		}
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name":"Iron Mongers",
+			"History":"The Kushites had access to vast amounts of iron ore, and subsequent to learning the craft of iron working from the Assyrians they became exporters of iron goods.",
+			"Description":"Players allied with Kush gain a free slow trickle of the metal resource for each Market the Kushite player builds."
+		}
+	],
+	"Structures":
+	[
+		{
+			"Name":"Temple of Amun",
+			"Class":"",
+			"Emblem":"emblem.png",
+			"History":"History.",
+			"Requirements":".",
+			"Phase":"City",
+			"Special":"The Kushites can upgrade individual Temples to Temples of Amun, which can train Napatan Temple Guard champions and heal units faster."
+		},
+		{
+			"Name":"Temple of Apedemak",
+			"Class":"",
+			"Emblem":"emblem.png",
+			"History":"History.",
+			"Requirements":".",
+			"Phase":"City",
+			"Special":"The Kushites can upgrade individual Temples to Temples of Apedemak, which can train Meroe Temple Guard champions and heal units faster."
+		},
+		{
+			"Name":"Kushite Pyramids",
+			"Class":"",
+			"Emblem":"emblem.png",
+			"History":"The Kushites built over 200 pyramids in Nubia.",
+			"Requirements":".",
+			"Phase":"Village",
+			"Special":"Building a Small Kushite Pyramid unlocks the Town Phase. Building a Large Kushite Pyramid unlocks the City Phase. And each pyramid built adds +10% territory effect to Civic Centers."
+		}
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/kush_wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/kush_civil_centre"
+		},
+		{
+			"Template": "units/kush_support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/kush_infantry_spearman_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/kush_infantry_archer_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/kush_cavalry_scout"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/line_closed",
+		"special/formations/line_open",
+		"special/formations/column_closed",
+		"special/formations/wedge"
+	],
+	"AINames":
+	[
+		"Kashta",
+		"Alara",
+		"Pebatjma",
+		"Shabaka",
+		"Shebitku",
+		"Qalhata",
+		"Takahatenamun",
+		"Tantamani",
+		"Atlanersa",
+		"Nasalsa",
+		"Malewiebamani",
+		"Harsiotef",
+		"Shanakdakhete",
+		"Amanishakheto"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/kush_hero_amanirenas",
+		"skirmish/units/default_hero_2": "units/kush_hero_piye",
+		"skirmish/units/default_hero_3": "units/kush_hero_nastasen",
+		"skirmish/units/default_hero_4": "units/kush_hero_arakamani",
+		"skirmish/units/default_hero_5": "units/kush_hero_amanitore",
+		"skirmish/units/default_champion_infantry_1": "units/kush_champion_infantry_archer",
+		"skirmish/units/default_champion_infantry_2": "units/kush_champion_infantry_amun",
+		"skirmish/units/default_champion_infantry_3": "units/kush_champion_infantry_apedemak",
+		"skirmish/units/default_champion_infantry_4": "",
+		"skirmish/units/default_champion_cavalry_1": "units/kush_champion_cavalry",
+		"skirmish/units/default_champion_cavalry_2": "",
+		"skirmish/units/default_infantry_melee_b": "units/kush_infantry_spearman_b",
+		"skirmish/units/default_infantry_ranged_b": "units/kush_infantry_archer_b",
+		"skirmish/structures/default_house_10": "structures/{civ}_house",
+		"skirmish/structures/special_starting_structure": "structures/kush_pyramid_1",
+		"skirmish/structures/default_defense_tower": "structures/{civ}_defense_tower"
+	},
+	"SelectableInGameSetup": false
+}

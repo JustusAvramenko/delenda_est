@@ -52,6 +52,12 @@ ResourceTrickle.prototype.Trickle = function(data, lateness)
 	if (!cmpPlayer)
 		return;
 
+	// Prevent resources from going negative
+	let currentResources = cmpPlayer.GetResourceCounts();
+	for (var type in this.rates)
+		if (this.rates[type] < 0 && Math.abs(this.rates[type]) > currentResources[type])
+			return;
+
 	cmpPlayer.AddResources(this.rates);
 };
 
