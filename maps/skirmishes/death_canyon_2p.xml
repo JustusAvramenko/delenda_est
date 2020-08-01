@@ -2,10 +2,10 @@
 
 <Scenario version="6">
 	<Environment>
-		<SkySet>sunset</SkySet>
-		<SunColor r="0.972549" g="0.768627" b="0.470588"/>
+		<SkySet>desert</SkySet>
+		<SunColor r="1.36553" g="1.12991" b="0.792543"/>
 		<SunElevation angle="0.509764"/>
-		<SunRotation angle="0.736311"/>
+		<SunRotation angle="0.521554"/>
 		<TerrainAmbientColor r="0.203922" g="0.247059" b="0.301961"/>
 		<UnitsAmbientColor r="0.337255" g="0.337255" b="0.337255"/>
 		<Fog>
@@ -16,24 +16,24 @@
 		<Water>
 			<WaterBody>
 				<Type>lake</Type>
-				<Color r="0.54902" g="0.537255" b="0.439216"/>
-				<Tint r="0.756863" g="0.701961" b="0.521569"/>
+				<Color r="0.313726" g="0.247059" b="0.137255"/>
+				<Tint r="0.956863" g="0.921569" b="0.803922"/>
 				<Height>17.6262</Height>
 				<Waviness>5.98633</Waviness>
-				<Murkiness>0.753906</Murkiness>
+				<Murkiness>0.951172</Murkiness>
 				<WindAngle>-0.883573</WindAngle>
 			</WaterBody>
 		</Water>
 		<Postproc>
 			<Brightness>0</Brightness>
-			<Contrast>1.09961</Contrast>
-			<Saturation>0.790039</Saturation>
+			<Contrast>1</Contrast>
+			<Saturation>0.789063</Saturation>
 			<Bloom>0.160156</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="653.437" y="165.532" z="467.139"/>
+		<Position x="659.077" y="171.696" z="505.433"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -2630,8 +2630,8 @@
 		<Entity uid="579">
 			<Template>gaia/geology_metal_desert_slabs</Template>
 			<Player>0</Player>
-			<Position x="127.26034" z="249.76406"/>
-			<Orientation y="0.86977"/>
+			<Position x="127.26034" z="249.76407"/>
+			<Orientation y="-4.02286"/>
 		</Entity>
 		<Entity uid="580">
 			<Template>gaia/geology_metal_desert_slabs</Template>
@@ -2655,19 +2655,19 @@
 			<Template>gaia/geology_stonemine_desert_quarry</Template>
 			<Player>0</Player>
 			<Position x="413.39826" z="892.1941"/>
-			<Orientation y="0.66274"/>
+			<Orientation y="2.03998"/>
 		</Entity>
 		<Entity uid="584">
 			<Template>gaia/geology_metal_desert_slabs</Template>
 			<Player>0</Player>
 			<Position x="70.01047" z="530.35846"/>
-			<Orientation y="-0.58722"/>
+			<Orientation y="-4.33906"/>
 		</Entity>
 		<Entity uid="585">
 			<Template>gaia/geology_metal_desert_slabs</Template>
 			<Player>0</Player>
 			<Position x="534.91974" z="746.42261"/>
-			<Orientation y="-0.85636"/>
+			<Orientation y="2.29146"/>
 		</Entity>
 		<Entity uid="586">
 			<Template>gaia/geology_metal_desert_slabs</Template>
@@ -6331,25 +6331,10 @@
 			<Position x="130.3772" z="637.84546"/>
 			<Orientation y="2.78905"/>
 		</Entity>
-		<Entity uid="1318">
-			<Template>actor|geology/stone_desert_med.xml</Template>
-			<Position x="133.47645" z="624.88837"/>
-			<Orientation y="2.8166"/>
-		</Entity>
 		<Entity uid="1319">
 			<Template>actor|geology/stone_desert_med.xml</Template>
 			<Position x="152.21767" z="610.59296"/>
 			<Orientation y="-1.25867"/>
-		</Entity>
-		<Entity uid="1320">
-			<Template>actor|geology/stone_desert_med.xml</Template>
-			<Position x="134.49021" z="610.55164"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="1321">
-			<Template>actor|geology/stone_desert_med.xml</Template>
-			<Position x="133.40914" z="603.08765"/>
-			<Orientation y="2.26105"/>
 		</Entity>
 		<Entity uid="1322">
 			<Template>actor|geology/stone_desert_med.xml</Template>
@@ -6373,13 +6358,13 @@
 		</Entity>
 		<Entity uid="1326">
 			<Template>actor|geology/stone_desert_med.xml</Template>
-			<Position x="165.09482" z="616.88672"/>
-			<Orientation y="-2.99392"/>
+			<Position x="190.58024" z="626.49036"/>
+			<Orientation y="-0.97503"/>
 		</Entity>
 		<Entity uid="1327">
 			<Template>actor|geology/stone_desert_med.xml</Template>
-			<Position x="165.77987" z="606.28376"/>
-			<Orientation y="1.62577"/>
+			<Position x="165.77988" z="606.28376"/>
+			<Orientation y="4.38126"/>
 		</Entity>
 		<Entity uid="1328">
 			<Template>actor|geology/stone_desert_med.xml</Template>
@@ -6395,11 +6380,6 @@
 			<Template>actor|geology/stone_desert_med.xml</Template>
 			<Position x="145.20781" z="629.30237"/>
 			<Orientation y="-2.03974"/>
-		</Entity>
-		<Entity uid="1331">
-			<Template>actor|geology/stone_desert_med.xml</Template>
-			<Position x="127.67235" z="618.87031"/>
-			<Orientation y="-1.83338"/>
 		</Entity>
 		<Entity uid="1332">
 			<Template>actor|geology/stone_desert_med.xml</Template>
@@ -17504,7 +17484,7 @@
 			<Template>structures/merc_camp_desert</Template>
 			<Player>0</Player>
 			<Position x="218.98963" z="371.21686"/>
-			<Orientation y="-2.43836"/>
+			<Orientation y="-3.72332"/>
 			<Actor seed="62038"/>
 		</Entity>
 	</Entities>
