@@ -9,7 +9,7 @@
         <prop actor="props/units/heads/new/head_spart_e.xml" attachpoint="head"/>
         <prop actor="props/units/shields/aspis_spart_skiritai.xml" attachpoint="shield_arm"/>
         <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_02_L"/>
-        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/spear_lance_cavalry_reverse.xml" attachpoint="weapon_R"/>
       </props>
     </variant>
   </group>
@@ -83,13 +83,25 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/base_hoplite_fast.xml" name="Hoplite-Fast" frequency="1"/>
+    <variant file="biped/base_spearman_shield_ready.xml" name="Spearman-Shield-Ready" frequency="1"/>
     <variant file="biped/attack_capture.xml"/>
-    <variant file="biped/formations/phalanx_front.xml"/>
-    <variant file="biped/formations/phalanx_mid.xml"/>
-    <variant file="biped/formations/phalanx_back.xml"/>
+    <variant file="biped/formations/phalanx_front.xml">
+      <props>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant file="biped/formations/phalanx_mid.xml">
+      <props>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant file="biped/formations/phalanx_back.xml">
+      <props>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
     <variant file="biped/gather_praise.xml"/>
-    <variant file="biped/death_cape_long.xml"/>
+    <variant file="biped/death_infantry.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>

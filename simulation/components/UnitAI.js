@@ -248,6 +248,8 @@ UnitAI.prototype.UnitFsmSpec = {
 
 	// Individual orders:
 	// (these will switch the unit out of formation mode)
+
+	"Order.Stop": function(msg) {
 		// Stop moving immediately.
 		this.StopMoving();
 		this.FinishOrder();

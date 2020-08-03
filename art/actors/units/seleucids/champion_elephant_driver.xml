@@ -5,33 +5,48 @@
     <variant file="biped/base_elephant_rider_ready_shield_offhand.xml" frequency="100" name="Base">
       <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
-        <prop actor="props/units/shields/mace_pelta_a.xml" attachpoint="shield"/>
-        <prop actor="props/units/helmets/hele_pilos.xml" attachpoint="helmet"/>
+        <prop actor="props/units/shields/arab_round_b.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Rider-Texture-1">
-      <textures>
-	    <texture file="skeletal/hele_psiloi_e.png" name="baseTex"/>
-	  </textures>
+    <variant frequency="5" name="head-knot">
+      <props>
+        <prop actor="props/units/heads/new/head_indian_a.xml" attachpoint="head"/>
+      </props>
     </variant>
-    <variant frequency="1" name="Rider-Texture-2">
-      <textures>
-	    <texture file="skeletal/hele_psiloi_e2.png" name="baseTex"/>
-	  </textures>
+    <variant frequency="1" name="turban">
+      <props>
+        <prop actor="props/units/heads/new/head_maur_short_hair.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/maur_inf_turban.xml" attachpoint="helmet"/>
+      </props>
     </variant>
-    <variant frequency="1" name="Rider-Texture-3">
-      <textures>
-	    <texture file="skeletal/hele_slinger_e2.png" name="baseTex"/>
-	  </textures>
-    </variant>
-    <variant frequency="1" name="Rider-Texture-4">
-      <textures>
-	    <texture file="skeletal/hele_slinger_e3.png" name="baseTex"/>
-	  </textures>
+    <variant frequency="1" name="helmet">
+      <props>
+        <prop actor="props/units/heads/new/head_maur_short_hair.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/maur_helmet_metal_plyr.xml" attachpoint="helmet"/>
+      </props>
     </variant>
   </group>
-  <material>player_trans.xml</material>
+  <group>
+    <variant name="leather straps">
+      <textures>
+        <texture file="skeletal/maur_iar_a.png" name="baseTex"/>
+        <texture file="skeletal/maur_iar_a_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant name="leather straps+arm bands">
+      <textures>
+        <texture file="skeletal/maur_isp_e.png" name="baseTex"/>
+        <texture file="skeletal/maur_isp_e_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant name="bare chest">
+      <textures>
+        <texture file="skeletal/maur_isp_b.png" name="baseTex"/>
+        <texture file="skeletal/maur_isp_b_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_spec.xml</material>
 </actor>
