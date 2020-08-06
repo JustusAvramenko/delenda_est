@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military">
   <Auras datatype="tokens">
-	workshop_repair
+	structures/arsenal_repair
   </Auras>
   <BuildRestrictions>
     <Category>SiegeWorkshop</Category>
@@ -35,15 +35,17 @@
   <Identity>
     <GenericName>Siege Workshop</GenericName>
     <SpecificName>Siege Workshop</SpecificName>
-    <Tooltip>Train siege weapons. Research siege improvements.</Tooltip>
+	<SelectionGroupName>template_structure_military_arsenal</SelectionGroupName>
+    <Tooltip>Unlock Catapults for most factions. Construct Siege Weapons. Research siege improvements.</Tooltip>
     <Icon>structures/siege_workshop.png</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
     <VisibleClasses datatype="tokens">
 	  City
-	  SiegeWorkshop
+	  Arsenal
 	</VisibleClasses>
     <Classes datatype="tokens">
 	  Workshop
+	  SiegeWorkshop
 	</Classes>
   </Identity>
   <Loot>
