@@ -2,36 +2,55 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_archer_ready.xml">
+    <variant frequency="1" name="Base">
       <mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
       <props>
-        <prop actor="props/units/helmets/chin_cap.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/han_cap.xml" attachpoint="helmet"/>
         <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/weapons/bow_bamboo_long.xml" attachpoint="weapon_L"/>
-        <prop actor="props/units/quiver_back_bamboo.xml" attachpoint="back"/>
+        <prop actor="props/units/weapons/bow/han_bow.xml" attachpoint="weapon_bow"/>
+        <prop actor="props/units/quivers/han_quiver_hip.xml" attachpoint="sheath_L"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Clothes-3">
-      <textures>
-        <texture file="skeletal/han_iar_e_b.png" name="baseTex"/>
-        <texture file="skeletal/han_isp_a_b_spec.png" name="specTex"/>
-      </textures>
+    <variant file="clothes/han/uniform_e_01.xml"/>
+    <variant file="clothes/han/uniform_e_02.xml"/>
+    <variant file="clothes/han/uniform_e_03.xml"/>
+    <variant file="clothes/han/uniform_e_04.xml"/>
+  </group>
+  <group>
+    <variant file="biped/base_archer_relax.xml"/>
+    <variant file="biped/carry_food.xml">
+      <props>
+        <prop actor="props/units/helmets/han_ricehat.xml" attachpoint="helmet"/>
+      </props>
     </variant>
-    <variant frequency="1" name="Clothes-4">
-      <textures>
-        <texture file="skeletal/han_iar_e_c.png" name="baseTex"/>
-        <texture file="skeletal/han_isp_a_b_spec.png" name="specTex"/>
-      </textures>
-    </variant>
+    <variant file="biped/carry_meat.xml"/>
+    <variant file="biped/carry_wood.xml"/>
+    <variant file="biped/carry_stone.xml"/>
+    <variant file="biped/carry_metal.xml"/>
+    <variant file="biped/approach_tree.xml"/>
+    <variant file="biped/approach_rice.xml"/>
+    <variant file="biped/approach_fruit.xml"/>
+    <variant file="biped/approach_meat.xml"/>
+    <variant file="biped/approach_rock.xml"/>
+    <variant file="biped/approach_ore.xml"/>
+    <variant file="biped/approach_ruins.xml"/>
+    <variant file="biped/approach_praise.xml"/>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
-    <variant file="biped/attack_ranged_archer.xml"/>
+    <variant file="biped/attack_ranged_archer_hip.xml"/>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_tree.xml"/>
+    <variant file="biped/gather_rice.xml"/>
+    <variant file="biped/gather_fruit.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/gather_rock.xml"/>
+    <variant file="biped/gather_ore.xml"/>
+    <variant file="biped/gather_ruins.xml"/>
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/build.xml"/>
     <variant file="biped/build_farm.xml"/>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+    <castshadow/>
+    <group>
+        <variant frequency="100" name="Han-Bow">
+            <mesh>props/weapons/bow/weap_han_cavalry_bow.dae</mesh>
+            <textures>
+                <texture file="props/maur_props_1.png" name="baseTex"/>
+            </textures>
+        </variant>
+    </group>
+    <group>
+        <variant name="Idle"/>
+        <variant name="Attack_Ranged">
+            <animations>
+                <animation event="0.75" file="mechanical/han_weap_bow_attack.dae" load="0.55" name="Attack_ranged" speed="117" id="Attack1"/>
+                <animation event="0.75" file="mechanical/han_weap_bow_attack.dae" load="0.55" name="Attack_ranged" speed="117" id="Attack2"/>
+                <animation event="0.75" file="mechanical/han_weap_bow_attack.dae" load="0.55" name="Attack_ranged" speed="117" id="Attack3"/>
+                <animation event="0.75" file="mechanical/han_weap_bow_attack.dae" load="0.55" name="Attack_ranged" speed="117" id="Attack4"/>
+            </animations>
+        </variant>
+    </group>
+    <material>player_trans.xml</material>
+</actor>

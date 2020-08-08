@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skeletons>
+  <standard_skeleton id="shoushe" title="shoushe">
+    <bone name="Shoushe_base">
+      <bone name="Shoushe_pivot">
+        <bone name="Shoushe_sling" />
+        <bone name="Shoushe_slide" />
+        <bone name="Shoushe_crank_B" />
+        <bone name="Shoushe_crank_F" />
+        <bone name="Shoushe_arm_L" />
+        <bone name="Shoushe_arm_R" />
+      </bone>
+    </bone>
+  </standard_skeleton>
+  <skeleton target="shoushe" title="shoushe">
+    <identifier>
+      <root>Shoushe_base</root>
+    </identifier>
+    <bone name="Shoushe_base">
+      <target>Shoushe_base</target>
+      <bone name="Shoushe_pivot">
+        <target>Shoushe_pivot</target>
+        <bone name="Shoushe_sling">
+          <target>Shoushe_sling</target>
+        </bone>
+        <bone name="Shoushe_slide">
+          <target>Shoushe_slide</target>
+        </bone>
+        <bone name="Shoushe_crank_B">
+          <target>Shoushe_crank_B</target>
+        </bone>
+        <bone name="Shoushe_crank_F">
+          <target>Shoushe_crank_F</target>
+        </bone>
+        <bone name="Shoushe_arm_L">
+          <target>Shoushe_arm_L</target>
+        </bone>
+        <bone name="Shoushe_arm_R">
+          <target>Shoushe_arm_R</target>
+        </bone>
+      </bone>
+    </bone>
+  </skeleton>
+</skeletons>

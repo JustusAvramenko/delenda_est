@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+    <castshadow/>
+    <group>
+        <variant frequency="100" name="Base">
+            <textures>
+                <texture file="props/quivers/han_quiver2.png" name="baseTex"/>
+                <texture file="props/quivers/han_quiver2_norm.png" name="normTex"/>
+                <texture file="props/quivers/han_quiver2_spec.png" name="specTex"/>
+            </textures>
+        </variant>
+    </group>
+    <group>
+        <variant name="med">
+            <mesh>props/weapons/sheath/weap_han_sword_a_sheath_right.dae</mesh>
+            <props>
+                <prop actor="props/units/weapons/sword/han_jian_a.xml" attachpoint="sword"/>
+            </props>
+        </variant>
+    </group>
+    <material>player_trans_spec.xml</material>
+</actor>

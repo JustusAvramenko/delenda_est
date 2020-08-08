@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <variant name="attack_ranged">
-  <animations>
-    <animation event="0.87" file="biped/new/shoushe_attack_b.dae" load="0.55" name="attack_ranged" speed="130"/>
-  </animations>
-  <props>
-    <prop actor="" attachpoint="weapon_R"/>
-    <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
-    <prop actor="props/units/weapons/arrow_back.xml" attachpoint="loaded-projectile"/>
-  </props>
+    <animations>
+        <animation event="0.87" file="biped/infantry/siege_operators/shoushe_attack_b.dae" load="0.55" name="attack_ranged" speed="130"/>
+    </animations>
+    <props>
+        <prop actor="" attachpoint="weapon_R"/>
+        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
+        <prop actor="props/units/siege_artillery/bolt_front_med.xml" attachpoint="loaded-projectile"/>
+    </props>
 </variant>

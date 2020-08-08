@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_crossbowman">
+  <Auras datatype="tokens">
+    units/heroes/han_hero_wei_qing
+  </Auras>
+  <Identity>
+    <Civ>han</Civ>
+    <SpecificName>Wei Qing</SpecificName>
+    <Icon>units/han_hero.png</Icon>
+  	<RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <MountHorse>
+      <Entity>units/han_hero_wei_qing_mounted_horse</Entity>
+      <Tooltip>This gives Wei Qing his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </MountHorse>
+    <MountChariot>
+      <Entity>units/han_hero_wei_qing_mounted_chariot</Entity>
+      <Tooltip>This gives Wei Qing his War Chariot, with trample effects, greater speed, and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>300</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </MountChariot>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/chinese_han/hero_infantry_wei_qing.xml</Actor>
+  </VisualActor>
+</Entity>
