@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Mesh">
+      <mesh>props/shield/xion_shield_round.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Normal Bumpy">
+      <textures>
+        <texture file="props/shield/shield_cooper_round_norm.png" name="normTex"/>
+        <texture file="props/shield/shield_cooper_round_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Normal Smooth">
+      <textures>
+        <texture file="props/shield/aspis_01_norm.png" name="normTex"/>
+        <texture file="props/shield/shield_cooper_round_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Bronze Copper">
+      <textures>
+        <texture file="props/shield/shield_cooper_round.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Bronze">
+      <textures>
+        <texture file="props/shield/aspis_01_bronze.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Copper">
+      <textures>
+        <texture file="props/shield/aspis_01_copper.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Bronze Tripod">
+      <textures>
+        <texture file="props/shield/aspis_athen_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Bronze Snake">
+      <textures>
+        <texture file="props/shield/aspis_athen_04.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+   <material>player_trans_parallax_spec.xml</material>
+</actor>
