@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_hero_infantry_hoplite">
+<Entity parent="template_unit_hero_cavalry_spearman">
   <Auras datatype="tokens">
     units/heroes/spart_hero_brasidas
   </Auras>
@@ -9,25 +9,9 @@
 	<SpecificName>Xanthippus of Sparta</SpecificName>
     <History>Xanthippus of Lacedaemon, also known as Xanthippus of Carthage, was a Spartan mercenary general employed by Carthage during the First Punic War. He led the Carthaginian army to considerable success against the Roman Republic during the course of the war, training the army to a professional standard before defeating the Romans at the Battle of Tunis, where Carthaginian forces routed the Roman expeditionary force and captured the Roman consul Marcus Atilius Regulus in 255 BC.
 	</History>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <Icon>units/spart_hero_brasidas.png</Icon>
   </Identity>
-  <TrainingRestrictions replace="">
-    <Category>Xanthippus</Category>
-  </TrainingRestrictions>
-  <Upgrade>
-    <Mount>
-      <Entity>units/cart_hero_xanthippus_mounted</Entity>
-      <Tooltip>This gives Xanthippus his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
-      <Cost>
-        <food>200</food>
-        <glory>200</glory>
-      </Cost>
-      <Time>10</Time>
-    </Mount>
-  </Upgrade>
   <VisualActor>
-    <Actor>units/carthaginians/hero_infantry_hoplite_xanthippus.xml</Actor>
+    <Actor>units/carthaginians/hero_cavalry_spearman_xanthippus_m.xml</Actor>
   </VisualActor>
 </Entity>
