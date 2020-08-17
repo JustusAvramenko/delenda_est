@@ -8,7 +8,7 @@
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=KfQcZtOLaAQ
 " target="_blank"><img src="https://i.ytimg.com/vi/KfQcZtOLaAQ/maxresdefault.jpg" 
-alt="0 A.D. Delenda Est -- Isometric View with the ATHENIANS" width="750" height="500" border="50" /></a>
+alt="0 A.D. Delenda Est -- Isometric View with the ATHENIANS" width="750" height="422" border="50" /></a>
 
 ---
 
