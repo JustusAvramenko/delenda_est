@@ -11,7 +11,10 @@
     <Height>8.0</Height>
   </Footprint>
   <Identity>
-    <Civ>scyth</Civ>
+    <Civ>huns</Civ>
+    <VisibleClasses datatype="tokens">
+	  SiegeWorkshop
+	</VisibleClasses>
   </Identity>
   <Obstruction>
     <Static width="25.0" depth="25.0"/>
@@ -19,7 +22,8 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/scyth_support_wagon
+      units/huns_support_wagon
+	  units/huns_siege_ram
     </Entities>
     <Technologies datatype="tokens">
 	  persians/pair_01
@@ -37,7 +41,7 @@
   <TerritoryInfluence disable=""/>
   <VisualActor>
     <ConstructionPreview disable=""/>
-    <Actor>structures/scythians/blacksmith.xml</Actor>
-    <FoundationActor>structures/scythians/blacksmith_foundation.xml</FoundationActor>
+    <Actor>structures/xiongnu/forge.xml</Actor>
+    <FoundationActor>structures/xiongnu/forge_foundation.xml</FoundationActor>
   </VisualActor>
 </Entity>
