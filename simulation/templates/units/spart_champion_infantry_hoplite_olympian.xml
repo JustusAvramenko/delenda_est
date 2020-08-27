@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="units/spart_champion_infantry_hoplite">
-  <Armour>
-    <Hack op="add">1</Hack>
-    <Pierce op="add">1</Pierce>
-    <Crush op="add">1</Crush>
-  </Armour>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+        <Crush op="add">1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Health>
     <Max op="add">100</Max>
   </Health>

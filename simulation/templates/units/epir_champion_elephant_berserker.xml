@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="units/epir_champion_elephant">
-  <Armour>
-    <Hack op="add">-1</Hack>
-    <Pierce op="add">-2</Pierce>
-    <Crush op="add">-1</Crush>
-  </Armour>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Pierce op="add">-2</Pierce>
+        <Crush op="add">-1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Attack>
     <Melee>
       <Damage>

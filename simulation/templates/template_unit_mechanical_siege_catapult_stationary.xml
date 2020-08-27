@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_mechanical_siege_catapult">
-  <Armour>
+  <Resistance>
+    <Entity>
+      <Damage>
+      </Damage>
+    </Entity>
     <Foundation>
-      <Hack>1</Hack>
-      <Pierce>1</Pierce>
-      <Crush>1</Crush>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+        <Crush>1</Crush>
+      </Damage>
     </Foundation>
-  </Armour>
+  </Resistance>
   <BuildRestrictions>
     <PlacementType>land</PlacementType>
     <Territory>own neutral enemy ally</Territory>
