@@ -1,39 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_cavalry_ranged">
+<Entity parent="template_unit_cavalry_ranged_archer">
   <Attack>
     <Ranged>
       <Damage>
-        <Hack>0</Hack>
-        <Pierce>20</Pierce>
-        <Crush>0</Crush>
+        <Pierce op="mul">1.5</Pierce>
       </Damage>
-      <MaxRange>60</MaxRange>
-      <MinRange>0</MinRange>
-      <PrepareTime>2400</PrepareTime>
+      <MaxRange op="mul">1.2</MaxRange>
+      <PrepareTime>1500</PrepareTime>
       <RepeatTime>3000</RepeatTime>
-      <Delay>0</Delay>
       <Projectile>
-        <Speed>100.0</Speed>
-        <Spread>1.0</Spread>
-        <Gravity>9.81</Gravity>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3"/>
+        <Speed>60.0</Speed>
+        <Spread>1.8</Spread>
       </Projectile>
-      <PreferredClasses datatype="tokens">Human</PreferredClasses>
     </Ranged>
   </Attack>
   <Cost>
+    <BuildTime>12</BuildTime>
     <Resources>
-      <wood>30</wood>
-      <metal>20</metal>
+      <food>50</food>
+      <wood>70</wood>
     </Resources>
   </Cost>
   <Identity>
-    <GenericName>Cavalry Crossbowman</GenericName>
-    <VisibleClasses datatype="tokens">Crossbowman</VisibleClasses>
+    <VisibleClasses datatype="tokens">Crossbow</VisibleClasses>
+    <GenericName>Crossbow Cavalry</GenericName>
+    <History>The crossbow occurred as early as 600BC or earlier in Asia and other places around the world, featuring bronze arrows.</History>
+    <Tooltip>Traits: Long Range, Fast Speed, Light Armor, Harassment, Fast Training.
+Strong Against: Pike Infantry (1.5x), Spear Infantry (1.5x), Sword Infantry (1.5x).
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
   </Identity>
-  <Loot>
-    <wood>3</wood>
-    <metal>2</metal>
-  </Loot>
 </Entity>
