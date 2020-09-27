@@ -16,13 +16,17 @@
   <Obstruction>
     <Static width="1.6" depth="1.6"/>
     <!-- Trees are deleted as a workaround for gates until random maps are smart enough to not place trees inside walls. -->
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+    <BlockFoundation>false</BlockFoundation>
+    <BlockConstruction>false</BlockConstruction>
     <DeleteUponConstruction>true</DeleteUponConstruction>
   </Obstruction>
   <ResourceSupply>
     <KillBeforeGather>false</KillBeforeGather>
     <Amount>1</Amount>
     <Type>wood.tree</Type>
-    <MaxGatherers>8</MaxGatherers>
+    <MaxGatherers>5</MaxGatherers>
   </ResourceSupply>
   <Selectable>
     <Overlay>
