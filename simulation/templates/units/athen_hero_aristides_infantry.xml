@@ -13,7 +13,6 @@
   </Attack>
   <Auras datatype="tokens">
     units/heroes/athen_hero_miltiades_hoplites
-    units/heroes/athen_hero_miltiades_civic_centers
   </Auras>
   <Cost>
     <Resources>
@@ -23,21 +22,10 @@
   <Identity>
     <Civ>athen</Civ>
     <Lang>greek</Lang>
-    <SpecificName>Aristides</SpecificName>
-    <Icon>units/athen_hero_miltiades.png</Icon>
+    <SpecificName>Aristides the Just</SpecificName>
+    <Icon>units/athen_hero_aristides.png</Icon>
+    <RequiredTechnology>civ_choices/athen/aristides</RequiredTechnology>
   </Identity>
-  <Upgrade>
-    <MiltiadesMount>
-      <Entity>units/athen_hero_miltiades_mounted</Entity>
-      <Tooltip>This gives Miltiades his mount, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
-      <Cost>
-        <food>200</food>
-        <glory>200</glory>
-      </Cost>
-      <Time>10</Time>
-    </MiltiadesMount>
-  </Upgrade>
   <VisualActor>
     <Actor>units/athenians/hero_infantry_hoplite_aristides.xml</Actor>
   </VisualActor>
