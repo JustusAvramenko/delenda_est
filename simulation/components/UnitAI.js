@@ -3023,7 +3023,7 @@ UnitAI.prototype.UnitFsmSpec = {
 		"CHEERING": {
 			"enter": function() {
 				this.SelectAnimation("promotion");
-				this.StartTimer(2800);
+				this.StartTimer(4000);
 				return false;
 			},
 
@@ -3255,7 +3255,7 @@ UnitAI.prototype.UnitFsmSpec = {
 		"CHEERING": {
 			"enter": function() {
 				this.SelectAnimation("promotion");
-				this.StartTimer(2800);
+				this.StartTimer(4000);
 				return false;
 			},
 
