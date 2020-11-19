@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_wonder">
+  <Auras datatype="tokens">
+    imp_eternal_city
+  </Auras>
+  <Footprint replace="">
+    <Circle radius="30.0"/>
+    <Height>20.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Amphitheatrum Flavium</SpecificName>
+    <History>Construction of the Flavian Amphitheater, more famously known as 'The Colosseum', began under the emperor Vespasian in AD 72, but was completed in AD 80 by his heir and successor Emperor Titus. The Colosseum could hold between 50,000 and 80,000 spectators and it was used for gladiatorial contests and public spectacles such as mock sea battles (for only a short time as the hypogeum was soon filled in with mechanisms to support the other activities), animal hunts, executions, re-enactments of famous battles, and dramas based on Classical mythology. These 'games' as they were known were often held to mark religious days, to celebrate a military triumph, or to honor the passing of some important political figure (often to propagandize the public), which also served to entertain the masses of citizens packed into the sprawling city of Rome. The emperor himself even had a special spectator box, near to the action, from which he could entertain his entourage while in full view of his subjects.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="45.0" depth="55.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+	  romans_imperial/unlock_eternal_city
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/romans_imperial/wonder.xml</Actor>
+  </VisualActor>
+</Entity>

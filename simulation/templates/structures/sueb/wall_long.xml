@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_wall_long">
+  <Cost>
+    <Resources>
+      <stone>0</stone>
+      <wood>30</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="39" depth="12"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>sueb</Civ>
+    <SpecificName>Stadtmauer</SpecificName>
+    <SelectionGroupName>structures/sueb/wallset_stone</SelectionGroupName>
+  </Identity>
+  <Obstruction>
+    <Static width="36" depth="8"/>
+  </Obstruction>
+  <Upgrade>
+    <Gate>
+      <Cost>
+        <stone>0</stone>
+        <wood>100</wood>
+      </Cost>
+    </Gate> 
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/germans/wall_long.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>32.9</Length>
+  </WallPiece>
+</Entity>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_forge">
+  <BuildRestrictions>
+    <Territory>own neutral ally enemy</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <PopulationBonus>2</PopulationBonus>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="16.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>huns</Civ>
+    <VisibleClasses datatype="tokens">
+	  SiegeWorkshop
+	</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/huns/support_wagon
+	  units/huns/siege_ram
+    </Entities>
+    <Technologies datatype="tokens">
+	  persians/pair_01
+	  persians/pair_02_ranged
+	  persians/pair_inf_armor_01
+	  persians/pair_inf_armor_02
+	  persians/pair_armor_03
+	  persians/pair_cav_01
+	  persians/pair_cav_02
+	  persians/pair_cav_03
+	  armor_hero_01
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/blacksmith.xml</Actor>
+    <FoundationActor>structures/xiongnu/blacksmith_foundation.xml</FoundationActor>
+  </VisualActor>
+</Entity>

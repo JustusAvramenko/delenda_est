@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Attack>
+    <Ranged>
+      <MinRange>20.0</MinRange>
+    </Ranged>
+  </Attack>
+  <Footprint replace="">
+    <Circle radius="16.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>sueb</Civ>
+    <SpecificName>Festung</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="28.0" depth="28.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_axeman
+      units/{civ}/champion_infantry
+      units/{civ}/champion_cavalry
+    </Entities>
+    <Technologies datatype="tokens">
+	  attack_capture_siege_ladders
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/suebians/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+   <Length>16.8</Length>
+    <Indent>5.8</Indent>
+  </WallPiece>
+</Entity>

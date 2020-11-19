@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_wall_long">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>15.0</Hack>
+        <Pierce>35.0</Pierce>
+        <Crush>5.0</Crush>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Hack>4.0</Hack>
+        <Pierce>7.0</Pierce>
+        <Crush>3.0</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <BuildRestrictions>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <Resources>
+      <wood>60</wood>
+      <stone>0</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="40.0" depth="8.0"/>
+    <Height>7.0</Height>
+  </Footprint>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X><Y>5.7</Y><Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>8</X><Y>5.7</Y><Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-8</X><Y>5.7</Y><Z>0</Z>
+      </Archer3>
+      <Archer4>
+        <X>4</X><Y>5.7</Y><Z>0</Z>
+      </Archer4>
+      <Archer5>
+        <X>-4</X><Y>5.7</Y><Z>0</Z>
+      </Archer5>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max op="mul">0.5</Max>
+  </Health>
+  <Identity>
+    <Civ>imp</Civ>
+    <SelectionGroupName>structures/rome/wallset_siege</SelectionGroupName>
+    <GenericName>Siege Wall</GenericName>
+    <SpecificName>Murus Circummunitionis</SpecificName>
+    <Classes datatype="tokens">
+	  SiegeWall
+	</Classes>
+    <Icon>structures/siege_wall.png</Icon>
+    <Tooltip>A wooden and turf palisade buildable in enemy and neutral territories.</Tooltip>
+    <History>Quick building, but expensive wooden and earthen walls used to surround and siege an enemy town or fortified position. The most famous examples are the Roman sieges of the Iberian stronghold of Numantia and the Gallic stronghold of Alesia.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="37.0" depth="5.0"/>
+  </Obstruction>
+  <TerritoryDecay>
+    <DecayRate>1</DecayRate>
+  </TerritoryDecay>
+  <TerritoryInfluence disable=""/>
+  <Upgrade>
+    <Gate> 
+      <Entity>structures/imp/siege_wall_gate</Entity> 
+      <Tooltip>Upgrade long wall section to a passable gate.</Tooltip> 
+      <Cost> 
+        <stone>0</stone>
+		<wood>80</wood>
+      </Cost> 
+      <Time>5</Time> 
+    </Gate> 
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/romans/siege_wall_long.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>36.0</Length>
+  </WallPiece>
+</Entity>

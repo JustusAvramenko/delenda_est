@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_army_camp">
+  <Identity>
+    <Civ>imp</Civ>
+    <GenericName>Entrenched Army Camp</GenericName>
+    <SpecificName>Castrum Vallum</SpecificName>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_swordsman_b
+	  units/{civ}/infantry_javelineer_e
+	  units/{civ}/champion_infantry
+      units/{civ}/champion_cavalry
+      units/{civ}/mechanical_siege_ballista_packed
+      units/{civ}/mechanical_siege_scorpio_packed
+      units/{civ}/mechanical_siege_ram
+    </Entities>
+    <Technologies datatype="tokens">
+	  romans_imperial/decay_logistics
+	  romans_imperial/heal_hospitals
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade>
+    <Colonia>
+      <Entity>structures/imp/civil_centre</Entity>
+      <Tooltip>Colonize conquered territory by granting the Army Camp 'colonia' status.</Tooltip>
+	  <RequiredTechnology>phase_imperial</RequiredTechnology>
+      <Cost>
+        <stone>500</stone>
+		<metal>500</metal>
+      </Cost>
+      <Time>100</Time>
+    </Colonia>
+  </Upgrade>
+</Entity>

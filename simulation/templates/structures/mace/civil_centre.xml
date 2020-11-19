@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_hele_cc</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>mace</Civ>
+    <SpecificName>Agora</SpecificName>
+    <History>The most important place in most Classical Greek poleis, the Agora served many purposes; it was a place for public speeches and was the stage for civic life and commercial interests.</History>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/hero_philip_infantry
+      units/{civ}/hero_alexander_infantry
+      units/{civ}/hero_craterus_infantry
+      units/{civ}/hero_demetrius_infantry
+    </Entities>
+    <Technologies datatype="tokens">
+	  health_units_01
+	  health_units_02
+	  health_units_03
+	  health_units_04
+	  pair_structures_01
+	  pair_structures_02
+	  pair_structures_03
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/macedonians/civic_centre.xml</Actor>
+  </VisualActor>
+</Entity>

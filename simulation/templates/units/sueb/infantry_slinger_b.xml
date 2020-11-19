@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_slinger">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Identity>
+    <Civ>sueb</Civ>
+    <SelectionGroupName>units/sueb/infantry_slinger_b</SelectionGroupName>
+    <SpecificName>German Slinger</SpecificName>
+    <Icon>units/gaul_infantry_slinger.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/sueb/infantry_slinger_a</Entity>
+  </Promotion>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/britons/infantry_slinger_b.xml</Actor>
+  </VisualActor>
+</Entity>

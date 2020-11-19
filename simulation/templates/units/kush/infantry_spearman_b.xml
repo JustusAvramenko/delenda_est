@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_spearman">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Identity>
+    <Civ>kush</Civ>
+    <SelectionGroupName>units/kush/infantry_spearman_b</SelectionGroupName>
+	<SpecificName>Nubian Spearman</SpecificName>
+    <Icon>units/kush_infantry_spearman.png</Icon>
+  </Identity>
+  <Promotion>
+	<Entity>units/kush/infantry_spearman_a</Entity>
+  </Promotion>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/kushites/infantry_spearman_b.xml</Actor>
+  </VisualActor>
+</Entity>

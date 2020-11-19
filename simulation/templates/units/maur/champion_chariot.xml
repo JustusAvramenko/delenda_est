@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry_archer">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>6.0</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Attack>
+    <Ranged>
+      <Damage>
+	    <Hack>0.0</Hack>
+        <Pierce>35.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+	  <Bonuses>
+		<BonusCavalry>
+		  <Classes>Cavalry</Classes>
+		  <Multiplier>1.0</Multiplier>
+		</BonusCavalry>
+		<BonusElephant>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>1.0</Multiplier>
+		</BonusElephant>
+		<BonusInfantry>
+		  <Classes>Infantry</Classes>
+		  <Multiplier>1.0</Multiplier>
+		</BonusInfantry>
+		<BonusSupport>
+		  <Classes>Support</Classes>
+		  <Multiplier>1.0</Multiplier>
+		</BonusSupport>
+	  </Bonuses>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+	chariot_trample_a
+  </Auras>
+  <Cost>
+    <Population>4</Population>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>150</food>
+      <wood>150</wood>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="9" depth="15.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>250</Max>
+  </Health>
+  <Identity>
+    <Civ>maur</Civ>
+    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
+	<SpecificName>Indian War Chariot</SpecificName>
+	<SelectionGroupName>units/maur/champion_chariot</SelectionGroupName>
+    <History>Champion Cavalry Archer.</History>
+	<Icon>units/maur_champion_chariot.png</Icon>
+	<Tooltip>Counters: 1.5x vs. Melee Infantry. Deals Trample Damage.
+Countered by: Javelin Infantry and Elephants.</Tooltip>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+    <food>0</food>
+    <wood>20</wood>
+    <stone>0</stone>
+    <metal>20</metal>
+  </Loot>
+  <UnitMotion>
+    <WalkSpeed>16.0</WalkSpeed>
+	<PassabilityClass>large</PassabilityClass> 
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mauryas/chariot_archer_c_m.xml</Actor>
+  </VisualActor>
+</Entity>

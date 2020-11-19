@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_house">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="10.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Cost>
+    <Resources>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Yurt</SpecificName>
+    <VisibleClasses datatype="tokens">Village House Yurt</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static width="14.0" depth="14.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+	  -pop_house_01
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Upgrade>
+    <PackStorehouse>
+      <Entity>units/scyth/support_wagon</Entity>
+      <Time>10</Time>
+    </PackStorehouse>
+  </Upgrade>
+  <VisualActor>
+	<ConstructionPreview disable=""/>
+    <Actor>structures/scythians/house.xml</Actor>
+    <FoundationActor>structures/scythians/house_foundation.xml</FoundationActor>
+  </VisualActor>
+</Entity>

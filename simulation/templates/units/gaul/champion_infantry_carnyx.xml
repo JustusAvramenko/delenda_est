@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Auras datatype="tokens">
+    carnyx_fear
+	carnyx_encouragement
+  </Auras>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Pierce op="add">-1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Attack>
+    <Melee>
+      <Damage>
+	    <Hack op="add">-2.0</Hack>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Population>1</Population>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>80</metal>
+      <coin>80</coin>
+      <glory>0</glory>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>gaul</Civ>
+    <SpecificName>Carnyx Player</SpecificName>
+    <SelectionGroupName>units/gaul/champion_infantry_carnyx</SelectionGroupName>
+    <Icon>units/gaul_champion_swordsman_carnyx.png</Icon>
+  </Identity>
+  <RangeOverlayRenderer/>
+  <OverlayRenderer/>
+  <TrainingRestrictions>
+    <Category>Carnyx</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed>11.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/gauls/champion_carnyx.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
+  <Builder>
+    <Entities datatype="tokens">
+      -structures/{civ}/range
+      -structures/{civ}/stable
+    </Entities>
+  </Builder>
+  <Cost>
+    <Population>2</Population>
+	<BuildTime>12</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <metal>50</metal>
+      <coin>50</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>cart</Civ>
+    <SelectionGroupName>units/cart/infantry_swordsman_ital_b</SelectionGroupName>
+    <SpecificName>Samnite Heavy Infantry</SpecificName>
+    <Rank>Basic</Rank>
+    <VisibleClasses datatype="tokens">Italian</VisibleClasses>
+    <History>The Samnites, Lucanians, and Italiote Greeks supplied Carthage with heavy infantry in their war with Rome.</History>
+    <Icon>units/cart_infantry_swordsman_2.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/cart/infantry_swordsman_ital_a</Entity>
+	<RequiredXp>100</RequiredXp>
+  </Promotion>
+  <TrainingRestrictions>
+    <Category>MercItalian</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/carthaginians/infantry_swordsman_2_b.xml</Actor>
+  </VisualActor>
+</Entity>
