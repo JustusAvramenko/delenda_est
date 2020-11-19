@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/ptol_hero_ptolemy_III_1
+  </Auras>
+  <Identity>
+    <Civ>ptol</Civ>
+	<Lang>greek</Lang>
+    <SpecificName>Ptolemy III "Benefactor"</SpecificName>
+    <Classes datatype="tokens">PtolemyIII</Classes>
+    <History>Ptolemy III Euergetes was the third king of the Ptolemaic dynasty in Egypt from 246 to 222 BC. The Ptolemaic Kingdom reached the height of its power during his reign. Ptolemy III was the eldest son of Ptolemy II Philadelphus and his first wife Arsinoe I.</History>
+    <Icon>units/ptol_hero_ptolemy_IV.png</Icon>
+    <RequiredTechnology>civ_choices/ptol/ptolemy_III</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/ptol/hero_ptolemy_III_mounted</Entity>
+      <Tooltip>This gives Ptolemy III his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/ptolemies/hero_infantry_swordsman_ptolemy_III.xml</Actor>
+  </VisualActor>
+</Entity>

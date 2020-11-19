@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_hele_cc</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>athen</Civ>
+    <SpecificName>Agora</SpecificName>
+    <History>The most important place in Athens, the Agora served many purposes; it was a place for public speeches and was the stage for civic life and commercial interests.</History>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/hero_miltiades_infantry
+      units/{civ}/hero_themistocles
+      units/{civ}/hero_aristides_infantry
+      units/{civ}/hero_pericles
+      units/{civ}/hero_iphicrates
+    </Entities>
+    <Technologies datatype="tokens">
+	  health_units_01
+	  health_units_02
+	  health_units_03
+	  health_units_04
+	  pair_structures_01
+	  pair_structures_02
+	  pair_structures_03
+	  pair_structures_04
+	  successors/health_heroes
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/athenians/civil_centre.xml</Actor>
+    <FoundationActor>structures/fndn_9x9.xml</FoundationActor>
+  </VisualActor>
+</Entity>

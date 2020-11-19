@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Attack disable=""/>
+  <Footprint replace="">
+    <Circle radius="16.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>huns</Civ>
+    <SpecificName>Chanyu's Hall</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/support_wagon
+    </Entities>
+    <Technologies datatype="tokens">
+      nomads/vision_gathering_falconry
+    </Technologies>
+  </ProductionQueue>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>0.0001</TurnRate>
+  </Position>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/xiongnu/royal_yurt_charioth_unpacked.xml</Actor>
+    <FoundationActor>structures/xiongnu/civic_centre_foundation.xml</FoundationActor>
+  </VisualActor>
+</Entity>

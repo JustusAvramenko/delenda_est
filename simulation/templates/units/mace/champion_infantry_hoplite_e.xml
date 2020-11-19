@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/mace/champion_infantry_hoplite">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+        <Crush op="add">1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Attack>
+    <Melee>
+      <Damage>
+	    <Hack op="mul">1.1</Hack>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Health>
+    <Max op="mul">1.1</Max>
+  </Health>
+  <Identity>
+	<SpecificName>Silver Shield Guardsman</SpecificName>
+    <Icon>units/mace_champion_argyraspidai.png</Icon>
+	<SelectionGroupName>units/mace/champion_infantry_e</SelectionGroupName>
+  </Identity>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>units/macedonians/infantry_spearman_c_e.xml</Actor>
+  </VisualActor>
+</Entity>

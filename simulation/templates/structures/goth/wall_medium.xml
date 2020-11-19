@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_wall_medium">
+  <Footprint>
+    <Square width="26.5" depth="8.5"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>goth</Civ>
+	<SelectionGroupName>structures/goth/wallset_stone</SelectionGroupName>
+    <SpecificName>Palisadenwand</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="25.0" depth="7.0"/>
+  </Obstruction>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X><Y>9.3</Y><Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>4</X><Y>9.3</Y><Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-4</X><Y>9.3</Y><Z>0</Z>
+      </Archer3>
+    </TurretPoints>
+  </TurretHolder>
+  <VisualActor>
+    <Actor>structures/gauls/wall_medium.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>25.0</Length>
+  </WallPiece>
+</Entity>

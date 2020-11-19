@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple">
+  <Auras datatype="tokens">
+    eternal_fire
+  </Auras>
+  <BuildRestrictions>
+    <Category>Vesta</Category>
+  </BuildRestrictions>
+  <Cost>
+    <PopulationBonus>0</PopulationBonus>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <food>750</food>
+	  <wood>750</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="12.5"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">-Support -Infantry -Cavalry Support+Citizen</List>
+    <BuffHeal>3</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>imp</Civ>
+    <GenericName>Temple of Vesta</GenericName>
+    <SpecificName>Aedes Vestae</SpecificName>
+	<VisibleClasses datatype="tokens">
+	  -Town
+	  Village
+	  TempleofVesta
+	</VisibleClasses>
+    <History>(Insert History)</History>
+    <Tooltip>Build this temple to greatly increase the loyalty of nearby structures and health of nearby units.</Tooltip>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Icon>structures/vesta.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="19.0" depth="19.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      -units/{native}/support_healer_b
+    </Entities>
+    <Technologies datatype="tokens">
+	  -health_regen_units
+      -heal_temple
+	  -attack_military_cult
+	  -health_state_religion
+	  romans/vestal_virgins
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_greek_theater.xml</select>
+      <constructed>interface/complete/building/complete_greek_theater.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/romans/temple_vesta.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Attack disable=""/>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Distance>
+      <FromClass>MercenaryCamp</FromClass>
+      <MinDistance>100</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>100</wood>
+      <stone>0</stone>
+      <food>100</food>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="25.5" depth="25.5"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>800</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kush</Civ>
+    <GenericName>Blemmye Camp</GenericName>
+    <SpecificName>Blemmye Camp</SpecificName>
+    <Classes datatype="tokens">MercenaryCamp</Classes>
+    <Tooltip>Train Blemmye Desert Raiders.</Tooltip>
+    <Icon>structures/mercenary_camp.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Static width="23.5" depth="23.5"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      -units/{civ}/infantry_spearman_b
+      -units/{civ}/infantry_hoplite_b
+      -units/{civ}/infantry_pikeman_b
+      -units/{civ}/infantry_swordsman_b
+	  kush_merc_camelry_1
+	  kush_merc_camelry_2
+    </Entities>
+    <Technologies datatype="tokens">
+	  -training_levy_infantry_barracks
+	  -training_mobilization
+	  -training_total_war
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_gymnasium.xml</select>
+      <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>structures/mercenaries/camp_blemmye.xml</Actor>
+    <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
+  </VisualActor>
+</Entity>

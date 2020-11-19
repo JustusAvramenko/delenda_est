@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Attack>
+    <Ranged>
+      <MinRange>23.0</MinRange>
+    </Ranged>
+  </Attack>
+  <Footprint>
+    <Square width="32.0" depth="32.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>zapo</Civ>
+    <GenericName>Fortress</GenericName>
+    <SpecificName>Nukuch naj</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="28.0" depth="28.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/champion_healer
+      units/{civ}/champion_infantry
+	  units/zapo/siege_ram
+    </Entities>
+    <Technologies datatype="tokens">
+	  unlock_spies
+	  spy_counter
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/zapotecs/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>23.2</Length>
+    <Indent>4.8</Indent>
+  </WallPiece>
+</Entity>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/cart_hero_hamilcar
+  </Auras>
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Hamilcar Barca</SpecificName>
+    <History>Father of Hannibal and virtual military dictator of Carthage. Hamilcar Barca was a soldier and politician who excelled along his entire career. Lived 275-228 BC. While overshadowed by his sons, Hamilcar was a great general in his own right, earning the nickname Baraq or Barca for the "lightning" speed of his advance.</History>
+    <RequiredTechnology>civ_choices/cart/hamilcar</RequiredTechnology>
+    <Icon>units/cart_hero_hamilcar.png</Icon>
+  </Identity>
+  <Upgrade>
+    <HamilcarMount>
+      <Entity>units/cart/hero_hamilcar_mounted</Entity>
+      <Tooltip>This gives Hamilcar his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </HamilcarMount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/carthaginians/hero_infantry_swordsman_hamilcar.xml</Actor>
+  </VisualActor>
+</Entity>

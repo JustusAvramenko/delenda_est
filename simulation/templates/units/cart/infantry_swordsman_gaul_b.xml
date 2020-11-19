@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Builder>
+    <Entities datatype="tokens">
+      -structures/{civ}/range
+      -structures/{civ}/stable
+    </Entities>
+  </Builder>
+  <Cost>
+    <Population>2</Population>
+	<BuildTime>12</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <metal>50</metal>
+      <coin>50</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>cart</Civ>
+    <SelectionGroupName>units/cart/infantry_swordsman_gaul_b</SelectionGroupName>
+    <SpecificName>Gallic Mercenary Infantry</SpecificName>
+    <Rank>Basic</Rank>
+    <VisibleClasses datatype="tokens">Celt Guerilla</VisibleClasses>
+    <History>Hannibal hired Celtic mercenaries when he invaded Italy in 218 BC, recruited from the Gallic tribesmen in the northern third of the country. Fierce and physically imposing thanks to their height the Celtic soldiers attacked their opponents with swords and spears in a solid wave. They were capable of changing formations and despite their usual lack of body armor they were quite capable of hacking down their opponents.</History>
+    <Icon>units/cart_infantry_swordsman.png</Icon>
+	<RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Promotion>
+    <Entity>units/cart/infantry_swordsman_gaul_a</Entity>
+	<RequiredXp>100</RequiredXp>
+  </Promotion>
+  <TrainingRestrictions>
+    <Category>MercCelt</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/carthaginians/infantry_swordsman_b.xml</Actor>
+  </VisualActor>
+</Entity>

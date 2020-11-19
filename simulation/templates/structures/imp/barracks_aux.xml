@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <BuildRestrictions>
+    <Category>AuxiliaryBarracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <Resources>
+      <stone>0</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="24.0" depth="24.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Castra Auxiliaris</SpecificName>
+	<GenericName>Auxiliary Barracks</GenericName>
+    <VisibleClasses datatype="tokens">
+	  AuxiliaryBarracks
+	  Town
+	</VisibleClasses>
+    <History>Romans specialised in the building of military camps and forts. A few of them still survive.</History>
+	<RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Train Auxiliary mercenary soldiers here and research their improvements.</Tooltip>
+    <Icon>structures/pers_stable.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="22.0" depth="22.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+	  -units/{civ}/infantry_spearman_b
+	  -units/{civ}/infantry_pikeman_b
+	  -units/{civ}/infantry_swordsman_b
+      units/{civ}/cavalry_scout
+      units/{civ}/merc_infantry_1
+	  units/{civ}/merc_infantry_2
+	  units/{civ}/merc_cavalry_1
+	  units/{civ}/merc_cavalry_2
+    </Entities>
+    <Technologies datatype="tokens">
+	  -training_levy_infantry_barracks
+	  -training_mobilization
+	  -training_total_war
+	  romans_imperial/attack_cav_02
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_gymnasium.xml</select>
+      <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/romans_imperial/barracks_02.xml</Actor>
+    <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
+  </VisualActor>
+</Entity>

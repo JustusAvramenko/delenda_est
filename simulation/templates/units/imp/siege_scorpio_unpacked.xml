@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/imp/siege_scorpio_packed">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce op="mul">1.1</Pierce>
+        <Crush op="mul">1.1</Crush>
+      </Damage>
+      <MaxRange op="add">8.0</MaxRange>
+      <MinRange op="add">4.0</MinRange>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Icon>units/rome_mechanical_siege_scorpio.png</Icon>
+  </Identity>
+  <Pack>
+    <Entity>units/imp/siege_scorpio_packed</Entity>
+    <State>unpacked</State>
+  </Pack>
+  <UnitMotion>
+    <WalkSpeed>0.001</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/romans_imperial/siege_scorpio.xml</Actor>
+  </VisualActor>
+</Entity>

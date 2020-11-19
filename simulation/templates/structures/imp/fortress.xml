@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Identity>
+    <Civ>imp</Civ>
+    <SpecificName>Castellum</SpecificName>
+    <History>Fortified auxillary camp.</History>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry
+      units/{civ}/champion_cavalry
+	  units/{civ}/hero_augustus
+      units/{civ}/hero_titus
+      units/{civ}/hero_trajan
+    </Entities>
+    <Technologies datatype="tokens">
+	  romans_imperial/training_recall_evocati
+	  unlock_spies
+	  spy_counter
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/romans/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+   <Length>25.0</Length>
+    <Indent>8.4</Indent>
+  </WallPiece>
+</Entity>

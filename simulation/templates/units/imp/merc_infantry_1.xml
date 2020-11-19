@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_spearman">
+  <Builder>
+	<Entities datatype="tokens">
+	  -structures/{civ}/range
+	  -structures/{civ}/stable
+    </Entities>
+  </Builder>
+  <Cost>
+    <Population>1</Population>
+    <Resources>
+      <food>0</food>
+      <wood>50</wood>
+      <metal>0</metal>
+      <coin>50</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>imp</Civ>
+	<Lang>latin</Lang>
+    <SpecificName>Auxiliary Spearman</SpecificName>
+    <VisibleClasses datatype="tokens">
+	  Auxiliary
+	</VisibleClasses>
+    <Icon>units/imp_merc_spearman.png</Icon>
+  </Identity>
+  <TrainingRestrictions>
+    <Category>Auxilia</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/romans_imperial/infantry_spearman.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Footprint>
+    <Square width="25.0" depth="25.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>epir</Civ>
+    <SpecificName>Stratopedon</SpecificName>
+    <History>The Stratigeion was the main military headquarters, where important decisions were taken and plans for battles discussed by the Hellene Generals, or "Strategoi".</History>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="20.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_hoplite_barracks
+    </Entities>
+    <Technologies datatype="tokens">
+	  upgrade_rank_advanced_infantry_pike
+	  upgrade_rank_elite_infantry_pike
+	  unlock_champion_units
+	  hellenes/attack_inf_spearfighting
+	  hellenes/health_inf_martial_arts
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/macedonians/barracks.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

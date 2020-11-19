@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_swordsman">
+  <Builder>
+	<Entities datatype="tokens">
+	  -structures/{civ}/range
+	  -structures/{civ}/stable
+    </Entities>
+  </Builder>
+  <Identity>
+    <Civ>imp</Civ>
+	<Lang>latin</Lang>
+	<SelectionGroupName>units/imp/infantry_swordsman_b</SelectionGroupName>
+	<SpecificName>Roman Legionnaire</SpecificName>
+    <VisibleClasses datatype="tokens">
+	  Legion
+	</VisibleClasses>
+    <Icon>units/imp_infantry_swordsman.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/imp/infantry_swordsman_a</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/romans_imperial/infantry_swordsman_b.xml</Actor>
+  </VisualActor>
+</Entity>

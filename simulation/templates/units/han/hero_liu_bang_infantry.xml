@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/han_hero_liu_bang
+  </Auras>
+  <Identity>
+    <Civ>han</Civ>
+    <SpecificName>Liu Bang</SpecificName>
+    <History>Liu Bang was a peasant who lead a rebellion force to topple the Qin dynasty and proceeded to become the first Emperor of the Han dynasty. During his reign he lowered taxes and encouraged agriculture growth, as well as made peace with the Xiongnu.</History>
+    <Icon>units/han_hero_liu_bang.png</Icon>
+  	<RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/han/hero_liu_bang_mounted</Entity>
+      <Tooltip>This gives Liu Bang his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/chinese_han/hero_infantry_liu_bang.xml</Actor>
+  </VisualActor>
+</Entity>

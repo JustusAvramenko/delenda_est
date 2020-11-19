@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_spearman">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Attack>
+    <Melee>
+      <Damage>
+	    <Hack>7.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+    </Melee>
+    <Capture>
+      <RepeatTime>3500</RepeatTime>
+    </Capture>
+  </Attack>
+  <Builder>
+    <Rate>0.5</Rate>
+  </Builder>
+  <Cost>
+    <Population>1</Population>
+	<BuildTime>8</BuildTime>
+    <Resources>
+      <food>30</food>
+      <wood>30</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>70</Max>
+  </Health>
+  <Identity>
+    <Civ>maur</Civ>
+    <SelectionGroupName>units/maur/infantry_spearman_b</SelectionGroupName>
+    <SpecificName>Bamboo Spearman</SpecificName>
+    <Icon>units/maur_infantry_spearman.png</Icon>
+	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Tooltip>Traits: Low Cost, Low Health, Slow Builder, Medium Speed, Medium Armor, Low Attack, Massable.
+Strong Against: All Cavalry (1.5x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
+  </Identity>
+  <Promotion>
+    <Entity>units/maur/infantry_spearman_a</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/mauryas/infantry_spearman_b.xml</Actor>
+  </VisualActor>
+</Entity>
