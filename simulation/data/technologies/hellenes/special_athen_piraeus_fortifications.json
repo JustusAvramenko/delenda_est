@@ -1,0 +1,17 @@
+{
+	"genericName": "Piraeus Fortifications",
+	"description": "Themistocles was instrumental in convincing the Athenians to fortify the port town of Piraeus and its 3 strategically placed harbors. This crucial act would help set up Athens as the foremost naval power in the Eastern Mediterranean Sea over the subsequent decades.",
+	"cost": {"stone": 500, "glory": 200},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase after choosing the hero Themistocles.",
+	"icon": "masonry_geometric.png",
+	"researchTime": 40,
+	"tooltip": "Stone Walls and Shipyards +25% health, but also +25% cost and build time.",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.25},
+		{"value": "Cost/BuildTime", "multiply": 1.25},
+		{"value": "Cost/Resources/stone", "multiply": 1.25}
+	],
+	"affects": ["StoneWall", "Shipyard"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity>
   <AIProxy/>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>1</Hack>
-        <Pierce>1</Pierce>
-        <Crush>1</Crush>
-      </Damage>
-    </Entity>
-    <Foundation>
-      <Damage>
-        <Hack>1</Hack>
-        <Pierce>1</Pierce>
-        <Crush>1</Crush>
-      </Damage>
-    </Foundation>
-  </Resistance>
   <BuildingAI>
     <DefaultArrowCount>0</DefaultArrowCount>
     <GarrisonArrowMultiplier>0</GarrisonArrowMultiplier>
@@ -25,6 +9,7 @@
   <BuildRestrictions>
     <PlacementType>land</PlacementType>
     <Territory>own</Territory>
+    <Category>Structure</Category>
   </BuildRestrictions>
   <Cost>
     <Population>0</Population>
@@ -116,6 +101,22 @@
   <Repairable>
     <RepairTimeRatio>2.0</RepairTimeRatio>
   </Repairable>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
   <Selectable>
     <Overlay>
       <Outline>
