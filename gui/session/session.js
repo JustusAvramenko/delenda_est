@@ -171,7 +171,7 @@ var g_PanelEntityOrder = ["Hero", "Relic"];
 /**
  * Unit classes to be checked for the idle-worker-hotkey.
  */
-var g_WorkerTypes = ["Support Citizen","Support Slave", "FishingBoat", "Trader", "Citizen"];
+var g_WorkerTypes = ["Gatherer", "FishingBoat", "Trader"];
 
 /**
  * Unit classes to be checked for the military-only-selection modifier and for the idle-warrior-hotkey.
