@@ -171,7 +171,7 @@ var g_PanelEntityOrder = ["Hero", "Relic"];
 /**
  * Unit classes to be checked for the idle-worker-hotkey.
  */
-var g_WorkerTypes = ["FemaleCitizen", "Trader", "FishingBoat", "Citizen"];
+var g_WorkerTypes = ["Support Citizen","Support Slave", "FishingBoat", "Trader", "Citizen"];
 
 /**
  * Unit classes to be checked for the military-only-selection modifier and for the idle-warrior-hotkey.
@@ -315,9 +315,8 @@ function init(initData, hotloadData)
 		g_Selection.selected = hotloadData.selection;
 		g_PlayerAssignments = hotloadData.playerAssignments;
 		g_Players = hotloadData.player;
-
 	}
-    initCivChoicesDialog();
+
 	// TODO: use event instead
 	onSimulationUpdate();
 
@@ -465,7 +464,7 @@ function controlsPlayer(playerID)
  * Called when one or more players have won or were defeated.
  *
  * @param {array} - IDs of the players who have won or were defeated.
- * @param {object} - a plural string stating the victory reason.
+ * @param {Object} - a plural string stating the victory reason.
  * @param {boolean} - whether these players have won or lost.
  */
 function playersFinished(players, victoryString, won)
@@ -621,13 +620,13 @@ function onSimulationUpdate()
 		Engine.GuiInterfaceCall("ResetTemplateModified");
 	}
 	g_SimState = undefined;
-	
-    // Some changes may require re-rendering the selection.
-    if (Engine.GuiInterfaceCall("IsSelectionDirty"))
-    {
-        g_Selection.onChange();
-        Engine.GuiInterfaceCall("ResetSelectionDirty");
-    }
+
+	// Some changes may require re-rendering the selection.
+	if (Engine.GuiInterfaceCall("IsSelectionDirty"))
+	{
+		g_Selection.onChange();
+		Engine.GuiInterfaceCall("ResetSelectionDirty");
+	}
 
 	if (!GetSimState())
 		return;
@@ -654,7 +653,7 @@ function updateCinemaPath()
 	let isPlayingCinemaPath = GetSimState().cinemaPlaying && !g_Disconnected;
 
 	Engine.GetGUIObjectByName("session").hidden = !g_ShowGUI || isPlayingCinemaPath;
-	Engine.Renderer_SetSilhouettesEnabled(!isPlayingCinemaPath && Engine.ConfigDB_GetValue("user", "silhouettes") == "true");
+	Engine.ConfigDB_CreateValue("user", "silhouettes", !isPlayingCinemaPath && Engine.ConfigDB_GetValue("user", "silhouettes") == "true" ? "true" : "false");
 }
 
 // TODO: Use event subscription onSimulationUpdate, onEntitySelectionChange, onPlayerViewChange, ... instead
@@ -721,7 +720,7 @@ function updateGroups()
 /**
  * Toggles the display of status bars for all of the player's entities.
  *
- * @param {Boolean} remove - Whether to hide all previously shown status bars.
+ * @param {boolean} remove - Whether to hide all previously shown status bars.
  */
 function recalculateStatusBarDisplay(remove = false)
 {
