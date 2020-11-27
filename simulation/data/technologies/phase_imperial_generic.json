@@ -24,7 +24,10 @@
 	"tooltip": "Advance to Empire Phase, which unlocks heroes and powerful technologies. Territory radius for Civic Centers increased by a final +25%.",
 	"modifications": [
 		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
-		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"}
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Cost/BuildTime", "multiply": 1.5, "affects": "Hero"},
+		{"value": "Cost/Resources/coin", "multiply": 1.5, "affects": "Hero"},
+		{"value": "Cost/Resources/glory", "multiply": 1.5, "affects": "Hero"}
 	],
 	"soundComplete": "interface/alarm/alarm_phase.xml"
 }
