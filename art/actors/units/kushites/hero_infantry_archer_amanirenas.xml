@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/f_dress.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_fem_amanirenas.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/kush_skull_cap_crown.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_bow"/>
+        <prop actor="props/units/kush_quiver_hip.xml" attachpoint="sheath_L"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush_hero_03.png" name="baseTex"/>
+        <texture file="skeletal/kush_hero_03_spec.png" name="specTex"/>
+        <texture file="skeletal/kush_hero_03_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_archer_relax_fem.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/attack_ranged_archer_hip.xml"/>
+    <variant file="biped/female_base_walk.xml"/>
+    <variant file="biped/female_death.xml"/>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>
