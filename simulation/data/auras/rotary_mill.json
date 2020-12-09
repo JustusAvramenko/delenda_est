@@ -1,11 +1,16 @@
 {
 	"type": "range",
-	"radius": 60,
+	"radius": 40,
 	"affects": ["Gatherer"],
 	"modifications": [
 	  {"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.20}
 	],
 	"auraDescription" : "Nearby Gatherers +20% farming rate of grain.",
 	"auraName": "Ardiosmanae",
-	"overlayIcon": "art/textures/ui/session/auras/farming.png"
+	"overlayIcon": "art/textures/ui/session/auras/farming.png",
+	"rangeOverlay" : {
+		"lineTexture": "outline_border.png",
+		"lineTextureMask": "outline_border_mask.png",
+		"lineThickness": 0.075
+	}
 }

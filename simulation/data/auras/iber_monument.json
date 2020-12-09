@@ -1,4 +1,6 @@
 {
+	"auraName": "Homeland Defense",
+	"auraDescription": "Nearby units +20% attack.",
 	"type": "range",
 	"radius": 30,
 	"affects": ["Unit"],
@@ -7,7 +9,10 @@
 	  {"value": "Attack/Ranged/Pierce", "multiply": 1.2},
 	  {"value": "Attack/Ranged/Crush", "multiply": 1.2}
 	],
-	"auraName": "Homeland Defense",
-	"auraDescription": "Nearby units +20% attack.",
-	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png",
+	"rangeOverlay" : {
+		"lineTexture": "outline_border.png",
+		"lineTextureMask": "outline_border_mask.png",
+		"lineThickness": 0.1
+	}
 }
