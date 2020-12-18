@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic">
   <AlertRaiser>
-    <List datatype="tokens">Civilian</List>
+    <List datatype="tokens">Support</List>
     <RaiseAlertRange>140</RaiseAlertRange>
     <EndOfAlertRange>160</EndOfAlertRange>
     <SearchRange>100</SearchRange>
   </AlertRaiser>
-  <Resistance>
-    <Entity>
-      <Damage>
-      </Damage>
-    </Entity>
-    <Foundation>
-      <Damage>
-        <Hack>5</Hack>
-        <Pierce>15</Pierce>
-        <Crush>1</Crush>
-      </Damage>
-    </Foundation>
-  </Resistance>
   <Attack>
     <Ranged>
       <AttackName>Arrow</AttackName>
@@ -69,7 +56,6 @@
     <GarrisonRegenRate>3</GarrisonRegenRate>
   </Capturable>
   <Cost>
-    <PopulationBonus>20</PopulationBonus>
     <BuildTime>400</BuildTime>
     <Resources>
       <food>0</food>
@@ -120,6 +106,9 @@
   <Obstruction>
     <Static width="30.0" depth="30.0"/>
   </Obstruction>
+  <Population>
+    <Bonus>20</Bonus>
+  </Population>
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
@@ -136,6 +125,19 @@
 	  unlock_shared_los
     </Technologies>
   </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>15</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
   <ResourceDropsite>
     <Types>food wood stone metal</Types>
 	<Sharable>false</Sharable>
