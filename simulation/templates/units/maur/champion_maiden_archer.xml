@@ -2,6 +2,16 @@
 <Entity parent="template_unit_champion_infantry_archer">
   <Attack>
     <Ranged>
+      <ApplyStatus>
+       <Poison>
+        <Interval>2000</Interval>
+          <Damage>
+            <Poison>1.0</Poison>
+          </Damage>
+          <Stackability>Extend</Stackability>
+          <Duration>10000</Duration>
+        </Poison>
+      </ApplyStatus>
 	  <Bonuses>
 		<BonusCavalry>
 		  <Classes>Cavalry</Classes>
