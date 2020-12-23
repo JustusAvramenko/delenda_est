@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure">
+  <Capturable disable=""/>
+  <Footprint>
+    <Square width="0.8" depth="13.0"/>
+    <Height>4.0</Height>
+  </Footprint>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <GenericName>Fence</GenericName>
+    <SpecificName>Long Wooden Fence</SpecificName>
+    <Icon>gaia/special_fence.png</Icon>
+  </Identity>
+  <Loot>
+    <wood>20</wood>
+  </Loot>
+  <Minimap>
+    <Color r="119" g="82" b="46"/>
+  </Minimap>
+  <Obstruction>
+    <Static width="1.5" depth="13.0"/>
+  </Obstruction>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ProductionQueue disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>10</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <StatusBars>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <VisualActor>
+    <Actor>temp/fence_wood_long_a.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>12</Length>
+    <Orientation>0.5</Orientation>
+  </WallPiece>
+</Entity>
