@@ -1,39 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_economic_market">
-  <Capturable>
-    <CapturePoints>500</CapturePoints>
-  </Capturable>
+<Entity parent="template_structure_economic_market_trading_post">
   <Footprint>
     <Square width="26.0" depth="26.0"/>
     <Height>8.0</Height>
   </Footprint>
-  <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
-  </Health>
   <Identity>
     <Civ>pers</Civ>
-    <GenericName>Market</GenericName>
-    <SpecificName>Desert Trading Post</SpecificName>
-    <Classes datatype="tokens">-CaptureResistant</Classes>
+    <SpecificName>Desert Bazaar</SpecificName>
     <History>Traders from all distant parts of the huge empire met, exchanged and sold goods in the huge bazaars present in almost every big city. Babylon and Susa were the largest and most frequented trade centers.</History>
   </Identity>
   <Obstruction>
     <Static width="24.0" depth="24.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-      -training_trader_01
-      -speed_trader_01
-	  -pair_market_01
-	  -unlock_slaves
-	  -market_taxes
-	  training_slave_trade
-    </Technologies>
-  </ProductionQueue>
-  <TerritoryDecay disable=""/>
-  <TerritoryInfluence disable=""/>
   <VisualActor>
     <Actor>structures/persians/market.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
 </Entity>

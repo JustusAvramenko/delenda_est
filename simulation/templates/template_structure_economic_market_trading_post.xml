@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_market">
+  <Capturable>
+    <CapturePoints>500</CapturePoints>
+  </Capturable>
+  <Health disable=""/>
+  <Identity>
+    <GenericName>Trading Post</GenericName>
+    <Classes datatype="tokens">-CaptureResistant</Classes>
+  </Identity>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+      -training_trader_01
+      -speed_trader_01
+	  -pair_market_01
+	  -unlock_slaves
+	  -market_taxes
+	  training_slave_trade
+    </Technologies>
+  </ProductionQueue>
+  <Resistance replace=""/>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>
