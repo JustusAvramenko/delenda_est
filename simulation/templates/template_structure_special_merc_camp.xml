@@ -55,6 +55,15 @@
 	</Technologies>
   </ProductionQueue>
   <Resistance replace=""/>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.6</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_gymnasium.xml</select>
@@ -66,6 +75,9 @@
     <DecayRate>1</DecayRate>
   </TerritoryDecay>
   <TerritoryInfluence disable=""/>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
   <VisualActor>
     <Actor>structures/mercenaries/camp_egyptian.xml</Actor>
 	<FoundationActor>structures/fndn_6x6.xml</FoundationActor>

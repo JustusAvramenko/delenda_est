@@ -32,7 +32,7 @@
     <Classes datatype="tokens">-ConquestCritical</Classes>
     <VisibleClasses datatype="tokens">RotaryMill</VisibleClasses>
     <History>The Celts developed the first rotary flour mill.</History>
-	<Tooltip>Build one of these to increase nearby food production.</Tooltip>
+	<Tooltip>Dropsite for Food. Build one of these to increase nearby food production.</Tooltip>
     <Icon>structures/rotarymill.png</Icon>
   </Identity>
   <Loot>
@@ -47,6 +47,19 @@
     <Static width="16.0" depth="16.0"/>
   </Obstruction>
   <RallyPoint disable=""/>
+  <ResourceDropsite>
+    <Types>food</Types>
+	<Sharable>true</Sharable>
+  </ResourceDropsite>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.5</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_ffactri.xml</select>
@@ -59,6 +72,9 @@
   </StatusBars>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
   <VisualActor>
     <Actor>structures/celts/special.xml</Actor>
     <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
