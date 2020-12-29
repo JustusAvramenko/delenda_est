@@ -2,11 +2,16 @@
 <Entity parent="template_structure_civic_house">
   <BuildRestrictions>
     <Territory>own neutral ally</Territory>
+    <Distance>
+      <FromClass>House</FromClass>
+      <MinDistance>4</MinDistance>
+    </Distance>
   </BuildRestrictions>
   <Footprint replace="">
     <Circle radius="10.0"/>
     <Height>10.0</Height>
   </Footprint>
+  <Capturable disable=""/>
   <Cost>
     <Resources>
       <wood>100</wood>
