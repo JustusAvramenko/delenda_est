@@ -4,7 +4,7 @@
 	"replaces": ["phase_city"],
 	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology.",
 	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0, "glory": 0 },
-	"requirements": {"entity": {"class": "Mars", "number": 1 }},
+	"requirements": {"all": [{"civ": "rome"},{"entity": {"class": "Mars", "number": 1 }}]},
 	"autoResearch": true,
 	"requirementsTooltip": "Requires 1 Temple of Mars to be built.",
 	"icon": "phase_city.png",

@@ -4,7 +4,7 @@
 	"replaces": ["phase_city"],
 	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology.",
 	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0, "glory": 0},
-	"requirements": {"entity": {"class": "PyramidLarge", "number": 2}},
+	"requirements": {"all": [{"civ": "kush"},{"entity": {"class": "PyramidLarge", "number": 2 }}]},
 	"autoResearch": true,
 	"requirementsTooltip": "Requires 2 Large Pyramids to be built.",
 	"icon": "phase_city.png",
