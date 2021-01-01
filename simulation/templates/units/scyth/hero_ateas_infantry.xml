@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/mace_hero_philip
+  </Auras>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Ateas</SpecificName>
+	<History>United dozens of Western Scythian tribes to form a kind of \"Scythian Empire\" over his lifetime. Fought against Philip II of Macedon.</History>
+    <Icon>units/mace_hero_philip.png</Icon>
+    <RequiredTechnology>civ_choices/scyth/ateas</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <AteasMount>
+      <Entity>units/scyth/hero_ateas_mounted</Entity>
+      <Tooltip>This gives Ateas his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </AteasMount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/macedonians/hero_infantry_swordsman_philip.xml</Actor>
+  </VisualActor>
+</Entity>

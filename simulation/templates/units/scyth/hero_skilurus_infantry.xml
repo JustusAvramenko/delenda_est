@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/mace_hero_demetrius
+  </Auras>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Skilurus</SpecificName>
+    <History>King of the Crimean Scythians, whose capital was the Greco-Scythian city of Scythian Neapolis. Warred against Mithridates of Pontus.</History>
+    <Icon>units/mace_hero_demetrius.png</Icon>
+    <RequiredTechnology>civ_choices/scyth/skilurus</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <SkilurusMount>
+      <Entity>units/scyth/hero_skilurus_mounted</Entity>
+      <Tooltip>This gives Skilurus his War Horse, with trample effects, greater health, and speed.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </SkilurusMount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/macedonians/hero_infantry_swordsman_demetrius.xml</Actor>
+  </VisualActor>
+</Entity>
