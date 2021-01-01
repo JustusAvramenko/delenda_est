@@ -1,10 +1,11 @@
 {
-	"genericName": "Persian unit health penalty",
+	"genericName": "Satrapy Conscription",
 	"autoResearch": true,
 	"description": "Persian units have a health penalty, but a train time buff.",
+	"tooltip": "Persian Units -20% health and -20% train time.",
 	"requirements": {"civ": "pers"},
 	"modifications": [
-		{"value": "Health/Max", "add": -20},
+		{"value": "Health/Max", "multiply": 0.8},
 		{"value": "Cost/BuildTime", "multiply": 0.8}
 	],
 	"affects": ["Unit"]
