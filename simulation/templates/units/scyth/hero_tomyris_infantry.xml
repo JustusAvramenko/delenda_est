@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_hero_infantry_pikeman">
+<Entity parent="template_unit_hero_infantry_swordsman">
   <Auras datatype="tokens">
-    units/heroes/mace_hero_craterus
+    units/heroes/brit_hero_boudicca
   </Auras>
   <Identity>
     <Civ>scyth</Civ>
     <SpecificName>Tomyris</SpecificName>
+	<Phenotype>female</Phenotype>
     <Tooltip></Tooltip>
     <History>Tahm-Rayiš, queen of the Massagetae, a powerful Eastern Scythian confederacy. Her army defeated Cyrus the Great and checked his expansionist ambitions.</History>
-    <Icon>units/mace_hero_craterus.png</Icon>
-    <RequiredTechnology>civ_choices/scyth/tomyris</RequiredTechnology>
+    <Icon>units/brit_hero_boudicca.png</Icon>
   </Identity>
   <Upgrade>
     <TomyrisChariot>
-      <Entity>units/scyth/hero_tomyris_chariot</Entity>
+      <Entity>units/scyth/hero_tomyris_mounted_chariot</Entity>
       <Tooltip>This gives Tomyris her War Chariot, with trample effects, greater speed, and greater health.</Tooltip>
 	  <RequiredTechnology>phase_city</RequiredTechnology>
       <Cost>
@@ -23,7 +23,7 @@
       <Time>10</Time>
     </TomyrisChariot>
     <TomyrisHorse>
-      <Entity>units/scyth/hero_tomyris_mounted</Entity>
+      <Entity>units/scyth/hero_tomyris_mounted_horse</Entity>
       <Tooltip>This gives Tomyris her War Horse, with trample effects, greater speed, and greater health.</Tooltip>
 	  <RequiredTechnology>phase_city</RequiredTechnology>
       <Cost>
@@ -34,6 +34,6 @@
     </TomyrisHorse>
   </Upgrade>
   <VisualActor>
-    <Actor>units/macedonians/hero_infantry_pikeman_craterus.xml</Actor>
+    <Actor>units/britons/hero_infantry_swordsman_boudicca.xml</Actor>
   </VisualActor>
 </Entity>
