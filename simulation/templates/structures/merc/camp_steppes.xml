@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special_merc_camp">
+  <Footprint>
+    <Circle radius="20.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+	<SpecificName>Nomadic Mercenary Encampment</SpecificName>
+    <VisibleClasses datatype="tokens">Nomads</VisibleClasses>
+    <History>Nomadic cultures such as the Scythians, Alani, and Sarmatians hired themselves out to neighboring kingdoms in large numbers, searching for loot and glory.</History>
+  </Identity>
+  <Obstruction>
+    <Static width="35.0" depth="35.0"/>
+  </Obstruction>
+  <ProductionQueue>
+	<Entities datatype="tokens">
+	  units/mercenaries/nomads/scyth_cavalry_1
+	</Entities>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/scythians/barracks.xml</Actor>
+  </VisualActor>
+</Entity>
