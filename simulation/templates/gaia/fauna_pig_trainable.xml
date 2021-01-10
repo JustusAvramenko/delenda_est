@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="gaia/fauna_pig">
+  <Identity>
+    <Tooltip>Slaughter for food or set afire to frighten enemy war elephants.</Tooltip>
+  </Identity>
+  <Upgrade>
+    <FlamingPig>
+      <Entity>gaia/fauna_pig_flaming</Entity>
+      <Tooltip>Light your pig on fire to frighten War Elephants! This kills the pig.</Tooltip>
+	  <RequiredTechnology>phase_village</RequiredTechnology>
+      <Cost>
+        <wood>10</wood>
+      </Cost>
+      <Time>10</Time>
+    </FlamingPig>
+  </Upgrade>
+  <Visibility>
+    <RetainInFog>false</RetainInFog>
+  </Visibility>
+</Entity>
