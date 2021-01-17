@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_trumpeter">
+  <Auras datatype="tokens">
+    units/carnyx_fear
+	units/carnyx_encouragement
+  </Auras>
+  <Cost>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>80</metal>
+      <coin>80</coin>
+      <glory>0</glory>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>gaul</Civ>
+    <SpecificName>Carnyx Player</SpecificName>
+    <SelectionGroupName>units/gaul/champion_infantry_trumpeter</SelectionGroupName>
+    <RequiredTechnology>celts/speed_carnyx</RequiredTechnology>
+    <Icon>units/gaul_champion_swordsman_carnyx.png</Icon>
+  </Identity>
+  <RangeOverlayRenderer/>
+  <OverlayRenderer/>
+  <TrainingRestrictions>
+    <Category>Carnyx</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed>11.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/gauls/champion_carnyx.xml</Actor>
+  </VisualActor>
+</Entity>

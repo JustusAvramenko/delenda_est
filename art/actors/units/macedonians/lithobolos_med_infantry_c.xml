@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Hele Chalcidean Helmet-03">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_b3.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Chalcidean Helmet-04">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_b4.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Chalcidean Helmet-05">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_b5.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="tunic-hele_tunic">
+      <textures>
+        <texture file="skeletal/hele_tunic.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-rome_tunic_servus_1_caucasian">
+      <textures>
+        <texture file="skeletal/rome_tunic_servus_1_caucasian.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-hele_tunic_3_a">
+      <textures>
+        <texture file="skeletal/hele_tunic_3_a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-hele_tunic_3_b">
+      <textures>
+        <texture file="skeletal/hele_tunic_3_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-hele_tunic_3_c">
+      <textures>
+        <texture file="skeletal/hele_tunic_3_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_citizen_soldier.xml"/>
+    <variant file="biped/attack_ranged_lithobolos_med_03.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<objects>
+
+<script directory="gui/common/"/>
+<script directory="gui/maps/"/>
+<script directory="gui/session/"/>
+<script directory="gui/session/chat/"/>
+<script directory="gui/session/developer_overlay/"/>
+<script directory="gui/session/diplomacy/"/>
+<script directory="gui/session/diplomacy/playercontrols/"/>
+<script directory="gui/session/lobby/"/>
+<script directory="gui/session/lobby/LobbyRatingReport/"/>
+<script directory="gui/session/message_box/"/>
+<script directory="gui/session/minimap/"/>
+<script directory="gui/session/objectives/"/>
+<script directory="gui/session/top_panel/"/>
+<script directory="gui/session/top_panel/IconButtons/"/>
+<script directory="gui/session/trade/"/>
+
+<object name="session">
+
+	<action on="Tick">
+		onTick();
+	</action>
+
+	<action on="SavegameLoaded">
+		restoreSavedGameData(arguments[0]);
+	</action>
+
+	<action on="SimulationUpdate">
+		onSimulationUpdate();
+	</action>
+
+	<!-- Hotkeys won't work properly unless outside menu -->
+	<include directory="gui/session/hotkeys/"/>
+
+	<include file="gui/session/NetworkStatusOverlay.xml"/>
+	<include file="gui/session/PauseOverlay.xml"/>
+	<include file="gui/session/TimeNotificationOverlay.xml"/>
+
+	<!-- Chat messages -->
+	<object name="chatPanel" size="0 131 100% 100%-240" z="0" absolute="true">
+		<object name="chatLines">
+			<repeat count="20">
+				<object name="chatLine[n]" size="3 0 100% 17" type="button" style="chatPanelOverlay" tooltip_style="sessionToolTipBottomBold" ghost="true" hidden="true"/>
+			</repeat>
+		</object>
+	</object>
+
+	<include directory="gui/session/chat/"/>
+	<include directory="gui/session/developer_overlay/"/>
+	<include directory="gui/session/dialogs/"/>
+	<include directory="gui/session/diplomacy/"/>
+	<include directory="gui/session/objectives/"/>
+	<include file="gui/session/GameSpeedControl.xml"/>
+	<include file="gui/session/PanelEntities.xml"/>
+	<include file="gui/session/ResearchProgress.xml"/>
+	<include file="gui/session/TopPanel.xml"/>
+	<include file="gui/session/trade/TradeDialog.xml"/>
+	<include file="gui/session/tutorial_panel.xml"/>
+	<include file="gui/session/Menu.xml"/>
+
+	<!-- Contains miscellanious objects s.a.: the technology research -->
+	<!-- progress, group selection icons, and the hero selection icon -->
+	<include directory="gui/session/session_objects/"/>
+
+	<!-- Information tooltip -->
+	<!-- Follows the mouse around if 'independent' is set to 'true'. -->
+	<object name="informationTooltip" type="tooltip" independent="true" style="informationTooltip"/>
+
+	<!-- Structure placement info tooltip -->
+	<object name="placementTooltip" type="tooltip" independent="true" style="informationTooltip"/>
+
+	<!-- START of BOTTOM PANEL -->
+	<!-- Limit to the minimal supported width of 1024 pixels. -->
+	<object size="50%-512 0 50%+512 100%">
+
+		<object size="50%-960 100%-256 50%-704 100%">
+			<include directory="gui/session/minimap/"/>
+		</object>
+
+		<!-- Supplemental Details Panel (left). -->
+		<object name="supplementalSelectionDetails"
+			size="50%-316 100%-166 50%-110 100%"
+			sprite="supplementalDetailsPanel"
+			type="image"
+			z="20"
+		>
+			<include directory="gui/session/selection_panels_left/"/>
+		</object>
+
+		<!-- Selection Details Panel (middle). -->
+		<object name="selectionDetails"
+			size="50%-114 100%-200 50%+114 100%"
+			sprite="selectionDetailsPanel"
+			type="image"
+		>
+			<include directory="gui/session/selection_panels_middle/"/>
+		</object>
+
+		<!-- Commands Panel (right). -->
+		<object name="unitCommands"
+			size="50%+110 100%-166 50%+512 100%"
+			sprite="unitCommandsPanel"
+			type="image"
+			z="20"
+		>
+			<include directory="gui/session/selection_panels_right/"/>
+		</object>
+	</object><!-- END OF BOTTOM PANEL -->
+</object> <!-- END OF SESSION OBJECT -->
+
+<!-- Selection bandbox -->
+<object name="bandbox" type="image" sprite="bandbox" ghost="true" hidden="true" z="200"/>
+
+</objects>
