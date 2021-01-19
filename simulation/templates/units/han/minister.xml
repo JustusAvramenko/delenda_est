@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>2.0</Hack>
-        <Pierce>4.0</Pierce>
-        <Crush>4.0</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Capture>
       <AttackName>Capture</AttackName>
@@ -31,6 +22,10 @@
       <glory>100</glory>
     </Resources>
   </Cost>
+  <Footprint>
+    <Circle radius="1.5"/>
+    <Height>2.5</Height>
+  </Footprint>
   <Health>
     <Max>300</Max>
   </Health>
@@ -51,12 +46,21 @@ Use to boost the efficiency of nearby units and buildings. Garrison within a bui
   </Minimap>
   <RangeOverlayManager/>
   <RangeOverlayRenderer/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2.0</Hack>
+        <Pierce>4.0</Pierce>
+        <Crush>4.0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Selectable>
     <Overlay>
       <AlwaysVisible/>
       <Texture>
-        <MainTexture>256x256/star.png</MainTexture>
-        <MainTextureMask>256x256/star_mask.png</MainTextureMask>
+        <MainTexture>128x128/octagram.png</MainTexture>
+        <MainTextureMask>128x128/octagram_mask.png</MainTextureMask>
       </Texture>
     </Overlay>
   </Selectable>
