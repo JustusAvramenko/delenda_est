@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>1</Hack>
-        <Pierce>50</Pierce>
-        <Crush>5</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Capturable>
-    <CapturePoints>500</CapturePoints>
-    <RegenRate>10</RegenRate>
-    <GarrisonRegenRate>10</GarrisonRegenRate>
+    <CapturePoints>400</CapturePoints>
+    <RegenRate>0.5</RegenRate>
+    <GarrisonRegenRate>1.5</GarrisonRegenRate>
   </Capturable>
   <Cost>
-    <Population>3</Population>
+    <Population>5</Population>
   </Cost>
   <Decay>
     <DelayTime>0.0</DelayTime>
@@ -26,7 +17,7 @@
     <Unhealable>true</Unhealable>
   </Health>
   <Identity>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+	<VisibleClasses datatype="tokens">Siege</VisibleClasses>
     <GenericName>Siege</GenericName>
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
@@ -36,30 +27,49 @@
     <wood>50</wood>
     <stone>0</stone>
     <metal>25</metal>
+    <glory>10</glory>
   </Loot>
+  <UnitAI>
+    <CanGuard>false</CanGuard>
+  </UnitAI>
   <Position>
     <Anchor>pitch-roll</Anchor>
+    <TurnRate>2</TurnRate>
   </Position>
   <Repairable>
-    <RepairTimeRatio>4.0</RepairTimeRatio>
+    <RepairTimeRatio>2.0</RepairTimeRatio>
   </Repairable>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>5</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer disable=""/>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/rounded_rectangle.png</MainTexture>
+        <MainTextureMask>128x256/rounded_rectangle_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>attack/siege/siege_select.xml</select>
       <order_walk>attack/siege/ram_move.xml</order_walk>
       <order_attack>attack/siege/ram_move.xml</order_attack>
       <trained>attack/siege/ram_trained.xml</trained>
+      <attack_impact_ranged>attack/impact/impact_arrow_all.xml</attack_impact_ranged>
+      <attack_melee>attack/siege/ram_attack.xml</attack_melee>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
     </SoundGroups>
   </Sound>
-  <StatusBars>
-    <BarWidth>4.0</BarWidth>
-    <BarHeight>0.5</BarHeight>
-  </StatusBars>
-  <UnitAI>
-    <CanGuard>false</CanGuard>
-  </UnitAI>
   <UnitMotion>
     <PassabilityClass>large</PassabilityClass>
-    <RunMultiplier>1</RunMultiplier>
+    <WalkSpeed op="mul">0.6</WalkSpeed>
   </UnitMotion>
 </Entity>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_mechanical_ship_warship">
+<Entity parent="template_unit_ship_warship">
   <Attack>
     <Ranged>
       <AttackName>Arrow</AttackName>
@@ -8,7 +8,7 @@
         <Pierce>20.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
-      <MaxRange>55.0</MaxRange>
+      <MaxRange>60.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
@@ -25,40 +25,40 @@
     </Ranged>
   </Attack>
   <BuildingAI>
-    <DefaultArrowCount>2</DefaultArrowCount>
+    <DefaultArrowCount>3</DefaultArrowCount>
     <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
-	<MaxArrowCount>5</MaxArrowCount>
+	<MaxArrowCount>10</MaxArrowCount>
 	<GarrisonArrowClasses>Infantry Ranged</GarrisonArrowClasses>
   </BuildingAI>
   <Cost>
-    <Population>2</Population>
-    <BuildTime>20</BuildTime>
+    <Population>3</Population>
+    <BuildTime>25</BuildTime>
     <Resources>
-      <food>100</food>
-      <wood>100</wood>
+      <food>150</food>
+      <wood>150</wood>
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="9.0" depth="36.0"/>
-    <Height>10.0</Height>
+    <Square width="11.0" depth="44.0"/>
+    <Height>8.0</Height>
   </Footprint>
   <GarrisonHolder>
-    <Max>20</Max>
+    <Max>30</Max>
     <EjectHealth>0</EjectHealth>
-    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry Dog</List>
+    <EjectClassesOnDestroy datatype="tokens">FemaleCitizen Infantry Dog</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Cavalry Siege Elephant Dog</List>
     <BuffHeal>0</BuffHeal>
     <LoadingRange>10</LoadingRange>
     <Pickup>true</Pickup>
   </GarrisonHolder>
   <Health>
-    <Max>300</Max>
+    <Max>400</Max>
   </Health>
   <Identity>
-    <GenericName>Light Warship</GenericName>
-    <Tooltip>Light Warship, good for harassing enemy coastlines and trade routes.</Tooltip>
-    <VisibleClasses datatype="tokens">Light Bow Ranged</VisibleClasses>
-	<RequiredTechnology>phase_town</RequiredTechnology>
+    <GenericName>Medium Warship</GenericName>
+    <Tooltip>Medium Warship, good for naval combat and transporting troops.</Tooltip>
+    <VisibleClasses datatype="tokens">Medium Bow Ranged NavalRam</VisibleClasses>
+	<RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
   <Selectable>
     <Overlay>
