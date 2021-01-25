@@ -15,9 +15,12 @@
   <Cost>
     <BuildTime>100</BuildTime>
     <Resources>
+      <food>0</food>
       <wood>200</wood>
       <stone>100</stone>
+      <metal>0</metal>
       <coin>0</coin>
+      <glory>0</glory>
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -49,6 +52,11 @@
   <Obstruction>
     <Static width="16.0" depth="16.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+	  celts/gather_farming_harvester
+    </Technologies>
+  </ProductionQueue>
   <RallyPoint disable=""/>
   <ResourceDropsite>
     <Types>food</Types>
