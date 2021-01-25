@@ -3,13 +3,13 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>cloudless</SkySet>
-		<SunColor r="0.858824" g="0.803922" b="0.639216"/>
-		<SunElevation angle="0.809942"/>
-		<SunRotation angle="-0.638136"/>
-		<AmbientColor r="0.501961" g="0.501961" b="0.501961"/>
+		<SunColor r="0.998897" g="0.918015" b="0.679412"/>
+		<SunElevation angle="0.723107"/>
+		<SunRotation angle="-0.34195"/>
+		<AmbientColor r="0.243137" g="0.301961" b="0.384314"/>
 		<Fog>
-			<FogFactor>0.0015625</FogFactor>
-			<FogThickness>0.400391</FogThickness>
+			<FogFactor>0.00255859</FogFactor>
+			<FogThickness>0.102051</FogThickness>
 			<FogColor r="0.8" g="0.8" b="0.894118"/>
 		</Fog>
 		<Water>
@@ -19,20 +19,20 @@
 				<Tint r="0" g="1" b="1"/>
 				<Height>33.0492</Height>
 				<Waviness>3</Waviness>
-				<Murkiness>0.643555</Murkiness>
+				<Murkiness>0.743164</Murkiness>
 				<WindAngle>1.73033</WindAngle>
 			</WaterBody>
 		</Water>
 		<Postproc>
 			<Brightness>0</Brightness>
 			<Contrast>1.00781</Contrast>
-			<Saturation>0.99</Saturation>
+			<Saturation>0.935547</Saturation>
 			<Bloom>0.1999</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="383.824" y="95.0452" z="373.972"/>
+		<Position x="337.199" y="106.88" z="702.23"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -50,31 +50,20 @@
   "LockTeams": false,
   "Name": "Cycladic Archipelago (2)",
   "PlayerData": [
-    null,
     {
-      "Color": {
-        "b": 200,
-        "g": 46,
-        "r": 46
-      },
       "Name": "Player 1"
     },
     {
-      "Color": {
-        "b": 20,
-        "g": 20,
-        "r": 150
-      },
       "Name": "Player 2"
     }
   ],
   "Preview": "cycladic_archipelago_2.png",
   "RevealMap": false,
+  "Seed": 0,
+  "Size": 384,
   "VictoryConditions": [
     "domination"
-  ],
-  "Seed": 0,
-  "Size": 384
+  ]
 }
 ]]></ScriptSettings>
 	<Entities>
@@ -7288,12 +7277,6 @@
 		<Entity uid="1373">
 			<Template>actor|geology/stone_medit_med.xml</Template>
 			<Position x="592.5058" z="659.68653"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="1374">
-			<Template>gaia/special_ruins</Template>
-			<Player>0</Player>
-			<Position x="817.35431" z="366.20002"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1375">
