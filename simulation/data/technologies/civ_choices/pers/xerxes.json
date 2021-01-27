@@ -1,0 +1,28 @@
+{
+	"genericName": "Xerxes I",
+	"description": "(King, 485 BC - 465 BC) The son of Darius the Great and Atoosa, a daughter of Cyrus the Great, Xerxes was an able administrator, who also extended Imperial rule into Chorasmia. Apart from his failed invasion of Greece, he was famous for his extensive building program, especially at Persepolis.",
+	"icon": "pers_hero_xerxes_card.png",
+	"tooltip": "Select Xerxes I to lead your civilization.",
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}/hero_cyrus_infantry -units/{civ}/hero_darius_I_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}/hero_cyrus_mounted -units/{civ}/hero_darius_I_mounted",
+			"affects": "Apadana"
+		},
+		{
+			"value": "ProductionQueue/Technologies/_string",
+			"tokens": "-persians/temple_human_rights",
+			"affects": "Temple"
+		},
+		{
+			"value": "ProductionQueue/Technologies/_string",
+			"tokens": "-persians/speed_royal_road_03",
+			"affects": "Market"
+		}
+	]
+}

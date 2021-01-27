@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_spearman">
+  <Auras datatype="tokens">
+    units/heroes/pers_hero_cyrus
+  </Auras>
+  <Identity>
+    <Civ>pers</Civ>
+	<Lang>persian</Lang>
+    <SpecificName>Cyrus II The Great</SpecificName>
+    <Icon>units/pers/hero_cyrus.png</Icon>
+    <History>(559 BC - 530 BC) The son of a Median princess and the ruler of Anshan; justly called the 'Father of the Empire', Cyrus the Great conquered Media, Lydia, Babylonia and Bactria, thereby establishing the Persian Empire. He was also renown as a benevolent conqueror. Technically the second ruler of the Persians by that name, and so appears as Kurush II on his documents and coins. Kurush I was his grandfather.</History>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/pers/hero_cyrus_mounted</Entity>
+      <Tooltip>This gives Cyrus his War Chariot, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/persians/hero_infantry_spearman_cyrus.xml</Actor>
+  </VisualActor>
+</Entity>

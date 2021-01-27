@@ -3,12 +3,12 @@
   <Attack>
     <Ranged>
       <Damage>
-	    <Hack>0.0</Hack>
-        <Pierce>30.0</Pierce>
-        <Crush>0.0</Crush>
+	    <Hack>0</Hack>
+        <Pierce>30</Pierce>
+        <Crush>0</Crush>
       </Damage>
-      <MaxRange>64.0</MaxRange>
-      <MinRange>12.0</MinRange>
+      <MaxRange>64</MaxRange>
+      <MinRange>0</MinRange>
     </Ranged>
   </Attack>
   <Auras datatype="tokens">
@@ -16,16 +16,16 @@
 	chariot_trample_e
   </Auras>
   <Footprint replace="">
-    <Square width="6.0" depth="12.0"/>
-    <Height>5.0</Height>
+    <Square width="6" depth="12"/>
+    <Height>5</Height>
   </Footprint>
   <Health>
-    <Max>1000</Max>
+    <Max op="mul">1.25</Max>
   </Health>
   <Identity>
     <Civ>pers</Civ>
 	<Lang>persian</Lang>
-    <Classes datatype="tokens">Chariot</Classes>
+    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
 	<SpecificName>Xerxes I</SpecificName>
     <Icon>units/pers/hero_xerxes.png</Icon>
     <History>(King, 485 BC - 465 BC) The son of Darius the Great and Atoosa, a daughter of Cyrus the Great, Xerxes was an able administrator, who also extended Imperial rule into Chorasmia. Apart from his failed invasion of Greece, he was famous for his extensive building program, especially at Persepolis.</History>
@@ -37,9 +37,6 @@
     <stone>0</stone>
     <metal>100</metal>
   </Loot>
-  <UnitMotion>
-    <WalkSpeed>18.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/persians/hero_chariot_archer_xerxes_m.xml</Actor>
   </VisualActor>

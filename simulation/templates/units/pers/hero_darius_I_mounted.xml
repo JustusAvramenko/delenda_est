@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_archer">
+  <Attack>
+    <Ranged>
+      <Damage>
+	    <Hack>0</Hack>
+        <Pierce>30</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+      <MaxRange>64</MaxRange>
+      <MinRange>0</MinRange>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/pers_hero_darius
+	chariot_trample_e
+  </Auras>
+  <Footprint replace="">
+    <Square width="6.0" depth="12.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max op="mul">1.25</Max>
+  </Health>
+  <Identity>
+    <Civ>pers</Civ>
+	<Lang>persian</Lang>
+    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
+	<SpecificName>Darius I the Great</SpecificName>
+    <Icon>units/pers/hero_darius.png</Icon>
+    <History>(King, 521 BC - 486 BC) The son of Vishtaspa (Hystaspes), the satrap of Parthia and Hyrcania; a great administrator as well as a decent general, Darius introduced the division of the empire into satrapies and conquered NW India, Thrace and Macedonia. He was called the 'Merchant of the Empire'.</History>
+  </Identity>
+  <Loot>
+    <xp>300</xp>
+    <food>0</food>
+    <wood>20</wood>
+    <stone>0</stone>
+    <metal>100</metal>
+  </Loot>
+  <VisualActor>
+    <Actor>units/persians/hero_chariot_archer_darius_m.xml</Actor>
+  </VisualActor>
+</Entity>

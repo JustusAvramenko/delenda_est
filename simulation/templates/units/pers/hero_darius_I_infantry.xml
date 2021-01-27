@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/pers_hero_darius
+  </Auras>
+  <Identity>
+    <Civ>pers</Civ>
+	<Lang>persian</Lang>
+	<SpecificName>Darius The Great</SpecificName>
+    <Icon>units/pers/hero_darius.png</Icon>
+    <History>(King, 521 BC - 486 BC) The son of Vishtaspa (Hystaspes), the satrap of Parthia and Hyrcania; a great administrator as well as a decent general, Darius introduced the division of the empire into satrapies and conquered NW India, Thrace and Macedonia. He was called the 'Merchant of the Empire'.</History>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/pers/hero_darius_I_mounted</Entity>
+      <Tooltip>This gives Darius I his War Chariot, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>300</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/persians/hero_infantry_swordsman_darius_I.xml</Actor>
+  </VisualActor>
+</Entity>

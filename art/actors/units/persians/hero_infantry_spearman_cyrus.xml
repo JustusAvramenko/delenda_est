@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_pers_hero_1.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/pers_kidaris_royal_loose.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/spear_lance_persian.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/pers_taka_cyrus.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/pers_quiver_hip.xml" attachpoint="sheath_L"/>
+        <prop actor="props/units/pers_bactrian_arm_left_bronze.xml" attachpoint="shoulderpad_L"/>
+        <prop actor="props/units/pers_bactrian_arm_right_bronze.xml" attachpoint="shoulderpad_R"/>
+        <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="skeletal/pers_hero_cyrus.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_spearman_shield_ready.xml" frequency="1" name="Spearman-Shield-Ready"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
