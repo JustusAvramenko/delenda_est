@@ -11,25 +11,25 @@
     <Circle radius="20.0"/>
     <Height>8.0</Height>
   </Footprint>
-  <Obstruction>
-    <Static width="32.0" depth="32.0"/>
-  </Obstruction>
+  <GarrisonHolder disable=""/>
   <Health>
     <Max>1000</Max>
   </Health>
   <Identity>
     <Civ>noba</Civ>
     <SpecificName>Pr-nsw</SpecificName>
+    <Classes datatype="tokens">Barter</Classes>
     <RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
+  <Obstruction>
+    <Static width="32.0" depth="32.0"/>
+  </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
 	  units/noba/infantry_clubman
 	  units/noba/infantry_javelineer
     </Entities>
     <Technologies datatype="tokens">
-      -phase_town_{civ}
-      -phase_city_{civ}
       -phase_imperial_{civ}
 	  -pair_taxes_01
 	  -pair_taxes_02
