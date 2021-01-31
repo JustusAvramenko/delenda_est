@@ -4,12 +4,20 @@
     <Circle radius="15.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <Max>5</Max>
+    <EjectHealth>0.5</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Animal</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>4</LoadingRange>
+  </GarrisonHolder>
   <Health>
     <Max>1000</Max>
     <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <Civ>nuba</Civ>
+    <Civ>noba</Civ>
 	<VisibleClasses datatype="tokens">Corral</VisibleClasses>
     <Tooltip>Train cavalry soldiers. Raise herd animals for food. Research improvements for cavalry and ranching.</Tooltip>
   </Identity>
@@ -34,7 +42,7 @@
   </TerritoryInfluence>
   <VisualActor>
     <ConstructionPreview disable=""/>
-    <Actor>structures/nubas/stable.xml</Actor>
+    <Actor>structures/noba/stable.xml</Actor>
     <FoundationActor>structures/xiongnu/corral_foundation.xml</FoundationActor>
   </VisualActor>
 </Entity>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+    kush_pyramids_territory
+  </Auras>
+  <BuildRestrictions>
+    <Category>PyramidSmall</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>1000</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <food>400</food>
+      <wood>0</wood>
+      <stone>200</stone>
+      <metal>0</metal>
+      <glory>0</glory>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="18.0" depth="18.0"/>
+    <Height>15.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>kush</Civ>
+    <GenericName>Small Pyramid</GenericName>
+    <SpecificName>mr</SpecificName>
+    <Classes datatype="tokens">
+	  -ConquestCritical
+	  PyramidSmall
+	  CivSpecific
+	</Classes>
+    <VisibleClasses datatype="tokens">-City Village Pyramid</VisibleClasses>
+    <Tooltip>Increase territory radius of Civic Centers for each Meroitic Pyramid captured.</Tooltip>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Icon>structures/kush_pyramid_small.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="16.0" depth="16.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_greek_theater.xml</select>
+      <constructed>interface/alarm/alarm_phase.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>12.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Vision>
+    <Range>15</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/kushites/pyramid_small.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

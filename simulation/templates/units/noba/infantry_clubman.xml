@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee_swordsman">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack op="add">-1</Hack>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Melee>
       <Damage>
@@ -16,18 +9,33 @@
       </Damage>
     </Melee>
   </Attack>
+  <Builder>
+	<Entities datatype="tokens">
+      -structures/wallset_palisade
+    </Entities>
+  </Builder>
+  <Cost>
+    <BuildTime>10</BuildTime>
+  </Cost>
   <Identity>
-    <Civ>nuba</Civ>
+    <Civ>noba</Civ>
     <Lang>napatan</Lang>
-    <SpecificName>Nuba Clubman</SpecificName>
+    <SpecificName>Noba Clubman</SpecificName>
     <GenericName>Club Infantry</GenericName>
     <Icon>units/kush/merc_infantry_1.png</Icon>
   </Identity>
   <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
   <UnitMotion>
     <WalkSpeed op="mul">1.2</WalkSpeed>
   </UnitMotion>
   <VisualActor>
-    <Actor>units/mercenaries/nuba_clubman.xml</Actor>
+    <Actor>units/mercenaries/noba_clubman.xml</Actor>
   </VisualActor>
 </Entity>

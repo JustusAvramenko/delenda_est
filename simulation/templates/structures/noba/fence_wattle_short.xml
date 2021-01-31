@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure">
+  <Capturable disable=""/>
+  <Footprint>
+    <Square width="2" depth="6"/>
+    <Height>4.0</Height>
+  </Footprint>
+  <Health>
+    <Max>50</Max>
+  </Health>
+  <Identity>
+    <GenericName>Fence</GenericName>
+    <SpecificName>Short Wattle Fence</SpecificName>
+    <SelectionGroupName>structures/noba/fence_wattle_long</SelectionGroupName>
+    <Icon>gaia/special_fence.png</Icon>
+  </Identity>
+  <Loot>
+    <wood>5</wood>
+  </Loot>
+  <Obstruction>
+    <Static width="1.5" depth="4"/>
+  </Obstruction>
+  <Position>
+    <Anchor>pitch-roll</Anchor>
+  </Position>
+  <ProductionQueue disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>10</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <StatusBars>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <VisualActor>
+    <Actor>props/structures/germans/fence_b_short.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>4</Length>
+    <Orientation>0.5</Orientation>
+  </WallPiece>
+</Entity>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/celt_trader.dae</mesh>
+      <textures>
+        <texture file="null_white.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="Nubian A">
+      <props>
+        <prop actor="structures/noba/house_nubian_a.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="2" name="Nubia B">
+      <props>
+        <prop actor="structures/noba/house_nubian_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="2" name="Nubia C">
+      <props>
+        <prop actor="structures/noba/house_nubian_c.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

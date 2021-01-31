@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure">
+  <Capturable disable=""/>
+  <Footprint>
+    <Square width="2" depth="18"/>
+    <Height>4.0</Height>
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <GenericName>Fence</GenericName>
+    <SpecificName>Long Wattle Fence</SpecificName>
+    <Icon>gaia/special_fence.png</Icon>
+  </Identity>
+  <Loot>
+    <wood>20</wood>
+  </Loot>
+  <Obstruction>
+    <Static width="1.5" depth="16"/>
+  </Obstruction>
+  <Position>
+    <Anchor>pitch-roll</Anchor>
+  </Position>
+  <ProductionQueue disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>10</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <StatusBars>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <VisualActor>
+    <Actor>props/structures/germans/fence_b_large.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>16</Length>
+    <Orientation>0.5</Orientation>
+  </WallPiece>
+</Entity>
