@@ -2,7 +2,7 @@
 <Entity parent="template_structure">
   <Capturable disable=""/>
   <Footprint>
-    <Square width="2" depth="10"/>
+    <Square width="2" depth="14"/>
     <Height>4.0</Height>
   </Footprint>
   <Health>
@@ -10,14 +10,15 @@
   </Health>
   <Identity>
     <GenericName>Fence</GenericName>
-    <SpecificName>Long Wattle Fence</SpecificName>
-    <Icon>gaia/special_fence.png</Icon>
+    <SpecificName>Medium Wattle Fence</SpecificName>
+    <SelectionGroupName>structures/fence_wattle_long</SelectionGroupName>
+    <Icon>structures/palisade_wall.png</Icon>
   </Identity>
   <Loot>
     <wood>10</wood>
   </Loot>
   <Obstruction>
-    <Static width="1.5" depth="8"/>
+    <Static width="1.5" depth="12"/>
   </Obstruction>
   <Position>
     <Anchor>pitch-roll</Anchor>
@@ -37,7 +38,7 @@
   </StatusBars>
   <TerritoryDecay disable=""/>
   <VisualActor>
-    <Actor>props/structures/germans/fence_b_medium.xml</Actor>
+    <Actor>structures/noba/fence_medium.xml</Actor>
   </VisualActor>
   <WallPiece>
     <Length>8</Length>
