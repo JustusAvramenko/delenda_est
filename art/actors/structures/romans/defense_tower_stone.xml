@@ -3,13 +3,10 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="defense tower 1">
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <mesh>structural/rome_tower_artillery.dae</mesh>
       <props>
-        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
-        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="projectile"/>
         <prop actor="props/structures/decals/spart_1x1.xml" attachpoint="root"/>
       </props>
       <textures>
@@ -20,13 +17,9 @@
       </textures>
     </variant>
     <variant frequency="1" name="defense tower 2">
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <mesh>structural/rome_tower_bolt.dae</mesh>
       <props>
-        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
-        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="projectile"/>
         <prop actor="props/structures/decals/spart_1x1.xml" attachpoint="root"/>
       </props>
       <textures>

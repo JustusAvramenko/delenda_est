@@ -3,13 +3,10 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="Base">
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <mesh>structural/rome_tower_artillery.dae</mesh>
       <props>
+        <prop actor="props/units/weapons/tower_artillery_projectile.xml" attachpoint="loaded-projectile"/>
         <prop actor="props/units/weapons/tower_artillery_projectile.xml" attachpoint="projectile"/>
-        <prop actor="props/units/weapons/rock_flaming.xml" attachpoint="loaded-projectile"/>
         <prop actor="props/structures/decals/spart_1x1.xml" attachpoint="root"/>
       </props>
       <textures>

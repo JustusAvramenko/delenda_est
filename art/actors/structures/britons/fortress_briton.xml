@@ -3,9 +3,6 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="Brythonic Broch">
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <mesh>structural/brit_fortress_struct1.dae</mesh>
       <props>
         <prop actor="props/structures/britons/fortress_props_1.xml" attachpoint="root"/>
@@ -25,9 +22,6 @@
       </textures>
     </variant>
     <variant frequency="0" name="Celt Broch">
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <mesh>structural/brit_fortress_2.dae</mesh>
       <props>
         <prop actor="particle/smoke_light_delay.xml" attachpoint="smokea"/>
@@ -43,9 +37,6 @@
       </textures>
     </variant>
     <variant frequency="0" name="Celt Broch test">
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <mesh>structural/brit_fortress_2.dae</mesh>
       <props>
         <prop actor="particle/smoke_light_delay.xml" attachpoint="smokea"/>
@@ -61,9 +52,6 @@
       </textures>
     </variant>
     <variant frequency="0" name="Pict Broch">
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <mesh>structural/brit_fortress_2_b.dae</mesh>
       <props>
         <prop actor="particle/smoke_light_delay.xml" attachpoint="smokea"/>
@@ -79,15 +67,12 @@
       </textures>
     </variant>
     <variant frequency="0" name="Pict Broch test">
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <mesh>structural/brit_fortress_2_b.dae</mesh>
       <props>
         <prop actor="particle/smoke_light_delay.xml" attachpoint="smokea"/>
         <prop actor="props/structures/decals/gravel_5x5.xml" attachpoint="root"/>
-        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="loaded-projectile"/>
-        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+        <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="projectile"/>
       </props>
       <textures>
         <texture file="structural/brit_struct.png" name="baseTex"/>

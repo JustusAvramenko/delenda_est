@@ -3,16 +3,13 @@
   <castshadow/>
   <group>
     <variant frequency="100" name="scout tower">
-      <animations>
-        <animation event="0.5" load="0" name="attack_ranged" speed="100"/>
-      </animations>
       <mesh>structural/hele_scout_tower.dae</mesh>
       <props>
         <prop actor="props/structures/hellenes/scout_tower_fancy.xml" attachpoint="root"/>
         <prop actor="props/structures/hellenes/scout_tower_props.xml" attachpoint="root"/>
         <prop actor="props/structures/decals/dirt_1x1.xml" attachpoint="root"/>
-        <prop actor="props/units/weapons/bolt.xml" attachpoint="loaded-projectile"/>
-        <prop actor="props/units/weapons/bolt.xml" attachpoint="projectile"/>
+        <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="projectile"/>
       </props>
       <textures>
         <texture file="structural/hele_struct_b.dds" name="baseTex"/>
