@@ -4,6 +4,9 @@
   <group>
     <variant frequency="0" name="Wall_Tower">
       <mesh>structural/kart_wall_tower.dae</mesh>
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
       <props>
         <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="loaded-projectile"/>
         <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="projectile"/>
@@ -14,6 +17,9 @@
     </variant>
     <variant frequency="1" name="new">
       <mesh>structural/kart_wall_tower_b.dae</mesh>
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
       <props>
         <prop actor="props/units/weapons/arrow_front.xml" attachpoint="loaded-projectile"/>
         <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>

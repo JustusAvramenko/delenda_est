@@ -4,6 +4,9 @@
   <group>
     <variant frequency="0" name="Base">
       <mesh>structural/gaul_fortress_struct1.dae</mesh>
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
       <props>
         <prop actor="props/structures/gauls/fortress_broch.xml" attachpoint="root"/>
         <prop actor="props/structures/gauls/fortress_props_1.xml" attachpoint="root"/>
@@ -24,10 +27,14 @@
     </variant>
     <variant frequency="100" name="New">
       <mesh>structural/gaul_fortress_b.dae</mesh>
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
       <props>
         <prop actor="props/structures/decals/dirt_6x6.xml" attachpoint="root"/>
         <prop actor="props/structures/gauls/fortress_b_roof.xml" attachpoint="root"/>
         <prop actor="props/structures/decals/gravel_5x5.xml" attachpoint="root"/>
+        <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="loaded-projectile"/>
         <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="projectile"/>
       </props>
       <textures>

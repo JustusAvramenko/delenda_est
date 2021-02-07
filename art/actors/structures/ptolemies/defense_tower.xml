@@ -4,6 +4,9 @@
   <group>
     <variant frequency="0" name="Base">
       <mesh>structural/ptol_defense_tower.dae</mesh>
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
       <props>
         <prop actor="props/structures/decals/dirt_1x1.xml" attachpoint="root"/>
         <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="loaded-projectile"/>
@@ -18,6 +21,9 @@
     </variant>
     <variant frequency="100" name="Palestrina">
       <mesh>structural/ptol_defense_tower_2.dae</mesh>
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
       <props>
         <prop actor="props/structures/decals/spart_1x1.xml" attachpoint="root"/>
         <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="loaded-projectile"/>

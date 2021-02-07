@@ -5,6 +5,9 @@
   <group>
     <variant frequency="1" file="others/ships/pers_trireme_oars.xml" name="Persian Trireme">
       <mesh>structural/pers_ship_trireme.dae</mesh>
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
       <props>
         <prop actor="props/structures/persians/trireme_main_sail.xml" attachpoint="main_sail"/>
         <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>

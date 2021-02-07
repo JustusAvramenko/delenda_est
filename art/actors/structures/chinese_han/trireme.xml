@@ -5,6 +5,9 @@
   <group>
     <variant name="Chinese Trireme">
       <mesh>structural/chin_ship_trireme.dae</mesh>
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
       <props>
         <prop actor="props/structures/chinese/trireme_sail.xml" attachpoint="root"/>
         <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="loaded-projectile"/>

@@ -4,11 +4,14 @@
 	<group>
 		<variant frequency="100" name="Norse Long House">
 			<mesh>structural/norse_longhouse.dae</mesh>
+			<animations>
+				<animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+			</animations>
 			<props>
 				<prop actor="props/special/eyecandy/campfire.xml" attachpoint="main"/>
 				<prop actor="props/structures/germans/cc_roof.xml" attachpoint="root"/>
 				<prop actor="props/structures/decals/dirt_10x5.xml" attachpoint="root"/>
-        <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="loaded-projectile"/>
+				<prop actor="props/units/weapons/bolt_tower.xml" attachpoint="loaded-projectile"/>
 				<prop actor="props/units/weapons/bolt_tower.xml" attachpoint="projectile"/>
 			</props>
 			<textures>

@@ -5,6 +5,9 @@
   <group>
     <variant frequency="1" file="others/ships/hele_bireme_oars.xml" name="Hellenic bireme">
       <mesh>structural/hele_ship_bireme.dae</mesh>
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
       <props>
         <prop actor="props/structures/macedonians/bireme_main_sail.xml" attachpoint="sail"/>
         <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="loaded-projectile"/>
