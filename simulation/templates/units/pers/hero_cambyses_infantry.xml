@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_spearman">
+  <Auras datatype="tokens">
+    units/heroes/pers_hero_cyrus
+  </Auras>
+  <Identity>
+    <Civ>pers</Civ>
+	<Lang>persian</Lang>
+    <SpecificName>Cambyses II</SpecificName>
+    <Icon>units/pers/hero_cambyses.png</Icon>
+    <History>Cambyses II was the second King of Kings of the Achaemenid Empire from 530 to 522 BC. He was the son and successor of Cyrus the Great (r. 550 – 530 BC) and his mother was Cassandane.</History>
+    <RequiredTechnology>civ_choices/pers/cambyses</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/pers/hero_cambyses_mounted</Entity>
+      <Tooltip>This gives Cambyses his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/persians/hero_infantry_spearman_cyrus.xml</Actor>
+  </VisualActor>
+</Entity>
