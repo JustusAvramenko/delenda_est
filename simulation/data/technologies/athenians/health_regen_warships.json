@@ -1,13 +1,13 @@
 {
-	"pair": "hellenes/pair_naval_imperial",
+	"pair": "athenians/pair_naval_empire",
 	"genericName": "Arsenal of Philon",
 	"description": "Unlock health regeneration for your Warships.",
 	"cost": {"wood": 500, "stone": 500},
-	"requirements": {"tech": "phase_imperial"},
+	"requirements": {"all": [{"tech": "phase_imperial"}, {"civ": "athen"}]},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "military_engineers.png",
 	"researchTime": 40,
-	"tooltip": "Warships slowly regenerate when damaged.",
+	"tooltip": "Warships +1 health/second repair rate.",
 	"modifications": [{"value": "Health/RegenRate", "add": 1}],
 	"affects": ["Warship"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
