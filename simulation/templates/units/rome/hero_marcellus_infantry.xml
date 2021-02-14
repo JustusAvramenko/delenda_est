@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Melee>
+	  <Bonuses>
+		<BonusHero>
+		  <Classes>Hero</Classes>
+		  <Multiplier>1.0</Multiplier>
+		</BonusHero>
+	  </Bonuses>
+    </Melee>
+  </Attack>
   <Auras datatype="tokens">
-    units/heroes/rome_hero_marcellus_1
-    units/heroes/rome_hero_marcellus_2
+    units/heroes/rome_hero_marcellus
   </Auras>
+  <Cost>
+    <BuildTime>0</BuildTime>
+  </Cost>
   <Identity>
     <Civ>rome</Civ>
     <Lang>latin</Lang>
@@ -19,7 +31,7 @@
         <food>200</food>
         <glory>200</glory>
       </Cost>
-      <Time>10</Time>
+      <Time>0</Time>
     </Mount>
   </Upgrade>
   <VisualActor>
