@@ -1,0 +1,18 @@
+{
+	"genericName": "Water Wheel",
+	"specificName": {
+		"ptol": "Sāqīya",
+		"pers": "Sāqīya",
+		"kush": "Sāqīya"
+	},
+	"description": ".",
+	"cost": {"wood": 200, "glory": 100},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "civ": "ptol" }, { "civ": "kush" }] }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "water_wheel.png",
+	"researchTime": 40,
+	"tooltip": "Workers +20% farming rate.",
+	"modifications": [{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.2}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

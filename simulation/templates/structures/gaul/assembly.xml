@@ -4,11 +4,11 @@
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
-      <wood>300</wood>
-      <stone>300</stone>
+      <wood>200</wood>
+      <stone>0</stone>
       <metal>0</metal>
       <coin>0</coin>
-      <glory>0</glory>
+      <glory>100</glory>
     </Resources>
   </Cost>
   <Identity>
@@ -16,7 +16,7 @@
     <GenericName>Assembly of Princes</GenericName>
     <SpecificName>Remogantion</SpecificName>
     <Tooltip>Train Heroes and the Carnyx special soldier.</Tooltip>
-    <RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>phase_town</RequiredTechnology>
     <Icon>structures/tholos.png</Icon>
   </Identity>
   <Footprint replace="">
@@ -36,9 +36,9 @@
     </TechCostMultiplier>
     <Entities datatype="tokens">
       units/{civ}/champion_infantry_trumpeter
-      units/{civ}/hero_brennus_infantry
-      units/{civ}/hero_viridomarus_infantry
-      units/{civ}/hero_vercingetorix_infantry
+      units/{civ}/hero_brennus_mounted
+      units/{civ}/hero_viridomarus_mounted
+      units/{civ}/hero_vercingetorix_mounted
     </Entities>
     <Technologies datatype="tokens">
 	  celts/special_vae_victis
