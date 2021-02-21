@@ -4,9 +4,6 @@
   <group>
     <variant frequency="1" name="Siege Tower">
       <mesh>structural/han_siege_tower.dae</mesh>
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <props>
         <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="loaded-projectile"/>
         <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
@@ -19,7 +16,7 @@
       </textures>
       <animations>
         <animation file="mechanical/han_siege_tower_idle.dae" name="idle" speed="100"/>
-        <animation file="mechanical/han_siege_tower_attack.dae" load="0.5" name="attack_ranged" speed="100"/>
+        <animation file="mechanical/han_siege_tower_attack.dae" event="0.5" load="0.0" name="attack_ranged" speed="100"/>
         <animation file="mechanical/han_siege_tower_attack.dae" name="attack_melee" speed="100"/>
         <animation file="mechanical/han_siege_tower_walk.dae" name="walk" speed="15"/>
         <animation file="mechanical/han_siege_tower_walk.dae" name="run" speed="24"/>
