@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_spearman">
+  <Auras datatype="tokens">
+    units/heroes/han_hero_han_xin
+  </Auras>
+  <Identity>
+    <Civ>han</Civ>
+    <SpecificName>Emperor Wu of Han</SpecificName>
+    <History>
+	</History>
+    <Icon>units/han/hero_wu_han.png</Icon>
+  	<RequiredTechnology>civ_choices/han/wu_han</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/han/hero_wu_han_mounted</Entity>
+      <Tooltip>This gives Emperor Wu of Han his War Chariot, with trample effects, greater speed, and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>300</food>
+        <glory>300</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/chinese_han/hero_infantry_han_xin.xml</Actor>
+  </VisualActor>
+</Entity>
