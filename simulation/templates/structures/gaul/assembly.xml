@@ -15,7 +15,10 @@
     <Civ>gaul</Civ>
     <GenericName>Assembly of Princes</GenericName>
     <SpecificName>Remogantion</SpecificName>
-    <Tooltip>Train Heroes and the Carnyx special soldier.</Tooltip>
+    <VisibleClasses datatype="tokens">
+	  Assembly
+	</VisibleClasses>
+    <Tooltip>Train Mounted Heroes and the Carnyx special soldier.</Tooltip>
     <RequiredTechnology>phase_town</RequiredTechnology>
     <Icon>structures/tholos.png</Icon>
   </Identity>
@@ -41,6 +44,7 @@
       units/{civ}/hero_vercingetorix_mounted
     </Entities>
     <Technologies datatype="tokens">
+	  celts/speed_carnyx
 	  celts/special_vae_victis
 	  unlock_spies
 	  spy_counter

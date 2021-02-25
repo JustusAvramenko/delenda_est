@@ -1,0 +1,18 @@
+{
+	"genericName": "Brennus",
+	"description": "Brennus.",
+	"icon": "civ_choices/gaul_hero_brennus.png",
+	"tooltip": "Select Brennus Sacker of Rome to lead your civilization.",
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}/hero_viridomarus_infantry -units/{civ}/hero_vercingetorix_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}/hero_viridomarus_mounted -units/{civ}/hero_vercingetorix_mounted",
+			"affects": "Assembly"
+		}
+	]
+}

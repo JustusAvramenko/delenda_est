@@ -1,0 +1,18 @@
+{
+	"genericName": "Viridomarus",
+	"description": "Viridomarus.",
+	"icon": "civ_choices/gaul_hero_viridomarus.png",
+	"tooltip": "Select Viridomarus to lead your civilization.",
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}/hero_brennus_infantry -units/{civ}/hero_vercingetorix_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}/hero_brennus_mounted -units/{civ}/hero_vercingetorix_mounted",
+			"affects": "Assembly"
+		}
+	]
+}
