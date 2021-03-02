@@ -6,9 +6,6 @@
 			<mesh>structural/norse_blacksmith.dae</mesh>
 			<props>
 				<prop actor="props/structures/decals/dirt_2x2.xml" attachpoint="root"/>
-				<prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke"/>
-				<prop actor="particle/flame.xml" attachpoint="fire"/>
-				<prop actor="units/germans/forger.xml" attachpoint="blacksmith"/>
 			</props>
 			<textures>
 				<texture file="structural/norse_struct.png" name="baseTex"/>
@@ -18,5 +15,20 @@
 			</textures>
 		</variant>
 	</group>
-	<material>player_trans_ao_parallax_spec.xml</material>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="researching">
+      <props>
+		<prop actor="units/germans/forger.xml" attachpoint="blacksmith"/>
+        <prop actor="particle/sparks_blacksmith.xml" attachpoint="smoke"/>
+        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke"/>
+        <prop actor="particle/flame.xml" attachpoint="fire"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_medium.xml"/>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
 </actor>

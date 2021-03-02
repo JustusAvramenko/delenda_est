@@ -5,10 +5,7 @@
     <variant frequency="100" name="Base">
       <mesh>structural/han_blacksmith.dae</mesh>
       <props>
-        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
-        <prop actor="particle/flame.xml" attachpoint="fire"/>
-        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke01"/>
-        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke02"/>
+        <prop actor="props/structures/decals/dirt_6x6.xml" attachpoint="root"/>
         <prop actor="props/geology/geo_waterfall_single_water.xml" attachpoint="waterfall"/>
         <prop actor="props/structures/chinese/blacksmith_water.xml" attachpoint="root"/>
         <prop actor="props/structures/chinese/blacksmith_wheel.xml" attachpoint="root"/>
@@ -19,6 +16,27 @@
         <texture file="structural/chin_struct2_spec.png" name="specTex"/>
         <texture file="structural/ao/chin_blacksmith_ao.png" name="aoTex"/>
       </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="researching">
+      <props>
+        <prop actor="particle/sparks_blacksmith.xml" attachpoint="smoke01"/>
+        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke01"/>
+        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke02"/>
+        <prop actor="particle/flame.xml" attachpoint="fire"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_medium.xml">
+      <props>
+        <prop actor="props/geology/geo_waterfall_single_water.xml" attachpoint="waterfall"/>
+        <prop actor="props/structures/chinese/blacksmith_water.xml" attachpoint="root"/>
+        <prop actor="props/structures/chinese/blacksmith_wheel.xml" attachpoint="root"/>
+      </props>
     </variant>
   </group>
   <material>player_trans_ao_parallax_spec.xml</material>
