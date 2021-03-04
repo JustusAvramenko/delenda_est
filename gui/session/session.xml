@@ -72,13 +72,13 @@
 	<!-- Structure placement info tooltip -->
 	<object name="placementTooltip" type="tooltip" independent="true" style="informationTooltip"/>
 
+	<object size="0 100%-256 256 100%">
+		<include directory="gui/session/minimap/"/>
+	</object>
+
 	<!-- START of BOTTOM PANEL -->
 	<!-- Limit to the minimal supported width of 1024 pixels.  LOL -->
 	<object size="50%-512 0 50%+512 100%">
-
-		<object size="50%-960 100%-256 50%-704 100%">
-			<include directory="gui/session/minimap/"/>
-		</object>
 
 		<!-- Supplemental Details Panel (left). -->
 		<object name="supplementalSelectionDetails"
