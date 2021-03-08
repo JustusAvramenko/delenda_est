@@ -2,13 +2,23 @@
 <Entity parent="template_unit_ship">
   <Attack>
     <Melee>
+      <ApplyStatus>
+        <Burning>
+          <Interval>5000</Interval>
+          <Damage>
+            <Fire>1</Fire>
+          </Damage>
+          <Stackability>Stack</Stackability>
+          <Duration>20000</Duration>
+        </Burning>
+      </ApplyStatus>
       <AttackName>Flames</AttackName>
       <Damage>
-        <Fire>10</Fire>
+        <Fire>5</Fire>
       </Damage>
       <MaxRange>8</MaxRange>
-      <PrepareTime>50</PrepareTime>
-      <RepeatTime>100</RepeatTime>
+      <PrepareTime>100</PrepareTime>
+      <RepeatTime>200</RepeatTime>
       <RestrictedClasses datatype="tokens">!Ship</RestrictedClasses>
 	  <PreferredClasses datatype="tokens">Ship</PreferredClasses>
     </Melee>
