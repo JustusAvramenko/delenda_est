@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_zapo_e.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/zapo_king.xml" attachpoint="helmet"/>
+        <prop actor="props/units/shields/zapo_small_feathers_e.xml" attachpoint="shield"/>
+        <prop actor="props/units/weapons/spear_obsidian.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/zapo_back_banner.xml" attachpoint="back"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="spearman">
+      <textures>
+        <texture file="skeletal/zapo_king.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_spearman_shield_relax_celt_fast.xml" name="Spearman-Shield-Relax-Fast"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/death_cape_gaul.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

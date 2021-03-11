@@ -9,16 +9,18 @@
   </Health>
   <Identity>
     <Civ>zapo</Civ>
-    <GenericName>Barracks</GenericName>
     <SpecificName>Naj Ba’ate’il</SpecificName>
   </Identity>
   <Obstruction>
     <Static width="22.0" depth="23.0"/>
   </Obstruction>
   <ProductionQueue>
-    <Entities datatype="tokens">
-      -units/{civ}/infantry_swordsman_b
-    </Entities>
+	<Technologies datatype="tokens">
+	  upgrade_rank_advanced_infantry_spear
+	  upgrade_rank_elite_infantry_spear
+	  upgrade_rank_advanced_infantry_sword
+	  upgrade_rank_elite_infantry_sword
+	</Technologies>
   </ProductionQueue>
   <VisualActor>
     <Actor>structures/zapotecs/barracks.xml</Actor>

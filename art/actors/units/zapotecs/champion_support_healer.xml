@@ -2,11 +2,11 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_spearman_shield_relax_fast.xml" frequency="100" name="Base">
+    <variant file="biped/base_swordsman_shield_fast.xml" frequency="100" name="Base">
       <animations>
-        <animation file="biped/citizen/healing_m.dae" name="heal" speed="100"/>
+        <animation file="biped/infantry/promotion.dae" name="heal" speed="100"/>
       </animations>
-      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_zapo_priest.xml" attachpoint="head"/>
         <prop actor="props/units/heads/zapo_plume_priest.xml" attachpoint="helmet"/>
@@ -28,7 +28,6 @@
     </variant>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
-    <variant file="biped/gather_praise.xml"/>
     <variant file="biped/build.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
