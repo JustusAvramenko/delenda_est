@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<objects>
+
+	<script directory="gui/common/"/>
+	<script directory="gui/summary/"/>
+
+	<object hotkey="summary">
+		<action on="Press">continueButton();</action>
+	</object>
+
+	<object hotkey="cancel">
+		<action on="Press">
+		if (g_GameData.gui.isInGame)
+			continueButton();
+		</action>
+	</object>
+
+	<object type="image" sprite="ModernFade" name="fadeImage"/>
+
+	<object name="summaryWindow"
+		type="image"
+		style="ModernWindow"
+	>
+		<object name="summaryWindowTitle" type="text" style="ModernLabelText">
+			<translatableAttribute id="caption">Summary</translatableAttribute>
+		</object>
+
+		<object size="20 26 100%-20 92">
+
+			<object name="summaryText"
+				type="text"
+				size="50 16 100%-50 100%-16"
+				font="sans-bold-18"
+				textcolor="255 255 255"
+				text_align="left"
+				text_valign="center"
+			/>
+
+			<object name="timeElapsed"
+				type="text"
+				size="50 16 100%-50 100%-16"
+				font="sans-bold-18"
+				textcolor="255 255 255"
+				text_align="right"
+				text_valign="center"
+			/>
+
+			<object name="mapName"
+				type="text"
+				size="50 16 100%-50 100%-16"
+				font="sans-bold-18"
+				textcolor="255 255 255"
+				text_align="center"
+				text_valign="center"
+			/>
+
+		</object>
+
+		<object name="tabDividerLeft" type="image" sprite="ModernTabHorizontalSpacer" size="20 120 20 122"/>
+		<object name="tabDividerRight" type="image" sprite="ModernTabHorizontalSpacer" size="20 120 100%-20 122"/>
+
+		<object name="tabButtonsFrame" size="17 92 883 120">
+			<include file="gui/common/tab_buttons.xml"/>
+		</object>
+
+		<object name="generalPanel" type="image" sprite="ModernTabHorizontalFrame" size="20 120 100%-20 100%-54">
+			<object size="0 0 100% 100%-50">
+				<object name="playerNameHeading" type="text" style="ModernLeftTopLabelText">
+					<translatableAttribute id="caption">Player name</translatableAttribute>
+				</object>
+				<repeat var="x" count="11">
+					<object name="titleHeading[x]" type="text" style="ModernTopLabelText"/>
+				</repeat>
+				<repeat var="x" count="11">
+					<object name="Heading[x]" type="text" style="ModernTopLabelText"/>
+				</repeat>
+			</object>
+
+			<repeat count="4" var="i">
+				<object type="image" name="teamBoxt[i]" size="0 65 100% 100%-50" hidden="true">
+					<object type="text" name="teamNameHeadingt[i]" size="15 5 100% 100%" style="ModernLeftTopLabelText"/>
+					<object size="0 30 100% 100%">
+						<repeat count="8" var="n">
+							<object type="image" name="playerBoxt[i][n]" size="10 0 10 30" hidden="true">
+								<object name="playerOutcomet[i][n]" type="image" size="4 5 36 37"/>
+								<object name="playerNamet[i][n]" type="text" size="46 2 214 100%" style="ModernLeftLabelText"/>
+								<object name="civIcont[i][n]" type="image" size="214 5 246 37" />
+								<repeat var="x" count="11">
+									<object name="valueDataTeam[i][n][x]" type="text" style="ModernTopLabelText"/>
+								</repeat>
+							</object>
+						</repeat>
+					</object>
+					<object name="teamHeadingt[i]" type="text" style="ModernLeftTopLabelText"/>
+					<repeat var="x" count="11">
+						<object name="valueDataTeam[i][x]" type="text" style="ModernTopLabelText"/>
+					</repeat>
+				</object>
+			</repeat>
+
+			<object type="image" name="noTeamsBox" size="0 65 100% 100%-50" hidden="true">
+				<repeat count="8">
+					<object type="image" name="playerBox[n]" size="10 0 10 30" hidden="true">
+						<object name="playerOutcome[n]" type="image" size="4 5 36 37"/>
+						<object name="playerName[n]" type="text" size="46 2 214 100%" style="ModernLeftLabelText"/>
+						<object name="civIcon[n]" type="image" size="214 5 246 37"/>
+						<repeat var="x" count="11">
+							<object name="valueData[n][x]" type="text" style="ModernTopLabelText"/>
+						</repeat>
+					</object>
+				</repeat>
+			</object>
+		</object>
+		
+		<object name="chartsPanel" type="image" sprite="ModernTabHorizontalFrame" size="20 120 100%-20 100%-54">
+			<repeat count="2" var="k">
+				<object name="chart[k]Part" size="15 0 50%-10 100%-35">
+					<object type="text" style="ModernLeftLabelText" size="1 6 145 26">
+						<translatableAttribute id="caption" context="summary chart">Category:</translatableAttribute>
+					</object>
+					<object name="chart[k]CategorySelection"
+						type="dropdown"
+						style="ModernDropDown"
+						size="5 28 145 52">
+						<translatableAttribute id="tooltip" context="summary chart">Category</translatableAttribute>
+					</object>
+
+					<object type="text" style="ModernLeftLabelText" size="151 6 295 26">
+						<translatableAttribute id="caption" context="summary chart">Value:</translatableAttribute>
+					</object>
+					<object name="chart[k]ValueSelection"
+						type="dropdown"
+						style="ModernDropDown"
+						size="155 28 295 52">
+						<translatableAttribute id="tooltip" context="summary chart">Value</translatableAttribute>
+					</object>
+
+					<object name="chart[k]TypeLabel" type="text" style="ModernLeftLabelText" size="301 6 445 26">
+						<translatableAttribute id="caption" context="summary chart">Type:</translatableAttribute>
+					</object>
+					<object name="chart[k]TypeSelection"
+						type="dropdown"
+						style="ModernDropDown"
+						hidden="true"
+						size="305 28 445 52">
+						<translatableAttribute id="tooltip" context="summary chart">Type</translatableAttribute>
+					</object>
+
+					<object type="image" sprite="color: 255 255 255 20" size="0 75 100% 100%"/>
+					<object name="chart[k]" type="chart" style="ModernChart" format_x="DURATION_SHORT" format_y="INTEGER" size="5 80 100%-5 100%-25"/>
+					<object name="chart[k]XAxisLabel" type="text" style="ModernLabelText" size="5 100%-25 100%-5 100%-5"/>
+				</object>
+			</repeat>
+
+			<object name="chartLegend" type="text" style="ModernLabelText" size="15 100%-35 100%-15 100%-5"/>
+
+			<object name="toggleTeam" size="4 100%+6 50% 100%+34">
+				<object name="toggleTeamBox" size="0 3 22 100%-3" type="checkbox" style="ModernTickBox">
+					<action on="Press">
+						updateChartColorAndLegend();
+						updateCategoryDropdown(0);
+						updateCategoryDropdown(1);
+					</action>
+				</object>
+				<object name="toggleTeamText" size="20 0 100% 100%" type="text" style="ModernLeftLabelText">
+					<translatableAttribute id="caption">Group by team</translatableAttribute>
+				</object>
+			</object>
+		</object>
+
+		<!-- View Lobby Button -->
+		<object name="lobbyButton"
+			type="button"
+			sprite="iconBubbleGold"
+			sprite_over="iconBubbleWhite"
+			size="100%-336 100%-45 100%-320 100%-29"
+			hotkey="lobby"
+		>
+			<action on="Press">
+				if (Engine.HasXmppClient())
+					Engine.PushGuiPage("page_lobby.xml", { "dialog": true });
+			</action>
+		</object>
+
+		<object type="button" name="replayButton" style="ModernButtonRed" size="100%-310 100%-48 100%-170 100%-20">
+			<translatableAttribute id="caption">Watch Replay</translatableAttribute>
+			<action on="Press">startReplay();</action>
+		</object>
+
+		<object type="button" name="continueButton" style="ModernButtonRed" size="100%-160 100%-48 100%-20 100%-20">
+			<translatableAttribute id="caption">Continue</translatableAttribute>
+			<action on="Press">continueButton();</action>
+		</object>
+	</object>
+</objects>
