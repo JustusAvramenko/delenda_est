@@ -3,14 +3,27 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="Base">
-      <mesh>skeletal/new/m_dress.dae</mesh>
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/heads/new/head_hele_e.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/head_spart_a.xml" attachpoint="head"/>
       </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Tunic-Sleeveless-a">
       <textures>
-        <texture file="skeletal/imp_support_citizen.png" name="baseTex"/>
-        <texture file="skeletal/imp_support_citizen_spec.png" name="specTex"/>
-      </textures>
+	    <texture file="skeletal/hele_tunic_2_a.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="Tunic-Sleeveless-b">
+      <textures>
+	    <texture file="skeletal/hele_tunic_2_b.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="Tunic-Sleeveless-c">
+      <textures>
+	    <texture file="skeletal/hele_tunic_2_c.png" name="baseTex"/>
+	  </textures>
     </variant>
   </group>
   <group>
@@ -44,5 +57,5 @@
 	<variant file="biped/approach_ruins.xml"/>
 	<variant file="biped/approach_praise.xml"/>
   </group>
-  <material>player_trans_spec.xml</material>
+  <material>player_trans.xml</material>
 </actor>
