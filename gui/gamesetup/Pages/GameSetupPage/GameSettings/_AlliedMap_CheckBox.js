@@ -52,8 +52,8 @@ GameSettingControls.AlliedMap = class extends GameSettingControlCheckbox
 
 GameSettingControls.AlliedMap.prototype.TitleCaption =
 	// Translation: Make sure to differentiate between the revealed map and  settings!
-	translate("Allied Map");
+	translate("Allied Vision");
 
 GameSettingControls.AlliedMap.prototype.Tooltip =
 	// Translation: Make sure to differentiate between the revealed map and  settings!
-	translate("Toggle allied map (see what your allies see).");
+	translate("Toggle allied vision (see what your allies see without researching Cartography).");
