@@ -43,21 +43,13 @@
   </group>
   <group>
     <variant file="biped/rider/camelry/base_swordsman_shield_relax.xml" />
-    <variant file="biped/rider/promotion_shield.xml" name="promotion"/>
-    <variant file="biped/rider/attack_slaughter_shield_spart.xml" name="attack_slaughter">
-    </variant>
-    <variant name="gather_meat">
-      <props>
-        <prop actor="props/units/weapons/spartan_sword.xml" attachpoint="weapon_R"/>
-      </props>
-    </variant>
-    <variant name="carry_meat">
-      <props>
-        <prop actor="props/units/shuttle_meat_male_R.xml" attachpoint="weapon_R"/>
-        <prop attachpoint="ammo"/>
-        <prop attachpoint="shield"/>
-      </props>
-    </variant>
+    <variant file="biped/rider/camelry/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/camelry/promotion.xml" name="promotion"/>
+    <variant file="biped/rider/camelry/attack_slaughter.xml"/>
+    <variant file="biped/rider/camelry/gather_meat.xml"/>
   </group>
   <material>player_trans_spec.xml</material>
 </actor>
