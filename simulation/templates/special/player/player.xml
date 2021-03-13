@@ -22,7 +22,7 @@
 	  <Auxilia>30</Auxilia>
 	  <Apartment>10</Apartment>
 	  <Carnyx>5</Carnyx>
-	  <CarthaginianBarracks>1</CarthaginianBarracks>
+	  <CarthageCitizenSoldier>30</CarthageCitizenSoldier>
       <Catapult>0</Catapult>
 	  <Chanakya>0</Chanakya>
 	  <Citizen>60</Citizen>
@@ -50,15 +50,15 @@
 	  <Market>1</Market>
 	  <MarketStall>0</MarketStall>
 	  <Mars>1</Mars>
-	  <MercCelt>100</MercCelt>
+	  <MercCelt>0</MercCelt>
 	  <Mercenary>20</Mercenary>
 	  <Mercenary10>10</Mercenary10>
 	  <Mercenary15>15</Mercenary15>
 	  <Mercenary20>20</Mercenary20>
 	  <Mercenary25>25</Mercenary25>
 	  <Mercenary30>30</Mercenary30>
-	  <MercIberian>100</MercIberian>
-	  <MercItalian>100</MercItalian>
+	  <MercIberian>0</MercIberian>
+	  <MercItalian>0</MercItalian>
 	  <MercNubians>20</MercNubians>
 	  <MercTarantines>20</MercTarantines>
 	  <Minister>9</Minister>
@@ -99,6 +99,9 @@
 	  <Chanakya>
 	    <Chandragupta>1</Chandragupta>
 	  </Chanakya>
+	  <CarthageCitizen>
+	    <CivicCenter>10</CivicCenter>
+	  </CarthageCitizen>
 	  <Corral>
 	    <Farmstead>2</Farmstead>
 	  </Corral>
@@ -156,9 +159,6 @@
 	  <Mercenary>
 	    <MercenaryCamp>10</MercenaryCamp>
 	  </Mercenary>
-	  <CarthaginianBarracks>
-	    <CivicCenter>1</CivicCenter>
-	  </CarthaginianBarracks>
 	  <CultStatue>
 	    <CultStatue>1</CultStatue>
 	  </CultStatue>
@@ -173,6 +173,15 @@
       <CivicCenter>
         <RequiredTechs datatype="tokens">phase_city</RequiredTechs>
       </CivicCenter>
+	  <MercCelt>
+	    <RequiredClasses datatype="tokens">Celtic Embassy</RequiredClasses>
+	  </MercCelt>
+	  <MercIberian>
+	    <RequiredClasses datatype="tokens">Iberian Embassy</RequiredClasses>
+	  </MercIberian>
+	  <MercItalian>
+	    <RequiredClasses datatype="tokens">Italian Embassy</RequiredClasses>
+	  </MercItalian>
       <Scout>
         <RequiredTechs datatype="tokens">phase_town</RequiredTechs>
       </Scout>

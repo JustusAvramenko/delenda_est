@@ -18,18 +18,17 @@
   <Identity>
     <Civ>cart</Civ>
     <SpecificName>Celtic Embassy</SpecificName>
+    <VisibleClasses datatype="tokens">
+	  Celtic
+	</VisibleClasses>
     <History>The Celts supplied fierce warrior mercenaries for Carthaginian armies.</History>
-    <Tooltip>Hire Celtic mercenaries. Research improvements for these mercenaries. Can be built in Allied territory.</Tooltip>
+    <Tooltip>Build one to unlock hiring Celtic mercenaries. Research improvements for these mercenaries. Can be built in Allied territory.</Tooltip>
     <Icon>structures/embassy_celtic.png</Icon>
   </Identity>
   <Obstruction>
     <Static width="15.0" depth="12.0"/>
   </Obstruction>
   <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/infantry_swordsman_gaul_b
-      units/{civ}/cavalry_swordsman_gaul_b
-    </Entities>
     <Technologies datatype="tokens">
       carthaginians/pair_celt_mercs_1
       carthaginians/pair_celt_mercs_2

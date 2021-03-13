@@ -14,24 +14,18 @@
   </Footprint>
   <Identity>
     <Civ>cart</Civ>
-    <SpecificName>Italiote Embassy</SpecificName>
-    <History>When Hannibal invaded Italy and defeated the Romans in a series of battles, many of the Italian peoples subject to Rome, including the Italian Greeks and powerful Samnites, revolted and joined the Carthaginian cause.</History>
-    <Tooltip>Hire Italian mercenaries. Research improvements for these mercenaries. Can be built in Allied territory.</Tooltip>
-    <Icon>structures/embassy_italic.png</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <SpecificName>Italian Embassy</SpecificName>
     <VisibleClasses datatype="tokens">
-	  -Village
-	  City
+	  Italian
 	</VisibleClasses>
+    <History>When Hannibal invaded Italy and defeated the Romans in a series of battles, many of the Italian peoples subject to Rome, including the Italian Greeks and powerful Samnites, revolted and joined the Carthaginian cause.</History>
+    <Tooltip>Build one to unlock hiring Italian mercenaries. Research improvements for these mercenaries. Can be built in Allied territory.</Tooltip>
+    <Icon>structures/embassy_italic.png</Icon>
   </Identity>
   <Obstruction>
     <Static width="11.0" depth="14.0"/>
   </Obstruction>
   <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/infantry_swordsman_ital_b
-      units/{civ}/cavalry_spearman_ital_b
-    </Entities>
     <Technologies datatype="tokens">
       carthaginians/pair_italian_mercs_1
       carthaginians/pair_italian_mercs_2
