@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Civic Center">
+      <mesh>structural/roman_cc.dae</mesh>
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
+      <props>
+        <prop actor="props/structures/romans/rome_cc_trans.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/rome_cc_columns.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/rome_cc_statues.xml" attachpoint="root"/>
+        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
+      </props>
+      <textures>
+        <texture file="structural/rome_struct_capitol.png" name="baseTex"/>
+        <texture file="structural/rome_struct_capitol_norm.png" name="normTex"/>
+        <texture file="structural/rome_struct_capitol_spec.png" name="specTex"/>
+        <texture file="structural/ao/rome_civic_center.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop attachpoint="garrisoned"/>
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/rome_cc_trans.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/rome_cc_columns.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/rome_cc_statues.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_7x7.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
