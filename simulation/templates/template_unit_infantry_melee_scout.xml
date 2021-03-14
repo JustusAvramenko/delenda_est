@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_cavalry_melee">
+<Entity parent="template_unit_infantry_melee">
   <Resistance>
     <Entity>
       <Damage>
-        <Pierce>5</Pierce>
-        <Crush>2</Crush>
+        <Hack>3</Hack>
+        <Pierce>1</Pierce>
+        <Crush>3</Crush>
       </Damage>
     </Entity>
   </Resistance>
+  <Attack>
+    <Melee>
+      <AttackName>Dagger</AttackName>
+    </Melee>
+  </Attack>
   <Cost>
-    <Population>2</Population>
-    <BuildTime>15</BuildTime>
+    <Population>1</Population>
+    <BuildTime>12</BuildTime>
     <Resources>
-      <food>100</food>
+      <food>80</food>
     </Resources>
   </Cost>
-  <Health>
-    <Max>100</Max>
-  </Health>
   <Identity>
-    <VisibleClasses datatype="tokens">Scout Sword Hunter</VisibleClasses>
-    <GenericName>Scout Cavalry</GenericName>
+    <VisibleClasses datatype="tokens">Scout Dagger Hunter</VisibleClasses>
+    <GenericName>Scout Infantry</GenericName>
     <History>Scouts are the unsung heroes of many campaigns.</History>
-    <Tooltip>Traits: Scout, Good Hunter, Fast Speed, Trample.
+    <Tooltip>Traits: Scout, Good Hunter, Fast Speed.
 Strong Against: Nothing.
 Weak Against: Everything.</Tooltip>
-	<RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Loot>
-    <xp>100</xp>
-    <food>10</food>
-    <metal>0</metal>
+    <wood>5</wood>
   </Loot>
   <Promotion disable=""/>
   <ResourceGatherer>
@@ -45,9 +45,6 @@ Weak Against: Everything.</Tooltip>
     <Category>Scout</Category>
   </TrainingRestrictions>
   <UnitMotion>
-    <WalkSpeed op="mul">1.2</WalkSpeed>
+    <WalkSpeed>15</WalkSpeed>
   </UnitMotion>
-  <VisualActor>
-    <Actor>units/hellenes/cavalry_scout.xml</Actor>
-  </VisualActor>
 </Entity>
