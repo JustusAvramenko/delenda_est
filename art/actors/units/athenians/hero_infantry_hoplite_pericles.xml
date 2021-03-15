@@ -24,11 +24,18 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/base_hoplite.xml" frequency="1" name="Hoplite-Relax"/>
-    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/base_hoplite.xml" name="Hoplite-Relax" frequency="1"/>
+    <variant file="biped/formations/phalanx_front.xml"/>
+    <variant file="biped/formations/phalanx_mid.xml"/>
+    <variant file="biped/formations/phalanx_back.xml"/>
+    <variant file="biped/attack_capture.xml">
+      <props>
+        <prop actor="props/units/weapons/spear_lance_cavalry_reverse.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/gather_praise.xml"/>
-    <variant file="biped/death_cape_long.xml"/>
+    <variant file="biped/hoplite_death.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
