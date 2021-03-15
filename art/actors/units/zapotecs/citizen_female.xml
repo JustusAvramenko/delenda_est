@@ -4,12 +4,73 @@
   <group>
     <variant frequency="1" name="Base-Female">
       <mesh>skeletal/new/f_dress.dae</mesh>
-      <props>
-        <prop actor="props/units/heads/new/head_female_test.xml" attachpoint="head"/>
-      </props>
       <textures>
         <texture file="skeletal/zapo_support_citizen_female_01.png" name="baseTex"/>
         <texture file="skeletal/zapo_support_citizen_female_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="80" name="hemet_s">
+      <props>
+        <prop actor="props/units/heads/head_maya_f.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/maya_fem.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="20" name="hemet_n">
+      <props>
+        <prop actor="props/units/heads/head_maya_f.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="0">
+      <mesh>skeletal/new/f_dress.dae</mesh>
+      <textures>
+        <texture file="skeletal/zapo_support_citizen_female_01.png" name="baseTex"/>
+        <texture file="skeletal/zapo_support_citizen_female_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="1">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/maya_f_1.png" name="baseTex"/>
+        <texture file="skeletal/maya_fem_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="2">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/maya_f_2.png" name="baseTex"/>
+        <texture file="skeletal/maya_fem_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+        <variant frequency="1" name="3">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/maya_f_3.png" name="baseTex"/>
+        <texture file="skeletal/maya_fem_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+            <variant frequency="1" name="4">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/maya_f_4.png" name="baseTex"/>
+        <texture file="skeletal/maya_fem_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+            <variant frequency="1" name="5">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/maya_f_5.png" name="baseTex"/>
+        <texture file="skeletal/maya_fem_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+            <variant frequency="1" name="6">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/maya_f_6.png" name="baseTex"/>
+        <texture file="skeletal/maya_fem_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -33,7 +94,7 @@
     <variant name="Idle" frequency="1"/>
     <variant file="biped/attack_melee_female.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
-    <variant file="biped/female_death.xml"/>
+    <variant file="biped/gather_praise.xml"/>
     <variant file="biped/female_gather_tree.xml"/>
     <variant file="biped/female_gather_grain.xml"/>
     <variant file="biped/female_gather_fruit.xml"/>
@@ -44,6 +105,7 @@
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/female_build.xml"/>
     <variant file="biped/female_build_farm.xml"/>
+    <variant file="biped/female_death.xml"/>
   </group>
   <material>player_trans_spec.xml</material>
 </actor>

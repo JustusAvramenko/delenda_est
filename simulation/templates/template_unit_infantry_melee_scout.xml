@@ -1,19 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>3</Hack>
-        <Pierce>1</Pierce>
-        <Crush>3</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Melee>
       <AttackName>Dagger</AttackName>
+      <Damage>
+	    <Hack>8.0</Hack>
+      </Damage>
     </Melee>
   </Attack>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      -structures/{civ}/civil_centre
+      -structures/{civ}/military_colony
+      -structures/{civ}/house
+      -structures/{civ}/government_center
+      -structures/{civ}/pyramid_1
+      -structures/{civ}/pyramid_2
+      -structures/{civ}/temple_vesta
+      -structures/{civ}/ice_house
+      -structures/{civ}/tenement
+      -structures/{civ}/storehouse
+      -structures/{civ}/farmstead
+      -structures/{civ}/granary
+      -structures/{civ}/field
+      -structures/{civ}/corral
+      -structures/{civ}/rotarymill
+      -structures/{civ}/dock
+      -structures/{civ}/shipyard
+      -structures/{civ}/market
+      -structures/{civ}/market_stall
+      -structures/{civ}/pillar_ashoka
+      -structures/{civ}/barracks
+      -structures/{civ}/barracks_aux
+      -structures/{civ}/range
+      -structures/{civ}/stable
+      -structures/{civ}/embassy_celtic
+      -structures/{civ}/embassy_iberian
+      -structures/{civ}/embassy_italic
+      -structures/{civ}/forge
+      -structures/{civ}/kennel
+      -structures/{civ}/elephant_stables
+      structures/{civ}/outpost
+      -structures/{civ}/defense_tower
+      structures/wallset_palisade
+      structures/{civ}/wallset_palisade
+      -structures/{civ}/wallset_siege
+      -structures/{civ}/wallset_stone
+      -structures/{civ}/temple
+      -structures/{civ}/temple_mars
+      -structures/{civ}/temple_amun
+      -structures/{civ}/statue
+      -structures/{civ}/ball_court
+      -structures/{civ}/arch
+      -structures/{civ}/prytaneion
+      -structures/{civ}/palace
+      -structures/{civ}/theater
+      -structures/{civ}/assembly
+      -structures/{civ}/library
+      -structures/{civ}/lighthouse
+      -structures/{civ}/apadana_food
+      -structures/{civ}/arsenal
+      -units/{civ}/siege_catapult_unpacked
+      -structures/{civ}/army_camp
+      -structures/{civ}/fortress
+      -structures/{civ}/wonder
+    </Entities>
+  </Builder>
   <Cost>
     <Population>1</Population>
     <BuildTime>12</BuildTime>
@@ -21,6 +74,9 @@
       <food>80</food>
     </Resources>
   </Cost>
+  <Health>
+    <Max>80</Max>
+  </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Scout Dagger Hunter</VisibleClasses>
     <GenericName>Scout Infantry</GenericName>
@@ -33,6 +89,15 @@ Weak Against: Everything.</Tooltip>
     <wood>5</wood>
   </Loot>
   <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>3</Hack>
+        <Pierce>1</Pierce>
+        <Crush>3</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <ResourceGatherer>
     <Rates>
       <food.meat>1.2</food.meat>
