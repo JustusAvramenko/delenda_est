@@ -3,20 +3,20 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>cumulus</SkySet>
-		<SunColor r="0.976471" g="0.929412" b="0.647059"/>
+		<SunColor r="0.956863" g="0.92549" b="0.807843"/>
 		<SunElevation angle="0.760855"/>
 		<SunRotation angle="-0.909753"/>
 		<AmbientColor r="0.356863" g="0.356863" b="0.356863"/>
 		<Fog>
-			<FogFactor>0.00195313</FogFactor>
-			<FogThickness>0.0351563</FogThickness>
+			<FogFactor>0.00169922</FogFactor>
+			<FogThickness>0</FogThickness>
 			<FogColor r="0.839216" g="0.866667" b="0.882353"/>
 		</Fog>
 		<Water>
 			<WaterBody>
 				<Type>lake</Type>
-				<Color r="0.25098" g="0.501961" b="0.501961"/>
-				<Tint r="0.317647" g="0.666667" b="0.635294"/>
+				<Color r="0.247059" g="0.501961" b="0.501961"/>
+				<Tint r="0.313726" g="0.666667" b="0.631373"/>
 				<Height>167.791</Height>
 				<Waviness>7.68555</Waviness>
 				<Murkiness>0.90625</Murkiness>
@@ -32,15 +32,18 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="320.096" y="240.619" z="691.62"/>
+		<Position x="594.847" y="277.668" z="95.4288"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
+  "AISeed": 0,
   "CircularMap": true,
   "Description": "Neutral settlements dot the map and are ripe for claim, but are guarded by independant local militias. A well-forested map, wood will be abundant, but animals for hunting are rare. Luckily there are many farmlands located around the map for efficient farming.",
-  "Keywords": [],
+  "Keywords": [
+    "new"
+  ],
   "LockTeams": false,
   "Name": "Greek Acropolis (4 players)",
   "PlayerData": [
@@ -58,10 +61,11 @@
       "Name": "Player 4"
     }
   ],
-  "Preview": "",
+  "Preview": "greek_acropolis_4p.png",
   "RevealMap": false,
   "VictoryConditions": [
-    "conquest"
+    "conquest",
+    "domination"
   ]
 }
 ]]></ScriptSettings>
