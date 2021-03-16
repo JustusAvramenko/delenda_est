@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_hero_cavalry_spearman">
+<Entity parent="template_unit_hero_infantry_swordsman">
   <Auras datatype="tokens">
     units/heroes/epir_hero_pyrrhos
   </Auras>
@@ -9,8 +9,21 @@
     <SpecificName>Pyrrhus of Epirus</SpecificName>
     <History>Pyrrhus or Pyrrhos (Ancient Greek: Πύρρος, Pyrrhos; 319/318–272 BC) was a Greek general and statesman of the Hellenistic era. He was king of the Greek tribe of Molossians, of the royal Aeacid house (from c. 297 BC), and later he became king of Epirus (r. 306–302, 297–272 BC) and Macedon (r. 288–284, 273–272 BC). He was one of the strongest opponents of early Rome. Some of his battles, though successful, cost him heavy losses, from which the term Pyrrhic victory was coined. He is the subject of one of Plutarch's 'Parallel Lives'. He died in 272 BC, while leading an attack on the Greek city of Argos.</History>
     <Icon>units/epir/hero_pyrrhus.png</Icon>
+    <RequiredTechnology>civ_choices/epir/pyrrhus</RequiredTechnology>
   </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/epir/hero_pyrrhus_mounted</Entity>
+      <Tooltip>This gives Pyrrhus his War Horse, with greater speed, trample effects, greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
   <VisualActor>
-    <Actor>units/epirotes/hero_cavalry_spearman_pyrrhus_m.xml</Actor>
+    <Actor>units/epirotes/hero_infantry_swordsman_pyrrhus.xml</Actor>
   </VisualActor>
 </Entity>
