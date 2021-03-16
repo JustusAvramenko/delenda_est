@@ -22,7 +22,7 @@ UnitAI.prototype.GetQueryRange = function(iid)
 		ret.max = Math.min(range.max, visionRange);
 	}
 	else if (this.GetStance().respondChase)
-		ret.max = visionRange * 0.8; // << This has changed.
+		ret.max = visionRange * 0.85; // << This has changed.
 	else if (this.GetStance().respondHoldGround)
 	{
 		let range = this.GetRange(iid);
