@@ -1,0 +1,14 @@
+{
+    "type": "range",
+    "radius": 30,
+	"affectedPlayers": ["Enemy"],
+    "affects": ["Unit"],
+    "modifications": [
+	    {"value": "Attack/Melee/RepeatTime", "multiply": 1.2 },
+	    {"value": "Attack/Ranged/RepeatTime", "multiply": 1.2 },
+	    {"value": "UnitMotion/WalkSpeed", "multiply": 0.85 }
+    ],
+    "auraName": "Terrifying Presence",
+    "auraDescription": "Nearby Enemy Soldiers -20% attack rate and -15% movement speed.",
+	"overlayIcon": "art/textures/ui/session/auras/fear.png"
+}
