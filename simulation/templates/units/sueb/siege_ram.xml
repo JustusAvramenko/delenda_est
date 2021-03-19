@@ -27,7 +27,7 @@
     </Resources>
   </Cost>
   <Footprint replace="">
-    <Square width="6.75" depth="9.0"/>
+    <Square width="4.5" depth="9.0"/>
     <Height>3.0</Height>
   </Footprint>
   <Health>
@@ -38,6 +38,14 @@
     <SpecificName>Battering Ram</SpecificName>
     <Icon>units/sueb/siege_ram.png</Icon>
   </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/cartouche.png</MainTexture>
+        <MainTextureMask>128x256/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
@@ -49,9 +57,6 @@
       <death>actor/human/death/{phenotype}_death.xml</death>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <WalkSpeed>6</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>structures/germans/siege_ram_pivot.xml</Actor>
   </VisualActor>

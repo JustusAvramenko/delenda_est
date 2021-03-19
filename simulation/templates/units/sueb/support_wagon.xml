@@ -45,6 +45,22 @@
     <Anchor>pitch</Anchor>
 	<TurnRate>2.0</TurnRate>
   </Position>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+	<TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <coin>1.0</coin>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Technologies datatype="tokens">
+	  gather_capacity_wheelbarrow
+	  gather_capacity_handcarts
+    </Technologies>
+  </ProductionQueue>
   <ResourceDropsite>
     <Types>food wood stone metal</Types>
     <Sharable>true</Sharable>
