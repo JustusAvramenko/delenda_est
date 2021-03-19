@@ -42,20 +42,26 @@
     </variant>
   </group>
   <group>
-    <!-- In this group, defined overloads for "Idle", "Walk" and "Run" -->
     <variant file="biped/female_base_walk.xml"/>
     <variant file="biped/female_carry_food.xml"/>
     <variant file="biped/female_carry_meat.xml"/>
     <variant file="biped/female_carry_wood.xml"/>
     <variant file="biped/female_carry_stone.xml"/>
     <variant file="biped/female_carry_metal.xml"/>
+    <variant file="biped/approach_tree.xml"/>
+    <variant file="biped/approach_grain.xml"/>
+    <variant file="biped/approach_fruit.xml"/>
+    <variant file="biped/approach_meat.xml"/>
+    <variant file="biped/approach_rock.xml"/>
+    <variant file="biped/approach_ore.xml"/>
+    <variant file="biped/approach_ruins.xml"/>
+    <variant file="biped/approach_praise.xml"/>
   </group>
   <group>
-    <!-- In this group, define overloads for other animation types, since they presumably do not collide with each other -->
     <variant name="Idle" frequency="1"/>
     <variant file="biped/attack_melee_female.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
-    <variant file="biped/female_death.xml"/>
+    <variant file="biped/attack_capture.xml"/>
     <variant file="biped/female_gather_tree.xml"/>
     <variant file="biped/female_gather_grain.xml"/>
     <variant file="biped/female_gather_fruit.xml"/>
@@ -66,6 +72,7 @@
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/female_build.xml"/>
     <variant file="biped/female_build_farm.xml"/>
+    <variant file="biped/female_death.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
