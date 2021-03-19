@@ -5,16 +5,11 @@
 		"imp": "Collegium Virginum Vestalium"
 	},
 	"description": "In ancient Rome, the Vestals or Vestal Virgins (Vestales, singular Vestalis) were priestesses of Vesta, goddess of the hearth. The College of the Vestals and its well-being was regarded as fundamental to the continuance and security of Rome. They cultivated the sacred fire that was not allowed to go out. The Vestals were freed of the usual social obligations to marry and bear children, and took a vow of chastity in order to devote themselves to the study and correct observance of state rituals that were off-limits to the male colleges of priests.",
-	"cost": {"glory": 200},
-	"requirements": {"tech": "phase_town"},
+	"cost": {"food": 200, "glory": 200},
+	"requirements": {"all": [{"tech": "phase_town"}, {"any":[{"civ": "imp"},{"civ": "rome"}]}]},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "vestals.png",
-	"researchTime": 40,
-	"tooltip": "Citizen Women and Slave Women +20% capture resistance and -10% train time.",
-	"modifications": [
-		{"value": "Capturable/CapturePoints", "multiply": 1.20},
-		{"value": "Cost/BuildTime", "multiply": 0.9}
-	],
-	"affects": ["Female"],
+	"researchTime": 30,
+	"tooltip": "Unlock the \"Eternal Fire\" aura for the Temple of Vesta, which increases the Loyalty of nearby Structures.",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

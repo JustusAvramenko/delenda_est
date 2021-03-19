@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_temple">
   <Auras datatype="tokens">
-    eternal_fire
+    structures/eternal_fire
   </Auras>
   <BuildRestrictions>
     <Category>Vesta</Category>
@@ -39,7 +39,6 @@
 	  Village
 	  TempleofVesta
 	</VisibleClasses>
-    <History>(Insert History)</History>
     <Tooltip>Build this temple to greatly increase the loyalty of nearby structures and health of nearby units.</Tooltip>
     <RequiredTechnology>phase_village</RequiredTechnology>
     <Icon>structures/vesta.png</Icon>
@@ -53,6 +52,7 @@
       -units/{native}/support_healer_b
     </Entities>
     <Technologies datatype="tokens">
+      -gather_glory_healers
 	  -health_regen_units
       -heal_temple
 	  -attack_military_cult
