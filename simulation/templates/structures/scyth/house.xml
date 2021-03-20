@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_house">
   <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
+    <Territory>own neutral ally enemy</Territory>
     <Distance>
       <FromClass>House</FromClass>
-      <MinDistance>2</MinDistance>
+      <MinDistance>12</MinDistance>
     </Distance>
   </BuildRestrictions>
   <Footprint replace="">
@@ -20,7 +20,7 @@
   <Identity>
     <Civ>scyth</Civ>
     <SpecificName>Yurt</SpecificName>
-    <VisibleClasses datatype="tokens">Village House Yurt</VisibleClasses>
+    <VisibleClasses datatype="tokens">Yurt</VisibleClasses>
   </Identity>
   <Obstruction>
     <Static width="14.0" depth="14.0"/>
