@@ -1,14 +1,12 @@
 {
 	"civ": "Rome",
 	"type": "range",
-	"radius": 50,
-	"affects": ["Soldier"],
+	"radius": 60,
+	"affects": ["Citizen"],
 	"modifications": [
-	  {"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.1},
-	  {"value": "Attack/Melee/Damage/Hack", "multiply": 1.1},
-	  {"value": "Attack/Capture/Capture", "multiply": 1.1}
+	  { "value": "Health/Max", "multiply": 1.3}
 	],
 	"auraName": "Roman Citizenship",
-	"auraDescription": "Roman soldiers +10% attack and +10% capture within 50 meters of a Roman civic center.",
-	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+	"auraDescription": "Roman Citizens +30% health when near a Roman civic center.",
+	"overlayIcon": "art/textures/ui/session/auras/health_bonus.png"
 }
