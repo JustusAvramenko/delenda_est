@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_resource_field">
   <BuildRestrictions>
+    <Territory>own neutral enemy ally</Territory>
 	<Category>Fields</Category>
+    <Distance>
+      <FromClass>CivicCenter</FromClass>
+      <MinDistance>10</MinDistance>
+    </Distance>
   </BuildRestrictions>
   <Identity>
     <Civ>scyth</Civ>

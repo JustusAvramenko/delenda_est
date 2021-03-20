@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
+  <Attack disable=""/>
+  <Auras disable=""/>
+  <Footprint replace="">
+    <Circle radius="16.0"/>
+    <Height>8.0</Height>
+  </Footprint>
   <Health>
     <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
@@ -7,14 +13,15 @@
     <Civ>scyth</Civ>
     <SpecificName>Chanyu's Hall</SpecificName>
   </Identity>
-  <Attack disable=""/>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
   <ProductionQueue>
     <Entities datatype="tokens">
+      structures/scyth/civil_centre_packed
       units/{civ}/hero_ateas_infantry
       units/{civ}/hero_skilurus_infantry
       units/{civ}/hero_tomyris_infantry
-      units/{civ}/maiden_infantry_archer
-      units/{civ}/maiden_cavalry_archer
     </Entities>
     <Technologies datatype="tokens">
       nomads/vision_gathering_falconry
@@ -25,13 +32,6 @@
     <Anchor>pitch</Anchor>
     <TurnRate>0.0001</TurnRate>
   </Position>
-  <Footprint replace="">
-    <Circle radius="16.0"/>
-    <Height>8.0</Height>
-  </Footprint>
-  <Obstruction>
-    <Static width="25.0" depth="25.0"/>
-  </Obstruction>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
   <VisualActor>

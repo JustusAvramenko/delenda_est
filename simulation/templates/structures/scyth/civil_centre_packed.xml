@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support">
+  <Cost>
+    <Population>1</Population>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+      <coin>0</coin>
+      <glory>0</glory>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="30" depth="30"/>
+    <Height>10</Height>
+  </Footprint>
+  <Garrisonable disable=""/>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+    <SpecificName>Chanyu's Hall</SpecificName>
+    <GenericName>Packed Civic Center</GenericName>
+    <Icon>structures/military_settlement.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+	<Formations disable=""/>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>0.5</TurnRate>
+  </Position>
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+	<Sharable>true</Sharable>
+  </ResourceDropsite>
+  <Selectable replace="">
+    <Overlay>
+      <Texture>
+        <MainTexture>256x256/rounded_rectangle.png</MainTexture>
+        <MainTextureMask>256x256/rounded_rectangle_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <order_walk>actor/singlesteps/steps_grass.xml</order_walk>
+      <run>actor/singlesteps/steps_grass.xml</run>
+      <select>attack/siege/siege_select.xml</select>
+      <walk>actor/singlesteps/steps_grass.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>12.0</HeightOffset>
+  </StatusBars>
+  <TrainingRestrictions>
+    <Category>Packed_Civic_Center</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <FormationController>false</FormationController>
+    <WalkSpeed>4.0</WalkSpeed>
+    <PassabilityClass>large</PassabilityClass>
+  </UnitMotion>
+  <Upgrade>
+    <Unpack>
+      <Entity>structures/scyth/civil_centre</Entity>
+      <Cost>
+        <food>0</food>
+        <wood>800</wood>
+        <stone>800</stone>
+        <metal>0</metal>
+      </Cost>
+      <Time>30</Time>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+    </Unpack>
+  </Upgrade>
+  <UnitAI>
+	<CanPatrol>false</CanPatrol>
+    <CanGuard>false</CanGuard>
+  </UnitAI>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+  <VisualActor>
+    <SilhouetteDisplay>false</SilhouetteDisplay>
+    <SilhouetteOccluder>true</SilhouetteOccluder>
+    <Actor>structures/scythians/royal_yurt_chariot_pivot.xml</Actor>
+  </VisualActor>
+</Entity>
