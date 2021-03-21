@@ -7,6 +7,10 @@
       <wood>100</wood>
     </Resources>
   </Cost>
+  <Footprint replace="">
+    <Square width="4.0" depth="8.0"/>
+    <Height>3.0</Height>
+  </Footprint>
   <Health>
     <Max>100</Max>
   </Health>
@@ -16,6 +20,7 @@
     <GenericName>Trader</GenericName>
     <History>Trade was a very important part of ancient civilization - effective trading and control of trade routes equaled wealth. Trade took place by many forms from foot to caravans to merchant ships. One of the most notorious examples of the power of trade was the Silk Road.</History>
     <Tooltip>Trade resources between your own markets and those of your allies.</Tooltip>
+    <Icon>units/{civ}/support_trader.png</Icon>
     <Formations disable=""/>
   </Identity>
   <ResourceTrickle>
@@ -29,6 +34,14 @@
     </Rates> 
     <Interval>10000</Interval> 
   </ResourceTrickle>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>ellipse/128x256.png</MainTexture>
+        <MainTextureMask>ellipse/128x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
 	  <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
