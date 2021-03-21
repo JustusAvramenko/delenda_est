@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="Base">
-      <mesh>skeletal/new/m_armor_nomad_b.dae</mesh>
+    <variant file="biped/base_maur_trader.xml">
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_thrace.xml" attachpoint="head"/>
         <prop actor="props/units/helmets/hele_thracian_cap_player.xml" attachpoint="helmet"/>
-        <prop actor="props/units/weapons/dagger.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/maur_trader_staff.xml" attachpoint="weapon_R"/>
       </props>
     </variant>
   </group>
@@ -35,15 +35,8 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/rider/cavalry/base_swordsman_fast_relax.xml" frequency="1" name="Swordsman-Fast-Relax"/>
-    <variant file="biped/rider/carry_meat.xml"/>
-  </group>
-  <group>
     <variant frequency="1" name="Idle"/>
-    <variant file="biped/rider/promotion.xml"/>
-    <variant file="biped/rider/attack_slaughter_hele.xml"/>
-    <variant file="biped/gather_meat.xml"/>
-    <variant file="biped/rider/death.xml"/>
+    <variant frequency="0" name="death"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
