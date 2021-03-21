@@ -16,7 +16,12 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Idle"/>
+    <variant frequency="100" name="Idle">
+      <animations>
+        <animation file="biped/infantry/promotion.dae" name="idle" speed="100"/>
+        <animation file="biped/infantry/promotion.dae" name="idle" speed="50"/>
+      </animations>
+    </variant>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/gather_praise.xml"/>
