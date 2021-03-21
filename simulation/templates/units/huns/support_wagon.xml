@@ -1,61 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_support">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>5</Hack>
-        <Pierce>8</Pierce>
-        <Crush>10</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
-  <Cost>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>50</food>
-	  <wood>50</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>2.0</Height>
-    <Square width="7.0" depth="14.0"/>
-  </Footprint>
-  <Health>
-    <Max>300</Max>
-  </Health>
+<Entity parent="template_unit_support_wagon">
   <Identity>
     <Civ>huns</Civ>
-    <Classes datatype="tokens">Wagon</Classes>
-    <SpecificName>Resource Wagon</SpecificName>
-    <GenericName>Resource Wagon</GenericName>
-    <Icon>units/xion_support_wagon.png</Icon>
-    <Tooltip>Mobile dropsite for all resources.</Tooltip>
-    <Formations disable=""/>
   </Identity>
-  <Loot>
-    <xp>50</xp>
-    <food>25</food>
-    <wood>10</wood>
-    <stone>10</stone>
-    <metal>10</metal>
-    <coin>10</coin>
-    <glory>10</glory>
-  </Loot>
-  <Position>
-    <Anchor>pitch</Anchor>
-	<TurnRate>2.0</TurnRate>
-  </Position>
   <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-	<TechCostMultiplier>
-      <food>1.0</food>
-      <wood>1.0</wood>
-      <stone>1.0</stone>
-      <metal>1.0</metal>
-      <coin>1.0</coin>
-      <glory>1.0</glory>
-      <time>1.0</time>
-    </TechCostMultiplier>
     <Technologies datatype="tokens">
       nomads/gather_wicker_baskets
       nomads/gather_hunting_dogs
@@ -68,33 +16,6 @@
 	  gather_capacity_handcarts
     </Technologies>
   </ProductionQueue>
-  <ResourceDropsite>
-    <Types>food wood stone metal</Types>
-    <Sharable>true</Sharable>
-  </ResourceDropsite>
-  <Selectable>
-    <Overlay>
-      <Texture>
-        <MainTexture>ellipse/128x256.png</MainTexture>
-        <MainTextureMask>ellipse/128x256_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
-  <Sound>
-    <SoundGroups>
-      <order_walk>actor/singlesteps/steps_grass.xml</order_walk>
-      <run>actor/singlesteps/steps_grass.xml</run>
-      <select>attack/siege/siege_select.xml</select>
-      <walk>actor/singlesteps/steps_grass.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitAI>
-    <CanPatrol>false</CanPatrol>
-  </UnitAI>
-  <UnitMotion>
-    <PassabilityClass>large</PassabilityClass>
-    <WalkSpeed>5.0</WalkSpeed>
-  </UnitMotion>
   <Upgrade>
     <UnPackStorehouse>
       <Entity>structures/huns/storehouse</Entity>
@@ -108,10 +29,4 @@
       <CheckPlacementRestrictions/>
     </UnPackHouse>
   </Upgrade>
-  <Vision>
-    <Range>30</Range>
-  </Vision>
-  <VisualActor>
-    <Actor>structures/xiongnu/xion_wagon.xml</Actor>
-  </VisualActor>
 </Entity>
