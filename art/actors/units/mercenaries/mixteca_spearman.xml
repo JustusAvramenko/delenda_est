@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="basic">
+      <mesh>skeletal/new/m_naked.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_mixtec.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/zapo_tiny.xml" attachpoint="shield"/>
+        <prop actor="props/units/weapons/spear_obsidian.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/zapo_back_banner.xml" attachpoint="back"/>
+        <prop actor="props/units/helmets/mixtec_jaguar_helmet.xml" attachpoint="helmet"/> 
+      </props>
+    </variant>
+    <variant frequency="100" name="jaguar">
+      <mesh>skeletal/new/m_pants.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_mixtec.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/zapo_tiny.xml" attachpoint="shield"/>
+        <prop actor="props/units/weapons/spear_obsidian.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/zapo_back_banner.xml" attachpoint="back"/>
+        <prop actor="props/units/helmets/mixtec_jaguar_helmet.xml" attachpoint="helmet"/> 
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="basic">
+      <textures>
+        <texture file="skeletal/mixtec_1.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="100" name="jaguar">
+      <textures>
+        <texture file="skeletal/mixtec_2.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_spearman_shield_relax_celt_fast.xml" name="Spearman-Shield-Relax-Fast"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
