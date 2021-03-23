@@ -2,8 +2,8 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_swordsman_shield_fast.xml">
-      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+    <variant>
+      <mesh>skeletal/new/m_naked.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_otomi.xml" attachpoint="head"/>
         <prop actor="props/units/shields/otomi_shield.xml" attachpoint="shield"/>
@@ -12,9 +12,36 @@
     </variant>
   </group>
   <group>
-    <variant frequency="100" name="Base">
+    <variant frequency="1" name="Armor-Cotton-01">
       <textures>
-        <texture file="skeletal/otomi_warrior.png" name="baseTex"/>
+        <texture file="skeletal/zapo_otomi_cotton_01.png" name="baseTex"/>
+        <texture file="skeletal/zapo_otomi_cotton_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Cotton-02">
+      <textures>
+        <texture file="skeletal/zapo_otomi_cotton_02.png" name="baseTex"/>
+        <texture file="skeletal/zapo_otomi_cotton_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Cotton-03">
+      <textures>
+        <texture file="skeletal/zapo_otomi_cotton_03.png" name="baseTex"/>
+        <texture file="skeletal/zapo_otomi_cotton_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Cotton-04">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/zapo_otomi_cotton_04.png" name="baseTex"/>
+        <texture file="skeletal/zapo_otomi_cotton_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Armor-Cotton-05">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/zapo_otomi_cotton_05.png" name="baseTex"/>
+        <texture file="skeletal/zapo_otomi_cotton_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -45,6 +72,7 @@
     <variant file="biped/gather_rock.xml"/>
     <variant file="biped/gather_ore.xml"/>
     <variant file="biped/gather_ruins.xml"/>
+    <variant file="biped/gather_praise.xml"/>
     <variant file="biped/build.xml"/>
     <variant file="biped/death_infantry.xml"/>
     <variant file="biped/carry_food.xml"/>
@@ -53,5 +81,5 @@
     <variant file="biped/carry_stone.xml"/>
     <variant file="biped/carry_metal.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
