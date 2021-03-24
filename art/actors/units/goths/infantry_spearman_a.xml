@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/germ_01.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Celt-Shield-A-Boss-01">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_hex_a_01.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celt-Shield-A-Boss-02">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_hex_a_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celt-Shield-A-Boss-03">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_hex_a_03.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="Outfit Basic Foot Wraps 1">
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+      <textures>
+        <texture file="skeletal/germans/basic/footwraps1.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="2" name="Outfit Basic Foot Wraps 2">
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+      <textures>
+        <texture file="skeletal/germans/basic/footwraps2.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="2" name="Outfit Basic Foot Wraps 3">
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+      <textures>
+        <texture file="skeletal/germans/basic/footwraps3.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Outfit Basic Pants Shirt 2 a">
+      <textures>
+        <texture file="skeletal/germans/basic/shirt2a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Outfit Basic Pants Shirt 2 b">
+      <textures>
+        <texture file="skeletal/germans/basic/shirt2b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Outfit Basic Pants Shirt 2 c">
+      <textures>
+        <texture file="skeletal/germans/basic/shirt2c.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Outfit Basic Pants Shirt 1">
+      <textures>
+        <texture file="skeletal/germans/basic/transparent_shirt1.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Outfit Basic Pants Shirt 2">
+      <textures>
+        <texture file="skeletal/germans/basic/transparent_shirt2.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Outfit Basic Pants Shirt 3">
+      <textures>
+        <texture file="skeletal/germans/basic/transparent_shirt3.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_spearman_shield_relax_fast.xml" name="Spearman-Shield-Relax-Fast" frequency="1"/>
+    <variant file="biped/carry_food.xml"/>
+    <variant file="biped/carry_meat.xml"/>
+    <variant file="biped/carry_wood.xml"/>
+    <variant file="biped/carry_stone.xml"/>
+    <variant file="biped/carry_metal.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_tree.xml"/>
+    <variant file="biped/gather_grain.xml"/>
+    <variant file="biped/gather_fruit.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/gather_rock.xml"/>
+    <variant file="biped/gather_ore.xml"/>
+    <variant file="biped/gather_ruins.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

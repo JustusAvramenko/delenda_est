@@ -6,20 +6,15 @@
       <mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/germ_01.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/capes/spearman_shield_relax_fast.xml" attachpoint="root"/>
+        <prop actor="props/units/weapons/xion_axe.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Celt-Shield-A-Boss-02">
+    <variant frequency="1" name="Rectangle-Shield">
       <props>
-        <prop actor="props/units/shields/gaul_shield_spear_hex_a_02.xml" attachpoint="shield"/>
-      </props>
-    </variant>
-    <variant frequency="1" name="Celt-Shield-A-Boss-01">
-      <props>
-        <prop actor="props/units/shields/gaul_shield_spear_hex_a_01.xml" attachpoint="shield"/>
+        <prop actor="props/units/shields/gaul_shield_jav_sq_b_02.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
@@ -59,7 +54,7 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/base_spearman_shield_relax_fast.xml"/>
+    <variant file="biped/base_swordsman_shield_fast.xml" name="Swordsman-Shield-Relax-Fast" frequency="1"/>
     <variant file="biped/carry_food.xml"/>
     <variant file="biped/carry_meat.xml"/>
     <variant file="biped/carry_wood.xml"/>
@@ -80,7 +75,7 @@
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/build.xml"/>
     <variant file="biped/build_farm.xml"/>
-    <variant file="biped/death_infantry.xml"/>
+    <variant file="biped/death_cape_long.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_ship_merchant">
   <Footprint>
-    <Square width="12.0" depth="16.0"/>
+    <Square width="10.5" depth="12"/>
     <Height>6.0</Height>
   </Footprint>
   <Identity>
@@ -9,6 +9,14 @@
     <SpecificName>Trade Canoe</SpecificName>
     <Icon>units/zapo/ship_merchant.png</Icon>
   </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>256x256/rounded_rectangle.png</MainTexture>
+        <MainTextureMask>256x256/rounded_rectangle_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <VisualActor>
     <Actor>structures/zapotecs/canoe_merchant.xml</Actor>
   </VisualActor>
