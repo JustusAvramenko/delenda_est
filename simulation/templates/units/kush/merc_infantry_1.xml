@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack op="add">-1</Hack>
-      </Damage>
-    </Entity>
-  </Resistance>
+<Entity parent="template_unit_mercenary_infantry_melee_axeman">
   <Attack>
     <Melee>
-      <Damage>
-	    <Hack>3.0</Hack>
-        <Crush>5.0</Crush>
-      </Damage>
+      <AttackName>Club</AttackName>
     </Melee>
   </Attack>
   <Identity>
@@ -22,6 +12,13 @@
     <SpecificName>Noba Clubman</SpecificName>
     <Icon>units/kush/merc_infantry_1.png</Icon>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
   <UnitMotion>
     <WalkSpeed op="mul">1.2</WalkSpeed>
   </UnitMotion>

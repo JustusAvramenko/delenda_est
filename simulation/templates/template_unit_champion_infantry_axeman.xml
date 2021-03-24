@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Axe</AttackName>
+      <Damage>
+	    <Hack>11</Hack>
+        <Pierce>0</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+      <MaxRange>3</MaxRange>
+	  <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+	  <Bonuses>
+		<BonusAllInfantry>
+		  <Classes>Infantry</Classes>
+		  <Multiplier>2</Multiplier>
+		</BonusAllInfantry>
+	  </Bonuses>
+    </Melee>
+  </Attack>
+  <Identity>
+    <VisibleClasses datatype="tokens">Melee Axe</VisibleClasses>
+    <GenericName>Champion Axe Infantry</GenericName>
+    <Tooltip>Traits: Medium Speed, Medium Armor, High Attack.
+Strong Against: All Infantry (2x).
+Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.</Tooltip>
+    <Formations datatype="tokens">
+      special/formations/testudo
+    </Formations>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>7</Hack>
+        <Pierce>4</Pierce>
+        <Crush>6</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.8</WalkSpeed>
+  </UnitMotion>
+</Entity>

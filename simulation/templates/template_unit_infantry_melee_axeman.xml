@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee">
+  <Attack>
+    <Melee>
+      <AttackName>Axe</AttackName>
+      <Damage>
+	    <Hack>8</Hack>
+        <Pierce>0</Pierce>
+        <Crush>4</Crush>
+      </Damage>
+      <MaxRange>4</MaxRange>
+	  <Bonuses>
+		<BonusAllInfantry>
+		  <Classes>Infantry</Classes>
+		  <Multiplier>2</Multiplier>
+		</BonusAllInfantry>
+	  </Bonuses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Resources>
+	  <metal>70</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Axe</VisibleClasses>
+    <GenericName>Axe Infantry</GenericName>
+    <Tooltip>Traits: Medium Speed, Medium Armor, Medium Attack.
+Strong Against: All Infantry (2x).
+Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.</Tooltip>
+  </Identity>
+  <Loot>
+    <metal>10</metal>
+  </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>3</Hack>
+        <Pierce>1</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.9</WalkSpeed>
+  </UnitMotion>
+</Entity>

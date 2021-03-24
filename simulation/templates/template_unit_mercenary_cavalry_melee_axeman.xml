@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_melee_axeman">
+  <Cost>
+    <Population>0</Population>
+	<BuildTime>5</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <metal>0</metal>
+	  <coin>120</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <GenericName>Mercenary Axe Cavalry</GenericName>
+    <VisibleClasses datatype="tokens">-Citizen Mercenary</VisibleClasses>
+	<Rank>Advanced</Rank>
+  </Identity>
+  <Looter disable=""/>
+  <Promotion disable=""/>
+  <ResourceGatherer>
+    <BaseSpeed>0.75</BaseSpeed>
+  </ResourceGatherer>
+  <TrainingRestrictions>
+    <Category>Mercenary</Category>
+  </TrainingRestrictions>
+</Entity>

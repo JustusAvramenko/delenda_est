@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
+<Entity parent="template_unit_mercenary_infantry_melee_axeman">
+  <Identity>
+    <Civ>sueb</Civ>
+    <SpecificName>German Axeman</SpecificName>
+	<VisibleClasses datatype="tokens">Axe Guerilla</VisibleClasses>
+    <Icon>units/merc/german_axeman.png</Icon>
+  </Identity>
   <Resistance>
     <Entity>
       <Damage>
@@ -7,11 +13,6 @@
       </Damage>
     </Entity>
   </Resistance>
-  <Identity>
-    <SpecificName>German Axeman</SpecificName>
-	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
-    <Icon>units/merc/german_axeman.png</Icon>
-  </Identity>
   <UnitMotion>
     <WalkSpeed op="mul">1.2</WalkSpeed>
   </UnitMotion>

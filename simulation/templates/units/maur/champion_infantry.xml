@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_infantry_swordsman">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>7</Hack>
-        <Pierce>3</Pierce>
-        <Crush>1</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
+<Entity parent="template_unit_champion_infantry_axeman">
   <Attack>
     <Melee>
+      <AttackName>Mace</AttackName>
       <Damage>
 	    <Hack>0.0</Hack>
         <Pierce>0.0</Pierce>
@@ -36,12 +28,20 @@
     <Civ>maur</Civ>
     <SpecificName>Kshatriya Chosen Warrior</SpecificName>
 	<SelectionGroupName>units/maur/champion_infantry</SelectionGroupName>
-    <VisibleClasses datatype="tokens">Siege -Sword Mace Guerilla</VisibleClasses>
-    <History>.</History>
+    <VisibleClasses datatype="tokens">-Axe Mace Guerilla</VisibleClasses>
     <Icon>units/maur/champion_maceman.png</Icon>
 	<Tooltip>Counters: 2x vs. Structures, 1.25x vs. Spear Infantry and Elephants.
 Countered by: Archer Infantry and Archer Cavalry.</Tooltip>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>6</Hack>
+        <Pierce>5</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <VisualActor>
     <Actor>units/mauryas/champion_maceman.xml</Actor>
   </VisualActor>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Axe</AttackName>
+      <Damage>
+	    <Hack>11</Hack>
+        <Pierce>0</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+      <MaxRange>5</MaxRange>
+	  <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+	  <Bonuses>
+		<BonusPrimary>
+		  <Classes>Cavalry Ranged</Classes>
+		  <Multiplier>2</Multiplier>
+		</BonusPrimary>
+	  </Bonuses>
+		<BonusSiege>
+		  <Classes>Siege</Classes>
+		  <Multiplier>2.0</Multiplier>
+		</BonusSiege>
+		<ElephantStench>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</ElephantStench>
+		<CamelStench>
+		  <Classes>Camel</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</CamelStench>
+	  </Bonuses>
+      <PreferredClasses datatype="tokens">Ranged+Unit Siege</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    cavalry_trample_10
+  </Auras>
+  <Cost>
+    <Resources>
+      <coin>75</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Melee Axe</VisibleClasses>
+    <GenericName>Champion Axe Cavalry</GenericName>
+    <Tooltip>Traits: Fast Speed, Charge, Trample.
+Strong Against: Ranged Cavalry (2x), Siege Weapons (2x).
+Weak Against: Pike Infantry, Spear Infantry, Elephants, Camels.</Tooltip>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>10</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
+</Entity>

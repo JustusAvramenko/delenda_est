@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>4</Hack>
-        <Pierce>8</Pierce>
-        <Crush>4</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
-  <Attack disable=""/>
   <Heal>
-    <Range>20</Range>
+    <Range>30</Range>
     <Health>10</Health>
     <Interval>2000</Interval>
     <UnhealableClasses datatype="tokens"/>
@@ -28,6 +18,15 @@
   <Position>
     <Anchor>upright</Anchor>
   </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>4</Hack>
+        <Pierce>8</Pierce>
+        <Crush>4</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Sound>
     <SoundGroups>
 	  <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select> 
