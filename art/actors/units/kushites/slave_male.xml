@@ -2,17 +2,34 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="Base">
+    <variant frequency="6" name="Kushite Male Slave 01">
       <mesh>skeletal/new/m_naked.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_kush_meroitic.xml" attachpoint="head"/>
       </props>
-    </variant>
-  </group>
-  <group>
-    <variant name="Kushite Male Slave 01">
       <textures>
         <texture file="skeletal/kush_slave_male_01.png" name="baseTex"/>
+        <texture file="skeletal/kush_slave_male_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="European Male Slave 01">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/hele_tunic.dds" name="baseTex"/>
+        <texture file="skeletal/kush_slave_male_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="2" name="Egyptian Slave Male 01">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_egyptian_e.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/han_bandana.xml" attachpoint="helmet"/>
+      </props>
+      <textures>
+        <texture file="skeletal/ptol_slave_male_01.png" name="baseTex"/>
         <texture file="skeletal/kush_slave_male_01_spec.png" name="specTex"/>
       </textures>
     </variant>

@@ -2,25 +2,36 @@
 <actor version="1">
   <castshadow/>
   <group>
-	<variant frequency="2" name="Nuba Woman 01">
+	<variant frequency="2" name="African Dreads">
       <mesh>skeletal/new/f_naked.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_fem_dark_nuba.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/kush_dread_hair_fem.xml" attachpoint="head"/>
+      </props>
       <textures>
         <texture file="skeletal/kush_support_female_nuba_dark.png" name="baseTex"/>
         <texture file="skeletal/kush_support_female_nuba_dark_spec.png" name="specTex"/>
       </textures>
     </variant>
-  </group>
-  <group>
-	<variant frequency="1" name="Dreads">
+	<variant frequency="2" name="African No Dreads">
+      <mesh>skeletal/new/f_naked.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_kush_fem_dark_nuba.xml" attachpoint="head"/>
-        <prop actor="props/units/heads/kush_dread_hair_fem.xml" attachpoint="head"/>
       </props>
+      <textures>
+        <texture file="skeletal/kush_support_female_nuba_dark.png" name="baseTex"/>
+        <texture file="skeletal/kush_support_female_nuba_dark_spec.png" name="specTex"/>
+      </textures>
     </variant>
-	<variant frequency="1" name="No Dreads">
+    <variant frequency="1" name="Dress Short European">
+      <mesh>skeletal/new/f_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/heads/head_kush_fem_dark_nuba.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/dudette_head.xml" attachpoint="head"/>
       </props>
+      <textures>
+        <texture file="skeletal/imp_support_slave_fem_3.png" name="baseTex"/>
+        <texture file="skeletal/imp_support_slave_fem_3_spec.png" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
