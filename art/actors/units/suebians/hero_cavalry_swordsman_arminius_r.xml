@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_pants.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_iber_hero_1.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/props/rome_mask_01_bronze.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmets/rome_gallic_type_h_cent.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/spatha.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/sheath_gladius_e.xml" attachpoint="sheath_01_R"/>
+        <prop actor="props/units/capes/rider/cape_long_player.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="skeletal/iber_hero_viriato_pants.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/rider/cavalry/base_swordsman_ready.xml" name="Swordsman-Ready" frequency="1"/>
+    <variant file="biped/rider/death_shield.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
