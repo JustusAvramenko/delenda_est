@@ -1,0 +1,18 @@
+{
+	"genericName": "Ballomar",
+	"description": "Ballomar.",
+	"icon": "civ_choices/sueb_hero_ballomar.png",
+	"tooltip": "Select Ballomar to lead your civilization.",
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}/hero_maroboduus_infantry -units/{civ}/hero_ariovistus_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}/hero_arminius_infantry",
+			"affects": "MercenaryCamp"
+		}
+	]
+}

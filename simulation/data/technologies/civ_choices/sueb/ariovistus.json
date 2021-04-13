@@ -1,0 +1,18 @@
+{
+	"genericName": "Ariovistus",
+	"description": "Ariovistus.",
+	"icon": "civ_choices/sueb_hero_ariovistus.png",
+	"tooltip": "Select Ariovistus to lead your civilization.",
+	"modifications": [
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}/hero_maroboduus_infantry -units/{civ}/hero_ballomar_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "ProductionQueue/Entities/_string",
+			"tokens": "-units/{civ}/hero_arminius_infantry",
+			"affects": "MercenaryCamp"
+		}
+	]
+}
