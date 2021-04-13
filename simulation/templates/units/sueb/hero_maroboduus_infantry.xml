@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/iber_hero_viriato
+  </Auras>
+  <Identity>
+    <Civ>sueb</Civ>
+    <SpecificName>Maroboduus</SpecificName>
+    <Icon>units/sueb/hero_arminius.png</Icon>
+	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <History>King of the Marcomanni, who were Germanic Suebian people. He spent part of his youth in Rome, and returning, found his people under pressure from invasions by the Roman empire between the Rhine and Elbe. He led them into the forests of Bohemia, adjacent to the Quadi who already lived nearby, and established a large Germanic alliance.</History>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed>11.0</WalkSpeed>
+  </UnitMotion>
+  <Upgrade>
+    <Mount>
+      <Entity>units/sueb/hero_maroboduus_mounted</Entity>
+      <Tooltip>This gives Maroboduus his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/suebians/hero_infantry_swordsman_arminius.xml</Actor>
+  </VisualActor>
+</Entity>
