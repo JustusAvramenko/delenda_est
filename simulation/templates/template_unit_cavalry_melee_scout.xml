@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_cavalry_melee">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Pierce>5</Pierce>
-        <Crush>2</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/outpost
+    </Entities>
+  </Builder>
   <Cost>
     <Population>2</Population>
     <BuildTime>15</BuildTime>
@@ -20,10 +18,10 @@
   </Health>
   <Identity>
     <GenericName>Scout Cavalry</GenericName>
-    <VisibleClasses datatype="tokens">Scout Sword Hunter</VisibleClasses>
+    <VisibleClasses datatype="tokens">Scout Sword Hunter Builder</VisibleClasses>
 	<Classes datatype="tokens">IdleWorker</Classes>
     <History>Scouts are the unsung heroes of many campaigns.</History>
-    <Tooltip>Traits: Scout, Good Hunter, Fast Speed, Trample.
+    <Tooltip>Traits: Scout, Good Hunter, Fast Speed, Trample, Builds Outpost.
 Strong Against: Nothing.
 Weak Against: Everything.</Tooltip>
 	<RequiredTechnology>phase_village</RequiredTechnology>
@@ -34,6 +32,14 @@ Weak Against: Everything.</Tooltip>
     <metal>0</metal>
   </Loot>
   <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Pierce>5</Pierce>
+        <Crush>2</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <ResourceGatherer>
     <Rates>
       <food.meat>1.2</food.meat>
