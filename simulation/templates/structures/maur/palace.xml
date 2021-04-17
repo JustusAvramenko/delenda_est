@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
+  <BuildRestrictions>
+    <Category>Palace</Category>
+    <Distance>
+      <FromClass>CivicCenter</FromClass>
+      <MaxDistance>60</MaxDistance>
+    </Distance>
+  </BuildRestrictions>
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
@@ -36,6 +43,7 @@
       units/maur/champion_maiden
       units/maur/hero_chanakya
       units/maur/hero_chandragupta_infantry
+      units/maur/hero_bindusara_infantry
       units/maur/hero_ashoka_infantry
     </Entities>
   </ProductionQueue>
@@ -45,6 +53,7 @@
     <Weight>65535</Weight>
   </TerritoryInfluence>
   <VisualActor>
+    <FoundationActor>structures/fndn_8x4.xml</FoundationActor>
     <Actor>structures/mauryas/misc_structure_01.xml</Actor>
   </VisualActor>
 </Entity>
