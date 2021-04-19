@@ -18,6 +18,21 @@
     <Icon>units/spart/hero_leonidas.png</Icon>
     <RequiredTechnology>civ_choices/spart/leonidas</RequiredTechnology>
   </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+	<TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <coin>1.0</coin>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Technologies datatype="tokens">
+	  spartans/unlock_gorgo
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
     <Actor>units/spartans/hero_infantry_spearman_leonidas.xml</Actor>
   </VisualActor>

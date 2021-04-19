@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_hero_infantry_spearman">
+<Entity parent="template_unit_hero">
+  <Attack>
+    <Melee>
+      <AttackName>Dagger</AttackName>
+      <Damage>
+	    <Hack>10</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+      <MaxRange>3</MaxRange>
+	  <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/spart_hero_gorgo_1
+    units/heroes/spart_hero_gorgo_2
+  </Auras>
+  <Health>
+    <Max>800</Max>
+    <IdleRegenRate>1</IdleRegenRate>
+  </Health>
   <Identity>
     <Civ>spart</Civ>
 	<Lang>greek</Lang>
@@ -7,8 +30,36 @@
 	<Phenotype>female</Phenotype>
     <History>The fierce wife of Spartan king Leonidas.</History>
     <Icon>units/spart/hero_gorgo.png</Icon>
-    <RequiredTechnology>civ_choices/spart/gorgo</RequiredTechnology>
+    <RequiredTechnology>spartans/unlock_gorgo</RequiredTechnology>
   </Identity>
+  <Sound>
+    <SoundGroups>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
+      <walk>actor/human/movement/walk.xml</walk>
+      <run>actor/human/movement/run.xml</run>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/{phenotype}_death.xml</death>
+      <build>resource/construction/con_wood.xml</build>
+      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
+      <gather_grain>resource/farming/farm.xml</gather_grain>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
+      <gather_ore>resource/mining/mining.xml</gather_ore>
+      <gather_ruins>resource/mining/mining.xml</gather_ruins>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Gorgo</Category>
+    <MatchLimit>1</MatchLimit>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.85</WalkSpeed>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/spartans/female_gorgo.xml</Actor>
   </VisualActor>
