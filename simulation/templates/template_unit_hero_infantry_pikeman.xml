@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_infantry">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>15</Hack>
-        <Pierce>10</Pierce>
-        <Crush>10</Crush>
-      </Damage>
-    </Entity>
-  </Resistance> 
   <Attack>
     <Melee>
       <AttackName>Pike</AttackName>
@@ -43,6 +34,15 @@ Weak Against: Ranged Units, Sword Infantry.</Tooltip>
       special/formations/syntagma
     </Formations>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>15</Hack>
+        <Pierce>10</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance> 
   <UnitMotion>
     <WalkSpeed op="mul">0.75</WalkSpeed>
   </UnitMotion>

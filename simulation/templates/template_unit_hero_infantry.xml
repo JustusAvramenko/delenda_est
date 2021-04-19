@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero">
+  <Footprint>
+    <Circle radius="1.5"/>
+    <Height>2.5</Height>
+  </Footprint>
+  <Identity>
+    <VisibleClasses datatype="tokens">Infantry</VisibleClasses>
+    <GenericName>Hero</GenericName>
+  </Identity>
   <Resistance>
     <Entity>
       <Damage>
@@ -9,14 +17,6 @@
       </Damage>
     </Entity>
   </Resistance>
-  <Footprint>
-    <Circle radius="1.5"/>
-    <Height>2.5</Height>
-  </Footprint>
-  <Identity>
-    <VisibleClasses datatype="tokens">Infantry</VisibleClasses>
-    <GenericName>Hero</GenericName>
-  </Identity>
   <Selectable>
     <Overlay>
       <Texture>
