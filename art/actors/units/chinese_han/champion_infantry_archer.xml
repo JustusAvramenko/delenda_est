@@ -6,40 +6,18 @@
       <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/weapons/bow_bamboo_long.xml" attachpoint="weapon_L"/>
-        <prop actor="props/units/quiver_back_bamboo.xml" attachpoint="back"/>
-      </props>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="open_helmet">
-      <props>
         <prop actor="props/units/helmets/han_hairbun.xml" attachpoint="helmet"/>
         <prop actor="props/units/helmets/han_advanced_melee_helmet.xml" attachpoint="helmet"/>
-      </props>
-    </variant>
-    <variant frequency="1" name="feather_helmet">
-      <props>
-        <prop actor="props/units/helmets/han_heavy_helmet_b.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/bow_bamboo.xml" attachpoint="weapon_bow"/>
+        <prop actor="props/units/quiver_back_bamboo.xml" attachpoint="back"/>
+        <prop actor="props/units/weapons/sheath/han_jian_sheath_left_a_e.xml" attachpoint="sheath_L"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="iron-armor-a">
-      <textures>
-        <texture file="skeletal/han_icr_e.png" name="baseTex"/>
-        <texture file="skeletal/han_icr_e_norm.png" name="normTex"/>
-        <texture file="skeletal/han_icr_e_spec.png" name="specTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="iron-armor-b">
-      <textures>
-        <texture file="skeletal/han_isp_e_norm.png" name="normTex"/>
-        <texture file="skeletal/han_isp_e_black.png" name="baseTex"/>
-        <texture file="skeletal/han_isp_e_spec.png" name="specTex"/>
-      </textures>
-    </variant>
+    <variant file="clothes/han/armor_01.xml"/>
+    <variant file="clothes/han/armor_02.xml"/>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
@@ -49,5 +27,5 @@
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
