@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_infantry_hoplite">
-  <Attack>
-    <Melee>
-	  <Bonuses>
-		<BonusPersians>
-		  <Civ>pers</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.25</Multiplier>
-		</BonusPersians>
-	  </Bonuses>
-    </Melee>
-  </Attack>
   <Auras datatype="tokens">
-    units/heroes/athen_hero_miltiades_hoplites
+    units/heroes/athen_hero_aristides_1
   </Auras>
   <Cost>
     <Resources>
@@ -37,6 +26,18 @@
     </Rates> 
     <Interval>10000</Interval> 
   </ResourceTrickle>
+  <Upgrade>
+    <Mount>
+      <Entity>units/athen/hero_aristides_mounted</Entity>
+      <Tooltip>This gives Aristides his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
   <VisualActor>
     <Actor>units/athenians/hero_infantry_hoplite_aristides.xml</Actor>
   </VisualActor>
