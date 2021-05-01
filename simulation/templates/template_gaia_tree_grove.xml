@@ -19,8 +19,16 @@
     <DeleteUponConstruction>false</DeleteUponConstruction>
   </Obstruction>
   <ResourceSupply>
-    <Amount>5000</Amount>
+    <Max>5000</Max>
 	<MaxGatherers>40</MaxGatherers>
+	<Change>
+	  <Growth>
+        <State>notGathered</State>
+		<Value>5</Value>
+		<Interval>5000</Interval>
+		<UpperLimit>5000</UpperLimit>
+      </Growth>
+	</Change>
   </ResourceSupply>
   <Selectable replace="">
     <Overlay>

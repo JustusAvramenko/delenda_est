@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>2</Hack>
-        <Pierce>6</Pierce>
-        <Crush>5</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Capture>
       <AttackName>Capture</AttackName>
@@ -23,6 +14,8 @@
         <Hack>200.0</Hack>
       </Damage>
       <MaxRange>4.0</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">!Domestic</RestrictedClasses>
     </Slaughter>
   </Attack>
   <Auras datatype="tokens">
@@ -65,6 +58,15 @@
     <RequiredXp>100</RequiredXp>
   </Promotion>
   <RangeVisualization disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>6</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <ResourceTrickle>
     <Rates>
       <food>0</food>
