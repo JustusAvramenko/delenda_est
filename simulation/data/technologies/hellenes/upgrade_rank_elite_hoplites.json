@@ -6,13 +6,28 @@
 		"theb": "Zeugitès"
 	},
 	"description": "Upgrade all of your citizen-soldier infantrymen to Elite rank.",
-	"cost": {"coin": 400, "glory": 200},
-	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "civ": "athen" }, { "civ": "theb" }] }] },
+	"cost": {
+		"coin": 400,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "theb" }
+				]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires Advanced Hoplites.",
 	"icon": "upgrade_elite.png",
-	"researchTime": 70,
+	"researchTime": 60,
 	"tooltip": "Upgrade Hoplites to Elite rank. This increases their military prowess, but increases their training costs.",
-	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
-	"affects": ["Citizen Infantry Hoplite Advanced"],
+	"modifications": [
+		{"value": "Promotion/RequiredXp", "replace": 0}
+	],
+	"affects": ["Citizen Hoplite Advanced"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

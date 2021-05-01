@@ -1,0 +1,30 @@
+{
+	"genericName": "Hoplite Tradition",
+	"description": "Hoplite soldiers constituted most of the armies of Greece.",
+	"cost": {
+		"food": 300,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "spart" },
+					{ "civ": "theb" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "helmet_corinthian_gold.png",
+	"researchTime": 40,
+	"tooltip": "Hoplites −20% training time and −50% experience required for promotion. Unlocks \"Advanced Hoplites\" technology. Does not apply to Heroes or Champions.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.75 },
+		{ "value": "Promotion/RequiredXp", "multiply": 0.5 }
+	],
+	"affects": ["Infantry Hoplite !Hero !Champion"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
