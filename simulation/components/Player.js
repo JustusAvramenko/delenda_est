@@ -45,7 +45,7 @@ Player.prototype.Deserialize = function(state)
 /**
  * Which units will be shown with special icons at the top.
  */
-var panelEntityClasses = "Hero Relic";
+var panelEntityClasses = "Hero Relic Minister";
 
 Player.prototype.Init = function()
 {
