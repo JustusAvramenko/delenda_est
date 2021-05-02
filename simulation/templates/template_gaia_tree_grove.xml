@@ -20,15 +20,14 @@
   </Obstruction>
   <ResourceSupply>
     <Max>5000</Max>
+	<Initial>4000</Initial>
 	<MaxGatherers>40</MaxGatherers>
-	<Change>
-	  <Growth>
-        <State>notGathered</State>
-		<Value>5</Value>
-		<Interval>5000</Interval>
-		<UpperLimit>5000</UpperLimit>
-      </Growth>
-	</Change>
+    <Change>
+      <Regrowth>
+        <Value>2</Value>
+        <Interval>5000</Interval>
+      </Regrowth>
+    </Change>
   </ResourceSupply>
   <Selectable replace="">
     <Overlay>
