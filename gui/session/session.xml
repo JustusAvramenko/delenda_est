@@ -3,8 +3,10 @@
 <objects>
 
 <script directory="gui/common/"/>
+<script directory="gui/common/campaigns/"/>
 <script directory="gui/maps/"/>
 <script directory="gui/session/"/>
+<script directory="gui/session/campaigns/"/>
 <script directory="gui/session/chat/"/>
 <script directory="gui/session/developer_overlay/"/>
 <script directory="gui/session/diplomacy/"/>
@@ -36,6 +38,7 @@
 	<include directory="gui/session/hotkeys/"/>
 
 	<include file="gui/session/NetworkStatusOverlay.xml"/>
+	<include file="gui/session/NetworkDelayOverlay.xml"/>
 	<include file="gui/session/PauseOverlay.xml"/>
 	<include file="gui/session/TimeNotificationOverlay.xml"/>
 
@@ -113,5 +116,11 @@
 
 <!-- Selection bandbox -->
 <object name="bandbox" type="image" sprite="bandbox" ghost="true" hidden="true" z="200"/>
+
+<!-- Cinema overlay -->
+<object name="cinemaOverlay" hidden="true" ghost="true">
+	<object name="cinemaBarTop" type="image" sprite="color:0 0 0 255" size="0 0 100% 100" ghost="true"/>
+	<object name="cinemaBarBottom" type="image" sprite="color:0 0 0 255" size="0 100%-100 100% 100%" ghost="true"/>
+</object>
 
 </objects>
