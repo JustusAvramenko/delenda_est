@@ -4,24 +4,27 @@
 		"han": "Sūnzi de zhànzhēng yìshù"
 	},
 	"description": "This famous and most important work of the Seven Military Classics teaches Chinese commanders everything about planning battles, maintaining armies, and defeating one's enemies.",
-	"cost": {"glory": 1000},
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "han"}]},
-	"requirementsTooltip": "Unlocked in City Phase.",
+	"cost": {
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_town"}, 
+			{"civ": "han"}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "sibylline_books.png",
-	"researchTime": 40,
-	"tooltip": "Chinese Heroes -75% train time, remaining Fortress and Barracks technologies -50% cost.",
+	"researchTime": 90,
+	"tooltip": "Chinese Heroes -50% train time; Military structure technologies -50% cost.",
 	"modifications": [
-		{"value": "Cost/BuildTime", "multiply": 0.25, "affects": "Hero"},
-		{ "value": "ProductionQueue/TechCostMultiplier/wood", "multiply": 0.5, "affects": "Fortress" },
-		{ "value": "ProductionQueue/TechCostMultiplier/food", "multiply": 0.5, "affects": "Fortress" },
-		{ "value": "ProductionQueue/TechCostMultiplier/metal", "multiply": 0.5, "affects": "Fortress" },
-		{ "value": "ProductionQueue/TechCostMultiplier/stone", "multiply": 0.5, "affects": "Fortress" },
-		{ "value": "ProductionQueue/TechCostMultiplier/glory", "multiply": 0.5, "affects": "Fortress" },
-		{ "value": "ProductionQueue/TechCostMultiplier/wood", "multiply": 0.5, "affects": "Barracks" },
-		{ "value": "ProductionQueue/TechCostMultiplier/food", "multiply": 0.5, "affects": "Barracks" },
-		{ "value": "ProductionQueue/TechCostMultiplier/metal", "multiply": 0.5, "affects": "Barracks" },
-		{ "value": "ProductionQueue/TechCostMultiplier/stone", "multiply": 0.5, "affects": "Barracks" },
-		{ "value": "ProductionQueue/TechCostMultiplier/glory", "multiply": 0.5, "affects": "Barracks" }
+		{"value": "Cost/BuildTime", "multiply": 0.5, "affects": "Hero"},
+		{ "value": "ProductionQueue/TechCostMultiplier/wood", "multiply": 0.5, "affects": "Structure Military" },
+		{ "value": "ProductionQueue/TechCostMultiplier/food", "multiply": 0.5, "affects": "Structure Military" },
+		{ "value": "ProductionQueue/TechCostMultiplier/metal", "multiply": 0.5, "affects": "Structure Military" },
+		{ "value": "ProductionQueue/TechCostMultiplier/stone", "multiply": 0.5, "affects": "Structure Military" },
+		{ "value": "ProductionQueue/TechCostMultiplier/coin", "multiply": 0.5, "affects": "Structure Military" },
+		{ "value": "ProductionQueue/TechCostMultiplier/glory", "multiply": 0.5, "affects": "Structure Military" }
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
