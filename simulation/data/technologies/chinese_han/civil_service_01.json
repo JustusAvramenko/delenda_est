@@ -3,9 +3,12 @@
 	"specificName": {
 		"han": "Guānliáo"
 	},
-	"description": ".",
-	"cost": {"wood": 0},
-	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "han"}]},
+	"requirements": {
+		"all": [
+			{"tech": "phase_town"},
+			{"civ": "han"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "chinese_bureaucracy_1.png",
 	"researchTime": 90,
@@ -15,7 +18,9 @@
 		{"value": "ProductionQueue/TechCostMultiplier/wood", "multiply": 0.9},
 		{"value": "ProductionQueue/TechCostMultiplier/food", "multiply": 0.9},
 		{"value": "ProductionQueue/TechCostMultiplier/metal", "multiply": 0.9},
-		{"value": "ProductionQueue/TechCostMultiplier/stone", "multiply": 0.9}
+		{"value": "ProductionQueue/TechCostMultiplier/stone", "multiply": 0.9},
+		{"value": "ProductionQueue/TechCostMultiplier/coin", "multiply": 0.9},
+		{"value": "ProductionQueue/TechCostMultiplier/glory", "multiply": 0.9}
 	],
 	"affects": ["Structure !Forge"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
