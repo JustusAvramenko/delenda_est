@@ -40,24 +40,18 @@ Trade between docks. Garrison a Trader aboard for additional profit (+20% for ea
       </Damage>
     </Entity>
   </Resistance>
-  <ResourceGatherer>
-    <MaxDistance>12.0</MaxDistance>
-    <Capacities>
-      <food>75</food>
-      <wood>75</wood>
-      <stone>50</stone>
-      <metal>50</metal>
-      <coin>50</coin>
-    </Capacities>
-  </ResourceGatherer>
   <StatusBars>
     <BarWidth>6.0</BarWidth>
     <BarHeight>0.5</BarHeight>
     <HeightOffset>6.0</HeightOffset>
   </StatusBars>
   <Trader>
-    <GainMultiplier>1.0</GainMultiplier>
+    <GainMultiplier>1</GainMultiplier>
+    <GarrisonGainMultiplier>0.2</GarrisonGainMultiplier>
   </Trader>
+  <TreasureCollecter>
+    <MaxDistance>12</MaxDistance>
+  </TreasureCollecter>
   <UnitAI>
 	<DefaultStance>passive</DefaultStance>
     <CanGuard>false</CanGuard>
