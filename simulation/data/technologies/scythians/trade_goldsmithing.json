@@ -1,0 +1,23 @@
+{
+	"genericName": "Goldsmithing",
+	"description": "Amphorae were fired clay jars in which perishable goods can be stored for long journeys.",
+	"cost": {
+		"metal": 400,
+		"glory": 100
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"}, 
+			{"civ": "scyth"}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "goldsmithing.png",
+	"researchTime": 40,
+	"tooltip": "Traders +40% trade profit per trip.",
+	"modifications": [
+		{"value": "Trader/GainMultiplier", "multiply": 1.4}
+	],
+	"affects": ["Trader"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
