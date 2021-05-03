@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion_infantry_javelineer">
+  <Health>
+    <Max>200</Max>
+    <RegenRate>-2</RegenRate>
+  </Health>
   <Identity>
     <SpecificName>Brythonic Chariot Rider</SpecificName>
     <Icon>units/brit/champion_chariot_javelineer.png</Icon>
   </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/britons/infantry_javelineer_c.xml</Actor>
   </VisualActor>
