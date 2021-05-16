@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Square width="24.0" depth="25.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health disable=""/>
+  <Identity>
+    <VisibleClasses datatype="tokens">
+      Shrine
+    </VisibleClasses>
+	<Undeletable>true</Undeletable>
+  </Identity>
+  <Obstruction>
+    <Static width="20" depth="21"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      -units/{native}/support_healer_b
+      units/{native}/support_healer_e
+    </Entities>
+    <Technologies datatype="tokens">
+	  -ptolemies/tech_cost_temple
+      -gather_glory_healers
+	  -heal_temple
+	  -health_regen_units
+	  -attack_military_cult
+      -ptolemies/trickle_glory_pharaoh
+	  -health_state_religion
+    </Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <HeightOffset>15.0</HeightOffset>
+  </StatusBars>
+  <Resistance replace=""/>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>
