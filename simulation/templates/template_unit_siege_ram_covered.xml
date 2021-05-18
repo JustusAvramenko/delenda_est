@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_siege_ram">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>5</Hack>
-        <Pierce>30</Pierce>
-        <Crush>10</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Cost>
     <Resources>
       <wood>200</wood>
@@ -30,6 +21,14 @@
     <GenericName>Covered Battering Ram</GenericName>
     <VisibleClasses datatype="tokens">Covered</VisibleClasses>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Pierce op="add">10</Pierce>
+        <Crush op="add">5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Sound>
     <SoundGroups>
       <select>attack/siege/siege_select.xml</select>
