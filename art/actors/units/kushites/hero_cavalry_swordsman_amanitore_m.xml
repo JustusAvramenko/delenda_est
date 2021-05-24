@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/horse_barb.dae</mesh>
+      <props>
+        <prop actor="units/kushites/hero_cavalry_swordsman_amanitore_r.xml" attachpoint="rider"/>
+        <prop actor="props/horse/kush_crest_bronze.xml" attachpoint="head"/>
+        <prop actor="props/horse/cav_blanket_kush.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_pelt_kush.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_straps_kush_hero.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_straps_head_kush_gold.xml" attachpoint="head"/>
+        <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant file="quadraped/horse/black_alt.xml" frequency="1" name="black"/>
+  </group>
+  <group>
+    <variant file="quadraped/base_horse_trot.xml" name="Horse-Trot" frequency="1"/>
+    <variant file="quadraped/base_horse_death.xml" name="Spearman Horse"/>
+    <variant file="quadraped/base_horse_run.xml" name="Spearman Horse"/>
+  </group>
+  <material>no_trans_parallax_spec.xml</material>
+</actor>

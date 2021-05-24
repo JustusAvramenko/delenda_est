@@ -2,7 +2,7 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant>
+    <variant file="biped/base_archer_chariot_ready.xml">
       <mesh>skeletal/new/f_dress.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_kush_fem_amanirenas.xml" attachpoint="head"/>
@@ -20,13 +20,11 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/base_archer_relax_fem.xml"/>
+    <variant frequency="1" name="Idle"/>
     <variant file="biped/attack_capture.xml"/>
-    <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/attack_ranged_archer_hip.xml"/>
-    <variant file="biped/gather_praise.xml"/>
-    <variant file="biped/female_base_walk.xml"/>
+    <variant file="biped/attack_ranged_archer.xml"/>
     <variant file="biped/female_death.xml"/>
   </group>
-  <material>player_trans_parallax_spec.xml</material>
+  <material>player_trans_norm_spec.xml</material>
 </actor>

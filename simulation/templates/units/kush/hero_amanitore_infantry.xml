@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/ptol_hero_cleopatra_3
+  </Auras>
+  <Identity>
+    <Civ>kush</Civ>
+    <Lang>napatan</Lang>
+    <SpecificName>Amanitore</SpecificName>
+	<Phenotype>female</Phenotype>
+    <VisibleClasses datatype="tokens">Female</VisibleClasses>
+    <Icon>units/kush/hero_amanitore.png</Icon>
+    <RequiredTechnology>civ_choices/kush/amanitore</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/kush/hero_amanitore_mounted</Entity>
+      <Tooltip>This gives Amanitore her War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/kushites/hero_infantry_swordsman_amanitore.xml</Actor>
+  </VisualActor>
+</Entity>

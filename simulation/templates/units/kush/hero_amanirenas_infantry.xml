@@ -12,6 +12,18 @@
     <Icon>units/kush/hero_amanirenas.png</Icon>
     <RequiredTechnology>civ_choices/kush/amanirenas</RequiredTechnology>
   </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/kush/hero_amanirenas_mounted</Entity>
+      <Tooltip>This gives Amanirenas her War Chariot, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>300</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
   <VisualActor>
     <Actor>units/kushites/hero_infantry_archer_amanirenas.xml</Actor>
   </VisualActor>

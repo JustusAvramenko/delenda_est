@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_archer">
+  <Auras datatype="tokens">
+    units/heroes/kush_hero_arakamani_1
+    units/heroes/kush_hero_arakamani_2
+    units/heroes/kush_hero_arakamani_3
+  </Auras>
+  <Identity>
+    <Civ>kush</Civ>
+    <Lang>napatan</Lang>
+    <SpecificName>Arakamani</SpecificName>
+    <Icon>units/kush/hero_arakamani.png</Icon>
+    <RequiredTechnology>civ_choices/kush/arakamani</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/kush/hero_arakamani_mounted</Entity>
+      <Tooltip>This gives Arakamani his War Elephant, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>400</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/kushites/hero_infantry_archer_arakamani.xml</Actor>
+  </VisualActor>
+</Entity>
