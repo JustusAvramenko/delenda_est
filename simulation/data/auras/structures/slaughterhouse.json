@@ -1,0 +1,18 @@
+{
+	"type": "range",
+	"radius": 24,
+	"affects": ["Gatherer"],
+	"affectedPlayers": ["Player", "MutualAlly"],
+	"modifications": [
+	  {"value": "ResourceGatherer/Rates/food.meat", "multiply": 2}
+	],
+	"auraName": "Slaughterhouse",
+	"auraDescription": "Player's and mutual allies' gatherers +100% meat gathering rate when near a Corral.",
+	"overlayIcon": "art/textures/ui/session/auras/farming_bonus.png",
+	"stackable": false,
+	"rangeOverlay" : {
+		"lineTexture": "outline_border.png",
+		"lineTextureMask": "outline_border_mask.png",
+		"lineThickness": 0.075
+	}
+}

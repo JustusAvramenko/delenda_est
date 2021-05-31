@@ -1,0 +1,16 @@
+{
+	"type": "range",
+	"radius": 3,
+	"affects": ["Infantry Pike"],
+	"affectedPlayers": ["Player", "Ally"],
+	"modifications": [
+	  {"value": "Attack/Melee/Damage/Hack", "multiply": 1.05},
+		{"value": "Resistance/Entity/Damage/Hack", "add": 1},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 1},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 1}
+	],
+	"auraName": "Massed Pikes",
+	"auraDescription": "Player and allied Pike Infantry boost each others' attack by +5% within 3 meters. This effect 'stacks', so that the more Pike Infantry fighting together en mass, the more effective this becomes (+10%, +15%, +20% etc.). Resistance also increased +1 for all types.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png",
+	"stackable": true
+}
