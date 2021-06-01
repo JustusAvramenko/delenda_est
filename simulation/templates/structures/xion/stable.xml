@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_stable">
+  <Auras datatype="tokens">
+    structures/corral_garrison
+	structures/slaughterhouse
+  </Auras>
   <BuildRestrictions>
     <Territory>own neutral ally enemy</Territory>
   </BuildRestrictions>
@@ -7,6 +11,11 @@
     <Circle radius="15.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">
+      Domestic
+    </List>
+  </GarrisonHolder>
   <Health>
     <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
