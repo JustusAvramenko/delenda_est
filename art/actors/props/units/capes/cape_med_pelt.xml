@@ -2,10 +2,22 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="Base">
-      <mesh>props/new/capes/cape_hd_hoplite.dae</mesh>
+    <variant frequency="1" name="Cape medium">
+      <mesh>props/new/capes/cape_hd_medium.dae</mesh>
+    </variant>
+    <variant frequency="1" name="Cape long ragged">
+      <mesh>props/new/capes/cape_hd_ragged.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Pelt Brown">
       <textures>
-        <texture file="props/cape_hd.dds" name="baseTex"/>
+        <texture file="props/cape_hd_pelt_brown.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Pelt Gray">
+      <textures>
+        <texture file="props/cape_hd_pelt_gray.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
@@ -15,18 +27,14 @@
     <variant file="biped/base_spearman_shield_relax_ptol.xml" name="Spearman-Shield-Relax-Ptol" frequency="1"/>
     <variant file="biped/base_spearman_shield_ready.xml" name="Spearman-Shield-Ready" frequency="1"/>
     <variant file="biped/base_spearman_shield_relax.xml" name="Spearman-Shield-Relax" frequency="1"/>
-    <variant file="biped/base_spearman_shield_relax_celt.xml" name="Spearman-Shield-Relax-Celt" frequency="1"/>
-    <variant file="biped/base_spearman_shield_relax_celt_fast.xml" name="Spearman-Shield-Relax-Celt-Fast" frequency="1"/>
     <variant file="biped/base_spearman_shield_relax_fast.xml" name="Spearman-Shield-Relax-Fast" frequency="1"/>
     <variant file="biped/base_swordsman_2hand_ready.xml" name="Swordsman-2h-Ready" frequency="1"/>
     <variant file="biped/base_swordsman_2hand_relax.xml" name="Swordsman-2h-Relax" frequency="1"/>
     <variant file="biped/base_swordsman_shield_ready.xml" name="Swordsman-Shield-Ready" frequency="1"/>
     <variant file="biped/base_swordsman_shield_relax.xml" name="Swordsman-Shield-Relax" frequency="1"/>
-    <variant file="biped/base_swordsman_shield_relax_celt.xml" name="Swordsman-Shield-Relax-Celt" frequency="1"/>
     <variant file="biped/base_swordsman_shieldarm_ready.xml" name="Swordsman-Shieldarm-Ready" frequency="1"/>
     <variant file="biped/base_swordsman_shieldarm_relax.xml" name="Swordsman-Shieldarm-Relax" frequency="1"/>
     <variant file="biped/base_swordsman_shield_fast.xml" name="Swordsman-Shield-Relax-Fast" frequency="1"/>
-    <variant file="biped/base_swordsman_shield_fast_wild.xml" name="Swordsman-Shield-Fast-Wild" frequency="1"/>
     <variant file="biped/base_rhomphaia_shield_fast.xml" name="Swordsman-Rhomphaia-Fast" frequency="1"/>
     <variant file="biped/base_rhomphaia_shield_ready.xml" name="Swordsman-Rhomphaia-Ready" frequency="1"/>
     <variant file="biped/base_rhomphaia_shield_relax.xml" name="Swordsman-Rhomphaia-Relax" frequency="1"/>
@@ -60,14 +68,6 @@
     <variant file="biped/formations/testudo_front_right.xml"/>
     <variant file="biped/formations/testudo_left.xml"/>
     <variant file="biped/formations/testudo_right.xml"/>
-    <variant file="biped/cape_approach_tree.xml"/>
-    <variant file="biped/cape_approach_grain.xml"/>
-    <variant file="biped/cape_approach_fruit.xml"/>
-    <variant file="biped/cape_approach_meat.xml"/>
-    <variant file="biped/cape_approach_rock.xml"/>
-    <variant file="biped/cape_approach_ore.xml"/>
-    <variant file="biped/cape_approach_ruins.xml"/>
-    <variant file="biped/cape_approach_praise.xml"/>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
@@ -85,5 +85,5 @@
     <variant file="biped/cape_build_farm.xml"/>
     <variant file="biped/death_cape.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>basic_trans.xml</material>
 </actor>
