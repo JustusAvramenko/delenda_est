@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_cavalry_ranged_archer">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack op="add">2</Hack>
-        <Pierce op="add">2</Pierce>
-        <Crush op="add">4</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Ranged>
       <Damage>
@@ -62,6 +53,15 @@ Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
     <Entity>units/pers/chariot_archer_a</Entity>
     <RequiredXp>10000</RequiredXp>
   </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">2</Hack>
+        <Pierce op="add">2</Pierce>
+        <Crush op="add">4</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <ResourceGatherer>
     <MaxDistance>5.0</MaxDistance>
     <Capacities>
