@@ -1,64 +1,103 @@
-function InitGame(settings)
-{
-	// No settings when loading a map in Atlas, so do nothing
-	if (!settings)
-	{
-		// Map dependent initialisations of components (i.e. garrisoned units)
-		Engine.BroadcastMessage(MT_InitGame, {});
-		return;
-	}
-
-	if (settings.ExploreMap)
-	{
-		let cmpRangeManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager);
-		for (let i = 1; i < settings.PlayerData.length; ++i)
-			cmpRangeManager.ExploreAllTiles(i);
-	}
-
-		if (settings.AllyMap)
-	{
-		for (let i = 1; i < settings.PlayerData.length; ++i)
-		{
-			let cmpPlayer = QueryPlayerIDInterface(i);
-			let cmpTechnologyManager = Engine.QueryInterface(cmpPlayer.entity, IID_TechnologyManager);
-			if (cmpTechnologyManager)
-			{
-				cmpTechnologyManager.ResearchTechnology(cmpPlayer.template.SharedLosTech);
-				cmpPlayer.UpdateSharedLos();
-			}
-		}
-	}
-
-	// Sandbox, Very Easy, Easy, Medium, Hard, Very Hard
-	// rate apply on resource stockpiling as gathering and trading
-	// time apply on building, upgrading, packing, training and technologies
-	let rate = [ 0.42, 0.56, 0.75, 1.00, 1.25, 1.56 ];
-	let time = [ 1.40, 1.25, 1.10, 1.00, 1.00, 1.00 ];
-	let cmpModifiersManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_ModifiersManager);
-	let cmpAIManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_AIManager);
-	for (let i = 0; i < settings.PlayerData.length; ++i)
-	{
-		let cmpPlayer = QueryPlayerIDInterface(i);
-		cmpPlayer.SetCheatsEnabled(!!settings.CheatsEnabled);
-
-		if (settings.PlayerData[i] && !!settings.PlayerData[i].AI)
-		{
-			let AIDiff = +settings.PlayerData[i].AIDiff;
-			cmpAIManager.AddPlayer(settings.PlayerData[i].AI, i, AIDiff, settings.PlayerData[i].AIBehavior || "random");
-			cmpPlayer.SetAI(true);
-			AIDiff = Math.min(AIDiff, rate.length - 1);
-			cmpModifiersManager.AddModifiers("AI Bonus", {
-				"ResourceGatherer/BaseSpeed": [{ "affects": ["Unit", "Structure"], "multiply": rate[AIDiff] }],
-				"Trader/GainMultiplier": [{ "affects": ["Unit", "Structure"], "multiply": rate[AIDiff] }],
-				"Cost/BuildTime": [{ "affects": ["Unit", "Structure"], "multiply": time[AIDiff] }],
-			}, cmpPlayer.entity);
-		}
-	}
-	// Map or player data (handicap...) dependent initialisations of components (i.e. garrisoned units)
-	Engine.BroadcastMessage(MT_InitGame, {});
-
-	cmpAIManager.TryLoadSharedComponent();
-	cmpAIManager.RunGamestateInit();
-}
-
-Engine.RegisterGlobal("InitGame", InitGame);
+/**
+ * Called when the map has been loaded, but before the simulation has started.
+ * Only called when a new game is started, not when loading a saved game.
+ * 
+ * This is pretty ugly and (I think) overwrites InitGame.js in "Public" mod (aka the 0AD game).
+ * It's the only way I could get this to work because you can only "Engine.RegisterGlobal()"" once :/.
+ */
+ function PreInitGame()
+ {
+	 // We need to replace skirmish "default" entities with real ones.
+	 // This needs to happen before AI initialization (in InitGame).
+	 // And we need to flush destroyed entities otherwise the AI gets the wrong game state in
+	 // the beginning and a bunch of "destroy" messages on turn 0, which just shouldn't happen.
+	 Engine.BroadcastMessage(MT_SkirmishReplace, {});
+	 Engine.FlushDestroyedEntities();
+ 
+	 let numPlayers = Engine.QueryInterface(SYSTEM_ENTITY, IID_PlayerManager).GetNumPlayers();
+	 for (let i = 1; i < numPlayers; ++i) // ignore gaia
+	 {
+		 let cmpTechnologyManager = QueryPlayerIDInterface(i, IID_TechnologyManager);
+		 if (cmpTechnologyManager)
+			 cmpTechnologyManager.UpdateAutoResearch();
+	 }
+ 
+	 // Explore the map inside the players' territory borders
+	 let cmpRangeManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager);
+	 cmpRangeManager.ExploreTerritories();
+ }
+ 
+ function InitGame(settings)
+ {
+	 // No settings when loading a map in Atlas, so do nothing
+	 if (!settings)
+	 {
+		 // Map dependent initialisations of components (i.e. garrisoned units)
+		 Engine.BroadcastMessage(MT_InitGame, {});
+		 return;
+	 }
+ 
+	 if (settings.ExploreMap)
+	 {
+		 let cmpRangeManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager);
+		 for (let i = 1; i < settings.PlayerData.length; ++i)
+			 cmpRangeManager.ExploreMap(i);
+	 }
+ 
+	 if (settings.AllyView)
+	 {
+		 for (let i = 1; i < settings.PlayerData.length; ++i)
+		 {
+			 let cmpPlayer = QueryPlayerIDInterface(i);
+			 let cmpTechnologyManager = Engine.QueryInterface(cmpPlayer.entity, IID_TechnologyManager);
+			 if (cmpTechnologyManager)
+			 {
+				 cmpTechnologyManager.ResearchTechnology(cmpPlayer.template.SharedLosTech);
+				 cmpPlayer.UpdateSharedLos();
+			 }
+		 }
+	 }
+	 
+	 // Sandbox, Very Easy, Easy, Medium, Hard, Very Hard
+	 // rate apply on resource stockpiling as gathering and trading
+	 // time apply on building, upgrading, packing, training and technologies
+	 let rate = [ 0.42, 0.56, 0.75, 1.00, 1.25, 1.56 ];
+	 let time = [ 1.40, 1.25, 1.10, 1.00, 1.00, 1.00 ];
+	 let cmpModifiersManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_ModifiersManager);
+	 let cmpAIManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_AIManager);
+	 for (let i = 0; i < settings.PlayerData.length; ++i)
+	 {
+		 let cmpPlayer = QueryPlayerIDInterface(i);
+		 cmpPlayer.SetCheatsEnabled(!!settings.CheatsEnabled);
+ 
+		 if (settings.PlayerData[i] && !!settings.PlayerData[i].AI)
+		 {
+			 let AIDiff = +settings.PlayerData[i].AIDiff;
+			 cmpAIManager.AddPlayer(settings.PlayerData[i].AI, i, AIDiff, settings.PlayerData[i].AIBehavior || "random");
+			 cmpPlayer.SetAI(true);
+			 AIDiff = Math.min(AIDiff, rate.length - 1);
+			 cmpModifiersManager.AddModifiers("AI Bonus", {
+				 "ResourceGatherer/BaseSpeed": [{ "affects": ["Unit", "Structure"], "multiply": rate[AIDiff] }],
+				 "Trader/GainMultiplier": [{ "affects": ["Unit", "Structure"], "multiply": rate[AIDiff] }],
+				 "Cost/BuildTime": [{ "affects": ["Unit", "Structure"], "multiply": time[AIDiff] }],
+			 }, cmpPlayer.entity);
+		 }
+ 
+		 if (settings.PopulationCap)
+			 cmpPlayer.SetMaxPopulation(settings.PopulationCap);
+	 }
+	 if (settings.WorldPopulationCap)
+		 Engine.QueryInterface(SYSTEM_ENTITY, IID_PlayerManager).SetMaxWorldPopulation(settings.WorldPopulationCap);
+ 
+	 // Update the grid with all entities created for the map init.
+	 Engine.QueryInterface(SYSTEM_ENTITY, IID_Pathfinder).UpdateGrid();
+ 
+	 // Map or player data (handicap...) dependent initialisations of components (i.e. garrisoned units).
+	 Engine.BroadcastMessage(MT_InitGame, {});
+ 
+	 cmpAIManager.TryLoadSharedComponent();
+	 cmpAIManager.RunGamestateInit();
+ }
+ 
+ Engine.RegisterGlobal("PreInitGame", PreInitGame);
+ Engine.RegisterGlobal("InitGame", InitGame);

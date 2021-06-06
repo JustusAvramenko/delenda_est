@@ -3,7 +3,7 @@
  *
  * Requires g_GameAttributes and g_VictoryConditions.
  */
-function getGameDescriptionList(mapCache)
+function getGameDescriptionList(initAttributes, mapCache)
 {
 	let titles = [];
 	if (!initAttributes.settings.VictoryConditions.length)
@@ -217,13 +217,13 @@ function getGameDescriptionList(mapCache)
 	});
 
 	titles.push({
-		"label": translate("Revealed Map"),
-		"value": initAttributes.settings.RevealMap
+		"label": translate("Explored Map"),
+		"value": initAttributes.settings.ExploreMap
 	});
 
 	titles.push({
-		"label": translate("Explored Map"),
-		"value": initAttributes.settings.ExploreMap
+		"label": translate("Revealed Map"),
+		"value": initAttributes.settings.RevealMap
 	});
 
 	titles.push({
@@ -231,18 +231,24 @@ function getGameDescriptionList(mapCache)
 		"value": initAttributes.settings.CheatsEnabled
 	});
 
+	return titles;
+}
+
+function modDescriptions(initAttributes, titles) {
+	titles.push({
+		"label": translate("Allied View"),
+		"value": initAttributes.settings.AllyView
+	});
+    return titles;
+}
+
+function getGameDescription(initAttributes, mapCache) {
+	let titles = getGameDescriptionList(initAttributes, mapCache);
+    titles = modDescriptions(initAttributes, titles);
 	return titles.map(title => sprintf(translate("%(label)s %(details)s"), {
 		"label": coloredText(title.label, g_DescriptionHighlight),
 		"details":
 			title.value === true ? translateWithContext("game setup option", "enabled") :
 				title.value || translateWithContext("game setup option", "disabled")
 	})).join("\n");
-}
-
-function modDescriptions(mapCache, titles) {
-	titles.push({
-		"label": translate("Allied Vision"),
-		"value": initAttributes.settings.AllyMap
-	});
-    return titles;
 }
