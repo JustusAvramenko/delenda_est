@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="minimapPanel"
+	size="0 0 100% 100%"
+	sprite="mapPanel"
+	type="image"
+>
+
+	<!-- MiniMap -->
+	<object
+		name="minimap"
+		size="8 8 100%-8 100%-8"
+		type="minimap"
+		mask="true"
+		flare_texture_count="16"
+		flare_render_size="32"
+		flare_animation_speed="7"
+		flare_interleave="true"
+		flare_lifetime_seconds="6"
+	/>
+
+	<!-- Background image -->
+	<object
+		type="image"
+		size="4 4 100%-4 100%-4"
+		sprite="stretched:session/minimap_circle_modern.png"
+		ghost="true"
+	/>
+	
+	<!-- Idle Worker Button -->
+	<object name="idleWorkerButton"
+		type="button"
+		size="100%-119 100%-120 100%-4 100%-5"
+		tooltip_style="sessionToolTip"
+		hotkey="selection.idleworker"
+		sprite="stretched:session/minimap-idle.png"
+		sprite_over="stretched:session/minimap-idle-highlight.png"
+		sprite_disabled="stretched:session/minimap-idle-disabled.png"
+		mouse_event_mask="texture:session/minimap-idle.png"
+	/>
+
+	<!-- Diplomacy Colors Button -->
+	<object name="diplomacyColorsButton"
+		type="button"
+		size="4 100%-120 119 100%-5"
+		tooltip_style="sessionToolTip"
+		hotkey="session.diplomacycolors"
+	/>
+
+	<!-- Flare Button -->
+	<object
+		name="flareButton"
+		type="button"
+		size="3 3 118 118"
+		tooltip_style="sessionToolTip"
+		hotkey="session.flareactivate"
+		sprite="stretched:session/minimap-flare.png"
+		sprite_over="stretched:session/minimap-flare-highlight.png"
+		mouse_event_mask="texture:session/minimap-flare.png"
+	/>
+
+</object>
