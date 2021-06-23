@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion_cavalry_archer">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>6.0</Hack>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Ranged>
       <Damage>
@@ -35,7 +28,7 @@
     </Ranged>
   </Attack>
   <Auras datatype="tokens">
-	chariot_trample_a
+	units/chariot_trample_a
   </Auras>
   <Cost>
     <Population>4</Population>
@@ -70,6 +63,13 @@ Countered by: Javelin Infantry and Elephants.</Tooltip>
     <stone>0</stone>
     <metal>20</metal>
   </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>6.0</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
   <UnitMotion>
     <WalkSpeed>16.0</WalkSpeed>
 	<PassabilityClass>large</PassabilityClass> 

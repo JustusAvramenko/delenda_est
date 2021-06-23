@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_cavalry_archer">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>5</Hack>
-        <Pierce>10</Pierce>
-        <Crush>10</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Ranged>
       <Damage>
@@ -39,7 +30,7 @@
   </Attack>
   <Auras datatype="tokens">
 	units/heroes/maur_hero_ashoka
-	chariot_trample_e
+	units/chariot_trample_e
   </Auras>
   <Footprint replace="">
     <Square width="6.0" depth="12.0"/>
@@ -60,6 +51,15 @@ Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.
 Hero Special: "Edicts of Ashoka" - Edict Pillars of Ashoka can be built during Ashoka's lifetime.</Tooltip>
     <History>TBD.</History>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>10</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <UnitMotion>
     <WalkSpeed>18.0</WalkSpeed>
   </UnitMotion>
