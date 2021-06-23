@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource_field">
+  <Identity>
+    <GenericName>Cash Crop Field</GenericName>
+	<VisibleClasses datatype="tokens">Cash_Crop -Grain</VisibleClasses>
+    <SelectionGroupName>template_structure_resource_field_cash</SelectionGroupName>
+    <Tooltip>Build in neutral or own territory to harvest vegetables for food. Build on farmland terrain to gain a +100% farming boost. Max gatherers: 5. There is a diminishing return effect where it is more efficient to use fewer gatherers per field.</Tooltip>
+    <History>Farming originated around 9500 BC in India and the Middle East. The history of agriculture is a central element of human history, as agricultural progress has been a crucial factor in worldwide socio-economic change. Wealth-building and militaristic specializations rarely seen in hunter-gatherer cultures are commonplace in agricultural and agro-industrial societies - when farmers became capable of producing food beyond the needs of their own families, others in the tribe/nation/empire were freed to devote themselves to projects other than food acquisition.</History>
+    <RequiredTechnology>unlock_specialized_cultivation</RequiredTechnology>
+    <Icon>structures/cash_crops.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <coin>100</coin>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <glory>10</glory>
+  </Loot>
+  <ResourceSupply>
+    <Max>Infinity</Max>
+    <Type>coin.crops</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>structures/plot_field_temp.xml</Actor>
+    <FoundationActor>structures/plot_field_found.xml</FoundationActor>
+  </VisualActor>
+</Entity>

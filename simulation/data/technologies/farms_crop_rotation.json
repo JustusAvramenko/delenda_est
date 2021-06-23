@@ -1,20 +1,19 @@
 {
-	"genericName": "Crop Rotation and Land Reform",
+	"genericName": "Land Reforms",
 	"specificName": {
 		"rome": "Latifundia",
 		"imp": "Latifundia"
 	},
-	"supersedes": "gather_farming_cultivation",
 	"description": "Crop Rotation and Land Reform.",
-	"cost": {"food": 300, "coin": 500},
+	"cost": {"glory": 300, "coin": 500},
 	"requirements": {"all": [{"tech": "phase_imperial"}, {"notciv": "athen"}, {"notciv": "theb"}, {"notciv": "spart"}, {"notciv": "mace"}, {"notciv": "hele"}, {"notciv": "epir"}]},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "crop_rotation.png",
 	"researchTime": 60,
-	"tooltip": "Crop Rotation brings +15% farming rate. Land Reform gives -25% Farm Field cost.",
+	"tooltip": "Each Farm Field adds a trickle of 50 food per minute to the player's treasury.",
 	"modifications": [
-		{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15, "affects": "Gatherer"},
-		{"value": "Cost/Resources/wood", "multiply": 0.75, "affects": "Field"}
+		{"value": "ResourceTrickle/Rates/food", "add": 5}
 	],
+	"affects": ["Grain Field"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
