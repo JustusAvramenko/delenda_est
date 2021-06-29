@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/imp_hero_trajan
+  </Auras>
+  <Identity>
+    <Civ>imp</Civ>
+	<Lang>latin</Lang>
+	<SpecificName>Emperor Trajan</SpecificName>
+    <Icon>units/imp/hero_trajan.png</Icon>
+    <History>The greatest expansionist emperor of the Roman Empire. Trajan conquered the Dacians, beat back the Germans, and nearly conquered all of the Parthian Empire before having to turn back due to infirmity.</History>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/imp/hero_trajan_mounted</Entity>
+      <Tooltip>This gives Trajan his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/romans/hero_infantry_swordsman_maximus.xml</Actor>
+  </VisualActor>
+</Entity>
