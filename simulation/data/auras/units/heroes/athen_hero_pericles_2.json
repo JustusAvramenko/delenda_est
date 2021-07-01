@@ -1,9 +1,14 @@
 {
 	"type": "global",
-	"affects": ["Temple", "Wonder"],
+	"affects": ["CultStatue", "Theater"],
 	"modifications": [
-	  {"value": "Health/Max", "multiply": 1.5}
+		{"value": "Health/Max", "multiply": 1.5},
+		{"value": "Cost/Resources/food", "multiply": 0.5},
+		{"value": "Cost/Resources/wood", "multiply": 0.5},
+		{"value": "Cost/Resources/stone", "multiply": 0.5},
+		{"value": "Cost/Resources/metal", "multiply": 0.5},
+		{"value": "Cost/Resources/glory", "multiply": 0.5}
 	],
-	"auraName": "Acropolis",
-	"auraDescription": "Temples and Wonder +50% health during his lifetime."
+	"auraName": "Patron of the Arts",
+	"auraDescription": "Theaters and Cult Statues -50% cost and +50% health while Pericles lives."
 }
