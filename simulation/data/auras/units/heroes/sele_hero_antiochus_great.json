@@ -1,11 +1,15 @@
 {
-	"type": "global",
-	"affects": ["Cavalry"],
-	"modifications": [
-	  {"value": "Resistance/Entity/Damage/Pierce", "add": 2},
-	  {"value": "Resistance/Entity/Damage/Hack", "add": 2},
-	  {"value": "Resistance/Entity/Damage/Crush", "add": 2}
-	],
 	"auraName": "Ilarchès",
-	"auraDescription": "All Cavalry +2 levels of all armor types while he lives."
+	"auraDescription": "Nearby Cavalry +20% health, +10% speed.",
+	"type": "range",
+	"radius": 30,
+	"modifications": [
+		{
+			"value": "Health/Max", "multiply": 1.2
+		},
+		{
+			"value": "UnitMotion/WalkSpeed", "multiply": 1.1
+		}		
+	],
+	"affects": ["Cavalry"]
 }

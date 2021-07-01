@@ -1,23 +1,27 @@
 {
 	"pair": "pair_cav_01",
-	"genericName": "Chamfron",
+	"genericName": "Cataphract Horse Armor",
 	"specificName": {
-		"hele": "Prometoopidion",
-		"mace": "Prometoopidion",
-		"spart": "Prometoopidion",
-		"athen": "Prometoopidion",
-		"sele": "Prometoopidion",
-		"ptol": "Prometoopidion",
-		"theb": "Prometoopidion"
+		"sele": "Panoplia Kataphrakton"
 	},
-	"description": "Metal armor for a horse's face.",
+	"description": "Cataphracts are strong against infantry. Originally refering to any armored soldier (including ships) the word \"cataphract\" was eventually reserved for heavily armored horses, particularly those used by the Seleucids or Parthians. The elite cataphract of the Greek Seleucid Empire wore mail armor on both himself and his mount. These men could shoot composite bows from the saddle or engage the enemy with a spear or sword. They could out-range or evade enemy foot troops, or out armor enemy light cavalry. The Seleucid army had a tradition of good horsemanship because much of their territory was plains or steppe, and the empire was sufficiently wealthy to provide the training and Cataphract's expensive equipment.",
 	"cost": {"metal": 500},
-	"requirements": {"any": [{"tech": "phase_town"},{"civ": "celt"},{"civ": "brit"},{"civ": "gaul"}]},
+	"requirements": {"all": [{"tech": "phase_city"},{"civ": "sele"}]},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "chamfron.png",
 	"researchTime": 60,
-	"tooltip": "All Cavalry +2 hack armor levels.",
-	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 2.0}],
+	"tooltip": "All Cavalry +2 levels of all armor types.",
+	"modifications": [
+		{
+			"value": "Resistance/Entity/Damage/Hack", "add": 2.0
+		},
+		{
+			"value": "Resistance/Entity/Damage/Pierce", "add": 2.0
+		},
+		{
+			"value": "Resistance/Entity/Damage/Crush", "add": 2.0
+		}
+	],
 	"affects": ["Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

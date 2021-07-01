@@ -1,0 +1,27 @@
+{
+	"pair": "pair_cav_01",
+	"genericName": "Cataphract Horse Armor",
+	"specificName": {
+		"sele": "Panoplia Kataphrakton"
+	},
+	"description": "Cataphracts are strong against infantry. Originally refering to any armored soldier (including ships) the word \"cataphract\" was eventually reserved for heavily armored horses, particularly those used by the Seleucids or Parthians. The elite cataphract of the Greek Seleucid Empire wore mail armor on both himself and his mount. These men could shoot composite bows from the saddle or engage the enemy with a spear or sword. They could out-range or evade enemy foot troops, or out armor enemy light cavalry. The Seleucid army had a tradition of good horsemanship because much of their territory was plains or steppe, and the empire was sufficiently wealthy to provide the training and Cataphract's expensive equipment.",
+	"cost": {"metal": 600, "glory": 400},
+	"requirements": {"all": [{"tech": "phase_imperial"},{"civ": "sele"}]},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "chamfron.png",
+	"researchTime": 40,
+	"tooltip": "All Cavalry +2 levels of all armor types.",
+	"modifications": [
+		{
+			"value": "Resistance/Entity/Damage/Hack", "add": 2
+		},
+		{
+			"value": "Resistance/Entity/Damage/Pierce", "add": 2
+		},
+		{
+			"value": "Resistance/Entity/Damage/Crush", "add": 2
+		}
+	],
+	"affects": ["Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
