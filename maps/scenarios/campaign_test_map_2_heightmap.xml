@@ -3,7 +3,7 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>cumulus</SkySet>
-		<SunColor r="0.866667" g="0.776471" b="0.486275"/>
+		<SunColor r="0.956863" g="0.921569" b="0.803922"/>
 		<SunElevation angle="1.23098"/>
 		<SunRotation angle="-0.554308"/>
 		<AmbientColor r="0.501961" g="0.501961" b="0.501961"/>
@@ -32,14 +32,14 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="2767.2" y="187.415" z="1072.81"/>
+		<Position x="2764.47" y="88.4225" z="1210.54"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
   "AISeed": 0,
-  "CircularMap": true,
+  "CircularMap": false,
   "Description": "",
   "Keywords": [
     "demo"
@@ -47,6 +47,7 @@
   "LockTeams": false,
   "Name": "Campaign Map - Test",
   "PlayerData": [
+    "",
     {
       "AI": "",
       "Civ": "athen"
@@ -82,7 +83,9 @@
   ],
   "Preview": "heightmap-greece.png",
   "RevealMap": true,
-  "VictoryConditions": []
+  "VictoryConditions": [
+    "domination"
+  ]
 }
 ]]></ScriptSettings>
 	<Entities>
@@ -5081,6 +5084,74 @@
 			<Position x="3518.42408" z="2171.47632"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1498"/>
+		</Entity>
+		<Entity uid="1002">
+			<Template>actor|campaigns/labels/greece_attica.xml</Template>
+			<Position x="2873.3838" z="1318.65247"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13508"/>
+		</Entity>
+		<Entity uid="1003">
+			<Template>actor|campaigns/labels/greece_megara.xml</Template>
+			<Position x="2574.07325" z="1350.09681"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="28916"/>
+		</Entity>
+		<Entity uid="1004">
+			<Template>campaigns/campaign_city_minor_test</Template>
+			<Player>2</Player>
+			<Position x="2567.9253" z="1302.93873"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="51890"/>
+		</Entity>
+		<Entity uid="1005">
+			<Template>campaigns/campaign_city_test</Template>
+			<Player>3</Player>
+			<Position x="2231.64039" z="1187.38257"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="9112"/>
+		</Entity>
+		<Entity uid="1006">
+			<Template>campaigns/campaign_city_test</Template>
+			<Player>4</Player>
+			<Position x="2491.92188" z="1554.7771"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="1218"/>
+		</Entity>
+		<Entity uid="1007">
+			<Template>campaigns/campaign_city_test</Template>
+			<Player>4</Player>
+			<Position x="2227.54004" z="1792.85718"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41048"/>
+		</Entity>
+		<Entity uid="1008">
+			<Template>campaigns/campaign_city_minor_test</Template>
+			<Player>5</Player>
+			<Position x="2766.7256" z="1674.48096"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="25244"/>
+		</Entity>
+		<Entity uid="1009">
+			<Template>campaigns/campaign_city_minor_test</Template>
+			<Player>7</Player>
+			<Position x="2862.29395" z="1650.53272"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="1556"/>
+		</Entity>
+		<Entity uid="1010">
+			<Template>campaigns/campaign_city_test</Template>
+			<Player>2</Player>
+			<Position x="2063.77173" z="441.5005"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="62032"/>
+		</Entity>
+		<Entity uid="1012">
+			<Template>campaigns/campaign_city_minor_test</Template>
+			<Player>4</Player>
+			<Position x="2141.56324" z="936.11823"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46496"/>
 		</Entity>
 	</Entities>
 	<Paths/>
