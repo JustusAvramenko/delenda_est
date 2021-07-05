@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_hunt_skittish">
+  <Auras datatype="tokens">
+    fauna_donkey_captured
+  </Auras>
+  <Capturable>
+    <CapturePoints>30</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
   <Footprint replace="">
-    <Square width="2.0" depth="4.0"/>
+    <Square width="2" depth="4"/>
     <Height>2.5</Height>
   </Footprint>
+  <Health>
+    <DeathType>corpse</DeathType>
+  </Health>
   <Identity>
+    <Civ>gaia</Civ>
     <GenericName>Donkey</GenericName>
     <SpecificName>Equus africanus asinus</SpecificName>
+    <VisibleClasses datatype="tokens">
+	  Donkey
+	</VisibleClasses>
+    <Tooltip>Capture this animal to gain an advantage for your Economy. Garrison into a Corral for safe keeping.</Tooltip>
     <Icon>gaia/fauna_donkey.png</Icon>
   </Identity>
-  <ResourceSupply>
-    <Max>200</Max>
-  </ResourceSupply>
+  <ResourceSupply disable=""/>
   <Sound>
     <SoundGroups>
       <select>actor/fauna/animal/horse_select.xml</select>
@@ -22,12 +36,18 @@
       <trained>actor/fauna/animal/horse_trained.xml</trained>
     </SoundGroups>
   </Sound>
+  <UnitAI>
+    <DefaultStance>passive</DefaultStance>
+  </UnitAI>
   <StatusBars>
     <HeightOffset>3.5</HeightOffset>
   </StatusBars>
   <UnitMotion>
     <WalkSpeed op="mul">0.8</WalkSpeed>
   </UnitMotion>
+  <Vision>
+    <Range>8</Range>
+  </Vision>
   <VisualActor>
     <Actor>fauna/donkey.xml</Actor>
   </VisualActor>
