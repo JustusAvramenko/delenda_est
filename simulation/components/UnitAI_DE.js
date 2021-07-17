@@ -37,3 +37,54 @@ UnitAI.prototype.GetQueryRange = function(iid)
 
 	return ret;
 };
+
+UnitAI.prototype.AttackEntitiesByPreference = function(ents)
+{
+	if (!ents.length)
+		return false;
+
+	let cmpAttack = Engine.QueryInterface(this.entity, IID_Attack);
+	if (!cmpAttack)
+		return false;
+
+	let attackfilter = function(e) {
+		if (!cmpAttack.CanAttack(e))
+			return false;
+
+		let cmpOwnership = Engine.QueryInterface(e, IID_Ownership);
+		if (cmpOwnership && cmpOwnership.GetOwner() > 0)
+			return true;
+
+		let cmpUnitAI = Engine.QueryInterface(e, IID_UnitAI);
+		return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // << This has changed.
+	};
+
+	let entsByPreferences = {};
+	let preferences = [];
+	let entsWithoutPref = [];
+	for (let ent of ents)
+	{
+		if (!attackfilter(ent))
+			continue;
+		let pref = cmpAttack.GetPreference(ent);
+		if (pref === null || pref === undefined)
+			entsWithoutPref.push(ent);
+		else if (!entsByPreferences[pref])
+		{
+			preferences.push(pref);
+			entsByPreferences[pref] = [ent];
+		}
+		else
+			entsByPreferences[pref].push(ent);
+	}
+
+	if (preferences.length)
+	{
+		preferences.sort((a, b) => a - b);
+		for (let pref of preferences)
+			if (this.RespondToTargetedEntities(entsByPreferences[pref]))
+				return true;
+	}
+
+	return this.RespondToTargetedEntities(entsWithoutPref);
+};
