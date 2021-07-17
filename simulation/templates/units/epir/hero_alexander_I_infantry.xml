@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_hero_cavalry_swordsman">
+<Entity parent="template_unit_hero_infantry_swordsman">
   <Auras datatype="tokens">
-    units/heroes/epir_hero_alexander_I
+    units/heroes/mace_hero_alexander_1
   </Auras>
   <Identity>
     <Civ>epir</Civ>
@@ -9,8 +9,21 @@
     <SpecificName>Alexander I the Molossian</SpecificName>
     <History>In 334 BC, Alexander I, at the request of the Greek colony of Taras (in Magna Graecia), crossed over into Italy, to aid them in battle against several Italic tribes, the Lucanians and Bruttii. After a victory over the Samnites and Lucanians near Paestum, 332 BC, he made a treaty with the Romans. Success still followed his arms. He took Heraclea from the Lucanians, and Terina and Sipontum from the Bruttii. Through the treachery of some Lucanian exiles, he was compelled to engage under unfavourable circumstances in the battle of Pandosia and was killed by a Lucanian. He left a son, Neoptolemus, and a daughter, Cadmea.</History>
     <Icon>units/epir/hero_alexander_molossus.png</Icon>
+    <RequiredTechnology>civ_choices/epir/alexander_I</RequiredTechnology>
   </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/epir/hero_alexander_I_mounted</Entity>
+      <Tooltip>This gives Alexander I his War Horse, Bucephalus, with trample effects, greater health, and the "Hammer and Anvil" cavalry aura.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
   <VisualActor>
-    <Actor>units/macedonians/hero_cavalry_swordsman_alexander_m.xml</Actor>
+    <Actor>units/macedonians/hero_infantry_swordsman_alexander.xml</Actor>
   </VisualActor>
 </Entity>
