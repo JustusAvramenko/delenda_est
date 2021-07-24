@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Pathfinder>
+  <!-- Sets limit on the number of same turns moves we will process -->
+  <!-- Setting the value to 0 disable this functionality -->
+  <MaxSameTurnMoves>20</MaxSameTurnMoves>
+
+  <Pushing>
+    <!-- Units push each other if they are within 'clearance * radius' meters. -->
+    <!-- Setting the value to 0 disables unit pushing entirely. -->
+    <!-- Note that values above 2-3 are likely to start behaving weirdly. -->
+    <!-- You can also tweaks extensions below. -->
+    <Radius>1.6</Radius>
+
+    <!-- Actual pushing radius for non-moving units is: -->
+    <!-- Clearance * PushingRadius + StaticPushExtension -->
+    <!-- NB: Once idle units start being pushed, they become moving units, -->
+    <!-- so this should be understood as the maximum unit density. -->
+    <StaticExtension>2</StaticExtension>
+
+    <!-- Actual pushing radius for moving units is: -->
+    <!-- Clearance * PushingRadius + MovingPushExtension -->
+    <!-- This is the factor that has the largest influence on actual sparsity. -->
+    <MovingExtension>2.5</MovingExtension>
+
+    <!-- After the combined pushing force of all neighboring units is calculated, -->
+    <!-- if the value is below this number, treat it as effectively zero. -->
+    <!-- This nullifies very small pushes, and makes things look and behave nicer. -->
+    <!-- NB: This impacts the pushing max distance. -->
+    <!-- NB: If this is 0.25 or above, then pairs of units will overlap -->
+    <!-- See MAX_DISTANCE_FACTOR in CCmpUnitMotion_System.cpp for details.-->
+    <MinimalForce>0.2</MinimalForce>
+  </Pushing>
+
+  <PassabilityClasses>
+
+    <!-- Unit pathfinding classes: -->
+    <default>
+      <Obstructions>pathfinding</Obstructions>
+      <MaxWaterDepth>2</MaxWaterDepth>
+      <MaxTerrainSlope>1.0</MaxTerrainSlope>
+      <Clearance>1.0</Clearance>
+    </default>
+    <large>
+      <Obstructions>pathfinding</Obstructions>
+      <MaxWaterDepth>2</MaxWaterDepth>
+      <MaxTerrainSlope>1.0</MaxTerrainSlope>
+      <Clearance>5.0</Clearance>
+    </large>
+    <ship>
+      <Obstructions>pathfinding</Obstructions>
+      <MinWaterDepth>1</MinWaterDepth>
+      <Clearance>10.0</Clearance>
+    </ship>
+    <ship-small>
+      <Obstructions>pathfinding</Obstructions>
+      <MinWaterDepth>1</MinWaterDepth>
+      <Clearance>3.0</Clearance>
+    </ship-small>
+
+    <!--
+    Building construction classes:
+    * Land is used for most buildings, which must be away
+        from water and not on cliffs or mountains.
+    * Shore is used for docks, which must be near water and
+        land, yet shallow enough for builders to approach.
+    -->
+    <building-land>
+      <Obstructions>foundation</Obstructions>
+      <MaxWaterDepth>0</MaxWaterDepth>
+      <MinShoreDistance>4.0</MinShoreDistance>
+      <MaxTerrainSlope>1.0</MaxTerrainSlope>
+    </building-land>
+    <building-shore>
+      <Obstructions>foundation</Obstructions>
+      <MaxShoreDistance>8.0</MaxShoreDistance>
+      <MaxTerrainSlope>1.25</MaxTerrainSlope>
+    </building-shore>
+
+    <!--
+    Unrestricted: only off-world limits.
+
+    Default-terrain-only: used by the AI, for wall-building
+        placement and for territory influence growth.
+        It must be kept in sync with "default".
+    Ship-terrain-only: used by the AI.
+        It must be kept in sync with "ship" and "ship-small".
+    -->
+    <unrestricted>
+      <Obstructions>none</Obstructions>
+    </unrestricted>
+    <default-terrain-only>
+      <Obstructions>none</Obstructions>
+      <MaxWaterDepth>2</MaxWaterDepth>
+      <MaxTerrainSlope>1.0</MaxTerrainSlope>
+    </default-terrain-only>
+    <ship-terrain-only>
+      <Obstructions>none</Obstructions>
+      <MinWaterDepth>1</MinWaterDepth>
+    </ship-terrain-only>
+
+  </PassabilityClasses>
+</Pathfinder>
