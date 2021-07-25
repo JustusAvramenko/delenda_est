@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_cavalry_archer">
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Entity>
+  <Attack>
+    <Melee>
+      <MaxRange>7.0</MaxRange>
+    </Melee>
+  </Attack>
   <Cost>
     <Resources>
 	  <metal>100</metal>
@@ -7,12 +12,8 @@
     </Resources>
   </Cost>
   <Identity>
-    <Civ>scyth</Civ>
-    <Lang>persian</Lang>
-    <SpecificName>Royal Cavalry Archer</SpecificName>
+	<GenericName>Armored Heavy Cavalry</GenericName>
     <VisibleClasses datatype="tokens">Cataphract</VisibleClasses>
-    <SelectionGroupName>units/scyth/champion_cavalry</SelectionGroupName>
-    <Icon>units/scyth/champion_cavalry_archer.png</Icon>
   </Identity>
   <Resistance>
     <Entity>
@@ -26,7 +27,4 @@
   <UnitMotion>
     <WalkSpeed op="mul">0.85</WalkSpeed>
   </UnitMotion>
-  <VisualActor>
-    <Actor>units/scythians/cavalry_archer_c_m.xml</Actor>
-  </VisualActor>
 </Entity>
