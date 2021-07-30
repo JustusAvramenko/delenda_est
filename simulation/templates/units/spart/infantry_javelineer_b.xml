@@ -15,6 +15,18 @@
     <Entity>units/spart/infantry_javelineer_a</Entity>
     <RequiredXp>150</RequiredXp>
   </Promotion>
+  <Upgrade>
+    <Mount>
+      <Entity>units/spart/infantry_hoplite_b</Entity>
+      <Tooltip>Helots are given their freedom in exchange for military service.</Tooltip>
+	  <RequiredTechnology>spartans/unlock_brasidians</RequiredTechnology>
+      <Cost>
+        <food>20</food>
+        <wood>20</wood>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
   <VisualActor>
     <Actor>units/spartans/infantry_javelinist_b.xml</Actor>
   </VisualActor>

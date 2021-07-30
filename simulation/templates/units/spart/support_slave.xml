@@ -6,6 +6,18 @@
     <SpecificName>Helot Serf</SpecificName>
     <Icon>units/spart/support_slave.png</Icon>
   </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/spart/infantry_hoplite_b</Entity>
+      <Tooltip>Helots are given their freedom in exchange for military service.</Tooltip>
+	  <RequiredTechnology>spartans/unlock_brasidians</RequiredTechnology>
+      <Cost>
+        <food>20</food>
+        <wood>20</wood>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
   <VisualActor>
     <Actor>units/spartans/helot_{phenotype}.xml</Actor>
   </VisualActor>
