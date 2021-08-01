@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_spart_a.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/hele_pilos.xml" attachpoint="helmet"/>
+        <prop actor="props/units/shields/aspis_lambda_brasidas.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_02_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="hele-tunic-fur-1-a">
+      <textures>
+        <texture file="skeletal/hele_tunic_fur_1_a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="hele-tunic-fur-1-b">
+      <textures>
+        <texture file="skeletal/hele_tunic_fur_1_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="hele-tunic-fur-1-c">
+      <textures>
+        <texture file="skeletal/hele_tunic_fur_1_c.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_hoplite.xml"/>
+    <variant file="biped/formations/phalanx_front.xml"/>
+    <variant file="biped/formations/phalanx_mid.xml"/>
+    <variant file="biped/formations/phalanx_back.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
