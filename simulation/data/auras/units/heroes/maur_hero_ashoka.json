@@ -1,15 +1,11 @@
 {
-	"type": "global",
-	"affects": ["Temple"],
+	"type": "range",
+	"radius": 30,
+	"affects": ["Archer", "Catapult"],
 	"modifications": [
-		{ "value": "ProductionQueue/TechCostMultiplier/wood", "multiply": 0.5 },
-		{ "value": "ProductionQueue/TechCostMultiplier/food", "multiply": 0.5 },
-		{ "value": "ProductionQueue/TechCostMultiplier/metal", "multiply": 0.5 },
-		{ "value": "ProductionQueue/TechCostMultiplier/stone", "multiply": 0.5 },
-		{ "value": "ProductionQueue/TechCostMultiplier/coin", "multiply": 0.5 },
-		{ "value": "ProductionQueue/TechCostMultiplier/time", "multiply": 0.5 }
+		{"value": "Attack/Ranged/Projectile/Spread", "replace": 0}
 	],
-	"auraDescription": "All of the player's Temple technologies -50% cost and -50% research time.",
-	"auraName": "Ashoka's Proselytism",
-	"overlayIcon": "art/textures/ui/session/auras/build_bonus.png"
+	"auraDescription": "Nearby Archers and Catapults 100% accuracy.",
+	"auraName": "Conquest of Kalinga",
+	"overlayIcon": "art/textures/ui/session/auras/accuracy_bonus.png"
 }

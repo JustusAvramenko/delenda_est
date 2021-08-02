@@ -1,0 +1,29 @@
+{
+	"genericName": "Ashoka's Proselytism",
+	"description": "All of the player's Temple technologies -50% cost and -50% research time.",
+	"cost": {
+		"coin": 100, 
+		"glory": 100
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_town"},
+			{"civ": "maur"}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase after choosing the hero Ashoka.",
+	"icon": "enlightenment.png",
+	"researchTime": 60,
+	"tooltip": "All of the player's Temple technologies -50% cost and -50% research time.",
+	"modifications": [
+		{ "value": "ProductionQueue/TechCostMultiplier/wood", "multiply": 0.5 },
+		{ "value": "ProductionQueue/TechCostMultiplier/food", "multiply": 0.5 },
+		{ "value": "ProductionQueue/TechCostMultiplier/metal", "multiply": 0.5 },
+		{ "value": "ProductionQueue/TechCostMultiplier/stone", "multiply": 0.5 },
+		{ "value": "ProductionQueue/TechCostMultiplier/coin", "multiply": 0.5 },
+		{ "value": "ProductionQueue/TechCostMultiplier/glory", "multiply": 0.5 },
+		{ "value": "ProductionQueue/TechCostMultiplier/time", "multiply": 0.5 }
+	],
+	"affects": ["Temple"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
