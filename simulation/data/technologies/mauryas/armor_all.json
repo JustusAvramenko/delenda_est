@@ -3,7 +3,17 @@
 	"genericName": "Four-Armed Army",
 	"description": "The Indian martial tradition calls for a 'four armed' army, which refers to the four main arms of a combined-arms army.",
 	"cost": {"glory": 1200, "metal": 1200},
-	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
+	"requirements": { 
+		"all": [
+			{ "tech": "phase_imperial" },
+			{"civ": "maur"},
+			{ "any": [
+				{ "tech": "techs_forge_cost" }, 
+				{ "tech": "techs_forge_speed" }
+				]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
 	"icon": "armor_plates_swords.png",
 	"researchTime": 70,

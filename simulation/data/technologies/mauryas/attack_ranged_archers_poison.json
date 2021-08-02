@@ -2,8 +2,16 @@
 	"pair": "mauryas/pair_03_ranged",	
 	"genericName": "Poison Arrows",
 	"description": ".",
-	"cost": {"glory": 500, "metal": 500},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"glory": 500,
+		"metal": 500
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{"civ": "maur"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "arrow_poison.png",
 	"researchTime": 60,

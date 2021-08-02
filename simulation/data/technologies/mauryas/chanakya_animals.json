@@ -4,8 +4,16 @@
 		"maur": "Ahinsā"
 	},
 	"description": ".",
-	"cost": {"food": 300, "glory": 100},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 300,
+		"glory": 100
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{"civ": "maur"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "horse.png",
 	"researchTime": 60,

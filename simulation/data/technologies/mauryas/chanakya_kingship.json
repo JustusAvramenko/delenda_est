@@ -4,8 +4,16 @@
 		"maur": "Rajarshi"
 	},
 	"description": ".",
-	"cost": {"stone": 200, "glory": 200},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"stone": 200,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{"civ": "maur"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "political_face.png",
 	"researchTime": 60,

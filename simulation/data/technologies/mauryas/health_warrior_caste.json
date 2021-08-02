@@ -2,8 +2,16 @@
 	"genericName": "Warrior Caste",
 	"specificName": {"generic": "Kṣhatriya"},
 	"description": "Kshatriya or Kashtriya, meaning warrior, is one of the four varnas (social orders) in Hinduism. Traditionally Kshatriya constitute the military and ruling elite of the Vedic-Hindu social system outlined by the Vedas and the Laws of Manu. Ksatradharma eventually became to be known as the primary duty of war, or law of kings and warriors, which gave rise to the Kshatriya caste.",
-	"cost": {"glory": 800, "coin": 800},
-	"requirements": {"tech": "phase_imperial"},
+	"cost": {
+		"glory": 800,
+		"coin": 800
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_imperial"},
+			{"civ": "maur"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "pankration.png",
 	"researchTime": 60,

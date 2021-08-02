@@ -4,12 +4,20 @@
 		"maur": "Dandaniti"
 	},
 	"description": ".",
-	"cost": {"wood": 200, "glory": 200},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"wood": 200,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{"civ": "maur"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "friendship.png",
 	"researchTime": 60,
-	"tooltip": "Support units -10% train time.",
+	"tooltip": "Civilian Support units -10% train time.",
 	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.9}],
 	"affects": ["Support"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

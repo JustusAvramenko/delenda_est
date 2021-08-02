@@ -1,8 +1,16 @@
 {
 	"genericName": "Periclean Strategem",
 	"description": "At the outbreak of the Peloponnesean War with Sparta, Pericles instituted a strategy that emphasized Athenian strengths: the city's walls and her mighty fleet.",
-	"cost": {"food": 600, "glory": 300},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 600, 
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"}, 
+			{"civ": "athen"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase after choosing the hero Pericles.",
 	"icon": "political_face.png",
 	"researchTime": 40,
