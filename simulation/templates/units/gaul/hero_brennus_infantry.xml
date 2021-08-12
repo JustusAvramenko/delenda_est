@@ -11,6 +11,18 @@
     <RequiredTechnology>civ_choices/gaul/brennus</RequiredTechnology>
     <Icon>units/gaul/hero_brennus.png</Icon>
   </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/gaul/hero_brennus_mounted</Entity>
+      <Tooltip>This gives Brennus his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
   <VisualActor>
     <Actor>units/gauls/hero_infantry_swordsman_brennus.xml</Actor>
   </VisualActor>

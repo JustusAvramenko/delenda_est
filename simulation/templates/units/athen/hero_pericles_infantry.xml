@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_hoplite">
+  <Auras datatype="tokens">
+    units/heroes/athen_hero_pericles_1
+    units/heroes/athen_hero_pericles_2
+  </Auras>
+  <Cost>
+    <Resources>
+      <coin op="mul">0.5</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>athen</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Pericles</SpecificName>
+    <Classes datatype="tokens">Pericles</Classes>
+    <History>Pericles was the foremost Athenian politician of the 5th Century.</History>
+    <Icon>units/athen/hero_pericles.png</Icon>
+    <RequiredTechnology>civ_choices/athen/pericles</RequiredTechnology>
+  </Identity>
+  <VisualActor>
+    <Actor>units/athenians/hero_infantry_hoplite_pericles.xml</Actor>
+  </VisualActor>
+</Entity>

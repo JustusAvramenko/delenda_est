@@ -1,0 +1,19 @@
+{
+	"genericName": "Ritualized Warfare",
+	"description": "Zapotecs practiced highly ritualized warfare with neighboring cities and tribes, sometimes with the sole goal of capturing new sacrificial human offerings for their gods.",
+	"cost": {"food": 250, "coin": 250},
+	"requirements": {"all": [
+			{"tech": "phase_town"}, 
+			{"civ": "zapo"}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "skull_swords.png",
+	"researchTime": 40,
+	"tooltip": "All Soldiers +20 glory loot for every enemy unit killed or structure destroyed.",
+	"modifications": [
+		{"value": "Looter/Resource/glory", "add": 20}
+	],
+	"affects": ["Soldier"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

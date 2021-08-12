@@ -11,6 +11,18 @@
     <RequiredTechnology>civ_choices/gaul/viridomarus</RequiredTechnology>
     <Icon>units/gaul/hero_viridomarus.png</Icon>
   </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/gaul/hero_viridomarus_mounted</Entity>
+      <Tooltip>This gives Viridomarus his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
   <VisualActor>
     <Actor>units/gauls/hero_infantry_spearman_viridomarus.xml</Actor>
   </VisualActor>
