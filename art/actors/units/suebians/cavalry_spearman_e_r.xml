@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/germ_02_beards.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="linothorax-1b">
+      <textures>
+        <texture file="skeletal/gaul_linothorax_1_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="linothorax-1c">
+      <textures>
+        <texture file="skeletal/gaul_linothorax_1_c.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="padded-1b">
+      <textures>
+        <texture file="skeletal/gaul_padded_1_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="padded-1c">
+      <textures>
+        <texture file="skeletal/gaul_padded_1_c.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/rider/cavalry/base_spearman_relax_shield_02.xml" name="Spearman-Relax-Shield-02" frequency="1"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/promotion_shield.xml"/>
+    <variant file="biped/rider/attack_slaughter_shield_iber.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/rider/death_shield.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_pants.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/germ_01.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="pants-basic-1">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_1.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="pants-basic-2">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_2.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="pants-basic-3">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_3.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="pants-basic-4">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_4.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="pants-basic-5">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_5.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="pants-basic-6">
+      <textures>
+        <texture file="skeletal/gaul_pants_basic_6.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/rider/cavalry/base_spearman_relax_02.xml" name="Spearman-Relax-02" frequency="1"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/promotion.xml"/>
+    <variant file="biped/rider/attack_slaughter_iber.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/rider/death.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
