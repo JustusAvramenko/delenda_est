@@ -11,6 +11,18 @@
     <RequiredTechnology>civ_choices/brit/cunobelin</RequiredTechnology>
     <Icon>units/brit/hero_cunobelin.png</Icon>
   </Identity>
+  <Upgrade>
+    <SwitchToHorse>
+      <Entity>units/brit/hero_cunobelin_mounted</Entity>
+      <Tooltip>This gives Cunobelinos his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </SwitchToHorse>
+  </Upgrade>
   <VisualActor>
     <Actor>units/britons/hero_infantry_swordsman_cunobelin.xml</Actor>
   </VisualActor>
