@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_medium">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>15</Hack>
-        <Pierce>35</Pierce>
-        <Crush>5</Crush>
-      </Damage>
-    </Entity>
-    <Foundation>
-      <Damage>
-        <Hack>4</Hack>
-        <Pierce>7</Pierce>
-        <Crush>3</Crush>
-      </Damage>
-    </Foundation>
-  </Resistance>
   <BuildRestrictions>
     <Territory>own neutral enemy</Territory>
   </BuildRestrictions>
@@ -30,7 +14,7 @@
     <Height>6.7</Height>
   </Footprint>
   <Health>
-    <Max op="mul">0.75</Max>
+    <Max op="mul">0.5</Max>
   </Health>
   <Identity>
     <Civ>rome</Civ>
@@ -54,21 +38,26 @@
   <TerritoryInfluence disable=""/>
   <TurretHolder>
     <TurretPoints>
-      <Archer1>
-        <X>0</X>
+      <One>
+        <X>2</X>
         <Y>5.7</Y>
         <Z>0</Z>
-      </Archer1>
-      <Archer2>
-        <X>4</X>
+      </One>
+      <Two>
+        <X>-2</X>
         <Y>5.7</Y>
         <Z>0</Z>
-      </Archer2>
-      <Archer3>
-        <X>-4</X>
+      </Two>
+      <Three>
+        <X>6</X>
         <Y>5.7</Y>
         <Z>0</Z>
-      </Archer3>
+      </Three>
+      <Four>
+        <X>-6</X>
+        <Y>5.7</Y>
+        <Z>0</Z>
+      </Four>
     </TurretPoints>
   </TurretHolder>
   <VisualActor>
