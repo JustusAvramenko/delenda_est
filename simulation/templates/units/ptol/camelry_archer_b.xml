@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_cavalry_ranged_archer">
+<Entity parent="camel|template_unit_cavalry_ranged_archer">
   <Attack>
     <Ranged>
 	  <Bonuses>
@@ -10,12 +10,9 @@
 	  </Bonuses>
     </Ranged>
   </Attack>
-  <Auras datatype="tokens">
-    units/camel_stench
-  </Auras>
   <Identity>
     <Civ>ptol</Civ>
-    <VisibleClasses datatype="tokens">-Horse Camel</VisibleClasses>
+    <VisibleClasses datatype="tokens">-Horse</VisibleClasses>
 	<SelectionGroupName>units/ptol/camelry_archer_b</SelectionGroupName>
 	<SpecificName>Nabataean Camelry Archer</SpecificName>
     <History>?</History>
@@ -27,16 +24,6 @@ Weak Against: Javelin Infantry, Sword Cavalry, Elephants.</Tooltip>
   <Promotion>
     <Entity>units/ptol/camelry_archer_a</Entity>
   </Promotion>
-  <Sound>
-    <SoundGroups>
-      <select>actor/fauna/animal/camel_select.xml</select>
-      <order_walk>actor/fauna/movement/camel_order.xml</order_walk>
-      <death>actor/fauna/death/death_camel.xml</death>
-    </SoundGroups>
-  </Sound>
-  <StatusBars>
-    <HeightOffset>8.5</HeightOffset>
-  </StatusBars>
   <UnitMotion>
     <WalkSpeed op="mul">0.85</WalkSpeed>
   </UnitMotion>

@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_mercenary_infantry_ranged_archer">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack op="add">-1</Hack>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Identity>
     <Civ>gaul</Civ>
 	<SelectionGroupName>units/gaul/merc_infantry_2</SelectionGroupName>
@@ -14,6 +7,13 @@
     <History>The Celts used the bow primarily as a hunting tool, but when the Roman Julius Caesar invaded Celtica with a large force, the king of the Arverni, Vercingetorix, called together all of the archers in Gaul to assist his army in defense of their homeland. Thousands heeded the call, and while they were not greatly skilled in war archery, they participated in every large engagement of the war.</History>
     <Icon>units/celt/merc_infantry_archer.png</Icon>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
   <UnitMotion>
     <WalkSpeed op="mul">1.1</WalkSpeed>
   </UnitMotion>
