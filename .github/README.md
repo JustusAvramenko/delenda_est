@@ -18,6 +18,11 @@ alt="0 A.D. Delenda Est -- Isometric View with the ATHENIANS" width="750" height
 
 ---
 
+### Gameplay screenshot of Zapotecs
+
+![Delenda Est](https://github.com/psypherium/delenda_est/blob/master/.github/a25_zapotecs(v2).jpg "Delenda Est")
+
+---
 
 To download the latest code, run this command: ```git clone https://github.com/JustusAvramenko/delenda_est.git```
 
