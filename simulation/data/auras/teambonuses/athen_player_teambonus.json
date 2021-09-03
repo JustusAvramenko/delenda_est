@@ -1,11 +1,15 @@
 {
-	"civ": "athen",
 	"type": "global",
-	"affects": ["Warship"],
+	"affects": ["Ship"],
 	"affectedPlayers": ["MutualAlly"],
 	"modifications": [
-	  {"value": "Cost/BuildTime", "multiply": 0.75}
+		{ "value": "Cost/BuildTime", "multiply": 0.8 },
+		{ "value": "Cost/Resources/food", "multiply": 0.8 },
+		{ "value": "Cost/Resources/wood", "multiply": 0.8 },
+		{ "value": "Cost/Resources/stone", "multiply": 0.8 },
+		{ "value": "Cost/Resources/metal", "multiply": 0.8 },
+		{ "value": "Cost/Resources/coin", "multiply": 0.8 }
 	],
 	"auraName": "Delian League",
-	"auraDescription": "Warships -25% build time."
+	"auraDescription": "All Ships -20% build time and -20% cost."
 }
