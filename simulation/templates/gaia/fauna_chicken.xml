@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_herd_domestic">
   <Footprint>
-    <Circle radius="0.75"/>
+    <Circle radius="1.0"/>
     <Height>1.5</Height>
   </Footprint>
   <Health>
@@ -18,9 +18,19 @@
     <BlockPathfinding>false</BlockPathfinding>
   </Obstruction>
   <ResourceSupply>
+	<Initial>30</Initial>
     <Max>30</Max>
     <MaxGatherers>5</MaxGatherers>
+    <Change disable=""/>
   </ResourceSupply>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x128/ellipse.png</MainTexture>
+        <MainTextureMask>128x128/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <panic>actor/fauna/animal/chickens.xml</panic>
