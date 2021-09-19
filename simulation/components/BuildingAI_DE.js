@@ -10,7 +10,7 @@ BuildingAI.prototype.OnRangeUpdate = function(msg)
 	{
 		msg.added = msg.added.filter(e => {
 			let cmpUnitAI = Engine.QueryInterface(e, IID_UnitAI);
-			return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // << This has changed.
+			return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // << THIS HAS CHANGED.
 		});
 	}
 	else if (msg.tag != this.enemyUnitsQuery)
