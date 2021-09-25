@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_hero_infantry_pikeman">
+<Entity parent="template_unit_hero_cavalry_spearman">
   <Health>
     <Max op="mul">3.0</Max>
   </Health>
@@ -8,14 +8,14 @@
 	<Lang>greek</Lang>
 	<SpecificName>King Cleomenes III</SpecificName>
     <Classes datatype="tokens">Cleomenes</Classes>
-    <Tooltip>Traits: Slow Speed, Heavy Armor, Weak Attack.
-Strong Against: All Cavalry (2x).
-Weak Against: Ranged Units, Sword Infantry.
+    <Tooltip>Traits: Fast Speed, Heavy Charge, Trample.
+Strong Against: Ranged Infantry (2x), Siege Weapons (2x).
+Weak Against: Pike Infantry, Spear Infantry, Elephants, Camels.
 Has 3x health of other infantry heroes. Basically an extremely tough Pikeman.</Tooltip>
     <Icon>units/sele/hero_seleucus.png</Icon>
     <RequiredTechnology>civ_choices/spart/cleomenes</RequiredTechnology>
   </Identity>
   <VisualActor>
-    <Actor>units/spartans/hero_infantry_pikeman_cleomenes_III.xml</Actor>
+    <Actor>units/spartans/hero_cavalry_spearman_cleomenes_m.xml</Actor>
   </VisualActor>
 </Entity>

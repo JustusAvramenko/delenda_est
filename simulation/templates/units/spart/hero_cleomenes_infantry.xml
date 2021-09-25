@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_pikeman">
+  <Health>
+    <Max op="mul">3.0</Max>
+  </Health>
+  <Identity>
+    <Civ>spart</Civ>
+	<Lang>greek</Lang>
+	<SpecificName>King Cleomenes III</SpecificName>
+    <Classes datatype="tokens">Cleomenes</Classes>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Weak Attack.
+Strong Against: All Cavalry (2x).
+Weak Against: Ranged Units, Sword Infantry.
+Has 3x health of other infantry heroes. Basically an extremely tough Pikeman.</Tooltip>
+    <Icon>units/sele/hero_seleucus.png</Icon>
+    <RequiredTechnology>civ_choices/spart/cleomenes</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/spart/hero_cleomenes_mounted</Entity>
+      <Tooltip>This gives Cleomenes his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/spartans/hero_infantry_pikeman_cleomenes_III.xml</Actor>
+  </VisualActor>
+</Entity>
