@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <Attack>
+    <Melee>
+      <ApplyStatus>
+        <Burning>
+          <Interval>5000</Interval>
+          <Damage>
+            <Fire>1</Fire>
+          </Damage>
+          <Stackability>Stack</Stackability>
+          <Duration>20000</Duration>
+        </Burning>
+      </ApplyStatus>
+      <AttackName>Flames</AttackName>
+      <Damage>
+        <Fire>5</Fire>
+      </Damage>
+      <MaxRange>8</MaxRange>
+      <PrepareTime>100</PrepareTime>
+      <RepeatTime>200</RepeatTime>
+      <RestrictedClasses datatype="tokens">!Ship</RestrictedClasses>
+	  <PreferredClasses datatype="tokens">Ship</PreferredClasses>
+    </Melee>
+  </Attack>
+  <DeathDamage>
+    <Shape>Circular</Shape>
+    <Range>20</Range>
+    <FriendlyFire>true</FriendlyFire>
+    <Damage>
+      <Fire>500</Fire>
+    </Damage>
+  </DeathDamage>
+  <Health>
+    <RegenRate>-8</RegenRate>
+  </Health>
+  <UnitMotion>
+    <WalkSpeed>15</WalkSpeed>
+  </UnitMotion>
+  <Upgrade disable=""/>
+</Entity>

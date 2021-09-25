@@ -1,42 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_ship">
-  <Attack>
-    <Melee>
-      <ApplyStatus>
-        <Burning>
-          <Interval>5000</Interval>
-          <Damage>
-            <Fire>1</Fire>
-          </Damage>
-          <Stackability>Stack</Stackability>
-          <Duration>20000</Duration>
-        </Burning>
-      </ApplyStatus>
-      <AttackName>Flames</AttackName>
-      <Damage>
-        <Fire>5</Fire>
-      </Damage>
-      <MaxRange>8</MaxRange>
-      <PrepareTime>100</PrepareTime>
-      <RepeatTime>200</RepeatTime>
-      <RestrictedClasses datatype="tokens">!Ship</RestrictedClasses>
-	  <PreferredClasses datatype="tokens">Ship</PreferredClasses>
-    </Melee>
-  </Attack>
   <Cost>
     <BuildTime>30</BuildTime>
     <Resources>
       <wood>250</wood>
     </Resources>
   </Cost>
-  <DeathDamage>
-    <Shape>Circular</Shape>
-    <Range>20</Range>
-    <FriendlyFire>true</FriendlyFire>
-    <Damage>
-      <Fire>500</Fire>
-    </Damage>
-  </DeathDamage>
   <Footprint>
     <Square width="8.0" depth="24.0"/>
     <Height>8.0</Height>
@@ -44,7 +13,6 @@
   <GarrisonHolder disable=""/>
   <Health>
     <Max>500</Max>
-    <RegenRate>-5</RegenRate>
     <DamageVariants>
       <lightdamage>0.85</lightdamage> 
       <mediumdamage>0.65</mediumdamage> 
@@ -67,6 +35,13 @@
   <TreasureCollector disable=""/>
   <UnitMotion>
     <PassabilityClass>ship-small</PassabilityClass>
-    <WalkSpeed op="mul">1.5</WalkSpeed>
+    <WalkSpeed>10</WalkSpeed>
   </UnitMotion>
+  <Upgrade>
+    <Tower>
+      <Entity>units/{civ}/ship_fire_fire</Entity>
+      <Tooltip>Ignite the Fire Ship to damage nearby enemy Ships.</Tooltip>
+      <Time>10</Time>
+    </Tower>
+  </Upgrade>
 </Entity>
