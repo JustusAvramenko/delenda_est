@@ -17,6 +17,18 @@
     <Icon>units/athen/hero_iphicrates.png</Icon>
     <RequiredTechnology>civ_choices/athen/iphicrates</RequiredTechnology>
   </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/athen/hero_iphicrates_mounted</Entity>
+      <Tooltip>This gives Iphicrates his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
   <VisualActor>
     <Actor>units/athenians/hero_infantry_javelinist_iphicrates.xml</Actor>
   </VisualActor>

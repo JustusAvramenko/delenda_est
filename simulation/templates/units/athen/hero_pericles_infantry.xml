@@ -17,6 +17,18 @@
     <Icon>units/athen/hero_pericles.png</Icon>
     <RequiredTechnology>civ_choices/athen/pericles</RequiredTechnology>
   </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/athen/hero_pericles_mounted</Entity>
+      <Tooltip>This gives Pericles his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
   <VisualActor>
     <Actor>units/athenians/hero_infantry_hoplite_pericles.xml</Actor>
   </VisualActor>
