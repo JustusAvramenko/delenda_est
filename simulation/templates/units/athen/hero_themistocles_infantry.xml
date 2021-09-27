@@ -16,6 +16,18 @@
     <Icon>units/athen/hero_themistocles.png</Icon>
     <RequiredTechnology>civ_choices/athen/themistocles</RequiredTechnology>
   </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/athen/hero_themistocles_mounted</Entity>
+      <Tooltip>This gives Themistocles his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
   <VisualActor>
     <Actor>units/athenians/hero_infantry_swordsman_themistocles.xml</Actor>
   </VisualActor>
