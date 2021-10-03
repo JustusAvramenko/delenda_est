@@ -1,30 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_special">
+<Entity parent="template_structure_special_statue">
   <Auras datatype="tokens">
     structures/arch_triumphant
   </Auras>
-  <BuildRestrictions>
-    <Territory>own</Territory>
-    <Category>Arch</Category>
-  </BuildRestrictions>
   <Cost>
-    <BuildTime>300</BuildTime>
+    <BuildTime>160</BuildTime>
     <Resources>
-      <food>0</food>
-	  <wood>0</wood>
-      <stone>800</stone>
-      <metal>0</metal>
-      <glory>600</glory>
+      <stone>200</stone>
+      <metal>200</metal>
     </Resources>
   </Cost>
-  <Footprint>
+  <Footprint replace="">
     <Square width="20.0" depth="11.0"/>
-    <Height>8.0</Height>
+    <Height>18.0</Height>
   </Footprint>
-  <GarrisonHolder disable=""/>
   <Health>
     <Max>1000</Max>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x2</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>imp</Civ>
@@ -33,13 +25,7 @@
 	<VisibleClasses datatype="tokens">
 	  Arch
 	</VisibleClasses>
-    <Classes datatype="tokens">
-	  -ConquestCritical
-	  CivSpecific
-	</Classes>
-    <Tooltip>Build to increase the attack of your soldiers.</Tooltip>
     <Icon>structures/arch.png</Icon>
-	<RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
   <Obstruction>
 	<Static disable=""/>
@@ -48,14 +34,12 @@
 	  <Left width="6" depth="9" x="-6" z="0"/>
 	</Obstructions>
   </Obstruction>
-  <RallyPoint disable=""/>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_theater.xml</select>
-      <constructed>interface/complete/building/complete_tholos.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
+  <ResourceSupply>
+    <MaxGatherers>10</MaxGatherers>
+  </ResourceSupply>
+  <ResourceTrickle>
+    <Interval>1000</Interval>
+  </ResourceTrickle>
   <TerritoryInfluence>
     <Root>false</Root>
     <Radius>28</Radius>
