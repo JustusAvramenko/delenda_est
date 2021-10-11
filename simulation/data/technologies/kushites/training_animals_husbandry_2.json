@@ -1,0 +1,25 @@
+{
+	"genericName": "Extensive Husbandry",
+	"description": "A large part of the Kushite economy revolved around raising large herds of sanga cattle for food and export.",
+	"cost": {
+		"food": 200,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_town"},
+			{"tech": "training_animals_husbandry"},
+			{"civ": "kush"}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase. Requires \"Basic Husbandry.\"",
+	"icon": "extensive_husbandry.png",
+	"researchTime": 30,
+	"tooltip": "Domestic Animals -25% train time, +25% health.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.9},
+		{"value": "Health/Max", "multiply": 1.1}
+	],
+	"affects": ["Domestic"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
