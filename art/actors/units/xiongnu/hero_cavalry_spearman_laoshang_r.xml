@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+    <castshadow/>
+    <group>
+        <variant>
+            <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+     <props>
+        <prop actor="props/units/heads/xion_head.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/xion_spear.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/xion_sword_sheath_right.xml" attachpoint="sheath_R"/>
+       <prop actor="props/units/shields/xion_shield_round_small_cooper_left_arm.xml" attachpoint="armpad_L"/>
+        <prop actor="props/units/helmets/xion_warlord.xml" attachpoint="helmet"/>
+         <prop actor="props/units/capes/rider/cape_med_player.xml" attachpoint="root"/>
+      </props>
+        </variant>
+    </group>
+    <group>
+        <variant file="clothes/xion/warlord.xml"/>
+    </group> 
+    <group>
+		<variant file="biped/rider/cavalry/base_spearman_relax_01.xml" name="Spearman-Relax-01" frequency="1"/>
+        <variant file="biped/rider/death_shield.xml"/>
+    </group>
+    <material>player_trans_spec.xml</material>
+</actor>

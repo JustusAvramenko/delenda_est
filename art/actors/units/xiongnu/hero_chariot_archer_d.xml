@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_driver_chariot.xml">
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+      <props>
+       <prop actor="props/units/heads/xion_head.xml" attachpoint="head"/>
+       <prop actor="props/units/shields/xion_shield_round_small_cooper_left_arm.xml" attachpoint="armpad_L"/>
+       <prop actor="props/units/weapons/xion_sword_sheath_left.xml" attachpoint="sheath_L"/>
+       <prop actor="props/units/helmets/xion_lamellar.xml" attachpoint="helmet"/>
+     </props>
+    </variant>
+  </group>
+  <group>
+        <variant file="clothes/xion/uniform_e_01.xml"/>
+        <variant file="clothes/xion/uniform_e_02.xml"/>
+        <variant file="clothes/xion/uniform_e_03.xml"/>
+        <variant file="clothes/xion/uniform_e_04.xml"/>
+        <variant file="clothes/xion/uniform_e_05.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
