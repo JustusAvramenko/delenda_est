@@ -11,6 +11,11 @@
       <MinRange>0.0</MinRange>
     </Ranged>
   </Attack>
+  <Builder>
+    <Entities datatype="tokens">
+      -structures/wallset_palisade
+    </Entities>
+  </Builder>
   <Cost>
     <BuildTime>10</BuildTime>
     <Population>1</Population>
@@ -20,7 +25,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>25</Max>
+    <Max>80</Max>
   </Health>
   <Identity>
     <Civ>xion</Civ>
@@ -28,7 +33,7 @@
     <Icon>units/xion/support_citizen_female.png</Icon>
     <SelectionGroupName>units/xion/support_citizen_female</SelectionGroupName>
 	<Phenotype>female</Phenotype>
-    <Classes datatype="tokens">FemaleCitizen</Classes>
+    <Classes datatype="tokens">FemaleCitizen Worker Civilian IdleWorker</Classes>
     <VisibleClasses datatype="tokens">Citizen Worker</VisibleClasses>
     <Formations disable=""/>
   </Identity>
@@ -38,22 +43,24 @@
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
     <Capacities>
-      <food>10</food>
-      <wood>10</wood>
-      <stone>10</stone>
-      <metal>10</metal>
+      <food>20</food>
+      <wood>20</wood>
+      <stone>20</stone>
+      <metal>20</metal>
+      <coin>20</coin>
       <glory>1</glory>
     </Capacities>
     <Rates>
       <food.fruit>0.5</food.fruit>
       <food.grain>0.25</food.grain>
-      <food.meat>0.75</food.meat>
+      <food.meat>0.5</food.meat>
       <wood.tree>0.5</wood.tree>
       <wood.ruins>5.0</wood.ruins>
       <stone.rock>0.5</stone.rock>
       <stone.ruins>2</stone.ruins>
       <metal.ruins>2</metal.ruins>
       <metal.ore>0.5</metal.ore>
+      <coin.crops>0.25</coin.crops>
     </Rates>
   </ResourceGatherer>
   <UnitMotion>

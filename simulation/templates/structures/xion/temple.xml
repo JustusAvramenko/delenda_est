@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_temple">
   <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
+    <Territory>own neutral ally enemy</Territory>
     <Category>CultStatue</Category>
     <Distance>
       <FromClass>CultStatue</FromClass>
@@ -34,7 +34,7 @@
   </ResourceDropsite>
   <ResourceSupply>
     <KillBeforeGather>false</KillBeforeGather>
-    <Amount>Infinity</Amount>
+    <Max>Infinity</Max>
     <Type>glory.praise</Type>
     <MaxGatherers>5</MaxGatherers>
 	<DiminishingReturns>0.90</DiminishingReturns>

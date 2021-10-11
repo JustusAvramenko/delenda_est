@@ -4,12 +4,33 @@
     <Territory>own neutral ally enemy</Territory>
   </BuildRestrictions>
   <Footprint replace="">
-    <Circle radius="7.0"/>
-    <Height>10.0</Height>
+    <Circle radius="8"/>
+    <Height>10</Height>
   </Footprint>
   <Identity>
     <Civ>xion</Civ>
+    <Tooltip>Dropsite for all resources. Train Slaves. Upgrade to a Resource Wagon to move this Storehouse across the map.</Tooltip>
   </Identity>
+  <ProductionQueue>
+    <Technologies datatype="tokens" replace="">
+      nomads/gather_wicker_baskets
+	  nomads/gather_hunting_dogs
+	  unlock_specialized_cultivation
+	  pair_gather_01
+      pair_gather_02
+      pair_gather_03
+	  gather_lumbering_bowsaw
+	  gather_lumbering_twomansaw
+	  gather_capacity_wheelbarrow
+	  gather_capacity_handcarts
+    </Technologies>
+  </ProductionQueue>
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <StatusBars>
+    <HeightOffset>9</HeightOffset>
+  </StatusBars>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
   <Upgrade>
