@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_herd_domestic">
   <Cost>
-    <BuildTime>90</BuildTime>
+    <BuildTime>60</BuildTime>
     <Resources>
       <food>200</food>
     </Resources>
@@ -13,14 +13,14 @@
   <Identity>
     <GenericName>Cattle</GenericName>
 	<VisibleClasses datatype="tokens">Cattle</VisibleClasses>
+	<RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <ResourceSupply>
 	<Initial>250</Initial>
     <Max>400</Max>
     <Change>
       <Regrowth>
-        <Value>3</Value>
-        <Interval>5000</Interval>
+        <Value>2</Value>
       </Regrowth>
     </Change>
   </ResourceSupply>
