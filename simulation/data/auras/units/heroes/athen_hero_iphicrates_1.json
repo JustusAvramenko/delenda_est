@@ -1,12 +1,11 @@
 {
-	"type": "formation",
-	"affects": ["Unit"],
+	"type": "range",
+	"radius": 30,
+	"affects": ["Soldier Ranged"],
 	"modifications": [
-		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },
-		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 },
-		{ "value": "Resistance/Entity/Damage/Crush", "add": 1 },
-		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.15 }
+		{"value": "Health/Max", "multiply": 1.25}
 	],
 	"auraName": "Innovative Tactics",
-	"auraDescription": "All units in his formation +15% speed and +1 all armor types."
+	"auraDescription": "Nearby Ranged Infantry and Ranged Cavalry +25% health.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
 }
