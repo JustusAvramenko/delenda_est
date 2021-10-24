@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special_statue">
+  <Footprint replace="">
+    <Square width="10" depth="10"/>
+    <Height>20</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Unit !Siege !Ship</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>1</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>han</Civ>
+    <SpecificName>Dà fángyù tǎ</SpecificName>
+    <GenericName>Pagoda</GenericName>
+    <Classes datatype="tokens">CivSpecific</Classes>
+    <VisibleClasses datatype="tokens">GreatTower</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static width="7.5" depth="7.5"/>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>20</HeightOffset>
+  </StatusBars>
+  <Vision>
+    <Range>64</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/chinese_han/tower_great.xml</Actor>
+  </VisualActor>
+</Entity>
