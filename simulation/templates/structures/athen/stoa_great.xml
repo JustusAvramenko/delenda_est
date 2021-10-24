@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special_stoa">
+  <Footprint>
+    <Square width="31" depth="22.5"/>
+    <Height>10.0</Height>
+  </Footprint>
   <Identity>
     <Civ>athen</Civ>
-    <SpecificName>Stoa Poikile</SpecificName>
-    <GenericName>Painted Stoa</GenericName>
+    <SpecificName>Stoa Basileios</SpecificName>
+    <GenericName>Royal Stoa</GenericName>
   </Identity>
+  <Obstruction>
+    <Static width="28" depth="19.5"/>
+  </Obstruction>
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/athen/hero_socrates
-    </Entities>
 	<TechCostMultiplier>
       <food>1.0</food>
       <wood>1.0</wood>
@@ -20,7 +24,11 @@
       <time>1.0</time>
     </TechCostMultiplier>
     <Technologies datatype="tokens">
-      athenians/research_time_philosophy
+      athenians/health_citizens_02
     </Technologies>
   </ProductionQueue>
+  <VisualActor>
+    <Actor>special/greek_stoa_great.xml</Actor>
+    <FoundationActor>structures/fndn_7x5.xml</FoundationActor>
+  </VisualActor>
 </Entity>

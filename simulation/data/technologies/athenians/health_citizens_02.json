@@ -1,0 +1,27 @@
+{
+	"genericName": "Ostracism",
+	"specificName": {
+		"hele": "Ostrakismos",
+		"mace": "Ostrakismos",
+		"spart": "Ostrakismos",
+		"athen": "Ostrakismos",
+		"sele": "Ostrakismos"
+	},
+	"description": "Ostracism (Greek: ὀστρακισμός, ostrakismos) was an Athenian democratic procedure in which any citizen could be expelled from the city-state of Athens for ten years. While some instances clearly expressed popular anger at the citizen, ostracism was often used preemptively. It was used as a way of neutralizing someone thought to be a threat to the state or potential tyrant though in many cases popular opinion often informed the choice regardless. The word \"ostracism\" continues to be used for various cases of social shunning.",
+	"cost": {
+		"glory": 500
+	},
+	"requirements": {"all": [
+		{"tech": "phase_city"},
+		{"civ": "athen"}
+	]},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "fist.png",
+	"researchTime": 40,
+	"tooltip": "Civilian Citizens +50% health, but Heroes -10% health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.5, "affects": "Citizen Support" },
+		{ "value": "Health/Max", "multiply": 1.5, "affects": "Hero" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
