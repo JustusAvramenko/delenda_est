@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_gaia_ruins">
-  <Footprint replace="">
-    <Circle radius="1.5"/>
-    <Height>2.0</Height>
+  <Footprint>
+    <Circle radius="2"/>
+    <Height>3</Height>
   </Footprint>
   <Identity>
     <SpecificName>Celtic Standing Stone</SpecificName>
@@ -13,6 +13,14 @@
   <ResourceSupply>
     <Max>300</Max>
   </ResourceSupply>
+  <Selectable>
+    <Overlay replace="">
+      <Texture>
+        <MainTexture>128x128/ellipse.png</MainTexture>
+        <MainTextureMask>128x128/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <VisualActor>
     <Actor>props/special/eyecandy/standing_stones.xml</Actor>
   </VisualActor>
