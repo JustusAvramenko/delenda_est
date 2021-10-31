@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee_spearman">
+  <Attack>
+    <Melee>
+      <AttackName>Halberd</AttackName>
+      <MaxRange>7</MaxRange>
+    </Melee>
+  </Attack>
   <Identity>
     <Civ>han</Civ>
     <SelectionGroupName>units/han/infantry_spearman_b</SelectionGroupName>
     <SpecificName>Chinese Levy Halberdier</SpecificName>
     <Icon>units/han/infantry_spearman.png</Icon>
+    <Formations datatype="tokens">
+      special/formations/anti_cavalry
+    </Formations>
   </Identity>
   <Promotion>
     <Entity>units/han/infantry_spearman_a</Entity>
