@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion_infantry">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>10</Hack>
-        <Pierce>8</Pierce>
-        <Crush>8</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Melee>
       <AttackName>Pike</AttackName>
@@ -48,6 +39,15 @@ Weak Against: Ranged Units, Sword Infantry.</Tooltip>
       special/formations/syntagma
     </Formations>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>10</Hack>
+        <Pierce>8</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <UnitMotion>
     <WalkSpeed op="mul">0.7</WalkSpeed>
   </UnitMotion>
