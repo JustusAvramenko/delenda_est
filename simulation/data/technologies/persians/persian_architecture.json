@@ -1,12 +1,17 @@
 {
 	"genericName": "Hall of One Hundred Columns",
 	"description": "The royal throne room at the Persian capitol city, Persepolis, had a magnificently high ceiling supported by 100 splendid columns.",
-	"cost": {"glory": 1000},
-	"requirements": {"all": [{"tech": "phase_imperial"}, {"civ": "pers"}]},
-	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"cost": {
+		"glory": 800
+	},
+	"requirements": {"all": [
+		{"tech": "phase_city"}, 
+		{"civ": "pers"}]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "pers_hundred_columns.png",
 	"researchTime": 40,
-	"tooltip": "Structures +25% health. The Tachara Palace +50% additional health",
+	"tooltip": "Structures +25% health. The Tachara Palace +50% additional health.",
 	"modifications": [
 		{"value": "Health/Max", "multiply": 1.25},
 		{"value": "Health/Max", "multiply": 1.50, "affects": "Palace"}
