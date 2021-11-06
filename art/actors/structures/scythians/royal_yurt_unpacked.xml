@@ -30,7 +30,6 @@
         <prop actor="props/structures/scythians/crate_large.xml" attachpoint="crate_b"/>
         <prop actor="props/structures/scythians/crate_large.xml" attachpoint="crate_c"/>
         <prop actor="props/structures/scythians/royal_yurt_decoration.xml" attachpoint="root"/>
-        <prop actor="particle/smoke_curved.xml" attachpoint="smoke"/>
         <prop actor="fauna/zebu.xml" attachpoint="horse_a"/>
         <prop actor="fauna/zebu_b.xml" attachpoint="horse_b"/>
         <prop actor="fauna/zebu_c.xml" attachpoint="horse_c"/>
@@ -65,6 +64,14 @@
         <prop actor="fauna/zebu_c.xml" attachpoint="horse_c"/>
         <prop actor="fauna/zebu_b.xml" attachpoint="horse_d"/>
         <prop actor="fauna/zebu_c.xml" attachpoint="horse_e"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="researching">
+      <props>
+        <prop actor="particle/smoke_curved.xml" attachpoint="smoke"/>
       </props>
     </variant>
   </group>

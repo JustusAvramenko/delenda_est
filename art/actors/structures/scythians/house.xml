@@ -16,10 +16,9 @@
         <prop actor="props/structures/scythians/barrel.xml" attachpoint="Barrel_b" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/scythians/house_a_carpets.xml" attachpoint="root"/>
         <prop actor="props/structures/scythians/butter_mixer.xml" attachpoint="mixer" maxheight="20" minheight="-20"/>
-        <prop actor="particle/smoke_curved.xml" attachpoint="smoke"/>
       </props>
       <textures>
-        <texture file="structural/scyth_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
         <texture file="structural/xion_structure_norm.png" name="normTex"/>
         <texture file="structural/xion_structure_spec.png" name="specTex"/>
         <texture file="structural/ao/xion_house_a_ao.png" name="aoTex"/>
@@ -39,11 +38,10 @@
         <prop actor="props/structures/scythians/pot.xml" attachpoint="pot" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/scythians/barrel.xml" attachpoint="barrel" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/scythians/house_b_carpets.xml" attachpoint="root"/>
-        <prop actor="particle/smoke_curved.xml" attachpoint="smoke"/>
         <prop actor="props/structures/scythians/carpet.xml" attachpoint="Carpets_b" maxheight="20" minheight="-20"/>
       </props>
       <textures>
-        <texture file="structural/scyth_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
         <texture file="structural/xion_structure_norm.png" name="normTex"/>
         <texture file="structural/xion_structure_spec.png" name="specTex"/>
         <texture file="structural/ao/xion_house_b_ao.png" name="aoTex"/>
@@ -64,7 +62,6 @@
         <prop actor="props/structures/scythians/house_c_carpets.xml" attachpoint="root"/>
         <prop actor="props/special/eyecandy/box_pile.xml" attachpoint="box_pile" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/scythians/carpet.xml" attachpoint="Carpets_c" maxheight="20" minheight="-20"/>
-        <prop actor="particle/smoke_curved.xml" attachpoint="smoke"/>
         <prop actor="props/structures/scythians/meat_stand.xml" attachpoint="meat_stand_a" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/scythians/meat_stand.xml" attachpoint="meat_stand_b" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/scythians/table_round.xml" attachpoint="table" maxheight="20" minheight="-20"/>
@@ -72,11 +69,19 @@
         <prop actor="props/structures/scythians/meat_pieces.xml" attachpoint="meat_b" maxheight="20" minheight="-20"/>
       </props>
       <textures>
-        <texture file="structural/scyth_structure.png" name="baseTex"/>
+        <texture file="structural/xion_structure.png" name="baseTex"/>
         <texture file="structural/xion_structure_norm.png" name="normTex"/>
         <texture file="structural/xion_structure_spec.png" name="specTex"/>
         <texture file="structural/ao/xion_house_c_ao.png" name="aoTex"/>
       </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="researching">
+      <props>
+        <prop actor="particle/smoke_curved.xml" attachpoint="smoke"/>
+      </props>
     </variant>
   </group>
   <group>
