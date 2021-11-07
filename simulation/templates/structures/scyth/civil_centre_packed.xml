@@ -25,6 +25,11 @@
     <Civ>scyth</Civ>
     <SpecificName>Chanyu's Hall</SpecificName>
     <GenericName>Packed Civic Center</GenericName>
+    <Classes datatype="tokens">
+      ConquestCritical
+	  CivCentre
+	  CivilCentre
+	</Classes>
     <Icon>structures/military_settlement.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
 	<Formations disable=""/>
@@ -71,11 +76,11 @@
       <Entity>structures/scyth/civil_centre</Entity>
       <Cost>
         <food>0</food>
-        <wood>600</wood>
+        <wood>400</wood>
         <stone>400</stone>
         <metal>0</metal>
       </Cost>
-      <Time>90</Time>
+      <Time>30</Time>
       <Tooltip>Requires City Phase.</Tooltip>
       <RequiredTechnology>phase_city</RequiredTechnology>
     </Unpack>

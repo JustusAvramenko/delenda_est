@@ -9,8 +9,7 @@
   </Footprint>
   <GarrisonHolder disable=""/>
   <Health>
-    <Max>1600</Max>
-    <SpawnEntityOnDeath>rubble/rubble_stone_4x2</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x2</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>scyth</Civ>
@@ -20,6 +19,11 @@
     <Anchor>pitch</Anchor>
     <TurnRate>0.0001</TurnRate>
   </Position>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+	  training_slave_trade
+    </Technologies>
+  </ProductionQueue>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
   <Obstruction>

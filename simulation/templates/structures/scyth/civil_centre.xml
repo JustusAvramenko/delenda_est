@@ -10,7 +10,7 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>scyth</Civ>
@@ -31,6 +31,14 @@
   </Position>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Upgrade>
+    <Unpack>
+      <Entity>structures/scyth/civil_centre_packed</Entity>
+      <Time>30</Time>
+      <Tooltip>Requires City Phase.</Tooltip>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+    </Unpack>
+  </Upgrade>
   <VisualActor>
     <ConstructionPreview disable=""/>
     <Actor>structures/scythians/royal_yurt_chariot_unpacked.xml</Actor>
