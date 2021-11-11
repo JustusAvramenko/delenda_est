@@ -2,6 +2,7 @@
 <Entity parent="template_structure_military_army_camp">
   <Auras datatype="tokens">
     teambonuses/rome_player_teambonus_2
+	structures/rome_heal_logistics
   </Auras>
   <Identity>
     <Civ>rome</Civ>
@@ -12,8 +13,19 @@
     <Entities datatype="tokens">
     </Entities>
     <Technologies datatype="tokens">
-	  romans/decay_logistics
-	  romans/special_colonia
+	  romans/unlock_logistics
     </Technologies>
   </ProductionQueue>
+  <Upgrade>
+    <Colonia>
+      <Entity>structures/rome/civil_centre</Entity>
+      <Tooltip>Colonize conquered territory by granting the Army Camp 'colonia' status.</Tooltip>
+	  <RequiredTechnology>phase_imperial</RequiredTechnology>
+      <Cost>
+        <stone>500</stone>
+		<metal>500</metal>
+      </Cost>
+      <Time>120</Time>
+    </Colonia>
+  </Upgrade>
 </Entity>
