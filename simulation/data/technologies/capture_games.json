@@ -9,8 +9,34 @@
 		"theb": "Delphic Games"
 	},
 	"description": "Cultural events utilizing religion were important to ancient societies.",
-	"cost": {"glory": 1000,  "coin": 500},
-	"requirements": {"tech": "phase_imperial"},
+	"cost": {
+			"food": 1000,
+			"glory": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{
+				"any": [
+					{ "notciv": "brit" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "han" },
+					{ "notciv": "iber" },
+					{ "notciv": "kush" },
+					{ "notciv": "maur" },
+					{ "notciv": "pers" },
+					{ "notciv": "ptol" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sueb" },
+					{ "notciv": "xion" },
+					{ "notciv": "zapo" },
+					{ "notciv": "rome" },
+					{ "notciv": "imp" }
+				]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "games.png",
 	"researchTime": 60,

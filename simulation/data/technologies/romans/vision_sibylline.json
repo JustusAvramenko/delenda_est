@@ -5,8 +5,21 @@
 		"imp": "Libri Sibyllini"
 	},
 	"description": "The Sibylline Books or 'Libri Sibyllini' were a collection of oracular utterances, set out in Greek hexameters, purchased from a sibyl by the last king of Rome, Tarquinius Superbus, and consulted at momentous crises throughout the history of the Republic and the Empire.",
-	"cost": {"glory": 200, "metal": 200},
-	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "rome"}]},
+	"cost": {
+		"glory": 200,
+		"metal": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{
+				"any": [
+					{ "civ": "rome" },
+					{ "civ": "imp" }
+				]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "sibylline_books.png",
 	"researchTime": 40,

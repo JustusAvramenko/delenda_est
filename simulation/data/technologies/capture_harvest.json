@@ -1,8 +1,32 @@
 {
 	"genericName": "Harvest Fair",
 	"description": "Cultural events utilizing religion were intertwined with the Autumn harvest season and were important to ancient societies.",
-	"cost": {"food": 1000, "glory": 500},
-	"requirements": {"tech": "phase_imperial"},
+	"cost": {
+			"food": 1000,
+			"glory": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{
+				"any": [
+					{ "civ": "brit" },
+					{ "civ": "gaul" },
+					{ "civ": "goth" },
+					{ "civ": "han" },
+					{ "civ": "iber" },
+					{ "civ": "kush" },
+					{ "civ": "maur" },
+					{ "civ": "pers" },
+					{ "civ": "ptol" },
+					{ "civ": "scyth" },
+					{ "civ": "sueb" },
+					{ "civ": "xion" },
+					{ "civ": "zapo" }
+				]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "grain.png",
 	"researchTime": 60,
