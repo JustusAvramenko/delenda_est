@@ -1,22 +1,26 @@
 {
 	"genericName": "Goldsmithing",
-	"description": "Amphorae were fired clay jars in which perishable goods can be stored for long journeys.",
+	"description": "The Scythians were reknown for their skilled goldsmithing, with archaeological finds ranging across Eurasia.",
 	"cost": {
 		"metal": 400,
-		"glory": 100
+		"glory": 400
 	},
-	"requirements": {
+	"requirements": { 
 		"all": [
-			{"tech": "phase_city"}, 
-			{"civ": "scyth"}
+			{ "tech": "phase_town" }, 
+			{ "civ": "scyth" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }] 
+			}
 		]
 	},
-	"requirementsTooltip": "Unlocked in City Phase.",
+	"requirementsTooltip": "Unlocked in Town Phase. Requires \"Forging\" or \"Metallurgy\".",
 	"icon": "goldsmithing.png",
 	"researchTime": 40,
-	"tooltip": "Traders +40% trade profit per trip.",
+	"tooltip": "Traders +25% trade profit per trip.",
 	"modifications": [
-		{"value": "Trader/GainMultiplier", "multiply": 1.4}
+		{"value": "Trader/GainMultiplier", "multiply": 1.25}
 	],
 	"affects": ["Trader"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
