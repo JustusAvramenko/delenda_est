@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="autobuild|template_structure_resource">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
+<Entity parent="template_structure_resource">
+  <AutoBuildable>
+    <Rate>0.5</Rate>
+  </AutoBuildable>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
 	<Category>Field</Category>
@@ -53,6 +49,13 @@
   </Obstruction>
   <ProductionQueue disable=""/>
   <RallyPoint disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <ResourceSupply>
     <KillBeforeGather>false</KillBeforeGather>
     <Max>Infinity</Max>

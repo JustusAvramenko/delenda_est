@@ -3,6 +3,13 @@
   <Auras datatype="tokens">
     structures/rotary_mill
   </Auras>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/field
+      structures/{civ}/field_cash_crops
+    </Entities>
+  </Builder>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
 	<Category>RotaryMill</Category>
@@ -32,7 +39,7 @@
     <Civ>celt</Civ>
     <GenericName>Rotary Mill</GenericName>
     <SpecificName>Rotary Mill</SpecificName>
-    <VisibleClasses datatype="tokens">RotaryMill</VisibleClasses>
+    <VisibleClasses datatype="tokens">RotaryMill Farmstead</VisibleClasses>
     <Classes datatype="tokens">
 	  -ConquestCritical
 	  CivSpecific

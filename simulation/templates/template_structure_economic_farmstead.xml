@@ -6,6 +6,13 @@
     <EndOfAlertRange>60</EndOfAlertRange>
     <SearchRange>80</SearchRange>
   </AlertRaiser>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/field
+      structures/{civ}/field_cash_crops
+    </Entities>
+  </Builder>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
 	<Category>Farmstead</Category>
