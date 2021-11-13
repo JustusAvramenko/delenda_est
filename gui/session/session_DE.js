@@ -1,3 +1,10 @@
+var standardInit = init;
+init = function(initData, hotloadData)
+{
+	standardInit(initData, hotloadData);
+	initCivChoicesDialog();
+}
+
 /**
  * Unit classes to be checked for the idle-worker-hotkey.
  */
