@@ -1,0 +1,24 @@
+{
+	"genericName": "Social Reforms",
+	"description": "Ateas implemented social reforms in the Scythian tribes under his banner.",
+	"cost": {
+			"food": 300,
+			"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_town"}, 
+			{"civ": "scyth"}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase after choosing the hero Ateas.",
+	"icon": "population.png",
+	"researchTime": 40,
+	"tooltip": "Scythian Peasants +50% health; Scythian Slaves +100% loyalty (capture points).",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.5, "affects": "Villager" },
+		{ "value": "Capturable/CapturePoints", "multiply": 2, "affects": "Slave" }
+		
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
