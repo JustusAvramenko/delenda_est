@@ -1,0 +1,23 @@
+{
+	"genericName": "\"Fill of Blood\"",
+	"description": "",
+	"cost": {
+		"glory": 500
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"}, 
+			{"civ": "scyth"}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "skull_helmet.png",
+	"researchTime": 40,
+	"tooltip": "Tomyris +25% attack when mounted on her War Horse. +25% bonus attack vs. Persian Heroes.",
+	"modifications": [
+		{"value": "Attack/Melee/Damage/Hack", "multiply": 1.25 },
+		{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.25 }
+	],
+	"affects": ["Hero Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
