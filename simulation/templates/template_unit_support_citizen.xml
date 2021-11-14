@@ -106,7 +106,7 @@
 	</Phenotype>
 	<VisibleClasses datatype="tokens">Builder Gatherer Citizen TaxPayer</VisibleClasses>
     <SelectionGroupName>template_unit_support_citizen</SelectionGroupName>
-	<Classes datatype="tokens">Worker Civilian IdleWorker</Classes>
+	<Classes datatype="tokens">Worker Civilian IdleWorker Villager</Classes>
 	<Tooltip>Build civilian buildings and gather resources. Command nearby Slaves to work faster. Especially good at building.
 Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Avoids Death.
 Good at: Building and Dying.
@@ -175,7 +175,7 @@ Bad at: Fighting.</Tooltip>
 	  <attack_slaughter>attack/weapon/knife_attack.xml</attack_slaughter>
       <death>actor/human/death/{phenotype}_death.xml</death>
       <build>resource/construction/con_wood.xml</build>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <trained>interface/alarm/alarm_create_citizen.xml</trained>
       <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
       <gather_grain>resource/farming/farm.xml</gather_grain>
 	  <gather_meat>resource/gathering/gather_meat.xml</gather_meat>
