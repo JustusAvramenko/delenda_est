@@ -6,9 +6,15 @@
       <Capture>10</Capture>
       <MaxRange>4</MaxRange>
       <RepeatTime>2000</RepeatTime>
-	  <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
     </Capture>
   </Attack>
+  <Cost>
+    <Resources>
+      <food>100</food>
+      <glory>100</glory>
+    </Resources>
+  </Cost>
   <Heal>
     <Range>8</Range>
     <Health>5</Health>
@@ -21,12 +27,6 @@
       <LineThickness>0.35</LineThickness>
     </RangeOverlay>
   </Heal>
-  <Cost>
-    <Resources>
-	  <food>100</food>
-      <glory>100</glory>
-    </Resources>
-  </Cost>
   <Health>
     <Max>100</Max>
   </Health>
@@ -40,9 +40,12 @@
     <xp>50</xp>
     <glory>100</glory>
   </Loot>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-	<TechCostMultiplier>
+  <ProductionQueue/>
+  <Promotion>
+    <RequiredXp>200</RequiredXp>
+  </Promotion>
+  <Researcher>
+    <TechCostMultiplier>
       <food>1.0</food>
       <wood>1.0</wood>
       <stone>1.0</stone>
@@ -55,10 +58,7 @@
 	  pair_heal_01
       pair_heal_02
     </Technologies>
-  </ProductionQueue>
-  <Promotion>
-    <RequiredXp>200</RequiredXp>
-  </Promotion>
+  </Researcher>
   <ResourceGatherer>
     <Rates>
       <glory.praise>0.5</glory.praise>
@@ -75,7 +75,7 @@
   <Sound>
     <SoundGroups>
       <trained>interface/alarm/alarm_create_priest.xml</trained>
-	  <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
       <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
       <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
       <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>

@@ -21,15 +21,12 @@
   </Obstruction>
   <Position>
     <Floating>true</Floating>
-	<FloatDepth>0.0</FloatDepth>
+    <FloatDepth>0.0</FloatDepth>
   </Position>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/infantry_spearman_b
-      units/{civ}/ship_fishing
-      units/{civ}/ship_merchant
-      units/{civ}/ship_trireme
-    </Entities>
+  <RallyPointRenderer>
+    <LinePassabilityClass>ship</LinePassabilityClass>
+  </RallyPointRenderer>
+  <Researcher>
     <Technologies datatype="tokens">
 	  health_units_01
 	  health_units_02
@@ -39,10 +36,15 @@
 	  unlock_spies
 	  spy_counter
     </Technologies>
-  </ProductionQueue>
-  <RallyPointRenderer>
-    <LinePassabilityClass>ship</LinePassabilityClass>
-  </RallyPointRenderer>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_spearman_b
+      units/{civ}/ship_fishing
+      units/{civ}/ship_merchant
+      units/{civ}/ship_trireme
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/britons/crannog.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>

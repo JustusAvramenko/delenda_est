@@ -16,26 +16,24 @@
   <Obstruction>
     <Static width="5.0" depth="5.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
       -heal_temple
 	  -health_regen_units
 	  -attack_military_cult
 	  -health_state_religion
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <ResourceDropsite>
     <Types>glory</Types>
-	<Sharable>false</Sharable>
+    <Sharable>false</Sharable>
   </ResourceDropsite>
   <ResourceSupply>
     <KillBeforeGather>false</KillBeforeGather>
     <Max>Infinity</Max>
     <Type>glory.praise</Type>
     <MaxGatherers>5</MaxGatherers>
-	<DiminishingReturns>0.90</DiminishingReturns>
+    <DiminishingReturns>0.90</DiminishingReturns>
   </ResourceSupply>
   <ResourceTrickle>
     <Rates>
@@ -48,6 +46,10 @@
     <Radius>20</Radius>
     <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/noba/shrine.xml</Actor>
     <FoundationActor>structures/fndn_2x2.xml</FoundationActor>

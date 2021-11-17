@@ -5,7 +5,7 @@
   </AutoBuildable>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
-	<Category>Field</Category>
+    <Category>Field</Category>
     <Distance>
       <FromClass>CivicCenter</FromClass>
       <MinDistance>60</MinDistance>
@@ -23,13 +23,13 @@
   </Footprint>
   <Health>
     <Max>100</Max>
-	<SpawnEntityOnDeath>decay|rubble/rubble_field</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_field</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Grain Field</GenericName>
     <SpecificName>Grain Field</SpecificName>
-	<VisibleClasses datatype="tokens">Grain Field DiminishingReturns</VisibleClasses>
-	<Classes datatype="tokens">-NotField</Classes>
+    <VisibleClasses datatype="tokens">Grain Field DiminishingReturns</VisibleClasses>
+    <Classes datatype="tokens">-NotField</Classes>
     <SelectionGroupName>template_structure_resource_field</SelectionGroupName>
     <Tooltip>Build in neutral or own territory to harvest vegetables for food. Build on farmland terrain to gain a +100% farming boost. Max gatherers: 5. There is a diminishing return effect where it is more efficient to use fewer gatherers per field.</Tooltip>
     <Icon>structures/field.png</Icon>
@@ -49,6 +49,7 @@
   </Obstruction>
   <ProductionQueue disable=""/>
   <RallyPoint disable=""/>
+  <Researcher disable=""/>
   <Resistance>
     <Entity>
       <Damage>
@@ -61,18 +62,18 @@
     <Max>Infinity</Max>
     <Type>food.grain</Type>
     <MaxGatherers>5</MaxGatherers>
-	<DiminishingReturns>0.90</DiminishingReturns> 
+    <DiminishingReturns>0.90</DiminishingReturns>
   </ResourceSupply>
   <ResourceTrickle>
-    <Rates> 
+    <Rates>
       <food>0.0</food>
       <wood>0.0</wood>
       <stone>0.0</stone>
       <metal>0.0</metal>
       <coin>0.0</coin>
       <glory>0.0</glory>
-    </Rates> 
-    <Interval>6000</Interval> 
+    </Rates>
+    <Interval>6000</Interval>
   </ResourceTrickle>
   <Sound>
     <SoundGroups>
@@ -85,6 +86,7 @@
     <HeightOffset>8.0</HeightOffset>
   </StatusBars>
   <TerritoryDecay disable=""/>
+  <Trainer disable=""/>
   <Vision>
     <Range>0</Range>
   </Vision>

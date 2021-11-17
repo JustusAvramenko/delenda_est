@@ -18,20 +18,22 @@
   <Obstruction>
     <Static width="20" depth="21"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      -units/{native}/support_healer_b
-      units/kush/support_healer_e
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  -health_regen_units
       -heal_temple
       -health_state_religion
 	  -attack_military_cult
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      -units/{native}/support_healer_b
+      units/kush/support_healer_e
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/kushites/shrine.xml</Actor>
     <FoundationActor>structures/fndn_4x4.xml</FoundationActor>

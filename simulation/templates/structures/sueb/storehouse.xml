@@ -11,15 +11,17 @@
   <Obstruction>
     <Static width="16.0" depth="16.0"/>
   </Obstruction>
-  <ProductionQueue>
-	<Entities datatype="tokens">
-	  units/{civ}/support_wagon
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  -gather_capacity_wheelbarrow
 	  -gather_capacity_handcarts
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+	  units/{civ}/support_wagon
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/germans/storehouse.xml</Actor>
     <FoundationActor>structures/fndn_4x4.xml</FoundationActor>

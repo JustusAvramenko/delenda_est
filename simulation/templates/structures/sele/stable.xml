@@ -1,17 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_stable">
   <Identity>
     <Civ>sele</Civ>
     <SpecificName>Hippōn</SpecificName>
   </Identity>
-  <ProductionQueue>
-	<Entities datatype="tokens">
-	  -units/{civ}/cavalry_archer_b
-	</Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  successors/special_war_horses
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+	  -units/{civ}/cavalry_archer_b
+	</Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/seleucids/stable.xml</Actor>
   </VisualActor>

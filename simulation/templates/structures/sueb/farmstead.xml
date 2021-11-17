@@ -21,18 +21,20 @@
   <Obstruction>
     <Static width="20" depth="20"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-	  gaia/fauna_pig_trainable
-      gaia/fauna_sheep_trainable
-      gaia/fauna_cattle_cow_trainable
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  training_animals_husbandry
 	  gather_draft_animals
       training_animals_stockbreeding
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+	  gaia/fauna_pig_trainable
+      gaia/fauna_sheep_trainable
+      gaia/fauna_cattle_cow_trainable
+    </Entities>
+  </Trainer>
   <VisualActor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
     <Actor>structures/germans/corral.xml</Actor>

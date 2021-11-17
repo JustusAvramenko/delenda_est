@@ -7,22 +7,24 @@
   <Obstruction>
     <Static width="27.0" depth="27.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/champion_infantry
-      units/{civ}/champion_cavalry
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
       attack_capture_siege_ladders
 	  iberians/fortress_stronghold
 	  unlock_spies
 	  spy_counter
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry
+      units/{civ}/champion_cavalry
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/iberians/fortress.xml</Actor>
   </VisualActor>
   <WallPiece>
-   <Length>24.5</Length>
+    <Length>24.5</Length>
   </WallPiece>
 </Entity>

@@ -1,9 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic">
-  <Footprint>
-    <Square width="36.0" depth="40.0"/>
-    <Height>8.0</Height>
-  </Footprint>
   <BuildRestrictions>
     <Category>GovernmentCenter</Category>
   </BuildRestrictions>
@@ -19,6 +15,10 @@
       <metal>0</metal>
     </Resources>
   </Cost>
+  <Footprint>
+    <Square width="36.0" depth="40.0"/>
+    <Height>8.0</Height>
+  </Footprint>
   <GarrisonHolder>
     <Max>5</Max>
     <EjectHealth>0</EjectHealth>
@@ -46,9 +46,6 @@
     <Icon>structures/government_center.png</Icon>
     <Tooltip>Build to unlock the Town Phase for the Han Chinese. Train the Nine Ministers. Research a powerful suite of Administrative technologies.</Tooltip>
   </Identity>
-  <Obstruction>
-    <Static width="32.0" depth="36.0"/>
-  </Obstruction>
   <Loot>
     <xp>200</xp>
     <food>0</food>
@@ -56,14 +53,13 @@
     <stone>50</stone>
     <metal>50</metal>
   </Loot>
+  <Obstruction>
+    <Static width="32.0" depth="36.0"/>
+  </Obstruction>
   <Population>
     <Bonus>10</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/han/minister
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  chinese_han/art_of_war
 	  pair_taxes_01
@@ -85,7 +81,7 @@
 	  unlock_spies
 	  spy_counter
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_civ_center.xml</select>
@@ -93,11 +89,17 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/han/minister
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>60</Range>
   </Vision>
   <VisualActor>
-  	<FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
     <Actor>structures/chinese_han/government_center.xml</Actor>
   </VisualActor>
 </Entity>

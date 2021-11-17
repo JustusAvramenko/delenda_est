@@ -45,11 +45,17 @@
   </Obstruction>
   <Position>
     <Floating>true</Floating>
-	<FloatDepth>0.0</FloatDepth>
+    <FloatDepth>0.0</FloatDepth>
   </Position>
   <RallyPointRenderer>
     <LinePassabilityClass>ship</LinePassabilityClass>
   </RallyPointRenderer>
+  <Researcher>
+    <Technologies datatype="tokens">
+      training_naval_construction
+	  naval_cost_01
+    </Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_dock.xml</select>
@@ -57,7 +63,9 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
-  <ProductionQueue>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
       units/{civ}/ship_bireme
@@ -65,13 +73,7 @@
 	  units/{civ}/ship_quinquereme
 	  units/{civ}/ship_fire
     </Entities>
-    <Technologies datatype="tokens">
-      training_naval_construction
-	  naval_cost_01
-    </Technologies>
-  </ProductionQueue>
-  <TerritoryDecay disable=""/>
-  <TerritoryInfluence disable=""/>
+  </Trainer>
   <Vision>
     <Range>40</Range>
   </Vision>

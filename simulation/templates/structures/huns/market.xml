@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_economic_market">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
   <Footprint replace="">
     <Circle radius="11.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <GarrisonHolder disable=""/>
   <Health>
     <SpawnEntityOnDeath>rubble/rubble_stone_4x2</SpawnEntityOnDeath>
   </Health>
-  <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
-  </BuildRestrictions>
-  <GarrisonHolder disable=""/>
   <Identity>
     <Civ>huns</Civ>
     <GenericName>Hun Slave Market</GenericName>
   </Identity>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/support_slave
-  	</Entities>
-  </ProductionQueue>
+  <Obstruction>
+    <Static width="13.0" depth="13.0"/>
+  </Obstruction>
   <Position>
     <Anchor>pitch</Anchor>
     <TurnRate>0.0001</TurnRate>
   </Position>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
-  <Obstruction>
-    <Static width="13.0" depth="13.0"/>
-  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/support_slave
+  	</Entities>
+  </Trainer>
   <VisualActor>
     <ConstructionPreview disable=""/>
     <Actor>structures/xiongnu/food_deposit.xml</Actor>

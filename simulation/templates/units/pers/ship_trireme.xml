@@ -9,9 +9,9 @@
     <SpecificName>Vazarka Hamaraniyanava</SpecificName>
     <Icon>units/achae/ship_medium.png</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-	<TechCostMultiplier>
+  <ProductionQueue/>
+  <Researcher>
+    <TechCostMultiplier>
       <food>1.0</food>
       <wood>1.0</wood>
       <stone>1.0</stone>
@@ -19,11 +19,14 @@
       <coin>1.0</coin>
       <time>1.0</time>
     </TechCostMultiplier>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
       units/pers/cavalry_swordsman_b_trireme
       units/pers/cavalry_javelineer_b_trireme
     </Entities>
-  </ProductionQueue>
+  </Trainer>
   <VisualActor>
     <Actor>structures/persians/trireme.xml</Actor>
   </VisualActor>

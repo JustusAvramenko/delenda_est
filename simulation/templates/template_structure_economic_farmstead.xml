@@ -6,6 +6,10 @@
     <EndOfAlertRange>60</EndOfAlertRange>
     <SearchRange>80</SearchRange>
   </AlertRaiser>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Category>Farmstead</Category>
+  </BuildRestrictions>
   <Builder>
     <Rate>1.0</Rate>
     <Entities datatype="tokens">
@@ -13,10 +17,6 @@
       structures/{civ}/field_cash_crops
     </Entities>
   </Builder>
-  <BuildRestrictions>
-    <Territory>own neutral</Territory>
-	<Category>Farmstead</Category>
-  </BuildRestrictions>
   <Cost>
     <BuildTime>30</BuildTime>
     <Resources>
@@ -58,11 +58,8 @@
   <Obstruction>
     <Static width="12.0" depth="12.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-	<Entities datatype="tokens">
-	  units/{civ}/support_slave
-    </Entities>
+  <RallyPoint/>
+  <Researcher>
     <Technologies datatype="tokens">
       pair_gather_food_01
 	  pair_farming_01
@@ -74,11 +71,10 @@
 	  farms_crop_rotation
 	  health_siege_rations
     </Technologies>
-  </ProductionQueue>
-  <RallyPoint/>
+  </Researcher>
   <ResourceDropsite>
     <Types>food coin</Types>
-	<Sharable>true</Sharable>
+    <Sharable>true</Sharable>
   </ResourceDropsite>
   <Sound>
     <SoundGroups>
@@ -90,6 +86,12 @@
     </SoundGroups>
   </Sound>
   <TerritoryDecay disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+	  units/{civ}/support_slave
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>20</Range>
   </Vision>

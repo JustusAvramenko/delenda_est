@@ -2,7 +2,7 @@
 <Entity parent="template_structure_military">
   <BuildRestrictions>
     <Category>Embassy</Category>
-	<Territory>own ally</Territory>
+    <Territory>own ally</Territory>
   </BuildRestrictions>
   <Cost>
     <Resources>
@@ -44,9 +44,6 @@
   <Obstruction>
     <Static width="16.0" depth="16.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_gymnasium.xml</select>
@@ -55,6 +52,9 @@
     </SoundGroups>
   </Sound>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </Trainer>
   <Vision>
     <Range>24</Range>
   </Vision>

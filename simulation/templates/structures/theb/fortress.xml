@@ -11,24 +11,26 @@
   <Obstruction>
     <Static width="24.0" depth="26.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-	  units/{civ}/champion_infantry_hoplite
-	  units/{civ}/champion_infantry_swordsman
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  hellenes/health_inf_martial_arts
 	  hellenes/pair_champions_01
 	  unlock_spies
 	  spy_counter
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+	  units/{civ}/champion_infantry_hoplite
+	  units/{civ}/champion_infantry_swordsman
+    </Entities>
+  </Trainer>
   <VisualActor>
     <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
     <Actor>structures/athenians/fortress.xml</Actor>
   </VisualActor>
   <WallPiece>
-   <Length>24.0</Length>
+    <Length>24.0</Length>
     <Indent>7.6</Indent>
   </WallPiece>
 </Entity>

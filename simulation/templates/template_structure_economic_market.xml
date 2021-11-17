@@ -10,9 +10,9 @@
     <Category>Market</Category>
   </BuildRestrictions>
   <Capturable>
-    <CapturePoints>100</CapturePoints> 
-    <RegenRate>0</RegenRate> 
-    <GarrisonRegenRate>3</GarrisonRegenRate> 
+    <CapturePoints>100</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
   </Capturable>
   <Cost>
     <BuildTime>100</BuildTime>
@@ -46,15 +46,14 @@
     <coin>500</coin>
     <glory>200</glory>
   </Loot>
-  <Market> 
-	<TradeType>land</TradeType>
-	<InternationalBonus>0.2</InternationalBonus>
-  </Market> 
+  <Market>
+    <TradeType>land</TradeType>
+    <InternationalBonus>0.2</InternationalBonus>
+  </Market>
   <Obstruction>
     <Static width="30.0" depth="26.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
+  <Researcher>
     <Technologies datatype="tokens">
       training_trader_01
       speed_trader_01
@@ -62,20 +61,17 @@
 	  unlock_slaves
 	  market_taxes
     </Technologies>
-    <Entities datatype="tokens">
-      units/{native}/support_trader
-    </Entities>
-  </ProductionQueue>
+  </Researcher>
   <ResourceTrickle>
-    <Rates> 
+    <Rates>
       <food>0.0</food>
       <wood>0.0</wood>
       <stone>0.0</stone>
       <metal>0.0</metal>
       <coin>0.0</coin>
       <glory>0.0</glory>
-    </Rates> 
-    <Interval>6000</Interval> 
+    </Rates>
+    <Interval>6000</Interval>
   </ResourceTrickle>
   <Sound>
     <SoundGroups>
@@ -94,6 +90,12 @@
     <Radius>30</Radius>
     <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{native}/support_trader
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>

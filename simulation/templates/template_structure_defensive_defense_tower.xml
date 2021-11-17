@@ -17,7 +17,7 @@
         <Speed>40.0</Speed>
         <Spread>1.5</Spread>
         <Gravity>30.0</Gravity>
-		<FriendlyFire>false</FriendlyFire>
+        <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
       <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
@@ -34,21 +34,21 @@
       </RangeOverlay>
     </Ranged>
   </Attack>
-  <BuildingAI>
-    <DefaultArrowCount>1</DefaultArrowCount>
-    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
-    <MaxArrowCount>5</MaxArrowCount>
-	<GarrisonArrowClasses>Infantry+Ranged</GarrisonArrowClasses>
-  </BuildingAI>
   <BuildRestrictions>
     <Category>DefenseTower</Category>
-	<Territory>own ally</Territory>
-	<PlacementType>land-shore</PlacementType>
+    <Territory>own ally</Territory>
+    <PlacementType>land-shore</PlacementType>
     <Distance>
       <FromClass>DefenseTower</FromClass>
       <MinDistance>30</MinDistance>
     </Distance>
   </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>1</DefaultArrowCount>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+    <MaxArrowCount>5</MaxArrowCount>
+    <GarrisonArrowClasses>Infantry+Ranged</GarrisonArrowClasses>
+  </BuildingAI>
   <Cost>
     <BuildTime>100</BuildTime>
     <Resources>
@@ -79,7 +79,7 @@
     <VisibleClasses datatype="tokens">Village Wood Tower DefenseTower Ranged</VisibleClasses>
     <Tooltip>Shoots arrows. Garrison to provide extra defense. Can be built in allied territory for mutual defense. Upgrade to a Stone Defense Tower for 100 stone.</Tooltip>
     <Icon>structures/palisade_fort.png</Icon>
-	<RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Loot>
     <xp>200</xp>
@@ -92,17 +92,16 @@
   <Obstruction>
     <Static width="7.0" depth="7.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
+  <Researcher>
     <Technologies datatype="tokens">
 	  vision_defense_tower
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_tower.xml</select>
       <constructed>interface/complete/building/complete_tower.xml</constructed>
-	  <upgraded>interface/complete/building/complete_tower.xml</upgraded>
+      <upgraded>interface/complete/building/complete_tower.xml</upgraded>
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
@@ -116,17 +115,20 @@
     <Radius>20</Radius>
     <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+  </Trainer>
   <Upgrade>
     <Tower>
       <Entity>structures/{civ}/defense_tower_stone</Entity>
       <Tooltip>Stone Towers have +100% health, +20% territory influence, +20% vision, +20% attack range, and additional technologies.</Tooltip>
-	  <RequiredTechnology>phase_town</RequiredTechnology>
+      <RequiredTechnology>phase_town</RequiredTechnology>
       <Cost>
         <stone>100</stone>
-		<wood>0</wood>
+        <wood>0</wood>
       </Cost>
       <Time>20</Time>
-	  <Variant>upgrading</Variant>
+      <Variant>upgrading</Variant>
     </Tower>
   </Upgrade>
   <Vision>

@@ -9,12 +9,8 @@
     <GenericName>Painted Stoa</GenericName>
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/athen/hero_socrates
-    </Entities>
-	<TechCostMultiplier>
+  <Researcher>
+    <TechCostMultiplier>
       <food>1.0</food>
       <wood>1.0</wood>
       <stone>1.0</stone>
@@ -26,5 +22,11 @@
     <Technologies datatype="tokens">
       athenians/research_time_philosophy
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/athen/hero_socrates
+    </Entities>
+  </Trainer>
 </Entity>

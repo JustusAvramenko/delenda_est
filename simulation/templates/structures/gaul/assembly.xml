@@ -11,6 +11,10 @@
       <glory>100</glory>
     </Resources>
   </Cost>
+  <Footprint replace="">
+    <Circle radius="16"/>
+    <Height>8.0</Height>
+  </Footprint>
   <Identity>
     <Civ>gaul</Civ>
     <GenericName>Assembly of Princes</GenericName>
@@ -24,13 +28,11 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
     <Icon>structures/tholos.png</Icon>
   </Identity>
-  <Footprint replace="">
-    <Circle radius="16"/>
-    <Height>8.0</Height>
-  </Footprint>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-	<TechCostMultiplier>
+  <Obstruction>
+    <Static width="30" depth="30"/>
+  </Obstruction>
+  <Researcher>
+    <TechCostMultiplier>
       <food>1.0</food>
       <wood>1.0</wood>
       <stone>1.0</stone>
@@ -39,19 +41,13 @@
       <glory>1.0</glory>
       <time>1.0</time>
     </TechCostMultiplier>
-    <Entities datatype="tokens">
-      units/{civ}/champion_infantry_trumpeter
-      units/{civ}/hero_brennus_mounted
-      units/{civ}/hero_viridomarus_mounted
-      units/{civ}/hero_vercingetorix_mounted
-    </Entities>
     <Technologies datatype="tokens">
 	  celts/speed_carnyx
 	  celts/special_vae_victis
 	  unlock_spies
 	  spy_counter
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_tholos.xml</select>
@@ -59,9 +55,15 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
-  <Obstruction>
-    <Static width="30" depth="30"/>
-  </Obstruction>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_trumpeter
+      units/{civ}/hero_brennus_mounted
+      units/{civ}/hero_viridomarus_mounted
+      units/{civ}/hero_vercingetorix_mounted
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/gauls/theater.xml</Actor>
     <FoundationActor>structures/fndn_7x7.xml</FoundationActor>

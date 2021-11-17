@@ -31,20 +31,20 @@
   <Auras datatype="tokens">
     structures/wall_battlements
   </Auras>
-  <BuildingAI>
-    <DefaultArrowCount>3</DefaultArrowCount>
-    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
-    <MaxArrowCount>5</MaxArrowCount>
-	<GarrisonArrowClasses>Soldier+Ranged BoltShooter</GarrisonArrowClasses>
-  </BuildingAI>
   <BuildRestrictions>
     <Category>Fortress</Category>
-	<Territory>own</Territory>
+    <Territory>own</Territory>
     <Distance>
       <FromClass>Fortress</FromClass>
       <MinDistance>50</MinDistance>
     </Distance>
   </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+    <MaxArrowCount>5</MaxArrowCount>
+    <GarrisonArrowClasses>Soldier+Ranged BoltShooter</GarrisonArrowClasses>
+  </BuildingAI>
   <Cost>
     <BuildTime>300</BuildTime>
     <Resources>
@@ -92,15 +92,12 @@
   <Population>
     <Bonus>10</Bonus>
   </Population>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/champion_infantry_crossbowman
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
       pair_champ_02
 	  carthaginians/special_triple_walls
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_fortress.xml</select>
@@ -114,6 +111,11 @@
     <Radius>60</Radius>
     <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_crossbowman
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>70</Range>
   </Vision>

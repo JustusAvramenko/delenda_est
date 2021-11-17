@@ -37,21 +37,23 @@
   <Obstruction>
     <Static width="26.0" depth="10.5"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/maur/champion_maiden
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  unlock_spies
 	  spy_counter
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <TerritoryInfluence>
     <Root>false</Root>
     <Radius>38</Radius>
     <Weight>65535</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/maur/champion_maiden
+    </Entities>
+  </Trainer>
   <VisualActor>
     <FoundationActor>structures/fndn_8x4.xml</FoundationActor>
     <Actor>structures/mauryas/misc_structure_01.xml</Actor>

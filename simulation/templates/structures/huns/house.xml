@@ -3,15 +3,15 @@
   <BuildRestrictions>
     <Territory>own neutral ally</Territory>
   </BuildRestrictions>
-  <Footprint replace="">
-    <Circle radius="10.0"/>
-    <Height>10.0</Height>
-  </Footprint>
   <Cost>
     <Resources>
       <wood>100</wood>
     </Resources>
   </Cost>
+  <Footprint replace="">
+    <Circle radius="10.0"/>
+    <Height>10.0</Height>
+  </Footprint>
   <Identity>
     <Civ>huns</Civ>
     <SpecificName>Yurt</SpecificName>
@@ -20,11 +20,11 @@
   <Obstruction>
     <Static width="14.0" depth="14.0"/>
   </Obstruction>
-  <ProductionQueue>
+  <Researcher>
     <Technologies datatype="tokens">
 	  -pop_house_01
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
   <Upgrade>
@@ -34,7 +34,7 @@
     </PackStorehouse>
   </Upgrade>
   <VisualActor>
-	<ConstructionPreview disable=""/>
+    <ConstructionPreview disable=""/>
     <Actor>structures/xiongnu/house.xml</Actor>
     <FoundationActor>structures/xiongnu/house_foundation.xml</FoundationActor>
   </VisualActor>

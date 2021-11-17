@@ -4,20 +4,17 @@
     <Square width="40.0" depth="34.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_maur_cc</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>maur</Civ>
     <SpecificName>Rajadhanika</SpecificName>
   </Identity>
-  <Health>
-    <SpawnEntityOnDeath>decay|rubble/rubble_maur_cc</SpawnEntityOnDeath>
-  </Health>
   <Obstruction>
     <Static width="36.0" depth="30.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/support_elephant
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  health_units_01
 	  health_units_02
@@ -26,7 +23,12 @@
 	  pair_structures_02
 	  successors/health_heroes
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/support_elephant
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/mauryas/civil_centre.xml</Actor>
     <FoundationActor>structures/fndn_9x8.xml</FoundationActor>

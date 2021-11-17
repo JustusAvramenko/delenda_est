@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
-<Footprint>
+  <Footprint>
     <Square width="23" depth="23"/>
   </Footprint>
   <Health>
@@ -8,20 +8,22 @@
   </Health>
   <Identity>
     <Civ>ptol</Civ>
-    <SpecificName>Stratopedon</SpecificName>    
+    <SpecificName>Stratopedon</SpecificName>
   </Identity>
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/infantry_pikeman_mace_b
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  hellenes/attack_inf_spearfighting
 	  hellenes/health_inf_martial_arts
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_pikeman_mace_b
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/ptolemies/barracks.xml</Actor>
   </VisualActor>

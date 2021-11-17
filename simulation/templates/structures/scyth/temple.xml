@@ -19,25 +19,22 @@
   <Obstruction>
     <Static width="14.0" depth="14.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  unlock_spies
 	  spy_counter
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <ResourceDropsite>
     <Types>glory</Types>
-	<Sharable>false</Sharable>
+    <Sharable>false</Sharable>
   </ResourceDropsite>
   <ResourceSupply>
     <KillBeforeGather>false</KillBeforeGather>
     <Max>Infinity</Max>
     <Type>glory.praise</Type>
     <MaxGatherers>5</MaxGatherers>
-	<DiminishingReturns>0.90</DiminishingReturns>
+    <DiminishingReturns>0.90</DiminishingReturns>
   </ResourceSupply>
   <ResourceTrickle>
     <Rates>
@@ -47,9 +44,14 @@
   </ResourceTrickle>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    </Entities>
+  </Trainer>
   <VisualActor>
-	<ConstructionPreview disable=""/>
+    <ConstructionPreview disable=""/>
     <Actor>structures/scythians/temple.xml</Actor>
-	<FoundationActor>structures/scythians/temple_foundation.xml</FoundationActor>
+    <FoundationActor>structures/scythians/temple_foundation.xml</FoundationActor>
   </VisualActor>
 </Entity>

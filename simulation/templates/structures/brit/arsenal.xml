@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_arsenal">
   <Footprint>
     <Square width="31.0" depth="33.0"/>
@@ -14,16 +14,18 @@
   <Obstruction>
     <Static width="28.0" depth="30.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/brit/champion_chariot
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  -unlock_siege_ballistics
 	  pair_siege_rams_01
 	  pair_siege_build_armor
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/brit/champion_chariot
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/britons/workshop.xml</Actor>
   </VisualActor>

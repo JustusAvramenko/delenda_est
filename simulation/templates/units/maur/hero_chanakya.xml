@@ -6,18 +6,18 @@
   </Auras>
   <Identity>
     <Civ>maur</Civ>
-	<SpecificName>Chanakya</SpecificName>
-	<GenericName>Hero Teacher</GenericName>
+    <SpecificName>Chanakya</SpecificName>
+    <GenericName>Hero Teacher</GenericName>
     <Icon>units/maur/hero_chanakya.png</Icon>
     <VisibleClasses datatype="tokens">Teacher</VisibleClasses>
-	<Tooltip>
+    <Tooltip>
 Hero Special: "Healer" - Heal units at a fast rate.
 Hero Special: "Arthashastra" - Research 4 special technologies only available to Chanakya.</Tooltip>
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-	<TechCostMultiplier>
+  <ProductionQueue/>
+  <Researcher>
+    <TechCostMultiplier>
       <food>1.0</food>
       <wood>1.0</wood>
       <stone>1.0</stone>
@@ -32,7 +32,10 @@ Hero Special: "Arthashastra" - Research 4 special technologies only available to
 	  mauryas/chanakya_law
 	  mauryas/chanakya_animals
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </Trainer>
   <TrainingRestrictions>
     <Category>Chanakya</Category>
   </TrainingRestrictions>

@@ -3,6 +3,10 @@
   <Auras datatype="tokens">
     structures/rotary_mill
   </Auras>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Category>RotaryMill</Category>
+  </BuildRestrictions>
   <Builder>
     <Rate>1.0</Rate>
     <Entities datatype="tokens">
@@ -10,10 +14,6 @@
       structures/{civ}/field_cash_crops
     </Entities>
   </Builder>
-  <BuildRestrictions>
-    <Territory>own neutral</Territory>
-	<Category>RotaryMill</Category>
-  </BuildRestrictions>
   <Capturable>
     <CapturePoints>500</CapturePoints>
     <RegenRate>0</RegenRate>
@@ -44,7 +44,7 @@
 	  -ConquestCritical
 	  CivSpecific
 	</Classes>
-	<Tooltip>Dropsite for Food. Build one of these to increase nearby food production.</Tooltip>
+    <Tooltip>Dropsite for Food. Build one of these to increase nearby food production.</Tooltip>
     <Icon>structures/rotarymill.png</Icon>
   </Identity>
   <Loot>
@@ -55,15 +55,15 @@
   <Obstruction>
     <Static width="16.0" depth="16.0"/>
   </Obstruction>
-  <ProductionQueue>
+  <RallyPoint disable=""/>
+  <Researcher>
     <Technologies datatype="tokens">
 	  celts/gather_farming_harvester
     </Technologies>
-  </ProductionQueue>
-  <RallyPoint disable=""/>
+  </Researcher>
   <ResourceDropsite>
     <Types>food coin</Types>
-	<Sharable>true</Sharable>
+    <Sharable>true</Sharable>
   </ResourceDropsite>
   <Selectable>
     <Overlay>

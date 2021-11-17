@@ -10,7 +10,7 @@
     <BuildTime>200</BuildTime>
     <Resources>
       <food>700</food>
-	  <wood>500</wood>
+      <wood>500</wood>
       <stone>0</stone>
       <metal>0</metal>
     </Resources>
@@ -34,7 +34,7 @@
     <Civ>rome</Civ>
     <GenericName>Temple of Vesta</GenericName>
     <SpecificName>Aedēs Vestālis</SpecificName>
-	<VisibleClasses datatype="tokens">
+    <VisibleClasses datatype="tokens">
 	  -Town
 	  Village
 	  Vesta
@@ -46,11 +46,7 @@
   <Obstruction>
     <Static width="19.0" depth="19.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      -units/{native}/support_healer_b
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
       -gather_glory_healers
 	  -health_regen_units
@@ -59,13 +55,19 @@
 	  -health_state_religion
 	  romans/vestal_virgins
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_greek_theater.xml</select>
       <constructed>interface/alarm/alarm_phase.xml</constructed>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      -units/{native}/support_healer_b
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/romans/temple_vesta.xml</Actor>
     <FoundationActor>structures/fndn_4x4.xml</FoundationActor>

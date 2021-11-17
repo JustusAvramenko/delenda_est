@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_fortress">
   <Footprint>
     <Square width="32.0" depth="32.0"/>
@@ -11,18 +11,20 @@
   <Obstruction>
     <Static width="28.0" depth="28.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/champion_healer
-      units/{civ}/champion_infantry_sword
-      units/{civ}/champion_infantry_spear
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  attack_capture_siege_ladders
 	  unlock_spies
 	  spy_counter
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_healer
+      units/{civ}/champion_infantry_sword
+      units/{civ}/champion_infantry_spear
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/zapotecs/fortress.xml</Actor>
   </VisualActor>

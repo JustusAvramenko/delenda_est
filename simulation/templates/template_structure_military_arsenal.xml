@@ -35,7 +35,7 @@
   <Identity>
     <GenericName>Siege Arsenal</GenericName>
     <SpecificName>Siege Arsenal</SpecificName>
-	<SelectionGroupName>template_structure_military_arsenal</SelectionGroupName>
+    <SelectionGroupName>template_structure_military_arsenal</SelectionGroupName>
     <Tooltip>Unlock Catapults for most factions. Construct Siege Weapons. Research siege improvements.</Tooltip>
     <Icon>structures/siege_workshop.png</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
@@ -59,22 +59,11 @@
   <Obstruction>
     <Static width="28.0" depth="28.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-	  units/{civ}/siege_fireraiser
-      units/{civ}/siege_ram
-      units/{civ}/siege_scorpio_packed
-      units/{civ}/siege_cheiroballista_packed
-      units/{civ}/siege_oxybeles_packed
-      units/{civ}/siege_polybolos_packed
-      units/{civ}/siege_shoushe
-      units/{civ}/siege_tower
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
       unlock_siege_ballistics
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_broch.xml</select>
@@ -87,6 +76,19 @@
     <Radius>40</Radius>
     <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+	  units/{civ}/siege_fireraiser
+      units/{civ}/siege_ram
+      units/{civ}/siege_scorpio_packed
+      units/{civ}/siege_cheiroballista_packed
+      units/{civ}/siege_oxybeles_packed
+      units/{civ}/siege_polybolos_packed
+      units/{civ}/siege_shoushe
+      units/{civ}/siege_tower
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>40</Range>
   </Vision>

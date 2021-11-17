@@ -50,27 +50,19 @@
   <Obstruction>
     <Static width="17.0" depth="17.0"/>
   </Obstruction>
-  <ProductionQueue>
-	<Entities datatype="tokens">
-	  units/{civ}/infantry_scout
-	  units/{civ}/infantry_spearman_b
-	  units/{civ}/infantry_hoplite_b
-	  units/{civ}/infantry_pikeman_b
-	  units/{civ}/infantry_swordsman_b
-	  units/{civ}/infantry_axeman_b
-	</Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  training_levy_infantry_barracks
 	  training_mobilization
 	  training_total_war
 	  hellenes/hoplite_tradition
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_barracks.xml</select>
       <constructed>interface/complete/building/complete_barracks.xml</constructed>
-	  <upgraded>interface/complete/building/complete_barracks.xml</upgraded>
+      <upgraded>interface/complete/building/complete_barracks.xml</upgraded>
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
@@ -79,6 +71,16 @@
     <Radius>36</Radius>
     <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+	  units/{civ}/infantry_scout
+	  units/{civ}/infantry_spearman_b
+	  units/{civ}/infantry_hoplite_b
+	  units/{civ}/infantry_pikeman_b
+	  units/{civ}/infantry_swordsman_b
+	  units/{civ}/infantry_axeman_b
+	</Entities>
+  </Trainer>
   <Vision>
     <Range>30</Range>
   </Vision>

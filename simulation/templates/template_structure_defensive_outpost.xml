@@ -4,7 +4,7 @@
     <Ranged>
       <AttackName>Arrow</AttackName>
       <Damage>
-	    <Hack>0.0</Hack>
+        <Hack>0.0</Hack>
         <Pierce>20.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
@@ -17,7 +17,7 @@
         <Speed>50.0</Speed>
         <Spread>2.0</Spread>
         <Gravity>30.0</Gravity>
-		<FriendlyFire>false</FriendlyFire>
+        <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
       <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
@@ -34,18 +34,18 @@
       </RangeOverlay>
     </Ranged>
   </Attack>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <PlacementType>land-shore</PlacementType>
+    <Category>Outpost</Category>
+  </BuildRestrictions>
   <BuildingAI>
     <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
   </BuildingAI>
-  <BuildRestrictions>
-    <Territory>own neutral</Territory>
-	<PlacementType>land-shore</PlacementType>
-    <Category>Outpost</Category>
-  </BuildRestrictions>
   <Capturable>
-    <CapturePoints>500</CapturePoints> 
-    <RegenRate>0</RegenRate> 
-    <GarrisonRegenRate>3</GarrisonRegenRate> 
+    <CapturePoints>500</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
   </Capturable>
   <Cost>
     <BuildTime>40</BuildTime>
@@ -73,7 +73,7 @@
   <Identity>
     <GenericName>Outpost</GenericName>
     <SpecificName>Outpost</SpecificName>
-	<SelectionGroupName>template_structure_defensive_outpost</SelectionGroupName>
+    <SelectionGroupName>template_structure_defensive_outpost</SelectionGroupName>
     <Tooltip>Build in neutral and own territories to scout areas of the map. Loyalty slowly decays while in neutral territory unless garrisoned with a soldier.</Tooltip>
     <Classes datatype="tokens">-ConquestCritical</Classes>
     <VisibleClasses datatype="tokens">Village Wood Outpost</VisibleClasses>
@@ -90,12 +90,11 @@
   <Obstruction>
     <Static width="6.5" depth="6.5"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
+  <Researcher>
     <Technologies datatype="tokens">
       vision_outpost
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Selectable>
     <Overlay>
       <Outline>
@@ -109,7 +108,7 @@
     <SoundGroups>
       <select>interface/select/building/sel_tower.xml</select>
       <constructed>interface/complete/building/complete_tower.xml</constructed>
-	  <upgraded>interface/complete/building/complete_tower.xml</upgraded>
+      <upgraded>interface/complete/building/complete_tower.xml</upgraded>
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
@@ -121,17 +120,20 @@
   <TerritoryDecay>
     <DecayRate>2</DecayRate>
   </TerritoryDecay>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+  </Trainer>
   <Upgrade>
     <Outpost>
       <Entity>structures/{civ}/outpost_stone</Entity>
       <Tooltip>Stone Outposts have double health and no loyalty drain.</Tooltip>
-	  <RequiredTechnology>phase_town</RequiredTechnology>
+      <RequiredTechnology>phase_town</RequiredTechnology>
       <Cost>
         <stone>50</stone>
-		<wood>0</wood>
+        <wood>0</wood>
       </Cost>
       <Time>20</Time>
-	  <Variant>upgrading</Variant>
+      <Variant>upgrading</Variant>
     </Outpost>
   </Upgrade>
   <Vision>

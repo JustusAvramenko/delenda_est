@@ -16,11 +16,7 @@
   <Population>
     <Bonus>2</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/scyth/support_wagon
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  scythians/trade_goldsmithing
 	  persians/pair_01
@@ -33,9 +29,15 @@
 	  persians/pair_cav_03
 	  armor_hero_01
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/scyth/support_wagon
+    </Entities>
+  </Trainer>
   <VisualActor>
     <ConstructionPreview disable=""/>
     <Actor>structures/scythians/blacksmith.xml</Actor>

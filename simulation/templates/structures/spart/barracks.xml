@@ -33,17 +33,12 @@
 	</VisibleClasses>
     <Tooltip>Train hoplite units such as Perioikoi Hoplites and Spartiate champion infantry, and Spartan heroes.</Tooltip>
     <Icon>structures/syssition.png</Icon>
-	<RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Obstruction>
     <Static width="16.0" depth="26.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Entities datatype="tokens">
-	  units/spart/infantry_hoplite_b
-	  units/spart/champion_infantry_hoplite
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  spartans/speed_tyrtean_paeans
 	  hellenes/hoplite_tradition
@@ -53,7 +48,7 @@
 	  spartans/health_infantry
 	  spartans/pair_champions_01
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_barracks.xml</select>
@@ -61,6 +56,13 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+	  units/spart/infantry_hoplite_b
+	  units/spart/champion_infantry_hoplite
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/spartans/syssiton.xml</Actor>
     <FoundationActor>structures/fndn_4x6.xml</FoundationActor>

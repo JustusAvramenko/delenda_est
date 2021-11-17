@@ -5,7 +5,14 @@
     <SpecificName>Durg</SpecificName>
     <Tooltip>Train heroes and champion units. Garrison up to 20 soldiers for a stout defense of Indian territory.</Tooltip>
   </Identity>
-  <ProductionQueue>
+  <Researcher>
+    <Technologies datatype="tokens">
+      pair_champ_02
+	  mauryas/health_warrior_caste
+	  mauryas/attack_flaming_arrows
+    </Technologies>
+  </Researcher>
+  <Trainer>
     <Entities datatype="tokens">
       units/{civ}/champion_infantry
       units/{civ}/champion_maiden_archer
@@ -13,16 +20,11 @@
       units/{civ}/hero_maurya
       units/{civ}/hero_ashoka
     </Entities>
-    <Technologies datatype="tokens">
-      pair_champ_02
-	  mauryas/health_warrior_caste
-	  mauryas/attack_flaming_arrows
-    </Technologies>
-  </ProductionQueue>
+  </Trainer>
   <VisualActor>
     <Actor>structures/mauryas/fortress.xml</Actor>
   </VisualActor>
   <WallPiece>
-   <Length>22.0</Length>
+    <Length>22.0</Length>
   </WallPiece>
 </Entity>

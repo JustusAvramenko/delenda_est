@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
+  <Attack disable=""/>
+  <Footprint replace="">
+    <Circle radius="16.0"/>
+    <Height>8.0</Height>
+  </Footprint>
   <Health>
     <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
@@ -7,29 +12,26 @@
     <Civ>xion</Civ>
     <SpecificName>Chanyu's Hall</SpecificName>
   </Identity>
-  <Attack disable=""/>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{native}/support_citizen_female
-    </Entities>
-    <Technologies datatype="tokens">
-      nomads/vision_gathering_falconry
-	  successors/health_heroes
-    </Technologies>
-  </ProductionQueue>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
   <Position>
     <Anchor>pitch</Anchor>
     <TurnRate>0.0001</TurnRate>
   </Position>
-  <Footprint replace="">
-    <Circle radius="16.0"/>
-    <Height>8.0</Height>
-  </Footprint>
-  <Obstruction>
-    <Static width="25.0" depth="25.0"/>
-  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      nomads/vision_gathering_falconry
+	  successors/health_heroes
+    </Technologies>
+  </Researcher>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{native}/support_citizen_female
+    </Entities>
+  </Trainer>
   <VisualActor>
     <ConstructionPreview disable=""/>
     <Actor>structures/xiongnu/royal_yurt_charioth_unpacked.xml</Actor>

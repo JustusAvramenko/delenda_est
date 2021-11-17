@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_infantry_hoplite">
-  <Auras datatype="tokens">
-    units/heroes/spart_hero_leonidas
-  </Auras>
   <Attack>
     <Melee>
       <Damage>
-	    <Hack op="mul">1.2</Hack>
+        <Hack op="mul">1.2</Hack>
       </Damage>
     </Melee>
   </Attack>
+  <Auras datatype="tokens">
+    units/heroes/spart_hero_leonidas
+  </Auras>
   <Identity>
     <Civ>spart</Civ>
-	<Lang>greek</Lang>
-	<SpecificName>King Leonidas I</SpecificName>
+    <Lang>greek</Lang>
+    <SpecificName>King Leonidas I</SpecificName>
     <Icon>units/spart/hero_leonidas.png</Icon>
     <RequiredTechnology>civ_choices/spart/leonidas</RequiredTechnology>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-	<TechCostMultiplier>
+  <ProductionQueue/>
+  <Researcher>
+    <TechCostMultiplier>
       <food>1.0</food>
       <wood>1.0</wood>
       <stone>1.0</stone>
@@ -31,7 +31,10 @@
     <Technologies datatype="tokens">
 	  spartans/unlock_gorgo
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </Trainer>
   <VisualActor>
     <Actor>units/spartans/hero_infantry_spearman_leonidas.xml</Actor>
   </VisualActor>

@@ -4,17 +4,17 @@
     <Circle radius="15.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_brit_cc</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>brit</Civ>
     <SpecificName>Tigernotreba</SpecificName>
   </Identity>
-  <Health>
-    <SpawnEntityOnDeath>decay|rubble/rubble_brit_cc</SpawnEntityOnDeath>
-  </Health>
   <Obstruction>
     <Static width="25.0" depth="25.0"/>
   </Obstruction>
-  <ProductionQueue>
+  <Researcher>
     <Technologies datatype="tokens">
 	  health_units_01
 	  health_units_02
@@ -23,7 +23,7 @@
 	  pair_structures_02
 	  successors/health_heroes
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <VisualActor>
     <Actor>structures/britons/civic_centre.xml</Actor>
     <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
