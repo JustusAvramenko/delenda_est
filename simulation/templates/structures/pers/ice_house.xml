@@ -5,7 +5,7 @@
   </Auras>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
-	<Category>Yakhchal</Category>
+    <Category>Yakhchal</Category>
   </BuildRestrictions>
   <Cost>
     <BuildTime>100</BuildTime>
@@ -27,7 +27,7 @@
     <Civ>pers</Civ>
     <GenericName>Ice House</GenericName>
     <SpecificName>Yakhchāl</SpecificName>
-	<VisibleClasses datatype="tokens">Village IceHouse</VisibleClasses>
+    <VisibleClasses datatype="tokens">Village IceHouse</VisibleClasses>
     <Classes datatype="tokens">
 	  -ConquestCritical
 	  CivSpecific
@@ -39,22 +39,21 @@
   <Obstruction>
     <Static width="16.0" depth="16.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
+  <Researcher>
     <Technologies datatype="tokens">
 	  persians/health_units_01
 	  persians/health_units_02
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <ResourceTrickle>
-    <Rates> 
+    <Rates>
       <food>1.0</food>
       <wood>0.0</wood>
       <stone>0.0</stone>
       <metal>0.0</metal>
       <coin>0.0</coin>
       <glory>0.0</glory>
-    </Rates> 
+    </Rates>
     <Interval>4000</Interval>
   </ResourceTrickle>
   <Sound>
@@ -65,6 +64,9 @@
     </SoundGroups>
   </Sound>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+  </Trainer>
   <VisualActor>
     <Actor>structures/persians/ice_house.xml</Actor>
     <FoundationActor>structures/fndn_4x4.xml</FoundationActor>

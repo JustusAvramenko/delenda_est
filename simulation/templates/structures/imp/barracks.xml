@@ -10,7 +10,7 @@
   <Identity>
     <Civ>imp</Civ>
     <SpecificName>Castra Militum</SpecificName>
-	<GenericName>Legionary Barracks</GenericName>
+    <GenericName>Legionary Barracks</GenericName>
     <VisibleClasses datatype="tokens">
 	  LegionaryBarracks
 	</VisibleClasses>
@@ -20,11 +20,7 @@
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-	  units/{civ}/infantry_javelineer_e
-	  units/{civ}/cavalry_swordsman_b
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  -training_levy_infantry_barracks
 	  -training_mobilization
@@ -36,7 +32,13 @@
 	  romans_imperial/upgrade_rank_cent_legion
 	  romans_imperial/health_legions_eagles
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+	  units/{civ}/infantry_javelineer_e
+	  units/{civ}/cavalry_swordsman_b
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/romans/barracks.xml</Actor>
   </VisualActor>

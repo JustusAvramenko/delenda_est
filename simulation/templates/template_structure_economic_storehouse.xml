@@ -8,7 +8,7 @@
   </AlertRaiser>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
-	<Category>Storehouse</Category>
+    <Category>Storehouse</Category>
   </BuildRestrictions>
   <Cost>
     <BuildTime>30</BuildTime>
@@ -56,11 +56,8 @@
   <Obstruction>
     <Static width="13.0" depth="13.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-	<Entities datatype="tokens">
-	  units/{civ}/support_slave
-    </Entities>
+  <RallyPoint/>
+  <Researcher>
     <Technologies datatype="tokens">
       pair_gather_01
       pair_gather_02
@@ -70,11 +67,10 @@
 	  gather_capacity_wheelbarrow
 	  gather_capacity_handcarts
     </Technologies>
-  </ProductionQueue>
-  <RallyPoint/>
+  </Researcher>
   <ResourceDropsite>
     <Types>wood stone metal</Types>
-	<Sharable>true</Sharable>
+    <Sharable>true</Sharable>
   </ResourceDropsite>
   <Sound>
     <SoundGroups>
@@ -86,6 +82,12 @@
     </SoundGroups>
   </Sound>
   <TerritoryDecay disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+	  units/{civ}/support_slave
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>20</Range>
   </Vision>

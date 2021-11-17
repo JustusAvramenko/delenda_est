@@ -5,22 +5,24 @@
     <SpecificName>Didā</SpecificName>
     <Tooltip>Train Champion Cavalry and Chariots.</Tooltip>
   </Identity>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/champion_cavalry
-      units/{civ}/chariot_archer_b
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  persians/upgrade_rank_medium_chariot
 	  persians/upgrade_rank_heavy_chariot
       attack_capture_siege_ladders
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_cavalry
+      units/{civ}/chariot_archer_b
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/persians/fortress.xml</Actor>
   </VisualActor>
   <WallPiece>
-   <Length>24.5</Length>
+    <Length>24.5</Length>
     <Indent>7.6</Indent>
   </WallPiece>
 </Entity>

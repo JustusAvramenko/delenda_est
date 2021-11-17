@@ -23,17 +23,19 @@
   <Obstruction>
     <Static width="35.0" depth="35.0"/>
   </Obstruction>
-  <ProductionQueue>
+  <Researcher>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </Researcher>
+  <TerritoryDecay disable=""/>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
       -units/{civ}/infantry_spearman_b
       -units/{civ}/infantry_pikeman_b
       -units/{civ}/infantry_swordsman_b
     </Entities>
-    <Technologies datatype="tokens">
-    </Technologies>
-  </ProductionQueue>
-  <TerritoryDecay disable=""/>
+  </Trainer>
   <Upgrade>
     <BarracksReconstructed>
       <Entity>structures/huns/barracks</Entity>
@@ -44,7 +46,7 @@
     </BarracksReconstructed>
   </Upgrade>
   <VisualActor>
-	<ConstructionPreview disable=""/>
+    <ConstructionPreview disable=""/>
     <Actor>structures/xiongnu/barracks_empty.xml</Actor>
   </VisualActor>
 </Entity>

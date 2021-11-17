@@ -9,21 +9,23 @@
     <GenericName>Entrenched Army Camp</GenericName>
     <SpecificName>Castrum Vallum</SpecificName>
   </Identity>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  romans/unlock_logistics
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+    </Entities>
+  </Trainer>
   <Upgrade>
     <Colonia>
       <Entity>structures/rome/civil_centre</Entity>
       <Tooltip>Colonize conquered territory by granting the Army Camp 'colonia' status.</Tooltip>
-	  <RequiredTechnology>phase_imperial</RequiredTechnology>
+      <RequiredTechnology>phase_imperial</RequiredTechnology>
       <Cost>
         <stone>500</stone>
-		<metal>500</metal>
+        <metal>500</metal>
       </Cost>
       <Time>120</Time>
     </Colonia>

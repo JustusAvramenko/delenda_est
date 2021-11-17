@@ -3,7 +3,7 @@
   <Attack>
     <Ranged>
       <Damage>
-	    <Hack>0.0</Hack>
+        <Hack>0.0</Hack>
         <Pierce>20.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
@@ -34,18 +34,18 @@
   <Obstruction>
     <Static width="48.0" depth="48.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      -units/{native}/support_citizen
-      campaigns/army_mace_hero_alexander
-      campaigns/army_mace_standard
-    </Entities>
-  </ProductionQueue>
   <TerritoryInfluence>
     <Root>true</Root>
     <Radius>150</Radius>
     <Weight>35000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+      -units/{native}/support_citizen
+      campaigns/army_mace_hero_alexander
+      campaigns/army_mace_standard
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>campaigns/structures/hellenes/settlement_curtainwall.xml</Actor>
   </VisualActor>

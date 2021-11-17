@@ -6,9 +6,9 @@
     <Category>Dock</Category>
   </BuildRestrictions>
   <Capturable>
-    <CapturePoints>1000</CapturePoints> 
-    <RegenRate>3</RegenRate> 
-    <GarrisonRegenRate>3</GarrisonRegenRate> 
+    <CapturePoints>1000</CapturePoints>
+    <RegenRate>3</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
   </Capturable>
   <Cost>
     <BuildTime>100</BuildTime>
@@ -36,10 +36,10 @@
     <xp>100</xp>
     <glory>100</glory>
   </Loot>
-  <Market> 
-	<TradeType>land naval</TradeType>
-	<InternationalBonus>0.5</InternationalBonus>
-  </Market> 
+  <Market>
+    <TradeType>land naval</TradeType>
+    <InternationalBonus>0.5</InternationalBonus>
+  </Market>
   <Obstruction>
     <Static width="18.0" depth="18.0"/>
   </Obstruction>
@@ -48,14 +48,23 @@
   </Population>
   <Position>
     <Floating>true</Floating>
-	<FloatDepth>0.0</FloatDepth>
+    <FloatDepth>0.0</FloatDepth>
   </Position>
   <RallyPointRenderer>
     <LinePassabilityClass>ship</LinePassabilityClass>
   </RallyPointRenderer>
+  <Researcher>
+    <Technologies datatype="tokens">
+	  training_fishing_boat
+	  gather_fishing_purse_seine
+	  gather_capacity_fishing
+	  training_merchant_ship
+	  pair_trade_ships_01
+    </Technologies>
+  </Researcher>
   <ResourceDropsite>
     <Types>food wood stone metal</Types>
-	<Sharable>true</Sharable>
+    <Sharable>true</Sharable>
   </ResourceDropsite>
   <Selectable>
     <Overlay>
@@ -74,20 +83,13 @@
     </SoundGroups>
   </Sound>
   <TerritoryDecay disable=""/>
-  <ProductionQueue>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
       units/{civ}/ship_fishing
       units/{civ}/ship_merchant
     </Entities>
-    <Technologies datatype="tokens">
-	  training_fishing_boat
-	  gather_fishing_purse_seine
-	  gather_capacity_fishing
-	  training_merchant_ship
-	  pair_trade_ships_01
-    </Technologies>
-  </ProductionQueue>
+  </Trainer>
   <Vision>
     <Range>40</Range>
   </Vision>

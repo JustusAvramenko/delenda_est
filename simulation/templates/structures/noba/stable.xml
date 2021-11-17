@@ -18,28 +18,30 @@
   </Health>
   <Identity>
     <Civ>noba</Civ>
-	<VisibleClasses datatype="tokens">Corral</VisibleClasses>
+    <VisibleClasses datatype="tokens">Corral</VisibleClasses>
     <Tooltip>Train cavalry soldiers. Raise herd animals for food. Research improvements for cavalry and ranching.</Tooltip>
   </Identity>
   <Obstruction>
     <Static width="26.0" depth="26.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      gaia/fauna_pig_trainable
-      gaia/fauna_goat_trainable
-      gaia/fauna_cattle_sanga_trainable
-  	</Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  -training_levy_cavalry
 	  training_animals_husbandry
 	  gather_draft_animals
       training_animals_stockbreeding
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <TerritoryInfluence>
     <Radius>20</Radius>
   </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+      gaia/fauna_pig_trainable
+      gaia/fauna_goat_trainable
+      gaia/fauna_cattle_sanga_trainable
+  	</Entities>
+  </Trainer>
   <VisualActor>
     <ConstructionPreview disable=""/>
     <Actor>structures/noba/stable.xml</Actor>

@@ -47,17 +47,11 @@
   <Obstruction>
     <Static width="30.0" depth="28.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/{civ}/support_elephant
-      units/{civ}/elephant_archer_b
-      units/{civ}/champion_elephant
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
       training_animals_elephants
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_elephant_stable.xml</constructed>
@@ -70,6 +64,14 @@
     <Radius>40</Radius>
     <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/support_elephant
+      units/{civ}/elephant_archer_b
+      units/{civ}/champion_elephant
+    </Entities>
+  </Trainer>
   <VisualActor>
     <FoundationActor>structures/fndn_9x8.xml</FoundationActor>
   </VisualActor>

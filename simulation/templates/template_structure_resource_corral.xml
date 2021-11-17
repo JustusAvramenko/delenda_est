@@ -6,7 +6,7 @@
   </Auras>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
-	<Category>Corral</Category>
+    <Category>Corral</Category>
   </BuildRestrictions>
   <Cost>
     <BuildTime>30</BuildTime>
@@ -48,20 +48,14 @@
   <Obstruction>
     <Static width="16.0" depth="15.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Entities datatype="tokens">
-	  gaia/fauna_pig_trainable
-      gaia/fauna_goat_trainable
-      gaia/fauna_cattle_cow_trainable
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  training_animals_husbandry
 	  training_animals_husbandry_2
 	  gather_draft_animals
       training_animals_stockbreeding
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_corral.xml</select>
@@ -70,6 +64,14 @@
     </SoundGroups>
   </Sound>
   <TerritoryDecay disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+	  gaia/fauna_pig_trainable
+      gaia/fauna_goat_trainable
+      gaia/fauna_cattle_cow_trainable
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>20</Range>
   </Vision>

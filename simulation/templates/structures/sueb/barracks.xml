@@ -21,7 +21,13 @@
   <Obstruction>
     <Static width="20.0" depth="36.0"/>
   </Obstruction>
-  <ProductionQueue>
+  <Researcher>
+    <Technologies datatype="tokens">
+	  training_levy_infantry_ranged
+	  special_archery_tradition
+    </Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
 	  units/{civ}/infantry_javelineer_b
@@ -29,11 +35,7 @@
 	  units/{civ}/infantry_archer_b
 	  units/{civ}/infantry_crossbowman_b
     </Entities>
-    <Technologies datatype="tokens">
-	  training_levy_infantry_ranged
-	  special_archery_tradition
-    </Technologies>
-  </ProductionQueue>
+  </Trainer>
   <VisualActor>
     <Actor>structures/germans/barracks.xml</Actor>
     <FoundationActor>structures/fndn_5x9.xml</FoundationActor>

@@ -16,23 +16,25 @@
 	</VisibleClasses>
     <Tooltip>Train Champion Cavalry units and Construct Siege Rams.</Tooltip>
   </Identity>
-  <ProductionQueue>
+  <Researcher>
+    <Technologies datatype="tokens">
+      attack_capture_siege_ladders
+    </Technologies>
+  </Researcher>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
     <Entities datatype="tokens">
       units/scyth/champion_cavalry
       units/scyth/champion_cavalry_archer
 	  units/scyth/siege_ram
     </Entities>
-    <Technologies datatype="tokens">
-      attack_capture_siege_ladders
-    </Technologies>
-  </ProductionQueue>
-  <TerritoryDecay disable=""/>
-  <TerritoryInfluence disable=""/>
+  </Trainer>
   <VisualActor>
     <Actor>structures/scythians/fortress.xml</Actor>
   </VisualActor>
   <WallPiece>
-   <Length>24.5</Length>
+    <Length>24.5</Length>
     <Indent>7.6</Indent>
   </WallPiece>
 </Entity>

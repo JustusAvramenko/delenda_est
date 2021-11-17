@@ -10,7 +10,7 @@
     <Ranged>
       <AttackName>Arrow</AttackName>
       <Damage>
-	    <Hack>0.0</Hack>
+        <Hack>0.0</Hack>
         <Pierce>20.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
@@ -23,7 +23,7 @@
         <Speed>40.0</Speed>
         <Spread>1.5</Spread>
         <Gravity>30.0</Gravity>
-		<FriendlyFire>false</FriendlyFire>
+        <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -37,11 +37,6 @@
   <Auras datatype="tokens">
 	structures/civic_spaces
   </Auras>
-  <BuildingAI>
-    <DefaultArrowCount>3</DefaultArrowCount>
-    <GarrisonArrowMultiplier>0.5</GarrisonArrowMultiplier>
-    <MaxArrowCount>10</MaxArrowCount>
-  </BuildingAI>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
     <Category>CivicCenter</Category>
@@ -50,6 +45,11 @@
       <MinDistance>280</MinDistance>
     </Distance>
   </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowMultiplier>0.5</GarrisonArrowMultiplier>
+    <MaxArrowCount>10</MaxArrowCount>
+  </BuildingAI>
   <Capturable>
     <CapturePoints>4000</CapturePoints>
     <RegenRate>0</RegenRate>
@@ -109,11 +109,7 @@
   <Population>
     <Bonus>20</Bonus>
   </Population>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-	  units/{native}/support_citizen
-	  units/{civ}/support_wagon
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
       phase_town_{civ}
       phase_city_{civ}
@@ -124,10 +120,10 @@
 	  pair_taxes_04
 	  unlock_shared_los
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <ResourceDropsite>
     <Types>food wood stone metal coin</Types>
-	<Sharable>true</Sharable>
+    <Sharable>true</Sharable>
   </ResourceDropsite>
   <Selectable>
     <Overlay>
@@ -142,7 +138,7 @@
     <SoundGroups>
       <select>interface/select/building/sel_civ_center.xml</select>
       <constructed>interface/complete/building/complete_civ_center.xml</constructed>
-	  <upgraded>interface/complete/building/complete_civ_center.xml</upgraded>
+      <upgraded>interface/complete/building/complete_civ_center.xml</upgraded>
       <death>attack/destruction/building_collapse_large.xml</death>
       <alert_raise>interface/alarm/alarm_alert_0.xml</alert_raise>
       <alert_end>interface/alarm/alarm_alert_1.xml</alert_end>
@@ -153,6 +149,12 @@
     <Radius>120</Radius>
     <Weight>10000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+	  units/{native}/support_citizen
+	  units/{civ}/support_wagon
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>60</Range>
   </Vision>

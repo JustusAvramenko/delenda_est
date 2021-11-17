@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
   <Cost>
     <Resources>
       <wood>200</wood>
@@ -13,9 +16,6 @@
   <Health>
     <SpawnEntityOnDeath>rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
-  <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
-  </BuildRestrictions>
   <Identity>
     <Civ>xion</Civ>
     <GenericName>Training Grounds</GenericName>
@@ -23,10 +23,10 @@
 	  Range
 	</VisibleClasses>
   </Identity>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-	  units/xion/infantry_archer_b
-    </Entities>
+  <Obstruction>
+    <Static width="35.0" depth="35.0"/>
+  </Obstruction>
+  <Researcher>
     <Technologies datatype="tokens">
 	  -training_levy_infantry_barracks
 	  training_levy_infantry_ranged
@@ -34,12 +34,14 @@
 	  upgrade_rank_advanced_infantry_archer
 	  upgrade_rank_elite_infantry_archer
     </Technologies>
-  </ProductionQueue>
-  <Obstruction>
-    <Static width="35.0" depth="35.0"/>
-  </Obstruction>
+  </Researcher>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+	  units/xion/infantry_archer_b
+    </Entities>
+  </Trainer>
   <VisualActor>
     <ConstructionPreview disable=""/>
     <Actor>structures/xiongnu/barracks.xml</Actor>

@@ -7,7 +7,7 @@
     <BuildTime>300</BuildTime>
     <Resources>
       <food>0</food>
-	  <wood>0</wood>
+      <wood>0</wood>
       <stone>800</stone>
       <metal>800</metal>
     </Resources>
@@ -17,13 +17,13 @@
   </Footprint>
   <Health>
     <Max>1500</Max>
-	<SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>rome</Civ>
     <GenericName>Temple of Mars</GenericName>
     <SpecificName>Aedēs Mārtiālis</SpecificName>
-	<VisibleClasses datatype="tokens">
+    <VisibleClasses datatype="tokens">
 	  Mars
 	</VisibleClasses>
     <Tooltip>Build 1 to auto-research City Phase, and also greatly increase the attack and health of nearby units.</Tooltip>
@@ -32,14 +32,14 @@
   <Obstruction>
     <Static width="20.0" depth="40.0"/>
   </Obstruction>
-  <ProductionQueue>
+  <Researcher>
     <Technologies datatype="tokens">
       -gather_glory_healers
 	  -health_regen_units
       -heal_temple
 	  -health_state_religion
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_greek_theater.xml</select>

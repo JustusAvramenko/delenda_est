@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity>
   <AIProxy/>
-  <BuildingAI>
-    <DefaultArrowCount>0</DefaultArrowCount>
-    <GarrisonArrowMultiplier>0</GarrisonArrowMultiplier>
-    <GarrisonArrowClasses>Ranged Infantry</GarrisonArrowClasses>
-  </BuildingAI>
   <BuildRestrictions>
     <PlacementType>land</PlacementType>
     <Territory>own</Territory>
     <Category>Structure</Category>
   </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>0</DefaultArrowCount>
+    <GarrisonArrowMultiplier>0</GarrisonArrowMultiplier>
+    <GarrisonArrowClasses>Ranged Infantry</GarrisonArrowClasses>
+  </BuildingAI>
   <Cost>
     <Population>0</Population>
-	<BuildTime>10</BuildTime>
+    <BuildTime>10</BuildTime>
     <Resources>
       <food>0</food>
       <wood>0</wood>
@@ -25,7 +25,7 @@
   </Cost>
   <Decay>
     <Active>false</Active>
-	<SinkingAnim>false</SinkingAnim>
+    <SinkingAnim>false</SinkingAnim>
     <DelayTime>0.0</DelayTime>
     <SinkRate>3.0</SinkRate>
     <SinkAccel>9.8</SinkAccel>
@@ -33,10 +33,10 @@
   <Fogging/>
   <Guard/>
   <Health>
-    <DamageVariants> 
-      <lightdamage>0.85</lightdamage>  
-      <mediumdamage>0.65</mediumdamage>  
-      <heavydamage>0.35</heavydamage>  
+    <DamageVariants>
+      <lightdamage>0.85</lightdamage>
+      <mediumdamage>0.65</mediumdamage>
+      <heavydamage>0.35</heavydamage>
     </DamageVariants>
     <DeathType>corpse</DeathType>
     <RegenRate>0</RegenRate>
@@ -45,7 +45,7 @@
   </Health>
   <Identity>
     <GenericName>Structure</GenericName>
-	<Civ>gaia</Civ>
+    <Civ>gaia</Civ>
     <Classes datatype="tokens">Structure ConquestCritical NotField</Classes>
     <Undeletable>false</Undeletable>
   </Identity>
@@ -72,21 +72,10 @@
     <Altitude>0</Altitude>
     <Anchor>upright</Anchor>
     <Floating>false</Floating>
-	<FloatDepth>0.0</FloatDepth>
+    <FloatDepth>0.0</FloatDepth>
     <TurnRate>6.0</TurnRate>
   </Position>
-  <ProductionQueue>
-    <BatchTimeModifier>0.65</BatchTimeModifier>
-	<TechCostMultiplier>
-      <food>1.0</food>
-      <wood>1.0</wood>
-      <stone>1.0</stone>
-      <metal>1.0</metal>
-      <coin>1.0</coin>
-      <glory>1.0</glory>
-      <time>1.0</time>
-    </TechCostMultiplier>
-  </ProductionQueue>
+  <ProductionQueue/>
   <RallyPoint/>
   <RallyPointRenderer>
     <MarkerTemplate>special/rallypoint</MarkerTemplate>
@@ -103,6 +92,17 @@
   <Repairable>
     <RepairTimeRatio>2.0</RepairTimeRatio>
   </Repairable>
+  <Researcher>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <coin>1.0</coin>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+  </Researcher>
   <Resistance>
     <Entity>
       <ApplyStatus>
@@ -161,8 +161,11 @@
   <StatusEffectsReceiver/>
   <TerritoryDecay>
     <DecayRate>5</DecayRate>
-	<Territory>neutral enemy</Territory>
+    <Territory>neutral enemy</Territory>
   </TerritoryDecay>
+  <Trainer>
+    <BatchTimeModifier>0.65</BatchTimeModifier>
+  </Trainer>
   <Visibility>
     <RetainInFog>true</RetainInFog>
     <AlwaysVisible>false</AlwaysVisible>
@@ -172,9 +175,9 @@
   <Vision>
     <Range>30</Range>
   </Vision>
-  <VisionSharing> 
-    <Bribable>false</Bribable> 
-  </VisionSharing> 
+  <VisionSharing>
+    <Bribable>false</Bribable>
+  </VisionSharing>
   <VisualActor>
     <ConstructionPreview/>
     <SilhouetteDisplay>false</SilhouetteDisplay>

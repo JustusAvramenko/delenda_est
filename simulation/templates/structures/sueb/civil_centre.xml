@@ -11,11 +11,7 @@
   <Obstruction>
     <Static width="36.0" depth="24.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-	  units/{civ}/infantry_clubman
-	  -units/{civ}/support_wagon
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  health_units_01
 	  health_units_02
@@ -24,7 +20,13 @@
 	  pair_structures_02
 	  successors/health_heroes
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+	  units/{civ}/infantry_clubman
+	  -units/{civ}/support_wagon
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/germans/civic_center.xml</Actor>
     <FoundationActor>structures/fndn_9x6.xml</FoundationActor>

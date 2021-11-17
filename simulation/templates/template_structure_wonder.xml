@@ -8,8 +8,8 @@
   </BuildRestrictions>
   <Capturable>
     <CapturePoints>3000</CapturePoints>
-    <RegenRate>2</RegenRate> 
-    <GarrisonRegenRate>3</GarrisonRegenRate> 
+    <RegenRate>2</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
   </Capturable>
   <Cost>
     <BuildTime>1000</BuildTime>
@@ -45,12 +45,11 @@
   <Obstruction>
     <Static width="30.0" depth="30.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
+  <RallyPoint disable=""/>
+  <Researcher>
     <Technologies datatype="tokens">
     </Technologies>
-  </ProductionQueue>
-  <RallyPoint disable=""/>
+  </Researcher>
   <Selectable>
     <Overlay>
       <Outline>
@@ -77,6 +76,9 @@
     <Radius>80</Radius>
     <Weight>65535</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </Trainer>
   <Vision>
     <Range>72</Range>
   </Vision>

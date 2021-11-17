@@ -5,21 +5,23 @@
     <SpecificName>Dunon</SpecificName>
     <Tooltip>Train Gallic Champions.</Tooltip>
   </Identity>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/champion_infantry
-      units/{civ}/champion_cavalry
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  celts/health_champion_cavalry_gaul
 	  attack_capture_siege_ladders
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry
+      units/{civ}/champion_cavalry
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/gauls/fortress.xml</Actor>
   </VisualActor>
   <WallPiece>
-   <Length>16.8</Length>
+    <Length>16.8</Length>
     <Indent>5.8</Indent>
   </WallPiece>
 </Entity>

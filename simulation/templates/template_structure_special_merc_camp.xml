@@ -5,9 +5,9 @@
     <Category>Special</Category>
   </BuildRestrictions>
   <Capturable>
-    <CapturePoints>1000</CapturePoints> 
+    <CapturePoints>1000</CapturePoints>
     <RegenRate>0</RegenRate>
-    <GarrisonRegenRate>3</GarrisonRegenRate> 
+    <GarrisonRegenRate>3</GarrisonRegenRate>
   </Capturable>
   <Cost>
     <BuildTime>200</BuildTime>
@@ -34,13 +34,13 @@
   <Health disable=""/>
   <Identity>
     <Civ>gaia</Civ>
-	<GenericName>Native Mercenary Camp</GenericName>
-	<SpecificName>Needs Specific Name</SpecificName>
+    <GenericName>Native Mercenary Camp</GenericName>
+    <SpecificName>Needs Specific Name</SpecificName>
     <VisibleClasses datatype="tokens">MercenaryCamp</VisibleClasses>
     <Tooltip>Capture this structure to train up to 30 mercenaries native to the map, who train very fast and cost no population room.</Tooltip>
-	<Classes datatype="tokens">SpecialBuilding</Classes>
+    <Classes datatype="tokens">SpecialBuilding</Classes>
     <Icon>structures/mercenary_camp.png</Icon>
-	<Undeletable>true</Undeletable>
+    <Undeletable>true</Undeletable>
   </Identity>
   <Obstruction>
     <Static width="23.5" depth="23.5"/>
@@ -48,12 +48,11 @@
   <Population>
     <Bonus>5</Bonus>
   </Population>
-  <ProductionQueue>
-	<BatchTimeModifier>0.8</BatchTimeModifier>
-	<Technologies datatype="tokens">
+  <Researcher>
+    <Technologies datatype="tokens">
 	  mercenaries/attack_health_mercenaries
 	</Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Resistance replace=""/>
   <Selectable>
     <Overlay>
@@ -73,11 +72,14 @@
   </Sound>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </Trainer>
   <Vision>
     <Range>40</Range>
   </Vision>
   <VisualActor>
     <Actor>structures/mercenaries/camp_egyptian.xml</Actor>
-	<FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
   </VisualActor>
 </Entity>

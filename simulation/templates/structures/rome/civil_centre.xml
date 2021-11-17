@@ -8,17 +8,17 @@
     <Square width="40.0" depth="40.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_rome_cc</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>rome</Civ>
     <SpecificName>Forum</SpecificName>
   </Identity>
-  <Health>
-	<SpawnEntityOnDeath>decay|rubble/rubble_rome_cc</SpawnEntityOnDeath>
-  </Health>
   <Obstruction>
     <Static width="37.0" depth="37.0"/>
   </Obstruction>
-  <ProductionQueue>
+  <Researcher>
     <Technologies datatype="tokens">
 	  health_units_01
 	  health_units_02
@@ -33,7 +33,7 @@
 	  romans/health_structures_concrete
 	  successors/health_heroes
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <VisualActor>
     <Actor>structures/romans/civic_centre.xml</Actor>
     <FoundationActor>structures/fndn_9x9.xml</FoundationActor>

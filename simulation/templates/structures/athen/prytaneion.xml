@@ -33,11 +33,19 @@
 	</Classes>
     <Tooltip>Train heroes. Research special technologies.</Tooltip>
     <Icon>structures/tholos.png</Icon>
-	<RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <Obstruction>
     <Static width="24.0" depth="30.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+	  athenians/special_workshop
+	  athenians/special_long_walls
+	  unlock_spies
+	  spy_counter
+    </Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_tholos.xml</select>
@@ -45,7 +53,7 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
-  <ProductionQueue>
+  <Trainer>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
 	  units/athen/hero_miltiades_infantry
@@ -54,13 +62,7 @@
 	  units/athen/hero_pericles_infantry
 	  units/athen/hero_iphicrates_infantry
     </Entities>
-    <Technologies datatype="tokens">
-	  athenians/special_workshop
-	  athenians/special_long_walls
-	  unlock_spies
-	  spy_counter
-    </Technologies>
-  </ProductionQueue>
+  </Trainer>
   <VisualActor>
     <Actor>structures/athenians/prytaneion.xml</Actor>
   </VisualActor>

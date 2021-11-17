@@ -4,7 +4,7 @@
     <BuildTime>20</BuildTime>
     <Resources>
       <food>50</food>
-	  <wood>50</wood>
+      <wood>50</wood>
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -35,11 +35,10 @@
   </Population>
   <Position>
     <Anchor>pitch</Anchor>
-	<TurnRate>2.0</TurnRate>
+    <TurnRate>2.0</TurnRate>
   </Position>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-	<TechCostMultiplier>
+  <Researcher>
+    <TechCostMultiplier>
       <food>1.0</food>
       <wood>1.0</wood>
       <stone>1.0</stone>
@@ -48,7 +47,7 @@
       <glory>1.0</glory>
       <time>1.0</time>
     </TechCostMultiplier>
-  </ProductionQueue>
+  </Researcher>
   <Resistance>
     <Entity>
       <Damage>
@@ -79,6 +78,9 @@
       <walk>actor/singlesteps/steps_grass.xml</walk>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+  </Trainer>
   <UnitAI>
     <CanPatrol>false</CanPatrol>
   </UnitAI>

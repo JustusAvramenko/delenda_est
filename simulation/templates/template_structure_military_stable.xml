@@ -47,7 +47,25 @@
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
   </Obstruction>
-  <ProductionQueue>
+  <Researcher>
+    <Technologies datatype="tokens">
+      training_levy_cavalry
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_stable.xml</select>
+      <constructed>interface/complete/building/complete_stable.xml</constructed>
+      <upgraded>interface/complete/building/complete_stable.xml</upgraded>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>36</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
       units/{civ}/cavalry_scout
@@ -64,23 +82,7 @@
       units/{civ}/cavalry_crossbowman_b
       units/{civ}/camelry_crossbowman_b
     </Entities>
-    <Technologies datatype="tokens">
-      training_levy_cavalry
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_stable.xml</select>
-      <constructed>interface/complete/building/complete_stable.xml</constructed>
-	  <upgraded>interface/complete/building/complete_stable.xml</upgraded>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
-  <TerritoryInfluence>
-    <Root>false</Root>
-    <Radius>36</Radius>
-    <Weight>20000</Weight>
-  </TerritoryInfluence>
+  </Trainer>
   <Vision>
     <Range>30</Range>
   </Vision>

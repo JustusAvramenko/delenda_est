@@ -7,20 +7,17 @@
     <Square width="40.0" depth="40.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_rome_cc</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>imp</Civ>
     <SpecificName>Basilica</SpecificName>
   </Identity>
-  <Health>
-	<SpawnEntityOnDeath>decay|rubble/rubble_rome_cc</SpawnEntityOnDeath>
-  </Health>
   <Obstruction>
     <Static width="37.0" depth="37.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-	  units/{civ}/infantry_swordsman_urban
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  romans_imperial/pair_city_cohorts
 	  health_units_01
@@ -36,7 +33,12 @@
 	  romans/health_structures_concrete
 	  successors/health_heroes
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+	  units/{civ}/infantry_swordsman_urban
+    </Entities>
+  </Trainer>
   <Upgrade disable=""/>
   <VisualActor>
     <Actor>structures/romans_imperial/civic_centre.xml</Actor>

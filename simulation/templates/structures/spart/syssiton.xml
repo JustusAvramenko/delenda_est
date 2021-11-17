@@ -33,20 +33,12 @@
 	</VisibleClasses>
     <Tooltip>Train hoplite units such as Perioikoi Hoplites and Spartiate champion infantry, and Spartan heroes.</Tooltip>
     <Icon>structures/syssition.png</Icon>
-	<RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Obstruction>
     <Static width="16.0" depth="26.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Entities datatype="tokens">
-	  units/spart/infantry_hoplite_b
-	  units/spart/champion_infantry_hoplite
-      units/spart/hero_leonidas
-      units/spart/hero_brasidas
-      units/spart/hero_agis
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  hellenes/attack_inf_spearfighting
       hellenes/spartans_upgrade_rank_advanced_infantry
@@ -57,7 +49,7 @@
 	  hellenes/pair_champions_01_spartans
 	  hellenes/speed_tyrtean_paeans
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_barracks.xml</select>
@@ -65,6 +57,16 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+	  units/spart/infantry_hoplite_b
+	  units/spart/champion_infantry_hoplite
+      units/spart/hero_leonidas
+      units/spart/hero_brasidas
+      units/spart/hero_agis
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/spartans/syssiton.xml</Actor>
     <FoundationActor>structures/fndn_4x6.xml</FoundationActor>

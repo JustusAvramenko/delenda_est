@@ -4,22 +4,24 @@
     <Civ>imp</Civ>
     <SpecificName>Castellum</SpecificName>
   </Identity>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/champion_infantry
-      units/{civ}/champion_cavalry
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  romans_imperial/training_recall_evocati
 	  unlock_spies
 	  spy_counter
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry
+      units/{civ}/champion_cavalry
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/romans/fortress.xml</Actor>
   </VisualActor>
   <WallPiece>
-   <Length>25.0</Length>
+    <Length>25.0</Length>
     <Indent>8.4</Indent>
   </WallPiece>
 </Entity>

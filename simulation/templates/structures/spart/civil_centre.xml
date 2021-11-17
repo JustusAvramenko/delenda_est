@@ -7,12 +7,7 @@
     <Civ>spart</Civ>
     <SpecificName>Agora</SpecificName>
   </Identity>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      -units/{native}/support_citizen
-      units/{civ}/support_citizen
-      units/{civ}/support_citizen_female_spartan
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  health_units_01
 	  health_units_02
@@ -23,7 +18,14 @@
 	  pair_structures_03
 	  successors/health_heroes
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      -units/{native}/support_citizen
+      units/{civ}/support_citizen
+      units/{civ}/support_citizen_female_spartan
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/spartans/civic_center.xml</Actor>
   </VisualActor>

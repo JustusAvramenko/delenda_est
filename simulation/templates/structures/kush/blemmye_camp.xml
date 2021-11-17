@@ -36,21 +36,13 @@
   <Obstruction>
     <Static width="23.5" depth="23.5"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      -units/{civ}/infantry_spearman_b
-      -units/{civ}/infantry_hoplite_b
-      -units/{civ}/infantry_pikeman_b
-      -units/{civ}/infantry_swordsman_b
-	  kush_merc_camelry_1
-	  kush_merc_camelry_2
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  -training_levy_infantry_barracks
 	  -training_mobilization
 	  -training_total_war
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_gymnasium.xml</select>
@@ -59,6 +51,16 @@
     </SoundGroups>
   </Sound>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      -units/{civ}/infantry_spearman_b
+      -units/{civ}/infantry_hoplite_b
+      -units/{civ}/infantry_pikeman_b
+      -units/{civ}/infantry_swordsman_b
+	  kush_merc_camelry_1
+	  kush_merc_camelry_2
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/mercenaries/camp_blemmye.xml</Actor>
     <FoundationActor>structures/fndn_7x7.xml</FoundationActor>

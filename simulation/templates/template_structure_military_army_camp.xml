@@ -4,7 +4,7 @@
     <Ranged>
       <AttackName>Arrow</AttackName>
       <Damage>
-	    <Hack>0.0</Hack>
+        <Hack>0.0</Hack>
         <Pierce>20.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
@@ -17,7 +17,7 @@
         <Speed>50.0</Speed>
         <Spread>1.5</Spread>
         <Gravity>30.0</Gravity>
-		<FriendlyFire>false</FriendlyFire>
+        <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
       <RangeOverlay>
@@ -27,18 +27,18 @@
       </RangeOverlay>
     </Ranged>
   </Attack>
-  <BuildingAI>
-    <DefaultArrowCount>3</DefaultArrowCount>
-    <GarrisonArrowMultiplier>0.5</GarrisonArrowMultiplier>
-  </BuildingAI>
   <BuildRestrictions>
     <Territory>own neutral enemy ally</Territory>
     <Category>ArmyCamp</Category>
   </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowMultiplier>0.5</GarrisonArrowMultiplier>
+  </BuildingAI>
   <Capturable>
-    <CapturePoints>2000</CapturePoints> 
+    <CapturePoints>2000</CapturePoints>
     <RegenRate>0</RegenRate>
-    <GarrisonRegenRate>5</GarrisonRegenRate> 
+    <GarrisonRegenRate>5</GarrisonRegenRate>
   </Capturable>
   <Cost>
     <BuildTime>100</BuildTime>
@@ -85,7 +85,7 @@
     <SoundGroups>
       <select>interface/select/building/sel_broch.xml</select>
       <constructed>interface/complete/building/complete_broch.xml</constructed>
-	  <upgraded>interface/complete/building/complete_civ_center.xml</upgraded>
+      <upgraded>interface/complete/building/complete_civ_center.xml</upgraded>
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
@@ -97,9 +97,9 @@
     <Radius>0</Radius>
     <Weight>10000</Weight>
   </TerritoryInfluence>
-  <ProductionQueue>
+  <Trainer>
     <BatchTimeModifier>0.7</BatchTimeModifier>
-  </ProductionQueue>
+  </Trainer>
   <Vision>
     <Range>60</Range>
   </Vision>
@@ -108,7 +108,7 @@
     <FoundationActor>structures/fndn_9x9.xml</FoundationActor>
   </VisualActor>
   <WallPiece>
-   <Length>29.5</Length>
+    <Length>29.5</Length>
     <Indent>8.0</Indent>
   </WallPiece>
 </Entity>

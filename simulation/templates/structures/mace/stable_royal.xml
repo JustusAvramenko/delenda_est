@@ -5,10 +5,18 @@
   </Health>
   <Identity>
     <GenericName>Royal Stable</GenericName>
-	<SpecificName>Hippōn Basileios</SpecificName>
+    <SpecificName>Hippōn Basileios</SpecificName>
     <Icon>technologies/helmet_corinthian_crest.png</Icon>
   </Identity>
-  <ProductionQueue>
+  <Researcher>
+    <Technologies datatype="tokens">
+	  successors/upgrade_mace_bodyguards
+    </Technologies>
+  </Researcher>
+  <TerritoryInfluence>
+    <Radius op="mul">1.5</Radius>
+  </TerritoryInfluence>
+  <Trainer>
     <Entities datatype="tokens">
 	  -units/{civ}/cavalry_scout
 	  -units/{civ}/cavalry_swordsman_b
@@ -19,13 +27,7 @@
 	  units/{civ}/cavalry_spearman_e
       units/{civ}/champion_cavalry
     </Entities>
-    <Technologies datatype="tokens">
-	  successors/upgrade_mace_bodyguards
-    </Technologies>
-  </ProductionQueue>
-  <TerritoryInfluence>
-    <Radius op="mul">1.5</Radius>
-  </TerritoryInfluence>
+  </Trainer>
   <Upgrade disable=""/>
   <VisualActor>
     <Actor>structures/spartans/stable.xml</Actor>

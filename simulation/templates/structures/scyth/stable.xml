@@ -21,19 +21,13 @@
   </Health>
   <Identity>
     <Civ>scyth</Civ>
-	<VisibleClasses datatype="tokens">Corral</VisibleClasses>
+    <VisibleClasses datatype="tokens">Corral</VisibleClasses>
     <Tooltip>Train cavalry soldiers. Raise herd animals for food. Research improvements for cavalry and ranching. </Tooltip>
   </Identity>
   <Obstruction>
     <Static width="26.0" depth="26.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/maiden_cavalry_archer
-      gaia/fauna_pig_trainable
-      gaia/fauna_sheep_trainable
-      gaia/fauna_cattle_cow_trainable
-  	</Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  -training_levy_cavalry
 	  persians/training_levy_cavalry
@@ -46,9 +40,17 @@
 	  gather_draft_animals
       training_animals_stockbreeding
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/maiden_cavalry_archer
+      gaia/fauna_pig_trainable
+      gaia/fauna_sheep_trainable
+      gaia/fauna_cattle_cow_trainable
+  	</Entities>
+  </Trainer>
   <VisualActor>
     <ConstructionPreview disable=""/>
     <Actor>structures/scythians/corral.xml</Actor>

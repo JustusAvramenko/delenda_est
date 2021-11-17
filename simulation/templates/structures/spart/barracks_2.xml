@@ -11,16 +11,7 @@
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/spart/hero_leonidas
-      units/spart/hero_brasidas
-      units/spart/hero_lysander
-      units/spart/hero_cleomenes
-	  units/spart/infantry_hoplite_b
-	  units/spart/champion_infantry_hoplite
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  spartans/promotion_spearmen
       spartans/upgrade_rank_infantry_advanced
@@ -31,7 +22,18 @@
 	  spartans/pair_champions_01
 	  spartans/speed_tyrtean_paeans
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/spart/hero_leonidas
+      units/spart/hero_brasidas
+      units/spart/hero_lysander
+      units/spart/hero_cleomenes
+	  units/spart/infantry_hoplite_b
+	  units/spart/champion_infantry_hoplite
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/spartans/barracks.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>

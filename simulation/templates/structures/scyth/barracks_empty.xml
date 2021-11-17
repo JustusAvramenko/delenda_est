@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/scyth/barracks">
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
   <Cost>
     <Resources>
       <wood>150</wood>
@@ -13,6 +16,26 @@
   <Health>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+    <GenericName>Training Grounds</GenericName>
+  </Identity>
+  <Obstruction>
+    <Static width="35.0" depth="35.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </Researcher>
+  <TerritoryDecay disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      -units/{civ}/infantry_spearman_b
+      -units/{civ}/infantry_pikeman_b
+      -units/{civ}/infantry_swordsman_b
+    </Entities>
+  </Trainer>
   <Upgrade>
     <BarracksReconstructed>
       <Entity>structures/scyth/barracks</Entity>
@@ -22,29 +45,8 @@
       <Time>25</Time>
     </BarracksReconstructed>
   </Upgrade>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      -units/{civ}/infantry_spearman_b
-      -units/{civ}/infantry_pikeman_b
-      -units/{civ}/infantry_swordsman_b
-    </Entities>
-    <Technologies datatype="tokens">
-    </Technologies>
-  </ProductionQueue>
-  <BuildRestrictions>
-    <Territory>own neutral</Territory>
-  </BuildRestrictions>
-  <TerritoryDecay disable=""/>
-  <Identity>
-    <Civ>scyth</Civ>
-    <GenericName>Training Grounds</GenericName>
-  </Identity>
-  <Obstruction>
-    <Static width="35.0" depth="35.0"/>
-  </Obstruction>
   <VisualActor>
-	<ConstructionPreview disable=""/>
+    <ConstructionPreview disable=""/>
     <Actor>structures/scythians/barracks_empty.xml</Actor>
   </VisualActor>
 </Entity>

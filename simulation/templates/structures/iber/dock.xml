@@ -4,7 +4,7 @@
     <Square width="16.0" depth="26.0"/>
     <Height>8.0</Height>
   </Footprint>
-<Health>
+  <Health>
     <SpawnEntityOnDeath>decay|rubble/rubble_iber_dock</SpawnEntityOnDeath>
   </Health>
   <Identity>
@@ -15,16 +15,18 @@
   <Obstruction>
     <Static width="14.0" depth="24.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/ship_fire
-	  units/{civ}/ship_trireme
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
       celts/unlock_warships
 	  celts/health_warship_oceanic_transports
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/ship_fire
+	  units/{civ}/ship_trireme
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/iberians/dock.xml</Actor>
     <FoundationActor>structures/fndn_dock_iber.xml</FoundationActor>

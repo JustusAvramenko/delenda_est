@@ -5,10 +5,19 @@
   </Health>
   <Identity>
     <GenericName>Royal Barracks</GenericName>
-	<SpecificName>Stratopedon Basileios</SpecificName>
+    <SpecificName>Stratopedon Basileios</SpecificName>
     <Icon>technologies/helmet_corinthian_crest.png</Icon>
   </Identity>
-  <ProductionQueue>
+  <Researcher>
+    <Technologies datatype="tokens">
+      hellenes/pair_champions_01
+      successors/upgrade_mace_silvershields
+    </Technologies>
+  </Researcher>
+  <TerritoryInfluence>
+    <Radius op="mul">1.5</Radius>
+  </TerritoryInfluence>
+  <Trainer>
     <Entities datatype="tokens">
       -units/{civ}/infantry_spearman_b
       -units/{civ}/infantry_pikeman_b
@@ -17,14 +26,7 @@
       units/{civ}/champion_infantry_hoplite
       units/{civ}/champion_infantry_swordsman
     </Entities>
-    <Technologies datatype="tokens">
-      hellenes/pair_champions_01
-      successors/upgrade_mace_silvershields
-    </Technologies>
-  </ProductionQueue>
-  <TerritoryInfluence>
-    <Radius op="mul">1.5</Radius>
-  </TerritoryInfluence>
+  </Trainer>
   <Upgrade disable=""/>
   <VisualActor>
     <Actor>structures/macedonians/barracks.xml</Actor>

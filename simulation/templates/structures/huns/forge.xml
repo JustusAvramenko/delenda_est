@@ -19,12 +19,7 @@
   <Population>
     <Bonus>2</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/huns/support_wagon
-	  units/huns/siege_ram
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  persians/pair_01
 	  persians/pair_02_ranged
@@ -36,9 +31,16 @@
 	  persians/pair_cav_03
 	  armor_hero_01
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/huns/support_wagon
+	  units/huns/siege_ram
+    </Entities>
+  </Trainer>
   <VisualActor>
     <ConstructionPreview disable=""/>
     <Actor>structures/xiongnu/blacksmith.xml</Actor>

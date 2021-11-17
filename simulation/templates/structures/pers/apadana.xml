@@ -44,11 +44,7 @@
   <Population>
     <Bonus>10</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/{civ}/champion_infantry
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  persians/special_satrapy_tribute
 	  persians/persian_architecture
@@ -57,7 +53,7 @@
 	  unlock_spies
 	  spy_counter
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
   <ResourceTrickle>
     <Rates>
       <food>0</food>
@@ -81,11 +77,17 @@
     <Radius>28</Radius>
     <Weight>20000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry
+    </Entities>
+  </Trainer>
   <Upgrade>
     <TributeFood>
       <Entity>structures/pers/apadana_food</Entity>
       <Tooltip>Receive free Food tribute to your treasury from your subject peoples.</Tooltip>
-	  <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
+      <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
       <Cost>
         <glory>100</glory>
       </Cost>
@@ -94,7 +96,7 @@
     <TributeWood>
       <Entity>structures/pers/apadana_wood</Entity>
       <Tooltip>Receive free Wood tribute to your treasury from your subject peoples.</Tooltip>
-	  <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
+      <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
       <Cost>
         <glory>100</glory>
       </Cost>
@@ -103,7 +105,7 @@
     <TributeStone>
       <Entity>structures/pers/apadana_stone</Entity>
       <Tooltip>Receive free Stone tribute to your treasury from your subject peoples.</Tooltip>
-	  <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
+      <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
       <Cost>
         <glory>100</glory>
       </Cost>
@@ -112,7 +114,7 @@
     <TributeMetal>
       <Entity>structures/pers/apadana_metal</Entity>
       <Tooltip>Receive free Metal tribute to your treasury from your subject peoples.</Tooltip>
-	  <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
+      <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
       <Cost>
         <glory>100</glory>
       </Cost>
@@ -121,7 +123,7 @@
     <TributeCoin>
       <Entity>structures/pers/apadana_coin</Entity>
       <Tooltip>Receive free Coin tribute to your treasury from your subject peoples.</Tooltip>
-	  <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
+      <RequiredTechnology>persians/special_satrapy_tribute</RequiredTechnology>
       <Cost>
         <glory>100</glory>
       </Cost>

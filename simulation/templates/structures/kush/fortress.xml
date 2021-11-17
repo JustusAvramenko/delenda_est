@@ -11,22 +11,24 @@
   <Obstruction>
     <Static width="28.0" depth="28.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/champion_infantry_archer
-      units/{civ}/champion_cavalry
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
       kushites/special_warrior_queen
 	  unlock_spies
 	  spy_counter
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_archer
+      units/{civ}/champion_cavalry
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/kushites/fortress.xml</Actor>
   </VisualActor>
   <WallPiece>
-   <Length>28.0</Length>
+    <Length>28.0</Length>
     <Indent>6.4</Indent>
   </WallPiece>
 </Entity>

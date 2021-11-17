@@ -7,18 +7,13 @@
   <Identity>
     <Civ>ptol</Civ>
     <GenericName>Military Colony</GenericName>
-	<SpecificName>Klērouchia</SpecificName>
+    <SpecificName>Klērouchia</SpecificName>
     <Tooltip>This is the Ptolemaic expansion building, similar to Civic Centers for other factions. It is weaker, more prone to capture, and has a smaller territory influence, but is cheaper and builds a lot faster.</Tooltip>
   </Identity>
   <Obstruction>
-    <Static width="36.0" depth="36.0"/> 
+    <Static width="36.0" depth="36.0"/>
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/{civ}/infantry_pikeman_mace_b
-      units/{civ}/infantry_hoplite_b
-      units/{civ}/cavalry_spearman_b
-    </Entities>
+  <Researcher>
     <Technologies datatype="tokens">
 	  ptolemies/health_military_colony
 	  upgrade_rank_advanced_infantry
@@ -26,7 +21,14 @@
 	  upgrade_rank_advanced_cavalry
 	  upgrade_rank_elite_cavalry
     </Technologies>
-  </ProductionQueue>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_pikeman_mace_b
+      units/{civ}/infantry_hoplite_b
+      units/{civ}/cavalry_spearman_b
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/ptolemies/military_colony.xml</Actor>
     <FoundationActor>structures/fndn_9x9.xml</FoundationActor>
