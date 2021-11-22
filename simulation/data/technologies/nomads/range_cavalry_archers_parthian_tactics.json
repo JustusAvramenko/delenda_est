@@ -5,8 +5,22 @@
 		"coin": 300, 
 		"glory": 300
 	},
-	"requirements": {"tech": "phase_town"},
-	"requirementsTooltip": "Unlocked in Town Phase.",
+	"requirements": { "all": [
+		{ "tech": "phase_city" },
+		{ "tech": "special_archery_tradition" },
+		{ "tech": "persians/upgrade_rank_advanced_cavalry" },
+		{ "any": 
+			[
+				{ "civ": "huns" }, 
+				{ "civ": "scyth" }, 
+				{ "civ": "xion" }, 
+				{ "civ": "parth" }, 
+				{ "civ": "pers" }, 
+				{ "civ": "sass" }
+			]
+		}
+	]},
+	"requirementsTooltip": "Unlocked in City Phase. Requires \"Archery Tradition\" and \"Advanced Cavalry.\"",
 	"icon": "bow_recurved.png",
 	"researchTime": 40,
 	"tooltip": "Cavalry Archers will kite away from approaching targets if the enemy targets get within 15 meters.",
