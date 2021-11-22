@@ -46,7 +46,11 @@
   </group>
   <group>
     <variant name="Idle" frequency="1"/>
-    <variant file="biped/attack_melee_female.xml"/>
+    <variant file="biped/attack_melee_female.xml">
+      <props>
+        <prop actor="props/units/weapons/xion_axe.xml" attachpoint="weapon_R"/>
+      </props>
+	</variant>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/female_death.xml"/>
     <variant file="biped/female_gather_tree.xml"/>
