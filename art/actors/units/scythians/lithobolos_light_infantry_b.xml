@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_citizen_soldier.xml">
+      <mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/hele_scythian_b.xml" attachpoint="helmet"/>
+        <prop actor="props/units/tools/siege_lever.xml" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="3" name="Rider-Texture-1">
+      <mesh>skeletal/new/m_pants_tunic_short.dae</mesh>
+      <textures>
+	    <texture file="skeletal/pers_csw_a_01.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="3" name="Rider-Texture-2">
+      <mesh>skeletal/new/m_pants_tunic_short.dae</mesh>
+      <textures>
+	    <texture file="skeletal/pers_csw_a_02.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="scyth-tunic-1a">
+      <textures>
+        <texture file="skeletal/scyth_tunic_1_a.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="scyth-tunic-1b">
+      <textures>
+        <texture file="skeletal/scyth_tunic_1_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="scyth-tunic-1c">
+      <textures>
+        <texture file="skeletal/scyth_tunic_1_c.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="scyth-tunic-1d">
+      <textures>
+        <texture file="skeletal/scyth_tunic_1_d.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="scyth-tunic-1e">
+      <textures>
+        <texture file="skeletal/scyth_tunic_1_e.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="scyth-tunic-1f">
+      <textures>
+        <texture file="skeletal/scyth_tunic_1_f.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="scyth-tunic-1g">
+      <textures>
+        <texture file="skeletal/scyth_tunic_1_g.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="scyth-tunic-1h">
+      <textures>
+        <texture file="skeletal/scyth_tunic_1_h.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_ranged_lithobolos_light_02.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

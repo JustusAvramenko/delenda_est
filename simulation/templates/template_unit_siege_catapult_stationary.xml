@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_siege_catapult">
-  <Resistance>
-    <Entity>
-      <Damage>
-      </Damage>
-    </Entity>
-    <Foundation>
-      <Damage>
-        <Hack>1</Hack>
-        <Pierce>1</Pierce>
-        <Crush>1</Crush>
-      </Damage>
-    </Foundation>
-  </Resistance>
   <BuildRestrictions>
     <PlacementType>land</PlacementType>
     <Territory>own neutral enemy ally</Territory>
@@ -43,6 +30,19 @@
   <Pack>
     <State>unpacked</State>
   </Pack>
+  <Resistance>
+    <Entity>
+      <Damage>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
   <UnitMotion>
     <WalkSpeed>0.001</WalkSpeed>
   </UnitMotion>
