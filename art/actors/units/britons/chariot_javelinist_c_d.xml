@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_driver_chariot_celt.xml">
+      <mesh>skeletal/new/m_naked.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Celtic Port Helmet">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_port.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celtic Montefortino Helmet-01">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_montefortino_01.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celtic Montefortino Helmet-02">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_montefortino_02.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celtic Montefortino Helmet-03">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_montefortino_03.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celtic Coolus Helmet-01">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_coolus_01.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celtic Coolus Helmet-02">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_coolus_02.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celtic Meyrick Helmet">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_meyrick.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="naked-tattoo-01">
+      <textures>
+        <texture file="skeletal/brit_naked_tattoo_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="2" name="naked-tattoo-02">
+      <textures>
+        <texture file="skeletal/brit_naked_tattoo_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="nekkid 01">
+      <textures>
+        <texture file="skeletal/kart_isw_a_01.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="nekkid 02">
+      <textures>
+        <texture file="skeletal/kart_isw_a_02.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="nekkid 03">
+      <textures>
+        <texture file="skeletal/celt_ijv_e_01.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="nekkid 04">
+      <textures>
+        <texture file="skeletal/celt_ijv_e_02.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
