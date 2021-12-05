@@ -5,7 +5,7 @@
     units/heroes/brit_hero_boudicca_2
   </Auras>
   <Footprint replace="">
-    <Square width="4.5" depth="9.0"/>
+    <Square width="4.5" depth="9"/>
     <Height>5.0</Height>
   </Footprint>
   <Health>
@@ -27,6 +27,18 @@
       </Damage>
     </Entity>
   </Resistance>
+  <Selectable replace="">
+    <Overlay>
+      <AlwaysVisible/>
+	  <Shape>
+        <Circle radius="5"/>
+	  </Shape>
+      <Texture>
+        <MainTexture>256x256/star.png</MainTexture>
+        <MainTextureMask>256x256/star_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <UnitMotion>
     <WalkSpeed>18.0</WalkSpeed>
   </UnitMotion>
