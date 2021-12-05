@@ -1,46 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_cavalry_javelineer">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>6</Hack>
-        <Pierce>6</Pierce>
-        <Crush>6</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
-  <Auras datatype="tokens">
-	units/chariot_trample_e
-  </Auras>
-  <Cost>
-    <Resources>
-      <food>150</food>
-      <wood>100</wood>
-      <metal>0</metal>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Square width="10.0" depth="10.0"/>
-    <Height>5.0</Height>
-  </Footprint>
+<Entity parent="template_unit_champion_chariot_javelineer">
   <Health>
-    <Max>300</Max>
     <SpawnEntityOnDeath>units/brit/champion_infantry_javelineer</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>brit</Civ>
-    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
     <SpecificName>Brythonic War Chariot</SpecificName>
 	<SelectionGroupName>units/brit/champion_cavalry</SelectionGroupName>
-    <Tooltip>Traits: Fast Speed, Light Armor, Raider.
-Strong Against: Citizens (1.5x), Slaves (1.5x), Healers (1.5x), Traders (1.5x).
-Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.
-Spawns a free Champion Javelineer when the Chariot dies.</Tooltip>
     <Icon>units/brit/champion_chariot.png</Icon>
   </Identity>
-  <UnitMotion>
-    <WalkSpeed op="mul">1.1</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/britons/chariot_javelinist_c_m.xml</Actor>
   </VisualActor>

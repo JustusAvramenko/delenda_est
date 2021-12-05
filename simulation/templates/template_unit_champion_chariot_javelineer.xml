@@ -12,6 +12,7 @@
       <MinRange>0.0</MinRange>
       <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
+      <Delay>0</Delay>
       <Projectile>
         <Speed>40.0</Speed>
         <Spread>1.25</Spread>
@@ -19,7 +20,8 @@
 		<FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
-	  <Delay>0</Delay>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
       <Bonuses>
 		<BonusPrimary>
 		  <Classes>Support</Classes>
@@ -34,38 +36,53 @@
 		  <Multiplier>0.5</Multiplier>
 		</CamelStench>
       </Bonuses>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
-      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
     </Ranged>
   </Attack>
+  <Auras datatype="tokens">
+	units/chariot_trample_e
+  </Auras>
   <Cost>
+    <Population>4</Population>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <coin>75</coin>
+      <food>150</food>
+      <wood>150</wood>
+      <metal>0</metal>
+      <coin>0</coin>
     </Resources>
   </Cost>
+  <Footprint replace="">
+    <Square width="9" depth="15.0"/>
+    <Height>5.0</Height>
+  </Footprint>
   <Health>
-    <Max>200</Max>
+    <Max>280</Max>
   </Health>
   <Identity>
-    <VisibleClasses datatype="tokens">Ranged Javelin</VisibleClasses>
-    <GenericName>Champion Javelin Cavalry</GenericName>
-    <Tooltip>Traits: Fast Speed, Light Armor, Raider.
+    <VisibleClasses datatype="tokens">Ranged Javelin Chariot Trample</VisibleClasses>
+    <GenericName>Champion Javelin Chariot.</GenericName>
+    <Tooltip>Traits: Medium Range, Fast Speed, Heavy Armor, Harassment, Trample, Heavy Charge.
 Strong Against: Citizens (1.5x), Slaves (1.5x), Healers (1.5x), Traders (1.5x).
 Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
   </Identity>
+  <Loot>
+    <xp>250</xp>
+    <glory>25</glory>
+  </Loot>
+  <Position>
+    <TurnRate>2</TurnRate>
+  </Position>
   <Resistance>
     <Entity>
       <Damage>
-        <Hack>5</Hack>
+        <Hack>6</Hack>
         <Pierce>10</Pierce>
-        <Crush>5</Crush>
+        <Crush>6</Crush>
       </Damage>
     </Entity>
   </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/weapon/javelin_attack.xml</attack_ranged>
-      <attack_impact_ranged>attack/impact/javelin_impact.xml</attack_impact_ranged>
-    </SoundGroups>
-  </Sound>
+  <UnitMotion>
+    <WalkSpeed>16.0</WalkSpeed>
+	<PassabilityClass>large</PassabilityClass> 
+  </UnitMotion>
 </Entity>
