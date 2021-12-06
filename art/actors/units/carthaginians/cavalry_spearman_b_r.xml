@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear_lance_cavalry.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/aspis_kart_b.xml" attachpoint="shield_arm"/>
+      </props>
+      <textures>
+        <texture file="skeletal/ital/tunic_belt_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Samnite-Attic-01">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_b1.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Samnite-Attic-02">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_b2.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Samnite-Attic-03">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_b3.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Samnite-Attic-03">
+      <props>
+        <prop actor="props/units/helmets/hele_attic_b4.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Rome-Montefortino-01">
+      <props>
+        <prop actor="props/units/helmets/rome_helmet_montefortino.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="tunic_pattern_02_a">
+      <textures>
+	    <texture file="skeletal/ital/tunic_pattern_02_a.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="tunic_pattern_02_b">
+      <textures>
+	    <texture file="skeletal/ital/tunic_pattern_02_b.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="tunic_pattern_02_c">
+      <textures>
+	    <texture file="skeletal/ital/tunic_pattern_02_c.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="tunic_pattern_05_a">
+      <textures>
+	    <texture file="skeletal/ital/tunic_pattern_05_a.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="tunic_pattern_05_b">
+      <textures>
+	    <texture file="skeletal/ital/tunic_pattern_05_b.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="tunic_pattern_05_c">
+      <textures>
+	    <texture file="skeletal/ital/tunic_pattern_05_c.png" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/rider/cavalry/base_spearman_relax_shield_aspis_reverse.xml" name="Spearman-Relax-Shield-Aspis-Reverse" frequency="1"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/attack_slaughter_shield_hele.xml"/>
+    <variant file="biped/rider/promotion_shield.xml" />
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/rider/death_aspis.xml"/>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>
