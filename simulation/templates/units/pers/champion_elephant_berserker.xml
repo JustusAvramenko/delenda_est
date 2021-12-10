@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="units/pers/champion_elephant">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack op="add">-1</Hack>
-        <Pierce op="add">-2</Pierce>
-        <Crush op="add">-1</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Melee>
       <Damage>
@@ -19,8 +10,7 @@
     </Melee>
   </Attack>
   <Auras datatype="tokens">
-	-units/elephant_trample
-	units/elephant_trample_berserk
+	units/elephant_trample
   </Auras>
   <Health>
     <RegenRate>-5</RegenRate>
@@ -31,6 +21,15 @@
     <VisibleClasses datatype="tokens">Berserk</VisibleClasses>
     <Icon>units/achae/champion_elephant_berserk.png</Icon>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Pierce op="add">-2</Pierce>
+        <Crush op="add">-1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <UnitAI>
     <DefaultStance>violent</DefaultStance>
   </UnitAI>

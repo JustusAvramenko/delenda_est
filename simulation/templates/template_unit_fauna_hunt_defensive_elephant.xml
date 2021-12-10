@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_hunt_defensive">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>3</Hack>
-        <Pierce>4</Pierce>
-        <Crush>5</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Melee>
       <AttackName>Tusks</AttackName>
@@ -30,7 +21,6 @@
   </Attack>
   <Auras datatype="tokens">
     units/elephant_fear
-    units/elephant_trample
   </Auras>
   <Identity>
     <Civ>gaia</Civ>
@@ -43,6 +33,15 @@
     <Anchor>pitch</Anchor>
     <TurnRate>2</TurnRate>
   </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>3</Hack>
+        <Pierce>4</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Selectable>
     <Overlay>
       <Texture>
