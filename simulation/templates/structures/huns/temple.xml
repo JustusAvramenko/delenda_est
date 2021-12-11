@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_civic_temple">
+<Entity parent="autobuild|template_structure_civic_temple">
   <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
+    <Territory>own neutral ally enemy</Territory>
     <Category>CultStatue</Category>
     <Distance>
       <FromClass>CultStatue</FromClass>
@@ -12,6 +12,9 @@
     <Circle radius="10.0"/>
     <Height>10.0</Height>
   </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>huns</Civ>
     <VisibleClasses datatype="tokens">CultStatue</VisibleClasses>
@@ -42,6 +45,14 @@
     </Rates>
     <Interval>2000</Interval>
   </ResourceTrickle>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>auras/temple/nomadic/1024x1024.png</MainTexture>
+        <MainTextureMask>auras/temple/nomadic/1024x1024_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
   <Trainer>
