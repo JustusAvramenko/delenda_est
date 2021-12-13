@@ -3,13 +3,16 @@
   <castshadow/>
   <group>
     <variant file="biped/base_swordsman_shield_relax_celt.xml">
-      <mesh>skeletal/new/m_armor_pants.dae</mesh>
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
         <prop actor="props/units/shields/celt_scutum_e.xml" attachpoint="shield"/>
         <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/sheath_celt_iron_e.xml" attachpoint="sheath_01_L"/>
       </props>
+      <textures>
+        <texture file="skeletal/gaul_linothorax_1_c_spec.png" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -76,19 +79,31 @@
     <variant frequency="1" name="leather-c">
       <textures>
         <texture file="skeletal/gaul_linothorax_1_c.png" name="baseTex"/>
-        <texture file="skeletal/gaul_linothorax_1_c_spec.png" name="specTex"/>
       </textures>
     </variant>
     <variant frequency="1" name="leather-d">
       <textures>
         <texture file="skeletal/gaul_linothorax_1_d.png" name="baseTex"/>
-        <texture file="skeletal/gaul_linothorax_1_c_spec.png" name="specTex"/>
       </textures>
     </variant>
     <variant frequency="1" name="leather-e">
       <textures>
         <texture file="skeletal/gaul_linothorax_1_e.png" name="baseTex"/>
-        <texture file="skeletal/gaul_linothorax_1_c_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="leather-f">
+      <textures>
+        <texture file="skeletal/brit/leather_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="leather-g">
+      <textures>
+        <texture file="skeletal/brit/leather_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="leather-h">
+      <textures>
+        <texture file="skeletal/brit/leather_03.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
