@@ -2,31 +2,30 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_healer_male.xml">
-      <mesh>skeletal/new/m_dress.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol_healer.png" name="baseTex"/>
-        <texture file="skeletal/ptol_healer_spec.png" name="specTex"/>
-      </textures>
+    <variant file="biped/base_healer_female.xml">
+      <mesh>skeletal/new/m_dress_sleeves.dae</mesh>
       <props>
-        <prop actor="props/units/heads/head_zapo_e.xml" attachpoint="head"/>
-        <prop actor="props/units/heads/zapo_plume_a.xml" attachpoint="helmet"/>
-        <prop actor="props/units/staff.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/head_zapo_priest.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/zapo_plume_priest.xml" attachpoint="helmet"/>
+        <prop actor="props/units/shields/scyth_drum_a.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/weapons/iber_healer_staff.xml" attachpoint="weapon_L"/>
+        <prop actor="props/units/capes/cape_viriato.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="100" name="Idle">
-      <animations>
-        <animation file="biped/infantry/promotion.dae" name="idle" speed="100"/>
-        <animation file="biped/infantry/promotion.dae" name="idle" speed="50"/>
-      </animations>
+    <variant frequency="1" name="priest-outfit-01-a">
+      <textures>
+        <texture file="skeletal/scyth/healer_01.png" name="baseTex"/>
+      </textures>
     </variant>
+  </group>
+  <group>
+    <variant file="biped/base_healer_female.xml" name="Healer-Female" />
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/gather_praise.xml"/>
-    <variant file="biped/death_infantry.xml">
-    </variant>
+    <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans_spec.xml</material>
+  <material>player_trans.xml</material>
 </actor>
