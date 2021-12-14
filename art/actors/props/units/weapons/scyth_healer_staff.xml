@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>props/iber_healer_staff.dae</mesh>
+      <textures>
+        <texture file="props/prop_weap.dds" name="baseTex"/>
+      </textures>   
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="Skull">
+      <props>
+        <prop actor="props/units/weapons/iber_healer_staff_skull.xml" attachpoint="skull"/>
+      </props>          
+    </variant>
+    <variant frequency="2" name="Head-Roting">
+      <props>
+        <prop actor="props/units/heads/head_zapo_priest.xml" attachpoint="skull"/>
+      </props>          
+    </variant>
+    <variant frequency="1" name="Head-Female">
+      <props>
+        <prop actor="props/units/heads/new/head_female_celt.xml" attachpoint="skull"/>
+      </props>          
+    </variant>
+    <variant frequency="1" name="Head-Male">
+      <props>
+        <prop actor="props/units/heads/new/head_beard_wide.xml" attachpoint="skull"/>
+      </props>          
+    </variant>
+  </group>
+</actor>
