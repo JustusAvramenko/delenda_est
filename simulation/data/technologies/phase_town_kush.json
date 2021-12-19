@@ -6,8 +6,12 @@
 	"supersedes": "phase_village",
 	"replaces": ["phase_town"],
 	"description": "Advances from a quiet village to a large town.",
-	"cost": { "food": 0, "wood": 0, "stone": 0, "metal": 0, "glory": 0 },
-	"requirements": {"all": [{"civ": "kush"},{"entity": {"class": "PyramidSmall", "number": 3 }}]},
+	"requirements": {
+		"entity": {
+			"class": "PyramidSmall",
+			"number": 3
+		}
+	},
 	"autoResearch": true,
 	"requirementsTooltip": "Requires 3 Small Pyramids to be built.",
 	"icon": "phase_town.png",
