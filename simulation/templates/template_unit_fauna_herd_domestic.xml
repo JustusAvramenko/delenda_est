@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_herd">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>100</food>
+    </Resources>
+  </Cost>
   <Identity>
     <VisibleClasses datatype="tokens">Domestic</VisibleClasses>
   </Identity>
@@ -22,7 +28,7 @@
       <coin>0.0</coin>
       <glory>0.0</glory>
     </Rates>
-    <Interval>2000</Interval>
+    <Interval>8000</Interval>
   </ResourceTrickle>
   <UnitAI>
     <DefaultStance>passive</DefaultStance>
