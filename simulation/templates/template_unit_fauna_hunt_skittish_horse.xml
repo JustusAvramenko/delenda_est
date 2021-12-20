@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_skittish">
+  <Auras datatype="tokens">
+    fauna_horse_captured
+  </Auras>
+  <Capturable>
+    <CapturePoints>30</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
+  <Footprint replace="">
+    <Square width="3.5" depth="6"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <DeathType>corpse</DeathType>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+	<GenericName>Horse</GenericName>
+    <SpecificName>Equus ferus caballus</SpecificName>
+    <VisibleClasses datatype="tokens">Horse Capturable</VisibleClasses>
+	<SelectionGroupName>gaia/fauna_horse</SelectionGroupName>
+    <Tooltip>Capture this animal to gain an advantage for your Cavalry. Garrison into a Corral or Stable for safe keeping.</Tooltip>
+    <Icon>gaia/fauna_horse.png</Icon>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply disable=""/>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>ellipse/128x256.png</MainTexture>
+        <MainTextureMask>ellipse/128x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/horse_select.xml</select>
+      <order_attack>actor/fauna/animal/horse_attack_order.xml</order_attack>
+      <order_garrison>actor/fauna/animal/horse_attack_order.xml</order_garrison>
+      <order_walk>actor/fauna/animal/horse_order.xml</order_walk>
+      <attack_melee>actor/fauna/animal/horse_attack.xml</attack_melee>
+      <death>actor/fauna/animal/horse_death.xml</death>
+      <trained>actor/fauna/animal/horse_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <UnitAI>
+    <DefaultStance>passive</DefaultStance>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.25</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>8</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>fauna/horse.xml</Actor>
+  </VisualActor>
+</Entity>
