@@ -3,7 +3,7 @@
   <castshadow/>
   <group>
     <variant file="biped/base_axeman_shield_fast_relax.xml" frequency="1" name="ready">
-      <mesh>skeletal/new/m_armor_nomad_b.dae</mesh>
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_thrace.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/xion_axe.xml" attachpoint="weapon_R"/>
@@ -11,7 +11,7 @@
       </props>
     </variant>
     <variant file="biped/base_swordsman_shield_relax.xml" frequency="1" name="relax">
-      <mesh>skeletal/new/m_armor_nomad_b.dae</mesh>
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_thrace.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/xion_axe.xml" attachpoint="weapon_R"/>
@@ -32,22 +32,29 @@
     </variant>
   </group>
   <group>
-    <variant frequency="3" name="scyth-tunic-2a">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+    <variant frequency="3" name="pers_csw_a_01">
       <textures>
-        <texture file="skeletal/scyth_tunic_basic_1_a.png" name="baseTex"/>
+	    <texture file="skeletal/pers_csw_a_01.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="3" name="pers_csw_a_02">
+      <textures>
+	    <texture file="skeletal/pers_csw_a_02.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="3" name="scyth_tunic_coat_02_01">
+      <textures>
+        <texture file="skeletal/scyth_tunic_coat_02_01.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="3" name="scyth-tunic-2b">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+    <variant frequency="3" name="scyth_tunic_coat_02_02">
       <textures>
-        <texture file="skeletal/scyth_tunic_basic_1_b.png" name="baseTex"/>
+        <texture file="skeletal/scyth_tunic_coat_02_02.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="3" name="scyth-tunic-2c">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+    <variant frequency="3" name="scyth_tunic_coat_02_03">
       <textures>
-        <texture file="skeletal/scyth_tunic_basic_1_c.png" name="baseTex"/>
+        <texture file="skeletal/scyth_tunic_coat_02_03.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
