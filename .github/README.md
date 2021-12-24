@@ -14,13 +14,13 @@ alt="0 A.D. Delenda Est -- Isometric View with the ATHENIANS" width="750" height
 
 ### Gameplay screenshot of Suebian Germans
 
-![Delenda Est](https://github.com/psypherium/delenda_est/blob/patch-1/.github/delenda_est_screenshot.jpg "Delenda Est")
+![Delenda Est](https://github.com/JustusAvramenko/delenda_est/blob/master/.github/delenda_est_screenshot.jpg "Delenda Est")
 
 ---
 
 ### Gameplay screenshot of Zapotecs
 
-![Delenda Est](https://github.com/psypherium/delenda_est/blob/master/.github/a25_zapotecs(v2).jpg "Delenda Est")
+![Delenda Est](https://github.com/JustusAvramenko/delenda_est/blob/master/.github/a25_zapotecs(v2).jpg "Delenda Est")
 
 ---
 
