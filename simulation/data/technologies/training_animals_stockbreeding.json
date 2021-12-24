@@ -1,13 +1,21 @@
 {
 	"genericName": "Stockbreeding",
 	"description": "Breeding livestock for food.",
-	"cost": {"food": 100},
-	"requirements": {"tech": "training_animals_husbandry"},
+	"cost": {
+		"food": 100,
+		"glory": 100
+	},
+	"requirements": {
+		"tech": "training_animals_husbandry"
+	},
 	"requirementsTooltip": "Requires \"Basic Husbandry.\"",
 	"icon": "meat.png",
 	"researchTime": 30,
-	"tooltip": "Breed time -25% for domestic animals (sheep, goats, cattle, et alia).",
-	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.75}],
-	"affects": ["Domestic"],
+	"tooltip": "Domestic Animals and Cavalry units -10% train time, +10% health.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.9},
+		{"value": "Health/Max", "multiply": 1.1}
+	],
+	"affects": ["Domestic", "Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
