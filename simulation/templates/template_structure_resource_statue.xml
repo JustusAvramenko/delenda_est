@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_special">
+<Entity parent="template_structure_resource">
   <Auras datatype="tokens">
     structures/statue_costs
   </Auras>
@@ -31,8 +31,7 @@
     <Civ>gaia</Civ>
     <GenericName>Cult Statue</GenericName>
     <SpecificName>Cult Statue</SpecificName>
-    <Classes datatype="tokens">-ConquestCritical</Classes>
-    <VisibleClasses datatype="tokens">-City Town CultStatue</VisibleClasses>
+    <VisibleClasses datatype="tokens">Town CultStatue</VisibleClasses>
     <Tooltip>Build these to generate the Glory resource over time. Task units to pray at the statue to generate Glory even faster. Can only build 1 at a time, one after another.</Tooltip>
     <Icon>structures/statue.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
@@ -73,10 +72,16 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
+  <StatusBars>
+    <HeightOffset>20.0</HeightOffset>
+  </StatusBars>
   <TerritoryInfluence disable=""/>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
   </Trainer>
+  <Vision>
+    <Range>24</Range>
+  </Vision>
   <VisualActor>
     <Actor>structures/athenians/cult_statue.xml</Actor>
     <FoundationActor>structures/carthaginians/fndn_wooden_tower.xml</FoundationActor>
