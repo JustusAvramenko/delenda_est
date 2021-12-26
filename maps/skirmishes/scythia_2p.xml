@@ -2,13 +2,13 @@
 
 <Scenario version="7">
 	<Environment>
-		<SkySet>sunny</SkySet>
-		<SunColor r="1.03162" g="0.99521" b="0.865752"/>
+		<SkySet>cloudless</SkySet>
+		<SunColor r="0.987119" g="0.954754" b="0.833387"/>
 		<SunElevation angle="0.845925"/>
-		<SunRotation angle="-0.488852"/>
+		<SunRotation angle="-0.245437"/>
 		<AmbientColor r="0.419608" g="0.427451" b="0.47451"/>
 		<Fog>
-			<FogFactor>0.00236328</FogFactor>
+			<FogFactor>0.00116211</FogFactor>
 			<FogThickness>0</FogThickness>
 			<FogColor r="0.894118" g="0.894118" b="0.894118"/>
 		</Fog>
@@ -17,7 +17,7 @@
 				<Type>lake</Type>
 				<Color r="0.419608" g="0.364706" b="0.313726"/>
 				<Tint r="0.501961" g="0.501961" b="0.247059"/>
-				<Height>20.0394</Height>
+				<Height>0</Height>
 				<Waviness>4.01367</Waviness>
 				<Murkiness>0.975586</Murkiness>
 				<WindAngle>-1.264</WindAngle>
@@ -26,30 +26,31 @@
 		<Postproc>
 			<Brightness>-0.015625</Brightness>
 			<Contrast>1.08398</Contrast>
-			<Saturation>0.789063</Saturation>
+			<Saturation>0.748047</Saturation>
 			<Bloom>0.160156</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="465.415" y="113.763" z="631.277"/>
-		<Rotation angle="0.205112"/>
-		<Declination angle="0.598241"/>
+		<Position x="867.915" y="91.8885" z="247.523"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
   "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
-  "Description": "The steppes of central Asia. A wide open grassland with few trees (about 90% fewer trees than on a temperate or Aegean map). Animal life is plentiful though, so take advantage of the hunting available. \n\nTwo trading posts can be found and captured as well as some mercenary camps where the player can train Scyrthian mercenaries. Stone is scarce and there are few treasures to be found, but metal mines are abundant. ",
+  "Description": "The steppes of westernAsia. A wide open grassland with few trees (about 90% fewer trees than on a temperate or Aegean map). Animal life is plentiful though, so take advantage of the hunting available. \n\nTwo trading posts can be found and captured as well as some mercenary camps where the player can train Scyrthian mercenaries. Stone is scarce and there are few treasures to be found, but metal mines are abundant. ",
   "Keywords": [
     "new"
   ],
   "LockTeams": false,
-  "Name": "Scythian Steppes (2 players)",
+  "Name": "Pontic Steppe (2 players)",
   "PlayerData": [
-    null,
-    {},
-    {}
+    "",
+    "",
+    ""
   ],
   "Preview": "scythian_steppes_2.png",
   "RevealMap": false,
@@ -433,31 +434,10 @@
 			<Orientation y="-2.50098"/>
 			<Actor seed="58716"/>
 		</Entity>
-		<Entity uid="152">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="367.37876" z="301.33268"/>
-			<Orientation y="-12.71215"/>
-			<Actor seed="55286"/>
-		</Entity>
-		<Entity uid="153">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="353.55442" z="306.65391"/>
-			<Orientation y="-16.14815"/>
-			<Actor seed="45810"/>
-		</Entity>
-		<Entity uid="155">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="362.063" z="304.33881"/>
-			<Orientation y="-2.22835"/>
-			<Actor seed="49920"/>
-		</Entity>
 		<Entity uid="156">
 			<Template>actor|props/structures/construction/scaffold.xml</Template>
-			<Position x="349.02189" z="303.45002"/>
-			<Orientation y="-10.02326"/>
+			<Position x="353.03641" z="300.62162"/>
+			<Orientation y="-14.72701"/>
 			<Actor seed="39506"/>
 		</Entity>
 		<Entity uid="158">
@@ -6443,8 +6423,8 @@
 		<Entity uid="1895">
 			<Template>skirmish/structures/special_starting_structure</Template>
 			<Player>1</Player>
-			<Position x="511.21793" z="388.83448"/>
-			<Orientation y="-2.34566"/>
+			<Position x="511.85804" z="391.65302"/>
+			<Orientation y="-2.34653"/>
 			<Actor seed="36506"/>
 		</Entity>
 		<Entity uid="1896">
@@ -9664,27 +9644,6 @@
 			<Orientation y="-7.98574"/>
 			<Actor seed="35536"/>
 		</Entity>
-		<Entity uid="3093">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="986.29108" z="984.78254"/>
-			<Orientation y="-10.94278"/>
-			<Actor seed="45810"/>
-		</Entity>
-		<Entity uid="3094">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="976.47907" z="971.94404"/>
-			<Orientation y="-4.61435"/>
-			<Actor seed="58938"/>
-		</Entity>
-		<Entity uid="3095">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="995.13263" z="981.42383"/>
-			<Orientation y="-2.31016"/>
-			<Actor seed="49920"/>
-		</Entity>
 		<Entity uid="3096">
 			<Template>actor|props/structures/construction/scaffold.xml</Template>
 			<Position x="990.86683" z="982.16712"/>
@@ -10320,7 +10279,7 @@
 		<Entity uid="3237">
 			<Template>gaia/tree/oak_dead</Template>
 			<Player>0</Player>
-			<Position x="804.78681" z="852.88001"/>
+			<Position x="853.77771" z="867.38617"/>
 			<Orientation y="-7.65384"/>
 			<Actor seed="18054"/>
 		</Entity>
@@ -10358,7 +10317,7 @@
 		</Entity>
 		<Entity uid="3271">
 			<Template>actor|props/flora/grass_medit_field.xml</Template>
-			<Position x="783.28058" z="859.89924"/>
+			<Position x="778.76789" z="855.94526"/>
 			<Orientation y="-6.17295"/>
 			<Actor seed="60192"/>
 		</Entity>
@@ -10370,14 +10329,14 @@
 		</Entity>
 		<Entity uid="3273">
 			<Template>actor|props/flora/grass_medit_field.xml</Template>
-			<Position x="854.06159" z="866.3808"/>
-			<Orientation y="-3.50838"/>
+			<Position x="789.55958" z="874.90589"/>
+			<Orientation y="-2.66951"/>
 			<Actor seed="47776"/>
 		</Entity>
 		<Entity uid="3274">
 			<Template>actor|props/flora/grass_medit_field.xml</Template>
-			<Position x="845.38355" z="861.22291"/>
-			<Orientation y="-9.88196"/>
+			<Position x="784.05182" z="883.3661"/>
+			<Orientation y="3.12269"/>
 			<Actor seed="11014"/>
 		</Entity>
 		<Entity uid="3275">
@@ -10388,8 +10347,8 @@
 		</Entity>
 		<Entity uid="3276">
 			<Template>actor|props/flora/grass_medit_field.xml</Template>
-			<Position x="848.36683" z="861.84791"/>
-			<Orientation y="-9.72518"/>
+			<Position x="784.7981" z="880.4109"/>
+			<Orientation y="-3.11628"/>
 			<Actor seed="716"/>
 		</Entity>
 		<Entity uid="3277">
@@ -10533,7 +10492,7 @@
 		<Entity uid="3303">
 			<Template>skirmish/structures/default_defense_tower</Template>
 			<Player>2</Player>
-			<Position x="783.64844" z="866.5547"/>
+			<Position x="779.13575" z="862.60071"/>
 			<Orientation y="-2.31016"/>
 			<Actor seed="9638"/>
 		</Entity>
@@ -10589,8 +10548,8 @@
 		<Entity uid="3311">
 			<Template>skirmish/structures/special_starting_structure</Template>
 			<Player>2</Player>
-			<Position x="851.3606" z="874.17011"/>
-			<Orientation y="-7.01203"/>
+			<Position x="796.266" z="876.43152"/>
+			<Orientation y="-5.44867"/>
 			<Actor seed="36506"/>
 		</Entity>
 		<Entity uid="3312">
@@ -12623,7 +12582,7 @@
 		<Entity uid="3819">
 			<Template>structures/merc/camp_player</Template>
 			<Player>0</Player>
-			<Position x="780.77381" z="997.10627"/>
+			<Position x="782.43262" z="986.83735"/>
 			<Orientation y="2.32908"/>
 			<Actor seed="22822"/>
 		</Entity>
@@ -19070,21 +19029,21 @@
 		<Entity uid="5607">
 			<Template>gaia/treasure/metal_weapons_small</Template>
 			<Player>0</Player>
-			<Position x="796.55726" z="991.69367"/>
+			<Position x="798.21607" z="981.42475"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43220"/>
 		</Entity>
 		<Entity uid="5608">
 			<Template>gaia/treasure/metal_weapons_small</Template>
 			<Player>0</Player>
-			<Position x="798.51789" z="989.50165"/>
+			<Position x="800.1767" z="979.23273"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53704"/>
 		</Entity>
 		<Entity uid="5609">
 			<Template>gaia/treasure/metal_weapons_small</Template>
 			<Player>0</Player>
-			<Position x="794.06135" z="988.2768"/>
+			<Position x="795.72016" z="978.00788"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5058"/>
 		</Entity>
@@ -19190,7 +19149,7 @@
 			<Template>gaia/ore/temperate_01</Template>
 			<Player>0</Player>
 			<Position x="900.01502" z="593.75355"/>
-			<Orientation y="-0.7707"/>
+			<Orientation y="-4.03516"/>
 			<Actor seed="214"/>
 		</Entity>
 		<Entity uid="5632">
@@ -19200,62 +19159,27 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="31242"/>
 		</Entity>
-		<Entity uid="5633">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="1024.61634" z="614.01713"/>
-			<Orientation y="0.8975"/>
-			<Actor seed="6268"/>
-		</Entity>
-		<Entity uid="5634">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="1027.66376" z="621.80512"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="12898"/>
-		</Entity>
-		<Entity uid="5635">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="1028.58582" z="628.61219"/>
-			<Orientation y="-1.62578"/>
-			<Actor seed="60086"/>
-		</Entity>
-		<Entity uid="5636">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="1026.22577" z="633.83"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="63036"/>
-		</Entity>
-		<Entity uid="5637">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="1025.10657" z="640.1269"/>
-			<Orientation y="-2.28931"/>
-			<Actor seed="7208"/>
-		</Entity>
 		<Entity uid="5638">
 			<Template>actor|props/structures/construction/scaffold_small.xml</Template>
-			<Position x="1029.93653" z="638.25272"/>
-			<Orientation y="-0.72245"/>
+			<Position x="1026.28406" z="641.70813"/>
+			<Orientation y="2.47435"/>
 			<Actor seed="24842"/>
 		</Entity>
 		<Entity uid="5639">
 			<Template>actor|props/structures/construction/scaffold.xml</Template>
-			<Position x="1029.96418" z="622.94025"/>
-			<Orientation y="0.53455"/>
+			<Position x="1028.86744" z="636.23212"/>
+			<Orientation y="-2.30297"/>
 			<Actor seed="19622"/>
 		</Entity>
 		<Entity uid="5640">
 			<Template>actor|props/structures/construction/scaffold.xml</Template>
-			<Position x="1027.1612" z="614.87266"/>
-			<Orientation y="-0.70891"/>
+			<Position x="1026.07691" z="620.30787"/>
+			<Orientation y="-0.811"/>
 			<Actor seed="55474"/>
 		</Entity>
 		<Entity uid="5641">
 			<Template>actor|props/structures/construction/scaffold_small.xml</Template>
-			<Position x="1033.82245" z="636.02833"/>
+			<Position x="1030.115" z="633.67054"/>
 			<Orientation y="0.82966"/>
 			<Actor seed="35856"/>
 		</Entity>
@@ -19279,7 +19203,7 @@
 		</Entity>
 		<Entity uid="5645">
 			<Template>actor|props/special/eyecandy/blocks_granite_pile_b.xml</Template>
-			<Position x="1022.40455" z="621.3426"/>
+			<Position x="1022.70331" z="621.4311"/>
 			<Orientation y="2.28907"/>
 			<Actor seed="46858"/>
 		</Entity>
@@ -19385,20 +19309,6 @@
 			<Orientation y="-1.83304"/>
 			<Actor seed="57240"/>
 		</Entity>
-		<Entity uid="5663">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="355.23261" z="657.34504"/>
-			<Orientation y="-5.29217"/>
-			<Actor seed="63036"/>
-		</Entity>
-		<Entity uid="5664">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="361.31147" z="659.21802"/>
-			<Orientation y="-9.27416"/>
-			<Actor seed="60086"/>
-		</Entity>
 		<Entity uid="5665">
 			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
 			<Position x="354.07148" z="655.08802"/>
@@ -19425,8 +19335,8 @@
 		</Entity>
 		<Entity uid="5669">
 			<Template>actor|props/structures/construction/scaffold.xml</Template>
-			<Position x="375.38032" z="655.17127"/>
-			<Orientation y="-8.84939"/>
+			<Position x="368.62381" z="653.79523"/>
+			<Orientation y="-10.41608"/>
 			<Actor seed="55474"/>
 		</Entity>
 		<Entity uid="5670">
@@ -19455,8 +19365,8 @@
 		</Entity>
 		<Entity uid="5674">
 			<Template>actor|props/structures/construction/scaffold_small.xml</Template>
-			<Position x="347.51172" z="654.05591"/>
-			<Orientation y="-8.06411"/>
+			<Position x="348.86799" z="658.34919"/>
+			<Orientation y="-13.10051"/>
 			<Actor seed="24842"/>
 		</Entity>
 		<Entity uid="5675">
@@ -19483,13 +19393,6 @@
 			<Orientation y="-3.3728"/>
 			<Actor seed="21898"/>
 		</Entity>
-		<Entity uid="5679">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="348.83979" z="657.53504"/>
-			<Orientation y="-9.93769"/>
-			<Actor seed="7208"/>
-		</Entity>
 		<Entity uid="5680">
 			<Template>actor|props/special/eyecandy/blocks_granite_pile_b.xml</Template>
 			<Position x="372.3483" z="649.698"/>
@@ -19510,8 +19413,8 @@
 		</Entity>
 		<Entity uid="5683">
 			<Template>actor|props/structures/construction/scaffold_small.xml</Template>
-			<Position x="354.58487" z="662.28248"/>
-			<Orientation y="-8.1554"/>
+			<Position x="353.77701" z="660.61481"/>
+			<Orientation y="-8.47582"/>
 			<Actor seed="35856"/>
 		</Entity>
 		<Entity uid="5684">
@@ -19543,20 +19446,6 @@
 			<Position x="358.3921" z="655.5987"/>
 			<Orientation y="-3.5422"/>
 			<Actor seed="22390"/>
-		</Entity>
-		<Entity uid="5689">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="374.3" z="651.72388"/>
-			<Orientation y="-6.75087"/>
-			<Actor seed="6268"/>
-		</Entity>
-		<Entity uid="5690">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="367.2982" z="656.29719"/>
-			<Orientation y="-5.29217"/>
-			<Actor seed="12898"/>
 		</Entity>
 		<Entity uid="5691">
 			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
@@ -20059,22 +19948,22 @@
 		<Entity uid="5921">
 			<Template>gaia/treasure/stone_pile_granite</Template>
 			<Player>0</Player>
-			<Position x="358.79694" z="649.13386"/>
+			<Position x="356.46207" z="647.17835"/>
 			<Orientation y="-4.70109"/>
 			<Actor seed="52558"/>
 		</Entity>
 		<Entity uid="5922">
 			<Template>gaia/treasure/stone_pile_granite</Template>
 			<Player>0</Player>
-			<Position x="1015.06086" z="637.31104"/>
+			<Position x="1014.53711" z="635.91102"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36800"/>
 		</Entity>
 		<Entity uid="5923">
 			<Template>gaia/treasure/stone_pile_granite_large</Template>
 			<Player>0</Player>
-			<Position x="1017.61457" z="631.31922"/>
-			<Orientation y="-1.72805"/>
+			<Position x="1012.74506" z="623.87543"/>
+			<Orientation y="-2.56305"/>
 			<Actor seed="4766"/>
 		</Entity>
 		<Entity uid="5924">
@@ -20086,7 +19975,7 @@
 		</Entity>
 		<Entity uid="5925">
 			<Template>actor|props/structures/decals/gravel_4x5.xml</Template>
-			<Position x="358.37745" z="302.19681"/>
+			<Position x="358.29352" z="303.09952"/>
 			<Orientation y="-8.45218"/>
 			<Actor seed="3212"/>
 		</Entity>
@@ -20275,20 +20164,6 @@
 			<Position x="816.08405" z="126.87395"/>
 			<Orientation y="-0.70583"/>
 			<Actor seed="41892"/>
-		</Entity>
-		<Entity uid="5954">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="978.51716" z="981.0619"/>
-			<Orientation y="-7.00075"/>
-			<Actor seed="60086"/>
-		</Entity>
-		<Entity uid="5955">
-			<Template>gaia/rock/temperate_cut</Template>
-			<Player>0</Player>
-			<Position x="347.12449" z="301.91236"/>
-			<Orientation y="-11.25371"/>
-			<Actor seed="60086"/>
 		</Entity>
 		<Entity uid="5956">
 			<Template>gaia/treasure/wood_lumber</Template>
@@ -20952,6 +20827,188 @@
 			<Position x="1224.59412" z="426.94062"/>
 			<Orientation y="4.82663"/>
 			<Actor seed="5462"/>
+		</Entity>
+		<Entity uid="6065">
+			<Template>gaia/rock/temperate_large_02</Template>
+			<Player>0</Player>
+			<Position x="357.72724" z="655.27057"/>
+			<Orientation y="-3.07708"/>
+			<Actor seed="65420"/>
+		</Entity>
+		<Entity uid="6081">
+			<Template>gaia/rock/temperate_large_02</Template>
+			<Player>0</Player>
+			<Position x="357.57706" z="304.74302"/>
+			<Orientation y="0.90214"/>
+			<Actor seed="27886"/>
+		</Entity>
+		<Entity uid="6082">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="379.98255" z="270.88212"/>
+			<Orientation y="-2.27715"/>
+			<Actor seed="22904"/>
+		</Entity>
+		<Entity uid="6083">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="387.42771" z="263.99817"/>
+			<Orientation y="1.71842"/>
+			<Actor seed="54990"/>
+		</Entity>
+		<Entity uid="6084">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="393.52063" z="265.9238"/>
+			<Orientation y="1.1021"/>
+			<Actor seed="52532"/>
+		</Entity>
+		<Entity uid="6085">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="399.77427" z="267.51911"/>
+			<Orientation y="2.85091"/>
+			<Actor seed="57442"/>
+		</Entity>
+		<Entity uid="6086">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="402.48862" z="259.26575"/>
+			<Orientation y="2.05813"/>
+			<Actor seed="27642"/>
+		</Entity>
+		<Entity uid="6087">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="406.10447" z="259.4242"/>
+			<Orientation y="1.41268"/>
+			<Actor seed="48944"/>
+		</Entity>
+		<Entity uid="6088">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="408.04422" z="429.01383"/>
+			<Orientation y="-1.45153"/>
+			<Actor seed="1806"/>
+		</Entity>
+		<Entity uid="6089">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="400.39713" z="432.86805"/>
+			<Orientation y="0.76203"/>
+			<Actor seed="11268"/>
+		</Entity>
+		<Entity uid="6090">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="393.07291" z="433.39405"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="44032"/>
+		</Entity>
+		<Entity uid="6091">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="387.05005" z="433.43152"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="39160"/>
+		</Entity>
+		<Entity uid="6092">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="385.27845" z="426.92075"/>
+			<Orientation y="-2.03354"/>
+			<Actor seed="64172"/>
+		</Entity>
+		<Entity uid="6093">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="559.1338" z="225.9787"/>
+			<Orientation y="-1.79288"/>
+			<Actor seed="50558"/>
+		</Entity>
+		<Entity uid="6094">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="552.04102" z="222.83219"/>
+			<Orientation y="-2.30642"/>
+			<Actor seed="43046"/>
+		</Entity>
+		<Entity uid="6095">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="549.44556" z="221.1503"/>
+			<Orientation y="-1.76716"/>
+			<Actor seed="56962"/>
+		</Entity>
+		<Entity uid="6096">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="543.39753" z="221.56196"/>
+			<Orientation y="-1.391"/>
+			<Actor seed="57470"/>
+		</Entity>
+		<Entity uid="6097">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="545.5058" z="230.43226"/>
+			<Orientation y="1.80941"/>
+			<Actor seed="26126"/>
+		</Entity>
+		<Entity uid="6098">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="575.875" z="209.95218"/>
+			<Orientation y="-2.58153"/>
+			<Actor seed="56652"/>
+		</Entity>
+		<Entity uid="6099">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="571.82831" z="205.52564"/>
+			<Orientation y="-2.19516"/>
+			<Actor seed="25178"/>
+		</Entity>
+		<Entity uid="6100">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="563.45704" z="203.41727"/>
+			<Orientation y="-1.93014"/>
+			<Actor seed="62962"/>
+		</Entity>
+		<Entity uid="6101">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="552.53132" z="205.82511"/>
+			<Orientation y="-2.31444"/>
+			<Actor seed="29890"/>
+		</Entity>
+		<Entity uid="6102">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="548.6504" z="204.29111"/>
+			<Orientation y="-2.53476"/>
+			<Actor seed="59542"/>
+		</Entity>
+		<Entity uid="6103">
+			<Template>gaia/tree/bush_mediterranean</Template>
+			<Player>0</Player>
+			<Position x="544.86097" z="200.25208"/>
+			<Orientation y="-2.83397"/>
+			<Actor seed="38286"/>
+		</Entity>
+		<Entity uid="6124">
+			<Template>gaia/rock/temperate_large_02</Template>
+			<Player>0</Player>
+			<Position x="983.11707" z="975.19306"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6088"/>
+		</Entity>
+		<Entity uid="6125">
+			<Template>gaia/rock/temperate_large_02</Template>
+			<Player>0</Player>
+			<Position x="1022.60688" z="629.36115"/>
+			<Orientation y="1.66742"/>
+			<Actor seed="43344"/>
 		</Entity>
 	</Entities>
 	<Paths/>
