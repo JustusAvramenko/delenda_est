@@ -3,11 +3,8 @@
   <Auras datatype="tokens">
     structures/iber_monument
   </Auras>
-  <BuildRestrictions>
-    <Territory>own neutral</Territory>
-  </BuildRestrictions>
   <Cost>
-    <BuildTime>120</BuildTime>
+    <BuildTime>100</BuildTime>
     <Resources>
       <food>0</food>
       <wood>0</wood>
@@ -22,15 +19,9 @@
     <VisibleClasses datatype="tokens">Monument</VisibleClasses>
     <Icon>structures/iberian_bull.png</Icon>
   </Identity>
-  <RallyPoint disable=""/>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_iber_monument.xml</select>
-      <constructed>interface/complete/building/complete_iber_monument.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
-  <TerritoryInfluence disable=""/>
+  <StatusBars>
+    <HeightOffset>13.0</HeightOffset>
+  </StatusBars>
   <VisualActor>
     <Actor>structures/iberians/sb_1.xml</Actor>
   </VisualActor>
