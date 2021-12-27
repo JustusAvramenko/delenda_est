@@ -2,13 +2,17 @@
 	"genericName": "Horse Country",
 	"description": "Not unlike Numidia in North Africa, the Iberian Peninsula was known as 'horse country', capable of producing up to 100,000 new mounts each year.",
 	"cost": {"food": 800, "glory": 400},
-	"requirements": {"all": [{"tech": "phase_city"}, {"tech": "training_animals_husbandry"}, {"civ": "iber"}]},
-	"requirementsTooltip": "Unlocked in City Phase. Requires Husbandry.",
+	"requirements": {"all": [
+		{"tech": "phase_city"},
+		{"tech": "training_animals_husbandry"},
+		{"civ": "iber"}]
+	},
+	"requirementsTooltip": "Unlocked in City Phase. Requires \"Basic Husbandry.\"",
 	"icon": "nisean_war_horses.png",
 	"researchTime": 40,
-	"tooltip": "Cavalry units -25% train time.",
+	"tooltip": "Cavalry units -20% train time.",
 	"modifications": [
-		{"value": "Cost/BuildTime", "multiply": 0.75}
+		{"value": "Cost/BuildTime", "multiply": 0.8}
 	],
 	"affects": ["Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
