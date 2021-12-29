@@ -7,32 +7,35 @@
     <Resources>
       <wood>60</wood>
       <stone>0</stone>
+      <glory>15</glory>
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="40.0" depth="8.0"/>
-    <Height>7.0</Height>
+    <Square width="37" depth="5"/>
+    <Height>6.7</Height>
   </Footprint>
   <Health>
     <Max op="mul">0.5</Max>
   </Health>
   <Identity>
     <Civ>imp</Civ>
-    <SelectionGroupName>structures/rome/wallset_siege</SelectionGroupName>
+    <SelectionGroupName>structures/imp/wallset_siege</SelectionGroupName>
     <GenericName>Siege Wall</GenericName>
-    <SpecificName>Murus Circummunitionis</SpecificName>
-    <Classes datatype="tokens">
-	  SiegeWall
-	</Classes>
+    <SpecificName>Mūrus Circummūnītiōnis</SpecificName>
+    <Classes datatype="tokens">SiegeWall</Classes>
     <Icon>structures/siege_wall.png</Icon>
     <Tooltip>A wooden and turf palisade buildable in enemy and neutral territories.</Tooltip>
   </Identity>
+  <Loot>
+    <wood>12</wood>
+    <stone>0</stone>
+  </Loot>
   <Obstruction>
-    <Static width="37.0" depth="5.0"/>
+    <Static width="36" depth="4"/>
   </Obstruction>
-  <TerritoryDecay>
-    <DecayRate>1</DecayRate>
-  </TerritoryDecay>
+  <StatusBars>
+    <HeightOffset>7.7</HeightOffset>
+  </StatusBars>
   <TerritoryInfluence disable=""/>
   <TurretHolder>
     <TurretPoints>
@@ -74,20 +77,16 @@
     </TurretPoints>
   </TurretHolder>
   <Upgrade>
-    <Gate> 
-      <Entity>structures/imp/siege_wall_gate</Entity> 
-      <Tooltip>Upgrade long wall section to a passable gate.</Tooltip> 
-      <Cost> 
+    <Gate>
+      <Entity>structures/rome/siege_wall_gate</Entity>
+      <Cost>
+        <wood>80</wood>
         <stone>0</stone>
-		<wood>80</wood>
-      </Cost> 
-      <Time>5</Time> 
-    </Gate> 
+      </Cost>
+      <Variant>upgrading</Variant>
+    </Gate>
   </Upgrade>
   <VisualActor>
     <Actor>structures/romans/siege_wall_long.xml</Actor>
   </VisualActor>
-  <WallPiece>
-    <Length>36.0</Length>
-  </WallPiece>
 </Entity>

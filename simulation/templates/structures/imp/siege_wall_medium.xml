@@ -7,29 +7,35 @@
     <Resources>
       <wood>40</wood>
       <stone>0</stone>
+      <glory>10</glory>
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="28.0" depth="8.0"/>
-    <Height>7.0</Height>
+    <Square width="25" depth="5"/>
+    <Height>6.7</Height>
   </Footprint>
   <Health>
     <Max op="mul">0.5</Max>
   </Health>
   <Identity>
     <Civ>imp</Civ>
-	<SelectionGroupName>structures/rome/wallset_siege</SelectionGroupName>
-	<GenericName>Siege Wall</GenericName>
-    <SpecificName>Murus Circummunitionis</SpecificName>
-    <Classes datatype="tokens">
-	  SiegeWall
-	</Classes>
+    <SelectionGroupName>structures/imp/wallset_siege</SelectionGroupName>
+    <GenericName>Siege Wall</GenericName>
+    <SpecificName>Mūrus Circummūnītiōnis</SpecificName>
+    <Classes datatype="tokens">SiegeWall</Classes>
     <Icon>structures/siege_wall.png</Icon>
-	<Tooltip>A wooden and turf palisade buildable in enemy and neutral territories.</Tooltip>
+    <Tooltip>A wooden and turf palisade buildable in enemy and neutral territories.</Tooltip>
   </Identity>
+  <Loot>
+    <wood>8</wood>
+    <stone>0</stone>
+  </Loot>
   <Obstruction>
-    <Static width="25.0" depth="5.0"/>
+    <Static width="24" depth="4"/>
   </Obstruction>
+  <StatusBars>
+    <HeightOffset>7.7</HeightOffset>
+  </StatusBars>
   <TerritoryInfluence disable=""/>
   <TurretHolder>
     <TurretPoints>
@@ -58,7 +64,4 @@
   <VisualActor>
     <Actor>structures/romans/siege_wall_medium.xml</Actor>
   </VisualActor>
-  <WallPiece>
-    <Length>24.0</Length>
-  </WallPiece>
 </Entity>
