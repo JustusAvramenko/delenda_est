@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="7">
+	<Environment>
+		<SkySet>cirrus</SkySet>
+		<SunColor r="1.03107" g="0.921898" b="0.578208"/>
+		<SunElevation angle="0.638136"/>
+		<SunRotation angle="-0.909753"/>
+		<AmbientColor r="0.356863" g="0.356863" b="0.356863"/>
+		<Fog>
+			<FogFactor>0.00195313</FogFactor>
+			<FogThickness>0.0351563</FogThickness>
+			<FogColor r="0.839216" g="0.866667" b="0.882353"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.0784314" g="0.247059" b="0.419608"/>
+				<Tint r="0" g="1" b="0.501961"/>
+				<Height>20.0394</Height>
+				<Waviness>3.02734</Waviness>
+				<Murkiness>0.882813</Murkiness>
+				<WindAngle>0.233165</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>-0.015625</Brightness>
+			<Contrast>0.984375</Contrast>
+			<Saturation>0.8125</Saturation>
+			<Bloom>0.160156</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="310.635" y="43.3748" z="342.712"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "AISeed": 0,
+  "AllyView": false,
+  "CircularMap": true,
+  "Description": "Testing Hero auras",
+  "Keywords": [],
+  "LockTeams": false,
+  "Name": "Hero Testing",
+  "PlayerData": [
+    "",
+    {
+      "Civ": "athen"
+    },
+    {
+      "Civ": "brit"
+    },
+    {
+      "Civ": "cart"
+    },
+    {
+      "Civ": "epir"
+    },
+    {
+      "Civ": "gaul"
+    },
+    {
+      "Civ": "han"
+    },
+    {
+      "Civ": "iber"
+    },
+    {
+      "Civ": "kush"
+    }
+  ],
+  "Preview": "",
+  "RevealMap": false,
+  "VictoryConditions": [
+    "conquest_structures"
+  ]
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="11">
+			<Template>units/athen/hero_aristides_infantry</Template>
+			<Player>1</Player>
+			<Position x="291.36283" z="380.4492"/>
+			<Orientation y="-2.97744"/>
+			<Actor seed="18528"/>
+		</Entity>
+		<Entity uid="13">
+			<Template>units/athen/hero_miltiades_infantry</Template>
+			<Player>1</Player>
+			<Position x="293.01758" z="382.41276"/>
+			<Orientation y="-2.85711"/>
+			<Actor seed="40312"/>
+		</Entity>
+		<Entity uid="14">
+			<Template>units/athen/hero_iphicrates_infantry</Template>
+			<Player>1</Player>
+			<Position x="295.26117" z="384.2468"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41624"/>
+		</Entity>
+		<Entity uid="15">
+			<Template>units/athen/hero_pericles_infantry</Template>
+			<Player>1</Player>
+			<Position x="290.19495" z="377.69303"/>
+			<Orientation y="2.92991"/>
+			<Actor seed="14500"/>
+		</Entity>
+		<Entity uid="16">
+			<Template>units/athen/hero_themistocles_infantry</Template>
+			<Player>1</Player>
+			<Position x="297.02582" z="386.08887"/>
+			<Orientation y="3.7771"/>
+			<Actor seed="1088"/>
+		</Entity>
+		<Entity uid="18">
+			<Template>units/brit/hero_boudicca_infantry</Template>
+			<Player>1</Player>
+			<Position x="296.41962" z="370.37775"/>
+			<Orientation y="-3.64831"/>
+			<Actor seed="63024"/>
+		</Entity>
+		<Entity uid="19">
+			<Template>units/brit/hero_caratacos_infantry</Template>
+			<Player>1</Player>
+			<Position x="298.67893" z="371.22486"/>
+			<Orientation y="2.5319"/>
+			<Actor seed="25944"/>
+		</Entity>
+		<Entity uid="20">
+			<Template>units/brit/hero_cunobelin_infantry</Template>
+			<Player>1</Player>
+			<Position x="300.69602" z="373.69858"/>
+			<Orientation y="2.5956"/>
+			<Actor seed="43698"/>
+		</Entity>
+		<Entity uid="21">
+			<Template>units/cart/hero_hamilcar_infantry</Template>
+			<Player>1</Player>
+			<Position x="300.61298" z="364.16056"/>
+			<Orientation y="2.55518"/>
+			<Actor seed="30262"/>
+		</Entity>
+		<Entity uid="22">
+			<Template>units/cart/hero_hannibal_infantry</Template>
+			<Player>1</Player>
+			<Position x="303.5654" z="365.51856"/>
+			<Orientation y="2.65224"/>
+			<Actor seed="4196"/>
+		</Entity>
+		<Entity uid="23">
+			<Template>units/cart/hero_maharbal_infantry</Template>
+			<Player>1</Player>
+			<Position x="305.7071" z="367.66013"/>
+			<Orientation y="2.80657"/>
+			<Actor seed="6140"/>
+		</Entity>
+		<Entity uid="24">
+			<Template>units/cart/hero_xanthippus_infantry</Template>
+			<Player>1</Player>
+			<Position x="308.47287" z="368.64152"/>
+			<Orientation y="2.76153"/>
+			<Actor seed="27676"/>
+		</Entity>
+		<Entity uid="25">
+			<Template>units/epir/hero_alexander_II_infantry</Template>
+			<Player>1</Player>
+			<Position x="305.70118" z="358.27018"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="8164"/>
+		</Entity>
+		<Entity uid="26">
+			<Template>units/epir/hero_alexander_I_infantry</Template>
+			<Player>1</Player>
+			<Position x="308.60557" z="359.55097"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63080"/>
+		</Entity>
+		<Entity uid="27">
+			<Template>units/epir/hero_pyrrhus_infantry</Template>
+			<Player>1</Player>
+			<Position x="310.80262" z="361.77588"/>
+			<Orientation y="2.55304"/>
+			<Actor seed="15572"/>
+		</Entity>
+		<Entity uid="28">
+			<Template>units/gaul/hero_brennus_infantry</Template>
+			<Player>1</Player>
+			<Position x="311.00199" z="353.24299"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52190"/>
+		</Entity>
+		<Entity uid="29">
+			<Template>units/gaul/hero_vercingetorix_infantry</Template>
+			<Player>1</Player>
+			<Position x="313.47263" z="355.0178"/>
+			<Orientation y="2.40848"/>
+			<Actor seed="21848"/>
+		</Entity>
+		<Entity uid="30">
+			<Template>units/gaul/hero_viridomarus_infantry</Template>
+			<Player>1</Player>
+			<Position x="315.26691" z="356.79938"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52710"/>
+		</Entity>
+		<Entity uid="31">
+			<Template>units/han/hero_han_xin_infantry</Template>
+			<Player>1</Player>
+			<Position x="315.15928" z="348.85923"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13174"/>
+		</Entity>
+		<Entity uid="32">
+			<Template>units/han/hero_liu_bang_infantry</Template>
+			<Player>1</Player>
+			<Position x="317.43973" z="350.41303"/>
+			<Orientation y="2.6248"/>
+			<Actor seed="21964"/>
+		</Entity>
+		<Entity uid="33">
+			<Template>units/han/hero_wei_qing_infantry</Template>
+			<Player>1</Player>
+			<Position x="320.20215" z="352.04154"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="21254"/>
+		</Entity>
+		<Entity uid="34">
+			<Template>units/han/hero_wu_han_infantry</Template>
+			<Player>1</Player>
+			<Position x="322.65806" z="353.55918"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="59966"/>
+		</Entity>
+		<Entity uid="35">
+			<Template>units/iber/hero_caros_infantry</Template>
+			<Player>1</Player>
+			<Position x="319.39707" z="343.74762"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="36684"/>
+		</Entity>
+		<Entity uid="36">
+			<Template>units/iber/hero_indibil_infantry</Template>
+			<Player>1</Player>
+			<Position x="321.70084" z="345.17228"/>
+			<Orientation y="2.73298"/>
+			<Actor seed="52696"/>
+		</Entity>
+		<Entity uid="37">
+			<Template>units/iber/hero_viriato_infantry</Template>
+			<Player>1</Player>
+			<Position x="324.19892" z="346.67835"/>
+			<Orientation y="2.38204"/>
+			<Actor seed="13934"/>
+		</Entity>
+		<Entity uid="38">
+			<Template>units/imp/hero_augustus_infantry</Template>
+			<Player>1</Player>
+			<Position x="324.72095" z="339.14533"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20798"/>
+		</Entity>
+		<Entity uid="39">
+			<Template>units/imp/hero_aurelian_infantry</Template>
+			<Player>1</Player>
+			<Position x="326.86457" z="340.31772"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38718"/>
+		</Entity>
+		<Entity uid="40">
+			<Template>units/imp/hero_titus_infantry</Template>
+			<Player>1</Player>
+			<Position x="329.07798" z="342.80594"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="15742"/>
+		</Entity>
+		<Entity uid="41">
+			<Template>units/imp/hero_trajan_infantry</Template>
+			<Player>1</Player>
+			<Position x="331.67454" z="344.31605"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="21350"/>
+		</Entity>
+		<Entity uid="42">
+			<Template>units/imp/hero_marcus_aurelius_infantry</Template>
+			<Player>1</Player>
+			<Position x="334.60886" z="347.06907"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31584"/>
+		</Entity>
+		<Entity uid="43">
+			<Template>units/kush/hero_amanirenas_infantry</Template>
+			<Player>1</Player>
+			<Position x="330.19217" z="334.23774"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20634"/>
+		</Entity>
+		<Entity uid="44">
+			<Template>units/kush/hero_amanitore_infantry</Template>
+			<Player>1</Player>
+			<Position x="332.51893" z="335.61124"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="8858"/>
+		</Entity>
+		<Entity uid="45">
+			<Template>units/kush/hero_arakamani_infantry</Template>
+			<Player>1</Player>
+			<Position x="334.84394" z="337.37"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="26734"/>
+		</Entity>
+		<Entity uid="46">
+			<Template>units/kush/hero_harsiotef_infantry</Template>
+			<Player>1</Player>
+			<Position x="337.44724" z="339.26246"/>
+			<Orientation y="2.54303"/>
+			<Actor seed="53348"/>
+		</Entity>
+		<Entity uid="47">
+			<Template>units/kush/hero_nastasen_infantry</Template>
+			<Player>1</Player>
+			<Position x="339.4188" z="341.52616"/>
+			<Orientation y="2.38138"/>
+			<Actor seed="21404"/>
+		</Entity>
+		<Entity uid="48">
+			<Template>units/mace/hero_alexander_infantry</Template>
+			<Player>1</Player>
+			<Position x="337.03675" z="328.03281"/>
+			<Orientation y="-3.16471"/>
+			<Actor seed="60192"/>
+		</Entity>
+		<Entity uid="49">
+			<Template>units/mace/hero_craterus_infantry</Template>
+			<Player>1</Player>
+			<Position x="339.7046" z="330.02521"/>
+			<Orientation y="-2.7943"/>
+			<Actor seed="58274"/>
+		</Entity>
+		<Entity uid="50">
+			<Template>units/mace/hero_demetrius_infantry</Template>
+			<Player>1</Player>
+			<Position x="342.11182" z="331.75681"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="1468"/>
+		</Entity>
+		<Entity uid="51">
+			<Template>units/mace/hero_philip_infantry</Template>
+			<Player>1</Player>
+			<Position x="344.36805" z="333.61838"/>
+			<Orientation y="-2.72001"/>
+			<Actor seed="21498"/>
+		</Entity>
+		<Entity uid="52">
+			<Template>units/maur/hero_ashoka_infantry</Template>
+			<Player>1</Player>
+			<Position x="341.12735" z="323.80448"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47752"/>
+		</Entity>
+		<Entity uid="53">
+			<Template>units/maur/hero_bindusara_infantry</Template>
+			<Player>1</Player>
+			<Position x="343.42914" z="325.36905"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="53472"/>
+		</Entity>
+		<Entity uid="54">
+			<Template>units/maur/hero_chandragupta_infantry</Template>
+			<Player>1</Player>
+			<Position x="346.14759" z="326.9249"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="22020"/>
+		</Entity>
+		<Entity uid="55">
+			<Template>units/pers/hero_cambyses_infantry</Template>
+			<Player>1</Player>
+			<Position x="345.52765" z="319.88837"/>
+			<Orientation y="2.32697"/>
+			<Actor seed="40954"/>
+		</Entity>
+		<Entity uid="56">
+			<Template>units/pers/hero_cyrus_infantry</Template>
+			<Player>1</Player>
+			<Position x="347.88053" z="321.24909"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="2138"/>
+		</Entity>
+		<Entity uid="57">
+			<Template>units/pers/hero_darius_I_infantry</Template>
+			<Player>1</Player>
+			<Position x="350.06052" z="322.7732"/>
+			<Orientation y="2.52492"/>
+			<Actor seed="29496"/>
+		</Entity>
+		<Entity uid="58">
+			<Template>units/pers/hero_xerxes_infantry</Template>
+			<Player>1</Player>
+			<Position x="351.84214" z="324.40552"/>
+			<Orientation y="2.07946"/>
+			<Actor seed="47974"/>
+		</Entity>
+		<Entity uid="59">
+			<Template>units/ptol/hero_cleopatra_infantry</Template>
+			<Player>1</Player>
+			<Position x="350.51822" z="315.90049"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7584"/>
+		</Entity>
+		<Entity uid="60">
+			<Template>units/ptol/hero_ptolemy_III_infantry</Template>
+			<Player>1</Player>
+			<Position x="353.18854" z="317.21488"/>
+			<Orientation y="3.1229"/>
+			<Actor seed="34104"/>
+		</Entity>
+		<Entity uid="61">
+			<Template>units/ptol/hero_ptolemy_IV_infantry</Template>
+			<Player>1</Player>
+			<Position x="355.5962" z="319.22434"/>
+			<Orientation y="-2.69242"/>
+			<Actor seed="59464"/>
+		</Entity>
+		<Entity uid="62">
+			<Template>units/ptol/hero_ptolemy_I_infantry</Template>
+			<Player>1</Player>
+			<Position x="358.19416" z="321.38312"/>
+			<Orientation y="-2.6751"/>
+			<Actor seed="64602"/>
+		</Entity>
+		<Entity uid="63">
+			<Template>units/rome/hero_marcellus_infantry</Template>
+			<Player>1</Player>
+			<Position x="356.24589" z="311.58323"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63300"/>
+		</Entity>
+		<Entity uid="64">
+			<Template>units/rome/hero_maximus_infantry</Template>
+			<Player>1</Player>
+			<Position x="358.61423" z="313.2295"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="56892"/>
+		</Entity>
+		<Entity uid="65">
+			<Template>units/rome/hero_scipio_infantry</Template>
+			<Player>1</Player>
+			<Position x="360.8628" z="315.27652"/>
+			<Orientation y="-2.88543"/>
+			<Actor seed="12100"/>
+		</Entity>
+		<Entity uid="66">
+			<Template>units/scyth/hero_ateas_infantry</Template>
+			<Player>1</Player>
+			<Position x="360.57782" z="306.7628"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="17822"/>
+		</Entity>
+		<Entity uid="67">
+			<Template>units/scyth/hero_skilurus_infantry</Template>
+			<Player>1</Player>
+			<Position x="363.33042" z="308.58509"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13190"/>
+		</Entity>
+		<Entity uid="68">
+			<Template>units/scyth/hero_tomyris_infantry</Template>
+			<Player>1</Player>
+			<Position x="365.64078" z="310.93287"/>
+			<Orientation y="2.49071"/>
+			<Actor seed="64490"/>
+		</Entity>
+		<Entity uid="69">
+			<Template>units/sele/hero_antiochus_glorious_infantry</Template>
+			<Player>1</Player>
+			<Position x="364.98298" z="302.2541"/>
+			<Orientation y="2.2096"/>
+			<Actor seed="38604"/>
+		</Entity>
+		<Entity uid="70">
+			<Template>units/sele/hero_antiochus_great_infantry</Template>
+			<Player>1</Player>
+			<Position x="367.69828" z="303.34025"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13712"/>
+		</Entity>
+		<Entity uid="71">
+			<Template>units/sele/hero_seleucus_victor_infantry</Template>
+			<Player>1</Player>
+			<Position x="370.37125" z="304.99912"/>
+			<Orientation y="2.84015"/>
+			<Actor seed="64348"/>
+		</Entity>
+		<Entity uid="72">
+			<Template>units/spart/hero_cleomenes_infantry</Template>
+			<Player>1</Player>
+			<Position x="368.71686" z="297.73008"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49514"/>
+		</Entity>
+		<Entity uid="73">
+			<Template>units/spart/hero_agis</Template>
+			<Player>1</Player>
+			<Position x="370.94062" z="298.9502"/>
+			<Orientation y="2.57212"/>
+			<Actor seed="52904"/>
+		</Entity>
+		<Entity uid="74">
+			<Template>units/spart/hero_brasidas</Template>
+			<Player>1</Player>
+			<Position x="373.34623" z="301.38318"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="55060"/>
+		</Entity>
+		<Entity uid="75">
+			<Template>units/spart/hero_gorgo</Template>
+			<Player>1</Player>
+			<Position x="375.43384" z="302.58216"/>
+			<Orientation y="2.7251"/>
+			<Actor seed="43282"/>
+		</Entity>
+		<Entity uid="76">
+			<Template>units/spart/hero_leonidas</Template>
+			<Player>1</Player>
+			<Position x="377.40662" z="303.56394"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="19524"/>
+		</Entity>
+		<Entity uid="77">
+			<Template>units/spart/hero_lysander</Template>
+			<Player>1</Player>
+			<Position x="380.19925" z="304.99982"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="15528"/>
+		</Entity>
+		<Entity uid="78">
+			<Template>units/sueb/hero_ariovistus_infantry</Template>
+			<Player>1</Player>
+			<Position x="374.6409" z="293.35639"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="29924"/>
+		</Entity>
+		<Entity uid="79">
+			<Template>units/sueb/hero_ballomar_infantry</Template>
+			<Player>1</Player>
+			<Position x="378.03217" z="295.23163"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41866"/>
+		</Entity>
+		<Entity uid="80">
+			<Template>units/sueb/hero_maroboduus_infantry</Template>
+			<Player>1</Player>
+			<Position x="380.92014" z="297.6703"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58252"/>
+		</Entity>
+		<Entity uid="81">
+			<Template>units/sueb/merc_hero_arminius_infantry</Template>
+			<Player>1</Player>
+			<Position x="383.5546" z="299.5094"/>
+			<Orientation y="1.85924"/>
+			<Actor seed="59152"/>
+		</Entity>
+		<Entity uid="82">
+			<Template>units/theb/hero_epaminondas_infantry</Template>
+			<Player>1</Player>
+			<Position x="378.28666" z="288.54963"/>
+			<Orientation y="3.13468"/>
+			<Actor seed="28142"/>
+		</Entity>
+		<Entity uid="83">
+			<Template>units/theb/hero_gorgidas_infantry</Template>
+			<Player>1</Player>
+			<Position x="381.41999" z="290.92273"/>
+			<Orientation y="-3.02155"/>
+			<Actor seed="47432"/>
+		</Entity>
+		<Entity uid="84">
+			<Template>units/theb/hero_pelopidas_infantry</Template>
+			<Player>1</Player>
+			<Position x="384.46164" z="293.12235"/>
+			<Orientation y="-2.9114"/>
+			<Actor seed="40406"/>
+		</Entity>
+		<Entity uid="85">
+			<Template>units/xion/hero_laoshang</Template>
+			<Player>1</Player>
+			<Position x="385.63352" z="281.92133"/>
+			<Orientation y="1.7921"/>
+			<Actor seed="38452"/>
+		</Entity>
+		<Entity uid="86">
+			<Template>units/xion/hero_modu</Template>
+			<Player>1</Player>
+			<Position x="388.28544" z="285.22287"/>
+			<Orientation y="1.71142"/>
+			<Actor seed="44228"/>
+		</Entity>
+		<Entity uid="87">
+			<Template>units/xion/hero_touman</Template>
+			<Player>1</Player>
+			<Position x="394.33295" z="291.39554"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="29534"/>
+		</Entity>
+		<Entity uid="88">
+			<Template>units/zapo/hero_battle_priest</Template>
+			<Player>1</Player>
+			<Position x="393.52497" z="273.21479"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="34330"/>
+		</Entity>
+		<Entity uid="89">
+			<Template>units/zapo/hero_lord_jaguar</Template>
+			<Player>1</Player>
+			<Position x="396.53516" z="275.28284"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="29164"/>
+		</Entity>
+		<Entity uid="90">
+			<Template>units/zapo/hero_night_king</Template>
+			<Player>1</Player>
+			<Position x="399.318" z="277.99534"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="16860"/>
+		</Entity>
+		<Entity uid="91">
+			<Template>units/zapo/hero_rain_lord</Template>
+			<Player>1</Player>
+			<Position x="401.89646" z="280.47504"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="16040"/>
+		</Entity>
+		<Entity uid="92">
+			<Template>units/maur/hero_chanakya</Template>
+			<Player>1</Player>
+			<Position x="348.28034" z="330.0026"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="39986"/>
+		</Entity>
+		<Entity uid="94">
+			<Template>units/athen/hero_socrates</Template>
+			<Player>1</Player>
+			<Position x="299.98017" z="388.28495"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="2114"/>
+		</Entity>
+		<Entity uid="95">
+			<Template>units/athen/hero_xenophon</Template>
+			<Player>1</Player>
+			<Position x="302.61768" z="390.34015"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10944"/>
+		</Entity>
+	</Entities>
+	<Paths/>
+</Scenario>
