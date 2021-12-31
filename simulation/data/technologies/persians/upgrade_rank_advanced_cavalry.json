@@ -1,13 +1,20 @@
 {
-	"genericName": "Advanced Citizen-Cavalry",
+	"genericName": "Advanced Cavalry",
 	"description": "Promote all of your citizen-soldier cavalrymen to Advanced rank.",
-	"cost": {"food": 500, "glory": 200},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 800,
+		"glory": 700
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "upgrade_advanced_cavalry.png",
 	"researchTime": 40,
-	"tooltip": "Promote all of your citizen-soldier cavalrymen to Advanced rank. This increases their military prowess, but decreases their meat gathering rates -25%. Unlocks Elite Citizen-Cavalry technology.",
-	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
-	"affects": ["NonChariot Basic"],
+	"tooltip": "Promote all of your citizen-soldier cavalrymen to Advanced rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%. Unlocks \"Elite Citizen-Cavalry\" technology.",
+	"modifications": [
+		{"value": "Promotion/RequiredXp", "replace": 0}
+	],
+	"affects": ["Cavalry !Chariot Basic"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -1,7 +1,8 @@
 {
-	"type": "global",
+	"type": "range",
+	"radius": 40,
 	"affects": [
-		"Soldier"
+		"Cavalry"
 	],
 	"modifications": [
 		{
@@ -9,11 +10,15 @@
 			"multiply": 1.2
 		},
 		{
-			"value": "Vision/Range",
+			"value": "UnitMotion/Acceleration",
+			"multiply": 1.2
+		},
+		{
+			"value": "Position/TurnRate",
 			"multiply": 1.2
 		}
 	],
-	"auraName": "Swift Camouflage Maneuvers",
-	"auraDescription": "All Soldiers +20% walk speed and +20% vision range during his lifetime.",
-	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+	"auraName": "Cavalry Maneuvers",
+	"auraDescription": "Nearby Cavalry +20% movement speed, turn rate, and acceleration.",
+	"overlayIcon": "art/textures/ui/session/auras/speed_bonus.png"
 }

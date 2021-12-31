@@ -1,13 +1,9 @@
 {
-	"type": "range",
-	"radius": 60,
-	"affects": ["Soldier", "Siege"],
+	"type": "global",
+	"affects": ["Soldier"],
 	"modifications": [
-		{ "value": "Looter/Resource/food", "multiply": 2.0 },
-		{ "value": "Looter/Resource/wood", "multiply": 2.0 },
-		{ "value": "Looter/Resource/stone", "multiply": 2.0 },
-		{ "value": "Looter/Resource/metal", "multiply": 2.0 }
+	  {"value": "Cost/BuildTime", "multiply": 0.66}
 	],
-	"auraName": "Swag",
-	"auraDescription": "+100% resources loot increase for every enemy unit killed or structure destroyed."
+	"auraName": "Resilience",
+	"auraDescription": "All Soldiers -33% train time while he lives."
 }
