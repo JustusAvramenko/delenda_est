@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_ranged">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>1</Hack>
-        <Pierce>2</Pierce>
-        <Crush>3</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Ranged>
       <AttackName>Javelin</AttackName>
@@ -51,6 +42,15 @@
 Strong Against: Spear Infantry (1.25x), Ranged Cavalry (1.25x), Elephants (1.25x).
 Weak Against: Spear Cavalry, Sword Cavalry, Sword Infantry.</Tooltip>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>2</Pierce>
+        <Crush>3</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/javelin_attack.xml</attack_ranged>
