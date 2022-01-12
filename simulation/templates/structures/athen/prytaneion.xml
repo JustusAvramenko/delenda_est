@@ -17,6 +17,14 @@
     <Circle radius="16.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <GarrisonHolder replace="">
+    <Max>1</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Hero Minister Teacher</List>
+    <BuffHeal>5</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
   <Health>
     <Max>1000</Max>
   </Health>
@@ -31,7 +39,7 @@
 	  ConquestCritical
 	  CivSpecific
 	</Classes>
-    <Tooltip>Train heroes. Research special technologies.</Tooltip>
+    <Tooltip>Train Heroes. Research special technologies. Garrison a Hero inside for fast healing.</Tooltip>
     <Icon>structures/tholos.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
