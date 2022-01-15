@@ -3,7 +3,7 @@
   <castshadow/>
   <float/>
   <group>
-    <variant name="base">
+    <variant frequency="100">
       <mesh>props/standards/formation_pole.dae</mesh>
       <textures>
         <texture file="props/kart_standard.png" name="baseTex"/>
@@ -13,14 +13,19 @@
     </variant>
   </group>
   <group>
+    <variant name="athen">
+      <props>
+        <prop actor="props/units/standards/formation_flag_athen.xml" attachpoint="root"/>
+      </props>
+    </variant>
     <variant name="cart">
       <props>
-        <prop actor="props/units/standards/cart_formation_flag.xml" attachpoint="root"/>
+        <prop actor="props/units/standards/formation_flag_cart.xml" attachpoint="root"/>
       </props>
     </variant>
     <variant name="spart">
       <props>
-        <prop actor="props/units/standards/spart_formation_flag.xml" attachpoint="root"/>
+        <prop actor="props/units/standards/formation_flag_spart.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
