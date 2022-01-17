@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity>
-  <!--
-  <Identity>
-    <GenericName>Formation</GenericName>
-    <Undeletable>true</Undeletable>
-  </Identity>
-  <Selectable>
-    <Overlay>
-      <Texture>
-        <MainTexture>256x256/rectangle.png</MainTexture>
-        <MainTextureMask>256x256/rectangle_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
-  -->
-  <VisualActor>
-    <Actor>props/units/standards/formation.xml</Actor>
-    <SilhouetteDisplay>true</SilhouetteDisplay>
-    <SilhouetteOccluder>false</SilhouetteOccluder>
-    <VisibleInAtlasOnly>false</VisibleInAtlasOnly>
-  </VisualActor>
   <Formation>
     <RequiredMemberCount>2</RequiredMemberCount>
     <DisabledTooltip>Requires at least 2 Soldiers or Siege engines.</DisabledTooltip>
@@ -39,6 +19,13 @@
   <FormationAttack>
     <CanAttackAsFormation>false</CanAttackAsFormation>
   </FormationAttack>
+<!--
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Formation</GenericName>
+    <Undeletable>true</Undeletable>
+  </Identity>
+-->
   <Obstruction>
     <Unit/>
     <Active>true</Active>
@@ -56,8 +43,18 @@
     <Anchor>upright</Anchor>
     <Floating>false</Floating>
 	<FloatDepth>0</FloatDepth>
-    <TurnRate>3</TurnRate>
+    <TurnRate>7</TurnRate>
   </Position>
+<!-- 
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>256x256/rectangle.png</MainTexture>
+        <MainTextureMask>256x256/rectangle_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+ -->
   <Trader>
     <GainMultiplier>0.75</GainMultiplier>
   </Trader>
@@ -72,9 +69,15 @@
   <UnitMotion>
     <FormationController>true</FormationController>
     <WalkSpeed>1.0</WalkSpeed>
-    <RunMultiplier>100.0</RunMultiplier> <!-- = Max formation speed -->
+    <RunMultiplier>50.0</RunMultiplier> <!-- = Max formation speed -->
     <InstantTurnAngle>0.1</InstantTurnAngle>
     <Acceleration>100</Acceleration> <!-- Unused -->
     <PassabilityClass>large</PassabilityClass>
   </UnitMotion>
+  <VisualActor>
+    <Actor>props/units/standards/formation.xml</Actor>
+    <SilhouetteDisplay>true</SilhouetteDisplay>
+    <SilhouetteOccluder>false</SilhouetteOccluder>
+    <VisibleInAtlasOnly>false</VisibleInAtlasOnly>
+  </VisualActor>
 </Entity>
