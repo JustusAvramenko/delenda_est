@@ -7,11 +7,9 @@
       <props>
         <prop actor="props/units/heads/new/rome_head_veteran.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/gladius.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/shields/rome_scutum_legionary.xml" attachpoint="shield"/>
+        <prop actor="props/units/rome_legion_shoulderpad_L.xml" attachpoint="shoulderpad_L"/>
+        <prop actor="props/units/rome_legion_shoulderpad_R.xml" attachpoint="shoulderpad_R"/>
       </props>
-      <textures>
-        <texture file="skeletal/rome_su4_imperial_legion.dds" name="baseTex"/>
-      </textures>
     </variant>
   </group>
   <group>
@@ -35,6 +33,32 @@
     </variant>
   </group>
   <group>
+    <variant frequency="1" name="shield-scutum_rome_imp_rect_01">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_imp_rect_01.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="shield-scutum_rome_imp_rect_02">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_imp_rect_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="lorica_segmentata_00_01">
+      <textures>
+        <texture file="skeletal/imp/lorica_segmentata_00_01.png" name="baseTex"/>
+	    <texture file="skeletal/imp/lorica_segmentata_00_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="lorica_segmentata_01_01">
+      <textures>
+        <texture file="skeletal/imp/lorica_segmentata_01_01.png" name="baseTex"/>
+	    <texture file="skeletal/imp/lorica_segmentata_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
     <variant file="biped/base_swordsman_shield_relax.xml"/>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/death_infantry.xml"/>
@@ -45,5 +69,5 @@
     <variant file="biped/formations/testudo_left.xml"/>
     <variant file="biped/formations/testudo_right.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
