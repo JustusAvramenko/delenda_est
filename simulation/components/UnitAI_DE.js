@@ -22,7 +22,7 @@ UnitAI.prototype.GetQueryRange = function(iid)
 		ret.max = Math.min(range.max, visionRange);
 	}
 	else if (this.GetStance().respondChase)
-		ret.max = visionRange * 0.85; // << This has changed.
+		ret.max = visionRange * 0.85; // << This has changed. Stops units from berserking after any enemy unit in vision range.
 	else if (this.GetStance().respondHoldGround)
 	{
 		let range = this.GetRange(iid);
@@ -56,7 +56,7 @@ UnitAI.prototype.AttackEntitiesByPreference = function(ents)
 			return true;
 
 		let cmpUnitAI = Engine.QueryInterface(e, IID_UnitAI);
-		return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // << This has changed.
+		return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // << This has changed. Stops units from auto-attacking animals, such as lions.
 	};
 
 	let entsByPreferences = {};
