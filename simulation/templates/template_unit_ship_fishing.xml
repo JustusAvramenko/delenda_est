@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_ship">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>2</Hack>
-        <Pierce>5</Pierce>
-        <Crush>2</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Melee>
       <AttackName>Harpoon</AttackName>
       <Damage>
-	    <Hack>10.0</Hack>
+        <Hack>10.0</Hack>
         <Pierce>0.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
       <MaxRange>5.0</MaxRange>
-	  <PrepareTime>500</PrepareTime>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
       <RestrictedClasses datatype="tokens">!SeaCreature</RestrictedClasses>
     </Melee>
@@ -40,12 +31,20 @@
     <GenericName>Fishing Boat</GenericName>
     <Tooltip>Fish the waters for Food.</Tooltip>
     <VisibleClasses datatype="tokens">FishingBoat Bribable</VisibleClasses>
-	<Classes datatype="tokens">-ConquestCritical IdleWorker</Classes>
-	<Formations disable=""/>
+    <Classes datatype="tokens">-ConquestCritical IdleWorker</Classes>
   </Identity>
   <Loot>
     <food>20</food>
   </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>5</Pierce>
+        <Crush>2</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <ResourceGatherer>
     <MaxDistance>10.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
@@ -64,18 +63,19 @@
   </Sound>
   <TreasureCollector disable=""/>
   <UnitAI>
-	<DefaultStance>passive</DefaultStance>
+    <DefaultStance>passive</DefaultStance>
     <CanGuard>false</CanGuard>
-	<CanPatrol>false</CanPatrol>
+    <CanPatrol>false</CanPatrol>
+    <Formations disable=""/>
   </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.85</WalkSpeed>
-	<PassabilityClass>ship-small</PassabilityClass>
+    <PassabilityClass>ship-small</PassabilityClass>
   </UnitMotion>
   <Vision>
     <Range>24</Range>
   </Vision>
-  <VisionSharing> 
-    <Bribable>true</Bribable> 
-  </VisionSharing> 
+  <VisionSharing>
+    <Bribable>true</Bribable>
+  </VisionSharing>
 </Entity>

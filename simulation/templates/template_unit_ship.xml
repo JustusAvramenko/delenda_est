@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>5</Hack>
-        <Pierce>10</Pierce>
-        <Crush>2</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Cost>
     <Population>1</Population>
     <BuildTime>24</BuildTime>
@@ -28,7 +19,7 @@
   <Footprint replace="">
     <Square width="6.0" depth="30.0"/>
     <Height>8.0</Height>
-	<MaxSpawnDistance>10</MaxSpawnDistance>
+    <MaxSpawnDistance>10</MaxSpawnDistance>
   </Footprint>
   <Health>
     <Max>100</Max>
@@ -37,7 +28,6 @@
   <Identity>
     <GenericName>Ship</GenericName>
     <VisibleClasses datatype="tokens">Ship</VisibleClasses>
-    <Formations disable=""/>
   </Identity>
   <Loot>
     <xp>50</xp>
@@ -45,12 +35,21 @@
   </Loot>
   <Position>
     <Floating>true</Floating>
-	<FloatDepth>0.0</FloatDepth>
+    <FloatDepth>0.0</FloatDepth>
     <TurnRate>3.0</TurnRate>
   </Position>
   <Repairable>
     <RepairTimeRatio>2.0</RepairTimeRatio>
   </Repairable>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>10</Pierce>
+        <Crush>2</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Selectable>
     <Overlay>
       <Texture>
@@ -70,6 +69,9 @@
       <death>actor/ship/warship_death.xml</death>
     </SoundGroups>
   </Sound>
+  <UnitAI>
+    <Formations disable=""/>
+  </UnitAI>
   <UnitMotion>
     <PassabilityClass>ship</PassabilityClass>
   </UnitMotion>

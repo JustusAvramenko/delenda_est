@@ -24,9 +24,8 @@
     <Tooltip>
 Trade between docks. Garrison a Trader aboard for additional profit (+20% for each garrisoned). Gather profitable aquatic treasures.</Tooltip>
     <VisibleClasses datatype="tokens">Trader MerchantShip Bribable</VisibleClasses>
-	<Classes datatype="tokens">IdleWorker</Classes>
+    <Classes datatype="tokens">IdleWorker</Classes>
     <RequiredTechnology>phase_town</RequiredTechnology>
-    <Formations disable=""/>
   </Identity>
   <Loot>
     <coin>50</coin>
@@ -56,15 +55,16 @@ Trade between docks. Garrison a Trader aboard for additional profit (+20% for ea
     <MaxDistance>12</MaxDistance>
   </TreasureCollector>
   <UnitAI>
-	<DefaultStance>passive</DefaultStance>
+    <DefaultStance>passive</DefaultStance>
     <CanGuard>false</CanGuard>
-	<CanPatrol>false</CanPatrol>
+    <CanPatrol>false</CanPatrol>
+    <Formations disable=""/>
   </UnitAI>
   <UnitMotion>
     <PassabilityClass>ship-small</PassabilityClass>
-	<WalkSpeed op="mul">1.2</WalkSpeed>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
   </UnitMotion>
-  <VisionSharing> 
-    <Bribable>true</Bribable> 
-  </VisionSharing> 
+  <VisionSharing>
+    <Bribable>true</Bribable>
+  </VisionSharing>
 </Entity>

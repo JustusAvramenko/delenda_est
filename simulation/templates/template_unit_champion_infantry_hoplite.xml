@@ -4,21 +4,21 @@
     <Melee>
       <AttackName>Spear</AttackName>
       <Damage>
-	    <Hack>15</Hack>
+        <Hack>15</Hack>
         <Pierce>0</Pierce>
         <Crush>0</Crush>
       </Damage>
       <MaxRange>5</MaxRange>
-	  <PrepareTime>500</PrepareTime>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
       <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
-	  <Bonuses>
-		<BonusCavMelee>
-		  <Classes>Cavalry</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusCavMelee>
-	  </Bonuses>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
     </Melee>
   </Attack>
   <Auras datatype="tokens">
@@ -35,9 +35,6 @@
     <Tooltip>Traits: Medium Speed, Heavy Armor, Medium Attack, Shield Wall.
 Strong Against: All Cavalry (1.5x).
 Weak Against: Ranged Units, Sword Infantry.</Tooltip>
-    <Formations datatype="tokens">
-      special/formations/phalanx
-    </Formations>
   </Identity>
   <Resistance>
     <Entity>
@@ -48,6 +45,11 @@ Weak Against: Ranged Units, Sword Infantry.</Tooltip>
       </Damage>
     </Entity>
   </Resistance>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.75</WalkSpeed>
   </UnitMotion>

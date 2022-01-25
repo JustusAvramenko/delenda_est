@@ -31,7 +31,7 @@
   </Auras>
   <Builder>
     <Rate>1.25</Rate>
-	<Entities datatype="tokens">
+    <Entities datatype="tokens">
       structures/{civ}/civil_centre
       structures/{civ}/military_colony
       structures/{civ}/house
@@ -90,7 +90,7 @@
   </Builder>
   <Cost>
     <Population>1</Population>
-	<Resources>
+    <Resources>
       <food>50</food>
     </Resources>
     <BuildTime>20</BuildTime>
@@ -100,20 +100,19 @@
   </Health>
   <Identity>
     <GenericName>Citizen</GenericName>
-	<Phenotype datatype="tokens">
+    <Phenotype datatype="tokens">
 	  female
 	  male
 	</Phenotype>
-	<VisibleClasses datatype="tokens">Builder Gatherer Citizen TaxPayer</VisibleClasses>
+    <VisibleClasses datatype="tokens">Builder Gatherer Citizen TaxPayer</VisibleClasses>
     <SelectionGroupName>template_unit_support_citizen</SelectionGroupName>
-	<Classes datatype="tokens">Worker Civilian IdleWorker Villager</Classes>
-	<Tooltip>Build civilian buildings and gather resources. Command nearby Slaves to work faster. Especially good at building.
+    <Classes datatype="tokens">Worker Civilian IdleWorker Villager</Classes>
+    <Tooltip>Build civilian buildings and gather resources. Command nearby Slaves to work faster. Especially good at building.
 Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Avoids Death.
 Good at: Building and Dying.
 Mediocre at: Gathering Resources.
 Bad at: Fighting.</Tooltip>
     <Icon>units/imp/support_citizen.png</Icon>
-	<Formations disable=""/>
   </Identity>
   <RangeOverlayRenderer/>
   <Resistance>
@@ -150,15 +149,15 @@ Bad at: Fighting.</Tooltip>
     </Rates>
   </ResourceGatherer>
   <ResourceTrickle>
-    <Rates> 
+    <Rates>
       <food>0.0</food>
       <wood>0.0</wood>
       <stone>0.0</stone>
       <metal>0.0</metal>
       <coin>1.0</coin>
       <glory>0.0</glory>
-    </Rates> 
-    <Interval>10000</Interval> 
+    </Rates>
+    <Interval>10000</Interval>
   </ResourceTrickle>
   <Sound>
     <SoundGroups>
@@ -168,18 +167,18 @@ Bad at: Fighting.</Tooltip>
       <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
       <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
       <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
-	  <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
       <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
       <walk>actor/human/movement/walk.xml</walk>
       <run>actor/human/movement/run.xml</run>
       <attack_melee>attack/weapon/knife_attack.xml</attack_melee>
-	  <attack_slaughter>attack/weapon/knife_attack.xml</attack_slaughter>
+      <attack_slaughter>attack/weapon/knife_attack.xml</attack_slaughter>
       <death>actor/human/death/{phenotype}_death.xml</death>
       <build>resource/construction/con_wood.xml</build>
       <trained>interface/alarm/alarm_create_citizen.xml</trained>
       <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
       <gather_grain>resource/farming/farm.xml</gather_grain>
-	  <gather_meat>resource/gathering/gather_meat.xml</gather_meat>
+      <gather_meat>resource/gathering/gather_meat.xml</gather_meat>
       <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
       <gather_rock>resource/mining/pickaxe.xml</gather_rock>
       <gather_ore>resource/mining/mining.xml</gather_ore>
@@ -190,7 +189,8 @@ Bad at: Fighting.</Tooltip>
     <Category>Citizen</Category>
   </TrainingRestrictions>
   <UnitAI>
-	<CanPatrol>false</CanPatrol>
+    <CanPatrol>false</CanPatrol>
+    <Formations disable=""/>
   </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.8</WalkSpeed>

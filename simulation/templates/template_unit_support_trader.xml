@@ -16,22 +16,21 @@
   </Health>
   <Identity>
     <Classes datatype="tokens">-ConquestCritical IdleWorker</Classes>
-	<VisibleClasses datatype="tokens">Citizen Trader TaxPayer</VisibleClasses>
+    <VisibleClasses datatype="tokens">Citizen Trader TaxPayer</VisibleClasses>
     <GenericName>Trader</GenericName>
     <Tooltip>Trade resources between your own markets and those of your allies.</Tooltip>
     <Icon>units/{civ}/support_trader.png</Icon>
-    <Formations disable=""/>
   </Identity>
   <ResourceTrickle>
-    <Rates> 
+    <Rates>
       <food>0.0</food>
       <wood>0.0</wood>
       <stone>0.0</stone>
       <metal>0.0</metal>
       <coin>1.0</coin>
       <glory>0.0</glory>
-    </Rates> 
-    <Interval>10000</Interval> 
+    </Rates>
+    <Interval>10000</Interval>
   </ResourceTrickle>
   <Selectable>
     <Overlay>
@@ -43,7 +42,7 @@
   </Selectable>
   <Sound>
     <SoundGroups>
-	  <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
       <order_trade>voice/{lang}/civ/civ_{phenotype}_trade.xml</order_trade>
       <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
       <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
@@ -65,7 +64,8 @@
   </TrainingRestrictions>
   <UnitAI>
     <CanGuard>false</CanGuard>
-	<CanPatrol>false</CanPatrol>
+    <CanPatrol>false</CanPatrol>
+    <Formations disable=""/>
   </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.5</WalkSpeed>

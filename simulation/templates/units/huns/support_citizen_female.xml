@@ -3,7 +3,7 @@
   <Attack>
     <Ranged>
       <Damage>
-	    <Hack>0.0</Hack>
+        <Hack>0.0</Hack>
         <Pierce>5.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
@@ -14,14 +14,6 @@
   <Auras datatype="tokens">
     units/female_inspiration
   </Auras>
-  <Cost>
-    <BuildTime>10</BuildTime>
-    <Population>1</Population>
-	<Resources>
-      <food>60</food>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Builder>
     <Rate>1.0</Rate>
     <Entities datatype="tokens">
@@ -75,6 +67,14 @@
       structures/{civ}/wonder
     </Entities>
   </Builder>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Population>1</Population>
+    <Resources>
+      <food>60</food>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
   <Health>
     <Max>25</Max>
   </Health>
@@ -86,7 +86,6 @@
     <Phenotype datatype="tokens">female</Phenotype>
     <Classes datatype="tokens">FemaleCitizen</Classes>
     <VisibleClasses datatype="tokens">Citizen Worker</VisibleClasses>
-    <Formations disable=""/>
   </Identity>
   <Promotion disable=""/>
   <RangeOverlayRenderer/>
@@ -111,6 +110,9 @@
       <metal.ore>0.5</metal.ore>
     </Rates>
   </ResourceGatherer>
+  <UnitAI>
+    <Formations disable=""/>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.8</WalkSpeed>
   </UnitMotion>

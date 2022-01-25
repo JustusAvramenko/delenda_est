@@ -5,19 +5,21 @@
   </Auras>
   <Identity>
     <Civ>athen</Civ>
-	<Lang>greek</Lang>
+    <Lang>greek</Lang>
     <SpecificName>Delian Marine</SpecificName>
-	<VisibleClasses datatype="tokens">Marine</VisibleClasses>
-    <Formations datatype="tokens">
-      special/formations/phalanx
-    </Formations>
+    <VisibleClasses datatype="tokens">Marine</VisibleClasses>
     <Tooltip>Traits: Fast Speed, Medium Armor, High Attack.
 Strong Against: All Infantry (1.5x), Elephants (1.5x).
 Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.
 Iphicratean Reforms are researched at a captured Mercenary Camp.</Tooltip>
     <Icon>units/athen/champion_marine.png</Icon>
-	<RequiredTechnology>phase_imperial</RequiredTechnology>
+    <RequiredTechnology>phase_imperial</RequiredTechnology>
   </Identity>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed>12.0</WalkSpeed>
   </UnitMotion>

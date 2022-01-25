@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>3</Hack>
-        <Pierce>1</Pierce>
-        <Crush>4</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Slaughter>
       <AttackName>Slaughter</AttackName>
@@ -18,7 +9,7 @@
         <Crush>0.0</Crush>
       </Damage>
       <MaxRange>4.0</MaxRange>
-	  <PrepareTime>500</PrepareTime>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
     </Slaughter>
     <Melee>
@@ -29,22 +20,22 @@
         <Crush>0.0</Crush>
       </Damage>
       <MaxRange>3.0</MaxRange>
-	  <PrepareTime>500</PrepareTime>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
-	  <Bonuses>
-		<BonusSupport>
-		  <Classes>Support</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusSupport>
-		<BonusCav>
-		  <Classes>Cavalry</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusCav>
-		<BonusHunt>
-		  <Classes>Animal</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusHunt>
-	  </Bonuses>
+      <Bonuses>
+        <BonusSupport>
+          <Classes>Support</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusSupport>
+        <BonusCav>
+          <Classes>Cavalry</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusCav>
+        <BonusHunt>
+          <Classes>Animal</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusHunt>
+      </Bonuses>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
       <RestrictedClasses datatype="tokens">Structure Ship Siege</RestrictedClasses>
     </Melee>
@@ -74,8 +65,7 @@
     <Tooltip>Traits: Fast Speed, Low Armor, Raider, Cannot Attack Buildings.
 Strong Against: Support Units (1.5x), Cavalry (1.5x), Animals (1.5x).
 Weak Against: Ranged Units, Elephants.</Tooltip>
-	<RequiredTechnology>phase_town</RequiredTechnology>
-	<Formations disable=""/>
+    <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <Loot>
     <xp>120</xp>
@@ -84,6 +74,15 @@ Weak Against: Ranged Units, Elephants.</Tooltip>
   <Promotion>
     <RequiredXp>100</RequiredXp>
   </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>3</Hack>
+        <Pierce>1</Pierce>
+        <Crush>4</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <ResourceGatherer disable=""/>
   <Selectable>
     <Overlay>
@@ -115,6 +114,9 @@ Weak Against: Ranged Units, Elephants.</Tooltip>
     <Category>WarDog</Category>
   </TrainingRestrictions>
   <TreasureCollector disable=""/>
+  <UnitAI>
+    <Formations disable=""/>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">1.25</WalkSpeed>
   </UnitMotion>

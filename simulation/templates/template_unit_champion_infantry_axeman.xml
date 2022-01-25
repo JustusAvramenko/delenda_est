@@ -4,21 +4,21 @@
     <Melee>
       <AttackName>Axe</AttackName>
       <Damage>
-	    <Hack>12</Hack>
+        <Hack>12</Hack>
         <Pierce>0</Pierce>
         <Crush>8</Crush>
       </Damage>
       <MaxRange>3</MaxRange>
-	  <PrepareTime>500</PrepareTime>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
       <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
-	  <Bonuses>
-		<BonusAllInfantry>
-		  <Classes>Infantry</Classes>
-		  <Multiplier>2</Multiplier>
-		</BonusAllInfantry>
-	  </Bonuses>
+      <Bonuses>
+        <BonusAllInfantry>
+          <Classes>Infantry</Classes>
+          <Multiplier>2</Multiplier>
+        </BonusAllInfantry>
+      </Bonuses>
     </Melee>
   </Attack>
   <Identity>
@@ -27,9 +27,6 @@
     <Tooltip>Traits: Medium Speed, Medium Armor, High Attack.
 Strong Against: All Infantry (2x).
 Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.</Tooltip>
-    <Formations datatype="tokens">
-      special/formations/testudo
-    </Formations>
   </Identity>
   <Resistance>
     <Entity>
@@ -40,6 +37,11 @@ Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.</Tooltip>
       </Damage>
     </Entity>
   </Resistance>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/testudo
+    </Formations>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.8</WalkSpeed>
   </UnitMotion>

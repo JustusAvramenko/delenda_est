@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_mercenary_infantry_melee_spearman">
   <Builder>
-	<Entities datatype="tokens">
+    <Entities datatype="tokens">
 	  -structures/{civ}/range
 	  -structures/{civ}/stable
     </Entities>
@@ -17,19 +17,21 @@
   </Cost>
   <Identity>
     <Civ>imp</Civ>
-	<Lang>latin</Lang>
+    <Lang>latin</Lang>
     <SpecificName>Auxiliary Spearman</SpecificName>
     <VisibleClasses datatype="tokens">
 	  Auxiliary
 	</VisibleClasses>
     <Icon>units/imp/merc_spearman.png</Icon>
-    <Formations datatype="tokens">
-      special/formations/testudo
-    </Formations>
   </Identity>
   <TrainingRestrictions>
     <Category>Auxilia</Category>
   </TrainingRestrictions>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/testudo
+    </Formations>
+  </UnitAI>
   <VisualActor>
     <Actor>units/romans_imperial/infantry_spearman.xml</Actor>
   </VisualActor>

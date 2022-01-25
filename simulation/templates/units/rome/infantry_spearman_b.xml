@@ -2,17 +2,19 @@
 <Entity parent="template_unit_infantry_melee_spearman">
   <Identity>
     <Civ>rome</Civ>
-	<Lang>latin</Lang>
+    <Lang>latin</Lang>
     <SelectionGroupName>units/rome/infantry_spearman_b</SelectionGroupName>
     <SpecificName>Roman Veteran Spearman</SpecificName>
     <Icon>units/rome/infantry_spearman.png</Icon>
-    <Formations datatype="tokens">
-      special/formations/anti_cavalry
-    </Formations>
   </Identity>
   <Promotion>
     <Entity>units/rome/infantry_spearman_a</Entity>
   </Promotion>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/anti_cavalry
+    </Formations>
+  </UnitAI>
   <VisualActor>
     <Actor>units/romans/infantry_spearman_b.xml</Actor>
   </VisualActor>

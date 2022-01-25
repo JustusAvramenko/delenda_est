@@ -21,9 +21,6 @@
     <GenericName>Champion Cavalry</GenericName>
     <Classes datatype="tokens">FastMoving</Classes>
     <VisibleClasses datatype="tokens">Cavalry Horse</VisibleClasses>
-    <Formations datatype="tokens">
-      special/formations/wedge
-    </Formations>
   </Identity>
   <Position>
     <Anchor>pitch</Anchor>
@@ -44,7 +41,10 @@
     <HeightOffset>6.5</HeightOffset>
   </StatusBars>
   <UnitAI>
-	<CheeringTime>5000</CheeringTime>
+    <CheeringTime>5000</CheeringTime>
+    <Formations datatype="tokens">
+      special/formations/wedge
+    </Formations>
   </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">1.5</WalkSpeed>

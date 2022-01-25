@@ -3,7 +3,7 @@
   <Attack>
     <Melee>
       <Damage>
-	    <Hack>10.0</Hack>
+        <Hack>10.0</Hack>
         <Pierce>0.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
@@ -11,7 +11,7 @@
       <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
       <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
     </Melee>
   </Attack>
   <Health>
@@ -20,8 +20,10 @@
   <Identity>
     <GenericName>Melee Infantry</GenericName>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <UnitAI>
     <Formations datatype="tokens">
       special/formations/testudo
     </Formations>
-  </Identity>
+  </UnitAI>
 </Entity>

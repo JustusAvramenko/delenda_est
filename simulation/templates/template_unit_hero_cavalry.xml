@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero">
   <Cost>
-	<BuildTime>25</BuildTime>
+    <BuildTime>25</BuildTime>
   </Cost>
   <Footprint>
     <Circle radius="2.0"/>
@@ -13,9 +13,6 @@
   <Identity>
     <GenericName>Hero Cavalry</GenericName>
     <VisibleClasses datatype="tokens">Cavalry</VisibleClasses>
-    <Formations datatype="tokens">
-      special/formations/wedge
-    </Formations>
   </Identity>
   <Position>
     <Anchor>pitch</Anchor>
@@ -32,16 +29,19 @@
   </Resistance>
   <Selectable>
     <Overlay>
-	  <Shape>
+      <Shape>
         <Circle radius="3"/>
-	  </Shape>
+      </Shape>
     </Overlay>
   </Selectable>
   <StatusBars>
     <HeightOffset>6.5</HeightOffset>
   </StatusBars>
   <UnitAI>
-	<CheeringTime>5000</CheeringTime>
+    <CheeringTime>5000</CheeringTime>
+    <Formations datatype="tokens">
+      special/formations/wedge
+    </Formations>
   </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">1.5</WalkSpeed>

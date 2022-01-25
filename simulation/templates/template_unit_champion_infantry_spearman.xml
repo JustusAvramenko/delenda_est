@@ -1,33 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion_infantry">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>6</Hack>
-        <Pierce>5</Pierce>
-        <Crush>6</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Melee>
       <AttackName>Spear</AttackName>
       <Damage>
-	    <Hack>15</Hack>
+        <Hack>15</Hack>
         <Pierce>0</Pierce>
         <Crush>0</Crush>
       </Damage>
       <MaxRange>4</MaxRange>
-	  <PrepareTime>500</PrepareTime>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
       <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
-	  <Bonuses>
-		<BonusCavMelee>
-		  <Classes>Cavalry</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusCavMelee>
-	  </Bonuses>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
     </Melee>
   </Attack>
   <Cost>
@@ -41,10 +32,21 @@
     <Tooltip>Traits: Medium Speed, Medium Armor, Medium Attack.
 Strong Against: All Cavalry (1.5x).
 Weak Against: Ranged Units, Sword Infantry.</Tooltip>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>6</Hack>
+        <Pierce>5</Pierce>
+        <Crush>6</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitAI>
     <Formations datatype="tokens">
       special/formations/testudo
     </Formations>
-  </Identity>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.75</WalkSpeed>
   </UnitMotion>

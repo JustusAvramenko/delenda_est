@@ -3,7 +3,7 @@
   <Attack>
     <Ranged>
       <Damage>
-	    <Hack>0.0</Hack>
+        <Hack>0.0</Hack>
         <Pierce>5.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
@@ -19,7 +19,7 @@
   <Cost>
     <BuildTime>10</BuildTime>
     <Population>1</Population>
-	<Resources>
+    <Resources>
       <food>60</food>
       <wood>0</wood>
     </Resources>
@@ -32,10 +32,9 @@
     <SpecificName>Xiongnu Woman</SpecificName>
     <Icon>units/xion/support_citizen_female.png</Icon>
     <SelectionGroupName>units/xion/support_citizen_female</SelectionGroupName>
-	<Phenotype>female</Phenotype>
+    <Phenotype>female</Phenotype>
     <Classes datatype="tokens">FemaleCitizen Worker Civilian IdleWorker</Classes>
     <VisibleClasses datatype="tokens">Citizen Worker</VisibleClasses>
-    <Formations disable=""/>
   </Identity>
   <Promotion disable=""/>
   <RangeOverlayRenderer/>
@@ -68,6 +67,9 @@
       <trained>interface/alarm/alarm_create_female.xml</trained>
     </SoundGroups>
   </Sound>
+  <UnitAI>
+    <Formations disable=""/>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.8</WalkSpeed>
   </UnitMotion>

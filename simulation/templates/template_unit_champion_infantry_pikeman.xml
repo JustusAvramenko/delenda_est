@@ -4,21 +4,21 @@
     <Melee>
       <AttackName>Pike</AttackName>
       <Damage>
-	    <Hack>20</Hack>
+        <Hack>20</Hack>
         <Pierce>0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
       <MaxRange>7</MaxRange>
-	  <PrepareTime>1000</PrepareTime>
+      <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
       <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
-	  <Bonuses>
-		<BonusCavMelee>
-		  <Classes>Cavalry</Classes>
-		  <Multiplier>2.0</Multiplier>
-		</BonusCavMelee>
-	  </Bonuses>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
     </Melee>
   </Attack>
   <Auras datatype="tokens">
@@ -35,9 +35,6 @@
     <Tooltip>Traits: Slow Speed, Heavy Armor, Weak Attack.
 Strong Against: All Cavalry (2x).
 Weak Against: Ranged Units, Sword Infantry.</Tooltip>
-    <Formations datatype="tokens">
-      special/formations/syntagma
-    </Formations>
   </Identity>
   <Resistance>
     <Entity>
@@ -48,6 +45,11 @@ Weak Against: Ranged Units, Sword Infantry.</Tooltip>
       </Damage>
     </Entity>
   </Resistance>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/syntagma
+    </Formations>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.7</WalkSpeed>
   </UnitMotion>

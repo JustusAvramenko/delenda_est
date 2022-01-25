@@ -32,7 +32,6 @@
 	</Classes>
     <Icon>structures/military_settlement.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
-	<Formations disable=""/>
   </Identity>
   <Position>
     <Anchor>pitch</Anchor>
@@ -40,7 +39,7 @@
   </Position>
   <ResourceDropsite>
     <Types>food wood stone metal</Types>
-	<Sharable>true</Sharable>
+    <Sharable>true</Sharable>
   </ResourceDropsite>
   <Selectable replace="">
     <Overlay>
@@ -66,6 +65,11 @@
   <TrainingRestrictions>
     <Category>Packed_Civic_Center</Category>
   </TrainingRestrictions>
+  <UnitAI>
+    <CanPatrol>false</CanPatrol>
+    <CanGuard>false</CanGuard>
+    <Formations disable=""/>
+  </UnitAI>
   <UnitMotion>
     <FormationController>false</FormationController>
     <WalkSpeed>4.0</WalkSpeed>
@@ -78,10 +82,6 @@
       <RequiredTechnology>phase_village</RequiredTechnology>
     </Unpack>
   </Upgrade>
-  <UnitAI>
-	<CanPatrol>false</CanPatrol>
-    <CanGuard>false</CanGuard>
-  </UnitAI>
   <Vision>
     <Range>50</Range>
   </Vision>

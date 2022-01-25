@@ -15,7 +15,7 @@
   </Cost>
   <Decay>
     <Active>false</Active>
-	<SinkingAnim>false</SinkingAnim>
+    <SinkingAnim>false</SinkingAnim>
     <DelayTime>45.0</DelayTime>
     <SinkRate>0.01</SinkRate>
     <SinkAccel>0.01</SinkAccel>
@@ -38,15 +38,8 @@
   <Identity>
     <Civ>gaia</Civ>
     <GenericName>Unit</GenericName>
-	<Phenotype datatype="tokens">male</Phenotype>
+    <Phenotype datatype="tokens">male</Phenotype>
     <Classes datatype="tokens">Unit ConquestCritical</Classes>
-    <Formations datatype="tokens">
-	  special/formations/null
-	  special/formations/line_closed
-	  special/formations/line_open
-      special/formations/box
-	  special/formations/column_closed
-    </Formations>
     <Undeletable>false</Undeletable>
   </Identity>
   <Looter/>
@@ -112,8 +105,8 @@
       <attacked_gaia>interface/alarm/alarm_attacked_gaia.xml</attacked_gaia>
       <attacked_capture>interface/alarm/alarm_attackplayer.xml</attacked_capture>
       <attacked_capture_gaia>interface/alarm/alarm_attacked_gaia.xml</attacked_capture_gaia>
-	  <attack_slaughter>attack/weapon/sword.xml</attack_slaughter>
-	  <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <attack_slaughter>attack/weapon/sword.xml</attack_slaughter>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
       <order_collect_treasure>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_collect_treasure>
       <build>resource/construction/con_wood.xml</build>
       <invalid_building_placement>interface/alarm/alarm_invalid_building_placement.xml</invalid_building_placement>
@@ -133,9 +126,16 @@
     <FleeDistance>12.0</FleeDistance>
     <FormationController>false</FormationController>
     <CanGuard>true</CanGuard>
-	<CanPatrol>true</CanPatrol>
-	<PatrolWaitTime>1</PatrolWaitTime>
-	<CheeringTime>4000</CheeringTime>
+    <CanPatrol>true</CanPatrol>
+    <PatrolWaitTime>1</PatrolWaitTime>
+    <CheeringTime>4000</CheeringTime>
+    <Formations datatype="tokens">
+	  special/formations/null
+	  special/formations/line_closed
+	  special/formations/line_open
+      special/formations/box
+	  special/formations/column_closed
+    </Formations>
   </UnitAI>
   <UnitMotion>
     <FormationController>false</FormationController>
@@ -146,17 +146,17 @@
     <Acceleration>18</Acceleration>
   </UnitMotion>
   <Visibility>
-	<RetainInFog>false</RetainInFog>
-	<AlwaysVisible>false</AlwaysVisible>
-	<Corpse>false</Corpse>
-	<Preview>false</Preview>
+    <RetainInFog>false</RetainInFog>
+    <AlwaysVisible>false</AlwaysVisible>
+    <Corpse>false</Corpse>
+    <Preview>false</Preview>
   </Visibility>
   <Vision>
     <Range>10</Range>
   </Vision>
-  <VisionSharing> 
-    <Bribable>false</Bribable> 
-  </VisionSharing> 
+  <VisionSharing>
+    <Bribable>false</Bribable>
+  </VisionSharing>
   <VisualActor>
     <SilhouetteDisplay>true</SilhouetteDisplay>
     <SilhouetteOccluder>false</SilhouetteOccluder>

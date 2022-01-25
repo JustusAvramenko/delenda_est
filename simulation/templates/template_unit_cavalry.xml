@@ -6,7 +6,7 @@
       <Capture>5</Capture>
       <MaxRange>4</MaxRange>
       <RepeatTime>2000</RepeatTime>
-	  <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
     </Capture>
     <Slaughter>
       <AttackName>Slaughter</AttackName>
@@ -37,10 +37,7 @@
     <VisibleClasses datatype="tokens">Cavalry Horse Citizen Soldier</VisibleClasses>
     <GenericName>Cavalry</GenericName>
     <Rank>Basic</Rank>
-    <Formations datatype="tokens">
-      special/formations/wedge
-    </Formations>
-	<RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <Loot>
     <xp>150</xp>
@@ -84,13 +81,13 @@
       <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
       <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
       <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
-	  <order_attack_move>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack_move>
+      <order_attack_move>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack_move>
       <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
       <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
-	  <attack_impact_ranged>attack/impact/impact_arrow_all.xml</attack_impact_ranged>
-	  <attack_melee>attack/weapon/sword.xml</attack_melee>
-	  <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
-	  <gather_meat>resource/gathering/gather_meat.xml</gather_meat>
+      <attack_impact_ranged>attack/impact/impact_arrow_all.xml</attack_impact_ranged>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
+      <gather_meat>resource/gathering/gather_meat.xml</gather_meat>
       <death>actor/fauna/death/death_horse.xml</death>
       <trained>interface/alarm/alarm_create_cav.xml</trained>
     </SoundGroups>
@@ -99,12 +96,15 @@
     <HeightOffset>6.5</HeightOffset>
   </StatusBars>
   <UnitAI>
-	<CheeringTime>5000</CheeringTime>
+    <CheeringTime>5000</CheeringTime>
+    <Formations datatype="tokens">
+      special/formations/wedge
+    </Formations>
   </UnitAI>
   <Vision>
     <Range>50</Range>
   </Vision>
-  <VisionSharing> 
-    <Bribable>true</Bribable> 
-  </VisionSharing> 
+  <VisionSharing>
+    <Bribable>true</Bribable>
+  </VisionSharing>
 </Entity>

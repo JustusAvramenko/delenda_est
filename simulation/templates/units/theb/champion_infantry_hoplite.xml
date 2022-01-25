@@ -2,47 +2,49 @@
 <Entity parent="template_unit_champion_infantry_hoplite">
   <Attack>
     <Melee>
-	  <Bonuses>
-		<BonusSpartans>
-		  <Civ>spart</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusSpartans>
-		<BonusAthenians>
-		  <Civ>athen</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusAthenians>
-		<BonusThebans>
-		  <Civ>theb</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusThebans>
-		<BonusHellenes>
-		  <Civ>hele</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusHellenes>
-		<BonusEpirotes>
-		  <Civ>epir</Civ>
-		  <Classes></Classes>
-		  <Multiplier>1.1</Multiplier>
-		</BonusEpirotes>
-	  </Bonuses>
+      <Bonuses>
+        <BonusSpartans>
+          <Civ>spart</Civ>
+          <Classes/>
+          <Multiplier>1.1</Multiplier>
+        </BonusSpartans>
+        <BonusAthenians>
+          <Civ>athen</Civ>
+          <Classes/>
+          <Multiplier>1.1</Multiplier>
+        </BonusAthenians>
+        <BonusThebans>
+          <Civ>theb</Civ>
+          <Classes/>
+          <Multiplier>1.1</Multiplier>
+        </BonusThebans>
+        <BonusHellenes>
+          <Civ>hele</Civ>
+          <Classes/>
+          <Multiplier>1.1</Multiplier>
+        </BonusHellenes>
+        <BonusEpirotes>
+          <Civ>epir</Civ>
+          <Classes/>
+          <Multiplier>1.1</Multiplier>
+        </BonusEpirotes>
+      </Bonuses>
     </Melee>
   </Attack>
   <Identity>
     <Civ>theb</Civ>
-	<Lang>greek</Lang>
-	<SpecificName>Theban Sacred Band Hoplite</SpecificName>
+    <Lang>greek</Lang>
+    <SpecificName>Theban Sacred Band Hoplite</SpecificName>
     <VisibleClasses datatype="tokens">Hoplite</VisibleClasses>
     <Tooltip>Strong Against: All Cavalry (1.25x), Greek Units (1.1x).
 Weak Against: Ranged Units, Sword Infantry.</Tooltip>
     <Icon>units/theb/champion_infantry_hoplite.png</Icon>
+  </Identity>
+  <UnitAI>
     <Formations datatype="tokens">
       special/formations/phalanx
     </Formations>
-  </Identity>
+  </UnitAI>
   <VisualActor>
     <Actor>units/thebans/champion_infantry_spear.xml</Actor>
   </VisualActor>

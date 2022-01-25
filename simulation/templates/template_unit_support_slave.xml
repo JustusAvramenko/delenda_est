@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>0</Hack>
-        <Pierce>0</Pierce>
-        <Crush>0</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Capturable>
     <CapturePoints>25</CapturePoints>
     <RegenRate>0</RegenRate>
@@ -31,21 +22,29 @@
   </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Gatherer Slave</VisibleClasses>
-	<Classes datatype="tokens">Worker IdleWorker</Classes>
-	<Phenotype datatype="tokens">
+    <Classes datatype="tokens">Worker IdleWorker</Classes>
+    <Phenotype datatype="tokens">
 	  female
 	  male
 	</Phenotype>
     <GenericName>Slave</GenericName>
-	<SelectionGroupName>units/{civ}/support_slave</SelectionGroupName>
-	<Tooltip>A cheap and very good gatherer unit who cannot build buildings. 
+    <SelectionGroupName>units/{civ}/support_slave</SelectionGroupName>
+    <Tooltip>A cheap and very good gatherer unit who cannot build buildings. 
 Traits: Low Cost, Low Health, Slow Speed, Capturable, No Attack.
 Good at: Gathering Resources and Defecting.
 Bad at: Defense and Loyalty.</Tooltip>
     <Icon>units/misc/slave.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
-	<Formations disable=""/>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.5</BaseSpeed>
@@ -96,6 +95,9 @@ Bad at: Defense and Loyalty.</Tooltip>
     <Category>Slave</Category>
   </TrainingRestrictions>
   <TreasureCollector disable=""/>
+  <UnitAI>
+    <Formations disable=""/>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.7</WalkSpeed>
   </UnitMotion>

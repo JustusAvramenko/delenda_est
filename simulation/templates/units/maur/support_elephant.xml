@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="builder|template_unit_support">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>5</Hack>
-        <Pierce>8</Pierce>
-        <Crush>10</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Auras datatype="tokens">
     units/elephant_fear
   </Auras>
@@ -32,7 +23,6 @@
     <SpecificName>Indian Worker Elephant</SpecificName>
     <Icon>units/maur/support_elephant.png</Icon>
     <Tooltip>Mobile dropsite. Can also assist in constructing buildings.</Tooltip>
-    <Formations disable=""/>
   </Identity>
   <Loot>
     <xp>50</xp>
@@ -47,9 +37,18 @@
     <Anchor>pitch</Anchor>
     <TurnRate>2</TurnRate>
   </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <ResourceDropsite>
     <Types>food wood stone metal</Types>
-	<Sharable>false</Sharable>
+    <Sharable>false</Sharable>
   </ResourceDropsite>
   <Selectable>
     <Overlay>
@@ -72,9 +71,12 @@
   <StatusBars>
     <HeightOffset>9.5</HeightOffset>
   </StatusBars>
+  <UnitAI>
+    <Formations disable=""/>
+  </UnitAI>
   <UnitMotion>
     <PassabilityClass>large</PassabilityClass>
-	<WalkSpeed>6.0</WalkSpeed>
+    <WalkSpeed>6.0</WalkSpeed>
   </UnitMotion>
   <Vision>
     <Range>40</Range>

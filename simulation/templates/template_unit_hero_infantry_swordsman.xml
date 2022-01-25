@@ -4,24 +4,24 @@
     <Melee>
       <AttackName>Sword</AttackName>
       <Damage>
-	    <Hack>25</Hack>
+        <Hack>25</Hack>
         <Pierce>0</Pierce>
         <Crush>0</Crush>
       </Damage>
       <MaxRange>3</MaxRange>
-	  <PrepareTime>500</PrepareTime>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
-	  <Bonuses>
-		<BonusAllInfantry>
-		  <Classes>Infantry</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusAllInfantry>
-		<BonusElephant>
-		  <Classes>Elephant</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusElephant>
-	  </Bonuses>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <Bonuses>
+        <BonusAllInfantry>
+          <Classes>Infantry</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusAllInfantry>
+        <BonusElephant>
+          <Classes>Elephant</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusElephant>
+      </Bonuses>
+      <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
       <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
     </Melee>
   </Attack>
@@ -31,9 +31,6 @@
     <Tooltip>Traits: Medium Speed, Heavy Armor, High Attack.
 Strong Against: All Infantry (1.5x), Elephants (1.5x).
 Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.</Tooltip>
-    <Formations datatype="tokens">
-      special/formations/testudo
-    </Formations>
   </Identity>
   <Resistance>
     <Entity>
@@ -44,6 +41,11 @@ Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.</Tooltip>
       </Damage>
     </Entity>
   </Resistance>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/testudo
+    </Formations>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.9</WalkSpeed>
   </UnitMotion>

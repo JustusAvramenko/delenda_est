@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Damage>
+        <Hack>16</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+      <MaxRange>3</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+      <Bonuses>
+        <BonusPrimary>
+          <Classes>Infantry</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusPrimary>
+        <BonusSecondary>
+          <Classes>Elephant</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusSecondary>
+      </Bonuses>
+    </Melee>
+  </Attack>
+  <Identity>
+    <VisibleClasses datatype="tokens">Melee Sword</VisibleClasses>
+    <GenericName>Champion Sword Infantry</GenericName>
+    <Tooltip>Traits: Medium Speed, Medium Armor, High Attack.
+Strong Against: All Infantry (1.5x), Elephants (1.5x).
+Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.</Tooltip>
+  </Identity>
   <Resistance>
     <Entity>
       <Damage>
@@ -9,41 +41,11 @@
       </Damage>
     </Entity>
   </Resistance>
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-	    <Hack>16</Hack>
-        <Pierce>0</Pierce>
-        <Crush>0</Crush>
-      </Damage>
-      <MaxRange>3</MaxRange>
-	  <PrepareTime>500</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
-      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
-	  <Bonuses>
-		<BonusPrimary>
-		  <Classes>Infantry</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusPrimary>
-		<BonusSecondary>
-		  <Classes>Elephant</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusSecondary>
-	  </Bonuses>
-    </Melee>
-  </Attack>
-  <Identity>
-    <VisibleClasses datatype="tokens">Melee Sword</VisibleClasses>
-    <GenericName>Champion Sword Infantry</GenericName>
-    <Tooltip>Traits: Medium Speed, Medium Armor, High Attack.
-Strong Against: All Infantry (1.5x), Elephants (1.5x).
-Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.</Tooltip>
+  <UnitAI>
     <Formations datatype="tokens">
       special/formations/testudo
     </Formations>
-  </Identity>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed op="mul">0.8</WalkSpeed>
   </UnitMotion>
