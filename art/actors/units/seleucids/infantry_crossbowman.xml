@@ -5,7 +5,6 @@
     <variant file="biped/base_archer_gastraphetes_relax.xml">
       <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/helmets/ptol_romanized_crest.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/gastraphetes.xml" attachpoint="weapon_L"/>
         <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_01_L"/>
@@ -14,32 +13,31 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="armor-ptol_agema_padded_1_a">
+    <variant frequency="1" name="Helmet-hele_thracian_a8">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_a8.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ptol_padded_thureophoroi_01">
       <textures>
-        <texture file="skeletal/ptol_agema_padded_1_a.png" name="baseTex"/>
-        <texture file="skeletal/ptol_thureophoros_e_1_spec.png" name="specTex"/>
+        <texture file="skeletal/ptol_padded_thureophoroi_01.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="armor-ptol_agema_padded_1_b">
+    <variant frequency="1" name="ptol_padded_thureophoroi_02">
       <textures>
-        <texture file="skeletal/ptol_agema_padded_1_b.png" name="baseTex"/>
-        <texture file="skeletal/ptol_thureophoros_e_1_spec.png" name="specTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="armor-ptol_agema_padded_1_c">
-      <textures>
-        <texture file="skeletal/ptol_agema_padded_1_c.png" name="baseTex"/>
-        <texture file="skeletal/ptol_thureophoros_e_1_spec.png" name="specTex"/>
+        <texture file="skeletal/ptol_padded_thureophoroi_02.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
-	  <variant file="biped/attack_ranged_gastraphetes_fire.xml"/>
+	<variant file="biped/attack_ranged_gastraphetes_fire.xml"/>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans_spec.xml</material>
+  <material>player_trans.xml</material>
 </actor>

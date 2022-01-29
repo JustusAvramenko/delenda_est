@@ -2,7 +2,7 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="biped/base_pikeman_relax.xml">
+    <variant frequency="1" name="Base">
       <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_egyptian_e.xml" attachpoint="head"/>
@@ -14,19 +14,31 @@
     </variant>
   </group>
   <group>
+    <variant frequency="1" name="Tunic-Machimoi-01">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/ptol_tunic_machimoi_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Tunic-Machimoi-02">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/ptol_tunic_machimoi_02.png" name="baseTex"/>
+      </textures>
+    </variant>
     <variant frequency="1" name="Tunic 1">
       <textures>
-        <texture file="skeletal/ptol_tunic_1.png" name="baseTex"/>
+        <texture file="skeletal/ptol/tunic_01.png" name="baseTex"/>
       </textures>
     </variant>
     <variant frequency="1" name="Tunic 2">
       <textures>
-        <texture file="skeletal/ptol_tunic_2.png" name="baseTex"/>
+        <texture file="skeletal/ptol/tunic_02.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Idle"/>
+    <variant file="biped/base_pikeman_relax.xml" frequency="1" name="Pikeman-Shield-Relax"/>
     <variant file="biped/formations/syntagma_front.xml"/>
     <variant file="biped/formations/syntagma_01.xml"/>
     <variant file="biped/formations/syntagma_02.xml"/>
