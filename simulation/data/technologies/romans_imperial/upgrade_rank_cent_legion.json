@@ -5,13 +5,23 @@
 		"imp": "Primus Pilus"
 	},
 	"description": "Reduce the experience required to upgrade to Centurion.",
-	"cost": {"glory": 600, "coin": 600},
-	"requirements": {"all": [{"tech": "phase_imperial"}, {"civ": "imp"}]},
+	"cost": {
+		"glory": 600,
+		"coin": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{"civ": "imp"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires Elite Legionary Swordsman.",
 	"icon": "primus_pilus.png",
 	"researchTime": 60,
-	"tooltip": "Reduce the experience required for Elite Roman Legionnaires to gain promotion to Centurion from 300 to 150.",
-	"modifications": [{"value": "Promotion/RequiredXp", "replace": 150}],
+	"tooltip": "Elite Roman Legionnaires -50% experience needed for promotion to Centurion.",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 150 }
+	],
 	"affects": ["Legion Sword Elite"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

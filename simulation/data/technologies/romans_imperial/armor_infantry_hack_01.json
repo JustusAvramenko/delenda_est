@@ -5,12 +5,15 @@
 		"imp": "Ocreae"
 	},
 	"description": "Bronze or iron greaves, which are pieces of armor covering the shins.",
-	"cost": {"wood": 200, "metal": 200},
+	"cost": {
+		"glory": 300,
+		"metal": 300
+	},
 	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
 	"requirementsTooltip": "Unlocked in City Phase. Requires Forging or Metallurgy",
 	"icon": "armor_greaves.png",
 	"researchTime": 60,
-	"tooltip": "Spear and sword infantry +1 hack armor, but -10% speed.",
+	"tooltip": "Melee Infantry +1 hack armor, but -10% speed.",
 	"modifications": [
 		{"value": "Resistance/Entity/Damage/Hack", "add": 1.0},
 		{"value": "UnitMotion/WalkSpeed", "multiply": 0.90},

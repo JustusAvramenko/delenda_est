@@ -1,0 +1,21 @@
+{
+	"genericName": "Cataphract Armor",
+	"description": "Metal armor for a horse's body.",
+	"cost": {
+		"glory": 900,
+		"metal": 900
+	},
+	"requirements": {
+		"tech": "phase_imperial"
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "armor_cataphract.png",
+	"researchTime": 80,
+	"tooltip": "Melee Cavalry +2 hack armor, +1 pierce armor.",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 2 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 }
+	],
+	"affects": ["Melee Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
