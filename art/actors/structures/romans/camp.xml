@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Roman Army Camp" file="structures/defensive_building.xml">
+      <mesh>structural/rome_camp_palisade.dae</mesh>
+      <props>
+        <prop actor="props/special/eyecandy/campfire_prop.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_struct2.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_tents.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_tentflaps.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_struct2_trans.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_7x7.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/gravel_5x5.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_turf.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="props/palisade_main.png" name="baseTex"/>
+        <texture file="props/palisade_main_norm.png" name="normTex"/>
+        <texture file="props/palisade_main_spec.png" name="specTex"/>
+        <texture file="structural/ao/rome_camp_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned"/>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned2"/>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned3"/>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned4"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_large.xml">
+      <props>
+        <prop actor="props/special/eyecandy/campfire_prop.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_struct2.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_tents.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_tentflaps.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_struct2_trans.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_turf.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="upgrading">
+      <props>
+        <prop actor="props/structures/construction/scaf_10x12_mausoleum.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+        <prop actor="props/special/eyecandy/campfire_prop.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_struct2.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_tents.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_tentflaps.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_struct2_trans.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_7x7.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/gravel_5x5.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/camp_turf.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
