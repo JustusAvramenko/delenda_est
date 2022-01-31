@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/imp/forge">
+  <Identity>
+    <SpecificName>Imperialis Forensis</SpecificName>
+    <GenericName>Imperial Foundry</GenericName>
+  </Identity>
+  <Researcher disable=""/>
+  <ResourceTrickle>
+    <Rates>
+      <metal>20</metal>
+    </Rates>
+    <Interval>5000</Interval>
+  </ResourceTrickle>
+  <Upgrade>
+    <Tower>
+      <Entity>structures/{civ}/forge</Entity>
+      <Tooltip>Reverting the Foundry back into a Forge allows for researching more Technologies.</Tooltip>
+      <RequiredTechnology>phase_imperial</RequiredTechnology>
+      <Cost>
+        <glory>200</glory>
+      </Cost>
+      <Time>30</Time>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/romans/blacksmith.xml</Actor>
+  </VisualActor>
+</Entity>
