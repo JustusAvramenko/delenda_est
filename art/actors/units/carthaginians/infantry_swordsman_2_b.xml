@@ -9,6 +9,9 @@
         <prop actor="props/units/shields/samn_scutum_basic.xml" attachpoint="shield"/>
         <prop actor="props/units/weapons/xiphos.xml" attachpoint="weapon_R"/>
       </props>
+      <textures>
+        <texture file="skeletal/ital/tunic_belt_spec.png" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -39,26 +42,6 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Tunic-1">
-      <textures>
-	    <texture file="skeletal/kart_csp_b_1.dds" name="baseTex"/>
-	  </textures>
-    </variant>
-    <variant frequency="1" name="Tunic-2">
-      <textures>
-	    <texture file="skeletal/kart_csp_b_2.dds" name="baseTex"/>
-	  </textures>
-    </variant>
-    <variant frequency="1" name="Tunic-3">
-      <textures>
-	    <texture file="skeletal/kart_csp_b_3.dds" name="baseTex"/>
-	  </textures>
-    </variant>
-    <variant frequency="1" name="Tunic-4">
-      <textures>
-	    <texture file="skeletal/kart_csp_b_4.dds" name="baseTex"/>
-	  </textures>
-    </variant>
     <variant frequency="1" name="tunic_pattern_01_a">
       <textures>
 	    <texture file="skeletal/ital/tunic_pattern_01_a.png" name="baseTex"/>
@@ -106,5 +89,5 @@
     <variant file="biped/carry_metal.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
