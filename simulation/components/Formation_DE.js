@@ -1,13 +1,9 @@
-Formation.prototype.LoadFormation = function(newTemplate)
+Formation.prototype.OnGlobalOwnershipChanged = function(msg)
 {
-	const newFormation = ChangeEntityTemplate(this.entity, newTemplate);
-	let cmpVisual = Engine.QueryInterface(newFormation, IID_Visual);
-	if (cmpVisual)
-	{
-		const cmpNewOwnership = Engine.QueryInterface(newFormation, IID_Ownership);
-		const player = cmpNewOwnership.GetOwner();
-		const civ = QueryPlayerIDInterface(player).GetCiv();
-		cmpVisual.SetVariant("animationVariant", civ);
-	}
-	return Engine.QueryInterface(newFormation, IID_UnitAI);
+	// When an entity is captured or destroyed, it should no longer be
+	// controlled by this formation.
+	if (this.members.indexOf(msg.entity) != -1)
+		this.RemoveMembers([msg.entity]);
+	if (msg.entity === this.entity && msg.to > -1)
+		Engine.QueryInterface(this.entity, IID_Visual)?.SetVariant("animationVariant", QueryPlayerIDInterface(msg.to, IID_Identity).GetCiv());
 };
