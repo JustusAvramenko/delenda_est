@@ -244,6 +244,15 @@
 	<SharedLosTech>unlock_shared_los</SharedLosTech>
 	<SharedDropsitesTech>unlock_shared_dropsites</SharedDropsitesTech>
 	<SpyCostMultiplier>1.0</SpyCostMultiplier>
+    <Formations datatype="tokens">
+      special/formations/null
+      special/formations/line_closed
+      special/formations/line_open
+      special/formations/box
+      special/formations/column_open
+      special/formations/column_closed
+      special/formations/wedge
+    </Formations>
   </Player>
   <ResourceTrickle>
     <Rates>
@@ -267,9 +276,8 @@
   <StatisticsTracker>
 	<!-- The summary screen and lobby rankings expect these classes, but additional classes may be added -->
 	<UnitClasses datatype="tokens">
+		Villager
 		Infantry
-		Worker
-		FemaleCitizen
 		Cavalry
 		Champion
 		Mercenary
