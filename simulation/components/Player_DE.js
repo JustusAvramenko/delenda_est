@@ -6,8 +6,6 @@ var panelEntityClasses = "Hero Relic Minister"; // << THIS HAS CHANGED.
 Player.prototype.Init = function()
 {
 	this.playerID = undefined;
-	this.name = undefined;	// Define defaults elsewhere (supporting other languages).
-	this.civ = undefined;
 	this.color = undefined;
 	this.diplomacyColor = undefined;
 	this.displayDiplomacyColor = false;
@@ -23,7 +21,7 @@ Player.prototype.Init = function()
 	this.state = "active"; // Game state. One of "active", "defeated", "won".
 	this.diplomacy = [];	// Array of diplomatic stances for this player with respect to other players (including gaia and self).
 	this.sharedDropsites = false;
-	this.formations = [];
+	this.formations = this.template.Formations._string.split(" ");
 	this.startCam = undefined;
 	this.controlAllUnits = false;
 	this.isAI = false;
