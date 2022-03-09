@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_elephant_driver_relax_shield_sele.xml" frequency="100" name="Base">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/arab_round_b.xml" attachpoint="shield_arm"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="head-knot">
+      <props>
+        <prop actor="props/units/heads/new/head_indian_a.xml" attachpoint="head"/>
+      </props>
+    </variant>
+    <variant frequency="5" name="turban">
+      <props>
+        <prop actor="props/units/heads/new/head_maur_short_hair.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/maur_inf_turban.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="helmet">
+      <props>
+        <prop actor="props/units/heads/new/head_maur_short_hair.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/maur_helmet_metal_plyr.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="texture">
+      <textures>
+        <texture file="skeletal/maur_iar_e.png" name="baseTex"/>
+        <texture file="skeletal/maur_isp_e_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="leather straps">
+      <textures>
+        <texture file="skeletal/maur_iar_a.png" name="baseTex"/>
+        <texture file="skeletal/maur_iar_a_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="leather straps+arm bands">
+      <textures>
+        <texture file="skeletal/maur_isp_e.png" name="baseTex"/>
+        <texture file="skeletal/maur_isp_e_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="bare chest">
+      <textures>
+        <texture file="skeletal/maur_isp_b.png" name="baseTex"/>
+        <texture file="skeletal/maur_isp_b_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>
