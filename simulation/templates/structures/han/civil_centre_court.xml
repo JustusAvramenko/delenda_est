@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/han/civil_centre">
+  <BuildRestrictions>
+    <Category>ImperialCourt</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints op="mul">1.5</CapturePoints>
+  </Capturable>
+  <GarrisonHolder>
+    <Max op="mul">1.5</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max op="mul">1.5</Max>
+  </Health>
+  <Identity>
+    <Civ>han</Civ>
+    <GenericName>Imperial Court</GenericName>
+    <SpecificName>Cháotíng</SpecificName>
+    <VisibleClasses datatype="tokens">Defensive ImperialCourt City</VisibleClasses>
+    <Classes datatype="tokens">CivCentre CivSpecific</Classes>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Icon>structures/military_settlement.png</Icon>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+	  health_units_01
+	  health_units_02
+	  health_units_03
+    </Technologies>
+  </Researcher>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>structures/han/imperial_court.xml</Actor>
+  </VisualActor>
+</Entity>

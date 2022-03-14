@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_resource_field_cash">
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <wood>60</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square depth="22.0" width="22.0"/>
+    <Height>2.0</Height>
+  </Footprint>
   <Identity>
     <Civ>han</Civ>
-    <GenericName>Rice Paddy</GenericName>
     <SpecificName>Dàotián</SpecificName>
+    <GenericName>Rice Paddy</GenericName>
+    <Tooltip>Build in neutral or own territory to harvest cash crops for coin. Build on farmland terrain to gain a +100% farming boost. There is a diminishing return effect where it is more efficient to use fewer gatherers per field. Max gatherers: 3.</Tooltip>
   </Identity>
+  <Obstruction>
+    <Static depth="20.0" width="20.0"/>
+  </Obstruction>
+  <ResourceSupply>
+    <MaxGatherers>3</MaxGatherers>
+    <DiminishingReturns>0.90</DiminishingReturns>
+  </ResourceSupply>
   <VisualActor>
-    <Actor>structures/chinese_han/plot_rice.xml</Actor>
+    <Actor>structures/rice_paddy.xml</Actor>
+    <FoundationActor>props/structures/decals/rice_paddy_6x6.xml</FoundationActor>
   </VisualActor>
 </Entity>

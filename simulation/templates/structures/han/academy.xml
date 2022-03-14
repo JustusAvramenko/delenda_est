@@ -6,7 +6,7 @@
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
-      <stone>200</stone>
+      <stone>300</stone>
       <metal>200</metal>
     </Resources>
   </Cost>
@@ -19,7 +19,7 @@
   </GarrisonHolder>
   <Health>
     <Max>1500</Max>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>han</Civ>
@@ -46,29 +46,19 @@
     </SoundGroups>
   </Sound>
   <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
       -units/{civ}/infantry_spearman_b
       -units/{civ}/infantry_pikeman_b
       -units/{civ}/infantry_swordsman_b
-      units/{civ}/champion_infantry
       units/{civ}/champion_infantry_spearman
-      units/{civ}/champion_infantry_pikeman
-      units/{civ}/champion_infantry_maceman
-      units/{civ}/champion_infantry_axeman
-      units/{civ}/champion_infantry_swordsman
-      units/{civ}/champion_infantry_javelineer
-      units/{civ}/champion_infantry_slinger
       units/{civ}/champion_infantry_archer
-      units/{civ}/champion_cavalry
       units/{civ}/champion_cavalry_spearman
       units/{civ}/champion_cavalry_crossbowman  
       units/{civ}/champion_chariot
-      units/{civ}/war_dog
     </Entities>
   </Trainer>
   <VisualActor>
-    <Actor>structures/chinese_han/academy.xml</Actor>
+    <Actor>structures/han/academy.xml</Actor>
     <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
   </VisualActor>
 </Entity>

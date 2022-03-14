@@ -26,11 +26,22 @@
   <TerritoryInfluence>
     <Radius>30</Radius>
   </TerritoryInfluence>
-  <Upgrade disable=""/>
+  <Upgrade>
+    <Tower>
+      <Entity>structures/{civ}/defense_tower_great</Entity>
+      <Tooltip>This tower has greater range, greater attack, and greater health.</Tooltip>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <stone>200</stone>
+      </Cost>
+      <Time>30</Time>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
   <Vision>
     <Range>70</Range>
   </Vision>
   <VisualActor>
-    <Actor>structures/chinese_han/tower.xml</Actor>
+    <Actor>structures/han/tower_large.xml</Actor>
   </VisualActor>
 </Entity>

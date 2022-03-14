@@ -2,70 +2,62 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant>
-      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_armor_pants_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/weapons/spatha.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/sheath_celt_iron_e.xml" attachpoint="sheath_01_R"/>
+        <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/capes/cape_long_gaul.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Shield basic">
-	  <props>
-        <prop actor="props/units/shields/ptol_thureos_galatian_b.xml" attachpoint="shield"/>
-	  </props>
-    </variant>
-    <variant frequency="1" name="Shield advanced">
-	  <props>
-        <prop actor="props/units/shields/ptol_thureos_galatian_a.xml" attachpoint="shield"/>
-	  </props>
-    </variant>
-    <variant frequency="1" name="Shield elite">
-	  <props>
-        <prop actor="props/units/shields/ptol_thureos_galatian_e.xml" attachpoint="shield"/>
-	  </props>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="2" name="Limed Hair">
-	  <props>
-        <prop actor="props/units/heads/new/head_lime.xml" attachpoint="head"/>
-	  </props>
-    </variant>
-    <variant frequency="2" name="Regular Hair">
-	  <props>
-        <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
-	  </props>
-    </variant>
     <variant frequency="1" name="Celtic Montefortino Helmet-01">
       <props>
         <prop actor="props/units/helmets/celt_helmet_montefortino_01.xml" attachpoint="helmet"/>
-        <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
       </props>
     </variant>
     <variant frequency="1" name="Celtic Montefortino Helmet-02">
       <props>
         <prop actor="props/units/helmets/celt_helmet_montefortino_02.xml" attachpoint="helmet"/>
-        <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
       </props>
     </variant>
     <variant frequency="1" name="Celtic Montefortino Helmet-03">
       <props>
         <prop actor="props/units/helmets/celt_helmet_montefortino_03.xml" attachpoint="helmet"/>
-        <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
       </props>
     </variant>
-    <variant frequency="1" name="Celtic Ciumesti Helmet-01">
+    <variant frequency="1" name="Celtic Berru Helmet-01">
       <props>
-        <prop actor="props/units/helmets/celt_helmet_ciumesti_01.xml" attachpoint="helmet"/>
-        <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/celt_helmet_berru_01.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="1" name="Celtic Ciumesti Helmet-02">
+    <variant frequency="1" name="Celtic Berru Helmet-02">
       <props>
-        <prop actor="props/units/helmets/celt_helmet_ciumesti_02.xml" attachpoint="helmet"/>
-        <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/celt_helmet_berru_02.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celtic Berru Helmet-03">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_berru_03.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Celt-Shield-A-Boss">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_cav_sw_oval_a_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celt-Shield-B-Boss">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_oval_b_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celt-Shield-C-Boss">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_oval_c_02.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
@@ -73,83 +65,61 @@
     <variant frequency="1" name="chainmail-2a">
       <mesh>skeletal/new/m_armor_pants.dae</mesh>
       <textures>
-        <texture file="skeletal/celt_chainmail_2_a.png" name="baseTex"/>
+        <texture file="skeletal/celt/chainmail_02_01.png" name="baseTex"/>
+        <texture file="skeletal/celt/chainmail_02_spec.png" name="specTex"/>
       </textures>
     </variant>
     <variant frequency="1" name="chainmail-2b">
       <mesh>skeletal/new/m_armor_pants.dae</mesh>
       <textures>
-        <texture file="skeletal/celt_chainmail_2_b.png" name="baseTex"/>
+        <texture file="skeletal/celt/chainmail_04_02.png" name="baseTex"/>
+        <texture file="skeletal/celt/chainmail_04_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="chainmail-2c">
-      <mesh>skeletal/new/m_armor_pants.dae</mesh>
+    <variant frequency="3" name="Gallic-Linothorax-01-01">
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
       <textures>
-        <texture file="skeletal/celt_chainmail_2_c.png" name="baseTex"/>
+        <texture file="skeletal/gaul/linothorax_01_01.png" name="baseTex"/>
+        <texture file="skeletal/gaul/linothorax_01_01_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="chainmail-3a">
+    <variant frequency="1" name="Gallic-Tunic-Noble-01-01">
       <textures>
-        <texture file="skeletal/celt_chainmail_3_a.png" name="baseTex"/>
+        <texture file="skeletal/gaul/tunic_noble_01_01.png" name="baseTex"/>
+        <texture file="skeletal/no_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="chainmail-3b">
+    <variant frequency="1" name="Gallic-Tunic-Noble-01-02">
       <textures>
-        <texture file="skeletal/celt_chainmail_3_b.png" name="baseTex"/>
+        <texture file="skeletal/gaul/tunic_noble_01_02.png" name="baseTex"/>
+        <texture file="skeletal/no_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="chainmail-3c">
+    <variant frequency="1" name="Gallic-Tunic-Noble-01-03">
       <textures>
-        <texture file="skeletal/celt_chainmail_3_c.png" name="baseTex"/>
+        <texture file="skeletal/gaul/tunic_noble_01_03.png" name="baseTex"/>
+        <texture file="skeletal/no_spec.png" name="specTex"/>
       </textures>
-    </variant>
-    <variant frequency="1" name="Tattoos-1">
-      <mesh>skeletal/new/m_naked.dae</mesh>
-      <textures><texture file="skeletal/celt_ijv_e_01.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="Tattoos-2">
-      <mesh>skeletal/new/m_naked.dae</mesh>
-      <textures><texture file="skeletal/celt_ijv_e_02.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="Tattoos-3">
-      <mesh>skeletal/new/m_naked.dae</mesh>
-      <textures><texture file="skeletal/kart_isw_a_01.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="Tattoos-4">
-      <mesh>skeletal/new/m_naked.dae</mesh>
-      <textures><texture file="skeletal/kart_isw_a_02.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="Trousers-1">
-      <mesh>skeletal/new/m_pants.dae</mesh>
-      <textures><texture file="skeletal/kart_isw_a_03.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="Trousers-2">
-      <mesh>skeletal/new/m_pants.dae</mesh>
-      <textures><texture file="skeletal/kart_isw_a_04.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="Trousers-3">
-      <mesh>skeletal/new/m_pants.dae</mesh>
-      <textures><texture file="skeletal/kart_isw_a_05.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="Pants-1">
-      <mesh>skeletal/new/m_pants.dae</mesh>
-      <textures><texture file="skeletal/celt_ijv_a_01.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="Pants-2">
-      <mesh>skeletal/new/m_pants.dae</mesh>
-      <textures><texture file="skeletal/celt_ijv_a_02.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="Pants-3">
-      <mesh>skeletal/new/m_pants.dae</mesh>
-      <textures><texture file="skeletal/celt_ijv_a_03.dds" name="baseTex"/></textures>
-    </variant>
-    <variant frequency="1" name="Pants-4">
-      <mesh>skeletal/new/m_pants.dae</mesh>
-      <textures><texture file="skeletal/celt_ijv_a_04.dds" name="baseTex"/></textures>
     </variant>
   </group>
   <group>
-    <variant file="biped/base_swordsman_shield_relax_celt.xml" name="Swordsman-Shield-Relax" frequency="1"/>
+    <variant file="biped/base_swordsman_shield_relax_celt.xml" name="Swordsman-Shield-Relax"/>
+    <variant file="biped/carry_food.xml"/>
+    <variant file="biped/carry_meat.xml"/>
+    <variant file="biped/carry_wood.xml"/>
+    <variant file="biped/carry_stone.xml"/>
+    <variant file="biped/carry_metal.xml"/>
+    <variant file="biped/approach_tree.xml"/>
+    <variant file="biped/approach_grain.xml"/>
+    <variant file="biped/approach_fruit.xml"/>
+    <variant file="biped/approach_meat.xml"/>
+    <variant file="biped/approach_rock.xml"/>
+    <variant file="biped/approach_ore.xml"/>
+    <variant file="biped/approach_ruins.xml"/>
+    <variant file="biped/approach_praise.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/gather_tree.xml"/>
@@ -162,16 +132,7 @@
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/build.xml"/>
     <variant file="biped/build_farm.xml"/>
-    <variant file="biped/carry_food.xml"/>
-    <variant file="biped/carry_meat.xml"/>
-    <variant file="biped/carry_wood.xml"/>
-    <variant file="biped/carry_stone.xml"/>
-    <variant file="biped/carry_metal.xml"/>
-    <variant file="biped/death_infantry.xml">
-      <props>
-        <prop actor="props/units/capes/cape_long_gaul.xml" attachpoint="root"/>
-      </props>
-	</variant>
+    <variant file="biped/death_cape_gaul.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>

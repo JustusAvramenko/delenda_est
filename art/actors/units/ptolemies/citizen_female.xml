@@ -5,19 +5,19 @@
     <variant>
       <mesh>skeletal/new/f_dress.dae</mesh>
       <props>
-        <prop actor="props/units/heads/head_ptol_fem.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/head_ptol_fem.xml" attachpoint="head"/>
         <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="helmet"/>
       </props>
       <textures>
-        <texture file="skeletal/ptol_fem_1.png" name="baseTex"/>
-        <texture file="skeletal/hele_fem_f_spec.png" name="specTex"/>
+        <texture file="skeletal/ptol/dress_female_01.png" name="baseTex"/>
+        <texture file="skeletal/hele/dress_female_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
   <group>
+    <!-- In this group, defined overloads for "Idle", "Walk" and "Run" -->
     <variant file="biped/female_base_walk.xml"/>
     <variant file="biped/female_carry_food.xml"/>
-    <variant file="biped/female_carry_crops.xml"/>
     <variant file="biped/female_carry_meat.xml"/>
     <variant file="biped/female_carry_wood.xml"/>
     <variant file="biped/female_carry_stone.xml"/>
@@ -32,13 +32,13 @@
     <variant file="biped/approach_praise.xml"/>
   </group>
   <group>
+    <!-- In this group, define overloads for other animation types, since they presumably do not collide with each other -->
     <variant name="Idle" frequency="1"/>
     <variant file="biped/attack_melee_female.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/female_death.xml"/>
     <variant file="biped/female_gather_tree.xml"/>
     <variant file="biped/female_gather_grain.xml"/>
-    <variant file="biped/female_gather_crops.xml"/>
     <variant file="biped/female_gather_fruit.xml"/>
     <variant file="biped/female_gather_meat.xml"/>
     <variant file="biped/female_gather_rock.xml"/>

@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
   <Footprint>
-    <Square width="43.0" depth="35.0"/>
+    <Square depth="35.0" width="43.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">Minister</List>
+  </GarrisonHolder>
   <Identity>
     <Civ>han</Civ>
-    <SpecificName>Gōngmín Zhōngxīn</SpecificName>
+    <SpecificName>Gōngdiàn</SpecificName>
   </Identity>
   <Obstruction>
-    <Static width="41.0" depth="33.0"/>
+    <Static depth="33.0" width="41.0"/>
   </Obstruction>
   <Researcher>
     <Technologies datatype="tokens">
@@ -21,19 +24,20 @@
     </Technologies>
   </Researcher>
   <Upgrade>
-    <FortifiedCivicCenter>
-      <Entity>structures/han/civil_centre_fortified</Entity>
+    <ImperialCourt>
+      <Entity>structures/han/civil_centre_court</Entity>
       <Tooltip>Greatly increase the health, capture resistance, and garrison capacity of this Civic Center.</Tooltip>
-      <RequiredTechnology>phase_imperial</RequiredTechnology>
+      <RequiredTechnology>phase_city</RequiredTechnology>
       <Cost>
-        <stone>200</stone>
-        <wood>200</wood>
+        <stone>300</stone>
+        <wood>300</wood>
       </Cost>
       <Time>30</Time>
-    </FortifiedCivicCenter>
+      <Variant>upgrading</Variant>
+    </ImperialCourt>
   </Upgrade>
   <VisualActor>
     <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
-    <Actor>structures/chinese_han/civil_centre_no_towers.xml</Actor>
+    <Actor>structures/han/civil_centre.xml</Actor>
   </VisualActor>
 </Entity>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_china.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/sheath/han_jian_sheath_left_d.xml" attachpoint="sheath_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="open_helmet">
+      <props>
+        <prop actor="props/units/helmets/han_heavy_cavalry_helmet.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="closed_helmet">
+      <props>
+        <prop actor="props/units/helmets/han_cavalry_spearman_helmet.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="han_ji">
+      <props>
+        <prop actor="props/units/weapons/spear/han_ji.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="han_halb">
+      <props>
+        <prop actor="props/units/weapons/spear/han_halb.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant file="clothes/han/uniform_e_01.xml"/>
+    <variant file="clothes/han/uniform_e_02.xml"/>
+    <variant file="clothes/han/uniform_e_03.xml"/>
+    <variant file="clothes/han/uniform_e_04.xml"/>
+  </group>
+  <group>
+    <variant file="biped/rider/cavalry/base_spearman_2h_fast_relax.xml" name="Spearman-2h-Fast-Relax" frequency="1"/>
+    <variant file="biped/rider/death_2h.xml"/>
+  </group>
+  <material>player_trans_spec.xml</material>
+</actor>

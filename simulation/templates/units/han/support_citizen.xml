@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support_citizen">
+  <Builder>
+    <Entities datatype="tokens">
+      -structures/wallset_palisade
+    </Entities>
+  </Builder>
   <Identity>
     <Civ>han</Civ>
     <SpecificName>Chinese Peasant</SpecificName>
@@ -7,6 +12,6 @@
     <SelectionGroupName>units/{civ}/support_citizen</SelectionGroupName>
   </Identity>
   <VisualActor>
-    <Actor>units/chinese_han/citizen_{phenotype}.xml</Actor>
+    <Actor>units/han/citizen_{phenotype}.xml</Actor>
   </VisualActor>
 </Entity>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_formation">
   <Formation>
-    <Icon>formations/testudo.png</Icon>
     <RequiredMemberCount>16</RequiredMemberCount>
     <DisabledTooltip>At least 16 melee infantry units required.</DisabledTooltip>
     <SortingClasses>Hero Champion Elite Advanced Basic</SortingClasses>
-    <FormationName>Testudo</FormationName>
     <FormationShape>square</FormationShape>
+    <MaxTurningAngle>0.785</MaxTurningAngle>
     <UnitSeparationWidthMultiplier>0.50</UnitSeparationWidthMultiplier>
     <UnitSeparationDepthMultiplier>0.50</UnitSeparationDepthMultiplier>
     <WidthDepthRatio>0.8</WidthDepthRatio>
@@ -25,6 +24,10 @@
   <FormationAttack>
     <CanAttackAsFormation>false</CanAttackAsFormation>
   </FormationAttack>
+  <Identity>
+    <GenericName>Testudo</GenericName>
+    <Icon>formations/testudo.png</Icon>
+  </Identity>
   <Position>
     <TurnRate>1</TurnRate>
   </Position>

@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee_spearman">
-  <Attack>
-    <Melee>
-      <AttackName>Halberd</AttackName>
-      <MaxRange>7</MaxRange>
-    </Melee>
-  </Attack>
+  <Builder>
+    <Entities datatype="tokens">
+      -structures/wallset_palisade
+    </Entities>
+  </Builder>
   <Identity>
     <Civ>han</Civ>
     <SelectionGroupName>units/han/infantry_spearman_b</SelectionGroupName>
-    <SpecificName>Chinese Levy Halberdier</SpecificName>
+    <SpecificName>Máo Bīng</SpecificName>
     <Icon>units/han/infantry_spearman.png</Icon>
   </Identity>
   <Promotion>
     <Entity>units/han/infantry_spearman_a</Entity>
   </Promotion>
+  <VisualActor>
+    <Actor>units/han/infantry_spearman_b.xml</Actor>
+  </VisualActor>
   <UnitAI>
     <Formations datatype="tokens">
       special/formations/anti_cavalry
     </Formations>
   </UnitAI>
-  <VisualActor>
-    <Actor>units/chinese_han/infantry_spearman_b.xml</Actor>
-  </VisualActor>
 </Entity>
