@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_iber_adv.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/iber_round_small_01_all.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="iber_helmet_01">
+      <props>
+        <prop actor="props/units/helmets/iber_helmet_01.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/head_iber_isl_b.xml" attachpoint="head"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="iber_helmet_02">
+      <props>
+        <prop actor="props/units/helmets/iber_helmet_02.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/head_iber_isl_b.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Iber-Padded-Quilted-Slinger-01-01">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/iber/padded_quilted_slinger_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Padded-Quilted-Slinger-01-02">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/iber/padded_quilted_slinger_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Padded-Quilted-Slinger-01-03">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/iber/padded_quilted_slinger_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Padded-Quilted-Slinger-02-01">
+      <textures>
+        <texture file="skeletal/iber/padded_quilted_slinger_02_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Padded-Quilted-Slinger-02-02">
+      <textures>
+        <texture file="skeletal/iber/padded_quilted_slinger_02_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Padded-Quilted-Slinger-02-03">
+      <textures>
+        <texture file="skeletal/iber/padded_quilted_slinger_02_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic_slinger_01_01">
+      <textures>
+        <texture file="skeletal/iber/tunic_slinger_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic_slinger_01_02">
+      <textures>
+        <texture file="skeletal/iber/tunic_slinger_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-sleeveless-slinger-1a">
+      <textures>
+        <texture file="skeletal/iber/tunic_sleeveless_slinger_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-sleeveless-slinger-1b">
+      <textures>
+        <texture file="skeletal/iber/tunic_sleeveless_slinger_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-sleeveless-slinger-1c">
+      <textures>
+        <texture file="skeletal/iber/tunic_sleeveless_slinger_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-sleeveless-slinger-1d">
+      <textures>
+        <texture file="skeletal/iber/tunic_sleeveless_slinger_01_04.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_slinger_ready.xml"/>
+    <variant file="biped/carry_food.xml"/>
+    <variant file="biped/carry_meat.xml"/>
+    <variant file="biped/carry_wood.xml"/>
+    <variant file="biped/carry_stone.xml"/>
+    <variant file="biped/carry_metal.xml"/>
+    <variant file="biped/approach_tree.xml"/>
+    <variant file="biped/approach_grain.xml"/>
+    <variant file="biped/approach_fruit.xml"/>
+    <variant file="biped/approach_meat.xml"/>
+    <variant file="biped/approach_rock.xml"/>
+    <variant file="biped/approach_ore.xml"/>
+    <variant file="biped/approach_ruins.xml"/>
+    <variant file="biped/approach_praise.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/attack_ranged_slinger.xml"/>
+    <variant file="biped/gather_tree.xml"/>
+    <variant file="biped/gather_grain.xml"/>
+    <variant file="biped/gather_fruit.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/gather_rock.xml"/>
+    <variant file="biped/gather_ore.xml"/>
+    <variant file="biped/gather_ruins.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

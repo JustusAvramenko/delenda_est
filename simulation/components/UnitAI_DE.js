@@ -56,7 +56,7 @@ UnitAI.prototype.AttackEntitiesByPreference = function(ents)
 			return true;
 
 		let cmpUnitAI = Engine.QueryInterface(e, IID_UnitAI);
-		return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // << This has changed. Stops units from auto-attacking animals, such as lions.
+		return cmpUnitAI && !cmpUnitAI.IsAnimal(); // << This has changed. Stops units from auto-attacking animals, such as lions.
 	};
 
 	let entsByPreferences = {};
