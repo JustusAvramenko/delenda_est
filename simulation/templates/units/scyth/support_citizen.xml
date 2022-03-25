@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support_citizen">
+  <Attack replace="">
+    <Ranged>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>10.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>30.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Projectile>
+        <Speed>50.0</Speed>
+        <Spread>2.0</Spread>
+        <Gravity>30.0</Gravity>
+		<FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
+      <Bonuses>
+        <Hunting>
+          <Classes>Animal</Classes>
+          <Multiplier>2</Multiplier>
+        </Hunting>
+      </Bonuses>
+    </Ranged>
+  </Attack>
   <Builder>
     <Entities datatype="tokens">
       -structures/wallset_palisade

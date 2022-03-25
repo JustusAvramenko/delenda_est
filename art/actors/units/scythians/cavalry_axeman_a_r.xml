@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_armor_pants.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_pers_a.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/pers_kidaris_loose.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/axe_sagaris.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/pelta_scyth_elite_bronze.xml" attachpoint="shield_arm"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="pers_isp_a_linothorax_1b">
+      <textures>
+        <texture file="skeletal/pers/linothorax_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="pers_isp_a_linothorax_1c">
+      <textures>
+        <texture file="skeletal/pers/linothorax_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="pers_isp_a_linothorax_1f">
+      <textures>
+        <texture file="skeletal/pers/linothorax_01_06.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="pers_isp_a_padded_1b">
+      <textures>
+        <texture file="skeletal/pers/padded_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="pers_isp_a_padded_1i">
+      <textures>
+        <texture file="skeletal/pers/padded_01_09.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/rider/cavalry/base_swordsman_relax_shield.xml" frequency="1" name="Swordsman-Relax-Shield"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/promotion_shield.xml"/>
+    <variant file="biped/rider/attack_slaughter_shield_pers.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/rider/death_shield.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

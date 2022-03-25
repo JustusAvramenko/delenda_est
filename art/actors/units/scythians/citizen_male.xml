@@ -7,6 +7,7 @@
       <props>
         <prop actor="props/units/heads/new/head_thrace.xml" attachpoint="head"/>
         <prop actor="props/units/helmets/hele_thracian_cap_player.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/xion_quiver_cloth_cavalry_left.xml" attachpoint="sheath_L"/>
       </props>
     </variant>
   </group>
@@ -51,12 +52,21 @@
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_ranged_archer_hip.xml">
+      <props>
+        <prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_bow"/>
+      </props>
+	</variant>
     <variant file="biped/attack_melee_female.xml">
       <props>
         <prop actor="props/units/weapons/xion_axe.xml" attachpoint="weapon_R"/>
       </props>
 	</variant>
-    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/attack_slaughter.xml">
+      <props>
+        <prop actor="props/units/weapons/xion_axe.xml" attachpoint="weapon_R"/>
+      </props>
+	</variant>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/gather_tree.xml"/>
     <variant file="biped/gather_grain.xml"/>
