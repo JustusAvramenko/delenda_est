@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_spart_a.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/aspis_spart_skiritai.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_02_L"/>
+        <prop actor="props/units/weapons/spear_lance_cavalry_reverse.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Hele Illyrian Helmet-01">
+      <props>
+        <prop actor="props/units/helmets/hele_illyrian_b1_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Illyrian Helmet-02">
+      <props>
+        <prop actor="props/units/helmets/hele_illyrian_b2_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hele Illyrian Helmet-03">
+      <props>
+        <prop actor="props/units/helmets/hele_illyrian_b3_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="epilektoi-7">
+      <textures>
+        <texture file="skeletal/athen/epilektos_07.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="epilektoi-8">
+      <textures>
+        <texture file="skeletal/athen/epilektos_08.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="epilektoi-9">
+      <textures>
+        <texture file="skeletal/athen/epilektos_09.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="epilektoi-10">
+      <textures>
+        <texture file="skeletal/athen/epilektos_10.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_spearman_shield_ready.xml" name="Spearman-Shield-Ready" frequency="1"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/formations/phalanx_front.xml"/>
+    <variant file="biped/formations/phalanx_mid.xml"/>
+    <variant file="biped/formations/phalanx_back.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

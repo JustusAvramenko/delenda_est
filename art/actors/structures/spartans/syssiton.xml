@@ -2,7 +2,7 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="Greek Syssiton Special Building">
+    <variant frequency="0" name="Greek Syssiton Special Building">
       <mesh>structural/spart_sissyton_struct.dae</mesh>
       <props>
         <prop actor="props/structures/spartans/sissyton_decor.xml" attachpoint="root"/>
@@ -21,6 +21,11 @@
     <variant frequency="1" name="Spart Syssiton Special Building">
       <mesh>structural/spart_syssiton_2.dae</mesh>
       <props>
+        <prop actor="props/units/shields/aspis_lambda_02.xml" attachpoint="shield_rf"/>
+        <prop actor="props/units/shields/aspis_lambda_02.xml" attachpoint="shield_rr"/>
+        <prop actor="props/units/shields/aspis_lambda_01.xml" attachpoint="shield_lf"/>
+        <prop actor="props/units/shields/aspis_lambda_01.xml" attachpoint="shield_lr"/>
+        <prop actor="props/units/shields/aspis_spart_d.xml" attachpoint="shield_back"/>
         <prop actor="props/structures/decals/dirt_5x8.xml" attachpoint="root"/>
       </props>
       <textures>
@@ -41,18 +46,7 @@
   </group>
   <group>
     <variant frequency="1" name="alive"/>
-    <variant name="death">
-      <props>
-        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
-        <prop actor="props/structures/spartans/sissyton_decor.xml" attachpoint="root"/>
-        <prop actor="props/structures/spartans/sissyton_props_a.xml" attachpoint="root"/>
-        <prop actor="props/structures/spartans/sissyton_shields.xml" attachpoint="root"/>
-        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
-        <prop actor="props/structures/spartans/sissyton_tile_b.xml" attachpoint="root"/>
-      </props>
-    </variant>
+    <variant file="structures/destruction_medium.xml"/>
   </group>
   <material>player_trans_ao_parallax_spec.xml</material>
 </actor>
