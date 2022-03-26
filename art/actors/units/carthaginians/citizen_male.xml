@@ -4,60 +4,41 @@
   <group>
     <variant file="biped/base_slave_male.xml">
       <mesh>skeletal/new/m_tunic_short.dae</mesh>
-      <props>
-        <prop actor="props/units/heads/new/head_pers_a.xml" attachpoint="head"/>
-      </props>
-      <textures>
-        <texture file="skeletal/kart_support_citizen.png" name="baseTex"/>
-		<texture file="skeletal/imp/support_citizen_spec.png" name="specTex"/>
-      </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Tunic-Sleeveless-a">
+    <variant name="head_pers_a">
+      <props>
+        <prop actor="props/units/heads/new/head_pers_a.xml" attachpoint="head"/>
+      </props>
+    </variant>
+    <variant name="head_pers_b">
+      <props>
+        <prop actor="props/units/heads/new/head_pers_b.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="tunic_01_01">
+      <mesh>skeletal/new/m_dress.dae</mesh>
       <textures>
-	    <texture file="skeletal/hele_tunic_2_a.png" name="baseTex"/>
+	    <texture file="skeletal/cart/toga_citizen_01.png" name="baseTex"/>
 	  </textures>
     </variant>
-    <variant frequency="1" name="Tunic-Sleeveless-b">
+    <variant frequency="1" name="tunic_01_01">
       <textures>
-	    <texture file="skeletal/hele_tunic_2_b.png" name="baseTex"/>
+	    <texture file="skeletal/cart/tunic_01_01.png" name="baseTex"/>
 	  </textures>
     </variant>
-    <variant frequency="1" name="Tunic-Sleeveless-c">
+    <variant frequency="1" name="tunic_01_02">
       <textures>
-	    <texture file="skeletal/hele_tunic_2_c.png" name="baseTex"/>
+	    <texture file="skeletal/cart/tunic_01_02.png" name="baseTex"/>
 	  </textures>
     </variant>
-    <variant frequency="1" name="Tunic-1a">
+    <variant frequency="1" name="tunic_01_03">
       <textures>
-        <texture file="skeletal/cart_tunic_1_a.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Tunic-1b">
-      <textures>
-        <texture file="skeletal/cart_tunic_1_b.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Tunic-1c">
-      <textures>
-        <texture file="skeletal/cart_tunic_1_c.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Tunic-Sleeveless-1a">
-      <textures>
-        <texture file="skeletal/cart_tunic_sleeveless_1_a.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Tunic-Sleeveless-1b">
-      <textures>
-        <texture file="skeletal/cart_tunic_sleeveless_1_b.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Tunic-Sleeveless-1c">
-      <textures>
-        <texture file="skeletal/cart_tunic_sleeveless_1_c.png" name="baseTex"/>
-      </textures>
+	    <texture file="skeletal/cart/tunic_01_03.png" name="baseTex"/>
+	  </textures>
     </variant>
   </group>
   <group>
@@ -95,5 +76,5 @@
     <variant file="biped/build_farm.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans_spec.xml</material>
+  <material>player_trans.xml</material>
 </actor>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_citizen_soldier.xml">
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_pers_b.xml" attachpoint="head"/>
+        <prop actor="props/units/tools/siege_lever.xml" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Helmets-Pilos-01">
+      <props>
+        <prop actor="props/units/helmets/hele_pilos.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmets-Boeotian-01">
+      <props>
+        <prop actor="props/units/helmets/hele_boeotian.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Pers Conical Helmet-01">
+      <props>
+        <prop actor="props/units/helmets/pers_conical_b1.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="tunic-1a">
+      <textures>
+        <texture file="skeletal/pers/tunic_advanced_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-1b">
+      <textures>
+        <texture file="skeletal/pers/tunic_advanced_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-1c">
+      <textures>
+        <texture file="skeletal/pers/tunic_advanced_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-1d">
+      <textures>
+        <texture file="skeletal/pers/tunic_advanced_01_04.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-1e">
+      <textures>
+        <texture file="skeletal/pers/tunic_advanced_01_05.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-1f">
+      <textures>
+        <texture file="skeletal/pers/tunic_advanced_01_06.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tunic-1g">
+      <textures>
+        <texture file="skeletal/pers/tunic_advanced_01_07.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_citizen_soldier.xml"/>
+    <variant file="biped/attack_ranged_lithobolos_med_02.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
