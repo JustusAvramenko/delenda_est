@@ -2,17 +2,14 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="palisade rocks outpost">
+    <variant frequency="100" name="palisade rocks outpost" file="structures/defensive_building.xml">
       <mesh>props/palisade_rocks_outpost.dae</mesh>
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <props>
         <prop actor="props/special/palisade_rocks_outpost_banners.xml" attachpoint="root"/>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="loaded-projectile"/>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
       </props>
-      <textures><texture file="props/palisade_main.png" name="baseTex"/></textures>
+      <textures>
+        <texture file="props/palisade_main.png" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>
