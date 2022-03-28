@@ -2,62 +2,68 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="Base">
-      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
-        <prop actor="props/units/helmets/old/hele_straw.xml" attachpoint="helmet"/>
-        <prop actor="props/units/weapons/jav_loaded.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/jav_ammo.xml" attachpoint="ammo"/>
-        <prop actor="props/units/capes/rider/cape_med_player.xml" attachpoint="root"/>
-        <prop actor="props/units/shields/aspis_kart_b.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/shields/aspis_athen_a.xml" attachpoint="shield"/>
       </props>
-      <textures><texture file="skeletal/hele_cjv_b_1.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="skeletal/ital/tunic_belt_spec.png" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="2" name="Hellenic-Straw">
+    <variant frequency="1" name="Straw hat">
       <props>
-        <prop actor="props/units/helmets/old/hele_straw.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmets/hele_straw_01.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="1" name="Samnite-Attic-01">
+    <variant frequency="1" name="Kausia cap">
       <props>
-        <prop actor="props/units/helmets/hele_attic_b1.xml" attachpoint="helmet"/>
-      </props>
-    </variant>
-    <variant frequency="1" name="Samnite-Attic-02">
-      <props>
-        <prop actor="props/units/helmets/hele_attic_b2.xml" attachpoint="helmet"/>
-      </props>
-    </variant>
-    <variant frequency="1" name="Samnite-Attic-03">
-      <props>
-        <prop actor="props/units/helmets/hele_attic_b3.xml" attachpoint="helmet"/>
-      </props>
-    </variant>
-    <variant frequency="1" name="Samnite-Attic-03">
-      <props>
-        <prop actor="props/units/helmets/hele_attic_b4.xml" attachpoint="helmet"/>
-      </props>
-    </variant>
-    <variant frequency="1" name="Rome-Montefortino-01">
-      <props>
-        <prop actor="props/units/helmets/rome_helmet_montefortino.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmets/hele_kausia_cap.xml" attachpoint="helmet"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant file="biped/rider/cavalry/base_javelin_relax.xml" name="Javelinist-Relax" frequency="1"/>
+    <variant name="ital-tunic-pattern-01-sleeveless-a">
+      <textures>
+        <texture file="skeletal/ital/tunic_pattern_01_sleeveless_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="ital-tunic-pattern-01-sleeveless-b">
+      <textures>
+        <texture file="skeletal/ital/tunic_pattern_01_sleeveless_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="ital-tunic-pattern-03-sleeveless-a">
+      <textures>
+        <texture file="skeletal/ital/tunic_pattern_03_sleeveless_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="ital-tunic-pattern-03-sleeveless-b">
+      <textures>
+        <texture file="skeletal/ital/tunic_pattern_03_sleeveless_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="ital-tunic-pattern-03-sleeveless-c">
+      <textures>
+        <texture file="skeletal/ital/tunic_pattern_03_sleeveless_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/rider/cavalry/base_javelin_relax.xml" frequency="1" name="Javelinist-Relax"/>
     <variant file="biped/rider/carry_meat.xml"/>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
     <variant file="biped/rider/cavalry/attack_ranged_javelin.xml"/>
-    <variant file="biped/rider/promotion_shield.xml" />
-    <variant file="biped/rider/attack_slaughter_shield_spart.xml"/>
+    <variant file="biped/rider/promotion_shield.xml"/>
+    <variant file="biped/rider/attack_slaughter_shield_rome.xml"/>
     <variant file="biped/gather_meat.xml"/>
     <variant file="biped/rider/death_ranged.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
