@@ -3,7 +3,6 @@
   <castshadow/>
   <group>
     <variant file="biped/base_archer_relax.xml">
-      <mesh>skeletal/new/m_dress.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_hele_e.xml" attachpoint="head"/>
         <prop actor="props/units/helmets/old/imp_archer_1.xml" attachpoint="helmet"/>
@@ -13,8 +12,22 @@
         <prop actor="props/units/quiver_greek_back.xml" attachpoint="back"/>
       </props>
       <textures>
-	    <texture file="skeletal/imp/armor_chain_02_01.png" name="baseTex"/>
-        <texture file="skeletal/imp/armor_chain_02_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="chain_02_01">
+      <mesh>skeletal/new/m_dress.dae</mesh>
+      <textures>
+	    <texture file="skeletal/imp/chain_02_01.png" name="baseTex"/>
+        <texture file="skeletal/imp/chain_02_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chain_01_01">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <textures>
+	    <texture file="skeletal/imp/chain_01_01.png" name="baseTex"/>
+        <texture file="skeletal/imp/chain_01_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>

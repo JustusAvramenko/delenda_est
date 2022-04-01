@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>3</Hack>
-        <Pierce>2</Pierce>
-        <Crush>4</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Attack>
     <Melee>
       <AttackName>Spear</AttackName>
@@ -33,6 +24,15 @@
 Strong Against: All Cavalry (1.5x).
 Weak Against: Ranged Units, Sword Infantry.</Tooltip>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>3</Hack>
+        <Pierce>2</Pierce>
+        <Crush>4</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <UnitMotion>
     <WalkSpeed op="mul">0.8</WalkSpeed>
   </UnitMotion>

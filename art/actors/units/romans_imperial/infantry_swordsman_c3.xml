@@ -6,26 +6,27 @@
       <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/rome_head_veteran.xml" attachpoint="head"/>
+		<prop actor="props/units/armor/rome_legion_shoulderpad_l.xml" attachpoint="shoulderpad_L"/>
+		<prop actor="props/units/armor/rome_legion_shoulderpad_r.xml" attachpoint="shoulderpad_R"/>
         <prop actor="props/units/weapons/gladius.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/rome_legion_shoulderpad_L.xml" attachpoint="shoulderpad_L"/>
-        <prop actor="props/units/rome_legion_shoulderpad_R.xml" attachpoint="shoulderpad_R"/>
+        <prop actor="props/units/weapons/sheath_gladius_e.xml" attachpoint="sheath_01_R"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Gallic-Type-F">
+    <variant frequency="1" name="rome_nieder_mormter_type_b">
       <props>
         <prop actor="props/units/helmets/rome_nieder_mormter_type_b.xml" attachpoint="helmet"/>
         <prop actor="props/units/helmets/props/rome_mask_01_bronze.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="1" name="Gallic-Type-B">
+    <variant frequency="1" name="rome_nieder_mormter_type_b">
       <props>
         <prop actor="props/units/helmets/rome_nieder_mormter_type_b.xml" attachpoint="helmet"/>
         <prop actor="props/units/helmets/props/rome_mask_01_iron.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="1" name="Gallic-Type-H">
+    <variant frequency="1" name="rome_gallic_type_h">
       <props>
         <prop actor="props/units/helmets/rome_gallic_type_h.xml" attachpoint="helmet"/>
         <prop actor="props/units/helmets/props/rome_mask_01_bronze.xml" attachpoint="helmet"/>
@@ -45,16 +46,16 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="lorica_segmentata_00_01">
-      <textures>
-        <texture file="skeletal/imp/lorica_segmentata_00_01.png" name="baseTex"/>
-	    <texture file="skeletal/imp/lorica_segmentata_00_spec.png" name="specTex"/>
-      </textures>
-    </variant>
     <variant frequency="1" name="lorica_segmentata_01_01">
       <textures>
         <texture file="skeletal/imp/lorica_segmentata_01_01.png" name="baseTex"/>
 	    <texture file="skeletal/imp/lorica_segmentata_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="lorica_segmentata_02_01">
+      <textures>
+        <texture file="skeletal/imp/lorica_segmentata_02_01.png" name="baseTex"/>
+	    <texture file="skeletal/imp/lorica_segmentata_02_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>

@@ -11,20 +11,29 @@
         <prop actor="props/units/capes/cape_boudicca.xml" attachpoint="root"/>
       </props>
       <textures>
-        <texture file="skeletal/celt_boudicca.dds" name="baseTex"/>
+        <texture file="skeletal/brit/hero_boudicca_01.dds" name="baseTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant file="biped/base_swordsman_shield_fast.xml" name="Swordsman-Shield-Relax-Fast" frequency="1"/>
-    <variant file="biped/carry_food.xml"/>
-    <variant file="biped/carry_meat.xml"/>
-    <variant file="biped/carry_wood.xml"/>
-    <variant file="biped/carry_stone.xml"/>
-    <variant file="biped/carry_metal.xml"/>
+    <variant frequency="3" name="Celt-Shield-Square-a-01">
+      <props>
+        <prop actor="props/units/shields/celt_shield_sq_a_01.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="2" name="Celt-Shield-Square-b-02">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_jav_sq_b_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="2" name="Celt-Shield-Oval-02">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_jav_oval_d_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
   </group>
   <group>
-    <variant frequency="1" name="Idle"/>
+    <variant file="biped/base_swordsman_shield_fast.xml" name="Swordsman-Shield-Relax-Fast" frequency="1"/>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/gather_praise.xml"/>
