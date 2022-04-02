@@ -1,0 +1,14 @@
+{
+    "type": "range",
+    "radius": 30,
+	"affectedPlayers": ["Enemy"],
+    "affects": ["Unit"],
+    "modifications": [
+	    {"value": "Attack/Melee/RepeatTime", "multiply": 1.05 },
+	    {"value": "Attack/Ranged/RepeatTime", "multiply": 1.05 },
+	    {"value": "UnitMotion/WalkSpeed", "multiply": 0.95 }
+    ],
+    "auraName": "Human Sacrifice",
+    "auraDescription": "Nearby Enemy Soldiers -5% attack rate and -5% movement speed.",
+	"overlayIcon": "art/textures/ui/session/auras/fear.png"
+}
