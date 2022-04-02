@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_trader.xml">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/backpack_celt.xml" attachpoint="back"/>
+        <prop actor="props/units/weapons/trader_staff.xml" attachpoint="weapon_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="germ_01_ponytails">
+      <props>
+        <prop actor="props/units/heads/germ_01_ponytails.xml" attachpoint="head"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="germ_02_beards">
+      <props>
+        <prop actor="props/units/heads/germ_02_beards.xml" attachpoint="head"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="germ_03_beards_ponytails">
+      <props>
+        <prop actor="props/units/heads/germ_03_beards_ponytails.xml" attachpoint="head"/>
+      </props>
+    </variant>
+    <variant frequency="2" name="germ_04_beards_knot">
+      <props>
+        <prop actor="props/units/heads/germ_04_beards_knot.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="footwraps1">
+      <textures>
+        <texture file="skeletal/germans/advanced/footwraps1.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="footwraps2">
+      <textures>
+        <texture file="skeletal/germans/advanced/footwraps2.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="footwraps3">
+      <textures>
+        <texture file="skeletal/germans/advanced/footwraps3.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
