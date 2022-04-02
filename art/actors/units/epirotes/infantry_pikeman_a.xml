@@ -3,7 +3,7 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="Base">
-      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/new/head_hele_b.xml" attachpoint="head"/>
         <prop actor="props/units/shields/epir_white_shield_pikeman_basic.xml" attachpoint="shield_arm"/>
@@ -11,6 +11,9 @@
         <prop actor="props/units/armor/greave_03_bronze_l.xml" attachpoint="leg_L"/>
         <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_02_L"/>
       </props>
+      <textures>
+        <texture file="skeletal/hele/linothorax_01_spec.png" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -41,14 +44,20 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Armour-Linen-Linothorax">
+    <variant frequency="1" name="linothorax_01_01">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
       <textures>
-	    <texture file="skeletal/mace_bronzeshield_2.png" name="baseTex"/>
+        <texture file="skeletal/sele/linothorax_01_01.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="Armour-Linen-Linothorax-1g">
+    <variant frequency="1" name="linothorax_01_02">
       <textures>
-        <texture file="skeletal/mace_linothorax_1_g.png" name="baseTex"/>
+        <texture file="skeletal/sele/linothorax_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="linothorax_01_03">
+      <textures>
+        <texture file="skeletal/sele/linothorax_01_03.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
@@ -67,5 +76,5 @@
     <variant file="biped/build_farm.xml"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_spec.xml</material>
 </actor>
