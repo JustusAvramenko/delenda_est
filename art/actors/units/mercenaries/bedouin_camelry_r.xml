@@ -2,13 +2,12 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant>
-      <mesh>skeletal/new/m_dress_sleeves.dae</mesh>
+    <variant frequency="100" name="Base">
+      <mesh>skeletal/new/m_dress.dae</mesh>
       <props>
-        <prop actor="props/units/helmets/arab_coif_swordsman_ready.xml" attachpoint="root"/>
-        <prop actor="props/units/heads/new/head_pers_b.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/spatha.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/shields/arab_round_01.xml" attachpoint="shield"/>
+        <prop actor="props/units/helmets/arab_coif_camelry_spearman_b.xml" attachpoint="root"/>
+        <prop actor="props/units/heads/new/head_pers_a.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
       </props>
     </variant>
   </group>
@@ -55,32 +54,10 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/base_swordsman_shield_ready.xml"/>
-    <variant file="biped/carry_food.xml"/>
-    <variant file="biped/carry_meat.xml"/>
-    <variant file="biped/carry_wood.xml"/>
-    <variant file="biped/carry_stone.xml"/>
-    <variant file="biped/carry_metal.xml"/>
-  </group>
-  <group>
-    <variant frequency="1" name="Idle"/>
-    <variant file="biped/attack_capture.xml"/>
-    <variant file="biped/attack_slaughter.xml"/>
-    <variant file="biped/gather_tree.xml"/>
-    <variant file="biped/gather_grain.xml"/>
-    <variant file="biped/gather_fruit.xml"/>
-    <variant file="biped/gather_meat.xml"/>
-    <variant file="biped/gather_rock.xml"/>
-    <variant file="biped/gather_ore.xml"/>
-    <variant file="biped/gather_ruins.xml"/>
-    <variant file="biped/gather_praise.xml"/>
-    <variant file="biped/build.xml"/>
-    <variant file="biped/build_farm.xml"/>
-    <variant file="biped/death_infantry.xml">
-      <props>
-        <prop actor="props/units/helmets/arab_coif_swordsman_ready.xml" attachpoint="root"/>
-      </props>
-    </variant>
+    <variant file="biped/rider/camelry/base_spearman_relax.xml" />
+    <variant file="biped/rider/camelry/promotion.xml" name="promotion"/>
+    <variant file="biped/rider/camelry/attack_slaughter.xml"/>
+    <variant file="biped/rider/camelry/gather_meat.xml"/>
   </group>
   <material>player_trans.xml</material>
 </actor>
