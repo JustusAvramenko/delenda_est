@@ -5,7 +5,6 @@
     <variant frequency="100" name="Base">
       <mesh>structural/pers_barracks.dae</mesh>
       <props>
-        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
         <prop actor="props/structures/persians/barracks.xml" attachpoint="root"/>
         <prop actor="props/structures/persians/barracks_shields.xml" attachpoint="root"/>
         <prop actor="props/units/shields/pers_taka_a.xml" attachpoint="shieldright"/>
@@ -14,6 +13,7 @@
         <prop actor="props/units/shields/pers_round_kardakes.xml" attachpoint="tableside"/>
         <prop actor="props/units/shields/pers_round_kardakes.xml" attachpoint="shieldtop"/>
         <prop actor="props/units/shields/pers_round_kardakes.xml" attachpoint="shieldoutside"/>
+        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
       </props>
       <textures>
         <texture file="structural/pers_struct.png" name="baseTex"/>
@@ -33,14 +33,10 @@
   </group>
   <group>
     <variant name="alive" frequency="1"/>
-    <variant name="death">
+    <variant file="structures/destruction_medium.xml">
       <props>
-        <prop attachpoint="garrisoned"/>
-        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
         <prop actor="props/structures/persians/barracks.xml" attachpoint="root"/>
-        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
+        <prop actor="props/structures/persians/barracks_shields.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>

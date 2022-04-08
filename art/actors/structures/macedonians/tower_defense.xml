@@ -2,16 +2,12 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="scout tower">
+    <variant frequency="1" name="Macedonian_Defense_Tower" file="structures/defensive_building.xml">
       <mesh>structural/hele_tower_artillery_1.dae</mesh>
       <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <props>
         <prop actor="props/structures/hellenes/tower_artillery_2.xml" attachpoint="root"/>
         <prop actor="props/structures/decals/spart_1x1.xml" attachpoint="root"/>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="loaded-projectile"/>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
       </props>
       <textures>
         <texture file="structural/hele_struct.dds" name="baseTex"/>
@@ -31,16 +27,7 @@
   </group>
   <group>
     <variant frequency="1" name="alive"/>
-    <variant name="death">
-      <props>
-        <prop attachpoint="garrisoned"/>
-        <prop actor="props/structures/hellenes/tower_artillery_2.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
-        <prop actor="props/structures/decals/dirt_1x1.xml" attachpoint="root"/>
-      </props>
-    </variant>
+    <variant file="structures/destruction_small.xml"/>
   </group>
   <material>player_trans_ao_parallax_spec.xml</material>
 </actor>

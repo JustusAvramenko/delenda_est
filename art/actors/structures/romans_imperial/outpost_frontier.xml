@@ -3,12 +3,8 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="Base">
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <mesh>structural/rome_scout_tower.dae</mesh>
       <props>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
         <prop actor="props/structures/decals/dirt_2x2.xml" attachpoint="root"/>
         <prop actor="props/units/shields/rome_parma_e.xml" attachpoint="shield2"/>
         <prop actor="props/units/shields/rome_parma_a.xml" attachpoint="shield3"/>
@@ -52,14 +48,11 @@
     </variant>
   </group>
   <group>
-	<variant name="alive" frequency="1"/>
-    <variant name="death">
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_small.xml">
       <props>
-        <prop attachpoint="garrisoned"/>
-        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
-        <prop actor="props/structures/decals/dirt_2x2.xml" attachpoint="root"/>
+        <prop actor="props/units/shields/rome_parma_e.xml" attachpoint="shield2"/>
+        <prop actor="props/units/shields/rome_parma_a.xml" attachpoint="shield3"/>
       </props>
     </variant>
   </group>

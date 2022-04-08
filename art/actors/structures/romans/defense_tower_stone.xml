@@ -2,14 +2,9 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="defense tower 1">
+    <variant frequency="1" name="Roman Defense Tower #1" file="structures/defensive_building.xml">
       <mesh>structural/rome_tower_artillery.dae</mesh>
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <props>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="loaded-projectile"/>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
         <prop actor="props/structures/decals/spart_1x1.xml" attachpoint="root"/>
       </props>
       <textures>
@@ -19,10 +14,9 @@
         <texture file="structural/ao/rome_tower_artillery_AO.png" name="aoTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="defense tower 2">
+    <variant frequency="1" name="Roman Defense Tower #2" file="structures/defensive_building.xml">
       <mesh>structural/rome_tower_bolt.dae</mesh>
       <props>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
         <prop actor="props/structures/decals/spart_1x1.xml" attachpoint="root"/>
       </props>
       <textures>
@@ -43,15 +37,7 @@
   </group>
   <group>
     <variant frequency="1" name="alive"/>
-    <variant name="death">
-      <props>
-        <prop attachpoint="garrisoned"/>
-        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
-        <prop actor="props/structures/decals/spart_1x1.xml" attachpoint="root"/>
-      </props>
-    </variant>
+    <variant file="structures/destruction_small.xml"/>
   </group>
   <material>player_trans_ao_parallax_spec.xml</material>
 </actor>
