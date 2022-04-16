@@ -1,10 +1,13 @@
 {
 	"genericName": "Archery Tradition",
 	"description": "Many cultures had a penchant for using massed archers in battle or an affinity for the bow.",
-	"cost": {"glory": 200, "wood": 200},
+	"cost": {
+		"wood": 300,
+		"glory": 200
+	},
 	"requirements": 
 		{ "all": [
-			{ "tech": "phase_village" }, 
+			{ "tech": "phase_town" }, 
 			{ "any": [
 				{ "civ": "maur" },
 				{ "civ": "pers" },
@@ -21,8 +24,8 @@
 	},
 	"requirementsTooltip": "Unlocked in Village Phase.",
 	"icon": "archery_tradition.png",
-	"researchTime": 60,
-	"tooltip": "Archery units +10% faster firing rate, -50% experience required to gain higher rank.",
+	"researchTime": 40,
+	"tooltip": "Archery units +10% faster firing rate, −50% experience required to gain higher rank.",
 	"modifications": [
 		{"value": "Attack/Ranged/RepeatTime", "multiply": 0.90},
 		{"value": "Promotion/RequiredXp", "multiply": 0.5}

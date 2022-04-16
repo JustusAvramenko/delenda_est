@@ -1,0 +1,33 @@
+{
+	"genericName": "Cavalry Tradition",
+	"description": "Some cultures are reknown for their skills as horsemen.",
+	"cost": {
+		"food": 300,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{
+				"any": [
+					{ "civ": "huns" },
+					{ "civ": "parth" },
+					{ "civ": "pers" },
+					{ "civ": "sass" },
+					{ "civ": "scyth" },
+					{ "civ": "xion" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "horse_rider.png",
+	"researchTime": 40,
+	"tooltip": "Cavalry +10% speed and −50% experience required for promotion. Unlocks \"Advanced Cavalry\" technology. Does not apply to Heroes or Champions.",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "Promotion/RequiredXp", "multiply": 0.5 }
+	],
+	"affects": ["Cavalry !Hero !Champion"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
