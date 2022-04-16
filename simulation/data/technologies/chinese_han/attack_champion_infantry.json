@@ -1,12 +1,15 @@
 {
 	"pair": "chinese_han/pair_champions_01",
+	"icon": "sword_cross.png",
 	"genericName": "Differential Quenching",
 	"description": ".",
 	"cost": {"glory": 400, "metal": 400},
 	"requirements": {"tech": "phase_city"},
 	"requirementsTooltip": "Unlocked in City Phase.",
-	"icon": "sword_cross.png",
-	"researchTime": 60,
-	"tooltip": "Champion Archers unlock weapon-switching ability, from bow to sword.",
+	"tooltip": "Palace Guard Spearmen +20% attack.",
+	"modifications": [
+		{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2}
+	],
+	"affects": ["Champion Spear Infantry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
