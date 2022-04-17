@@ -1,0 +1,27 @@
+{
+	"pair": "nomads/pair_02_01",
+	"genericName": "Quilted Body Armor",
+	"description": "Quilted linen or leather body armor for protection.",
+	"cost": {
+		"glory": 400,
+		"metal": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
+	"icon": "armor_quilted.png",
+	"researchTime": 60,
+	"tooltip": "All Units +1 hack armor level.",
+	"modifications": [
+		{"value": "Resistance/Entity/Damage/Hack", "add": 1.0}
+	],
+	"affects": ["Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

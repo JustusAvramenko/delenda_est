@@ -2,15 +2,10 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="Scythian Fortress">
+    <variant frequency="1" name="Scythian_Fortress" file="structures/defensive_building.xml">
       <mesh>structural/scyth_fortress.dae</mesh>
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <props>
-        <prop actor="props/structures/decals/dirt_8x8.xml" attachpoint="root"/>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="loaded-projectile"/>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
+        <prop actor="props/structures/decals/spart_5x5.xml" attachpoint="root"/>
       </props>
       <textures>
         <texture file="structural/Sele_struct_2.png" name="baseTex"/>
