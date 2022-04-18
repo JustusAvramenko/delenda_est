@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_axeman_shield_fast_relax.xml" frequency="1" name="ready"/>
+    <variant file="biped/base_swordsman_shield_relax.xml" frequency="1" name="relax"/>
+  </group>
+  <group>
+    <variant frequency="1" name="head_pers_b">
+      <props>
+        <prop actor="props/units/heads/new/head_pers_b.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/xion_axe.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="head_pers_a">
+      <props>
+        <prop actor="props/units/heads/new/head_pers_a.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/xion_axe.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="xion_shield_round_leather">
+      <props>
+        <prop actor="props/units/shields/xion_shield_round_leather.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="3" name="gerron_x">
+      <props>
+        <prop actor="props/units/shields/gerron_x.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="2" name="arab_round_01">
+      <props>
+        <prop actor="props/units/shields/arab_round_01.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="m_tunic_short">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+    </variant>
+    <variant frequency="1" name="m_tunic_long">
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Hat-Kidaris">
+      <props>
+        <prop actor="props/units/helmets/pers_kidaris_loose_all.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Hat-Thracian-Leather">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_cap_leather.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="tunic_coat_01_01">
+      <textures>
+	    <texture file="skeletal/pers/tunic_coat_01_01.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="tunic_coat_01_02">
+      <textures>
+	    <texture file="skeletal/pers/tunic_coat_01_02.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="tunic_coat_01_03">
+      <textures>
+	    <texture file="skeletal/pers/tunic_coat_01_03.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="tunic_coat_01_04">
+      <textures>
+	    <texture file="skeletal/pers/tunic_coat_01_04.png" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="tunic_coat_01_05">
+      <textures>
+	    <texture file="skeletal/pers/tunic_coat_01_05.png" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
