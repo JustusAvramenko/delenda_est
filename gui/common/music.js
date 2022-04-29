@@ -58,7 +58,7 @@ Music.prototype.resetTracks = function()
 		"PEACE": [],
 		"BATTLE": ["Taiko_1.ogg", "Taiko_2.ogg"],
 		"VICTORY": ["Going_Home.ogg"],
-		"DEFEAT": ["Tonight_We_Dine_In_Hell.ogg"],
+		"DEFEAT": ["The_Climb.ogg"],
 		"CUSTOM": []
 	};
 };
