@@ -49,7 +49,11 @@
     </variant>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/gather_praise.xml"/>
-    <variant file="biped/death_infantry.xml"/>
+    <variant file="biped/death_infantry.xml">
+      <props>
+        <prop actor="particle/hero_death.xml" attachpoint="root"/>
+      </props>
+	</variant>
   </group>
   <material>player_trans_spec.xml</material>
 </actor>
