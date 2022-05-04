@@ -3,7 +3,7 @@
   <Attack>
     <Ranged>
       <Damage>
-        <Crush>120.0</Crush>
+        <Crush op="mul">2</Crush>
       </Damage>
       <MaxRange>96.0</MaxRange>
       <MinRange>40.0</MinRange>
@@ -18,7 +18,6 @@
           <Pierce>0.0</Pierce>
           <Crush>50.0</Crush>
         </Damage>
-        <Range>15</Range>
       </Splash>
     </Ranged>
   </Attack>
@@ -26,18 +25,22 @@
     <Category>GreatBallista</Category>
   </BuildRestrictions>
   <Capturable>
-    <CapturePoints>500</CapturePoints>
+    <CapturePoints>600</CapturePoints>
   </Capturable>
   <Cost>
     <BuildTime>90</BuildTime>
     <Population>5</Population>
     <Resources>
-      <wood>300</wood>
+      <wood>400</wood>
       <stone>200</stone>
     </Resources>
   </Cost>
+  <Footprint replace="">
+    <Square width="8" depth="16"/>
+    <Height>8</Height>
+  </Footprint>
   <Health>
-    <Max>500</Max>
+    <Max>600</Max>
   </Health>
   <Identity>
     <Civ>rome</Civ>
