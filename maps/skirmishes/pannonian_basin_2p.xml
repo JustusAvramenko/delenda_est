@@ -3,10 +3,10 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>cloudless</SkySet>
-		<SunColor r="1.01667" g="0.983333" b="0.858333"/>
-		<SunElevation angle="0.717352"/>
+		<SunColor r="1.01667" g="0.956866" b="0.745558"/>
+		<SunElevation angle="0.546097"/>
 		<SunRotation angle="0.442374"/>
-		<AmbientColor r="0.317647" g="0.317647" b="0.317647"/>
+		<AmbientColor r="0.372549" g="0.376471" b="0.419608"/>
 		<Fog>
 			<FogFactor>0.00294922</FogFactor>
 			<FogThickness>0</FogThickness>
@@ -15,7 +15,7 @@
 		<Water>
 			<WaterBody>
 				<Type>ocean</Type>
-				<Color r="0.317647" g="0.666667" b="0.635294"/>
+				<Color r="0.313726" g="0.666667" b="0.631373"/>
 				<Tint r="0" g="1" b="0.501961"/>
 				<Height>20.0394</Height>
 				<Waviness>5.00977</Waviness>
@@ -32,7 +32,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="615.161" y="104.349" z="464.593"/>
+		<Position x="463.422" y="47.2389" z="386.871"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -47,6 +47,7 @@
   "LockTeams": false,
   "Name": "Pannonian Basin(2 Players)",
   "PlayerData": [
+    null,
     {},
     {}
   ],
@@ -5609,7 +5610,7 @@
 		</Entity>
 		<Entity uid="940">
 			<Template>gaia/fauna_sheep_trainable</Template>
-			<Player>1</Player>
+			<Player>2</Player>
 			<Position x="752.08509" z="225.10901"/>
 			<Orientation y="-1.68665"/>
 			<Actor seed="39508"/>
@@ -7276,14 +7277,14 @@
 		<Entity uid="1192">
 			<Template>gaia/ore/aegean_anatolian_01</Template>
 			<Player>0</Player>
-			<Position x="489.17048" z="334.49079"/>
+			<Position x="487.06168" z="337.0734"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="52802"/>
 		</Entity>
 		<Entity uid="1193">
 			<Template>actor|props/structures/decals/gravel_5x5.xml</Template>
-			<Position x="488.29322" z="335.56345"/>
-			<Orientation y="2.35622"/>
+			<Position x="487.51703" z="338.86216"/>
+			<Orientation y="-0.78988"/>
 			<Actor seed="54080"/>
 		</Entity>
 		<Entity uid="1194">
@@ -8463,6 +8464,20 @@
 			<Position x="179.8173" z="280.52012"/>
 			<Orientation y="-1.78354"/>
 			<Actor seed="60328"/>
+		</Entity>
+		<Entity uid="1377">
+			<Template>skirmish/structures/default_stoa</Template>
+			<Player>2</Player>
+			<Position x="783.37305" z="356.5073"/>
+			<Orientation y="-2.32438"/>
+			<Actor seed="12364"/>
+		</Entity>
+		<Entity uid="1378">
+			<Template>skirmish/structures/default_stoa</Template>
+			<Player>1</Player>
+			<Position x="303.6211" z="571.33552"/>
+			<Orientation y="-2.3244"/>
+			<Actor seed="12364"/>
 		</Entity>
 	</Entities>
 	<Paths/>
