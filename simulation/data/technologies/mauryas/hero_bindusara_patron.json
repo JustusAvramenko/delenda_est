@@ -1,0 +1,23 @@
+{
+	"genericName": "Patron of Ajivika",
+	"description": "",
+	"cost": {
+		"food": 500,
+		"glory": 500
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_town"},
+			{"civ": "maur"}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "dove.png",
+	"researchTime": 40,
+	"tooltip": "All Civilian Citizens +50% health.",
+	"modifications": [
+        {"value": "Health/Max", "multiply": 1.2}
+	],
+	"affects": ["Civilian Citizen"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

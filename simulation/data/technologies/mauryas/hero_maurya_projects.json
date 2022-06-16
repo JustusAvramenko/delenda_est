@@ -1,0 +1,18 @@
+{
+	"genericName": "Construction Projects",
+	"description": ".",
+	"cost": {
+		"stone": 500, 
+		"glory": 500
+	},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "military_engineers.png",
+	"researchTime": 40,
+	"tooltip": "All Structures (except Farm Fields) −20% build time.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.8}
+	],
+	"affects": ["NotField"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
