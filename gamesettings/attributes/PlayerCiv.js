@@ -75,9 +75,7 @@ GameSettings.prototype.Attributes.PlayerCiv = class PlayerCiv extends GameSettin
 
 	pickRandomItems()
 	{
-		// Get a unique array of selectable cultures
-		let cultures = Object.keys(this.settings.civData).filter(civ => this.settings.civData[civ].SelectableInGameSetup).map(civ => this.settings.civData[civ].Culture);
-		cultures = cultures.filter((culture, index) => cultures.indexOf(culture) === index);
+		const civs = Object.keys(this.settings.civData).filter(civ => this.settings.civData[civ].SelectableInGameSetup);
 
 		let picked = false;
 		for (let i in this.values)
@@ -111,10 +109,7 @@ GameSettings.prototype.Attributes.PlayerCiv = class PlayerCiv extends GameSettin
 				}
 			}
 
-			// Default: Pick a random civ of a random culture
-			let culture = pickRandom(cultures);
-			this.values[i] = pickRandom(Object.keys(this.settings.civData).filter(civ =>
-				this.settings.civData[civ].Culture == culture && this.settings.civData[civ].SelectableInGameSetup));
+			this.values[i] = pickRandom(civs);
 
 		}
 		if (picked)
