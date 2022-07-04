@@ -1,12 +1,19 @@
 {
-	"type": "player",
-	"affects": ["Player"],
+	"type": "global",
+	"affects": [
+		"Siege",
+		"Arsenal"
+	],
 	"affectedPlayers": ["MutualAlly"],
 	"modifications": [
-		{ "value": "Player/BarterMultiplier/Buy/coin", "multiply": 0.9 },
-		{ "value": "Player/BarterMultiplier/Sell/coin", "multiply": 1.1 }
+		{ "value": "Cost/Resources/food", "multiply": 0.75 },
+		{ "value": "Cost/Resources/wood", "multiply": 0.75 },
+		{ "value": "Cost/Resources/stone", "multiply": 0.75 },
+		{ "value": "Cost/Resources/metal", "multiply": 0.75 },
+		{ "value": "Cost/Resources/coin", "multiply": 0.75 },
+		{ "value": "Cost/Resources/glory", "multiply": 0.75 },
+		{ "value": "Cost/BuildTime", "multiply": 0.75 }
 	],
-	"auraName": "Standardized Currency",
-	"auraDescription": "Buying and Selling Coin at the Market +10% more profitable.",
-	"description":"The Macedonians and the Diadochi minted coins of very high quality. On their currency the Diadochi in particular frequently depicted themselves as the rightful successor to Alexander the Great, attempting to legitimize their rule."
+	"auraName": "Mechanical Innovation",
+	"auraDescription": "Siege Weapons and Arsenals −25% resource costs and build time."
 }
