@@ -2,11 +2,11 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant>
+    <variant file="biped/base_healer_male.xml">
       <mesh>skeletal/new/m_dress.dae</mesh>
       <textures>
-        <texture file="skeletal/ptol_healer.png" name="baseTex"/>
-        <texture file="skeletal/ptol_healer_spec.png" name="specTex"/>
+        <texture file="skeletal/ptol/robes_healer_01.png" name="baseTex"/>
+        <texture file="skeletal/ptol/robes_healer_01_spec.png" name="specTex"/>
       </textures>
       <props>
         <prop actor="props/units/heads/head_zapo_e.xml" attachpoint="head"/>
@@ -16,7 +16,7 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/base_healer_male.xml"/>
+    <variant frequency="1" name="Idle"/>
     <variant file="biped/attack_capture.xml"/>
     <variant file="biped/attack_slaughter.xml"/>
     <variant file="biped/gather_praise.xml"/>
