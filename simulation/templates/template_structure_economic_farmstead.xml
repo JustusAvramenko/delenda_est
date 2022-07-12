@@ -40,6 +40,7 @@
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
+    <Lang>greek</Lang>
     <GenericName>Farmstead</GenericName>
     <SpecificName>Farmstead</SpecificName>
     <Tooltip>Dropsite for the food resource. Research food gathering improvements. Buildable in neutral and own territory.</Tooltip>
@@ -81,6 +82,7 @@
       <select>interface/select/building/sel_farmstead.xml</select>
       <constructed>interface/complete/building/complete_farmstead.xml</constructed>
       <death>attack/destruction/building_collapse_large.xml</death>
+      <order_build>voice/{lang}/civ/civ_male_build.xml</order_build>
       <alert_raise>interface/alarm/alarm_alert_0.xml</alert_raise>
       <alert_end>interface/alarm/alarm_alert_1.xml</alert_end>
     </SoundGroups>

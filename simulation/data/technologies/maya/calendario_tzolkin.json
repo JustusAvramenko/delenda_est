@@ -1,0 +1,16 @@
+{
+	"genericName": "Tzolkin Calendar",
+	"description": "Agricola calendar.",
+	"cost": { "food": 50, "wood": 100, "stone": 0, "metal": 100 },
+	"supersedes": "gather_farming_training",
+	"requirements": { "tech": "phase_village" },
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "calendario_agricola.png",
+	"researchTime": 60,
+	"tooltip": "Workers +100% grain gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 2 }
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

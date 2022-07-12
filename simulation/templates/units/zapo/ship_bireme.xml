@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_ship_warship_light">
-  <Footprint>
-    <Square width="5.0" depth="12.0"/>
-    <Height>6.0</Height>
-  </Footprint>
+  <BuildingAI disable=""/>
   <Cost>
     <Population>1</Population>
     <BuildTime>10</BuildTime>
@@ -13,6 +10,10 @@
       <food>100</food>
     </Resources>
   </Cost>
+  <Footprint>
+    <Square width="5.0" depth="12.0"/>
+    <Height>6.0</Height>
+  </Footprint>
   <GarrisonHolder>
     <Max>1</Max>
     <EjectHealth>0</EjectHealth>
@@ -22,7 +23,9 @@
     <LoadingRange>10</LoadingRange>
     <Pickup>true</Pickup>
   </GarrisonHolder>
-  <BuildingAI disable=""/>
+  <Health>
+    <Max>200</Max>
+  </Health>
   <Identity>
     <Civ>zapo</Civ>
     <SpecificName>War Canoe</SpecificName>

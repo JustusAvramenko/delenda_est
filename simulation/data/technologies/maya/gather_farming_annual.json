@@ -1,0 +1,27 @@
+{
+	"genericName": "Annual safra",
+	"description": "Safras anuais.",
+	"cost": {
+		"wood": 200,
+		"metal": 100
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{
+				"any": [
+					{ "civ": "mayap" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "gallic_plow.png",
+	"researchTime": 50,
+	"tooltip": "Workers +10% grain gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.1 }
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

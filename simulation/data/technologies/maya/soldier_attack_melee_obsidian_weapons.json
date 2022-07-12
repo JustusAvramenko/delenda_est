@@ -1,0 +1,23 @@
+{
+	"genericName": "Obsidian weapons",
+	"specificName": {
+		"mayap": "Taj"
+	},
+	"description": "Often, a soldier would carry a secondary weapon in addition to his primary weapon of choice, to be drawn when the primary weapon has failed or been broken.",
+	"cost": {
+		"food": 200,
+		"metal": 100
+	},
+	"requirements": { "tech": "phase_town" },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "obj_obsidiana.png",
+	"researchTime": 30,
+	"tooltip": "Soldiers +15% melee attack damage.",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.15 },
+		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 1.15 },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.15 }
+	],
+	"affects": ["Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

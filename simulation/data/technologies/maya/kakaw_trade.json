@@ -1,0 +1,24 @@
+{
+	"genericName": "Kakaw trade",
+	"description": "",
+	"supersedes": "trade_gain_02",
+	"cost": {
+		"food": 500,
+		"wood": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "mayap" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "cacao.png",
+	"researchTime": 50,
+	"tooltip": "Traders +20% international trade bonus.",
+	"modifications": [
+		{ "value": "Market/InternationalBonus", "multiply": 1.2 }
+	],
+	"affects": ["Trade"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

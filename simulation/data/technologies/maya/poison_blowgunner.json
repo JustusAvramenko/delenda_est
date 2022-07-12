@@ -1,0 +1,23 @@
+{
+	"genericName": "Poison Arrows",
+	"description": "Julob Kix",
+	"cost": {
+		"food": 120,
+		"wood": 120
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_village" },
+			{ "civ": "mayap" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Village Fase.",
+	"icon": "dispara_veneno.png",
+	"researchTime": 10,
+	"tooltip": "Bonus in poisoned attack X3.",
+	"modifications": [
+		{ "value": "Attack/Ranged/ApplyStatus/Poisoned/Damage/Poison", "multiply": 3.0 }
+	],
+	"affects": ["Soldier"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

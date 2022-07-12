@@ -1,0 +1,18 @@
+{
+	"genericName": "Siho'm",
+	"description": "Increases wood gathering rates for trees.",
+	"cost": {
+		"wood": 400,
+		"metal": 200
+	},
+	"requirements": { "tech": "phase_town" },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "queimadas.png",
+	"researchTime": 50,
+	"tooltip": "Workers +5% wood gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.05 }
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

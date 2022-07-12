@@ -1,0 +1,28 @@
+{
+	"genericName": "Ball Players",
+	"description": "In addition to a ritual, the Mesoamerican ball game was good military training, increasing the resistance of the warriors who practiced it..",
+	"cost": {
+		"wood": 500,
+		"metal": 200
+	},
+	"requirements":  {
+		"all": [
+			{
+				"tech": "phase_town"
+			},
+			{
+				"civ": "mayap"
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "jogador_bola.png",
+	"researchTime": 40,
+	"tooltip": "Soldiers +1 pierce resistance and +1 hack resistance.",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 }
+	],
+	"affects": ["Soldier"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

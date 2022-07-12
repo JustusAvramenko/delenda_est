@@ -1,0 +1,17 @@
+{
+	"genericName": "Experienced Crews",
+	"description": "Train your oarsmen and sailors to move more efficiently and speed up your ships.",
+	"cost": {
+		"food": 500
+	},
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "cabotage.png",
+	"researchTime": 60,
+	"tooltip": "Ships +10% movement speed.",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 }
+	],
+	"affects": ["Ship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
