@@ -5,26 +5,23 @@
 	},
 	"description": "This famous and most important work of the Seven Military Classics teaches Chinese commanders everything about planning battles, maintaining armies, and defeating one's enemies.",
 	"cost": {
-		"glory": 500
+		"food": 800,
+		"glory": 800
 	},
 	"requirements": {
 		"all": [
-			{"tech": "phase_town"}, 
-			{"civ": "han"}
+			{ "tech": "phase_city" },
+			{ "civ": "han" }
 		]
 	},
-	"requirementsTooltip": "Unlocked in Town Phase.",
+	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "art_of_war.png",
-	"researchTime": 90,
-	"tooltip": "Chinese Heroes -50% train time; Military structure technologies -50% cost.",
+	"researchTime": 60,
+	"tooltip": "All Soldiers, Siege Weapons, and Warships +10% health and vision range.",
 	"modifications": [
-		{"value": "Cost/BuildTime", "multiply": 0.5, "affects": "Hero"},
-		{ "value": "Researcher/TechCostMultiplier/wood", "multiply": 0.5, "affects": "Structure Military" },
-		{ "value": "Researcher/TechCostMultiplier/food", "multiply": 0.5, "affects": "Structure Military" },
-		{ "value": "Researcher/TechCostMultiplier/metal", "multiply": 0.5, "affects": "Structure Military" },
-		{ "value": "Researcher/TechCostMultiplier/stone", "multiply": 0.5, "affects": "Structure Military" },
-		{ "value": "Researcher/TechCostMultiplier/coin", "multiply": 0.5, "affects": "Structure Military" },
-		{ "value": "Researcher/TechCostMultiplier/glory", "multiply": 0.5, "affects": "Structure Military" }
+		{ "value": "Health/Max", "multiply": 1.1 },
+		{ "value": "Vision/Range", "multiply": 1.1 }
 	],
+	"affects": ["Soldier", "Siege", "Warship"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
