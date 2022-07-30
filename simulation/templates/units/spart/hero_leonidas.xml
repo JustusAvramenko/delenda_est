@@ -5,6 +5,73 @@
       <Damage>
         <Hack op="mul">1.2</Hack>
       </Damage>
+      <Bonuses>
+        <BonusCarths>
+          <Civ>cart</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusCarths>
+        <BonusBritons>
+          <Civ>brit</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusBritons>
+        <BonusHan>
+          <Civ>han</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusHan>
+        <BonusGauls>
+          <Civ>gaul</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusGauls>
+        <BonusMauryans>
+          <Civ>maur</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusMauryans>
+        <BonusKushites>
+          <Civ>kush</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusKushites>
+        <BonusIberians>
+          <Civ>iber</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusIberians>
+        <BonusPersians>
+          <Civ>pers</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusPersians>
+        <BonusRomans>
+          <Civ>rome</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusRomans>
+        <BonusPrincipates>
+          <Civ>imp</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusPrincipates>
+        <BonusScythians>
+          <Civ>scyth</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusScythians>
+        <BonusHuns>
+          <Civ>huns</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusHuns>
+        <BonusXion>
+          <Civ>xion</Civ>
+          <Classes></Classes>
+          <Multiplier>1.1</Multiplier>
+        </BonusXion>
+      </Bonuses>
     </Melee>
   </Attack>
   <Auras datatype="tokens">
@@ -35,6 +102,18 @@
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
   </Trainer>
+  <Upgrade>
+    <Frenzy>
+      <Entity>units/spart/hero_leonidas_frenzy</Entity>
+      <Tooltip>Leonidas +100% attack and greater speed, but less armor and he continuously loses health (he dies quicker).</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Frenzy>
+  </Upgrade>
   <VisualActor>
     <Actor>units/spartans/hero_infantry_spearman_leonidas.xml</Actor>
   </VisualActor>
