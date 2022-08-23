@@ -13,15 +13,18 @@
 	"replaces": ["phase_city"],
 	"icon": "phase_city.png",
 	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology.",
-	"cost": {"stone": 800, "metal": 800},
+	"cost": {
+		"stone": 800, 
+		"metal": 800
+	},
 	"requirements": {"entity": {"class": "NotField", "number": 25 }},
 	"requirementsTooltip": "Requires 25 total Buildings (except Walls and Fields).",
 	"researchTime": 60,
-	"tooltip": "Advance to City Phase, which unlocks more structures and units. Territory radius for Civic Centers and vision range for units increased by another +25%.",
+	"tooltip": "Advance to City Phase, which unlocks more structures and units. Civic Centers +25% territory radius and Units +10 meters vision range.",
 	"modifications": [
 		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
 		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
-		{"value": "Vision/Range", "multiply": 1.25, "affects": "Unit"},
+		{"value": "Vision/Range", "add": 10, "affects": "Unit"},
 		{"value": "Cost/BuildTime", "multiply": 1.5, "affects": "Hero"},
 		{"value": "Cost/Resources/coin", "multiply": 1.5, "affects": "Hero"},
 		{"value": "Cost/Resources/glory", "multiply": 1.5, "affects": "Hero"}

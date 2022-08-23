@@ -11,11 +11,11 @@
 	"requirementsTooltip": "Requires 10 total Buildings (except Fields).",
 	"icon": "phase_town.png",
 	"researchTime": 60,
-	"tooltip": "Advance to Town Phase, which unlocks more structures and units. Territory radius for Civic Centers and vision range for units increased by +25%. 'Silver Owls' bonus gives +10% metal gathering rates.",
+	"tooltip": "Advance to Town Phase, which unlocks more structures and units. Territory radius for Civic Centers and vision range for units increased by +25%. \"Silver Owls\" bonus gives +10% metal gathering rates.",
 	"modifications": [
 		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
 		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
-		{"value": "Vision/Range", "multiply": 1.25, "affects": "Unit"},
+		{"value": "Vision/Range", "add": 10, "affects": "Unit"},
 		{"value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.1, "affects": "Gatherer"},
 		{"value": "Cost/BuildTime", "multiply": 1.5, "affects": "Hero"},
 		{"value": "Cost/Resources/coin", "multiply": 1.5, "affects": "Hero"},
