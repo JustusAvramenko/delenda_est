@@ -4,7 +4,7 @@
     <Ranged>
       <AttackName>Arrow</AttackName>
       <Damage>
-	    <Hack>0.0</Hack>
+        <Hack>0.0</Hack>
         <Pierce>20.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
@@ -16,18 +16,18 @@
         <Speed>40.0</Speed>
         <Spread>4.0</Spread>
         <Gravity>30.0</Gravity>
-		<FriendlyFire>false</FriendlyFire>
+        <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
-	  <PreferredClasses datatype="tokens">Ship</PreferredClasses>
+      <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Ship</PreferredClasses>
     </Ranged>
   </Attack>
   <BuildingAI>
     <DefaultArrowCount>2</DefaultArrowCount>
     <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
-	<MaxArrowCount>5</MaxArrowCount>
-	<GarrisonArrowClasses>Infantry Ranged</GarrisonArrowClasses>
+    <MaxArrowCount>5</MaxArrowCount>
+    <GarrisonArrowClasses>Infantry Ranged</GarrisonArrowClasses>
   </BuildingAI>
   <Cost>
     <Population>2</Population>
@@ -75,4 +75,7 @@
     <BarHeight>0.5</BarHeight>
     <HeightOffset>6.0</HeightOffset>
   </StatusBars>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
 </Entity>
