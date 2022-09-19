@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity>
   <AIProxy/>
-  <Footprint>
-    <Square width="38.5" depth="7.0"/>
-    <Height>9.0</Height>
-  </Footprint>
   <Obstruction>
     <Active>true</Active>
     <BlockMovement>false</BlockMovement>
     <BlockPathfinding>false</BlockPathfinding>
     <BlockFoundation>true</BlockFoundation>
     <BlockConstruction>true</BlockConstruction>
-	<DeleteUponConstruction>false</DeleteUponConstruction>
+    <DeleteUponConstruction>false</DeleteUponConstruction>
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
-    <Static width="37.0" depth="6.0"/>
   </Obstruction>
   <Ownership/>
   <Position>
     <Altitude>0</Altitude>
-    <Anchor>upright</Anchor>
-    <Floating>false</Floating>
-	<FloatDepth>0.0</FloatDepth>
-    <TurnRate>6.0</TurnRate>
+    <Anchor>pitch-roll</Anchor>
+    <Floating>true</Floating>
+    <FloatDepth>0.0</FloatDepth>
+    <TurnRate>1</TurnRate>
   </Position>
   <Selectable>
     <Overlay>
@@ -34,13 +29,12 @@
     </Overlay>
   </Selectable>
   <Visibility>
-	<RetainInFog>true</RetainInFog>
-	<AlwaysVisible>false</AlwaysVisible>
-	<Corpse>false</Corpse>
-	<Preview>false</Preview>
+    <RetainInFog>true</RetainInFog>
+    <AlwaysVisible>false</AlwaysVisible>
+    <Corpse>false</Corpse>
+    <Preview>false</Preview>
   </Visibility>
   <VisualActor>
-    <Actor>structures/hellenes/wall_long.xml</Actor>
     <SilhouetteDisplay>false</SilhouetteDisplay>
     <SilhouetteOccluder>false</SilhouetteOccluder>
     <VisibleInAtlasOnly>true</VisibleInAtlasOnly>
