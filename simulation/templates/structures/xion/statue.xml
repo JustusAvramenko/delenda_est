@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="autobuild|template_structure_civic_temple">
+<Entity parent="autobuild|template_structure_resource_statue">
   <BuildRestrictions>
     <Territory>own neutral ally enemy</Territory>
   </BuildRestrictions>
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <stone>150</stone>
+      <metal>150</metal>
+    </Resources>
+  </Cost>
   <Footprint replace="">
     <Circle radius="10.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
+    <Max>1000</Max>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>xion</Civ>
+    <SpecificName>Ovoo</SpecificName>
   </Identity>
   <Obstruction>
     <Static width="14.0" depth="14.0"/>
   </Obstruction>
-  <Researcher>
-    <Technologies datatype="tokens">
-	  unlock_spies
-	  spy_counter
-    </Technologies>
-  </Researcher>
-  <Selectable>
-    <Overlay>
-      <Texture>
-        <MainTexture>auras/temple/nomadic/1024x1024.png</MainTexture>
-        <MainTextureMask>auras/temple/nomadic/1024x1024_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
+  <ResourceSupply>
+    <MaxGatherers>10</MaxGatherers>
+  </ResourceSupply>
+  <ResourceTrickle>
+    <Rates>
+      <stone>2</stone>
+    </Rates>
+    <Interval>2000</Interval>
+  </ResourceTrickle>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
   <VisualActor>
     <ConstructionPreview disable=""/>
-    <Actor>structures/xiongnu/temple.xml</Actor>
-    <FoundationActor>structures/xiongnu/temple_foundation.xml</FoundationActor>
+    <Actor>structures/scythians/ovoo_stone.xml</Actor>
+    <FoundationActor>structures/scythians/ovoo_stone.xml</FoundationActor>
   </VisualActor>
 </Entity>

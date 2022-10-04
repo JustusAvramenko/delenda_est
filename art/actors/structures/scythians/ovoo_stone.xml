@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="2" name="ovoo_deco">
+      <mesh>structural/ovoo_stone.dae</mesh>
+      <props>
+        <prop actor="structures/scythians/ovoo_deco.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/gravel_5x5.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/celt_murus.png" name="baseTex"/>
+        <texture file="structural/celt_murus_norm.png" name="normTex"/>
+        <texture file="structural/celt_murus_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

@@ -2,11 +2,6 @@
 <Entity parent="autobuild|template_structure_civic_temple">
   <BuildRestrictions>
     <Territory>own neutral ally enemy</Territory>
-    <Category>CultStatue</Category>
-    <Distance>
-      <FromClass>CultStatue</FromClass>
-      <MinDistance>30</MinDistance>
-    </Distance>
   </BuildRestrictions>
   <Footprint replace="">
     <Circle radius="10.0"/>
@@ -17,35 +12,16 @@
   </Health>
   <Identity>
     <Civ>scyth</Civ>
-    <VisibleClasses datatype="tokens">CultStatue</VisibleClasses>
   </Identity>
   <Obstruction>
     <Static width="14.0" depth="14.0"/>
   </Obstruction>
   <Researcher>
     <Technologies datatype="tokens">
-	  trickle_glory_01
 	  unlock_spies
 	  spy_counter
     </Technologies>
   </Researcher>
-  <ResourceDropsite>
-    <Types>glory</Types>
-    <Sharable>false</Sharable>
-  </ResourceDropsite>
-  <ResourceSupply>
-    <KillBeforeGather>false</KillBeforeGather>
-    <Max>Infinity</Max>
-    <Type>glory.praise</Type>
-    <MaxGatherers>5</MaxGatherers>
-    <DiminishingReturns>0.90</DiminishingReturns>
-  </ResourceSupply>
-  <ResourceTrickle>
-    <Rates>
-      <glory>1.0</glory>
-    </Rates>
-    <Interval>2000</Interval>
-  </ResourceTrickle>
   <Selectable>
     <Overlay>
       <Texture>
@@ -56,11 +32,6 @@
   </Selectable>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    </Entities>
-  </Trainer>
   <VisualActor>
     <ConstructionPreview disable=""/>
     <Actor>structures/scythians/temple.xml</Actor>
