@@ -2,7 +2,7 @@
 <Entity parent="autobuild|template_structure_civic_civil_centre">
   <Auras disable=""/>
   <BuildRestrictions>
-    <Territory>own neutral ally enemy</Territory>
+    <Territory>own neutral ally</Territory>
     <Distance>
       <MinDistance>80</MinDistance>
     </Distance>
@@ -31,7 +31,9 @@
     </Technologies>
   </Researcher>
   <TerritoryDecay disable=""/>
-  <TerritoryInfluence disable=""/>
+  <TerritoryInfluence>
+    <Radius>80</Radius>
+  </TerritoryInfluence>
   <Upgrade>
     <Unpack>
       <Entity>structures/scyth/civil_centre_packed</Entity>
