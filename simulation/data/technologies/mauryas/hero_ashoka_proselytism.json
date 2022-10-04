@@ -1,6 +1,6 @@
 {
 	"genericName": "Ashoka's Proselytism",
-	"description": "All of the player's Temple technologies -50% cost and -50% research time.",
+	"description": "All of the player's Temple technologies are free and research instantly.",
 	"cost": {
 		"coin": 100, 
 		"glory": 100
@@ -14,15 +14,15 @@
 	"requirementsTooltip": "Unlocked in Town Phase after choosing the hero Ashoka.",
 	"icon": "high_priest.png",
 	"researchTime": 60,
-	"tooltip": "All Temple technologies -50% cost and -50% research time.",
+	"tooltip": "All Temple technologies are free and research instantly.",
 	"modifications": [
-		{ "value": "Researcher/TechCostMultiplier/wood", "multiply": 0.5 },
-		{ "value": "Researcher/TechCostMultiplier/food", "multiply": 0.5 },
-		{ "value": "Researcher/TechCostMultiplier/metal", "multiply": 0.5 },
-		{ "value": "Researcher/TechCostMultiplier/stone", "multiply": 0.5 },
-		{ "value": "Researcher/TechCostMultiplier/coin", "multiply": 0.5 },
-		{ "value": "Researcher/TechCostMultiplier/glory", "multiply": 0.5 },
-		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.5 }
+		{ "value": "Researcher/TechCostMultiplier/wood", "replace": 0 },
+		{ "value": "Researcher/TechCostMultiplier/food", "replace": 0 },
+		{ "value": "Researcher/TechCostMultiplier/metal", "replace": 0 },
+		{ "value": "Researcher/TechCostMultiplier/stone", "replace": 0 },
+		{ "value": "Researcher/TechCostMultiplier/coin", "replace": 0 },
+		{ "value": "Researcher/TechCostMultiplier/glory", "replace": 0 },
+		{ "value": "Researcher/TechCostMultiplier/time", "replace": 0 }
 	],
 	"affects": ["Temple"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
