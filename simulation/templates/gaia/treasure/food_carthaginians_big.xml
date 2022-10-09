@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_treasure_food">
+  <Footprint replace="">
+    <Circle radius="4.5"/>
+    <Height>2.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Food Stores</SpecificName>
+    <Phenotype datatype="tokens">
+	  01
+	  02
+	  03
+	  05
+	</Phenotype>
+  </Identity>
+  <Obstruction>
+    <Static width="8.0" depth="6.0"/>
+  </Obstruction>
+  <Treasure>
+    <Resources>
+      <food>400</food>
+    </Resources>
+  </Treasure>
+  <VisualActor>
+    <Actor>props/structures/carthaginians/kart_tc_stall_{phenotype}.xml</Actor>
+  </VisualActor>
+</Entity>
