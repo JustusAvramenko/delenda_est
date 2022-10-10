@@ -47,8 +47,6 @@
         <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_a" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_b" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_c" maxheight="20" minheight="-20"/>
-        <prop actor="units/xiongnu/blacksmith_swordmaker.xml" attachpoint="stool_a" maxheight="20" minheight="-20"/>
-        <prop actor="units/xiongnu/blacksmith_arrowmaker.xml" attachpoint="stool_c" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/xiongnu/stool.xml" attachpoint="stool_d" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/xiongnu/xion_tools.xml" attachpoint="tools" maxheight="20" minheight="-20"/>
         <prop actor="props/structures/xiongnu/xion_tools.xml" attachpoint="tools_b" maxheight="20" minheight="-20"/>
@@ -68,6 +66,17 @@
         <texture file="structural/xion_structure_spec.png" name="specTex"/>
         <texture file="structural/ao/xion_blacksmith_ao.png" name="aoTex"/>
       </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="researching">
+      <props>
+        <prop actor="particle/sparks_blacksmith.xml" attachpoint="smoke"/>
+        <prop actor="particle/smoke_curved.xml" attachpoint="smoke"/>
+        <prop actor="units/xiongnu/blacksmith_swordmaker.xml" attachpoint="stool_a" maxheight="20" minheight="-20"/>
+        <prop actor="units/xiongnu/blacksmith_arrowmaker.xml" attachpoint="stool_c" maxheight="20" minheight="-20"/>
+      </props>
     </variant>
   </group>
   <group>
