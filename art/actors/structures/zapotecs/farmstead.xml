@@ -2,21 +2,16 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="base">
+    <variant frequency="1" name="farmstead">
+      <mesh>structural/zapo_farmstead.dae</mesh>
       <props>
-        <prop actor="props/structures/decals/rome_corral_mud.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/iber_corral_mud.xml" attachpoint="root"/>
+        <prop actor="props/structures/mauryas/farmstead_prop_b.xml" attachpoint="hay"/>
       </props>
       <textures>
         <texture file="structural/zapo_struct.png" name="baseTex"/>
         <texture file="structural/zapo_struct_spec.png" name="specTex"/>
         <texture file="structural/zapo_struct_norm.png" name="normTex"/>
-      </textures>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="farmstead">
-      <mesh>structural/zapo_farmstead.dae</mesh>
-      <textures>
         <texture file="structural/ao/zapo_farmstead_AO.png" name="aoTex"/>
       </textures>
     </variant>
@@ -25,7 +20,7 @@
     <variant frequency="1" name="ungarrisoned"/>
     <variant name="garrisoned">
       <props>
-        <prop actor="props/special/common/garrison_flag_maya.xml" attachpoint="garrisoned"/>
+        <prop actor="props/special/common/garrison_flag_zapo.xml" attachpoint="garrisoned"/>
       </props>
     </variant>
   </group>
@@ -37,7 +32,6 @@
         <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
         <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
         <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
-        <prop actor="props/structures/decals/dirt_1x1.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>

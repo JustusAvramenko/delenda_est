@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="shrine|template_structure_civic_temple">
+  <Footprint>
+    <Square width="18" depth="18"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>zapo</Civ>
+    <GenericName>Small Shrine</GenericName>
+  </Identity>
+  <Obstruction>
+    <Static width="16" depth="16"/>
+  </Obstruction>
+  <Selectable replace="">
+    <Overlay>
+	  <Shape>
+        <Circle radius="40.0"/>
+	  </Shape>
+      <Texture>
+        <MainTexture>auras/temple/mesoamerican/1024x1024.png</MainTexture>
+        <MainTextureMask>auras/temple/mesoamerican/1024x1024_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <VisualActor>
+    <Actor>structures/zapotecs/shrine.xml</Actor>
+  </VisualActor>
+</Entity>
