@@ -1,0 +1,17 @@
+{
+	"genericName": "Fishing Culture",
+	"description": "Use nets to improve the productivity of fishing boats.",
+	"cost": {
+		"wood": 100
+	},
+	"requirements": { "tech": "phase_town" },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "fishing_net.png",
+	"researchTime": 30,
+	"tooltip": "Fishing Boats +30% fish gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.fish", "multiply": 1.3 }
+	],
+	"affects": ["FishingBoat"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

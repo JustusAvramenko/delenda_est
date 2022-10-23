@@ -1,0 +1,26 @@
+{
+	"genericName": "Traditional rituals",
+	"description": "Organic units +30.",
+	"cost": {
+		"food": 100,
+		"metal": 50
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "loom.png",
+	"researchTime": 20,
+	"tooltip": "Civilian Citizens +10% health.",
+	"requirements": {
+		"all": [
+			{"tech": "phase_town"},
+			{ "civ": "yayo" }
+		]
+	},
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.1}
+	],
+	"affects": ["Unit Organic"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

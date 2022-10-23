@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/yayo/defense_tower">
+  <Attack>
+    <Ranged>
+      <MaxRange>60</MaxRange>
+    </Ranged>
+  </Attack>
+  <Health>
+    <Max op="mul">2.0</Max>
+  </Health>
+  <Identity>
+    <Civ>yayo</Civ>
+    <SpecificName>Yagura</SpecificName>
+    <GenericName>Tall Defense Tower</GenericName>
+    <Icon>structures/defense_tower.png</Icon>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      pair_tower_01
+	  range_defensive_loopholes
+	  range_defensive_murderholes
+    </Technologies>
+  </Researcher>
+  <StatusBars>
+    <HeightOffset>20.0</HeightOffset>
+  </StatusBars>
+  <TerritoryInfluence>
+    <Radius>30</Radius>
+  </TerritoryInfluence>
+  <Upgrade disable=""/>
+  <Vision>
+    <Range>70</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/yayoi/defense_tower.xml</Actor>
+  </VisualActor>
+</Entity>

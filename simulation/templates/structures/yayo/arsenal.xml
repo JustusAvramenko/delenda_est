@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_arsenal">
+  <Footprint>
+    <Square width="26.0" depth="26.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>yayo</Civ>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="24.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      siege_attack
+      siege_cost_time
+      siege_health
+    </Technologies>
+  </Researcher>
+  <VisualActor>
+    <Actor>structures/yayoi/arsenal.xml</Actor>
+    <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
+  </VisualActor>
+</Entity>

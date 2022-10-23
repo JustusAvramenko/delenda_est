@@ -1,0 +1,24 @@
+{
+	"genericName": "Advanced Ranged-Infantry",
+	"specificName": {
+		"hele": "Metikoi",
+		"mace": "Metikoi",
+		"spart": "Metikoi",
+		"athen": "Metikoi"
+	},
+	"description": "Upgrade all of your ranged citizen-soldier infantrymen to Advanced rank.",
+	"cost": {
+		"food": 300,
+		"wood": 300
+	},
+	"requirements": {"tech": "phase_town"},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "upgrade_advanced.png",
+	"researchTime": 40,
+	"tooltip": "Upgrade all of your citizen-soldier ranged infantry to Advanced rank. This increases their military prowess +25%, but decreases their economic ability by -30%. Unlocks \"Elite Ranged-Infantry\" technology.",
+	"modifications": [
+			{"value": "Promotion/RequiredXp", "replace": 0}
+	],
+	"affects": ["Infantry Basic Ranged"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

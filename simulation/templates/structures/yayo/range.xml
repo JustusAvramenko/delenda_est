@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_range">
+  <Footprint>
+    <Square width="26.0" depth="25.0"/>
+    <Height>15.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>yayo</Civ>
+    <GenericName>Range</GenericName>
+    <SpecificName>Sikömiba</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="23.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      archer_attack_spread
+      upgrade_rank_advanced_infantry_ranged
+      upgrade_rank_elite_infantry_ranged
+    </Technologies>
+  </Researcher>
+  <VisualActor>
+    <Actor>structures/yayoi/range.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

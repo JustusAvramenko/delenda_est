@@ -1,0 +1,25 @@
+{
+	"genericName": "Elite Ranged-Infantry",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Zeugites",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your ranged citizen-soldier infantrymen to Elite rank.",
+	"cost": {
+		"food": 900, 
+		"wood": 900
+	},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "upgrade_rank_advanced_infantry_ranged",
+	"tooltip": "Upgrade all of your citizen-soldier ranged infantry to Elite rank. This increases their military prowess another +25%, but decreases their economic ability by a further -30%.",
+	"modifications": [
+		{"value": "Promotion/RequiredXp", "replace": 0}
+	],
+	"affects": ["Infantry Advanced Ranged"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

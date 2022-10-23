@@ -1,0 +1,84 @@
+﻿{
+	"Code": "yayo",
+	"Culture": "Yamatai",
+	"Music":[
+		{
+			"File":"Hill_of_Sorrows.ogg",
+			"Type":"peace"
+		},
+		{
+			"File":"Red_Dawn.ogg",
+			"Type":"peace"
+		},
+		{
+			"File":"Bamboo_Village.ogg",
+			"Type":"peace"
+		},
+		{
+			"File":"Sky_Princess.ogg",
+			"Type":"peace"
+		},
+		{
+			"File":"Confucius.ogg",
+			"Type":"peace"
+		}
+	],
+	"CivBonuses":
+	[
+	],
+	"TeamBonuses":
+	[],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/yayo/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/yayo/civil_centre"
+		},
+		{
+			"Template":"units/yayo/support_citizen",
+			"Count":5
+		},
+		{
+			"Template": "units/yayo/infantry_axeman_b",
+			"Count": 3
+		},
+		{
+			"Template": "units/yayo/infantry_archer_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/yayo/champion_infantry_bellringer",
+			"Count": 1
+		}
+	],
+
+	"AINames":
+	[
+
+    "Jimmu",	
+    "Suizei",
+    "Annei",
+		"Itoku",
+		"Kosho",
+		"Koan",
+		"Korei",
+		"Kogen",
+		"Kaika",
+		"Suijin",
+		"Suinin"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_cavalry": "units/yayo/champion_infantry_bellringer",
+		"skirmish/units/default_infantry_melee_b": "units/yayo/infantry_axeman_b",
+		"skirmish/units/default_infantry_ranged_b": "units/yayo/infantry_archer_b",
+		"skirmish/units/special_starting_unit": "",
+		"skirmish/structures/special_starting_structure": "structures/yayo/shrine",
+		"skirmish/units/default_ship_trireme":"units/yayo/ship_bireme"
+	},
+	"SelectableInGameSetup": true
+}

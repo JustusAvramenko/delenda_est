@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="shrine|template_structure_civic_temple">
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Square width="18" depth="14"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+    <DamageVariants>
+      <lightdamage>0.85</lightdamage>
+      <mediumdamage>0.65</mediumdamage>
+      <heavydamage>0.35</heavydamage>
+    </DamageVariants>
+    <DeathType>corpse</DeathType>
+    <RegenRate>0</RegenRate>
+    <IdleRegenRate>0</IdleRegenRate>
+    <Unhealable>true</Unhealable>
+  </Health>
+  <Identity>
+    <Civ>yayo</Civ>
+    <GenericName>Shrine</GenericName>
+    <SpecificName>Jinja</SpecificName>
+    <Classes datatype="tokens">CivSpecific</Classes>
+    <Tooltip>Build in own, neutral, or allied territory.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="16" depth="12"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+	  trickle_glory_01
+    </Technologies>
+  </Researcher>
+  <ResourceDropsite>
+    <Types>glory</Types>
+    <Sharable>true</Sharable>
+  </ResourceDropsite>
+  <ResourceSupply>
+    <KillBeforeGather>false</KillBeforeGather>
+    <Max>Infinity</Max>
+    <Type>glory.praise</Type>
+    <MaxGatherers>20</MaxGatherers>
+    <DiminishingReturns>0.90</DiminishingReturns>
+  </ResourceSupply>
+  <ResourceTrickle>
+    <Rates>
+      <glory>1</glory>
+    </Rates>
+    <Interval>1000</Interval>
+  </ResourceTrickle>
+  <VisualActor>
+    <Actor>structures/yayoi/karakokagi.xml</Actor>
+  </VisualActor>
+</Entity>

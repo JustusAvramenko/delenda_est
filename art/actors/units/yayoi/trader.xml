@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_trader.xml">
+      <mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/yayoi_isw_e.xml" attachpoint="head"/>
+        <prop actor="props/units/backpack_celt.xml" attachpoint="back"/>
+        <prop actor="props/units/weapons/trader_staff.xml" attachpoint="weapon_L"/>
+      </props>
+      <textures>
+        <texture file="skeletal/yayoi/tunic_pants_02_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/death_infantry.xml">
+    </variant>
+  </group> 
+  <material>player_trans.xml</material>
+</actor>

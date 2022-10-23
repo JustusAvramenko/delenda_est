@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Yayoi Market">
+      <mesh>structural/yayoi_market.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/spart_5x5.xml" attachpoint="root"/>
+        <prop actor="structures/ptolemies/stall_big.xml" attachpoint="root"/>
+        <prop actor="structures/ptolemies/stall_small_a.xml" attachpoint="stall_right"/>
+        <prop actor="structures/ptolemies/stall_small_b.xml" attachpoint="stall_top"/>
+        <prop actor="structures/ptolemies/stall_small_b.xml" attachpoint="stall_bottom"/>
+      </props>
+      <textures>
+        <texture file="structural/yayoi_struct.png" name="baseTex"/>
+        <texture file="structural/yayoi_struct_spec.png" name="specTex"/>
+        <texture file="structural/yayoi_struct_norm.png" name="normTex"/>
+        <texture file="structural/ao/yayoi_market_AO.png" name="aoTex"/> 
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_yayo.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant name="death">
+      <props>
+        <prop attachpoint="garrisoned"/>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+        <prop actor="structures/ptolemies/stall_big.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
