@@ -3,20 +3,30 @@
   <castshadow/>
   <group>
     <variant file="biped/base_archer_ready.xml">
-      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <props>
         <prop actor="props/units/heads/yayoi_isw_e.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/bow_bamboo_long.xml" attachpoint="weapon_bow"/>
         <prop actor="props/units/quiver_back_bamboo.xml" attachpoint="back"/>
-        <prop actor="props/units/props/yayoi_isw_e_armor_back.xml" attachpoint="back"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Noble-Cuirass-01-01">
+    <variant frequency="1" name="cuirass_01_01">
       <textures>
-        <texture file="skeletal/yayoi/noble_cuirass_01_01.png" name="baseTex"/>
+        <texture file="skeletal/yayoi/cuirass_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="cuirass_01_02">
+      <textures>
+        <texture file="skeletal/yayoi/cuirass_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="cuirass_01_03">
+      <mesh>skeletal/new/m_pants_tunic_short.dae</mesh>
+      <textures>
+        <texture file="skeletal/yayoi/cuirass_01_03.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
