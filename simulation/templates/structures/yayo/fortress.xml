@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_fortress">
+  <VisualActor>
+    <Actor>structures/yayoi/fortress.xml</Actor>
+  </VisualActor>
   <Footprint>
     <Square width="28.0" depth="28.0"/>
     <Height>8.0</Height>
@@ -11,9 +14,12 @@
   <Obstruction>
     <Static width="26.0" depth="26.0"/>
   </Obstruction>
-  <VisualActor>
-    <Actor>structures/yayoi/fortress.xml</Actor>
-  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+	  unlock_spies
+	  spy_counter
+    </Technologies>
+  </Researcher>
   <Trainer>
     <Entities datatype="tokens">
       units/{civ}/champion_infantry_swordsman
