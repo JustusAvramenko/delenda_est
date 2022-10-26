@@ -2,13 +2,18 @@
 	"genericName": "Commercial Copper Bells",
 	"description": "Improve the international trading profit.",
 	"cost": {
-		"metal": 100
+		"metal": 200
 	},
-	"requirements": { "tech": "phase_city" },
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{ "civ": "yayo" }
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
-	"icon": "handshake.png",
-	"researchTime": 30,
-	"tooltip": "Traders +10% trade profit between allies.",
+	"icon": "metal_pot.png",
+	"researchTime": 40,
+	"tooltip": "Traders +20% trade profit between allies.",
 	"modifications": [
 		{ "value": "Market/InternationalBonus", "add": 0.2 }
 	],

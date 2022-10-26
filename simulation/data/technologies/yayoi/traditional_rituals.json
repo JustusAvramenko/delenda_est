@@ -1,9 +1,9 @@
 {
-	"genericName": "Traditional rituals",
-	"description": "Organic units +30.",
+	"genericName": "Traditional Rituals",
+	"description": "Increased well-being for civilians.",
 	"cost": {
-		"food": 100,
-		"metal": 50
+		"food": 300,
+		"glory": 300
 	},
 	"requirements": {
 		"tech": "phase_town"
@@ -11,7 +11,7 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "loom.png",
 	"researchTime": 20,
-	"tooltip": "Civilian Citizens +10% health.",
+	"tooltip": "Citizens, Priestesses, and Traders +10% health.",
 	"requirements": {
 		"all": [
 			{"tech": "phase_town"},
@@ -21,6 +21,6 @@
 	"modifications": [
 		{"value": "Health/Max", "multiply": 1.1}
 	],
-	"affects": ["Unit Organic"],
+	"affects": ["Civilian"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
