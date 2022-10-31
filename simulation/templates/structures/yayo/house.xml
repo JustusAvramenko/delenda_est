@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_civic_house_big">
+<Entity parent="template_structure_civic_house">
+  <Footprint>
+    <Square width="16" depth="14"/>
+    <Height>10</Height>
+  </Footprint>
   <Identity>
     <Civ>yayo</Civ>
     <SpecificName>Ipe</SpecificName>
   </Identity>
   <Obstruction>
-    <Static width="13.0" depth="13.0"/>
+    <Static width="14.0" depth="12.0"/>
   </Obstruction>
   <VisualActor>
     <Actor>structures/yayoi/house.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
   </VisualActor>
 </Entity>
