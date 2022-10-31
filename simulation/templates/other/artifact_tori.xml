@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+	structures/artifact_culture
+  </Auras>
+  <Capturable>
+    <CapturePoints>500</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>0</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>100</wood>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="8" depth="4"/>
+    <Height>10</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>rubble/rubble_wood_3x3</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>yayo</Civ>
+    <GenericName>Cultural Artifact</GenericName>
+    <SpecificName>Tori</SpecificName>
+    <Icon>structures/observatory.png</Icon>
+    <VisibleClasses datatype="tokens">
+      -City
+	  Artifact
+      Capturable
+    </VisibleClasses>
+    <Tooltip>Capture to improve the Loyalty of your sstructures.</Tooltip>
+  </Identity>
+  <Loot>
+    <xp>50</xp>
+    <food>0</food>
+    <wood>20</wood>
+    <stone>0</stone>
+    <metal>20</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="8.0" depth="4.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_temple.xml</select>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_2x2.xml</FoundationActor>
+    <Actor>structures/yayoi/gate.xml</Actor>
+  </VisualActor>
+</Entity>
