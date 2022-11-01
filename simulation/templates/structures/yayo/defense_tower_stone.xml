@@ -2,11 +2,11 @@
 <Entity parent="structures/yayo/defense_tower">
   <Attack>
     <Ranged>
-      <MaxRange>60</MaxRange>
+      <MaxRange op="mul">1.25</MaxRange>
     </Ranged>
   </Attack>
   <Health>
-    <Max op="mul">2.0</Max>
+    <Max op="mul">1.5</Max>
   </Health>
   <Identity>
     <Civ>yayo</Civ>
@@ -25,11 +25,11 @@
     <HeightOffset>20.0</HeightOffset>
   </StatusBars>
   <TerritoryInfluence>
-    <Radius>30</Radius>
+    <Radius op="mul">1.5</Radius>
   </TerritoryInfluence>
   <Upgrade disable=""/>
   <Vision>
-    <Range>70</Range>
+    <Range op="mul">1.25</Range>
   </Vision>
   <VisualActor>
     <Actor>structures/yayoi/defense_tower.xml</Actor>
