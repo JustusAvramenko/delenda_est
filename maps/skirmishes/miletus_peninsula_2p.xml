@@ -32,13 +32,14 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="869.31" y="91.201" z="34.1458"/>
+		<Position x="601.318" y="183.87" z="1.14577"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
   "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
   "Description": "Each player starts the match atop a large flat plateau, otherwise known as an acropolis.\n\nTo the East lies a large bay with fishing opportunities. To the West is an unclaimed acropolis overlooking the Aegean Sea.",
   "Keywords": [
@@ -47,7 +48,6 @@
   "LockTeams": false,
   "Name": "Miletus Peninsula (2 players)",
   "PlayerData": [
-    null,
     {
       "Name": "Player 1"
     },
@@ -58,7 +58,8 @@
   "Preview": "miletus_peninsula_2p.png",
   "RevealMap": false,
   "VictoryConditions": [
-    "conquest_civic_centers"
+    "conquest_civic_centers",
+    "domination"
   ]
 }
 ]]></ScriptSettings>
