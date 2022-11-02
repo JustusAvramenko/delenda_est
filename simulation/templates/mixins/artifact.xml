@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <Auras datatype="tokens">
+	structures/artifact_culture
+  </Auras>
+  <Capturable>
+    <CapturePoints>500</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>0</GarrisonRegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>100</wood>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="8" depth="4"/>
+    <Height>10</Height>
+  </Footprint>
+  <Health disable=""/>
+  <Identity>
+    <GenericName>Cultural Artifact</GenericName>
+    <Icon>structures/observatory.png</Icon>
+    <VisibleClasses datatype="tokens">
+      -City
+	  Artifact
+      Capturable
+    </VisibleClasses>
+    <Tooltip>Capture to improve the Loyalty of your sstructures.</Tooltip>
+  </Identity>
+  <Loot>
+    <xp>50</xp>
+    <food>0</food>
+    <wood>20</wood>
+    <stone>0</stone>
+    <metal>20</metal>
+  </Loot>
+  <Minimap>
+    <Type>structure</Type>
+    <Icon size="16.0">other.png</Icon>
+  </Minimap>
+  <Obstruction>
+    <Static width="8.0" depth="4.0"/>
+  </Obstruction>
+  <Resistance replace=""/>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_temple.xml</select>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+</Entity>
