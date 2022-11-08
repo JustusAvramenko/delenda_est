@@ -2,16 +2,11 @@
 <actor version="1">
 	<castshadow/>
 	<group>
-		<variant name="Suebian Fortress">
+		<variant name="Suebian Fortress" file="structures/defensive_building.xml">
 			<mesh>structural/sueb_fortress_struct.dae</mesh>
-			<animations>
-				<animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-			</animations>
 			<props>
 				<prop actor="props/structures/decals/gravel_5x5.xml" attachpoint="root"/>
 				<prop actor="props/structures/suebians/fortress_palisade.xml" attachpoint="root"/>
-				<prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="loaded-projectile"/>
-				<prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
 			</props>
 			<textures>
 				<texture file="structural/caro_struct.png" name="baseTex"/>
@@ -34,7 +29,6 @@
         <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
         <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
         <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
-		<prop actor="props/structures/decals/gravel_5x5.xml" attachpoint="root"/>
 		<prop actor="props/structures/suebians/fortress_palisade.xml" attachpoint="root"/>
       </props>
     </variant>
