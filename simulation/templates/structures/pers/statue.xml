@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_resource_statue">
+  <Footprint replace="">
+    <Square width="10.0" depth="16.0"/>
+    <Height>20.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>pers</Civ>
+    <SpecificName>Lamassu</SpecificName>
   </Identity>
+  <Obstruction>
+    <Static width="8.0" depth="14.0"/>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/persians/lamassu_plinth.xml</Actor>
+    <FoundationActor>structures/carthaginians/fndn_wooden_tower.xml</FoundationActor>
+  </VisualActor>
 </Entity>
