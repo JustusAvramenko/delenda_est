@@ -1,17 +1,28 @@
 {
 	"pair": "chinese_han/pair_heroes_01",
 	"genericName": "Ceremonial Armor",
+	"specificName": {
+		"han": "Lǐyí Kuījiǎ"
+	},
 	"description": ".",
 	"cost": {"glory": 900, "metal": 900},
-	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
+	"requirements": { 
+		"all": [
+			{ "tech": "phase_imperial" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }] 
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
 	"icon": "armor_cuirass_iron.png",
 	"researchTime": 60,
-	"tooltip": "Heroes +2 hack armor and +2 pierce armor.",
+	"tooltip": "Heroes and Ministers +2 hack armor and +2 pierce armor.",
 	"modifications": [
 		{"value": "Resistance/Entity/Damage/Hack", "add": 2.0},
 		{"value": "Resistance/Entity/Damage/Pierce", "add": 2.0}
 	],
-	"affects": ["Hero"],
+	"affects": ["Hero", "Minister"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
