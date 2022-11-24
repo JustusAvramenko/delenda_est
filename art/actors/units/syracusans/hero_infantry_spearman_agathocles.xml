@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_hele_a.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/aspis_kart_h.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/capes/cape_med_player.xml" attachpoint="root"/>
+        <prop actor="props/units/armor/greave_02_silver_r.xml" attachpoint="leg_R"/>
+        <prop actor="props/units/armor/greave_02_silver_l.xml" attachpoint="leg_L"/>
+		<prop actor="props/units/shields/props/aspis_back_bronze_purple_01.xml" attachpoint="shield_arm"/>
+		<prop actor="props/units/helmets/hele_phrygian_p1.xml" attachpoint="helmet"/>
+      </props>
+      <textures>
+        <texture file="skeletal/hele_demetrius.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_hoplite.xml" name="Hoplite-Relax" frequency="1"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/attack_capture.xml">
+      <props>
+        <prop actor="props/units/weapons/spear_lance_cavalry_reverse.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant file="biped/formations/phalanx_front.xml"/>
+    <variant file="biped/formations/phalanx_mid.xml"/>
+    <variant file="biped/formations/phalanx_back.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

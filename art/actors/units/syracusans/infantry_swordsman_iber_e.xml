@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_iber_su1.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/iber_round_small_01_elite.xml" attachpoint="shield"/>
+        <prop actor="props/units/weapons/falcata.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/helmets/iber_helmet_e.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/sheath_falcata_e.xml" attachpoint="sheath_01_L"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Iberian-Helmet-Basic">
+      <props>
+        <prop actor="props/units/helmets/iber_helmet_b.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Iberian-Helmet-Cigarralejo-01">
+      <props>
+        <prop actor="props/units/helmets/iber_helmet_cigarralejo_01.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Iberian-Helmet-Chalcidean-Basic">
+      <props>
+        <prop actor="props/units/helmets/hele_chalcidean_b6.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Iberian-Helmet-Montefortino-02">
+      <props>
+        <prop actor="props/units/helmets/iber_helmet_montefortino_02.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Iber-Chainmail-02-01">
+      <textures>
+        <texture file="skeletal/iber/chainmail_02_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Chainmail-02-02">
+      <textures>
+        <texture file="skeletal/iber/chainmail_02_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Chainmail-02-03">
+      <textures>
+        <texture file="skeletal/iber/chainmail_02_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="Iber-Linothorax-02-01">
+      <textures>
+        <texture file="skeletal/iber/linothorax_02_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="Iber-Linothorax-02-02">
+      <textures>
+        <texture file="skeletal/iber/linothorax_02_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="Iber-Linothorax-02-03">
+      <textures>
+        <texture file="skeletal/iber/linothorax_02_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Padded-Cardiophylax-01-01">
+      <textures>
+        <texture file="skeletal/iber/padded_cardiophylax_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Padded-Cardiophylax-01-02">
+      <textures>
+        <texture file="skeletal/iber/padded_cardiophylax_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Padded-Cardiophylax-01-03">
+      <textures>
+        <texture file="skeletal/iber/padded_cardiophylax_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Padded-Cardiophylax-02-01">
+      <props>
+        <prop actor="props/units/armor/greave_04_bronze_l.xml" attachpoint="leg_L"/>
+        <prop actor="props/units/armor/greave_04_bronze_r.xml" attachpoint="leg_R"/>
+      </props>
+      <textures>
+        <texture file="skeletal/iber/padded_cardiophylax_02_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Padded-Cardiophylax-02-02">
+      <props>
+        <prop actor="props/units/armor/greave_04_bronze_l.xml" attachpoint="leg_L"/>
+        <prop actor="props/units/armor/greave_04_bronze_r.xml" attachpoint="leg_R"/>
+      </props>
+      <textures>
+        <texture file="skeletal/iber/padded_cardiophylax_02_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Iber-Padded-Cardiophylax-02-03">
+      <props>
+        <prop actor="props/units/armor/greave_04_bronze_l.xml" attachpoint="leg_L"/>
+        <prop actor="props/units/armor/greave_04_bronze_r.xml" attachpoint="leg_R"/>
+      </props>
+      <textures>
+        <texture file="skeletal/iber/padded_cardiophylax_02_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_swordsman_shield_fast.xml"/>
+    <variant file="biped/carry_food.xml"/>
+    <variant file="biped/carry_meat.xml"/>
+    <variant file="biped/carry_wood.xml"/>
+    <variant file="biped/carry_stone.xml"/>
+    <variant file="biped/carry_metal.xml"/>
+    <variant file="biped/approach_tree.xml"/>
+    <variant file="biped/approach_grain.xml"/>
+    <variant file="biped/approach_fruit.xml"/>
+    <variant file="biped/approach_meat.xml"/>
+    <variant file="biped/approach_rock.xml"/>
+    <variant file="biped/approach_ore.xml"/>
+    <variant file="biped/approach_ruins.xml"/>
+    <variant file="biped/approach_praise.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_tree.xml"/>
+    <variant file="biped/gather_grain.xml"/>
+    <variant file="biped/gather_fruit.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/gather_rock.xml"/>
+    <variant file="biped/gather_ore.xml"/>
+    <variant file="biped/gather_ruins.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

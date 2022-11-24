@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_wall_medium">
+  <Footprint>
+    <Square width="25.0" depth="6.0"/>
+    <Height>12.5</Height>
+  </Footprint>
+  <Identity>
+    <Civ>syrac</Civ>
+    <SpecificName>Teichos</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="5.0"/>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>13.5</HeightOffset>
+  </StatusBars>
+  <TurretHolder>
+    <TurretPoints>
+      <One>
+        <X>1.5</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </One>
+      <Two>
+        <X>-1.5</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Two>
+      <Three>
+        <X>4.5</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Three>
+      <Four>
+        <X>-4.5</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Four>
+    </TurretPoints>
+  </TurretHolder>
+  <VisualActor>
+    <Actor>structures/hellenes/wall_medium.xml</Actor>
+  </VisualActor>
+</Entity>

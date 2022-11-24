@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <BuildRestrictions>
+    <Territory>own ally neutral</Territory>
+    <PlacementType>shore</PlacementType>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="17"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">Ship</List>
+  </GarrisonHolder>
+  <Identity>
+    <Civ>spart</Civ>
+    <GenericName>Merchant Colony</GenericName>
+    <SpecificName>Apoikía</SpecificName>
+    <Tooltip>Build upon a shoreline in own, neutral, or allied territory. Acquire large tracts of territory. Territory root. Train Citizens and Traders, construct Ships, and research technologies. Garrison Soldiers for additional arrows.</Tooltip>
+    <Classes datatype="tokens">CivSpecific</Classes>
+    <VisibleClasses datatype="tokens">Economic Naval Trade Dock</VisibleClasses>
+    <Icon>structures/crannog.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Market>
+    <TradeType>land naval</TradeType>
+    <InternationalBonus>0.2</InternationalBonus>
+  </Market>
+  <Obstruction>
+    <Static width="29" depth="29"/>
+  </Obstruction>
+  <Position>
+    <Floating>true</Floating>
+    <FloatDepth>0.0</FloatDepth>
+  </Position>
+
+<!--     <Technologies datatype="tokens">
+      -phase_town_{civ}
+    </Technologies> -->
+  <RallyPointRenderer>
+    <LinePassabilityClass>ship</LinePassabilityClass>
+  </RallyPointRenderer>
+    <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_spearman_b
+      units/{civ}/infantry_slinger_b
+      units/{civ}/cavalry_javelineer_b
+      units/{civ}/ship_fishing
+      units/{civ}/ship_merchant
+      units/{civ}/support_trader
+    </Entities>
+  </Trainer>
+  
+  <VisualActor>
+    <Actor>structures/syracusans/colony.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

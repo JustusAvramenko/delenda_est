@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/pelte_cart_c.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/weapons/sarissa.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/new/head_pers_a.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Helmet-Carthaginian-Bronze-01">
+      <props>
+        <prop actor="props/units/helmets/cart_helmet_a.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet-Carthaginian-Bronze-02">
+      <props>
+        <prop actor="props/units/helmets/cart_helmet_b.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet-Thracian-Bronze-Black">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_br_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet-Thracian-Bronze">
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_b6_crested.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet-Phrygian-Bronze">
+      <props>
+        <prop actor="props/units/helmets/hele_phrygian_b10.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="Scale-1b">
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <textures>
+        <texture file="skeletal/cart/scale_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Lamellar-1b">
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <textures>
+        <texture file="skeletal/cart/lamellar_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Linothorax-1a">
+      <textures>
+        <texture file="skeletal/cart/linothorax_champion_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Linothorax-1b">
+      <textures>
+        <texture file="skeletal/cart/linothorax_champion_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Linothorax-1c">
+      <textures>
+        <texture file="skeletal/cart/linothorax_champion_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_elephant_turret_pikeman_relax.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/rider/elephantry/african_turret_death.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

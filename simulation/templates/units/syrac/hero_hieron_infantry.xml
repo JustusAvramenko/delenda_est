@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/athen_hero_themistocles_1
+    units/heroes/athen_hero_themistocles_2
+  </Auras>
+  <Identity>
+    <Civ>syrac</Civ>
+	<Lang>greek</Lang>
+    <SpecificName>Hiero II of Syracuse</SpecificName>
+    <Icon>units/athen/hero_themistocles.png</Icon>
+    <RequiredTechnology>civ_choices/syrac/hieron</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/syrac/hero_hieron_mounted</Entity>
+      <Tooltip>This gives Hieron II his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/athenians/hero_infantry_swordsman_themistocles.xml</Actor>
+  </VisualActor>
+</Entity>

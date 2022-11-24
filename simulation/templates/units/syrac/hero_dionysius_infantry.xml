@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_javelineer">
+  <Auras datatype="tokens">
+    units/heroes/athen_hero_iphicrates_1
+    units/heroes/athen_hero_iphicrates_2
+  </Auras>
+  <Identity>
+    <Civ>syrac</Civ>
+	<Lang>greek</Lang>
+    <SpecificName>Dionysius I</SpecificName>
+    <Icon>units/athen/hero_iphicrates.png</Icon>
+    <RequiredTechnology>civ_choices/syrac/dionysius</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/syrac/hero_dionysius_mounted</Entity>
+      <Tooltip>This gives Dionysius I his War Horse, with trample effects and greater health.</Tooltip>
+	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/athenians/hero_infantry_javelinist_iphicrates.xml</Actor>
+  </VisualActor>
+</Entity>

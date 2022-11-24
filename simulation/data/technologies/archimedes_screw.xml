@@ -1,0 +1,25 @@
+{
+	"genericName": "Archimedes' Screw",
+	"description": "An engineous contraption able to transfer water or any other liquid to higher elevations, facilitating the irregation of fields and the transport of mineral clumps.",
+	"cost": {
+		"wood": 300,
+		"metal": 300
+	},
+	"supersedes": "gather_farming_plows",
+	"requirements": {
+		"all": [
+		    { "tech": "phase_town" },
+			{ "civ": "syrac" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "flood_control.png",
+	"researchTime": 50,
+	"tooltip": "Workers +10% grain and metal gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.1 },
+		{ "value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.1 }
+	],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

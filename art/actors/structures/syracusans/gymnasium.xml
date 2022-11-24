@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Greek Gymnasium Special Building">
+      <mesh>structural/hele_gym.dae</mesh>
+      <props>
+        <prop actor="props/structures/hellenes/gym_shields.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/gym_props.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/gym_tiles.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/gym_trees.xml" attachpoint="root"/>
+		<prop actor="props/special/eyecandy/statue_aphrodite_huge.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/hele_struct.dds" name="baseTex"/>
+        <texture file="structural/hele_struct_norm.png" name="normTex"/>
+        <texture file="structural/hele_struct_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_large.xml">
+      <props>
+        <prop actor="props/structures/hellenes/gym_shields.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/gym_props.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/gym_tiles.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/gym_trees.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Footprint>
+    <Square width="30.0" depth="30.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>syrac</Civ>
+    <SpecificName>Phrourion</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="28.0" depth="28.0"/>
+  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens" replace="">
+      units/{civ}/champion_infantry_spearman
+      units/{civ}/champion_infantry_swordsman
+      units/{civ}/champion_infantry_crossbowman
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/syracusans/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>24.0</Length>
+    <Indent>7.6</Indent>
+  </WallPiece>
+</Entity>

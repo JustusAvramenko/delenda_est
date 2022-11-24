@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Syracusan House">
+      <props>
+        <prop actor="props/structures/decals/spart_3x3.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/syrac_struct.png" name="baseTex"/>
+        <texture file="structural/sparta_struct_spec.png" name="specTex"/>
+        <texture file="structural/syrac_struct_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="House 01">
+      <mesh>structural/spart_house_01.dae</mesh>
+      <props>
+        <prop actor="props/structures/spartans/house_nature.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/ao/spart_house_01.png" name="aoTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="House 02">
+      <mesh>structural/spart_house_02.dae</mesh>
+      <textures>
+        <texture file="structural/ao/spart_house_02.png" name="aoTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="House 03">
+      <mesh>structural/spart_house_03.dae</mesh>
+      <textures>
+        <texture file="structural/ao/spart_house_03.png" name="aoTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="House 04">
+      <mesh>structural/spart_house_04.dae</mesh>
+      <textures>
+        <texture file="structural/ao/spart_house_04.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_hele.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant file="structures/destruction_small.xml"/>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

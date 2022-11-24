@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>props/shield/pelte_03_front.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/pelte_03_back.xml" attachpoint="back"/>
+      </props>
+      <textures>
+        <texture file="props/shield/aspis_01_norm.png" name="normTex"/>
+        <texture file="props/shield/aspis_01_copper.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="aspis_athen_20">
+      <textures>
+        <texture file="props/shield/aspis_athen_20.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="aspis_athen_18">
+      <textures>
+        <texture file="props/shield/aspis_athen_18.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="aspis_athen_08">
+      <textures>
+        <texture file="props/shield/aspis_athen_08.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="aspis_athen_15">
+      <textures>
+        <texture file="props/shield/aspis_athen_15.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="aspis_athen_06">
+      <textures>
+        <texture file="props/shield/aspis_athen_06.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

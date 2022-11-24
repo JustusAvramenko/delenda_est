@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_melee_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+	    <Hack op="mul">1.2</Hack>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Resources>
+      <coin op="add">10</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+	<Civ>syrac</Civ>
+	<Lang>greek</Lang>
+    <SpecificName>Iberian Mercenary Swordsman</SpecificName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Rank>Elite</Rank>
+    <Icon>units/mace/merc_thracian.png</Icon>
+	<RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/iber_swordsman.xml</Actor>
+  </VisualActor>
+</Entity>

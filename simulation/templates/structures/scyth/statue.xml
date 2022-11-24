@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="autobuild|template_structure_resource_statue">
+  <Auras datatype="tokens">
+    structures/oovo_health
+  </Auras>
   <BuildRestrictions>
     <Territory>own neutral ally enemy</Territory>
   </BuildRestrictions>
@@ -38,6 +41,17 @@
     </Rates>
     <Interval>2000</Interval>
   </ResourceTrickle>
+  <Selectable replace="">
+    <Overlay>
+	  <Shape>
+        <Circle radius="40.0"/>
+	  </Shape>
+      <Texture>
+        <MainTexture>auras/temple/nomadic/1024x1024.png</MainTexture>
+        <MainTextureMask>auras/temple/nomadic/1024x1024_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
   <VisualActor>

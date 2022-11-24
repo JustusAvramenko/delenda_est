@@ -2,13 +2,18 @@
 	"pair": "pair_structures_02",	
 	"genericName": "Carpentry",
 	"description": ".",
-	"cost": {"wood": 200, "metal": 100},
+	"cost": {
+		"wood": 200,
+		"metal": 100
+	},
 	"requirements": {"tech": "phase_town"},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "construction_tools.png",
 	"researchTime": 40,
 	"tooltip": "All structures -10% build time.",
-	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.9}],
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.9 }
+	],
 	"affects": ["NotField"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

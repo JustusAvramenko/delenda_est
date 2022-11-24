@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/spear_hoplite.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/helmets/hele_thracian_p3_crested.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/new/head_kart_hannibal.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kart_hero_hannibal.dds" name="baseTex"/>
+      </textures>
+    </variant>
+	<variant frequency="1" name="Greave-04">
+      <props>
+        <prop actor="props/units/armor/greave_02_bronze_l.xml" attachpoint="leg_L"/>
+        <prop actor="props/units/armor/greave_02_bronze_r.xml" attachpoint="leg_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_hoplite.xml" name="Hoplite-Relax" frequency="1"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/attack_capture.xml">
+      <props>
+        <prop actor="props/units/weapons/spear_lance_cavalry_reverse.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant file="biped/formations/phalanx_front.xml"/>
+    <variant file="biped/formations/phalanx_mid.xml"/>
+    <variant file="biped/formations/phalanx_back.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

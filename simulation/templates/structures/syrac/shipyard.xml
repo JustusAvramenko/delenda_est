@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_shipyard">
+  <Footprint>
+    <Square width="26.0" depth="30.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_hele_dock</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>syrac</Civ>
+    <SpecificName>Neōsoikoi</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="22.0" depth="26.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+	  hellenes/pair_naval_01
+	  pair_naval_02
+	  pair_naval_03
+	  pair_naval_04
+	  pair_naval_05
+	  pair_naval_06
+	  athenians/pair_naval_empire
+    </Technologies>
+  </Researcher>
+  <VisualActor>
+    <Actor>structures/athenians/dock.xml</Actor>
+    <FoundationActor>structures/fndn_6x4_dock.xml</FoundationActor>
+  </VisualActor>
+</Entity>
