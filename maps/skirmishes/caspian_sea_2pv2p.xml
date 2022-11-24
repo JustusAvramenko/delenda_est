@@ -32,18 +32,21 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="560.091" y="116.728" z="947.985"/>
+		<Position x="380.4" y="125.853" z="561.633"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
+  "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
   "Description": "Two teams face off across a long, very large saltwater lake.\n\nFishing can be had in the central lake. The map is also well-endowed with Stone and Metal deposits.",
   "Keywords": [],
+  "LockTeams": false,
   "Name": "Caspian Sea (2v2)",
   "PlayerData": [
-    null,
+    "",
     {
       "Team": 0
     },
@@ -58,8 +61,10 @@
     }
   ],
   "Preview": "caspian_sea_skirmish_2v2.png",
+  "RevealMap": false,
   "VictoryConditions": [
-    "conquest"
+    "conquest",
+    "domination"
   ]
 }
 ]]></ScriptSettings>
