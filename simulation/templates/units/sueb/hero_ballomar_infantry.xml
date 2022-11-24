@@ -8,7 +8,6 @@
     <SpecificName>Ballomar</SpecificName>
     <Icon>units/sueb/hero_ballomar.png</Icon>
 	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
-    <RequiredTechnology>civ_choices/sueb/ballomar</RequiredTechnology>
   </Identity>
   <UnitMotion>
     <WalkSpeed>11.0</WalkSpeed>
@@ -17,7 +16,9 @@
     <Mount>
       <Entity>units/sueb/hero_ballomar_mounted</Entity>
       <Tooltip>This gives Ballomar his War Horse, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

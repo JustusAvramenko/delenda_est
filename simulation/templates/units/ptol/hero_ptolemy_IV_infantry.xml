@@ -9,7 +9,6 @@
     <SpecificName>Ptolemy IV "Father Loving"</SpecificName>
     <Classes datatype="tokens">PtolemyIV</Classes>
     <Icon>units/ptol/hero_ptolemy_IV.png</Icon>
-    <RequiredTechnology>civ_choices/ptol/ptolemy_IV</RequiredTechnology>
   </Identity>
   <ResourceTrickle>
     <Rates> 
@@ -26,7 +25,9 @@
     <Mount>
       <Entity>units/ptol/hero_ptolemy_IV_mounted</Entity>
       <Tooltip>This gives Ptolemy IV his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

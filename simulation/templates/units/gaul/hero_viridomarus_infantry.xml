@@ -17,14 +17,18 @@
     <Civ>gaul</Civ>
     <SpecificName>Viridomarus</SpecificName>
 	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
-    <RequiredTechnology>civ_choices/gaul/viridomarus</RequiredTechnology>
+    <Requirements>
+      <Techs>civ_choices/gaul/viridomarus</Techs>
+    </Requirements>
     <Icon>units/gaul/hero_viridomarus.png</Icon>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/gaul/hero_viridomarus_mounted</Entity>
       <Tooltip>This gives Viridomarus his War Horse, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

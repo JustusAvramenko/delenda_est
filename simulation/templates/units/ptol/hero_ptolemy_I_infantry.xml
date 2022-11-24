@@ -8,7 +8,6 @@
 	<Lang>greek</Lang>
     <SpecificName>Ptolemy I "Savior"</SpecificName>
     <Icon>units/ptol/hero_ptolemy_I.png</Icon>
-    <RequiredTechnology>civ_choices/ptol/ptolemy_I</RequiredTechnology>
   </Identity>
   <ResourceTrickle>
     <Rates> 
@@ -25,7 +24,9 @@
     <Mount>
       <Entity>units/ptol/hero_ptolemy_I_mounted</Entity>
       <Tooltip>This gives Ptolemy I his War Elephant, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>400</food>
         <glory>200</glory>

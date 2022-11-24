@@ -6,14 +6,18 @@
   <Identity>
     <Civ>cart</Civ>
     <SpecificName>Hamilcar Barca</SpecificName>
-    <RequiredTechnology>civ_choices/cart/hamilcar</RequiredTechnology>
+    <Requirements>
+      <Techs>civ_choices/cart/hamilcar</Techs>
+    </Requirements>
     <Icon>units/cart/hero_hamilcar.png</Icon>
   </Identity>
   <Upgrade>
     <HamilcarMount>
       <Entity>units/cart/hero_hamilcar_mounted</Entity>
       <Tooltip>This gives Hamilcar his War Horse, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

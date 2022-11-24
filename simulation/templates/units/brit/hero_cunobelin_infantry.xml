@@ -7,14 +7,18 @@
     <Civ>brit</Civ>
     <SpecificName>Cunobelinos</SpecificName>
 	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
-    <RequiredTechnology>civ_choices/brit/cunobelin</RequiredTechnology>
+    <Requirements>
+      <Techs>civ_choices/brit/cunobelin</Techs>
+    </Requirements>
     <Icon>units/brit/hero_cunobelin.png</Icon>
   </Identity>
   <Upgrade>
     <SwitchToHorse>
       <Entity>units/brit/hero_cunobelin_mounted</Entity>
       <Tooltip>This gives Cunobelinos his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

@@ -14,13 +14,14 @@
 Strong Against: All Cavalry (2x).
 Weak Against: Ranged Units, Sword Infantry.</Tooltip>
     <Icon>units/mace/hero_craterus.png</Icon>
-    <RequiredTechnology>civ_choices/mace/craterus</RequiredTechnology>
   </Identity>
   <Upgrade>
     <CraterusMount>
       <Entity>units/mace/hero_craterus_mounted</Entity>
       <Tooltip>This gives Craterus his War Horse, with trample effects, greater health, and the "Hammer and Anvil" cavalry aura.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

@@ -8,13 +8,14 @@
 	<Lang>greek</Lang>
     <SpecificName>Seleucus I "The Victor"</SpecificName>
     <Icon>units/sele/hero_seleucus.png</Icon>
-    <RequiredTechnology>civ_choices/sele/seleucus_I</RequiredTechnology>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/sele/hero_seleucus_victor_mounted</Entity>
       <Tooltip>This gives Seleucus I his War Elephant, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>400</food>
         <glory>200</glory>

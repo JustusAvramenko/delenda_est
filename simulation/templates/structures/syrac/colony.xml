@@ -19,7 +19,7 @@
     <Classes datatype="tokens">CivSpecific</Classes>
     <VisibleClasses datatype="tokens">Economic Naval Trade Dock</VisibleClasses>
     <Icon>structures/crannog.png</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Requirements><Techs>phase_town</Techs></Requirements>
   </Identity>
   <Market>
     <TradeType>land naval</TradeType>
@@ -32,10 +32,6 @@
     <Floating>true</Floating>
     <FloatDepth>0.0</FloatDepth>
   </Position>
-
-<!--     <Technologies datatype="tokens">
-      -phase_town_{civ}
-    </Technologies> -->
   <RallyPointRenderer>
     <LinePassabilityClass>ship</LinePassabilityClass>
   </RallyPointRenderer>

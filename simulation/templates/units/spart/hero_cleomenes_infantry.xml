@@ -13,13 +13,14 @@ Strong Against: All Cavalry (2x).
 Weak Against: Ranged Units, Sword Infantry.
 Has 3x health of other infantry heroes. Basically an extremely tough Pikeman.</Tooltip>
     <Icon>units/sele/hero_seleucus.png</Icon>
-    <RequiredTechnology>civ_choices/spart/cleomenes</RequiredTechnology>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/spart/hero_cleomenes_mounted</Entity>
       <Tooltip>This gives Cleomenes his War Horse, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

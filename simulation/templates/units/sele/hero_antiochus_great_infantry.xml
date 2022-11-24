@@ -9,13 +9,14 @@
 	<Lang>greek</Lang>
     <SpecificName>Antiochus III "The Great"</SpecificName>
     <Icon>units/sele/hero_antiochus_iii.png</Icon>
-    <RequiredTechnology>civ_choices/sele/antiochus_III</RequiredTechnology>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/sele/hero_antiochus_great_mounted</Entity>
       <Tooltip>This gives Antiochus III his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

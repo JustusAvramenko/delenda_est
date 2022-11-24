@@ -8,13 +8,14 @@
 	<Lang>persian</Lang>
 	<SpecificName>Darius The Great</SpecificName>
     <Icon>units/achae/hero_darius.png</Icon>
-    <RequiredTechnology>civ_choices/pers/darius</RequiredTechnology>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/pers/hero_darius_I_mounted</Entity>
       <Tooltip>This gives Darius I his War Chariot, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>300</food>
         <glory>200</glory>

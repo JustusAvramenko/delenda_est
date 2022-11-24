@@ -10,13 +10,17 @@
     <Civ>han</Civ>
     <SpecificName>Han Xin</SpecificName>
     <Icon>units/han/hero_han_xin.png</Icon>
-  	<RequiredTechnology>civ_choices/han/han_xin</RequiredTechnology>
+    <Requirements>
+      <Techs>civ_choices/han/han_xin</Techs>
+    </Requirements>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/han/hero_han_xin_mounted</Entity>
       <Tooltip>This gives Han Xin his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

@@ -2,10 +2,12 @@
 <Entity parent="cataphract|template_unit_champion_cavalry_spearman">
   <Identity>
     <Civ>sele</Civ>
-	<Lang>greek</Lang>
+    <Lang>greek</Lang>
     <SpecificName>Seleucid Cataphract</SpecificName>
     <Icon>units/sele/champion_cavalry.png</Icon>
-    <RequiredTechnology>phase_imperial</RequiredTechnology>
+    <Requirements>
+      <Techs>phase_imperial</Techs>
+    </Requirements>
   </Identity>
   <VisualActor>
     <Actor>units/seleucids/cavalry_spearman_c_m.xml</Actor>

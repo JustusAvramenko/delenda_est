@@ -10,7 +10,7 @@
     </Ranged>
   </Attack>
   <Auras datatype="tokens">
-	units/chariot_trample_b
+    units/chariot_trample_b
   </Auras>
   <Cost>
     <Population>4</Population>
@@ -36,7 +36,9 @@
 Strong Against: Pike Infantry (1.5x), Spear Infantry (1.5x), Sword Infantry (1.5x).
 Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
 	<Icon>units/achae/chariot_archer.png</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <xp>200</xp>

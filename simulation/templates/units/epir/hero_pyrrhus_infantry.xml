@@ -11,13 +11,17 @@
 	<Lang>greek</Lang>
     <SpecificName>Pyrrhus of Epirus</SpecificName>
     <Icon>units/epir/hero_pyrrhus.png</Icon>
-    <RequiredTechnology>civ_choices/epir/pyrrhus</RequiredTechnology>
+    <Requirements>
+      <Techs>civ_choices/epir/pyrrhus</Techs>
+    </Requirements>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/epir/hero_pyrrhus_mounted</Entity>
       <Tooltip>This gives Pyrrhus his War Horse, with greater speed, trample effects, greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

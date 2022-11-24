@@ -9,13 +9,14 @@
 	<Lang>greek</Lang>
     <SpecificName>Dionysius I</SpecificName>
     <Icon>units/athen/hero_iphicrates.png</Icon>
-    <RequiredTechnology>civ_choices/syrac/dionysius</RequiredTechnology>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/syrac/hero_dionysius_mounted</Entity>
       <Tooltip>This gives Dionysius I his War Horse, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

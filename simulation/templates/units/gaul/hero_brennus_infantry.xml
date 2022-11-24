@@ -7,14 +7,18 @@
     <Civ>gaul</Civ>
     <SpecificName>Brennus</SpecificName>
 	<VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
-    <RequiredTechnology>civ_choices/gaul/brennus</RequiredTechnology>
+    <Requirements>
+      <Techs>civ_choices/gaul/brennus</Techs>
+    </Requirements>
     <Icon>units/gaul/hero_brennus.png</Icon>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/gaul/hero_brennus_mounted</Entity>
       <Tooltip>This gives Brennus his War Horse, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

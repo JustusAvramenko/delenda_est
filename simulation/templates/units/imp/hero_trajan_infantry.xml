@@ -8,13 +8,14 @@
 	<Lang>latin</Lang>
 	<SpecificName>Emperor Trajan</SpecificName>
     <Icon>units/imp/hero_trajan.png</Icon>
-	<RequiredTechnology>civ_choices/imp/trajan</RequiredTechnology>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/imp/hero_trajan_mounted</Entity>
       <Tooltip>This gives Trajan his War Horse, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

@@ -91,7 +91,9 @@
     <Tooltip>Traits: Medium Speed, Heavy Armor, High Attack, Shield Wall.
 Strong Against: All Cavalry (1.25x), Non-Greek Units (1.1x).
 Weak Against: Ranged Units, Sword Infantry.</Tooltip>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
     <Icon>units/spart/champion_infantry_spear.png</Icon>
   </Identity>
   <TrainingRestrictions>
@@ -104,7 +106,9 @@ Weak Against: Ranged Units, Sword Infantry.</Tooltip>
     <Tower>
       <Entity>units/spart/champion_infantry_hoplite_olympian</Entity>
       <Tooltip>This promotion adds greater health, armor, and speed.</Tooltip>
-      <RequiredTechnology>spartans/health_infantry</RequiredTechnology>
+      <Requirements>
+        <Techs>spartans/health_infantry</Techs>
+      </Requirements>
       <Cost>
         <glory>200</glory>
         <metal>200</metal>

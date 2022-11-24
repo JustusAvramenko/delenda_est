@@ -8,13 +8,14 @@
 	<Lang>persian</Lang>
     <SpecificName>Cambyses II</SpecificName>
     <Icon>units/achae/hero_cambyses.png</Icon>
-    <RequiredTechnology>civ_choices/pers/cambyses</RequiredTechnology>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/pers/hero_cambyses_mounted</Entity>
       <Tooltip>This gives Cambyses his War Horse, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

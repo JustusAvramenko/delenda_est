@@ -2,10 +2,12 @@
 <Entity parent="template_unit_champion_infantry_pikeman">
   <Identity>
     <Civ>sele</Civ>
-	<Lang>greek</Lang>
-	<SpecificName>Silver Shield Phalangite</SpecificName>
+    <Lang>greek</Lang>
+    <SpecificName>Silver Shield Phalangite</SpecificName>
     <Icon>units/sele/champion_pikeman.png</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <VisualActor>
     <Actor>units/seleucids/infantry_pikeman_c.xml</Actor>

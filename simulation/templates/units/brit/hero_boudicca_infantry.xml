@@ -9,14 +9,18 @@
 	<SpecificName>Boudicca</SpecificName>
 	<Phenotype>female</Phenotype>
 	<VisibleClasses datatype="tokens">Female Guerilla</VisibleClasses>
-    <RequiredTechnology>civ_choices/brit/boudicca</RequiredTechnology>
+    <Requirements>
+      <Techs>civ_choices/brit/boudicca</Techs>
+    </Requirements>
     <Icon>units/brit/hero_boudicca_1.png</Icon>
   </Identity>
   <Upgrade>
     <SwitchToChariot>
       <Entity>units/brit/hero_boudicca_mounted_chariot</Entity>
       <Tooltip>This gives Boudicca her War Chariot, with trample effects, greater speed, and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>300</food>
         <glory>300</glory>
@@ -26,7 +30,9 @@
     <SwitchToHorse>
       <Entity>units/brit/hero_boudicca_mounted_horse</Entity>
       <Tooltip>This gives Boudicca her War Horse, with trample effects, greater speed, and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

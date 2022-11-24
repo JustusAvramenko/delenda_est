@@ -7,13 +7,17 @@
     <Civ>han</Civ>
     <SpecificName>Wei Qing</SpecificName>
     <Icon>units/han/hero_wei_qing.png</Icon>
-  	<RequiredTechnology>civ_choices/han/wei_qing</RequiredTechnology>
+    <Requirements>
+      <Techs>civ_choices/han/wei_qing</Techs>
+    </Requirements>
   </Identity>
   <Upgrade>
     <MountHorse>
       <Entity>units/han/hero_wei_qing_mounted</Entity>
       <Tooltip>This gives Wei Qing his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

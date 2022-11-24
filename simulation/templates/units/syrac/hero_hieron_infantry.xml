@@ -9,13 +9,14 @@
 	<Lang>greek</Lang>
     <SpecificName>Hiero II of Syracuse</SpecificName>
     <Icon>units/athen/hero_themistocles.png</Icon>
-    <RequiredTechnology>civ_choices/syrac/hieron</RequiredTechnology>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/syrac/hero_hieron_mounted</Entity>
       <Tooltip>This gives Hieron II his War Horse, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

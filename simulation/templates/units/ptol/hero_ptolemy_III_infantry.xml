@@ -9,7 +9,6 @@
     <SpecificName>Ptolemy III "Benefactor"</SpecificName>
     <Classes datatype="tokens">PtolemyIII</Classes>
     <Icon>units/ptol/hero_ptolemy_III.png</Icon>
-    <RequiredTechnology>civ_choices/ptol/ptolemy_III</RequiredTechnology>
   </Identity>
   <ResourceTrickle>
     <Rates> 
@@ -26,7 +25,9 @@
     <Mount>
       <Entity>units/ptol/hero_ptolemy_III_mounted</Entity>
       <Tooltip>This gives Ptolemy III his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

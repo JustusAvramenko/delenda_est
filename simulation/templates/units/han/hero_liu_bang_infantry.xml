@@ -8,13 +8,17 @@
     <Civ>han</Civ>
     <SpecificName>Liu Bang</SpecificName>
     <Icon>units/han/hero_liu_bang.png</Icon>
-  	<RequiredTechnology>civ_choices/han/liu_bang</RequiredTechnology>
+    <Requirements>
+      <Techs>civ_choices/han/liu_bang</Techs>
+    </Requirements>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/han/hero_liu_bang_mounted</Entity>
       <Tooltip>This gives Liu Bang his War Horse, with trample effects, greater speed, and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>200</food>
         <glory>200</glory>

@@ -7,13 +7,17 @@
     <Civ>han</Civ>
     <SpecificName>Emperor Wu of Han</SpecificName>
     <Icon>units/han/hero_wu_han.png</Icon>
-  	<RequiredTechnology>civ_choices/han/wu_han</RequiredTechnology>
+    <Requirements>
+      <Techs>civ_choices/han/wu_han</Techs>
+    </Requirements>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/han/hero_wu_han_mounted</Entity>
       <Tooltip>This gives Emperor Wu of Han his War Chariot, with trample effects, greater speed, and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>300</food>
         <glory>300</glory>

@@ -5,16 +5,17 @@
   </Auras>
   <Identity>
     <Civ>pers</Civ>
-	<Lang>persian</Lang>
-	<SpecificName>Xerxes I</SpecificName>
+    <Lang>persian</Lang>
+    <SpecificName>Xerxes I</SpecificName>
     <Icon>units/achae/hero_xerxes.png</Icon>
-    <RequiredTechnology>civ_choices/pers/xerxes</RequiredTechnology>
   </Identity>
   <Upgrade>
     <Mount>
       <Entity>units/pers/hero_xerxes_mounted</Entity>
       <Tooltip>This gives Xerxes his War Chariot, with trample effects and greater health.</Tooltip>
-	  <RequiredTechnology>phase_city</RequiredTechnology>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
       <Cost>
         <food>300</food>
         <glory>200</glory>
