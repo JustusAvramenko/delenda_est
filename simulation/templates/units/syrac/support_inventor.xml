@@ -8,7 +8,6 @@
       <RepeatTime>1000</RepeatTime>
     </Capture>
   </Attack>
-
   <Cost>
     <Population>1</Population>
     <BuildTime>30</BuildTime>
@@ -33,7 +32,9 @@
     <Icon>units/hele/support_healer.png</Icon>
 	<Tooltip>
 Use to boost the efficiency of nearby units and buildings. Garrison within a building to boost the efficiency of its production queue.</Tooltip>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Minimap>
     <Type>hero</Type>

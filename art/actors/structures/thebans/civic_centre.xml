@@ -2,11 +2,8 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="Thebans_Civic_Centre">
+    <variant frequency="1" name="Thebans_Civic_Centre" file="structures/defensive_building.xml">
       <mesh>structural/athen_cc_struct.dae</mesh>
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
       <props>
         <prop actor="props/structures/athenians/civic_centre_decor.xml" attachpoint="root"/>
         <prop actor="props/structures/athenians/civic_centre_nature.xml" attachpoint="root"/>
@@ -15,8 +12,7 @@
         <prop actor="props/structures/athenians/civic_centre_roundroof.xml" attachpoint="root"/>
         <prop actor="props/structures/thebans/civic_centre_shields.xml" attachpoint="root"/>
         <prop actor="props/structures/athenians/civic_centre_tiles.xml" attachpoint="root"/>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="loaded-projectile"/>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
+        <prop actor="props/structures/decals/paving_tile_aegean_7x7_round.xml" attachpoint="root"/>
       </props>
       <textures>
         <texture file="structural/hele_struct.dds" name="baseTex"/>
