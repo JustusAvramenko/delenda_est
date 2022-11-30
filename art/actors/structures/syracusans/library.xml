@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Archimedean Academy" file="structures/defensive_building.xml">
+      <mesh>structural/syrac_library_struct.dae</mesh>
+      <props>
+        <prop actor="props/structures/macedonians/library_decor.xml" attachpoint="root"/>
+        <prop actor="props/structures/macedonians/library_nature.xml" attachpoint="root"/>
+        <prop actor="props/structures/macedonians/library_trees.xml" attachpoint="root"/>
+        <prop actor="props/structures/syracusans/library_props_a.xml" attachpoint="root"/>
+        <prop actor="props/structures/macedonians/library_struct_b.xml" attachpoint="root"/>
+        <prop actor="props/structures/macedonians/library_tiles.xml" attachpoint="root"/>
+        <prop actor="props/special/eyecandy/statue_aphrodite_small.xml" attachpoint="statue_01"/>
+		<prop actor="props/special/eyecandy/statue_aphrodite_small.xml" attachpoint="statue_02"/>
+      </props>
+      <textures>
+        <texture file="structural/hele_struct.dds" name="baseTex"/>
+        <texture file="structural/hele_struct_norm.png" name="normTex"/>
+        <texture file="structural/hele_struct_spec.png" name="specTex"/>
+        <texture file="structural/ao/mace_library.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_hele.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_large.xml">
+      <props>
+        <prop actor="props/structures/macedonians/library_decor.xml" attachpoint="root"/>
+        <prop actor="props/structures/macedonians/library_nature.xml" attachpoint="root"/>
+        <prop actor="props/structures/macedonians/library_trees.xml" attachpoint="root"/>
+        <prop actor="props/structures/macedonians/library_props_a.xml" attachpoint="root"/>
+        <prop actor="props/structures/macedonians/library_struct_b.xml" attachpoint="root"/>
+        <prop actor="props/structures/macedonians/library_tiles.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
