@@ -8,10 +8,22 @@
     <Civ>syrac</Civ>
     <GenericName>Library</GenericName>
     <SpecificName>Archimedean Academy</SpecificName>
+    <VisibleClasses datatype="tokens">
+      -City
+      Town
+    </VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
     <Static width="24.0" depth="28.0"/>
   </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/support_inventor
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/syracusans/library.xml</Actor>
     <FoundationActor>structures/fndn_6x8.xml</FoundationActor>
