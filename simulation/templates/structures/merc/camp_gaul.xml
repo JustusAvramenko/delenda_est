@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special_merc_camp">
+  <Footprint>
+    <Circle radius="12"/>
+  </Footprint>
   <Identity>
-    <SpecificName>Gallic Mercenary Camp</SpecificName>
+    <SpecificName>Gallic Tavern</SpecificName>
     <VisibleClasses datatype="tokens">Gallic</VisibleClasses>
   </Identity>
+  <Obstruction>
+    <Static width="16" depth="12"/>
+  </Obstruction>
   <Trainer>
     <Entities datatype="tokens">
 	  units/mercenaries/gaul/infantry_1
@@ -13,6 +19,6 @@
 	</Entities>
   </Trainer>
   <VisualActor>
-    <Actor>structures/mercenaries/camp_greek.xml</Actor>
+    <Actor>structures/celts/tavern_02.xml</Actor>
   </VisualActor>
 </Entity>
