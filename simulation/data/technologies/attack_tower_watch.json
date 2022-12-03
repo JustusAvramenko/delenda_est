@@ -12,15 +12,20 @@
 		"imp": "Vigiles"
 	},
 	"description": "A night's watch increases vigilance.",
-	"cost": {"food": 200, "coin": 100},
-	"requirements": {"tech": "phase_town"},
+	"cost": {
+		"food": 200,
+		"coin": 100
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "sentries.png",
 	"researchTime": 40,
 	"tooltip": "Defense Towers +2 default arrows, but now each tower costs 1 population.",
 	"modifications": [
-		{"value": "BuildingAI/DefaultArrowCount", "add": 2.0},
-		{"value": "Cost/Population", "add": 1}
+		{ "value": "BuildingAI/DefaultArrowCount", "add": 2.0 },
+		{ "value": "Cost/Population", "add": 1 }
 	],
 	"affects": ["DefenseTower"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

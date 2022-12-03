@@ -1,0 +1,21 @@
+{	
+	"genericName": "Homeland Defense",
+	"description": "A night's watch increases vigilance.",
+	"cost": {
+		"wood": 500,
+		"glory": 500
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "fire_arrows.png",
+	"researchTime": 40,
+	"tooltip": "Civic Centers, Fortresses, and Defense Towers +2 default arrows.",
+	"modifications": [
+		{ "value": "BuildingAI/DefaultArrowCount", "add": 2.0 },
+		{ "value": "Cost/Population", "add": 1 }
+	],
+	"affects": ["Defensive"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
