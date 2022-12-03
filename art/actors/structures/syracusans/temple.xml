@@ -2,36 +2,11 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="0" name="Spartan temple">
-      <mesh>structural/sele_temple.dae</mesh>
-      <props>
-        <prop actor="particle/sparks.xml" attachpoint="flame01"/>
-        <prop actor="particle/flame_firepit_1.xml" attachpoint="flame01"/>
-        <prop actor="particle/flame_firepit_2.xml" attachpoint="flame01"/>
-        <prop actor="particle/smoke_small_light.xml" attachpoint="flame01"/>
-        <prop actor="particle/sparks.xml" attachpoint="flame02"/>
-        <prop actor="particle/flame_firepit_1.xml" attachpoint="flame02"/>
-        <prop actor="particle/flame_firepit_2.xml" attachpoint="flame02"/>
-        <prop actor="particle/smoke_small_light.xml" attachpoint="flame02"/>
-        <prop actor="props/structures/macedonians/temple_props_a.xml" attachpoint="root"/>
-		<prop actor="props/structures/macedonians/temple_tile_b.xml" attachpoint="root"/>
-      </props>
-      <textures>
-        <texture file="structural/hele_struct.dds" name="baseTex"/>
-        <texture file="structural/hele_struct_norm.png" name="normTex"/>
-        <texture file="structural/hele_struct_spec.png" name="specTex"/>
-        <texture file="structural/ao/spart_temple.png" name="aoTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="new">
-      <mesh>structural/spart_temple.dae</mesh>
-      <props>
-        <prop actor="props/structures/decals/spart_temple.xml" attachpoint="root"/>
-        <prop actor="props/flora/cypress_potted_b.xml" attachpoint="root"/>
-      </props>
+    <variant frequency="1" name="Syracusan Temple">
+      <mesh>structural/syrac_temple.dae</mesh>
       <textures>
         <texture file="structural/syrac_struct.png" name="baseTex"/>
-        <texture file="structural/sparta_struct_spec.png" name="specTex"/>
+        <texture file="structural/syrac_struct_spec.png" name="specTex"/>
         <texture file="structural/syrac_struct_norm.png" name="normTex"/>
         <texture file="structural/ao/spart_temple_AO.png" name="aoTex"/>
       </textures>
@@ -47,12 +22,7 @@
   </group>
   <group>
     <variant frequency="1" name="alive"/>
-    <variant file="structures/destruction_medium.xml">
-      <props>
-        <prop actor="props/structures/spartans/temple_props_a.xml" attachpoint="root"/>
-        <prop actor="props/structures/spartans/temple_tile_c.xml" attachpoint="root"/>
-      </props>
-    </variant>
+    <variant file="structures/destruction_medium.xml"/>
   </group>
   <material>player_trans_ao_parallax_spec.xml</material>
 </actor>
