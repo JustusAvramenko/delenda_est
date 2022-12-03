@@ -1,20 +1,28 @@
 {
 	"genericName": "Syrian Tetrapolis",
-	"description": ".",
-	"cost": {"wood": 500, "stone": 500, "metal": 500},
-	"requirements": {"all": [{"tech": "phase_imperial"}, {"civ": "sele"}]},
+	"cost": {
+		"wood": 500,
+		"stone": 500,
+		"metal": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{ "civ": "sele" }
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "architecture.png",
 	"researchTime": 40,
 	"tooltip": "Upgrade Military Colonies to Civic Center status, with greater health and territory effects.",
 	"modifications": [
-		{"value": "Health/Max", "add": 1000},
-		{"value": "Cost/BuildTime", "add": 100},
-		{"value": "TerritoryInfluence/Radius", "multiply": 1.5},
-		{"value": "Cost/Resources/wood", "add": 200},
-		{"value": "Cost/Resources/stone", "add": 200},
-		{"value": "Cost/Resources/metal", "add": 200},
-		{"value": "VisualActor/Actor", "replace": "structures/seleucids/civic_center.xml"}
+		{ "value": "Health/Max", "add": 1000 },
+		{ "value": "Cost/BuildTime", "add": 100 },
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.5 },
+		{ "value": "Cost/Resources/wood", "add": 200 },
+		{ "value": "Cost/Resources/stone", "add": 200 },
+		{ "value": "Cost/Resources/glory", "add": 200 },
+		{ "value": "VisualActor/Actor", "replace": "structures/seleucids/civic_center.xml" }
 	],
 	"affects": ["MilitaryColony"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
