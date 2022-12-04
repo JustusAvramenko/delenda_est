@@ -4,7 +4,7 @@
     units/female_inspiration
   </Auras>
   <Builder>
-	<Entities datatype="tokens">
+    <Entities datatype="tokens">
       -structures/{civ}/military_colony
     </Entities>
   </Builder>
@@ -15,9 +15,11 @@
   </Capturable>
   <Identity>
     <GenericName>Female Citizen</GenericName>
-	<Phenotype>female</Phenotype>
+    <Phenotype>female</Phenotype>
     <VisibleClasses datatype="tokens">Female_Citizen Woman</VisibleClasses>
-    <RequiredTechnology>unlock_females_house_small</RequiredTechnology>
+    <Requirements>
+      <Techs>unlock_females_house_small</Techs>
+    </Requirements>
   </Identity>
   <Sound>
     <SoundGroups>

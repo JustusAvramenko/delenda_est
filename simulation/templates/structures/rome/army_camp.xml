@@ -16,18 +16,44 @@
   </Researcher>
   <Trainer>
     <Entities datatype="tokens">
+	  units/{civ}/infantry_scout
+	  units/{civ}/infantry_spearman_e
+	  units/{civ}/infantry_hoplite_e
+	  units/{civ}/infantry_pikeman_e
+	  units/{civ}/infantry_swordsman_e
+	  units/{civ}/infantry_axeman_e
+	  units/{civ}/infantry_javelineer_e
+	  units/{civ}/infantry_slinger_e
+	  units/{civ}/infantry_archer_e
+	  units/{civ}/infantry_crossbowman_e
+      units/{civ}/cavalry_scout
+      units/{civ}/camelry_scout
+      units/{civ}/cavalry_swordsman_e
+      units/{civ}/cavalry_axeman_e
+      units/{civ}/camelry_swordsman_e
+      units/{civ}/cavalry_spearman_e
+      units/{civ}/camelry_spearman_e
+      units/{civ}/cavalry_javelineer_e
+      units/{civ}/camelry_javelineer_e
+      units/{civ}/cavalry_archer_e
+      units/{civ}/camelry_archer_e
+      units/{civ}/cavalry_crossbowman_e
+      units/{civ}/camelry_crossbowman_e
     </Entities>
   </Trainer>
   <Upgrade>
     <Colonia>
       <Entity>structures/rome/civil_centre</Entity>
       <Tooltip>Colonize conquered territory by granting the Army Camp 'colonia' status.</Tooltip>
-      <Requirements><Techs>phase_imperial</Techs></Requirements>
+      <Requirements>
+        <Techs>phase_imperial</Techs>
+      </Requirements>
       <Cost>
         <stone>2000</stone>
         <metal>2000</metal>
       </Cost>
       <Time>120</Time>
+      <Variant>upgrading</Variant>
     </Colonia>
   </Upgrade>
 </Entity>

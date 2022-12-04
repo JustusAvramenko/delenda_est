@@ -15,13 +15,21 @@
     </Technologies>
   </Researcher>
   <Trainer>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/merc_infantry_1
+	  units/{civ}/merc_infantry_2
+	  units/{civ}/merc_infantry_3
+	  units/{civ}/merc_cavalry_1
+	  units/{civ}/merc_cavalry_2
+    </Entities>
   </Trainer>
   <Upgrade>
     <Colonia>
       <Entity>structures/imp/civil_centre</Entity>
       <Tooltip>Colonize conquered territory by granting the Army Camp 'colonia' status.</Tooltip>
-      <Requirements><Techs>phase_imperial</Techs></Requirements>
+      <Requirements>
+        <Techs>phase_imperial</Techs>
+      </Requirements>
       <Cost>
         <stone>1200</stone>
         <glory>1200</glory>
