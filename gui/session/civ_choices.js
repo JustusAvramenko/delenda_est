@@ -13,8 +13,10 @@ function initCivChoicesDialog()
 
 	for (let i = 0; i < civChoices.length; ++i)
 	{
-		let civChoiceTechResearched = Engine.GuiInterfaceCall("IsTechnologyResearched", {
-			"tech": civChoices[i],
+		let civChoiceTechResearched = Engine.GuiInterfaceCall("AreRequirementsMet", {
+			"requirements": {
+				"Techs": civChoices[i],
+			},
 			"player": g_ViewedPlayer
 		});
 		if (civChoiceTechResearched)
