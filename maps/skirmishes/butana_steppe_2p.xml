@@ -3,7 +3,7 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>desert</SkySet>
-		<SunColor r="1.02788" g="0.99418" b="0.867801"/>
+		<SunColor r="1.02788" g="0.991602" b="0.866644"/>
 		<SunElevation angle="0.908117"/>
 		<SunRotation angle="-0.558369"/>
 		<AmbientColor r="0.34902" g="0.34902" b="0.34902"/>
@@ -32,19 +32,21 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="583.393" y="123.52" z="-78.991"/>
+		<Position x="369.129" y="137.24" z="-121.677"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
+  "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
   "Description": "Southeast of Egypt near Kush lies a semi-arid region today known as the Butana Steppe.",
   "Keywords": [],
   "LockTeams": false,
   "Name": "Butana Steppe (2 players)",
   "PlayerData": [
-    null,
+    "",
     {
       "Name": "West Player"
     },
@@ -55,7 +57,9 @@
   "Preview": "butana_steppe_2.png",
   "RevealMap": false,
   "VictoryConditions": [
-    "conquest_civic_centers"
+    "conquest_civic_centers",
+    "domination",
+    "massacre"
   ]
 }
 ]]></ScriptSettings>
@@ -91,7 +95,7 @@
 		<Entity uid="66">
 			<Template>gaia/tree/baobab</Template>
 			<Player>0</Player>
-			<Position x="269.91764" z="271.57984"/>
+			<Position x="268.54282" z="251.52662"/>
 			<Orientation y="-0.88323"/>
 			<Actor seed="41144"/>
 		</Entity>
@@ -252,7 +256,7 @@
 		<Entity uid="97">
 			<Template>gaia/tree/baobab</Template>
 			<Player>0</Player>
-			<Position x="286.81226" z="250.93009"/>
+			<Position x="277.61204" z="250.27488"/>
 			<Orientation y="-1.80422"/>
 			<Actor seed="51088"/>
 		</Entity>
@@ -273,7 +277,7 @@
 		<Entity uid="102">
 			<Template>gaia/tree/baobab</Template>
 			<Player>0</Player>
-			<Position x="278.4095" z="191.78766"/>
+			<Position x="260.82804" z="172.83408"/>
 			<Orientation y="1.2525"/>
 			<Actor seed="13726"/>
 		</Entity>
@@ -315,7 +319,7 @@
 		<Entity uid="113">
 			<Template>gaia/tree/baobab</Template>
 			<Player>0</Player>
-			<Position x="299.8046" z="211.34241"/>
+			<Position x="294.85306" z="238.5388"/>
 			<Orientation y="-1.11847"/>
 			<Actor seed="7968"/>
 		</Entity>
@@ -9653,7 +9657,7 @@
 		</Entity>
 		<Entity uid="1960">
 			<Template>actor|props/flora/grass_tropic_field.xml</Template>
-			<Position x="384.87894" z="30.98632"/>
+			<Position x="417.1172" z="21.84063"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11320"/>
 		</Entity>
@@ -12011,7 +12015,7 @@
 		<Entity uid="2451">
 			<Template>gaia/tree/baobab_4_dead</Template>
 			<Player>0</Player>
-			<Position x="261.7729" z="231.96882"/>
+			<Position x="260.2483" z="242.1196"/>
 			<Orientation y="-0.71595"/>
 			<Actor seed="17068"/>
 		</Entity>
@@ -14849,28 +14853,28 @@
 		<Entity uid="2962">
 			<Template>gaia/treasure/metal_weapons_small</Template>
 			<Player>0</Player>
-			<Position x="312.70829" z="203.55768"/>
+			<Position x="279.34253" z="194.79496"/>
 			<Orientation y="-6.55442"/>
 			<Actor seed="30390"/>
 		</Entity>
 		<Entity uid="2963">
 			<Template>gaia/treasure/metal_weapons_small</Template>
 			<Player>0</Player>
-			<Position x="315.24769" z="201.83225"/>
+			<Position x="281.88193" z="193.06952"/>
 			<Orientation y="-7.78423"/>
 			<Actor seed="31122"/>
 		</Entity>
 		<Entity uid="2964">
 			<Template>gaia/treasure/metal_weapons_small</Template>
 			<Player>0</Player>
-			<Position x="310.60099" z="201.3697"/>
+			<Position x="277.23523" z="192.60697"/>
 			<Orientation y="-3.86597"/>
 			<Actor seed="51394"/>
 		</Entity>
 		<Entity uid="2965">
 			<Template>gaia/treasure/metal_weapons_small</Template>
 			<Player>0</Player>
-			<Position x="313.42008" z="198.31141"/>
+			<Position x="280.05433" z="189.54868"/>
 			<Orientation y="-2.35918"/>
 			<Actor seed="26190"/>
 		</Entity>
@@ -15347,12 +15351,6 @@
 			<Position x="546.15345" z="157.92853"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34754"/>
-		</Entity>
-		<Entity uid="3145">
-			<Template>actor|props/structures/britons/workshop_box_pile_02.xml</Template>
-			<Position x="552.21912" z="137.70844"/>
-			<Orientation y="-1.75982"/>
-			<Actor seed="15382"/>
 		</Entity>
 		<Entity uid="3146">
 			<Template>actor|props/structures/construction/scaffold.xml</Template>
@@ -15974,20 +15972,6 @@
 			<Orientation y="-2.03043"/>
 			<Actor seed="48704"/>
 		</Entity>
-		<Entity uid="3284">
-			<Template>structures/noba/temple</Template>
-			<Player>0</Player>
-			<Position x="284.18403" z="574.71369"/>
-			<Orientation y="2.80782"/>
-			<Actor seed="59600"/>
-		</Entity>
-		<Entity uid="3285">
-			<Template>structures/noba/temple</Template>
-			<Player>0</Player>
-			<Position x="764.98963" z="251.79072"/>
-			<Orientation y="-2.412"/>
-			<Actor seed="7350"/>
-		</Entity>
 		<Entity uid="3286">
 			<Template>structures/noba/granary</Template>
 			<Player>0</Player>
@@ -16243,13 +16227,6 @@
 			<Orientation y="2.41958"/>
 			<Actor seed="47102"/>
 		</Entity>
-		<Entity uid="3456">
-			<Template>structures/noba/temple</Template>
-			<Player>0</Player>
-			<Position x="558.0235" z="120.39951"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="52790"/>
-		</Entity>
 		<Entity uid="3459">
 			<Template>structures/noba/house</Template>
 			<Player>0</Player>
@@ -16263,6 +16240,102 @@
 			<Position x="690.69593" z="168.75861"/>
 			<Orientation y="-3.07091"/>
 			<Actor seed="61348"/>
+		</Entity>
+		<Entity uid="3461">
+			<Template>other/artifact_noba</Template>
+			<Player>0</Player>
+			<Position x="558.97126" z="110.59713"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="29883"/>
+		</Entity>
+		<Entity uid="3462">
+			<Template>other/artifact_noba</Template>
+			<Player>0</Player>
+			<Position x="321.39649" z="672.35621"/>
+			<Orientation y="3.04538"/>
+			<Actor seed="43890"/>
+		</Entity>
+		<Entity uid="3463">
+			<Template>other/artifact_noba</Template>
+			<Player>0</Player>
+			<Position x="750.54542" z="709.09772"/>
+			<Orientation y="3.04926"/>
+			<Actor seed="54086"/>
+		</Entity>
+		<Entity uid="3464">
+			<Template>structures/kush/farmstead</Template>
+			<Player>2</Player>
+			<Position x="789.39136" z="606.17554"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6434"/>
+		</Entity>
+		<Entity uid="3465">
+			<Template>structures/kush/farmstead</Template>
+			<Player>1</Player>
+			<Position x="355.39982" z="227.57648"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="34894"/>
+		</Entity>
+		<Entity uid="3466">
+			<Template>actor|props/flora/grass_savanna_field_tall.xml</Template>
+			<Position x="380.27952" z="27.92771"/>
+			<Orientation y="0.76926"/>
+			<Actor seed="9260"/>
+		</Entity>
+		<Entity uid="3467">
+			<Template>actor|props/structures/celts/special_hay.xml</Template>
+			<Position x="352.82404" z="217.88999"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="35782"/>
+		</Entity>
+		<Entity uid="3473">
+			<Template>actor|props/structures/celts/special_hay.xml</Template>
+			<Position x="797.1496" z="600.88965"/>
+			<Orientation y="2.23978"/>
+			<Actor seed="53358"/>
+		</Entity>
+		<Entity uid="3474">
+			<Template>actor|props/structures/hellenes/farmstead_hay.xml</Template>
+			<Position x="348.31095" z="217.42939"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="35095"/>
+		</Entity>
+		<Entity uid="3475">
+			<Template>actor|props/structures/persians/farmstead_cart.xml</Template>
+			<Position x="364.14765" z="225.16745"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="2689"/>
+		</Entity>
+		<Entity uid="3476">
+			<Template>actor|props/structures/persians/farmstead_cart.xml</Template>
+			<Position x="317.02878" z="239.87229"/>
+			<Orientation y="-0.66886"/>
+			<Actor seed="7909"/>
+		</Entity>
+		<Entity uid="3477">
+			<Template>actor|props/structures/persians/farmstead_cart.xml</Template>
+			<Position x="774.24518" z="582.7403"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="65060"/>
+		</Entity>
+		<Entity uid="3478">
+			<Template>actor|props/structures/ptolemies/farmstead_cart.xml</Template>
+			<Position x="798.46949" z="618.8899"/>
+			<Orientation y="1.53695"/>
+			<Actor seed="43926"/>
+		</Entity>
+		<Entity uid="3479">
+			<Template>actor|props/structures/romans/farmstead_wood.xml</Template>
+			<Position x="765.36182" z="576.14783"/>
+			<Orientation y="2.57917"/>
+			<Actor seed="16845"/>
+		</Entity>
+		<Entity uid="3480">
+			<Template>gaia/ruins/stone_structure_farmstead</Template>
+			<Player>0</Player>
+			<Position x="455.2877" z="982.31415"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27575"/>
 		</Entity>
 	</Entities>
 	<Paths/>
