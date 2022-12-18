@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_elephant_melee_small">
+  <Cost>
+    <Population>1</Population>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>0</food>
+      <coin>400</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>rome</Civ>
+	<Lang>latin</Lang>
+	<SpecificName>Roman War Elephant</SpecificName>
+    <VisibleClasses datatype="tokens">Mercenary</VisibleClasses>
+    <Icon>units/ptol/champion_elephant.png</Icon>
+    <Requirements>
+      <Techs>phase_imperial</Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <metal>80</metal>
+  </Loot>
+  <TrainingRestrictions>
+    <Category>Mercenary</Category>
+  </TrainingRestrictions>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>units/ptolemies/elephantry_c_m.xml</Actor>
+  </VisualActor>
+</Entity>

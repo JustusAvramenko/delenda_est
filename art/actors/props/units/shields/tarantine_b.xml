@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>props/shield/pelte_03_front.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/pelte_03_back_wooden.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="props/shield/aspis_01_norm.png" name="normTex"/>
+        <texture file="props/shield/aspis_01_copper.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Syrac-Basic-01">
+      <textures>
+        <texture file="props/shield/aspis_athen_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Syrac-Basic-02">
+      <textures>
+        <texture file="props/shield/aspis_athen_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Syrac-Basic-03">
+      <textures>
+        <texture file="props/shield/aspis_athen_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Syrac-Basic-04">
+      <textures>
+        <texture file="props/shield/aspis_athen_04.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

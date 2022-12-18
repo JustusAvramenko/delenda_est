@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>props/shield/pelte_03_front.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/pelte_03_back.xml" attachpoint="back"/>
+      </props>
+      <textures>
+        <texture file="props/shield/aspis_spec_bronze.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="aspis_mace_03_bronze_player_a">
+      <textures>
+        <texture file="props/shield/aspis_mace_03_bronze_player_a.png" name="baseTex"/>
+        <texture file="props/shield/aspis_mace_03_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="aspis_mace_03_bronze_player_b">
+      <textures>
+        <texture file="props/shield/aspis_mace_03_bronze_player_b.png" name="baseTex"/>
+        <texture file="props/shield/aspis_mace_03_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="aspis_mace_h_02_bronze">
+      <textures>
+        <texture file="props/shield/aspis_mace_h_02_bronze.png" name="baseTex"/>
+        <texture file="props/shield/aspis_mace_h_02_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>
