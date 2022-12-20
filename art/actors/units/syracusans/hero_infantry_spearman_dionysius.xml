@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/helmets/hele_thracian_b5_crested.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/new/head_corinthian.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear_lance_cavalry_reverse.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/shields/aspis_syrac_hero_01.xml" attachpoint="shield_arm"/>
+        <prop actor="props/units/weapons/sheath_xiphos.xml" attachpoint="sheath_01_L"/>
+        <prop actor="props/units/armor/greave_09_bronze_r.xml" attachpoint="leg_R"/>
+        <prop actor="props/units/armor/greave_09_bronze_l.xml" attachpoint="leg_L"/>
+        <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="skeletal/athen/cuirass_themistocles_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_spearman_shield_ready.xml" name="Spearman-Shield-Ready" frequency="1"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/death_cape_long.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
