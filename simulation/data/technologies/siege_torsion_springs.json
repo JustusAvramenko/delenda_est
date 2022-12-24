@@ -6,13 +6,19 @@
 		"wood": 500,
 		"glory": 400
 	},
-	"requirements": {"all": [{"tech": "phase_imperial"}, {"tech": "unlock_siege_ballistics"}]},
-	"requirementsTooltip": "Unlocked in Empire Phase. Requires Ballistics.",
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{ "tech": "unlock_siege_ballistics" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires \"Ballistics.\"",
 	"icon": "torsion_springs.png",
 	"researchTime": 40,
 	"tooltip": "Ranged Siege Weapons +25% attack range.",
 	"modifications": [
-		{"value": "Attack/Ranged/MaxRange", "multiply": 1.25}
+		{ "value": "Attack/Ranged/MaxRange", "multiply": 1.25 },
+		{ "value": "Vision/Range", "multiply": 1.25 }
 	],
 	"affects": ["Ranged Siege"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
