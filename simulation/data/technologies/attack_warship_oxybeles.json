@@ -2,17 +2,20 @@
 	"pair": "pair_naval_06",	
 	"genericName": "Naval Oxybeles",
 	"description": "Mounting catapults and bolt shooters onto ships helped give added firepower.",
-	"cost": {"wood": 500, "metal": 300},
+	"cost": {
+		"wood": 500,
+		"metal": 300
+	},
 	"requirements": {"tech": "phase_city"},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "naval_firepower.png",
 	"researchTime": 40,
-	"tooltip": "Warships +5 Crush Attack and +10 Attack Range, but +10% Metal Cost",
+	"tooltip": "Warships +5 crush attack and +10 attack range, but +20 metal cost",
 	"modifications": [
-		{"value": "Attack/Ranged/Damage/Damage/Crush", "add": 5.0},
+		{"value": "Attack/Ranged/Damage/Crush", "add": 5.0},
 		{"value": "Attack/Ranged/Damage/MaxRange", "add": 10.0},
 		{"value": "Vision/Range", "add": 5.0},
-		{"value": "Cost/Resources/metal", "multiply": 1.1}
+		{"value": "Cost/Resources/metal", "add": 20}
 	],
 	"affects": ["Warship"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
