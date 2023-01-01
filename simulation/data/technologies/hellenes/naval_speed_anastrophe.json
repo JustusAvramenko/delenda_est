@@ -11,14 +11,17 @@
 		"cart": "Anastrophe"
 	},
 	"description": "The Anastrophe was a 'sudden turn' ship maneuver in order to take the opponent off-guard.",
-	"cost": {"food": 200, "wood": 150},
+	"cost": {
+		"food": 200,
+		"wood": 150
+	},
 	"requirements": {"tech": "phase_town"},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "trihemiolia.png",
 	"researchTime": 40,
 	"tooltip": "All Warships +10% rowing speed.",
 	"modifications": [
-		{"value": "UnitMotion/WalkSpeed", "multiply": 1.1}
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 }
 	],
 	"affects": ["Warship"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

@@ -3,12 +3,21 @@
 	"genericName": "Fletching",
 	"description": "Fletching increases the accuracy and sail time for projectiles, such as arrows.",
 	"cost": {"wood": 100},
-	"requirements": {"any": [{"tech": "phase_town"},{"civ": "celt"},{"civ": "brit"},{"civ": "gaul"}]},
+	"requirements": {
+		"any": [
+			{"tech": "phase_town"},
+			{"civ": "celt"},
+			{"civ": "brit"},
+			{"civ": "gaul"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "fletching.png",
 	"researchTime": 60,
 	"tooltip": "Ranged infantry +20% pierce attack.",
-	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2}],
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2 }
+	],
 	"affects": ["Infantry Ranged"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -12,13 +12,25 @@
 		"rome": "Hasta"
 	},
 	"description": "A long spear made specifically for cavalry.",
-	"cost": {"wood": 100, "metal": 200},
-	"requirements": {"any": [{"tech": "phase_town"},{"civ": "celt"},{"civ": "brit"},{"civ": "gaul"}]},
+	"cost": {
+		"wood": 100,
+		"metal": 200
+	},
+	"requirements": {
+		"any": [
+			{"tech": "phase_town"},
+			{"civ": "celt"},
+			{"civ": "brit"},
+			{"civ": "gaul"}
+		 ]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "spear_cavalry.png",
 	"researchTime": 60,
 	"tooltip": "Melee Cavalry +20 hack attack.",
-	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2}],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.2 }
+	],
 	"affects": ["Cavalry Melee"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
