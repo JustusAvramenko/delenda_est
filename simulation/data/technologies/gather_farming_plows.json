@@ -2,13 +2,18 @@
 	"pair": "pair_farming_02",
 	"genericName": "Iron Plows",
 	"description": "A horse drawn instrument to turn the sod.",
-	"cost": {"wood": 200, "metal": 300},
+	"cost": {
+		"wood": 200,
+		"metal": 300
+	},
 	"requirements": {"tech": "phase_city"},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "plow.png",
 	"researchTime": 40,
 	"tooltip": "Gatherers +15% farming rate.",
-	"modifications": [{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15}],
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15 }
+	],
 	"affects": ["Gatherer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
