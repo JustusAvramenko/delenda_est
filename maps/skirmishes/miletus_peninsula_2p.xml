@@ -15,10 +15,10 @@
 		<Water>
 			<WaterBody>
 				<Type>ocean</Type>
-				<Color r="0.0313726" g="0.301961" b="0.501961"/>
+				<Color r="0.137255" g="0.356863" b="0.521569"/>
 				<Tint r="0" g="1" b="0.619608"/>
 				<Height>20.0394</Height>
-				<Waviness>3.90625</Waviness>
+				<Waviness>4.66797</Waviness>
 				<Murkiness>0.723633</Murkiness>
 				<WindAngle>1.95736</WindAngle>
 			</WaterBody>
@@ -32,7 +32,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="1312.4" y="79.7007" z="406.117"/>
+		<Position x="1038.91" y="80.0181" z="354.663"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -43,12 +43,13 @@
   "CircularMap": true,
   "Description": "Each player starts the match atop a large flat plateau, otherwise known as an acropolis.\n\nTo the East lies a large bay with fishing opportunities. To the West is an unclaimed acropolis overlooking the Aegean Sea.",
   "Keywords": [
-    "new"
+    "new",
+    "trigger"
   ],
   "LockTeams": false,
   "Name": "Miletus Peninsula (2 players)",
   "PlayerData": [
-    null,
+    "",
     {
       "Name": "Player 1"
     },
@@ -58,6 +59,10 @@
   ],
   "Preview": "miletus_peninsula_2p.png",
   "RevealMap": false,
+  "TriggerScripts": [
+    "scripts/TriggerHelper.js",
+    "skirmishes/miletus_peninsula_2p.js"
+  ],
   "VictoryConditions": [
     "conquest_civic_centers",
     "domination"
@@ -19831,8 +19836,8 @@
 		<Entity uid="9015">
 			<Template>gaia/treasure/wood_shipwreck</Template>
 			<Player>0</Player>
-			<Position x="1206.95984" z="360.67945"/>
-			<Orientation y="4.1467"/>
+			<Position x="1173.11353" z="149.02561"/>
+			<Orientation y="4.93242"/>
 			<Actor seed="63542"/>
 		</Entity>
 		<Entity uid="9019">
@@ -19845,8 +19850,8 @@
 		<Entity uid="9020">
 			<Template>gaia/treasure/wood_shipwreck_sail_boat_cut</Template>
 			<Player>0</Player>
-			<Position x="1274.292" z="597.63459"/>
-			<Orientation y="4.3866"/>
+			<Position x="1244.75586" z="835.53211"/>
+			<Orientation y="-9.55974"/>
 			<Actor seed="57848"/>
 		</Entity>
 		<Entity uid="9023">
@@ -20969,7 +20974,7 @@
 		<Entity uid="9271">
 			<Template>structures/athen/civil_centre</Template>
 			<Player>0</Player>
-			<Position x="542.68955" z="610.615"/>
+			<Position x="542.58027" z="610.77082"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62650"/>
 		</Entity>
@@ -31088,21 +31093,14 @@
 		<Entity uid="11084">
 			<Template>units/pirates/ship_bireme</Template>
 			<Player>0</Player>
-			<Position x="58.57026" z="664.49146"/>
+			<Position x="45.69852" z="689.18061"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30881"/>
-		</Entity>
-		<Entity uid="11085">
-			<Template>units/pirates/ship_bireme</Template>
-			<Player>0</Player>
-			<Position x="62.57888" z="693.6709"/>
-			<Orientation y="1.83613"/>
-			<Actor seed="21735"/>
 		</Entity>
 		<Entity uid="11086">
 			<Template>units/pirates/ship_bireme</Template>
 			<Player>0</Player>
-			<Position x="1168.52283" z="518.59388"/>
+			<Position x="1421.02051" z="401.70615"/>
 			<Orientation y="-0.93337"/>
 			<Actor seed="26443"/>
 		</Entity>
@@ -31319,8 +31317,8 @@
 		<Entity uid="11121">
 			<Template>units/pirates/ship_bireme</Template>
 			<Player>0</Player>
-			<Position x="920.2685" z="1448.98572"/>
-			<Orientation y="0.85764"/>
+			<Position x="933.37616" z="1475.97193"/>
+			<Orientation y="-2.15993"/>
 			<Actor seed="30881"/>
 		</Entity>
 		<Entity uid="11122">
@@ -31329,6 +31327,85 @@
 			<Position x="1336.94507" z="488.82828"/>
 			<Orientation y="1.95757"/>
 			<Actor seed="63488"/>
+		</Entity>
+		<Entity uid="11123">
+			<Template>actor|props/special/eyecandy/shipwreck_ram_bow.xml</Template>
+			<Position x="1385.78272" z="548.57538"/>
+			<Orientation y="2.82084"/>
+			<Actor seed="60717"/>
+		</Entity>
+		<Entity uid="11124">
+			<Template>trigger/trigger_point_B</Template>
+			<Player>2</Player>
+			<Position x="1517.1521" z="754.08729"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27942"/>
+		</Entity>
+		<Entity uid="11125">
+			<Template>trigger/trigger_point_C</Template>
+			<Player>2</Player>
+			<Position x="918.44013" z="1499.54505"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10073"/>
+		</Entity>
+		<Entity uid="11126">
+			<Template>trigger/trigger_point_B</Template>
+			<Player>1</Player>
+			<Position x="29.91814" z="679.81763"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10254"/>
+		</Entity>
+		<Entity uid="11127">
+			<Template>trigger/trigger_point_C</Template>
+			<Player>1</Player>
+			<Position x="1408.18165" z="387.28287"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47660"/>
+		</Entity>
+		<Entity uid="11128">
+			<Template>trigger/trigger_point_A</Template>
+			<Player>2</Player>
+			<Position x="1240.31824" z="926.5044"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52517"/>
+		</Entity>
+		<Entity uid="11129">
+			<Template>trigger/trigger_point_A</Template>
+			<Player>1</Player>
+			<Position x="448.15656" z="409.97242"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="30467"/>
+		</Entity>
+		<Entity uid="11130">
+			<Template>units/pirates/ship_bireme</Template>
+			<Player>0</Player>
+			<Position x="1503.73255" z="742.27936"/>
+			<Orientation y="-0.2446"/>
+			<Actor seed="26443"/>
+		</Entity>
+		<Entity uid="11131">
+			<Template>actor|particle/cloud.xml</Template>
+			<Position x="173.79633" z="1033.88721"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="54502"/>
+		</Entity>
+		<Entity uid="11132">
+			<Template>actor|particle/cloud.xml</Template>
+			<Position x="1230.50464" z="1128.59339"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="39725"/>
+		</Entity>
+		<Entity uid="11133">
+			<Template>actor|particle/cloud.xml</Template>
+			<Position x="1202.91626" z="246.25464"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27447"/>
+		</Entity>
+		<Entity uid="11134">
+			<Template>actor|particle/cloud.xml</Template>
+			<Position x="364.53895" z="265.49445"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7728"/>
 		</Entity>
 	</Entities>
 	<Paths/>
