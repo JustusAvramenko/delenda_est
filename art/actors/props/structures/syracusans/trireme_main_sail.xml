@@ -4,14 +4,29 @@
   <float/>
   <group>
     <variant file="others/ships/main_sail_base.xml" name="Trireme Sail">
-      <mesh>props/spart_trireme_main_sail.dae</mesh>
+      <mesh>props/athen_trireme_main_sail.dae</mesh>
+      <textures>
+       <texture file="props/ptol_sail_norm.png" name="normTex"/>
+       <texture file="props/sail_spec_1.png" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="100" file="others/ships/spart_sail_01.xml" name="scorpion"/>
-    <variant frequency="100" file="others/ships/spart_sail_02.xml" name="chair"/>
-    <variant frequency="100" file="others/ships/spart_sail_03.xml" name="aegis"/>
-    <variant frequency="100" file="others/ships/spart_sail_04.xml" name="face"/>
+    <variant frequency="1" name="syrac_sail_02">
+      <textures>
+       <texture file="props/syrac_sail_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="syrac_sail_03">
+      <textures>
+       <texture file="props/syrac_sail_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="syrac_sail_04">
+      <textures>
+       <texture file="props/syrac_sail_04.png" name="baseTex"/>
+      </textures>
+    </variant>
   </group>
   <material>player_trans_parallax_spec.xml</material>
 </actor>

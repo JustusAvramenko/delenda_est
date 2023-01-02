@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="7">
+	<Environment>
+		<SkySet>cirrus</SkySet>
+		<SunColor r="0.984314" g="0.952941" b="0.831373"/>
+		<SunElevation angle="0.638136"/>
+		<SunRotation angle="-0.909753"/>
+		<AmbientColor r="0.356863" g="0.356863" b="0.356863"/>
+		<Fog>
+			<FogFactor>0</FogFactor>
+			<FogThickness>0.0351563</FogThickness>
+			<FogColor r="0.839216" g="0.866667" b="0.882353"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.0784314" g="0.247059" b="0.419608"/>
+				<Tint r="0" g="1" b="0.501961"/>
+				<Height>20.0394</Height>
+				<Waviness>3.02734</Waviness>
+				<Murkiness>0.683594</Murkiness>
+				<WindAngle>0.233165</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>-0.015625</Brightness>
+			<Contrast>0.984375</Contrast>
+			<Saturation>0.8125</Saturation>
+			<Bloom>0.160156</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="2250.89" y="241.832" z="1523.25"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "AISeed": 0,
+  "AllyView": false,
+  "CircularMap": true,
+  "Description": "Give an interesting description of your map.",
+  "Keywords": [],
+  "LockTeams": false,
+  "Name": "Peloponnesian Wars (6 players)",
+  "PlayerData": [
+    null,
+    {
+      "Civ": "athen",
+      "Name": "Athenians"
+    },
+    {
+      "Civ": "spart",
+      "Color": {
+        "b": 10,
+        "g": 10,
+        "r": 230
+      },
+      "Name": "Spartans"
+    },
+    {
+      "Civ": "mace",
+      "Color": {
+        "b": 15,
+        "g": 235,
+        "r": 100
+      },
+      "Name": "Thessaly"
+    },
+    {
+      "Civ": "spart",
+      "Color": {
+        "b": 55,
+        "g": 255,
+        "r": 255
+      },
+      "Name": "Corinth"
+    },
+    {
+      "Civ": "theb",
+      "Color": {
+        "b": 230,
+        "g": 0,
+        "r": 130
+      },
+      "Name": "Thebans"
+    },
+    {
+      "Civ": "athen",
+      "Color": {
+        "b": 0,
+        "g": 130,
+        "r": 255
+      },
+      "Name": "Elisians"
+    },
+    {
+      "Civ": "epir"
+    },
+    {
+      "Civ": "theb"
+    }
+  ],
+  "Preview": "",
+  "RevealMap": false,
+  "VictoryConditions": [
+    "conquest_civic_centers"
+  ]
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="11">
+			<Template>structures/athen/civil_centre</Template>
+			<Player>1</Player>
+			<Position x="2961.56373" z="2063.04151"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="62782"/>
+		</Entity>
+		<Entity uid="12">
+			<Template>structures/spart/civil_centre</Template>
+			<Player>2</Player>
+			<Position x="1989.29871" z="901.0279"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="65177"/>
+		</Entity>
+		<Entity uid="13">
+			<Template>structures/mace/civil_centre</Template>
+			<Player>3</Player>
+			<Position x="1647.20142" z="3403.69092"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="53849"/>
+		</Entity>
+		<Entity uid="14">
+			<Template>structures/spart/civil_centre</Template>
+			<Player>4</Player>
+			<Position x="2179.11817" z="1897.01954"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="29181"/>
+		</Entity>
+		<Entity uid="15">
+			<Template>structures/theb/civil_centre</Template>
+			<Player>5</Player>
+			<Position x="2607.27833" z="2458.42164"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="21258"/>
+		</Entity>
+		<Entity uid="16">
+			<Template>structures/athen/civil_centre</Template>
+			<Player>6</Player>
+			<Position x="1090.0962" z="1752.71741"/>
+			<Orientation y="2.31196"/>
+			<Actor seed="38827"/>
+		</Entity>
+	</Entities>
+	<Paths/>
+</Scenario>
