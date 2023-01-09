@@ -8,11 +8,16 @@
         <animation event="0.75" load="0.7" file="mechanical/rome_ballista_atttack.dae" name="attack_ranged" sound="0" speed="150"/>
       </animations> 
       <mesh>structural/rome_ballista.dae</mesh>
-      <textures><texture file="structural/rome_ballista.png" name="baseTex"/></textures>
       <props>
         <prop actor="props/units/siege_artillery/stone_projectile_large_flaming.xml" attachpoint="projectile"/>
         <prop actor="props/units/siege_artillery/stone_projectile_large.xml" attachpoint="loaded-projectile"/>
       </props>
+      <textures>
+        <texture file="structural/rome_ballista.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
     </variant>
   </group>
+  <material>player_trans_norm_spec.xml</material>
 </actor>

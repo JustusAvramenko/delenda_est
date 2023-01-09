@@ -4,15 +4,16 @@
   <group>
     <variant file="biped/base_healer_male.xml">
       <mesh>skeletal/new/m_dress.dae</mesh>
-      <textures>
-        <texture file="skeletal/ptol/robes_healer_01.png" name="baseTex"/>
-        <texture file="skeletal/ptol/robes_healer_01_spec.png" name="specTex"/>
-      </textures>
       <props>
         <prop actor="props/units/heads/head_zapo_e.xml" attachpoint="head"/>
         <prop actor="props/units/heads/zapo_plume_a.xml" attachpoint="helmet"/>
         <prop actor="props/units/staff.xml" attachpoint="weapon_R"/>
       </props>
+      <textures>
+        <texture file="skeletal/ptol/robes_healer_01.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="skeletal/ptol/robes_healer_01_spec.png" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -23,5 +24,5 @@
     <variant file="biped/death_infantry.xml">
     </variant>
   </group>
-  <material>player_trans_spec.xml</material>
+  <material>player_trans_norm_spec.xml</material>
 </actor>

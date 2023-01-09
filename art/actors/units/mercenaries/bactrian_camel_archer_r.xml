@@ -10,31 +10,31 @@
         <prop actor="props/units/heads/pers_hair.xml" attachpoint="helmet"/>
         <prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_bow"/>
       </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
     <variant frequency="1" name="tunic_coat_01_01">
       <textures>
         <texture file="skeletal/scyth/tunic_coat_01_01.png" name="baseTex"/>
-        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
     <variant frequency="1" name="tunic_coat_01_02">
       <textures>
         <texture file="skeletal/scyth/tunic_coat_01_02.png" name="baseTex"/>
-        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
     <variant frequency="1" name="tunic_coat_01_03">
       <textures>
         <texture file="skeletal/scyth/tunic_coat_01_03.png" name="baseTex"/>
-        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
     <variant frequency="1" name="tunic_coat_01_04">
       <textures>
         <texture file="skeletal/scyth/tunic_coat_01_04.png" name="baseTex"/>
-        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
     <variant frequency="1" name="scale_01_01">
@@ -63,5 +63,5 @@
     <variant file="biped/rider/camelry/attack_slaughter.xml"/>
     <variant file="biped/rider/camelry/gather_meat.xml"/>
   </group>
-  <material>player_trans_spec.xml</material>
+  <material>player_trans_norm_spec.xml</material>
 </actor>

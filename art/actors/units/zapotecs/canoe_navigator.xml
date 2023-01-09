@@ -3,15 +3,19 @@
   <castshadow/>
   <group>
     <variant>
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <animations>
         <animation file="biped/new/zapo_navigator.dae" name="walk" speed="10"/>
         <animation file="biped/new/zapo_navigator.dae" name="idle" speed="1"/>
       </animations>
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/head_zapo_a.xml" attachpoint="head"/>
         <prop actor="props/units/weapons/zapo_oar.xml" attachpoint="weapon_R"/>
       </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -25,5 +29,5 @@
     <variant frequency="100" name="Idle"/>
     <variant file="biped/death_infantry.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_norm_spec.xml</material>
 </actor>

@@ -2,6 +2,14 @@
 <actor version="1">
   <castshadow/>
   <group>
+    <variant>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
 	<variant frequency="2" name="Nuba Woman 01">
       <mesh>skeletal/new/f_naked.dae</mesh>
       <textures>
@@ -75,5 +83,5 @@
     <variant file="biped/female_build.xml"/>
     <variant file="biped/female_build_farm.xml"/>
   </group>
-  <material>player_trans_spec.xml</material>
+  <material>player_trans_norm_spec.xml</material>
 </actor>
