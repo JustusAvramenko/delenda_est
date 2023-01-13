@@ -2,15 +2,14 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant name="xion_blacksmith_pelt">
-      <mesh>structural/xion_house_c_floor.dae</mesh>
-    </variant>
-  </group>
-  <group>
     <variant>
+      <mesh>structural/xion_house_c_floor.dae</mesh>
       <textures>
         <texture file="structural/celt_siege_ram.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
   </group>
+  <material>no_trans_norm_spec.xml</material>
 </actor>

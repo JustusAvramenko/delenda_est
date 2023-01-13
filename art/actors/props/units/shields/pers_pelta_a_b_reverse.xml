@@ -7,11 +7,12 @@
       <props>
         <prop actor="props/units/shields/pers_pelta_a_back_reverse.xml" attachpoint="root"/>
       </props>
+      <textures>
+	    <texture file="props/shield/hele_pelta_i.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+	  </textures>
     </variant>
   </group>
-  <group>
-    <variant frequency="1" name="pers-pelta-b">
-      <textures><texture file="props/shield/hele_pelta_i.dds" name="baseTex"/></textures>
-    </variant>
-  </group>
+  <material>no_trans_norm_spec.xml</material>
 </actor>

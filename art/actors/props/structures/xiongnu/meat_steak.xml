@@ -4,11 +4,16 @@
   <group>
     <variant frequency="1" name="Steak_a">
       <mesh>props/meat_steak_a.dae</mesh>
-      <textures><texture file="props/beefslab.png" name="baseTex"/></textures>
+      <textures><texture file="props/beefslab.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/></textures>
     </variant>
     <variant frequency="1" name="Steak_b">
       <mesh>props/meat_steak_b.dae</mesh>
-      <textures><texture file="props/beefslab.png" name="baseTex"/></textures>
+      <textures><texture file="props/beefslab.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/></textures>
     </variant>
   </group>
+  <material>no_trans_parallax_spec.xml</material>
 </actor>

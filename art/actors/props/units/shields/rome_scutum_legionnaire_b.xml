@@ -2,6 +2,15 @@
 <actor version="1">
   <castshadow/>
   <group>
+    <variant>
+      <textures>
+        <texture file="props/shield/rome_imp_scutum_d.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
     <variant frequency="1" name="shield1">
       <mesh>props/shield/scutum_j_f.dae</mesh>
       <props>
@@ -21,10 +30,5 @@
       </props>
     </variant>
   </group>
-  <group>
-    <variant frequency="1" name="shield-scutum-d">
-      <textures><texture file="props/shield/rome_imp_scutum_d.dds" name="baseTex"/></textures>
-    </variant>
-  </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_norm_spec.xml</material>
 </actor>
