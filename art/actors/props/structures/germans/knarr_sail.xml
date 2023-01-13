@@ -9,14 +9,13 @@
         <animation file="other/norse_sail_idle.dae" name="idle" speed="50"/>
         <animation file="other/norse_sail_move.dae" name="Walk" speed="5"/>
       </animations>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="0" name="Norse sail_a">
-      <textures>
-        <texture file="props/norse_ship_sail_a.png" name="baseTex"/>
-      </textures>
-    </variant>
     <variant frequency="1" name="Norse sail_b">
       <textures>
         <texture file="props/norse_ship_sail_b.png" name="baseTex"/>
@@ -28,5 +27,5 @@
       </textures>
     </variant>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_norm_spec.xml</material>
 </actor>

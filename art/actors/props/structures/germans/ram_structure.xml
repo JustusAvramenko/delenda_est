@@ -51,7 +51,12 @@
         <prop actor="props/units/shields/norse_damaged.xml" attachpoint="shield_37"/>
         <prop actor="props/units/shields/norse_wheathered.xml" attachpoint="shield_38"/>
       </props>
-      <textures><texture file="structural/celt_siege_ram.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="structural/celt_siege_ram.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
     </variant>
   </group>
+  <material>no_trans_norm_spec.xml</material>
 </actor>
