@@ -4,13 +4,15 @@
   <group>
     <variant frequency="100" name="Base">
       <mesh>props/weap_bow.dae</mesh>
-      <textures><texture file="structural/norse_struct.png" name="baseTex"/></textures>
+      <textures>
+        <texture file="structural/norse_struct.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
 	  <animations>
-      <animation file="mechanical/bow_attack.dae" event="0.35" name="Attack_ranged" speed="200"/>
-    </animations>
+        <animation file="mechanical/bow_attack.dae" event="0.35" name="Attack_ranged" speed="200"/>
+      </animations>
     </variant>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_norm_spec.xml</material>
 </actor>
-
-

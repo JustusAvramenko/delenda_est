@@ -3,13 +3,13 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="Base">
-      <textures><texture file="props/prop_weap.dds" name="baseTex"/></textures>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="xiphos-e">
       <mesh>props/xiphos_hip.dae</mesh>
+      <textures>
+        <texture file="props/prop_weap.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="props/prop_weap.dds" name="specTex"/>
+      </textures>
     </variant>
   </group>
-  <material>basic_spec.xml</material>
+  <material>no_trans_norm_spec.xml</material>
 </actor>

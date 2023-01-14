@@ -4,10 +4,11 @@
     <group>
         <variant frequency="1" name="sword">
             <mesh>props/weapons/sword/xiphos.dae</mesh>
-            <textures>
-                <texture file="props/weapon/sword_xiphos_spec.png" name="specTex"/>
-                <texture file="props/weapon/sword_xiphos_norm.png" name="normTex"/>
-            </textures>
+      <textures>
+        <texture file="props/prop_weap.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="props/prop_weap.dds" name="specTex"/>
+      </textures>
         </variant>
     </group>
     <group>
@@ -32,5 +33,5 @@
             </textures>
         </variant>
     </group>
-    <material>no_trans_parallax_spec.xml</material>
+    <material>no_trans_norm_spec.xml</material>
 </actor>
