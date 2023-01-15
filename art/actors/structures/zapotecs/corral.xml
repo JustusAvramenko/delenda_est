@@ -3,20 +3,14 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="base">
+      <mesh>structural/zapo_corral.dae</mesh>
       <props>
-        <prop actor="props/structures/decals/rome_corral_mud.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/iber_corral_mud.xml" attachpoint="root"/>
       </props>
       <textures>
         <texture file="structural/zapo_struct.png" name="baseTex"/>
         <texture file="structural/zapo_struct_spec.png" name="specTex"/>
         <texture file="structural/zapo_struct_norm.png" name="normTex"/>
-      </textures>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="farmstead">
-      <mesh>structural/zapo_corral.dae</mesh>
-      <textures>
         <texture file="structural/ao/zapo_corral_AO.png" name="aoTex"/>
       </textures>
     </variant>
@@ -25,7 +19,7 @@
     <variant name="ungarrisoned" frequency="1"/>
     <variant name="garrisoned">
       <props>
-        <prop actor="props/special/common/garrison_flag_animals.xml" attachpoint="garrisoned"/>
+        <prop actor="props/special/common/garrison_flag_zapo.xml" attachpoint="garrisoned"/>
       </props>
     </variant>
   </group>
