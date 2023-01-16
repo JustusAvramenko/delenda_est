@@ -3,7 +3,7 @@
   <Cost>
     <BuildTime>30</BuildTime>
     <Resources>
-      <wood>60</wood>
+      <wood>100</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -14,10 +14,13 @@
     <Civ>han</Civ>
     <SpecificName>Dàotián</SpecificName>
     <GenericName>Rice Paddy</GenericName>
-    <Tooltip>Build in neutral or own territory to harvest cash crops for coin. Build on farmland terrain to gain a +100% farming boost. There is a diminishing return effect where it is more efficient to use fewer gatherers per field. Max gatherers: 3.</Tooltip>
+    <Tooltip>Build in neutral or own territory to harvest cash crops for coin. Build near a captured Farmstead for a +100% farming boost. There is a diminishing return effect where it is more efficient to use fewer gatherers per field. Max gatherers: 3.</Tooltip>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="20.0" width="20.0"/>
+    <Static depth="18.0" width="18.0"/>
   </Obstruction>
   <ResourceSupply>
     <MaxGatherers>3</MaxGatherers>
