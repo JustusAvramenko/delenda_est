@@ -3,7 +3,6 @@
     <shader effect="model_transparent"/>
     <alpha_blending/>
     <define name="USE_TRANSPARENT" value="1"/>
-    <uniform name="effectSettings" value="1.0 50.0 0.0075 0.85"/>
 	
     <renderquery name="sim_time"/>
     <define name="USE_WIND" value="1"/>
@@ -12,4 +11,10 @@
 	<required_texture name="baseTex"/>
 	<required_texture name="specTex" define="USE_SPECULAR_MAP"/>
 	<required_texture name="normTex" define="USE_NORMAL_MAP"/>
+    <uniform name="effectSettings" value="1.0 50.0 0.0075 0.85"/>
+    <!-- Settings for effects above:
+     First value: Normal mapping intensity.
+	 Second value: Specular power.
+	 Third value: Parallax scale.
+	 Fourth value: AO amount. -->
 </material>
