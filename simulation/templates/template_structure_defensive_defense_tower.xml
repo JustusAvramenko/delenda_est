@@ -83,7 +83,7 @@
     <VisibleClasses datatype="tokens">Village Wood Tower DefenseTower Ranged</VisibleClasses>
     <Tooltip>Shoots arrows. Garrison to provide extra defense. Can be built in allied territory for mutual defense. Upgrade to a Stone Defense Tower for 100 stone.</Tooltip>
     <Icon>structures/palisade_fort.png</Icon>
-    <Requirements><Techs>phase_village</Techs></Requirements>
+    <Requirements><Techs datatype="tokens">phase_village</Techs></Requirements>
   </Identity>
   <Loot>
     <xp>200</xp>
@@ -126,7 +126,7 @@
     <Tower>
       <Entity>structures/{civ}/defense_tower_stone</Entity>
       <Tooltip>Stone Towers have +100% health, +20% territory influence, +20% vision, +20% attack range, and additional technologies.</Tooltip>
-      <Requirements><Techs>phase_town</Techs></Requirements>
+      <Requirements><Techs datatype="tokens">phase_town</Techs></Requirements>
       <Cost>
         <stone>100</stone>
         <wood>0</wood>
