@@ -2,19 +2,23 @@
 <Entity parent="template_unit_infantry_melee_spearman">
   <Cost>
     <Population>0</Population>
-	<BuildTime>5</BuildTime>
+    <BuildTime>5</BuildTime>
     <Resources>
       <food>0</food>
       <wood>0</wood>
       <metal>0</metal>
-	  <coin>100</coin>
+      <coin>100</coin>
     </Resources>
   </Cost>
   <Identity>
     <GenericName>Mercenary Spear Infantry</GenericName>
     <VisibleClasses datatype="tokens">-Citizen Mercenary</VisibleClasses>
-	<Rank>Advanced</Rank>
-	<Requirements><Techs datatype="tokens">phase_town</Techs></Requirements>
+    <Rank>Advanced</Rank>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_town
+      </Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>10</metal>

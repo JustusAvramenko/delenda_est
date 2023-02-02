@@ -22,17 +22,13 @@
         <FriendlyFire>false</FriendlyFire>
       </Splash>
 	  <Bonuses>
-		<BonusStructures>
-		  <Classes>Structure</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusStructures>
 		<BonusCav>
 		  <Classes>Cavalry</Classes>
 		  <Multiplier>2</Multiplier>
 		</BonusCav>
 		<BonusGates>
 		  <Classes>Gates</Classes>
-		  <Multiplier>1.5</Multiplier>
+		  <Multiplier>3</Multiplier>
 		</BonusGates>
 	  </Bonuses>
     </Melee>
@@ -40,14 +36,18 @@
   <Identity>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
     <Tooltip>Traits: Slow Speed, Heavy Armor, Heavy Charge, Trample, Berserk.
-Strong Against: Horse Cavalry (2x), Buildings (1.5x), Gates (3x).
+Strong Against: Horse Cavalry (2x), Gates (3x).
 Weak Against: Javelin Infantry, Sword Infantry.</Tooltip>
   </Identity>
   <Upgrade>
     <BerserkerElephants>
       <Entity>units/{civ}/champion_elephant_berserker</Entity>
       <Tooltip>Sending elephants into Berserker mode gives them +150% attack, stronger trample, and greater speed, but less armor and they continuously lose health (they die quicker). Warning: Once sent into Berserker mode, you cannot calm them.</Tooltip>
-	  <Requirements><Techs datatype="tokens">phase_imperial</Techs></Requirements>
+	  <Requirements>
+        <Techs datatype="tokens">
+          phase_imperial
+        </Techs>
+      </Requirements>
       <Cost>
         <food>100</food>
         <glory>100</glory>

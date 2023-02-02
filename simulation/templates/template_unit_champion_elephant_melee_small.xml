@@ -3,9 +3,7 @@
   <Attack>
     <Melee>
       <Damage>
-	    <Hack>32.0</Hack>
-        <Pierce>0.0</Pierce>
-        <Crush>0.0</Crush>
+	    <Hack op="mul">0.8</Hack>
       </Damage>
     </Melee>
   </Attack>
@@ -23,28 +21,9 @@
   <Identity>
     <VisibleClasses datatype="tokens">Small</VisibleClasses>
     <Tooltip>Traits: Medium Speed, Heavy Armor, Heavy Charge, Trample, Berserk.
-Strong Against: Horse Cavalry (2x), Buildings (1.5x), Gates (3x).
+Strong Against: Horse Cavalry (2x), Gates (3x).
 Weak Against: Javelin Infantry, Sword Infantry.</Tooltip>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Pierce>10</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
-  <Upgrade>
-    <BerserkerElephants>
-      <Entity>units/{civ}/champion_elephant_berserker</Entity>
-      <Tooltip>Sending elephants into Berserker mode gives them +150% attack, stronger trample, and greater speed, but less armor and they continuously lose health (they die quicker). Warning: Once sent into Berserker mode, you cannot calm them.</Tooltip>
-	  <Requirements><Techs datatype="tokens">phase_imperial</Techs></Requirements>
-      <Cost>
-        <food>100</food>
-        <glory>100</glory>
-      </Cost>
-      <Time>10</Time>
-    </BerserkerElephants>
-  </Upgrade>
   <UnitMotion>
     <WalkSpeed op="mul">1.2</WalkSpeed>
   </UnitMotion>

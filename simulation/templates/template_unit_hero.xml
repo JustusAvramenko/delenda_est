@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
-  <Attack> 
+  <Attack>
     <Capture>
       <AttackName>Capture</AttackName>
       <Capture>20</Capture>
       <MaxRange>4</MaxRange>
       <RepeatTime>1000</RepeatTime>
 	  <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
-    </Capture> 
+    </Capture>
   </Attack>
   <Auras datatype="tokens">
     units/heroes/hero_garrison
@@ -30,7 +30,11 @@
     <GenericName>Hero</GenericName>
     <Classes datatype="tokens">Organic Human</Classes>
     <VisibleClasses datatype="tokens">Hero Soldier</VisibleClasses>
-    <Requirements><Techs datatype="tokens">phase_village</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_village
+      </Techs>
+    </Requirements>
     <Undeletable>true</Undeletable>
   </Identity>
   <Loot>

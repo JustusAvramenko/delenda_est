@@ -2,7 +2,7 @@
 <Entity parent="template_unit_infantry_ranged_archer">
   <Cost>
     <Population>0</Population>
-	<BuildTime>5</BuildTime>
+    <BuildTime>5</BuildTime>
     <Resources>
       <food>0</food>
       <wood>0</wood>
@@ -13,8 +13,12 @@
   <Identity>
     <GenericName>Mercenary Archer Infantry</GenericName>
     <VisibleClasses datatype="tokens">-Citizen Mercenary</VisibleClasses>
-	<Rank>Advanced</Rank>
-	<Requirements><Techs datatype="tokens">phase_town</Techs></Requirements>
+    <Rank>Advanced</Rank>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_town
+      </Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>10</metal>

@@ -17,7 +17,7 @@
         <Range>10.0</Range>
         <FriendlyFire>false</FriendlyFire>
         <Damage>
-	      <Hack>25.0</Hack>
+          <Hack>25.0</Hack>
           <Pierce>0.0</Pierce>
           <Crush>25.0</Crush>
         </Damage>
@@ -26,13 +26,13 @@
         <Speed>40.0</Speed>
         <Spread>5.0</Spread>
         <Gravity>20.0</Gravity>
-		<FriendlyFire>false</FriendlyFire>
+        <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
         <ImpactActorName>particle/tower_artillery_impact_smoke_01.xml</ImpactActorName>
         <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
       </Projectile>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
-	  <PreferredClasses datatype="tokens">Ship Structure</PreferredClasses>
+      <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Ship Structure</PreferredClasses>
     </Ranged>
   </Attack>
   <BuildingAI>
@@ -67,11 +67,15 @@
   </Health>
   <Identity>
     <GenericName>Heavy Warship</GenericName>
-    <Tooltip>Garrison with ranged siege weapons to increase ranged fire power.
-Secondary Attack: Ramming.</Tooltip>
+    <Tooltip>Garrison with ranged siege weapons to increase ranged fire power.</Tooltip>
     <VisibleClasses datatype="tokens">Heavy Siege Ranged NavalSiege</VisibleClasses>
     <Classes datatype="tokens">NavalSiege</Classes>
-	<Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_imperial
+        -phase_town
+      </Techs>
+    </Requirements>
   </Identity>
   <Position>
     <TurnRate>0.75</TurnRate>
