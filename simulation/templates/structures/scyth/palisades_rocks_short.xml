@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_short">
-  <BuildRestrictions>
-    <Territory>own neutral ally enemy</Territory>
-  </BuildRestrictions>
   <Resistance>
     <Entity>
       <Damage>
@@ -19,6 +16,9 @@
       </Damage>
     </Foundation>
   </Resistance>
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
   <Cost>
     <BuildTime>5</BuildTime>
     <Resources>
@@ -41,7 +41,12 @@
     <GenericName>Wooden Wall</GenericName>
     <VisibleClasses datatype="tokens">-StoneWall Palisade</VisibleClasses>
     <Icon>structures/palisade_wall.png</Icon>
-	<Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_town
+        phase_city
+      </Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
     <Static width="4.5" depth="2.0"/>

@@ -40,7 +40,12 @@
 	  Vesta
 	</VisibleClasses>
     <Tooltip>Build 1 to auto-research Town Phase, and also greatly increase the loyalty of nearby structures and health of nearby units.</Tooltip>
-    <Requirements><Techs datatype="tokens">phase_village</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_town
+        phase_village
+      </Techs>
+    </Requirements>
     <Icon>structures/vesta_phase_II.png</Icon>
   </Identity>
   <Obstruction>

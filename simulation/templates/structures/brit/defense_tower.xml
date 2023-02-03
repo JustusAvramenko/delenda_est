@@ -7,15 +7,17 @@
   <Identity>
     <Civ>brit</Civ>
     <SpecificName>Uxelon</SpecificName>
-	<VisibleClasses datatype="tokens">-Village Town</VisibleClasses>
-	<SelectionGroupName>structures/brit/defense_tower</SelectionGroupName>
+    <VisibleClasses datatype="tokens">-Village Town</VisibleClasses>
+    <SelectionGroupName>structures/brit/defense_tower</SelectionGroupName>
   </Identity>
   <Obstruction>
     <Static width="7.5" depth="7.5"/>
   </Obstruction>
   <Upgrade>
     <Tower>
-	  <Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+	  <Requirements replace="">
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
     </Tower>
   </Upgrade>
   <VisualActor>

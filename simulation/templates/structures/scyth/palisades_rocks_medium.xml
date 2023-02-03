@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_medium">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>20</Pierce>
+        <Crush>2</Crush>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
   <BuildRestrictions>
-    <Territory>own neutral ally enemy</Territory>
+    <Territory>own neutral ally</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>7</BuildTime>
@@ -26,34 +42,23 @@
     <GenericName>Wooden Wall</GenericName>
     <VisibleClasses datatype="tokens">-StoneWall Palisade</VisibleClasses>
     <Icon>structures/palisade_wall.png</Icon>
-	<Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_town
+        phase_city
+      </Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
     <Static width="10" depth="2.0"/>
   </Obstruction>
   <RallyPoint disable=""/>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>5</Hack>
-        <Pierce>20</Pierce>
-        <Crush>2</Crush>
-      </Damage>
-    </Entity>
-    <Foundation>
-      <Damage>
-        <Hack>1</Hack>
-        <Pierce>1</Pierce>
-        <Crush>1</Crush>
-      </Damage>
-    </Foundation>
-  </Resistance>
   <StatusBars>
     <HeightOffset>9.0</HeightOffset>
   </StatusBars>
   <VisualActor>
     <Actor>props/special/palisade_rocks_medium.xml</Actor>
-    <FoundationActor>structures/fndn_2x1.xml</FoundationActor>
+    <FoundationActor>structures/fndn_1x3pal.xml</FoundationActor>
   </VisualActor>
   <TerritoryInfluence disable=""/>
   <WallPiece>

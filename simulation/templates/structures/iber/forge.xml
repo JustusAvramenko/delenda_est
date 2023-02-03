@@ -3,13 +3,16 @@
   <Identity>
     <Civ>iber</Civ>
     <SpecificName>Harotz</SpecificName>
-    <Requirements>
-      <Techs datatype="tokens">phase_village</Techs>
-    </Requirements>
     <VisibleClasses datatype="tokens">
       -Town
       Village
     </VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_town
+        phase_village
+      </Techs>
+    </Requirements>
   </Identity>
   <Researcher>
     <Technologies datatype="tokens">

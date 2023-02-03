@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_gate">
   <BuildRestrictions>
-    <Territory>own neutral ally enemy</Territory>
+    <Territory>own neutral ally</Territory>
   </BuildRestrictions>
   <Resistance>
     <Entity>
@@ -26,7 +26,12 @@
     <GenericName>Wooden Gate</GenericName>
     <VisibleClasses datatype="tokens">-StoneWall Palisade</VisibleClasses>
     <Icon>structures/wooden_gate.png</Icon>
-	<Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_town
+        phase_city
+      </Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
     <Obstructions>
@@ -40,7 +45,7 @@
   </StatusBars>
   <TerritoryInfluence disable=""/>
   <VisualActor>
-    <FoundationActor>structures/fndn_3x1.xml</FoundationActor>
+    <FoundationActor>structures/fndn_1x3pal.xml</FoundationActor>
     <Actor>props/special/palisade_rocks_gate.xml</Actor>
   </VisualActor>
   <WallPiece>

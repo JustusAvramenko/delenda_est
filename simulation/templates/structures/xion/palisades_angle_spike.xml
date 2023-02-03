@@ -20,7 +20,12 @@
     <GenericName>Big Spike</GenericName>
     <VisibleClasses datatype="tokens">-StoneWall Palisade</VisibleClasses>
     <Icon>structures/palisade_wall.png</Icon>
-	<Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_town
+        phase_city
+      </Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
     <Static width="3.5" depth="1.5"/>

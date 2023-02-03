@@ -28,12 +28,17 @@
     <Civ>pers</Civ>
     <GenericName>Ice House</GenericName>
     <SpecificName>Yakhchāl</SpecificName>
-    <VisibleClasses datatype="tokens">Village IceHouse</VisibleClasses>
+    <VisibleClasses datatype="tokens">-City Village IceHouse</VisibleClasses>
     <Classes datatype="tokens">
 	  -ConquestCritical
 	  CivSpecific
 	</Classes>
-    <Requirements><Techs datatype="tokens">phase_village</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_village
+      </Techs>
+    </Requirements>
     <Tooltip>Increase the health of all Persian units and gain a trickle of Food resource for each Ice House built.</Tooltip>
     <Icon>structures/yakhchal.png</Icon>
   </Identity>

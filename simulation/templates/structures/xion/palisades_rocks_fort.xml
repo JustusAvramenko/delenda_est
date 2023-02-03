@@ -19,7 +19,7 @@
         <Pierce>10.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
-	  <MaxRange>60.0</MaxRange>
+      <MaxRange>60.0</MaxRange>
       <MinRange>4.0</MinRange>
     </Ranged>
   </Attack>
@@ -43,7 +43,12 @@
     <Classes datatype="tokens">Palisade</Classes>
     <Icon>structures/palisade_fort.png</Icon>
 	<VisibleClasses datatype="tokens">Village DefenseTower</VisibleClasses>
-	<Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_village
+        phase_city
+      </Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
     <Static width="9.0" depth="7.5"/>

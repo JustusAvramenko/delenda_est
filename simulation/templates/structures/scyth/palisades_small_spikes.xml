@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall">
   <BuildRestrictions>
-    <Territory>own neutral ally enemy</Territory>
+    <Territory>own neutral ally</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>12</BuildTime>
@@ -20,7 +20,12 @@
     <GenericName>Small Spikes</GenericName>
     <VisibleClasses datatype="tokens">-StoneWall Palisade</VisibleClasses>
     <Icon>structures/palisade_wall.png</Icon>
-	<Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_town
+        phase_city
+      </Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
     <Static width="3.0" depth="11.0"/>

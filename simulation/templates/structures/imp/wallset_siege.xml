@@ -9,7 +9,12 @@
 	</Classes>
     <Icon>structures/siege_wall.png</Icon>
     <Tooltip>A wooden and turf palisade buildable in enemy and neutral territories.</Tooltip>
-	<Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_town
+        phase_city
+      </Techs>
+    </Requirements>
   </Identity>
   <WallSet>
     <Templates>

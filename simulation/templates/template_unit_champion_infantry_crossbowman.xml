@@ -1,38 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_infantry">
+<Entity parent="template_unit_champion_infantry_archer">
   <Attack>
     <Ranged>
-      <AttackName>Arrow</AttackName>
+      <AttackName>Bolt</AttackName>
       <Damage>
-        <Hack>0</Hack>
-        <Pierce>40</Pierce>
-        <Crush>0</Crush>
+        <Crush>12.0</Crush>
       </Damage>
-      <MaxRange>60</MaxRange>
-      <MinRange>0</MinRange>
-      <PrepareTime>2400</PrepareTime>
-      <RepeatTime>3000</RepeatTime>
+      <MaxRange>60.0</MaxRange>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>4000</RepeatTime>
       <Projectile>
-        <Speed>100.0</Speed>
-        <Spread>1.0</Spread>
-        <Gravity>30.0</Gravity>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3"/>
+        <Speed>60.0</Speed>
+        <Spread>4.0</Spread>
       </Projectile>
-      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PreferredClasses datatype="tokens">Structure Soldier</PreferredClasses>
     </Ranged>
   </Attack>
+  <Cost>
+    <Resources>
+      <coin>75</coin>
+    </Resources>
+  </Cost>
   <Health>
-    <Max>120</Max>
+    <Max op="mul">1.2</Max>
   </Health>
   <Identity>
-    <GenericName>Champion Infantry Crossbowman</GenericName>
-    <VisibleClasses datatype="tokens">Ranged Crossbowman</VisibleClasses>
+    <Lang>greek</Lang>
+    <GenericName>Siege Crossbow</GenericName>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+    <Tooltip>Traits: Long Range, Medium Armor, Siege.
+Strong Against: Melee Infantry (1.25x), Structures (Crush Damage).
+Weak Against: Spear Cavalry, Sword Cavalry.</Tooltip>
+    <Requirements>
+      <Techs>phase_imperial</Techs>
+    </Requirements>
   </Identity>
+  <TrainingRestrictions>
+    <Category>Gastraphetes</Category>
+  </TrainingRestrictions>
   <Turretable/>
   <UnitAI>
     <Formations datatype="tokens">
       special/formations/skirmish
     </Formations>
   </UnitAI>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.6</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>56</Range>
+  </Vision>
 </Entity>

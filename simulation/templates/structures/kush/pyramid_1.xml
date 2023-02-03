@@ -34,9 +34,18 @@
 	  PyramidSmall
 	  CivSpecific
 	</Classes>
-    <VisibleClasses datatype="tokens">-City Village Pyramid</VisibleClasses>
+    <VisibleClasses datatype="tokens">
+      -City
+      Village
+      Pyramid
+    </VisibleClasses>
     <Tooltip>Build 2 to automatically research Town Phase. Increase territory radius of Civic Centers for each one built.</Tooltip>
-    <Requirements><Techs datatype="tokens">phase_village</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_village
+      </Techs>
+    </Requirements>
     <Icon>structures/kush_pyramid_small.png</Icon>
   </Identity>
   <Obstruction>
