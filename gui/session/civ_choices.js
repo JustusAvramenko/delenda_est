@@ -11,15 +11,15 @@ function initCivChoicesDialog()
 	if (civChoices === undefined)
 		return;
 
-	for (let i = 0; i < civChoices.length; ++i)
+	for (const civChoice of civChoices)
 	{
-		let civChoiceTechResearched = Engine.GuiInterfaceCall("AreRequirementsMet", {
+		const requirement = {
 			"requirements": {
-				"Techs": civChoices[i],
+				"Techs": { "_string": civChoice },
 			},
 			"player": g_ViewedPlayer
-		});
-		if (civChoiceTechResearched)
+		};
+		if (Engine.GuiInterfaceCall("AreRequirementsMet", requirement))
 			return;
 	}
 
