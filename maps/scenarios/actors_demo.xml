@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="7">
+	<Terrain patches="50" texture="blackness" priority="0" height="4096"/>
+	<Environment>
+		<SkySet>default</SkySet>
+		<SunColor r="0.811765" g="0.792157" b="0.701961"/>
+		<SunElevation angle="0.785398"/>
+		<SunRotation angle="5.49779"/>
+		<AmbientColor r="0.313726" g="0.376471" b="0.521569"/>
+		<Water>
+			<WaterBody>
+				<Type>lake</Type>
+				<Color r="0.3" g="0.35" b="0.7"/>
+				<Height>5</Height>
+				<Waviness>4.0</Waviness>
+				<Murkiness>0.45</Murkiness>
+				<Tint r="0.28" g="0.3" b="0.59"/>
+			</WaterBody>
+		</Water>
+	</Environment>
+	<Camera>
+		<Position x="141.287" y="78.0967" z="32.4902"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.523599"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+	{
+		"Name":"Units Demo",
+		"Description":"Every unit in the game.",
+		"Keywords": [
+			"demo"
+		],
+		"PlayerData":
+		[
+			{
+				"Civ":"athen"
+			}
+		],
+		"RevealMap":true,
+		"TriggerScripts": [
+			"scenarios/actors_demo.js"
+		],
+		"VictoryConditions": []
+	}
+	]]></ScriptSettings>
+	<Entities/>
+	<Paths/>
+	<Triggers/>
+</Scenario>
