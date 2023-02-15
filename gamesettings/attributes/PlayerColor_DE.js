@@ -1,5 +1,5 @@
 GameSettings.prototype.Attributes.PlayerColor.prototype.DefaultColors = [
-	{ "r": 10, "g": 10, "b": 190 },
+	{ "r": 50, "g": 150, "b": 255 },
 	{ "r": 230, "g": 10, "b": 10 },
 	{ "r": 125 , "g": 235, "b": 15 },
 	{ "r": 255, "g": 255, "b": 55 },
@@ -9,7 +9,7 @@ GameSettings.prototype.Attributes.PlayerColor.prototype.DefaultColors = [
 	{ "r": 20, "g": 80, "b": 60 },
 	{ "r": 220, "g": 160, "b": 220 },
 	{ "r": 80, "g": 255, "b": 190 },
-	{ "r": 50, "g": 150, "b": 255 },
+	{ "r": 10, "g": 10, "b": 200 },
 	{ "r": 100, "g": 150, "b": 30 },
 	{ "r": 100, "g": 60, "b": 30 },
 	{ "r": 128, "g": 0, "b": 64 },
