@@ -2,48 +2,51 @@
 
 <Scenario version="7">
 	<Environment>
-		<SkySet>cirrus</SkySet>
-		<SunColor r="0.956863" g="0.858824" b="0.537255"/>
-		<SunElevation angle="0.539961"/>
-		<SunRotation angle="-0.613592"/>
-		<AmbientColor r="0.439216" g="0.466667" b="0.509804"/>
+		<SkySet>sunny</SkySet>
+		<SunColor r="1.02312" g="0.902753" b="0.698129"/>
+		<SunElevation angle="0.730175"/>
+		<SunRotation angle="0.337476"/>
+		<AmbientColor r="0.356863" g="0.356863" b="0.356863"/>
 		<Fog>
-			<FogFactor>0.000996094</FogFactor>
-			<FogThickness>0.101563</FogThickness>
-			<FogColor r="0.882353" g="0.839216" b="0.701961"/>
+			<FogFactor>0.00195313</FogFactor>
+			<FogThickness>0.0351563</FogThickness>
+			<FogColor r="0.839216" g="0.866667" b="0.882353"/>
 		</Fog>
 		<Water>
 			<WaterBody>
-				<Type>lake</Type>
-				<Color r="0" g="0.247059" b="0.501961"/>
-				<Tint r="0" g="1" b="1"/>
+				<Type>ocean</Type>
+				<Color r="0.184314" g="0.337255" b="0.439216"/>
+				<Tint r="0" g="1" b="0.6"/>
 				<Height>19.3049</Height>
-				<Waviness>4.99023</Waviness>
-				<Murkiness>0.59082</Murkiness>
-				<WindAngle>1.37445</WindAngle>
+				<Waviness>5.25391</Waviness>
+				<Murkiness>0.908203</Murkiness>
+				<WindAngle>2.46051</WindAngle>
 			</WaterBody>
 		</Water>
 		<Postproc>
-			<Brightness>0</Brightness>
-			<Contrast>1</Contrast>
-			<Saturation>0.863281</Saturation>
-			<Bloom>0.135937</Bloom>
+			<Brightness>-0.015625</Brightness>
+			<Contrast>0.984375</Contrast>
+			<Saturation>0.757813</Saturation>
+			<Bloom>0.160156</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="510.59" y="98.806" z="1462.43"/>
+		<Position x="485.662" y="126.806" z="361.63"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
+  "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
   "Description": "The rolling Thessalian plain is traversed with narrow streams, easily forded. Wide-open spaces allow for massive expansion, while each player starts the match safe atop a large acropolis.",
   "Keywords": [],
   "LockTeams": false,
-  "Name": "Thessalian Plains (4 players)",
+  "Name": "",
   "PlayerData": [
+    "",
     {
       "Name": "Player 1"
     },
@@ -81,7 +84,7 @@
 			<Template>gaia/ruins/unfinished_greek_temple</Template>
 			<Player>0</Player>
 			<Position x="1274.92237" z="866.99476"/>
-			<Orientation y="-0.59447"/>
+			<Orientation y="-0.77718"/>
 		</Entity>
 		<Entity uid="35">
 			<Template>gaia/tree/poplar_lombardy</Template>
@@ -40264,31 +40267,6 @@
 			<Player>0</Player>
 			<Position x="94.87977" z="1111.12916"/>
 			<Orientation y="2.63404"/>
-		</Entity>
-		<Entity uid="7704">
-			<Template>gaia/fauna_shark.xml</Template>
-			<Position x="1908.63758" z="1179.9911"/>
-			<Orientation y="-1.64487"/>
-		</Entity>
-		<Entity uid="7705">
-			<Template>gaia/fauna_shark.xml</Template>
-			<Position x="1868.84144" z="1014.90528"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="7706">
-			<Template>gaia/fauna_shark.xml</Template>
-			<Position x="1936.57935" z="896.73572"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="7707">
-			<Template>gaia/fauna_shark.xml</Template>
-			<Position x="1948.49903" z="661.54175"/>
-			<Orientation y="-0.85442"/>
-		</Entity>
-		<Entity uid="7708">
-			<Template>gaia/fauna_shark.xml</Template>
-			<Position x="1785.54932" z="794.0774"/>
-			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="7709">
 			<Template>birds/buzzard</Template>

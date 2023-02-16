@@ -8,15 +8,15 @@
 		<SunRotation angle="-1.16024"/>
 		<AmbientColor r="0.501961" g="0.501961" b="0.501961"/>
 		<Fog>
-			<FogFactor>0</FogFactor>
-			<FogThickness>0.203125</FogThickness>
-			<FogColor r="0.74902" g="0.74902" b="0.74902"/>
+			<FogFactor>0.00199219</FogFactor>
+			<FogThickness>0.00390625</FogThickness>
+			<FogColor r="0.776471" g="0.890196" b="0.878431"/>
 		</Fog>
 		<Water>
 			<WaterBody>
 				<Type>clap</Type>
-				<Color r="0" g="0.247059" b="0.239216"/>
-				<Tint r="0" g="0.501961" b="0.247059"/>
+				<Color r="0.172549" g="0.290196" b="0.305882"/>
+				<Tint r="0.176471" g="0.333333" b="0.45098"/>
 				<Height>15.9475</Height>
 				<Waviness>1.09375</Waviness>
 				<Murkiness>0.867188</Murkiness>
@@ -26,13 +26,13 @@
 		<Postproc>
 			<Brightness>0</Brightness>
 			<Contrast>1.01563</Contrast>
-			<Saturation>1.14063</Saturation>
+			<Saturation>0.941406</Saturation>
 			<Bloom>0.186719</Bloom>
-			<PostEffect>default</PostEffect>
+			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="198.359" y="109.46" z="18.6393"/>
+		<Position x="647.153" y="93.0063" z="108.994"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -2265,33 +2265,12 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="3898"/>
 		</Entity>
-		<Entity uid="621">
-			<Template>units/gaul/champion_fanatic</Template>
-			<Player>0</Player>
-			<Position x="372.90488" z="291.26511"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="40304"/>
-		</Entity>
 		<Entity uid="622">
 			<Template>units/brit/support_healer_e</Template>
 			<Player>0</Player>
 			<Position x="391.23713" z="320.36417"/>
 			<Orientation y="-1.62821"/>
 			<Actor seed="36416"/>
-		</Entity>
-		<Entity uid="623">
-			<Template>units/brit/war_dog_b</Template>
-			<Player>0</Player>
-			<Position x="393.6753" z="337.14393"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="50332"/>
-		</Entity>
-		<Entity uid="624">
-			<Template>units/brit/war_dog_b</Template>
-			<Player>0</Player>
-			<Position x="388.2353" z="338.40589"/>
-			<Orientation y="-2.79571"/>
-			<Actor seed="56538"/>
 		</Entity>
 		<Entity uid="625">
 			<Template>units/gaul/champion_cavalry</Template>
@@ -2369,13 +2348,6 @@
 			<Position x="386.81656" z="284.2606"/>
 			<Orientation y="-1.06977"/>
 			<Actor seed="26020"/>
-		</Entity>
-		<Entity uid="636">
-			<Template>units/brit/support_citizen_female_house</Template>
-			<Player>0</Player>
-			<Position x="388.98566" z="314.79422"/>
-			<Orientation y="-2.26586"/>
-			<Actor seed="11872"/>
 		</Entity>
 		<Entity uid="637">
 			<Template>gaia/tree/pine</Template>
@@ -15338,14 +15310,12 @@
 		</Entity>
 		<Entity uid="2720">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="329.80854" z="373.32758"/>
 			<Orientation y="-2.35425"/>
 			<Actor seed="40818"/>
 		</Entity>
 		<Entity uid="2725">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="336.26624" z="384.06067"/>
 			<Orientation y="0.80024"/>
 			<Actor seed="27342"/>
