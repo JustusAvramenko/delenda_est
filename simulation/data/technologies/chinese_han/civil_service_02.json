@@ -5,12 +5,24 @@
 	},
 	"supersedes": "chinese_han/civil_service_01",
 	"description": ".",
-	"cost": {"food": 200, "coin": 200},
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "han"}]},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 400,
+		"coin": 0,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{"civ": "han"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "chinese_bureaucracy_2.png",
 	"researchTime": 90,
-	"tooltip": "Technologies at all buildings, except the Forge, -10% cost and -10% research time.",
+	"tooltip": "Technologies at all Buildings, except the Forge, -10% cost and -10% research time.",
 	"modifications": [
 		{"value": "Researcher/TechCostMultiplier/time", "multiply": 0.9},
 		{"value": "Researcher/TechCostMultiplier/wood", "multiply": 0.9},

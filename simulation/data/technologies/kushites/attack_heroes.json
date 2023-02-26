@@ -5,9 +5,24 @@
 		"kush": "Tumbak Beusi"
 	},
 	"description": ".",
-	"cost": {"glory": 900, "metal": 900},
-	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
-	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 800,
+		"coin": 0,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires \"Forging\" or \"Metallurgy.\"",
 	"icon": "armor_plates_iron_swords.png",
 	"researchTime": 60,
 	"tooltip": "Heroes +20% attack.",

@@ -5,7 +5,12 @@
 	},
 	"description": ".",
 	"cost": {"wood": 600, "metal": 400},
-	"requirements": {"tech": "phase_imperial"},
+	"requirements": {
+		"all": [
+			{"tech": "phase_imperial"},
+			{"civ": "ptol"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Imperial Phase.",
 	"icon": "juggernaut.png",
 	"researchTime": 40,

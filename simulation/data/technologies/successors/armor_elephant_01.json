@@ -6,17 +6,33 @@
 		"sele": "Polémou Eléfantas Panoplía"
 	},
 	"description": "Armor for war elephants. Elephants were particularly vulnerable to javelins and prone to running amok when wounded, so some sort of armor was invaluable to keeping the beasts unharmed and more importantly, under control.",
-	"cost": {"metal": 800, "glory": 800},
-	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 800,
+		"coin": 0,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy.",
 	"icon": "armor_elephant.png",
 	"researchTime": 60,
 	"tooltip": "War Elephants +2 hack, pierce, and crush armor, but also +25 metal cost.",
 	"modifications": [
-	{"value": "Resistance/Entity/Damage/Hack", "add": 2.0},
-	{"value": "Resistance/Entity/Damage/Pierce", "add": 2.0},
-	{"value": "Resistance/Entity/Damage/Crush", "add": 2.0},
-	{"value": "Cost/Resources/metal", "add": 25}],
+		{"value": "Resistance/Entity/Damage/Hack", "add": 2.0},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 2.0},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 2.0},
+		{"value": "Cost/Resources/metal", "add": 25}
+	],
 	"affects": ["Elephant"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

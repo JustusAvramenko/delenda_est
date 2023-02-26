@@ -5,9 +5,24 @@
 		"kush": "Tumbak Beusi"
 	},
 	"description": ".",
-	"cost": {"glory": 900, "metal": 900},
-	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
-	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 800,
+		"coin": 0,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires \"Forging\" or \"Metallurgy.\"",
 	"icon": "tusk_spikes.png",
 	"researchTime": 60,
 	"tooltip": "War Elephants +20% attack, +20% coin cost.",

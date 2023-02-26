@@ -2,12 +2,27 @@
 	"pair": "hellenes/pair_01",
 	"genericName": "Fletching",
 	"description": "Fletching increases the accuracy and sail time for projectiles, such as arrows and bolts.",
-	"cost": {"glory": 200, "metal": 300},
-	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
-	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 300,
+		"coin": 0,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase. Requires \"Forging\" or \"Metallurgy.\"",
 	"icon": "fletching.png",
 	"researchTime": 60,
-	"tooltip": "All Ranged units and buildings +4 attack range.",
+	"tooltip": "All Ranged Units and Buildings +4 attack range.",
 	"modifications": [
 		{"value": "Attack/Ranged/MaxRange", "add": 4.0}
 	],

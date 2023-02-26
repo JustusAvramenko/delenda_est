@@ -1,14 +1,28 @@
 {
 	"genericName": "Elite Iberian Mercenaries",
 	"description": "Upgrade all of your Iberian Mercenaries to Elite rank.",
-	"cost": {"food": 300, "coin": 300},
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "cart"}]},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 0,
+		"coin": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{"civ": "cart"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "upgrade_elite.png",
 	"researchTime": 40,
 	"supersedes": "carthaginians/upgrade_rank_advanced_iberian",
 	"tooltip": "Upgrade all of your Iberian mercenaries to Elite rank.",
-	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
 	"affects": ["Iberian Advanced"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

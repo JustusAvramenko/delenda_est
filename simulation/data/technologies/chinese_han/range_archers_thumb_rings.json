@@ -2,8 +2,23 @@
 	"pair": "chinese_han/pair_archers_01",
 	"genericName": "Thumb Rings",
 	"description": "Thumb rings give archers greater grip on the bow string.",
-	"cost": {"glory": 400, "metal": 400},
-	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 300,
+		"coin": 0,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
 	"icon": "archery_tradition.png",
 	"researchTime": 60,

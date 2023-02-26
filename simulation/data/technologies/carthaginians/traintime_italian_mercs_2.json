@@ -2,13 +2,27 @@
 	"pair": "carthaginians/pair_italian_mercs_2",
 	"genericName": "Italiote Hegemony",
 	"description": "Italian mercenaries have their train time decreased.",
-	"cost": {"glory": 200, "coin": 200},
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "cart"}]},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 0,
+		"coin": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{"civ": "cart"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "fist_spear.png",
 	"researchTime": 40,
 	"tooltip": "Subjugate Italiote towns to reduce recruit time -25% for Italian mercenaries.",
-	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.75}],
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.75}
+	],
 	"affects": ["Italian Mercenary"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

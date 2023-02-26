@@ -5,14 +5,25 @@
 		"imp": "Thermae"
 	},
 	"description": ".",
-	"cost": {"stone": 500, "coin": 300},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 400,
+		"metal": 0,
+		"coin": 0,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"requirementsTooltip": "Unlocked by Public Latrines.",
 	"supersedes": "health_units_04",
 	"icon": "baths.png",
 	"researchTime": 40,
 	"tooltip": "All organic units +5% Health.",
-	"modifications": [{"value": "Health/Max", "multiply": 1.05}],
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.05}
+	],
 	"affects": ["Organic"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

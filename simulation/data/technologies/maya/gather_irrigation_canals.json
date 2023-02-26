@@ -2,12 +2,18 @@
 	"genericName": "Irrigation Canals",
 	"description": "Running water for your farms.",
 	"cost": {
-		"wood": 400,
-		"stone": 300
+		"food": 0,
+		"wood": 300,
+		"stone": 0,
+		"metal": 0,
+		"coin": 0,
+		"glory": 200
 	},
 	"supersedes": "gather_farming_training",
-	"requirements": { "tech": "phase_town" },
-	"requirementsTooltip": "Unlocked in City Phase.",
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "olives.png",
 	"researchTime": 40,
 	"tooltip": "Workers +10% grain gather rate.",

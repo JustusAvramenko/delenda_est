@@ -5,12 +5,21 @@
 		"pers": "Kontos"
 	},
 	"description": "Developed by the Scythians, the kontos is a cavalry spear twice as long as normal, usually wielded with 2 hands.",
-	"cost": {"glory": 800, "metal": 800},
-	"requirements": {"tech": "phase_imperial"},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 600,
+		"coin": 0,
+		"glory": 400
+	},
+	"requirements": {
+		"tech": "phase_imperial"
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "spear.png",
 	"researchTime": 60,
-	"tooltip": "Champion cavalry +20% hack attack. (TODO: Make this a charge bonus instead)",
+	"tooltip": "Champion Cavalry +20% hack attack.",
 	"modifications": [
 		{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2}
 	],

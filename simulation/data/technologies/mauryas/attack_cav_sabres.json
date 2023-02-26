@@ -2,9 +2,24 @@
 	"pair": "mauryas/pair_cav_01",
 	"genericName": "Cavalry Sabres",
 	"description": "A long sword made for soldiers mounted on horseback.",
-	"cost": {"glory": 400, "metal": 400},
-	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
-	"requirementsTooltip": "Unlocked in City Phase. Requires Forging or Metallurgy",
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 500,
+		"coin": 0,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase. Requires \"Forging\" or \"Metallurgy.\"",
 	"icon": "sword_cavalry.png",
 	"researchTime": 60,
 	"tooltip": "Sword Cavalry +20% hack attack, but +5 metal cost.",

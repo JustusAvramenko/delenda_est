@@ -1,18 +1,29 @@
 {
+	"supersedes": "romans/pair_cav_01",
 	"genericName": "Cavalry Shields",
 	"specificName": {
 		"rome": "Parma Equestris",
 		"imp": "Parma Equestris"
 	},
-	"supersedes": "romans/pair_cav_01",
 	"description": "A small wooden shield with a simple vertical or round boss.",
-	"cost": {"glory": 600, "metal": 600},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 600,
+		"coin": 0,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "shield_parma.png",
 	"researchTime": 60,
 	"tooltip": "All Cavalry +2 pierce armor.",
-	"modifications": [{"value": "Attack/Melee/Pierce", "add": 2.0}],
+	"modifications": [
+		{"value": "Attack/Melee/Pierce", "add": 2.0}
+	],
 	"affects": ["Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

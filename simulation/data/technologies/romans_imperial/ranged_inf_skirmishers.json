@@ -9,8 +9,16 @@
 		"wood": 400,
 		"glory": 300
 	},
-	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
-	"requirementsTooltip": "Unlocked in City Phase. Requires Forging or Metallurgy",
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase. Requires \"Forging\" or \"Metallurgy.\"",
 	"icon": "javelin_thong.png",
 	"researchTime": 60,
 	"tooltip": "All Javelin units +6 range, but +5 wood cost.",

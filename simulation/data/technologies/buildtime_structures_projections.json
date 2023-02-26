@@ -2,12 +2,21 @@
 	"pair": "pair_structures_03",	
 	"genericName": "Masonry Clamps",
 	"description": "Advanced tools that helped construct buildings.",
-	"cost": {"stone": 500},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 400,
+		"metal": 0,
+		"coin": 0,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "masonry_clamps.png",
 	"researchTime": 40,
-	"tooltip": "All structures -10% build time.",
+	"tooltip": "All Structures -10% build time.",
 	"modifications": [
 		{"value": "Cost/BuildTime", "multiply": 0.9}
 	],

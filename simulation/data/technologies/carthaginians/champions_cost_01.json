@@ -2,13 +2,27 @@
 	"pair": "carthaginians/pair_champs_temple_01",
 	"genericName": "Sacred Arsenal",
 	"description": "Weaponry for the Sacred Band was stored for emergencies in the great temples atop the Byrsa acropolis overlooking Carthage.",
-	"cost": {"glory": 400, "metal": 400},
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "cart"}]},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 400,
+		"coin": 0,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{"civ": "cart"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "armor_plates_swords.png",
 	"researchTime": 40,
 	"tooltip": "Temple Champions -25% coin cost.",
-	"modifications": [{"value": "Cost/Resources/coin", "multiply": 0.75}],
+	"modifications": [
+		{ "value": "Cost/Resources/coin", "multiply": 0.75 }
+	],
 	"affects": ["Champion Infantry", "Champion Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

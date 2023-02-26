@@ -2,13 +2,27 @@
 	"genericName": "Draft Animals",
 	"supersedes": "training_animals_husbandry",
 	"description": "Using draft animals cuts down resource harvesting time considerably.",
-	"cost": {"food": 300, "wood": 100},
-	"requirements": {"all": [{"tech": "phase_town"}, {"tech": "training_animals_husbandry"}]},
+	"cost": {
+		"food": 300,
+		"wood": 0,
+		"stone": 0,
+		"metal": 0,
+		"coin": 0,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_town"},
+			{"tech": "training_animals_husbandry"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase. Requires \"Basic Husbandry.\"",
 	"icon": "oxen.png",
 	"researchTime": 40,
 	"tooltip": "Gatherers +10% gather rate for all resources.",
-	"modifications": [{"value": "ResourceGatherer/BaseSpeed", "multiply": 1.1}],
+	"modifications": [
+		{"value": "ResourceGatherer/BaseSpeed", "multiply": 1.1}
+	],
 	"affects": ["Gatherer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

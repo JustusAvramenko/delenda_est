@@ -11,13 +11,24 @@
 		"cart": "Embolon"
 	},
 	"description": "A bronze beak at the prow of the ship, used for ramming enemy ships.",
-	"cost": {"metal": 600},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 400,
+		"coin": 0,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "breakthrough.png",
 	"researchTime": 40,
 	"tooltip": "Ramming Warships +25% ramming speed. TODO: Make this actually +25% Ram Attack when Charging and Ramming are implemented.",
-	"modifications": [{"value": "UnitMotion/Run/Speed", "multiply": 1.25}],
+	"modifications": [
+		{"value": "UnitMotion/Run/Speed", "multiply": 1.25}
+	],
 	"affects": ["NavalRam"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

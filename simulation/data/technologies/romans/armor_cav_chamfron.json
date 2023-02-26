@@ -2,13 +2,30 @@
 	"pair": "romans/pair_cav_01",
 	"genericName": "Chamfron",
 	"description": "Metal armor for a horse's face.",
-	"cost": {"glory": 400, "metal": 400},
-	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 400,
+		"coin": 0,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
 	"icon": "chamfron.png",
 	"researchTime": 60,
 	"tooltip": "All Cavalry +1 hack armor level.",
-	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 1.0}],
+	"modifications": [
+		{"value": "Resistance/Entity/Damage/Hack", "add": 1.0}
+	],
 	"affects": ["Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

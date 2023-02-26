@@ -3,15 +3,28 @@
 	"specificName": {
 		"ptol": "Kēlōneion"
 	},
-	"description": ".",
-	"cost": {"stone": 200, "glory": 200},
-	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "ptol"}]},
-	"requirementsTooltip": "Unlocked in City Phase.",
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 200,
+		"metal": 0,
+		"coin": 0,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_town"},
+			{"civ": "ptol"}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
 	"supersedes": "successors/special_water_wheel",
 	"icon": "lift_crane.png",
 	"researchTime": 40,
 	"tooltip": "Gatherers +15% farming rate.",
-	"modifications": [{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15}],
+	"modifications": [
+		{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15}
+	],
 	"affects": ["Gatherer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

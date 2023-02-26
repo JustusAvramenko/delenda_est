@@ -5,14 +5,31 @@
 		"imp": "Latifundia"
 	},
 	"description": "Crop Rotation and Land Reform.",
-	"cost": {"glory": 300, "coin": 500},
-	"requirements": {"all": [{"tech": "phase_imperial"}, {"notciv": "athen"}, {"notciv": "theb"}, {"notciv": "spart"}, {"notciv": "mace"}, {"notciv": "hele"}, {"notciv": "epir"}]},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 0,
+		"coin": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_imperial"},
+			{"notciv": "athen"},
+			{"notciv": "theb"},
+			{"notciv": "spart"},
+			{"notciv": "mace"},
+			{"notciv": "hele"},
+			{"notciv": "epir"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "crop_rotation.png",
 	"researchTime": 60,
-	"tooltip": "Each Farm Field adds a trickle of 50 food per minute to the player's treasury.",
+	"tooltip": "Each Grain Field adds a trickle of 50 food per minute to the player's treasury.",
 	"modifications": [
-		{"value": "ResourceTrickle/Rates/food", "add": 5}
+		{ "value": "ResourceTrickle/Rates/food", "add": 5 }
 	],
 	"affects": ["Grain Field"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

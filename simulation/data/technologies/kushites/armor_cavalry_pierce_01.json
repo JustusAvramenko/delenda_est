@@ -5,8 +5,23 @@
 		"kush": "Tameng Lampu Kapaleri"
 	},
 	"description": "Wicker shield base with hide stretched over the front face.",
-	"cost": {"glory": 400, "metal": 400},
-	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 300,
+		"coin": 0,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase. Requires Forging or Metallurgy",
 	"icon": "shields_wicker.png",
 	"researchTime": 60,

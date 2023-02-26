@@ -2,13 +2,27 @@
 	"pair": "carthaginians/pair_celt_mercs_1",
 	"genericName": "Celtic Mercenary Captain",
 	"description": "Celtic mercenaries have their coin cost decreased.",
-	"cost": {"food": 100, "coin": 100},
-	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "cart"}]},
+	"cost": {
+		"food": 200,
+		"wood": 0,
+		"stone": 0,
+		"metal": 0,
+		"coin": 0,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_town"},
+			{"civ": "cart"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "payment.png",
 	"researchTime": 40,
 	"tooltip": "Hire a Celtic mercenary captain to reduce cost -10 coin for Celtic mercenaries.",
-	"modifications": [{"value": "Cost/Resources/coin", "add": -10}],
+	"modifications": [
+		{ "value": "Cost/Resources/coin", "add": -10 }
+	],
 	"affects": ["Celt Mercenary"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

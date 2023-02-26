@@ -12,12 +12,26 @@
 		"rome": "Pugio"
 	},
 	"description": "Often, an infantryman would carry a secondary weapon in addition to his primary weapon of choice, to be drawn when the primary weapon has failed or been broken.",
-	"cost": {"metal": 200},
-	"requirements": {"any": [{"tech": "phase_town"},{"civ": "celt"},{"civ": "brit"},{"civ": "gaul"}]},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 200,
+		"coin": 0,
+		"glory": 200
+	},
+	"requirements": {
+		"any": [
+			{"tech": "phase_town"},
+			{"civ": "celt"},
+			{"civ": "brit"},
+			{"civ": "gaul"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "sword.png",
 	"researchTime": 60,
-	"tooltip": "Melee infantry +10% hack attack.",
+	"tooltip": "Melee Infantry +10% hack attack.",
 	"modifications": [
 		{"value": "Attack/Melee/Damage/Hack", "multiply": 1.1}
 	],

@@ -5,10 +5,22 @@
 	},
 	"description": "Body armor fashioned from overlapping iron or bronze scales with ridges on them. This was a very impressive and expensive set of armor",
 	"cost": {
-		"glory": 400,
-		"metal": 1000
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 800,
+		"coin": 0,
+		"glory": 400
 	},
-	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
 	"icon": "armor_scale.png",
 	"researchTime": 60,

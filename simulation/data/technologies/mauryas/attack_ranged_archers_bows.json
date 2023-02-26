@@ -2,8 +2,17 @@
 	"pair": "mauryas/pair_02_ranged",	
 	"genericName": "Bamboo Longbows",
 	"description": "Bamboo is a ubiquitous fast growing plant in the jungles of India. It's trunk can be used as building material for goods such as furniture, housing, and weapons, such as the Indian Longbow.",
-	"cost": {"glory": 400, "metal": 400},
-	"requirements": {"tech": "phase_town"},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 300,
+		"coin": 0,
+		"glory": 200
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "bamboo.png",
 	"researchTime": 60,
@@ -11,7 +20,8 @@
 	"modifications": [
 		{"value": "Cost/Resources/wood", "add": -10},
 		{"value": "Attack/Ranged/MaxRange", "add": 4.0},
-		{"value": "Vision/Range", "add": 4.0}],
+		{"value": "Vision/Range", "add": 4.0}
+	],
 	"affects": ["Archer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

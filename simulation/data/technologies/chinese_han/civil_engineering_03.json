@@ -5,12 +5,24 @@
 	},
 	"supersedes": "chinese_han/civil_engineering_02",
 	"description": ".",
-	"cost": {"stone": 700, "glory": 500},
-	"requirements": {"all": [{"tech": "phase_imperial"}, {"civ": "han"}]},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 500,
+		"metal": 0,
+		"coin": 0,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_imperial"},
+			{"civ": "han"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "chinese_engineering_03.png",
 	"researchTime": 90,
-	"tooltip": "All structures -20% build time and +20% health.",
+	"tooltip": "All Structures -20% build time and +20% health.",
 	"modifications": [
 		{"value": "Cost/BuildTime", "multiply": 0.9},
 		{"value": "Health/Max", "multiply": 1.2}

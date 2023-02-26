@@ -7,13 +7,24 @@
 		"ptol": "Machaira"
 	},
 	"description": "A long sword made for soldiers mounted on horseback.",
-	"cost": {"metal": 600, "glory": 600},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 500,
+		"coin": 0,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "sword_cross.png",
 	"researchTime": 60,
 	"tooltip": "Melee Cavalry +20% hack attack.",
-	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2}],
+	"modifications": [
+		{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2}
+	],
 	"affects": ["Cavalry Melee"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

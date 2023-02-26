@@ -2,15 +2,31 @@
 	"pair": "chinese_han/pair_champions_armor_01",
 	"genericName": "Iron Shield Bosses",
 	"description": "An iron shield boss adds durability to a wooden shield as well as protection for the soldier's wielding fist. The boss can also act as a weapon when the shield is used to punch an enemy solider.",
-	"cost": {"glory": 400, "metal": 400},
-	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 500,
+		"coin": 0,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase. Requires Forging or Metallurgy",
 	"icon": "shields_generic_silver.png",
 	"researchTime": 60,
 	"tooltip": "Champions +2 pierce armor levels, but also +10 metal cost.",
 	"modifications": [
-	{"value": "Resistance/Entity/Damage/Pierce", "add": 2.0},
-	{"value": "Cost/Resources/metal", "add": 10}],
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 2.0},
+		{"value": "Cost/Resources/metal", "add": 10}
+	],
 	"affects": ["Champion"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

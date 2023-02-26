@@ -5,14 +5,23 @@
 		"pers": "Sāqīya",
 		"kush": "Sāqīya"
 	},
-	"description": ".",
 	"cost": {"wood": 200, "glory": 100},
-	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "civ": "ptol" }, { "civ": "kush" }] }] },
-	"requirementsTooltip": "Unlocked in Town Phase.",
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "any": [
+				{ "civ": "ptol" },
+				{ "civ": "kush" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "water_wheel.png",
 	"researchTime": 40,
 	"tooltip": "Gatherers +15% farming rate.",
-	"modifications": [{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15}],
+	"modifications": [
+		{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15}
+	],
 	"affects": ["Gatherer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

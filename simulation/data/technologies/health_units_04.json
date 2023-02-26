@@ -5,14 +5,25 @@
 		"imp": "Latrinae Publica"
 	},
 	"description": ".",
-	"cost": {"wood": 300, "stone": 300},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 300,
+		"coin": 0,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"supersedes": "health_units_03",
 	"icon": "latrines.png",
 	"researchTime": 40,
 	"tooltip": "All organic units +5% Health.",
-	"modifications": [{"value": "Health/Max", "multiply": 1.05}],
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.05}
+	],
 	"affects": ["Organic"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

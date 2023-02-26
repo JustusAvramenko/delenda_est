@@ -5,14 +5,31 @@
 		"imp": "Aqueductus"
 	},
 	"description": ".",
-	"cost": {"stone": 1000, "glory": 1000},
-	"requirements": { "all": [{ "tech": "phase_imperial" }, { "any": [{ "civ": "imp" }, { "civ": "rome" }] }] },
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 400,
+		"metal": 400,
+		"coin": 0,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{ "any": [
+				{ "civ": "imp" },
+				{ "civ": "rome" }]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"supersedes": "health_units_05",
 	"icon": "aqueducts.png",
 	"researchTime": 60,
 	"tooltip": "All organic units +5% Health.",
-	"modifications": [{"value": "Health/Max", "multiply": 1.05}],
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.05}
+	],
 	"affects": ["Organic"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -5,8 +5,12 @@
 	},
 	"description": ".",
 	"cost": {
-		"wood": 200,
-		"glory": 200
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 0,
+		"coin": 0,
+		"glory": 400
 	},
 	"requirements": {
 		"all": [
@@ -18,7 +22,9 @@
 	"icon": "friendship.png",
 	"researchTime": 60,
 	"tooltip": "Civilian Support units -10% train time.",
-	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.9}],
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.9}
+	],
 	"affects": ["Support"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

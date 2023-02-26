@@ -2,13 +2,18 @@
 	"genericName": "Pharaonic Cult",
 	"description": "The Pharaohs were worshipped as living gods. Their word was sacrosanct and beyond reproach, at least among the common people. The Ptolemaic dynasts certainly took advantage of this ancient custom to the fullest, to varying degrees of success.",
 	"cost": {"glory": 500},
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "ptol"}]},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{"civ": "ptol"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "pharaoh_mask.png",
 	"researchTime": 40,
 	"tooltip": "Heroes +20% health and train nearly instantly.",
 	"modifications": [
-		{"value": "Cost/BuildTime", "multiply": 0.05},
+		{"value": "Cost/BuildTime", "multiply": 0.1},
 		{"value": "Health/Max", "multiply": 1.2}
 	],
 	"affects": ["Hero"],

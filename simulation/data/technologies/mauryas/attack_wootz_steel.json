@@ -5,8 +5,12 @@
 	},
 	"description": "Secret steel working techniques give sword blades distinctive and beautiful markings. Not only that, but the steel's hardness is unparalleled.",
 	"cost": {
-		"glory": 1200,
-		"metal": 1200
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 600,
+		"coin": 0,
+		"glory": 400
 	},
 	"requirements": {
 		"all": [
@@ -14,15 +18,17 @@
 			{ "civ": "maur" },
 			{ "any": [
 				{ "tech": "techs_forge_cost" },
-				{ "tech": "techs_forge_speed" }
-			]}
+				{ "tech": "techs_forge_speed" }]
+			}
 		]
 	},
-	"requirementsTooltip": "Unlocked in Empire Phase. Requires Forging or Metallurgy",
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires \"Forging\" or \"Metallurgy.\"",
 	"icon": "metalworker.png",
 	"researchTime": 60,
 	"tooltip": "All Sword units +20% attack.",
-	"modifications": [{"value": "Attack/Melee/Hack", "multiply": 1.2}],
+	"modifications": [
+		{"value": "Attack/Melee/Hack", "multiply": 1.2}
+	],
 	"affects": ["Sword"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

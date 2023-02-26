@@ -6,10 +6,22 @@
 	},
 	"description": "Bronze or iron greaves, which are pieces of armor covering the shins.",
 	"cost": {
-		"glory": 300,
-		"metal": 300
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 400,
+		"coin": 0,
+		"glory": 300
 	},
-	"requirements": { "all": [{ "tech": "phase_city" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase. Requires Forging or Metallurgy",
 	"icon": "armor_greaves.png",
 	"researchTime": 60,

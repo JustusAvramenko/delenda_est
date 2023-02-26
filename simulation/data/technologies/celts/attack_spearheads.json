@@ -2,13 +2,30 @@
 	"pair": "celts/pair_inf_01",
 	"genericName": "Iron Spearheads",
 	"description": "Using iron instead of bronze gave spears additional piercing power.",
-	"cost": {"glory": 200, "metal": 200},
-	"requirements": { "all": [{ "tech": "phase_village" }, { "any": [{ "tech": "techs_forge_cost" }, { "tech": "techs_forge_speed" }] }] },
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 200,
+		"coin": 0,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_village" },
+			{ "any": [
+				{ "tech": "techs_forge_cost" },
+				{ "tech": "techs_forge_speed" }]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Village Phase. Requires Forging or Metallurgy",
 	"icon": "spear.png",
 	"researchTime": 60,
 	"tooltip": "All Spear units +10% hack attack.",
-	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2}],
+	"modifications": [
+		{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2}
+	],
 	"affects": ["Spear"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
