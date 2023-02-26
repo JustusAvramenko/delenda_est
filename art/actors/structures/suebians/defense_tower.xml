@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <props>
+        <prop actor="props/structures/decals/spart_1x1.xml" attachpoint="root"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+      </props>
+      <textures>
+        <texture file="structural/sueb_struct.png" name="baseTex"/>
+        <texture file="structural/sueb_struct_norm.png" name="normTex"/>
+        <texture file="structural/sueb_struct_spec.png" name="specTex"/>
+        <texture file="structural/ao/suebians/tower_stone_AO.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Tower Model 1">
+      <mesh>structural/suebians/tower_stone.dae</mesh>
+    </variant>
+    <variant frequency="1" name="Tower Model 2">
+      <mesh>structural/suebians/tower_stone_2.dae</mesh>
+    </variant>
+    <variant frequency="1" name="Tower Model 3">
+      <mesh>structural/suebians/tower_stone_3.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_celt.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant name="death">
+      <props>
+        <prop attachpoint="garrisoned"/>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
