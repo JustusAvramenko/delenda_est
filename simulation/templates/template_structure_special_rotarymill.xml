@@ -60,7 +60,6 @@
   <Obstruction>
     <Static width="16.0" depth="16.0"/>
   </Obstruction>
-  <RallyPoint disable=""/>
   <Researcher>
     <Technologies datatype="tokens">
 	  celts/gather_farming_harvester
@@ -91,6 +90,12 @@
   </StatusBars>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+	  units/{native}/support_slave
+    </Entities>
+  </Trainer>
   <Vision>
     <Range>30</Range>
   </Vision>
