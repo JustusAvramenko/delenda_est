@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="New">
+      <mesh>structural/suebians/wall_gate.dae</mesh>
+      <props>
+        <prop actor="props/special/palisade_rocks_gate.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/old/sueb_struct.png" name="baseTex"/>
+        <texture file="structural/old/sueb_struct_spec.png" name="specTex"/>
+        <texture file="structural/old/sueb_struct_norm.png" name="normTex"/>
+        <texture file="structural/ao/suebians/wall_gate_AO.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

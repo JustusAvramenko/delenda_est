@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>structural/garamantians/wonder.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/gara_struct.png" name="baseTex"/>
+        <texture file="structural/gara_struct_spec.png" name="specTex"/>
+        <texture file="structural/gara_struct_norm.png" name="normTex"/>
+        <texture file="structural/ao/gara_wonder_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_kush.xml" attachpoint="garrisoned"/>
+        <prop actor="props/special/common/garrison_flag_kush.xml" attachpoint="garrisoned_1"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
