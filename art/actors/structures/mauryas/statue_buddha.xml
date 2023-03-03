@@ -11,7 +11,16 @@
       </textures>
       <props>
         <prop actor="props/structures/mauryas/maur_buddha_flowers.xml" attachpoint="root"/>
-      </props>    
+        <prop actor="particle/glory_low.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_small.xml">
+      <props>
+        <prop actor="props/structures/mauryas/maur_buddha_flowers.xml" attachpoint="root"/>
+      </props>
     </variant>
   </group>
   <material>player_trans_parallax_spec.xml</material>

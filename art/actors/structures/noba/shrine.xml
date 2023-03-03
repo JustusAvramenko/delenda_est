@@ -4,6 +4,9 @@
   <group>
     <variant frequency="1" name="Base">
       <mesh>structural/nuba_shrine.dae</mesh>
+      <props>
+        <prop actor="particle/glory_low.xml" attachpoint="root"/>
+      </props>
       <textures>
         <texture file="structural/kush_nuba_camp.png" name="baseTex"/>
         <texture file="structural/kush_nuba_camp_norm.png" name="normTex"/>
@@ -12,15 +15,8 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="alive"/>
-    <variant name="death">
-      <props>
-        <prop attachpoint="garrisoned"/>
-        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
-      </props>
-    </variant>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_small.xml"/>
   </group>
   <material>basic_trans_parallax_spec.xml</material>
 </actor>
