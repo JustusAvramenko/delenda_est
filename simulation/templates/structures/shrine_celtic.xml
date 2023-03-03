@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="shrine|template_structure_civic_temple">
+  <Footprint replace="">
+    <Circle radius="8.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaul</Civ>
+    <SpecificName>Henge</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static depth="12" width="12"/>
+  </Obstruction>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>auras/temple/celtic/1024x1024.png</MainTexture>
+        <MainTextureMask>auras/temple/celtic/1024x1024_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <StatusBars>
+    <HeightOffset>12</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/celts/small_stone_monument.xml</Actor>
+  </VisualActor>
+</Entity>
