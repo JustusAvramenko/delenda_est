@@ -5,7 +5,8 @@
 	},
 	"description": "By means of trading and travelling people explored beyond the boundaries of their lands and drew maps of it in order to share and memorize their discoveries.",
 	"cost": {"coin": 300, "glory": 100},
-	"requirements": {"all": [
+	"requirements": {
+		"all": [
 			{"tech": "phase_village"},
 			{"civ": "noba"}
 		]
@@ -14,6 +15,8 @@
 	"icon": "diaspora.png",
 	"researchTime": 40,
 	"tooltip": "Unlock shared vision with allies.",
-	"modifications": [{"value": "Player/sharedLos", "replace": true}],
+	"modifications": [
+		{"value": "Player/sharedLos", "replace": true}
+	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

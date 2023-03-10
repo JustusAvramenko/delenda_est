@@ -9,13 +9,24 @@
 		"rome": "Sacrificium"
 	},
 	"description": "Increases the healing range of all healers.",
-	"cost": {"coin": 300, "glory": 200},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 0,
+		"wood": 0,
+		"stone": 0,
+		"metal": 0,
+		"coin": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "skull_goat.png",
 	"researchTime": 40,
 	"tooltip": "Healers +4 Healing Range.",
-	"modifications": [{"value": "Heal/Range", "add": 4.0}],
+	"modifications": [
+		{"value": "Heal/Range", "add": 4.0}
+	],
 	"affects": ["Healer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -1,12 +1,23 @@
 {
 	"genericName": "Wicker Baskets",
 	"description": "Baskets to carry foraged food stuffs.",
-	"cost": {"wood": 100},
-	"requirements": {"tech": "phase_village"},
+	"cost": {
+		"food": 0,
+		"wood": 100,
+		"stone": 0,
+		"metal": 0,
+		"coin": 0,
+		"glory": 100
+	},
+	"requirements": {
+		"tech": "phase_village"
+	},
 	"icon": "gather_basket_empty.png",
 	"researchTime": 30,
 	"tooltip": "Gatherers +25% fruit foraging rate.",
-	"modifications": [{"value": "ResourceGatherer/Rates/food.fruit", "multiply": 1.25}],
+	"modifications": [
+		{"value": "ResourceGatherer/Rates/food.fruit", "multiply": 1.25}
+	],
 	"affects": ["Gatherer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

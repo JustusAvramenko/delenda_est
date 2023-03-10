@@ -3,11 +3,15 @@
 	"genericName": "Social Contract",
 	"description": ".",
 	"cost": {"wood": 300, "stone": 100},
-	"requirements": {"tech": "unlock_shared_los"},
+	"requirements": {
+		"tech": "unlock_shared_los"
+	},
 	"requirementsTooltip": "Requires Cartography.",
 	"icon": "handshake.png",
 	"researchTime": 40,
 	"tooltip": "Unlock the ability for you to use allied dropsites for your citizens to deposit resources.",
-	"modifications": [{ "value": "Player/sharedDropsites", "replace": true }],
+	"modifications": [
+		{ "value": "Player/sharedDropsites", "replace": true }
+	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

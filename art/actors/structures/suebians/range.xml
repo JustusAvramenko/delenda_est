@@ -2,17 +2,15 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="new">
+    <variant frequency="1" name="sueb_range">
       <mesh>structural/suebians/range.dae</mesh>
       <props>
-        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
-        <prop actor="props/structures/decals/celt_barracks.xml" attachpoint="root"/>
-        <prop attachpoint=""/>
+        <prop actor="props/structures/decals/dirt_7x7.xml" attachpoint="root"/>
       </props>
       <textures>
-        <texture file="structural/old/sueb_struct.png" name="baseTex"/>
-        <texture file="structural/old/sueb_struct_spec.png" name="specTex"/>
-        <texture file="structural/old/sueb_struct_norm.png" name="normTex"/>
+        <texture file="structural/sueb_struct.png" name="baseTex"/>
+        <texture file="structural/sueb_struct_spec.png" name="specTex"/>
+        <texture file="structural/sueb_struct_norm.png" name="normTex"/>
         <texture file="structural/ao/suebians/range_AO.png" name="aoTex"/>
       </textures>
     </variant>
@@ -21,26 +19,13 @@
     <variant frequency="1" name="ungarrisoned"/>
     <variant name="garrisoned">
       <props>
-        <prop actor="props/special/common/garrison_flag_hele.xml" attachpoint="garrisoned"/>
+        <prop actor="props/special/common/garrison_flag_celt.xml" attachpoint="garrisoned"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="alive"/>
-    <variant name="death">
-      <props>
-        <prop attachpoint="garrisoned"/>
-        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
-        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
-        <prop actor="props/structures/spartans/barracks_struct_b.xml" attachpoint="root"/>
-        <prop actor="props/structures/spartans/barracks_props_a.xml" attachpoint="root"/>
-        <prop actor="props/structures/spartans/barracks_props_shields.xml" attachpoint="root"/>
-        <prop actor="props/structures/spartans/barracks_tile_c.xml" attachpoint="root"/>
-        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
-        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
-      </props>
-    </variant>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_medium.xml"/>
   </group>
   <material>player_trans_ao_parallax_spec.xml</material>
 </actor>

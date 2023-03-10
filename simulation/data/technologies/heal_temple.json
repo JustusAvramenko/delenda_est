@@ -9,12 +9,21 @@
 		"imp": "Mithraic Mysteries"
 	},
 	"description": "Units garrisoned in a temple are healed faster.",
-	"cost": {"food": 200, "glory": 200},
-	"requirements": {"tech": "phase_town"},
+	"cost": {
+		"food": 200,
+		"wood": 0,
+		"stone": 0,
+		"metal": 0,
+		"coin": 0,
+		"glory": 200
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "cauldron.png",
 	"researchTime": 40,
-	"tooltip": "Temples +100% garrisoned healing rate. Unlocks Military Cult.",
+	"tooltip": "Temples +100% garrisoned healing rate. Unlocks \"Military Cult.\"",
 	"modifications": [
 		{"value": "GarrisonHolder/BuffHeal", "multiply": 2}
 	],

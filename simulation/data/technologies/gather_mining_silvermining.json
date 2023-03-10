@@ -6,13 +6,24 @@
 		"mace": "Mines of Krenides"
 	},
 	"description": "Increases metal gathering rates.",
-	"cost": {"food": 100, "wood": 100, "stone": 100},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 200,
+		"wood": 200,
+		"stone": 0,
+		"metal": 0,
+		"coin": 0,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "mining_metal.png",
 	"researchTime": 40,
 	"tooltip": "Strike a vein of precious silver. Gatherers +25% metal gathering rate.",
-	"modifications": [{"value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.25}],
+	"modifications": [
+		{"value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.25}
+	],
 	"affects": ["Gatherer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
