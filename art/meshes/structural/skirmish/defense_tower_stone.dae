@@ -5,22 +5,22 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.91.2 commit date:2021-01-19, commit time:16:15, hash:5be9ef417703</authoring_tool>
     </contributor>
-    <created>2022-10-30T20:55:16</created>
-    <modified>2022-10-30T20:55:16</modified>
+    <created>2023-03-11T15:28:18</created>
+    <modified>2023-03-11T15:28:18</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_effects>
     <effect id="Material_001-effect">
       <profile_COMMON>
-        <newparam sid="defense_tower_stone_png_001-surface">
+        <newparam sid="defense_tower_stone_png-surface">
           <surface type="2D">
-            <init_from>defense_tower_stone_png_001</init_from>
+            <init_from>defense_tower_stone_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="defense_tower_stone_png_001-sampler">
+        <newparam sid="defense_tower_stone_png-sampler">
           <sampler2D>
-            <source>defense_tower_stone_png_001-surface</source>
+            <source>defense_tower_stone_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -29,7 +29,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="defense_tower_stone_png_001-sampler" texcoord="Cube-mesh-map-0"/>
+              <texture texture="defense_tower_stone_png-sampler" texcoord="Cube_001-mesh-map-0"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -40,7 +40,7 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="defense_tower_stone_png_001" name="defense_tower_stone_png_001">
+    <image id="defense_tower_stone_png" name="defense_tower_stone_png">
       <init_from>/C:/Users/micha/Documents/My%20Games/0ad/mods/0ad_Delenda_Est/art/textures/skins/structural/skirmish/defense_tower_stone.png</init_from>
     </image>
   </library_images>
@@ -73,7 +73,7 @@
           </technique_common>
         </source>
         <source id="Cube_001-mesh-map-0">
-          <float_array id="Cube_001-mesh-map-0-array" count="60">0.02734375 0.75 0.2773438 0.5 0.2773438 0.75 0.304543 0.9975991 0.004069507 0.04551166 0.304543 0.04551142 0.625 0 0.375 0.25 0.375 0 0.002422332 0.02539062 0.3178902 0.9960938 0.3178902 0.02539062 0.3183416 1.011953 0.001970827 0.04273456 0.3183415 0.04273456 0.02734375 0.75 0.02734375 0.5 0.2773438 0.5 0.304543 0.9975991 0.004069507 0.9975991 0.004069507 0.04551166 0.625 0 0.625 0.25 0.375 0.25 0.002422332 0.02539062 0.002422332 0.9960938 0.3178902 0.9960938 0.3183416 1.011953 0.001970946 1.011953 0.001970827 0.04273456</float_array>
+          <float_array id="Cube_001-mesh-map-0-array" count="60">0.02734375 0.75 0.2773438 0.5 0.2773438 0.75 0.304543 0.9975991 0.004069507 0.04551166 0.304543 0.04551142 0.2947181 0.9998999 0.001492798 9.99868e-5 0.2947181 1.00017e-4 0.3095594 0.9999 0.005493879 9.9957e-5 0.3095595 1.00076e-4 0.3183416 0.9959579 0.001970767 0.02673947 0.3183415 0.02673947 0.02734375 0.75 0.02734375 0.5 0.2773438 0.5 0.304543 0.9975991 0.004069507 0.9975991 0.004069507 0.04551166 0.2947181 0.9998999 0.001492798 0.9998999 0.001492798 9.99868e-5 0.3095594 0.9999 0.0054937 0.9998999 0.005493879 9.9957e-5 0.3183416 0.9959579 0.001970887 0.9959579 0.001970767 0.02673947</float_array>
           <technique_common>
             <accessor source="#Cube_001-mesh-map-0-array" count="30" stride="2">
               <param name="S" type="float"/>
@@ -96,12 +96,12 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="skirmish_default_defense_tower" name="skirmish/default_defense_tower" type="NODE">
-        <matrix sid="transform">4.472036 0 0 0 0 4.472036 0 0 0 0 12.46702 11.19641 0 0 0 1</matrix>
+        <matrix sid="transform">4.472036 0 0 0 0 4.472036 0 0 0 0 12.46702 6.892559 0 0 0 1</matrix>
         <instance_geometry url="#Cube_001-mesh" name="skirmish/default_defense_tower">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material_001-material" target="#Material_001-material">
-                <bind_vertex_input semantic="Cube-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="Cube_001-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
           </bind_material>

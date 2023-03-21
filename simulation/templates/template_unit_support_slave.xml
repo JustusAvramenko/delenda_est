@@ -21,20 +21,31 @@
     <Unhealable>true</Unhealable>
   </Health>
   <Identity>
-    <VisibleClasses datatype="tokens">Gatherer Slave</VisibleClasses>
-    <Classes datatype="tokens">Worker IdleWorker</Classes>
+    <VisibleClasses datatype="tokens">
+      Gatherer
+      Slave
+      Capturable
+    </VisibleClasses>
+    <Classes datatype="tokens">
+      Worker
+      IdleWorker
+    </Classes>
     <Phenotype datatype="tokens">
 	  female
 	  male
 	</Phenotype>
     <GenericName>Slave</GenericName>
     <SelectionGroupName>units/{civ}/support_slave</SelectionGroupName>
-    <Tooltip>A cheap and very good gatherer unit who cannot build buildings. 
+    <Tooltip>A cheap and very good gatherer unit who cannot build buildings.
 Traits: Low Cost, Low Health, Slow Speed, Capturable, No Attack.
 Good at: Gathering Resources and Defecting.
 Bad at: Defense and Loyalty.</Tooltip>
     <Icon>units/misc/slave.png</Icon>
-    <Requirements><Techs datatype="tokens">phase_town</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_town
+      </Techs>
+    </Requirements>
   </Identity>
   <Resistance>
     <Entity>

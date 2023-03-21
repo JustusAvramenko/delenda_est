@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
   <Auras datatype="tokens">
-    structures/farmstead_60
+    structures/farmstead_60_1
+    structures/farmstead_60_2
   </Auras>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
@@ -40,7 +41,10 @@
     <Civ>gaia</Civ>
     <GenericName>Farmstead</GenericName>
     <SpecificName>Rotary Mill</SpecificName>
-    <VisibleClasses datatype="tokens">Farmstead</VisibleClasses>
+    <VisibleClasses datatype="tokens">
+      Farmstead
+	  Capturable
+    </VisibleClasses>
     <Classes datatype="tokens">
 	  -ConquestCritical
 	  RotaryMill

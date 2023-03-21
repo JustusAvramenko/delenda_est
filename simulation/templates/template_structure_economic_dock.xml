@@ -29,7 +29,14 @@
     <SpecificName>Commercial Dock</SpecificName>
     <Tooltip>Build upon a shoreline to construct Fishing Boats and to open sea trade with Merchant Ships.</Tooltip>
     <Classes datatype="tokens">Naval NavalMarket Trade</Classes>
-    <VisibleClasses datatype="tokens">Economic Dropsite Village SeaTrade Dock</VisibleClasses>
+    <VisibleClasses datatype="tokens">
+      Economic
+      Dropsite 
+      Village 
+      SeaTrade 
+      Dock
+      Capturable
+    </VisibleClasses>
     <Icon>structures/dock.png</Icon>
   </Identity>
   <Loot>
@@ -86,8 +93,8 @@
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/{civ}/ship_fishing
-      units/{civ}/ship_merchant
+      units/{native}/ship_fishing
+      units/{native}/ship_merchant
     </Entities>
   </Trainer>
   <Vision>
