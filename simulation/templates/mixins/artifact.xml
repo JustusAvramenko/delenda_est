@@ -29,7 +29,7 @@
 	  Artifact
       Capturable
     </VisibleClasses>
-    <Tooltip>Capture to improve the Loyalty of your Units and Structures.</Tooltip>
+    <Tooltip>Capture to gain a trickle of Glory and to improve the Loyalty of your Units and Structures.</Tooltip>
   </Identity>
   <Loot>
     <xp>50</xp>
@@ -46,6 +46,21 @@
     <Static width="8.0" depth="4.0"/>
   </Obstruction>
   <Resistance replace=""/>
+  <ResourceTrickle>
+    <Rates>
+      <glory>2</glory>
+    </Rates>
+    <Interval>2000</Interval>
+  </ResourceTrickle>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.5</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_temple.xml</select>

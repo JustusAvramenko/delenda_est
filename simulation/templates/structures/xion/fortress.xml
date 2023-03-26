@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_fortress">
-  <Attack>
-    <Ranged>
-      <MaxRange>60.0</MaxRange>
-      <MinRange>34.0</MinRange>
-    </Ranged>
-  </Attack>
+  <BuildRestrictions>
+    <Territory>own neutral ally</Territory>
+  </BuildRestrictions>
   <Footprint>
     <Square width="30.0" depth="30.0"/>
     <Height>12.0</Height>
   </Footprint>
   <Identity>
-    <Civ>han</Civ>
+    <Civ>xion</Civ>
     <SpecificName>Bǎolěi</SpecificName>
   </Identity>
   <Obstruction>
@@ -19,16 +16,21 @@
   </Obstruction>
   <Researcher>
     <Technologies datatype="tokens">
-      chinese_han/art_of_war
+	  range_defensive_loopholes
+	  range_defensive_murderholes
+      attack_capture_siege_ladders
     </Technologies>
   </Researcher>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
   <Trainer>
     <Entities datatype="tokens">
-      units/{civ}/champion_chariot
+      units/{civ}/champion_cavalry
+      units/xion/siege_ram
     </Entities>
   </Trainer>
   <VisualActor>
-    <Actor>structures/han/fortress.xml</Actor>
+    <Actor>structures/xiongnu/fortress.xml</Actor>
     <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
   </VisualActor>
   <WallPiece>

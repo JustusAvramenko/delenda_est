@@ -12,11 +12,6 @@
         <prop actor="props/units/sharpening_stone.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/weapons/xion_arrow_front.xml" attachpoint="weapon_L"/>
       </props>
-      <textures>
-        <texture file="skeletal/xion/cloth_a.png" name="baseTex"/>
-        <texture file="skeletal/xion/cloth_norm.png" name="normTex"/>
-        <texture file="skeletal/xion/cloth_spec.png" name="specTex"/>
-      </textures>
     </variant>
   </group>
   <group>
@@ -40,6 +35,18 @@
 			<prop actor="props/units/helmets/xion_hide.xml" attachpoint="helmet"/>
 		</props>
 	</variant>
+  </group>
+  <group>
+    <variant file="clothes/xion/clothes_a.xml"/>
+    <variant file="clothes/xion/clothes_b.xml"/>
+    <variant file="clothes/xion/clothes_c.xml"/>
+    <variant frequency="1" name="gray white">
+      <textures>
+        <texture file="skeletal/xion/cloth_d.png" name="baseTex"/>
+        <texture file="skeletal/xion/cloth_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
