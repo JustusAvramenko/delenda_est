@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <BuildRestrictions>
+    <Category>Palace</Category>
+    <Distance>
+      <FromClass>CivicCenter</FromClass>
+      <MaxDistance>60</MaxDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <stone>300</stone>
+      <glory>300</glory>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="28" depth="12.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>maur</Civ>
+    <Classes datatype="tokens">ConquestCritical Harmya</Classes>
+    <SpecificName>Harmya</SpecificName>
+    <VisibleClasses datatype="tokens">
+	  Palace
+	</VisibleClasses>
+    <GenericName>Palace</GenericName>
+    <Icon>structures/maur_palace.png</Icon>
+    <Tooltip>Train your Hero and his Poison Maiden guards.</Tooltip>
+    <Undeletable>true</Undeletable>
+  </Identity>
+  <Loot>
+    <stone>40</stone>
+    <glory>40</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="26.0" depth="10.5"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+	  unlock_spies
+	  spy_counter
+    </Technologies>
+  </Researcher>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>38</Radius>
+    <Weight>65535</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/maur/champion_maiden
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <FoundationActor>structures/fndn_8x4.xml</FoundationActor>
+    <Actor>structures/mauryas/misc_structure_01.xml</Actor>
+  </VisualActor>
+</Entity>
