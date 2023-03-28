@@ -4,20 +4,29 @@
 		"theb": "Pythia",
 		"hele": "Pythia",
 		"athen": "Pythia",
-		"spart": "Pythia"
+		"spart": "Pythia",
+		"epir": "Pythia",
+		"sele": "Pythia",
+		"ptol": "Pythia",
+		"syrac": "Pythia"
 	},
 	"description": "The oracle at Delphi was the priestess of Apollo. She was tasked with uttering prophesies and answers to queries to the god. Delphi was the most sacred sanctuary in Greece and the 2nd oldest, Dodona in Epirus, dedicated to Zeus, being the oldest.",
 	"cost": {
 		"food": 0,
 		"wood": 0,
 		"stone": 0,
-		"metal": 200,
-		"coin": 0,
+		"metal": 0,
+		"coin": 200,
 		"glory": 200
 	},
-	"requirements": {"tech": "phase_town"},
+	"requirements": {
+		"all": [
+			{"tech": "phase_town"},
+			{"notciv": "theb"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
-	"icon": "delphic_oracle.png",
+	"icon": "oracle_02.png",
 	"researchTime": 40,
 	"tooltip": "All Units and Structures +10% vision range.",
 	"modifications": [
