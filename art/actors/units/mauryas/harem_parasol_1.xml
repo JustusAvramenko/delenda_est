@@ -3,8 +3,12 @@
   <castshadow/>
   <group>
     <variant>
+      <animations>
+        <animation file="biped/infantry/pikeman/idle_relax_01.dae" name="Idle" speed="30"/>
+      </animations>
       <props>
-        <prop actor="props/units/heads/new/head_female_c.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/head_maur_fem.xml" attachpoint="head"/>
+        <prop actor="props/units/parasol.xml" attachpoint="weapon_R"/>
       </props>
       <textures>
         <texture file="default_norm.png" name="normTex"/>
@@ -13,83 +17,83 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Earrings 1">
+    <variant frequency="1" name="Earrings 15">
       <props>
         <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="1" name="Earrings 2">
+    <variant frequency="1" name="Earrings 25">
       <props>
         <prop actor="props/units/heads/maur_earrings_2.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="1" name="No Earrings">
+    <variant frequency="1" name="No Earrings5">
       <props>
         <prop actor="" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="0" name="Earrings 1 - turban">
+    <variant frequency="1" name="Earrings 1 - turban5">
       <props>
         <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/maur_inf_big_turban.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="0" name="Earrings 2 - turban">
+    <variant frequency="1" name="Earrings 2 - turban5">
       <props>
         <prop actor="props/units/heads/maur_earrings_2.xml" attachpoint="helmet"/>
         <prop actor="props/units/heads/maur_inf_big_turban.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="0" name="No Earrings - turban">
+    <variant frequency="1" name="No Earrings - turban5">
       <props>
         <prop actor="props/units/heads/maur_inf_big_turban.xml" attachpoint="helmet"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Skirt-Short">
+    <variant frequency="1" name="Skirt-Short5">
       <mesh>skeletal/new/f_tunic_short.dae</mesh>
       <textures>
         <texture file="skeletal/maur/female_01_01.png" name="baseTex"/>
         <texture file="skeletal/maur/female_01_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="Skirt-Long">
+    <variant frequency="1" name="Skirt-Long5">
       <mesh>skeletal/new/f_dress.dae</mesh>
       <textures>
         <texture file="skeletal/maur/female_dress_01_01.png" name="baseTex"/>
         <texture file="skeletal/maur/female_dress_01_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="2" name="Skirt-Short-Beads">
+    <variant frequency="2" name="Skirt-Short-Beads5">
       <mesh>skeletal/new/f_tunic_short.dae</mesh>
       <textures>
         <texture file="skeletal/maur/female_02_01.png" name="baseTex"/>
         <texture file="skeletal/maur/female_02_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="2" name="Skirt-Very-Short-Beads">
+    <variant frequency="2" name="Skirt-Very-Short-Beads5">
       <mesh>skeletal/new/f_naked.dae</mesh>
       <textures>
         <texture file="skeletal/maur/female_03_01.png" name="baseTex"/>
         <texture file="skeletal/maur/female_03_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="0" name="Skirt-Short-Bare">
+    <variant frequency="2" name="Skirt-Short-Bare5">
       <mesh>skeletal/new/f_tunic_short.dae</mesh>
       <textures>
         <texture file="skeletal/maur/female_topless_02_01.png" name="baseTex"/>
         <texture file="skeletal/maur/female_topless_02_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="0" name="Skirt-Very-Short-Bare">
+    <variant frequency="2" name="Skirt-Very-Short-Bare5">
       <mesh>skeletal/new/f_naked.dae</mesh>
       <textures>
         <texture file="skeletal/maur/female_topless_01.png" name="baseTex"/>
         <texture file="skeletal/maur/female_topless_01_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="0" name="Naked-Beads">
+    <variant frequency="2" name="Naked-Beads5">
       <mesh>skeletal/new/f_naked.dae</mesh>
       <textures>
         <texture file="skeletal/maur/female_naked_01_01.png" name="baseTex"/>
@@ -98,38 +102,8 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/female_base_walk.xml"/>
-    <variant file="biped/female_carry_food.xml"/>
-    <variant file="biped/female_carry_crops.xml"/>
-    <variant file="biped/female_carry_meat.xml"/>
-    <variant file="biped/female_carry_wood.xml"/>
-    <variant file="biped/female_carry_stone.xml"/>
-    <variant file="biped/female_carry_metal.xml"/>
-    <variant file="biped/approach_tree.xml"/>
-    <variant file="biped/approach_grain.xml"/>
-    <variant file="biped/approach_fruit.xml"/>
-    <variant file="biped/approach_meat.xml"/>
-    <variant file="biped/approach_rock.xml"/>
-    <variant file="biped/approach_ore.xml"/>
-    <variant file="biped/approach_ruins.xml"/>
-    <variant file="biped/approach_praise.xml"/>
-  </group>
-  <group>
-    <variant name="Idle" frequency="1"/>
-    <variant file="biped/attack_melee_female.xml"/>
-    <variant file="biped/attack_slaughter.xml"/>
-    <variant file="biped/female_death.xml"/>
-    <variant file="biped/female_gather_tree.xml"/>
-    <variant file="biped/female_gather_grain.xml"/>
-    <variant file="biped/female_gather_crops.xml"/>
-    <variant file="biped/female_gather_fruit.xml"/>
-    <variant file="biped/female_gather_meat.xml"/>
-    <variant file="biped/female_gather_rock.xml"/>
-    <variant file="biped/female_gather_ore.xml"/>
-    <variant file="biped/female_gather_ruins.xml"/>
-    <variant file="biped/gather_praise.xml"/>
-    <variant file="biped/female_build.xml"/>
-    <variant file="biped/female_build_farm.xml"/>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/death_infantry.xml"/>
   </group>
   <material>player_trans_norm_spec.xml</material>
 </actor>
