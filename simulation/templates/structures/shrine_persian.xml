@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_civic_temple">
+<Entity parent="shrine|template_structure_civic_temple">
   <Footprint>
-    <Square width="20.5" depth="20.5"/>
+    <Square width="12.5" depth="12.5"/>
+    <Height>14</Height>
   </Footprint>
-  <Health>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
-  </Health>
   <Identity>
     <Civ>pers</Civ>
-    <SpecificName>Ayadana</SpecificName>
+    <SpecificName>Fire Temple</SpecificName>
   </Identity>
   <Obstruction>
-    <Static width="17.5" depth="17.5"/>
+    <Static width="10.5" depth="10.5"/>
   </Obstruction>
   <Selectable>
     <Overlay>
@@ -22,7 +20,6 @@
     </Overlay>
   </Selectable>
   <VisualActor>
-    <Actor>structures/persians/temple.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+    <Actor>structures/persians/shrine.xml</Actor>
   </VisualActor>
 </Entity>
