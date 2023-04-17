@@ -2,6 +2,15 @@
 <actor version="1">
   <castshadow/>
   <group>
+    <variant frequency="1" name="Base">
+      <textures>
+	    <texture file="gaia/berry_bushes.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
     <variant name="Berry Bush Large">
       <mesh>gaia/berrybush.dae</mesh>
       <props>
@@ -15,15 +24,5 @@
       </props>
     </variant>
   </group>
-  <group>
-    <variant frequency="1" name="green">
-      <textures>
-	    <texture file="gaia/berry_bushes.png" name="baseTex"/>
-	  </textures>
-      <props>
-        <prop actor="props/structures/decals/berry_mud.xml" attachpoint="root"/>
-      </props>
-    </variant>
-  </group>
-  <material>basic_trans_wind.xml</material>
+  <material>basic_trans_wind_norm_spec.xml</material>
 </actor>
