@@ -10,18 +10,18 @@
     <!-- Note that values above 2-3 are likely to start behaving weirdly. -->
     <!-- You can also tweaks extensions below. 
 	CHANGED FOR DE -->
-    <Radius>1.2</Radius>
+    <Radius>0.2</Radius>
 
     <!-- Actual pushing radius for non-moving units is: -->
     <!-- Clearance * PushingRadius + StaticPushExtension -->
     <!-- This mostly controls the maximum unit density
 	CHANGED FOR DE -->
-    <StaticExtension>1.5</StaticExtension>
+    <StaticExtension>0.1</StaticExtension>
 
     <!-- Actual pushing radius for moving units is: -->
     <!-- Clearance * PushingRadius + MovingPushExtension 
 	CHANGED FOR DE -->
-    <MovingExtension>3.0</MovingExtension>
+    <MovingExtension>0.3</MovingExtension>
 
     <!-- Pushing force depends on the distance between units. -->
     <!-- This controls that effect. A value of 1 means pushing -->
@@ -33,7 +33,7 @@
     <!-- being somewhat smaller than the units' actual footprints. 
 	CHANGED FOR DE -->
     <StaticSpread>0.9</StaticSpread>
-    <MovingSpread>0.9</MovingSpread>
+    <MovingSpread>0.65</MovingSpread>
 
     <!-- After the combined pushing force of all neighboring units is calculated, -->
     <!-- if the value is below this number, treat it as effectively zero. -->
@@ -42,7 +42,7 @@
     <!-- NB: If this is 0.25 or above, then pairs of units will overlap -->
     <!-- See MAX_DISTANCE_FACTOR in CCmpUnitMotion_System.cpp for details.
 	CHANGED FOR DE -->
-    <MinimalForce>0.3</MinimalForce>
+    <MinimalForce>0.2</MinimalForce>
 
     <!-- Multiplier for the pushing pressure units exert on each other. -->
     <!-- Pushing pressure is a measure of 'how pushed' a unit is. -->
