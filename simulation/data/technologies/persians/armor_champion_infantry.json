@@ -2,11 +2,7 @@
 	"genericName": "Campaign Panoply",
 	"description": "Scale armor for the Immortals regiment, which Herodotus described looking like 'fish scales'.",
 	"cost": {
-		"food": 0,
-		"wood": 0,
-		"stone": 0,
 		"metal": 800,
-		"coin": 0,
 		"glory": 400
 	},
 	"requirements": {
@@ -24,11 +20,11 @@
 	"researchTime": 60,
 	"tooltip": "Immortals Champion Infantry (\"Anusiya\") +2 hack armor and +1 pierce and crush armor, but also +10 coin cost.",
 	"modifications": [
-		{"value": "Cost/Resources/coin", "add": 10},
-		{"value": "VisualActor/Actor", "replace": "units/persians/infantry_spearman_c2.xml"},
-		{"value": "Resistance/Entity/Damage/Hack", "add": 2.0},
-		{"value": "Resistance/Entity/Damage/Pierce", "add": 1.0},
-		{"value": "Resistance/Entity/Damage/Crush", "add": 1.0}
+		{ "value": "Cost/Resources/coin", "add": 10},
+		{ "value": "VisualActor/Actor", "replace": "units/persians/infantry_spearman_c2.xml"},
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 2.0},
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1.0},
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 1.0}
 	],
 	"affects": ["Immortal"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

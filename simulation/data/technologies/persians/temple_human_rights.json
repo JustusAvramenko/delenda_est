@@ -4,14 +4,22 @@
 		"pers": "Cyrus Cylinder"
 	},
 	"description": "The Cyrus Cylinder is one of the earliest examples of human rights in existence. The Persians were known for being benevolent rulers and promoted the rule of law. Even the Persian king was subject to the law and could not arbitrarily dismiss it.",
-	"cost": {"glory": 300, "metal": 300},
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "pers"}]},
+	"cost": {
+		"glory": 300,
+		"metal": 300
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{"civ": "pers"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "cuneiform.png",
 	"researchTime": 40,
 	"tooltip": "Capturable units and buildings +50% capture points for more cultural happiness.",
 	"modifications": [
-		{"value": "Capturable/CapturePoints", "multiply": 1.5}
+		{ "value": "Capturable/CapturePoints", "multiply": 1.5 }
 	],
 	"affects": ["Civic Structure", "Unit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

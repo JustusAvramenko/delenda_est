@@ -1,13 +1,20 @@
 {
 	"genericName": "Battlefield Triage",
 	"description": "Unlock idle health regeneration for your soldiers.",
-	"cost": {"food": 300, "glory": 200},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"food": 300,
+		"glory": 200
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "asclepius_rod.png",
 	"researchTime": 40,
 	"tooltip": "When idle, wounded soldiers will regenerate 1 health every 2 seconds.",
-	"modifications": [{"value": "Health/IdleRegenRate", "add": 0.5}],
+	"modifications": [
+		{ "value": "Health/IdleRegenRate", "add": 0.5 }
+	],
 	"affects": ["Soldier"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

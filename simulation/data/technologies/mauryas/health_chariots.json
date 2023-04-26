@@ -2,7 +2,10 @@
 	"pair": "mauryas/pair_cav_02",
 	"genericName": "Reinforced Carriage",
 	"description": "Reinforcement was needed for chariot carts in order to keep them from shaking apart.",
-	"cost": {"wood": 400, "metal": 400},
+	"cost": {
+		"wood": 400,
+		"metal": 400
+	},
 	"requirements": {
 		"all": [
 			{"tech": "phase_city"},
@@ -14,9 +17,9 @@
 	"researchTime": 40,
 	"tooltip": "Chariots +10% Health, +10% Movement speed.",
 	"modifications": [
-		{"value": "Health/Max", "multiply": 1.1},
-		{"value": "UnitMotion/WalkSpeed", "multiply": 1.1},
-		{"value": "UnitMotion/Run/Speed", "multiply": 1.1}
+		{ "value": "Health/Max", "multiply": 1.1 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "UnitMotion/Run/Speed", "multiply": 1.1 }
 	],
 	"affects": ["Chariot"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

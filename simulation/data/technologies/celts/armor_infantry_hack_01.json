@@ -3,11 +3,7 @@
 	"genericName": "Leather Body Armor",
 	"description": "Leather body armor for infantrymen.",
 	"cost": {
-		"food": 0,
-		"wood": 0,
-		"stone": 0,
 		"metal": 200,
-		"coin": 0,
 		"glory": 200
 	},
 	"requirements": {
@@ -24,9 +20,9 @@
 	"researchTime": 60,
 	"tooltip": "Infantry +1 hack armor level, but -5% movement speed.",
 	"modifications": [
-		{"value": "Resistance/Entity/Damage/Hack", "add": 1.0},
-		{"value": "UnitMotion/WalkSpeed", "multiply": 0.95},
-		{"value": "UnitMotion/Run/Speed", "multiply": 0.95}
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0},
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.95},
+		{ "value": "UnitMotion/Run/Speed", "multiply": 0.95}
 	],
 	"affects": ["Infantry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

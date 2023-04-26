@@ -2,11 +2,7 @@
 	"genericName": "Fire Arrows",
 	"description": "Fire was a constant danger in a crowded town or city, even during peace time. In a siege, archers would typically loose flaming arrows over the enemy walls in a bid to set the enemy's buildings on fire.",
 	"cost": {
-		"food": 0,
 		"wood": 800,
-		"stone": 0,
-		"metal": 0,
-		"coin": 0,
 		"glory": 400
 	},
 	"requirements": {
@@ -21,10 +17,10 @@
 	"researchTime": 60,
 	"tooltip": "Infantry archers +5 crush attack (for a strong anti-building attack), but attack rate +50% slower and cost +10 Wood.",
 	"modifications": [
-		{"value": "Attack/Ranged/Damage/Crush", "add": 5.0},
-		{"value": "Attack/Ranged/RepeatTime", "multiply": 1.5},
-		{"value": "Cost/Resources/wood", "add": 10},
-		{"value": "VisualActor/Actor", "replace": "units/persians/infantry_archer_e_fire.xml"}
+		{ "value": "Attack/Ranged/Damage/Crush", "add": 5.0},
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 1.5},
+		{ "value": "Cost/Resources/wood", "add": 10},
+		{ "value": "VisualActor/Actor", "replace": "units/persians/infantry_archer_e_fire.xml"}
 	],
 	"affects": ["FireArrows"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

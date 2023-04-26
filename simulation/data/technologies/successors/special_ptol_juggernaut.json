@@ -3,8 +3,10 @@
 	"specificName": {
 		"ptol": "Tessarakonterēs"
 	},
-	"description": ".",
-	"cost": {"wood": 600, "metal": 400},
+	"cost": {
+		"wood": 600,
+		"metal": 400
+	},
 	"requirements": {
 		"all": [
 			{"tech": "phase_imperial"},
@@ -16,10 +18,10 @@
 	"researchTime": 40,
 	"tooltip": "Heavy Warship +50% health, +2 default projectiles, but -25% speed.",
 	"modifications": [
-		{"value": "Health/Max", "multiply": 1.5},
-		{"value": "BuildingAI/DefaultArrowCount", "add": 2.0},
-		{"value": "UnitMotion/WalkSpeed", "multiply": 0.75},
-		{"value": "UnitMotion/Run/Speed", "multiply": 0.75}
+		{ "value": "Health/Max", "multiply": 1.5 },
+		{ "value": "BuildingAI/DefaultArrowCount", "add": 2.0 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.75 },
+		{ "value": "UnitMotion/Run/Speed", "multiply": 0.75 }
 	],
 	"affects": ["Warship Heavy"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

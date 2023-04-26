@@ -1,4 +1,5 @@
 {
+	"supersedes": "kushites/upgrade_rank_advanced_infantry_archer",
 	"genericName": "Elite Citizen Archer Infantry",
 	"specificName": {
 		"hele": "Zeugites",
@@ -7,14 +8,20 @@
 		"athen": "Zeugites"
 	},
 	"description": "Upgrade all of your citizen archers to Elite rank.",
-	"cost": {"coin": 600, "glory": 600},
-	"requirements": {"tech": "phase_imperial"},
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"tech": "phase_imperial"
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "upgrade_elite.png",
 	"researchTime": 40,
-	"supersedes": "kushites/upgrade_rank_advanced_infantry_archer",
-	"tooltip": "Upgrade all of your citizen-soldier archer infantry to Elite rank. This increases their military prowess, but decreases their resource gathering rates another -25%.",
-	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"tooltip": "Upgrade all of your Citizen-Soldier Archer Infantry to Elite rank. This increases their military prowess, but decreases their resource gathering rates another -25%.",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
 	"affects": ["Archer Infantry Advanced"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

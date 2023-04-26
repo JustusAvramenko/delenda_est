@@ -1,15 +1,23 @@
 {
 	"genericName": "Immortals",
 	"description": "The Anusiya champion infantry train twice as fast.",
-	"cost": {"glory": 300, "metal": 300},
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "pers"}]},
+	"cost": {
+		"glory": 300,
+		"metal": 300
+	},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city"},
+			{"civ": "pers"}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "immortals.png",
 	"researchTime": 40,
-	"tooltip": "Anusiya champion infantry -50% train time and 0 population cost.",
+	"tooltip": "\"Anusiya\" Champion Infantry -50% train time and 0 population cost.",
 	"modifications": [
-		{"value": "Cost/Population", "replace": 0},
-		{"value": "Cost/BuildTime", "multiply": 0.5}
+		{ "value": "Cost/Population", "replace": 0 },
+		{ "value": "Cost/BuildTime", "multiply": 0.5 }
 	],
 	"affects": ["Immortal"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

@@ -9,18 +9,27 @@
 		"ptol": "Ballistiká"
 	},
 	"description": "The study of the behavior of projectiles and how to throw them began with the Greeks.",
-	"cost": {"metal": 500, "glory": 500},
+	"cost": {
+		"metal": 500,
+		"glory": 500
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
-	"requirements": {"all": [
-		{"tech": "phase_city" },
-		{"all": [
-			{"notciv": "maur"},
-			{"notciv": "pers"},
-			{"notciv": "yayo"}]
-		}
-	]},
+	"requirements": {
+		"all": [
+			{"tech": "phase_city" },
+			{"all": [
+				{"notciv": "maur"},
+				{"notciv": "pers"},
+				{"notciv": "yayo"}]
+			}
+		]
+	},
 	"icon": "calipers.png",
 	"researchTime": 40,
-	"tooltip": "Unlock ranged siege weapon technologies.",
+	"tooltip": "Siege Weapons +10 vision range and unlock Ranged Siege Weapon technologies.",
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.1 }
+	],
+	"affects": ["Siege"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

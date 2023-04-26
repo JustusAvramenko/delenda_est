@@ -1,7 +1,10 @@
 {
 	"genericName": "Mountain Men",
 	"description": "Increases movement rate for Agrianian Peltasts.",
-	"cost": {"food": 200, "coin": 200},
+	"cost": {
+		"food": 200,
+		"coin": 200
+	},
 	"requirements": {
 		"all": [
 			{"tech": "phase_town"},
@@ -11,9 +14,9 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "leather_boots.png",
 	"researchTime": 40,
-	"tooltip": "Agrianian Peltasts +25% speed.",
+	"tooltip": "Javelin Infantry +25% speed.",
 	"modifications": [
-		{"value": "UnitMotion/WalkSpeed", "multiply": 1.25}
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25}
 	],
 	"affects": ["Javelin Infantry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

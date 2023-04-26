@@ -4,13 +4,8 @@
 	"specificName": {
 		"imp": "Umbo"
 	},
-	"description": ".",
 	"cost": {
-		"food": 0,
-		"wood": 0,
-		"stone": 0,
 		"metal": 500,
-		"coin": 0,
 		"glory": 400
 	},
 	"requirements": {
@@ -21,9 +16,9 @@
 	"researchTime": 60,
 	"tooltip": "All soldiers except archers +2 pierce armor, but -5% movement speed.",
 	"modifications": [
-		{"value": "Resistance/Entity/Damage/Pierce", "add": 2.0},
-		{"value": "UnitMotion/WalkSpeed", "multiply": 0.95},
-		{"value": "UnitMotion/Run/Speed", "multiply": 0.95}
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 2.0 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.95 },
+		{ "value": "UnitMotion/Run/Speed", "multiply": 0.95 }
 	],
 	"affects": ["Spear", "Sword", "Javelin"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

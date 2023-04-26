@@ -5,22 +5,25 @@
 	"cost": {
 		"food": 800
 	},
-	"requirements": {"all": [
-		{"tech": "phase_city"},
-		{"any": [
-			{"civ": "pers"},
-			{"civ": "ptol"},
-			{"civ": "sele"},
-			{"civ": "xion"},
-			{"civ": "scyth"},
-			{"civ": "huns"}
-		]}]},
+	"requirements": 
+		{"all": [
+			{"tech": "phase_city"},
+			{"any": [
+				{"civ": "pers"},
+				{"civ": "ptol"},
+				{"civ": "sele"},
+				{"civ": "xion"},
+				{"civ": "scyth"},
+				{"civ": "huns"}]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "horse_rider.png",
 	"researchTime": 40,
 	"tooltip": "Faster batch training speed for the Stables.",
 	"modifications": [
-		{"value": "Trainer/BatchTimeModifier", "add": -0.1}
+		{ "value": "Trainer/BatchTimeModifier", "add": -0.1 }
 	],
 	"affects": ["CavalryStable"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
