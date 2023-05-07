@@ -6,8 +6,8 @@
       <mesh>structural/yayoi_storehouse.dae</mesh>
       <props>
         <prop actor="props/structures/decals/spart_3x3.xml" attachpoint="root"/>
-        <prop actor="props/structures/hellenes/storehouse_wood.xml" attachpoint="wood"/>
-        <prop actor="props/special/eyecandy/blocks_sandstone_pile_b.xml" attachpoint="stone"/>
+        <prop actor="props/structures/hellenes/storehouse_wood.xml" attachpoint="wood" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/blocks_sandstone_pile_b.xml" attachpoint="stone" maxheight="20" minheight="-20"/>
       </props>
       <textures>
         <texture file="structural/yayoi_struct.png" name="baseTex"/>
@@ -27,12 +27,7 @@
   </group>
   <group>
     <variant frequency="1" name="alive"/>
-    <variant file="structures/destruction_small.xml">
-      <props>
-        <prop actor="props/structures/hellenes/storehouse_wood.xml" attachpoint="wood"/>
-        <prop actor="props/special/eyecandy/blocks_sandstone_pile_b.xml" attachpoint="stone"/>
-      </props>
-    </variant>
+    <variant file="structures/destruction_small.xml"/>
   </group>
   <material>player_trans_ao_parallax_spec.xml</material>
 </actor>
