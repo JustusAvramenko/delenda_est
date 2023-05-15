@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Ptolemaic sail">
+      <mesh>structural/ptol_ship_trireme_sails.dae</mesh>
+      <textures>
+       <texture file="props/ptol_sail_norm.png" name="normTex"/>
+       <texture file="props/ptol_sail_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="sail_egytian_eagle">
+      <textures>
+       <texture file="props/ptol_sail.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="sail_ptolemaic_eagle">
+      <textures>
+       <texture file="props/ptol_sail_eagle.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>
