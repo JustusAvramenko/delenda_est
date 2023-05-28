@@ -6,8 +6,18 @@
       <Capture>20</Capture>
       <MaxRange>4</MaxRange>
       <RepeatTime>1000</RepeatTime>
-	  <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
     </Capture>
+    <Slaughter>
+      <AttackName>Slaughter</AttackName>
+      <Damage>
+        <Hack>200.0</Hack>
+      </Damage>
+      <MaxRange>4.0</MaxRange>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">!Domestic</RestrictedClasses>
+    </Slaughter>
   </Attack>
   <Auras datatype="tokens">
     units/heroes/hero_garrison
