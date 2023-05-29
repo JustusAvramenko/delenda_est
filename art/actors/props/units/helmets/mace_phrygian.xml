@@ -6,19 +6,21 @@
       <mesh>props/helmet/mace_helmet_a.dae</mesh>
       <textures>
         <texture file="props/helmet/mace_a.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
         <texture file="props/helmet/sele_phrygian_spec.png" name="specTex"/>
       </textures>
     </variant>
     <variant frequency="1" name="Phrygian Plain">
       <mesh>props/helmet/sele_phrygian.dae</mesh>
       <textures>
-        <texture file="props/helmet/sele_phrygian_spec.png" name="specTex"/>
         <texture file="props/helmet/sele_phrygian_bronze.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="props/helmet/sele_phrygian_spec.png" name="specTex"/>
       </textures>
       <props>
         <prop actor="props/units/helmets/props/phrygian_mask.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
-  <material>playercolor_spec.xml</material>
+  <material>player_trans_norm_spec.xml</material>
 </actor>

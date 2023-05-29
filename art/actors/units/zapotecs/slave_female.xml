@@ -1,16 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="10" name="Dress Short European">
+    <variant>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="15" name="Egyptian Skirt Light Skin">
       <mesh>skeletal/new/f_tunic_short.dae</mesh>
       <props>
-        <prop actor="props/units/heads/new/dudette_head.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/head_ptol_fem.xml" attachpoint="head"/>
       </props>
       <textures>
-        <texture file="skeletal/imp/support_slave_fem_3.png" name="baseTex"/>
-        <texture file="default_norm.png" name="normTex"/>
-        <texture file="skeletal/imp/support_slave_fem_3_spec.png" name="specTex"/>
+        <texture file="skeletal/ptol/slave_female_01.png" name="baseTex"/>
+        <texture file="skeletal/maur/female_01_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
