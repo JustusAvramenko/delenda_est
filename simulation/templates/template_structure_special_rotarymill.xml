@@ -11,8 +11,8 @@
   <Builder>
     <Rate>1.0</Rate>
     <Entities datatype="tokens">
-      structures/{civ}/field
-      structures/{civ}/field_cash_crops
+      structures/{native}/field
+      structures/{native}/field_cash_crops
     </Entities>
   </Builder>
   <Capturable>
@@ -86,6 +86,7 @@
     <SoundGroups>
       <select>interface/select/building/sel_ffactri.xml</select>
       <constructed>interface/complete/building/complete_ffactri.xml</constructed>
+      <order_build>voice/{lang}/civ/civ_male_build.xml</order_build>
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
