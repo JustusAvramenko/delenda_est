@@ -20,19 +20,19 @@
   </Footprint>
   <Identity>
     <Civ>maur</Civ>
-    <Classes datatype="tokens">ConquestCritical Harmya</Classes>
+    <GenericName>Palace</GenericName>
     <SpecificName>Harmya</SpecificName>
+    <Classes datatype="tokens">ConquestCritical CivSpecific Harmya</Classes>
     <VisibleClasses datatype="tokens">
 	  Palace
 	</VisibleClasses>
-    <GenericName>Palace</GenericName>
     <Icon>structures/maur_palace.png</Icon>
     <Tooltip>Train your Hero and his Poison Maiden guards.</Tooltip>
     <Undeletable>true</Undeletable>
   </Identity>
   <Loot>
-    <stone>40</stone>
-    <glory>40</glory>
+    <stone>60</stone>
+    <glory>60</glory>
   </Loot>
   <Obstruction>
     <Static width="26.0" depth="26.0"/>
@@ -43,8 +43,14 @@
 	  spy_counter
     </Technologies>
   </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_broch.xml</select>
+      <constructed>interface/complete/building/complete_broch.xml</constructed>
+    </SoundGroups>
+  </Sound>
   <TerritoryInfluence>
-    <Root>false</Root>
+    <Root>true</Root>
     <Radius>38</Radius>
     <Weight>65535</Weight>
   </TerritoryInfluence>
