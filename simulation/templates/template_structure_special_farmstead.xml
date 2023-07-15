@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
   <Auras datatype="tokens">
-    farmland_60
+    structures/farmstead_60_1
+    structures/farmstead_60_2
   </Auras>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
@@ -10,8 +11,8 @@
   <Builder>
     <Rate>1.0</Rate>
     <Entities datatype="tokens">
-      structures/{civ}/field
-      structures/{civ}/field_cash_crops
+      structures/{native}/field
+      structures/{native}/field_cash_crops
     </Entities>
   </Builder>
   <Capturable>
@@ -37,13 +38,16 @@
   <GarrisonHolder disable=""/>
   <Health disable=""/>
   <Identity>
-    <Civ>celt</Civ>
+    <Civ>gaia</Civ>
     <GenericName>Farmstead</GenericName>
     <SpecificName>Rotary Mill</SpecificName>
-    <VisibleClasses datatype="tokens">RotaryMill Farmstead</VisibleClasses>
+    <VisibleClasses datatype="tokens">
+      Farmstead
+	  Capturable
+    </VisibleClasses>
     <Classes datatype="tokens">
 	  -ConquestCritical
-	  CivSpecific
+	  RotaryMill
 	</Classes>
     <Tooltip>Dropsite for harvested Food and Coin. Capture one of these to increase nearby food production.</Tooltip>
     <Icon>structures/rotarymill.png</Icon>
@@ -60,7 +64,6 @@
   <Obstruction>
     <Static width="16.0" depth="16.0"/>
   </Obstruction>
-  <RallyPoint disable=""/>
   <Researcher>
     <Technologies datatype="tokens">
 	  celts/gather_farming_harvester
@@ -83,6 +86,7 @@
     <SoundGroups>
       <select>interface/select/building/sel_ffactri.xml</select>
       <constructed>interface/complete/building/complete_ffactri.xml</constructed>
+      <order_build>voice/{lang}/civ/civ_male_build.xml</order_build>
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
@@ -91,8 +95,14 @@
   </StatusBars>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+	  units/{native}/support_slave
+    </Entities>
+  </Trainer>
   <Vision>
-    <Range>20</Range>
+    <Range>30</Range>
   </Vision>
   <VisualActor>
     <Actor>structures/celts/special.xml</Actor>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic">
+  <AlertRaiser>
+    <List datatype="tokens">Civilian</List>
+    <RaiseAlertRange>40</RaiseAlertRange>
+    <EndOfAlertRange>60</EndOfAlertRange>
+    <SearchRange>80</SearchRange>
+  </AlertRaiser>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Category>Farmstead</Category>
+  </BuildRestrictions>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/field
+      structures/{civ}/field_cash_crops
+    </Entities>
+  </Builder>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="14.0" depth="14.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Minister Teacher</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>400</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Lang>greek</Lang>
+    <GenericName>Granary</GenericName>
+    <SpecificName>Granary</SpecificName>
+    <Tooltip>Dropsite for the Food resource. Research Food gathering improvements. Buildable in neutral and own territory.</Tooltip>
+    <Classes datatype="tokens">-ConquestCritical DropsiteFood Farmstead</Classes>
+    <VisibleClasses datatype="tokens">Dropsite Village Granary</VisibleClasses>
+    <Icon>structures/farmstead.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <food>200</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <glory>100</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="12.0" depth="12.0"/>
+  </Obstruction>
+  <RallyPoint/>
+  <Researcher>
+    <Technologies datatype="tokens">
+      pair_gather_food_01
+      pair_farming_01
+      pair_farming_02
+      celts/gather_farming_harvester
+      unlock_specialized_cultivation
+      ptolemies/gather_grain_water_wheel
+      ptolemies/gather_grain_well_sweep
+      farms_crop_rotation
+      health_siege_rations
+    </Technologies>
+  </Researcher>
+  <ResourceDropsite>
+    <Types>food coin</Types>
+    <Sharable>true</Sharable>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_farmstead.xml</select>
+      <constructed>interface/complete/building/complete_farmstead.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <order_build>voice/{lang}/civ/civ_male_build.xml</order_build>
+      <alert_raise>interface/alarm/alarm_alert_0.xml</alert_raise>
+      <alert_end>interface/alarm/alarm_alert_1.xml</alert_end>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+	  units/{civ}/support_slave
+    </Entities>
+  </Trainer>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>
