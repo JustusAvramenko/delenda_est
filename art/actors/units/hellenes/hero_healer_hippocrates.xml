@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_healer_male.xml">
+      <mesh>skeletal/new/m_dress.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_hele_healer.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/props/laurel_head.xml" attachpoint="helmet"/>
+        <prop actor="props/units/staff.xml" attachpoint="weapon_R"/>
+      </props>
+      <textures>
+        <texture file="skeletal/imp/support_citizen_male_01.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="skeletal/imp/support_citizen_male_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>
