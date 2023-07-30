@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_healer">
+  <Auras datatype="tokens">
+    units/heroes/athen_hero_hippocrates_1
+    units/heroes/athen_hero_hippocrates_2
+  </Auras>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>athen</Civ>
+    <GenericName>Hippocrates of Kos</GenericName>
+    <SpecificName>Hippokrátēs ho Koios</SpecificName>
+    <Icon>units/hele/hero_hippocrates.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_village
+        phase_town
+	  </Techs>
+    </Requirements>
+  </Identity>
+  <VisualActor>
+    <Actor>units/hellenes/hero_healer_hippocrates.xml</Actor>
+  </VisualActor>
+</Entity>
