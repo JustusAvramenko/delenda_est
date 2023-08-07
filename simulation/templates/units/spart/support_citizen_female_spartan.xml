@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support_citizen_female">
+  <Attack>
+    <Melee>
+      <Bonuses>
+        <BonusSiege>
+          <Classes>Siege</Classes>
+          <Multiplier>2.5</Multiplier>
+        </BonusSiege>
+      </Bonuses>
+    </Melee>
+  </Attack>
   <Auras datatype="tokens">
     -units/female_inspiration
 	units/slave_ownership
@@ -9,7 +19,7 @@
     <Civ>spart</Civ>
 	<Lang>greek</Lang>
     <SpecificName>Spartan Woman</SpecificName>
-    <Icon>units/spart/support_female_citizen.png</Icon>
+    <Icon>units/spart/support_citizen_female.png</Icon>
 	<Tooltip>Build civilian buildings and gather resources. Command nearby Helots to work faster. Especially good at building.
 Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Stands Ground.
 Strong Against: Siege Weapons (2.5x).
