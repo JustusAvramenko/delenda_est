@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Entity>
+  <Cost>
+    <Population op="add">1</Population>
+    <BuildTime op="mul">1.5</BuildTime>
+    <Resources>
+      <food op="mul_round">1.2</food>
+      <wood op="mul_round">1.2</wood>
+      <stone op="mul_round">1.2</stone>
+      <metal op="mul_round">1.2</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max op="mul">2.0</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
+  </Identity>
+  <Loot>
+    <food op="mul_round">1.2</food>
+    <wood op="mul_round">1.2</wood>
+    <stone op="mul_round">1.2</stone>
+    <metal op="mul_round">1.2</metal>
+    <xp op="mul_round">1.2</xp>
+  </Loot>
+  <ResourceGatherer disable=""/>
+</Entity>
