@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <Entity>
+  <Auras datatype="tokens">
+    units/chariot_trample_e
+  </Auras>
   <Cost>
     <Population op="add">1</Population>
-    <BuildTime op="mul">1.5</BuildTime>
+    <BuildTime op="mul_round">1.5</BuildTime>
     <Resources>
       <food op="mul_round">1.2</food>
       <wood op="mul_round">1.2</wood>
       <stone op="mul_round">1.2</stone>
       <metal op="mul_round">1.2</metal>
+      <coin op="mul_round">1.2</coin>
+      <glory op="mul_round">1.2</glory>
     </Resources>
   </Cost>
+  <Footprint replace="">
+    <Square width="9.0" depth="15.0"/>
+    <Height>5.0</Height>
+  </Footprint>
   <Health>
-    <Max op="mul">2.0</Max>
+    <Max op="mul_round">1.5</Max>
   </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
@@ -21,7 +30,15 @@
     <wood op="mul_round">1.2</wood>
     <stone op="mul_round">1.2</stone>
     <metal op="mul_round">1.2</metal>
+    <coin op="mul_round">1.2</coin>
+    <glory op="mul_round">1.2</glory>
     <xp op="mul_round">1.2</xp>
   </Loot>
+  <Position>
+    <TurnRate>2</TurnRate>
+  </Position>
   <ResourceGatherer disable=""/>
+  <UnitMotion>
+	<PassabilityClass>large</PassabilityClass> 
+  </UnitMotion>
 </Entity>

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_cavalry_archer">
+<Entity parent="chariot|template_unit_champion_cavalry_archer">
   <Attack>
     <Ranged>
-      <Damage>
-	    <Hack>0.0</Hack>
-        <Pierce>35.0</Pierce>
-        <Crush>0.0</Crush>
-      </Damage>
 	  <Bonuses>
 		<BonusCavalry>
 		  <Classes>Cavalry</Classes>
@@ -27,9 +22,6 @@
 	  </Bonuses>
     </Ranged>
   </Attack>
-  <Auras datatype="tokens">
-	units/chariot_trample_a
-  </Auras>
   <Cost>
     <Population>4</Population>
     <BuildTime>20</BuildTime>
@@ -48,7 +40,6 @@
   </Health>
   <Identity>
     <Civ>maur</Civ>
-    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
 	<SpecificName>Indian War Chariot</SpecificName>
 	<SelectionGroupName>units/maur/champion_chariot</SelectionGroupName>
 	<Icon>units/maur/champion_chariot.png</Icon>

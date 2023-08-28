@@ -1,41 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_hero_cavalry_archer">
-  <Attack>
-    <Ranged>
-      <Damage>
-	    <Hack>0</Hack>
-        <Pierce>30</Pierce>
-        <Crush>0</Crush>
-      </Damage>
-      <MaxRange>64</MaxRange>
-      <MinRange>0</MinRange>
-    </Ranged>
-  </Attack>
+<Entity parent="chariot|template_unit_hero_cavalry_archer">
   <Auras datatype="tokens">
     units/heroes/pers_hero_xerxes
-	units/chariot_trample_e
   </Auras>
   <Footprint replace="">
     <Square width="6" depth="12"/>
     <Height>5</Height>
   </Footprint>
-  <Health>
-    <Max op="mul">1.25</Max>
-  </Health>
   <Identity>
     <Civ>pers</Civ>
 	<Lang>persian</Lang>
-    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
 	<SpecificName>Xerxes I</SpecificName>
     <Icon>units/achae/hero_xerxes.png</Icon>
   </Identity>
-  <Loot>
-    <xp>300</xp>
-    <food>0</food>
-    <wood>20</wood>
-    <stone>0</stone>
-    <metal>100</metal>
-  </Loot>
   <VisualActor>
     <Actor>units/persians/hero_chariot_archer_xerxes_m.xml</Actor>
   </VisualActor>

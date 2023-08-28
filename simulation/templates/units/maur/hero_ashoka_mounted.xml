@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_hero_cavalry_archer">
+<Entity parent="chariot|template_unit_hero_cavalry_archer">
   <Attack>
     <Ranged>
-      <Damage>
-	    <Hack>0.0</Hack>
-        <Pierce>30.0</Pierce>
-        <Crush>0.0</Crush>
-      </Damage>
-      <MaxRange>64.0</MaxRange>
 	  <Bonuses>
 		<BonusCavalry>
 		  <Classes>Cavalry</Classes>
@@ -30,20 +24,15 @@
   </Attack>
   <Auras datatype="tokens">
 	units/heroes/maur_hero_ashoka
-	units/chariot_trample_e
   </Auras>
   <Footprint replace="">
     <Square width="6.0" depth="12.0"/>
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>1000</Max>
-  </Health>
   <Identity>
     <Civ>maur</Civ>
     <SpecificName>Ashoka the Great</SpecificName>
     <Classes datatype="tokens">Ashoka</Classes>
-	<VisibleClasses datatype="tokens">Chariot</VisibleClasses>
     <Icon>units/maur/hero_ashoka.png</Icon>
     <Tooltip>Traits: Fast Speed, Trample, Charge.
 Strong Against: Pike Infantry, Spear Infantry, Sword Infantry.

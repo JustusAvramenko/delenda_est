@@ -1,35 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_cavalry_ranged_archer">
-  <Attack>
-    <Ranged>
-      <Damage>
-	    <Hack>0.0</Hack>
-        <Pierce>15.0</Pierce>
-        <Crush>0.0</Crush>
-      </Damage>
-    </Ranged>
-  </Attack>
+<Entity parent="chariot|template_unit_cavalry_ranged_archer">
   <Auras datatype="tokens">
+    -units/chariot_trample_e
     units/chariot_trample_b
   </Auras>
-  <Cost>
-    <Population>4</Population>
-    <Resources>
-      <food>100</food>
-      <wood>100</wood>
-    </Resources>
-  </Cost>
   <Footprint replace="">
     <Square width="5.5" depth="10.0"/>
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>250</Max>
-  </Health>
   <Identity>
     <Civ>pers</Civ>
 	<Lang>persian</Lang>
-    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
 	<SelectionGroupName>units/pers/chariot_archer_b</SelectionGroupName>
 	<SpecificName>Babylonian Scythed Chariot</SpecificName>
     <Tooltip>Traits: Long Range, Fast Speed, Heavy Armor, Harassment, Trample.
@@ -40,38 +21,16 @@ Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
       <Techs datatype="tokens">phase_town</Techs>
     </Requirements>
   </Identity>
-  <Loot>
-    <xp>200</xp>
-    <food>0</food>
-    <wood>20</wood>
-    <stone>0</stone>
-    <metal>20</metal>
-  </Loot>
-  <Position>
-    <TurnRate>2</TurnRate>
-  </Position>
   <Promotion>
     <Entity>units/pers/chariot_archer_a</Entity>
     <RequiredXp>10000</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack op="add">2</Hack>
-        <Pierce op="add">2</Pierce>
-        <Crush op="add">4</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <ResourceGatherer>
     <MaxDistance>5.0</MaxDistance>
     <Capacities>
       <food>50</food>
     </Capacities>
   </ResourceGatherer>
-  <UnitMotion>
-	<PassabilityClass>large</PassabilityClass> 
-  </UnitMotion>
   <VisualActor>
     <Actor>units/persians/chariot_archer_b_m.xml</Actor>
   </VisualActor>
