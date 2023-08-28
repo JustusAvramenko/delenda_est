@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="chariot|template_unit_champion_cavalry_javelineer">
   <Health>
-    <SpawnEntityOnDeath>units/brit/champion_infantry_javelineer</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>units/brit/champion_chariot_rider</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>brit</Civ>
@@ -9,6 +9,15 @@
 	<SelectionGroupName>units/brit/champion_cavalry</SelectionGroupName>
     <Icon>units/brit/champion_chariot.png</Icon>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Pierce op="add">-1</Pierce>
+        <Crush op="add">-1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <VisualActor>
     <Actor>units/britons/chariot_javelinist_c_m.xml</Actor>
   </VisualActor>

@@ -20,31 +20,28 @@
         <LaunchPoint y="3"/>
       </Projectile>
       <Bonuses>
-		<BonusPrimary>
-		  <Classes>Support</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusPrimary>
-		<ElephantStench>
-		  <Classes>Elephant</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</ElephantStench>
-		<CamelStench>
-		  <Classes>Camel</Classes>
-		  <Multiplier>0.5</Multiplier>
-		</CamelStench>
+        <BonusPrimary>
+          <Classes>Support</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusPrimary>
+        <ElephantStench>
+          <Classes>Elephant</Classes>
+          <Multiplier>0.5</Multiplier>
+        </ElephantStench>
+        <CamelStench>
+          <Classes>Camel</Classes>
+          <Multiplier>0.5</Multiplier>
+        </CamelStench>
       </Bonuses>
-	  <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
+      <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
       <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
     </Ranged>
   </Attack>
   <Cost>
     <Resources>
-      <coin>75</coin>
+      <coin>80</coin>
     </Resources>
   </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
   <Identity>
     <VisibleClasses datatype="tokens">Ranged Javelin</VisibleClasses>
     <GenericName>Champion Javelin Cavalry</GenericName>
@@ -52,15 +49,6 @@
 Strong Against: Citizens (1.5x), Slaves (1.5x), Healers (1.5x), Traders (1.5x).
 Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>5</Hack>
-        <Pierce>10</Pierce>
-        <Crush>5</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/javelin_attack.xml</attack_ranged>
