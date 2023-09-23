@@ -2,24 +2,17 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="gate">
+    <variant frequency="1" name="Tori">
       <mesh>structural/yayoi_gate.dae</mesh>
       <props>
         <prop actor="props/structures/decals/spart_1x1.xml" attachpoint="root"/>
+        <prop actor="particle/glory_low.xml" attachpoint="root"/>
       </props>
       <textures>
         <texture file="structural/yayoi_struct.png" name="baseTex"/>
         <texture file="structural/yayoi_struct_spec.png" name="specTex"/>
         <texture file="structural/yayoi_struct_norm.png" name="normTex"/>
       </textures>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="ungarrisoned"/>
-    <variant name="garrisoned">
-      <props>
-        <prop actor="props/special/common/garrison_flag_yayo.xml" attachpoint="garrisoned"/>
-      </props>
     </variant>
   </group>
   <group>
@@ -34,5 +27,5 @@
       </props>
     </variant>
   </group>
-  <material>player_trans_parallax_spec.xml</material>
+  <material>no_trans_parallax_spec.xml</material>
 </actor>
