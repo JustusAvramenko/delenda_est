@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_armor_pants.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
+      </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="chainmail-4a">
+      <textures>
+        <texture file="skeletal/brit/chainmail_04_01.png" name="baseTex"/>
+        <texture file="skeletal/celt/chainmail_04_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail-4b">
+      <textures>
+        <texture file="skeletal/brit/chainmail_04_02.png" name="baseTex"/>
+        <texture file="skeletal/celt/chainmail_04_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="chainmail-4c">
+      <textures>
+        <texture file="skeletal/brit/chainmail_04_03.png" name="baseTex"/>
+        <texture file="skeletal/celt/chainmail_04_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_swordsman_shield_fast_wild.xml" frequency="1"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

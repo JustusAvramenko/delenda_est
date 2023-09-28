@@ -2,7 +2,7 @@
 <Entity>
   <Attack>
     <Melee>
-      <MaxRange>7.0</MaxRange>
+      <MaxRange op="add">2.0</MaxRange>
     </Melee>
   </Attack>
   <Cost>
@@ -12,9 +12,12 @@
     </Resources>
   </Cost>
   <Identity>
-	<GenericName>Armored Heavy Cavalry</GenericName>
+	<GenericName>Cataphract Cavalry</GenericName>
     <VisibleClasses datatype="tokens">Cataphract</VisibleClasses>
   </Identity>
+  <Position>
+    <TurnRate op="mul">0.8</TurnRate>
+  </Position>
   <Resistance>
     <Entity>
       <Damage>
@@ -25,6 +28,7 @@
     </Entity>
   </Resistance>
   <UnitMotion>
-    <WalkSpeed op="mul">0.85</WalkSpeed>
+    <WalkSpeed op="mul">0.95</WalkSpeed>
+    <Acceleration op="mul">0.8</Acceleration>
   </UnitMotion>
 </Entity>

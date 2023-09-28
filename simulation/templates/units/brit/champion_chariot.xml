@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="chariot|template_unit_champion_cavalry_javelineer">
+  <Footprint replace="">
+    <Square width="5.0" depth="10.0"/>
+    <Height>6.0</Height>
+  </Footprint>
   <Health>
     <SpawnEntityOnDeath>units/brit/champion_chariot_rider</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>brit</Civ>
     <SpecificName>Brythonic War Chariot</SpecificName>
-	<SelectionGroupName>units/brit/champion_cavalry</SelectionGroupName>
+    <SelectionGroupName>units/brit/champion_chariot</SelectionGroupName>
     <Icon>units/brit/champion_chariot.png</Icon>
   </Identity>
   <Resistance>
     <Entity>
       <Damage>
-        <Hack op="add">-1</Hack>
         <Pierce op="add">-1</Pierce>
         <Crush op="add">-1</Crush>
       </Damage>
