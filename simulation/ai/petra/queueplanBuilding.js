@@ -232,7 +232,7 @@ PETRA.ConstructionPlan.prototype.findGoodPosition = function(gameState)
 					else if (ent.hasClasses(["Gate", "!Wall"]))
 						placement.addInfluence(x, z, 60 / cellSize, -40);   // and further away from other stuffs
 				}
-				else if (template.hasClass("granary") && !ent.hasClasses(["Field", "Corral"]) &&
+				else if (template.hasClass("Granary") && !ent.hasClasses(["Field", "Corral"]) &&
 					ent.hasClasses(["Gate", "!Wall"]))
 					placement.addInfluence(x, z, 100 / cellSize, -25);       // move granarys away to make room (Wall test needed for iber)
 				else if (template.hasClass("GarrisonFortress") && ent.hasClass("House"))
@@ -243,7 +243,7 @@ PETRA.ConstructionPlan.prototype.findGoodPosition = function(gameState)
 					placement.addInfluence(x, z, 60 / cellSize, 40);
 			});
 		}
-		if (template.hasClass("granary"))
+		if (template.hasClass("Granary"))
 		{
 			for (let j = 0; j < placement.map.length; ++j)
 			{

@@ -1287,8 +1287,8 @@ PETRA.HQ.prototype.buildMarket = function(gameState, queues)
 	queues.economicBuilding.addPlan(plan);
 };
 
-/** Build a Granary */
-PETRA.HQ.prototype.buildgranary = function(gameState, queues)
+/** Build a granary */
+PETRA.HQ.prototype.buildGranary = function(gameState, queues)
 {
 	// Only build one granary for the time being ("DropsiteFood" does not refer to CCs)
 	if (gameState.getOwnEntitiesByClass("Granary", true).hasEntities())
@@ -2239,7 +2239,7 @@ PETRA.HQ.prototype.update = function(gameState, queues, events)
 			this.buildMoreHouses(gameState, queues);
 
 		if ((!this.saveResources || this.canBarter) && gameState.ai.playedTurn % 4 == 2)
-			this.buildgranary(gameState, queues);
+			this.buildGranary(gameState, queues);
 
 		if (this.needCorral && gameState.ai.playedTurn % 4 == 3)
 			this.manageCorral(gameState, queues);

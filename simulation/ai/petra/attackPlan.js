@@ -1499,8 +1499,8 @@ PETRA.AttackPlan.prototype.update = function(gameState, events)
 		// do not loose time destroying buildings which do not help enemy's defense and can be easily captured later
 		if (this.target.hasDefensiveFire())
 		{
-			targetClassesUnit.avoid = targetClassesUnit.avoid.concat("House", "Storehouse", "granary", "Field", "Forge");
-			targetClassesSiege.avoid = targetClassesSiege.avoid.concat("House", "Storehouse", "granary", "Field", "Forge");
+			targetClassesUnit.avoid = targetClassesUnit.avoid.concat("House", "Storehouse", "Granary", "Field", "Forge");
+			targetClassesSiege.avoid = targetClassesSiege.avoid.concat("House", "Storehouse", "Granary", "Field", "Forge");
 		}
 
 		if (this.unitCollUpdateArray === undefined || !this.unitCollUpdateArray.length)
