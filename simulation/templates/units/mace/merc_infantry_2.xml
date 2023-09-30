@@ -2,9 +2,14 @@
 <Entity parent="template_unit_mercenary_infantry_melee_swordsman">
   <Attack>
     <Melee>
-      <Damage>
-	    <Hack op="mul">1.2</Hack>
-      </Damage>
+      <Splash>
+        <Damage>
+          <Hack>5.0</Hack>
+        </Damage>
+        <Shape>Circular</Shape>
+        <Range>5</Range>
+        <FriendlyFire>false</FriendlyFire>
+      </Splash>
     </Melee>
   </Attack>
   <Cost>
