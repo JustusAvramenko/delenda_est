@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_healer_female.xml">
+      <props>
+        <prop actor="props/units/heads/head_female_yayoi.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/yayo_helmet_priestess.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/trader_staff.xml" attachpoint="weapon_L"/>
+      </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Skirt-Long_a">
+      <mesh>skeletal/new/f_dress.dae</mesh>
+      <textures>
+        <texture file="skeletal/yayoi/dress_female_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="Idle" frequency="1"/>
+    <variant file="biped/female_death.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>
