@@ -30,12 +30,8 @@
     <Square width="4.5" depth="9.0"/>
     <Height>3.0</Height>
   </Footprint>
-  <Health>
-    <Max>200</Max>
-  </Health>
   <Identity>
     <Civ>sueb</Civ>
-    <SpecificName>Battering Ram</SpecificName>
     <Icon>units/sueb/siege_ram.png</Icon>
   </Identity>
   <Selectable>
@@ -46,17 +42,6 @@
       </Texture>
     </Overlay>
   </Selectable>
-  <Sound>
-    <SoundGroups>
-      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
-      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
-      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
-      <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
-      <walk>actor/human/movement/walk.xml</walk>
-      <run>actor/human/movement/run.xml</run>
-      <death>actor/human/death/{phenotype}_death.xml</death>
-    </SoundGroups>
-  </Sound>
   <VisualActor>
     <Actor>structures/suebians/siege_ram_pivot.xml</Actor>
   </VisualActor>

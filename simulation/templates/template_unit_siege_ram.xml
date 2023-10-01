@@ -4,28 +4,28 @@
     <Melee>
       <AttackName>Ram</AttackName>
       <Damage>
-	    <Hack>0.0</Hack>
+        <Hack>0.0</Hack>
         <Pierce>0.0</Pierce>
         <Crush>80.0</Crush>
       </Damage>
       <MaxRange>7.0</MaxRange>
-	  <PrepareTime>1000</PrepareTime>
+      <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
-	  <Bonuses>
-		<BonusGates>
-		  <Classes>Gates</Classes>
-		  <Multiplier>1.5</Multiplier>
-		</BonusGates>
-	  </Bonuses>
+      <Bonuses>
+      <BonusGates>
+        <Classes>Gates</Classes>
+        <Multiplier>1.5</Multiplier>
+      </BonusGates>
+      </Bonuses>
       <RestrictedClasses datatype="tokens">
-		Organic
-		Field
-		MercenaryCamp
-	  </RestrictedClasses>
+        Organic
+        Field
+        MercenaryCamp
+      </RestrictedClasses>
       <PreferredClasses datatype="tokens">
-		Structure
+        Structure
         !MercenaryCamp
-	  </PreferredClasses>
+      </PreferredClasses>
     </Melee>
   </Attack>
   <Capturable disable=""/>
@@ -34,7 +34,7 @@
     <Population>4</Population>
     <Resources>
       <wood>150</wood>
-      <metal>150</metal>
+      <metal>100</metal>
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -59,7 +59,7 @@ Weak Against: Melee Cavalry, Melee Infantry.</Tooltip>
       <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
       <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
       <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
-	  <trained>attack/siege/ram_trained.xml</trained>
+      <trained>attack/siege/ram_trained.xml</trained>
       <walk>actor/human/movement/walk.xml</walk>
       <run>actor/human/movement/run.xml</run>
       <death>actor/human/death/{phenotype}_death.xml</death>
