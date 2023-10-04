@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="autobuild|template_structure_military_barracks">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>20.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>50.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <Origin>
+        <X>0</X>
+        <Y>10</Y>
+        <Z>0</Z>
+      </Origin>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>3000</RepeatTime>
+      <Projectile>
+        <Speed>40.0</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>30.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.1</LineThickness>
+      </RangeOverlay>
+    </Ranged>
+  </Attack>
+  <Auras disable=""/>
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowMultiplier>0.5</GarrisonArrowMultiplier>
+    <MaxArrowCount>10</MaxArrowCount>
+  </BuildingAI>
+  <BuildRestrictions>
+    <Category>Royal_Yurt</Category>
+    <Distance>
+      <FromClass>CivicCenter</FromClass>
+      <MaxDistance>60</MaxDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <wood>200</wood>
+      <stone>0</stone>
+      <glory>200</glory>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="15.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">Champion Hero</List>
+  </GarrisonHolder>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>xion</Civ>
+    <Lang>mandarin</Lang>
+    <GenericName>Royal Yurt</GenericName>
+    <SpecificName>Dìguó Xuéyuàn</SpecificName>
+    <Tooltip>Train Heroes, Champions and research Special Technologies.</Tooltip>
+    <VisibleClasses datatype="tokens">Village Royal_Yurt</VisibleClasses>
+    <Icon>structures/embassy_italic.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_village
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -training_levy_infantry_barracks
+      -training_mobilization
+      -training_total_war
+      attack_capture_siege_ladders
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_tholos.xml</select>
+      <constructed>interface/complete/building/complete_tholos.xml</constructed>
+      <upgraded>interface/complete/building/complete_tholos.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      -units/{civ}/infantry_axeman_b
+      -units/{civ}/infantry_spearman_b
+      -units/{civ}/infantry_pikeman_b
+      -units/{civ}/infantry_swordsman_b
+      units/{civ}/champion_infantry_spearman
+      units/{civ}/champion_infantry_archer
+      units/{civ}/champion_cavalry
+      units/{civ}/champion_cavalry_archer
+      units/{civ}/siege_ram
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/xiongnu/champions_yurt_unpacked.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>
