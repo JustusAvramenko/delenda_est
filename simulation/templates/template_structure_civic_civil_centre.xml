@@ -39,7 +39,8 @@
     </Ranged>
   </Attack>
   <Auras datatype="tokens">
-	structures/civic_spaces
+    structures/civic_spaces
+    structures/public_disorder
   </Auras>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
@@ -55,7 +56,7 @@
     <MaxArrowCount>10</MaxArrowCount>
   </BuildingAI>
   <Capturable>
-    <CapturePoints>4000</CapturePoints>
+    <CapturePoints>5000</CapturePoints>
     <RegenRate>0</RegenRate>
     <GarrisonRegenRate>3</GarrisonRegenRate>
   </Capturable>
@@ -146,6 +147,7 @@
       <select>interface/select/building/sel_civ_center.xml</select>
       <constructed>interface/complete/building/complete_civ_center.xml</constructed>
       <upgraded>interface/complete/building/complete_civ_center.xml</upgraded>
+      <captured>interface/alarm/alarm_defeated.xml</captured>
       <death>attack/destruction/building_collapse_large.xml</death>
       <order_build>voice/{lang}/civ/civ_male_build.xml</order_build>
       <alert_raise>interface/alarm/alarm_alert_0.xml</alert_raise>
