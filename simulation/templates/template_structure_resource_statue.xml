@@ -34,7 +34,9 @@
     <VisibleClasses datatype="tokens">Town CultStatue</VisibleClasses>
     <Tooltip>Build these to generate the Glory resource over time. Task units to pray at the statue to generate Glory even faster. Can only build 1 at a time, one after another.</Tooltip>
     <Icon>structures/statue.png</Icon>
-    <Requirements><Techs datatype="tokens">phase_town</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <xp>200</xp>
@@ -43,6 +45,11 @@
   <Obstruction>
     <Static width="9.0" depth="9.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+	  trickle_glory_01
+    </Technologies>
+  </Researcher>
   <ResourceDropsite>
     <Types>glory</Types>
     <Sharable>true</Sharable>
