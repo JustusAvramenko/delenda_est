@@ -11,10 +11,10 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "helmet_hellenistic_gold.png",
 	"researchTime": 30,
-	"tooltip": "Citizen Infantry and Cavalry −20% train time.",
+	"tooltip": "All Soldiers −25% train time, but Civilian Citizens +20% train time.",
 	"modifications": [
-		{ "value": "Cost/BuildTime", "multiply": 0.8 }
+		{ "value": "Cost/BuildTime", "multiply": 0.75, "affects": "Soldier" },
+		{ "value": "Cost/BuildTime", "multiply": 1.2, "affects": "Villager" }
 	],
-	"affects": ["CitizenSoldier"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
