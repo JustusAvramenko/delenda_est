@@ -3,7 +3,7 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>cumulus</SkySet>
-		<SunColor r="0.956863" g="0.92549" b="0.807843"/>
+		<SunColor r="0.956863" g="0.921569" b="0.803922"/>
 		<SunElevation angle="0.93266"/>
 		<SunRotation angle="-0.687223"/>
 		<AmbientColor r="0.364706" g="0.364706" b="0.364706"/>
@@ -32,28 +32,32 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="260.657" y="246.842" z="157.292"/>
+		<Position x="484.622" y="300.766" z="-16.479"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
+  "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
   "Description": "A small Savanna map with 4 watering holes. \n\nAs with all Savanna maps, huntable animals foragable plants are abundant, but there are no farmlands on the entire map, so farming is difficult.\n\nWood is scattered, but comes in high-yield Baobab trees. The watering holes give life to clusters of trees and life to dangerous fauna, such as crocodiles and elephants.",
-  "Keywords": [],
+  "Keywords": [
+    "new"
+  ],
   "LockTeams": false,
   "Name": "Watering Holes (4 players)",
   "PlayerData": [
-    null,
-    {},
-    {},
-    {},
-    {}
+    "",
+    "",
+    "",
+    "",
+    ""
   ],
-  "Preview": "watering_holes_4p.png",
+  "Preview": "watering_holes_4.png",
   "RevealMap": false,
   "VictoryConditions": [
-    "conquest_civic_centers"
+    "annihilation"
   ]
 }
 ]]></ScriptSettings>
@@ -2734,7 +2738,7 @@
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>2</Player>
 			<Position x="779.91834" z="277.07886"/>
-			<Orientation y="-2.37551"/>
+			<Orientation y="-4.16965"/>
 			<Actor seed="8646"/>
 		</Entity>
 		<Entity uid="404">
@@ -6920,7 +6924,7 @@
 			<Template>gaia/rock/savanna_large</Template>
 			<Player>0</Player>
 			<Position x="683.16547" z="224.85306"/>
-			<Orientation y="-11.67682"/>
+			<Orientation y="-11.46787"/>
 			<Actor seed="7892"/>
 		</Entity>
 		<Entity uid="1020">
@@ -8169,36 +8173,8 @@
 			<Template>structures/merc/camp_noba</Template>
 			<Player>0</Player>
 			<Position x="525.94092" z="521.11603"/>
-			<Orientation y="2.35621"/>
+			<Orientation y="-2.33338"/>
 			<Actor seed="26016"/>
-		</Entity>
-		<Entity uid="1254">
-			<Template>structures/merc/camp_noba</Template>
-			<Player>0</Player>
-			<Position x="396.33841" z="715.22242"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="53262"/>
-		</Entity>
-		<Entity uid="1255">
-			<Template>structures/merc/camp_noba</Template>
-			<Player>0</Player>
-			<Position x="707.2547" z="620.28974"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="43360"/>
-		</Entity>
-		<Entity uid="1256">
-			<Template>structures/merc/camp_noba</Template>
-			<Player>0</Player>
-			<Position x="629.44001" z="323.47632"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="26582"/>
-		</Entity>
-		<Entity uid="1257">
-			<Template>structures/merc/camp_noba</Template>
-			<Player>0</Player>
-			<Position x="313.75828" z="399.17048"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="62754"/>
 		</Entity>
 		<Entity uid="1258">
 			<Template>actor|props/flora/grass_savanna_field_tall.xml</Template>
@@ -12179,6 +12155,380 @@
 			<Position x="602.03125" z="671.6037"/>
 			<Orientation y="0.7366"/>
 			<Actor seed="38136"/>
+		</Entity>
+		<Entity uid="1914">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="147.00474" z="655.55286"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="22775"/>
+		</Entity>
+		<Entity uid="1915">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="164.34665" z="653.90113"/>
+			<Orientation y="-1.91732"/>
+			<Actor seed="21671"/>
+		</Entity>
+		<Entity uid="1916">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="175.41355" z="665.714"/>
+			<Orientation y="-3.038"/>
+			<Actor seed="8910"/>
+		</Entity>
+		<Entity uid="1917">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="136.17463" z="665.27155"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="56171"/>
+		</Entity>
+		<Entity uid="1918">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="140.75358" z="676.04004"/>
+			<Orientation y="0.17544"/>
+			<Actor seed="30095"/>
+		</Entity>
+		<Entity uid="1919">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="140.99479" z="682.5918"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6560"/>
+		</Entity>
+		<Entity uid="1920">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="171.40085" z="682.20844"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="59680"/>
+		</Entity>
+		<Entity uid="1921">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="166.44205" z="689.5569"/>
+			<Orientation y="2.31614"/>
+			<Actor seed="62299"/>
+		</Entity>
+		<Entity uid="1922">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="151.78873" z="690.79535"/>
+			<Orientation y="1.26053"/>
+			<Actor seed="43132"/>
+		</Entity>
+		<Entity uid="1923">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="155.15253" z="660.6042"/>
+			<Orientation y="2.07364"/>
+			<Actor seed="6111"/>
+		</Entity>
+		<Entity uid="1924">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="141.77833" z="656.04126"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6187"/>
+		</Entity>
+		<Entity uid="1925">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="144.59202" z="333.78592"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="32295"/>
+		</Entity>
+		<Entity uid="1926">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="160.77036" z="329.44422"/>
+			<Orientation y="-1.84124"/>
+			<Actor seed="26572"/>
+		</Entity>
+		<Entity uid="1927">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="170.17173" z="332.55979"/>
+			<Orientation y="0.57195"/>
+			<Actor seed="48601"/>
+		</Entity>
+		<Entity uid="1928">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="176.6489" z="341.84577"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="4258"/>
+		</Entity>
+		<Entity uid="1929">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="176.7451" z="352.71427"/>
+			<Orientation y="0.38782"/>
+			<Actor seed="4609"/>
+		</Entity>
+		<Entity uid="1930">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="173.4397" z="366.94233"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="40081"/>
+		</Entity>
+		<Entity uid="1931">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="157.76108" z="372.55777"/>
+			<Orientation y="1.37316"/>
+			<Actor seed="41918"/>
+		</Entity>
+		<Entity uid="1932">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="139.39426" z="335.65473"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="25494"/>
+		</Entity>
+		<Entity uid="1933">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="140.15455" z="346.98182"/>
+			<Orientation y="-2.58828"/>
+			<Actor seed="42438"/>
+		</Entity>
+		<Entity uid="1934">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="137.26423" z="358.36133"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="22277"/>
+		</Entity>
+		<Entity uid="1935">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="143.88593" z="365.97773"/>
+			<Orientation y="-2.33529"/>
+			<Actor seed="57280"/>
+		</Entity>
+		<Entity uid="1936">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="154.46683" z="376.92688"/>
+			<Orientation y="1.36007"/>
+			<Actor seed="57725"/>
+		</Entity>
+		<Entity uid="1937">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="176.93665" z="370.14188"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31811"/>
+		</Entity>
+		<Entity uid="1938">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="156.01658" z="325.77298"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="4804"/>
+		</Entity>
+		<Entity uid="1939">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="845.5279" z="350.98356"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41309"/>
+		</Entity>
+		<Entity uid="1940">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="859.50623" z="345.72638"/>
+			<Orientation y="-2.023"/>
+			<Actor seed="55752"/>
+		</Entity>
+		<Entity uid="1941">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="864.17792" z="349.78486"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27576"/>
+		</Entity>
+		<Entity uid="1942">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="872.75873" z="350.05884"/>
+			<Orientation y="0.46373"/>
+			<Actor seed="22402"/>
+		</Entity>
+		<Entity uid="1943">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="881.44452" z="362.02225"/>
+			<Orientation y="-2.4731"/>
+			<Actor seed="64459"/>
+		</Entity>
+		<Entity uid="1944">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="881.64075" z="372.80964"/>
+			<Orientation y="0.75042"/>
+			<Actor seed="43035"/>
+		</Entity>
+		<Entity uid="1945">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="880.58002" z="380.27878"/>
+			<Orientation y="-1.67544"/>
+			<Actor seed="6564"/>
+		</Entity>
+		<Entity uid="1946">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="864.64698" z="386.47321"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27467"/>
+		</Entity>
+		<Entity uid="1947">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="856.18726" z="391.15409"/>
+			<Orientation y="1.11118"/>
+			<Actor seed="47965"/>
+		</Entity>
+		<Entity uid="1948">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="838.45081" z="361.02698"/>
+			<Orientation y="2.97555"/>
+			<Actor seed="5361"/>
+		</Entity>
+		<Entity uid="1949">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="835.47181" z="373.26078"/>
+			<Orientation y="-2.84118"/>
+			<Actor seed="57233"/>
+		</Entity>
+		<Entity uid="1950">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="843.05317" z="387.49558"/>
+			<Orientation y="-2.26446"/>
+			<Actor seed="2526"/>
+		</Entity>
+		<Entity uid="1951">
+			<Template>actor|geology/stone_savanna_red_furrowed_cliff.xml</Template>
+			<Position x="876.01917" z="370.9119"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="34734"/>
+		</Entity>
+		<Entity uid="1952">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="827.17396" z="675.27076"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31956"/>
+		</Entity>
+		<Entity uid="1953">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="844.03986" z="670.06513"/>
+			<Orientation y="-2.01467"/>
+			<Actor seed="53592"/>
+		</Entity>
+		<Entity uid="1954">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="858.27533" z="675.88947"/>
+			<Orientation y="-2.22835"/>
+			<Actor seed="14568"/>
+		</Entity>
+		<Entity uid="1955">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="864.28357" z="689.99927"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="23051"/>
+		</Entity>
+		<Entity uid="1956">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="865.27076" z="699.00104"/>
+			<Orientation y="-0.46743"/>
+			<Actor seed="11822"/>
+		</Entity>
+		<Entity uid="1957">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="858.50904" z="711.90546"/>
+			<Orientation y="-1.00907"/>
+			<Actor seed="61430"/>
+		</Entity>
+		<Entity uid="1958">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="842.00422" z="717.81745"/>
+			<Orientation y="1.45357"/>
+			<Actor seed="35809"/>
+		</Entity>
+		<Entity uid="1959">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="831.46528" z="713.86414"/>
+			<Orientation y="-2.31862"/>
+			<Actor seed="63973"/>
+		</Entity>
+		<Entity uid="1960">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="819.805" z="700.90961"/>
+			<Orientation y="0.4864"/>
+			<Actor seed="33170"/>
+		</Entity>
+		<Entity uid="1961">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="820.88782" z="685.02826"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="61718"/>
+		</Entity>
+		<Entity uid="1962">
+			<Template>actor|geology/stone_savanna_furrowed_cliff.xml</Template>
+			<Position x="843.75147" z="671.88935"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10486"/>
+		</Entity>
+		<Entity uid="1967">
+			<Template>other/artifacts/noba_shaman_hut</Template>
+			<Player>0</Player>
+			<Position x="511.5506" z="47.42513"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="57438"/>
+		</Entity>
+		<Entity uid="1968">
+			<Template>other/artifacts/noba_shaman_hut</Template>
+			<Player>0</Player>
+			<Position x="963.11207" z="568.15558"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="26082"/>
+		</Entity>
+		<Entity uid="1969">
+			<Template>other/artifacts/noba_shaman_hut</Template>
+			<Player>0</Player>
+			<Position x="489.38645" z="968.36915"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7026"/>
+		</Entity>
+		<Entity uid="1970">
+			<Template>other/artifacts/noba_shaman_hut</Template>
+			<Player>0</Player>
+			<Position x="52.42888" z="537.56067"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="652"/>
+		</Entity>
+		<Entity uid="1971">
+			<Template>birds/buzzard</Template>
+			<Position x="913.67664" z="605.55378"/>
+			<Orientation y="-2.59911"/>
+			<Actor seed="57422"/>
+		</Entity>
+		<Entity uid="1972">
+			<Template>birds/buzzard</Template>
+			<Position x="386.90195" z="64.09141"/>
+			<Orientation y="0.71972"/>
+			<Actor seed="13863"/>
+		</Entity>
+		<Entity uid="1973">
+			<Template>birds/buzzard</Template>
+			<Position x="145.02912" z="668.24177"/>
+			<Orientation y="-2.68041"/>
+			<Actor seed="53135"/>
+		</Entity>
+		<Entity uid="1974">
+			<Template>birds/buzzard</Template>
+			<Position x="520.48237" z="548.5287"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="15453"/>
+		</Entity>
+		<Entity uid="1975">
+			<Template>structures/merc/camp_player</Template>
+			<Player>0</Player>
+			<Position x="625.67579" z="323.20246"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="22973"/>
+		</Entity>
+		<Entity uid="1976">
+			<Template>structures/merc/camp_player</Template>
+			<Player>0</Player>
+			<Position x="705.05048" z="616.92823"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37422"/>
+		</Entity>
+		<Entity uid="1977">
+			<Template>structures/merc/camp_player</Template>
+			<Player>0</Player>
+			<Position x="410.8065" z="726.00733"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="174"/>
+		</Entity>
+		<Entity uid="1978">
+			<Template>structures/merc/camp_player</Template>
+			<Player>0</Player>
+			<Position x="313.5073" z="404.46216"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="8307"/>
 		</Entity>
 	</Entities>
 	<Paths/>
