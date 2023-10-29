@@ -27,10 +27,12 @@
     <Radius>30</Radius>
   </TerritoryInfluence>
   <Upgrade>
-    <Tower>
+    <Tower replace="">
       <Entity>structures/{civ}/defense_tower_great</Entity>
       <Tooltip>This tower has greater range, greater attack, and greater health.</Tooltip>
-      <Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
       <Cost>
         <stone>200</stone>
       </Cost>
