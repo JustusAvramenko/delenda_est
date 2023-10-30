@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_herd_domestic">
-  <Footprint>
-    <Circle radius="1.0"/>
+  <Footprint replace="">
+    <Square width="1.0" depth="2.0"/>
     <Height>1.5</Height>
   </Footprint>
   <Health>
     <Max>10</Max>
   </Health>
   <Identity>
-    <Civ>gaia</Civ>
-	<GenericName>Domestic Chicken</GenericName>
+    <GenericName>Domestic Chicken</GenericName>
     <SpecificName>Gallus gallus domesticus</SpecificName>
     <Icon>gaia/fauna_chicken.png</Icon>
   </Identity>
@@ -18,7 +17,7 @@
     <BlockPathfinding>false</BlockPathfinding>
   </Obstruction>
   <ResourceSupply>
-	<Initial>30</Initial>
+    <Initial>30</Initial>
     <Max>30</Max>
     <MaxGatherers>5</MaxGatherers>
     <Change disable=""/>
