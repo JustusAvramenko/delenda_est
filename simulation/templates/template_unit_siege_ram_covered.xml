@@ -2,8 +2,8 @@
 <Entity parent="template_unit_siege_ram">
   <Cost>
     <Resources>
-      <wood>300</wood>
-      <metal>200</metal>
+      <wood op="add">100</wood>
+      <metal op="add">100</metal>
     </Resources>
   </Cost>
   <GarrisonHolder>
@@ -15,16 +15,22 @@
     <LoadingRange>2</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>400</Max>
+    <Max op="add">100</Max>
   </Health>
   <Identity>
     <GenericName>Covered Battering Ram</GenericName>
     <VisibleClasses datatype="tokens">Covered</VisibleClasses>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Garrison Units.
+Strong Against: Buildings, Gates (1.5x).
+Weak Against: Melee Cavalry, Melee Infantry.
+
+Tip: Garrison Infantry Soldiers inside to improve speed and acceleration.</Tooltip>
   </Identity>
   <Resistance>
     <Entity>
       <Damage>
-        <Pierce op="add">10</Pierce>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">5</Pierce>
         <Crush op="add">5</Crush>
       </Damage>
     </Entity>
@@ -38,6 +44,6 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <WalkSpeed>5</WalkSpeed>
+    <WalkSpeed op="mul">0.8</WalkSpeed>
   </UnitMotion>
 </Entity>
