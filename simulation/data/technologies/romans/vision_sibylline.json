@@ -12,11 +12,9 @@
 	"requirements": {
 		"all": [
 			{ "tech": "phase_town" },
-			{
-				"any": [
-					{ "civ": "rome" },
-					{ "civ": "imp" }
-				]
+			{ "any": [
+				{ "civ": "rome" },
+				{ "civ": "imp" }]
 			}
 		]
 	},
@@ -24,7 +22,9 @@
 	"icon": "sibylline_books.png",
 	"researchTime": 40,
 	"tooltip": "All Units +20% vision range.",
-	"modifications": [{ "value": "Vision/Range", "multiply": 1.25}],
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.25 }
+	],
 	"affects": ["Unit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

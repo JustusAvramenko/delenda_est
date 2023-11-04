@@ -6,13 +6,20 @@
 	},
 	"supersedes": "speed_trader_01",
 	"description": "All roads lead to Rome.",
-	"cost": {"stone": 500, "coin": 200},
-	"requirements": {"tech": "phase_city"},
+	"cost": {
+		"stone": 500,
+		"coin": 200
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "wheel.png",
 	"researchTime": 40,
 	"tooltip": "Traders +25% walk speed, which quickly increases trade income.",
-	"modifications": [{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25}],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25 }
+	],
 	"affects": ["Trader"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

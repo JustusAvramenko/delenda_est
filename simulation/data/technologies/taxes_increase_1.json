@@ -2,15 +2,15 @@
 	"pair": "pair_taxes_01",
 	"genericName": "Increase Taxes +20%",
 	"description": "Higher taxes give a short term boost to the treasury, but may affect other areas of the economy.",
-	"cost": {"glory": 100},
-	"requirements": {"tech": "phase_village"},
+	"cost": { "glory": 100 },
+	"requirements": { "tech": "phase_village" },
 	"requirementsTooltip": "Unlocked in Village Phase.",
 	"icon": "coinage.png",
 	"researchTime": 10,
 	"tooltip": "Tax paying units and structures +20% coin trickle rate, but also −10% resource gathering rates.",
 	"modifications": [
-		{"value": "ResourceTrickle/Rates/coin", "multiply": 1.2},
-		{"value": "ResourceGatherer/BaseSpeed", "multiply": 0.9}
+		{ "value": "ResourceTrickle/Rates/coin", "multiply": 1.2 },
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 0.9}
 	],
 	"affects": ["TaxPayer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

@@ -1,13 +1,18 @@
 {
 	"genericName": "Metalworker",
 	"description": "Siege weapons require less metal resource",
-	"cost": {"food": 200, "coin": 100},
-	"requirements": {"tech": "phase_imperial"},
+	"cost": {
+		"food": 200,
+		"coin": 100
+	},
+	"requirements": { "tech": "phase_imperial" },
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "metalworker.png",
 	"researchTime": 40,
 	"tooltip": "Siege weapons cost 20% less metal",
-	"modifications": [{"value": "Cost/Resources/metal", "multiply": 0.80}],
+	"modifications": [
+		{ "value": "Cost/Resources/metal", "multiply": 0.80 }
+	],
 	"affects": ["Siege"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

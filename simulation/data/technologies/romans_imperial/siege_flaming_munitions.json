@@ -5,16 +5,16 @@
 		"wood": 500,
 		"glory": 400
 	},
-	"requirements": {"all": [{"tech": "phase_imperial"}, {"tech": "unlock_siege_ballistics"}]},
+	"requirements": { "all": [{ "tech": "phase_imperial" }, { "tech": "unlock_siege_ballistics" }]},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires Ballistics.",
 	"icon": "flaming_munitions.png",
 	"researchTime": 40,
 	"tooltip": "Onagers and Ballista catapults +50% crush attack, but 33% slower reload time.",
 	"modifications": [
-		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.50},
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.50 },
 		{ "value": "Attack/Ranged/RepeatTime", "multiply": 1.33},
-		{ "value": "VisualActor/Actor", "replace": "units/romans_imperial/siege_onager_pivot_flaming.xml", "affects": "Onager"},
-		{ "value": "VisualActor/Actor", "replace": "units/romans_imperial/siege_rock_pivot_fire.xml", "affects": "Ballista"}
+		{ "value": "VisualActor/Actor", "replace": "units/romans_imperial/siege_onager_pivot_flaming.xml", "affects": "Onager" },
+		{ "value": "VisualActor/Actor", "replace": "units/romans_imperial/siege_rock_pivot_fire.xml", "affects": "Ballista" }
 	],
 	"affects": ["Catapult"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

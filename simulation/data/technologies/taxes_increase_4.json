@@ -2,15 +2,15 @@
 	"pair": "pair_taxes_04",
 	"genericName": "Increase Taxes +25%",
 	"description": "Higher taxes give a short term boost to the treasury, but may affect other areas of the economy.",
-	"cost": {"glory": 100},
-	"requirements": {"tech": "phase_imperial"},
+	"cost": { "glory": 100 },
+	"requirements": { "tech": "phase_imperial" },
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "coinage.png",
 	"researchTime": 10,
 	"tooltip": "Tax paying units and structures +25% coin trickle rate, but also −10% resource gathering rates.",
 	"modifications": [
-		{"value": "ResourceTrickle/Rates/coin", "multiply": 1.25},
-		{"value": "ResourceGatherer/BaseSpeed", "multiply": 0.9}
+		{ "value": "ResourceTrickle/Rates/coin", "multiply": 1.25 },
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 0.9}
 	],
 	"affects": ["TaxPayer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

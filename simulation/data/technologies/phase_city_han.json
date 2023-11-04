@@ -4,7 +4,9 @@
 		"han": "Dà Chéngshì"
 	},
 	"supersedes": "phase_town_han",
-	"replaces": ["phase_city"],
+	"replaces": [
+		"phase_city"
+	],
 	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology.",
 	"requirements": {
 		"entity": {
@@ -18,12 +20,12 @@
 	"researchTime": 0,
 	"tooltip": "Advance to City Phase, which unlocks more structures and units. Civic Centers +25% territory radius and Units +10 meters vision range.",
 	"modifications": [
-		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
-		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
-		{"value": "Vision/Range", "add": 10, "affects": "Unit"},
-		{"value": "Cost/BuildTime", "multiply": 1.5, "affects": "Hero"},
-		{"value": "Cost/Resources/coin", "multiply": 1.5, "affects": "Hero"},
-		{"value": "Cost/Resources/glory", "multiply": 1.5, "affects": "Hero"}
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre" },
+		{ "value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre" },
+		{ "value": "Vision/Range", "add": 10, "affects": "Unit" },
+		{ "value": "Cost/BuildTime", "multiply": 1.5, "affects": "Hero" },
+		{ "value": "Cost/Resources/coin", "multiply": 1.5, "affects": "Hero" },
+		{ "value": "Cost/Resources/glory", "multiply": 1.5, "affects": "Hero" }
 	],
 	"soundComplete": "interface/alarm/alarm_phase.xml"
 }

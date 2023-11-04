@@ -10,19 +10,23 @@
 		"rome": "Praefectus Classis"
 	},
 	"description": ".",
-	"cost": {"coin": 200},
-	"requirements": {"tech": "phase_town"},
+	"cost": {
+		"coin": 200
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
 	"requirementsTooltip": "Unlocked in Town Phase. Requires Naval Construction.",
 	"supersedes": "training_naval_construction",
 	"icon": "trierarch.png",
 	"researchTime": 40,
 	"tooltip": "All Ships −10% cost.",
 	"modifications": [
-		{"value": "Cost/Resources/food", "multiply": 0.9},
-		{"value": "Cost/Resources/wood", "multiply": 0.9},
-		{"value": "Cost/Resources/stone", "multiply": 0.9},
-		{"value": "Cost/Resources/metal", "multiply": 0.9},
-		{"value": "Cost/Resources/glory", "multiply": 0.9}
+		{ "value": "Cost/Resources/food", "multiply": 0.9 },
+		{ "value": "Cost/Resources/wood", "multiply": 0.9 },
+		{ "value": "Cost/Resources/stone", "multiply": 0.9 },
+		{ "value": "Cost/Resources/metal", "multiply": 0.9 },
+		{ "value": "Cost/Resources/glory", "multiply": 0.9 }
 	],
 	"affects": ["Ship"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

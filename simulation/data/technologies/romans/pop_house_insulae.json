@@ -5,13 +5,23 @@
 		"rome": "Insulae"
 	},
 	"description": "Homes tended to expand as the wealth and population of a settlement grew.",
-	"cost": {"wood": 500, "stone": 300},
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "rome"}]},
+	"cost": {
+		"wood": 500,
+		"stone": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "rome" }
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "tenement.png",
 	"researchTime": 40,
 	"tooltip": "Houses +20% population cap bonus.",
-	"modifications": [{ "value": "Population/Bonus", "multiply": 1.2}],
+	"modifications": [
+		{ "value": "Population/Bonus", "multiply": 1.2 }
+	],
 	"affects": ["House"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -2,15 +2,15 @@
 	"pair": "pair_taxes_04",
 	"genericName": "Decrease Taxes −25%",
 	"description": "Lower taxes may negatively affect the kingdom's treasury, but improve the economy in other areas.",
-	"cost": {"glory": 100},
-	"requirements": {"tech": "phase_imperial"},
+	"cost": { "glory": 100 },
+	"requirements": { "tech": "phase_imperial" },
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "coins.png",
 	"researchTime": 10,
 	"tooltip": "Tax paying units and structures −25% coin trickle rate, but also +10% resource gathering rates.",
 	"modifications": [
-		{"value": "ResourceTrickle/Rates/coin", "multiply": 0.75},
-		{"value": "ResourceGatherer/BaseSpeed", "multiply": 1.1}
+		{ "value": "ResourceTrickle/Rates/coin", "multiply": 0.75 },
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 1.1 }
 	],
 	"affects": ["TaxPayer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
