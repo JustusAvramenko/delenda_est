@@ -1,0 +1,16 @@
+{
+	"auraName": "Roman Roads",
+	"type": "range",
+	"radius": 80,
+	"requiredTechnology": "romans/special_roman_roads",
+	"auraDescription": "Building roads gives Land Units +5% movement speed. Requires “Roman Roads” at the Market.",
+	"modifications": [
+	    { "value": "UnitMotion/WalkSpeed", "multiply": 1.05 }
+	],
+	"affects": ["Unit !Ship"],
+	"rangeOverlay" : {
+		"lineTexture": "outline_border.png",
+		"lineTextureMask": "outline_border_mask.png",
+		"lineThickness": 0.075
+	}
+}

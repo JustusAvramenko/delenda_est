@@ -4,21 +4,26 @@
 		"rome": "Viae Romanum",
 		"imp": "Viae Romanum"
 	},
-	"supersedes": "speed_trader_01",
 	"description": "All roads lead to Rome.",
 	"cost": {
 		"stone": 500,
-		"coin": 200
+		"coin": 300
 	},
 	"requirements": {
-		"tech": "phase_city"
+		"all": [
+			{ "tech": "phase_city" },
+			{ "any":[
+				{ "civ": "imp" },
+				{ "civ": "rome" }]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "wheel.png",
 	"researchTime": 40,
-	"tooltip": "Traders +25% walk speed, which quickly increases trade income.",
+	"tooltip": "Traders +10% walk speed and unlock the “Roman Roads” aura at the Civic Center.",
 	"modifications": [
-		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25 }
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 }
 	],
 	"affects": ["Trader"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
