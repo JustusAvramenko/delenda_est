@@ -1,27 +1,24 @@
 {
-	"genericName": "Advanced Citizen Archer Infantry",
-	"specificName": {
-		"hele": "Metikoi",
-		"mace": "Metikoi",
-		"spart": "Metikoi",
-		"athen": "Metikoi"
-	},
-	"description": "Upgrade all of your citizen archers to Advanced rank.",
+	"supersedes": "tradition_archery",
+	"genericName": "Advanced Infantry Archers",
+	"description": "Upgrade all of your Citizen-Soldier infantry archers to Advanced rank.",
 	"cost": {
-		"wood": 400,
-		"glory": 400
+		"wood": 200,
+		"glory": 200
 	},
 	"requirements": {
-		"tech": "phase_city"
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "kush" }
+		]
 	},
-	"requirementsTooltip": "Unlocked in City Phase.",
+	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "upgrade_advanced.png",
 	"researchTime": 40,
-	"supersedes": "special_archery_tradition",
-	"tooltip": "Upgrade all of your Citizen-Soldier Archer Infantry to advanced rank. This increases their military prowess, but decreases their resource gathering rates −25%. Unlocks “Elite Citizen Archer Infantry” technology.",
+	"tooltip": "Upgrade all of your Citizen-Soldier infantry archers to Advanced rank. This increases their military prowess, but also increases their training cost. Unlocks “Elite Infantry Archers” technology.",
 	"modifications": [
 		{ "value": "Promotion/RequiredXp", "replace": 0 }
 	],
-	"affects": ["Archer Infantry Basic"],
+	"affects": ["Infantry Archer Basic"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

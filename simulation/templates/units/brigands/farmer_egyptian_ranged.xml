@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_slinger">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Hack op="mul">0.8</Hack>
+      </Damage>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Lang>napatan</Lang>
+    <SpecificName>Egyptian Farmer</SpecificName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Icon>units/brig/farmer_greek_ranged.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Pierce op="add">-1</Pierce>
+        <Crush op="add">-1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/brigands/farmer_egyptian_ranged.xml</Actor>
+  </VisualActor>
+</Entity>
