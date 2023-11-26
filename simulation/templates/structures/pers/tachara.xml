@@ -20,12 +20,12 @@
   </Footprint>
   <Health>
     <Max>1500</Max>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_pers_cc</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>pers</Civ>
     <GenericName>Winter Palace</GenericName>
-    <SpecificName>Tachara</SpecificName>
+    <SpecificName>Taçara</SpecificName>
     <VisibleClasses datatype="tokens">
       Tachara
       Palace
@@ -33,10 +33,9 @@
     <Classes datatype="tokens">
       ConquestCritical
       CivSpecific
-      Apadana
     </Classes>
     <Icon>structures/palace.png</Icon>
-    <Tooltip>Train Persian heroes and their "Immortals" bodyguards. Research "Satrapy Tribute", which gives you a trickle of free resources for as long as the Tachara stands.</Tooltip>
+    <Tooltip>Train Persian Heroes and their “Immortals” bodyguards. Research “Satrapy Tribute,” which gives you a trickle of free resources for as long as the Tachara stands.</Tooltip>
   </Identity>
   <Obstruction>
     <Static width="30.0" depth="30.0"/>
@@ -85,7 +84,7 @@
   </Trainer>
   <Upgrade>
     <TributeFood>
-      <Entity>structures/pers/apadana_food</Entity>
+      <Entity>structures/pers/tachara_food</Entity>
       <Tooltip>Receive free Food tribute to your treasury from your subject peoples.</Tooltip>
       <Requirements>
         <Techs datatype="tokens">persians/special_satrapy_tribute</Techs>
@@ -96,7 +95,7 @@
       <Time>5</Time>
     </TributeFood>
     <TributeWood>
-      <Entity>structures/pers/apadana_wood</Entity>
+      <Entity>structures/pers/tachara_wood</Entity>
       <Tooltip>Receive free Wood tribute to your treasury from your subject peoples.</Tooltip>
       <Requirements>
         <Techs datatype="tokens">persians/special_satrapy_tribute</Techs>
@@ -107,7 +106,7 @@
       <Time>5</Time>
     </TributeWood>
     <TributeStone>
-      <Entity>structures/pers/apadana_stone</Entity>
+      <Entity>structures/pers/tachara_stone</Entity>
       <Tooltip>Receive free Stone tribute to your treasury from your subject peoples.</Tooltip>
       <Requirements>
         <Techs datatype="tokens">persians/special_satrapy_tribute</Techs>
@@ -118,7 +117,7 @@
       <Time>5</Time>
     </TributeStone>
     <TributeMetal>
-      <Entity>structures/pers/apadana_metal</Entity>
+      <Entity>structures/pers/tachara_metal</Entity>
       <Tooltip>Receive free Metal tribute to your treasury from your subject peoples.</Tooltip>
       <Requirements>
         <Techs datatype="tokens">persians/special_satrapy_tribute</Techs>
@@ -129,7 +128,7 @@
       <Time>5</Time>
     </TributeMetal>
     <TributeCoin>
-      <Entity>structures/pers/apadana_coin</Entity>
+      <Entity>structures/pers/tachara_coin</Entity>
       <Tooltip>Receive free Coin tribute to your treasury from your subject peoples.</Tooltip>
       <Requirements>
         <Techs datatype="tokens">persians/special_satrapy_tribute</Techs>
@@ -141,7 +140,7 @@
     </TributeCoin>
   </Upgrade>
   <VisualActor>
-    <Actor>structures/persians/civil_centre.xml</Actor>
+    <Actor>structures/persians/tachara.xml</Actor>
     <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
   </VisualActor>
 </Entity>
