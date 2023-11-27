@@ -89,8 +89,6 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 			"structures/{civ}/assembly"
 		],
 		"han": [
-			"structures/{civ}/statue",
-			"structures/{civ}/shipyard",
 			"structures/{civ}/academy"
 		],
 		"iber": [
@@ -130,9 +128,7 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 		],
 		"rome": [
 			"structures/{civ}/statue",
-			"structures/{civ}/army_camp",
-			"structures/{civ}/temple_vesta",
-			"structures/{civ}/temple_mars"
+			"structures/{civ}/army_camp"
 		],
 		"scyth": [
 			"structures/{civ}/statue",
@@ -144,7 +140,6 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 		],
 		"spart": [
 			"structures/{civ}/statue",
-			"structures/{civ}/syssiton",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
