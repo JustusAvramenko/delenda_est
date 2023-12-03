@@ -1,7 +1,7 @@
 Trigger.prototype.SpawnAndAttack = function()
 {
 	var intruders = TriggerHelper.SpawnUnitsFromTriggerPoints(
-			pickRandom(["B", "C"]), "units/pirates/ship_bireme", this.attackSize, 0);
+			pickRandom(["B", "C"]), "units/pirates/ship_light", this.attackSize, 0);
 
 	for (var origin in intruders)
 	{
@@ -37,7 +37,7 @@ Trigger.prototype.SpawnAndAttack = function()
 
 {
 	let cmpTrigger = Engine.QueryInterface(SYSTEM_ENTITY, IID_Trigger);
-	cmpTrigger.attackSize = 1; // attack with 1 soldier
+	cmpTrigger.attackSize = 1; // attack with 1 ship
 	cmpTrigger.attackTime = 600 * 1000; // attack in 10 minutes
 	cmpTrigger.DoAfterDelay(cmpTrigger.attackTime, "SpawnAndAttack", {});
 }
