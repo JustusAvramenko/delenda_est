@@ -67,6 +67,7 @@
     <Classes datatype="tokens">
       ConquestCritical
       CivSpecific
+      CapturableBuilding
     </Classes>
     <Icon>structures/roman_camp.png</Icon>
     <Tooltip>Build anywhere on the map, even in enemy territory. Construct siege weapons and train citizen-soldiers. Heal garrisoned units slowly.</Tooltip>
@@ -83,9 +84,7 @@
       <death>attack/destruction/building_collapse_large.xml</death>
     </SoundGroups>
   </Sound>
-  <TerritoryDecay>
-    <DecayRate>5</DecayRate>
-  </TerritoryDecay>
+  <TerritoryDecay disable=""/>
   <TerritoryInfluence>
     <Root>true</Root>
     <Radius>0</Radius>

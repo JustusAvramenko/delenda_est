@@ -1,11 +1,16 @@
 {
 	"genericName": "Construction Projects",
 	"cost": {
-		"stone": 500, 
-		"glory": 500
+		"stone": 400, 
+		"glory": 300
 	},
-	"requirements": { "tech": "phase_city" },
-	"requirementsTooltip": "Unlocked in City Phase.",
+	"requirements": {
+		"all": [
+			{ "tech": "phase_village" },
+			{ "civ": "maur" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Village Phase.",
 	"icon": "military_engineers.png",
 	"researchTime": 40,
 	"tooltip": "All Structures (except Farm Fields) −20% build time.",
