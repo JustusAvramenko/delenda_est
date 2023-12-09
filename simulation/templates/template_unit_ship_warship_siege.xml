@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_warship">
+  <Attack>
+    <Ranged>
+      <AttackName>Rock</AttackName>
+      <Damage>
+        <Hack>50.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>50.0</Crush>
+      </Damage>
+      <MaxRange>80.0</MaxRange>
+      <MinRange>24.0</MinRange>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>4000</RepeatTime>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>5.0</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Hack>25.0</Hack>
+          <Pierce>0.0</Pierce>
+          <Crush>25.0</Crush>
+        </Damage>
+      </Splash>
+      <Projectile>
+        <Speed>40.0</Speed>
+        <Spread>5.0</Spread>
+        <Gravity>20.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+        <ImpactActorName>particle/tower_artillery_impact_smoke_01.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
+      </Projectile>
+      <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Ship Structure</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Population>4</Population>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>200</food>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="14.0" depth="56.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>50</Max>
+    <EjectHealth>0</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Support Infantry Dog</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Cavalry Siege Elephant Dog</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>10</LoadingRange>
+    <Pickup>true</Pickup>
+  </GarrisonHolder>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <GenericName>Catapult Warship</GenericName>
+    <Tooltip>Garrison with ranged siege weapons to increase ranged fire power.</Tooltip>
+    <VisibleClasses datatype="tokens">Heavy Siege Ranged NavalSiege</VisibleClasses>
+    <Classes datatype="tokens">NavalSiege</Classes>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_imperial
+        -phase_town
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <wood>40</wood>
+  </Loot>
+  <Position>
+    <TurnRate>0.75</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>3</Hack>
+        <Pierce>12</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x512/cartouche.png</MainTexture>
+        <MainTextureMask>128x512/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
+      <attack_impact_ranged>attack/impact/siegeprojectilehit.xml</attack_impact_ranged>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>100</Range>
+  </Vision>
+</Entity>

@@ -1,7 +1,7 @@
 Trigger.prototype.SpawnAndAttack = function()
 {
 	var intruders = TriggerHelper.SpawnUnitsFromTriggerPoints(
-			pickRandom(["B", "C"]), "units/pirates/ship_light", this.attackSize, 0);
+			pickRandom(["B", "C"]), "units/pirates/ship_scout", this.attackSize, 0);
 
 	for (var origin in intruders)
 	{

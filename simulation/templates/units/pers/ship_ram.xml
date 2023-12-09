@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="encyclopedia/trireme|template_unit_ship_warship_ram">
+  <Footprint>
+    <Square width="9.0" depth="42.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>pers</Civ>
+    <SpecificName>Vazarka Hamaraniyanava</SpecificName>
+    <Icon>units/achae/ship_medium.png</Icon>
+  </Identity>
+  <ProductionQueue/>
+  <Researcher>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <coin>1.0</coin>
+      <time>1.0</time>
+    </TechCostMultiplier>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/pers/cavalry_swordsman_b_trireme
+      units/pers/cavalry_javelineer_b_trireme
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/persians/trireme_ram.xml</Actor>
+  </VisualActor>
+</Entity>

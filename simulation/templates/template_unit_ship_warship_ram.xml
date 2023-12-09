@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_warship">
+  <Attack>
+    <Melee>
+      <AttackName>Naval Ram</AttackName>
+      <Damage>
+        <Hack>200.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>7.0</MaxRange>
+      <PrepareTime>0</PrepareTime>
+      <RepeatTime>8000</RepeatTime>
+      <Bonuses>
+        <BonusNavalSiege>
+          <Classes>NavalSiege</Classes>
+          <Multiplier>2.5</Multiplier>
+        </BonusNavalSiege>
+      </Bonuses>
+      <RestrictedClasses datatype="tokens">
+        Organic
+        Field
+        MercenaryCamp
+      </RestrictedClasses>
+      <PreferredClasses datatype="tokens">
+        Warship
+      </PreferredClasses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Population>3</Population>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>150</food>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="11.0" depth="44.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>30</Max>
+    <EjectHealth>0</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">FemaleCitizen Infantry Dog</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Cavalry Siege Elephant Dog</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>10</LoadingRange>
+    <Pickup>true</Pickup>
+  </GarrisonHolder>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <GenericName>Ramming Warship</GenericName>
+    <Tooltip>Traits: Naval Ram, Fast Speed, Light Armor.
+Strong Against: Heavy Warships (2.5x).
+Weak Against: Arrow Warships, Ranged Buildings.</Tooltip>
+    <VisibleClasses datatype="tokens">Medium Melee NavalRam</VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_city
+        -phase_town
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <wood>30</wood>
+  </Loot>
+  <Position>
+    <TurnRate>1.5</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>20</Hack>
+        <Pierce>2</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x512/cartouche.png</MainTexture>
+        <MainTextureMask>128x512/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.8</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>60</Range>
+  </Vision>
+</Entity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="civ/yayo|template_unit_ship_warship_scout">
+  <Footprint>
+    <Square width="8.0" depth="32.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Japanese Warship</GenericName>
+    <SpecificName>Opobune</SpecificName>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_town
+        yayoi/unlock_warships
+      </Techs>
+    </Requirements>
+    <Icon>units/yayo/ship_bireme.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/yayoi/bireme.xml</Actor>
+  </VisualActor>
+</Entity>
