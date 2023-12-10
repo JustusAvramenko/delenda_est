@@ -5,7 +5,7 @@
     <Category>Special</Category>
   </BuildRestrictions>
   <Capturable>
-    <CapturePoints>1000</CapturePoints>
+    <CapturePoints>500</CapturePoints>
     <RegenRate>0</RegenRate>
     <GarrisonRegenRate>3</GarrisonRegenRate>
   </Capturable>
@@ -34,14 +34,14 @@
   <Health disable=""/>
   <Identity>
     <Civ>gaia</Civ>
-    <GenericName>Native Mercenary Camp</GenericName>
-    <SpecificName>Needs Specific Name</SpecificName>
+    <GenericName>Slave Market</GenericName>
+    <SpecificName>Slave Market</SpecificName>
     <VisibleClasses datatype="tokens">
-      MercenaryCamp
+      SlaveMarket
+	  Permanent
       Capturable
-      Permanent
     </VisibleClasses>
-    <Tooltip>Capture this structure to train up to 30 mercenaries native to the map, who train very fast and cost no population room.</Tooltip>
+    <Tooltip>Capture this structure to buy Slaves, who are fast workers, but prone to capture.</Tooltip>
     <Classes datatype="tokens">
       CapturableBuilding
     </Classes>
@@ -56,11 +56,10 @@
     <Static width="23.5" depth="23.5"/>
   </Obstruction>
   <Population>
-    <Bonus>5</Bonus>
+    <Bonus>0</Bonus>
   </Population>
   <Researcher>
     <Technologies datatype="tokens">
-      mercenaries/attack_health_mercenaries
     </Technologies>
   </Researcher>
   <Resistance replace=""/>
@@ -89,7 +88,7 @@
     <Range>40</Range>
   </Vision>
   <VisualActor>
-    <Actor>structures/mercenaries/camp_egyptian.xml</Actor>
+    <Actor>structures/generic/merc_slave_market.xml</Actor>
     <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
   </VisualActor>
 </Entity>
