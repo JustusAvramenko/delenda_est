@@ -8,22 +8,23 @@
         <Pierce>0.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
-      <MaxRange>7.0</MaxRange>
+      <MaxRange>15.0</MaxRange>
       <PrepareTime>0</PrepareTime>
       <RepeatTime>8000</RepeatTime>
       <Bonuses>
         <BonusNavalSiege>
           <Classes>NavalSiege</Classes>
-          <Multiplier>2.5</Multiplier>
+          <Multiplier>2</Multiplier>
         </BonusNavalSiege>
       </Bonuses>
       <RestrictedClasses datatype="tokens">
         Organic
         Field
-        MercenaryCamp
+        Permanent
       </RestrictedClasses>
       <PreferredClasses datatype="tokens">
         Warship
+        NavalSiege
       </PreferredClasses>
     </Melee>
   </Attack>
@@ -31,8 +32,8 @@
     <Population>3</Population>
     <BuildTime>25</BuildTime>
     <Resources>
-      <food>150</food>
-      <wood>150</wood>
+      <food>200</food>
+      <wood>200</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -41,12 +42,6 @@
   </Footprint>
   <GarrisonHolder>
     <Max>30</Max>
-    <EjectHealth>0</EjectHealth>
-    <EjectClassesOnDestroy datatype="tokens">FemaleCitizen Infantry Dog</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry Siege Elephant Dog</List>
-    <BuffHeal>0</BuffHeal>
-    <LoadingRange>10</LoadingRange>
-    <Pickup>true</Pickup>
   </GarrisonHolder>
   <Health>
     <Max>400</Max>
@@ -54,28 +49,27 @@
   <Identity>
     <GenericName>Ramming Warship</GenericName>
     <Tooltip>Traits: Naval Ram, Fast Speed, Light Armor.
-Strong Against: Heavy Warships (2.5x).
+Strong Against: Siege Warships (2x).
 Weak Against: Arrow Warships, Ranged Buildings.</Tooltip>
-    <VisibleClasses datatype="tokens">Medium Melee NavalRam</VisibleClasses>
+    <VisibleClasses datatype="tokens">RammingShip Melee NavalRam</VisibleClasses>
     <Requirements>
       <Techs datatype="tokens">
         phase_city
-        -phase_town
       </Techs>
     </Requirements>
   </Identity>
   <Loot>
-    <wood>30</wood>
+    <wood>20</wood>
   </Loot>
   <Position>
-    <TurnRate>1.5</TurnRate>
+    <TurnRate>1</TurnRate>
   </Position>
   <Resistance>
     <Entity>
       <Damage>
-        <Hack>20</Hack>
-        <Pierce>2</Pierce>
-        <Crush>5</Crush>
+        <Hack>10</Hack>
+        <Pierce>1</Pierce>
+        <Crush>7</Crush>
       </Damage>
     </Entity>
   </Resistance>
@@ -93,7 +87,7 @@ Weak Against: Arrow Warships, Ranged Buildings.</Tooltip>
     <HeightOffset>6.0</HeightOffset>
   </StatusBars>
   <UnitMotion>
-    <WalkSpeed op="mul">1.8</WalkSpeed>
+    <WalkSpeed op="mul">1.6</WalkSpeed>
   </UnitMotion>
   <Vision>
     <Range>60</Range>

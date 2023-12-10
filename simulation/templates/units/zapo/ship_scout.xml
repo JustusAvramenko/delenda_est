@@ -1,14 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_ship_warship_scout">
-  <BuildingAI disable=""/>
   <Cost>
     <Population>1</Population>
     <BuildTime>10</BuildTime>
-    <Resources>
-      <wood>100</wood>
-      <metal>0</metal>
-      <food>100</food>
-    </Resources>
   </Cost>
   <Footprint>
     <Square width="5.0" depth="12.0"/>
@@ -20,20 +14,14 @@
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
     <List datatype="tokens">Support Infantry</List>
     <BuffHeal>1</BuffHeal>
-    <LoadingRange>10</LoadingRange>
+    <LoadingRange>8</LoadingRange>
     <Pickup>true</Pickup>
   </GarrisonHolder>
-  <Health>
-    <Max>200</Max>
-  </Health>
   <Identity>
     <Civ>zapo</Civ>
     <SpecificName>War Canoe</SpecificName>
     <Icon>units/zapo/ship_canoe.png</Icon>
     <VisibleClasses datatype="tokens">FishingBoat</VisibleClasses>
-    <Requirements>
-      <Techs datatype="tokens">-phase_town phase_village</Techs>
-    </Requirements>
   </Identity>
   <Loot>
     <xp>1</xp>

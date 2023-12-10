@@ -4,14 +4,19 @@
     <Ranged>
       <AttackName>Rock</AttackName>
       <Damage>
-        <Hack>50.0</Hack>
         <Pierce>0.0</Pierce>
-        <Crush>50.0</Crush>
+        <Crush>100.0</Crush>
       </Damage>
       <MaxRange>80.0</MaxRange>
       <MinRange>24.0</MinRange>
       <PrepareTime>2000</PrepareTime>
       <RepeatTime>4000</RepeatTime>
+      <Bonuses>
+        <BonusStruct>
+          <Classes>Structure</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusStruct>
+      </Bonuses>
       <Splash>
         <Shape>Circular</Shape>
         <Range>5.0</Range>
@@ -31,16 +36,20 @@
         <ImpactActorName>particle/tower_artillery_impact_smoke_01.xml</ImpactActorName>
         <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
       </Projectile>
-      <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
-      <PreferredClasses datatype="tokens">Ship Structure</PreferredClasses>
+      <RestrictedClasses datatype="tokens">
+        Permanent
+      </RestrictedClasses>
+      <PreferredClasses datatype="tokens">
+        Ship Structure
+      </PreferredClasses>
     </Ranged>
   </Attack>
   <Cost>
     <Population>4</Population>
     <BuildTime>30</BuildTime>
     <Resources>
-      <food>200</food>
-      <wood>200</wood>
+      <food>300</food>
+      <wood>300</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -49,30 +58,26 @@
   </Footprint>
   <GarrisonHolder>
     <Max>50</Max>
-    <EjectHealth>0</EjectHealth>
-    <EjectClassesOnDestroy datatype="tokens">Support Infantry Dog</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry Siege Elephant Dog</List>
-    <BuffHeal>0</BuffHeal>
-    <LoadingRange>10</LoadingRange>
-    <Pickup>true</Pickup>
+    <List datatype="tokens">Unit</List>
+    <LoadingRange>14</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>500</Max>
+    <Max>600</Max>
   </Health>
   <Identity>
-    <GenericName>Catapult Warship</GenericName>
-    <Tooltip>Garrison with ranged siege weapons to increase ranged fire power.</Tooltip>
-    <VisibleClasses datatype="tokens">Heavy Siege Ranged NavalSiege</VisibleClasses>
-    <Classes datatype="tokens">NavalSiege</Classes>
+    <GenericName>Siege Warship</GenericName>
+    <Tooltip>Traits: Naval Ram, Fast Speed, Light Armor.
+Strong Against: Buildings (2x), Arrow Ships.
+Weak Against: Ramming Ships, Fire Ships.</Tooltip>
+    <VisibleClasses datatype="tokens">Heavy Ranged Siege NavalSiege</VisibleClasses>
     <Requirements>
       <Techs datatype="tokens">
-        phase_imperial
-        -phase_town
+        phase_city
       </Techs>
     </Requirements>
   </Identity>
   <Loot>
-    <wood>40</wood>
+    <wood>30</wood>
   </Loot>
   <Position>
     <TurnRate>0.75</TurnRate>
@@ -80,9 +85,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Hack>3</Hack>
-        <Pierce>12</Pierce>
-        <Crush>10</Crush>
+        <Hack>1</Hack>
+        <Pierce>8</Pierce>
+        <Crush>5</Crush>
       </Damage>
     </Entity>
   </Resistance>
@@ -106,9 +111,9 @@
     <HeightOffset>6.0</HeightOffset>
   </StatusBars>
   <UnitMotion>
-    <WalkSpeed op="mul">1.5</WalkSpeed>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
   </UnitMotion>
   <Vision>
-    <Range>100</Range>
+    <Range>90</Range>
   </Vision>
 </Entity>

@@ -5,16 +5,8 @@
   <group>
      <variant frequency="1" name="Norse Longboat">
       <mesh>structural/norse_karvi.dae</mesh>
-      <animations>
-        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
-      </animations>
-      <textures>
-        <texture file="structural/norse_snekkja.png" name="baseTex"/>
-        <texture file="default_norm.png" name="normTex"/>
-        <texture file="null_black.dds" name="specTex"/>
-      </textures>
       <props>
-        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+        <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="projectile"/>
         <prop actor="props/units/shields/norse_ship_shield_a.xml" attachpoint="shield_1"/>
         <prop actor="props/units/shields/norse_ship_shield_b.xml" attachpoint="shield_2"/>
         <prop actor="props/units/shields/norse_ship_shield_c.xml" attachpoint="shield_3"/>
@@ -50,6 +42,11 @@
         <prop actor="props/structures/germans/food_basket_c.xml" attachpoint="food_basket_d"/>
         <prop actor="props/structures/germans/food_basket_a.xml" attachpoint="food_basket_e"/>
       </props>
+      <textures>
+        <texture file="structural/norse_snekkja.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <material>player_trans_norm_spec.xml</material>

@@ -4,9 +4,7 @@
     <Ranged>
       <AttackName>Arrow</AttackName>
       <Damage>
-        <Hack>0.0</Hack>
         <Pierce>20.0</Pierce>
-        <Crush>0.0</Crush>
       </Damage>
       <MaxRange>50.0</MaxRange>
       <MinRange>0.0</MinRange>
@@ -19,8 +17,12 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
-      <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
-      <PreferredClasses datatype="tokens">Ship</PreferredClasses>
+      <RestrictedClasses datatype="tokens">
+        Permanent
+      </RestrictedClasses>
+      <PreferredClasses datatype="tokens">
+        Ship
+      </PreferredClasses>
     </Ranged>
   </Attack>
   <Cost>
@@ -36,34 +38,36 @@
     <Height>10.0</Height>
   </Footprint>
   <GarrisonHolder>
-    <Max>20</Max>
-    <EjectHealth>0</EjectHealth>
-    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry Dog</List>
-    <BuffHeal>0</BuffHeal>
-    <LoadingRange>10</LoadingRange>
-    <Pickup>true</Pickup>
+    <Max>10</Max>
+    <List datatype="tokens">-Siege -Elephant</List>
   </GarrisonHolder>
   <Health>
-    <Max>300</Max>
+    <Max>200</Max>
   </Health>
   <Identity>
-    <GenericName>Light Warship</GenericName>
-    <Tooltip>Light Warship, good for harassing enemy coastlines and trade routes.</Tooltip>
-    <VisibleClasses datatype="tokens">Light Bow Ranged</VisibleClasses>
+    <GenericName>Scout Ship</GenericName>
+    <VisibleClasses datatype="tokens">Scout Ranged Bow</VisibleClasses>
+    <Tooltip>Traits: Fast Speed, Light Armor.
+Strong Against: Fishing Boats.
+Weak Against: Everything.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_village
+      </Techs>
+    </Requirements>
   </Identity>
   <Loot>
-    <wood>20</wood>
+    <wood>10</wood>
   </Loot>
   <Position>
-    <TurnRate>2</TurnRate>
+    <TurnRate>1</TurnRate>
   </Position>
   <Resistance>
     <Entity>
       <Damage>
-        <Hack>10</Hack>
-        <Pierce>10</Pierce>
-        <Crush>1</Crush>
+        <Hack>5</Hack>
+        <Pierce>2</Pierce>
+        <Crush>5</Crush>
       </Damage>
     </Entity>
   </Resistance>
@@ -84,6 +88,6 @@
     <WalkSpeed op="mul">1.5</WalkSpeed>
   </UnitMotion>
   <Vision>
-    <Range>60</Range>
+    <Range>80</Range>
   </Vision>
 </Entity>

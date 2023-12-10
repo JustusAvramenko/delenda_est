@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_ship">
   <GarrisonHolder>
-    <List datatype="tokens">Relic</List>
+    <EjectHealth>0</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit !Siege !Elephant</EjectClassesOnDestroy>
+    <List datatype="tokens">Relic Support Infantry Cavalry Siege Elephant Dog</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>12</LoadingRange>
+    <Pickup>true</Pickup>
   </GarrisonHolder>
   <Identity>
     <GenericName>Warship</GenericName>
     <VisibleClasses datatype="tokens">Warship</VisibleClasses>
-    <Requirements>
-      <Techs datatype="tokens">
-        phase_town
-      </Techs>
-    </Requirements>
   </Identity>
   <Loot>
     <xp>100</xp>
@@ -19,7 +19,7 @@
   <ResourceGatherer disable=""/>
   <Sound>
     <SoundGroups>
-      <attack_impact_ranged>attack/impact/arrow_all.xml</attack_impact_ranged>
+      <attack_impact_ranged>attack/impact/arrow_wood.xml</attack_impact_ranged>
       <attack_melee>attack/siege/ram_attack.xml</attack_melee>
       <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
     </SoundGroups>

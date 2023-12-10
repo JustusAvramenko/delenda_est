@@ -4,9 +4,7 @@
     <Ranged>
       <AttackName>Arrow</AttackName>
       <Damage>
-        <Hack>0.0</Hack>
         <Pierce>20.0</Pierce>
-        <Crush>0.0</Crush>
       </Damage>
       <MaxRange>60.0</MaxRange>
       <MinRange>0.0</MinRange>
@@ -19,16 +17,20 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
-      <RestrictedClasses datatype="tokens">MercenaryCamp</RestrictedClasses>
-      <PreferredClasses datatype="tokens">Ship</PreferredClasses>
+      <RestrictedClasses datatype="tokens">
+        Permanent
+      </RestrictedClasses>
+      <PreferredClasses datatype="tokens">
+        Ship
+      </PreferredClasses>
     </Ranged>
   </Attack>
   <Cost>
     <Population>3</Population>
     <BuildTime>25</BuildTime>
     <Resources>
-      <food>150</food>
-      <wood>150</wood>
+      <food>200</food>
+      <wood>200</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -37,39 +39,33 @@
   </Footprint>
   <GarrisonHolder>
     <Max>30</Max>
-    <EjectHealth>0</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">FemaleCitizen Infantry Dog</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry Siege Elephant Dog</List>
-    <BuffHeal>0</BuffHeal>
-    <LoadingRange>10</LoadingRange>
-    <Pickup>true</Pickup>
   </GarrisonHolder>
   <Health>
     <Max>400</Max>
   </Health>
   <Identity>
-    <GenericName>Medium Warship</GenericName>
+    <GenericName>Arrow Warship</GenericName>
     <Tooltip>Medium Warship, good for naval combat and transporting troops.</Tooltip>
-    <VisibleClasses datatype="tokens">Medium Bow Ranged</VisibleClasses>
+    <VisibleClasses datatype="tokens">ArrowShip Ranged Bow</VisibleClasses>
     <Requirements>
       <Techs datatype="tokens">
-        phase_city
-        -phase_town
+        phase_town
       </Techs>
     </Requirements>
   </Identity>
   <Loot>
-    <wood>30</wood>
+    <wood>20</wood>
   </Loot>
   <Position>
-    <TurnRate>1</TurnRate>
+    <TurnRate>0.5</TurnRate>
   </Position>
   <Resistance>
     <Entity>
       <Damage>
-        <Hack>10</Hack>
-        <Pierce>10</Pierce>
-        <Crush>2</Crush>
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>1</Crush>
       </Damage>
     </Entity>
   </Resistance>
@@ -87,9 +83,9 @@
     <HeightOffset>6.0</HeightOffset>
   </StatusBars>
   <UnitMotion>
-    <WalkSpeed op="mul">1.5</WalkSpeed>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
   </UnitMotion>
   <Vision>
-    <Range>80</Range>
+    <Range>70</Range>
   </Vision>
 </Entity>

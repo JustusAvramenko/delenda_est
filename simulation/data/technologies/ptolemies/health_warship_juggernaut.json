@@ -4,14 +4,18 @@
 		"ptol": "Tessarakonterēs"
 	},
 	"cost": { "wood": 600, "metal": 400 },
-	"requirements": { "tech": "phase_imperial" },
-	"requirements": { "all": [{ "tech": "phase_imperial" }, { "civ": "ptol" }]},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{ "civ": "ptol" }
+		]
+	},
 	"icon": "juggernaut.png",
 	"researchTime": 40,
-	"tooltip": "Heavy Warship +50% health, +2 default projectiles, but −25% speed.",
+	"tooltip": "Siege Ship +50% health, +25% more projectiles, but −25% speed.",
 	"modifications": [
 		{ "value": "Health/Max", "multiply": 1.5 },
-		{ "value": "BuildingAI/DefaultArrowCount", "add": 2 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.75 },
 		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.75 }
 	],
 	"affects": ["Warship Heavy"],
