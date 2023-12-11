@@ -1,0 +1,23 @@
+{
+	"genericName": "Egyptian Patriotism",
+	"description": "By the time of Cleopatra, ethnic Egyptians had risen to the highest levels of the Greek-Macedonian Ptolemaic order.",
+	"cost": {
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "ptol" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "patriotism.png",
+	"researchTime": 40,
+	"tooltip": "All ethnic Egyptian Units +10% attack damage.",
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.1 },
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.1 }
+	],
+	"affects": ["Egyptian"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

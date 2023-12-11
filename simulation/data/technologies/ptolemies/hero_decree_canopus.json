@@ -1,0 +1,27 @@
+{
+	"genericName": "Decree of Canopus",
+	"description": "",
+	"cost": {
+		"stone": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "friendship.png",
+	"researchTime": 40,
+	"tooltip": "Egyptian Priests +50% health and +50% healing range.",
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "ptol" }
+		]
+	},
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.5 },
+		{ "value": "Heal/Range", "multiply": 1.5 }
+	],
+	"affects": ["Healer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

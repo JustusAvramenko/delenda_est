@@ -8,15 +8,18 @@
 		"glory": 3000
 	},
 	"requirements": {
-		"tech": "phase_imperial"
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "ptol" }
+		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "friendship.png",
-	"researchTime": 90,
-	"tooltip": "Unlock a one-time gift of up to 20 Indian War Elephants from the Maurya Empire, but Civic Centers −10% territory effect.",
+	"researchTime": 120,
+	"tooltip": "Unlock a one-time gift of up to 20 Indian War Elephants from the Maurya Empire, but Civic Centers −20% territory effect.",
 	"modifications": [
 		{ "value": "Trainer/Entities/_string", "tokens": "units/sele/champion_elephant_indian" },
-		{ "value": "TerritoryInfluence/Radius", "multiply": 0.9 },
+		{ "value": "TerritoryInfluence/Radius", "multiply": 0.8 },
 		{ "value": "Player/MaxPopulation", "add": -1 }
 	],
 	"affects": ["CivilCentre"],
