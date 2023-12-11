@@ -1,5 +1,4 @@
 {
-	"pair": "pair_naval_05",
 	"genericName": "Ship Cladding",
 	"description": "Armor for the flanks of a warship.",
 	"cost": {
@@ -12,10 +11,10 @@
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "ship_cladding.png",
 	"researchTime": 40,
-	"tooltip": "Warships +1 hack armor, +2 pierce armor levels.",
+	"tooltip": "Warships +1 pierce and crush armor. Unlocks “Undergirding Cables.”",
 	"modifications": [
-		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 },
-		{ "value": "Resistance/Entity/Damage/Pierce", "add": 2.0 }
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1.0 },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 1.0 }
 	],
 	"affects": ["Warship"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

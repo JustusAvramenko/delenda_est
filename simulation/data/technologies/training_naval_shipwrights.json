@@ -1,5 +1,4 @@
 {
-	"pair": "pair_naval_02",
 	"genericName": "Shipwrights",
 	"specificName": {
 		"hele": "Naupēgoi",
@@ -14,19 +13,18 @@
 	"description": "Shipwrights helped to build and maintain ancient warships.",
 	"cost": {
 		"food": 200,
-		"glory": 100
+		"glory": 200
 	},
 	"requirements": {
 		"tech": "phase_town"
 	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
-	"icon": "military_engineers.png",
+	"icon": "calipers.png",
 	"researchTime": 40,
-	"tooltip": "Warships −20% build time.",
+	"tooltip": "Shipyards work 20% faster (Warships −20% build time; Technologies −20% research time).",
 	"modifications": [
-		{ "value": "Cost/BuildTime", "multiply": 0.8 }
+		{ "value": "Cost/BuildTime", "multiply": 0.8, "affects": "Warship" },
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.8, "affects": "Shipyard" }
 	],
-	"affects": ["Warship"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
-

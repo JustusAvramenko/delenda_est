@@ -1,0 +1,48 @@
+{
+	"supersedes": "armor_warship_cladding",
+	"genericName": "Undergirding Cables",
+	"specificName": {
+		"hele": "Hypozomata",
+		"mace": "Hypozomata",
+		"spart": "Hypozomata",
+		"athen": "Hypozomata",
+		"sele": "Hypozomata",
+		"ptol": "Hypozomata",
+		"pers": "Hypozomata",
+		"cart": "Hypozomata",
+		"theb": "Hypozomata",
+		"syrac": "Hypozomata"
+	},
+	"description": "The hypozomata brace the structure of a ship.",
+	"cost": {
+		"metal": 500,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_imperial" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "epir" },
+					{ "civ": "imp" },
+					{ "civ": "pers" },
+					{ "civ": "spart" },
+					{ "civ": "theb" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase after researching “Ship Cladding.”",
+	"icon": "armor_ship_bronze.png",
+	"researchTime": 40,
+	"tooltip": "Arrow Ships and Ramming Ships +25% health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25 }
+	],
+	"affects": [
+		"ArrowShip",
+		"NavalRam"
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

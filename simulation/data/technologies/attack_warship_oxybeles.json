@@ -1,24 +1,21 @@
 {
-	"pair": "pair_naval_06",	
 	"genericName": "Naval Oxybeles",
-	"description": "Mounting catapults and bolt shooters onto ships helped give added firepower.",
+	"description": "Mounting bolt shooters onto ships helped give added firepower.",
 	"cost": {
-		"metal": 500,
-		"glory": 300
+		"wood": 200,
+		"glory": 200
 	},
 	"requirements": {
-		"tech": "phase_city"
+		"tech": "phase_town"
 	},
-	"requirementsTooltip": "Unlocked in City Phase.",
-	"icon": "naval_firepower.png",
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "accuracy_bolt.png",
 	"researchTime": 40,
-	"tooltip": "Warships +5 crush attack and +10 attack range, but +20 metal cost",
+	"tooltip": "Arrow Ships +10 crush damage and +10% attack range. Unlocks “Naval Ballistae” for civilizations with Siege Ships.",
 	"modifications": [
-		{ "value": "Attack/Ranged/Damage/Crush", "add": 5.0 },
-		{ "value": "Attack/Ranged/Damage/MaxRange", "add": 10.0 },
-		{ "value": "Vision/Range", "add": 5.0 },
-		{ "value": "Cost/Resources/metal", "add": 20 }
+		{ "value": "Attack/Ranged/Damage/Crush", "add": 10 },
+		{ "value": "Attack/Ranged/MaxRange", "multiply": 1.1 }
 	],
-	"affects": ["Warship"],
+	"affects": ["ArrowShip"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

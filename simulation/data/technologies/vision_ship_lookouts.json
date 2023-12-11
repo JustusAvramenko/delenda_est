@@ -1,28 +1,28 @@
-{
-	"pair": "pair_naval_03",	
+{	
 	"genericName": "Lookouts",
 	"specificName": {
 		"hele": "Prōratēs",
-		"mace": "Prōratēs",
-		"spart": "Prōratēs",
 		"athen": "Prōratēs",
+		"mace": "Prōratēs",
 		"ptol": "Prōratēs",
 		"sele": "Prōratēs",
-		"syrac": "Prōratēs"
+		"spart": "Prōratēs",
+		"syrac": "Prōratēs",
+		"theb": "Prōratēs"
 	},
 	"description": "Lookouts aboard ship were important for sighting land, spotting navigational hazards, and directing fire in battle.",
 	"cost": {
-		"food": 200,
-		"glory": 300
+		"food": 50,
+		"glory": 50
 	},
-	"requirements": { "tech": "phase_city" },
-	"requirementsTooltip": "Unlocked in City Phase.",
-	"icon": "lookouts.png",
-	"researchTime": 40,
-	"tooltip": "All Ships +25% vision range, Warships +10% attack range.",
+	"requirements": { "tech": "phase_village" },
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "sentries.png",
+	"researchTime": 30,
+	"tooltip": "Ships and Boats +10% vision range; Scout Ships an additional +25% vision range. Unlocks “Exploration” for the Carthaginians and Han Chinese.",
 	"modifications": [
-		{ "value": "Vision/Range", "multiply": 1.25 },
-		{ "value": "Attack/Ranged/MaxRange", "multiply": 1.1 }
+		{ "value": "Vision/Range", "multiply": 1.1 },
+		{ "value": "Vision/Range", "multiply": 1.25, "affects": "ScoutShip" }
 	],
 	"affects": ["Ship"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

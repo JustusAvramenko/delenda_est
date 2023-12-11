@@ -1,5 +1,4 @@
-{
-	"pair": "pair_naval_04",
+{	"supersedes": "speed_warship_flutes",
 	"genericName": "Flanking Maneuvers",
 	"specificName": {
 		"hele": "Periplous",
@@ -8,16 +7,44 @@
 		"athen": "Periplous",
 		"ptol": "Periplous",
 		"sele": "Periplous",
-		"cart": "Periplous"
+		"cart": "Periplous",
+		"pers": "Periplous",
+		"theb": "Periplous",
+		"syrac": "Periplous"
 	},
-	"description": "The flanking maneuver was attempted in order to position the ship for a successful ram.",
-	"cost": { "food": 200, "wood": 300 },
-	"requirements": { "tech": "phase_city" },
-	"requirementsTooltip": "Unlocked in City Phase.",
-	"icon": "ship_ram.png",
+	"description": "The flanking maneuver was attempted in order to position the ship for a successful ram. To pull this off in the chaos of a sea battle, a ship's crew needed to be highly trained and well-motivated.",
+	"cost": {
+		"food": 300,
+		"coin": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "cart" },
+					{ "civ": "epir" },
+					{ "civ": "imp" },
+					{ "civ": "mace" },
+					{ "civ": "pers" },
+					{ "civ": "ptol" },
+					{ "civ": "rome" },
+					{ "civ": "sele" },
+					{ "civ": "spart" },
+					{ "civ": "syrac" },
+					{ "civ": "theb" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase after researching “Flute Players.”",
+	"icon": "trihemiolia.png",
 	"researchTime": 40,
-	"tooltip": "Warships +10% Rowing Speed.",
-	"modifications": [{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 }],
-	"affects": ["Warship"],
+	"tooltip": "Ramming Ships +25% speed and acceleration. Unlocks “Bronze Rams.”",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25 }
+	],
+	"affects": ["NavalRam"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

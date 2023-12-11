@@ -1,5 +1,5 @@
 {
-	"pair": "pair_naval_06",
+	"supersedes": "speed_warship_flanking",
 	"genericName": "Bronze Ram",
 	"specificName": {
 		"hele": "Embolon",
@@ -8,22 +8,43 @@
 		"athen": "Embolon",
 		"ptol": "Embolon",
 		"sele": "Embolon",
-		"cart": "Embolon"
+		"cart": "Embolon",
+		"pers": "Embolon",
+		"syrac": "Embolon",
+		"theb": "Embolon"
 	},
 	"description": "A bronze beak at the prow of the ship, used for ramming enemy ships.",
 	"cost": {
 		"metal": 400,
-		"glory": 300
+		"glory": 400
 	},
 	"requirements": {
-		"tech": "phase_city"
+		"all": [
+			{ "tech": "phase_imperial" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "cart" },
+					{ "civ": "epir" },
+					{ "civ": "imp" },
+					{ "civ": "mace" },
+					{ "civ": "pers" },
+					{ "civ": "ptol" },
+					{ "civ": "rome" },
+					{ "civ": "sele" },
+					{ "civ": "spart" },
+					{ "civ": "syrac" },
+					{ "civ": "theb" }
+				]
+			}
+		]
 	},
-	"requirementsTooltip": "Unlocked in City Phase.",
-	"icon": "breakthrough.png",
+	"requirementsTooltip": "Unlocked in Empire Phase after researching “Flanking Maneuvers.”",
+	"icon": "ship_ram.png",
 	"researchTime": 40,
-	"tooltip": "Ramming Warships +25% ramming speed. TODO: Make this actually +25% Ram Attack if Charging and Ramming are implemented.",
+	"tooltip": "Ramming Ships +50% attack damage.",
 	"modifications": [
-		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.25 }
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.5 }
 	],
 	"affects": ["NavalRam"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

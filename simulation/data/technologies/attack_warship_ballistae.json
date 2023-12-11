@@ -1,0 +1,34 @@
+{
+	"supersedes": "attack_warship_oxybeles",
+	"genericName": "Naval Ballistae",
+	"description": "Mounting stronger catapults onto ships helped give added firepower.",
+	"cost": {
+		"wood": 400,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "cart" },
+					{ "civ": "han" },
+					{ "civ": "mace" },
+					{ "civ": "ptol" },
+					{ "civ": "rome" },
+					{ "civ": "sele" },
+					{ "civ": "syrac" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase after researching “Naval Ballistae.”",
+	"icon": "naval_firepower.png",
+	"researchTime": 40,
+	"tooltip": "Siege Ships +20% attack range.",
+	"modifications": [
+		{ "value": "Attack/Ranged/MaxRange", "multiply": 1.2 }
+	],
+	"affects": ["NavalSiege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

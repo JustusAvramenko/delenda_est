@@ -1,19 +1,21 @@
 {
-	"genericName": "Oceanic Transport",
+	"genericName": "Oceanic Transports",
 	"description": "The Celtic and Indian peoples were known for partaking in long journeys by sea in order to colonize new lands.",
 	"cost": {
 		"wood": 300,
 		"glory": 200
 	},
-	"requirements": { "tech": "celts/unlock_warships" },
+	"requirements": {
+		"tech": "celts/unlock_warships"
+	},
 	"requirementsTooltip": "Requires “Naval Construction.”",
 	"icon": "reinforced_hull.png",
 	"researchTime": 40,
-	"tooltip": "Medium Warship +10 garrison capacity, +25% health.",
+	"tooltip": "Arrow Ship +10 garrison capacity, +25% health.",
 	"modifications": [
 		{ "value": "Health/Max", "multiply": 1.25 },
 		{ "value": "GarrisonHolder/Max", "add": 10 }
 	],
-	"affects": ["Medium Warship"],
+	"affects": ["ArrowShip"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

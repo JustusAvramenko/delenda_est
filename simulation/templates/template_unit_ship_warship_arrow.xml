@@ -5,6 +5,7 @@
       <AttackName>Arrow</AttackName>
       <Damage>
         <Pierce>20.0</Pierce>
+        <Crush>0.0</Crush>
       </Damage>
       <MaxRange>60.0</MaxRange>
       <MinRange>0.0</MinRange>
@@ -25,6 +26,9 @@
       </PreferredClasses>
     </Ranged>
   </Attack>
+  <Capturable>
+    <CapturePoints>300</CapturePoints>
+  </Capturable>
   <Cost>
     <Population>3</Population>
     <BuildTime>25</BuildTime>
@@ -39,15 +43,17 @@
   </Footprint>
   <GarrisonHolder>
     <Max>30</Max>
-    <EjectClassesOnDestroy datatype="tokens">FemaleCitizen Infantry Dog</EjectClassesOnDestroy>
+    <EjectClassesOnDestroy datatype="tokens">Civilian Infantry Dog</EjectClassesOnDestroy>
   </GarrisonHolder>
   <Health>
     <Max>400</Max>
   </Health>
   <Identity>
-    <GenericName>Arrow Warship</GenericName>
-    <Tooltip>Medium Warship, good for naval combat and transporting troops.</Tooltip>
+    <GenericName>Arrow Ship</GenericName>
     <VisibleClasses datatype="tokens">ArrowShip Ranged Bow</VisibleClasses>
+    <Tooltip>Traits: Arrow Shooter, Medium Speed, Medium Armor.
+Strong Against: Ramming Ships.
+Weak Against: Siege Ships, Catapults.</Tooltip>
     <Requirements>
       <Techs datatype="tokens">
         phase_town

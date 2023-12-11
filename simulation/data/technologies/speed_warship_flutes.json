@@ -1,5 +1,4 @@
 {
-	"pair": "pair_naval_05",
 	"genericName": "Flute Players",
 	"specificName": {
 		"hele": "Trièraulès",
@@ -8,23 +7,24 @@
 		"athen": "Trièraulès",
 		"ptol": "Trièraulès",
 		"sele": "Trièraulès",
-		"cart": "Trièraulès"
+		"cart": "Trièraulès",
+		"theb": "Trièraulès"
 	},
 	"description": "The aulos was a double-reed instrument from Greece, which had a sound akin to the modern oboe with a drone similar to the Scottish bagpipes. A musician who played the aulos was called an aulētēs, and these musicians accompanied Greek armies and warships into battle. They helped keep marching soldiers or heaving rowers in syncopation, which is a crucial aspect of both endeavours. The aulos is attested to on painted amphorae (vases), in Greco-Roman mosaics, on sarcophagi, and in the literature of the age.",
 	"cost": {
 		"food": 200,
-		"wood": 300
+		"coin": 200
 	},
 	"requirements": {
-		"tech": "phase_city"
+		"tech": "phase_town"
 	},
-	"requirementsTooltip": "Unlocked in City Phase.",
+	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "flute.png",
 	"researchTime": 40,
-	"tooltip": "All Ships +10% movement speed.",
+	"tooltip": "Warships +10% speed. Unlocks “Flanking Maneuvers” for civilizations with Ramming Ships.",
 	"modifications": [
 		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 }
 	],
-	"affects": ["Ship"],
+	"affects": ["WarShip"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
