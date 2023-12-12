@@ -1,22 +1,26 @@
 {
+	"supersedes": "vision_ship_lookouts",
 	"genericName": "Exploration",
 	"description": "Nobody knew better than the Carthaginians where in the ancient world they were going and going to go; their merchant traders had missions to everywhere.",
 	"cost": {
-		"food": 200,
-		"glory": 200
+		"wood": 100,
+		"glory": 100
 	},
 	"requirements": {
 		"all": [
-			{ "tech": "phase_town" },
-			{ "civ": "cart" }
+			{ "tech": "phase_village" },
+			{ "any": [
+				{ "civ": "cart" },
+				{ "civ": "han" }]
+			}	
 		]
 	},
-	"requirementsTooltip": "Unlocked in Town Phase.",
+	"requirementsTooltip": "Unlocked in Village Phase. Requires “Lookouts.”",
 	"icon": "exploration.png",
 	"researchTime": 40,
-	"tooltip": "Carthaginians were explorers. All Traders and Ships +25% vision range.",
+	"tooltip": "Traders and Ships +20% vision range.",
 	"modifications": [
-		{ "value": "Vision/Range", "multiply": 1.25 }
+		{ "value": "Vision/Range", "multiply": 1.20 }
 	],
 	"affects": [
 		"Trader",
