@@ -16,7 +16,7 @@
   </Health>
   <Identity>
     <GenericName>Fire Ship</GenericName>
-    <Tooltip>Unrepairable. Gradually loses health. Can only attack Ships.</Tooltip>
+    <Tooltip>Unrepairable. Gradually loses health after ignition. Can only attack Ships.</Tooltip>
     <VisibleClasses datatype="tokens">Warship Fireship Melee Fire</VisibleClasses>
     <Requirements>
       <Techs datatype="tokens">
@@ -37,11 +37,11 @@
     <WalkSpeed>10</WalkSpeed>
   </UnitMotion>
   <Upgrade>
-    <Tower>
+    <Ignition>
       <Entity>units/{civ}/ship_fire_fire</Entity>
       <Tooltip>Ignite the Fire Ship to damage nearby enemy Ships.</Tooltip>
       <Time>10</Time>
-    </Tower>
+    </Ignition>
   </Upgrade>
   <Vision>
     <Range>50</Range>
