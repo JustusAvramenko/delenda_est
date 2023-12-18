@@ -4,14 +4,21 @@
     <Square width="1.5" depth="3.0"/>
     <Height>2.0</Height>
   </Footprint>
+  <Health>
+    <Max op="mul">0.9</Max>
+  </Health>
   <Identity>
     <GenericName>Wolfhound</GenericName>
     <SpecificName>Canis lupus familiaris</SpecificName>
-    <Icon>units/brit_wolfhound.png</Icon>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Icon>units/brit/wolfhound.png</Icon>
   </Identity>
   <StatusBars>
     <HeightOffset>3.0</HeightOffset>
   </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/britons/wolfhound.xml</Actor>
   </VisualActor>
