@@ -32,12 +32,14 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="687.73" y="149.472" z="794.806"/>
+		<Position x="420.6" y="60.8121" z="1409.14"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
+  "AISeed": 0,
+  "AllyView": false,
   "BaseHeight": 0,
   "BaseTerrain": [
     "medit_sea_depths"
@@ -50,7 +52,7 @@
   "LockTeams": false,
   "Name": "Cycladic Archipelago (2 players)",
   "PlayerData": [
-    null,
+    "",
     {
       "Name": "Player 1"
     },
@@ -63,7 +65,8 @@
   "Seed": 0,
   "Size": 384,
   "VictoryConditions": [
-    "conquest_civic_centers"
+    "conquest_civic_centers",
+    "domination"
   ]
 }
 ]]></ScriptSettings>
@@ -3232,42 +3235,27 @@
 		</Entity>
 		<Entity uid="780">
 			<Template>actor|geology/stone_medit_med.xml</Template>
-			<Position x="1067.90412" z="944.33478"/>
+			<Position x="1063.07776" z="953.20478"/>
 			<Orientation y="-1.09214"/>
 		</Entity>
 		<Entity uid="781">
 			<Template>actor|geology/stone_medit_med.xml</Template>
-			<Position x="1054.1767" z="950.35987"/>
+			<Position x="1058.37525" z="955.93262"/>
 			<Orientation y="-1.49064"/>
-		</Entity>
-		<Entity uid="782">
-			<Template>actor|geology/stone_medit_med.xml</Template>
-			<Position x="1049.62488" z="952.8155"/>
-			<Orientation y="-0.17927"/>
-		</Entity>
-		<Entity uid="783">
-			<Template>actor|geology/stone_medit_med.xml</Template>
-			<Position x="1049.83082" z="968.6601"/>
-			<Orientation y="0.739"/>
-		</Entity>
-		<Entity uid="784">
-			<Template>actor|geology/stone_medit_med.xml</Template>
-			<Position x="1054.54609" z="970.66163"/>
-			<Orientation y="0.87728"/>
 		</Entity>
 		<Entity uid="785">
 			<Template>actor|geology/stone_medit_med.xml</Template>
-			<Position x="1062.06269" z="976.64368"/>
+			<Position x="1055.02637" z="977.85633"/>
 			<Orientation y="-0.04778"/>
 		</Entity>
 		<Entity uid="786">
 			<Template>actor|geology/stone_medit_med.xml</Template>
-			<Position x="1060.58014" z="990.21723"/>
+			<Position x="1090.59778" z="1010.54072"/>
 			<Orientation y="-0.27984"/>
 		</Entity>
 		<Entity uid="787">
 			<Template>actor|geology/stone_medit_med.xml</Template>
-			<Position x="1058.24463" z="1001.03113"/>
+			<Position x="1073.60962" z="999.99524"/>
 			<Orientation y="1.11219"/>
 		</Entity>
 		<Entity uid="788">
@@ -4643,43 +4631,25 @@
 		<Entity uid="1102">
 			<Template>gaia/tree/carob</Template>
 			<Player>0</Player>
-			<Position x="806.55024" z="843.58149"/>
+			<Position x="804.19874" z="839.85804"/>
 			<Orientation y="2.91462"/>
 		</Entity>
 		<Entity uid="1103">
 			<Template>gaia/tree/carob</Template>
 			<Player>0</Player>
-			<Position x="814.56073" z="837.65156"/>
-			<Orientation y="0.75277"/>
-		</Entity>
-		<Entity uid="1104">
-			<Template>gaia/tree/carob</Template>
-			<Player>0</Player>
-			<Position x="821.33112" z="857.4579"/>
-			<Orientation y="2.35621"/>
+			<Position x="807.83637" z="829.51282"/>
+			<Orientation y="-3.36583"/>
 		</Entity>
 		<Entity uid="1105">
 			<Template>gaia/tree/carob</Template>
 			<Player>0</Player>
-			<Position x="822.42865" z="884.34553"/>
+			<Position x="820.82404" z="892.6178"/>
 			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="1106">
-			<Template>gaia/tree/carob</Template>
-			<Player>0</Player>
-			<Position x="841.31177" z="889.38593"/>
-			<Orientation y="-1.93413"/>
-		</Entity>
-		<Entity uid="1110">
-			<Template>gaia/tree/carob</Template>
-			<Player>0</Player>
-			<Position x="843.2624" z="868.98951"/>
-			<Orientation y="-3.00246"/>
 		</Entity>
 		<Entity uid="1111">
 			<Template>gaia/tree/carob</Template>
 			<Player>0</Player>
-			<Position x="909.77546" z="847.07801"/>
+			<Position x="891.92615" z="852.29499"/>
 			<Orientation y="-0.91515"/>
 		</Entity>
 		<Entity uid="1112">
@@ -4709,7 +4679,7 @@
 		<Entity uid="1116">
 			<Template>gaia/tree/carob</Template>
 			<Player>0</Player>
-			<Position x="902.62244" z="851.9256"/>
+			<Position x="904.15314" z="892.09705"/>
 			<Orientation y="-2.85428"/>
 		</Entity>
 		<Entity uid="1117">
@@ -4741,30 +4711,6 @@
 			<Player>0</Player>
 			<Position x="817.41187" z="823.57673"/>
 			<Orientation y="0.59954"/>
-		</Entity>
-		<Entity uid="1123">
-			<Template>gaia/tree/cypress</Template>
-			<Player>0</Player>
-			<Position x="827.87598" z="841.36664"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="1124">
-			<Template>gaia/tree/cypress</Template>
-			<Player>0</Player>
-			<Position x="827.94184" z="842.71521"/>
-			<Orientation y="0.13486"/>
-		</Entity>
-		<Entity uid="1125">
-			<Template>gaia/tree/cypress</Template>
-			<Player>0</Player>
-			<Position x="835.72974" z="857.8747"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="1126">
-			<Template>gaia/tree/cypress</Template>
-			<Player>0</Player>
-			<Position x="833.78736" z="841.73829"/>
-			<Orientation y="-2.61512"/>
 		</Entity>
 		<Entity uid="1127">
 			<Template>gaia/tree/cypress</Template>
@@ -4866,66 +4812,6 @@
 			<Template>gaia/tree/medit_fan_palm</Template>
 			<Player>0</Player>
 			<Position x="885.96161" z="834.45966"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="1149">
-			<Template>gaia/tree/poplar_lombardy</Template>
-			<Player>0</Player>
-			<Position x="824.6255" z="848.40357"/>
-			<Orientation y="0.12906"/>
-		</Entity>
-		<Entity uid="1150">
-			<Template>gaia/tree/poplar_lombardy</Template>
-			<Player>0</Player>
-			<Position x="830.0738" z="855.2414"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="1151">
-			<Template>gaia/tree/poplar_lombardy</Template>
-			<Player>0</Player>
-			<Position x="830.75922" z="865.60279"/>
-			<Orientation y="0.171"/>
-		</Entity>
-		<Entity uid="1152">
-			<Template>gaia/tree/poplar_lombardy</Template>
-			<Player>0</Player>
-			<Position x="833.52009" z="882.38624"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="1153">
-			<Template>gaia/tree/poplar_lombardy</Template>
-			<Player>0</Player>
-			<Position x="831.98267" z="886.14728"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="1154">
-			<Template>gaia/tree/poplar_lombardy</Template>
-			<Player>0</Player>
-			<Position x="846.26911" z="903.9474"/>
-			<Orientation y="3.04482"/>
-		</Entity>
-		<Entity uid="1155">
-			<Template>gaia/tree/poplar_lombardy</Template>
-			<Player>0</Player>
-			<Position x="890.11768" z="845.13013"/>
-			<Orientation y="2.78913"/>
-		</Entity>
-		<Entity uid="1156">
-			<Template>gaia/tree/poplar_lombardy</Template>
-			<Player>0</Player>
-			<Position x="824.35651" z="833.25721"/>
-			<Orientation y="-0.19286"/>
-		</Entity>
-		<Entity uid="1157">
-			<Template>gaia/tree/poplar_lombardy</Template>
-			<Player>0</Player>
-			<Position x="824.08936" z="823.0785"/>
-			<Orientation y="0.59179"/>
-		</Entity>
-		<Entity uid="1159">
-			<Template>gaia/tree/poplar_lombardy</Template>
-			<Player>0</Player>
-			<Position x="813.62464" z="827.36097"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1160">
@@ -6031,7 +5917,7 @@
 		<Entity uid="1381">
 			<Template>gaia/treasure/food_shipwreck_debris</Template>
 			<Player>0</Player>
-			<Position x="1082.03187" z="941.5094"/>
+			<Position x="1078.53052" z="940.81995"/>
 			<Orientation y="0.56691"/>
 		</Entity>
 		<Entity uid="1382">
@@ -7177,13 +7063,13 @@
 		<Entity uid="1889">
 			<Template>gaia/tree/medit_fan_palm</Template>
 			<Player>0</Player>
-			<Position x="897.61567" z="1331.4574"/>
+			<Position x="894.87446" z="1328.7798"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1890">
 			<Template>gaia/tree/medit_fan_palm</Template>
 			<Player>0</Player>
-			<Position x="895.17884" z="1336.06238"/>
+			<Position x="891.78602" z="1334.08265"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1891">
@@ -11252,7 +11138,7 @@
 		<Entity uid="2858">
 			<Template>gaia/tree/cretan_date_palm_patch</Template>
 			<Player>0</Player>
-			<Position x="801.91431" z="1387.54651"/>
+			<Position x="805.72144" z="1397.4723"/>
 			<Orientation y="1.1967"/>
 		</Entity>
 		<Entity uid="2859">
@@ -15706,7 +15592,7 @@
 		<Entity uid="3525">
 			<Template>gaia/tree/pine_maritime_short</Template>
 			<Player>0</Player>
-			<Position x="876.14563" z="1344.1438"/>
+			<Position x="873.06025" z="1344.5304"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42316"/>
 		</Entity>
@@ -15741,7 +15627,7 @@
 		<Entity uid="3530">
 			<Template>gaia/tree/pine_maritime</Template>
 			<Player>0</Player>
-			<Position x="890.90998" z="1343.47864"/>
+			<Position x="849.63971" z="1298.21167"/>
 			<Orientation y="0.65412"/>
 			<Actor seed="24614"/>
 		</Entity>
@@ -18854,6 +18740,1216 @@
 			<Position x="795.2118" z="883.87195"/>
 			<Orientation y="2.32001"/>
 			<Actor seed="33276"/>
+		</Entity>
+		<Entity uid="4179">
+			<Template>actor|props/structures/construction/scaffold.xml</Template>
+			<Position x="-885.30073" z="-646.94935"/>
+			<Orientation y="-1.96984"/>
+			<Actor seed="50793"/>
+		</Entity>
+		<Entity uid="4180">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="62.25922" z="108.09968"/>
+			<Orientation y="-0.43866"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4181">
+			<Template>gaia/rock/aegean_cut</Template>
+			<Player>0</Player>
+			<Position x="58.14094" z="110.4823"/>
+			<Orientation y="1.09397"/>
+			<Actor seed="41621"/>
+		</Entity>
+		<Entity uid="4182">
+			<Template>gaia/treasure/stone_pile_granite_large</Template>
+			<Player>0</Player>
+			<Position x="64.36585" z="109.83252"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="61783"/>
+		</Entity>
+		<Entity uid="4183">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="61.04011" z="114.40674"/>
+			<Orientation y="-2.4921"/>
+			<Actor seed="41202"/>
+		</Entity>
+		<Entity uid="4184">
+			<Template>gaia/rock/aegean_cut</Template>
+			<Player>0</Player>
+			<Position x="57.175" z="104.8437"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="42133"/>
+		</Entity>
+		<Entity uid="4185">
+			<Template>actor|props/structures/construction/scaffold.xml</Template>
+			<Position x="-885.30073" z="-646.94935"/>
+			<Orientation y="-1.96984"/>
+			<Actor seed="50793"/>
+		</Entity>
+		<Entity uid="4186">
+			<Template>actor|props/structures/construction/scaffold.xml</Template>
+			<Position x="61.40577" z="122.47168"/>
+			<Orientation y="2.47362"/>
+			<Actor seed="22413"/>
+		</Entity>
+		<Entity uid="4187">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="67.66511" z="103.1991"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4188">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="62.51691" z="121.81128"/>
+			<Orientation y="-1.7422"/>
+			<Actor seed="2468"/>
+		</Entity>
+		<Entity uid="4189">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="69.73627" z="111.43085"/>
+			<Orientation y="2.90851"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4190">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="56.20185" z="108.08173"/>
+			<Orientation y="2.77303"/>
+			<Actor seed="56986"/>
+		</Entity>
+		<Entity uid="4191">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="63.08124" z="101.66205"/>
+			<Orientation y="3.14148"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4192">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="64.2143" z="101.80317"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="27753"/>
+		</Entity>
+		<Entity uid="4193">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="65.701" z="98.68195"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="21034"/>
+		</Entity>
+		<Entity uid="4194">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="65.13447" z="110.98572"/>
+			<Orientation y="1.80771"/>
+			<Actor seed="6866"/>
+		</Entity>
+		<Entity uid="4195">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="62.58307" z="95.68201"/>
+			<Orientation y="-3.05976"/>
+			<Actor seed="55526"/>
+		</Entity>
+		<Entity uid="4196">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="58.61091" z="98.63141"/>
+			<Orientation y="2.3109"/>
+			<Actor seed="30469"/>
+		</Entity>
+		<Entity uid="4197">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="61.62793" z="93.53669"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="55526"/>
+		</Entity>
+		<Entity uid="4198">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="65.24494" z="101.01282"/>
+			<Orientation y="0.49535"/>
+			<Actor seed="41476"/>
+		</Entity>
+		<Entity uid="4199">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="63.03913" z="93.0094"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="20417"/>
+		</Entity>
+		<Entity uid="4200">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_b.xml</Template>
+			<Position x="60.40302" z="115.96821"/>
+			<Orientation y="-2.82625"/>
+			<Actor seed="62112"/>
+		</Entity>
+		<Entity uid="4201">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_b.xml</Template>
+			<Position x="67.73298" z="122.50513"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52740"/>
+		</Entity>
+		<Entity uid="4202">
+			<Template>actor|geology/stone_medit_med.xml</Template>
+			<Position x="70.86951" z="94.30933"/>
+			<Orientation y="-3.01609"/>
+			<Actor seed="1165"/>
+		</Entity>
+		<Entity uid="4203">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="58.37757" z="116.67042"/>
+			<Orientation y="1.0293"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4204">
+			<Template>actor|geology/stone_aegean_quarried.xml</Template>
+			<Position x="50.47529" z="102.4615"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="9874"/>
+		</Entity>
+		<Entity uid="4205">
+			<Template>actor|geology/stone_medit_med.xml</Template>
+			<Position x="52.66572" z="120.79883"/>
+			<Orientation y="-2.44974"/>
+			<Actor seed="1169"/>
+		</Entity>
+		<Entity uid="4206">
+			<Template>actor|geology/stone_medit_med.xml</Template>
+			<Position x="68.02283" z="95.69007"/>
+			<Orientation y="1.83765"/>
+			<Actor seed="1178"/>
+		</Entity>
+		<Entity uid="4207">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="62.33411" z="118.31952"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4208">
+			<Template>actor|geology/stone_aegean_quarried.xml</Template>
+			<Position x="48.8578" z="108.23133"/>
+			<Orientation y="3.07653"/>
+			<Actor seed="27458"/>
+		</Entity>
+		<Entity uid="4209">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="69.61164" z="121.95014"/>
+			<Orientation y="-2.19062"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4210">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="61.81666" z="122.01417"/>
+			<Orientation y="-3.07448"/>
+			<Actor seed="7521"/>
+		</Entity>
+		<Entity uid="4211">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="62.11792" z="101.87397"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="30469"/>
+		</Entity>
+		<Entity uid="4212">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="62.76142" z="99.16889"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="30469"/>
+		</Entity>
+		<Entity uid="4213">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="70.24482" z="106.67811"/>
+			<Orientation y="-2.49477"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4214">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="56.86847" z="112.84046"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4215">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="61.78254" z="93.26624"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="55526"/>
+		</Entity>
+		<Entity uid="4216">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="65.42017" z="94.81092"/>
+			<Orientation y="0.52367"/>
+			<Actor seed="21034"/>
+		</Entity>
+		<Entity uid="4217">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="70.12781" z="110.20783"/>
+			<Orientation y="2.92542"/>
+			<Actor seed="6866"/>
+		</Entity>
+		<Entity uid="4218">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="62.04847" z="94.12867"/>
+			<Orientation y="0.03801"/>
+			<Actor seed="55526"/>
+		</Entity>
+		<Entity uid="4219">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="63.4485" z="94.09998"/>
+			<Orientation y="0.60462"/>
+			<Actor seed="20417"/>
+		</Entity>
+		<Entity uid="4220">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="57.30304" z="106.22913"/>
+			<Orientation y="2.13634"/>
+			<Actor seed="49485"/>
+		</Entity>
+		<Entity uid="4221">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="63.10413" z="102.88678"/>
+			<Orientation y="0.16057"/>
+			<Actor seed="56986"/>
+		</Entity>
+		<Entity uid="4222">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="60.17566" z="119.72876"/>
+			<Orientation y="-3.02831"/>
+			<Actor seed="2347"/>
+		</Entity>
+		<Entity uid="4223">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="59.72779" z="100.03296"/>
+			<Orientation y="0.90024"/>
+			<Actor seed="55187"/>
+		</Entity>
+		<Entity uid="4224">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="57.60773" z="115.1554"/>
+			<Orientation y="2.33222"/>
+			<Actor seed="2468"/>
+		</Entity>
+		<Entity uid="4225">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="59.98871" z="94.77137"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="26705"/>
+		</Entity>
+		<Entity uid="4226">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="66.9394" z="124.9477"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4227">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="57.49744" z="107.04389"/>
+			<Orientation y="2.7983"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4228">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="66.05512" z="120.60328"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4229">
+			<Template>gaia/rock/aegean_cut</Template>
+			<Player>0</Player>
+			<Position x="66.65967" z="121.98456"/>
+			<Orientation y="-0.22028"/>
+			<Actor seed="46976"/>
+		</Entity>
+		<Entity uid="4230">
+			<Template>gaia/rock/aegean_cut</Template>
+			<Player>0</Player>
+			<Position x="60.69886" z="117.86323"/>
+			<Orientation y="-5.57938"/>
+			<Actor seed="19919"/>
+		</Entity>
+		<Entity uid="4231">
+			<Template>gaia/rock/aegean_cut</Template>
+			<Player>0</Player>
+			<Position x="59.45539" z="97.97828"/>
+			<Orientation y="-11.64611"/>
+			<Actor seed="4485"/>
+		</Entity>
+		<Entity uid="4232">
+			<Template>actor|props/structures/construction/scaffold_small.xml</Template>
+			<Position x="48.31281" z="115.52088"/>
+			<Orientation y="0.20821"/>
+			<Actor seed="54344"/>
+		</Entity>
+		<Entity uid="4233">
+			<Template>actor|props/structures/construction/scaffold_small.xml</Template>
+			<Position x="53.7541" z="117.39179"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="26257"/>
+		</Entity>
+		<Entity uid="4234">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="57.89032" z="109.4054"/>
+			<Orientation y="-2.84064"/>
+			<Actor seed="49485"/>
+		</Entity>
+		<Entity uid="4235">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="61.55341" z="105.00855"/>
+			<Orientation y="0.99503"/>
+			<Actor seed="49485"/>
+		</Entity>
+		<Entity uid="4236">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="58.90046" z="113.14655"/>
+			<Orientation y="-0.37203"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4237">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="63.9546" z="116.42756"/>
+			<Orientation y="-3.1301"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4238">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="63.48066" z="113.58014"/>
+			<Orientation y="1.72271"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4239">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="65.8694" z="115.53168"/>
+			<Orientation y="-0.25658"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4240">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="64.5796" z="121.52222"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4241">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="69.36487" z="124.099"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4242">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="65.20527" z="119.0077"/>
+			<Orientation y="2.81684"/>
+			<Actor seed="2468"/>
+		</Entity>
+		<Entity uid="4243">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="58.61274" z="118.48145"/>
+			<Orientation y="-2.7405"/>
+			<Actor seed="2468"/>
+		</Entity>
+		<Entity uid="4244">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="62.76081" z="112.36182"/>
+			<Orientation y="1.7533"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4245">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="68.24286" z="104.5503"/>
+			<Orientation y="-2.42089"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4246">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="62.8429" z="97.80616"/>
+			<Orientation y="2.81441"/>
+			<Actor seed="21034"/>
+		</Entity>
+		<Entity uid="4247">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="64.8625" z="108.80213"/>
+			<Orientation y="-2.00741"/>
+			<Actor seed="28296"/>
+		</Entity>
+		<Entity uid="4248">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="58.15754" z="111.49946"/>
+			<Orientation y="-2.06508"/>
+			<Actor seed="56986"/>
+		</Entity>
+		<Entity uid="4249">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="58.88581" z="103.48377"/>
+			<Orientation y="1.97321"/>
+			<Actor seed="56986"/>
+		</Entity>
+		<Entity uid="4250">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="63.3719" z="106.77155"/>
+			<Orientation y="0.36765"/>
+			<Actor seed="6866"/>
+		</Entity>
+		<Entity uid="4251">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="69.6164" z="103.71119"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="6866"/>
+		</Entity>
+		<Entity uid="4252">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="59.89521" z="119.43848"/>
+			<Orientation y="-2.61847"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4253">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="58.15198" z="117.2439"/>
+			<Orientation y="-2.65914"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4254">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="56.7298" z="111.0185"/>
+			<Orientation y="2.95163"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4255">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="59.27198" z="101.87397"/>
+			<Orientation y="2.51604"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4256">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="58.1042" z="100.86585"/>
+			<Orientation y="-2.98081"/>
+			<Actor seed="30469"/>
+		</Entity>
+		<Entity uid="4257">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="61.49988" z="95.46607"/>
+			<Orientation y="-2.21645"/>
+			<Actor seed="30469"/>
+		</Entity>
+		<Entity uid="4258">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="60.83222" z="94.57374"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="26705"/>
+		</Entity>
+		<Entity uid="4259">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="63.13105" z="92.02839"/>
+			<Orientation y="1.9807"/>
+			<Actor seed="20417"/>
+		</Entity>
+		<Entity uid="4260">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_b.xml</Template>
+			<Position x="64.1883" z="98.49823"/>
+			<Orientation y="1.77921"/>
+			<Actor seed="62400"/>
+		</Entity>
+		<Entity uid="4261">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="65.37555" z="103.63947"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="46712"/>
+		</Entity>
+		<Entity uid="4262">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="58.77479" z="114.10346"/>
+			<Orientation y="1.6778"/>
+			<Actor seed="56853"/>
+		</Entity>
+		<Entity uid="4263">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="59.26362" z="103.95777"/>
+			<Orientation y="-2.69608"/>
+			<Actor seed="12879"/>
+		</Entity>
+		<Entity uid="4264">
+			<Template>actor|geology/stone_aegean_quarried.xml</Template>
+			<Position x="54.20203" z="123.50867"/>
+			<Orientation y="-0.69826"/>
+			<Actor seed="58115"/>
+		</Entity>
+		<Entity uid="4265">
+			<Template>actor|geology/stone_aegean_quarried.xml</Template>
+			<Position x="64.2461" z="127.26105"/>
+			<Orientation y="-6.7443"/>
+			<Actor seed="28334"/>
+		</Entity>
+		<Entity uid="4266">
+			<Template>actor|geology/stone_aegean_quarried.xml</Template>
+			<Position x="59.2627" z="127.31586"/>
+			<Orientation y="2.01755"/>
+			<Actor seed="34685"/>
+		</Entity>
+		<Entity uid="4267">
+			<Template>actor|geology/stone_mediterranean_greek_furrowed_cliff.xml</Template>
+			<Position x="52.07502" z="114.0901"/>
+			<Orientation y="-2.78263"/>
+			<Actor seed="65264"/>
+		</Entity>
+		<Entity uid="4347">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="1217.42103" z="944.25672"/>
+			<Orientation y="-2.7127"/>
+			<Actor seed="20417"/>
+		</Entity>
+		<Entity uid="4445">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="816.57428" z="861.86005"/>
+			<Orientation y="-0.43866"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4446">
+			<Template>gaia/rock/aegean_cut</Template>
+			<Player>0</Player>
+			<Position x="812.456" z="864.24268"/>
+			<Orientation y="1.09397"/>
+			<Actor seed="41621"/>
+		</Entity>
+		<Entity uid="4447">
+			<Template>gaia/treasure/stone_pile_granite_large</Template>
+			<Player>0</Player>
+			<Position x="818.68091" z="863.5929"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="61783"/>
+		</Entity>
+		<Entity uid="4448">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="815.35517" z="868.16712"/>
+			<Orientation y="-2.4921"/>
+			<Actor seed="41202"/>
+		</Entity>
+		<Entity uid="4449">
+			<Template>gaia/rock/aegean_cut</Template>
+			<Player>0</Player>
+			<Position x="811.49006" z="858.60407"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="42133"/>
+		</Entity>
+		<Entity uid="4450">
+			<Template>actor|props/structures/construction/scaffold.xml</Template>
+			<Position x="810.14875" z="856.96808"/>
+			<Orientation y="-1.96984"/>
+			<Actor seed="50793"/>
+		</Entity>
+		<Entity uid="4451">
+			<Template>actor|props/structures/construction/scaffold.xml</Template>
+			<Position x="815.72083" z="876.23206"/>
+			<Orientation y="2.47362"/>
+			<Actor seed="22413"/>
+		</Entity>
+		<Entity uid="4452">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="821.98017" z="856.95948"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4453">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="816.83198" z="875.57166"/>
+			<Orientation y="-1.7422"/>
+			<Actor seed="2468"/>
+		</Entity>
+		<Entity uid="4454">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="824.05134" z="865.19123"/>
+			<Orientation y="2.90851"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4455">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="810.51691" z="861.84211"/>
+			<Orientation y="2.77303"/>
+			<Actor seed="56986"/>
+		</Entity>
+		<Entity uid="4456">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="817.39631" z="855.42243"/>
+			<Orientation y="3.14148"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4457">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="818.52936" z="855.56354"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="27753"/>
+		</Entity>
+		<Entity uid="4458">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="820.01606" z="852.44233"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="21034"/>
+		</Entity>
+		<Entity uid="4459">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="819.44953" z="864.7461"/>
+			<Orientation y="1.80771"/>
+			<Actor seed="6866"/>
+		</Entity>
+		<Entity uid="4460">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="816.89814" z="849.44239"/>
+			<Orientation y="-3.05976"/>
+			<Actor seed="55526"/>
+		</Entity>
+		<Entity uid="4461">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="812.92597" z="852.39179"/>
+			<Orientation y="2.3109"/>
+			<Actor seed="30469"/>
+		</Entity>
+		<Entity uid="4462">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="815.943" z="847.29706"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="55526"/>
+		</Entity>
+		<Entity uid="4463">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="819.56" z="854.7732"/>
+			<Orientation y="0.49535"/>
+			<Actor seed="41476"/>
+		</Entity>
+		<Entity uid="4464">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="817.3542" z="846.76978"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="20417"/>
+		</Entity>
+		<Entity uid="4465">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_b.xml</Template>
+			<Position x="814.71808" z="869.72858"/>
+			<Orientation y="-2.82625"/>
+			<Actor seed="62112"/>
+		</Entity>
+		<Entity uid="4466">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_b.xml</Template>
+			<Position x="822.04804" z="876.26551"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="52740"/>
+		</Entity>
+		<Entity uid="4467">
+			<Template>actor|geology/stone_medit_med.xml</Template>
+			<Position x="825.18458" z="848.06971"/>
+			<Orientation y="-3.01609"/>
+			<Actor seed="1165"/>
+		</Entity>
+		<Entity uid="4468">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="812.69263" z="870.4308"/>
+			<Orientation y="1.0293"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4469">
+			<Template>actor|geology/stone_aegean_quarried.xml</Template>
+			<Position x="804.79035" z="856.22187"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="9874"/>
+		</Entity>
+		<Entity uid="4470">
+			<Template>actor|geology/stone_medit_med.xml</Template>
+			<Position x="822.3379" z="849.45044"/>
+			<Orientation y="1.83765"/>
+			<Actor seed="1178"/>
+		</Entity>
+		<Entity uid="4471">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="816.64917" z="872.0799"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4472">
+			<Template>actor|geology/stone_aegean_quarried.xml</Template>
+			<Position x="803.47828" z="860.73438"/>
+			<Orientation y="3.07653"/>
+			<Actor seed="27458"/>
+		</Entity>
+		<Entity uid="4473">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="823.9267" z="875.71052"/>
+			<Orientation y="-2.19062"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4474">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="816.13172" z="875.77454"/>
+			<Orientation y="-3.07448"/>
+			<Actor seed="7521"/>
+		</Entity>
+		<Entity uid="4475">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="816.43299" z="855.63434"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="30469"/>
+		</Entity>
+		<Entity uid="4476">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="817.07648" z="852.92927"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="30469"/>
+		</Entity>
+		<Entity uid="4477">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="824.55988" z="860.43848"/>
+			<Orientation y="-2.49477"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4478">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="811.18354" z="866.60084"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4479">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="816.0976" z="847.02662"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="55526"/>
+		</Entity>
+		<Entity uid="4480">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="819.73523" z="848.5713"/>
+			<Orientation y="0.52367"/>
+			<Actor seed="21034"/>
+		</Entity>
+		<Entity uid="4481">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="824.44288" z="863.96821"/>
+			<Orientation y="2.92542"/>
+			<Actor seed="6866"/>
+		</Entity>
+		<Entity uid="4482">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="816.36353" z="847.88904"/>
+			<Orientation y="0.03801"/>
+			<Actor seed="55526"/>
+		</Entity>
+		<Entity uid="4483">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="817.76355" z="847.86036"/>
+			<Orientation y="0.60462"/>
+			<Actor seed="20417"/>
+		</Entity>
+		<Entity uid="4484">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="811.61811" z="859.98951"/>
+			<Orientation y="2.13634"/>
+			<Actor seed="49485"/>
+		</Entity>
+		<Entity uid="4485">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="817.4192" z="856.64716"/>
+			<Orientation y="0.16057"/>
+			<Actor seed="56986"/>
+		</Entity>
+		<Entity uid="4486">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="814.49073" z="873.48914"/>
+			<Orientation y="-3.02831"/>
+			<Actor seed="2347"/>
+		</Entity>
+		<Entity uid="4487">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="814.04285" z="853.79334"/>
+			<Orientation y="0.90024"/>
+			<Actor seed="55187"/>
+		</Entity>
+		<Entity uid="4488">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="811.9228" z="868.91578"/>
+			<Orientation y="2.33222"/>
+			<Actor seed="2468"/>
+		</Entity>
+		<Entity uid="4489">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="814.30378" z="848.53174"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="26705"/>
+		</Entity>
+		<Entity uid="4490">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="821.25446" z="878.70807"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4491">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="811.8125" z="860.80427"/>
+			<Orientation y="2.7983"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4492">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="820.37018" z="874.36365"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4493">
+			<Template>gaia/rock/aegean_cut</Template>
+			<Player>0</Player>
+			<Position x="820.97474" z="875.74494"/>
+			<Orientation y="-0.22028"/>
+			<Actor seed="46976"/>
+		</Entity>
+		<Entity uid="4494">
+			<Template>gaia/rock/aegean_cut</Template>
+			<Player>0</Player>
+			<Position x="815.01392" z="871.6236"/>
+			<Orientation y="-5.57938"/>
+			<Actor seed="19919"/>
+		</Entity>
+		<Entity uid="4495">
+			<Template>gaia/rock/aegean_cut</Template>
+			<Player>0</Player>
+			<Position x="813.77045" z="851.73865"/>
+			<Orientation y="-11.64611"/>
+			<Actor seed="4485"/>
+		</Entity>
+		<Entity uid="4496">
+			<Template>actor|props/structures/construction/scaffold_small.xml</Template>
+			<Position x="806.81031" z="851.87537"/>
+			<Orientation y="-3.4875"/>
+			<Actor seed="54344"/>
+		</Entity>
+		<Entity uid="4497">
+			<Template>actor|props/structures/construction/scaffold_small.xml</Template>
+			<Position x="808.06916" z="871.15217"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="26257"/>
+		</Entity>
+		<Entity uid="4498">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="812.20539" z="863.16578"/>
+			<Orientation y="-2.84064"/>
+			<Actor seed="49485"/>
+		</Entity>
+		<Entity uid="4499">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="815.86847" z="858.76893"/>
+			<Orientation y="0.99503"/>
+			<Actor seed="49485"/>
+		</Entity>
+		<Entity uid="4500">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="813.21552" z="866.90693"/>
+			<Orientation y="-0.37203"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4501">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="818.26966" z="870.18793"/>
+			<Orientation y="-3.1301"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4502">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="817.79572" z="867.34052"/>
+			<Orientation y="1.72271"/>
+			<Actor seed="13266"/>
+		</Entity>
+		<Entity uid="4503">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="820.18445" z="869.29206"/>
+			<Orientation y="-0.25658"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4504">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="818.89466" z="875.2826"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4505">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="823.67994" z="877.85938"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="14910"/>
+		</Entity>
+		<Entity uid="4506">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="819.52033" z="872.76807"/>
+			<Orientation y="2.81684"/>
+			<Actor seed="2468"/>
+		</Entity>
+		<Entity uid="4507">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="812.9278" z="872.24183"/>
+			<Orientation y="-2.7405"/>
+			<Actor seed="2468"/>
+		</Entity>
+		<Entity uid="4508">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="817.07587" z="866.1222"/>
+			<Orientation y="1.7533"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4509">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="822.55793" z="858.31067"/>
+			<Orientation y="-2.42089"/>
+			<Actor seed="62643"/>
+		</Entity>
+		<Entity uid="4510">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="817.15796" z="851.56653"/>
+			<Orientation y="2.81441"/>
+			<Actor seed="21034"/>
+		</Entity>
+		<Entity uid="4511">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="819.17756" z="862.5625"/>
+			<Orientation y="-2.00741"/>
+			<Actor seed="28296"/>
+		</Entity>
+		<Entity uid="4512">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="812.4726" z="865.25983"/>
+			<Orientation y="-2.06508"/>
+			<Actor seed="56986"/>
+		</Entity>
+		<Entity uid="4513">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="813.20087" z="857.24415"/>
+			<Orientation y="1.97321"/>
+			<Actor seed="56986"/>
+		</Entity>
+		<Entity uid="4514">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="817.68696" z="860.53193"/>
+			<Orientation y="0.36765"/>
+			<Actor seed="6866"/>
+		</Entity>
+		<Entity uid="4515">
+			<Template>actor|props/special/eyecandy/block_limestone.xml</Template>
+			<Position x="823.93146" z="857.47156"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="6866"/>
+		</Entity>
+		<Entity uid="4516">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="814.21027" z="873.19886"/>
+			<Orientation y="-2.61847"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4517">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="812.46705" z="871.00428"/>
+			<Orientation y="-2.65914"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4518">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="811.04487" z="864.77887"/>
+			<Orientation y="2.95163"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4519">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="813.58704" z="855.63434"/>
+			<Orientation y="2.51604"/>
+			<Actor seed="57051"/>
+		</Entity>
+		<Entity uid="4520">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="812.41926" z="854.62623"/>
+			<Orientation y="-2.98081"/>
+			<Actor seed="30469"/>
+		</Entity>
+		<Entity uid="4521">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="815.81495" z="849.22645"/>
+			<Orientation y="-2.21645"/>
+			<Actor seed="30469"/>
+		</Entity>
+		<Entity uid="4522">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="815.14728" z="848.33411"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="26705"/>
+		</Entity>
+		<Entity uid="4523">
+			<Template>actor|props/special/eyecandy/block_granite.xml</Template>
+			<Position x="817.44611" z="845.78876"/>
+			<Orientation y="1.9807"/>
+			<Actor seed="20417"/>
+		</Entity>
+		<Entity uid="4524">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_b.xml</Template>
+			<Position x="818.50336" z="852.25861"/>
+			<Orientation y="1.77921"/>
+			<Actor seed="62400"/>
+		</Entity>
+		<Entity uid="4525">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="819.69062" z="857.39985"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="46712"/>
+		</Entity>
+		<Entity uid="4526">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="813.08985" z="867.86384"/>
+			<Orientation y="1.6778"/>
+			<Actor seed="56853"/>
+		</Entity>
+		<Entity uid="4527">
+			<Template>actor|props/special/eyecandy/blocks_granite_pile_a.xml</Template>
+			<Position x="813.57868" z="857.71814"/>
+			<Orientation y="-2.69608"/>
+			<Actor seed="12879"/>
+		</Entity>
+		<Entity uid="4528">
+			<Template>actor|geology/stone_aegean_quarried.xml</Template>
+			<Position x="818.56116" z="881.02143"/>
+			<Orientation y="-6.7443"/>
+			<Actor seed="28334"/>
+		</Entity>
+		<Entity uid="4529">
+			<Template>actor|geology/stone_mediterranean_greek_furrowed_cliff.xml</Template>
+			<Position x="806.34821" z="866.58912"/>
+			<Orientation y="-2.78263"/>
+			<Actor seed="65264"/>
+		</Entity>
+		<Entity uid="4530">
+			<Template>gaia/treasure/special_argo</Template>
+			<Player>0</Player>
+			<Position x="425.56321" z="1444.23755"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="55542"/>
+		</Entity>
+		<Entity uid="4531">
+			<Template>units/brigands/farmer_greek_melee</Template>
+			<Player>0</Player>
+			<Position x="531.53516" z="1111.9485"/>
+			<Orientation y="2.69715"/>
+			<Actor seed="4241"/>
+		</Entity>
+		<Entity uid="4532">
+			<Template>units/brigands/farmer_greek_ranged</Template>
+			<Player>0</Player>
+			<Position x="538.75867" z="1109.2262"/>
+			<Orientation y="-3.05394"/>
+			<Actor seed="1133"/>
+		</Entity>
+		<Entity uid="4533">
+			<Template>units/brigands/farmer_greek_melee</Template>
+			<Player>0</Player>
+			<Position x="534.67646" z="1114.20105"/>
+			<Orientation y="-0.21253"/>
+			<Actor seed="27329"/>
+		</Entity>
+		<Entity uid="4589">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="859.31263" z="1473.09913"/>
+			<Orientation y="-0.45371"/>
+			<Actor seed="35462"/>
+		</Entity>
+		<Entity uid="4606">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="820.49787" z="1385.50867"/>
+			<Orientation y="-0.144"/>
+			<Actor seed="27066"/>
+		</Entity>
+		<Entity uid="4607">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="748.26117" z="1453.31714"/>
+			<Orientation y="0.04215"/>
+			<Actor seed="27318"/>
+		</Entity>
+		<Entity uid="4624">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="867.61017" z="1465.86011"/>
+			<Orientation y="-4.73867"/>
+			<Actor seed="23335"/>
+		</Entity>
+		<Entity uid="4630">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="751.55683" z="1471.43116"/>
+			<Orientation y="-1.16655"/>
+			<Actor seed="57366"/>
+		</Entity>
+		<Entity uid="4631">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="781.22712" z="1461.93567"/>
+			<Orientation y="3.97663"/>
+			<Actor seed="4242"/>
+		</Entity>
+		<Entity uid="4632">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="754.90381" z="1452.55945"/>
+			<Orientation y="2.34865"/>
+			<Actor seed="27066"/>
+		</Entity>
+		<Entity uid="4642">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="832.40644" z="1430.19434"/>
+			<Orientation y="-5.33605"/>
+			<Actor seed="32273"/>
+		</Entity>
+		<Entity uid="4649">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="730.9209" z="1488.12159"/>
+			<Orientation y="-4.99021"/>
+			<Actor seed="29751"/>
+		</Entity>
+		<Entity uid="4650">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="747.06373" z="1497.36402"/>
+			<Orientation y="-0.45371"/>
+			<Actor seed="23335"/>
+		</Entity>
+		<Entity uid="4655">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="735.7851" z="1474.83545"/>
+			<Orientation y="-0.8554"/>
+			<Actor seed="29751"/>
+		</Entity>
+		<Entity uid="4656">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="757.84638" z="1435.79834"/>
+			<Orientation y="-1.19382"/>
+			<Actor seed="27066"/>
+		</Entity>
+		<Entity uid="4714">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="738.15986" z="1480.39087"/>
+			<Orientation y="-1.68082"/>
+			<Actor seed="61534"/>
+		</Entity>
+		<Entity uid="4715">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="737.25886" z="1495.67994"/>
+			<Orientation y="-1.12465"/>
+			<Actor seed="29751"/>
+		</Entity>
+		<Entity uid="4720">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="833.94257" z="1459.76905"/>
+			<Orientation y="-5.18877"/>
+			<Actor seed="20685"/>
+		</Entity>
+		<Entity uid="4721">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="785.1457" z="1431.01172"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="65022"/>
+		</Entity>
+		<Entity uid="4722">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="753.25647" z="1442.22522"/>
+			<Orientation y="-1.34383"/>
+			<Actor seed="4242"/>
+		</Entity>
+		<Entity uid="4723">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="754.7057" z="1449.55091"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="4242"/>
+		</Entity>
+		<Entity uid="4724">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="751.55848" z="1450.42347"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="27066"/>
+		</Entity>
+		<Entity uid="4725">
+			<Template>actor|geology/stone_granite_greek_large.xml</Template>
+			<Position x="752.61451" z="1452.68506"/>
+			<Orientation y="0.37261"/>
+			<Actor seed="27066"/>
 		</Entity>
 	</Entities>
 	<Paths/>

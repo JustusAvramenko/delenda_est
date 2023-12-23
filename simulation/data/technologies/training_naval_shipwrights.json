@@ -21,9 +21,10 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "calipers.png",
 	"researchTime": 40,
-	"tooltip": "Shipyards work 20% faster (Warships −20% build time; Technologies −20% research time).",
+	"tooltip": "Naval Shipyards work 20% faster (Ships −20% build time; Technologies −20% research time) and are built 20% faster.",
 	"modifications": [
 		{ "value": "Cost/BuildTime", "multiply": 0.8, "affects": "Warship" },
+		{ "value": "Cost/BuildTime", "multiply": 0.8, "affects": "Shipyard" },
 		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.8, "affects": "Shipyard" }
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_civic_temple">
+<Entity parent="structures/kush/temple">
   <Footprint>
     <Square width="31.0" depth="33.0"/>
   </Footprint>
@@ -14,19 +14,6 @@
   <Obstruction>
     <Static width="27.0" depth="30.0"/>
   </Obstruction>
-  <Researcher>
-    <Technologies datatype="tokens">
-      successors/special_pharaonic_cult
-    </Technologies>
-  </Researcher>
-  <Selectable>
-    <Overlay>
-      <Texture>
-        <MainTexture>auras/temple/egyptian/1024x1024.png</MainTexture>
-        <MainTextureMask>auras/temple/egyptian/1024x1024_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
   <Trainer>
     <Entities datatype="tokens">
       units/{civ}/champion_infantry_amun
