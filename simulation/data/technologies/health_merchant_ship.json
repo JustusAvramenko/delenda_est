@@ -1,20 +1,20 @@
 {
-	"pair": "pair_trade_ships_01",
+	"supersedes": "trading_merchant_ship",
 	"genericName": "Merchant Marine",
 	"description": ".",
 	"cost": {
-		"coin": 200,
-		"glory": 200
+		"coin": 300,
+		"glory": 300
 	},
 	"requirements": {
-		"tech": "phase_town"
+		"tech": "phase_city"
 	},
-	"requirementsTooltip": "Unlocked in Town Phase. Requires Commercial Port.",
+	"requirementsTooltip": "Unlocked in City Phase. Requires “Amphorae.”",
 	"icon": "merchant_marines.png",
 	"researchTime": 40,
-	"tooltip": "Merchant Ships +50% health.",
+	"tooltip": "Merchant Ships +80% health.",
 	"modifications": [
-		{ "value": "Health/Max", "multiply": 1.5 }
+		{ "value": "Health/Max", "multiply": 1.8 }
 	],
 	"affects": ["MerchantShip"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

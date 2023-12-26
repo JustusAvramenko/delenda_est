@@ -1,16 +1,40 @@
 {
-	"pair": "pair_structures_04",
 	"genericName": "Monumental Architecture",
 	"specificName": {
-		"imp": "Architectura Monumentalis"
+		"imp": "Architectura Monumentalis",
+		"rome": "Architectura Monumentalis"
 	},
 	"description": "When a civilization reaches a certain size and sophistication, monumental things happen.",
-	"cost": { "stone": 1000, "glory": 500 },
-	"requirements": { "tech": "phase_imperial" },
-	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"cost": {
+		"stone": 900,
+		"glory": 800 
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "cart" },
+					{ "civ": "han" },
+					{ "civ": "imp" },
+					{ "civ": "mace" },
+					{ "civ": "maya" },
+					{ "civ": "pers" },
+					{ "civ": "ptol" },
+					{ "civ": "rome" },
+					{ "civ": "sasa" },
+					{ "civ": "sele" },
+					{ "civ": "syrac" },
+					{ "civ": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "monumental_architecture.png",
 	"researchTime": 40,
-	"tooltip": "All structures +20% health, but +20% build time.",
+	"tooltip": "Structures +20% health, but +20% build time.",
 	"modifications": [
 		{ "value": "Health/Max", "multiply": 1.2 },
 		{ "value": "Cost/BuildTime", "multiply": 1.2 }

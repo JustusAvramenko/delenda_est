@@ -6,16 +6,17 @@
 	},
 	"requirements": {
 		"all": [
-			{ "tech": "phase_city" }, 
+			{ "tech": "phase_imperial" },
+			{ "tech": "health_structures_architecture" }, 
 			{ "civ": "pers" }
 		]
 	},
-	"requirementsTooltip": "Unlocked in City Phase.",
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Monumental Architecture.”",
 	"icon": "bull.png",
 	"researchTime": 40,
-	"tooltip": "Structures +25% health. The “Tachara” Palace and “Apadana” Wonder +50% additional health.",
+	"tooltip": "Structures +10% health. The “Tachara” Palace and “Apadana” Wonder +50% additional health.",
 	"modifications": [
-		{ "value": "Health/Max", "multiply": 1.25 },
+		{ "value": "Health/Max", "multiply": 1.10 },
 		{ "value": "Health/Max", "multiply": 1.50, "affects": "Tachara" },
 		{ "value": "Health/Max", "multiply": 1.50, "affects": "Wonder" }
 	],
