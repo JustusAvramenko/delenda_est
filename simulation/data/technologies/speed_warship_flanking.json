@@ -14,8 +14,8 @@
 	},
 	"description": "The flanking maneuver was attempted in order to position the ship for a successful ram. To pull this off in the chaos of a sea battle, a ship's crew needed to be highly trained and well-motivated.",
 	"cost": {
-		"food": 300,
-		"coin": 200
+		"food": 400,
+		"coin": 300
 	},
 	"requirements": {
 		"all": [
@@ -43,7 +43,8 @@
 	"researchTime": 40,
 	"tooltip": "Ramming Ships +25% speed and acceleration. Unlocks “Bronze Rams.”",
 	"modifications": [
-		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25 }
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25 },
+		{ "value": "UnitMotion/Acceleration", "multiply": 1.25 }
 	],
 	"affects": ["NavalRam"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
