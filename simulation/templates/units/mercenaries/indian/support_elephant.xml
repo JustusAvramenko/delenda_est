@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="units/maur/support_elephant">
+<Entity parent="template_unit_support_elephant">
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>15</BuildTime>
     <Resources>
-      <food>100</food>
-      <coin>100</coin>
+      <coin>200</coin>
     </Resources>
   </Cost>
-  <ProductionQueue disable=""/>
-  <Researcher disable=""/>
-  <Trainer disable=""/>
+  <Identity>
+    <Civ>maur</Civ>
+    <Lang>hindi</Lang>
+    <SpecificName>Indian Worker Elephant</SpecificName>
+    <Icon>units/maur/support_elephant.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/mauryas/support_elephant.xml</Actor>
+  </VisualActor>
 </Entity>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="builder|template_unit_support">
+  <Auras datatype="tokens">
+    units/elephant_fear
+  </Auras>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>100</food>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="5" depth="9"/>
+    <Height>6</Height>
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Elephant Dropsite DropsiteFood DropsiteWood DropsiteMetal DropsiteStone</Classes>
+    <GenericName>Resource Dropsite</GenericName>
+    <SpecificName>Worker Elephant</SpecificName>
+    <Tooltip>Mobile dropsite. Can also construct buildings.</Tooltip>
+  </Identity>
+  <Loot>
+    <xp>50</xp>
+    <food>20</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <coin>0</coin>
+    <glory>20</glory>
+  </Loot>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>2</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+    <Sharable>false</Sharable>
+  </ResourceDropsite>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/ellipse.png</MainTexture>
+        <MainTextureMask>128x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/elephant_select.xml</select>
+      <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
+      <order_build>actor/fauna/animal/elephant_order.xml</order_build>
+      <order_attack>actor/fauna/animal/elephant_attack_order.xml</order_attack>
+      <attack>actor/fauna/animal/elephant_attack.xml</attack>
+      <death>actor/fauna/animal/elephant_death.xml</death>
+      <trained>actor/fauna/animal/elephant_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>9.5</HeightOffset>
+  </StatusBars>
+  <UnitAI>
+    <Formations disable=""/>
+  </UnitAI>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed>6.0</WalkSpeed>
+    <Weight op="mul">5</Weight>
+  </UnitMotion>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/mauryas/support_elephant.xml</Actor>
+  </VisualActor>
+</Entity>
