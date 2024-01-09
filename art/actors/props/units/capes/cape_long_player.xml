@@ -6,10 +6,13 @@
       <mesh>props/new/capes/cape_hd_hoplite.dae</mesh>
       <textures>
         <texture file="props/cape_hd.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
   </group>
   <group>
+    <variant file="biped/base_peasant_male.xml" name="Peasant-Male" frequency="1"/>
     <variant file="biped/base_axeman_shield_fast_ready.xml" name="Axeman-Shield-Fast-Ready" frequency="1"/>
     <variant file="biped/base_axeman_shield_fast_relax.xml" name="Axeman-Shield-Fast-Relax" frequency="1"/>
     <variant file="biped/base_spearman_shield_relax_ptol.xml" name="Spearman-Shield-Relax-Ptol" frequency="1"/>
@@ -85,5 +88,5 @@
     <variant file="biped/cape_build_farm.xml"/>
     <variant file="biped/death_cape.xml"/>
   </group>
-  <material>player_trans.xml</material>
+  <material>player_trans_norm_spec.xml</material>
 </actor>

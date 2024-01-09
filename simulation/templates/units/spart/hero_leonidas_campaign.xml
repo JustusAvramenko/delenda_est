@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_citizen">
+  <Builder disable=""/>
+  <Identity>
+    <Civ>spart</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>King Leonidas I</SpecificName>
+    <Classes datatype="tokens">
+      Leonidas
+    </Classes>
+    <History>
+Leonidas I was a king of the Greek city-state of Sparta, and the 17th of the Agiad line, a dynasty which claimed descent from the mythical demigod Heracles (Hercules). Leonidas I was a son of King Anaxandridas II. He succeeded his half-brother King Cleomenes I to the throne in c. 489 BC. His co-ruler was King Leotychidas. He was succeeded by his son, King Pleistarchus.
+
+At the Second Greco-Persian War, Leonidas led the allied Greek forces in a last stand at the Battle of Thermopylae (480 BC), attempting to defend the pass from the invading Persian army, and was killed early in the final day of battle. Leonidas entered myth as a hero and the leader of the 300 Spartans. While the Greeks lost this battle, they were able to rally and expel the Persian invaders in the following year at the Battle of Plataea (479 BC).
+    </History>
+    <Icon>units/spart/hero_leonidas.png</Icon>
+  </Identity>
+  <ProductionQueue/>
+  <Researcher>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <coin>1.0</coin>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Technologies datatype="tokens">
+      spartans/unlock_gorgo
+    </Technologies>
+  </Researcher>
+  <Selectable replace="">
+    <Overlay>
+      <AlwaysVisible/>
+      <Shape>
+        <Circle radius="2"/>
+      </Shape>
+      <Texture>
+        <MainTexture>128x128/star.png</MainTexture>
+        <MainTextureMask>128x128/star_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Upgrade>
+    <Frenzy>
+      <Entity>units/spart/hero_leonidas_infantry</Entity>
+      <Tooltip>Leonidas readies himself for battle.</Tooltip>
+      <Time>10</Time>
+    </Frenzy>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/spartans/hero_leonidas_no_weapons.xml</Actor>
+  </VisualActor>
+</Entity>
