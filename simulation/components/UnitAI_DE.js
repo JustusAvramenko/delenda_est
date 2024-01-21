@@ -1,3 +1,51 @@
+UnitAI.prototype.OnAttacked = function(msg)
+{
+	if (msg.fromStatusEffect)
+		return;
+
+	const cmpUnitAI = Engine.QueryInterface(msg.attacker, IID_UnitAI);
+	if (cmpUnitAI && cmpUnitAI.IsDangerousAnimal())
+		this.CallPlayerOwnedEntitiesFunctionInRange("RespondToTargetedEntities", [[msg.attacker], true], 60);
+
+	this.UnitFsm.ProcessMessage(this, { "type": "Attacked", "data": msg });
+};
+
+/**
+ * Try to respond appropriately given our current stance,
+ * given a list of entities that match our stance's target criteria.
+ * Returns true if it responded.
+ */
+UnitAI.prototype.RespondToTargetedEntities = function(ents, dangerousAnimal = false)
+{
+	if (!ents.length)
+		return false;
+
+	if (this.IsFormationMember())
+		return Engine.QueryInterface(this.GetFormationController(), IID_UnitAI).RespondToTargetedEntities(ents);
+
+	if (this.GetStance().respondChase)
+		return this.AttackVisibleEntity(ents);
+
+	if (this.GetStance().respondStandGround)
+		return this.AttackVisibleEntity(ents);
+
+	if (this.GetStance().respondHoldGround)
+		return this.AttackEntityInZone(ents);
+
+	if (this.GetStance().respondFlee)
+	{
+		if (dangerousAnimal)
+			return this.AttackVisibleEntity(ents);
+		if (this.order && this.order.type == "Flee")
+			this.orderQueue.shift();
+		this.PushOrderFront("Flee", { "target": ents[0], "force": false });
+		return true;
+	}
+
+	return false;
+};
+
+
 UnitAI.prototype.GetQueryRange = function(iid)
 {
 	let ret = { "min": 0, "max": 0 };
