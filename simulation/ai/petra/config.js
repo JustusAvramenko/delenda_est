@@ -22,9 +22,11 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 
 	this.Military = {
 		"towerLapseTime": 90,	// Time to wait between building 2 towers
-		"fortressLapseTime": 390,	// Time to wait between building 2 fortresses
-		"popForBarracks1": 25,
-		"popForBarracks2": 95,
+		"fortressLapseTime": 300,	// Time to wait between building 2 fortresses
+		"popForBarracks1": 30,
+		"popForBarracks2": 60,
+		"popForBarracks3": 80,
+		"popForShipyard": 20,
 		"popForForge": 65,
 		"numSentryTowers": 1
 	};
@@ -37,13 +39,13 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 	};
 
 	this.Economy = {
-		"popPhase2": 38,	// How many units we want before aging to phase2.
-		"workPhase3": 65,	// How many workers we want before aging to phase3.
-		"workPhase4": 80,	// How many workers we want before aging to phase4 or higher.
-		"popForDock": 25,
+		"popPhase2": 30,	// How many units we want before aging to phase2.
+		"workPhase3": 50,	// How many workers we want before aging to phase3.
+		"workPhase4": 70,	// How many workers we want before aging to phase4 or higher.
+		"popForDock": 20,
 		"targetNumWorkers": 40,	// dummy, will be changed later
 		"targetNumTraders": 5,	// Target number of traders
-		"targetNumFishers": 1,	// Target number of fishers per sea
+		"targetNumFishers": 8,	// Target number of fishers per sea
 		"supportRatio": 0.35,	// fraction of support workers among the workforce
 		"provisionFields": 2
 	};
@@ -145,7 +147,6 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 		],
 		"sueb": [
 			"structures/{civ}/statue",
-			"structures/{civ}/shipyard",
 			"structures/{civ}/theater"
 		],
 		"syrac": [
@@ -176,11 +177,13 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 		"citizenSoldier": 60,
 		"trader": 50,
 		"healer": 20,
-		"ships": 70,
+		"ships": 300,
+		"warships": 800,
 		"house": 350,
 		"dropsites": 200,
 		"field": 400,
-		"dock": 90,
+		"dock": 300,
+		"shipyard": 500,
 		"corral": 100,
 		"economicBuilding": 90,
 		"militaryBuilding": 130,

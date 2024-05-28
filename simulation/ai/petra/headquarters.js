@@ -1616,6 +1616,19 @@ PETRA.HQ.prototype.buildForge = function(gameState, queues)
 		queues.militaryBuilding.addPlan(new PETRA.ConstructionPlan(gameState, "structures/{civ}/forge"));
 };
 
+PETRA.HQ.prototype.buildShipyard = function(gameState, queues)
+{
+	if (this.getAccountedPopulation(gameState) < this.Config.Military.popForShipyard ||
+		queues.militaryBuilding.hasQueuedUnits() || gameState.getOwnEntitiesByClass("Shipyard", true).length)
+		return;
+	// Build a Dock before the Shipyard.
+	if (!gameState.getOwnEntitiesByClass("Dock", true).hasEntities())
+		return;
+
+	if (this.canBuild(gameState, "structures/{civ}/shipyard"))
+		queues.militaryBuilding.addPlan(new PETRA.ConstructionPlan(gameState, "structures/{civ}/shipyard"));
+};
+
 /**
  * Deals with constructing military buildings (e.g. barracks, stable).
  * They are mostly defined by Config.js. This is unreliable since changes could be done easily.
@@ -1676,7 +1689,7 @@ PETRA.HQ.prototype.constructTrainingBuildings = function(gameState, queues)
 		}
 
 		// Third barracks/range and stable, if needed.
-		if (numBarracks + numRanges + numStables == 2 && this.getAccountedPopulation(gameState) > this.Config.Military.popForBarracks2 + 30)
+		if (numBarracks + numRanges + numStables == 2 && this.getAccountedPopulation(gameState) > this.Config.Military.popForBarracks3)
 		{
 			let template = barracksTemplate || stableTemplate || rangeTemplate;
 			if (template)
