@@ -1,9 +1,8 @@
 {
-	"supersedes": "nomads/vision_outpost",
 	"genericName": "Falconry",
 	"description": "Falconry is a steppe tradition.",
 	"cost": {
-		"food": 200,
+		"food": 100,
 		"glory": 100
 	},
 	"requirements": { "all": [
@@ -19,7 +18,7 @@
 			]
 		}
 	]},
-	"requirementsTooltip": "Unlocked in Village Phase after researching “Signal Fires.” Requires “Basic Husbandry.”",
+	"requirementsTooltip": "Unlocked in Village Phase. Requires “Basic Husbandry.”",
 	"icon": "falconry.png",
 	"researchTime": 30,
 	"tooltip": "All Structures and Cavalry +25% vision range. Scouts +25% meat gathering rate.",
@@ -27,6 +26,6 @@
 		{ "value": "Vision/Range", "multiply": 1.25 },
 		{ "value": "ResourceGatherer/Rates/food.meat", "multiply": 1.25 }
 	],
-	"affects": ["Structure", "Scout"],
+	"affects": ["Structure", "Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

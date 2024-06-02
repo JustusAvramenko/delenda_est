@@ -94,6 +94,8 @@ PETRA.ResearchManager.prototype.researchWantedTechs = function(gameState, techs)
 			return { "name": tech[0], "increasePriority": true };
 		if (tech[0] == "gather_lumbering_ironaxes" || tech[0] == "gather_mining_pickaxes")
 			return { "name": pickRandom(["gather_lumbering_ironaxes", "gather_mining_pickaxes"]), "increasePriority": true };
+		if (tech[0] == "techs_forge_cost" || tech[0] == "techs_forge_speed")
+			return { "name": pickRandom(["techs_forge_cost", "techs_forge_speed"]), "increasePriority": true };
 		if (tech[0].indexOf("training_naval_shipwrights") == 0)
 			return { "name": tech[0], "increasePriority": true };
 		if (tech[0].indexOf("celts/unlock_warships") == 0)
