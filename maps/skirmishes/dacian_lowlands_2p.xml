@@ -6,9 +6,9 @@
 		<SunColor r="0.956863" g="0.921569" b="0.803922"/>
 		<SunElevation angle="0.927532"/>
 		<SunRotation angle="1.50705"/>
-		<AmbientColor r="0.368627" g="0.376471" b="0.419608"/>
+		<AmbientColor r="0.364706" g="0.376471" b="0.419608"/>
 		<Fog>
-			<FogFactor>0.00171875</FogFactor>
+			<FogFactor>0.00271484</FogFactor>
 			<FogThickness>0</FogThickness>
 			<FogColor r="0.866667" g="0.909804" b="0.937255"/>
 		</Fog>
@@ -32,13 +32,14 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="281.375" y="302.778" z="47.8776"/>
+		<Position x="361.45" y="293.39" z="369.118"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
   "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
   "Description": "Temperate zone map with plentiful resources. Map Size: Small",
   "Keywords": [
@@ -47,7 +48,7 @@
   "LockTeams": false,
   "Name": "Dacian Lowlands (2 players)",
   "PlayerData": [
-    null,
+    "",
     {
       "Name": "West Player"
     },
@@ -58,6 +59,7 @@
   "Preview": "roadway.png",
   "RevealMap": false,
   "VictoryConditions": [
+    "annihilation",
     "conquest_civic_centers"
   ]
 }
@@ -10668,94 +10670,17 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="4262"/>
 		</Entity>
-		<Entity uid="2043">
-			<Template>other/farmland_40</Template>
-			<Player>1</Player>
-			<Position x="633.77881" z="402.19196"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="1626"/>
-		</Entity>
-		<Entity uid="2044">
-			<Template>other/farmland_40</Template>
-			<Player>1</Player>
-			<Position x="565.8288" z="375.13505"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="36140"/>
-		</Entity>
-		<Entity uid="2045">
-			<Template>other/farmland_40</Template>
-			<Player>1</Player>
-			<Position x="239.47693" z="311.67829"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="40866"/>
-		</Entity>
-		<Entity uid="2046">
-			<Template>other/farmland_40</Template>
-			<Player>1</Player>
-			<Position x="193.00538" z="335.64109"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="41176"/>
-		</Entity>
-		<Entity uid="2047">
-			<Template>other/farmland_40</Template>
-			<Player>1</Player>
-			<Position x="311.69703" z="453.00788"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="60228"/>
-		</Entity>
-		<Entity uid="2048">
-			<Template>other/farmland_20</Template>
-			<Player>1</Player>
-			<Position x="275.41266" z="505.36524"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="63846"/>
-		</Entity>
-		<Entity uid="2049">
-			<Template>other/farmland_40</Template>
-			<Player>1</Player>
-			<Position x="725.10486" z="275.1185"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="12060"/>
-		</Entity>
-		<Entity uid="2050">
-			<Template>other/farmland_20</Template>
-			<Player>1</Player>
-			<Position x="687.18824" z="278.18317"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="51634"/>
-		</Entity>
-		<Entity uid="2051">
-			<Template>other/farmland_20</Template>
-			<Player>1</Player>
-			<Position x="694.6742" z="253.56019"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="40268"/>
-		</Entity>
-		<Entity uid="2052">
-			<Template>other/farmland_20</Template>
-			<Player>1</Player>
-			<Position x="747.93335" z="307.61426"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="24324"/>
-		</Entity>
-		<Entity uid="2053">
-			<Template>other/farmland_40</Template>
-			<Player>0</Player>
-			<Position x="375.68555" z="63.38209"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="51890"/>
-		</Entity>
 		<Entity uid="2054">
 			<Template>skirmish/structures/special_starting_structure</Template>
 			<Player>2</Player>
-			<Position x="160.62635" z="205.79267"/>
+			<Position x="151.24628" z="200.14914"/>
 			<Orientation y="-5.46486"/>
 			<Actor seed="21186"/>
 		</Entity>
 		<Entity uid="2055">
 			<Template>skirmish/structures/special_starting_structure</Template>
 			<Player>1</Player>
-			<Position x="657.2049" z="516.53138"/>
+			<Position x="663.70362" z="525.55329"/>
 			<Orientation y="3.90043"/>
 			<Actor seed="47676"/>
 		</Entity>
@@ -13436,6 +13361,72 @@
 			<Position x="424.3628" z="72.02532"/>
 			<Orientation y="-9.85299"/>
 			<Actor seed="51010"/>
+		</Entity>
+		<Entity uid="2478">
+			<Template>structures/farmstead_temperate_europe</Template>
+			<Player>0</Player>
+			<Position x="374.13221" z="64.91324"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="659"/>
+		</Entity>
+		<Entity uid="2479">
+			<Template>structures/farmstead_temperate_europe</Template>
+			<Player>0</Player>
+			<Position x="218.36387" z="336.87525"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42789"/>
+		</Entity>
+		<Entity uid="2480">
+			<Template>structures/farmstead_temperate_europe</Template>
+			<Player>0</Player>
+			<Position x="319.85264" z="447.52567"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49852"/>
+		</Entity>
+		<Entity uid="2481">
+			<Template>structures/farmstead_temperate_europe</Template>
+			<Player>0</Player>
+			<Position x="268.05826" z="501.89954"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="29496"/>
+		</Entity>
+		<Entity uid="2482">
+			<Template>structures/farmstead_temperate_europe</Template>
+			<Player>0</Player>
+			<Position x="561.39136" z="375.03943"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="36721"/>
+		</Entity>
+		<Entity uid="2483">
+			<Template>structures/farmstead_temperate_europe</Template>
+			<Player>0</Player>
+			<Position x="705.24915" z="275.58713"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="40017"/>
+		</Entity>
+		<Entity uid="2484">
+			<Template>actor|particle/snow_mist.xml</Template>
+			<Position x="462.17127" z="71.02443"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="56470"/>
+		</Entity>
+		<Entity uid="2485">
+			<Template>actor|particle/snow_mist.xml</Template>
+			<Position x="461.6869" z="72.28385"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="44038"/>
+		</Entity>
+		<Entity uid="2486">
+			<Template>actor|particle/dust_storm.xml</Template>
+			<Position x="449.46363" z="63.66607"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47567"/>
+		</Entity>
+		<Entity uid="2487">
+			<Template>actor|particle/dust_storm.xml</Template>
+			<Position x="313.50104" z="687.61792"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="53291"/>
 		</Entity>
 	</Entities>
 	<Paths/>
