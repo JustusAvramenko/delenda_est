@@ -11,6 +11,7 @@ function initCivChoicesDialog()
 	if (civChoices === undefined)
 		return;
 
+	g_PauseControl.implicitPause();
 	for (const civChoice of civChoices)
 	{
 		const requirement = {
@@ -43,6 +44,7 @@ function initCivChoicesDialog()
 		civChoiceButton.onPress = (function(tech) { return function() {
 			Engine.PostNetworkCommand({ "type": "civ-choice", "template": tech });
 			Engine.GetGUIObjectByName("civChoicesDialogPanel").hidden = true;
+			g_PauseControl.implicitResume();
 		}})(civChoices[i]);
 
 		let civChoiceIcon = Engine.GetGUIObjectByName("civChoiceIcon[" + i + "]");
