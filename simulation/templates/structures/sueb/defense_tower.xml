@@ -3,10 +3,16 @@
   <Identity>
     <Civ>sueb</Civ>
     <SpecificName>Warīnīz Staupilaz</SpecificName>
-    <SelectionGroupName>structures/gaul/defense_tower</SelectionGroupName>
+    <SelectionGroupName>structures/sueb/defense_tower</SelectionGroupName>
   </Identity>
-  <Upgrade disable=""/>
+  <Upgrade>
+    <Tower>
+      <Requirements replace="">
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
   <VisualActor>
-    <Actor>structures/suebians/defense_tower.xml</Actor>
+    <Actor>structures/celts/defense_tower_wood.xml</Actor>
   </VisualActor>
 </Entity>

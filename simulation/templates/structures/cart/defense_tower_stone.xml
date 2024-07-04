@@ -1,35 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="structures/cart/defense_tower">
-  <Attack>
-    <Ranged>
-      <MaxRange>60</MaxRange>
-    </Ranged>
-  </Attack>
-  <Health>
-    <Max op="mul">2.0</Max>
-  </Health>
-  <Identity>
-    <GenericName>Stone Defense Tower</GenericName>
-    <VisibleClasses datatype="tokens">-Wood Stone</VisibleClasses>
-    <Icon>structures/defense_tower.png</Icon>
-  </Identity>
-  <Researcher>
-    <Technologies datatype="tokens">
-      pair_tower_01
-      range_defensive_loopholes
-      range_defensive_murderholes
-    </Technologies>
-  </Researcher>
-  <StatusBars>
-    <HeightOffset>20.0</HeightOffset>
-  </StatusBars>
-  <TerritoryInfluence>
-    <Radius>30</Radius>
-  </TerritoryInfluence>
-  <Upgrade disable=""/>
-  <Vision>
-    <Range>70</Range>
-  </Vision>
+<Entity parent="stone_tower|structures/cart/defense_tower">
   <VisualActor>
     <Actor>structures/carthaginians/scout_tower.xml</Actor>
     <FoundationActor>structures/carthaginians/fndn_defense_tower.xml</FoundationActor>
