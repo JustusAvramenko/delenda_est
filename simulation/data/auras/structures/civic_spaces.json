@@ -1,12 +1,12 @@
 {
 	"type": "range",
 	"radius": 60,
-	"affects": ["Gatherer"],
+	"affects": ["Gatherer", "Field"],
 	"modifications": [
-		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.0 }
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 0.5 }
 	],
 	"auraName": "Civic Spaces",
-	"auraDescription": "Neither Farm Fields nor Walls can be built around Civic Centers.",
+	"auraDescription": "Walls cannnot be built around Civic Centers and Farming −50% gathering effeciency.",
 	"overlayIcon": "art/textures/ui/session/auras/farming_penalty.png",
 	"rangeOverlay" : {
 		"lineTexture": "outline_border.png",
