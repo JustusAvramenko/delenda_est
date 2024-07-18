@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<objects>
+	<script directory="gui/common/"/>
+
+	<script directory="gui/reference/common/"/>
+	<script directory="gui/reference/common/Buttons/"/>
+
+	<script directory="gui/reference/viewer/"/>
+
+	<!-- Add a translucent black background to fade out whatever's behind this -->
+	<object type="image" sprite="BackgroundTranslucent"/>
+
+	<object type="image" sprite="ModernDialog" size="50%-250 50%-300 50%+250 50%+300">
+		<object style="TitleText" type="text" size="50%-128 -18 50%+128 14">
+			<translatableAttribute id="caption">Information</translatableAttribute>
+		</object>
+
+		<object name="entityName" type="text" size="8 16 100%-8 48" text_align="center" text_valign="top" textcolor="white"/>
+        <!-- Portrait Size and Position (Changed in Delenda Est) -->
+		<object name="entityIcon" type="image"
+			size="-64 48 200-64 200+48"
+			sprite="stretched:pregame/shell/logo/wfg_logo_white.png"
+		>
+			<object type="image" style="IconFrame"/>
+			<object type="image" style="RankGlyph" name="entityRankGlyph"/>
+		</object>
+
+		<object name="entityStats" type="text" style="ModernText" size="128+20 44 100%-8 50%" scrollbar="false"/>
+
+		<object name="entityInfo" type="text" style="ModernText" size="16 128+48+8 100%-16 100%-48"/>
+
+		<!-- Close button -->
+		<include file="gui/reference/common/Buttons/CloseButton.xml"/>
+
+	</object>
+
+</objects>
