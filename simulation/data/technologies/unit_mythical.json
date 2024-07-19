@@ -1,0 +1,18 @@
+{
+	"genericName": "Stats for Mythical units",
+	"autoResearch": true,
+	"description": "These stat modifications will be applied to Mythical units.",
+	"modifications": [
+		{ "value": "Health/Max",						"multiply": 1.2                       	},
+		{ "value": "UnitMotion/WalkSpeed",				"multiply": 1.1,  "affects": "Infantry" },
+		{ "value": "UnitMotion/WalkSpeed",				"multiply": 1.1,  "affects": "Cavalry"  },
+		{ "value": "Attack/Ranged/Damage/MaxRange",		"multiply": 1.2,  "affects": "Ranged"   },
+		{ "value": "Vision/Range",						"multiply": 1.2,  "affects": "Ranged"   },
+		{ "value": "Attack/Ranged/Projectile/Spread",	"multiply": 0.90, "affects": "Ranged"   },
+		{ "value": "Attack/Ranged/Damage/Pierce",		"multiply": 1.2,  "affects": "Melee"    },
+		{ "value": "Attack/Melee/Damage/Hack",			"multiply": 1.2,  "affects": "Melee"    },
+		{ "value": "Attack/Melee/Damage/Crush",			"multiply": 1.2,  "affects": "Melee"    },
+		{ "value": "Attack/Capture/Capture",			"multiply": 1.2                         }
+	],
+	"affects": ["Mythical Unit"]
+}

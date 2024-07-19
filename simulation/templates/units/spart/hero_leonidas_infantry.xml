@@ -80,6 +80,7 @@
   <Identity>
     <Civ>spart</Civ>
     <Lang>greek</Lang>
+    <Rank>Untested</Rank>
     <SpecificName>King Leonidas I</SpecificName>
     <Classes datatype="tokens">
       Leonidas
@@ -92,6 +93,10 @@ At the Second Greco-Persian War, Leonidas led the allied Greek forces in a last 
     <Icon>units/spart/hero_leonidas.png</Icon>
   </Identity>
   <ProductionQueue/>
+  <Promotion>
+    <RequiredXp>500</RequiredXp>
+    <Entity>units/spart/hero_leonidas_infantry_2</Entity>
+  </Promotion>
   <Researcher>
     <TechCostMultiplier>
       <food>1.0</food>
@@ -109,20 +114,6 @@ At the Second Greco-Persian War, Leonidas led the allied Greek forces in a last 
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
   </Trainer>
-  <Upgrade>
-    <Frenzy>
-      <Entity>units/spart/hero_leonidas_frenzy</Entity>
-      <Tooltip>Leonidas +100% attack and greater speed, but less armor and he continuously loses health (he dies quicker).</Tooltip>
-      <Requirements>
-        <Techs datatype="tokens">phase_city</Techs>
-      </Requirements>
-      <Cost>
-        <food>200</food>
-        <glory>200</glory>
-      </Cost>
-      <Time>10</Time>
-    </Frenzy>
-  </Upgrade>
   <VisualActor>
     <Actor>units/spartans/hero_infantry_spearman_leonidas.xml</Actor>
   </VisualActor>
