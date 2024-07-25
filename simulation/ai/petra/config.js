@@ -23,7 +23,7 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 	this.Military = {
 		"towerLapseTime": 90,	// Time to wait between building 2 towers
 		"fortressLapseTime": 300,	// Time to wait between building 2 fortresses
-		"popForBarracks1": 30,
+		"popForBarracks1": 10,
 		"popForBarracks2": 60,
 		"popForBarracks3": 80,
 		"popForShipyard": 20,
