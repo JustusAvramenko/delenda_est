@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion_infantry_swordsman">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>6</Hack>
-        <Pierce>4</Pierce>
-        <Crush>10</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Identity>
     <Civ>maur</Civ>
     <Lang>hindi</Lang>
     <SpecificName>Poison Maiden Swordsman</SpecificName>
+    <Icon>units/maur/champion_maiden.png</Icon>
     <Phenotype>female</Phenotype>
     <SelectionGroupName>units/maur/champion_maiden</SelectionGroupName>
     <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
-    <Icon>units/maur/champion_maiden.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_town
+      </Techs>
+    </Requirements>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Crush op="add">2</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Upgrade>
     <SwitchToBow>
       <Entity>units/maur/champion_maiden_archer</Entity>
