@@ -1,17 +1,21 @@
 {
 	"genericName": "Elite Citizen Spear Cavalry",
-	"description": "Promote all of your citizen-soldier spear cavalrymen to Elite rank.",
+	"description": "Promote all of your Citizen spear cavalrymen to Elite rank.",
 	"cost": {
 		"coin": 800,
 		"glory": 800
 	},
-	"requirements": { "tech": "phase_imperial" },
-	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"requirements": {
+		"tech": "phase_imperial"
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Spear Cavalry.”",
 	"icon": "upgrade_elite_cavalry.png",
 	"researchTime": 40,
 	"supersedes": "upgrade_rank_advanced_cavalry_spear",
-	"tooltip": "Promote all of your citizen-soldier spear cavalrymen to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.",
-	"modifications": [{ "value": "Promotion/RequiredXp", "replace": 0 }],
+	"tooltip": "Promote all of your Citizen Spear Cavalrymen to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
 	"affects": ["Spear Cavalry Advanced"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
