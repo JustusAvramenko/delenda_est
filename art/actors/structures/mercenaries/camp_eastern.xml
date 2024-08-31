@@ -2,11 +2,11 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="Egyptian Mercenary Camp">
+    <variant frequency="100" name="Eastern Mercenary Camp">
       <mesh>structural/ptol_settlement_palisade.dae</mesh>
       <props>
         <prop actor="props/special/eyecandy/campfire_prop.xml" attachpoint="campfire" minheight="-20" maxheight="20"/>
-        <prop actor="props/structures/ptolemies/settlement_campfire.xml" attachpoint="campfire" minheight="-20" maxheight="20"/>        
+        <prop actor="props/structures/ptolemies/settlement_campfire.xml" attachpoint="campfire" minheight="-20" maxheight="20"/>
         <prop actor="structures/persians/wooden_tower.xml" attachpoint="outpost" minheight="-20" maxheight="20"/>
         <prop actor="structures/tent_arab.xml" attachpoint="greektent" minheight="-20" maxheight="20"/>
         <prop actor="props/structures/ptolemies/settlement_arabtent.xml" attachpoint="arabtent" minheight="-20" maxheight="20"/>
@@ -21,14 +21,6 @@
         <texture file="props/palisade_main_spec.png" name="specTex"/>
         <texture file="structural/ao/ptol_settlement.png" name="aoTex"/>
       </textures>
-    </variant>
-  </group>
-  <group>
-    <variant name="ungarrisoned" frequency="1"/>
-    <variant name="garrisoned">
-      <props>
-        <prop actor="props/special/common/garrison_flag_ptol.xml" attachpoint="garrisoned"/>
-      </props>
     </variant>
   </group>
   <material>player_trans_ao_parallax_spec.xml</material>
