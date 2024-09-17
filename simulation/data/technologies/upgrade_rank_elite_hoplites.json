@@ -12,7 +12,17 @@
 		"glory": 600
 	},
 	"requirements": {
-		"tech": "phase_imperial"
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "spart" },
+					{ "civ": "syrac" },
+					{ "civ": "theb" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Hoplites.”",
 	"icon": "upgrade_elite.png",
