@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_wonder">
-  <Capturable/>
+<Entity parent="template_structure_wonder_capture">
   <Footprint>
     <Square width="37" depth="45"/>
     <Height>36</Height>
   </Footprint>
-  <GarrisonHolder disable="" />
-  <Health disable="" />
   <Identity>
     <GenericName>Mausoleum at Halicarnassus</GenericName>
     <SpecificName>Mausōleion</SpecificName>
@@ -14,12 +11,11 @@
   <Obstruction>
     <Static width="36" depth="44"/>
   </Obstruction>
-  <Resistance replace="" />
   <StatusBars>
     <HeightOffset>37</HeightOffset>
   </StatusBars>
   <VisualActor>
     <FoundationActor>structures/fndn_10x10.xml</FoundationActor>
-    <Actor>structures/global/mausoleum.xml</Actor>
+    <Actor>structures/wonders/mausoleum.xml</Actor>
   </VisualActor>
 </Entity>
