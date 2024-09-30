@@ -1,11 +1,13 @@
 {
+	"auraName": "Homefront",
 	"type": "global",
-	"requirements": {"tech": "phase_city"},
-	"affects": ["CivilCentre"],
+	"auraDescription": "Civic Centers +25% loyalty as long as Gorgo lives.",
+	"overlayIcon": "art/textures/ui/session/auras/laurel.png",
+	"requirements": {
+		"tech": "phase_city"
+	},
 	"modifications": [
 		{ "value": "Capturable/CapturePoints", "multiply": 1.25 }
 	],
-	"auraName": "Homefront",
-	"auraDescription": "Civic Centers +25% loyalty as long as Gorgo lives.",
-	"overlayIcon": "art/textures/ui/session/auras/laurel.png"
+	"affects": ["CivilCentre"]
 }
