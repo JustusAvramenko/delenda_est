@@ -1,0 +1,31 @@
+{
+	"supersedes": "forge/attack_ranged_pierce_02",
+	"genericName": "Trilobate Arrowheads",
+	"description": "Arrowheads with three lobes instead of two inflict larger, deeper wounds.",
+	"cost": {
+		"metal": 600,
+		"glory": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "tech": "forge/techs_forge_cost" },
+					{ "tech": "forge/techs_forge_speed" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Forging” or “Metallurgy.”",
+	"icon": "arrows_trilobate.png",
+	"researchTime": 60,
+	"tooltip": "Ranged Soldiers and Buildings +20% attack damage.",
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.2 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.2 }
+	],
+	"affects": ["Ranged !Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

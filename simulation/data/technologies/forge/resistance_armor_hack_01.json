@@ -1,0 +1,43 @@
+{
+	"genericName": "Leather Body Armor",
+	"specificName": {
+		"generic": "Spolas",
+		"hele": "Spolas",
+		"mace": "Spolas",
+		"spart": "Spolas",
+		"athen": "Spolas",
+		"pers": "Spolas",
+		"rome": "Spolas",
+		"cart": "Spolas",
+		"iber": "Spolas",
+		"maur": "Spolas",
+		"celt": "Spolas",
+		"brit": "Spolas",
+		"gaul": "Spolas"
+	},
+	"description": "Body armor for soldiers, made from layers of leather stitched and/or glued together.",
+	"cost": {
+		"food": 300,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{
+				"any": [
+					{ "tech": "forge/techs_forge_cost" },
+					{ "tech": "forge/techs_forge_speed" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase. Requires “Forging” or “Metallurgy.”",
+	"icon": "armor_leather.png",
+	"researchTime": 60,
+	"tooltip": "Infantry and Cavalry +1 hack armor level. Unlocks “Laminated Linen Body Armor.”",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 }
+	],
+	"affects": ["Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,39 @@
+{
+	"genericName": "Side Arms",
+	"specificName": {
+		"hele": "Xíphos",
+		"mace": "Xíphos",
+		"spart": "Xíphos",
+		"athen": "Xíphos",
+		"sele": "Xíphos",
+		"ptol": "Xíphos",
+		"theb": "Xíphos",
+		"rome": "Pugio",
+		"imp": "Pugio",
+		"pers": "Akinakes",
+		"scyth": "Akinakes"
+	},
+	"description": "Often, a soldier would carry a secondary weapon in addition to his primary weapon of choice, to be drawn when the primary weapon has failed or been broken. The Greek “Xiphos” was a short sword with a leaf-shaped blade used primarily for hacking and stabbing. The Roman “Pugio” was a broad-bladed dagger, usually stored in an ornately decorated sheathe. The “Akinakes” had a short triangular-shaped blade and was wielded by high-ranking Scythians and Persians.",
+	"cost": {
+		"metal": 300,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any": [
+				{ "tech": "forge/techs_forge_cost" },
+				{ "tech": "forge/techs_forge_speed" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase. Requires “Forging” or “Metallurgy.”",
+	"icon": "sword_pugio.png",
+	"researchTime": 60,
+	"tooltip": "Melee Infantry and Cavalry +10% hack attack. Unlocks “Blade Carburization.”",
+	"modifications": [
+		{ "value": "Attack/Melee/Hack", "multiply": 1.1 }
+	],
+	"affects": ["Melee Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

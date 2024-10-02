@@ -1,0 +1,37 @@
+{
+	"supersedes": "forge/resistance_shield_pierce_01",
+	"genericName": "Reinforced Shields",
+	"specificName": {
+		"hele": "Aspides",
+		"mace": "Aspides",
+		"spart": "Aspides",
+		"athen": "Aspides",
+		"ptol": "Aspides",
+		"sele": "Aspides"
+	},
+	"description": "The best shields have reinforcements either on the corners (Roman scutum) or around the rim (Greek aspis).",
+	"cost": {
+		"metal": 400,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "tech": "forge/techs_forge_cost" },
+					{ "tech": "forge/techs_forge_speed" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase. Requires “Forging” or “Metallurgy.”",
+	"icon": "shields_generic_bronze.png",
+	"researchTime": 60,
+	"tooltip": "Infantry and Cavalry +1 pierce armor level. Unlocks “Bronze Shield Facings.”",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1.0 }
+	],
+	"affects": ["Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

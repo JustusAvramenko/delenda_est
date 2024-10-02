@@ -1,0 +1,31 @@
+{
+	"supersedes": "forge/attack_ranged_pierce_01",
+	"genericName": "Iron Arrowheads",
+	"description": "Projectile points made of iron enable missiles to penetrate deeper.",
+	"cost": {
+		"metal": 400,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "tech": "forge/techs_forge_cost" },
+					{ "tech": "forge/techs_forge_speed" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase. Requires “Forging” or “Metallurgy.”",
+	"icon": "arrow.png",
+	"researchTime": 60,
+	"tooltip": "Ranged Soldiers and Buildings +15% attack damage. Unlocks “Trilobate Arrowheads.”",
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.15 }
+	],
+	"affects": ["Ranged !Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

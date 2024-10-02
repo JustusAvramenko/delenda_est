@@ -1,0 +1,37 @@
+{
+	"supersedes": "forge/resistance_shield_pierce_02",
+	"genericName": "Bronze Shield Facings",
+	"specificName": {
+		"hele": "Chalkaspides",
+		"mace": "Chrysaspides",
+		"spart": "Chalkaspides",
+		"athen": "Chalkaspides",
+		"ptol": "Chalkaspides",
+		"sele": "Chalkaspides"
+	},
+	"description": "A bronze skin hammered over the face of the shield.",
+	"cost": {
+		"metal": 600,
+		"glory": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "tech": "forge/techs_forge_cost" },
+					{ "tech": "forge/techs_forge_speed" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Forging” or “Metallurgy.”",
+	"icon": "shields_generic_gold.png",
+	"researchTime": 60,
+	"tooltip": "Infantry and Cavalry +1 pierce armor level.",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1.0 }
+	],
+	"affects": ["Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

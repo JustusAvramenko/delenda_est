@@ -1,0 +1,29 @@
+{
+	"supersedes": "forge/attack_melee_hack_01",
+	"genericName": "Blade Carburization",
+	"description": "By adding a small amount of carbon during the iron smelting process, a stronger material, steel, can be forged.",
+	"cost": {
+		"metal": 400,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "tech": "forge/techs_forge_cost" },
+					{ "tech": "forge/techs_forge_speed" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase. Requires “Forging” or “Metallurgy.”",
+	"icon": "sword_xiphos_01.png",
+	"researchTime": 60,
+	"tooltip": "Melee Infantry and Cavalry +10% hack attack. Unlocks “Differential Quenching.”",
+	"modifications": [
+		{ "value": "Attack/Melee/Hack", "multiply": 1.1 }
+	],
+	"affects": ["Melee Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
