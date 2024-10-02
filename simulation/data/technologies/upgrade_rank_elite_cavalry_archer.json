@@ -6,7 +6,15 @@
 		"glory": 400
 	},
 	"requirements": {
-		"tech": "phase_empire"
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "han" },
+					{ "civ": "ptol" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Archer Cavalry.”",
 	"icon": "upgrade_elite_cavalry.png",

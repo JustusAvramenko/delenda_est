@@ -7,7 +7,16 @@
 		"glory": 400
 	},
 	"requirements": {
-		"tech": "phase_empire"
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "pers" },
+					{ "civ": "scyth" },
+					{ "civ": "xion" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Cavalry.”",
 	"icon": "upgrade_elite_cavalry.png",

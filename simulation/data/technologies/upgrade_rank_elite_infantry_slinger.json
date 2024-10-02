@@ -12,7 +12,21 @@
 		"glory": 600
 	},
 	"requirements": {
-		"tech": "phase_empire"
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "brit" },
+					{ "civ": "gaul" },
+					{ "civ": "iber" },
+					{ "civ": "ptol" },
+					{ "civ": "spart" },
+					{ "civ": "sueb" },
+					{ "civ": "theb" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Slinger Infantry.”",
 	"icon": "upgrade_elite.png",

@@ -12,7 +12,15 @@
 		"glory": 800
 	},
 	"requirements": {
-		"tech": "phase_empire"
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "yayo" },
+					{ "civ": "zapo" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Ranged Infantry.”",
 	"icon": "upgrade_elite.png",

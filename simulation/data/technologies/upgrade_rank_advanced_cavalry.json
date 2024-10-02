@@ -6,7 +6,16 @@
 		"glory": 700
 	},
 	"requirements": {
-		"tech": "phase_city"
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "pers" },
+					{ "civ": "scyth" },
+					{ "civ": "xion" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "upgrade_advanced_cavalry.png",

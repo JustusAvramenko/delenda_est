@@ -12,7 +12,14 @@
 		"glory": 600
 	},
 	"requirements": {
-		"tech": "phase_empire"
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "han" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Crossbow Infantry.”",
 	"icon": "upgrade_elite.png",

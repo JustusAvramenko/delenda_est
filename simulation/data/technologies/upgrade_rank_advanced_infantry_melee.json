@@ -12,7 +12,15 @@
 		"glory": 800
 	},
 	"requirements": {
-		"tech": "phase_city"
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "yayo" },
+					{ "civ": "zapo" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "upgrade_advanced.png",

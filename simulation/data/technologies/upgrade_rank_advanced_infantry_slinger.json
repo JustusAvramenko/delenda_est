@@ -12,7 +12,21 @@
 		"glory": 300
 	},
 	"requirements": {
-		"tech": "phase_city"
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "brit" },
+					{ "civ": "gaul" },
+					{ "civ": "iber" },
+					{ "civ": "ptol" },
+					{ "civ": "spart" },
+					{ "civ": "sueb" },
+					{ "civ": "theb" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "upgrade_advanced.png",

@@ -15,7 +15,19 @@
 		"glory": 600
 	},
 	"requirements": {
-		"tech": "phase_empire"
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "epir" },
+					{ "civ": "han" },
+					{ "civ": "kush" },
+					{ "civ": "mace" },
+					{ "civ": "ptol" },
+					{ "civ": "spart" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Pike Infantry.”",
 	"icon": "upgrade_elite.png",

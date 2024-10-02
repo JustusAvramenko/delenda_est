@@ -6,7 +6,20 @@
 		"glory": 800
 	},
 	"requirements": {
-		"tech": "phase_empire"
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "brit" },
+					{ "civ": "gaul" },
+					{ "civ": "han" },
+					{ "civ": "imp" },
+					{ "civ": "maur" },
+					{ "civ": "syrac" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Sword Cavalry.”",
 	"icon": "upgrade_elite_cavalry.png",

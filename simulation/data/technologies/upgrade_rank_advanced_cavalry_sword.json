@@ -6,7 +6,20 @@
 		"glory": 400
 	},
 	"requirements": {
-		"tech": "phase_city"
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "brit" },
+					{ "civ": "gaul" },
+					{ "civ": "han" },
+					{ "civ": "imp" },
+					{ "civ": "maur" },
+					{ "civ": "syrac" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "upgrade_advanced_cavalry.png",

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_special">
+<Entity parent="template_structure_military_barracks">
   <BuildRestrictions>
     <Category>Syssition</Category>
   </BuildRestrictions>
@@ -24,42 +24,32 @@
     <GenericName>Military Mess Hall</GenericName>
     <SpecificName>Syssition</SpecificName>
     <VisibleClasses datatype="tokens">
-      Military
-      Village
       Special
       Syssition
-      Barracks
-      -City
     </VisibleClasses>
     <Tooltip>Train hoplite units such as Perioikoi Hoplites and Spartiate champion infantry, and Spartan heroes.</Tooltip>
     <Icon>structures/syssition.png</Icon>
-    <Requirements>
-      <Techs>phase_village</Techs>
-    </Requirements>
   </Identity>
   <Obstruction>
     <Static width="16.0" depth="26.0"/>
   </Obstruction>
+  <Population>
+    <Bonus>5</Bonus>
+  </Population>
   <Researcher>
     <Technologies datatype="tokens">
+      -upgrade_rank_advanced_infantry_pike
+      -upgrade_rank_elite_infantry_pike
       spartans/speed_tyrtean_paeans
       spartans/special_agoge
       spartans/special_krypteia
       spartans/health_infantry
-      spartans/pair_champions_01
     </Technologies>
   </Researcher>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_barracks.xml</select>
-      <constructed>interface/complete/building/complete_barracks.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-    </SoundGroups>
-  </Sound>
   <Trainer>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/spart/infantry_hoplite_b
+      -units/{civ}/infantry_spearman_b
+      -units/{civ}/infantry_pikeman_b
       units/spart/champion_infantry_hoplite
     </Entities>
   </Trainer>
