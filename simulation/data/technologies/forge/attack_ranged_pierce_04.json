@@ -1,0 +1,34 @@
+{
+	"supersedes": "forge/attack_ranged_pierce_03",
+	"genericName": "Recurved Composite Bows",
+	"description": "The Eastern peoples such as the Persians and Scythians used recurved composite bows which had greater fire power than the straight bows typically used by Western peoples such as the Greeks, Gauls, and Romans.",
+	"cost": {
+		"wood": 1200,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "pers" },
+					{ "civ": "scyth" },
+					{ "civ": "sele" },
+					{ "civ": "xion" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "bow_recurved.png",
+	"researchTime": 60,
+	"tooltip": "Ranged Soldiers, Buildings, and Warships +10% attack damage and +4 range.",
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.1 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.1 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.1 },
+		{ "value": "Attack/Ranged/MaxRange", "add": 4.0 }
+	],
+	"affects": ["Ranged !Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

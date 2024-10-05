@@ -1,0 +1,45 @@
+{
+	"supersedes": "forge/resistance_shield_pierce_03",
+	"genericName": "State-Issued Shield Devices",
+	"specificName": {
+		"hele": "Chalkaspides",
+		"mace": "Chrysaspides",
+		"spart": "Chalkaspides",
+		"athen": "Chalkaspides",
+		"ptol": "Chalkaspides",
+		"sele": "Chalkaspides"
+	},
+	"description": "Hellenic states provided shields to their standing armies at great cost. Only the most celebrated soldiers had shields faced with silver, as did the famous “Silver Shields” regiment in Alexander the Great's army. Other polities, like Sparta, provided a state-issued shield to all of their soldiers, but in Sparta's case, only upon completion of the rigorous Spartan military training regimen, The Agoge.",
+	"cost": {
+		"metal": 800,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "epir" },
+					{ "civ": "mace" },
+					{ "civ": "ptol" },
+					{ "civ": "rome" },
+					{ "civ": "sele" },
+					{ "civ": "spart" },
+					{ "civ": "syrac" },
+					{ "civ": "theb" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Forging” or “Metallurgy.”",
+	"icon": "shields_hellenes.png",
+	"researchTime": 60,
+	"tooltip": "Champions and Heroes +1 pierce armor level, but also +10 coin cost. Does not apply to Elephant units.",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1.0 },
+		{ "value": "Cost/Resources/coin", "add": 10 }
+	],
+	"affects": ["Champion !Elephant", "Hero !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
