@@ -1,0 +1,34 @@
+{
+	"supersedes": "forge/attack_melee_hack_03",
+	"genericName": "Steel Working",
+	"specificName": {
+		"maur": "Wootz Steel",
+		"iber": "Toledo Steel"
+	},
+	"description": "Secret steel working techniques give sword blades distinctive and beautiful markings. Not only that, but the steel's hardness is unparalleled.",
+	"cost": {
+		"metal": 800,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "maur" },
+					{ "civ": "iber" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "metalworker.png",
+	"researchTime": 60,
+	"tooltip": "Sword and Axe Units +20% attack, but +10 metal cost.",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.2 },
+		{ "value": "Cost/Resources/metal", "add": 10 }
+	],
+	"affects": ["Sword"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
