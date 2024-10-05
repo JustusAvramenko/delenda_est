@@ -1,0 +1,38 @@
+{
+	"genericName": "Elite Citizen Axe Infantry",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Zeugites",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your citizen swordsmen to Elite rank.",
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "cimb" },
+					{ "civ": "scyth" },
+					{ "civ": "sueb" },
+					{ "civ": "thrac" },
+					{ "civ": "xion" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Axe Infantry.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"supersedes": "upgrade_rank_advanced_infantry_axe",
+	"tooltip": "Upgrade all of your Citizen Axe Infantry to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Axe Infantry Advanced"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
