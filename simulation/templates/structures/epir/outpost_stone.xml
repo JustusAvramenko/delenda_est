@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="structures/epir/outpost">
-  <Health>
-    <Max op="mul">2.0</Max>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
-  </Health>
+<Entity parent="stone_outpost|structures/epir/outpost">
   <Identity>
-    <Civ>epir</Civ>
-    <GenericName>Stone Outpost</GenericName>
     <SpecificName>Karavokyrós</SpecificName>
-    <VisibleClasses datatype="tokens">-Village Town -Wood Stone</VisibleClasses>
-    <Icon>structures/sentry_tower.png</Icon>
   </Identity>
-  <TerritoryDecay disable=""/>
-  <Upgrade disable=""/>
   <VisualActor>
     <Actor>structures/hellenes/wooden_tower.xml</Actor>
   </VisualActor>
