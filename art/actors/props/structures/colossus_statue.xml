@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Colossus of Rhodes">
+      <mesh>structural/colossus_statue.dae</mesh>
+      <textures>
+        <texture file="structural/colossus_diffuse.png" name="baseTex"/>
+        <texture file="structural/specular_bronze.png" name="specTex"/>
+        <texture file="structural/colossus_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant file="structures/destruction_small.xml"/>
+  </group>
+  <material>no_trans_norm_spec.xml</material>
+</actor>

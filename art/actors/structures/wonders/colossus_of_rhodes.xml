@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Colossus of Rhodes">
+      <mesh>structural/colossus_pedestal.dae</mesh>
+      <props>
+        <prop actor="props/structures/colossus_statue.xml" attachpoint="statue"/>
+        <prop actor="props/structures/colossus_mural.xml" attachpoint="root"/>
+        <prop actor="props/structures/colossus_door.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/hele_struct.dds" name="baseTex"/>
+        <texture file="structural/hele_struct_spec.png" name="specTex"/>
+        <texture file="structural/hele_struct_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant file="structures/destruction_medium.xml"/>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

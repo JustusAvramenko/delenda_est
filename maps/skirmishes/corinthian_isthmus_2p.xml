@@ -15,8 +15,8 @@
 		<Water>
 			<WaterBody>
 				<Type>ocean</Type>
-				<Color r="0.172549" g="0.282353" b="0.454902"/>
-				<Tint r="0.133333" g="1" b="0.741176"/>
+				<Color r="0.164706" g="0.282353" b="0.454902"/>
+				<Tint r="0.129412" g="1" b="0.737255"/>
 				<Height>19.6197</Height>
 				<Waviness>7.12891</Waviness>
 				<Murkiness>0.787109</Murkiness>
@@ -32,7 +32,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="557.921" y="101.194" z="366.138"/>
+		<Position x="541.676" y="91.5531" z="387.153"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -41,24 +41,21 @@
   "AISeed": 0,
   "AllyView": false,
   "CircularMap": true,
-  "Description": "Two Mediterranean land masses connected by a narrow spit of land, called an 'Isthmus'.",
-  "Keywords": [],
+  "Description": "Capture the \"Colossus of Rhodes\" to win by Wonder victory.",
+  "Keywords": [
+    "new"
+  ],
   "LockTeams": false,
-  "Name": "Corinthian Isthmus (2 players)",
+  "Name": "Capture the Colossus (2 players)",
   "PlayerData": [
     "",
-    {
-      "Name": "Player 1"
-    },
-    {
-      "Name": "Player 2"
-    }
+    {},
+    {}
   ],
   "Preview": "corinthian_isthmus_2p.png",
   "RevealMap": false,
   "VictoryConditions": [
-    "conquest_civic_centers",
-    "domination"
+    "wonder"
   ]
 }
 ]]></ScriptSettings>
@@ -162,7 +159,7 @@
 		<Entity uid="35">
 			<Template>gaia/tree/carob</Template>
 			<Player>0</Player>
-			<Position x="571.28998" z="477.19495"/>
+			<Position x="569.96454" z="470.52091"/>
 			<Orientation y="3.00403"/>
 		</Entity>
 		<Entity uid="41">
@@ -792,7 +789,7 @@
 		<Entity uid="198">
 			<Template>gaia/tree/carob</Template>
 			<Player>0</Player>
-			<Position x="559.42005" z="478.98618"/>
+			<Position x="575.65754" z="470.69532"/>
 			<Orientation y="0.56466"/>
 		</Entity>
 		<Entity uid="203">
@@ -1728,7 +1725,7 @@
 		<Entity uid="483">
 			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
-			<Position x="529.28217" z="472.2038"/>
+			<Position x="526.86402" z="479.93131"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="520">
@@ -4494,14 +4491,14 @@
 		<Entity uid="1114">
 			<Template>gaia/fish/tuna</Template>
 			<Player>0</Player>
-			<Position x="484.66517" z="551.0777"/>
+			<Position x="486.32383" z="547.54151"/>
 			<Orientation y="-1.51203"/>
 			<Actor seed="62306"/>
 		</Entity>
 		<Entity uid="1115">
 			<Template>gaia/fish/tuna</Template>
 			<Player>0</Player>
-			<Position x="556.00684" z="555.47461"/>
+			<Position x="557.83356" z="560.62647"/>
 			<Orientation y="0.31116"/>
 			<Actor seed="1348"/>
 		</Entity>
@@ -14181,7 +14178,7 @@
 		<Entity uid="2686">
 			<Template>gaia/tree/bush_mediterranean</Template>
 			<Player>0</Player>
-			<Position x="537.54175" z="486.69239"/>
+			<Position x="531.13117" z="482.98371"/>
 			<Orientation y="1.18078"/>
 			<Actor seed="54176"/>
 		</Entity>
@@ -15692,13 +15689,6 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="37195"/>
 		</Entity>
-		<Entity uid="2925">
-			<Template>structures/merc/camp_greek</Template>
-			<Player>0</Player>
-			<Position x="547.81385" z="458.45981"/>
-			<Orientation y="-1.73719"/>
-			<Actor seed="64845"/>
-		</Entity>
 		<Entity uid="2926">
 			<Template>gaia/tree/bush_mediterranean</Template>
 			<Player>0</Player>
@@ -16815,7 +16805,7 @@
 		<Entity uid="3085">
 			<Template>gaia/treasure/wood_shipwreck_ram_bow</Template>
 			<Player>0</Player>
-			<Position x="536.55146" z="519.95539"/>
+			<Position x="527.2494" z="519.07862"/>
 			<Orientation y="-2.33126"/>
 			<Actor seed="28255"/>
 		</Entity>
@@ -17057,20 +17047,6 @@
 			<Orientation y="-1.18191"/>
 			<Actor seed="54462"/>
 		</Entity>
-		<Entity uid="3120">
-			<Template>units/mercenaries/greek/infantry_3</Template>
-			<Player>0</Player>
-			<Position x="552.76301" z="438.79773"/>
-			<Orientation y="3.03293"/>
-			<Actor seed="52837"/>
-		</Entity>
-		<Entity uid="3121">
-			<Template>units/mercenaries/greek/infantry_3</Template>
-			<Player>0</Player>
-			<Position x="551.46143" z="435.2992"/>
-			<Orientation y="-3.47284"/>
-			<Actor seed="61277"/>
-		</Entity>
 		<Entity uid="3122">
 			<Template>units/mercenaries/greek/infantry_3</Template>
 			<Player>0</Player>
@@ -17083,13 +17059,6 @@
 			<Player>0</Player>
 			<Position x="541.0677" z="436.58536"/>
 			<Orientation y="2.90708"/>
-			<Actor seed="20808"/>
-		</Entity>
-		<Entity uid="3124">
-			<Template>units/mercenaries/greek/infantry_3</Template>
-			<Player>0</Player>
-			<Position x="547.54981" z="438.02402"/>
-			<Orientation y="3.02279"/>
 			<Actor seed="20808"/>
 		</Entity>
 		<Entity uid="3126">
@@ -17105,20 +17074,6 @@
 			<Position x="562.73829" z="434.5511"/>
 			<Orientation y="3.0992"/>
 			<Actor seed="10688"/>
-		</Entity>
-		<Entity uid="3130">
-			<Template>units/mercenaries/greek/infantry_2</Template>
-			<Player>0</Player>
-			<Position x="556.0954" z="435.0326"/>
-			<Orientation y="-3.09464"/>
-			<Actor seed="59793"/>
-		</Entity>
-		<Entity uid="3132">
-			<Template>units/mercenaries/greek/infantry_2</Template>
-			<Player>0</Player>
-			<Position x="558.70594" z="434.86503"/>
-			<Orientation y="2.9953"/>
-			<Actor seed="58471"/>
 		</Entity>
 		<Entity uid="3133">
 			<Template>units/mercenaries/greek/infantry_2</Template>
@@ -17158,16 +17113,78 @@
 		<Entity uid="3138">
 			<Template>vision_revealers/30_meters</Template>
 			<Player>1</Player>
-			<Position x="547.68409" z="455.68314"/>
+			<Position x="547.5652" z="460.00397"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55976"/>
 		</Entity>
 		<Entity uid="3139">
 			<Template>vision_revealers/30_meters</Template>
 			<Player>2</Player>
-			<Position x="546.88202" z="458.06373"/>
+			<Position x="547.6324" z="460.33765"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18605"/>
+		</Entity>
+		<Entity uid="3140">
+			<Template>structures/wonders/colossus_of_rhodes</Template>
+			<Player>0</Player>
+			<Position x="547.41034" z="461.58252"/>
+			<Orientation y="3.54348"/>
+			<Actor seed="35312"/>
+		</Entity>
+		<Entity uid="3141">
+			<Template>units/mace/infantry_slinger_b</Template>
+			<Player>0</Player>
+			<Position x="547.87" z="440.23292"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="26543"/>
+		</Entity>
+		<Entity uid="3142">
+			<Template>units/mace/infantry_slinger_a</Template>
+			<Player>0</Player>
+			<Position x="551.87684" z="440.17536"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="24263"/>
+		</Entity>
+		<Entity uid="3143">
+			<Template>units/mace/infantry_slinger_e</Template>
+			<Player>0</Player>
+			<Position x="555.42481" z="436.43641"/>
+			<Orientation y="-2.99923"/>
+			<Actor seed="65254"/>
+		</Entity>
+		<Entity uid="3144">
+			<Template>units/mace/infantry_slinger_e</Template>
+			<Player>0</Player>
+			<Position x="550.50312" z="435.88498"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46736"/>
+		</Entity>
+		<Entity uid="3145">
+			<Template>units/mace/infantry_slinger_a</Template>
+			<Player>0</Player>
+			<Position x="545.00239" z="440.51197"/>
+			<Orientation y="-2.78875"/>
+			<Actor seed="36437"/>
+		</Entity>
+		<Entity uid="3146">
+			<Template>actor|props/structures/decals/paving_tile_aegean_7x7_round.xml</Template>
+			<Position x="546.62653" z="460.71863"/>
+			<Orientation y="-2.66877"/>
+			<Actor seed="61005"/>
+		</Entity>
+		<Entity uid="3147">
+			<Template>gaia/ruins/column_doric</Template>
+			<Player>0</Player>
+			<Position x="529.7339" z="458.54789"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="8609"/>
+		</Entity>
+		<Entity uid="3148">
+			<Template>gaia/ruins/column_doric</Template>
+			<Player>0</Player>
+			<Position x="563.10804" z="463.7953"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37442"/>
 		</Entity>
 	</Entities>
 	<Paths/>
