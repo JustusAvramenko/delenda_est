@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Stable">
+      <mesh>structural/hele_stable.dae</mesh>
+      <props>
+        <prop actor="props/structures/hellenes/stable_1.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/stable_2.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/stable_struct.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/stable_horse_c.xml" attachpoint="horse_1" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/hellenes/stable_horse_b.xml" attachpoint="horse_2" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/hellenes/stable_horse_a.xml" attachpoint="horse" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/decals/hele_corral_mud.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/hele_struct_b.png" name="baseTex"/>
+        <texture file="structural/hele_struct_b_norm.png" name="normTex"/>
+        <texture file="structural/hele_struct_b_spec.png" name="specTex"/>
+        <texture file="structural/ao/hele_stable.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_hele.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="upgrading">
+      <props>
+        <prop actor="props/structures/construction/scaf_6x3.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant file="structures/destruction_medium.xml">
+      <props>
+        <prop actor="props/structures/hellenes/stable_1.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/stable_2.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/stable_struct.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
