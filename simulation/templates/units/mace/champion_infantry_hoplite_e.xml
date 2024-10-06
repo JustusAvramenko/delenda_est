@@ -16,6 +16,12 @@
       </Damage>
     </Melee>
   </Attack>
+  <Cost>
+    <Resources>
+      <food op="add">20</food>
+      <coin op="add">20</coin>
+    </Resources>
+  </Cost>
   <Health>
     <Max op="mul">1.1</Max>
   </Health>
@@ -23,6 +29,12 @@
     <SpecificName>Silver Shield Guardsman</SpecificName>
     <Icon>units/mace/champion_argyraspidai.png</Icon>
     <SelectionGroupName>units/mace/champion_infantry_e</SelectionGroupName>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        macedonians/upgrade_silvershields
+      </Techs>
+    </Requirements>
   </Identity>
   <Upgrade disable=""/>
   <VisualActor>
