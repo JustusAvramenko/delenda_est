@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Athena_Parthenos_small">
+      <mesh>structural/athena_parthenos_small.dae</mesh>
+      <textures>
+        <texture file="structural/athena_parthenos_large.png" name="baseTex"/>
+        <texture file="structural/athena_parthenos_large_spec.png" name="specTex"/>
+        <texture file="structural/athena_parthenos_large_norm.png" name="normTex"/>
+        <texture file="structural/ao/athena_parthenos_large.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant file="structures/destruction_small.xml"/>
+  </group>
+  <material>no_trans_ao_parallax_spec.xml</material>
+</actor>
