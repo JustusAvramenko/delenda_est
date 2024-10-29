@@ -1933,6 +1933,30 @@ function getCommandInfo(command, entStates)
 		g_EntityCommands[command].getInfo(entStates);
 }
 
+function displayFlare(position, playerGUID)
+{
+	const playerID = g_PlayerAssignments[playerGUID].player;
+	Engine.GuiInterfaceCall("AddTargetMarker", {
+		"template": g_TargetMarker.map_flare,
+		"x": position.x,
+		"z": position.z,
+		"owner": playerID
+	});
+	g_MiniMapPanel.flare(position, playerID);
+	addChatMessage({
+		"type": "flare",
+		"guid": playerGUID,
+		"position": position
+	});
+}
+
+function getCommandInfo(command, entStates)
+{
+	return entStates && g_EntityCommands[command] &&
+		allowedPlayersCheck(entStates, g_EntityCommands[command].allowedPlayers) &&
+		g_EntityCommands[command].getInfo(entStates);
+}
+
 function getActionInfo(action, target, selection)
 {
 	if (!selection || !selection.length || !GetEntityState(selection[0]))
