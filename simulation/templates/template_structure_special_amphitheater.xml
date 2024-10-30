@@ -1,61 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
   <Auras datatype="tokens">
-    structures/hellenization
+    structures/romanization
   </Auras>
   <BuildRestrictions>
-    <Category>Theater</Category>
+    <Category>Ampitheater</Category>
   </BuildRestrictions>
-  <Capturable>
-    <CapturePoints>2000</CapturePoints>
-    <RegenRate>2</RegenRate>
-    <GarrisonRegenRate>3</GarrisonRegenRate>
-  </Capturable>
   <Cost>
-    <BuildTime>500</BuildTime>
+    <BuildTime>800</BuildTime>
     <Resources>
       <stone>500</stone>
+      <metal>0</metal>
       <glory>500</glory>
     </Resources>
   </Cost>
   <Footprint replace="">
-    <Circle radius="24.0"/>
-    <Height>10.0</Height>
+    <Square width="66.0" depth="90.0"/>
+    <Height>20.0</Height>
   </Footprint>
   <GarrisonHolder>
     <Max>30</Max>
     <BuffHeal>0</BuffHeal>
   </GarrisonHolder>
   <Health>
-    <Max>1500</Max>
+    <Max>2000</Max>
   </Health>
   <Identity>
-    <Civ>gaia</Civ>
-    <GenericName>Greek Theater</GenericName>
-    <SpecificName>Theatron</SpecificName>
+    <GenericName>Amphitheater</GenericName>
+    <SelectionGroupName>template_structure_special_amphitheater</SelectionGroupName>
     <Classes datatype="tokens">
       -ConquestCritical
       CivSpecific
       CapturableBuilding
     </Classes>
     <VisibleClasses datatype="tokens">
-      Theater
+      Amphitheater
       Capturable
     </VisibleClasses>
-    <Tooltip>Build a theater to increase the territory influence of your Buildings.</Tooltip>
-    <Icon>structures/theater.png</Icon>
+    <Tooltip>Build an Amphitheater to increase the territory influence of your Buildings.</Tooltip>
+    <Icon>structures/embassy_italic.png</Icon>
   </Identity>
   <Loot>
     <xp>300</xp>
     <glory>300</glory>
   </Loot>
-  <Minimap>
-    <Type>structure</Type>
-    <Icon size="32.0">theater.png</Icon>
-  </Minimap>
   <Obstruction>
-    <Static width="46.0" depth="46.0"/>
+    <Static width="62" depth="86"/>
   </Obstruction>
+  <ProductionQueue/>
   <Selectable>
     <Overlay>
       <Outline>
@@ -67,9 +59,8 @@
   </Selectable>
   <Sound>
     <SoundGroups>
-      <select>interface/select/building/sel_greek_theater.xml</select>
-      <constructed>interface/complete/building/complete_greek_theater.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_tholos.xml</select>
+      <constructed>interface/complete/building/complete_tholos.xml</constructed>
     </SoundGroups>
   </Sound>
   <TerritoryInfluence>
@@ -77,8 +68,17 @@
     <Radius>80</Radius>
     <Weight>10000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_spear_gladiator
+      units/{civ}/champion_infantry_sword_gladiator
+    </Entities>
+  </Trainer>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
   <VisualActor>
-    <Actor>structures/athenians/theater.xml</Actor>
     <FoundationActor>structures/fndn_theater.xml</FoundationActor>
   </VisualActor>
 </Entity>
