@@ -1,0 +1,51 @@
+{
+	"Description": {
+		"Title": "Summer",
+		"Description": "An arid, hostile land. The blistering heat has baked the ground to a sickly brown and the remaining trees struggle for survival."
+	},
+	"Environment": {
+		"SunColor": { "r": 1.023, "g": 0.923, "b": 0.714 },
+		"SunElevation": 0.8,
+		"SunRotation": -0.909,
+		"AmbientColor": { "r": 0.4, "g": 0.4, "b": 0.4 },
+		"Fog": {
+			"FogThickness": 0.25,
+			"FogFactor": 0.003
+		},
+		"Postproc": {
+			"PostprocEffect": "hdr",
+			"Brightness": 0,
+			"Saturation": 1,
+			"Contrast": 1,
+			"Bloom": 0.16
+		}
+	},
+	"Terrains": {
+		"lakebed1": "aegean_rocks_dirt_02",
+		"lakebed2": "aegean_rocks_plants_01_dry",
+		"mainTerrain": ["aegean_grass_02", "aegean_grass_04", "aegean_grass_dirt_03", "aegean_grass_dirt_04","aegean_grass_02", "aegean_grass_04", "aegean_grass_dirt_03", "aegean_grass_dirt_04"],
+		"forestFloor1": "aegean_forestfloor_01",
+		"cliff": "persia_mountain_01",
+		"tier1Terrain": "persia_rocks_02",
+		"tier2Terrain": "aegean_rocks_plants_01",
+		"tier3Terrain": "persia_mountain_01",
+		"road": "persia_paving_01"
+	},
+	"Gaia": {
+		"tree1": "gaia/tree/pine_black",
+		"fruitBush": "gaia/fruit/date",
+		"mainHuntableAnimal": "gaia/fauna_camel",
+		"secondaryHuntableAnimal": "gaia/fauna_sheep",
+		"thirdHuntableAnimal": "gaia/fauna_goat",
+		"stoneLarge": "gaia/rock/aegean_large",
+		"stoneSmall": "gaia/rock/aegean_small",
+		"metalLarge": "gaia/ore/aegean_anatolian_01"
+	},
+	"Decoratives": {
+		"bush1": "actor|props/flora/bush_desert_a.xml",
+		"bush2": "actor|props/flora/bush_desert_dry_a.xml",
+		"bush3": "actor|props/flora/bush_dry_a.xml",
+		"bush4": "actor|props/flora/plant_desert_a.xml",
+		"rockMedium": "actor|geology/stone_desert_med.xml"
+	}
+}
