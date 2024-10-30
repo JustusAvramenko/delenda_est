@@ -11,9 +11,9 @@
         <prop actor="props/structures/platforms/stone_36x36.xml" attachpoint="root"/>
       </props>
       <textures>
-        <texture file="structural/rome_struct_capitol.png" name="baseTex"/>
-        <texture file="structural/rome_struct_capitol_norm.png" name="normTex"/>
-        <texture file="structural/rome_struct_capitol_spec.png" name="specTex"/>
+        <texture file="structural/rome_struct.png" name="baseTex"/>
+        <texture file="structural/rome_struct_norm.png" name="normTex"/>
+        <texture file="structural/rome_struct_spec.png" name="specTex"/>
         <texture file="structural/ao/rome_civic_center.png" name="aoTex"/>
       </textures>
     </variant>
@@ -22,7 +22,7 @@
     <variant name="ungarrisoned" frequency="1"/>
     <variant name="garrisoned">
       <props>
-        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned"/>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned" selectable="false"/>
       </props>
     </variant>
   </group>
