@@ -32,7 +32,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="613.826" y="91.4266" z="667.638"/>
+		<Position x="529.765" y="127.323" z="89.8032"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -49,7 +49,6 @@
   "LockTeams": false,
   "Name": "Miletus Peninsula (2 players)",
   "PlayerData": [
-    "",
     {
       "Name": "Player 1"
     },
@@ -65,7 +64,8 @@
   ],
   "VictoryConditions": [
     "conquest_civic_centers",
-    "domination"
+    "domination",
+    "wonder"
   ]
 }
 ]]></ScriptSettings>
@@ -1864,7 +1864,7 @@
 		</Entity>
 		<Entity uid="742">
 			<Template>actor|props/flora/bush_medit_sm.xml</Template>
-			<Position x="827.34681" z="858.95441"/>
+			<Position x="827.75525" z="854.83887"/>
 			<Orientation y="-1.78183"/>
 		</Entity>
 		<Entity uid="743">
@@ -9613,13 +9613,6 @@
 			<Position x="1137.48273" z="879.7859"/>
 			<Orientation y="-2.8489"/>
 		</Entity>
-		<Entity uid="4846">
-			<Template>gaia/tree/carob</Template>
-			<Player>0</Player>
-			<Position x="1155.54401" z="804.19703"/>
-			<Orientation y="-2.92852"/>
-			<Actor seed="23490"/>
-		</Entity>
 		<Entity uid="4848">
 			<Template>gaia/tree/carob</Template>
 			<Player>0</Player>
@@ -9853,14 +9846,14 @@
 		<Entity uid="4925">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>2</Player>
-			<Position x="852.53504" z="862.39563"/>
+			<Position x="852.90436" z="863.19794"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13754"/>
 		</Entity>
 		<Entity uid="4926">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>2</Player>
-			<Position x="856.49445" z="866.63447"/>
+			<Position x="858.20167" z="867.56489"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11150"/>
 		</Entity>
@@ -9882,7 +9875,7 @@
 			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>2</Player>
 			<Position x="818.79877" z="869.12043"/>
-			<Orientation y="-2.21344"/>
+			<Orientation y="-2.34327"/>
 			<Actor seed="13198"/>
 		</Entity>
 		<Entity uid="4930">
@@ -9895,14 +9888,14 @@
 		<Entity uid="4931">
 			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>2</Player>
-			<Position x="823.94178" z="864.25324"/>
+			<Position x="823.77149" z="864.21198"/>
 			<Orientation y="-2.17533"/>
 			<Actor seed="18442"/>
 		</Entity>
 		<Entity uid="4932">
 			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>2</Player>
-			<Position x="826.36597" z="862.08039"/>
+			<Position x="826.00709" z="861.87873"/>
 			<Orientation y="-2.17244"/>
 			<Actor seed="43200"/>
 		</Entity>
@@ -9965,7 +9958,7 @@
 		<Entity uid="4941">
 			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
-			<Position x="706.60282" z="232.53025"/>
+			<Position x="706.48176" z="232.40803"/>
 			<Orientation y="-2.19693"/>
 			<Actor seed="22350"/>
 		</Entity>
@@ -9973,14 +9966,14 @@
 			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
 			<Position x="709.34852" z="229.16767"/>
-			<Orientation y="-1.71328"/>
+			<Orientation y="-2.26278"/>
 			<Actor seed="54576"/>
 		</Entity>
 		<Entity uid="4943">
 			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
-			<Position x="712.07157" z="226.16517"/>
-			<Orientation y="-1.99671"/>
+			<Position x="712.07154" z="226.16517"/>
+			<Orientation y="-2.2613"/>
 			<Actor seed="38700"/>
 		</Entity>
 		<Entity uid="4944">
@@ -14392,8 +14385,8 @@
 		</Entity>
 		<Entity uid="6969">
 			<Template>actor|props/flora/grass_soft_small.xml</Template>
-			<Position x="1092.16486" z="869.79065"/>
-			<Orientation y="0.72741"/>
+			<Position x="1104.31495" z="885.29078"/>
+			<Orientation y="-4.97878"/>
 			<Actor seed="65208"/>
 		</Entity>
 		<Entity uid="6970">
@@ -14407,12 +14400,6 @@
 			<Position x="1099.9112" z="857.99299"/>
 			<Orientation y="-3.11045"/>
 			<Actor seed="12256"/>
-		</Entity>
-		<Entity uid="6972">
-			<Template>actor|props/flora/grass_soft_small.xml</Template>
-			<Position x="1102.37195" z="873.4021"/>
-			<Orientation y="0.24708"/>
-			<Actor seed="56258"/>
 		</Entity>
 		<Entity uid="6973">
 			<Template>actor|props/flora/grass_soft_small.xml</Template>
@@ -20422,15 +20409,15 @@
 		<Entity uid="9180">
 			<Template>gaia/treasure/food_stall_med</Template>
 			<Player>0</Player>
-			<Position x="1073.95221" z="207.30146"/>
+			<Position x="1077.42554" z="207.76444"/>
 			<Orientation y="-3.02263"/>
 			<Actor seed="56164"/>
 		</Entity>
 		<Entity uid="9181">
 			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>0</Player>
-			<Position x="1075.21448" z="200.31424"/>
-			<Orientation y="2.35621"/>
+			<Position x="1079.04334" z="197.87894"/>
+			<Orientation y="2.1086"/>
 			<Actor seed="62098"/>
 		</Entity>
 		<Entity uid="9182">
@@ -22012,8 +21999,8 @@
 		<Entity uid="9479">
 			<Template>gaia/tree/oak_holly</Template>
 			<Player>0</Player>
-			<Position x="1184.77253" z="850.831"/>
-			<Orientation y="-1.67971"/>
+			<Position x="1183.56031" z="855.09571"/>
+			<Orientation y="-4.01412"/>
 			<Actor seed="23884"/>
 		</Entity>
 		<Entity uid="9480">
@@ -22558,21 +22545,21 @@
 		<Entity uid="9561">
 			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
-			<Position x="511.17844" z="657.25055"/>
+			<Position x="506.3954" z="640.3122"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30096"/>
 		</Entity>
 		<Entity uid="9562">
 			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
-			<Position x="519.22815" z="670.8689"/>
+			<Position x="552.84327" z="679.64643"/>
 			<Orientation y="1.65503"/>
 			<Actor seed="1360"/>
 		</Entity>
 		<Entity uid="9563">
 			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
-			<Position x="526.4734" z="667.37446"/>
+			<Position x="511.51822" z="652.81379"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60346"/>
 		</Entity>
@@ -26856,42 +26843,42 @@
 		<Entity uid="10202">
 			<Template>gaia/tree/cypress_wild</Template>
 			<Player>0</Player>
-			<Position x="518.94385" z="654.56605"/>
+			<Position x="539.48493" z="671.60352"/>
 			<Orientation y="-2.24752"/>
 			<Actor seed="10698"/>
 		</Entity>
 		<Entity uid="10203">
 			<Template>gaia/tree/cypress_wild</Template>
 			<Player>0</Player>
-			<Position x="522.43607" z="658.23133"/>
+			<Position x="521.26465" z="649.56543"/>
 			<Orientation y="-0.05639"/>
 			<Actor seed="12004"/>
 		</Entity>
 		<Entity uid="10204">
 			<Template>gaia/tree/cypress_wild</Template>
 			<Player>0</Player>
-			<Position x="518.33426" z="661.797"/>
+			<Position x="513.97486" z="655.23768"/>
 			<Orientation y="-3.13712"/>
 			<Actor seed="35998"/>
 		</Entity>
 		<Entity uid="10205">
 			<Template>gaia/tree/cypress_wild</Template>
 			<Player>0</Player>
-			<Position x="522.56003" z="662.6764"/>
+			<Position x="554.81867" z="669.87879"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32950"/>
 		</Entity>
 		<Entity uid="10206">
 			<Template>gaia/tree/cypress_wild</Template>
 			<Player>0</Player>
-			<Position x="519.89261" z="673.14014"/>
+			<Position x="513.7845" z="638.73865"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="65414"/>
 		</Entity>
 		<Entity uid="10207">
 			<Template>gaia/tree/cypress_wild</Template>
 			<Player>0</Player>
-			<Position x="525.87366" z="673.85206"/>
+			<Position x="532.40271" z="669.17096"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26930"/>
 		</Entity>
@@ -26913,7 +26900,7 @@
 			<Template>gaia/tree/cypress_wild</Template>
 			<Player>0</Player>
 			<Position x="546.9026" z="635.02643"/>
-			<Orientation y="0.25562"/>
+			<Orientation y="-3.21322"/>
 			<Actor seed="37078"/>
 		</Entity>
 		<Entity uid="10211">
@@ -27403,7 +27390,7 @@
 		<Entity uid="10299">
 			<Template>gaia/tree/pine_maritime</Template>
 			<Player>0</Player>
-			<Position x="515.68335" z="726.8595"/>
+			<Position x="523.80964" z="677.524"/>
 			<Orientation y="1.00312"/>
 			<Actor seed="24432"/>
 		</Entity>
@@ -28796,8 +28783,8 @@
 		<Entity uid="10557">
 			<Template>structures/athen/outpost_stone</Template>
 			<Player>0</Player>
-			<Position x="1142.74183" z="221.9944"/>
-			<Orientation y="2.35621"/>
+			<Position x="1143.5077" z="229.67261"/>
+			<Orientation y="-2.38436"/>
 			<Actor seed="35284"/>
 		</Entity>
 		<Entity uid="10559">
@@ -29026,7 +29013,7 @@
 		<Entity uid="10592">
 			<Template>gaia/tree/pine_maritime</Template>
 			<Player>0</Player>
-			<Position x="1186.44556" z="842.0569"/>
+			<Position x="1188.83497" z="846.00843"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59240"/>
 		</Entity>
@@ -29732,7 +29719,7 @@
 		<Entity uid="10807">
 			<Template>structures/spart/outpost_stone</Template>
 			<Player>0</Player>
-			<Position x="460.60154" z="194.05832"/>
+			<Position x="1085.58497" z="368.56073"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58930"/>
 		</Entity>
@@ -29812,34 +29799,6 @@
 			<Position x="806.81159" z="1129.54175"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12160"/>
-		</Entity>
-		<Entity uid="10819">
-			<Template>units/mercenaries/greek/infantry_4</Template>
-			<Player>0</Player>
-			<Position x="1090.0951" z="193.59055"/>
-			<Orientation y="-2.96148"/>
-			<Actor seed="14118"/>
-		</Entity>
-		<Entity uid="10820">
-			<Template>units/mercenaries/greek/infantry_4</Template>
-			<Player>0</Player>
-			<Position x="1084.94172" z="193.87845"/>
-			<Orientation y="-0.64017"/>
-			<Actor seed="19988"/>
-		</Entity>
-		<Entity uid="10821">
-			<Template>units/mercenaries/greek/infantry_4</Template>
-			<Player>0</Player>
-			<Position x="1094.45807" z="900.34705"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="53150"/>
-		</Entity>
-		<Entity uid="10822">
-			<Template>units/mercenaries/greek/infantry_4</Template>
-			<Player>0</Player>
-			<Position x="1099.79255" z="889.69397"/>
-			<Orientation y="3.0616"/>
-			<Actor seed="570"/>
 		</Entity>
 		<Entity uid="10823">
 			<Template>units/mercenaries/greek/infantry_1</Template>
@@ -30770,8 +30729,8 @@
 		<Entity uid="11022">
 			<Template>gaia/ruins/unfinished_greek_temple</Template>
 			<Player>0</Player>
-			<Position x="520.5576" z="639.98804"/>
-			<Orientation y="-2.35915"/>
+			<Position x="519.39179" z="666.62836"/>
+			<Orientation y="2.32247"/>
 			<Actor seed="62914"/>
 		</Entity>
 		<Entity uid="11023">
@@ -30924,7 +30883,7 @@
 		<Entity uid="11089">
 			<Template>structures/syrac/temple</Template>
 			<Player>0</Player>
-			<Position x="1359.99305" z="490.0535"/>
+			<Position x="1357.5243" z="492.31733"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46546"/>
 		</Entity>
@@ -30994,7 +30953,7 @@
 		<Entity uid="11102">
 			<Template>gaia/tree/oak_holly</Template>
 			<Player>0</Player>
-			<Position x="1360.93787" z="468.80729"/>
+			<Position x="1358.7533" z="469.94706"/>
 			<Orientation y="-0.90615"/>
 			<Actor seed="27184"/>
 		</Entity>
@@ -31227,22 +31186,22 @@
 		<Entity uid="11139">
 			<Template>structures/fence_stone</Template>
 			<Player>0</Player>
-			<Position x="1371.47095" z="468.44599"/>
-			<Orientation y="-2.3344"/>
+			<Position x="1371.95325" z="468.30436"/>
+			<Orientation y="-2.16262"/>
 			<Actor seed="50698"/>
 		</Entity>
 		<Entity uid="11140">
 			<Template>structures/fence_stone</Template>
 			<Player>0</Player>
-			<Position x="1376.28382" z="475.71216"/>
+			<Position x="1377.87159" z="475.51352"/>
 			<Orientation y="-2.80233"/>
 			<Actor seed="3983"/>
 		</Entity>
 		<Entity uid="11142">
 			<Template>structures/fence_stone</Template>
 			<Player>0</Player>
-			<Position x="1377.70447" z="484.69956"/>
-			<Orientation y="-3.17917"/>
+			<Position x="1378.5171" z="485.08262"/>
+			<Orientation y="-3.48873"/>
 			<Actor seed="3983"/>
 		</Entity>
 		<Entity uid="11149">
@@ -31387,13 +31346,6 @@
 			<Position x="1292.8158" z="488.72284"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34458"/>
-		</Entity>
-		<Entity uid="11194">
-			<Template>other/artifacts/statue_aphrodite</Template>
-			<Player>0</Player>
-			<Position x="624.97608" z="596.06708"/>
-			<Orientation y="-3.79963"/>
-			<Actor seed="50033"/>
 		</Entity>
 		<Entity uid="11195">
 			<Template>actor|props/special/eyecandy/blocks_limestone_pile_b.xml</Template>
@@ -31785,13 +31737,6 @@
 			<Orientation y="1.08886"/>
 			<Actor seed="3001"/>
 		</Entity>
-		<Entity uid="11260">
-			<Template>other/artifacts/statue_aphrodite</Template>
-			<Player>0</Player>
-			<Position x="1107.96045" z="545.82502"/>
-			<Orientation y="1.30066"/>
-			<Actor seed="57676"/>
-		</Entity>
 		<Entity uid="11261">
 			<Template>structures/pirates/dock</Template>
 			<Player>0</Player>
@@ -31861,6 +31806,125 @@
 			<Position x="1012.4292" z="810.50678"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="53791"/>
+		</Entity>
+		<Entity uid="11274">
+			<Template>other/artifacts/statue_aphrodite_medium_pedastal</Template>
+			<Player>0</Player>
+			<Position x="624.28644" z="593.0716"/>
+			<Orientation y="1.85094"/>
+			<Actor seed="26738"/>
+		</Entity>
+		<Entity uid="11275">
+			<Template>other/artifacts/statue_aphrodite_medium_pedastal</Template>
+			<Player>0</Player>
+			<Position x="1372.45228" z="475.64164"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="25128"/>
+		</Entity>
+		<Entity uid="11277">
+			<Template>skirmish/structures/default_defense_tower_stone</Template>
+			<Player>1</Player>
+			<Position x="507.862" z="316.81971"/>
+			<Orientation y="1.07338"/>
+			<Actor seed="15006"/>
+		</Entity>
+		<Entity uid="11278">
+			<Template>skirmish/structures/default_defense_tower_stone</Template>
+			<Player>2</Player>
+			<Position x="575.1518" z="831.55665"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47743"/>
+		</Entity>
+		<Entity uid="11279">
+			<Template>skirmish/structures/default_defense_tower_stone</Template>
+			<Player>2</Player>
+			<Position x="610.6407" z="936.8714"/>
+			<Orientation y="0.7259"/>
+			<Actor seed="81"/>
+		</Entity>
+		<Entity uid="11280">
+			<Template>skirmish/structures/default_defense_tower_stone</Template>
+			<Player>1</Player>
+			<Position x="469.61933" z="200.69632"/>
+			<Orientation y="3.06815"/>
+			<Actor seed="25757"/>
+		</Entity>
+		<Entity uid="11281">
+			<Template>units/brigands/infantry_greek_hoplite</Template>
+			<Player>0</Player>
+			<Position x="1076.09534" z="200.39521"/>
+			<Orientation y="-2.4149"/>
+			<Actor seed="18746"/>
+		</Entity>
+		<Entity uid="11282">
+			<Template>units/brigands/infantry_greek_hoplite</Template>
+			<Player>0</Player>
+			<Position x="1072.75074" z="197.96216"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="30022"/>
+		</Entity>
+		<Entity uid="11283">
+			<Template>units/brigands/infantry_greek_peltast</Template>
+			<Player>0</Player>
+			<Position x="1073.22962" z="202.54255"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50596"/>
+		</Entity>
+		<Entity uid="11284">
+			<Template>units/brigands/infantry_greek_peltast</Template>
+			<Player>0</Player>
+			<Position x="1083.25513" z="202.90696"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7024"/>
+		</Entity>
+		<Entity uid="11285">
+			<Template>units/brigands/infantry_greek_peltast</Template>
+			<Player>0</Player>
+			<Position x="1070.7295" z="201.95621"/>
+			<Orientation y="-3.12237"/>
+			<Actor seed="11425"/>
+		</Entity>
+		<Entity uid="11286">
+			<Template>units/brigands/infantry_greek_peltast</Template>
+			<Player>0</Player>
+			<Position x="1090.45069" z="876.02527"/>
+			<Orientation y="2.43166"/>
+			<Actor seed="8721"/>
+		</Entity>
+		<Entity uid="11287">
+			<Template>units/brigands/infantry_greek_peltast</Template>
+			<Player>0</Player>
+			<Position x="1095.49048" z="875.14771"/>
+			<Orientation y="-2.27733"/>
+			<Actor seed="41517"/>
+		</Entity>
+		<Entity uid="11288">
+			<Template>units/brigands/infantry_greek_hoplite</Template>
+			<Player>0</Player>
+			<Position x="1094.01185" z="876.76185"/>
+			<Orientation y="3.01406"/>
+			<Actor seed="34099"/>
+		</Entity>
+		<Entity uid="11289">
+			<Template>units/brigands/infantry_greek_hoplite</Template>
+			<Player>0</Player>
+			<Position x="1097.17994" z="872.88172"/>
+			<Orientation y="-1.03093"/>
+			<Actor seed="32622"/>
+		</Entity>
+		<Entity uid="11290">
+			<Template>units/brigands/infantry_greek_peltast</Template>
+			<Player>0</Player>
+			<Position x="1094.22571" z="870.95582"/>
+			<Orientation y="-2.32854"/>
+			<Actor seed="9817"/>
+		</Entity>
+		<Entity uid="11291">
+			<Template>structures/athen/outpost_stone</Template>
+			<Player>0</Player>
+			<Position x="1107.31373" z="544.27161"/>
+			<Orientation y="-9.94681"/>
+			<Actor seed="15394"/>
 		</Entity>
 	</Entities>
 	<Paths/>
