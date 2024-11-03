@@ -1,0 +1,12 @@
+{
+	"genericName": "Bowmanship",
+	"autoResearch": true,
+	"description": "Persian culture revolved around the use of the bow. Much like the rifle of today's soldiers, the bow of ancient Persia was seen as an extension of the man himself.",
+	"requirements": { "civ": "pers" },
+	"icon": "arrows_trilobate.png",
+	"tooltip": "Range technologies −100% research time, but Barracks technologies +50% research time.",
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/time", "replace": 0, "affects": "Range" },
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 1.5, "affects": "Barracks" }
+	]
+}
