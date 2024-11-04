@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military">
+  <BuildRestrictions>
+    <Category>Academy</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <stone>300</stone>
+      <glory>300</glory>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="28.0" depth="28.0"/>
+    <Height>14.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>20</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">
+      Soldier
+      Minister
+      Teacher
+    </List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Champion Academy</GenericName>
+    <SpecificName>Champion Academy</SpecificName>
+    <Tooltip>Train Champions and research their technologies.</Tooltip>
+    <VisibleClasses datatype="tokens">
+      City
+      Academy
+    </VisibleClasses>
+    <Icon>structures/embassy_italic.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_city
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <xp>300</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <glory>300</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="26.0" depth="26.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_tholos.xml</select>
+      <constructed>interface/complete/building/complete_tholos.xml</constructed>
+      <upgraded>interface/complete/building/complete_tholos.xml</upgraded>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>36</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry
+      units/{civ}/champion_infantry_spearman
+      units/{civ}/champion_infantry_hoplite
+      units/{civ}/champion_infantry_swordsman
+      units/{civ}/champion_infantry_archer
+      units/{civ}/champion_cavalry
+      units/{civ}/champion_cavalry_spearman
+      units/{civ}/champion_cavalry_swordsman
+      units/{civ}/champion_cavalry_javelineer
+      units/{civ}/champion_cavalry_archer
+    </Entities>
+  </Trainer>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/han/academy.xml</Actor>
+    <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
+  </VisualActor>
+</Entity>

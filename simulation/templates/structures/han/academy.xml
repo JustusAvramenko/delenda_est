@@ -1,68 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_military_barracks">
-  <BuildRestrictions>
-    <Category>Academy</Category>
-  </BuildRestrictions>
-  <Cost>
-    <BuildTime>200</BuildTime>
-    <Resources>
-      <stone>300</stone>
-      <metal>200</metal>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Square width="28.0" depth="28.0"/>
-    <Height>10.0</Height>
-  </Footprint>
-  <GarrisonHolder>
-    <List datatype="tokens">Minister Teacher Champion Hero</List>
-  </GarrisonHolder>
-  <Health>
-    <Max>1500</Max>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
-  </Health>
+<Entity parent="template_structure_military_academy">
   <Identity>
     <Civ>han</Civ>
     <GenericName>Imperial Academy</GenericName>
     <SpecificName>Dìguó Xuéyuàn</SpecificName>
     <SelectionGroupName>structures/han/academy</SelectionGroupName>
-    <Tooltip>Train Champions and research their technologies.</Tooltip>
-    <VisibleClasses datatype="tokens">-Village City Academy</VisibleClasses>
-    <Icon>structures/embassy_italic.png</Icon>
-    <Requirements>
-      <Techs datatype="tokens">
-        -phase_village
-        phase_city
-      </Techs>
-    </Requirements>
   </Identity>
-  <Obstruction>
-    <Static width="26.0" depth="26.0"/>
-  </Obstruction>
-  <Researcher>
-    <Technologies datatype="tokens">
-      -training_levy_infantry_barracks
-      -training_mobilization
-      -training_total_war
-    </Technologies>
-  </Researcher>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_tholos.xml</select>
-      <constructed>interface/complete/building/complete_tholos.xml</constructed>
-      <upgraded>interface/complete/building/complete_tholos.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <Trainer>
-    <Entities datatype="tokens">
-      -units/{civ}/infantry_spearman_b
-      -units/{civ}/infantry_pikeman_b
-      -units/{civ}/infantry_swordsman_b
-      units/{civ}/champion_infantry_spearman
-      units/{civ}/champion_infantry_archer
-      units/{civ}/champion_cavalry_spearman
-    </Entities>
-  </Trainer>
   <VisualActor>
     <Actor>structures/han/academy.xml</Actor>
     <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
