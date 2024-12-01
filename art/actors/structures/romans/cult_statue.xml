@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="capitoline_wolf">
+      <mesh>props/capitoline_wolf_cult.dae</mesh>
+      <textures>
+        <texture file="props/capitoline_wolf_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="bronze">
+      <textures>
+        <texture file="props/capitoline_wolf_diffuse.png" name="baseTex"/>
+        <texture file="props/capitoline_wolf_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="0" name="black">
+      <textures>
+        <texture file="props/capitoline_wolf_diffuse_black.png" name="baseTex"/>
+        <texture file="props/capitoline_wolf_spec_white.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>no_trans_norm_spec.xml</material>
+</actor>
