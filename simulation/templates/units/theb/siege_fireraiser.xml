@@ -1,68 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_siege_ram">
-  <Attack>
-    <Melee>
-      <ApplyStatus>
-        <Burning>
-          <Interval>5000</Interval>
-          <Damage>
-            <Fire>1</Fire>
-          </Damage>
-          <Stackability>Stack</Stackability>
-          <Duration>20000</Duration>
-        </Burning>
-      </ApplyStatus>
-      <Damage>
-        <Fire>20</Fire>
-        <Crush>0.0</Crush>
-      </Damage>
-      <MaxRange>10</MaxRange>
-      <PrepareTime>250</PrepareTime>
-      <RepeatTime>500</RepeatTime>
-      <RestrictedClasses datatype="tokens">-Organic</RestrictedClasses>
-    </Melee>
-  </Attack>
-  <Capturable disable=""/>
-  <DeathDamage>
-    <Shape>Circular</Shape>
-    <Range>20</Range>
-    <FriendlyFire>true</FriendlyFire>
-    <Damage>
-      <Fire>50</Fire>
-    </Damage>
-  </DeathDamage>
-  <Footprint replace="">
-    <Square width="6.0" depth="20.0"/>
-    <Height>4.5</Height>
-  </Footprint>
-  <GarrisonHolder disable=""/>
-  <Health>
-    <Max>600</Max>
-    <RegenRate>-5</RegenRate>
-  </Health>
+<Entity parent="template_unit_siege_fireraiser">
   <Identity>
     <Civ>theb</Civ>
-    <Lang>greek</Lang>
-    <GenericName>Fire Raiser</GenericName>
-    <SpecificName>Pyrobolos</SpecificName>
-    <VisibleClasses datatype="tokens">Fire</VisibleClasses>
-    <Tooltip>Traits: Slow Speed, Medium Armor, Fire Thrower.
-Strong Against: Buildings, Gates (1.5x).
-Weak Against: Melee Cavalry, Melee Infantry.</Tooltip>
-    <Icon>units/theb/siege_fireraiser.png</Icon>
   </Identity>
-  <Selectable>
-    <Overlay>
-      <Texture>
-        <MainTexture>128x512/rounded_rectangle.png</MainTexture>
-        <MainTextureMask>128x512/rounded_rectangle_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
-  <Vision>
-    <Range>30</Range>
-  </Vision>
-  <VisualActor>
-    <Actor>units/thebans/siege_fireraiser.xml</Actor>
-  </VisualActor>
 </Entity>
