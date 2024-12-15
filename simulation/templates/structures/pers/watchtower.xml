@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/pers/outpost_stone">
+  <Attack>
+    <Ranged>
+      <MaxRange op="add">10</MaxRange>
+    </Ranged>
+  </Attack>
+  <Capturable>
+    <CapturePoints>1000</CapturePoints>
+  </Capturable>
+  <Footprint replace="">
+    <Circle radius="6.5"/>
+    <Height>18.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>6</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <SpecificName>Desert Watchtower</SpecificName>
+    <Icon>structures/defense_tower.png</Icon>
+  </Identity>
+  <Minimap>
+    <Type>structure</Type>
+    <Icon size="14.0">other.png</Icon>
+  </Minimap>
+  <Obstruction>
+    <Static width="10.0" depth="10.0"/>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>18.0</HeightOffset>
+  </StatusBars>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>structures/persians/ballista_tower.xml</Actor>
+  </VisualActor>
+</Entity>
