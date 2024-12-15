@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_hoplite">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack op="mul">0.8</Hack>
+      </Damage>
+    </Melee>
+    <Capture>
+      <Capture op="mul">0.8</Capture>
+    </Capture>
+  </Attack>
+  <Auras datatype="tokens">
+    -units/heroes/hero_garrison
+    -units/heroes/hero_building
+    -units/heroes/hero_gathering
+    units/heroes/athen_hero_strategos_1
+  </Auras>
+  <Cost>
+    <Population>2</Population>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <coin>200</coin>
+      <glory>200</glory>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>500</Max>
+    <IdleRegenRate>1</IdleRegenRate>
+  </Health>
+  <Identity>
+    <Civ>athen</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Strategos</SpecificName>
+    <GenericName>General</GenericName>
+    <Icon>units/athen/hero_strategos.png</Icon>
+  </Identity>
+  <TrainingRestrictions>
+    <Category>Strategos</Category>
+    <MatchLimit>10</MatchLimit>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/athenians/hero_strategos.xml</Actor>
+  </VisualActor>
+</Entity>
