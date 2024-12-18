@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_gaia_ruins">
-  <Footprint>
-    <Circle radius="3.0"/>
-    <Height>20.0</Height>
+  <Footprint replace="">
+    <Square width="13.0" depth="7.0"/>
+    <Height>10.0</Height>
   </Footprint>
   <Identity>
-    <SpecificName>Poseidon</SpecificName>
+    <SpecificName>Capitoline Wolf</SpecificName>
     <GenericName>Metal Ruin</GenericName>
     <Icon>gaia/geology_metal.png</Icon>
   </Identity>
   <Obstruction>
-    <Static width="6.0" depth="6.0"/>
+    <Static width="12.0" depth="6.0"/>
   </Obstruction>
   <ResourceSupply>
     <Max>500</Max>
@@ -18,10 +18,13 @@
   </ResourceSupply>
   <Sound>
     <SoundGroups>
-      <select>interface/select/building/sel_universal.xml</select>
+      <select>interface/select/resource/sel_metal.xml</select>
     </SoundGroups>
   </Sound>
+  <StatusBars>
+    <HeightOffset>15.0</HeightOffset>
+  </StatusBars>
   <VisualActor>
-    <Actor>props/special/eyecandy/statue_poseidon.xml</Actor>
+    <Actor>structures/romans/cult_statue.xml</Actor>
   </VisualActor>
 </Entity>
