@@ -5,21 +5,31 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.2.0 commit date:2024-07-16, commit time:06:20, hash:a51f293548ad</authoring_tool>
     </contributor>
-    <created>2024-12-26T18:01:59</created>
-    <modified>2024-12-26T18:01:59</modified>
-    <unit name="meter" meter="1"/>
+    <created>2024-12-26T20:12:08</created>
+    <modified>2024-12-26T20:12:08</modified>
+    <unit name="inch" meter="0.0254"/>
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_effects>
     <effect id="Material_003-effect">
       <profile_COMMON>
+        <newparam sid="storehouse_png-surface">
+          <surface type="2D">
+            <init_from>storehouse_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="storehouse_png-sampler">
+          <sampler2D>
+            <source>storehouse_png-surface</source>
+          </sampler2D>
+        </newparam>
         <technique sid="common">
           <lambert>
             <emission>
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <color sid="diffuse">0.8 0.8 0.8 1</color>
+              <texture texture="storehouse_png-sampler" texcoord="Cube_001-mesh-map-0"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -29,7 +39,11 @@
       </profile_COMMON>
     </effect>
   </library_effects>
-  <library_images/>
+  <library_images>
+    <image id="storehouse_png" name="storehouse_png">
+      <init_from>/C:/Users/micha/OneDrive/Documents/My%20Games/0ad/mods/delenda_est/art/textures/skins/structural/skirmish/storehouse.png</init_from>
+    </image>
+  </library_images>
   <library_materials>
     <material id="Material_003-material" name="Material.003">
       <instance_effect url="#Material_003-effect"/>
@@ -39,7 +53,7 @@
     <geometry id="Cube_003-mesh" name="Cube.003">
       <mesh>
         <source id="Cube_003-mesh-positions">
-          <float_array id="Cube_003-mesh-positions-array" count="24">1 1 1 1 1 -1 1 -1 1 1 -1 -1 -1 1 1 -1 1 -1 -1 -1 1 -1 -1 -1</float_array>
+          <float_array id="Cube_003-mesh-positions-array" count="24">1 1 0.2671356 1 1 -1 1 -1 0.2671356 1 -1 -1 -1 1 0.2671356 -1 1 -1 -1 -1 0.2671356 -1 -1 -1</float_array>
           <technique_common>
             <accessor source="#Cube_003-mesh-positions-array" count="8" stride="3">
               <param name="X" type="float"/>
@@ -59,7 +73,7 @@
           </technique_common>
         </source>
         <source id="Cube_003-mesh-map-0">
-          <float_array id="Cube_003-mesh-map-0-array" count="60">0.02734375 0.75 0.2773438 0.5 0.2773438 0.75 0.304543 0.9975991 0.004069507 0.04551166 0.304543 0.04551142 0.2947181 0.9998999 0.001492798 9.99868e-5 0.2947181 1.00017e-4 0.3095594 0.9999 0.005493879 9.9957e-5 0.3095595 1.00076e-4 0.3183416 0.9959579 0.001970708 0.02673941 0.3183415 0.02673941 0.02734375 0.75 0.02734375 0.5 0.2773438 0.5 0.304543 0.9975991 0.004069507 0.9975991 0.004069507 0.04551166 0.2947181 0.9998999 0.001492798 0.9998999 0.001492798 9.99868e-5 0.3095594 0.9999 0.0054937 0.9998999 0.005493879 9.9957e-5 0.3183416 0.9959579 0.001970887 0.9959579 0.001970708 0.02673941</float_array>
+          <float_array id="Cube_003-mesh-map-0-array" count="60">0.2075085 0.6447567 0.7982091 0.05405628 0.7982091 0.6447567 0.8217008 0.5972651 0.1574221 -0.1501284 0.8217008 -0.1501286 0.7999803 0.5875423 0.1517255 -0.1732088 0.7999803 -0.1732088 0.8327911 0.5875424 0.160571 -0.1732088 0.8327912 -0.1732087 0.8522065 0.596799 0.1527822 -0.1651949 0.8522062 -0.1651949 0.2075085 0.6447567 0.2075085 0.05405628 0.7982091 0.05405628 0.8217008 0.5972651 0.1574221 0.5972651 0.1574221 -0.1501284 0.7999803 0.5875423 0.1517255 0.5875423 0.1517255 -0.1732088 0.8327911 0.5875424 0.1605706 0.5875423 0.160571 -0.1732088 0.8522065 0.596799 0.1527825 0.596799 0.1527822 -0.1651949</float_array>
           <technique_common>
             <accessor source="#Cube_003-mesh-map-0-array" count="30" stride="2">
               <param name="S" type="float"/>
@@ -82,7 +96,7 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="skirmish_default_defense_tower" name="skirmish/default_defense_tower" type="NODE">
-        <matrix sid="transform">4.472036 0 0 0 0 4.472036 0 0 0 0 12.46702 10.67692 0 0 0 1</matrix>
+        <matrix sid="transform">7.466563 0 0 0 0 7.466563 0 0 0 0 12.61442 8.179683 0 0 0 1</matrix>
         <instance_geometry url="#Cube_003-mesh" name="skirmish/default_defense_tower">
           <bind_material>
             <technique_common>

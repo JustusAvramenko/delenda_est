@@ -5,41 +5,17 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.2.0 commit date:2024-07-16, commit time:06:20, hash:a51f293548ad</authoring_tool>
     </contributor>
-    <created>2024-12-26T18:01:59</created>
-    <modified>2024-12-26T18:01:59</modified>
+    <created>2024-12-27T12:13:13</created>
+    <modified>2024-12-27T12:13:13</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
-  <library_effects>
-    <effect id="Material_003-effect">
-      <profile_COMMON>
-        <technique sid="common">
-          <lambert>
-            <emission>
-              <color sid="emission">0 0 0 1</color>
-            </emission>
-            <diffuse>
-              <color sid="diffuse">0.8 0.8 0.8 1</color>
-            </diffuse>
-            <index_of_refraction>
-              <float sid="ior">1.45</float>
-            </index_of_refraction>
-          </lambert>
-        </technique>
-      </profile_COMMON>
-    </effect>
-  </library_effects>
   <library_images/>
-  <library_materials>
-    <material id="Material_003-material" name="Material.003">
-      <instance_effect url="#Material_003-effect"/>
-    </material>
-  </library_materials>
   <library_geometries>
     <geometry id="Cube_003-mesh" name="Cube.003">
       <mesh>
         <source id="Cube_003-mesh-positions">
-          <float_array id="Cube_003-mesh-positions-array" count="24">1 1 1 1 1 -1 1 -1 1 1 -1 -1 -1 1 1 -1 1 -1 -1 -1 1 -1 -1 -1</float_array>
+          <float_array id="Cube_003-mesh-positions-array" count="24">1.111246 1 0.06143552 1.111246 1 -1 1.111246 -1 0.06143552 1.111246 -1 -1 -1.111246 1 0.06143552 -1.111246 1 -1 -1.111246 -1 0.06143552 -1.111246 -1 -1</float_array>
           <technique_common>
             <accessor source="#Cube_003-mesh-positions-array" count="8" stride="3">
               <param name="X" type="float"/>
@@ -59,7 +35,7 @@
           </technique_common>
         </source>
         <source id="Cube_003-mesh-map-0">
-          <float_array id="Cube_003-mesh-map-0-array" count="60">0.02734375 0.75 0.2773438 0.5 0.2773438 0.75 0.304543 0.9975991 0.004069507 0.04551166 0.304543 0.04551142 0.2947181 0.9998999 0.001492798 9.99868e-5 0.2947181 1.00017e-4 0.3095594 0.9999 0.005493879 9.9957e-5 0.3095595 1.00076e-4 0.3183416 0.9959579 0.001970708 0.02673941 0.3183415 0.02673941 0.02734375 0.75 0.02734375 0.5 0.2773438 0.5 0.304543 0.9975991 0.004069507 0.9975991 0.004069507 0.04551166 0.2947181 0.9998999 0.001492798 0.9998999 0.001492798 9.99868e-5 0.3095594 0.9999 0.0054937 0.9998999 0.005493879 9.9957e-5 0.3183416 0.9959579 0.001970887 0.9959579 0.001970708 0.02673941</float_array>
+          <float_array id="Cube_003-mesh-map-0-array" count="60">0.104171 0.8922623 0.9015465 0.09488707 0.9015465 0.8922623 0.03330767 0.7209699 0.994122 0.03159159 0.03330779 0.03159177 0.03330767 0.7209754 0.994122 0.03159165 0.03330785 0.03159147 0.9941722 0.72097 0.03330779 0.03159165 0.9941726 0.03159195 0.9941726 0.7209752 0.0333079 0.03159165 0.9941726 0.03159147 0.104171 0.8922623 0.104171 0.09488707 0.9015465 0.09488707 0.03330767 0.7209699 0.994122 0.7209699 0.994122 0.03159159 0.03330767 0.7209754 0.994122 0.7209754 0.994122 0.03159165 0.9941722 0.72097 0.03330767 0.7209699 0.03330779 0.03159165 0.9941726 0.7209752 0.03330779 0.7209754 0.0333079 0.03159165</float_array>
           <technique_common>
             <accessor source="#Cube_003-mesh-map-0-array" count="30" stride="2">
               <param name="S" type="float"/>
@@ -70,7 +46,7 @@
         <vertices id="Cube_003-mesh-vertices">
           <input semantic="POSITION" source="#Cube_003-mesh-positions"/>
         </vertices>
-        <triangles material="Material_003-material" count="10">
+        <triangles count="10">
           <input semantic="VERTEX" source="#Cube_003-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Cube_003-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#Cube_003-mesh-map-0" offset="2" set="0"/>
@@ -82,16 +58,8 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="skirmish_default_defense_tower" name="skirmish/default_defense_tower" type="NODE">
-        <matrix sid="transform">4.472036 0 0 0 0 4.472036 0 0 0 0 12.46702 10.67692 0 0 0 1</matrix>
-        <instance_geometry url="#Cube_003-mesh" name="skirmish/default_defense_tower">
-          <bind_material>
-            <technique_common>
-              <instance_material symbol="Material_003-material" target="#Material_003-material">
-                <bind_vertex_input semantic="Cube_001-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
-              </instance_material>
-            </technique_common>
-          </bind_material>
-        </instance_geometry>
+        <matrix sid="transform">13.70126 0 0 0 0 13.70126 0 0 0 0 18.43774 12.8003 0 0 0 1</matrix>
+        <instance_geometry url="#Cube_003-mesh" name="skirmish/default_defense_tower"/>
       </node>
     </visual_scene>
   </library_visual_scenes>
