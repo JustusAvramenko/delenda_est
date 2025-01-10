@@ -1,18 +1,9 @@
 {
-	"genericName": "Elite Citizen Pike Infantry",
-	"specificName": {
-		"hele": "ProtostatĂ¨s",
-		"mace": "ProtostatĂ¨s",
-		"epir": "ProtostatĂ¨s",
-		"sele": "ProtostatĂ¨s",
-		"ptol": "ProtostatĂ¨s",
-		"spart": "ProtostatĂ¨s",
-		"athen": "ProtostatĂ¨s"
-	},
-	"description": "Upgrade all of your citizen pikemen to Elite rank.",
+	"genericName": "Elite Citizen Axe Cavalry",
+	"description": "Promote all of your Citizen axe cavalrymen to Elite rank.",
 	"cost": {
-		"coin": 600,
-		"glory": 600
+		"coin": 800,
+		"glory": 800
 	},
 	"requirements": {
 		"all": [
@@ -23,17 +14,23 @@
 					{ "notciv": "brit" },
 					{ "notciv": "cart" },
 					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
 					{ "notciv": "gaul" },
 					{ "notciv": "goth" },
+					{ "notciv": "han" },
 					{ "notciv": "huns" },
 					{ "notciv": "iber" },
 					{ "notciv": "imp" },
+					{ "notciv": "kush" },
 					{ "notciv": "mace" },
 					{ "notciv": "maur" },
 					{ "notciv": "noba" },
 					{ "notciv": "pers" },
+					{ "notciv": "ptol" },
 					{ "notciv": "rome" },
 					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "spart" },
 					{ "notciv": "sueb" },
 					{ "notciv": "syrac" },
 					{ "notciv": "theb" },
@@ -44,14 +41,14 @@
 			}
 		]
 	},
-	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Pike Infantry.”",
-	"icon": "upgrade_elite.png",
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Axe Cavalry.”",
+	"icon": "upgrade_elite_cavalry.png",
 	"researchTime": 40,
-	"supersedes": "upgrade_rank_advanced_infantry_pike",
-	"tooltip": "Upgrade all of your Citizen Pike Infantry to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.",
+	"supersedes": "upgrade_rank_advanced_cavalry_axe",
+	"tooltip": "Promote all of your Citizen Axe Cavalrymen to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.",
 	"modifications": [
 		{ "value": "Promotion/RequiredXp", "replace": 0 }
 	],
-	"affects": ["Pike Infantry Advanced"],
+	"affects": ["Axe Cavalry Advanced"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
