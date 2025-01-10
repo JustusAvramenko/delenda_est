@@ -1,0 +1,46 @@
+{
+	"genericName": "Ballistics",
+	"specificName": {
+		"hele": "Ballistiká",
+		"mace": "Ballistiká",
+		"spart": "Ballistiká",
+		"athen": "Ballistiká",
+		"sele": "Ballistiká",
+		"ptol": "Ballistiká"
+	},
+	"description": "The study of the behavior of projectiles and how to throw them began with the Greeks.",
+	"cost": {
+		"metal": 300,
+		"glory": 300
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "brit" },
+					{ "notciv": "cimb" },
+					{ "notciv": "gaul" },
+					{ "notciv": "iber" },
+					{ "notciv": "noba" },
+					{ "notciv": "scyth" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"icon": "calipers.png",
+	"researchTime": 40,
+	"tooltip": "Siege Weapons +10 vision range and unlock Ranged Siege Weapon technologies.",
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.1 }
+	],
+	"affects": ["Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

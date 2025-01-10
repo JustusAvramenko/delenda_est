@@ -1,0 +1,38 @@
+{
+	"supersedes": "arsenal/siege_packing_01",
+	"genericName": "Universal Joint",
+	"specificName": {
+		"hele": "Katapeltaphetes",
+		"athen": "Katapeltaphetes",
+		"mace": "Katapeltaphetes",
+		"spart": "Katapeltaphetes",
+		"sele": "Katapeltaphetes",
+		"ptol": "Katapeltaphetes"
+	},
+	"description": "Immobile siege weapons are assembled and disassembled faster.",
+	"cost": {
+		"wood": 800,
+		"metal": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "imp" },
+					{ "civ": "rome" },
+					{ "civ": "sasa" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "arsenal_of_philon.png",
+	"researchTime": 40,
+	"tooltip": "Immobile Siege Weapons another −40% pack and unpack time. Unlocks the “Great Ballista” unit for Republican Romans.",
+	"modifications": [
+		{ "value": "Pack/Time", "multiply": 0.6 }
+	],
+	"affects": ["Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

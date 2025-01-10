@@ -1,0 +1,27 @@
+{
+	"genericName": "Capped Ram",
+	"description": "An iron or steel cap for a battering ram head.",
+	"cost": {
+		"metal": 500,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "noba" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "siege_ram.png",
+	"researchTime": 40,
+	"tooltip": "Battering Rams +25% Crush Attack",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.25 }
+	],
+	"affects": ["Siege Ram"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

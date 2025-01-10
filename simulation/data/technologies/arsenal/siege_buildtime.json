@@ -1,0 +1,28 @@
+{
+	"genericName": "Siegecraft",
+	"specificName": {
+		"hele": "Poliorkía Skáphos",
+		"mace": "Poliorkía Skáphos",
+		"sele": "Poliorkía Skáphos",
+		"ptol": "Poliorkía Skáphos",
+		"imp": "Expugnandi Urbem Maenibus",
+		"rome": "Expugnandi Urbem Maenibus"
+	},
+	"description": "The science or craft of laying or carrying out sieges.",
+	"cost": {
+		"wood": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "engineering.png",
+	"researchTime": 40,
+	"tooltip": "Siege Weapons −50% build time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.5 }
+	],
+	"affects": ["Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

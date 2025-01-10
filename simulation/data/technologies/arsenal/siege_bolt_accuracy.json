@@ -1,0 +1,43 @@
+{
+	"genericName": "Bolt Accuracy",
+	"description": "Improvement to projectile accuracy",
+	"cost": {
+		"metal": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "tech": "arsenal/unlock_siege_ballistics" },
+			{
+				"any": [
+					{ "notciv": "brit" },
+					{ "notciv": "cimb" },
+					{ "notciv": "gaul" },
+					{ "notciv": "han" },
+					{ "notciv": "iber" },
+					{ "notciv": "kush" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "pers" },
+					{ "notciv": "scyth" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Ballistics.”",
+	"icon": "accuracy_bolt.png",
+	"researchTime": 40,
+	"tooltip": "Bolt Shooters +25% accuracy.",
+	"modifications": [
+		{ "value": "Attack/Ranged/Projectile/Spread", "multiply": 0.75 }
+	],
+	"affects": ["Bolt Shooter"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

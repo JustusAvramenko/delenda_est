@@ -1,0 +1,37 @@
+{
+	"genericName": "Armor Plating",
+	"description": "Increased armor on siege weapons.",
+	"cost": {
+		"food": 600,
+		"coin": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "athen" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "noba" },
+					{ "notciv": "scyth" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "armor_lamellar_iron.png",
+	"researchTime": 40,
+	"tooltip": "Battering Rams and Siege Towers +2 Hack Armor, +2 Pierce Armor, and +1 Crush Armor Levels.",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 2.0 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 2.0 },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 1.0 }
+	],
+	"affects": ["Ram", "SiegeTower"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

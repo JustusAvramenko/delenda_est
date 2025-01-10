@@ -1,0 +1,19 @@
+{
+	"genericName": "Pull Team",
+	"description": "The transport speed of siege weapons often depended upon a team of livestock to pull the wagons to the place of the siege.",
+	"cost": {
+		"food": 500,
+		"coin": 300
+	},
+	"requirements": { "tech": "phase_empire" },
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "pull_team.png",
+	"researchTime": 40,
+	"tooltip": "Siege Weapons +25% Walk Speed, −5% Health.",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25 },
+		{ "value": "Health/Max", "multiply": 0.95 }
+	],
+	"affects": ["Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

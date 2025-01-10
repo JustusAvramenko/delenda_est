@@ -1,0 +1,41 @@
+{
+	"pair": "arsenal/pair_siege_ranged_01",
+	"genericName": "Torsion Springs",
+	"description": "Torsion springs were a crucial development in siegecraft. They were made of sinew or leather and wound tight around a throwing arm, giving the throwing arm immense power when released. Rain and moisture adversely affected the efficiency of these springs through absorption and resulting expansion, so great care was taken to keep them dry.",
+	"cost": {
+		"wood": 500,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "tech": "arsenal/unlock_siege_ballistics" },
+			{
+				"any": [
+					{ "notciv": "brit" },
+					{ "notciv": "cimb" },
+					{ "notciv": "gaul" },
+					{ "notciv": "iber" },
+					{ "notciv": "noba" },
+					{ "notciv": "scyth" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Ballistics.”",
+	"icon": "torsion_springs.png",
+	"researchTime": 40,
+	"tooltip": "Ranged Siege Weapons +25% attack range.",
+	"modifications": [
+		{ "value": "Attack/Ranged/MaxRange", "multiply": 1.25 },
+		{ "value": "Vision/Range", "multiply": 1.25 }
+	],
+	"affects": ["Ranged Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
