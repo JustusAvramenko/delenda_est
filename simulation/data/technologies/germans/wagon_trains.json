@@ -1,0 +1,28 @@
+{
+	"genericName": "Wagon Trains",
+	"description": "Long trains of wagons accompanied the nomadic peoples to provide shelter and transport goods",
+	"cost": {
+		"wood": 400,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{"any": [
+				{ "civ": "germ" },
+				{ "civ": "cimb" },
+				{ "civ": "goth" },
+				{ "civ": "sueb" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "population.png",
+	"researchTime": 40,
+	"tooltip": "Supply Wagons +5 population space and Wagon Encampments +10 population space.",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "Wagon" },
+		{ "value": "Population/Bonus", "add": 10, "affects": "Colony" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

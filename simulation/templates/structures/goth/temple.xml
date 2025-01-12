@@ -2,33 +2,30 @@
 <Entity parent="template_structure_civic_temple">
   <Cost>
     <Resources>
-      <stone>0</stone>
-      <wood>300</wood>
+      <stone>150</stone>
+      <wood>150</wood>
     </Resources>
   </Cost>
   <Footprint>
-    <Square width="25.5" depth="25.5"/>
+    <Square width="30.0" depth="24.0"/>
   </Footprint>
   <Health>
-    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x4</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <Civ>goth</Civ>
-    <SpecificName>Tempel</SpecificName>
+    <Civ>cimb</Civ>
+    <SpecificName>Hailagastadiz</SpecificName>
   </Identity>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_healer
+    </Entities>
+  </Trainer>
   <Obstruction>
-    <Static width="22.5" depth="22.5"/>
+    <Static width="28.0" depth="22.0"/>
   </Obstruction>
-  <Selectable>
-    <Overlay>
-      <Texture>
-        <MainTexture>auras/temple/celtic/1024x1024.png</MainTexture>
-        <MainTextureMask>auras/temple/celtic/1024x1024_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
   <VisualActor>
-    <Actor>structures/celts/temple.xml</Actor>
-    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+    <Actor>structures/goths/temple.xml</Actor>
+    <FoundationActor>structures/fndn_7x5.xml</FoundationActor>
   </VisualActor>
 </Entity>

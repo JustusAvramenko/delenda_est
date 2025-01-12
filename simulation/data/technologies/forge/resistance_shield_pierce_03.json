@@ -14,7 +14,20 @@
 		"metal": 800,
 		"glory": 600
 	},
-	"requirements": { "tech": "phase_empire" },
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "cimb" },
+					{ "notciv": "goth" },
+					{ "notciv": "sueb" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "shields_generic_gold.png",
 	"researchTime": 60,

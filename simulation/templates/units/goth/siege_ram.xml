@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege_ram">
+  <VisualActor>
+    <Actor>structures/germans/siege_ram_pivot.xml</Actor>
+  </VisualActor>
+  <Footprint replace="">
+    <Square width="4.5" depth="9.0"/>
+    <Height>3.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>goth</Civ>
+    <GenericName>Log Ram</GenericName>
+    <Icon>units/germ/siege_ram.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_town
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/cartouche.png</MainTexture>
+        <MainTextureMask>128x256/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+</Entity>

@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee_spearman">
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack op="add">-1</Hack>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Identity>
     <Civ>goth</Civ>
     <SelectionGroupName>units/goth/infantry_spearman_b</SelectionGroupName>
-    <SpecificName>Gothic Spearman</SpecificName>
+    <SpecificName>Cimbrian Spearman</SpecificName>
     <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
-    <Icon>units/gaul_infantry_spearman.png</Icon>
+    <Icon>units/germ/infantry_spearman.png</Icon>
   </Identity>
   <Promotion>
     <Entity>units/goth/infantry_spearman_a</Entity>
   </Promotion>
-  <UnitMotion>
-    <WalkSpeed op="mul">1.2</WalkSpeed>
-  </UnitMotion>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/shield_wall
+      special/formations/anti_cavalry
+    </Formations>
+  </UnitAI>
   <VisualActor>
-    <Actor>units/goths/infantry_spearman_b.xml</Actor>
+    <Actor>units/germans/infantry_spearman_b.xml</Actor>
   </VisualActor>
 </Entity>

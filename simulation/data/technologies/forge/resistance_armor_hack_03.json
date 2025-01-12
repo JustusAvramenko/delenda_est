@@ -2,6 +2,7 @@
 	"supersedes": "forge/resistance_armor_hack_02",
 	"genericName": "Scale Body Armor",
 	"specificName": {
+		"imp": "Lorica Squamata",
 		"rome": "Lorica Squamata"
 	},
 	"description": "Body armor reinforced with bronze scales.",
@@ -9,7 +10,19 @@
 		"metal": 800,
 		"glory": 600
 	},
-	"requirements": { "tech": "phase_empire" },
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "cimb" },
+					{ "notciv": "sueb" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "armor_plates_gold.png",
 	"researchTime": 60,

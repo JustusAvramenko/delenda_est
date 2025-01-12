@@ -1,0 +1,26 @@
+{
+	"genericName": "Grove of Fetters",
+	"description": "Congregations held at specially adorned groves performed rites of sacrifice.",
+	"cost": {
+		"wood": 600,
+		"metal": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{"any": [
+				{ "civ": "germ" },
+				{ "civ": "cimb" },
+				{ "civ": "sueb" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "grove_of_fetters.png",
+	"researchTime": 40,
+	"tooltip": "Unlock the “Human Sacrifice” aura for the Seeress, doubling aura damage. Priests and Seeresses +50% Health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.5, "affects": "Healer" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

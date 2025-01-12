@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_formation">
+  <Formation>
+    <RequiredMemberCount>10</RequiredMemberCount>
+    <DisabledTooltip>Infantry Spearmen only, requires at least 10.</DisabledTooltip>
+    <UnitSeparationWidthMultiplier>0.6</UnitSeparationWidthMultiplier>
+    <UnitSeparationDepthMultiplier>0.6</UnitSeparationDepthMultiplier>
+    <WidthDepthRatio>4</WidthDepthRatio>
+    <ShiftRows>true</ShiftRows>
+    <MinColumns>5</MinColumns>
+    <MaxColumns>20</MaxColumns>
+    <MaxRows>8</MaxRows>
+    <AnimationVariants>
+      1..1,1..-1: phalanx_front;
+      2..2,1..-1: phalanx_mid;
+      3..-1,1..-1: phalanx_back
+    </AnimationVariants>
+    <Sloppiness>0.5</Sloppiness>
+  </Formation>
+  <FormationAttack>
+    <CanAttackAsFormation>false</CanAttackAsFormation>
+  </FormationAttack>
+  <Identity>
+    <GenericName>Shield Wall</GenericName>
+    <Icon>formations/phalanx.png</Icon>
+    <Tooltip>Compact formation of Infantry Spearmen creating a shield wall.</Tooltip>
+  </Identity>
+</Entity>
