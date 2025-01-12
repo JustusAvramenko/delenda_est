@@ -13,12 +13,12 @@ void main()
 {
   vec2 coord = v_tex;
 
-  #if (USE_INSTANCING || USE_GPU_SKINNING) && (USE_PARALLAX || USE_NORMAL_MAP)
+  #if USE_INSTANCING && (USE_PARALLAX || USE_NORMAL_MAP)
     vec3 bitangent = vec3(v_normal.w, v_tangent.w, v_lighting.w);
     mat3 tbn = mat3(v_tangent.xyz, bitangent, v_normal.xyz);
   #endif
 
-  #if (USE_INSTANCING || USE_GPU_SKINNING) && USE_PARALLAX
+  #if USE_INSTANCING && USE_PARALLAX
   {
     float h = SAMPLE_2D(GET_DRAW_TEXTURE_2D(normTex), coord).a;
 
@@ -82,7 +82,7 @@ void main()
     vec3 normal = normalize(v_normal.xyz);
   #endif
 
-  #if (USE_INSTANCING || USE_GPU_SKINNING) && USE_NORMAL_MAP
+  #if USE_INSTANCING && USE_NORMAL_MAP
     normal = calculateNormal(normal, SAMPLE_2D(GET_DRAW_TEXTURE_2D(normTex), coord).rgb, tbn, effectSettings.x);
     vec3 sundiffuse = mix(max(dot(-sunDir, normal), 0.0) * sunColor, v_lighting.rgb, effectSettings.w);
   #else
@@ -99,7 +99,7 @@ void main()
     emissionWeight = s.a;
   #endif
 
-  #if (USE_INSTANCING || USE_GPU_SKINNING) && USE_AO
+  #if USE_INSTANCING && USE_AO
     float ao = SAMPLE_2D(GET_DRAW_TEXTURE_2D(aoTex), v_tex2).r;
   #else
     float ao = 1.0;
