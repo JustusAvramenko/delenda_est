@@ -5,7 +5,31 @@
 		"wood": 700,
 		"glory": 300
 	},
-	"requirements": { "tech": "phase_city" },
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "athen" },
+					{ "notciv": "cart" },
+					{ "notciv": "epir" },
+					{ "notciv": "han" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "pers" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "spart" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" }
+				]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "siege_ladders.png",
 	"researchTime": 40,
