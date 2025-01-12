@@ -4,9 +4,10 @@
     structures/cart_super_dock_repair
   </Auras>
   <Cost>
-    <BuildTime>200</BuildTime>
+    <BuildTime>220</BuildTime>
     <Resources>
-      <wood>400</wood>
+      <wood>300</wood>
+      <stone>300</stone>
     </Resources>
   </Cost>
   <Footprint>
@@ -14,10 +15,14 @@
     <Height>8.0</Height>
   </Footprint>
   <GarrisonHolder>
-    <Max>5</Max>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Ship</EjectClassesOnDestroy>
+    <List datatype="tokens">Ship</List>
+    <LoadingRange>5</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>5000</Max>
+    <Max>4000</Max>
   </Health>
   <Identity>
     <Civ>cart</Civ>

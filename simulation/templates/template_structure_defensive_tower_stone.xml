@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_tower">
+  <Attack>
+    <Ranged>
+      <Origin>
+        <X>0</X>
+        <Y>15</Y>
+        <Z>0</Z>
+      </Origin>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <wood>100</wood>
+      <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="10.0" depth="10.0"/>
+    <Height>15.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>5</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <GenericName>Stone Tower</GenericName>
+    <SelectionGroupName>template_structure_defensive_tower_stone</SelectionGroupName>
+    <Tooltip>Garrison Infantry for additional arrows. Needs the “Murder Holes” technology to protect its foot.</Tooltip>
+    <VisibleClasses datatype="tokens">StoneTower</VisibleClasses>
+    <Icon>structures/defense_tower.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <wood>20</wood>
+    <stone>20</stone>
+  </Loot>
+  <Obstruction>
+    <Static width="7.0" depth="7.0"/>
+  </Obstruction>
+  <ProductionQueue/>
+  <Researcher>
+    <Technologies datatype="tokens">
+      tower_watch
+      tower_crenellations
+      tower_range
+      tower_murderholes
+      tower_health
+    </Technologies>
+  </Researcher>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>32</Radius>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <VisualActor>
+    <FoundationActor>structures/fndn_3x3_tower.xml</FoundationActor>
+  </VisualActor>
+</Entity>
