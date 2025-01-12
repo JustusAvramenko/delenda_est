@@ -1,21 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <actor version="1">
-	<castshadow/>
-	<group>
-		<variant frequency="100" name="Norse Storehouse">	
-			<mesh>structural/norse_temple_base.dae</mesh>
-			<props>
-				<prop actor="props/structures/germans/temple_roof.xml" attachpoint="root"/>
-				<prop actor="props/structures/decals/gravel_4x5.xml" attachpoint="root"/>
-			</props>
-			<textures>
-				<texture file="structural/goth_struct.png" name="baseTex"/>
-				<texture file="structural/goth_struct_norm.png" name="normTex"/>
-				<texture file="structural/goth_struct_spec.png" name="specTex"/>
-				<texture file="structural/ao/norse_temple_ao.png" name="aoTex"/>
-			</textures>
-		</variant>
-	</group>
-	<material>player_trans_ao_parallax_spec.xml</material>
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="sueb_temple">
+      <mesh>structural/germans/temple_01.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/spart_5x5.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/germ_struct.png" name="baseTex"/>
+        <texture file="structural/germ_struct_spec.png" name="specTex"/>
+        <texture file="structural/germ_struct_norm.png" name="normTex"/>
+        <texture file="structural/ao/germans/temple_AO.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="researching">
+      <props>
+        <prop actor="props/structures/decals/spart_5x5.xml" attachpoint="root"/>
+        <prop actor="fauna/crow_circle.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="training">
+      <props>
+        <prop actor="props/structures/decals/spart_5x5.xml" attachpoint="root"/>
+        <prop actor="fauna/crow_circle.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_germ.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_medium.xml"/>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
 </actor>
-

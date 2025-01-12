@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="German defense tower" file="structures/defensive_building.xml">
+      <mesh>structural/goths/defense_tower.dae</mesh>
+      <textures>
+        <texture file="structural/maur_struct_b.png" name="baseTex"/>
+        <texture file="structural/maur_struct_b_norm.png" name="normTex"/>
+        <texture file="structural/maur_struct_b_spec.png" name="specTex"/>
+        <texture file="structural/ao/goth_defense_tower.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="props">
+      <props>
+        <prop actor="props/units/shields/germ_shield_spear_hex_a_02.xml" attachpoint="shield_1"/>
+        <prop actor="props/units/shields/germ_shield_spear_oval_b_04.xml" attachpoint="shield_2"/>
+        <prop actor="props/units/shields/germ_shield_spear_hex_a_03.xml" attachpoint="shield_3"/>
+        <prop actor="props/units/shields/germ_shield_spear_hex_a_04.xml" attachpoint="shield_4"/>
+        <prop actor="props/units/shields/germ_shield_spear_oval_b_03.xml" attachpoint="shield_5"/>
+        <prop actor="props/units/shields/germ_shield_spear_hex_a_01.xml" attachpoint="shield_6"/>
+        <prop actor="props/structures/goths/defense_tower_turf.xml" attachpoint="root"/>
+        <prop actor="props/structures/goths/defense_tower_props.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_3x3.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_germ.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_small.xml">
+      <props>
+        <prop actor="props/structures/goths/defense_tower_turf.xml" attachpoint="root"/>
+        <prop actor="props/structures/goths/defense_tower_props.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

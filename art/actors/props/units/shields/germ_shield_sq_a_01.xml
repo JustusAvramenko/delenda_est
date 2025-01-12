@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>props/shield/sq_01.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/props/shield_sq_a_b.xml" attachpoint="root"/>
+        <prop actor="props/units/shields/props/celt_manipula.xml" attachpoint="handle"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" file="shields/germ_shield_01.xml" name="Player-Color-01"/>
+    <variant frequency="1" file="shields/germ_shield_02.xml" name="Player-Color-02"/>
+    <variant frequency="1" file="shields/germ_shield_03.xml" name="Player-Color-03"/>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/horse_celtic.dae</mesh>
+      <props>
+        <prop actor="units/germans/hero_cavalry_swordsman_lugius_r.xml" attachpoint="rider"/>
+        <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_celt.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant file="quadraped/horse/brown.xml" frequency="1" name="brown"/>
+    <variant file="quadraped/horse/beige.xml" frequency="1" name="beige"/>
+    <variant file="quadraped/horse/tan.xml" frequency="1" name="tan"/>
+    <variant file="quadraped/horse/cherrybay.xml" frequency="1" name="cherrybay"/>
+  </group>
+  <group>
+    <variant file="quadraped/base_horse_trot.xml" name="Horse-Trot" frequency="1"/>
+    <variant file="quadraped/base_horse_death.xml"/>
+    <variant file="quadraped/base_horse_run.xml"/>
+  </group>
+  <material>no_trans_parallax_spec.xml</material>
+</actor>

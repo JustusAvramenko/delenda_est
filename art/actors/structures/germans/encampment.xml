@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="germ_encampment">
+      <mesh>structural/germans/encampment_base.dae</mesh>
+      <props>
+        <prop actor="props/special/eyecandy/campfire.xml" attachpoint="campfire" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/wood_sm_pile_b.xml" attachpoint="campfire" maxheight="20" minheight="-20"/>
+        <prop actor="particle/sparks_blacksmith.xml" attachpoint="campfire" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/fence_wicker_medium.xml" attachpoint="fence_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/fence_wicker_short.xml" attachpoint="fence_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/fence_wicker_short.xml" attachpoint="fence_03" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/fence_wicker_medium.xml" attachpoint="fence_04" maxheight="20" minheight="-20"/>
+        <prop actor="fauna/cow.xml" attachpoint="cattle_1" maxheight="20" minheight="-20"/>
+        <prop actor="fauna/cow.xml" attachpoint="cattle_2" maxheight="20" minheight="-20"/>
+        <prop actor="fauna/bull.xml" attachpoint="cattle_3" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon.xml" attachpoint="goods_1" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon.xml" attachpoint="goods_2" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon.xml" attachpoint="goods_3" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/treasure_weapons.xml" attachpoint="weapons_1" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/treasure_weapons_barrels.xml" attachpoint="weapons_2" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/celts/blacksmith_armorstand_armor.xml" attachpoint="weapons_3" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/celts/blacksmith_armorstand_wood.xml" attachpoint="weapons_3" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon_unyoked_a.xml" attachpoint="wagon_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon_unyoked_b.xml" attachpoint="wagon_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon_unyoked_c.xml" attachpoint="wagon_03" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon_unyoked_d.xml" attachpoint="wagon_04" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon_unyoked_e.xml" attachpoint="wagon_05" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon_unyoked.xml" attachpoint="wagon_06" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon_unyoked_c.xml" attachpoint="wagon_07" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon_unyoked_e.xml" attachpoint="wagon_08" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon_unyoked_a.xml" attachpoint="wagon_09" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon_unyoked_b.xml" attachpoint="wagon_10" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/germans/wagon_unyoked_d.xml" attachpoint="wagon_11" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/decals/dirt_9x9_round.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/germ_struct.png" name="baseTex"/>
+        <texture file="structural/germ_struct_spec.png" name="specTex"/>
+        <texture file="structural/germ_struct_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_germ.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="upgrading">
+      <props>
+        <prop actor="props/structures/decals/dirt_9x9_round.xml" attachpoint="root"/>
+        <prop actor="props/structures/construction/scaf_8x8.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_large.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

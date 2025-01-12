@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Norse Storehouse">
+      <mesh>structural/germans/storehouse_special.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/storehouse_wood.xml" attachpoint="wood_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/woodcord.xml" attachpoint="wood_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/hellenes/storehouse_blocks.xml" attachpoint="stone" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/gauls/storehouse_barrel_b.xml" attachpoint="barrel" maxheight="20" minheight="-20"/>
+      </props>
+      <textures>
+        <texture file="structural/germ_struct_03.png" name="baseTex"/>
+        <texture file="structural/germ_struct_norm_03.png" name="normTex"/>
+        <texture file="structural/germ_struct_spec_03.png" name="specTex"/>
+        <texture file="structural/ao/germans/storehouse_special_AO.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_germ.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant file="structures/destruction_small.xml"/>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
+

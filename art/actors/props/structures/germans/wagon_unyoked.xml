@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="German wagon_unyoked">
+      <mesh>props/germ_wagon_cc.dae</mesh>
+      <textures>
+        <texture file="structural/germ_struct.png" name="baseTex"/>
+        <texture file="structural/germ_struct_spec.png" name="specTex"/>
+        <texture file="structural/germ_struct_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="goodsa">
+      <props>
+        <prop actor="props/structures/germans/wagon.xml" attachpoint="goods"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="no goodsa">
+      <props>
+        <prop actor="" attachpoint="goods"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="4" name="roofa">
+      <props>
+        <prop actor="props/structures/germans/wagon_roof_a.xml" attachpoint="roof"/>
+      </props>
+    </variant>
+    <variant frequency="4" name="roofb">
+      <props>
+        <prop actor="props/structures/germans/wagon_roof_b.xml" attachpoint="roof"/>
+      </props>
+    </variant>
+    <variant frequency="4" name="roofc">
+      <props>
+        <prop actor="props/structures/germans/wagon_roof_c.xml" attachpoint="roof"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

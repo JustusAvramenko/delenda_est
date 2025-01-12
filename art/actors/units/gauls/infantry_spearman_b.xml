@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_armor_pants.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_celt.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
+      </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Celt-Shield-A-Boss">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_hex_a_01.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celt-Shield-B-Boss">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_oval_b_01.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Celt-Shield-C-Boss">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_oval_c_01.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="3" name="Celtic-Tunic-01">
+      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
+      <textures>
+        <texture file="skeletal/gaul/tunic_01_05.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Celtic-Tunic-Sleeveles-01">
+      <textures>
+        <texture file="skeletal/gaul/tunic_sleeveless_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Celtic-Tunic-Sleeveles-02">
+      <textures>
+        <texture file="skeletal/gaul/tunic_sleeveless_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Celtic-Tunic-Sleeveles-03">
+      <textures>
+        <texture file="skeletal/gaul/tunic_sleeveless_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Celtic-Tunic-Sleeveles-04">
+      <textures>
+        <texture file="skeletal/gaul/tunic_sleeveless_01_04.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Celtic-Tunic-Sleeveles-05">
+      <textures>
+        <texture file="skeletal/gaul/tunic_sleeveless_01_05.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Celt-Pants-02">
+      <mesh>skeletal/new/m_pants.dae</mesh>
+      <textures>
+        <texture file="skeletal/gaul/pants_basic_02.png" name="baseTex"/>
+        <texture file="skeletal/germ/pants_basic_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Celt-Pants-03">
+      <mesh>skeletal/new/m_pants.dae</mesh>
+      <textures>
+        <texture file="skeletal/gaul/pants_basic_03.png" name="baseTex"/>
+        <texture file="skeletal/germ/pants_basic_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Celt-Pants-06">
+      <mesh>skeletal/new/m_pants.dae</mesh>
+      <textures>
+        <texture file="skeletal/gaul/pants_basic_06.png" name="baseTex"/>
+        <texture file="skeletal/germ/pants_basic_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_spearman_shield_relax_celt.xml"/>
+    <variant file="biped/carry_food.xml"/>
+    <variant file="biped/carry_meat.xml"/>
+    <variant file="biped/carry_wood.xml"/>
+    <variant file="biped/carry_stone.xml"/>
+    <variant file="biped/carry_metal.xml"/>
+    <variant file="biped/approach_tree.xml"/>
+    <variant file="biped/approach_grain.xml"/>
+    <variant file="biped/approach_fruit.xml"/>
+    <variant file="biped/approach_meat.xml"/>
+    <variant file="biped/approach_rock.xml"/>
+    <variant file="biped/approach_ore.xml"/>
+    <variant file="biped/approach_ruins.xml"/>
+    <variant file="biped/approach_praise.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_tree.xml"/>
+    <variant file="biped/gather_grain.xml"/>
+    <variant file="biped/gather_fruit.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/gather_rock.xml"/>
+    <variant file="biped/gather_ore.xml"/>
+    <variant file="biped/gather_ruins.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

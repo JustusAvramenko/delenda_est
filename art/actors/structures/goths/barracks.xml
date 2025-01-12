@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="German Barracks">
+      <mesh>structural/goths/barracks.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/dirt_8x12.xml" attachpoint="root"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+        <prop actor="props/units/tools/axe.xml" attachpoint="axe"/>
+        <prop actor="props/structures/goths/anglo_bench.xml" attachpoint="bench" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/barrel_a.xml" attachpoint="barrel_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/barrel_a.xml" attachpoint="barrel_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/barrel_a.xml" attachpoint="barrel_c" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/barrel_a.xml" attachpoint="barrel_d"/>
+        <prop actor="props/special/eyecandy/barrel_a.xml" attachpoint="barrel_e" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/barrel_a.xml" attachpoint="barrel_f" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/barrel_a.xml" attachpoint="barrel_g" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/weapons/norse_spear.xml" attachpoint="spear_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/weapons/norse_spear.xml" attachpoint="spear_b" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/germ_shield_spear_hex_a_02.xml" attachpoint="shield_right"/>
+        <prop actor="props/units/shields/germ_shield_spear_hex_a_03.xml" attachpoint="shield_left"/>
+        <prop actor="props/units/shields/germ_shield_jav_rect_b_01.xml" attachpoint="shield_a" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/germ_shield_jav_rect_b_03.xml" attachpoint="shield_b" maxheight="20" minheight="-20"/>
+      </props>
+      <textures>
+        <texture file="structural/goth_struct.png" name="baseTex"/>
+        <texture file="structural/goth_struct_norm.png" name="normTex"/>
+        <texture file="structural/goth_struct_spec.png" name="specTex"/>
+        <texture file="structural/ao/goth_barracks_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_germ.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_medium.xml"/>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

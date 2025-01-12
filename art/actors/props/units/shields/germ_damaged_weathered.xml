@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="base">
+      <mesh>props/shield/germ_round_e.dae</mesh>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="50" name="damaged_weathered_dark">
+      <textures>
+        <texture file="props/shield/shield_damaged_weathered_dark.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="50" name="damaged_weathered_light">
+      <textures>
+        <texture file="props/shield/shield_damaged_weathered_light.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

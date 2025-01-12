@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="A - Base">
+      <textures>
+        <texture file="props/sail_norm_1.png" name="normTex"/>
+        <texture file="props/sail_spec_1.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant  frequency="2" name="Texture 1">
+      <textures>
+        <texture file="props/sail_stripes_1.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant  frequency="2" name="Texture 2">
+      <textures>
+        <texture file="props/sail_stripes_2.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Texture 3">
+      <textures>
+        <texture file="props/sail_blank_netting.png" name="baseTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Texture 4">
+      <textures>
+        <texture file="props/rome_sb_tent.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="wagon_house_roof_a">
+      <mesh>structural/wagon_roof_c.dae</mesh>
+    </variant>
+    <variant frequency="1" name="wagon_house_roof_b">
+      <mesh>structural/wagon_roof_d.dae</mesh>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+     <variant frequency="1" name="German Merchant Ship">
+      <mesh>structural/germans/ship_knarr.dae</mesh>
+      <props>
+        <prop actor="props/structures/germans/knarr_props.xml" attachpoint="root"/>
+        <prop actor="props/structures/germans/ship_oar.xml" attachpoint="oar_a"/>
+        <prop actor="props/structures/germans/ship_oar.xml" attachpoint="oar_b"/>
+        <prop actor="props/structures/germans/ship_oar.xml" attachpoint="oar_c"/>
+        <prop actor="props/structures/germans/ship_oar.xml" attachpoint="oar_d"/>
+        <prop actor="props/structures/germans/barrel.xml" attachpoint="barrel_a"/>
+        <prop actor="props/structures/germans/barrel.xml" attachpoint="barrel_b"/>
+        <prop actor="props/structures/germans/barrel.xml" attachpoint="barrel_c"/>
+        <prop actor="props/structures/germans/barrel.xml" attachpoint="barrel_d"/>
+        <prop actor="props/structures/germans/barrel.xml" attachpoint="barrel_e"/>
+        <prop actor="props/structures/germans/barrel.xml" attachpoint="barrel_f"/>
+        <prop actor="props/structures/germans/barrel.xml" attachpoint="barrel_g"/>
+        <prop actor="props/structures/germans/food_basket_a.xml" attachpoint="basket_a"/>
+        <prop actor="props/structures/germans/food_basket_a.xml" attachpoint="basket_b"/>
+        <prop actor="props/structures/germans/food_basket_b.xml" attachpoint="basket_c"/>
+        <prop actor="props/structures/germans/food_basket_c.xml" attachpoint="basket_d"/>
+        <prop actor="props/structures/germans/food_basket_a.xml" attachpoint="basket_e"/>
+        <prop actor="props/structures/germans/food_basket_a.xml" attachpoint="basket_f"/>
+      </props>
+      <textures>
+        <texture file="structural/germ_knarr.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

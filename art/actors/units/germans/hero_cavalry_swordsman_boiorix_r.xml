@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_pants.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_iber_hero_1.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/celt_helmet_port.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/sheath_celt_iron_e.xml" attachpoint="sheath_01_L"/>
+        <prop actor="props/units/shields/germ_shield_spear_hex_a_04.xml" attachpoint="shield_arm"/>
+		<prop actor="props/units/capes/rider/cape_long_player.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="skeletal/germ/scale_01_01.png" name="baseTex"/>
+        <texture file="skeletal/germ/scale_01_spec.png" name="specTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/rider/cavalry/base_swordsman_ready_shield.xml" name="Swordsman-Ready-Shield" frequency="1"/>
+    <variant file="biped/rider/death_shield.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

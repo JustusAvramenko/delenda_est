@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="German Blacksmith">
+      <mesh>structural/goths/blacksmith.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/goth_struct.png" name="baseTex"/>
+        <texture file="structural/goth_struct_norm.png" name="normTex"/>
+        <texture file="structural/goth_struct_spec.png" name="specTex"/>
+        <texture file="structural/ao/goth_blacksmith_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="researching">
+      <props>
+    <prop actor="units/germans/forger.xml" attachpoint="blacksmith"/>
+        <prop actor="particle/sparks_blacksmith.xml" attachpoint="smoke"/>
+        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke"/>
+        <prop actor="particle/flame.xml" attachpoint="fire"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_medium.xml"/>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

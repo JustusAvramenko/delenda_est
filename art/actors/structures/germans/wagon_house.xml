@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Hun wagon_a">
+      <mesh>structural/germans/wagon.dae</mesh>
+      <props>
+        <prop actor="fauna/bull.xml" attachpoint="shield_left_front"/>
+        <prop actor="props/structures/germans/wagon.xml" attachpoint="shield_right_back"/>
+        <prop actor="props/structures/germans/wagon_house_roof.xml" attachpoint="roof"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant>
+      <animations>
+        <animation file="mechanical/wagon_walk.dae" name="Walk" speed="18"/>
+        <animation file="mechanical/wagon_walk.dae" name="Run" speed="20"/>
+        <animation file="mechanical/wagon_idle.dae" name="idle" speed="120"/>
+        <animation file="mechanical/wagon_death.dae" name="death" speed="100"/>
+      </animations>
+      <textures>
+        <texture file="structural/nomad_struct_01.png" name="baseTex"/>
+        <texture file="structural/nomad_struct_01_norm.png" name="normTex"/>
+        <texture file="structural/nomad_struct_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

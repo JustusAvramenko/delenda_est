@@ -3,7 +3,7 @@
   <castshadow/>
   <group>
     <variant frequency="100" name="Base">
-      <mesh>structural/norse_corral.dae</mesh>
+      <mesh>structural/germans/corral.dae</mesh>
       <props>
         <prop actor="props/structures/decals/farmstead_mud_medium.xml" attachpoint="root"/>
         <prop actor="props/structures/germans/blacksmith_bucket.xml" attachpoint="bucket"/>
@@ -13,10 +13,10 @@
         <prop actor="fauna/pig1.xml" attachpoint="pig003"/>
       </props>
       <textures>
-		<texture file="structural/goth_struct.png" name="baseTex"/>
-		<texture file="structural/goth_struct_norm.png" name="normTex"/>
-		<texture file="structural/goth_struct_spec.png" name="specTex"/>
-		<texture file="structural/ao/norse_corral_ao.png" name="aoTex"/>
+    <texture file="structural/germ_struct_03.png" name="baseTex"/>
+    <texture file="structural/germ_struct_norm_03.png" name="normTex"/>
+    <texture file="structural/germ_struct_spec_03.png" name="specTex"/>
+    <texture file="structural/ao/germans/corral_AO.png" name="aoTex"/>
       </textures>
     </variant>
   </group>
@@ -27,6 +27,10 @@
         <prop actor="props/special/common/garrison_flag_animals.xml" attachpoint="garrisoned"/>
       </props>
     </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_small.xml"/>
   </group>
   <material>player_trans_ao_parallax_spec.xml</material>
 </actor>

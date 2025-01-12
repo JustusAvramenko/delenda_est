@@ -3,19 +3,19 @@
   <castshadow/>
   <float/>
   <group>
-    <variant frequency="100" name="Norse fishing boat">
-      <mesh>structural/norse_fishing_boat.dae</mesh>
+    <variant frequency="100" name="German fishing boat">
+      <mesh>structural/germans/fishing_boat.dae</mesh>
       <animations>
         <animation file="mechanical/fishing_boat_move.dae" name="Idle" speed="80"/>
       </animations>
       <props>
-        <prop actor="units/germans/infantry_fisherman.xml" attachpoint="fisherman"/>
+        <prop actor="units/germans/fisherman.xml" attachpoint="fisherman"/>
         <prop actor="" attachpoint="basket"/>
       </props>
       <textures>
-        <texture file="structural/norse_ship_old.png" name="baseTex"/>
-        <texture file="structural/norse_ship_old_norm.png" name="normTex"/>
-        <texture file="structural/norse_ship_old_spec.png" name="specTex"/>
+        <texture file="structural/germ_fishing_boat.png" name="baseTex"/>
+        <texture file="structural/germ_fishing_boat_norm.png" name="normTex"/>
+        <texture file="structural/germ_fishing_boat_spec.png" name="specTex"/>
       </textures>
     </variant>
   </group>
@@ -27,7 +27,7 @@
         <animation file="mechanical/fishing_boat_move.dae" name="Run" speed="10"/>
       </animations>
         <props>
-        <prop actor="units/germans/infantry_fisherman.xml" attachpoint="fisherman"/>
+        <prop actor="units/germans/fisherman.xml" attachpoint="fisherman"/>
         <prop actor="" attachpoint="basket"/>
       </props>
     </variant>
@@ -36,7 +36,7 @@
         <animation file="mechanical/fishing_boat_move.dae" name="Carry_food" speed="10"/>
       </animations>
       <props>
-        <prop actor="units/germans/infantry_fisherman.xml" attachpoint="fisherman"/>
+        <prop actor="units/germans/fisherman.xml" attachpoint="fisherman"/>
         <prop actor="props/structures/ptolemies/fishing_boat_basket.xml" attachpoint="basket"/>
       </props>
     </variant>
@@ -45,7 +45,7 @@
         <animation file="mechanical/fishing_boat_move.dae" name="Idle" speed="80"/>
       </animations>
       <props>
-        <prop actor="units/germans/infantry_fisherman.xml" attachpoint="fisherman"/>
+        <prop actor="units/germans/fisherman.xml" attachpoint="fisherman"/>
         <prop actor="props/structures/ptolemies/fishing_boat_basket.xml" attachpoint="basket"/>
       </props>
     </variant>

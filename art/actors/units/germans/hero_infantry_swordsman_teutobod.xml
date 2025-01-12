@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+	  <mesh>skeletal/new/m_naked.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/germ_03_beards_ponytails.xml" attachpoint="head"/>
+        <prop actor="props/units/shields/germ_shield_spear_oval_b_04.xml" attachpoint="shield"/>
+        <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/sheath_celt_iron_e.xml" attachpoint="sheath_01_R"/>
+        <prop actor="props/units/capes/cape_long_gaul.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="skeletal/germ/pants_basic_01_spec.png" name="specTex"/>
+		<texture file="skeletal/germ/furs_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_swordsman_shield_ready.xml" name="Swordsman-Shield-Ready"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/death_cape_gaul.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="germ_great_hall">
+      <mesh>structural/germans/great_hall.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/dirt_5x7.xml" attachpoint="root"/>
+        <prop actor="props/special/eyecandy/treasure_weapons.xml" attachpoint="weapons"/>
+      </props>
+      <textures>
+        <texture file="structural/germ_struct.png" name="baseTex"/>
+        <texture file="structural/germ_struct_spec.png" name="specTex"/>
+        <texture file="structural/germ_struct_norm.png" name="normTex"/>
+        <texture file="structural/ao/germans/special_struct_AO.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_germ.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_medium.xml"/>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

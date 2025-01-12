@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Base">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/germ_02_beards.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/spear_germ.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/sheath_celt_iron_e.xml" attachpoint="sheath_01_L"/>
+        <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="gaul_shield_spear_hex_a_01">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_hex_a_01.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="gaul_shield_spear_hex_a_02">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_hex_a_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="gaul_shield_spear_hex_a_03">
+      <props>
+        <prop actor="props/units/shields/gaul_shield_spear_hex_a_03.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Helmet-Montefortino-01">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_montefortino_01.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Helmet-Montefortino-02">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_montefortino_02.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="padded_aristocrat_01_01">
+      <textures>
+        <texture file="skeletal/germ/padded_aristocrat_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="padded_aristocrat_01_02">
+      <textures>
+        <texture file="skeletal/germ/padded_aristocrat_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="padded_color_02_01">
+      <textures>
+        <texture file="skeletal/germ/padded_color_02_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="padded_color_03_01">
+      <textures>
+        <texture file="skeletal/germ/padded_color_03_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="padded_color_03_02">
+      <textures>
+        <texture file="skeletal/germ/padded_color_03_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_swordsman_shield_ready.xml" name="Swordsman-Shield-Ready"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

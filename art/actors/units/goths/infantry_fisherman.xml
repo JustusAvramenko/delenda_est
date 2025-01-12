@@ -5,7 +5,7 @@
     <variant file="biped/base_fisherman.xml">
       <mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
       <props>
-        <prop actor="props/units/heads/germ_04_beards_knot.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/germ_01_ponytails.xml" attachpoint="head"/>
 		<prop actor="props/units/weapons/norse_reverse_spear.xml" attachpoint="weapon_R"/>
       </props>
       <textures>
@@ -47,24 +47,8 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/base_fisherman.xml"/>
-  </group>
-	<group>
     <variant frequency="1" name="Idle"/>
-    <variant file="biped/base_fisherman_gather_fish.xml"></variant>
-    <variant file="biped/attack_capture.xml"/>
-    <variant file="biped/attack_slaughter.xml"/>
-    <variant file="biped/gather_tree.xml"/>
-    <variant file="biped/gather_grain.xml"/>
-    <variant file="biped/gather_fruit.xml"/>
-    <variant file="biped/gather_meat.xml"/>
-    <variant file="biped/gather_rock.xml"/>
-    <variant file="biped/gather_ore.xml"/>
-    <variant file="biped/gather_ruins.xml"/>
-    <variant file="biped/gather_praise.xml"/>
-    <variant file="biped/build.xml"/>
-    <variant file="biped/build_farm.xml"/>
-    <variant file="biped/death_infantry.xml"/>
+    <variant file="biped/fisher/gather_fish.xml"/>
   </group>
   <material>player_trans_norm_spec.xml</material>
 </actor>

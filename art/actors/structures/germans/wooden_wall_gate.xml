@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Gate">
+      <animations>
+        <animation file="mechanical/germ_gate_closed.dae" name="gate_closed" speed="65"/>
+        <animation file="mechanical/germ_gate_opening.dae" name="gate_opening" speed="65"/>
+        <animation file="mechanical/germ_gate_open.dae" name="gate_open" speed="65"/>
+        <animation file="mechanical/germ_gate_closing.dae" name="gate_closing" speed="65"/>
+      </animations>
+      <mesh>structural/germans/wooden_wall_gate_door.dae</mesh>
+      <props>
+        <prop actor="props/structures/germans/gate_walls.xml" attachpoint="root"/>
+		<prop actor="props/structures/germans/gate_roof.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/germ_struct_03.png" name="baseTex"/>
+        <texture file="structural/germ_struct_03_norm.png" name="normTex"/>
+        <texture file="structural/germ_struct_03_spec.png" name="specTex"/>
+      </textures>
+	</variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+		<prop actor="props/structures/germans/gate_walls.xml" attachpoint="root"/>
+		<prop actor="props/structures/germans/gate_roof.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>no_trans_norm_spec.xml</material>
+</actor>
