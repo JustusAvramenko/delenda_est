@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/sarissa.xml" attachpoint="weapon_R"/>
+      </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="germ_01_ponytails">
+      <props>
+        <prop actor="props/units/heads/germ_01_ponytails.xml" attachpoint="head"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="germ_03_beards_ponytails">
+      <props>
+        <prop actor="props/units/heads/germ_03_beards_ponytails.xml" attachpoint="head"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="germ_04_beards_knot">
+      <props>
+        <prop actor="props/units/heads/germ_04_beards_knot.xml" attachpoint="head"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="germ_shield_sq_a_02">
+      <props>
+        <prop actor="props/units/shields/germ_shield_sq_a_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="germ_shield_jav_rect_b_02">
+      <props>
+        <prop actor="props/units/shields/germ_shield_jav_rect_b_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="germ_shield_jav_oval_a_02">
+      <props>
+        <prop actor="props/units/shields/germ_shield_jav_oval_a_02.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="padded_legwraps_01_01">
+      <textures>
+        <texture file="skeletal/germ/padded_legwraps_01_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="padded_legwraps_01_02">
+      <textures>
+        <texture file="skeletal/germ/padded_legwraps_01_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="padded_legwraps_01_03">
+      <textures>
+        <texture file="skeletal/germ/padded_legwraps_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="padded_legwraps_02_01">
+      <textures>
+        <texture file="skeletal/germ/padded_legwraps_02_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="3" name="padded_legwraps_02_02">
+      <textures>
+        <texture file="skeletal/germ/padded_legwraps_02_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="5" name="padded_legwraps_02_03">
+      <textures>
+        <texture file="skeletal/germ/padded_legwraps_02_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_pikeman_relax.xml"/>
+    <variant file="biped/formations/syntagma_front.xml"/>
+    <variant file="biped/formations/syntagma_01.xml"/>
+    <variant file="biped/formations/syntagma_02.xml"/>
+    <variant file="biped/formations/syntagma_03.xml"/>
+    <variant file="biped/formations/syntagma_04.xml"/>
+    <variant file="biped/formations/syntagma_back.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/build_farm.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>
