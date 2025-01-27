@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant name="Goth sail">
+      <mesh>props/goth_drakkar_sail.dae</mesh>
+      <animations>
+        <animation file="other/germ_sail_idle.dae" name="idle" speed="50"/>
+        <animation file="other/germ_sail_move.dae" name="Walk" speed="5"/>
+      </animations>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Goth sail_b">
+      <textures>
+        <texture file="props/germ_ship_sail_b.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Goth sail_c">
+      <textures>
+        <texture file="props/germ_ship_sail_c.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

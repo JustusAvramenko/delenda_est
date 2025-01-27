@@ -2,17 +2,17 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="german_merc_camp">
-      <mesh>structural/suebians/merc_camp.dae</mesh>
+    <variant frequency="1" name="germanic_merc_camp">
+      <mesh>structural/germans/great_hall.dae</mesh>
       <props>
         <prop actor="props/structures/decals/dirt_5x7.xml" attachpoint="root"/>
-        <prop actor="fauna/crow_circle.xml" attachpoint="root"/>
+        <prop actor="props/special/eyecandy/treasure_weapons.xml" attachpoint="weapons"/>
       </props>
       <textures>
-        <texture file="structural/sueb_struct.png" name="baseTex"/>
-        <texture file="structural/sueb_struct_spec.png" name="specTex"/>
-        <texture file="structural/sueb_struct_norm.png" name="normTex"/>
-        <texture file="structural/ao/suebians/special_struct_AO.png" name="aoTex"/>
+        <texture file="structural/germ_struct.png" name="baseTex"/>
+        <texture file="structural/germ_struct_spec.png" name="specTex"/>
+        <texture file="structural/germ_struct_norm.png" name="normTex"/>
+        <texture file="structural/ao/germans/special_struct_AO.png" name="aoTex"/>
       </textures>
     </variant>
   </group>
@@ -20,7 +20,7 @@
     <variant frequency="1" name="ungarrisoned"/>
     <variant name="garrisoned">
       <props>
-        <prop actor="props/special/common/garrison_flag_sueb.xml" attachpoint="garrisoned"/>
+        <prop actor="props/special/common/garrison_flag_germ.xml" attachpoint="garrisoned"/>
       </props>
     </variant>
   </group>
