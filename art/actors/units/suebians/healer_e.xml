@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_healer_male.xml">
+      <mesh>skeletal/new/m_dress_sleeves.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_celt_su3.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/celt_hood_priest.xml" attachpoint="helmet"/>
+        <prop actor="props/units/staff.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="robes_priest_01_03">
+      <textures>
+        <texture file="skeletal/germ/robes_priest_01_03.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_healer_male.xml" name="Healer-Male" frequency="1"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/death_cape_long.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

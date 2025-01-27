@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <actor version="1">
   <castshadow/>
   <group>
     <variant>
       <mesh>skeletal/new/f_dress.dae</mesh>
       <props>
-        <prop actor="props/units/heads/new/head_female_celt.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/new/dudette_head.xml" attachpoint="head"/>
       </props>
       <textures>
         <texture file="default_norm.png" name="normTex"/>
@@ -14,50 +14,26 @@
     </variant>
   </group>
   <group>
-    <variant frequency="2" name="dress_female_01_01">
+    <variant frequency="1" name="Slave Outfit Brown 1">
       <textures>
-        <texture file="skeletal/germ/dress_female_01_01.png" name="baseTex"/>
+        <texture file="skeletal/germans/female/slave_a_01.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="2" name="dress_female_01_02">
+    <variant frequency="1" name="Slave Outfit Brown 2">
       <textures>
-        <texture file="skeletal/germ/dress_female_01_02.png" name="baseTex"/>
+        <texture file="skeletal/germans/female/slave_a_02.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="2" name="dress_female_01_03">
+    <variant frequency="1" name="Slave Outfit Brown 3">
       <textures>
-        <texture file="skeletal/germ/dress_female_01_03.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="dress_female_01_04">
-      <textures>
-        <texture file="skeletal/germ/dress_female_01_04.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="dress_female_01_05">
-      <textures>
-        <texture file="skeletal/germ/dress_female_01_05.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="2" name="dress_female_02_01">
-      <textures>
-        <texture file="skeletal/germ/dress_female_02_01.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="2" name="dress_female_02_02">
-      <textures>
-        <texture file="skeletal/germ/dress_female_02_02.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="2" name="dress_female_02_03">
-      <textures>
-        <texture file="skeletal/germ/dress_female_02_03.png" name="baseTex"/>
+        <texture file="skeletal/germans/female/slave_a_03.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
   <group>
     <variant file="biped/female_base_walk.xml"/>
     <variant file="biped/female_carry_food.xml"/>
+    <variant file="biped/female_carry_crops.xml"/>
     <variant file="biped/female_carry_meat.xml"/>
     <variant file="biped/female_carry_wood.xml"/>
     <variant file="biped/female_carry_stone.xml"/>
@@ -78,6 +54,7 @@
     <variant file="biped/female_death.xml"/>
     <variant file="biped/female_gather_tree.xml"/>
     <variant file="biped/female_gather_grain.xml"/>
+    <variant file="biped/female_gather_crops.xml"/>
     <variant file="biped/female_gather_fruit.xml"/>
     <variant file="biped/female_gather_meat.xml"/>
     <variant file="biped/female_gather_rock.xml"/>
@@ -86,7 +63,6 @@
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/female_build.xml"/>
     <variant file="biped/female_build_farm.xml"/>
-    <variant file="biped/female_death.xml"/>
   </group>
   <material>player_trans_norm_spec.xml</material>
 </actor>

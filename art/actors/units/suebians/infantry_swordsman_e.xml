@@ -6,7 +6,7 @@
       <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/germ_04_beards_knot.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
         <prop actor="props/units/capes/cape_long_player.xml" attachpoint="root"/>
       </props>
       <textures>
@@ -16,14 +16,19 @@
     </variant>
   </group>
   <group>
+    <variant frequency="1" name="germ_shield_jav_rect_b_03">
+      <props>
+        <prop actor="props/units/shields/germ_shield_jav_rect_b_03.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="germ_shield_jav_oval_a_03">
+      <props>
+        <prop actor="props/units/shields/germ_shield_jav_oval_a_03.xml" attachpoint="shield"/>
+      </props>
+    </variant>
     <variant frequency="1" name="germ_shield_spear_hex_a_03">
       <props>
         <prop actor="props/units/shields/germ_shield_spear_hex_a_03.xml" attachpoint="shield"/>
-      </props>
-    </variant>
-    <variant frequency="1" name="germ_shield_spear_oval_b_03">
-      <props>
-        <prop actor="props/units/shields/germ_shield_spear_oval_b_03.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
@@ -47,39 +52,39 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="padded_aristocrat_01_01">
+    <variant frequency="1" name="padded_chain_01_01">
       <textures>
-        <texture file="skeletal/germ/padded_aristocrat_01_01.png" name="baseTex"/>
+        <texture file="skeletal/germ/padded_chain_01_01.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="padded_aristocrat_01_02">
+    <variant frequency="1" name="padded_chain_01_02">
       <textures>
-        <texture file="skeletal/germ/padded_aristocrat_01_02.png" name="baseTex"/>
+        <texture file="skeletal/germ/padded_chain_01_02.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="padded_color_02_01">
+    <variant frequency="1" name="padded_chain_01_03">
       <textures>
-        <texture file="skeletal/germ/padded_color_02_01.png" name="baseTex"/>
+        <texture file="skeletal/germ/padded_chain_01_03.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="padded_color_03_01">
+    <variant frequency="1" name="padded_chain_02_01">
       <textures>
-        <texture file="skeletal/germ/padded_color_03_01.png" name="baseTex"/>
+        <texture file="skeletal/germ/padded_chain_02_01.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="padded_color_03_02">
+    <variant frequency="1" name="padded_chain_02_02">
       <textures>
-        <texture file="skeletal/germ/padded_color_03_02.png" name="baseTex"/>
+        <texture file="skeletal/germ/padded_chain_02_02.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="padded_chain_02_03">
+      <textures>
+        <texture file="skeletal/germ/padded_chain_02_03.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant file="biped/base_spearman_shield_relax_fast.xml" name="Spearman-Shield-Relax-Fast" frequency="1"/>
-    <variant file="biped/formations/anti_cavalry_front.xml"/>
-    <variant file="biped/formations/anti_cavalry_back.xml"/>
-    <variant file="biped/formations/phalanx_front.xml"/>
-    <variant file="biped/formations/phalanx_mid.xml"/>
-    <variant file="biped/formations/phalanx_back.xml"/>
+    <variant file="biped/base_swordsman_shield_relax_celt.xml" name="Swordsman-Shield-Relax-Celt" frequency="1"/>
     <variant file="biped/carry_food.xml"/>
     <variant file="biped/carry_meat.xml"/>
     <variant file="biped/carry_wood.xml"/>
@@ -108,7 +113,7 @@
     <variant file="biped/gather_praise.xml"/>
     <variant file="biped/build.xml"/>
     <variant file="biped/build_farm.xml"/>
-    <variant file="biped/death_infantry.xml"/>
+    <variant file="biped/death_cape_long.xml"/>
   </group>
   <material>player_trans_norm_spec.xml</material>
 </actor>

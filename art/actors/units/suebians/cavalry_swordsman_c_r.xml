@@ -3,24 +3,17 @@
   <castshadow/>
   <group>
     <variant>
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/germ_02_beards.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
-        <prop actor="props/units/weapons/sheath_celt_iron.xml" attachpoint="sheath_01_L"/>
+        <prop actor="props/units/weapons/csword.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/sheath_celt_iron_e.xml" attachpoint="sheath_01_L"/>
         <prop actor="props/units/capes/rider/cape_long_player.xml" attachpoint="root"/>
       </props>
       <textures>
         <texture file="default_norm.png" name="normTex"/>
         <texture file="null_black.dds" name="specTex"/>
       </textures>
-    </variant>
-  </group>
-  <group>
-    <variant frequency="1" name="Pant Cuffs">
-      <mesh>skeletal/new/m_armor_pants_tunic_long.dae</mesh>
-    </variant>
-    <variant frequency="1" name="Pants Skinny">
-      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
     </variant>
   </group>
   <group>
@@ -36,14 +29,19 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Helmet-Montefortino-01">
+    <variant frequency="1" name="celt_helmet_port">
       <props>
-        <prop actor="props/units/helmets/celt_helmet_montefortino_01.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmets/celt_helmet_port.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="1" name="Helmet-Montefortino-02">
+    <variant frequency="1" name="celt_helmet_mihovo">
       <props>
-        <prop actor="props/units/helmets/celt_helmet_montefortino_02.xml" attachpoint="helmet"/>
+        <prop actor="props/units/helmets/celt_helmet_mihovo.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="celt_helmet_alesia_02">
+      <props>
+        <prop actor="props/units/helmets/celt_helmet_alesia_02.xml" attachpoint="helmet"/>
       </props>
     </variant>
   </group>
@@ -70,7 +68,7 @@
     </variant>
   </group>
   <group>
-    <variant file="biped/rider/cavalry/base_spearman_fast_shield_01.xml" frequency="1" name="Spearman-Fast-Shield-01"/>
+    <variant file="biped/rider/cavalry/base_swordsman_ready_shield.xml" name="Swordsman-Ready-Shield" frequency="1"/>
     <variant file="biped/rider/death_shield.xml"/>
   </group>
   <material>player_trans_norm_spec.xml</material>

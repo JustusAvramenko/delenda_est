@@ -3,10 +3,10 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="Base">
-      <mesh>skeletal/new/m_pants_tunic_long.dae</mesh>
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
         <prop actor="props/units/heads/germ_01_ponytails.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/spear_germ.xml" attachpoint="weapon_R"/>
       </props>
       <textures>
         <texture file="default_norm.png" name="normTex"/>
@@ -15,79 +15,54 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Celt-Shield-A-Boss-01">
+    <variant frequency="1" name="germ_shield_spear_hex_a_02">
       <props>
-        <prop actor="props/units/shields/gaul_shield_spear_hex_a_01.xml" attachpoint="shield"/>
+        <prop actor="props/units/shields/germ_shield_spear_hex_a_02.xml" attachpoint="shield"/>
       </props>
     </variant>
-    <variant frequency="1" name="Celt-Shield-A-Boss-02">
+    <variant frequency="1" name="germ_shield_spear_oval_b_02">
       <props>
-        <prop actor="props/units/shields/gaul_shield_spear_hex_a_02.xml" attachpoint="shield"/>
-      </props>
-    </variant>
-    <variant frequency="1" name="Celt-Shield-A-Boss-03">
-      <props>
-        <prop actor="props/units/shields/gaul_shield_spear_hex_a_03.xml" attachpoint="shield"/>
+        <prop actor="props/units/shields/germ_shield_spear_oval_b_02.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant frequency="3" name="Outfit Basic Foot Wraps 1">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+    <variant frequency="3" name="padded_legwraps_02_01">
       <textures>
-        <texture file="skeletal/germans/basic/footwraps1.png" name="baseTex"/>
+        <texture file="skeletal/germ/padded_legwraps_02_01.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="3" name="Outfit Basic Foot Wraps 2">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+    <variant frequency="3" name="padded_legwraps_02_02">
       <textures>
-        <texture file="skeletal/germans/basic/footwraps2.png" name="baseTex"/>
+        <texture file="skeletal/germ/padded_legwraps_02_02.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="3" name="Outfit Basic Foot Wraps 3">
-      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+    <variant frequency="3" name="padded_legwraps_02_03">
       <textures>
-        <texture file="skeletal/germans/basic/footwraps3.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Outfit Basic Pants Shirt 2 a">
-      <textures>
-        <texture file="skeletal/germans/basic/shirt2a.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Outfit Basic Pants Shirt 2 b">
-      <textures>
-        <texture file="skeletal/germans/basic/shirt2b.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Outfit Basic Pants Shirt 2 c">
-      <textures>
-        <texture file="skeletal/germans/basic/shirt2c.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Outfit Basic Pants Shirt 1">
-      <textures>
-        <texture file="skeletal/germans/basic/transparent_shirt1.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Outfit Basic Pants Shirt 2">
-      <textures>
-        <texture file="skeletal/germans/basic/transparent_shirt2.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant frequency="1" name="Outfit Basic Pants Shirt 3">
-      <textures>
-        <texture file="skeletal/germans/basic/transparent_shirt3.png" name="baseTex"/>
+        <texture file="skeletal/germ/padded_legwraps_02_03.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant file="biped/base_spearman_shield_relax_fast.xml"/>
+    <variant file="biped/base_spearman_shield_relax_fast.xml" name="Spearman-Shield-Relax-Fast" frequency="1"/>
+    <variant file="biped/formations/anti_cavalry_front.xml"/>
+    <variant file="biped/formations/anti_cavalry_back.xml"/>
+    <variant file="biped/formations/phalanx_front.xml"/>
+    <variant file="biped/formations/phalanx_mid.xml"/>
+    <variant file="biped/formations/phalanx_back.xml"/>
     <variant file="biped/carry_food.xml"/>
     <variant file="biped/carry_meat.xml"/>
     <variant file="biped/carry_wood.xml"/>
     <variant file="biped/carry_stone.xml"/>
     <variant file="biped/carry_metal.xml"/>
+    <variant file="biped/approach_tree.xml"/>
+    <variant file="biped/approach_grain.xml"/>
+    <variant file="biped/approach_fruit.xml"/>
+    <variant file="biped/approach_meat.xml"/>
+    <variant file="biped/approach_rock.xml"/>
+    <variant file="biped/approach_ore.xml"/>
+    <variant file="biped/approach_ruins.xml"/>
+    <variant file="biped/approach_praise.xml"/>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>

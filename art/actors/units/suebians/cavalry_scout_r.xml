@@ -5,8 +5,8 @@
     <variant frequency="1" name="Base">
       <mesh>skeletal/new/m_tunic_long.dae</mesh>
       <props>
-        <prop actor="props/units/heads/germ_01_ponytails.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/germ_04_beards_knot.xml" attachpoint="head"/>
+        <prop actor="props/units/weapons/dagger.xml" attachpoint="weapon_R"/>
       </props>
       <textures>
         <texture file="default_norm.png" name="normTex"/>
@@ -15,31 +15,32 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="tunic_legwraps_02_01">
+    <variant frequency="1" name="tunic_legwraps_01_01">
       <textures>
-        <texture file="skeletal/germ/tunic_legwraps_02_01.png" name="baseTex"/>
+        <texture file="skeletal/germ/tunic_legwraps_01_01.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="tunic_legwraps_02_02">
+    <variant frequency="1" name="tunic_legwraps_01_02">
       <textures>
-        <texture file="skeletal/germ/tunic_legwraps_02_02.png" name="baseTex"/>
+        <texture file="skeletal/germ/tunic_legwraps_01_02.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="tunic_legwraps_02_03">
+    <variant frequency="1" name="tunic_legwraps_01_03">
       <textures>
-        <texture file="skeletal/germ/tunic_legwraps_02_03.png" name="baseTex"/>
+        <texture file="skeletal/germ/tunic_legwraps_01_03.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant file="biped/rider/cavalry/base_spearman_relax_02.xml" name="Spearman-Relax-02" frequency="1"/>
+    <variant file="biped/rider/cavalry/base_swordsman_fast_relax.xml" frequency="1" name="Swordsman-Fast-Relax"/>
     <variant file="biped/rider/carry_meat.xml"/>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
     <variant file="biped/rider/promotion.xml"/>
-    <variant file="biped/rider/attack_slaughter_iber.xml"/>
+    <variant file="biped/rider/attack_slaughter_hele.xml"/>
     <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/build.xml"/>
     <variant file="biped/rider/death.xml"/>
   </group>
   <material>player_trans_norm_spec.xml</material>

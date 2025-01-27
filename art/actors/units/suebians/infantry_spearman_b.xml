@@ -3,10 +3,9 @@
   <castshadow/>
   <group>
     <variant frequency="1" name="Base">
-      <mesh>skeletal/new/m_pants.dae</mesh>
       <props>
         <prop actor="props/units/heads/germ_01_ponytails.xml" attachpoint="head"/>
-        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/spear_germ.xml" attachpoint="weapon_R"/>
       </props>
       <textures>
         <texture file="default_norm.png" name="normTex"/>
@@ -15,61 +14,62 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Celt-Shield-A-Boss-01">
+    <variant frequency="1" name="m_tunic_long">
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+    </variant>
+    <variant frequency="1" name="m_tunic_short">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="germ_shield_spear_hex_a_01">
       <props>
-        <prop actor="props/units/shields/gaul_shield_spear_hex_a_01.xml" attachpoint="shield"/>
+        <prop actor="props/units/shields/germ_shield_spear_hex_a_01.xml" attachpoint="shield"/>
       </props>
     </variant>
-    <variant frequency="1" name="Celt-Shield-A-Boss-02">
+    <variant frequency="1" name="germ_shield_spear_oval_b_01">
       <props>
-        <prop actor="props/units/shields/gaul_shield_spear_hex_a_02.xml" attachpoint="shield"/>
-      </props>
-    </variant>
-    <variant frequency="1" name="Celt-Shield-A-Boss-03">
-      <props>
-        <prop actor="props/units/shields/gaul_shield_spear_hex_a_03.xml" attachpoint="shield"/>
+        <prop actor="props/units/shields/germ_shield_spear_oval_b_01.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant name="pants-basic-1">
+    <variant frequency="1" name="tunic_pants_01_01">
       <textures>
-        <texture file="skeletal/gaul/pants_basic_01.png" name="baseTex"/>
+        <texture file="skeletal/germ/tunic_pants_01_01.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant name="pants-basic-2">
+    <variant frequency="1" name="tunic_pants_02_01">
       <textures>
-        <texture file="skeletal/gaul/pants_basic_02.png" name="baseTex"/>
+        <texture file="skeletal/germ/tunic_pants_02_01.png" name="baseTex"/>
       </textures>
     </variant>
-    <variant name="pants-basic-3">
+    <variant frequency="1" name="tunic_pants_02_02">
       <textures>
-        <texture file="skeletal/gaul/pants_basic_03.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant name="pants-basic-4">
-      <textures>
-        <texture file="skeletal/gaul/pants_basic_04.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant name="pants-basic-5">
-      <textures>
-        <texture file="skeletal/gaul/pants_basic_05.png" name="baseTex"/>
-      </textures>
-    </variant>
-    <variant name="pants-basic-6">
-      <textures>
-        <texture file="skeletal/gaul/pants_basic_06.png" name="baseTex"/>
+        <texture file="skeletal/germ/tunic_pants_02_02.png" name="baseTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant file="biped/base_spearman_shield_relax_fast.xml"/>
+    <variant file="biped/base_spearman_shield_relax_fast.xml" name="Spearman-Shield-Relax-Fast" frequency="1"/>
+    <variant file="biped/formations/anti_cavalry_front.xml"/>
+    <variant file="biped/formations/anti_cavalry_back.xml"/>
+    <variant file="biped/formations/phalanx_front.xml"/>
+    <variant file="biped/formations/phalanx_mid.xml"/>
+    <variant file="biped/formations/phalanx_back.xml"/>
     <variant file="biped/carry_food.xml"/>
     <variant file="biped/carry_meat.xml"/>
     <variant file="biped/carry_wood.xml"/>
     <variant file="biped/carry_stone.xml"/>
     <variant file="biped/carry_metal.xml"/>
+    <variant file="biped/approach_tree.xml"/>
+    <variant file="biped/approach_grain.xml"/>
+    <variant file="biped/approach_fruit.xml"/>
+    <variant file="biped/approach_meat.xml"/>
+    <variant file="biped/approach_rock.xml"/>
+    <variant file="biped/approach_ore.xml"/>
+    <variant file="biped/approach_ruins.xml"/>
+    <variant file="biped/approach_praise.xml"/>
   </group>
   <group>
     <variant frequency="1" name="Idle"/>
