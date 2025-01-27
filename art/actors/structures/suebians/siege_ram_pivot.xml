@@ -4,16 +4,18 @@
     <variant>
       <mesh>structural/trunk_ram_pivot.dae</mesh>
       <props>
-        <prop actor="units/suebians/operator_left_f.xml" attachpoint="operator_a"/>
-        <prop actor="units/suebians/operator_left_b.xml" attachpoint="operator_b"/>
-        <prop actor="units/suebians/operator_right_f.xml" attachpoint="operator_c"/>
-        <prop actor="units/suebians/operator_right_b.xml" attachpoint="operator_d"/>
-        <prop actor="structures/xiongnu/siege_ram.xml" attachpoint="root"/>
+        <prop actor="units/germans/operator_left_f.xml" attachpoint="operator_a"/>
+        <prop actor="units/germans/operator_left_b.xml" attachpoint="operator_b"/>
+        <prop actor="units/germans/operator_right_b.xml" attachpoint="operator_c"/>
+        <prop actor="units/germans/operator_right_f.xml" attachpoint="operator_d"/>
+        <prop actor="structures/germans/log_ram.xml" attachpoint="root"/>
       </props>
       <textures>
         <texture file="structural/hele_siege.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
   </group>
-  <material>basic_trans.xml</material>
+  <material>no_trans_norm_spec.xml</material>
 </actor>

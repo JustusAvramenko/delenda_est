@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_civil_centre">
   <Footprint>
-    <Square width="34.0" depth="30.0"/>
-    <Height>8.0</Height>
+    <Square width="33.0" depth="29.0"/>
   </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_brit_cc</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>sueb</Civ>
     <SpecificName>Fulkasrēdaz</SpecificName>
   </Identity>
   <Obstruction>
-    <Static width="32.0" depth="28.0"/>
+    <Static width="31.0" depth="27.0"/>
   </Obstruction>
   <Trainer>
     <Entities datatype="tokens">
-      units/{civ}/infantry_clubman
-      -units/{civ}/support_wagon
+      units/{civ}/support_wagon
     </Entities>
   </Trainer>
+  <Researcher>
+    <Technologies datatype="tokens">
+      germans/resettlement
+    </Technologies>
+  </Researcher>
   <VisualActor>
-    <Actor>structures/suebians/civic_center.xml</Actor>
-    <FoundationActor>structures/fndn_8x7.xml</FoundationActor>
+    <Actor>structures/germans/civic_centre.xml</Actor>
+    <FoundationActor>structures/fndn_7x8.xml</FoundationActor>
   </VisualActor>
 </Entity>

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_short">
-  <Cost>
-    <Resources>
-      <stone>0</stone>
-      <wood>10</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Square width="14.0" depth="12.0"/>
     <Height>9.0</Height>
@@ -13,15 +7,14 @@
   <Identity>
     <Civ>sueb</Civ>
     <SpecificName>Wallaz</SpecificName>
-    <SelectionGroupName>structures/sueb/wallset_stone</SelectionGroupName>
   </Identity>
   <Obstruction>
     <Static width="12.0" depth="8.0"/>
   </Obstruction>
+  <StatusBars>
+    <HeightOffset>11.3</HeightOffset>
+  </StatusBars>
   <VisualActor>
-    <Actor>structures/germans/wall_short.xml</Actor>
+    <Actor>structures/germans/wooden_wall_short.xml</Actor>
   </VisualActor>
-  <WallPiece>
-    <Length>11.6</Length>
-  </WallPiece>
 </Entity>

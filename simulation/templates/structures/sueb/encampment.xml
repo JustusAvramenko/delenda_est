@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre_military_colony">
+  <Attack disable=""/>
+  <BuildingAI disable=""/>
+  <BuildRestrictions>
+    <Territory>own neutral enemy</Territory>
+    <Category>Encampment</Category>
+    <Distance>
+      <FromClass>CivicCenter</FromClass>
+      <MinDistance>1</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="20.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Cost>
+    <BuildTime>250</BuildTime>
+    <Resources>
+      <wood>400</wood>
+      <food>100</food>
+      <stone>0</stone>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>sueb</Civ>
+    <GenericName>Wagon Encampment</GenericName>
+    <SpecificName>Wagenlager</SpecificName>
+    <Classes datatype="tokens">
+      -Arrow
+      -Ranged
+      -CivCentre
+      -CivilCentre
+      CivSpecific
+    </Classes>
+    <VisibleClasses datatype="tokens">-CivicCenter Encampment</VisibleClasses>
+    <Tooltip>This is a type of expansion building, halfway between a Military Colony and a Roman Army Camp. Train Citizens, Supply Wagons, and some Soldiers. Casts no territory effect and fires no arrows. Can be Upgraded to a Fortified Encampment.</Tooltip>
+    <History>Germanic and Nomadic peoples were known to circle their wagon trains at night as a kind of walled camp.</History>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>15</Hack>
+        <Pierce>35</Pierce>
+        <Crush>3</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Obstruction>
+    <Static width="34.0" depth="34.0"/>
+  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_spearman_b
+      units/{civ}/infantry_slinger_b
+      units/{civ}/support_wagon
+	</Entities>
+  </Trainer>
+  <Researcher>
+    <Technologies datatype="tokens">
+      germans/wagon_trains
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_civ_center.xml</select>
+      <constructed>interface/complete/building/complete_civ_center.xml</constructed>
+      <upgraded>interface/complete/building/complete_civ_center.xml</upgraded>
+      <alert_raise>interface/alarm/alarm_alert_0.xml</alert_raise>
+      <alert_end>interface/alarm/alarm_alert_1.xml</alert_end>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Entity>structures/{civ}/encampment_fortified</Entity>
+      <Tooltip>Reinforce the Wagon Encampment with a spiked log palisade. This increases the Encampment's health by +50% and adds +5 hack resistance.</Tooltip>
+      <Cost>
+        <wood>300</wood>
+      </Cost>
+      <Variant>upgrading</Variant>
+      <Time>60</Time>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable = ""/>
+  <VisualActor>
+    <Actor>structures/germans/encampment.xml</Actor>
+    <FoundationActor>structures/fndn_9x9.xml</FoundationActor>
+  </VisualActor>
+</Entity>

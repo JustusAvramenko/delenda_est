@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_medium">
-  <Cost>
-    <Resources>
-      <stone>0</stone>
-      <wood>20</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Square width="26.0" depth="12.0"/>
     <Height>9.0</Height>
@@ -13,28 +7,58 @@
   <Identity>
     <Civ>sueb</Civ>
     <SpecificName>Wallaz</SpecificName>
-    <SelectionGroupName>structures/sueb/wallset_stone</SelectionGroupName>
   </Identity>
-  <TurretHolder>
-    <TurretPoints>
-      <Archer1>
-        <X>0</X><Y>9.5</Y><Z>0</Z>
-      </Archer1>
-      <Archer2>
-        <X>4</X><Y>9.5</Y><Z>0</Z>
-      </Archer2>
-      <Archer3>
-        <X>-4</X><Y>9.5</Y><Z>0</Z>
-      </Archer3>
-    </TurretPoints>
-  </TurretHolder>
   <Obstruction>
     <Static width="24.0" depth="8.0"/>
   </Obstruction>
+  <StatusBars>
+    <HeightOffset>11.3</HeightOffset>
+  </StatusBars>
+  <TurretHolder>
+    <TurretPoints>
+      <One>
+        <X>1.5</X>
+        <Y>9.5</Y>
+        <Z>1</Z>
+      </One>
+      <Two>
+        <X>-1.5</X>
+        <Y>9.5</Y>
+        <Z>1</Z>
+      </Two>
+      <Three>
+        <X>4.5</X>
+        <Y>9.5</Y>
+        <Z>1</Z>
+      </Three>
+      <Four>
+        <X>-4.5</X>
+        <Y>9.5</Y>
+        <Z>1</Z>
+      </Four>
+      <Five>
+        <X>1.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Five>
+      <Six>
+        <X>-1.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Six>
+      <Seven>
+        <X>4.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Seven>
+      <Eight>
+        <X>-4.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Eight>
+    </TurretPoints>
+  </TurretHolder>
   <VisualActor>
-    <Actor>structures/germans/wall_medium.xml</Actor>
+    <Actor>structures/germans/wooden_wall_medium.xml</Actor>
   </VisualActor>
-  <WallPiece>
-    <Length>23.8</Length>
-  </WallPiece>
 </Entity>

@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_fortress">
+  <Cost>
+    <BuildTime>400</BuildTime>
+    <Resources>
+      <wood>300</wood>
+      <stone>300</stone>
+    </Resources>
+  </Cost>
   <Footprint>
     <Square width="30.0" depth="30.0"/>
     <Height>20.0</Height>
   </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>sueb</Civ>
     <SpecificName>Burgz</SpecificName>
   </Identity>
   <Obstruction>
-    <Static width="28.0" depth="28.0"/>
+    <Static width="29.0" depth="29.0"/>
   </Obstruction>
-  <Trainer>
-    <Entities datatype="tokens">
-      units/{civ}/champion_infantry_axeman
-      units/{civ}/champion_infantry
-      units/{civ}/champion_cavalry
-    </Entities>
-  </Trainer>
   <VisualActor>
-    <Actor>structures/suebians/fortress.xml</Actor>
+    <Actor>structures/germans/fortress.xml</Actor>
+    <FoundationActor>structures/fndn_9x9.xml</FoundationActor>
   </VisualActor>
   <WallPiece>
-    <Length>16.8</Length>
-    <Indent>5.8</Indent>
+    <Length>28</Length>
   </WallPiece>
 </Entity>

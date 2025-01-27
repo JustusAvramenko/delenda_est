@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_long">
-  <Cost>
-    <Resources>
-      <stone>0</stone>
-      <wood>30</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Square width="39" depth="12"/>
     <Height>9.0</Height>
@@ -13,67 +7,98 @@
   <Identity>
     <Civ>sueb</Civ>
     <SpecificName>Wallaz</SpecificName>
-    <SelectionGroupName>structures/sueb/wallset_stone</SelectionGroupName>
   </Identity>
   <Obstruction>
     <Static width="36" depth="8"/>
   </Obstruction>
+  <StatusBars>
+    <HeightOffset>11.3</HeightOffset>
+  </StatusBars>
   <TurretHolder>
     <TurretPoints>
       <One>
         <X>1.5</X>
-        <Y>11.5</Y>
-        <Z>0</Z>
+        <Y>9.5</Y>
+        <Z>1</Z>
       </One>
       <Two>
         <X>-1.5</X>
-        <Y>11.5</Y>
-        <Z>0</Z>
+        <Y>9.5</Y>
+        <Z>1</Z>
       </Two>
       <Three>
         <X>4.5</X>
-        <Y>11.5</Y>
-        <Z>0</Z>
+        <Y>9.5</Y>
+        <Z>1</Z>
       </Three>
       <Four>
         <X>-4.5</X>
-        <Y>11.5</Y>
-        <Z>0</Z>
+        <Y>9.5</Y>
+        <Z>1</Z>
       </Four>
       <Five>
         <X>7.5</X>
-        <Y>11.5</Y>
-        <Z>0</Z>
+        <Y>9.5</Y>
+        <Z>1</Z>
       </Five>
       <Six>
         <X>-7.5</X>
-        <Y>11.5</Y>
-        <Z>0</Z>
+        <Y>9.5</Y>
+        <Z>1</Z>
       </Six>
       <Seven>
         <X>10.5</X>
-        <Y>11.5</Y>
-        <Z>0</Z>
+        <Y>9.5</Y>
+        <Z>1</Z>
       </Seven>
       <Eight>
         <X>-10.5</X>
-        <Y>11.5</Y>
-        <Z>0</Z>
+        <Y>9.5</Y>
+        <Z>1</Z>
       </Eight>
+      <Nine>
+        <X>1.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Nine>
+      <Ten>
+        <X>-1.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Ten>
+      <Eleven>
+        <X>4.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Eleven>
+      <Twelve>
+        <X>-4.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Twelve>
+      <Thirteen>
+        <X>7.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Thirteen>
+      <Fourteen>
+        <X>-7.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Fourteen>
+      <Fifteen>
+        <X>10.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Fifteen>
+      <Sixteen>
+        <X>-10.5</X>
+        <Y>9.5</Y>
+        <Z>-1</Z>
+      </Sixteen>
     </TurretPoints>
   </TurretHolder>
-  <Upgrade>
-    <Gate>
-      <Cost>
-        <stone>0</stone>
-        <wood>100</wood>
-      </Cost>
-    </Gate> 
-  </Upgrade>
   <VisualActor>
-    <Actor>structures/germans/wall_long.xml</Actor>
+    <Actor>structures/germans/wooden_wall_long.xml</Actor>
   </VisualActor>
-  <WallPiece>
-    <Length>32.9</Length>
-  </WallPiece>
 </Entity>

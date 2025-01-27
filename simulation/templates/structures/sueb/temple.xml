@@ -2,8 +2,8 @@
 <Entity parent="template_structure_civic_temple">
   <Cost>
     <Resources>
-      <stone>0</stone>
-      <wood>300</wood>
+      <stone>150</stone>
+      <wood>150</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -16,19 +16,16 @@
     <Civ>sueb</Civ>
     <SpecificName>Hailagastadiz</SpecificName>
   </Identity>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_healer
+    </Entities>
+  </Trainer>
   <Obstruction>
     <Static width="28.0" depth="22.0"/>
   </Obstruction>
-  <Selectable>
-    <Overlay>
-      <Texture>
-        <MainTexture>auras/temple/celtic/1024x1024.png</MainTexture>
-        <MainTextureMask>auras/temple/celtic/1024x1024_mask.png</MainTextureMask>
-      </Texture>
-    </Overlay>
-  </Selectable>
   <VisualActor>
-    <Actor>structures/suebians/temple.xml</Actor>
+    <Actor>structures/germans/temple.xml</Actor>
     <FoundationActor>structures/fndn_7x5.xml</FoundationActor>
   </VisualActor>
 </Entity>
