@@ -81,6 +81,11 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 			"structures/{civ}/embassy_iberian",
 			"structures/{civ}/embassy_italic"
 		],
+		"cimb": [
+			"structures/{civ}/statue",
+			"structures/{civ}/encampment",
+			"structures/{civ}/great_hall"
+		],
 		"epir": [
 			"structures/{civ}/statue",
 			"structures/{civ}/stoa_buildable",
@@ -147,7 +152,8 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 		],
 		"sueb": [
 			"structures/{civ}/statue",
-			"structures/{civ}/theater"
+			"structures/{civ}/encampment",
+			"structures/{civ}/great_hall"
 		],
 		"syrac": [
 			"structures/{civ}/statue",
