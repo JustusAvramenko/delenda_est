@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_gaia_ruins">
   <Footprint>
-    <Circle radius="3.0"/>
+    <Circle radius="4.0"/>
     <Height>20.0</Height>
   </Footprint>
   <Identity>
+    <Civ>gaia</Civ>
     <SpecificName>Poseidon Statue</SpecificName>
     <GenericName>Metal Ruin</GenericName>
+    <SpecificName>Poseidon</SpecificName>
     <Icon>gaia/geology_metal.png</Icon>
   </Identity>
   <Obstruction>
-    <Static width="6.0" depth="6.0"/>
+    <Static width="7.0" depth="7.0"/>
   </Obstruction>
   <ResourceSupply>
-    <Max>500</Max>
+    <Max>800</Max>
     <Type>metal.ruins</Type>
   </ResourceSupply>
   <Sound>
@@ -22,6 +24,6 @@
     </SoundGroups>
   </Sound>
   <VisualActor>
-    <Actor>props/special/eyecandy/statue_poseidon.xml</Actor>
+    <Actor>structures/hellenes/cult_statue_poseidon.xml</Actor>
   </VisualActor>
 </Entity>
