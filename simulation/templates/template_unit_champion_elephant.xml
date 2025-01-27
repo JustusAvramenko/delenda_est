@@ -21,7 +21,7 @@
   <Identity>
     <VisibleClasses datatype="tokens">Elephant</VisibleClasses>
     <GenericName>War Elephant</GenericName>
-    <Icon>gaia/fauna_elephant.png</Icon>
+    <Icon>gaia/fauna_elephant_african_bush_1.png</Icon>
   </Identity>
   <Position>
     <Anchor>pitch</Anchor>
@@ -43,7 +43,7 @@
       <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
       <order_attack_move>actor/fauna/animal/elephant_attack_order.xml</order_attack_move>
       <order_attack>actor/fauna/animal/elephant_attack.xml</order_attack>
-      <order_gather>voice/hellenes/civ/civ_male_ack.xml</order_gather>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
       <attack_melee>actor/fauna/animal/elephant_attack.xml</attack_melee>
       <walk>actor/mounted/movement/walk.xml</walk>
       <run>actor/mounted/movement/walk.xml</run>
@@ -61,7 +61,4 @@
   <Vision>
     <Range>32</Range>
   </Vision>
-  <VisualActor>
-    <Actor>units/mauryans/champion_elephant.xml</Actor>
-  </VisualActor>
 </Entity>
