@@ -3,10 +3,10 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>dark</SkySet>
-		<SunColor r="0" g="0.501961" b="0.752941"/>
+		<SunColor r="0.345098" g="0.462745" b="0.501961"/>
 		<SunElevation angle="0.244044"/>
 		<SunRotation angle="2.30145"/>
-		<AmbientColor r="0.2" g="0.266667" b="0.368627"/>
+		<AmbientColor r="0.176471" g="0.231373" b="0.313726"/>
 		<Fog>
 			<FogFactor>0.00394531</FogFactor>
 			<FogThickness>0</FogThickness>
@@ -25,14 +25,14 @@
 		</Water>
 		<Postproc>
 			<Brightness>0</Brightness>
-			<Contrast>1.09961</Contrast>
-			<Saturation>0.589844</Saturation>
+			<Contrast>1.29883</Contrast>
+			<Saturation>0.988281</Saturation>
 			<Bloom>0.1999</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="454.529" y="96.5474" z="112.814"/>
+		<Position x="355.539" y="99.889" z="610.969"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -7381,8 +7381,8 @@
 		<Entity uid="1392">
 			<Template>gaia/rock/mediterranean_large</Template>
 			<Player>0</Player>
-			<Position x="166.7625" z="503.32288"/>
-			<Orientation y="-1.73882"/>
+			<Position x="166.76252" z="503.32288"/>
+			<Orientation y="2.54221"/>
 		</Entity>
 		<Entity uid="1393">
 			<Template>gaia/rock/mediterranean_large</Template>
@@ -22862,28 +22862,28 @@
 		<Entity uid="4603">
 			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
-			<Position x="451.0033" z="173.67586"/>
+			<Position x="453.34867" z="172.23118"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45444"/>
 		</Entity>
 		<Entity uid="4604">
 			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
-			<Position x="453.5571" z="175.7392"/>
+			<Position x="455.90247" z="174.2945"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55270"/>
 		</Entity>
 		<Entity uid="4605">
 			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
-			<Position x="456.26377" z="178.30578"/>
+			<Position x="458.60914" z="176.86109"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51850"/>
 		</Entity>
 		<Entity uid="4606">
 			<Template>skirmish/units/default_support_citizen</Template>
 			<Player>1</Player>
-			<Position x="458.79593" z="180.7745"/>
+			<Position x="461.1413" z="179.32981"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12194"/>
 		</Entity>
@@ -23236,55 +23236,55 @@
 			<Actor seed="40166"/>
 		</Entity>
 		<Entity uid="4662">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="767.6084" z="247.20734"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21576"/>
 		</Entity>
 		<Entity uid="4663">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="297.46393" z="512.89985"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56728"/>
 		</Entity>
 		<Entity uid="4664">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="693.16193" z="624.37806"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42496"/>
 		</Entity>
 		<Entity uid="4665">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="312.56012" z="111.90294"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46106"/>
 		</Entity>
 		<Entity uid="4666">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="344.09266" z="756.44568"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5812"/>
 		</Entity>
 		<Entity uid="4667">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="585.4839" z="81.12894"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32660"/>
 		</Entity>
 		<Entity uid="4668">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="113.54564" z="584.86677"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27852"/>
 		</Entity>
 		<Entity uid="4669">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="120.43477" z="591.81897"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8184"/>
 		</Entity>
 		<Entity uid="4670">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="139.59194" z="587.08472"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16088"/>
@@ -23677,33 +23677,81 @@
 			<Obstruction group="4535"/>
 			<Actor seed="12110"/>
 		</Entity>
-		<Entity uid="4735">
-			<Template>other/placement_obstructor</Template>
+		<Entity uid="4739">
+			<Template>obstructors/placement_8x36</Template>
 			<Player>0</Player>
-			<Position x="476.5789" z="268.83161"/>
-			<Orientation y="-1.49119"/>
-			<Actor seed="18684"/>
+			<Position x="528.59253" z="123.23586"/>
+			<Orientation y="1.06176"/>
+			<Actor seed="37751"/>
 		</Entity>
-		<Entity uid="4736">
-			<Template>other/placement_obstructor</Template>
+		<Entity uid="4740">
+			<Template>obstructors/placement_8x36</Template>
 			<Player>0</Player>
-			<Position x="524.40375" z="126.64058"/>
-			<Orientation y="-5.19501"/>
-			<Actor seed="18684"/>
+			<Position x="475.36493" z="269.66764"/>
+			<Orientation y="1.49714"/>
+			<Actor seed="54905"/>
 		</Entity>
-		<Entity uid="4737">
-			<Template>other/placement_obstructor</Template>
+		<Entity uid="4741">
+			<Template>obstructors/placement_8x36</Template>
 			<Player>0</Player>
-			<Position x="602.03577" z="767.35621"/>
-			<Orientation y="-1.4912"/>
-			<Actor seed="18684"/>
+			<Position x="600.55488" z="767.39753"/>
+			<Orientation y="-4.72941"/>
+			<Actor seed="31540"/>
 		</Entity>
-		<Entity uid="4738">
-			<Template>other/placement_obstructor</Template>
+		<Entity uid="4742">
+			<Template>obstructors/placement_8x36</Template>
 			<Player>0</Player>
-			<Position x="567.0694" z="890.04676"/>
-			<Orientation y="-1.56646"/>
-			<Actor seed="18684"/>
+			<Position x="566.40748" z="891.26984"/>
+			<Orientation y="1.59484"/>
+			<Actor seed="39070"/>
+		</Entity>
+		<Entity uid="4743">
+			<Template>actor|particle/fireflies.xml</Template>
+			<Position x="875.98865" z="283.65976"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47509"/>
+		</Entity>
+		<Entity uid="4744">
+			<Template>actor|particle/fireflies.xml</Template>
+			<Position x="339.64628" z="286.44883"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63369"/>
+		</Entity>
+		<Entity uid="4745">
+			<Template>actor|particle/fireflies.xml</Template>
+			<Position x="374.58216" z="311.56507"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38201"/>
+		</Entity>
+		<Entity uid="4746">
+			<Template>actor|particle/fireflies.xml</Template>
+			<Position x="362.67881" z="609.53742"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="39110"/>
+		</Entity>
+		<Entity uid="4747">
+			<Template>actor|particle/fireflies.xml</Template>
+			<Position x="720.73005" z="739.10395"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31435"/>
+		</Entity>
+		<Entity uid="4748">
+			<Template>actor|particle/fireflies.xml</Template>
+			<Position x="936.82367" z="711.8534"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58789"/>
+		</Entity>
+		<Entity uid="4749">
+			<Template>actor|particle/fireflies.xml</Template>
+			<Position x="665.81458" z="359.44642"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="35717"/>
+		</Entity>
+		<Entity uid="4750">
+			<Template>actor|particle/fireflies.xml</Template>
+			<Position x="678.74311" z="380.11548"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="23564"/>
 		</Entity>
 	</Entities>
 	<Paths/>

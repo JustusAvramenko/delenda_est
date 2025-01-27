@@ -3,14 +3,14 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>desert</SkySet>
-		<SunColor r="1" g="0.823529" b="0.490196"/>
+		<SunColor r="1.02122" g="0.892057" b="0.653906"/>
 		<SunElevation angle="0.539961"/>
 		<SunRotation angle="-1.07992"/>
-		<AmbientColor r="0.431373" g="0.431373" b="0.431373"/>
+		<AmbientColor r="0.380392" g="0.4" b="0.486275"/>
 		<Fog>
 			<FogFactor>0.00154297</FogFactor>
 			<FogThickness>0.0517578</FogThickness>
-			<FogColor r="0.921569" g="0.764706" b="0.537255"/>
+			<FogColor r="0.992157" g="0.866667" b="0.635294"/>
 		</Fog>
 		<Water>
 			<WaterBody>
@@ -26,27 +26,29 @@
 		<Postproc>
 			<Brightness>0</Brightness>
 			<Contrast>1.09961</Contrast>
-			<Saturation>0.789063</Saturation>
+			<Saturation>0.988281</Saturation>
 			<Bloom>0.160156</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="438.038" y="406.997" z="845.12"/>
+		<Position x="517.919" y="501.278" z="291.484"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
+  "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
   "Description": "A fast-paced small naval map where two players each begin on a small island of their own. A third, larger island lays just off-shore, packed with resources and valuable treasures. The player who secures the treasure island will gain a decisive advantage over their foe.",
   "Keywords": [
     "naval"
   ],
   "LockTeams": false,
-  "Name": "Treasure Island (2 players)",
+  "Name": "Treasure Islands (2 players)",
   "PlayerData": [
-    null,
+    "",
     {
       "Color": {
         "b": 200,
@@ -540,31 +542,31 @@
 			<Actor seed="26832"/>
 		</Entity>
 		<Entity uid="101">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="505.48139" z="80.63259"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35484"/>
 		</Entity>
 		<Entity uid="102">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="886.44477" z="723.568"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20570"/>
 		</Entity>
 		<Entity uid="103">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="286.01935" z="699.36146"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24626"/>
 		</Entity>
 		<Entity uid="104">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="801.09638" z="130.57203"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21202"/>
 		</Entity>
 		<Entity uid="105">
-			<Template>actor|particle/cloud.xml</Template>
+			<Template>environment/cloud_small_white</Template>
 			<Position x="739.3996" z="768.65223"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1040"/>
@@ -754,8 +756,8 @@
 		<Entity uid="137">
 			<Template>gaia/treasure/shipwreck_ram_bow</Template>
 			<Player>0</Player>
-			<Position x="511.06864" z="940.28571"/>
-			<Orientation y="-2.5652"/>
+			<Position x="530.89826" z="913.83436"/>
+			<Orientation y="-1.48856"/>
 			<Actor seed="15880"/>
 		</Entity>
 		<Entity uid="138">
@@ -1763,7 +1765,7 @@
 			<Template>gaia/tree/cretan_date_palm_tall</Template>
 			<Player>0</Player>
 			<Position x="589.03766" z="162.5937"/>
-			<Orientation y="0.14463"/>
+			<Orientation y="-4.96528"/>
 			<Actor seed="20338"/>
 		</Entity>
 		<Entity uid="377">
@@ -1800,7 +1802,7 @@
 		<Entity uid="381">
 			<Template>gaia/tree/cretan_date_palm_short</Template>
 			<Player>0</Player>
-			<Position x="203.11881" z="751.55732"/>
+			<Position x="216.53711" z="734.93781"/>
 			<Orientation y="0.68955"/>
 			<Actor seed="23140"/>
 		</Entity>
@@ -1828,8 +1830,8 @@
 		<Entity uid="385">
 			<Template>gaia/tree/cretan_date_palm_short</Template>
 			<Player>0</Player>
-			<Position x="627.48774" z="118.72396"/>
-			<Orientation y="-0.84826"/>
+			<Position x="601.80506" z="144.77216"/>
+			<Orientation y="-3.17106"/>
 			<Actor seed="31598"/>
 		</Entity>
 		<Entity uid="386">
@@ -3340,7 +3342,7 @@
 			<Template>gaia/tree/cretan_date_palm_patch</Template>
 			<Player>0</Player>
 			<Position x="662.60926" z="79.89782"/>
-			<Orientation y="2.35621"/>
+			<Orientation y="3.24595"/>
 			<Actor seed="39962"/>
 		</Entity>
 		<Entity uid="658">
@@ -5813,14 +5815,14 @@
 		<Entity uid="1084">
 			<Template>skirmish/structures/special_starting_structure</Template>
 			<Player>1</Player>
-			<Position x="633.7934" z="100.96737"/>
+			<Position x="627.65662" z="97.47777"/>
 			<Orientation y="-3.92145"/>
 			<Actor seed="52456"/>
 		</Entity>
 		<Entity uid="1085">
 			<Template>skirmish/structures/special_starting_structure</Template>
 			<Player>2</Player>
-			<Position x="192.48316" z="745.07166"/>
+			<Position x="189.5233" z="760.78931"/>
 			<Orientation y="-2.35666"/>
 			<Actor seed="45462"/>
 		</Entity>
@@ -6369,6 +6371,20 @@
 			<Position x="385.46055" z="1039.02466"/>
 			<Orientation y="2.83304"/>
 			<Actor seed="5898"/>
+		</Entity>
+		<Entity uid="1164">
+			<Template>structures/pirates/dock</Template>
+			<Player>0</Player>
+			<Position x="864.10651" z="880.19819"/>
+			<Orientation y="2.74915"/>
+			<Actor seed="24864"/>
+		</Entity>
+		<Entity uid="1165">
+			<Template>structures/pirates/dock</Template>
+			<Player>0</Player>
+			<Position x="512.38306" z="936.80066"/>
+			<Orientation y="4.07421"/>
+			<Actor seed="24864"/>
 		</Entity>
 	</Entities>
 	<Paths/>

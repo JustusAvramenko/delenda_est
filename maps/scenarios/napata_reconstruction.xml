@@ -3,52 +3,49 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>sunny</SkySet>
-		<SunColor r="0.986592" g="0.954245" b="0.832943"/>
+		<SunColor r="1.03107" g="0.921898" b="0.578208"/>
 		<SunElevation angle="0.638136"/>
 		<SunRotation angle="-0.909753"/>
 		<AmbientColor r="0.356863" g="0.356863" b="0.356863"/>
 		<Fog>
-			<FogFactor>0.00131836</FogFactor>
-			<FogThickness>0</FogThickness>
-			<FogColor r="0.956863" g="0.92549" b="0.807843"/>
+			<FogFactor>0.000332031</FogFactor>
+			<FogThickness>0.286133</FogThickness>
+			<FogColor r="1" g="0.921569" b="0.466667"/>
 		</Fog>
 		<Water>
 			<WaterBody>
-				<Type>lake</Type>
-				<Color r="0.454902" g="0.403922" b="0.305882"/>
-				<Tint r="0.317647" g="0.247059" b="0.141176"/>
+				<Type>ocean</Type>
+				<Color r="0.219608" g="0.184314" b="0.337255"/>
+				<Tint r="0.00784314" g="0.203922" b="0.0431373"/>
 				<Height>372.313</Height>
-				<Waviness>8.78906</Waviness>
-				<Murkiness>0.941406</Murkiness>
+				<Waviness>7.80273</Waviness>
+				<Murkiness>0.543945</Murkiness>
 				<WindAngle>-1.76101</WindAngle>
 			</WaterBody>
 		</Water>
 		<Postproc>
 			<Brightness>-0.0439453</Brightness>
-			<Contrast>0.984375</Contrast>
-			<Saturation>1.07031</Saturation>
-			<Bloom>0.166602</Bloom>
+			<Contrast>1.18457</Contrast>
+			<Saturation>0.871094</Saturation>
+			<Bloom>0.19668</Bloom>
 			<PostEffect>hdr</PostEffect>
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="1623.21" y="529.607" z="363.109"/>
-		<Rotation angle="0"/>
-		<Declination angle="0.610865"/>
+		<Position x="706.194" y="675.817" z="869.289"/>
+		<Rotation angle="-1.44237"/>
+		<Declination angle="0.968105"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
   "Name": "Napata Reconstruction",
   "Description": "This map displays a reconstruction of the ancient city Napata. [color=\"red\"]Note:[/color] The map is not intended to be playable.",
-  "Preview": "napata_reconstruction.png",
-  "Keywords": [
-    "demo"
-  ],
+  "Preview" : "napata_reconstruction.png",
+  "Keywords": ["demo"],
   "CircularMap": true,
   "PlayerData": [
     null,
     {
-      "Civ": "kush"
     }
   ],
   "RevealMap": true,
@@ -1459,6 +1456,55 @@
 			<Orientation y="-1.59395"/>
 			<Actor seed="23899"/>
 		</Entity>
+		<Entity uid="432">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="998.91175" z="1184.03296"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52478"/>
+		</Entity>
+		<Entity uid="433">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="953.54267" z="1154.70899"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="23637"/>
+		</Entity>
+		<Entity uid="434">
+			<Template>gaia/rock/desert_large</Template>
+			<Player>0</Player>
+			<Position x="962.96961" z="1191.44324"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="36185"/>
+		</Entity>
+		<Entity uid="435">
+			<Template>gaia/rock/desert_large</Template>
+			<Player>0</Player>
+			<Position x="1045.71985" z="1242.66395"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13028"/>
+		</Entity>
+		<Entity uid="436">
+			<Template>gaia/rock/desert_large</Template>
+			<Player>0</Player>
+			<Position x="1087.57825" z="1254.59046"/>
+			<Orientation y="1.93866"/>
+			<Actor seed="29099"/>
+		</Entity>
+		<Entity uid="437">
+			<Template>gaia/rock/desert_large</Template>
+			<Player>0</Player>
+			<Position x="1073.56617" z="1155.37"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42250"/>
+		</Entity>
+		<Entity uid="438">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="1047.51014" z="1200.8047"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="53179"/>
+		</Entity>
 		<Entity uid="439">
 			<Template>actor|geology/stone_desert_med.xml</Template>
 			<Position x="1101.1012" z="1175.28565"/>
@@ -1956,6 +2002,396 @@
 			<Position x="1075.53455" z="1144.69764"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34419"/>
+		</Entity>
+		<Entity uid="523">
+			<Template>actor|geology/stonemine_desert_badlands_small.xml</Template>
+			<Position x="1101.8849" z="1183.93384"/>
+			<Orientation y="1.79131"/>
+			<Actor seed="63102"/>
+		</Entity>
+		<Entity uid="524">
+			<Template>actor|geology/stonemine_desert_badlands_small.xml</Template>
+			<Position x="1091.4983" z="1163.2887"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58759"/>
+		</Entity>
+		<Entity uid="525">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1066.6548" z="1145.58252"/>
+			<Orientation y="0.68677"/>
+			<Actor seed="49321"/>
+		</Entity>
+		<Entity uid="526">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1089.2881" z="1156.82032"/>
+			<Orientation y="1.10515"/>
+			<Actor seed="65019"/>
+		</Entity>
+		<Entity uid="527">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1093.27503" z="1155.70972"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="19901"/>
+		</Entity>
+		<Entity uid="528">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1089.68628" z="1154.1797"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="48683"/>
+		</Entity>
+		<Entity uid="529">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1091.89002" z="1175.68519"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49728"/>
+		</Entity>
+		<Entity uid="530">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1109.00904" z="1178.05787"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="48833"/>
+		</Entity>
+		<Entity uid="531">
+			<Template>actor|geology/stonemine_desert_badlands_small.xml</Template>
+			<Position x="1063.97388" z="1188.53528"/>
+			<Orientation y="2.57032"/>
+			<Actor seed="34243"/>
+		</Entity>
+		<Entity uid="532">
+			<Template>actor|geology/stonemine_desert_badlands_small.xml</Template>
+			<Position x="1073.5304" z="1196.3296"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13484"/>
+		</Entity>
+		<Entity uid="533">
+			<Template>actor|geology/stonemine_desert_quarry.xml</Template>
+			<Position x="1070.80066" z="1188.04407"/>
+			<Orientation y="2.66317"/>
+			<Actor seed="54613"/>
+		</Entity>
+		<Entity uid="534">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1080.8993" z="1191.11316"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="45901"/>
+		</Entity>
+		<Entity uid="535">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1108.42615" z="1203.65052"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="14043"/>
+		</Entity>
+		<Entity uid="536">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1099.92347" z="1207.99793"/>
+			<Orientation y="-0.99302"/>
+			<Actor seed="36262"/>
+		</Entity>
+		<Entity uid="537">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1095.65711" z="1215.97095"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37389"/>
+		</Entity>
+		<Entity uid="538">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1076.97046" z="1227.2527"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41194"/>
+		</Entity>
+		<Entity uid="539">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="924.55481" z="1235.41785"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="48898"/>
+		</Entity>
+		<Entity uid="540">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="947.59351" z="1221.82801"/>
+			<Orientation y="1.7359"/>
+			<Actor seed="42481"/>
+		</Entity>
+		<Entity uid="541">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="964.35297" z="1231.6609"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="45484"/>
+		</Entity>
+		<Entity uid="542">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="976.52417" z="1243.87855"/>
+			<Orientation y="2.76192"/>
+			<Actor seed="17067"/>
+		</Entity>
+		<Entity uid="543">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="994.45246" z="1241.74793"/>
+			<Orientation y="2.33132"/>
+			<Actor seed="47789"/>
+		</Entity>
+		<Entity uid="544">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="999.72101" z="1238.70765"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="9543"/>
+		</Entity>
+		<Entity uid="545">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="995.58692" z="1238.57313"/>
+			<Orientation y="1.0794"/>
+			<Actor seed="65204"/>
+		</Entity>
+		<Entity uid="546">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1012.76618" z="1243.78882"/>
+			<Orientation y="-1.99927"/>
+			<Actor seed="30815"/>
+		</Entity>
+		<Entity uid="547">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1012.68378" z="1240.09412"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31639"/>
+		</Entity>
+		<Entity uid="549">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1036.0558" z="1276.10486"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="8995"/>
+		</Entity>
+		<Entity uid="550">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1085.46644" z="1252.89625"/>
+			<Orientation y="3.08632"/>
+			<Actor seed="32812"/>
+		</Entity>
+		<Entity uid="551">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="958.23304" z="1213.495"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="55106"/>
+		</Entity>
+		<Entity uid="552">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="989.34632" z="1206.65223"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="21329"/>
+		</Entity>
+		<Entity uid="553">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="918.49299" z="1200.71302"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="59207"/>
+		</Entity>
+		<Entity uid="554">
+			<Template>actor|geology/stonemine_desert_badlands_large.xml</Template>
+			<Position x="902.72522" z="1145.48328"/>
+			<Orientation y="-2.88529"/>
+			<Actor seed="40688"/>
+		</Entity>
+		<Entity uid="555">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="917.7259" z="1245.02991"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="34323"/>
+		</Entity>
+		<Entity uid="556">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="951.92865" z="1238.3335"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="36059"/>
+		</Entity>
+		<Entity uid="557">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1059.83692" z="1358.0785"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="65159"/>
+		</Entity>
+		<Entity uid="558">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1111.46802" z="1317.59131"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="51707"/>
+		</Entity>
+		<Entity uid="559">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1118.53187" z="1324.45728"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="64855"/>
+		</Entity>
+		<Entity uid="560">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1123.14026" z="1319.72974"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7714"/>
+		</Entity>
+		<Entity uid="561">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1122.60071" z="1309.61536"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="14844"/>
+		</Entity>
+		<Entity uid="562">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1122.77588" z="1314.98829"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13952"/>
+		</Entity>
+		<Entity uid="563">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1119.57972" z="1327.83301"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="28148"/>
+		</Entity>
+		<Entity uid="564">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1117.1089" z="1333.47291"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="59769"/>
+		</Entity>
+		<Entity uid="565">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1114.51685" z="1341.88721"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58853"/>
+		</Entity>
+		<Entity uid="566">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1111.06324" z="1345.85438"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42110"/>
+		</Entity>
+		<Entity uid="567">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1116.07374" z="1336.89271"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13141"/>
+		</Entity>
+		<Entity uid="568">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1117.33326" z="1334.22608"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="32678"/>
+		</Entity>
+		<Entity uid="569">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1121.65088" z="1330.45276"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="32261"/>
+		</Entity>
+		<Entity uid="570">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1129.59253" z="1328.28663"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="4135"/>
+		</Entity>
+		<Entity uid="571">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1132.31507" z="1320.1454"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38273"/>
+		</Entity>
+		<Entity uid="572">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1125.23853" z="1317.27332"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="17281"/>
+		</Entity>
+		<Entity uid="573">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1122.28357" z="1320.80665"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="34713"/>
+		</Entity>
+		<Entity uid="574">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1121.4535" z="1324.1128"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="64654"/>
+		</Entity>
+		<Entity uid="575">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1124.42933" z="1314.3523"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="61510"/>
+		</Entity>
+		<Entity uid="576">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1125.86536" z="1309.50672"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="1020"/>
+		</Entity>
+		<Entity uid="577">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1127.80909" z="1305.56092"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="15351"/>
+		</Entity>
+		<Entity uid="578">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1123.99317" z="1299.39808"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13648"/>
+		</Entity>
+		<Entity uid="579">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1119.48877" z="1302.74012"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="45468"/>
+		</Entity>
+		<Entity uid="580">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1113.2168" z="1304.23792"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="33658"/>
+		</Entity>
+		<Entity uid="581">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1117.41529" z="1301.57093"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49287"/>
+		</Entity>
+		<Entity uid="582">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1130.35914" z="1349.16138"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="17149"/>
+		</Entity>
+		<Entity uid="583">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1139.88697" z="1328.23365"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42052"/>
+		</Entity>
+		<Entity uid="584">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1136.32972" z="1328.09546"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20224"/>
+		</Entity>
+		<Entity uid="585">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1139.13172" z="1319.23938"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42572"/>
+		</Entity>
+		<Entity uid="586">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1103.4004" z="1312.9751"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46724"/>
+		</Entity>
+		<Entity uid="587">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1014.88367" z="1181.25635"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="28815"/>
+		</Entity>
+		<Entity uid="588">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1095.53956" z="1270.51832"/>
+			<Orientation y="-2.21251"/>
+			<Actor seed="2699"/>
 		</Entity>
 		<Entity uid="589">
 			<Template>actor|geology/stone_desert_med.xml</Template>
@@ -6058,7 +6494,6 @@
 		</Entity>
 		<Entity uid="1568">
 			<Template>actor|props/special/eyecandy/bridge_edge_hele.xml</Template>
-			<Player>0</Player>
 			<Position x="1897.64649" z="956.63501"/>
 			<Orientation y="7.83045"/>
 			<Actor seed="48605"/>
@@ -6221,28 +6656,24 @@
 		</Entity>
 		<Entity uid="1600">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1916.78553" z="925.15973"/>
 			<Orientation y="0.02149"/>
 			<Actor seed="49793"/>
 		</Entity>
 		<Entity uid="1601">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1917.36548" z="918.74213"/>
 			<Orientation y="3.12526"/>
 			<Actor seed="49793"/>
 		</Entity>
 		<Entity uid="1602">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1914.67518" z="990.81885"/>
 			<Orientation y="3.1376"/>
 			<Actor seed="49793"/>
 		</Entity>
 		<Entity uid="1603">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1913.86866" z="997.07557"/>
 			<Orientation y="0.02149"/>
 			<Actor seed="49793"/>
@@ -18480,6 +18911,96 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="30624"/>
 		</Entity>
+		<Entity uid="4396">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1029.46106" z="1417.33252"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52373"/>
+		</Entity>
+		<Entity uid="4397">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1007.05024" z="1491.43836"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="23304"/>
+		</Entity>
+		<Entity uid="4398">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1001.18232" z="1488.05274"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="4093"/>
+		</Entity>
+		<Entity uid="4399">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="980.33155" z="1514.99427"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="44603"/>
+		</Entity>
+		<Entity uid="4401">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="940.23877" z="1549.95545"/>
+			<Orientation y="1.62368"/>
+			<Actor seed="16179"/>
+		</Entity>
+		<Entity uid="4402">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="995.89008" z="1469.87256"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="26037"/>
+		</Entity>
+		<Entity uid="4403">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1002.3069" z="1420.14563"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20067"/>
+		</Entity>
+		<Entity uid="4404">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1022.30787" z="1387.63758"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="30923"/>
+		</Entity>
+		<Entity uid="4405">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1044.29126" z="1339.85901"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="9039"/>
+		</Entity>
+		<Entity uid="4406">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1089.3108" z="1355.85218"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13768"/>
+		</Entity>
+		<Entity uid="4407">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1073.08741" z="1371.83509"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="35749"/>
+		</Entity>
+		<Entity uid="4408">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1070.08655" z="1381.71106"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="28154"/>
+		</Entity>
+		<Entity uid="4409">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1059.45752" z="1381.516"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58763"/>
+		</Entity>
+		<Entity uid="4411">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1051.7411" z="1524.4734"/>
+			<Orientation y="1.40377"/>
+			<Actor seed="27680"/>
+		</Entity>
+		<Entity uid="4412">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1004.94336" z="1542.50232"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5892"/>
+		</Entity>
 		<Entity uid="4413">
 			<Template>actor|geology/stone_savanna_med.xml</Template>
 			<Position x="1038.09791" z="1510.44288"/>
@@ -18792,6 +19313,535 @@
 			<Orientation y="-2.51412"/>
 			<Actor seed="48975"/>
 		</Entity>
+		<Entity uid="4465">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="805.71387" z="1582.49598"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="51733"/>
+		</Entity>
+		<Entity uid="4466">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="827.46552" z="1592.99146"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10969"/>
+		</Entity>
+		<Entity uid="4467">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="824.56324" z="1575.27808"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="45716"/>
+		</Entity>
+		<Entity uid="4468">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="798.27216" z="1572.90491"/>
+			<Orientation y="-1.41451"/>
+			<Actor seed="40698"/>
+		</Entity>
+		<Entity uid="4469">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="764.38416" z="1567.83631"/>
+			<Orientation y="-1.57241"/>
+			<Actor seed="50722"/>
+		</Entity>
+		<Entity uid="4470">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="730.22303" z="1565.9673"/>
+			<Orientation y="-2.0464"/>
+			<Actor seed="4229"/>
+		</Entity>
+		<Entity uid="4471">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="734.16395" z="1559.90821"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6483"/>
+		</Entity>
+		<Entity uid="4472">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="741.01453" z="1554.74781"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7420"/>
+		</Entity>
+		<Entity uid="4473">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="710.96033" z="1581.85511"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="18222"/>
+		</Entity>
+		<Entity uid="4474">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="697.12635" z="1589.00232"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5179"/>
+		</Entity>
+		<Entity uid="4475">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="700.91382" z="1592.1648"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="54892"/>
+		</Entity>
+		<Entity uid="4476">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="717.11353" z="1566.5298"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="4893"/>
+		</Entity>
+		<Entity uid="4477">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="720.13312" z="1570.80164"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="64886"/>
+		</Entity>
+		<Entity uid="4478">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="719.61518" z="1583.8877"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="12117"/>
+		</Entity>
+		<Entity uid="4479">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="753.87732" z="1558.7765"/>
+			<Orientation y="-0.06434"/>
+			<Actor seed="63682"/>
+		</Entity>
+		<Entity uid="4481">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="867.07123" z="1596.0912"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37052"/>
+		</Entity>
+		<Entity uid="4482">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="871.44776" z="1598.40137"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="33701"/>
+		</Entity>
+		<Entity uid="4483">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="659.98578" z="1593.54212"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50079"/>
+		</Entity>
+		<Entity uid="4484">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="668.13624" z="1555.74708"/>
+			<Orientation y="-2.84092"/>
+			<Actor seed="25693"/>
+		</Entity>
+		<Entity uid="4485">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="661.14942" z="1543.31531"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="60163"/>
+		</Entity>
+		<Entity uid="4486">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="660.8144" z="1539.73414"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31545"/>
+		</Entity>
+		<Entity uid="4487">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="657.89765" z="1549.85865"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41349"/>
+		</Entity>
+		<Entity uid="4488">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="645.73078" z="1554.62855"/>
+			<Orientation y="-1.98356"/>
+			<Actor seed="62356"/>
+		</Entity>
+		<Entity uid="4489">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="638.3094" z="1543.00257"/>
+			<Orientation y="2.81127"/>
+			<Actor seed="63185"/>
+		</Entity>
+		<Entity uid="4490">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="649.1745" z="1531.12146"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42658"/>
+		</Entity>
+		<Entity uid="4491">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="648.13544" z="1525.49585"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="1562"/>
+		</Entity>
+		<Entity uid="4492">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="636.8736" z="1529.66236"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7662"/>
+		</Entity>
+		<Entity uid="4493">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="641.7143" z="1540.60596"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="39107"/>
+		</Entity>
+		<Entity uid="4494">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="639.3871" z="1530.55005"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50103"/>
+		</Entity>
+		<Entity uid="4495">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="649.54987" z="1584.33765"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="517"/>
+		</Entity>
+		<Entity uid="4496">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="729.00037" z="1678.3069"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7628"/>
+		</Entity>
+		<Entity uid="4497">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="722.28162" z="1673.2599"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="59075"/>
+		</Entity>
+		<Entity uid="4498">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="861.56849" z="1669.38746"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="62468"/>
+		</Entity>
+		<Entity uid="4499">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="862.47706" z="1661.13428"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="43453"/>
+		</Entity>
+		<Entity uid="4500">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="872.35315" z="1676.08704"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="1636"/>
+		</Entity>
+		<Entity uid="4501">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="875.7848" z="1682.34668"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="11079"/>
+		</Entity>
+		<Entity uid="4502">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="863.89106" z="1680.99488"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6193"/>
+		</Entity>
+		<Entity uid="4503">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="853.03937" z="1674.55188"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="4005"/>
+		</Entity>
+		<Entity uid="4504">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="940.01948" z="1627.76001"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49236"/>
+		</Entity>
+		<Entity uid="4505">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="943.69837" z="1633.53394"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="55912"/>
+		</Entity>
+		<Entity uid="4506">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="958.50013" z="1632.07227"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="1341"/>
+		</Entity>
+		<Entity uid="4507">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="895.57917" z="1582.87903"/>
+			<Orientation y="-0.53544"/>
+			<Actor seed="57068"/>
+		</Entity>
+		<Entity uid="4508">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="934.49531" z="1564.80408"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="54786"/>
+		</Entity>
+		<Entity uid="4509">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="940.06629" z="1569.7013"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6280"/>
+		</Entity>
+		<Entity uid="4510">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="934.13056" z="1571.47083"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38557"/>
+		</Entity>
+		<Entity uid="4511">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="923.60254" z="1571.94092"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="3535"/>
+		</Entity>
+		<Entity uid="4512">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="926.93091" z="1570.6985"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41616"/>
+		</Entity>
+		<Entity uid="4513">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="830.19459" z="1580.45777"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="22055"/>
+		</Entity>
+		<Entity uid="4514">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1069.35547" z="1502.32654"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="39014"/>
+		</Entity>
+		<Entity uid="4515">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1058.51368" z="1477.79737"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47209"/>
+		</Entity>
+		<Entity uid="4516">
+			<Template>actor|geology/stonemine_desert_badlands_large.xml</Template>
+			<Position x="1020.3423" z="1465.12317"/>
+			<Orientation y="3.0419"/>
+			<Actor seed="49684"/>
+		</Entity>
+		<Entity uid="4517">
+			<Template>actor|geology/stonemine_desert_badlands_quarry.xml</Template>
+			<Position x="1020.92261" z="1528.61097"/>
+			<Orientation y="-0.30568"/>
+			<Actor seed="12249"/>
+		</Entity>
+		<Entity uid="4518">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="1012.74292" z="1437.7461"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20483"/>
+		</Entity>
+		<Entity uid="4519">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="1083.45545" z="1481.10462"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5746"/>
+		</Entity>
+		<Entity uid="4520">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="1009.27033" z="1558.8849"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37204"/>
+		</Entity>
+		<Entity uid="4521">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="913.45124" z="1575.32898"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="65117"/>
+		</Entity>
+		<Entity uid="4522">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="925.50483" z="1563.90076"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10095"/>
+		</Entity>
+		<Entity uid="4523">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="913.7038" z="1548.41346"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49764"/>
+		</Entity>
+		<Entity uid="4524">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="928.31733" z="1536.22767"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="26719"/>
+		</Entity>
+		<Entity uid="4525">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="954.5522" z="1530.51575"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42947"/>
+		</Entity>
+		<Entity uid="4526">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="766.37604" z="1530.57215"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31917"/>
+		</Entity>
+		<Entity uid="4527">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="713.67542" z="1546.23633"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="8539"/>
+		</Entity>
+		<Entity uid="4528">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="669.52186" z="1576.4292"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5276"/>
+		</Entity>
+		<Entity uid="4529">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="654.20429" z="1555.12647"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47514"/>
+		</Entity>
+		<Entity uid="4530">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="653.24317" z="1440.09986"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31756"/>
+		</Entity>
+		<Entity uid="4531">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="655.02466" z="1422.62964"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="19817"/>
+		</Entity>
+		<Entity uid="4532">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="681.78266" z="1394.2367"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="15092"/>
+		</Entity>
+		<Entity uid="4533">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="691.19324" z="1354.79603"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="14009"/>
+		</Entity>
+		<Entity uid="4534">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="703.31678" z="1328.13038"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47617"/>
+		</Entity>
+		<Entity uid="4535">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="724.73438" z="1297.69715"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="61749"/>
+		</Entity>
+		<Entity uid="4536">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="769.50794" z="1250.214"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27346"/>
+		</Entity>
+		<Entity uid="4537">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="781.80555" z="1246.90638"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="9198"/>
+		</Entity>
+		<Entity uid="4538">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="750.11524" z="1246.9817"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="25298"/>
+		</Entity>
+		<Entity uid="4539">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="733.73053" z="1247.54029"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49319"/>
+		</Entity>
+		<Entity uid="4540">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="748.67713" z="1244.43934"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="59747"/>
+		</Entity>
+		<Entity uid="4541">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="780.04072" z="1219.13245"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="8918"/>
+		</Entity>
+		<Entity uid="4542">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="831.42225" z="1215.85145"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="712"/>
+		</Entity>
+		<Entity uid="4543">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="818.88538" z="1198.96033"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20458"/>
+		</Entity>
+		<Entity uid="4545">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="846.33985" z="1220.7798"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="62264"/>
+		</Entity>
+		<Entity uid="4546">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="843.43787" z="1177.74903"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="39273"/>
+		</Entity>
+		<Entity uid="4547">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="833.56348" z="1172.08838"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="39665"/>
+		</Entity>
+		<Entity uid="4548">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="832.17096" z="1151.6388"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37462"/>
+		</Entity>
+		<Entity uid="4549">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="863.38794" z="1165.34827"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50085"/>
+		</Entity>
 		<Entity uid="4550">
 			<Template>gaia/rock/desert_small</Template>
 			<Player>0</Player>
@@ -18813,6 +19863,13 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="8887"/>
 		</Entity>
+		<Entity uid="4553">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="826.46106" z="1189.5027"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="48112"/>
+		</Entity>
 		<Entity uid="4554">
 			<Template>gaia/rock/desert_small</Template>
 			<Player>0</Player>
@@ -18826,6 +19883,272 @@
 			<Position x="766.4535" z="1160.22681"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15229"/>
+		</Entity>
+		<Entity uid="4556">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="726.02851" z="1245.09363"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="11049"/>
+		</Entity>
+		<Entity uid="4557">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="760.75196" z="1239.55396"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50866"/>
+		</Entity>
+		<Entity uid="4558">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="768.19574" z="1230.83655"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="54773"/>
+		</Entity>
+		<Entity uid="4559">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="776.25232" z="1239.13721"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31869"/>
+		</Entity>
+		<Entity uid="4560">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="734.27826" z="1215.51111"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="16006"/>
+		</Entity>
+		<Entity uid="4561">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="742.66858" z="1208.18738"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49888"/>
+		</Entity>
+		<Entity uid="4562">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="735.94245" z="1204.82398"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="57372"/>
+		</Entity>
+		<Entity uid="4563">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="729.89277" z="1196.27967"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="23975"/>
+		</Entity>
+		<Entity uid="4564">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="759.76581" z="1221.45215"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="16025"/>
+		</Entity>
+		<Entity uid="4565">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="685.65406" z="1295.08619"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="8692"/>
+		</Entity>
+		<Entity uid="4566">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="692.5348" z="1305.02381"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="43787"/>
+		</Entity>
+		<Entity uid="4567">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="685.91755" z="1318.11268"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="44060"/>
+		</Entity>
+		<Entity uid="4568">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="667.88642" z="1324.55884"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="34499"/>
+		</Entity>
+		<Entity uid="4569">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="678.59668" z="1328.92579"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="19391"/>
+		</Entity>
+		<Entity uid="4570">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="673.65601" z="1333.25672"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41886"/>
+		</Entity>
+		<Entity uid="4571">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="666.66645" z="1338.84717"/>
+			<Orientation y="0.55306"/>
+			<Actor seed="6344"/>
+		</Entity>
+		<Entity uid="4572">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="672.12745" z="1349.67066"/>
+			<Orientation y="-1.65804"/>
+			<Actor seed="47128"/>
+		</Entity>
+		<Entity uid="4573">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="650.88904" z="1357.71949"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46027"/>
+		</Entity>
+		<Entity uid="4574">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="652.49225" z="1382.82642"/>
+			<Orientation y="0.16781"/>
+			<Actor seed="3096"/>
+		</Entity>
+		<Entity uid="4575">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="654.60041" z="1398.79273"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="15567"/>
+		</Entity>
+		<Entity uid="4576">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="635.97388" z="1412.04493"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38559"/>
+		</Entity>
+		<Entity uid="4577">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="642.2696" z="1416.00818"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10757"/>
+		</Entity>
+		<Entity uid="4578">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="618.23646" z="1441.12269"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="19319"/>
+		</Entity>
+		<Entity uid="4579">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="618.81959" z="1452.87427"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46872"/>
+		</Entity>
+		<Entity uid="4580">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="572.04468" z="1499.04883"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58993"/>
+		</Entity>
+		<Entity uid="4581">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="597.67212" z="1481.29322"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="44809"/>
+		</Entity>
+		<Entity uid="4582">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="593.32691" z="1488.47962"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="40313"/>
+		</Entity>
+		<Entity uid="4583">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="567.68604" z="1507.03333"/>
+			<Orientation y="-2.88111"/>
+			<Actor seed="36013"/>
+		</Entity>
+		<Entity uid="4584">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="541.63086" z="1505.94397"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="48142"/>
+		</Entity>
+		<Entity uid="4585">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="564.37836" z="1510.35706"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="33063"/>
+		</Entity>
+		<Entity uid="4586">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="532.75843" z="1524.91761"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="51350"/>
+		</Entity>
+		<Entity uid="4587">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="529.01911" z="1534.14783"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="30"/>
+		</Entity>
+		<Entity uid="4588">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="511.20521" z="1535.84485"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37136"/>
+		</Entity>
+		<Entity uid="4589">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="502.42533" z="1537.78895"/>
+			<Orientation y="0.26554"/>
+			<Actor seed="19623"/>
+		</Entity>
+		<Entity uid="4590">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="506.7855" z="1554.26258"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="48210"/>
+		</Entity>
+		<Entity uid="4591">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="522.76172" z="1546.80542"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="25369"/>
+		</Entity>
+		<Entity uid="4592">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="511.40827" z="1555.26648"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27547"/>
+		</Entity>
+		<Entity uid="4593">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="514.5334" z="1559.87256"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5573"/>
 		</Entity>
 		<Entity uid="4594">
 			<Template>gaia/rock/desert_small</Template>
@@ -23199,9 +24522,92 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="50872"/>
 		</Entity>
+		<Entity uid="5320">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="779.15937" z="1161.36329"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5321">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="741.18732" z="1180.72767"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5322">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="741.42872" z="1187.70557"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5323">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="732.94312" z="1192.42298"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5324">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="743.53315" z="1211.04383"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5325">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="781.91279" z="1224.22266"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5326">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="700.46229" z="1194.74878"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5327">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="732.602" z="1280.667"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5328">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="709.91651" z="1311.82227"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5329">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="694.0188" z="1317.28992"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5330">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="708.03187" z="1305.24537"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5331">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="686.36976" z="1387.59754"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5332">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="661.85096" z="1456.76026"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
+		<Entity uid="5333">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="638.81586" z="1468.85706"/>
+			<Orientation y="2.35622"/>
+			<Actor seed="38059"/>
+		</Entity>
 		<Entity uid="5335">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1896.10743" z="836.60621"/>
 			<Orientation y="7.88788"/>
 			<Obstruction group="1553"/>
@@ -23209,21 +24615,18 @@
 		</Entity>
 		<Entity uid="5336">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1893.89112" z="1073.09888"/>
 			<Orientation y="7.82573"/>
 			<Actor seed="49793"/>
 		</Entity>
 		<Entity uid="5337">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1910.86817" z="1113.24292"/>
 			<Orientation y="0.02149"/>
 			<Actor seed="49793"/>
 		</Entity>
 		<Entity uid="5338">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1911.67493" z="1107.69568"/>
 			<Orientation y="3.13761"/>
 			<Actor seed="49793"/>
@@ -23272,14 +24675,12 @@
 		</Entity>
 		<Entity uid="5357">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1917.49976" z="795.02356"/>
 			<Orientation y="3.12526"/>
 			<Actor seed="49793"/>
 		</Entity>
 		<Entity uid="5358">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1917.48023" z="800.37732"/>
 			<Orientation y="0.01534"/>
 			<Actor seed="49793"/>
@@ -46343,14 +47744,12 @@
 		</Entity>
 		<Entity uid="10854">
 			<Template>actor|props/special/eyecandy/bridge_edge_hele.xml</Template>
-			<Player>0</Player>
 			<Position x="1729.21937" z="962.58832"/>
 			<Orientation y="-0.03637"/>
 			<Actor seed="65123"/>
 		</Entity>
 		<Entity uid="10855">
 			<Template>actor|props/special/eyecandy/bridge_edge_hele.xml</Template>
-			<Player>0</Player>
 			<Position x="1732.93006" z="948.64222"/>
 			<Orientation y="3.09307"/>
 			<Actor seed="65123"/>
@@ -54874,14 +56273,12 @@
 		</Entity>
 		<Entity uid="12175">
 			<Template>actor|props/special/eyecandy/bridge_edge_hele.xml</Template>
-			<Player>0</Player>
 			<Position x="1729.91602" z="1457.3263"/>
 			<Orientation y="3.09615"/>
 			<Actor seed="33719"/>
 		</Entity>
 		<Entity uid="12176">
 			<Template>actor|props/special/eyecandy/bridge_edge_hele.xml</Template>
-			<Player>0</Player>
 			<Position x="1731.98438" z="1461.41688"/>
 			<Orientation y="6.2383"/>
 			<Actor seed="33719"/>
@@ -57826,7 +59223,6 @@
 		</Entity>
 		<Entity uid="12620">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1740.72156" z="931.87903"/>
 			<Orientation y="-1.58713"/>
 			<Actor seed="52187"/>
@@ -65978,7 +67374,7 @@
 			<Player>0</Player>
 			<Position x="1439.09571" z="1007.7782"/>
 			<Orientation y="2.35621"/>
-			<Obstruction group="1495" group2="13891"/>
+			<Obstruction group="1495"/>
 			<Actor seed="40800"/>
 		</Entity>
 		<Entity uid="13937">
@@ -66654,7 +68050,7 @@
 			<Player>0</Player>
 			<Position x="1333.745" z="1106.8722"/>
 			<Orientation y="5.4809"/>
-			<Obstruction group="14140" group2="14074"/>
+			<Obstruction group="14140"/>
 			<Actor seed="1461"/>
 		</Entity>
 		<Entity uid="14076">
@@ -66923,14 +68319,14 @@
 			<Actor seed="4233"/>
 		</Entity>
 		<Entity uid="14113">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1291.0918" z="1212.88721"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7768"/>
 		</Entity>
 		<Entity uid="14114">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1299.60474" z="1164.1725"/>
 			<Orientation y="2.35621"/>
@@ -66938,7 +68334,7 @@
 			<Actor seed="58153"/>
 		</Entity>
 		<Entity uid="14115">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1331.9303" z="1154.50306"/>
 			<Orientation y="2.35621"/>
@@ -66973,7 +68369,7 @@
 			<Player>0</Player>
 			<Position x="1290.6073" z="1129.05018"/>
 			<Orientation y="0.76085"/>
-			<Obstruction group="1492" group2="180"/>
+			<Obstruction group="1492"/>
 			<Actor seed="20809"/>
 		</Entity>
 		<Entity uid="14120">
@@ -67151,7 +68547,7 @@
 			<Player>0</Player>
 			<Position x="1372.1261" z="1068.59937"/>
 			<Orientation y="5.54241"/>
-			<Obstruction group="14146" group2="14166"/>
+			<Obstruction group="14146"/>
 			<Actor seed="1461"/>
 		</Entity>
 		<Entity uid="14145">
@@ -67253,7 +68649,7 @@
 			<Actor seed="38784"/>
 		</Entity>
 		<Entity uid="14158">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1352.15491" z="1117.48743"/>
 			<Orientation y="2.35621"/>
@@ -67261,7 +68657,7 @@
 			<Actor seed="17467"/>
 		</Entity>
 		<Entity uid="14159">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1344.62867" z="1109.71167"/>
 			<Orientation y="2.35621"/>
@@ -67307,7 +68703,7 @@
 			<Player>0</Player>
 			<Position x="1366.01197" z="1073.09961"/>
 			<Orientation y="5.51017"/>
-			<Obstruction group="14146" group2="14166"/>
+			<Obstruction group="14146"/>
 			<Actor seed="44831"/>
 		</Entity>
 		<Entity uid="14166">
@@ -68177,7 +69573,7 @@
 			<Actor seed="1338"/>
 		</Entity>
 		<Entity uid="14287">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1380.27454" z="1390.25245"/>
 			<Orientation y="2.36803"/>
@@ -68709,7 +70105,7 @@
 			<Actor seed="13301"/>
 		</Entity>
 		<Entity uid="14368">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1333.70435" z="1448.23646"/>
 			<Orientation y="2.35622"/>
@@ -68717,7 +70113,7 @@
 			<Actor seed="53937"/>
 		</Entity>
 		<Entity uid="14369">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1341.2306" z="1456.01221"/>
 			<Orientation y="2.35622"/>
@@ -68830,7 +70226,7 @@
 			<Actor seed="20809"/>
 		</Entity>
 		<Entity uid="14384">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1321.00599" z="1493.02784"/>
 			<Orientation y="2.35622"/>
@@ -69200,7 +70596,7 @@
 			<Actor seed="13301"/>
 		</Entity>
 		<Entity uid="14434">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1263.54236" z="1439.00306"/>
 			<Orientation y="-0.79085"/>
@@ -69208,7 +70604,7 @@
 			<Actor seed="53937"/>
 		</Entity>
 		<Entity uid="14435">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1256.05884" z="1431.18628"/>
 			<Orientation y="-0.79085"/>
@@ -69321,7 +70717,7 @@
 			<Actor seed="20809"/>
 		</Entity>
 		<Entity uid="14450">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1276.48548" z="1394.28174"/>
 			<Orientation y="-0.79085"/>
@@ -69699,7 +71095,7 @@
 			<Player>0</Player>
 			<Position x="1339.29761" z="1344.136"/>
 			<Orientation y="7.10491"/>
-			<Obstruction group="14504" group2="14508"/>
+			<Obstruction group="14504"/>
 			<Actor seed="57212"/>
 		</Entity>
 		<Entity uid="14502">
@@ -69832,7 +71228,7 @@
 			<Player>0</Player>
 			<Position x="1308.65247" z="1329.98731"/>
 			<Orientation y="8.70182"/>
-			<Obstruction group="14522" group2="14526"/>
+			<Obstruction group="14522"/>
 			<Actor seed="57212"/>
 		</Entity>
 		<Entity uid="14520">
@@ -69939,7 +71335,7 @@
 			<Actor seed="38784"/>
 		</Entity>
 		<Entity uid="14534">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1385.86194" z="1372.71387"/>
 			<Orientation y="2.36803"/>
@@ -70058,7 +71454,7 @@
 			<Actor seed="13301"/>
 		</Entity>
 		<Entity uid="14550">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1282.56275" z="1565.6515"/>
 			<Orientation y="2.35622"/>
@@ -70082,7 +71478,7 @@
 			<Actor seed="20809"/>
 		</Entity>
 		<Entity uid="14553">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1302.78736" z="1528.63587"/>
 			<Orientation y="2.35622"/>
@@ -70090,7 +71486,7 @@
 			<Actor seed="17467"/>
 		</Entity>
 		<Entity uid="14554">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1295.26111" z="1520.86011"/>
 			<Orientation y="2.35622"/>
@@ -70364,11 +71760,11 @@
 			<Player>0</Player>
 			<Position x="1346.25025" z="1352.97571"/>
 			<Orientation y="3.92603"/>
-			<Obstruction group="14504" group2="14503"/>
+			<Obstruction group="14504"/>
 			<Actor seed="13301"/>
 		</Entity>
 		<Entity uid="14592">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1335.82215" z="1350.33228"/>
 			<Orientation y="2.35622"/>
@@ -70376,7 +71772,7 @@
 			<Actor seed="58153"/>
 		</Entity>
 		<Entity uid="14593">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1327.30921" z="1399.047"/>
 			<Orientation y="2.35622"/>
@@ -70676,7 +72072,7 @@
 			<Actor seed="13301"/>
 		</Entity>
 		<Entity uid="14634">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1225.78003" z="1333.27466"/>
 			<Orientation y="3.33248"/>
@@ -70684,7 +72080,7 @@
 			<Actor seed="58153"/>
 		</Entity>
 		<Entity uid="14635">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1261.36731" z="1367.61329"/>
 			<Orientation y="3.33248"/>
@@ -70984,7 +72380,7 @@
 			<Actor seed="13301"/>
 		</Entity>
 		<Entity uid="14676">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1222.46644" z="1560.93018"/>
 			<Orientation y="2.35622"/>
@@ -70992,7 +72388,7 @@
 			<Actor seed="58153"/>
 		</Entity>
 		<Entity uid="14677">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1213.9535" z="1609.6449"/>
 			<Orientation y="2.35622"/>
@@ -79752,19 +81148,19 @@
 			<Actor seed="21608"/>
 		</Entity>
 		<Entity uid="16066">
-			<Template>actor|structures/kushites/warship_scout.xml</Template>
+			<Template>actor|structures/kushites/warship_light.xml</Template>
 			<Position x="1955.56959" z="940.81897"/>
 			<Orientation y="-1.50687"/>
 			<Actor seed="9530"/>
 		</Entity>
 		<Entity uid="16067">
-			<Template>actor|structures/kushites/warship_scout.xml</Template>
+			<Template>actor|structures/kushites/warship_light.xml</Template>
 			<Position x="1957.573" z="975.85541"/>
 			<Orientation y="-1.4875"/>
 			<Actor seed="56941"/>
 		</Entity>
 		<Entity uid="16068">
-			<Template>actor|structures/kushites/warship_scout.xml</Template>
+			<Template>actor|structures/kushites/warship_light.xml</Template>
 			<Position x="1953.68995" z="905.43854"/>
 			<Orientation y="-1.09635"/>
 			<Actor seed="19709"/>
@@ -81415,7 +82811,7 @@
 			<Player>0</Player>
 			<Position x="1112.37024" z="870.28034"/>
 			<Orientation y="2.14437"/>
-			<Obstruction group="1482" group2="146"/>
+			<Obstruction group="1482"/>
 			<Actor seed="43584"/>
 		</Entity>
 		<Entity uid="16321">
@@ -82785,7 +84181,7 @@
 			<Player>0</Player>
 			<Position x="1387.71949" z="890.35975"/>
 			<Orientation y="0.01528"/>
-			<Obstruction group="1499" group2="162"/>
+			<Obstruction group="1499"/>
 			<Actor seed="20094"/>
 		</Entity>
 		<Entity uid="16529">
@@ -83425,6 +84821,13 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="9812"/>
 		</Entity>
+		<Entity uid="16633">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="393.41062" z="1280.0044"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="61096"/>
+		</Entity>
 		<Entity uid="16634">
 			<Template>gaia/rock/desert_small</Template>
 			<Player>0</Player>
@@ -83446,12 +84849,54 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="11001"/>
 		</Entity>
+		<Entity uid="16637">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="368.49418" z="1259.15967"/>
+			<Orientation y="1.44997"/>
+			<Actor seed="19805"/>
+		</Entity>
+		<Entity uid="16638">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="341.42966" z="1222.82813"/>
+			<Orientation y="1.42963"/>
+			<Actor seed="44849"/>
+		</Entity>
+		<Entity uid="16639">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="334.01758" z="1181.16553"/>
+			<Orientation y="1.30619"/>
+			<Actor seed="51194"/>
+		</Entity>
+		<Entity uid="16640">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="353.23414" z="1171.01221"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="39655"/>
+		</Entity>
+		<Entity uid="16641">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="365.14213" z="1173.09974"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20133"/>
+		</Entity>
 		<Entity uid="16642">
 			<Template>gaia/rock/desert_large</Template>
 			<Player>0</Player>
 			<Position x="359.43467" z="1177.22938"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14446"/>
+		</Entity>
+		<Entity uid="16643">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="367.0019" z="1183.72913"/>
+			<Orientation y="0.97176"/>
+			<Actor seed="48141"/>
 		</Entity>
 		<Entity uid="16644">
 			<Template>gaia/rock/desert_small</Template>
@@ -83466,6 +84911,20 @@
 			<Position x="308.30506" z="1162.26807"/>
 			<Orientation y="-2.14051"/>
 			<Actor seed="15121"/>
+		</Entity>
+		<Entity uid="16646">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="334.43256" z="1174.70667"/>
+			<Orientation y="1.1237"/>
+			<Actor seed="23785"/>
+		</Entity>
+		<Entity uid="16647">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="402.0601" z="1221.97608"/>
+			<Orientation y="1.06635"/>
+			<Actor seed="14227"/>
 		</Entity>
 		<Entity uid="16648">
 			<Template>gaia/rock/desert_large</Template>
@@ -83592,6 +85051,62 @@
 			<Position x="586.6698" z="929.66645"/>
 			<Orientation y="0.85596"/>
 			<Actor seed="51984"/>
+		</Entity>
+		<Entity uid="16668">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="620.03803" z="987.88904"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63250"/>
+		</Entity>
+		<Entity uid="16669">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="695.86353" z="928.41468"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46823"/>
+		</Entity>
+		<Entity uid="16670">
+			<Template>gaia/rock/desert_large</Template>
+			<Player>0</Player>
+			<Position x="650.56836" z="900.23053"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="30770"/>
+		</Entity>
+		<Entity uid="16671">
+			<Template>gaia/rock/desert_large</Template>
+			<Player>0</Player>
+			<Position x="635.39856" z="996.97504"/>
+			<Orientation y="0.998"/>
+			<Actor seed="23420"/>
+		</Entity>
+		<Entity uid="16672">
+			<Template>gaia/rock/desert_large</Template>
+			<Player>0</Player>
+			<Position x="598.14832" z="1002.85602"/>
+			<Orientation y="-0.67478"/>
+			<Actor seed="30804"/>
+		</Entity>
+		<Entity uid="16673">
+			<Template>gaia/rock/badlands_large</Template>
+			<Player>0</Player>
+			<Position x="608.79615" z="1007.09821"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="64422"/>
+		</Entity>
+		<Entity uid="16674">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="598.8501" z="1011.79493"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="40382"/>
+		</Entity>
+		<Entity uid="16675">
+			<Template>gaia/rock/desert_small</Template>
+			<Player>0</Player>
+			<Position x="543.28614" z="990.86561"/>
+			<Orientation y="0.02639"/>
+			<Actor seed="62893"/>
 		</Entity>
 		<Entity uid="16676">
 			<Template>actor|geology/stone_desert_med.xml</Template>
@@ -84068,7 +85583,6 @@
 		</Entity>
 		<Entity uid="16756">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="1910.87928" z="1466.83057"/>
 			<Orientation y="1.58144"/>
 			<Actor seed="13776"/>
@@ -86994,14 +88508,14 @@
 			<Actor seed="4233"/>
 		</Entity>
 		<Entity uid="17181">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1148.30335" z="1682.84583"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="7768"/>
 		</Entity>
 		<Entity uid="17182">
-			<Template>structures/cart/house_apartment</Template>
+			<Template>structures/cart/apartment</Template>
 			<Player>0</Player>
 			<Position x="1156.81629" z="1634.13111"/>
 			<Orientation y="2.35622"/>
@@ -89455,6 +90969,660 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="7655"/>
 		</Entity>
+		<Entity uid="18017">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="1059.76038" z="1165.21558"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49117"/>
+		</Entity>
+		<Entity uid="18018">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="995.80762" z="1187.46155"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38962"/>
+		</Entity>
+		<Entity uid="18020">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="989.85242" z="1186.38819"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="15426"/>
+		</Entity>
+		<Entity uid="18021">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="978.16657" z="1187.46827"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="28948"/>
+		</Entity>
+		<Entity uid="18022">
+			<Template>actor|geology/stonemine_desert_quarry.xml</Template>
+			<Position x="949.77295" z="1159.86683"/>
+			<Orientation y="0.98006"/>
+			<Actor seed="58584"/>
+		</Entity>
+		<Entity uid="18023">
+			<Template>actor|geology/stonemine_desert_quarry.xml</Template>
+			<Position x="951.6443" z="1173.36219"/>
+			<Orientation y="1.82065"/>
+			<Actor seed="42901"/>
+		</Entity>
+		<Entity uid="18024">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="962.3542" z="1175.6532"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="16631"/>
+		</Entity>
+		<Entity uid="18025">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="954.89155" z="1183.52027"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="28687"/>
+		</Entity>
+		<Entity uid="18026">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="953.44428" z="1180.57715"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="9903"/>
+		</Entity>
+		<Entity uid="18027">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="970.33942" z="1181.28003"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="25504"/>
+		</Entity>
+		<Entity uid="18028">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="974.6576" z="1188.4048"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="250"/>
+		</Entity>
+		<Entity uid="18029">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="979.06946" z="1185.99183"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="62222"/>
+		</Entity>
+		<Entity uid="18030">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="986.68488" z="1184.2876"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="3032"/>
+		</Entity>
+		<Entity uid="18031">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="957.13697" z="1160.13209"/>
+			<Orientation y="2.86963"/>
+			<Actor seed="28921"/>
+		</Entity>
+		<Entity uid="18032">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="958.96637" z="1152.2085"/>
+			<Orientation y="-3.10125"/>
+			<Actor seed="20681"/>
+		</Entity>
+		<Entity uid="18033">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="957.48157" z="1144.96326"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="64902"/>
+		</Entity>
+		<Entity uid="18034">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="951.63147" z="1146.67688"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="14088"/>
+		</Entity>
+		<Entity uid="18035">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1006.82795" z="1175.62745"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="34614"/>
+		</Entity>
+		<Entity uid="18036">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="994.99396" z="1184.969"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="7216"/>
+		</Entity>
+		<Entity uid="18037">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="993.44098" z="1187.21338"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="981"/>
+		</Entity>
+		<Entity uid="18038">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1025.41541" z="1178.68384"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="65440"/>
+		</Entity>
+		<Entity uid="18039">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1026.64039" z="1190.22059"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="4504"/>
+		</Entity>
+		<Entity uid="18040">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1026.23572" z="1194.94715"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46459"/>
+		</Entity>
+		<Entity uid="18041">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1035.38062" z="1186.84656"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="11905"/>
+		</Entity>
+		<Entity uid="18042">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1051.5724" z="1185.42493"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49687"/>
+		</Entity>
+		<Entity uid="18043">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1045.67188" z="1188.91602"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="4507"/>
+		</Entity>
+		<Entity uid="18044">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1027.57264" z="1184.11097"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38363"/>
+		</Entity>
+		<Entity uid="18045">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1042.72608" z="1174.25452"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13318"/>
+		</Entity>
+		<Entity uid="18046">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1042.86548" z="1167.58509"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="40699"/>
+		</Entity>
+		<Entity uid="18047">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1052.43787" z="1165.61707"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="32455"/>
+		</Entity>
+		<Entity uid="18048">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1015.25904" z="1149.44336"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="43000"/>
+		</Entity>
+		<Entity uid="18049">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1010.0077" z="1152.96973"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="21784"/>
+		</Entity>
+		<Entity uid="18050">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1003.62372" z="1149.23829"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="57867"/>
+		</Entity>
+		<Entity uid="18051">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1012.96747" z="1142.00489"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="3849"/>
+		</Entity>
+		<Entity uid="18052">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1045.67579" z="1138.56666"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41349"/>
+		</Entity>
+		<Entity uid="18053">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1050.22974" z="1141.2682"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58370"/>
+		</Entity>
+		<Entity uid="18054">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1052.69532" z="1145.21827"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="48138"/>
+		</Entity>
+		<Entity uid="18055">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1058.57166" z="1153.03785"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="35345"/>
+		</Entity>
+		<Entity uid="18056">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1071.60596" z="1161.63648"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27713"/>
+		</Entity>
+		<Entity uid="18057">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1082.80762" z="1182.4994"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="35065"/>
+		</Entity>
+		<Entity uid="18058">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1089.98743" z="1181.93995"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="59213"/>
+		</Entity>
+		<Entity uid="18059">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1095.65564" z="1181.37696"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="51566"/>
+		</Entity>
+		<Entity uid="18060">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1103.81531" z="1206.00916"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42062"/>
+		</Entity>
+		<Entity uid="18061">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1107.96888" z="1210.17237"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="51162"/>
+		</Entity>
+		<Entity uid="18062">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1098.4773" z="1212.42396"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="18621"/>
+		</Entity>
+		<Entity uid="18063">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1095.16285" z="1216.42042"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="11614"/>
+		</Entity>
+		<Entity uid="18064">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1092.88892" z="1247.95838"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="51122"/>
+		</Entity>
+		<Entity uid="18065">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1098.85084" z="1264.13074"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="53362"/>
+		</Entity>
+		<Entity uid="18066">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1095.44214" z="1260.98487"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="62641"/>
+		</Entity>
+		<Entity uid="18067">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1091.00928" z="1267.0232"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="24262"/>
+		</Entity>
+		<Entity uid="18068">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1104.88428" z="1272.49463"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="63342"/>
+		</Entity>
+		<Entity uid="18069">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1100.9242" z="1258.4286"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47701"/>
+		</Entity>
+		<Entity uid="18070">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1101.71424" z="1252.11951"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="653"/>
+		</Entity>
+		<Entity uid="18071">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1110.11023" z="1296.71668"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6770"/>
+		</Entity>
+		<Entity uid="18072">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1116.94507" z="1294.67408"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="35863"/>
+		</Entity>
+		<Entity uid="18073">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1119.68128" z="1302.61622"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="60246"/>
+		</Entity>
+		<Entity uid="18074">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1109.46802" z="1307.81971"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="3382"/>
+		</Entity>
+		<Entity uid="18075">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1105.63672" z="1314.98304"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50917"/>
+		</Entity>
+		<Entity uid="18076">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1099.94214" z="1325.85071"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="54377"/>
+		</Entity>
+		<Entity uid="18077">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1069.78919" z="1353.22413"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="11178"/>
+		</Entity>
+		<Entity uid="18078">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1019.43598" z="1243.5282"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="36396"/>
+		</Entity>
+		<Entity uid="18079">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1026.84351" z="1239.91626"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52253"/>
+		</Entity>
+		<Entity uid="18080">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1022.3183" z="1250.96058"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="48744"/>
+		</Entity>
+		<Entity uid="18081">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1013.2497" z="1245.94813"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="32064"/>
+		</Entity>
+		<Entity uid="18082">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1002.76417" z="1244.16944"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="34816"/>
+		</Entity>
+		<Entity uid="18083">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="990.2779" z="1241.81104"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="35520"/>
+		</Entity>
+		<Entity uid="18084">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="980.90137" z="1241.87671"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47311"/>
+		</Entity>
+		<Entity uid="18085">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="982.6186" z="1236.51575"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="9783"/>
+		</Entity>
+		<Entity uid="18103">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="995.89258" z="1241.56666"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="30316"/>
+		</Entity>
+		<Entity uid="18106">
+			<Template>actor|geology/stonemine_desert_badlands_quarry.xml</Template>
+			<Position x="1007.34192" z="1244.60413"/>
+			<Orientation y="2.01333"/>
+			<Actor seed="41457"/>
+		</Entity>
+		<Entity uid="18107">
+			<Template>actor|geology/stonemine_desert_quarry.xml</Template>
+			<Position x="985.84443" z="1240.77027"/>
+			<Orientation y="2.43392"/>
+			<Actor seed="43348"/>
+		</Entity>
+		<Entity uid="18108">
+			<Template>actor|geology/stonemine_desert_quarry.xml</Template>
+			<Position x="968.79853" z="1241.15174"/>
+			<Orientation y="2.03383"/>
+			<Actor seed="16549"/>
+		</Entity>
+		<Entity uid="18109">
+			<Template>actor|geology/stonemine_desert_quarry.xml</Template>
+			<Position x="937.97059" z="1227.88917"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="62533"/>
+		</Entity>
+		<Entity uid="18110">
+			<Template>actor|geology/stonemine_desert_quarry.xml</Template>
+			<Position x="947.2411" z="1219.8982"/>
+			<Orientation y="-2.69854"/>
+			<Actor seed="47815"/>
+		</Entity>
+		<Entity uid="18111">
+			<Template>actor|geology/stonemine_desert_quarry.xml</Template>
+			<Position x="962.98981" z="1202.52723"/>
+			<Orientation y="2.13427"/>
+			<Actor seed="20047"/>
+		</Entity>
+		<Entity uid="18112">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1028.37562" z="1191.6709"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="19045"/>
+		</Entity>
+		<Entity uid="18113">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1036.05042" z="1194.30225"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="56520"/>
+		</Entity>
+		<Entity uid="18114">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1032.39454" z="1202.8993"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="22761"/>
+		</Entity>
+		<Entity uid="18115">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1034.5923" z="1204.16138"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="17570"/>
+		</Entity>
+		<Entity uid="18116">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1044.62818" z="1205.80677"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50459"/>
+		</Entity>
+		<Entity uid="18117">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1040.7865" z="1210.01478"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46493"/>
+		</Entity>
+		<Entity uid="18118">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1042.94166" z="1238.20716"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41774"/>
+		</Entity>
+		<Entity uid="18119">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1039.8346" z="1232.35193"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="14237"/>
+		</Entity>
+		<Entity uid="18120">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1034.92627" z="1235.9806"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="8849"/>
+		</Entity>
+		<Entity uid="18121">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1034.1034" z="1235.17579"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="29480"/>
+		</Entity>
+		<Entity uid="18122">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1046.41907" z="1239.88685"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="438"/>
+		</Entity>
+		<Entity uid="18123">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1056.86243" z="1243.41639"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="14513"/>
+		</Entity>
+		<Entity uid="18124">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1053.37793" z="1244.96363"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10253"/>
+		</Entity>
+		<Entity uid="18125">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1042.39417" z="1242.9513"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31207"/>
+		</Entity>
+		<Entity uid="18126">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1035.92981" z="1240.6078"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="24696"/>
+		</Entity>
+		<Entity uid="18127">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1085.40394" z="1205.23829"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13034"/>
+		</Entity>
+		<Entity uid="18128">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="1081.57337" z="1198.87342"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5"/>
+		</Entity>
+		<Entity uid="18129">
+			<Template>actor|geology/stonemine_desert_quarry.xml</Template>
+			<Position x="1034.2422" z="1225.89271"/>
+			<Orientation y="-0.10053"/>
+			<Actor seed="34384"/>
+		</Entity>
+		<Entity uid="18130">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="953.43091" z="1108.141"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="41691"/>
+		</Entity>
+		<Entity uid="18131">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="953.62519" z="1102.02051"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="12350"/>
+		</Entity>
+		<Entity uid="18132">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="956.56006" z="1129.4452"/>
+			<Orientation y="2.07975"/>
+			<Actor seed="33914"/>
+		</Entity>
+		<Entity uid="18133">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="965.23212" z="1126.95472"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13172"/>
+		</Entity>
+		<Entity uid="18134">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="939.46882" z="1097.9419"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="55763"/>
+		</Entity>
+		<Entity uid="18135">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="934.09333" z="1090.00586"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49447"/>
+		</Entity>
+		<Entity uid="18136">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="922.49762" z="1095.53772"/>
+			<Orientation y="1.75562"/>
+			<Actor seed="46380"/>
+		</Entity>
+		<Entity uid="18137">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="924.22181" z="1100.23609"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20050"/>
+		</Entity>
+		<Entity uid="18138">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="905.28931" z="1129.62415"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50536"/>
+		</Entity>
+		<Entity uid="18139">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="893.70594" z="1135.32605"/>
+			<Orientation y="1.80343"/>
+			<Actor seed="32848"/>
+		</Entity>
+		<Entity uid="18140">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="904.89051" z="1108.69239"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="26311"/>
+		</Entity>
+		<Entity uid="18141">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="886.40021" z="1111.9662"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46088"/>
+		</Entity>
+		<Entity uid="18142">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="881.87317" z="1113.33082"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="65102"/>
+		</Entity>
+		<Entity uid="18143">
+			<Template>actor|geology/stonemine_desert_small.xml</Template>
+			<Position x="875.318" z="1116.43409"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20643"/>
+		</Entity>
+		<Entity uid="18144">
+			<Template>actor|geology/stonemine_desert_quarry.xml</Template>
+			<Position x="893.6261" z="1106.94581"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="18279"/>
+		</Entity>
+		<Entity uid="18145">
+			<Template>actor|geology/stonemine_desert_quarry.xml</Template>
+			<Position x="901.93195" z="1101.64124"/>
+			<Orientation y="1.44349"/>
+			<Actor seed="39456"/>
+		</Entity>
 		<Entity uid="18146">
 			<Template>actor|geology/stone_desert_med.xml</Template>
 			<Position x="885.076" z="1110.62244"/>
@@ -90234,6 +92402,18 @@
 			<Position x="579.99677" z="1392.22706"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15076"/>
+		</Entity>
+		<Entity uid="18276">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="969.35413" z="1188.85535"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="64109"/>
+		</Entity>
+		<Entity uid="18279">
+			<Template>actor|geology/stonemine_desert.xml</Template>
+			<Position x="987.4264" z="1182.61109"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="28074"/>
 		</Entity>
 		<Entity uid="18280">
 			<Template>structures/kush/house</Template>
