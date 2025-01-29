@@ -6,11 +6,20 @@
 		"metal": 800,
 		"glory": 600
 	},
-	"requirements": { "tech": "phase_empire" },
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "spart" }
+				]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "arrows_trilobate.png",
 	"researchTime": 60,
-	"tooltip": "Ranged Soldiers, Buildings, and Warships +10% attack damage.  Unlocks “Recurved Composite Bows” for some civs.",
+	"tooltip": "Ranged Soldiers, Buildings, and Warships +10% attack damage.  Unlocks “Recurved Composite Bows” for some civilizations.",
 	"modifications": [
 		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.1 },
 		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.1 },

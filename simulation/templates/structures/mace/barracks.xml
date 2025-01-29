@@ -15,16 +15,13 @@
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
   </Obstruction>
-  <Researcher>
-    <Technologies datatype="tokens">
-      hellenes/attack_inf_spearfighting
-    </Technologies>
-  </Researcher>
   <Upgrade>
     <RoyalBarracks>
       <Entity>structures/mace/barracks_royal</Entity>
       <Tooltip>The Royal Barracks trains Elite Pezhetairoi pikemen, Shield Bearer champion hoplites, and Thorakites champion swordsmen. The Royal Barracks also has more technologies, and greater health and territory influence than a standard barracks.</Tooltip>
-      <Requirements><Techs datatype="tokens">phase_city</Techs></Requirements>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
       <Cost>
         <stone>400</stone>
         <glory>300</glory>
