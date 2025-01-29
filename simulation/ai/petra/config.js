@@ -104,7 +104,8 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 		"imp": [
 			"structures/{civ}/barracks_aux",
 			"structures/{civ}/arch",
-			"structures/{civ}/army_camp"
+			"structures/{civ}/army_camp",
+			"structures/{civ}/amphitheater"
 		],
 		"kush": [
 			"structures/{civ}/statue",
@@ -168,6 +169,7 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 		],
 		"xion": [
 			"structures/{civ}/statue",
+			"structures/{civ}/royal_yurt"
 		],
 		"yayo": [
 			"structures/{civ}/statue",
