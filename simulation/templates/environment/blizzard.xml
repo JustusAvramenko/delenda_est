@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit">
+  <Auras datatype="tokens">
+    environment/sandstorm
+  </Auras>
+  <Capturable disable=""/>
+  <Footprint replace="">
+    <Square width="3" depth="6"/>
+    <Height>6</Height>
+  </Footprint>
+  <Health disable=""/>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Blizzard</GenericName>
+    <VisibleClasses datatype="tokens">Blizzard Environment</VisibleClasses>
+    <Formations disable=""/>
+    <Icon>emblems/emblem_gaia.png</Icon>
+  </Identity>
+  <Obstruction disable=""/>
+  <Resistance disable=""/>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
+    <WalkSpeed> 10 </WalkSpeed>
+    <RunMultiplier>1.50</RunMultiplier>
+  </UnitMotion>
+  <Visibility>
+    <RetainInFog>true</RetainInFog>
+    <AlwaysVisible>true</AlwaysVisible>
+    <Corpse>false</Corpse>
+    <Preview>false</Preview>
+  </Visibility>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>particle/blizzard.xml</Actor>
+  </VisualActor>
+</Entity>

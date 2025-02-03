@@ -8,7 +8,7 @@
 		<SunRotation angle="-0.626047"/>
 		<AmbientColor r="0.294118" g="0.392157" b="0.494118"/>
 		<Fog>
-			<FogFactor>0.00631836</FogFactor>
+			<FogFactor>0.005625</FogFactor>
 			<FogThickness>0</FogThickness>
 			<FogColor r="0.784314" g="0.886275" b="0.976471"/>
 		</Fog>
@@ -32,7 +32,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="696.803" y="131.996" z="159.126"/>
+		<Position x="320.557" y="64.5642" z="240.522"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -55,6 +55,9 @@
   ],
   "Preview": "cisalpine_winter_2p.png",
   "RevealMap": false,
+  "TriggerScripts": [
+    "scripts/Blizzard.js"
+  ],
   "VictoryConditions": [
     "conquest_civic_centers"
   ]
@@ -738,7 +741,7 @@
 		</Entity>
 		<Entity uid="158">
 			<Template>actor|particle/snow_mist.xml</Template>
-			<Position x="336.9834" z="312.13248"/>
+			<Position x="933.27851" z="1023.99897"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33144"/>
 		</Entity>
@@ -2254,13 +2257,13 @@
 		</Entity>
 		<Entity uid="422">
 			<Template>actor|particle/snow_storm.xml</Template>
-			<Position x="532.1023" z="61.61715"/>
+			<Position x="457.6554" z="187.41059"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54340"/>
 		</Entity>
 		<Entity uid="423">
 			<Template>actor|particle/snow_storm.xml</Template>
-			<Position x="654.61646" z="152.68866"/>
+			<Position x="612.0121" z="323.70878"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35034"/>
 		</Entity>
@@ -2552,12 +2555,6 @@
 			<Orientation y="-2.13247"/>
 			<Actor seed="44038"/>
 		</Entity>
-		<Entity uid="473">
-			<Template>actor|particle/cloud_moving_small.xml</Template>
-			<Position x="431.17582" z="312.09791"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="23270"/>
-		</Entity>
 		<Entity uid="474">
 			<Template>actor|particle/cloud_moving_small.xml</Template>
 			<Position x="111.60523" z="286.61158"/>
@@ -2570,12 +2567,6 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="53224"/>
 		</Entity>
-		<Entity uid="476">
-			<Template>actor|particle/cloud_moving_small.xml</Template>
-			<Position x="800.92133" z="863.49262"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="52012"/>
-		</Entity>
 		<Entity uid="477">
 			<Template>actor|particle/cloud_moving_small.xml</Template>
 			<Position x="169.30076" z="926.06647"/>
@@ -2587,12 +2578,6 @@
 			<Position x="90.22532" z="708.88508"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="57126"/>
-		</Entity>
-		<Entity uid="479">
-			<Template>actor|particle/cloud_moving_small.xml</Template>
-			<Position x="927.05158" z="480.41157"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="20418"/>
 		</Entity>
 		<Entity uid="480">
 			<Template>gaia/rock/temperate_cut</Template>
@@ -4845,7 +4830,7 @@
 		</Entity>
 		<Entity uid="840">
 			<Template>actor|particle/snow_storm.xml</Template>
-			<Position x="244.6077" z="176.65091"/>
+			<Position x="372.36384" z="395.03254"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6900"/>
 		</Entity>
