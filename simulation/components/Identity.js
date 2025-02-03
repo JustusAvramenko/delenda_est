@@ -96,11 +96,37 @@ Identity.prototype.Init = function()
 	this.classesList = GetIdentityClasses(this.template);
 	this.visibleClassesList = GetVisibleIdentityClasses(this.template);
 	if (this.template.Phenotype)
-		this.phenotype = pickRandom(this.GetPossiblePhenotypes());
+	{
+		const phenotypes = this.GetPossiblePhenotypes();
+		// TODO: this is a workaround to avoid calling Math.random,
+		// which causes out of sync RNG caused by preview entities.
+		// However, it's not random enough. Perhaps use the actor seed.
+		this.phenotype = phenotypes[this.entity % phenotypes.length];
+	}
 	else
 		this.phenotype = "default";
 
 	this.controllable = this.template.Controllable ? this.template.Controllable == "true" : true;
+};
+
+Identity.prototype.Deserialize = function (data)
+{
+	this.Init();
+	this.phenotype = data.phenotype;
+	this.controllable = data.controllable;
+	if (data.name)
+		this.name = data.name;
+};
+
+ Identity.prototype.Serialize = function()
+{
+	const result = {
+		"phenotype": this.phenotype,
+		"controllable": this.controllable,
+	};
+	if (this.name)
+		result.name = this.name;
+	return result;
 };
 
 Identity.prototype.GetCiv = function()
@@ -181,9 +207,20 @@ Identity.prototype.SetControllable = function(controllability)
 	this.controllable = controllability;
 };
 
+/**
+ * Change the phenotype of the entity.
+ * @param {string} phenotype
+ * @returns {boolean} Whether the phenotype was changed.
+ * If yes, check if VisualActor::RecomputeActorName needs to be called.
+ */
 Identity.prototype.SetPhenotype = function(phenotype)
 {
+	if (this.phenotype == phenotype)
+		return false;
+	if (this.GetPossiblePhenotypes().indexOf(phenotype) === -1)
+		return false;
 	this.phenotype = phenotype;
+	return true;
 };
 
 /**
