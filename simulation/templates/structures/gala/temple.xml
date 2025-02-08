@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple">
+  <Cost>
+    <Resources>
+      <stone>0</stone>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="25.5" depth="25.5"/>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gala</Civ>
+    <SpecificName>Nemeton</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="22.5" depth="22.5"/>
+  </Obstruction>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>auras/temple/celtic/1024x1024.png</MainTexture>
+        <MainTextureMask>auras/temple/celtic/1024x1024_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <VisualActor>
+    <Actor>structures/celts/temple.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

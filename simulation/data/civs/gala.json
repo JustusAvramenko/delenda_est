@@ -1,0 +1,109 @@
+{
+	"Code": "gala",
+	"Culture":[ "celt" ],
+	"Region":[ "europe" ],
+	"Music": [
+		{
+			"File": "The_Road_Ahead.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Sands_of_Time.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Harvest_Moon.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Water's_Edge.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Tavern_in_the_Mist.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Ardiosmanae",
+			"History": "Represents Celtic farming methods. ",
+			"Description": "When building a Rotary Mill, nearby Gatherers +20% farming rate of grain. " 
+		},
+		{
+			"Name": "Deas Celtica",
+			"History": "Celtic religion and druidry inspired their warlike mindset. ",
+			"Description": "Druids increase attack rates of soldiers near them slightly." 
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/gaul/brennus",
+		"civ_choices/gaul/viridomarus",
+		"civ_choices/gaul/vercingetorix"
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/gaul/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/gala/civil_centre" 
+		},
+		{
+			"Template": "units/gala/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/gala/infantry_swordsman_b",
+			"Count": 2 
+		},
+		{
+			"Template": "units/gala/infantry_javelineer_b",
+			"Count": 2 
+		},
+		{
+			"Template": "units/gala/support_healer_b" 
+		},
+		{
+			"Template": "units/gala/cavalry_scout" 
+		}
+	],
+	"AINames":
+	[
+		"Divico",
+		"Ambiorix",
+		"Asterix",
+		"Acichorius",
+		"Cerethrius",
+		"Bolgios",
+		"Deiotarus",
+		"Liscus",
+		"Valetiacus",
+		"Viridovix",
+		"Cativolcus",
+		"Cingetorix"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_hero_1": "units/gaul/hero_brennus",
+		"skirmish/units/default_hero_2": "units/gaul/hero_viridomarus",
+		"skirmish/units/default_hero_3": "units/gaul/hero_vercingetorix",
+		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_5": "",
+		"skirmish/units/default_champion_infantry_1": "units/gala/champion_infantry",
+		"skirmish/units/default_champion_infantry_2": "units/gala/champion_infantry",
+		"skirmish/units/default_champion_infantry_3": "units/gala/champion_infantry",
+		"skirmish/units/default_champion_infantry_4": "units/gala/champion_infantry",
+		"skirmish/units/default_champion_cavalry_1": "units/gala/champion_chariot",
+		"skirmish/units/default_champion_cavalry_2": "units/gala/champion_cavalry",
+		"skirmish/units/default_infantry_melee_b": "units/gala/infantry_swordsman_b",
+		"skirmish/structures/default_house_5": "structures/{civ}/house",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower",
+		"skirmish/units/special_starting_unit": "units/gala/support_healer_b"
+	},
+	"SelectableInGameSetup": true
+}

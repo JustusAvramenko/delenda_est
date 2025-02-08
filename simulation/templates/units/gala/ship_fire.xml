@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_fire">
+  <Identity>
+    <Civ>gala</Civ>
+    <SpecificName>Galatian Fire Ship</SpecificName>
+    <Icon>units/iber/ship_fire.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_town
+        celts/unlock_warships
+      </Techs>
+      <Tooltip>Unlocked in Town Phase. Requires “Naval Construction.”</Tooltip>
+    </Requirements>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/iberians/fireship.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special_theater">
+  <Auras disable=""/>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>200</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+      <coin>0</coin>
+      <glory>100</glory>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="16"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gala</Civ>
+    <GenericName>Assembly of Princes</GenericName>
+    <SpecificName>Remogantion</SpecificName>
+    <VisibleClasses datatype="tokens">
+      -City
+      Town
+      Assembly
+    </VisibleClasses>
+    <Tooltip>Train Mounted Heroes and the Carnyx special soldier.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_town
+      </Techs>
+    </Requirements>
+    <Icon>structures/tholos.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="30" depth="30"/>
+  </Obstruction>
+  <Researcher>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <coin>1.0</coin>
+      <glory>1.0</glory>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Technologies datatype="tokens">
+      celts/speed_carnyx
+      celts/special_vae_victis
+      unlock_spies
+      spy_counter
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_tholos.xml</select>
+      <constructed>interface/complete/building/complete_tholos.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_trumpeter
+      units/{civ}/hero_brennus_mounted
+      units/{civ}/hero_leonnorius_mounted
+      units/{civ}/hero_deiotarus_mounted
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/gauls/theater.xml</Actor>
+    <FoundationActor>structures/fndn_7x7.xml</FoundationActor>
+  </VisualActor>
+</Entity>

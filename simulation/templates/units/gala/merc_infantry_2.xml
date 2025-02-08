@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mercenary_infantry_ranged_archer">
+  <Identity>
+    <Civ>gala</Civ>
+    <SelectionGroupName>units/gala/merc_infantry_2</SelectionGroupName>
+    <SpecificName>Galatian Archer</SpecificName>
+    <Icon>units/celt/merc_infantry_archer.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mercenaries/celtic_archer_light.xml</Actor>
+  </VisualActor>
+</Entity>

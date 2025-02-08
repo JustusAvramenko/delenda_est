@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_spearman">
+  <Attack>
+    <Melee>
+      <Bonuses>
+        <SingleCombat>
+          <Classes>Hero</Classes>
+          <Multiplier>1.33</Multiplier>
+        </SingleCombat>
+      </Bonuses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/gaul_hero_viridomarus
+  </Auras>
+  <Identity>
+    <Civ>gala</Civ>
+    <SpecificName>Leonnorius</SpecificName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Icon>units/gaul/hero_viridomarus.png</Icon>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/gala/hero_leonnorius_mounted</Entity>
+      <Tooltip>This gives Leonnorius his War Horse, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/gauls/hero_infantry_spearman_viridomarus.xml</Actor>
+  </VisualActor>
+</Entity>

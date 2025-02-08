@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="chariot|template_unit_champion_cavalry_javelineer">
+  <Footprint replace="">
+    <Square width="5.0" depth="10.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>units/gala/champion_chariot_rider</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gala</Civ>
+    <SpecificName>Galatian War Chariot</SpecificName>
+    <SelectionGroupName>units/gala/champion_chariot</SelectionGroupName>
+    <Icon>units/brit/champion_chariot.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Pierce op="add">-1</Pierce>
+        <Crush op="add">-1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/britons/chariot_javelinist_c_m.xml</Actor>
+  </VisualActor>
+</Entity>

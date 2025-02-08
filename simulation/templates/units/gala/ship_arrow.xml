@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_warship_arrow">
+  <Footprint>
+    <Square width="18.0" depth="36.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gala</Civ>
+    <SpecificName>Venetic Warship</SpecificName>
+    <Icon>units/celt/ship_arrow.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        phase_town
+        celts/unlock_warships
+      </Techs>
+      <Tooltip>Unlocked in Town Phase. Requires “Naval Construction.”</Tooltip>
+    </Requirements>
+  </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/cartouche.png</MainTexture>
+        <MainTextureMask>128x256/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <UnitMotion>
+    <WalkSpeed>12.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>structures/celts/warship.xml</Actor>
+  </VisualActor>
+</Entity>
