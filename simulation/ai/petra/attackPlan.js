@@ -1170,7 +1170,7 @@ PETRA.AttackPlan.prototype.checkTargetObstruction = function(gameState, target, 
 		}
 		else if (struct.get("Obstruction/Unit"))
 		{
-			let r = +this.get("Obstruction/Unit/@radius");
+			let r = +struct.get("Obstruction/Unit/@radius");
 			if (x*x + y*y < r*r)
 			{
 				blocker = struct;

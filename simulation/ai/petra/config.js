@@ -27,7 +27,7 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 		"popForBarracks2": 60,
 		"popForBarracks3": 80,
 		"popForShipyard": 20,
-		"popForForge": 65,
+		"popForForge": 90,
 		"numSentryTowers": 1
 	};
 
@@ -40,14 +40,14 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 
 	this.Economy = {
 		"popPhase2": 30,	// How many units we want before aging to phase2.
-		"workPhase3": 50,	// How many workers we want before aging to phase3.
-		"workPhase4": 70,	// How many workers we want before aging to phase4 or higher.
+		"workPhase3": 40,	// How many workers we want before aging to phase3.
+		"workPhase4": 60,	// How many workers we want before aging to phase4 or higher.
 		"popForDock": 20,
 		"targetNumWorkers": 40,	// dummy, will be changed later
 		"targetNumTraders": 5,	// Target number of traders
 		"targetNumFishers": 8,	// Target number of fishers per sea
 		"supportRatio": 0.35,	// fraction of support workers among the workforce
-		"provisionFields": 2
+		"provisionFields": 3
 	};
 
 	// Note: attack settings are set directly in attack_plan.js

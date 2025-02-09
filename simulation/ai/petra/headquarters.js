@@ -1575,7 +1575,7 @@ PETRA.HQ.prototype.buildDefenses = function(gameState, queues)
 	{
 		// Count all towers + wall towers.
 		let numTowers = gameState.getOwnEntitiesByClass("Tower", true).length + gameState.getOwnEntitiesByClass("WallTower", true).length;
-		let towerLapseTime = this.saveResource ? (1 + 0.5 * numTowers) * this.towerLapseTime : this.towerLapseTime;
+		let towerLapseTime = this.saveResources ? (1 + 0.5 * numTowers) * this.towerLapseTime : this.towerLapseTime;
 		if (numTowers < this.Config.Military.numSentryTowers && gameState.ai.elapsedTime > towerLapseTime + this.fortStartTime)
 		{
 			this.fortStartTime = gameState.ai.elapsedTime;
@@ -1588,7 +1588,7 @@ PETRA.HQ.prototype.buildDefenses = function(gameState, queues)
 		return;
 
 	let numTowers = gameState.getOwnEntitiesByClass("StoneTower", true).length;
-	let towerLapseTime = this.saveResource ? (1 + numTowers) * this.towerLapseTime : this.towerLapseTime;
+	let towerLapseTime = this.saveResources ? (1 + numTowers) * this.towerLapseTime : this.towerLapseTime;
 	if ((!numTowers || gameState.ai.elapsedTime > (1 + 0.1 * numTowers) * towerLapseTime + this.towerStartTime) &&
 		numTowers < 2 * this.numActiveBases() + 3 + this.extraTowers &&
 		numTowers < Math.floor(gameState.getPopulation() / 8) &&
