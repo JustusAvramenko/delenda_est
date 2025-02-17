@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<objects>
+
+	<script directory="gui/common/"/>
+
+	<script directory="gui/reference/common/"/>
+	<script directory="gui/reference/common/Buttons/"/>
+	<script directory="gui/reference/common/Dropdowns/"/>
+
+	<script directory="gui/reference/civinfo/"/>
+	<script directory="gui/reference/civinfo/Sections/"/>
+	<script directory="gui/reference/civinfo/Sections/Subsections/"/>
+
+	<!-- Add a translucent black background to fade out the menu page -->
+	<object type="image" sprite="BackgroundTranslucent"/>
+
+	<object type="image" style="ModernDialog" size="50%-640 50%-420 50%+640 50%+420">
+
+		<object style="TitleText" type="text" size="50%-128 -18 50%+128 14">
+			<translatableAttribute id="caption">Civilization Overview</translatableAttribute>
+		</object>
+
+		<!-- Civ selection -->
+		<include file="gui/reference/common/Dropdowns/CivSelectDropdown.xml"/>
+
+		<object
+			name="civEmblem"
+			type="image"
+			size="-6 -6 128-6 128-6"
+			sprite="stretched:pregame/shell/logo/wfg_logo_white.png"
+		/>
+
+		<object
+			name="civName"
+			type="text"
+			font="sans-bold-20"
+			textcolor="white"
+			text_align="left"
+			text_valign="top"
+			size="128 20 100%-8 96"
+		/>
+
+		<object
+			name="civHistory"
+			type="text"
+			font="sans-12"
+			textcolor="white"
+			text_align="left"
+			text_valign="top"
+			size="148 45 100%-180 52+64"
+			scrollbar="true"
+			scrollbar_style="ModernScrollBar"
+		/>
+
+		<!-- Civ gameplay data display -->
+		<include file="gui/reference/civinfo/Sections/GameplaySection.xml"/>
+
+		<!-- Buttons -->
+		<include file="gui/reference/common/Buttons/StructreeButton.xml"/>
+		<include file="gui/reference/common/Buttons/CloseButton.xml"/>
+
+	</object>
+
+</objects>
