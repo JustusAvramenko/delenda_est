@@ -1,0 +1,34 @@
+{
+	"genericName": "Greek Martial Arts",
+	"specificName": {
+		"hele": "Pankrátion",
+		"mace": "Pankrátion",
+		"spart": "Pankrátion",
+		"athen": "Pankrátion",
+		"sele": "Pankrátion",
+		"ptol": "Pankrátion",
+		"theb": "Pankrátion",
+		"syrac": "Pankrátion"
+	},
+	"description": "The Greeks invented the martial arts for the Western world.",
+	"cost": {
+		"food": 500,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "theb" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "hoplites.png",
+	"researchTime": 40,
+	"tooltip": "All Infantry +10% health, +10% train time.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.1 },
+		{ "value": "Cost/BuildTime", "multiply": 1.1 }
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
