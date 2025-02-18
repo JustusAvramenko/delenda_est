@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="7">
+	<Terrain patches="9" texture="aegean_grass_dirt_01" priority="0" height="16384"/>
+	<Script><![CDATA[//
+
+	var patches = 9;
+
+	function createBlock(template, owner, angle, x0, z0, cols, rows, colspacing, rowspacing)
+	{
+		var rdx = rowspacing * -Math.sin(angle);
+		var rdz = rowspacing * -Math.cos(angle);
+		var cdx = colspacing * Math.cos(angle);
+		var cdz = colspacing * -Math.sin(angle);
+
+		for (var r = 0; r < rows; ++r)
+		{
+			for (var c = 0; c < cols; ++c)
+			{
+				var x = x0 + (c - (cols-1)/2) * cdx + r * rdx;
+				var z = z0 + (c - (cols-1)/2) * cdz + r * rdz;
+				var ent = Engine.AddEntity(template);
+
+				var cmpPosition = Engine.QueryInterface(ent, IID_Position);
+				cmpPosition.MoveTo(x, z);
+				cmpPosition.SetYRotation(angle);
+
+				var cmpOwnership = Engine.QueryInterface(ent, IID_Ownership);
+				if (cmpOwnership)
+					cmpOwnership.SetOwner(owner);
+			}
+		}
+	}
+
+	var mx = 192;
+	var mz = 128;
+	var sep = 46;
+	for (var i = 0; i < 8; ++i)
+	{
+		createBlock("units/athen/infantry_hoplite_e", 1, Math.PI/2, mx - sep - 6, mz, 16, 4, 2.1, 3.0);
+		createBlock("units/athen/infantry_hoplite_e", 2, 3*Math.PI/2, mx + sep + 6, mz, 16, 4, 2.1, 3.0);
+		createBlock("units/athen/infantry_archer_b", 1, Math.PI/2, mx - sep, mz, 8, 1, 5.0, 3.0);
+		createBlock("units/athen/infantry_archer_b", 1, Math.PI/2, mx - sep - 2, mz, 7, 1, 5.0, 3.0);
+		createBlock("units/athen/infantry_archer_b", 2, 3*Math.PI/2, mx + sep, mz, 8, 1, 5.0, 3.0);
+		createBlock("units/athen/infantry_archer_b", 2, 3*Math.PI/2, mx + sep + 2, mz, 7, 1, 5.0, 3.0);
+
+		mz += 42;
+	}
+
+	//]]></Script>
+	<Environment>
+		<SkySet>sunny</SkySet>
+		<SunColor r="1.0064" g="0.939307" b="0.820907"/>
+		<SunElevation angle="0.760855"/>
+		<SunRotation angle="-0.877437"/>
+		<AmbientColor r="0.258824" g="0.282353" b="0.329412"/>
+		<Fog>
+			<FogFactor>0.00231445</FogFactor>
+			<FogThickness>0</FogThickness>
+			<FogColor r="0.854902" g="0.894118" b="0.909804"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.0509804" g="0.301961" b="0.576471"/>
+				<Tint r="0" g="1" b="0.501961"/>
+				<Height>0</Height>
+				<Waviness>5.25391</Waviness>
+				<Murkiness>0.701172</Murkiness>
+				<WindAngle>1.20878</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>0.0253906</Brightness>
+			<Contrast>1.01563</Contrast>
+			<Saturation>0.916016</Saturation>
+			<Bloom>0.166211</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="192" y="80" z="-2.20961"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.3"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+	{
+		"Name": "Combat Demo (Huge)",
+		"Description": "1296 units per player. Extremely slow (we need more optimisation).",
+		"Keywords": ["demo"],
+		"PlayerData":
+		[
+			{
+				"Civ":"athen"
+			},
+			{
+				"Civ":"athen",
+				"AI": ""
+			}
+		],
+		"RevealMap": true,
+		"VictoryCondition": [
+			"conquest"
+		]
+	}
+	]]></ScriptSettings>
+	<Entities/>
+	<Paths/>
+</Scenario>
