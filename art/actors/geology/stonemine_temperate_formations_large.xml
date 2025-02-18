@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="props">
+      <props>
+        <prop actor="" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Rock Large Y">
+      <mesh>gaia/rock_large_y.dae</mesh>
+	</variant>
+    <variant frequency="1" name="Rock Large Z">
+      <mesh>gaia/rock_large_z.dae</mesh>
+	</variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Marble">
+      <textures>
+	    <texture file="gaia/rock_large_x_marble.png" name="baseTex"/>
+	    <texture file="gaia/rock_large_x_spec.png" name="specTex"/>
+	    <texture file="gaia/rock_large_x_norm.png" name="normTex"/>
+	  </textures>
+	</variant>
+    <variant frequency="1" name="Desert Moss">
+      <textures>
+	    <texture file="gaia/rock_large_x_aegean_a_moss.png" name="baseTex"/>
+	    <texture file="gaia/rock_large_x_spec.png" name="specTex"/>
+	    <texture file="gaia/rock_large_x_norm.png" name="normTex"/>
+	  </textures>
+	</variant>  
+  </group>
+  <material>basic_trans_parallax_spec.xml</material>
+</actor>
