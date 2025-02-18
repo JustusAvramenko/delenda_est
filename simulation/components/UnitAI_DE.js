@@ -20,9 +20,6 @@ UnitAI.prototype.RespondToTargetedEntities = function(ents, dangerousAnimal = fa
 	if (!ents.length)
 		return false;
 
-	if (this.IsFormationMember())
-		return Engine.QueryInterface(this.GetFormationController(), IID_UnitAI).RespondToTargetedEntities(ents);
-
 	if (this.GetStance().respondChase)
 		return this.AttackVisibleEntity(ents);
 
@@ -34,7 +31,7 @@ UnitAI.prototype.RespondToTargetedEntities = function(ents, dangerousAnimal = fa
 
 	if (this.GetStance().respondFlee)
 	{
-		if (dangerousAnimal)
+		if (dangerousAnimal)  // <<<<<<<< This has changed. Makes units respond to attacking animals.
 			return this.AttackVisibleEntity(ents);
 		if (this.order && this.order.type == "Flee")
 			this.orderQueue.shift();
@@ -44,7 +41,6 @@ UnitAI.prototype.RespondToTargetedEntities = function(ents, dangerousAnimal = fa
 
 	return false;
 };
-
 
 UnitAI.prototype.GetQueryRange = function(iid)
 {
@@ -115,7 +111,15 @@ UnitAI.prototype.AttackEntitiesByPreference = function(ents)
 		if (!attackfilter(ent))
 			continue;
 		let pref = cmpAttack.GetPreference(ent);
-		if (pref === null || pref === undefined)
+		// If we match our best preference, we can try responding right away.
+		// This makes some common cases fast, like most soldiers having 'Human' as best preference,
+		// or ships having 'Ship'. And if there are no such targets, this doesn't do much more work.
+		if (pref === 0)
+		{
+			if (this.RespondToTargetedEntities([ent]))
+				return true;
+		}
+		else if (pref === null || pref === undefined)
 			entsWithoutPref.push(ent);
 		else if (!entsByPreferences[pref])
 		{
