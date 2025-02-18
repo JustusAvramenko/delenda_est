@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Jagged Crystals 01 Base">
+      <textures>
+	    <texture file="gaia/crystal_01_diffuse_01.png" name="baseTex"/>
+        <texture file="gaia/crystal_01_spec.png" name="specTex"/>
+	    <texture file="gaia/crystal_01_norm.png" name="normTex"/>
+	  </textures>
+	</variant>
+  </group>
+  <group>
+    <variant frequency="3" name="Small Crystals">
+      <mesh>gaia/crystal_01_small.dae</mesh>
+	</variant>
+    <variant frequency="2" name="Medium Crystals">
+      <mesh>gaia/crystal_01_medium.dae</mesh>
+	</variant>
+    <variant frequency="1" name="Large Crystals">
+      <mesh>gaia/crystal_01_large.dae</mesh>
+	</variant>
+    <variant frequency="1" name="Large Crystals 02">
+      <mesh>gaia/crystal_01_large_02.dae</mesh>
+	</variant>
+  </group>
+  <material>no_trans_parallax_spec.xml</material>
+</actor>
