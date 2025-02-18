@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Square Plinth">
+      <mesh>props/plinth_square_large.dae</mesh>
+      <props>
+        <prop actor="" attachpoint="statue"/>
+      </props>
+      <textures>
+        <texture file="props/plinth_square_diffuse.png" name="baseTex"/>
+        <texture file="props/plinth_square_spec.png" name="specTex"/>
+        <texture file="props/plinth_square_norm.png" name="normTex"/>
+        <texture file="props/ao/plinth_square.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant file="structures/destruction_small.xml"/>
+  </group>
+  <material>no_trans_ao_norm_spec.xml</material>
+</actor>
