@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.2.0 commit date:2024-07-16, commit time:06:20, hash:a51f293548ad</authoring_tool>
+    </contributor>
+    <created>2025-02-18T15:37:58</created>
+    <modified>2025-02-18T15:37:58</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects/>
+  <library_images/>
+  <library_geometries>
+    <geometry id="Plane-mesh" name="Plane">
+      <mesh>
+        <source id="Plane-mesh-positions">
+          <float_array id="Plane-mesh-positions-array" count="12">-12 -12 0 12 -12 0 -12 12 0 12 12 0</float_array>
+          <technique_common>
+            <accessor source="#Plane-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane-mesh-normals">
+          <float_array id="Plane-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Plane-mesh-normals-array" count="2" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane-mesh-map-0">
+          <float_array id="Plane-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+          <technique_common>
+            <accessor source="#Plane-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane-mesh-vertices">
+          <input semantic="POSITION" source="#Plane-mesh-positions"/>
+        </vertices>
+        <triangles count="2">
+          <input semantic="VERTEX" source="#Plane-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Plane-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="grove_small_01" name="grove_small_01" type="NODE">
+        <matrix sid="transform">0.09666763 0 0 0 0 0.09666763 0 0 0 0 0.08682907 -8.76216 0 0 0 1</matrix>
+        <instance_geometry url="#Plane-mesh" name="grove_small_01"/>
+        <node id="prop_outer_01" name="prop_outer_01" type="NODE">
+          <matrix sid="transform">15.46761 16.06989 0 -217.2688 -16.06989 15.46761 0 176.1959 0 0 20.75827 98.51823 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_outer_02" name="prop_outer_02" type="NODE">
+          <matrix sid="transform">21.84506 -4.503497 0 -55.20273 4.503497 21.84506 0 255.7676 0 0 20.75827 98.51823 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_outer_03" name="prop_outer_03" type="NODE">
+          <matrix sid="transform">22.30445 0 0 46.28391 0 22.30445 0 250.6751 0 0 20.75827 98.3451 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_outer_04" name="prop_outer_04" type="NODE">
+          <matrix sid="transform">11.03902 19.38113 0 155.2036 -19.38113 11.03902 0 227.943 0 0 20.75827 97.86781 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_outer_05" name="prop_outer_05" type="NODE">
+          <matrix sid="transform">20.58266 8.593162 0 223.0249 -8.593162 20.58266 0 114.4703 0 0 20.75827 98.51823 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_outer_06" name="prop_outer_06" type="NODE">
+          <matrix sid="transform">14.85557 16.63732 0 232.5633 -16.63732 14.85557 0 -118.9698 0 0 20.75827 98.51823 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_outer_07" name="prop_outer_07" type="NODE">
+          <matrix sid="transform">22.30445 0 0 101.3544 0 22.30445 0 -244.1416 0 0 20.75827 98.51823 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_outer_08" name="prop_outer_08" type="NODE">
+          <matrix sid="transform">18.72871 -12.11296 0 -62.75591 12.11296 18.72871 0 -252.255 0 0 20.75827 98.51823 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_outer_09" name="prop_outer_09" type="NODE">
+          <matrix sid="transform">13.10122 18.05122 0 -238.7766 -18.05122 13.10122 0 -137.3707 0 0 20.75827 96.79295 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_outer_10" name="prop_outer_10" type="NODE">
+          <matrix sid="transform">3.595199 -22.01279 0 -258.8198 22.01279 3.595199 0 51.28059 0 0 20.75827 98.51823 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_01" name="prop_inner_01" type="NODE">
+          <matrix sid="transform">20.75827 0 0 -152.3585 0 20.75827 0 176.7754 0 0 20.75827 99.87194 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_02" name="prop_inner_02" type="NODE">
+          <matrix sid="transform">20.75827 0 0 -70.69848 0 20.75827 0 186.3719 0 0 20.75827 101.4874 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_03" name="prop_inner_03" type="NODE">
+          <matrix sid="transform">-2.461256 -20.61184 0 162.6238 20.61184 -2.461256 0 160.3842 0 0 20.75827 93.5724 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_04" name="prop_inner_04" type="NODE">
+          <matrix sid="transform">14.2569 -15.08796 0 29.9977 15.08796 14.2569 0 46.22595 0 0 20.75827 101.4874 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_05" name="prop_inner_05" type="NODE">
+          <matrix sid="transform">-2.371176 20.6224 0 196.3019 -20.6224 -2.371176 0 -39.2351 0 0 20.75827 94.9134 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_06" name="prop_inner_06" type="NODE">
+          <matrix sid="transform">20.75827 0 0 128.0503 0 20.75827 0 -165.4702 0 0 20.75827 101.4874 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_07" name="prop_inner_07" type="NODE">
+          <matrix sid="transform">16.34998 -12.78999 0 -2.78932 12.78999 16.34998 0 -182.5794 0 0 20.75827 101.4874 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_08" name="prop_inner_08" type="NODE">
+          <matrix sid="transform">20.75827 0 0 -127.5588 0 20.75827 0 -102.0399 0 0 20.75827 99.02322 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_09" name="prop_inner_09" type="NODE">
+          <matrix sid="transform">20.75827 0 0 2.100688 0 20.75827 0 113.8291 0 0 20.75827 103.0539 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_10" name="prop_inner_10" type="NODE">
+          <matrix sid="transform">20.75827 0 0 122.9379 0 20.75827 0 37.30936 0 0 20.75827 101.4874 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_11" name="prop_inner_11" type="NODE">
+          <matrix sid="transform">20.75827 0 0 -150.1679 0 20.75827 0 44.07713 0 0 20.75827 101.4874 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_12" name="prop_inner_12" type="NODE">
+          <matrix sid="transform">20.75827 0 0 -76.03091 0 20.75827 0 117.3719 0 0 20.75827 101.4874 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_13" name="prop_inner_13" type="NODE">
+          <matrix sid="transform">9.944241 18.22136 0 -48.46679 -18.22136 9.944241 0 33.26764 0 0 20.75827 103.6575 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_14" name="prop_inner_14" type="NODE">
+          <matrix sid="transform">20.14326 -5.015474 0 62.63482 5.015474 20.14326 0 -50.95847 0 0 20.75827 101.4874 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_15" name="prop_inner_15" type="NODE">
+          <matrix sid="transform">20.75827 0 0 -13.09352 0 20.75827 0 -19.00939 0 0 20.75827 107.1335 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_16" name="prop_inner_16" type="NODE">
+          <matrix sid="transform">20.75827 0 0 102.0139 0 20.75827 0 103.422 0 0 20.75827 101.4874 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_17" name="prop_inner_17" type="NODE">
+          <matrix sid="transform">20.75827 0 0 -224.1156 0 20.75827 0 -6.916564 0 0 20.75827 101.4874 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_18" name="prop_inner_18" type="NODE">
+          <matrix sid="transform">20.75827 0 0 -43.48639 0 20.75827 0 -89.27843 0 0 20.75827 101.4874 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_19" name="prop_inner_19" type="NODE">
+          <matrix sid="transform">-20.6988 5.37693 0 132.4522 -5.37693 -20.6988 0 -99.55193 0 0 21.38579 94.84927 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_20" name="prop_inner_20" type="NODE">
+          <matrix sid="transform">-20.6988 5.37693 0 61.5229 -5.37693 -20.6988 0 -139.1561 0 0 21.38579 96.51353 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_21" name="prop_inner_21" type="NODE">
+          <matrix sid="transform">-20.6988 5.37693 0 -85.27103 -5.37693 -20.6988 0 -167.0216 0 0 21.38579 93.97423 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_22" name="prop_inner_22" type="NODE">
+          <matrix sid="transform">-20.6988 5.37693 0 -180.7552 -5.37693 -20.6988 0 -59.54402 0 0 21.38579 96.51353 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_23" name="prop_inner_23" type="NODE">
+          <matrix sid="transform">-20.6988 5.37693 0 -196.2139 -5.37693 -20.6988 0 79.27798 0 0 21.38579 89.74084 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_24" name="prop_inner_24" type="NODE">
+          <matrix sid="transform">-20.6988 5.37693 0 -138.6408 -5.37693 -20.6988 0 110.6974 0 0 21.38579 96.51353 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_25" name="prop_inner_25" type="NODE">
+          <matrix sid="transform">-13.45724 -16.6209 0 -0.6965737 16.6209 -13.45724 0 190.3138 0 0 21.38579 96.51353 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_26" name="prop_inner_26" type="NODE">
+          <matrix sid="transform">-20.6988 5.37693 0 93.65475 -5.37693 -20.6988 0 183.6809 0 0 21.38579 93.97489 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_27" name="prop_inner_27" type="NODE">
+          <matrix sid="transform">-11.73085 -17.88124 0 21.60025 17.88124 -11.73085 0 -92.95305 0 0 21.38579 98.12746 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_28" name="prop_inner_28" type="NODE">
+          <matrix sid="transform">-20.6988 5.37693 0 -105.0728 -5.37693 -20.6988 0 -18.48605 0 0 21.38579 96.51353 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_29" name="prop_inner_29" type="NODE">
+          <matrix sid="transform">-20.6988 5.37693 0 176.6656 -5.37693 -20.6988 0 25.59817 0 0 21.38579 96.51353 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_inner_30" name="prop_inner_30" type="NODE">
+          <matrix sid="transform">-20.6988 5.37693 0 130.0971 -5.37693 -20.6988 0 -45.09975 0 0 21.38579 96.51353 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_outer_11" name="prop_outer_11" type="NODE">
+          <matrix sid="transform">17.8412 13.38582 0 -164.8329 -13.38582 17.8412 0 -206.882 0 0 20.75827 92.82177 0 0 0 0.9999999</matrix>
+        </node>
+        <node id="prop_outer_12" name="prop_outer_12" type="NODE">
+          <matrix sid="transform">17.8412 13.38582 0 249.7438 -13.38582 17.8412 0 17.63218 0 0 20.75827 102.5222 0 0 0 0.9999999</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
