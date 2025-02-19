@@ -13,10 +13,10 @@
     <Height>18.0</Height>
   </Footprint>
   <GarrisonHolder>
-    <Max>6</Max>
+    <Max op="add">5</Max>
   </GarrisonHolder>
   <Health>
-    <Max>1000</Max>
+    <Max op="add">1000</Max>
   </Health>
   <Identity>
     <SpecificName>Desert Watchtower</SpecificName>
@@ -29,6 +29,13 @@
   <Obstruction>
     <Static width="10.0" depth="10.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      pair_tower_01
+      range_defensive_loopholes
+      range_defensive_murderholes
+    </Technologies>
+  </Researcher>
   <StatusBars>
     <HeightOffset>18.0</HeightOffset>
   </StatusBars>
