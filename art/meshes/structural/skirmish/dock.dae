@@ -3,10 +3,10 @@
   <asset>
     <contributor>
       <author>Blender User</author>
-      <authoring_tool>Blender 2.91.2 commit date:2021-01-19, commit time:16:15, hash:5be9ef417703</authoring_tool>
+      <authoring_tool>Blender 4.2.0 commit date:2024-07-16, commit time:06:20, hash:a51f293548ad</authoring_tool>
     </contributor>
-    <created>2022-09-14T15:10:26</created>
-    <modified>2022-09-14T15:10:26</modified>
+    <created>2025-02-18T12:50:59</created>
+    <modified>2025-02-18T12:50:59</modified>
     <unit name="inch" meter="0.0254"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -49,9 +49,9 @@
           </technique_common>
         </source>
         <source id="Cube-mesh-normals">
-          <float_array id="Cube-mesh-normals-array" count="15">0 0 1 0 -1 0 -1 0 0 1 0 0 0 1 0</float_array>
+          <float_array id="Cube-mesh-normals-array" count="30">0 0 1 0 -1 0 -1 0 0 1 0 0 0 1 0 0 0 1 0 -1 0 -1 0 0 1 0 0 0 1 0</float_array>
           <technique_common>
-            <accessor source="#Cube-mesh-normals-array" count="5" stride="3">
+            <accessor source="#Cube-mesh-normals-array" count="10" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
@@ -59,7 +59,7 @@
           </technique_common>
         </source>
         <source id="Cube-mesh-map-0">
-          <float_array id="Cube-mesh-map-0-array" count="60">0.003110647 0.1230581 0.996167 1.004992 0.003110408 1.004993 0.9577262 1.001583 0.03720468 0 0.9577263 0 0.968593 0.9967449 0.03255409 0.005208432 0.968593 0.005208432 0.9674458 0.999349 0.0372048 0 0.9674459 0 0.9685776 0.9984425 0.03336006 -6.50942e-4 0.9685776 -6.50942e-4 0.003110647 0.1230581 0.9961671 0.1230579 0.996167 1.004992 0.9577262 1.001583 0.03720468 1.001583 0.03720468 0 0.968593 0.9967449 0.03255409 0.9967448 0.03255409 0.005208432 0.9674458 0.999349 0.0372048 0.9993489 0.0372048 0 0.9685776 0.9984425 0.03336006 0.9984425 0.03336006 -6.50942e-4</float_array>
+          <float_array id="Cube-mesh-map-0-array" count="60">0.003110647 0.1230581 0.996167 1.004992 0.003110349 1.004993 0.9577262 0.6693773 0.03720468 -0.3322057 0.9577263 -0.3322057 0.968593 0.6645392 0.03255409 -0.3269973 0.968593 -0.3269973 0.9674458 0.6671433 0.0372048 -0.3322057 0.9674459 -0.3322057 0.9685776 0.6662368 0.03336006 -0.3328567 0.9685776 -0.3328567 0.003110647 0.1230581 0.9961671 0.1230579 0.996167 1.004992 0.9577262 0.6693773 0.03720468 0.6693773 0.03720468 -0.3322057 0.968593 0.6645392 0.03255409 0.6645391 0.03255409 -0.3269973 0.9674458 0.6671433 0.0372048 0.6671432 0.0372048 -0.3322057 0.9685776 0.6662368 0.03336006 0.6662368 0.03336006 -0.3328567</float_array>
           <technique_common>
             <accessor source="#Cube-mesh-map-0-array" count="30" stride="2">
               <param name="S" type="float"/>
@@ -68,7 +68,7 @@
           </technique_common>
         </source>
         <source id="Cube-mesh-map-1">
-          <float_array id="Cube-mesh-map-1-array" count="60">0.995947 0.4405921 0.00333023 0.9959476 0.9959471 0.9959478 0.7499999 0.6651901 0 0 0.75 0 0.9980467 0.9967449 0 0.005208432 0.9980468 0.005208432 1 0.999349 1.49012e-7 0 1 0 0.75 0.6217449 0.003906369 -6.50942e-4 0.75 -6.50942e-4 0.995947 0.4405921 0.003330111 0.4405919 0.00333023 0.9959476 0.7499999 0.6651901 0 0.6651901 0 0 0.9980467 0.9967449 0 0.9967448 0 0.005208432 1 0.999349 1.49012e-7 0.9993489 1.49012e-7 0 0.75 0.6217449 0.003906369 0.6217448 0.003906369 -6.50942e-4</float_array>
+          <float_array id="Cube-mesh-map-1-array" count="60">0.995947 0.4405921 0.003330171 0.9959476 0.9959471 0.9959478 0.7499999 0.6651901 0 0 0.75 0 0.9980467 0.9967449 0 0.005208373 0.9980468 0.005208373 1 0.999349 1.49012e-7 0 1 0 0.75 0.6217449 0.003906369 -6.50942e-4 0.75 -6.50942e-4 0.995947 0.4405921 0.003330051 0.4405919 0.003330171 0.9959476 0.7499999 0.6651901 0 0.6651901 0 0 0.9980467 0.9967449 0 0.9967448 0 0.005208373 1 0.999349 1.49012e-7 0.9993489 1.49012e-7 0 0.75 0.6217449 0.003906369 0.6217448 0.003906369 -6.50942e-4</float_array>
           <technique_common>
             <accessor source="#Cube-mesh-map-1-array" count="30" stride="2">
               <param name="S" type="float"/>
@@ -84,7 +84,7 @@
           <input semantic="NORMAL" source="#Cube-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#Cube-mesh-map-0" offset="2" set="0"/>
           <input semantic="TEXCOORD" source="#Cube-mesh-map-1" offset="2" set="1"/>
-          <p>4 0 0 2 0 1 0 0 2 2 1 3 7 1 4 3 1 5 6 2 6 5 2 7 7 2 8 0 3 9 3 3 10 1 3 11 4 4 12 1 4 13 5 4 14 4 0 15 6 0 16 2 0 17 2 1 18 6 1 19 7 1 20 6 2 21 4 2 22 5 2 23 0 3 24 2 3 25 3 3 26 4 4 27 0 4 28 1 4 29</p>
+          <p>4 0 0 2 0 1 0 0 2 2 1 3 7 1 4 3 1 5 6 2 6 5 2 7 7 2 8 0 3 9 3 3 10 1 3 11 4 4 12 1 4 13 5 4 14 4 5 15 6 5 16 2 5 17 2 6 18 6 6 19 7 6 20 6 7 21 4 7 22 5 7 23 0 8 24 2 8 25 3 8 26 4 9 27 0 9 28 1 9 29</p>
         </triangles>
       </mesh>
     </geometry>
@@ -92,13 +92,13 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="Cube" name="Cube" type="NODE">
-        <matrix sid="transform">1.01878e-6 -12.05183 0 0 13.49413 9.09888e-7 0 0 0 0 13.26878 -1.335222 0 0 0 1</matrix>
+        <matrix sid="transform">2.6274e-6 -12.05183 0 0 13.49413 2.34658e-6 0 0 0 0 13.26878 -1.335222 0 0 0 1</matrix>
         <instance_geometry url="#Cube-mesh" name="Cube">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material-material" target="#Material-material">
-                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
-                <bind_vertex_input semantic="UVMap.001" input_semantic="TEXCOORD" input_set="1"/>
+                <bind_vertex_input semantic="Cube-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="Cube-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
               </instance_material>
             </technique_common>
           </bind_material>
