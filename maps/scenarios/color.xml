@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Scenario version="7">
-	<Terrain patches="16" texture="grid_subdiv" priority="0" height="2048"/>
 	<Environment>
-		<SkySet>cloudless</SkySet>
+		<SkySet>cirrus</SkySet>
 		<SunColor r="0.974462" g="0.905724" b="0.804639"/>
 		<SunElevation angle="0.638136"/>
 		<SunRotation angle="-0.909753"/>
-		<AmbientColor r="0.27451" g="0.32549" b="0.443137"/>
+		<AmbientColor r="0.27451" g="0.321569" b="0.439216"/>
 		<Fog>
 			<FogFactor>0.00195313</FogFactor>
 			<FogThickness>0.0351563</FogThickness>
@@ -33,45 +32,47 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="300" y="300" z="-100"/>
+		<Position x="300" y="91.09" z="282.76"/>
 		<Rotation angle="0"/>
-		<Declination angle="0.523599"/>
+		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
-	{
-		"Name": "Unnamed map",
-		"Description": "Give an interesting description of your map.",
-		"PlayerData":
-		[
-			{
-				"Civ": "athen"
-			},
-			{
-				"Civ": "brit"
-			},
-			{
-				"Civ": "cart"
-			},
-			{
-				"Civ": "cimb"
-			},
-			{
-				"Civ": "epir"
-			},
-			{
-				"Civ": "gaul"
-			},
-			{
-				"Civ": "han"
-			},
-			{
-				"Civ": "iber"
-			}
-		],
-		"CircularMap": true,
-		"VictoryConditions": [
-			"conquest_civic_centers"
-		]
-	}
-	]]></ScriptSettings>
+{
+  "Name": "Unnamed map",
+  "Description": "Give an interesting description of your map.",
+  "PlayerData": [
+    null,
+    {
+      "Civ": "athen"
+    },
+    {
+      "Civ": "brit"
+    },
+    {
+      "Civ": "cart"
+    },
+    {
+      "Civ": "cimb"
+    },
+    {
+      "Civ": "epir"
+    },
+    {
+      "Civ": "gaul"
+    },
+    {
+      "Civ": "han"
+    },
+    {
+      "Civ": "iber"
+    }
+  ],
+  "CircularMap": true,
+  "VictoryConditions": [
+    "conquest_civic_centers"
+  ]
+}
+]]></ScriptSettings>
+	<Entities/>
+	<Paths/>
 </Scenario>

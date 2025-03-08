@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="7">
+	<Environment>
+		<SkySet>cirrus</SkySet>
+		<SunColor r="1.03107" g="0.921898" b="0.578208"/>
+		<SunElevation angle="0.638136"/>
+		<SunRotation angle="-0.909753"/>
+		<AmbientColor r="0.27451" g="0.321569" b="0.439216"/>
+		<Fog>
+			<FogFactor>0.00195313</FogFactor>
+			<FogThickness>0.0351563</FogThickness>
+			<FogColor r="0.839216" g="0.866667" b="0.882353"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.0784314" g="0.247059" b="0.419608"/>
+				<Tint r="0" g="1" b="0.501961"/>
+				<Height>0</Height>
+				<Waviness>3.02734</Waviness>
+				<Murkiness>0.882813</Murkiness>
+				<WindAngle>0.233165</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>-0.015625</Brightness>
+			<Contrast>0.984375</Contrast>
+			<Saturation>0.8125</Saturation>
+			<Bloom>0.160156</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="299.269" y="54.6403" z="328.895"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "Name": "Unnamed map",
+  "Description": "Give an interesting description of your map.",
+  "PlayerData": [
+    null,
+    {
+      "Civ": "athen"
+    },
+    {
+      "Civ": "brit"
+    },
+    {
+      "Civ": "cart"
+    },
+    {
+      "Civ": "cimb"
+    },
+    {
+      "Civ": "epir"
+    },
+    {
+      "Civ": "gaul"
+    },
+    {
+      "Civ": "han"
+    },
+    {
+      "Civ": "iber"
+    }
+  ],
+  "CircularMap": true,
+  "VictoryConditions": [
+    "conquest_civic_centers"
+  ]
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="18">
+			<Template>actor|props/structures/construction/scaffold_small.xml</Template>
+			<Position x="314.04654" z="374.18537"/>
+			<Orientation y="-0.1693"/>
+			<Actor seed="16458"/>
+		</Entity>
+		<Entity uid="19">
+			<Template>actor|props/structures/construction/scaffold_small.xml</Template>
+			<Position x="296.87525" z="378.15229"/>
+			<Orientation y="-1.15615"/>
+			<Actor seed="39597"/>
+		</Entity>
+		<Entity uid="20">
+			<Template>actor|props/structures/construction/scaffold_small.xml</Template>
+			<Position x="297.76325" z="361.11936"/>
+			<Orientation y="1.56019"/>
+			<Actor seed="48042"/>
+		</Entity>
+		<Entity uid="21">
+			<Template>gaia/ore/temperate_small_01</Template>
+			<Player>0</Player>
+			<Position x="306.51911" z="379.37525"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27310"/>
+		</Entity>
+		<Entity uid="22">
+			<Template>gaia/ore/temperate_small_01</Template>
+			<Player>0</Player>
+			<Position x="304.93781" z="370.7256"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="517"/>
+		</Entity>
+		<Entity uid="24">
+			<Template>gaia/ore/temperate_small_01</Template>
+			<Player>0</Player>
+			<Position x="293.04758" z="370.07026"/>
+			<Orientation y="-2.69942"/>
+			<Actor seed="5564"/>
+		</Entity>
+		<Entity uid="25">
+			<Template>gaia/ore/temperate_small_01</Template>
+			<Player>0</Player>
+			<Position x="298.783" z="366.16611"/>
+			<Orientation y="1.59626"/>
+			<Actor seed="27697"/>
+		</Entity>
+		<Entity uid="28">
+			<Template>gaia/ore/temperate_small_01</Template>
+			<Player>0</Player>
+			<Position x="300.25367" z="377.51014"/>
+			<Orientation y="-2.91152"/>
+			<Actor seed="58759"/>
+		</Entity>
+	</Entities>
+	<Paths/>
+</Scenario>
