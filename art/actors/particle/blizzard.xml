@@ -2,7 +2,15 @@
 <actor version="1">
   <group>
     <variant name="Base">
-      <particles file="blizzard.xml"/>
+      <mesh>structural/rome_ballista_pivot.dae</mesh>
+      <props>
+        <prop actor="particle/blizzard_02.xml" attachpoint="root"/>
+        <prop actor="particle/snow_mist.xml" attachpoint="root"/>
+        <prop actor="particle/snow_storm.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/hele_siege.dds" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <material>basic_trans.xml</material>
