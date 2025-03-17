@@ -1,0 +1,99 @@
+{
+	"Name": "Delenda Est - Journey through the World",
+	"Description": "Discover the new and improved maps in Delenda Est XXVII with a demo campaign, taking you through all of them one-by-one.",
+	"Levels": {
+		"Aquitania": {
+			"Map": "skirmishes/aquitania_4p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true
+		},
+		"Arabian Oases": {
+			"Map": "skirmishes/arabian_oases_2p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true,
+			"Requires": "Aquitania"
+		},
+		"Baltic Hinterlands": {
+			"Map": "skirmishes/baltic_hinterlands_4p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true,
+			"Requires": "Arabian Oases"
+		},
+		"African Caldera": {
+			"Map": "skirmishes/caldera_3p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true,
+			"Requires": "Baltic Hinterlands"
+		},
+		"Coast Range": {
+			"Map": "random/coast_range",
+			"MapType": "random",
+			"useGameSetup": true,
+			"Requires": "African Caldera"
+		},
+		"Egyptian Oases": {
+			"Map": "skirmishes/egyptian_oases_4p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true,
+			"Requires": "Coast Range"
+		},
+		"Foothills": {
+			"Map": "random/foothills",
+			"MapType": "random",
+			"useGameSetup": true,
+			"Requires": "Egyptian Oases"
+		},
+		"Fujiyama": {
+			"Map": "skirmishes/fujiyama_4p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true,
+			"Requires": "Foothills"
+		},
+		"Migration": {
+			"Map": "random/migration",
+			"MapType": "random",
+			"useGameSetup": true,
+			"Requires": "Fujiyama"
+		},
+		"Palmyra": {
+			"Map": "skirmishes/palmyra_4p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true,
+			"Requires": "Migration"
+		},
+		"Sporades Islands": {
+			"Map": "skirmishes/sporades_islands_2p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true,
+			"Requires": "Palmyra"
+		},
+		"Watering Holes": {
+			"Map": "skirmishes/watering_holes_4p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true,
+			"Requires": "Migration"
+		},
+		"Zagros Mountains": {
+			"Map": "skirmishes/zagros_mountains_2p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true,
+			"Requires": "Watering Holes"
+		},
+		"Isthmus of Corinth": {
+			"Map": "skirmishes/isthmus_of_corinth_2p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true,
+			"Requires": "Zagros Mountains"
+		},
+		"Ionian Revolt": {
+			"Map": "skirmishes/ionian_revolt_4p.xml",
+			"MapType": "skirmish",
+			"useGameSetup": true,
+			"Requires": "Isthmus of Corinth"
+		}
+	},
+	"Order": [
+	"Ionian Revolt"
+	],
+	"ShowUnavailable": true
+}
