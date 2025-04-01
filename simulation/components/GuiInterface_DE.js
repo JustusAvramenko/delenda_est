@@ -108,7 +108,9 @@ GuiInterface.prototype.GetSimulationState = function()
 	ret.victoryConditions = cmpEndGameManager.GetVictoryConditions();
 	ret.alliedVictory = cmpEndGameManager.GetAlliedVictory();
 
-	ret.maxWorldPopulation = cmpPlayerManager.GetMaxWorldPopulation();
+	let cmpPopulationCapManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_PopulationCapManager);
+	ret.populationCapType = cmpPopulationCapManager.GetPopulationCapType();
+	ret.populationCap = cmpPopulationCapManager.GetPopulationCap();
 
 	for (let i = 0; i < numPlayers; ++i)
 	{
