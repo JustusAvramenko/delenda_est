@@ -2,8 +2,8 @@
 	"genericName": "Entrenched Priesthood",
 	"description": "A strong priesthood means a strong culture.",
 	"cost": {
-		"food": 200,
-		"coin": 200
+		"coin": 250,
+		"glory": 250
 	},
 	"requirements": {
 		"tech": "phase_town"
@@ -11,9 +11,10 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "high_priest.png",
 	"researchTime": 40,
-	"tooltip": "Healers +200% glory gathering rate at Cult Statues.",
+	"tooltip": "Healers +200% glory gathering rate at Cult Statues and −50% train time.",
 	"modifications": [
-		{ "value": "ResourceGatherer/Rates/glory.praise", "multiply": 3 }
+		{ "value": "ResourceGatherer/Rates/glory.praise", "multiply": 3 },
+		{ "value": "Cost/BuildTime", "multiply": 0.8}
 	],
 	"affects": ["Healer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
