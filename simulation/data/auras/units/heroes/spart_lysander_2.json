@@ -1,12 +1,12 @@
 {
-	"type": "range",
-	"radius": 50,
+	"type": "global",
 	"affects": ["Warship"],
 	"modifications": [
 		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2 },
-		{ "value": "Attack/melee/Damage/Hack", "multiply": 1.2 }
+		{ "value": "Attack/melee/Damage/Hack", "multiply": 1.2 },
+		{ "value": "Attack/melee/Damage/Crush", "multiply": 1.2 }
 	],
 	"auraName": "Navarch",
-	"auraDescription": "Warships +20% attack.",
+	"auraDescription": "Warships +20% attack as long as Lysander lives.",
 	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
 }
