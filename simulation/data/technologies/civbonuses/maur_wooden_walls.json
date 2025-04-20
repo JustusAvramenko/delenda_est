@@ -2,9 +2,11 @@
 	"genericName": "Wooden Walls",
 	"autoResearch": true,
 	"description": "The Mauryas built their city walls out of wood, an abundant natural resource in India. Meanwhile, the Yayoi in Japan rarely built any structures out of stone. Consequently, Mauryan and Yayoi city walls have −25% health, but build 50% faster.",
-	"requirements": [
+	"requirements": {
+		"any": [
 			{ "civ": "maur" }
-	],
+		]
+	},
 	"modifications": [
 		{ "value": "Health/Max", "multiply": 0.75 },
 		{ "value": "Cost/BuildTime", "multiply": 0.5 }
