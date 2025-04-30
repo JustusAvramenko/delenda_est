@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object size="100%-124 140 100%-16 100%-66" name="trainerSection">
+	<object
+		name="trainerSectionHeading"
+		type="text"
+		font="sans-bold-14"
+		textcolor="white"
+		text_align="center"
+		text_valign="top"
+		size="0 0 100% 16"
+	/>
+
+	<object type="image" style="TreeDisplay" size="0 24 100% 100%">
+		<object name="trainers" type="scrollpanel" scrollbar_style="ModernScrollBar" size="0 2 100% 100%-2">
+			<repeat count="16" var="t">
+				<object type="image" style="TrainerBox" name="trainer[t]" hidden="true">
+					<object type="text" style="StructNamePrimary" name="trainer[t]_name"/>
+					<object type="button" style="StructIcon" name="trainer[t]_icon"/>
+					<object name="trainer[t]_productionRows">
+						<object style="ProdBoxRow">
+							<repeat count="4">
+								<object type="button" style="ProdBox"/>
+							</repeat>
+						</object>
+					</object>
+				</object>
+			</repeat>
+		</object>
+	</object>
+</object>
