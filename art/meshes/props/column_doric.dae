@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.2.0 commit date:2024-07-16, commit time:06:20, hash:a51f293548ad</authoring_tool>
+    </contributor>
+    <created>2025-04-30T17:09:38</created>
+    <modified>2025-04-30T17:09:38</modified>
+    <unit name="centimeter" meter="0.01"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Material_001-effect">
+      <profile_COMMON>
+        <newparam sid="sparta_struct_png-surface">
+          <surface type="2D">
+            <init_from>sparta_struct_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="sparta_struct_png-sampler">
+          <sampler2D>
+            <source>sparta_struct_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="sparta_struct_png-sampler" texcoord="Doric_ColumnMesh-mesh-map-0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="sparta_struct_png" name="sparta_struct_png">
+      <init_from>/C:/Users/micha/OneDrive/Documents/My%20Games/0ad/0ad-svn/binaries/data/mods/public/art/textures/skins/structural/sparta_struct.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Material_001-material" name="Material.001">
+      <instance_effect url="#Material_001-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Doric_ColumnMesh-mesh" name="Doric_ColumnMesh">
+      <mesh>
+        <source id="Doric_ColumnMesh-mesh-positions">
+          <float_array id="Doric_ColumnMesh-mesh-positions-array" count="48">-2342.52 -7042.426 590.5513 -2452.067 -6777.958 590.5513 -2542.464 -6868.354 3937.008 -2470.362 -7042.426 3937.008 -2716.536 -6668.41 590.5513 -2716.536 -6796.252 3937.008 -2981.005 -6777.958 590.5513 -2890.608 -6868.354 3937.008 -3090.552 -7042.426 590.5513 -2962.71 -7042.426 3937.008 -2981.005 -7306.895 590.5513 -2890.608 -7216.499 3937.008 -2716.536 -7416.442 590.5513 -2716.536 -7288.599 3937.008 -2452.067 -7306.895 590.5513 -2542.464 -7216.499 3937.008</float_array>
+          <technique_common>
+            <accessor source="#Doric_ColumnMesh-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Doric_ColumnMesh-mesh-normals">
+          <float_array id="Doric_ColumnMesh-mesh-normals-array" count="48">0.9992711 5.80334e-7 0.03817421 0.7065913 0.7065915 0.03817421 0.7065938 0.7065891 0.03817403 0.9992711 -3.53994e-6 0.03817385 -1.31417e-6 0.9992711 0.03817433 5.59473e-6 0.9992711 0.03817421 -0.7065929 0.7065899 0.03817403 -0.7065887 0.7065941 0.03817433 -0.9992711 -1.08424e-6 0.03817415 -0.9992711 4.49612e-6 0.03817397 -0.7065907 -0.7065921 0.03817403 -0.7065924 -0.7065904 0.03817415 1.62118e-6 -0.9992711 0.03817391 -5.04541e-6 -0.9992711 0.03817415 0.7065928 -0.7065901 0.03817385 0.706586 -0.7065968 0.03817439</float_array>
+          <technique_common>
+            <accessor source="#Doric_ColumnMesh-mesh-normals-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Doric_ColumnMesh-mesh-map-0">
+          <float_array id="Doric_ColumnMesh-mesh-map-0-array" count="96">0.03118455 0.4992063 0.04661226 0.4992063 0.04661226 0.9737884 0.04661226 0.9737884 0.03118455 0.9737884 0.03118455 0.4992063 0.04661226 0.4992063 0.06204074 0.4992063 0.06204074 0.9737884 0.06204074 0.9737884 0.04661226 0.9737884 0.04661226 0.4992063 0.06203997 0.4992063 0.04661226 0.4992063 0.04661226 0.9737884 0.04661226 0.9737884 0.06203997 0.9737884 0.06203997 0.4992063 0.04661226 0.4992063 0.03118377 0.4992063 0.03118377 0.9737884 0.03118377 0.9737884 0.04661226 0.9737884 0.04661226 0.4992063 0.03118377 0.4992063 0.01575529 0.4992063 0.01575529 0.9737884 0.01575529 0.9737884 0.03118377 0.9737884 0.03118377 0.4992063 0.01575529 0.4992063 3.27587e-4 0.4992063 3.27587e-4 0.9737884 3.27587e-4 0.9737884 0.01575529 0.9737884 0.01575529 0.4992063 3.27587e-4 0.4992063 0.01575607 0.4992063 0.01575607 0.9737884 0.01575607 0.9737884 3.27587e-4 0.9737884 3.27587e-4 0.4992063 0.01575607 0.4992063 0.03118455 0.4992063 0.03118455 0.9737884 0.03118455 0.9737884 0.01575607 0.9737884 0.01575607 0.4992063</float_array>
+          <technique_common>
+            <accessor source="#Doric_ColumnMesh-mesh-map-0-array" count="48" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Doric_ColumnMesh-mesh-vertices">
+          <input semantic="POSITION" source="#Doric_ColumnMesh-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_001-material" count="16">
+          <input semantic="VERTEX" source="#Doric_ColumnMesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Doric_ColumnMesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Doric_ColumnMesh-mesh-map-0" offset="2" set="0"/>
+          <p>0 0 0 1 1 1 2 2 2 2 2 3 3 3 4 0 0 5 1 1 6 4 4 7 5 5 8 5 5 9 2 2 10 1 1 11 4 4 12 6 6 13 7 7 14 7 7 15 5 5 16 4 4 17 6 6 18 8 8 19 9 9 20 9 9 21 7 7 22 6 6 23 8 8 24 10 10 25 11 11 26 11 11 27 9 9 28 8 8 29 10 10 30 12 12 31 13 13 32 13 13 33 11 11 34 10 10 35 12 12 36 14 14 37 15 15 38 15 15 39 13 13 40 12 12 41 14 14 42 0 0 43 3 3 44 3 3 45 15 15 46 14 14 47</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Doric_Column-Pivot" name="Doric_Column-Pivot" type="NODE">
+        <matrix sid="transform">-0.002456094 -0.001145295 0 -14.70905 0.001145295 -0.002456094 0 -14.15946 0 0 0.00271 -1.59825 0 0 0 1</matrix>
+        <instance_geometry url="#Doric_ColumnMesh-mesh" name="Doric_Column-Pivot">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_001-material" target="#Material_001-material">
+                <bind_vertex_input semantic="Doric_ColumnMesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

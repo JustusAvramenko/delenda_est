@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.2.0 commit date:2024-07-16, commit time:06:20, hash:a51f293548ad</authoring_tool>
+    </contributor>
+    <created>2025-04-30T17:31:37</created>
+    <modified>2025-04-30T17:31:37</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Material_001-effect">
+      <profile_COMMON>
+        <newparam sid="sparta_struct_png-surface">
+          <surface type="2D">
+            <init_from>sparta_struct_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="sparta_struct_png-sampler">
+          <sampler2D>
+            <source>sparta_struct_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="sparta_struct_png-sampler" texcoord="broken001Mesh-mesh-map-0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="sparta_struct_png" name="sparta_struct_png">
+      <init_from>/C:/Users/micha/OneDrive/Documents/My%20Games/0ad/0ad-svn/binaries/data/mods/public/art/textures/skins/structural/sparta_struct.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Material_001-material" name="Material.001">
+      <instance_effect url="#Material_001-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="broken001Mesh-mesh" name="broken001Mesh">
+      <mesh>
+        <source id="broken001Mesh-mesh-positions">
+          <float_array id="broken001Mesh-mesh-positions-array" count="54">0.641679 9.541137 0.73237 -0.085931 9.541168 0.73236 0.428569 9.530958 0.21796 -0.085931 9.526747 0.004889965 -0.600441 9.530958 0.21796 -0.813551 9.541137 0.73237 -0.600441 9.551318 1.24677 -0.085931 9.555538 1.45984 0.428569 9.551318 1.24677 -0.085931 10.80278 0.7074 0.411229 10.79294 0.21034 -0.085931 10.78886 0.004449963 -0.583091 10.79294 0.21034 -0.789031 10.80278 0.7074 -0.583101 10.81261 1.20446 -0.085931 10.81669 1.41035 0.411229 10.81261 1.20446 0.617159 10.80278 0.7074</float_array>
+          <technique_common>
+            <accessor source="#broken001Mesh-mesh-positions-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="broken001Mesh-mesh-normals">
+          <float_array id="broken001Mesh-mesh-normals-array" count="96">-4.22049e-5 -0.999804 0.01979893 -2.56069e-5 -0.9998036 0.01981955 2.56064e-5 -0.9998036 0.01981914 4.2205e-5 -0.999804 0.01980376 4.22072e-5 -0.9998047 0.01976823 2.18023e-5 -0.999805 0.01974755 -2.18077e-5 -0.9998049 0.01975047 -4.22071e-5 -0.9998045 0.01977109 -6.94518e-6 0.9998039 -0.01980209 6.94518e-6 0.999804 -0.01979935 0 0.9998041 -0.01979231 0 0.9998045 -0.01977318 -1.17736e-5 0.9998044 -0.0197826 1.17739e-5 0.9998043 -0.01978296 0 0.9998045 -0.01977348 0 0.9998042 -0.01979255 0.7069771 0.005443751 -0.7072155 0.7069768 0.005441129 -0.7072159 0.9998112 0.01942718 -3.81223e-4 0.9998113 0.0194236 -3.85273e-4 0.7069739 0.03341555 0.7064498 0.7069748 0.03341716 0.7064488 3.68315e-6 0.03921228 0.999231 3.18846e-6 0.03921163 0.9992309 -0.7069715 0.03341567 0.7064521 -0.7069717 0.03341716 0.706452 -0.9998112 0.01943004 -3.8339e-4 -0.9998113 0.01942348 -3.94288e-4 -0.7069705 0.00544238 -0.7072222 -0.7069754 0.005449295 -0.7072172 2.76494e-6 -3.46854e-4 -1 2.65701e-7 -3.4862e-4 -1</float_array>
+          <technique_common>
+            <accessor source="#broken001Mesh-mesh-normals-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="broken001Mesh-mesh-map-0">
+          <float_array id="broken001Mesh-mesh-map-0-array" count="192">0.624129 0.853596 0.6103565 0.8421898 0.624129 0.8307751 0.624129 0.8307751 0.6103565 0.8421898 0.6160596 0.8146362 0.6160596 0.8146362 0.6103565 0.8421898 0.6046449 0.8146362 0.6046449 0.8146362 0.6103565 0.8421898 0.5965754 0.8307751 0.5965754 0.8307751 0.6103565 0.8421898 0.5965754 0.853596 0.5965754 0.853596 0.6103565 0.8421898 0.6046449 0.8697348 0.6046449 0.8697348 0.6103565 0.8421898 0.6160596 0.8697348 0.6160596 0.8697348 0.6103565 0.8421898 0.624129 0.853596 0.6081519 0.8484802 0.6183068 0.8568986 0.6123569 0.86879 0.6081519 0.8484802 0.6123569 0.86879 0.6039469 0.86879 0.6081519 0.8484802 0.6039469 0.86879 0.597997 0.8568986 0.6081519 0.8484802 0.597997 0.8568986 0.597997 0.8400703 0.6081519 0.8484802 0.597997 0.8400703 0.6039469 0.8281704 0.6081519 0.8484802 0.6039469 0.8281704 0.6123569 0.8281704 0.6081519 0.8484802 0.6123569 0.8281704 0.6183068 0.8400703 0.6081519 0.8484802 0.6183068 0.8400703 0.6183068 0.8568986 0.006398797 0.6311861 0.006398797 0.7025179 0.01752072 0.6311861 0.006398797 0.7025179 0.01752072 0.7025179 0.01752072 0.6311861 0.01752072 0.6311861 0.01752072 0.7025179 0.02946186 0.7025179 0.01752072 0.6311861 0.02946186 0.7025179 0.02946186 0.6311861 0.02946186 0.6311861 0.02946186 0.7025179 0.04140299 0.6311861 0.02946186 0.7025179 0.04140299 0.7025179 0.04140299 0.6311861 0.04140299 0.6311861 0.04140299 0.7025179 0.05333781 0.7025179 0.04140299 0.6311861 0.05333781 0.7025179 0.05333781 0.6311861 0.0541507 0.6311861 0.0541507 0.7025179 0.04221588 0.6311861 0.0541507 0.7025179 0.04221588 0.7025179 0.04221588 0.6311861 0.04221588 0.6311861 0.04221588 0.7025179 0.03027474 0.7025179 0.04221588 0.6311861 0.03027474 0.7025179 0.03027474 0.6311861 0.03027474 0.6311861 0.03027474 0.7025179 0.01833361 0.6311861 0.03027474 0.7025179 0.01833361 0.7025179 0.01833361 0.6311861 0.006398797 0.7025179 0.006398797 0.6311861 0.01833361 0.6311861 0.006398797 0.7025179 0.01833361 0.6311861 0.01833361 0.7025179</float_array>
+          <technique_common>
+            <accessor source="#broken001Mesh-mesh-map-0-array" count="96" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="broken001Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#broken001Mesh-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_001-material" count="32">
+          <input semantic="VERTEX" source="#broken001Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#broken001Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#broken001Mesh-mesh-map-0" offset="2" set="0"/>
+          <p>0 0 0 1 0 1 2 0 2 2 1 3 1 1 4 3 1 5 3 2 6 1 2 7 4 2 8 4 3 9 1 3 10 5 3 11 5 4 12 1 4 13 6 4 14 6 5 15 1 5 16 7 5 17 7 6 18 1 6 19 8 6 20 8 7 21 1 7 22 0 7 23 9 8 24 10 8 25 11 8 26 9 9 27 11 9 28 12 9 29 9 10 30 12 10 31 13 10 32 9 11 33 13 11 34 14 11 35 9 12 36 14 12 37 15 12 38 9 13 39 15 13 40 16 13 41 9 14 42 16 14 43 17 14 44 9 15 45 17 15 46 10 15 47 2 16 48 10 17 49 0 18 50 10 17 51 17 19 52 0 18 53 0 18 54 17 19 55 16 20 56 0 18 57 16 20 58 8 21 59 8 21 60 16 20 61 7 22 62 16 20 63 15 23 64 7 22 65 7 22 66 15 23 67 14 24 68 7 22 69 14 24 70 6 25 71 6 25 72 14 24 73 5 26 74 14 24 75 13 27 76 5 26 77 5 26 78 13 27 79 12 28 80 5 26 81 12 28 82 4 29 83 4 29 84 12 28 85 3 30 86 12 28 87 11 31 88 3 30 89 10 17 90 2 16 91 3 30 92 10 17 93 3 30 94 11 31 95</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="column_fallen_e" name="column_fallen_e" type="NODE">
+        <matrix sid="transform">-1.097645 -1.6574e-7 0 -0.09851467 1.6574e-7 -1.097645 0 11.15538 0 0 1.097645 -0.077648 0 0 0 1</matrix>
+        <instance_geometry url="#broken001Mesh-mesh" name="column_fallen_e">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_001-material" target="#Material_001-material">
+                <bind_vertex_input semantic="broken001Mesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

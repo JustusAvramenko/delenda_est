@@ -2,8 +2,11 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant name="temple_unfinished_columns_03">
-      <mesh>props/temple_unfinished_columns_03.dae</mesh>
+    <variant>
+      <mesh>props/column_doric.dae</mesh>
+      <props>
+        <prop actor="props/special/eyecandy/column_doric_top.xml" attachpoint="root"/>
+      </props>
       <textures>
         <texture file="structural/sparta_struct.png" name="baseTex"/>
         <texture file="structural/sparta_struct_norm.png" name="normTex"/>

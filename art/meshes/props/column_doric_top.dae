@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.2.0 commit date:2024-07-16, commit time:06:20, hash:a51f293548ad</authoring_tool>
+    </contributor>
+    <created>2025-04-30T17:12:23</created>
+    <modified>2025-04-30T17:12:23</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Material_001-effect">
+      <profile_COMMON>
+        <newparam sid="sparta_struct_png-surface">
+          <surface type="2D">
+            <init_from>sparta_struct_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="sparta_struct_png-sampler">
+          <sampler2D>
+            <source>sparta_struct_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="sparta_struct_png-sampler" texcoord="Doric_Capital_1Mesh-mesh-map-0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="sparta_struct_png" name="sparta_struct_png">
+      <init_from>/C:/Users/micha/OneDrive/Documents/My%20Games/0ad/0ad-svn/binaries/data/mods/public/art/textures/skins/structural/sparta_struct.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Material_001-material" name="Material.001">
+      <instance_effect url="#Material_001-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Doric_Capital_1Mesh-mesh" name="Doric_Capital_1Mesh">
+      <mesh>
+        <source id="Doric_Capital_1Mesh-mesh-positions">
+          <float_array id="Doric_Capital_1Mesh-mesh-positions-array" count="24">-335.411 -805.6552 434.5576 -246.8119 -805.6552 434.5576 -246.8119 -717.056 434.5576 -335.411 -717.056 434.5576 -335.411 -805.6552 421.9006 -246.8119 -805.6552 421.9006 -246.8119 -717.056 421.9006 -335.411 -717.056 421.9006</float_array>
+          <technique_common>
+            <accessor source="#Doric_Capital_1Mesh-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Doric_Capital_1Mesh-mesh-normals">
+          <float_array id="Doric_Capital_1Mesh-mesh-normals-array" count="30">0 0 1 0 0 1 0 -1 0 0 -1 0 1 0 0 1 0 0 0 1 0 0 1 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#Doric_Capital_1Mesh-mesh-normals-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Doric_Capital_1Mesh-mesh-map-0">
+          <float_array id="Doric_Capital_1Mesh-mesh-map-0-array" count="60">0.563228 0.8750988 0.5932137 0.8750988 0.5932137 0.9364539 0.5932137 0.9364539 0.563228 0.9364539 0.563228 0.8750988 0.563228 0.873476 0.5941826 0.873476 0.5941826 0.8860725 0.5941826 0.8860725 0.563228 0.8860725 0.563228 0.873476 0.563228 0.873476 0.5941826 0.873476 0.5941826 0.8860725 0.5941826 0.8860725 0.563228 0.8860725 0.563228 0.873476 0.563228 0.873476 0.5941826 0.873476 0.5941826 0.8860725 0.5941826 0.8860725 0.563228 0.8860725 0.563228 0.873476 0.563228 0.873476 0.5941826 0.873476 0.5941826 0.8860725 0.5941826 0.8860725 0.563228 0.8860725 0.563228 0.873476</float_array>
+          <technique_common>
+            <accessor source="#Doric_Capital_1Mesh-mesh-map-0-array" count="30" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Doric_Capital_1Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#Doric_Capital_1Mesh-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_001-material" count="10">
+          <input semantic="VERTEX" source="#Doric_Capital_1Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Doric_Capital_1Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Doric_Capital_1Mesh-mesh-map-0" offset="2" set="0"/>
+          <p>0 0 0 1 0 1 2 0 2 2 1 3 3 1 4 0 1 5 4 2 6 5 2 7 1 2 8 1 3 9 0 3 10 4 3 11 5 4 12 6 4 13 2 4 14 2 5 15 1 5 16 5 5 17 6 6 18 7 6 19 3 6 20 3 7 21 2 7 22 6 7 23 7 8 24 4 8 25 0 8 26 0 9 27 3 9 28 7 9 29</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Doric_Capital_1-Pivot" name="Doric_Capital_1-Pivot" type="NODE">
+        <matrix sid="transform">-4.13819e-9 -0.0254 0 -19.32458 0.0254 -4.13819e-9 0 7.437606 0 0 0.0254 -1.598246 0 0 0 1</matrix>
+        <instance_geometry url="#Doric_Capital_1Mesh-mesh" name="Doric_Capital_1-Pivot">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_001-material" target="#Material_001-material">
+                <bind_vertex_input semantic="Doric_Capital_1Mesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
