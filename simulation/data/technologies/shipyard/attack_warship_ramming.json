@@ -1,6 +1,5 @@
 {
-	"supersedes": "shipyard/speed_warship_flanking",
-	"genericName": "Bronze Ram",
+	"genericName": "Bronze Rams",
 	"specificName": {
 		"hele": "Embolon",
 		"mace": "Embolon",
@@ -15,25 +14,25 @@
 	},
 	"description": "A bronze beak at the prow of the ship, used for ramming enemy ships.",
 	"cost": {
-		"metal": 1200,
-		"glory": 600
+		"metal": 600,
+		"glory": 300
 	},
 	"requirements": {
 		"all": [
-			{ "tech": "phase_empire" },
+			{ "tech": "phase_city" },
 			{
 				"any": [
 					{ "notciv": "brit" },
 					{ "notciv": "cimb" },
 					{ "notciv": "gaul" },
 					{ "notciv": "goth" },
-					{ "notciv": "han" },
+					{ "notciv": "han"  },
 					{ "notciv": "huns" },
 					{ "notciv": "iber" },
 					{ "notciv": "kush" },
 					{ "notciv": "maur" },
 					{ "notciv": "noba" },
-					{ "notciv": "scyth" },
+					{ "notciv": "scyth"},
 					{ "notciv": "sueb" },
 					{ "notciv": "xion" },
 					{ "notciv": "yayo" },
@@ -42,12 +41,12 @@
 			}
 		]
 	},
-	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Flanking Maneuvers.”",
+	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "ship_ram.png",
 	"researchTime": 40,
-	"tooltip": "Ramming Ships +50% attack damage.",
+	"tooltip": "Ramming Ships +25% attack damage.",
 	"modifications": [
-		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.5 }
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.25 }
 	],
 	"affects": ["NavalRam"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

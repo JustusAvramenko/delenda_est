@@ -1,5 +1,5 @@
 {
-	"supersedes": "shipyard/armor_warship_cladding",
+	"supersedes": "shipyard/attack_warship_ramming",
 	"genericName": "Undergirding Cables",
 	"specificName": {
 		"hele": "Hypozomata",
@@ -13,7 +13,7 @@
 		"theb": "Hypozomata",
 		"syrac": "Hypozomata"
 	},
-	"description": "The hypozomata brace the structure of a ship.",
+	"description": "The hypozomata, or undergirding cables, brace the structure of a ship and were invented by the Athenians in the 5th century BC.",
 	"cost": {
 		"metal": 1200,
 		"glory": 600
@@ -23,40 +23,21 @@
 			{ "tech": "phase_empire" },
 			{
 				"any": [
-					{ "notciv": "brit" },
-					{ "notciv": "cart" },
-					{ "notciv": "cimb" },
-					{ "notciv": "gaul" },
-					{ "notciv": "goth" },
-					{ "notciv": "han" },
-					{ "notciv": "huns" },
-					{ "notciv": "iber" },
-					{ "notciv": "kush" },
-					{ "notciv": "mace" },
-					{ "notciv": "maur" },
-					{ "notciv": "noba" },
-					{ "notciv": "ptol" },
-					{ "notciv": "rome" },
-					{ "notciv": "scyth" },
-					{ "notciv": "sele" },
-					{ "notciv": "sueb" },
-					{ "notciv": "syrac" },
-					{ "notciv": "xion" },
-					{ "notciv": "yayo" },
-					{ "notciv": "zapo" }
+					{ "civ": "athen" },
+					{ "civ": "cart" },
+					{ "civ": "ptol" }
 				]
 			}
 		]
 	},
-	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Ship Cladding.”",
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Bronze Ram.”",
 	"icon": "armor_ship_bronze.png",
 	"researchTime": 40,
-	"tooltip": "Arrow Ships and Ramming Ships +25% health.",
+	"tooltip": "Ramming Ships +25% health.",
 	"modifications": [
 		{ "value": "Health/Max", "multiply": 1.25 }
 	],
 	"affects": [
-		"ArrowShip",
 		"NavalRam"
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
