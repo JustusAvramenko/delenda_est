@@ -2,19 +2,24 @@
 	"genericName": "Bread and Circuses",
 	"description": "Cultural events utilizing religion were intertwined with mass entertainment. Sometimes these events were sponsored by the rich and powerful in order to curry favor with the gods and, of course, with the people.",
 	"cost": {
-		"food": 800,
-		"glory": 800
+		"food": 4000,
+		"glory": 2000
 	},
 	"requirements": {
-		"tech": "phase_empire"
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "any": [
+				{ "civ": "imp" }]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "urbanization.png",
 	"researchTime": 60,
-	"tooltip": "Capturable units and buildings +50% capture points.",
+	"tooltip": "All Units −50% training time.",
 	"modifications": [
-		{ "value": "Capturable/CapturePoints", "multiply": 1.5 }
+		{ "value": "Cost/BuildTime", "multiply": 0.5 }
 	],
-	"affects": ["Structure", "Unit"],
+	"affects": ["Unit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
