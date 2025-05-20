@@ -10,7 +10,7 @@ ProductionQueue.prototype.ProgressTimeout = function(data, lateness)
 
 	while (this.queue.length)
 	{
-		let item = this.queue[0];
+		const item = this.queue[0];
 		if (!item.IsStarted())
 		{
 			if (item.entity)
@@ -47,7 +47,7 @@ ProductionQueue.prototype.ProgressTimeout = function(data, lateness)
 				const cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
 				cmpGUIInterface.PushNotification({
 					"players": [QueryOwnerInterface(this.entity).GetPlayerID()],
-					"message": markForTranslation("Could not auto-queue unit."),
+					"message": markForTranslation("Could not auto-queue unit, skipping to next item."), //DE - Wording
 					"translateMessage": true
 				});
 			}

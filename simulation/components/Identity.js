@@ -254,7 +254,7 @@ Engine.RegisterGlobal("IdentityMirage", IdentityMirage);
 
 Identity.prototype.Mirage = function()
 {
-	let mirage = new IdentityMirage();
+	const mirage = new IdentityMirage();
 	mirage.Init(this);
 	return mirage;
 };

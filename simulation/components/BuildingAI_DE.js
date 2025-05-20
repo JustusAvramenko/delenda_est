@@ -9,7 +9,7 @@ BuildingAI.prototype.OnRangeUpdate = function(msg)
 	if (msg.tag == this.gaiaUnitsQuery)
 	{
 		msg.added = msg.added.filter(e => {
-			let cmpUnitAI = Engine.QueryInterface(e, IID_UnitAI);
+			const cmpUnitAI = Engine.QueryInterface(e, IID_UnitAI);
 			return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // << THIS HAS CHANGED.
 		});
 	}
@@ -24,7 +24,7 @@ BuildingAI.prototype.OnRangeUpdate = function(msg)
 	// Remove targets outside of vision-range.
 	for (let entity of msg.removed)
 	{
-		let index = this.targetUnits.indexOf(entity);
+		const index = this.targetUnits.indexOf(entity);
 		if (index > -1)
 			this.targetUnits.splice(index, 1);
 	}

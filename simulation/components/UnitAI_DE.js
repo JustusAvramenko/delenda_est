@@ -44,12 +44,12 @@ UnitAI.prototype.RespondToTargetedEntities = function(ents, dangerousAnimal = fa
 
 UnitAI.prototype.GetQueryRange = function(iid)
 {
-	let ret = { "min": 0, "max": 0 };
+	const ret = { "min": 0, "max": 0 };
 
-	let cmpVision = Engine.QueryInterface(this.entity, IID_Vision);
+	const cmpVision = Engine.QueryInterface(this.entity, IID_Vision);
 	if (!cmpVision)
 		return ret;
-	let visionRange = cmpVision.GetRange();
+	const visionRange = cmpVision.GetRange();
 
 	if (iid === IID_Vision)
 	{
@@ -59,7 +59,7 @@ UnitAI.prototype.GetQueryRange = function(iid)
 
 	if (this.GetStance().respondStandGround)
 	{
-		let range = this.GetRange(iid);
+		const range = this.GetRange(iid);
 		if (!range)
 			return ret;
 		ret.min = range.min;
@@ -69,7 +69,7 @@ UnitAI.prototype.GetQueryRange = function(iid)
 		ret.max = visionRange * 0.85; // <<<<<<<< This has changed. Stops units from berserking after any enemy unit in vision range.
 	else if (this.GetStance().respondHoldGround)
 	{
-		let range = this.GetRange(iid);
+		const range = this.GetRange(iid);
 		if (!range)
 			return ret;
 		ret.max = Math.min(range.max + visionRange / 2, visionRange);
@@ -87,30 +87,30 @@ UnitAI.prototype.AttackEntitiesByPreference = function(ents)
 	if (!ents.length)
 		return false;
 
-	let cmpAttack = Engine.QueryInterface(this.entity, IID_Attack);
+	const cmpAttack = Engine.QueryInterface(this.entity, IID_Attack);
 	if (!cmpAttack)
 		return false;
 
-	let attackfilter = function(e) {
+	const attackfilter = function(e) {
 		if (!cmpAttack.CanAttack(e))
 			return false;
 
-		let cmpOwnership = Engine.QueryInterface(e, IID_Ownership);
+		const cmpOwnership = Engine.QueryInterface(e, IID_Ownership);
 		if (cmpOwnership && cmpOwnership.GetOwner() > 0)
 			return true;
 
-		let cmpUnitAI = Engine.QueryInterface(e, IID_UnitAI);
+		const cmpUnitAI = Engine.QueryInterface(e, IID_UnitAI);
 		return cmpUnitAI && !cmpUnitAI.IsAnimal(); // <<<<<<<< This has changed. Stops units from auto-attacking animals, such as lions.
 	};
 
-	let entsByPreferences = {};
-	let preferences = [];
-	let entsWithoutPref = [];
+	const entsByPreferences = {};
+	const preferences = [];
+	const entsWithoutPref = [];
 	for (let ent of ents)
 	{
 		if (!attackfilter(ent))
 			continue;
-		let pref = cmpAttack.GetPreference(ent);
+		const pref = cmpAttack.GetPreference(ent);
 		// If we match our best preference, we can try responding right away.
 		// This makes some common cases fast, like most soldiers having 'Human' as best preference,
 		// or ships having 'Ship'. And if there are no such targets, this doesn't do much more work.

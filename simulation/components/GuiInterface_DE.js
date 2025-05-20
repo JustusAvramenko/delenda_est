@@ -1,11 +1,11 @@
 GuiInterface.prototype.GetSimulationState = function()
 {
-	let ret = {
+	const ret = {
 		"players": []
 	};
 
-	let cmpPlayerManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_PlayerManager);
-	let numPlayers = cmpPlayerManager.GetNumPlayers();
+	const cmpPlayerManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_PlayerManager);
+	const numPlayers = cmpPlayerManager.GetNumPlayers();
 	for (let i = 0; i < numPlayers; ++i)
 	{
 		const playerEnt = cmpPlayerManager.GetPlayerByID(i);
@@ -29,10 +29,10 @@ GuiInterface.prototype.GetSimulationState = function()
 				phase = "village";
 		}
 
-		let allies = [];
-		let mutualAllies = [];
-		let neutrals = [];
-		let enemies = [];
+		const allies = [];
+		const mutualAllies = [];
+		const neutrals = [];
+		const enemies = [];
 
 		for (let j = 0; j < numPlayers; ++j)
 		{
@@ -82,39 +82,39 @@ GuiInterface.prototype.GetSimulationState = function()
 		});
 	}
 
-	let cmpRangeManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager);
+	const cmpRangeManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager);
 	if (cmpRangeManager)
 		ret.circularMap = cmpRangeManager.GetLosCircular();
 
-	let cmpTerrain = Engine.QueryInterface(SYSTEM_ENTITY, IID_Terrain);
+	const cmpTerrain = Engine.QueryInterface(SYSTEM_ENTITY, IID_Terrain);
 	if (cmpTerrain)
 		ret.mapSize = cmpTerrain.GetMapSize();
 
-	let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
+	const cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
 	ret.timeElapsed = cmpTimer.GetTime();
 
-	let cmpCeasefireManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_CeasefireManager);
+	const cmpCeasefireManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_CeasefireManager);
 	if (cmpCeasefireManager)
 	{
 		ret.ceasefireActive = cmpCeasefireManager.IsCeasefireActive();
 		ret.ceasefireTimeRemaining = ret.ceasefireActive ? cmpCeasefireManager.GetCeasefireStartedTime() + cmpCeasefireManager.GetCeasefireTime() - ret.timeElapsed : 0;
 	}
 
-	let cmpCinemaManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_CinemaManager);
+	const cmpCinemaManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_CinemaManager);
 	if (cmpCinemaManager)
 		ret.cinemaPlaying = cmpCinemaManager.IsPlaying();
 
-	let cmpEndGameManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_EndGameManager);
+	const cmpEndGameManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_EndGameManager);
 	ret.victoryConditions = cmpEndGameManager.GetVictoryConditions();
 	ret.alliedVictory = cmpEndGameManager.GetAlliedVictory();
 
-	let cmpPopulationCapManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_PopulationCapManager);
+	const cmpPopulationCapManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_PopulationCapManager);
 	ret.populationCapType = cmpPopulationCapManager.GetPopulationCapType();
 	ret.populationCap = cmpPopulationCapManager.GetPopulationCap();
 
 	for (let i = 0; i < numPlayers; ++i)
 	{
-		let cmpPlayerStatisticsTracker = QueryPlayerIDInterface(i, IID_StatisticsTracker);
+		const cmpPlayerStatisticsTracker = QueryPlayerIDInterface(i, IID_StatisticsTracker);
 		if (cmpPlayerStatisticsTracker)
 			ret.players[i].statistics = cmpPlayerStatisticsTracker.GetBasicStatistics();
 	}
