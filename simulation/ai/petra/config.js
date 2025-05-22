@@ -24,29 +24,29 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 		"towerLapseTime": 90,	// Time to wait between building 2 towers
 		"fortressLapseTime": 300,	// Time to wait between building 2 fortresses
 		"popForBarracks1": 10,
-		"popForBarracks2": 60,
+		"popForBarracks2": 50,
 		"popForBarracks3": 80,
 		"popForShipyard": 20,
-		"popForForge": 90,
+		"popForForge": 60,
 		"numSentryTowers": 1
 	};
 
 	this.DamageTypeImportance = {
-		"Hack": 0.085,
+		"Hack": 0.095,
 		"Pierce": 0.075,
-		"Crush": 0.065,
-		"Fire": 0.095
+		"Crush": 0.025,
+		"Fire": 0.010
 	};
 
 	this.Economy = {
-		"popPhase2": 30,	// How many units we want before aging to phase2.
+		"popPhase2": 60,	// How many units we want before aging to phase2.
 		"workPhase3": 40,	// How many workers we want before aging to phase3.
 		"workPhase4": 60,	// How many workers we want before aging to phase4 or higher.
 		"popForDock": 20,
-		"targetNumWorkers": 40,	// dummy, will be changed later
+		"targetNumWorkers": 60,	// dummy, will be changed later
 		"targetNumTraders": 5,	// Target number of traders
 		"targetNumFishers": 8,	// Target number of fishers per sea
-		"supportRatio": 0.35,	// fraction of support workers among the workforce
+		"supportRatio": 0.30,	// fraction of support workers among the workforce
 		"provisionFields": 3
 	};
 
@@ -65,6 +65,7 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 	this.buildings =
 	{
 		"default": [
+			"structures/{civ}/statue"
 		],
 		"athen": [
 			"structures/{civ}/statue",
@@ -181,20 +182,19 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 
 	this.priorities =
 	{
-		"villager": 30,      // should be slightly lower than the citizen soldier one to not get all the food
-		"citizenSoldier": 60,
+		"villager": 100,      // should be slightly lower than the citizen soldier one to not get all the food
+		"citizenSoldier": 200,
 		"trader": 50,
 		"healer": 20,
-		"ships": 300,
-		"warships": 800,
+		"ships": 500,
 		"house": 350,
-		"dropsites": 200,
+		"dropsites": 300,
 		"field": 400,
 		"dock": 300,
 		"shipyard": 500,
-		"corral": 100,
-		"economicBuilding": 90,
-		"militaryBuilding": 130,
+		"corral": 20,
+		"economicBuilding": 300,
+		"militaryBuilding": 200,
 		"defenseBuilding": 70,
 		"civilCentre": 950,
 		"majorTech": 700,
