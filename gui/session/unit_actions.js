@@ -1026,7 +1026,7 @@ var g_UnitActions =
 		},
 		"specificness": 41,
 	},
-	
+
 	"focus-fire":
 	{
 		"execute": function(position, action, selection, queued, pushFront)
@@ -1053,7 +1053,7 @@ var g_UnitActions =
 		"getActionInfo": function(entState, targetState)
 		{
 			if (!entState.rallyPoint)
-				return false;
+				return undefined;
 
 			let tooltip;
 			let data = { "command": "walk" };
@@ -1077,6 +1077,7 @@ var g_UnitActions =
 					"tooltip": tooltip
 				};
 			}
+			return undefined;
 		},
 		"hotkeyActionCheck": function(target, selection)
 		{
@@ -1093,7 +1094,7 @@ var g_UnitActions =
 				return false;
 
 			let actionInfo = getActionInfo("focus-fire", target, selection);
-			
+
 			return actionInfo.possible && {
 				"type": "focus-fire",
 				"cursor": actionInfo.cursor,
