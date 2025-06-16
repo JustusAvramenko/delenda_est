@@ -362,8 +362,8 @@ PETRA.Config.prototype.setConfig = function(gameState)
 		this.Economy.workPhase4 = Math.floor(0.9 * this.Economy.workPhase4);
 	}
 
-	if (maxPop < 300)
-		this.popScaling *= Math.sqrt(maxPop / 300);
+	if (maxPop < 600)
+		this.popScaling *= Math.sqrt(maxPop / 600);
 
 	this.Military.popForBarracks1 = Math.min(Math.max(Math.floor(this.Military.popForBarracks1 * this.popScaling), 12), Math.floor(maxPop/5));
 	this.Military.popForBarracks2 = Math.min(Math.max(Math.floor(this.Military.popForBarracks2 * this.popScaling), 45), Math.floor(maxPop*2/3));
