@@ -713,6 +713,8 @@ var g_UnitActions =
 						"gain": getTradingTooltip(tradingDetails.gain)
 					});
 				break;
+			default:
+				error("Unknown type for tradingDetails: " + tradingDetails.type);
 			}
 
 			return {
