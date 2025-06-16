@@ -6,6 +6,7 @@
   </Footprint>
   <Identity>
     <SpecificName>Pirate Port</SpecificName>
+    <Icon>structures/shipyard_merc.png</Icon>
   </Identity>
   <Obstruction>
     <Static width="24.0" depth="24.0"/>
@@ -13,6 +14,8 @@
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
+      -units/{native}/ship_fishing
+      -units/{native}/ship_merchant
       units/{civ}/ship_fishing
       units/{civ}/ship_merchant
       units/pirates/ship_scout
