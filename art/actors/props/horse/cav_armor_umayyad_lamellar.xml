@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>props/horse/cataphract_armor.dae</mesh>
+      <textures>
+        <texture file="props/horse/cataphract_armor_norm.png" name="normTex"/>
+        <texture file="props/horse/cataphract_armor_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="lamellar1">
+      <textures>
+        <texture file="props/horse/cataphract_armor_lamellar.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant name="lamellar2">
+      <textures>
+        <texture file="props/horse/cataphract_armor_lamellar2.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="quadraped/base_horse_javelin_fast.xml"  name="Javelinist-Fast-Horse" frequency="1"/>
+    <variant file="quadraped/base_horse_archer_fast.xml" name="Archer-Fast-Horse" frequency="1"/>
+    <variant file="quadraped/base_horse_javelin.xml"  name="Javelinist-Horse" frequency="1"/>
+    <variant file="quadraped/base_horse_chariot.xml"  name="Chariot-Horse" frequency="1"/>
+    <variant file="quadraped/base_horse_archer.xml" name="Archer-Horse" frequency="1"/>
+    <variant file="quadraped/base_horse_trot.xml" name="Horse-Trot" frequency="1"/>
+    <variant file="quadraped/base_horse_pace.xml" name="Horse-Pace" frequency="1"/>
+    <variant file="quadraped/base_horse_walk.xml" name="Horse-Walk" frequency="1"/>
+  </group>
+  <material>basic_trans_parallax_spec.xml</material>
+</actor>

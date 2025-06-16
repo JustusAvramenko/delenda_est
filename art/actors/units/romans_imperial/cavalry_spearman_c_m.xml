@@ -2,22 +2,77 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant>
+    <variant name="Base">
       <mesh>skeletal/horse_lusitano.dae</mesh>
       <props>
         <prop actor="units/romans_imperial/cavalry_spearman_c_r.xml" attachpoint="rider"/>
-        <prop actor="props/horse/cav_armor_sele.xml" attachpoint="root"/>
-        <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
       </props>
     </variant>
   </group>
   <group>
-    <variant file="quadraped/horse/tan.xml" frequency="1" name="tan"/>
-    <variant file="quadraped/horse/black.xml" frequency="1" name="black"/>
-    <variant file="quadraped/horse/chestnut_02.xml" frequency="1" name="palomino_02"/>
-    <variant file="quadraped/horse/white.xml" frequency="1" name="white"/>
-    <variant file="quadraped/horse/pure_white.xml" frequency="1" name="pure_white"/>
-    <variant file="quadraped/horse/gray.xml" frequency="1" name="gray"/>
+    <variant name="Armor-Seleucid Style-Mask" frequency="15">
+      <props>
+        <prop actor="props/horse/cav_mask_cataphract_1.xml" attachpoint="head"/>
+        <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_saddle_byzantine.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_armor_sele.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="Armor-Seleucid Style-NoMask" frequency="4">
+      <props>
+        <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_saddle_byzantine.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_armor_sele.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="Armor-Cataphract Style 1-Mask" frequency="4">
+      <props>
+        <prop actor="props/horse/cav_mask_cataphract_1.xml" attachpoint="head"/>
+        <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_rome.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_cataphract_1.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="Armor-Cataphract Style 1-NoMask" frequency="3">
+      <props>
+        <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_rome.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_cataphract_1.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="Armor-Cataphract Style 2-Mask" frequency="4">
+      <props>
+        <prop actor="props/horse/cav_mask_cataphract_1.xml" attachpoint="head"/>
+        <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_rome.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_cataphract_2.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="Armor-Cataphract Style 2-NoMask" frequency="3">
+      <props>
+        <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_rome.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_cataphract_2.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="Armor-Cataphract Style 3" frequency="3">
+      <props>
+        <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_rome.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_armor_caro.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant file="quadraped/horse/maneless_black.xml" frequency="1" name="black"/>
+    <variant file="quadraped/horse/maneless_brown.xml" frequency="1" name="brown"/>
+    <variant file="quadraped/horse/maneless_beige.xml" frequency="1" name="beige"/>
+    <variant file="quadraped/horse/maneless_tan.xml" frequency="1" name="tan"/>
+    <variant file="quadraped/horse/maneless_cherrybay.xml" frequency="1" name="cherrybay"/>
+    <variant file="quadraped/horse/maneless_white.xml" frequency="1" name="white"/>
+    <variant file="quadraped/horse/maneless_gray.xml" frequency="1" name="gray"/>
+    <variant file="quadraped/horse/maneless_halflinger.xml" frequency="1" name="halflinger"/>
+    <variant file="quadraped/horse/maneless_brown_spotted_01.xml" frequency="1" name="Brown-Spotted-01"/>
   </group>
   <group>
     <variant file="quadraped/base_horse_pace.xml" name="Horse-Pace" frequency="1"/>
