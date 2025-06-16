@@ -3,10 +3,10 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>cloudless</SkySet>
-		<SunColor r="1.31445" g="0.984551" b="0.422687"/>
+		<SunColor r="1.31445" g="0.984549" b="0.422686"/>
 		<SunElevation angle="0.417243"/>
 		<SunRotation angle="-1.264"/>
-		<AmbientColor r="0.372549" g="0.376471" b="0.419608"/>
+		<AmbientColor r="0.364706" g="0.376471" b="0.419608"/>
 		<Fog>
 			<FogFactor>0.00277344</FogFactor>
 			<FogThickness>0.00195313</FogThickness>
@@ -32,7 +32,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="467.724" y="106.46" z="632.876"/>
+		<Position x="1039.82" y="101.408" z="513.203"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -40,9 +40,7 @@
 {
   "CircularMap": true,
   "Description": "A dual oasis map with nearly all of the wood and animal resources concentrated in the middle of the map. Farmlands ring the oases sucking up what little moisture can be had.\n\nStone and Metal can only be found in the rocky hinterlands. Treasures and Mercenary Camps, if enabled, can be found scattered in the nearby deserts.",
-  "Keywords": [
-    
-  ],
+  "Keywords": [],
   "LockTeams": false,
   "Name": "Siwa Oasis (4 players)",
   "PlayerData": [
@@ -62,6 +60,9 @@
   ],
   "Preview": "siwa_oasis_4.png",
   "RevealMap": false,
+  "TriggerScripts": [
+    "scripts/Sandstorm.js"
+  ],
   "VictoryConditions": [
     "conquest_civic_centers"
   ]
@@ -1292,7 +1293,7 @@
 		<Entity uid="906">
 			<Template>gaia/tree/cretan_date_palm_tall</Template>
 			<Player>0</Player>
-			<Position x="938.4878" z="988.46845"/>
+			<Position x="945.54242" z="982.11365"/>
 			<Orientation y="0.33956"/>
 			<Actor seed="16288"/>
 		</Entity>
@@ -12397,24 +12398,6 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="39440"/>
 		</Entity>
-		<Entity uid="2810">
-			<Template>actor|particle/dust_storm.xml</Template>
-			<Position x="642.31708" z="1380.2251"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="60608"/>
-		</Entity>
-		<Entity uid="2811">
-			<Template>actor|particle/dust_storm.xml</Template>
-			<Position x="1031.69214" z="1384.62134"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="48310"/>
-		</Entity>
-		<Entity uid="2812">
-			<Template>actor|particle/dust_storm.xml</Template>
-			<Position x="1032.0503" z="1453.4297"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="13416"/>
-		</Entity>
 		<Entity uid="2813">
 			<Template>actor|particle/dust_storm.xml</Template>
 			<Position x="959.38355" z="116.02692"/>
@@ -12427,23 +12410,11 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="7458"/>
 		</Entity>
-		<Entity uid="2815">
-			<Template>actor|particle/dust_storm.xml</Template>
-			<Position x="535.6952" z="116.60048"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="64356"/>
-		</Entity>
 		<Entity uid="2816">
 			<Template>actor|particle/dust_storm.xml</Template>
 			<Position x="1418.10792" z="470.2273"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39938"/>
-		</Entity>
-		<Entity uid="2817">
-			<Template>actor|particle/dust_storm.xml</Template>
-			<Position x="1454.55616" z="1048.3866"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="32190"/>
 		</Entity>
 		<Entity uid="2818">
 			<Template>gaia/tree/dead</Template>
@@ -13324,7 +13295,7 @@
 		<Entity uid="3031">
 			<Template>gaia/tree/grove_palm_desert_01</Template>
 			<Player>0</Player>
-			<Position x="927.27295" z="969.79712"/>
+			<Position x="934.32776" z="963.44233"/>
 			<Orientation y="-0.55448"/>
 			<Actor seed="2416"/>
 		</Entity>
@@ -13598,240 +13569,6 @@
 			<Orientation y="1.11941"/>
 			<Obstruction group="3069" group2="3071"/>
 			<Actor seed="39632"/>
-		</Entity>
-		<Entity uid="3074">
-			<Template>other/farmland_60</Template>
-			<Player>0</Player>
-			<Position x="941.34198" z="669.57856"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3075">
-			<Template>other/farmland_40</Template>
-			<Player>0</Player>
-			<Position x="702.46003" z="626.76294"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3076">
-			<Template>other/farmland_40</Template>
-			<Player>0</Player>
-			<Position x="771.56067" z="672.3819"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3077">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="810.45801" z="704.95112"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3078">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="842.65943" z="686.22828"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3079">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="822.02558" z="661.97315"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3080">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="873.70063" z="681.38764"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3081">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="665.0232" z="670.80317"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3082">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="655.4007" z="643.63752"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3084">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="742.88025" z="597.96637"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3085">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="921.1399" z="734.4203"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3107">
-			<Template>other/farmland_60</Template>
-			<Player>0</Player>
-			<Position x="742.86493" z="987.46583"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3108">
-			<Template>other/farmland_60</Template>
-			<Player>0</Player>
-			<Position x="635.57013" z="1034.48804"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3109">
-			<Template>other/farmland_40</Template>
-			<Player>0</Player>
-			<Position x="879.32477" z="968.29236"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3114">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="851.22645" z="1015.19654"/>
-			<Orientation y="1.50722"/>
-		</Entity>
-		<Entity uid="3115">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="874.7671" z="1024.32825"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3116">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="816.67212" z="1027.33448"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3117">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="786.63495" z="1037.6543"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3118">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="803.80958" z="997.15162"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3119">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="807.83564" z="957.99781"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3120">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="832.77863" z="947.03278"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3121">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="680.20752" z="967.71204"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3124">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="761.05445" z="1050.64991"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3125">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="921.22461" z="946.25037"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3126">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="939.74085" z="952.49543"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3127">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="949.74134" z="974.90918"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3149">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="1542.65833" z="742.20545"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3151">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="889.23243" z="622.42945"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3152">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="871.26301" z="614.0876"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3155">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="689.70374" z="670.33136"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3176">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="780.05915" z="933.90204"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3177">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="788.11945" z="944.58039"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3178">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="765.4834" z="929.70661"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3179">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="856.206" z="1041.94922"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3181">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="667.34101" z="601.91077"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3182">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="680.12281" z="590.7118"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3183">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="729.03882" z="590.8683"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3188">
-			<Template>actor|particle/dust_storm.xml</Template>
-			<Position x="627.95813" z="1154.16297"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="8332"/>
-		</Entity>
-		<Entity uid="3189">
-			<Template>actor|particle/dust_storm.xml</Template>
-			<Position x="920.50849" z="444.5066"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="16128"/>
 		</Entity>
 		<Entity uid="3190">
 			<Template>actor|particle/blowing_sand.xml</Template>
@@ -14131,215 +13868,6 @@
 			<Position x="1016.4242" z="1004.96155"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23064"/>
-		</Entity>
-		<Entity uid="3245">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="744.80378" z="638.61298"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3246">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="738.90845" z="645.93409"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3247">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="733.84217" z="654.6612"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3248">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="728.62629" z="662.40082"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3249">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="752.96827" z="633.67518"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3250">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="745.99042" z="629.8725"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3251">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="805.16517" z="646.19861"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3252">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="820.76038" z="683.94513"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3253">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="812.72022" z="683.34101"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3254">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="832.49097" z="706.42762"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3255">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="887.11438" z="637.70057"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3256">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="903.25544" z="617.02997"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3257">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="912.50928" z="614.62122"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3259">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="977.7386" z="614.98816"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3263">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="746.60486" z="1051.51832"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3264">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="737.17554" z="1051.70398"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3265">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="680.96412" z="992.23462"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3266">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="697.34772" z="1031.43946"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3268">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="694.85615" z="947.81788"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3269">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="685.63282" z="944.73066"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3270">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="664.44037" z="950.89295"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3271">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="653.96875" z="956.55555"/>
-			<Orientation y="2.35621"/>
-		</Entity>
-		<Entity uid="3286">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="905.35084" z="1019.3069"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="18398"/>
-		</Entity>
-		<Entity uid="3287">
-			<Template>other/farmland_20</Template>
-			<Player>0</Player>
-			<Position x="929.60218" z="995.2071"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="12252"/>
-		</Entity>
-		<Entity uid="3288">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="930.6131" z="1022.9823"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="25442"/>
-		</Entity>
-		<Entity uid="3289">
-			<Template>other/farmland_10</Template>
-			<Player>0</Player>
-			<Position x="945.69245" z="1017.37464"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="26650"/>
-		</Entity>
-		<Entity uid="3290">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="909.52814" z="1043.19764"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="5434"/>
-		</Entity>
-		<Entity uid="3291">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="916.4491" z="1039.98694"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="53008"/>
-		</Entity>
-		<Entity uid="3292">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="922.22284" z="1033.77149"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="33838"/>
-		</Entity>
-		<Entity uid="3293">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="907.55347" z="996.9817"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="4938"/>
-		</Entity>
-		<Entity uid="3294">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="843.20044" z="1037.07178"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="55144"/>
-		</Entity>
-		<Entity uid="3295">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="795.85944" z="1018.63276"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="16406"/>
-		</Entity>
-		<Entity uid="3296">
-			<Template>other/farmland_05</Template>
-			<Player>0</Player>
-			<Position x="718.76026" z="1046.88611"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="19160"/>
 		</Entity>
 		<Entity uid="3297">
 			<Template>gaia/treasure/coin_wares_big</Template>
@@ -16239,6 +15767,48 @@
 			<Position x="354.35984" z="1390.44153"/>
 			<Orientation y="-0.79392"/>
 			<Actor seed="2682"/>
+		</Entity>
+		<Entity uid="3618">
+			<Template>structures/farmstead_saharan</Template>
+			<Player>0</Player>
+			<Position x="699.52588" z="634.63044"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50590"/>
+		</Entity>
+		<Entity uid="3619">
+			<Template>structures/farmstead_saharan</Template>
+			<Player>0</Player>
+			<Position x="932.81391" z="641.51771"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="57092"/>
+		</Entity>
+		<Entity uid="3620">
+			<Template>structures/farmstead_saharan</Template>
+			<Player>0</Player>
+			<Position x="649.29706" z="1039.18946"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52784"/>
+		</Entity>
+		<Entity uid="3621">
+			<Template>structures/farmstead_saharan</Template>
+			<Player>0</Player>
+			<Position x="895.80896" z="1012.96338"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13649"/>
+		</Entity>
+		<Entity uid="3622">
+			<Template>structures/farmstead_desert</Template>
+			<Player>0</Player>
+			<Position x="815.46888" z="673.03266"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="51120"/>
+		</Entity>
+		<Entity uid="3623">
+			<Template>structures/farmstead_desert</Template>
+			<Player>0</Player>
+			<Position x="750.3949" z="968.27497"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="13733"/>
 		</Entity>
 	</Entities>
 	<Paths/>
