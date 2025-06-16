@@ -14,14 +14,20 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "arsenal_of_philon.png",
 	"researchTime": 40,
-	"tooltip": "Temples and Wonders −50% Build Time, but +20% Stone Cost.",
+	"tooltip": "Temples, Cult Statues, and Wonders −50% Build Time, but +10% cost.",
 	"modifications": [
 		{ "value": "Cost/BuildTime", "multiply": 0.5 },
-		{ "value": "Cost/Resources/stone", "multiply": 1.2 }
+		{ "value": "Cost/Resources/food", "multiply": 1.1 },
+		{ "value": "Cost/Resources/wood", "multiply": 1.1 },
+		{ "value": "Cost/Resources/stone", "multiply": 1.1 },
+		{ "value": "Cost/Resources/metal", "multiply": 1.1 },
+		{ "value": "Cost/Resources/coin", "multiply": 1.1 },
+		{ "value": "Cost/Resources/glory", "multiply": 1.1 }
 	],
 	"affects": [
 		"Temple", 
-		"Wonder"
+		"Wonder",
+		"CultStatue"
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
