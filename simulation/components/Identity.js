@@ -131,7 +131,7 @@ Identity.prototype.Deserialize = function (data)
 
 Identity.prototype.GetCiv = function()
 {
-	return this.template.Civ;
+	return this.template.Civ ?? "gaia";
 };
 
 Identity.prototype.GetLang = function()

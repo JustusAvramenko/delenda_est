@@ -410,7 +410,7 @@ PETRA.Config.prototype.Serialize = function()
 {
 	var data = {};
 	for (let key in this)
-		if (this.hasOwnProperty(key) && key != "debug")
+		if (Object.hasOwn(this, key) && key != "debug")
 			data[key] = this[key];
 	return data;
 };

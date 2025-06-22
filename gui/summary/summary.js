@@ -254,23 +254,20 @@ function initGUICharts()
 {
 	updateChartColorAndLegend();
 	const chart1Part = Engine.GetGUIObjectByName("chart[1]Part");
-	const chart1PartSize = chart1Part.size;
-	chart1PartSize.rright += 50;
-	chart1PartSize.rleft += 50;
-	chart1PartSize.right -= 5;
-	chart1PartSize.left -= 5;
-	chart1Part.size = chart1PartSize;
+	chart1Part.size.rright += 50;
+	chart1Part.size.rleft += 50;
+	chart1Part.size.right -= 5;
+	chart1Part.size.left -= 5;
+
 	Engine.GetGUIObjectByName("toggleTeam").hidden = !g_Teams;
 }
 
 function resizeDropdown(dropdown)
 {
-	const size = dropdown.size;
-	size.bottom = dropdown.size.top +
+	dropdown.size.bottom = dropdown.size.top +
 		(Engine.GetTextWidth(dropdown.font, dropdown.list[dropdown.selected]) >
 			dropdown.size.right - dropdown.size.left - 28 &&
 		    dropdown.list[dropdown.selected].indexOf(" ") !== -1 ? 42 : 28);
-	dropdown.size = size;
 }
 
 function updateCategoryDropdown(number)
@@ -389,15 +386,9 @@ function adjustTabDividers(tabSize)
 {
 	const tabButtonsLeft = Engine.GetGUIObjectByName("tabButtonsFrame").size.left;
 
-	const leftSpacer = Engine.GetGUIObjectByName("tabDividerLeft");
-	const leftSpacerSize = leftSpacer.size;
-	leftSpacerSize.right = tabSize.left + tabButtonsLeft + 2;
-	leftSpacer.size = leftSpacerSize;
+	Engine.GetGUIObjectByName("tabDividerLeft").size.right = tabSize.left + tabButtonsLeft + 2;
 
-	const rightSpacer = Engine.GetGUIObjectByName("tabDividerRight");
-	const rightSpacerSize = rightSpacer.size;
-	rightSpacerSize.left = tabSize.right + tabButtonsLeft - 2;
-	rightSpacer.size = rightSpacerSize;
+	Engine.GetGUIObjectByName("tabDividerRight").size.left = tabSize.right + tabButtonsLeft - 2;
 }
 
 function updatePanelData(panelInfo)
@@ -444,9 +435,7 @@ function updatePanelData(panelInfo)
 		rowPlayerObject.hidden = false;
 		rowPlayerObject.sprite = colorString + " " + g_PlayerBoxAlpha;
 
-		const boxSize = rowPlayerObject.size;
-		boxSize.right = rowPlayerObjectWidth;
-		rowPlayerObject.size = boxSize;
+		rowPlayerObject.size.right = rowPlayerObjectWidth;
 
 		setOutcomeIcon(playerState.state, Engine.GetGUIObjectByName(playerOutcome));
 
@@ -560,11 +549,10 @@ function initGUIButtons()
 	lobbyButton.hidden = g_GameData.gui.isInGame || !Engine.HasXmppClient();
 
 	// Right-align lobby button
-	const lobbyButtonSize = lobbyButton.size;
-	const lobbyButtonWidth = lobbyButtonSize.right - lobbyButtonSize.left;
-	lobbyButtonSize.right = (replayButton.hidden ? Engine.GetGUIObjectByName("continueButton").size.left : replayButton.size.left) - 10;
-	lobbyButtonSize.left = lobbyButtonSize.right - lobbyButtonWidth;
-	lobbyButton.size = lobbyButtonSize;
+	const lobbyButtonWidth = lobbyButton.size.right - lobbyButton.size.left;
+	const right = (replayButton.hidden ? Engine.GetGUIObjectByName("continueButton").size.left : replayButton.size.left) - 10;
+	lobbyButton.size.right = right;
+	lobbyButton.size.left = right - lobbyButtonWidth;
 
 	const allPanelsData = g_ScorePanelsData.concat(g_ChartPanelsData);
 	for (const tab in allPanelsData)
