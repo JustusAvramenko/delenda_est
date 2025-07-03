@@ -6,9 +6,9 @@ Identity.prototype.Schema =
 		"<Civ>athen</Civ>" +
 		"<GenericName>Athenian Hoplite</GenericName>" +
 		"<SpecificName>Hoplī́tēs Athēnaïkós</SpecificName>" +
-		"<Icon>units/athen_infantry_spearman.png</Icon>" +
+		"<Icon>units/athen/infantry_spearman.png</Icon>" +
 	"</a:example>" +
-	"<element name='Civ' a:help='Civilization that this unit is primarily associated with, typically a 4-letter code. Choices include: gaia (world objects), skirm (skirmish map placeholders), athen (Athenians), brit (Britons), cart (Carthaginians), gaul (Gauls), han (Han Chinese), iber (Iberians), kush (Kushites), mace (Macedonians), maur (Mauryas), pers (Persians), ptol (Ptolemies), rome (Romans), sele (Seleucids), spart (Spartans).'>" +
+	"<element name='Civ' a:help='Civilization that this unit is primarily associated with, typically a 4-letter code. Choices include: gaia (world objects), skirm (skirmish map placeholders), athen (Athenians), brit (Britons), cart (Carthaginians), cimb (Cimbrians), epir (Epirotes), gala (Galatians), gaul (Gauls), goth (Goths), han (Han Chinese), huns (Huns), iber (Iberians), imp (Imperial Romans), kush (Kushites), mace (Macedonians), maur (Mauryas), noba (Nobas), pers (Persians), ptol (Ptolemies), rome (Romans), scyth (Scythians), sele (Seleucids), spart (Spartans), sueb (Suebians), syrac (Syracusans), theb (Thebans), xion (Xiongnu), yayo (Yamatai), zapo (Zapotecs).'>" +
 		"<text/>" +
 	"</element>" +
 	"<optional>" +
