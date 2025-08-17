@@ -1,15 +1,18 @@
+import { ResearchPlan } from "simulation/ai/petra/queueplanResearch.js";
+import { Worker } from "simulation/ai/petra/worker.js";
+
 /**
  * Manage the research
  */
-PETRA.ResearchManager = function(Config)
+export function ResearchManager(Config)
 {
 	this.Config = Config;
-};
+}
 
 /**
  * Check if we can go to the next phase
  */
-PETRA.ResearchManager.prototype.checkPhase = function(gameState, queues)
+ResearchManager.prototype.checkPhase = function(gameState, queues)
 {
 	if (queues.majorTech.hasQueuedUnits())
 		return;
@@ -17,12 +20,12 @@ PETRA.ResearchManager.prototype.checkPhase = function(gameState, queues)
 	if (queues.civilCentre.hasQueuedUnits() || queues.wonder.hasQueuedUnits())
 		return;
 
-	let currentPhaseIndex = gameState.currentPhase();
-	let nextPhaseName = gameState.getPhaseName(currentPhaseIndex+1);
+	const currentPhaseIndex = gameState.currentPhase();
+	const nextPhaseName = gameState.getPhaseName(currentPhaseIndex+1);
 	if (!nextPhaseName)
 		return;
 
-	let petraRequirements =
+	const petraRequirements =
 		currentPhaseIndex == 1 && gameState.ai.HQ.getAccountedPopulation(gameState) >= this.Config.Economy.popPhase2 ||
 		currentPhaseIndex == 2 && gameState.ai.HQ.getAccountedWorkers(gameState) > this.Config.Economy.workPhase3 ||
 		currentPhaseIndex >= 3 && gameState.ai.HQ.getAccountedWorkers(gameState) > this.Config.Economy.workPhase4;
@@ -31,35 +34,35 @@ PETRA.ResearchManager.prototype.checkPhase = function(gameState, queues)
 		gameState.ai.HQ.phasing = currentPhaseIndex + 1;
 		// Reset the queue priority in case it was changed during a previous phase update
 		gameState.ai.queueManager.changePriority("majorTech", gameState.ai.Config.priorities.majorTech);
-		queues.majorTech.addPlan(new PETRA.ResearchPlan(gameState, nextPhaseName, true));
+		queues.majorTech.addPlan(new ResearchPlan(gameState, nextPhaseName, true));
 	}
 };
 
-PETRA.ResearchManager.prototype.researchPopulationBonus = function(gameState, queues)
+ResearchManager.prototype.researchPopulationBonus = function(gameState, queues)
 {
 	if (queues.minorTech.hasQueuedUnits())
 		return;
 
-	let techs = gameState.findAvailableTech();
-	for (let tech of techs)
+	const techs = gameState.findAvailableTech();
+	for (const tech of techs)
 	{
 		if (!tech[1]._template.modifications)
 			continue;
 		// TODO may-be loop on all modifs and check if the effect if positive ?
 		if (tech[1]._template.modifications[0].value !== "Population/Bonus")
 			continue;
-		queues.minorTech.addPlan(new PETRA.ResearchPlan(gameState, tech[0]));
+		queues.minorTech.addPlan(new ResearchPlan(gameState, tech[0]));
 		break;
 	}
 };
 
-PETRA.ResearchManager.prototype.researchTradeBonus = function(gameState, queues)
+ResearchManager.prototype.researchTradeBonus = function(gameState, queues)
 {
 	if (queues.minorTech.hasQueuedUnits())
 		return;
 
-	let techs = gameState.findAvailableTech();
-	for (let tech of techs)
+	const techs = gameState.findAvailableTech();
+	for (const tech of techs)
 	{
 		if (!tech[1]._template.modifications || !tech[1]._template.affects)
 			continue;
@@ -69,19 +72,21 @@ PETRA.ResearchManager.prototype.researchTradeBonus = function(gameState, queues)
 		if (tech[1]._template.modifications[0].value !== "Cost/BuildTime" &&
                     tech[1]._template.modifications[0].value !== "UnitMotion/WalkSpeed")
 			continue;
-		queues.minorTech.addPlan(new PETRA.ResearchPlan(gameState, tech[0]));
+		queues.minorTech.addPlan(new ResearchPlan(gameState, tech[0]));
 		break;
 	}
 };
 
 /** Techs to be searched for as soon as they are available */
-PETRA.ResearchManager.prototype.researchWantedTechs = function(gameState, techs)
+ResearchManager.prototype.researchWantedTechs = function(gameState, techs)
 {
-	let phase1 = gameState.currentPhase() === 1;
-	let available = phase1 ? gameState.ai.queueManager.getAvailableResources(gameState) : null;
-	const numWorkers = phase1 ? gameState.getOwnEntitiesByRole(PETRA.Worker.ROLE_WORKER, true).length : 0;
-	for (let tech of techs)
+	const phase1 = gameState.currentPhase() === 1;
+	const available = phase1 ? gameState.ai.queueManager.getAvailableResources(gameState) : null;
+	const numWorkers = phase1 ? gameState.getOwnEntitiesByRole(Worker.ROLE_WORKER, true).length : 0;
+	for (const tech of techs)
 	{
+		if (tech[0].indexOf("unlock_champions") == 0)
+			return { "name": tech[0], "increasePriority": true };
 		if (tech[0].indexOf("training_citizens_generic") == 0)
 			return { "name": tech[0], "increasePriority": true };
 		if (tech[0].indexOf("gather_capacity_wheelbarrow") == 0)
@@ -103,17 +108,17 @@ PETRA.ResearchManager.prototype.researchWantedTechs = function(gameState, techs)
 
 		if (!tech[1]._template.modifications)
 			continue;
-		let template = tech[1]._template;
+		const template = tech[1]._template;
 		if (phase1)
 		{
-			let cost = template.cost;
+			const cost = template.cost;
 			let costMax = 0;
-			for (let res in cost)
+			for (const res in cost)
 				costMax = Math.max(costMax, Math.max(cost[res]-available[res], 0));
 			if (10*numWorkers < costMax)
 				continue;
 		}
-		for (let i in template.modifications)
+		for (const i in template.modifications)
 		{
 			if (gameState.ai.HQ.navalMap && template.modifications[i].value === "ResourceGatherer/Rates/food.fish")
 				return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 500 };
@@ -133,37 +138,41 @@ PETRA.ResearchManager.prototype.researchWantedTechs = function(gameState, techs)
 };
 
 /** Techs to be searched for as soon as they are available, but only after phase 2 */
-PETRA.ResearchManager.prototype.researchPreferredTechs = function(gameState, techs)
+ResearchManager.prototype.researchPreferredTechs = function(gameState, techs)
 {
-	let phase2 = gameState.currentPhase() === 2;
-	let available = phase2 ? gameState.ai.queueManager.getAvailableResources(gameState) : null;
-	const numWorkers = phase2 ? gameState.getOwnEntitiesByRole(PETRA.Worker.ROLE_WORKER, true).length : 0;
-	for (let tech of techs)
+	const phase2 = gameState.currentPhase() === 2;
+	const available = phase2 ? gameState.ai.queueManager.getAvailableResources(gameState) : null;
+	const numWorkers = phase2 ? gameState.getOwnEntitiesByRole(Worker.ROLE_WORKER, true).length : 0;
+	for (const tech of techs)
 	{
-		if (tech[0].indexOf("unlock_siege_ballistics") == 0)
+		if (tech[0].indexOf("arsenal/unlock_siege_ballistics") == 0)
 			return { "name": tech[0], "increasePriority": true };
 		
 		if (!tech[1]._template.modifications)
 			continue;
-		let template = tech[1]._template;
+		const template = tech[1]._template;
 		if (phase2)
 		{
-			let cost = template.cost;
+			const cost = template.cost;
 			let costMax = 0;
-			for (let res in cost)
+			for (const res in cost)
 				costMax = Math.max(costMax, Math.max(cost[res]-available[res], 0));
 			if (10*numWorkers < costMax)
 				continue;
 		}
-		for (let i in template.modifications)
+		for (const i in template.modifications)
 		{
 			if (template.modifications[i].value === "ResourceGatherer/Rates/stone.rock")
-				return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 500 };
+				return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 1000 };
 			else if (template.modifications[i].value === "ResourceGatherer/Rates/metal.ore")
-				return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 500 };
+				return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 1000 };
 			else if (template.modifications[i].value === "BuildingAI/DefaultArrowCount")
-				return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 500 };
+				return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 1000 };
+			else if (template.modifications[i].value === "Promotion/RequiredXp")
+				return { "name": tech[0], "increasePriority": true };
 			else if (template.modifications[i].value === "Health/Max")
+				return { "name": tech[0], "increasePriority": false };
+			else if (template.modifications[i].value === "Health/RegenRate")
 				return { "name": tech[0], "increasePriority": false };
 			else if (template.modifications[i].value === "Health/IdleRegenRate")
 				return { "name": tech[0], "increasePriority": false };
@@ -172,12 +181,12 @@ PETRA.ResearchManager.prototype.researchPreferredTechs = function(gameState, tec
 	return null;
 };
 
-PETRA.ResearchManager.prototype.update = function(gameState, queues)
+ResearchManager.prototype.update = function(gameState, queues)
 {
 	if (queues.minorTech.hasQueuedUnits() || queues.majorTech.hasQueuedUnits())
 		return;
 
-	let techs = gameState.findAvailableTech();
+	const techs = gameState.findAvailableTech();
 
 	let techName = this.researchWantedTechs(gameState, techs);
 	if (techName)
@@ -185,12 +194,12 @@ PETRA.ResearchManager.prototype.update = function(gameState, queues)
 		if (techName.increasePriority)
 		{
 			gameState.ai.queueManager.changePriority("minorTech", 2*this.Config.priorities.minorTech);
-			let plan = new PETRA.ResearchPlan(gameState, techName.name);
+			const plan = new ResearchPlan(gameState, techName.name);
 			plan.queueToReset = "minorTech";
 			queues.minorTech.addPlan(plan);
 		}
 		else
-			queues.minorTech.addPlan(new PETRA.ResearchPlan(gameState, techName.name));
+			queues.minorTech.addPlan(new ResearchPlan(gameState, techName.name));
 		return;
 	}
 
@@ -203,12 +212,12 @@ PETRA.ResearchManager.prototype.update = function(gameState, queues)
 		if (techName.increasePriority)
 		{
 			gameState.ai.queueManager.changePriority("minorTech", 2*this.Config.priorities.minorTech);
-			let plan = new PETRA.ResearchPlan(gameState, techName.name);
+			const plan = new ResearchPlan(gameState, techName.name);
 			plan.queueToReset = "minorTech";
 			queues.minorTech.addPlan(plan);
 		}
 		else
-			queues.minorTech.addPlan(new PETRA.ResearchPlan(gameState, techName.name));
+			queues.minorTech.addPlan(new ResearchPlan(gameState, techName.name));
 		return;
 	}
 
@@ -219,7 +228,7 @@ PETRA.ResearchManager.prototype.update = function(gameState, queues)
 	// remove also sharedLos if we have no ally
 	for (let i = 0; i < techs.length; ++i)
 	{
-		let template = techs[i][1]._template;
+		const template = techs[i][1]._template;
 		if (template.affects && template.affects.length === 1 &&
 			(template.affects[0] === "Healer" || template.affects[0] === "Outpost" || template.affects[0] === "Wall"))
 		{
@@ -238,22 +247,22 @@ PETRA.ResearchManager.prototype.update = function(gameState, queues)
 		return;
 
 	// randomly pick one. No worries about pairs in that case.
-	queues.minorTech.addPlan(new PETRA.ResearchPlan(gameState, pickRandom(techs)[0]));
+	queues.minorTech.addPlan(new ResearchPlan(gameState, pickRandom(techs)[0]));
 };
 
-PETRA.ResearchManager.prototype.CostSum = function(cost)
+ResearchManager.prototype.CostSum = function(cost)
 {
 	let costSum = 0;
-	for (let res in cost)
+	for (const res in cost)
 		costSum += cost[res];
 	return costSum;
 };
 
-PETRA.ResearchManager.prototype.Serialize = function()
+ResearchManager.prototype.Serialize = function()
 {
 	return {};
 };
 
-PETRA.ResearchManager.prototype.Deserialize = function(data)
+ResearchManager.prototype.Deserialize = function(data)
 {
 };

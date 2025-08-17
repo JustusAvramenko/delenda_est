@@ -1,12 +1,7 @@
-// These integers must be sequential
-PETRA.DIFFICULTY_SANDBOX = 0;
-PETRA.DIFFICULTY_VERY_EASY = 1;
-PETRA.DIFFICULTY_EASY = 2;
-PETRA.DIFFICULTY_MEDIUM = 3;
-PETRA.DIFFICULTY_HARD = 4;
-PETRA.DIFFICULTY_VERY_HARD = 5;
+import { warn as aiWarn } from "simulation/ai/common-api/utils.js";
+import * as difficultyLevel from "simulation/ai/petra/difficultyLevel.js";
 
-PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
+export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 {
 	this.difficulty = difficulty;
 
@@ -21,32 +16,30 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 	this.popScaling = 1;	// scale factor depending on the max population
 
 	this.Military = {
-		"towerLapseTime": 90,	// Time to wait between building 2 towers
-		"fortressLapseTime": 300,	// Time to wait between building 2 fortresses
-		"popForBarracks1": 10,
-		"popForBarracks2": 50,
-		"popForBarracks3": 80,
-		"popForShipyard": 20,
-		"popForForge": 60,
+		"towerLapseTime": 360,	// Time to wait between building 2 towers
+		"fortressLapseTime": 390,	// Time to wait between building 2 fortresses
+		"popForBarracks1": 25,
+		"popForBarracks2": 55,
+		"popForForge": 65,
 		"numSentryTowers": 1
 	};
 
 	this.DamageTypeImportance = {
-		"Hack": 0.095,
-		"Pierce": 0.075,
-		"Crush": 0.025,
-		"Fire": 0.010
+		"Hack": 0.075,
+		"Pierce": 0.085,
+		"Crush": 0.045,
+		"Fire": 0.001
 	};
 
 	this.Economy = {
 		"popPhase2": 60,	// How many units we want before aging to phase2.
-		"workPhase3": 40,	// How many workers we want before aging to phase3.
-		"workPhase4": 60,	// How many workers we want before aging to phase4 or higher.
+		"workPhase3": 120,	// How many workers we want before aging to phase3.
+		"workPhase4": 200,	// How many workers we want before aging to phase4 or higher.
 		"popForDock": 20,
-		"targetNumWorkers": 60,	// dummy, will be changed later
-		"targetNumTraders": 5,	// Target number of traders
+		"targetNumWorkers": 80,	// dummy, will be changed later
+		"targetNumTraders": 3,	// Target number of traders
 		"targetNumFishers": 8,	// Target number of fishers per sea
-		"supportRatio": 0.30,	// fraction of support workers among the workforce
+		"supportRatio": 0.3,	// fraction of support workers among the workforce
 		"provisionFields": 3
 	};
 
@@ -68,113 +61,93 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 			"structures/{civ}/statue"
 		],
 		"athen": [
-			"structures/{civ}/statue",
+			"structures/{civ}/gymnasium",
 			"structures/{civ}/prytaneion",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
-		"brit": [
-			"structures/{civ}/statue",
-		],
+		"brit": [],
 		"cart": [
-			"structures/{civ}/statue",
 			"structures/{civ}/embassy_celtic",
 			"structures/{civ}/embassy_iberian",
 			"structures/{civ}/embassy_italic"
 		],
 		"cimb": [
-			"structures/{civ}/statue",
 			"structures/{civ}/encampment",
 			"structures/{civ}/great_hall"
 		],
 		"epir": [
-			"structures/{civ}/statue",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
 		"gaul": [
-			"structures/{civ}/statue",
 			"structures/{civ}/assembly"
 		],
 		"han": [
 			"structures/{civ}/academy"
 		],
 		"iber": [
-			"structures/{civ}/statue",
+			"structures/{civ}/statue"
 		],
 		"imp": [
-			"structures/{civ}/barracks_aux",
+			"structures/{civ}/amphitheater",
 			"structures/{civ}/arch",
 			"structures/{civ}/army_camp",
-			"structures/{civ}/amphitheater"
+			"structures/{civ}/barracks_aux"
 		],
 		"kush": [
-			"structures/{civ}/statue",
 			"structures/{civ}/pyramid_large",
 			"structures/{civ}/pyramid_small",
 			"structures/{civ}/temple_amun"
 		],
 		"mace": [
-			"structures/{civ}/statue",
 			"structures/{civ}/library",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
 		"maur": [
-			"structures/{civ}/statue",
 			"structures/{civ}/palace",
 			"structures/{civ}/pillar_ashoka"
 		],
 		"pers": [
-			"structures/{civ}/statue",
-			"structures/{civ}/tachara",
-			"structures/{civ}/ice_house"
+			"structures/{civ}/ice_house",
+			"structures/{civ}/tachara"
 		],
 		"ptol": [
-			"structures/{civ}/statue",
 			"structures/{civ}/library",
 			"structures/{civ}/theater"
 		],
 		"rome": [
-			"structures/{civ}/statue",
-			"structures/{civ}/army_camp"
+			"structures/{civ}/army_camp",
+			"structures/{civ}/temple_mars",
+			"structures/{civ}/temple_vesta"
 		],
-		"scyth": [
-			"structures/{civ}/statue",
-		],
+		"scyth": [],
 		"sele": [
-			"structures/{civ}/statue",
 			"structures/{civ}/library",
 			"structures/{civ}/theater"
 		],
 		"spart": [
-			"structures/{civ}/statue",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
 		"sueb": [
-			"structures/{civ}/statue",
 			"structures/{civ}/encampment",
 			"structures/{civ}/great_hall"
 		],
 		"syrac": [
-			"structures/{civ}/statue",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/library",
 			"structures/{civ}/theater"
 		],
 		"theb": [
-			"structures/{civ}/statue",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
 		"xion": [
-			"structures/{civ}/statue",
 			"structures/{civ}/royal_yurt"
 		],
-		"yayo": [
-			"structures/{civ}/statue",
-		],
+		"yayo": [],
 		"zapo": [
 			"structures/{civ}/ball_court"
 		]
@@ -182,24 +155,24 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 
 	this.priorities =
 	{
-		"villager": 100,      // should be slightly lower than the citizen soldier one to not get all the food
-		"citizenSoldier": 200,
-		"trader": 50,
+		"villager": 300,      // should be slightly lower than the citizen soldier one to not get all the food
+		"citizenSoldier": 600,
+		"trader": 1,
 		"healer": 20,
-		"ships": 500,
-		"house": 350,
-		"dropsites": 300,
-		"field": 400,
-		"dock": 300,
-		"shipyard": 500,
-		"corral": 20,
-		"economicBuilding": 300,
-		"militaryBuilding": 200,
+		"ships": 100,
+		"warShips": 200,
+		"house": 250,
+		"dropsites": 950,
+		"field": 480,
+		"dock": 90,
+		"corral": 1,
+		"economicBuilding": 700,
+		"militaryBuilding": 330,
 		"defenseBuilding": 70,
-		"civilCentre": 950,
+		"civilCentre": 1,
 		"majorTech": 700,
 		"minorTech": 250,
-		"wonder": 1000,
+		"wonder": 1,
 		"emergency": 1000    // used only in emergency situations, should be the highest one
 	};
 
@@ -211,7 +184,7 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 		"defensive": 0.5
 	};
 
-	// See PETRA.QueueManager.prototype.wantedGatherRates()
+	// See QueueManager.prototype.wantedGatherRates()
 	this.queues =
 	{
 		"firstTurn": {
@@ -266,29 +239,29 @@ PETRA.Config = function(difficulty = PETRA.DIFFICULTY_MEDIUM, behavior)
 		0.35,
 		0.2
 	];
-};
+}
 
-PETRA.Config.prototype.setConfig = function(gameState)
+Config.prototype.setConfig = function(gameState)
 {
-	if (this.difficulty > PETRA.DIFFICULTY_SANDBOX)
+	if (this.difficulty > difficultyLevel.SANDBOX)
 	{
 		// Setup personality traits according to the user choice:
 		// The parameter used to define the personality is basically the aggressivity or (1-defensiveness)
 		// as they are anticorrelated, although some small smearing to decorelate them will be added.
 		// And for each user choice, this parameter can vary between min and max
-		let personalityList = {
+		const personalityList = {
 			"random": { "min": 0, "max": 1 },
 			"defensive": { "min": 0, "max": 0.27 },
 			"balanced": { "min": 0.37, "max": 0.63 },
 			"aggressive": { "min": 0.73, "max": 1 }
 		};
-		let behavior = randFloat(-0.5, 0.5);
+		const behavior = randFloat(-0.5, 0.5);
 		// make agressive and defensive quite anticorrelated (aggressive ~ 1 - defensive) but not completelety
-		let variation = 0.15 * randFloat(-1, 1) * Math.sqrt(Math.square(0.5) - Math.square(behavior));
-		let aggressive = Math.max(Math.min(behavior + variation, 0.5), -0.5) + 0.5;
-		let defensive = Math.max(Math.min(-behavior + variation, 0.5), -0.5) + 0.5;
-		let min = personalityList[this.behavior].min;
-		let max = personalityList[this.behavior].max;
+		const variation = 0.15 * randFloat(-1, 1) * Math.sqrt(Math.square(0.5) - Math.square(behavior));
+		const aggressive = Math.max(Math.min(behavior + variation, 0.5), -0.5) + 0.5;
+		const defensive = Math.max(Math.min(-behavior + variation, 0.5), -0.5) + 0.5;
+		const min = personalityList[this.behavior].min;
+		const max = personalityList[this.behavior].max;
 		this.personality = {
 			"aggressive": min + aggressive * (max - min),
 			"defensive": 1 - max + defensive * (max - min),
@@ -313,14 +286,14 @@ PETRA.Config.prototype.setConfig = function(gameState)
 	this.Military.fortressLapseTime = Math.round(this.Military.fortressLapseTime * (1.1 - 0.2 * this.personality.defensive));
 	this.priorities.defenseBuilding = Math.round(this.priorities.defenseBuilding * (0.9 + 0.2 * this.personality.defensive));
 
-	if (this.difficulty < PETRA.DIFFICULTY_EASY)
+	if (this.difficulty < difficultyLevel.EASY)
 	{
 		this.popScaling = 0.5;
 		this.Economy.supportRatio = 0.5;
 		this.Economy.provisionFields = 1;
 		this.Military.numSentryTowers = this.personality.defensive > this.personalityCut.strong ? 1 : 0;
 	}
-	else if (this.difficulty < PETRA.DIFFICULTY_MEDIUM)
+	else if (this.difficulty < difficultyLevel.MEDIUM)
 	{
 		this.popScaling = 0.7;
 		this.Economy.supportRatio = 0.4;
@@ -329,7 +302,7 @@ PETRA.Config.prototype.setConfig = function(gameState)
 	}
 	else
 	{
-		if (this.difficulty == PETRA.DIFFICULTY_MEDIUM)
+		if (this.difficulty == difficultyLevel.MEDIUM)
 			this.Military.numSentryTowers = 1;
 		else
 			this.Military.numSentryTowers = 2;
@@ -346,10 +319,10 @@ PETRA.Config.prototype.setConfig = function(gameState)
 		}
 	}
 
-	let maxPop = gameState.getPopulationMax();
-	if (this.difficulty < PETRA.DIFFICULTY_EASY)
+	const maxPop = gameState.getPopulationMax();
+	if (this.difficulty < difficultyLevel.EASY)
 		this.Economy.targetNumWorkers = Math.max(1, Math.min(40, maxPop));
-	else if (this.difficulty < PETRA.DIFFICULTY_MEDIUM)
+	else if (this.difficulty < difficultyLevel.MEDIUM)
 		this.Economy.targetNumWorkers = Math.max(1, Math.min(60, Math.floor(maxPop/2)));
 	else
 		this.Economy.targetNumWorkers = Math.max(1, Math.min(120, Math.floor(maxPop/3)));
@@ -362,8 +335,8 @@ PETRA.Config.prototype.setConfig = function(gameState)
 		this.Economy.workPhase4 = Math.floor(0.9 * this.Economy.workPhase4);
 	}
 
-	if (maxPop < 600)
-		this.popScaling *= Math.sqrt(maxPop / 600);
+	if (maxPop < 300)
+		this.popScaling *= Math.sqrt(maxPop / 300);
 
 	this.Military.popForBarracks1 = Math.min(Math.max(Math.floor(this.Military.popForBarracks1 * this.popScaling), 12), Math.floor(maxPop/5));
 	this.Military.popForBarracks2 = Math.min(Math.max(Math.floor(this.Military.popForBarracks2 * this.popScaling), 45), Math.floor(maxPop*2/3));
@@ -375,7 +348,7 @@ PETRA.Config.prototype.setConfig = function(gameState)
 	this.Economy.targetNumWorkers = Math.max(this.Economy.targetNumWorkers, this.Economy.popPhase2);
 	this.Economy.workPhase3 = Math.min(this.Economy.workPhase3, this.Economy.targetNumWorkers);
 	this.Economy.workPhase4 = Math.min(this.Economy.workPhase4, this.Economy.targetNumWorkers);
-	if (this.difficulty < PETRA.DIFFICULTY_EASY)
+	if (this.difficulty < difficultyLevel.EASY)
 		this.Economy.workPhase3 = Infinity;	// prevent the phasing to city phase
 
 	this.emergencyValues = {
@@ -388,10 +361,10 @@ PETRA.Config.prototype.setConfig = function(gameState)
 
 	if (this.debug < 2)
 		return;
-	API3.warn(" >>>  Petra bot: personality = " + uneval(this.personality));
+	aiWarn(" >>>  Petra bot: personality = " + uneval(this.personality));
 };
 
-PETRA.Config.prototype.Cheat = function(gameState)
+Config.prototype.Cheat = function(gameState)
 {
 	// Sandbox, Very Easy, Easy, Medium, Hard, Very Hard
 	// rate apply on resource stockpiling as gathering and trading
@@ -406,17 +379,17 @@ PETRA.Config.prototype.Cheat = function(gameState)
 	}, gameState.playerData.entity);
 };
 
-PETRA.Config.prototype.Serialize = function()
+Config.prototype.Serialize = function()
 {
 	var data = {};
-	for (let key in this)
+	for (const key in this)
 		if (Object.hasOwn(this, key) && key != "debug")
 			data[key] = this[key];
 	return data;
 };
 
-PETRA.Config.prototype.Deserialize = function(data)
+Config.prototype.Deserialize = function(data)
 {
-	for (let key in data)
+	for (const key in data)
 		this[key] = data[key];
 };
