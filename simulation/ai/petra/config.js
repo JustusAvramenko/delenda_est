@@ -20,6 +20,7 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 		"fortressLapseTime": 390,	// Time to wait between building 2 fortresses
 		"popForBarracks1": 25,
 		"popForBarracks2": 55,
+		"popForShipyard": 20,
 		"popForForge": 65,
 		"numSentryTowers": 1
 	};
