@@ -34,8 +34,8 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 
 	this.Economy = {
 		"popPhase2": 60,	// How many units we want before aging to phase2.
-		"workPhase3": 120,	// How many workers we want before aging to phase3.
-		"workPhase4": 200,	// How many workers we want before aging to phase4 or higher.
+		"workPhase3": 80,	// How many workers we want before aging to phase3.
+		"workPhase4": 120,	// How many workers we want before aging to phase4 or higher.
 		"popForDock": 20,
 		"targetNumWorkers": 80,	// dummy, will be changed later
 		"targetNumTraders": 3,	// Target number of traders
