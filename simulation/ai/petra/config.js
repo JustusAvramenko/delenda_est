@@ -33,7 +33,7 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 	};
 
 	this.Economy = {
-		"popPhase2": 60,	// How many units we want before aging to phase2.
+		"popPhase2": 40,	// How many units we want before aging to phase2.
 		"workPhase3": 80,	// How many workers we want before aging to phase3.
 		"workPhase4": 120,	// How many workers we want before aging to phase4 or higher.
 		"popForDock": 20,
