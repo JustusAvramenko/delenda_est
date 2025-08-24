@@ -33,8 +33,8 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 	};
 
 	this.Economy = {
-		"popPhase2": 40,	// How many units we want before aging to phase2.
-		"workPhase3": 80,	// How many workers we want before aging to phase3.
+		"popPhase2": 30,	// How many units we want before aging to phase2.
+		"workPhase3": 60,	// How many workers we want before aging to phase3.
 		"workPhase4": 120,	// How many workers we want before aging to phase4 or higher.
 		"popForDock": 20,
 		"targetNumWorkers": 80,	// dummy, will be changed later
@@ -62,29 +62,36 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/statue"
 		],
 		"athen": [
-			"structures/{civ}/gymnasium",
+			"structures/{civ}/statue",
 			"structures/{civ}/prytaneion",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
-		"brit": [],
+		"brit": [
+			"structures/{civ}/statue",
+		],
 		"cart": [
+			"structures/{civ}/statue",
 			"structures/{civ}/embassy_celtic",
 			"structures/{civ}/embassy_iberian",
 			"structures/{civ}/embassy_italic"
 		],
 		"cimb": [
+			"structures/{civ}/statue",
 			"structures/{civ}/encampment",
 			"structures/{civ}/great_hall"
 		],
 		"epir": [
+			"structures/{civ}/statue",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
 		"gaul": [
+			"structures/{civ}/statue",
 			"structures/{civ}/assembly"
 		],
 		"han": [
+			"structures/{civ}/statue",
 			"structures/{civ}/academy"
 		],
 		"iber": [
@@ -97,58 +104,74 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/barracks_aux"
 		],
 		"kush": [
+			"structures/{civ}/statue",
 			"structures/{civ}/pyramid_large",
 			"structures/{civ}/pyramid_small",
 			"structures/{civ}/temple_amun"
 		],
 		"mace": [
+			"structures/{civ}/statue",
 			"structures/{civ}/library",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
 		"maur": [
+			"structures/{civ}/statue",
 			"structures/{civ}/palace",
 			"structures/{civ}/pillar_ashoka"
 		],
 		"pers": [
+			"structures/{civ}/statue",
 			"structures/{civ}/ice_house",
 			"structures/{civ}/tachara"
 		],
 		"ptol": [
+			"structures/{civ}/statue",
 			"structures/{civ}/library",
 			"structures/{civ}/theater"
 		],
 		"rome": [
+			"structures/{civ}/statue",
 			"structures/{civ}/army_camp",
 			"structures/{civ}/temple_mars",
 			"structures/{civ}/temple_vesta"
 		],
-		"scyth": [],
+		"scyth": [
+			"structures/{civ}/statue",
+		],
 		"sele": [
+			"structures/{civ}/statue",
 			"structures/{civ}/library",
 			"structures/{civ}/theater"
 		],
 		"spart": [
+			"structures/{civ}/statue",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
 		"sueb": [
+			"structures/{civ}/statue",
 			"structures/{civ}/encampment",
 			"structures/{civ}/great_hall"
 		],
 		"syrac": [
+			"structures/{civ}/statue",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/library",
 			"structures/{civ}/theater"
 		],
 		"theb": [
+			"structures/{civ}/statue",
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
 		"xion": [
+			"structures/{civ}/statue",
 			"structures/{civ}/royal_yurt"
 		],
-		"yayo": [],
+		"yayo": [
+			"structures/{civ}/statue",
+		],
 		"zapo": [
 			"structures/{civ}/ball_court"
 		]
