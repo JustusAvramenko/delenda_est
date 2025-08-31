@@ -2,6 +2,7 @@
 <Entity parent="template_unit_champion_infantry_archer">
   <Attack>
     <Ranged>
+      <AttackName>Poison Arrow</AttackName>
       <ApplyStatus>
        <Poison>
         <Interval>2000</Interval>
@@ -46,6 +47,14 @@ Weak Against: Spear Cavalry, Sword Cavalry.
 Bonus Attack: Poison vs. Units.</Tooltip>
     <Icon>units/maur/champion_maiden_archer_poison.png</Icon>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Crush op="add">5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Upgrade>
     <SwitchToSword>
       <Entity>units/maur/champion_maiden</Entity>
@@ -58,9 +67,6 @@ Bonus Attack: Poison vs. Units.</Tooltip>
     <UseFireArrows>
       <Entity>units/maur/champion_maiden_archer_fire</Entity>
       <Tooltip>Switch projectiles from poison arrows (anti-unit) to fire arrows (anti-building).</Tooltip>
-      <Requirements>
-        <Techs datatype="tokens">phase_city</Techs>
-      </Requirements>
       <Cost>
         <wood>5</wood>
       </Cost>

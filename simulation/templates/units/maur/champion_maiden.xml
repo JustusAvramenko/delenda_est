@@ -22,7 +22,7 @@
     <Entity>
       <Damage>
         <Hack op="add">-1</Hack>
-        <Crush op="add">2</Crush>
+        <Crush op="add">5</Crush>
       </Damage>
     </Entity>
   </Resistance>
@@ -31,10 +31,18 @@
       <Entity>units/maur/champion_maiden_archer</Entity>
       <Tooltip>Switch weapon from sword (melee) to longbow (ranged) with poison arrows (anti-unit).</Tooltip>
       <Cost>
-        <wood>5</wood>
+        <wood>10</wood>
       </Cost>
       <Time>5</Time>
     </SwitchToBow>
+    <UseFireArrows>
+      <Entity>units/maur/champion_maiden_archer_fire</Entity>
+      <Tooltip>Switch projectiles from poison arrows (anti-unit) to fire arrows (anti-building).</Tooltip>
+      <Cost>
+        <wood>5</wood>
+      </Cost>
+      <Time>10</Time>
+    </UseFireArrows>
   </Upgrade>
   <VisualActor>
     <Actor>units/mauryas/infantry_swordsman_c.xml</Actor>
