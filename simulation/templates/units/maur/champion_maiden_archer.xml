@@ -40,12 +40,16 @@
     <Classes datatype="tokens">FireArrows</Classes>
     <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
     <SelectionGroupName>units/maur/champion_maiden_archer</SelectionGroupName>
-    <Icon>units/maur/champion_maiden_archer.png</Icon>
+    <Tooltip>Traits: Long Range, Light Armor.
+Strong Against: Melee Infantry (1.25x).
+Weak Against: Spear Cavalry, Sword Cavalry.
+Bonus Attack: Poison vs. Units.</Tooltip>
+    <Icon>units/maur/champion_maiden_archer_poison.png</Icon>
   </Identity>
   <Upgrade>
     <SwitchToSword>
       <Entity>units/maur/champion_maiden</Entity>
-      <Tooltip>Switch weapon from longbow (ranged) to sword (melee).</Tooltip>
+      <Tooltip>Switch weapon back to sword (melee).</Tooltip>
       <Cost>
         <metal>5</metal>
       </Cost>
@@ -53,9 +57,9 @@
     </SwitchToSword>
     <UseFireArrows>
       <Entity>units/maur/champion_maiden_archer_fire</Entity>
-      <Tooltip>Switch from standard arrows (anti-unit) to fire arrows (anti-building).</Tooltip>
+      <Tooltip>Switch projectiles from poison arrows (anti-unit) to fire arrows (anti-building).</Tooltip>
       <Requirements>
-        <Techs datatype="tokens">mauryas/attack_flaming_arrows</Techs>
+        <Techs datatype="tokens">phase_city</Techs>
       </Requirements>
       <Cost>
         <wood>5</wood>
