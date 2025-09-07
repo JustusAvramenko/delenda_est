@@ -16,6 +16,10 @@
           <Classes>Gates</Classes>
           <Multiplier>1.5</Multiplier>
         </BonusGates>
+        <BonusWalls>
+          <Classes>Wall</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusWalls>
       </Bonuses>
       <RestrictedClasses datatype="tokens">
         Organic
@@ -51,8 +55,10 @@
     <VisibleClasses datatype="tokens">Melee Ram</VisibleClasses>
     <Tooltip>
 Traits: Slow Speed, Medium Armor.
-Strong Against: Buildings, Gates (1.5x).
-Weak Against: Melee Cavalry, Melee Infantry.</Tooltip>
+Strong Against: Buildings, Gates (1.5x), Walls (1.5x).
+Weak Against: Melee Cavalry, Melee Infantry.
+
+Cannot attack Fields or Organic units.</Tooltip>
   </Identity>
   <Resistance>
     <Entity>
