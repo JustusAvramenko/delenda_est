@@ -1,6 +1,6 @@
 import * as filters from "simulation/ai/common-api/filters.js";
 import { ResourcesManager } from "simulation/ai/common-api/resources.js";
-import { SquareVectorDistance, warn as aiWarn } from "simulation/ai/common-api/utils.js";
+import { SquareVectorDistance, aiWarn } from "simulation/ai/common-api/utils.js";
 import { Config } from "simulation/ai/petra/config.js";
 import * as difficulty from "simulation/ai/petra/difficultyLevel.js";
 import { gatherTreasure, getLandAccess, isFastMoving } from "simulation/ai/petra/entityExtend.js";

@@ -58,7 +58,6 @@ GuiInterface.prototype.GetSimulationState = function()
 			"state": cmpPlayer.GetState(),
 			"team": cmpDiplomacy.GetTeam(),
 			"teamLocked": cmpDiplomacy.IsTeamLocked(),
-			"cheatsEnabled": cmpPlayer.GetCheatsEnabled(),
 			"disabledTemplates": cmpPlayer.GetDisabledTemplates(),
 			"disabledTechnologies": cmpPlayer.GetDisabledTechnologies(),
 			"hasSharedDropsites": cmpDiplomacy.HasSharedDropsites(),

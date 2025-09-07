@@ -1,7 +1,7 @@
 import * as filters from "simulation/ai/common-api/filters.js";
 import { InfoMap } from "simulation/ai/common-api/map-module.js";
 import { ResourcesManager } from "simulation/ai/common-api/resources.js";
-import { SquareVectorDistance, VectorDistance, warn as aiWarn } from "simulation/ai/common-api/utils.js";
+import { SquareVectorDistance, VectorDistance, aiWarn } from "simulation/ai/common-api/utils.js";
 import { getBuiltEntity, getLandAccess, getSeaAccess } from "simulation/ai/petra/entityExtend.js";
 import * as mapMask from "simulation/ai/petra/mapMask.js";
 import { createObstructionMap } from "simulation/ai/petra/mapModule.js";
