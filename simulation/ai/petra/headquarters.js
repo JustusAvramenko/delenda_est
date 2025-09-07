@@ -1,6 +1,6 @@
 import * as filters from "simulation/ai/common-api/filters.js";
 import { ResourcesManager } from "simulation/ai/common-api/resources.js";
-import { SquareVectorDistance, warn as aiWarn } from "simulation/ai/common-api/utils.js";
+import { SquareVectorDistance, aiWarn } from "simulation/ai/common-api/utils.js";
 import { AttackManager } from "simulation/ai/petra/attackManager.js";
 import { AttackPlan } from "simulation/ai/petra/attackPlan.js";
 import { BasesManager } from "simulation/ai/petra/basesManager.js";

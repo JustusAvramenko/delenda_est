@@ -1,6 +1,6 @@
 import { EntityCollection } from "simulation/ai/common-api/entitycollection.js";
 import * as filters from "simulation/ai/common-api/filters.js";
-import { SquareVectorDistance, VectorDistance, warn as aiWarn } from "simulation/ai/common-api/utils.js";
+import { SquareVectorDistance, VectorDistance, aiWarn } from "simulation/ai/common-api/utils.js";
 import { Config } from "simulation/ai/petra/config.js";
 import * as difficulty from "simulation/ai/petra/difficultyLevel.js";
 import { allowCapture, dumpEntity, getHolder, getLandAccess, isSiegeUnit, returnResources } from

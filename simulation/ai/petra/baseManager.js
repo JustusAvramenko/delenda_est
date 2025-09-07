@@ -1,5 +1,5 @@
 import * as filters from "simulation/ai/common-api/filters.js";
-import { SquareVectorDistance, warn as aiWarn } from "simulation/ai/common-api/utils.js";
+import { SquareVectorDistance, aiWarn } from "simulation/ai/common-api/utils.js";
 import { Config } from "simulation/ai/petra/config.js";
 import * as difficulty from "simulation/ai/petra/difficultyLevel.js";
 import { getBestBase, getBuiltEntity, getLandAccess, isFastMoving, isNotWorthBuilding } from
