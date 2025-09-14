@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/germ/encampment">
+  <Capturable>
+    <CapturePoints op="add">500</CapturePoints>
+  </Capturable>
+  <Health>
+    <Max op="mul">1.50</Max>
+  </Health>
+  <Identity>
+    <GenericName>Fortified Wagon Encampment</GenericName>
+    <VisibleClasses datatype="tokens">Fortified</VisibleClasses>
+    <Icon>structures/mercenary_camp.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">5</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/siege_ram
+    </Entities>
+  </Trainer>
+  <Upgrade disable =""/>
+  <VisualActor>
+    <Actor>structures/germans/encampment_fortified.xml</Actor>
+  </VisualActor>
+</Entity>

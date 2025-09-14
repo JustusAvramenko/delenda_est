@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Cost>
+    <Resources>
+      <wood>200</wood>
+      <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="25.0" depth="24.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>germ</Civ>
+    <SpecificName>Druthislegra</SpecificName>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -pair_unlock_champions_sele
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      -units/{civ}/champion_infantry_swordsman
+      -units/{civ}/champion_infantry_axeman
+    </Entities>
+  </Trainer>
+  <Obstruction>
+    <Static width="23.0" depth="22.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/germans/barracks.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

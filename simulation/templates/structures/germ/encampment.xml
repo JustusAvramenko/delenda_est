@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre_military_colony">
+  <Attack disable=""/>
+  <BuildingAI disable=""/>
+  <BuildRestrictions>
+    <Territory>own neutral enemy</Territory>
+    <Category>Encampment</Category>
+    <Distance>
+      <FromClass>CivilCentre</FromClass>
+      <MinDistance>1</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="20.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1750</Max>
+  </Health>
+  <Cost>
+    <BuildTime>220</BuildTime>
+    <Resources>
+      <wood>350</wood>
+      <stone>150</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>germ</Civ>
+    <GenericName>Wagon Encampment</GenericName>
+    <Tooltip>Buildable in own or neutral territory. Train Citizens and Wagons and research technologies.</Tooltip>
+    <Classes datatype="tokens">-CivCentre CivSpecific</Classes>
+    <VisibleClasses datatype="tokens">-CivilCentre Encampment</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>15</Hack>
+        <Pierce>35</Pierce>
+        <Crush>3</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Obstruction>
+    <Static width="34.0" depth="34.0"/>
+  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_spearman_b
+      units/{civ}/infantry_slinger_b
+      units/{civ}/support_wagon
+	</Entities>
+  </Trainer>
+  <Researcher>
+    <Technologies datatype="tokens">
+      wagon_trains
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_civ_center.xml</select>
+      <constructed>interface/complete/building/complete_civ_center.xml</constructed>
+      <upgraded>interface/complete/building/complete_civ_center.xml</upgraded>
+      <alert_raise>interface/alarm/alarm_alert_0.xml</alert_raise>
+      <alert_end>interface/alarm/alarm_alert_1.xml</alert_end>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Entity>structures/{civ}/encampment_fortified</Entity>
+      <Tooltip>Reinforce the Wagon Encampment with a spiked log palisade. This increases the Encampment's health by +50% and adds +5 hack resistance and allows the Encampment to train log rams.</Tooltip>
+      <Cost>
+        <wood>200</wood>
+        <metal>200</metal>
+      </Cost>
+      <Variant>upgrading</Variant>
+      <Time>30</Time>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable = ""/>
+  <VisualActor>
+    <Actor>structures/germans/encampment.xml</Actor>
+    <FoundationActor>structures/fndn_9x9.xml</FoundationActor>
+  </VisualActor>
+</Entity>

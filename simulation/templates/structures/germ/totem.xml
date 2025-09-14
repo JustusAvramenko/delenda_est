@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure">
+  <Auras datatype="tokens">
+    structures/iber_monument
+  </Auras>
+  <BuildRestrictions>
+    <Category>Monument</Category>
+    <Distance>
+      <FromClass>Monument</FromClass>
+      <MinDistance>100</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Capturable disable=""/>
+  <Cost>
+    <BuildTime>120</BuildTime>
+    <Resources>
+      <wood>150</wood>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="3.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>800</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>germ</Civ>
+    <GenericName>Cerannus Totem</GenericName>
+    <SpecificName>Irminsu</SpecificName>
+    <Classes datatype="tokens">CivSpecific</Classes>
+    <VisibleClasses datatype="tokens">Monument Town</VisibleClasses>
+    <Icon>structures/statue.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <wood>30</wood>
+    <metal>20</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="4.5" depth="4.5"/>
+  </Obstruction>
+  <ProductionQueue disable=""/>
+  <RallyPoint disable=""/>
+  <Researcher disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>8</Hack>
+        <Pierce>20</Pierce>
+        <Crush>2</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_iber_monument.xml</select>
+      <constructed>interface/complete/building/complete_iber_monument.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>5.0</BarWidth>
+    <BarHeight>0.5</BarHeight>
+    <HeightOffset>14.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <Trainer disable=""/>
+  <VisualActor>
+    <Actor>structures/germans/cult_statue.xml</Actor>
+    <FoundationActor>structures/carthaginians/fndn_wooden_tower.xml</FoundationActor>
+  </VisualActor>
+</Entity>

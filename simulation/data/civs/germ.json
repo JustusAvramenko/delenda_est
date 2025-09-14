@@ -1,0 +1,78 @@
+{
+	"Code": "germ",
+	"Culture":[ "germ" ],
+	"Region":[ "europe" ],
+	"Music": [
+		{
+			"File": "Northern_Frontier.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "As_Seasons_Change.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Epitaph.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "From_Every_Corner.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Whistler.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Seeresses",
+			"History": "Seeresses accompanied the German armies and envisioned prophecies of victory from sacrifices.",
+			"Description": "Germans can access a Champion Healer unit in City Phase."
+		}
+	],
+	"WallSets":
+	[
+		"structures/wallset_palisade",
+		"structures/germ/wallset_stone"
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/germ/civil_centre"
+		},
+		{
+			"Template": "units/germ/support_civilian",
+			"Count": 4
+		},
+		{
+			"Template": "units/germ/infantry_spearman_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/germ/infantry_slinger_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/germ/support_wagon"
+		},
+		{
+			"Template": "units/germ/cavalry_javelineer_b"
+		}
+	],
+	"AINames":
+	[
+		"Claodicus",
+		"Divico",
+		"Caesorix"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/units/default_infantry_melee_b": "units/germ/infantry_spearman_b",
+		"skirmish/units/default_infantry_ranged_b": "units/germ/infantry_slinger_b",
+		"skirmish/units/special_starting_unit": "units/germ/support_wagon",
+		"skirmish/structures/default_house_10": "structures/germ/house",
+		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
+	},
+	"SelectableInGameSetup": false
+}
