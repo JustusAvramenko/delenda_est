@@ -58,7 +58,7 @@ PetraBot.prototype.CustomInit = function(gameState)
 		this.queueManager.Deserialize(gameState, this.data.queueManager);
 		this.queues = this.queueManager.queues;
 
-		this.HQ = new Headquarther(this.Config);
+		this.HQ = new Headquarter(this.Config);
 		this.HQ.init(gameState, this.queues);
 		this.HQ.Deserialize(gameState, this.data.HQ);
 
