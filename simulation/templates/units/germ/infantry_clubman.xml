@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_maceman">
+  <Cost>
+    <Resources>
+      <food>50</food>
+      <wood>30</wood>
+      <stone>20</stone>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>germ</Civ>
+    <GenericName>Cimbrian Clubman Raider</GenericName>
+    <VisibleClasses datatype="tokens">Club</VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">phase_village</Techs>
+    </Requirements>
+    <Icon>units/germ/infantry_clubman.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Pierce op="add">-1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer disable=""/>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/germans/infantry_clubman.xml</Actor>
+  </VisualActor>
+</Entity>

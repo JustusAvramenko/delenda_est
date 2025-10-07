@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_wagon">
+  <Cost>
+    <Resources>
+      <food>25</food>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Population>
+    <Bonus>5</Bonus>
+  </Population>
+  <Promotion disable=""/>
+  <Identity>
+    <Civ>germ</Civ>
+    <Icon>units/germ/support_wagon_covered.png</Icon>
+  </Identity>
+  <ProductionQueue/>
+  <Researcher>
+    <Technologies datatype="tokens">
+      health_females_01
+      unlock_females_house
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/support_female_citizen_house
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/germans/wagon_house.xml</Actor>
+  </VisualActor>
+</Entity>

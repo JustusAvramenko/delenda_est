@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_axeman">
+  <Cost>
+    <Resources>
+      <food op="add">10</food>
+      <metal op="add">-10</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>germ</Civ>
+    <GenericName>Cimbri Raider</GenericName>
+    <SpecificName>Slōgijanōz</SpecificName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Icon>units/germ/champion_infantry_axeman.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_town
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/germans/infantry_axeman_c.xml</Actor>
+  </VisualActor>
+</Entity>

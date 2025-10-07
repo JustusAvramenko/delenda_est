@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_javelineer">
+  <Identity>
+    <Civ>germ</Civ>
+    <GenericName>Ambronian Skirmisher</GenericName>
+    <SelectionGroupName>units/germ/infantry_javelineer_b</SelectionGroupName>
+    <Icon>units/germ/infantry_javelineer.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion>
+    <Entity>units/germ/infantry_javelineer_a</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/germans/infantry_javelinist_b.xml</Actor>
+  </VisualActor>
+</Entity>

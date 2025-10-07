@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege_ram">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>120.0</Crush>
+      </Damage>
+      <MaxRange>7.5</MaxRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+    </Melee>
+  </Attack>
+  <GarrisonHolder disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>10</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Health>
+	<Max>300</Max>
+  </Health>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+	  <wood>200</wood>
+      <metal>75</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="4.5" depth="9.0"/>
+    <Height>3.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>germ</Civ>
+    <GenericName>Log Ram</GenericName>
+    <Icon>units/germ/siege_ram.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_town
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/cartouche.png</MainTexture>
+        <MainTextureMask>128x256/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <VisualActor>
+    <Actor>structures/germans/siege_ram_pivot.xml</Actor>
+  </VisualActor>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+	<Acceleration op="mul">1.5</Acceleration>
+  </UnitMotion>
+</Entity>

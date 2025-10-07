@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_melee_spearman">
+  <Identity>
+    <Civ>germ</Civ>
+    <GenericName>Cimbrian Spear Cavalry</GenericName>
+    <SelectionGroupName>units/germ/cavalry_spearman_b</SelectionGroupName>
+    <Icon>units/germ/cavalry_spearman.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion>
+    <Entity>units/germ/cavalry_spearman_a</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/germans/cavalry_spearman_b_m.xml</Actor>
+  </VisualActor>
+</Entity>
