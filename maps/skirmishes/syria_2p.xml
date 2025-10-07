@@ -32,26 +32,31 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="629.412" y="106.902" z="1159.69"/>
+		<Position x="318.31" y="97.5852" z="435.401"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
+  "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
   "Description": "A barren land with little wood and few animals. Treasures dot the landscape and will be essential to early growth.\n\nThe player who sets up a profitable trade caravan earliest may gain a decisive advantage.",
   "Keywords": [
     "new"
   ],
+  "LockTeams": false,
   "Name": "Coele-Syria (2)",
   "PlayerData": [
-    null,
-    {},
-    {}
+    "",
+    "",
+    ""
   ],
   "Preview": "coele-syria_2p.png",
+  "RevealMap": false,
   "VictoryConditions": [
-    "conquest"
+    "conquest",
+    "domination"
   ]
 }
 ]]></ScriptSettings>
@@ -358,8 +363,8 @@
 		</Entity>
 		<Entity uid="151">
 			<Template>actor|props/flora/bush_dry_a.xml</Template>
-			<Position x="712.62171" z="156.39252"/>
-			<Orientation y="1.75078"/>
+			<Position x="695.81006" z="176.33341"/>
+			<Orientation y="0.15967"/>
 			<Actor seed="47118"/>
 		</Entity>
 		<Entity uid="152">
@@ -5176,8 +5181,8 @@
 		</Entity>
 		<Entity uid="984">
 			<Template>actor|props/flora/bush_desert_dry_a.xml</Template>
-			<Position x="682.87793" z="150.29831"/>
-			<Orientation y="2.90604"/>
+			<Position x="702.50721" z="146.71958"/>
+			<Orientation y="1.31493"/>
 			<Actor seed="54178"/>
 		</Entity>
 		<Entity uid="985">
@@ -5746,8 +5751,8 @@
 		</Entity>
 		<Entity uid="1080">
 			<Template>actor|props/flora/bush_desert_dry_a.xml</Template>
-			<Position x="666.91193" z="156.38541"/>
-			<Orientation y="-2.73484"/>
+			<Position x="696.74573" z="130.63291"/>
+			<Orientation y="-4.32595"/>
 			<Actor seed="27054"/>
 		</Entity>
 		<Entity uid="1081">
@@ -6436,8 +6441,8 @@
 		</Entity>
 		<Entity uid="1195">
 			<Template>actor|props/flora/bush_desert_dry_a.xml</Template>
-			<Position x="715.69867" z="147.27601"/>
-			<Orientation y="-1.92254"/>
+			<Position x="704.86219" z="179.59495"/>
+			<Orientation y="-3.51365"/>
 			<Actor seed="43888"/>
 		</Entity>
 		<Entity uid="1196">
@@ -7858,8 +7863,8 @@
 		</Entity>
 		<Entity uid="1439">
 			<Template>actor|props/flora/plant_desert_a.xml</Template>
-			<Position x="687.07166" z="142.52887"/>
-			<Orientation y="0.77311"/>
+			<Position x="710.18989" z="151.07026"/>
+			<Orientation y="-0.81801"/>
 			<Actor seed="50112"/>
 		</Entity>
 		<Entity uid="1440">
@@ -8014,8 +8019,8 @@
 		</Entity>
 		<Entity uid="1466">
 			<Template>actor|props/flora/plant_desert_a.xml</Template>
-			<Position x="693.25324" z="139.21607"/>
-			<Orientation y="-1.98557"/>
+			<Position x="713.37641" z="157.31788"/>
+			<Orientation y="-3.57668"/>
 			<Actor seed="5296"/>
 		</Entity>
 		<Entity uid="1467">
@@ -8098,8 +8103,8 @@
 		</Entity>
 		<Entity uid="1480">
 			<Template>actor|props/flora/plant_desert_a.xml</Template>
-			<Position x="679.16242" z="135.06548"/>
-			<Orientation y="0.50863"/>
+			<Position x="732.43976" z="150.40348"/>
+			<Orientation y="-1.0825"/>
 			<Actor seed="16680"/>
 		</Entity>
 		<Entity uid="1481">
@@ -22183,8 +22188,8 @@
 		</Entity>
 		<Entity uid="3906">
 			<Template>actor|geology/stone_desert_med.xml</Template>
-			<Position x="689.21454" z="153.47407"/>
-			<Orientation y="-2.99773"/>
+			<Position x="699.20344" z="152.99036"/>
+			<Orientation y="-4.58884"/>
 			<Actor seed="7632"/>
 		</Entity>
 		<Entity uid="3907">
@@ -23603,8 +23608,8 @@
 		<Entity uid="4178">
 			<Template>gaia/tree/carob</Template>
 			<Player>0</Player>
-			<Position x="679.52057" z="170.52326"/>
-			<Orientation y="2.35621"/>
+			<Position x="686.81537" z="178.04062"/>
+			<Orientation y="-3.1394"/>
 			<Actor seed="17172"/>
 		</Entity>
 		<Entity uid="4179">
@@ -24527,7 +24532,7 @@
 		<Entity uid="4314">
 			<Template>gaia/tree/date_palm</Template>
 			<Player>0</Player>
-			<Position x="708.40088" z="312.42542"/>
+			<Position x="718.5069" z="144.8614"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21950"/>
 		</Entity>
@@ -29589,44 +29594,44 @@
 		<Entity uid="5077">
 			<Template>gaia/ruins/unfinished_greek_temple</Template>
 			<Player>0</Player>
-			<Position x="699.26178" z="154.594"/>
-			<Orientation y="3.92808"/>
+			<Position x="697.65461" z="157.69071"/>
+			<Orientation y="-3.15864"/>
 			<Actor seed="7344"/>
 		</Entity>
 		<Entity uid="5078">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="698.4831" z="158.45221"/>
-			<Orientation y="1.35022"/>
+			<Position x="694.03803" z="162.15586"/>
+			<Orientation y="-0.2409"/>
 			<Actor seed="6346"/>
 		</Entity>
 		<Entity uid="5079">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="689.07947" z="143.51374"/>
-			<Orientation y="-2.2726"/>
+			<Position x="701.55195" z="148.48557"/>
+			<Orientation y="-3.86371"/>
 			<Actor seed="56586"/>
 		</Entity>
 		<Entity uid="5080">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="696.15577" z="148.45344"/>
-			<Orientation y="-1.62914"/>
+			<Position x="704.08198" z="160.03214"/>
+			<Orientation y="-3.22025"/>
 			<Actor seed="27500"/>
 		</Entity>
 		<Entity uid="5081">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="704.44605" z="155.33683"/>
-			<Orientation y="-1.8741"/>
+			<Position x="697.03162" z="168.18088"/>
+			<Orientation y="-3.46521"/>
 			<Actor seed="14178"/>
 		</Entity>
 		<Entity uid="5082">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="701.43128" z="149.71659"/>
-			<Orientation y="1.03328"/>
+			<Position x="702.71192" z="165.28089"/>
+			<Orientation y="-0.55784"/>
 			<Actor seed="26358"/>
 		</Entity>
 		<Entity uid="5083">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_b.xml</Template>
-			<Position x="704.46296" z="151.60975"/>
-			<Orientation y="0.93247"/>
+			<Position x="700.75757" z="168.2735"/>
+			<Orientation y="-0.65865"/>
 			<Actor seed="4836"/>
 		</Entity>
 		<Entity uid="5084">
@@ -29637,98 +29642,98 @@
 		</Entity>
 		<Entity uid="5085">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_b.xml</Template>
-			<Position x="701.23121" z="143.80021"/>
-			<Orientation y="-4.02062"/>
+			<Position x="701.49976" z="170.28757"/>
+			<Orientation y="-4.70807"/>
 			<Actor seed="20084"/>
 		</Entity>
 		<Entity uid="5086">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_b.xml</Template>
-			<Position x="695.8744" z="144.30716"/>
-			<Orientation y="-2.02028"/>
+			<Position x="700.20344" z="166.14835"/>
+			<Orientation y="-3.6114"/>
 			<Actor seed="63284"/>
 		</Entity>
 		<Entity uid="5087">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_b.xml</Template>
-			<Position x="689.11799" z="149.64771"/>
-			<Orientation y="0.64231"/>
+			<Position x="703.03095" z="152.97153"/>
+			<Orientation y="-0.94881"/>
 			<Actor seed="44778"/>
 		</Entity>
 		<Entity uid="5088">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_b.xml</Template>
-			<Position x="696.02875" z="155.24366"/>
-			<Orientation y="0.87377"/>
+			<Position x="697.29572" z="159.76722"/>
+			<Orientation y="-0.71735"/>
 			<Actor seed="29334"/>
 		</Entity>
 		<Entity uid="5089">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_b.xml</Template>
-			<Position x="698.76496" z="153.21402"/>
-			<Orientation y="-2.08254"/>
+			<Position x="699.26941" z="162.54407"/>
+			<Orientation y="-3.67365"/>
 			<Actor seed="36280"/>
 		</Entity>
 		<Entity uid="5090">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="697.03083" z="152.23487"/>
-			<Orientation y="1.15416"/>
+			<Position x="700.28357" z="160.83021"/>
+			<Orientation y="-0.43696"/>
 			<Actor seed="42312"/>
 		</Entity>
 		<Entity uid="5091">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="697.40723" z="155.24366"/>
-			<Orientation y="-2.98893"/>
+			<Position x="697.26777" z="161.14542"/>
+			<Orientation y="-4.58004"/>
 			<Actor seed="50028"/>
 		</Entity>
 		<Entity uid="5092">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="704.99292" z="162.32578"/>
-			<Orientation y="3.11771"/>
+			<Position x="690.03296" z="168.58564"/>
+			<Orientation y="1.5266"/>
 			<Actor seed="33412"/>
 		</Entity>
 		<Entity uid="5093">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="707.75092" z="150.42087"/>
-			<Orientation y="1.26131"/>
+			<Position x="701.8794" z="171.58494"/>
+			<Orientation y="-0.32981"/>
 			<Actor seed="25526"/>
 		</Entity>
 		<Entity uid="5094">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="709.4101" z="151.99793"/>
-			<Orientation y="-2.63447"/>
+			<Position x="700.26893" z="173.21174"/>
+			<Orientation y="-4.22558"/>
 			<Actor seed="55242"/>
 		</Entity>
 		<Entity uid="5095">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="694.08851" z="144.67423"/>
-			<Orientation y="1.23122"/>
+			<Position x="694.93323" z="146.13749"/>
+			<Orientation y="-0.3599"/>
 			<Actor seed="10328"/>
 		</Entity>
 		<Entity uid="5096">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="694.65601" z="143.7638"/>
-			<Orientation y="2.35621"/>
+			<Position x="708.80115" z="158.62797"/>
+			<Orientation y="0.7651"/>
 			<Actor seed="19384"/>
 		</Entity>
 		<Entity uid="5097">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="692.22791" z="154.83072"/>
-			<Orientation y="-2.53737"/>
+			<Position x="697.78577" z="155.97556"/>
+			<Orientation y="-4.12848"/>
 			<Actor seed="51636"/>
 		</Entity>
 		<Entity uid="5098">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="691.75867" z="146.4173"/>
-			<Orientation y="2.35621"/>
+			<Position x="696.0713" z="164.03776"/>
+			<Orientation y="0.7651"/>
 			<Actor seed="42050"/>
 		</Entity>
 		<Entity uid="5099">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="691.17945" z="144.89875"/>
-			<Orientation y="0.72313"/>
+			<Position x="706.69574" z="152.82953"/>
+			<Orientation y="-6.14361"/>
 			<Actor seed="33392"/>
 		</Entity>
 		<Entity uid="5100">
 			<Template>actor|props/special/eyecandy/blocks_sandstone_pile_a.xml</Template>
-			<Position x="704.66956" z="147.425"/>
-			<Orientation y="-2.19726"/>
+			<Position x="704.93726" z="168.56507"/>
+			<Orientation y="-3.78837"/>
 			<Actor seed="44658"/>
 		</Entity>
 		<Entity uid="5101">
@@ -30353,39 +30358,25 @@
 			<Orientation y="-2.71457"/>
 			<Actor seed="32166"/>
 		</Entity>
-		<Entity uid="5205">
-			<Template>structures/column_doric</Template>
-			<Player>0</Player>
-			<Position x="701.67432" z="148.03632"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="13188"/>
-		</Entity>
-		<Entity uid="5206">
-			<Template>structures/column_doric</Template>
-			<Player>0</Player>
-			<Position x="710.62861" z="158.44205"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="1224"/>
-		</Entity>
 		<Entity uid="5207">
 			<Template>structures/column_doric_fallen</Template>
 			<Player>0</Player>
-			<Position x="698.9889" z="168.84333"/>
-			<Orientation y="-0.86358"/>
+			<Position x="703.85077" z="165.17402"/>
+			<Orientation y="-6.35917"/>
 			<Actor seed="62834"/>
 		</Entity>
 		<Entity uid="5208">
 			<Template>structures/column_doric_fallen_b</Template>
 			<Player>0</Player>
-			<Position x="706.65754" z="154.61408"/>
-			<Orientation y="-2.52002"/>
+			<Position x="702.77411" z="163.02811"/>
+			<Orientation y="-9.60672"/>
 			<Actor seed="46486"/>
 		</Entity>
 		<Entity uid="5209">
 			<Template>structures/column_doric_fallen_b</Template>
 			<Player>0</Player>
-			<Position x="705.29554" z="163.6244"/>
-			<Orientation y="2.35621"/>
+			<Position x="695.34302" z="168.3025"/>
+			<Orientation y="-4.7305"/>
 			<Actor seed="43130"/>
 		</Entity>
 		<Entity uid="5210">
@@ -30398,22 +30389,22 @@
 		<Entity uid="5211">
 			<Template>structures/column_doric_fallen_b</Template>
 			<Player>0</Player>
-			<Position x="682.30347" z="143.43244"/>
-			<Orientation y="2.35621"/>
+			<Position x="693.91651" z="137.73594"/>
+			<Orientation y="-4.7305"/>
 			<Actor seed="18552"/>
 		</Entity>
 		<Entity uid="5212">
 			<Template>gaia/ruins/column_doric</Template>
 			<Player>0</Player>
-			<Position x="712.11091" z="142.3252"/>
-			<Orientation y="2.35621"/>
+			<Position x="715.40534" z="158.42264"/>
+			<Orientation y="-4.7305"/>
 			<Actor seed="55878"/>
 		</Entity>
 		<Entity uid="5213">
 			<Template>gaia/ruins/column_doric</Template>
 			<Player>0</Player>
-			<Position x="714.4881" z="168.6855"/>
-			<Orientation y="0.81559"/>
+			<Position x="692.19916" z="145.53638"/>
+			<Orientation y="-6.27112"/>
 			<Actor seed="30886"/>
 		</Entity>
 		<Entity uid="5217">
@@ -31287,15 +31278,15 @@
 		<Entity uid="5351">
 			<Template>gaia/ruins/stone_structure_house</Template>
 			<Player>0</Player>
-			<Position x="703.71644" z="128.9368"/>
-			<Orientation y="0.8361"/>
+			<Position x="702.66578" z="121.16704"/>
+			<Orientation y="-4.6248"/>
 			<Actor seed="59033"/>
 		</Entity>
 		<Entity uid="5352">
 			<Template>gaia/ruins/stone_structure_tower</Template>
 			<Player>0</Player>
-			<Position x="699.2303" z="179.99097"/>
-			<Orientation y="2.35621"/>
+			<Position x="711.92103" z="172.86817"/>
+			<Orientation y="-3.1394"/>
 			<Actor seed="35699"/>
 		</Entity>
 		<Entity uid="5353">
@@ -31350,7 +31341,7 @@
 		<Entity uid="5360">
 			<Template>gaia/ruins/stone_structure_house</Template>
 			<Player>0</Player>
-			<Position x="634.54365" z="173.79282"/>
+			<Position x="633.96235" z="200.70395"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2693"/>
 		</Entity>
@@ -31358,7 +31349,7 @@
 			<Template>gaia/ruins/stone_structure_house</Template>
 			<Player>0</Player>
 			<Position x="648.6095" z="149.6096"/>
-			<Orientation y="2.35621"/>
+			<Orientation y="-3.37128"/>
 			<Actor seed="52291"/>
 		</Entity>
 		<Entity uid="5362">
