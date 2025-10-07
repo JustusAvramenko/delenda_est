@@ -3,23 +3,33 @@
   <asset>
     <contributor>
       <author>Blender User</author>
-      <authoring_tool>Blender 2.91.2 commit date:2021-01-19, commit time:16:15, hash:5be9ef417703</authoring_tool>
+      <authoring_tool>Blender 4.2.0 commit date:2024-07-16, commit time:06:20, hash:a51f293548ad</authoring_tool>
     </contributor>
-    <created>2022-09-14T14:30:56</created>
-    <modified>2022-09-14T14:30:56</modified>
+    <created>2025-09-28T02:10:41</created>
+    <modified>2025-09-28T02:10:41</modified>
     <unit name="inch" meter="0.0254"/>
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_effects>
-    <effect id="Material-effect">
+    <effect id="Material_006-effect">
       <profile_COMMON>
+        <newparam sid="structures_png-surface">
+          <surface type="2D">
+            <init_from>structures_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="structures_png-sampler">
+          <sampler2D>
+            <source>structures_png-surface</source>
+          </sampler2D>
+        </newparam>
         <technique sid="common">
           <lambert>
             <emission>
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <color sid="diffuse">0.8 0.8 0.8 1</color>
+              <texture texture="structures_png-sampler" texcoord="Cube-mesh-map-0"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -29,76 +39,80 @@
       </profile_COMMON>
     </effect>
   </library_effects>
-  <library_images/>
+  <library_images>
+    <image id="structures_png" name="structures_png">
+      <init_from>/C:/Users/micha/OneDrive/Documents/My%20Games/0ad/mods/delenda_est/art/textures/skins/structural/skirmish/structures.png</init_from>
+    </image>
+  </library_images>
   <library_materials>
-    <material id="Material-material" name="Material">
-      <instance_effect url="#Material-effect"/>
+    <material id="Material_006-material" name="Material.006">
+      <instance_effect url="#Material_006-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="Cube-mesh" name="Cube">
+    <geometry id="skirmish_special_starting_structure-mesh" name="skirmish/special_starting_structure">
       <mesh>
-        <source id="Cube-mesh-positions">
-          <float_array id="Cube-mesh-positions-array" count="24">1 1 1 1 1 -1 1 -1 1 1 -1 -1 -1 1 1 -1 1 -1 -1 -1 1 -1 -1 -1</float_array>
+        <source id="skirmish_special_starting_structure-mesh-positions">
+          <float_array id="skirmish_special_starting_structure-mesh-positions-array" count="87">1 1 1.048321 1 1 -0.4187233 1 -1 1.048321 1 -1 -0.4187233 -1 1 1.048321 -1 1 -0.4187233 -1 -1 1.048321 -1 -1 -0.4187233 0 1 1.048321 0 0 1.048321 1 0 1.048321 -1 0 1.048321 0 -1 1.048321 -0.5 1 1.048321 -0.7602801 0.5273257 1.048321 1 -0.5 1.048321 -1 -0.5 1.048321 -0.5 -1 1.048321 0.5 1 1.048321 0.7602801 -0.5273257 1.048321 1 0.5 1.048321 -1 0.5 1.048321 0.5 -1 1.048321 0 -0.5273258 1.048321 -0.7602802 0 1.048321 -0.7602803 -0.5273258 1.048321 0.7602803 0.5273258 1.048321 0 0.5273258 1.048321 0.7602802 0 1.048321</float_array>
           <technique_common>
-            <accessor source="#Cube-mesh-positions-array" count="8" stride="3">
+            <accessor source="#skirmish_special_starting_structure-mesh-positions-array" count="29" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="Cube-mesh-normals">
-          <float_array id="Cube-mesh-normals-array" count="15">0 0 1 0 -1 0 -1 0 0 1 0 0 0 1 0</float_array>
+        <source id="skirmish_special_starting_structure-mesh-normals">
+          <float_array id="skirmish_special_starting_structure-mesh-normals-array" count="156">0 0 1 0 -1 0 -1 0 0 1 0 0 0 1 0 0 0 1 0 -1 0 -1 0 0 1 0 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0</float_array>
           <technique_common>
-            <accessor source="#Cube-mesh-normals-array" count="5" stride="3">
+            <accessor source="#skirmish_special_starting_structure-mesh-normals-array" count="52" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="Cube-mesh-map-0">
-          <float_array id="Cube-mesh-map-0-array" count="60">0.003110647 0.4703021 0.996167 1.068551 0.003110408 1.068551 0.7499999 0.6651901 0 0 0.75 0 0.9980467 0.9967449 0 0.005208432 0.9980468 0.005208432 1 0.999349 1.49012e-7 0 1 0 0.75 0.6217449 0.003906369 -6.50942e-4 0.75 -6.50942e-4 0.003110647 0.4703021 0.9961671 0.4703019 0.996167 1.068551 0.7499999 0.6651901 0 0.6651901 0 0 0.9980467 0.9967449 0 0.9967448 0 0.005208432 1 0.999349 1.49012e-7 0.9993489 1.49012e-7 0 0.75 0.6217449 0.003906369 0.6217448 0.003906369 -6.50942e-4</float_array>
+        <source id="skirmish_special_starting_structure-mesh-map-0">
+          <float_array id="skirmish_special_starting_structure-mesh-map-0-array" count="312">0.7142214 0.1683884 0.7170066 0.1511737 0.7457705 0.1629863 0.7942429 0.07859575 0.5597137 0.02539318 0.9487506 0.02573609 0.6623646 0.1029256 0.5597137 0.221248 0.5597137 0.02539318 0.8460996 0.1440585 0.9487506 0.02573609 0.9487505 0.221591 0.7142214 0.1683884 0.9487505 0.221591 0.5597137 0.221248 0.7142214 0.1683884 0.6991757 0.153883 0.7170066 0.1511737 0.7285001 0.08955776 0.6946272 0.09600514 0.5597137 0.02539318 0.6860034 0.136381 0.6991757 0.153883 0.5597137 0.221248 0.8224609 0.1106032 0.8092886 0.0931012 0.9487506 0.02573609 0.7799641 0.1574264 0.8138371 0.150979 0.9487505 0.221591 0.5731256 0.6457244 0.6476045 0.6457244 0.6476045 0.6820176 0.5731256 0.6457244 0.5731256 0.6094313 0.6476045 0.6457244 0.6860034 0.136381 0.6744612 0.119163 0.6896287 0.1152722 0.7799641 0.1574264 0.8188356 0.131712 0.8138371 0.150979 0.7799641 0.1574264 0.7679619 0.1412906 0.8188356 0.131712 0.5731256 0.6457244 0.6476045 0.6820176 0.5731256 0.6820176 0.8058419 0.1137242 0.8092886 0.0931012 0.8224609 0.1106032 0.8058419 0.1137242 0.7914577 0.09581041 0.8092886 0.0931012 0.7914577 0.09581041 0.7942429 0.07859575 0.8092886 0.0931012 0.8188356 0.131712 0.8058419 0.1137242 0.8224609 0.1106032 0.4986466 0.6820176 0.4986466 0.6457244 0.5731256 0.6820176 0.4986466 0.6457244 0.5731256 0.6457244 0.5731256 0.6820176 0.8138371 0.150979 0.8340031 0.1278212 0.8460996 0.1440585 0.8138371 0.150979 0.8188356 0.131712 0.8340031 0.1278212 0.8188356 0.131712 0.8224609 0.1106032 0.8340031 0.1278212 0.6896287 0.1152722 0.6946272 0.09600514 0.7285001 0.08955776 0.6896287 0.1152722 0.6744612 0.119163 0.6946272 0.09600514 0.6744612 0.119163 0.6623646 0.1029256 0.6946272 0.09600514 0.7405024 0.1056936 0.6896287 0.1152722 0.7285001 0.08955776 0.6476045 0.6457244 0.5731256 0.6094313 0.6476045 0.6094313 0.7026224 0.1332599 0.6860034 0.136381 0.6896287 0.1152722 0.7914577 0.09581041 0.7626938 0.08399784 0.7942429 0.07859575 0.7914577 0.09581041 0.7405024 0.1056936 0.7626938 0.08399784 0.7405024 0.1056936 0.7285001 0.08955776 0.7626938 0.08399784 0.4986466 0.6094313 0.5731256 0.6094313 0.5731256 0.6457244 0.7170066 0.1511737 0.6991757 0.153883 0.7026224 0.1332599 0.6991757 0.153883 0.6860034 0.136381 0.7026224 0.1332599 0.7457705 0.1629863 0.7679619 0.1412906 0.7799641 0.1574264 0.7457705 0.1629863 0.7170066 0.1511737 0.7679619 0.1412906 0.4986466 0.6094313 0.5731256 0.6457244 0.4986466 0.6457244 0.5597137 0.02539318 0.7942429 0.07859575 0.7626938 0.08399784 0.5597137 0.02539318 0.7626938 0.08399784 0.7285001 0.08955776 0.6946272 0.09600514 0.6623646 0.1029256 0.5597137 0.02539318 0.5597137 0.221248 0.6623646 0.1029256 0.6744612 0.119163 0.5597137 0.221248 0.6744612 0.119163 0.6860034 0.136381 0.6991757 0.153883 0.7142214 0.1683884 0.5597137 0.221248 0.9487506 0.02573609 0.8460996 0.1440585 0.8340031 0.1278212 0.9487506 0.02573609 0.8340031 0.1278212 0.8224609 0.1106032 0.8092886 0.0931012 0.7942429 0.07859575 0.9487506 0.02573609 0.9487505 0.221591 0.7142214 0.1683884 0.7457705 0.1629863 0.9487505 0.221591 0.7457705 0.1629863 0.7799641 0.1574264 0.8138371 0.150979 0.8460996 0.1440585 0.9487505 0.221591</float_array>
           <technique_common>
-            <accessor source="#Cube-mesh-map-0-array" count="30" stride="2">
+            <accessor source="#skirmish_special_starting_structure-mesh-map-0-array" count="156" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="Cube-mesh-map-1">
-          <float_array id="Cube-mesh-map-1-array" count="60">0.995947 0.4405921 0.00333023 0.9959476 0.9959471 0.9959478 0.7499999 0.6651901 0 0 0.75 0 0.9980467 0.9967449 0 0.005208432 0.9980468 0.005208432 1 0.999349 1.49012e-7 0 1 0 0.75 0.6217449 0.003906369 -6.50942e-4 0.75 -6.50942e-4 0.995947 0.4405921 0.003330111 0.4405919 0.00333023 0.9959476 0.7499999 0.6651901 0 0.6651901 0 0 0.9980467 0.9967449 0 0.9967448 0 0.005208432 1 0.999349 1.49012e-7 0.9993489 1.49012e-7 0 0.75 0.6217449 0.003906369 0.6217448 0.003906369 -6.50942e-4</float_array>
+        <source id="skirmish_special_starting_structure-mesh-map-1">
+          <float_array id="skirmish_special_starting_structure-mesh-map-1-array" count="312">0.995947 0.4405921 0.7477928 0.5794309 0.995947 0.5794311 0.7499999 0.6651901 0 0 0.75 0 0.9980467 0.9967449 0 0.005208373 0.9980468 0.005208373 1 0.999349 1.49012e-7 0 1 0 0.75 0.6217449 0.003906369 -6.50942e-4 0.75 -6.50942e-4 0.995947 0.4405921 0.7477928 0.4405921 0.7477928 0.5794309 0.375 0.6651901 0.1875 0.6651901 0 0 0.4990233 0.9967449 0.2495117 0.9967449 0 0.005208373 0.5000001 0.999349 0.2500001 0.999349 1.49012e-7 0 0.3769532 0.6217449 0.1904298 0.6217449 0.003906369 -6.50942e-4 0.4996386 0.7182698 0.2514844 0.7182698 0.2514844 0.8571087 0.4996386 0.7182698 0.4996386 0.5794309 0.2514844 0.7182698 0.4996386 0.440592 0.2514843 0.4405919 0.2514843 0.5794309 0.9959471 0.71827 0.7477928 0.8571088 0.9959471 0.8571089 0.9959471 0.71827 0.7477928 0.7182699 0.7477928 0.8571088 0.4996386 0.7182698 0.2514844 0.8571087 0.4996386 0.8571088 0.4996386 0.8571088 0.2514845 0.9959477 0.4996387 0.9959477 0.4996386 0.8571088 0.2514844 0.8571087 0.2514845 0.9959477 0.2514844 0.8571087 0.003330171 0.9959476 0.2514845 0.9959477 0.7477928 0.8571088 0.4996386 0.8571088 0.4996387 0.9959477 0.7477928 0.8571088 0.7477928 0.7182699 0.4996386 0.8571088 0.7477928 0.7182699 0.4996386 0.7182698 0.4996386 0.8571088 0.9959471 0.8571089 0.7477929 0.9959478 0.9959471 0.9959478 0.9959471 0.8571089 0.7477928 0.8571088 0.7477929 0.9959478 0.7477928 0.8571088 0.4996387 0.9959477 0.7477929 0.9959478 0.2514843 0.5794309 0.003330111 0.5794308 0.003330111 0.7182698 0.2514843 0.5794309 0.2514843 0.4405919 0.003330111 0.5794308 0.2514843 0.4405919 0.003330051 0.4405919 0.003330111 0.5794308 0.2514844 0.7182698 0.2514843 0.5794309 0.003330111 0.7182698 0.2514844 0.7182698 0.4996386 0.5794309 0.2514843 0.5794309 0.4996386 0.5794309 0.4996386 0.440592 0.2514843 0.5794309 0.2514844 0.8571087 0.003330171 0.8571087 0.003330171 0.9959476 0.2514844 0.8571087 0.2514844 0.7182698 0.003330171 0.8571087 0.2514844 0.7182698 0.003330111 0.7182698 0.003330171 0.8571087 0.7477928 0.5794309 0.4996386 0.5794309 0.4996386 0.7182698 0.7477928 0.5794309 0.7477928 0.4405921 0.4996386 0.5794309 0.7477928 0.4405921 0.4996386 0.440592 0.4996386 0.5794309 0.995947 0.5794311 0.7477928 0.7182699 0.9959471 0.71827 0.995947 0.5794311 0.7477928 0.5794309 0.7477928 0.7182699 0.7477928 0.5794309 0.4996386 0.7182698 0.7477928 0.7182699 0 0 0.7499999 0.6651901 0.5624999 0.6651901 0 0 0.5624999 0.6651901 0.375 0.6651901 0.1875 0.6651901 0 0.6651901 0 0 0 0.005208373 0.9980467 0.9967449 0.748535 0.9967449 0 0.005208373 0.748535 0.9967449 0.4990233 0.9967449 0.2495117 0.9967449 0 0.9967448 0 0.005208373 1.49012e-7 0 1 0.999349 0.75 0.999349 1.49012e-7 0 0.75 0.999349 0.5000001 0.999349 0.2500001 0.999349 1.49012e-7 0.9993489 1.49012e-7 0 0.003906369 -6.50942e-4 0.75 0.6217449 0.5634766 0.6217449 0.003906369 -6.50942e-4 0.5634766 0.6217449 0.3769532 0.6217449 0.1904298 0.6217449 0.003906369 0.6217448 0.003906369 -6.50942e-4</float_array>
           <technique_common>
-            <accessor source="#Cube-mesh-map-1-array" count="30" stride="2">
+            <accessor source="#skirmish_special_starting_structure-mesh-map-1-array" count="156" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="Cube-mesh-vertices">
-          <input semantic="POSITION" source="#Cube-mesh-positions"/>
+        <vertices id="skirmish_special_starting_structure-mesh-vertices">
+          <input semantic="POSITION" source="#skirmish_special_starting_structure-mesh-positions"/>
         </vertices>
-        <triangles material="Material-material" count="10">
-          <input semantic="VERTEX" source="#Cube-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#Cube-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#Cube-mesh-map-0" offset="2" set="0"/>
-          <input semantic="TEXCOORD" source="#Cube-mesh-map-1" offset="2" set="1"/>
-          <p>4 0 0 2 0 1 0 0 2 2 1 3 7 1 4 3 1 5 6 2 6 5 2 7 7 2 8 0 3 9 3 3 10 1 3 11 4 4 12 1 4 13 5 4 14 4 0 15 6 0 16 2 0 17 2 1 18 6 1 19 7 1 20 6 2 21 4 2 22 5 2 23 0 3 24 2 3 25 3 3 26 4 4 27 0 4 28 1 4 29</p>
+        <triangles material="Material_006-material" count="52">
+          <input semantic="VERTEX" source="#skirmish_special_starting_structure-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#skirmish_special_starting_structure-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#skirmish_special_starting_structure-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#skirmish_special_starting_structure-mesh-map-1" offset="2" set="1"/>
+          <p>4 0 0 14 0 1 13 0 2 2 1 3 7 1 4 3 1 5 6 2 6 5 2 7 7 2 8 0 3 9 3 3 10 1 3 11 4 4 12 1 4 13 5 4 14 4 5 15 21 5 16 14 5 17 12 6 18 17 6 19 7 6 20 11 7 21 21 7 22 5 7 23 10 8 24 15 8 25 3 8 26 8 9 27 18 9 28 1 9 29 9 10 30 23 10 31 19 10 32 9 11 33 24 11 34 23 11 35 11 12 36 16 12 37 25 12 38 8 13 39 26 13 40 18 13 41 8 14 42 27 14 43 26 14 44 9 15 45 19 15 46 28 15 47 28 16 48 15 16 49 10 16 50 28 17 51 19 17 52 15 17 53 19 18 54 2 18 55 15 18 56 26 19 57 28 19 58 10 19 59 26 20 60 27 20 61 28 20 62 27 21 63 9 21 64 28 21 65 18 22 66 20 22 67 0 22 68 18 23 69 26 23 70 20 23 71 26 24 72 10 24 73 20 24 74 25 25 75 17 25 76 12 25 77 25 26 78 16 26 79 17 26 80 16 27 81 6 27 82 17 27 83 23 28 84 25 28 85 12 28 86 23 29 87 24 29 88 25 29 89 24 30 90 11 30 91 25 30 92 19 31 93 22 31 94 2 31 95 19 32 96 23 32 97 22 32 98 23 33 99 12 33 100 22 33 101 14 34 102 24 34 103 9 34 104 14 35 105 21 35 106 24 35 107 21 36 108 11 36 109 24 36 110 13 37 111 27 37 112 8 37 113 13 38 114 14 38 115 27 38 116 14 39 117 9 39 118 27 39 119 7 40 120 2 40 121 22 40 122 7 41 123 22 41 124 12 41 125 17 42 126 6 42 127 7 42 128 5 43 129 6 43 130 16 43 131 5 44 132 16 44 133 11 44 134 21 45 135 4 45 136 5 45 137 3 46 138 0 46 139 20 46 140 3 47 141 20 47 142 10 47 143 15 48 144 2 48 145 3 48 146 1 49 147 4 49 148 13 49 149 1 50 150 13 50 151 8 50 152 18 51 153 0 51 154 1 51 155</p>
         </triangles>
       </mesh>
     </geometry>
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="Cube" name="Cube" type="NODE">
-        <matrix sid="transform">6.99138e-7 -13.58884 0 0 9.26036 1.02593e-6 0 0 0 0 14.961 -0.08723783 0 0 0 1</matrix>
-        <instance_geometry url="#Cube-mesh" name="Cube">
+      <node id="skirmish_special_starting_structure" name="skirmish/special_starting_structure" type="NODE">
+        <matrix sid="transform">1.80306e-6 -13.58884 0 0 9.26036 2.64584e-6 0 0 0 0 14.961 -0.08723783 0 0 0 1</matrix>
+        <instance_geometry url="#skirmish_special_starting_structure-mesh" name="skirmish/special_starting_structure">
           <bind_material>
             <technique_common>
-              <instance_material symbol="Material-material" target="#Material-material">
-                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
-                <bind_vertex_input semantic="UVMap.001" input_semantic="TEXCOORD" input_set="1"/>
+              <instance_material symbol="Material_006-material" target="#Material_006-material">
+                <bind_vertex_input semantic="Cube-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="Cube-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
               </instance_material>
             </technique_common>
           </bind_material>

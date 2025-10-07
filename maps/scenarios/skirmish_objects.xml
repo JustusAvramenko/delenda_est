@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="7">
+	<Environment>
+		<SkySet>cloudless</SkySet>
+		<SunColor r="0.972549" g="0.901961" b="0.803922"/>
+		<SunElevation angle="0.638136"/>
+		<SunRotation angle="-0.909753"/>
+		<AmbientColor r="0.27451" g="0.321569" b="0.439216"/>
+		<Fog>
+			<FogFactor>0.00195313</FogFactor>
+			<FogThickness>0.0351563</FogThickness>
+			<FogColor r="0.839216" g="0.866667" b="0.882353"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.0784314" g="0.247059" b="0.419608"/>
+				<Tint r="0" g="1" b="0.501961"/>
+				<Height>20.0394</Height>
+				<Waviness>3.02734</Waviness>
+				<Murkiness>0.882813</Murkiness>
+				<WindAngle>0.233165</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>-0.015625</Brightness>
+			<Contrast>0.984375</Contrast>
+			<Saturation>0.8125</Saturation>
+			<Bloom>0.160156</Bloom>
+			<PostEffect>hdr</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="706.09" y="127.798" z="183.197"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "AISeed": 0,
+  "AllyView": false,
+  "CircularMap": true,
+  "Description": "Give an interesting description of your map.",
+  "Keywords": [],
+  "LockTeams": false,
+  "Name": "Skirmish Objects",
+  "PlayerData": [
+    "",
+    {
+      "Civ": "athen"
+    },
+    {
+      "Civ": "brit"
+    },
+    {
+      "Civ": "cart"
+    },
+    {
+      "Civ": "cimb"
+    },
+    {
+      "Civ": "epir"
+    },
+    {
+      "Civ": "gaul"
+    },
+    {
+      "Civ": "han"
+    },
+    {
+      "Civ": "iber"
+    }
+  ],
+  "Preview": "",
+  "RevealMap": false,
+  "VictoryConditions": [
+    "conquest_civic_centers"
+  ]
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="11">
+			<Template>skirmish/structures/default_theater</Template>
+			<Player>1</Player>
+			<Position x="672.23951" z="420.82859"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="59032"/>
+		</Entity>
+		<Entity uid="13">
+			<Template>structures/spart/theater</Template>
+			<Player>1</Player>
+			<Position x="213.36445" z="405.74738"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="2366"/>
+		</Entity>
+		<Entity uid="14">
+			<Template>structures/sele/theater</Template>
+			<Player>1</Player>
+			<Position x="243.01029" z="450.1941"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31278"/>
+		</Entity>
+		<Entity uid="15">
+			<Template>structures/athen/theater</Template>
+			<Player>1</Player>
+			<Position x="292.71573" z="506.82209"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27595"/>
+		</Entity>
+		<Entity uid="16">
+			<Template>structures/mace/theater</Template>
+			<Player>1</Player>
+			<Position x="273.94211" z="397.02631"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50394"/>
+		</Entity>
+		<Entity uid="17">
+			<Template>skirmish/structures/default_academy</Template>
+			<Player>1</Player>
+			<Position x="765.54145" z="426.98166"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="26171"/>
+		</Entity>
+		<Entity uid="18">
+			<Template>skirmish/structures/default_arsenal</Template>
+			<Player>1</Player>
+			<Position x="770.11811" z="392.77488"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="47998"/>
+		</Entity>
+		<Entity uid="19">
+			<Template>skirmish/structures/default_barracks</Template>
+			<Player>1</Player>
+			<Position x="738.53974" z="411.8353"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="306"/>
+		</Entity>
+		<Entity uid="20">
+			<Template>skirmish/structures/default_stable</Template>
+			<Player>1</Player>
+			<Position x="752.33033" z="365.92212"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="23175"/>
+		</Entity>
+		<Entity uid="21">
+			<Template>skirmish/structures/default_range</Template>
+			<Player>1</Player>
+			<Position x="794.61792" z="372.36628"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="31844"/>
+		</Entity>
+		<Entity uid="22">
+			<Template>skirmish/structures/default_civil_centre</Template>
+			<Player>1</Player>
+			<Position x="694.26441" z="355.23789"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10063"/>
+		</Entity>
+		<Entity uid="23">
+			<Template>skirmish/structures/default_house_10</Template>
+			<Player>1</Player>
+			<Position x="655.07154" z="385.8476"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58122"/>
+		</Entity>
+		<Entity uid="24">
+			<Template>skirmish/structures/default_house_10</Template>
+			<Player>1</Player>
+			<Position x="634.7848" z="398.72223"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42063"/>
+		</Entity>
+		<Entity uid="25">
+			<Template>skirmish/structures/default_house_10</Template>
+			<Player>1</Player>
+			<Position x="615.91834" z="389.4297"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42063"/>
+		</Entity>
+		<Entity uid="26">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>1</Player>
+			<Position x="633.05738" z="379.91242"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="45705"/>
+		</Entity>
+		<Entity uid="27">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>1</Player>
+			<Position x="647.31562" z="369.89325"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="58958"/>
+		</Entity>
+		<Entity uid="28">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>1</Player>
+			<Position x="628.01111" z="366.57975"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="16362"/>
+		</Entity>
+		<Entity uid="29">
+			<Template>skirmish/structures/default_house_5</Template>
+			<Player>1</Player>
+			<Position x="668.3661" z="377.71186"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="6860"/>
+		</Entity>
+		<Entity uid="30">
+			<Template>skirmish/structures/default_stoa</Template>
+			<Player>1</Player>
+			<Position x="633.57844" z="336.19208"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="52957"/>
+		</Entity>
+		<Entity uid="31">
+			<Template>skirmish/structures/default_temple</Template>
+			<Player>1</Player>
+			<Position x="663.30225" z="344.44397"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="46901"/>
+		</Entity>
+		<Entity uid="32">
+			<Template>skirmish/structures/default_outpost</Template>
+			<Player>1</Player>
+			<Position x="722.41279" z="316.25641"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="50802"/>
+		</Entity>
+		<Entity uid="33">
+			<Template>skirmish/structures/default_outpost_stone</Template>
+			<Player>1</Player>
+			<Position x="732.17817" z="319.26114"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="39736"/>
+		</Entity>
+		<Entity uid="34">
+			<Template>skirmish/structures/default_defense_tower</Template>
+			<Player>1</Player>
+			<Position x="741.43403" z="325.12961"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42854"/>
+		</Entity>
+		<Entity uid="35">
+			<Template>skirmish/structures/default_defense_tower_stone</Template>
+			<Player>1</Player>
+			<Position x="753.15125" z="333.17487"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="49212"/>
+		</Entity>
+		<Entity uid="36">
+			<Template>skirmish/structures/default_elephant_stables</Template>
+			<Player>1</Player>
+			<Position x="778.30182" z="345.13273"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="38335"/>
+		</Entity>
+		<Entity uid="38">
+			<Template>skirmish/structures/default_statue</Template>
+			<Player>1</Player>
+			<Position x="723.79499" z="344.12415"/>
+			<Orientation y="-3.3264"/>
+			<Actor seed="2647"/>
+		</Entity>
+		<Entity uid="39">
+			<Template>skirmish/structures/default_granary</Template>
+			<Player>1</Player>
+			<Position x="684.10389" z="326.89771"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="15853"/>
+		</Entity>
+		<Entity uid="40">
+			<Template>skirmish/structures/default_storehouse</Template>
+			<Player>1</Player>
+			<Position x="708.58161" z="325.7146"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="42937"/>
+		</Entity>
+		<Entity uid="41">
+			<Template>skirmish/structures/default_fortress</Template>
+			<Player>1</Player>
+			<Position x="714.25135" z="387.44666"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="37413"/>
+		</Entity>
+		<Entity uid="43">
+			<Template>skirmish/structures/default_forge</Template>
+			<Player>1</Player>
+			<Position x="763.15198" z="319.8321"/>
+			<Orientation y="-3.93429"/>
+			<Actor seed="61836"/>
+		</Entity>
+		<Entity uid="46">
+			<Template>skirmish/structures/default_wonder</Template>
+			<Player>1</Player>
+			<Position x="716.06641" z="457.58631"/>
+			<Orientation y="-3.90134"/>
+			<Actor seed="51153"/>
+		</Entity>
+		<Entity uid="50">
+			<Template>skirmish/structures/default_corral</Template>
+			<Player>1</Player>
+			<Position x="657.51215" z="318.8682"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="30432"/>
+		</Entity>
+	</Entities>
+	<Paths/>
+</Scenario>

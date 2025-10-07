@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.2.0 commit date:2024-07-16, commit time:06:20, hash:a51f293548ad</authoring_tool>
+    </contributor>
+    <created>2025-09-28T03:17:29</created>
+    <modified>2025-09-28T03:17:29</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Material_001-effect">
+      <profile_COMMON>
+        <newparam sid="structures_png-surface">
+          <surface type="2D">
+            <init_from>structures_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="structures_png-sampler">
+          <sampler2D>
+            <source>structures_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="structures_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="structures_png" name="structures_png">
+      <init_from>/C:/Users/micha/OneDrive/Documents/My%20Games/0ad/mods/delenda_est/art/textures/skins/structural/skirmish/structures.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Material_001-material" name="Material.001">
+      <instance_effect url="#Material_001-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="skirmish_default_shipyard-mesh" name="skirmish/default_shipyard">
+      <mesh>
+        <source id="skirmish_default_shipyard-mesh-positions">
+          <float_array id="skirmish_default_shipyard-mesh-positions-array" count="75">-1 -1 -1 -1 -1 0.04763448 -1 1 -1 -1 1 0.04763448 1 -1 -1 1 -1 0.04763448 1 1 -1 1 1 0.04763448 -1 -1 0.04763448 -1 1 0.04763448 1 1 0.04763448 1 -1 0.04763448 -1 0 0.04763448 0 1 0.04763448 1 0 0.04763448 0 -1 0.04763448 0 0 0.04763448 -0.62217 0.62217 0.04763448 0.62217 0.62217 0.04763448 0.62217 -0.62217 0.04763448 -0.62217 -0.62217 0.04763448 -0.62217 0 0.04763448 0.62217 0 0.04763448 0 0.62217 0.04763448 0 -0.62217 0.04763448</float_array>
+          <technique_common>
+            <accessor source="#skirmish_default_shipyard-mesh-positions-array" count="25" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="skirmish_default_shipyard-mesh-normals">
+          <float_array id="skirmish_default_shipyard-mesh-normals-array" count="132">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#skirmish_default_shipyard-mesh-normals-array" count="44" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="skirmish_default_shipyard-mesh-map-0">
+          <float_array id="skirmish_default_shipyard-mesh-map-0-array" count="264">0.3548202 0.2143473 0.09839755 0.4618278 0.09839755 0.05317145 0.399735 0.3358084 0.9016023 0.4869267 0.09839755 0.4618278 0.6451796 0.325751 0.9016025 0.07827043 0.9016023 0.4869267 0.6002649 0.2042898 0.09839755 0.05317145 0.9016025 0.07827043 0.625 0.25 0.625 0 0.625 0.125 0.3792917 0.1896812 0.3792917 0.2500353 0.2585834 0.2500353 0.7414166 0.3707436 0.6207083 0.3103895 0.7414165 0.2500353 0.625 1 0.625 0.8297831 0.625 0.7047831 0.6451796 0.325751 0.6002649 0.2042898 0.9016025 0.07827043 0.6002649 0.2042898 0.3548202 0.2143473 0.09839755 0.05317145 0.6207082 0.1896812 0.5 0.1896812 0.5 0.129327 0.8619675 0.7575505 0.9316891 0.7179481 0.9316891 0.7575505 0.5 0.129327 0.5 0.1896812 0.3792917 0.1896812 0.625 0.5 0.625 0.25 0.625 0.375 0.6207083 0.3103895 0.6207082 0.2500353 0.7414165 0.2500353 0.625 0.8297831 0.625 0.8297831 0.625 0.7047831 0.625 0.8297831 0.625 0.5 0.625 0.625 0.2585834 0.3707436 0.2585834 0.2500353 0.3792917 0.3103895 0.625 0.625 0.625 0.8297831 0.625 0.8297831 0.6207082 0.2500353 0.6207082 0.1896812 0.7414165 0.2500353 0.399735 0.3358084 0.6451796 0.325751 0.9016023 0.4869267 0.625 0.7047831 0.625 1 0.625 1 0.625 0.5 0.625 0.5 0.625 0.625 0.8619675 0.7575505 0.7922461 0.7179481 0.8619675 0.7179481 0.3792917 0.3103895 0.5 0.3103895 0.5 0.3707436 0.8619675 0.7575505 0.8619675 0.7179481 0.9316891 0.7179481 0.7414165 0.129327 0.6207082 0.1896812 0.5 0.129327 0.2585834 0.129327 0.3792917 0.1896812 0.2585834 0.2500353 0.625 0.25 0.625 0.25 0.625 0.375 0.8619675 0.6783457 0.7922461 0.7179481 0.7922459 0.6783457 0.3792917 0.3103895 0.2585834 0.2500353 0.3792917 0.2500353 0.625 0 0.625 0 0.625 0.125 0.8619675 0.6783457 0.9316891 0.7179481 0.8619675 0.7179481 0.3548202 0.2143473 0.399735 0.3358084 0.09839755 0.4618278 0.625 0.125 0.625 0.25 0.625 0.25 0.5 0.129327 0.3792917 0.1896812 0.2585834 0.129327 0.625 0.375 0.625 0.5 0.625 0.5 0.5 0.3707436 0.5 0.3103895 0.6207083 0.3103895 0.7414165 0.2500353 0.6207082 0.1896812 0.7414165 0.129327 0.5 0.3707436 0.6207083 0.3103895 0.7414166 0.3707436 0.2585834 0.3707436 0.3792917 0.3103895 0.5 0.3707436 0.8619675 0.7575505 0.7922461 0.7575505 0.7922461 0.7179481 0.8619675 0.6783457 0.8619675 0.7179481 0.7922461 0.7179481 0.8619675 0.6783457 0.9316891 0.6783457 0.9316891 0.7179481</float_array>
+          <technique_common>
+            <accessor source="#skirmish_default_shipyard-mesh-map-0-array" count="132" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="skirmish_default_shipyard-mesh-vertices">
+          <input semantic="POSITION" source="#skirmish_default_shipyard-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_001-material" count="44">
+          <input semantic="VERTEX" source="#skirmish_default_shipyard-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#skirmish_default_shipyard-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#skirmish_default_shipyard-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 3 1 3 6 1 4 2 1 5 7 2 6 4 2 7 6 2 8 5 3 9 0 3 10 4 3 11 3 4 12 1 4 13 12 4 14 19 5 15 24 5 16 15 5 17 9 6 18 17 6 19 13 6 20 1 7 21 5 7 22 15 7 23 7 8 24 5 8 25 4 8 26 5 9 27 1 9 28 0 9 29 18 10 30 22 10 31 14 10 32 23 11 33 22 11 34 18 11 35 14 12 36 22 12 37 19 12 38 7 13 39 3 13 40 13 13 41 17 14 42 23 14 43 13 14 44 5 15 45 11 15 46 15 15 47 5 16 48 7 16 49 14 16 50 8 17 51 15 17 52 20 17 53 14 18 54 11 18 55 5 18 56 23 19 57 18 19 58 13 19 59 3 20 60 7 20 61 6 20 62 15 21 63 8 21 64 1 21 65 7 22 66 10 22 67 14 22 68 23 23 69 21 23 70 16 23 71 20 24 72 21 24 73 12 24 74 23 25 75 16 25 76 22 25 77 10 26 78 18 26 79 14 26 80 11 27 81 19 27 82 15 27 83 3 28 84 9 28 85 13 28 86 24 29 87 21 29 88 20 29 89 20 30 90 15 30 91 24 30 92 1 31 93 8 31 94 12 31 95 24 32 96 22 32 97 16 32 98 1 33 99 3 33 100 2 33 101 12 34 102 9 34 103 3 34 104 14 35 105 19 35 106 11 35 107 13 36 108 10 36 109 7 36 110 12 37 111 21 37 112 17 37 113 13 38 114 18 38 115 10 38 116 12 39 117 17 39 118 9 39 119 8 40 120 20 40 121 12 40 122 23 41 123 17 41 124 21 41 125 24 42 126 16 42 127 21 42 128 24 43 129 19 43 130 22 43 131</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="skirmish_default_shipyard" name="skirmish/default_shipyard" type="NODE">
+        <matrix sid="transform">9.966743 0 0 0 0 11.34692 0 0 0 0 13.09499 11.61959 0 0 0 1</matrix>
+        <instance_geometry url="#skirmish_default_shipyard-mesh" name="skirmish/default_shipyard">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_001-material" target="#Material_001-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
