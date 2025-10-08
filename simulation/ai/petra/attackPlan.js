@@ -1593,7 +1593,7 @@ AttackPlan.prototype.update = function(gameState, events)
 				else if (attackedByStructure[ent.id()] && target.hasClass("Field"))
 					maybeUpdate = true;
 				else if (!ent.hasClass("FastMoving") && !ent.hasClass("Ranged") &&
-					 target.hasClass("FemaleCitizen") && target.unitAIState().split(".")[1] == "FLEEING")
+					 target.hasClass("Villager") && target.unitAIState().split(".")[1] == "FLEEING")
 					maybeUpdate = true;
 			}
 
@@ -1685,7 +1685,7 @@ AttackPlan.prototype.update = function(gameState, events)
 						return false;
 					if (enemy.hasClass("Animal"))
 						return false;
-					if (nearby && enemy.hasClass("FemaleCitizen") && enemy.unitAIState().split(".")[1] == "FLEEING")
+					if (nearby && enemy.hasClass("Villager") && enemy.unitAIState().split(".")[1] == "FLEEING")
 						return false;
 					const dist = SquareVectorDistance(enemy.position(), ent.position());
 					if (dist > range)

@@ -39,7 +39,7 @@ import { Worker } from "simulation/ai/petra/worker.js";
  *  -picking new CC locations.
  */
 
-export function Headquarter(config)
+export function Headquarters(config)
 {
 	this.Config = config;
 	this.phasing = 0;	// existing values: 0 means no, i > 0 means phasing towards phase i
@@ -79,7 +79,7 @@ export function Headquarter(config)
 }
 
 /** More initialisation for stuff that needs the gameState */
-Headquarter.prototype.init = function(gameState, queues)
+Headquarters.prototype.init = function(gameState, queues)
 {
 	this.territoryMap = createTerritoryMap(gameState);
 	// create borderMap: flag cells on the border of the map
@@ -101,7 +101,7 @@ Headquarter.prototype.init = function(gameState, queues)
 /**
  * initialization needed after deserialization (only called when deserialization)
  */
-Headquarter.prototype.postinit = function(gameState)
+Headquarters.prototype.postinit = function(gameState)
 {
 	this.basesManager.postinit(gameState);
 	this.updateTerritories(gameState);
@@ -112,7 +112,7 @@ Headquarter.prototype.postinit = function(gameState)
  * otherwise return undefined
  * for the moment, only the case land-sea-land is supported
  */
-Headquarter.prototype.getSeaBetweenIndices = function(gameState, index1, index2)
+Headquarters.prototype.getSeaBetweenIndices = function(gameState, index1, index2)
 {
 	const path = gameState.ai.accessibility.getTrajectToIndex(index1, index2);
 	if (path && path.length == 3 && gameState.ai.accessibility.regionType[path[1]] == "water")
@@ -127,7 +127,7 @@ Headquarter.prototype.getSeaBetweenIndices = function(gameState, index1, index2)
 	return undefined;
 };
 
-Headquarter.prototype.checkEvents = function(gameState, events)
+Headquarters.prototype.checkEvents = function(gameState, events)
 {
 	this.buildManager.checkEvents(gameState, events);
 
@@ -302,7 +302,7 @@ Headquarter.prototype.checkEvents = function(gameState, events)
 	}
 };
 
-Headquarter.prototype.handleNewBase = function(gameState)
+Headquarters.prototype.handleNewBase = function(gameState)
 {
 	if (!this.firstBaseConfig)
 		// This is our first base, let us configure our starting resources.
@@ -317,7 +317,7 @@ Headquarter.prototype.handleNewBase = function(gameState)
 };
 
 /** Ensure that all requirements are met when phasing up*/
-Headquarter.prototype.checkPhaseRequirements = function(gameState, queues)
+Headquarters.prototype.checkPhaseRequirements = function(gameState, queues)
 {
 	if (gameState.getNumberOfPhases() == this.currentPhase)
 		return;
@@ -392,12 +392,12 @@ Headquarter.prototype.checkPhaseRequirements = function(gameState, queues)
 };
 
 /** Called by any "phase" research plan once it's started */
-Headquarter.prototype.OnPhaseUp = function(gameState, phase)
+Headquarters.prototype.OnPhaseUp = function(gameState, phase)
 {
 };
 
 /** This code trains citizen workers, trying to keep close to a ratio of worker/soldiers */
-Headquarter.prototype.trainMoreWorkers = function(gameState, queues)
+Headquarters.prototype.trainMoreWorkers = function(gameState, queues)
 {
 	// default template
 	const requirementsDef = [ ["costsResource", 1, "food"] ];
@@ -506,7 +506,7 @@ Headquarter.prototype.trainMoreWorkers = function(gameState, queues)
 };
 
 /** picks the best template based on parameters and classes */
-Headquarter.prototype.findBestTrainableUnit = function(gameState, classes, requirements)
+Headquarters.prototype.findBestTrainableUnit = function(gameState, classes, requirements)
 {
 	let units;
 	if (classes.indexOf("Hero") != -1)
@@ -591,12 +591,12 @@ Headquarter.prototype.findBestTrainableUnit = function(gameState, classes, requi
  * returns an entity collection of workers through BaseManager.pickBuilders
  * TODO: when same accessIndex, sort by distance
  */
-Headquarter.prototype.bulkPickWorkers = function(gameState, baseRef, number)
+Headquarters.prototype.bulkPickWorkers = function(gameState, baseRef, number)
 {
 	return this.basesManager.bulkPickWorkers(gameState, baseRef, number);
 };
 
-Headquarter.prototype.getTotalResourceLevel = function(gameState, resources, proximity)
+Headquarters.prototype.getTotalResourceLevel = function(gameState, resources, proximity)
 {
 	return this.basesManager.getTotalResourceLevel(gameState, resources, proximity);
 };
@@ -605,7 +605,7 @@ Headquarter.prototype.getTotalResourceLevel = function(gameState, resources, pro
  * Returns the current gather rate
  * This is not per-se exact, it performs a few adjustments ad-hoc to account for travel distance, stuffs like that.
  */
-Headquarter.prototype.GetCurrentGatherRates = function(gameState)
+Headquarters.prototype.GetCurrentGatherRates = function(gameState)
 {
 	return this.basesManager.GetCurrentGatherRates(gameState);
 };
@@ -613,7 +613,7 @@ Headquarter.prototype.GetCurrentGatherRates = function(gameState)
 /**
  * Returns the wanted gather rate.
  */
-Headquarter.prototype.GetWantedGatherRates = function(gameState)
+Headquarters.prototype.GetWantedGatherRates = function(gameState)
 {
 	if (!this.turnCache.wantedRates)
 		this.turnCache.wantedRates = gameState.ai.queueManager.wantedGatherRates(gameState);
@@ -629,7 +629,7 @@ Headquarter.prototype.GetWantedGatherRates = function(gameState)
  * We compare; we pick the one where the discrepancy is highest.
  * Need to balance long-term needs and possible short-term needs.
  */
-Headquarter.prototype.pickMostNeededResources = function(gameState, allowedResources = [])
+Headquarters.prototype.pickMostNeededResources = function(gameState, allowedResources = [])
 {
 	const wantedRates = this.GetWantedGatherRates(gameState);
 	const currentRates = this.GetCurrentGatherRates(gameState);
@@ -664,7 +664,7 @@ Headquarter.prototype.pickMostNeededResources = function(gameState, allowedResou
  * Returns the best position to build a new Civil Center
  * Whose primary function would be to reach new resources of type "resource".
  */
-Headquarter.prototype.findEconomicCCLocation = function(gameState, template, resource, proximity, fromStrategic)
+Headquarters.prototype.findEconomicCCLocation = function(gameState, template, resource, proximity, fromStrategic)
 {
 	// This builds a map. The procedure is fairly simple. It adds the resource maps
 	//	(which are dynamically updated and are made so that they will facilitate DP placement)
@@ -865,7 +865,7 @@ Headquarter.prototype.findEconomicCCLocation = function(gameState, template, res
  * Returns the best position to build a new Civil Center
  * Whose primary function would be to assure territorial continuity with our allies
  */
-Headquarter.prototype.findStrategicCCLocation = function(gameState, template)
+Headquarters.prototype.findStrategicCCLocation = function(gameState, template)
 {
 	// This builds a map. The procedure is fairly simple.
 	// We minimize the Sum((dist - 300)^2) where the sum is on the three nearest allied CC
@@ -1011,7 +1011,7 @@ Headquarter.prototype.findStrategicCCLocation = function(gameState, template)
  * To do so, we suppose that the gain/distance is an increasing function of distance and look for the max distance
  * for performance reasons.
  */
-Headquarter.prototype.findMarketLocation = function(gameState, template)
+Headquarters.prototype.findMarketLocation = function(gameState, template)
 {
 	let markets = gameState.updatingCollection("diplo-ExclusiveAllyMarkets", filters.byClass("Trade"),
 		gameState.getExclusiveAllyEntities()).toEntityArray();
@@ -1132,7 +1132,7 @@ Headquarter.prototype.findMarketLocation = function(gameState, template)
  * Returns the best position to build defensive buildings (fortress and towers)
  * Whose primary function is to defend our borders
  */
-Headquarter.prototype.findDefensiveLocation = function(gameState, template)
+Headquarters.prototype.findDefensiveLocation = function(gameState, template)
 {
 	// We take the point in our territory which is the nearest to any enemy cc
 	// but requiring a minimal distance with our other defensive structures
@@ -1270,7 +1270,7 @@ Headquarter.prototype.findDefensiveLocation = function(gameState, template)
 	return [x, z, this.baseAtIndex(bestJdx)];
 };
 
-Headquarter.prototype.buildTemple = function(gameState, queues)
+Headquarters.prototype.buildTemple = function(gameState, queues)
 {
 	// at least one market (which have the same queue) should be build before any temple
 	if (queues.economicBuilding.hasQueuedUnits() ||
@@ -1289,7 +1289,7 @@ Headquarter.prototype.buildTemple = function(gameState, queues)
 	queues.economicBuilding.addPlan(new ConstructionPlan(gameState, templateName));
 };
 
-Headquarter.prototype.buildMarket = function(gameState, queues)
+Headquarters.prototype.buildMarket = function(gameState, queues)
 {
 	if (gameState.getOwnEntitiesByClass("Market", true).hasEntities() ||
 		!this.canBuild(gameState, "structures/{civ}/market"))
@@ -1324,13 +1324,13 @@ Headquarter.prototype.buildMarket = function(gameState, queues)
 	queues.economicBuilding.addPlan(plan);
 };
 
-/** Build a granary */
-Headquarter.prototype.buildGranary = function(gameState, queues)
+/** Build a Granary */
+Headquarters.prototype.buildGranary = function(gameState, queues)
 {
 	// Only build one granary for the time being ("DropsiteFood" does not refer to CCs)
 	if (gameState.getOwnEntitiesByClass("Granary", true).hasEntities())
 		return;
-	// Wait to have at least one dropsite and house before the granary
+	// Wait to have at least one dropsite and house before the Granary
 	if (!gameState.getOwnEntitiesByClass("Storehouse", true).hasEntities())
 		return;
 	if (!gameState.getOwnEntitiesByClass("House", true).hasEntities())
@@ -1347,7 +1347,7 @@ Headquarter.prototype.buildGranary = function(gameState, queues)
  * Try to build a wonder when required
  * force = true when called from the victoryManager in case of Wonder victory condition.
  */
-Headquarter.prototype.buildWonder = function(gameState, queues, force = false)
+Headquarters.prototype.buildWonder = function(gameState, queues, force = false)
 {
 	if (queues.wonder && queues.wonder.hasQueuedUnits() ||
 	    gameState.getOwnEntitiesByClass("Wonder", true).hasEntities() ||
@@ -1377,7 +1377,7 @@ Headquarter.prototype.buildWonder = function(gameState, queues, force = false)
 };
 
 /** Build a corral, and train animals there */
-Headquarter.prototype.manageCorral = function(gameState, queues)
+Headquarters.prototype.manageCorral = function(gameState, queues)
 {
 	if (queues.corral.hasQueuedUnits())
 		return;
@@ -1424,7 +1424,7 @@ Headquarter.prototype.manageCorral = function(gameState, queues)
  * build more houses if needed.
  * kinda ugly, lots of special cases to both build enough houses but not tooo many…
  */
-Headquarter.prototype.buildMoreHouses = function(gameState, queues)
+Headquarters.prototype.buildMoreHouses = function(gameState, queues)
 {
 	let houseTemplateString = "structures/{civ}/apartment";
 	if (!gameState.isTemplateAvailable(gameState.applyCiv(houseTemplateString)) ||
@@ -1518,7 +1518,7 @@ Headquarter.prototype.buildMoreHouses = function(gameState, queues)
 };
 
 /** Checks the status of the territory expansion. If no new economic bases created, build some strategic ones. */
-Headquarter.prototype.checkBaseExpansion = function(gameState, queues)
+Headquarters.prototype.checkBaseExpansion = function(gameState, queues)
 {
 	if (queues.civilCentre.hasQueuedUnits())
 		return;
@@ -1554,7 +1554,7 @@ Headquarter.prototype.checkBaseExpansion = function(gameState, queues)
 	}
 };
 
-Headquarter.prototype.buildNewBase = function(gameState, queues, resource)
+Headquarters.prototype.buildNewBase = function(gameState, queues, resource)
 {
 	if (this.hasPotentialBase() && this.currentPhase == 1 && !gameState.isResearching(gameState.getPhaseName(2)))
 		return false;
@@ -1588,7 +1588,7 @@ Headquarter.prototype.buildNewBase = function(gameState, queues, resource)
 };
 
 /** Deals with building fortresses and towers along our border with enemies. */
-Headquarter.prototype.buildDefenses = function(gameState, queues)
+Headquarters.prototype.buildDefenses = function(gameState, queues)
 {
 	if (this.saveResources && !this.canBarter || queues.defenseBuilding.hasQueuedUnits())
 		return;
@@ -1647,7 +1647,7 @@ Headquarter.prototype.buildDefenses = function(gameState, queues)
 	}
 };
 
-Headquarter.prototype.buildForge = function(gameState, queues)
+Headquarters.prototype.buildForge = function(gameState, queues)
 {
 	if (this.getAccountedPopulation(gameState) < this.Config.Military.popForForge ||
 		queues.militaryBuilding.hasQueuedUnits() || gameState.getOwnEntitiesByClass("Forge", true).length)
@@ -1664,7 +1664,7 @@ Headquarter.prototype.buildForge = function(gameState, queues)
  * Deals with constructing military buildings (e.g. barracks, stable).
  * They are mostly defined by Config.js. This is unreliable since changes could be done easily.
  */
-Headquarter.prototype.constructTrainingBuildings = function(gameState, queues)
+Headquarters.prototype.constructTrainingBuildings = function(gameState, queues)
 {
 	if (this.saveResources && !this.canBarter || queues.militaryBuilding.hasQueuedUnits())
 		return;
@@ -1779,7 +1779,7 @@ Headquarter.prototype.constructTrainingBuildings = function(gameState, queues)
 /**
  *  Find base nearest to ennemies for military buildings.
  */
-Headquarter.prototype.findBestBaseForMilitary = function(gameState)
+Headquarters.prototype.findBestBaseForMilitary = function(gameState)
 {
 	const ccEnts = gameState.updatingGlobalCollection("allCCs", filters.byClass("CivCentre")).toEntityArray();
 	let bestBase;
@@ -1815,7 +1815,7 @@ Headquarter.prototype.findBestBaseForMilitary = function(gameState)
  * train with highest priority ranged infantry in the nearest civil center from a given set of positions
  * and garrison them there for defense
  */
-Headquarter.prototype.trainEmergencyUnits = function(gameState, positions)
+Headquarters.prototype.trainEmergencyUnits = function(gameState, positions)
 {
 	if (gameState.ai.queues.emergency.hasQueuedUnits())
 		return false;
@@ -1920,7 +1920,7 @@ Headquarter.prototype.trainEmergencyUnits = function(gameState, positions)
 	return true;
 };
 
-Headquarter.prototype.canBuild = function(gameState, structure)
+Headquarters.prototype.canBuild = function(gameState, structure)
 {
 	const type = gameState.applyCiv(structure);
 	if (this.buildManager.isUnbuildable(gameState, type))
@@ -1974,7 +1974,7 @@ Headquarter.prototype.canBuild = function(gameState, structure)
 	return true;
 };
 
-Headquarter.prototype.updateTerritories = function(gameState)
+Headquarters.prototype.updateTerritories = function(gameState)
 {
 	const around = [ [-0.7, 0.7], [0, 1], [0.7, 0.7], [1, 0], [0.7, -0.7], [0, -1], [-0.7, -0.7], [-1, 0] ];
 	const alliedVictory = gameState.getAlliedVictory();
@@ -2049,7 +2049,7 @@ Headquarter.prototype.updateTerritories = function(gameState)
 /**
  * returns the base corresponding to baseID
  */
-Headquarter.prototype.getBaseByID = function(baseID)
+Headquarters.prototype.getBaseByID = function(baseID)
 {
 	return this.basesManager.getBaseByID(baseID);
 };
@@ -2059,33 +2059,33 @@ Headquarter.prototype.getBaseByID = function(baseID)
  * ActiveBases includes only those with a built cc
  * PotentialBases includes also those with a cc in construction
  */
-Headquarter.prototype.numActiveBases = function()
+Headquarters.prototype.numActiveBases = function()
 {
 	return this.basesManager.numActiveBases();
 };
 
-Headquarter.prototype.hasActiveBase = function()
+Headquarters.prototype.hasActiveBase = function()
 {
 	return this.basesManager.hasActiveBase();
 };
 
-Headquarter.prototype.numPotentialBases = function()
+Headquarters.prototype.numPotentialBases = function()
 {
 	return this.basesManager.numPotentialBases();
 };
 
-Headquarter.prototype.hasPotentialBase = function()
+Headquarters.prototype.hasPotentialBase = function()
 {
 	return this.basesManager.hasPotentialBase();
 };
 
-Headquarter.prototype.isDangerousLocation = function(gameState, pos, radius)
+Headquarters.prototype.isDangerousLocation = function(gameState, pos, radius)
 {
 	return this.isNearInvadingArmy(pos) || this.isUnderEnemyFire(gameState, pos, radius);
 };
 
 /** Check that the chosen position is not too near from an invading army */
-Headquarter.prototype.isNearInvadingArmy = function(pos)
+Headquarters.prototype.isNearInvadingArmy = function(pos)
 {
 	for (const army of this.defenseManager.armies)
 		if (army.foePosition && SquareVectorDistance(army.foePosition, pos) < 12000)
@@ -2093,7 +2093,7 @@ Headquarter.prototype.isNearInvadingArmy = function(pos)
 	return false;
 };
 
-Headquarter.prototype.isUnderEnemyFire = function(gameState, pos, radius = 0)
+Headquarters.prototype.isUnderEnemyFire = function(gameState, pos, radius = 0)
 {
 	if (!this.turnCache.firingStructures)
 	{
@@ -2110,7 +2110,7 @@ Headquarter.prototype.isUnderEnemyFire = function(gameState, pos, radius = 0)
 };
 
 /** Compute the capture strength of all units attacking a capturable target */
-Headquarter.prototype.updateCaptureStrength = function(gameState)
+Headquarters.prototype.updateCaptureStrength = function(gameState)
 {
 	this.capturableTargets.clear();
 	for (const ent of gameState.getOwnUnits().values())
@@ -2163,7 +2163,7 @@ Headquarter.prototype.updateCaptureStrength = function(gameState)
 /**
  * Check if a structure in blinking territory should/can be defended (currently if it has some attacking armies around)
  */
-Headquarter.prototype.isDefendable = function(ent)
+Headquarters.prototype.isDefendable = function(ent)
 {
 	if (!this.turnCache.numAround)
 		this.turnCache.numAround = {};
@@ -2175,7 +2175,7 @@ Headquarter.prototype.isDefendable = function(ent)
 /**
  * Get the number of population already accounted for
  */
-Headquarter.prototype.getAccountedPopulation = function(gameState)
+Headquarters.prototype.getAccountedPopulation = function(gameState)
 {
 	if (this.turnCache.accountedPopulation == undefined)
 	{
@@ -2199,7 +2199,7 @@ Headquarter.prototype.getAccountedPopulation = function(gameState)
 /**
  * Get the number of workers already accounted for
  */
-Headquarter.prototype.getAccountedWorkers = function(gameState)
+Headquarters.prototype.getAccountedWorkers = function(gameState)
 {
 	if (this.turnCache.accountedWorkers == undefined)
 	{
@@ -2218,7 +2218,7 @@ Headquarter.prototype.getAccountedWorkers = function(gameState)
 	return this.turnCache.accountedWorkers;
 };
 
-Headquarter.prototype.baseManagers = function()
+Headquarters.prototype.baseManagers = function()
 {
 	return this.basesManager.baseManagers;
 };
@@ -2227,7 +2227,7 @@ Headquarter.prototype.baseManagers = function()
  * @param {number} territoryIndex - The index to get the map for.
  * @return {number} - The ID of the base at the given territory index.
  */
-Headquarter.prototype.baseAtIndex = function(territoryIndex)
+Headquarters.prototype.baseAtIndex = function(territoryIndex)
 {
 	return this.basesManager.baseAtIndex(territoryIndex);
 };
@@ -2236,7 +2236,7 @@ Headquarter.prototype.baseAtIndex = function(territoryIndex)
  * Some functions are run every turn
  * Others once in a while
  */
-Headquarter.prototype.update = function(gameState, queues, events)
+Headquarters.prototype.update = function(gameState, queues, events)
 {
 	Engine.ProfileStart("Headquarters update");
 	this.emergencyManager.update(gameState);
@@ -2346,7 +2346,7 @@ Headquarter.prototype.update = function(gameState, queues, events)
 	Engine.ProfileStop();
 };
 
-Headquarter.prototype.Serialize = function()
+Headquarters.prototype.Serialize = function()
 {
 	const properties = {
 		"phasing": this.phasing,
@@ -2408,7 +2408,7 @@ Headquarter.prototype.Serialize = function()
 	};
 };
 
-Headquarter.prototype.Deserialize = function(gameState, data)
+Headquarters.prototype.Deserialize = function(gameState, data)
 {
 	for (const key in data.properties)
 		this[key] = data.properties[key];

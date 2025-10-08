@@ -246,7 +246,7 @@ ConstructionPlan.prototype.findGoodPosition = function(gameState)
 				}
 				else if (template.hasClass("Granary") && !ent.hasClasses(["Field", "Corral"]) &&
 					ent.hasClasses(["Gate", "!Wall"]))
-					placement.addInfluence(x, z, 100 / cellSize, -25);       // move granarys away to make room (Wall test needed for iber)
+					placement.addInfluence(x, z, 100 / cellSize, -25);       // move Granaries away to make room (Wall test needed for iber)
 				else if (template.hasClass("GarrisonFortress") && ent.hasClass("House"))
 					placement.addInfluence(x, z, 120 / cellSize, -50);
 				else if (template.hasClass("Military"))

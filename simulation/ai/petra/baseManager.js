@@ -653,17 +653,17 @@ BaseManager.prototype.setWorkersIdleByPriority = function(gameState)
 /**
  * Switch some gatherers (limited to number) from resource "from" to resource "to"
  * and return remaining number of possible switches.
- * Prefer FemaleCitizen for food and CitizenSoldier for other resources.
+ * Prefer Slaves for food and Villager, aka Citizen Civilians, for other resources.
  */
 BaseManager.prototype.switchGatherer = function(gameState, from, to, number)
 {
 	let num = number;
 	let only;
 	const gatherers = this.gatherersByType(gameState, from);
-	if (from == "food" && gatherers.filter(filters.byClass("CitizenSoldier")).hasEntities())
-		only = "CitizenSoldier";
-	else if (to == "food" && gatherers.filter(filters.byClass("FemaleCitizen")).hasEntities())
-		only = "FemaleCitizen";
+	if (from == "food" && gatherers.filter(filters.byClass("Villager")).hasEntities())
+		only = "Villager";
+	else if (to == "food" && gatherers.filter(filters.byClass("Slave")).hasEntities())
+		only = "Slave";
 
 	for (const ent of gatherers.values())
 	{
