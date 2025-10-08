@@ -47,7 +47,7 @@ ProductionQueue.prototype.ProgressTimeout = function(data, lateness)
 				const cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
 				cmpGUIInterface.PushNotification({
 					"players": [QueryOwnerInterface(this.entity).GetPlayerID()],
-					"message": markForTranslation("Could not auto-queue unit, skipping to next item."), //DE - Wording
+					"message": markForTranslation("Could not auto-queue unit, skipping to next item."), //<<< DE - Wording
 					"translateMessage": true
 				});
 			}
