@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support">
+  <VisualActor>
+    <Actor>units/hellenes/citizen_{phenotype}.xml</Actor>
+  </VisualActor>
   <Attack>
+    <Capture>
+      <AttackName>Capture</AttackName>
+      <Capture>1.0</Capture>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">Field Palisade Wall</RestrictedClasses>
+    </Capture>
     <Melee>
       <AttackName>Knife</AttackName>
       <Damage>
@@ -110,9 +120,9 @@
       male
       male
     </Phenotype>
-    <VisibleClasses datatype="tokens">Builder Gatherer Citizen TaxPayer</VisibleClasses>
+    <VisibleClasses datatype="tokens">Builder Gatherer Citizen Civilian TaxPayer</VisibleClasses>
     <SelectionGroupName>template_unit_support_citizen</SelectionGroupName>
-    <Classes datatype="tokens">Worker Civilian IdleWorker Villager</Classes>
+    <Classes datatype="tokens">Worker IdleWorker Villager</Classes>
     <Tooltip>Construct Buildings and gather resources. Command nearby Slaves to work faster. Especially good at building.
 Traits: Low Cost, Low Health, Slow Speed, Light Armor, Weak Attack, Avoids Death.
 Good at: Building and Dying.
