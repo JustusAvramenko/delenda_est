@@ -21,6 +21,7 @@ function Music()
 
 	this.RELATIVE_MUSIC_PATH = "audio/music/";
 	this.MUSIC = {
+		"MENU": "menu",
 		"PEACE": "peace",
 		"BATTLE": "battle",
 		"VICTORY": "victory",
@@ -51,16 +52,39 @@ function Music()
 	this.time = Date.now();
 }
 
+Music.prototype.DEFAULT_MENU_TRACKS = [
+	"The_Governor.ogg"
+];
+
+Music.prototype.DEFAULT_PEACE_TRACKS = [];
+
+Music.prototype.DEFAULT_BATTLE_TRACKS = [
+	"Taiko_1.ogg",
+	"Taiko_2.ogg"
+];
+
+Music.prototype.DEFAULT_VICTORY_TRACKS = [
+	"Going_Home.ogg"
+];
+
+Music.prototype.DEFAULT_DEFEAT_TRACKS = [
+	"The_Climb.ogg"
+];
+
+Music.prototype.DEFAULT_CUSTOM_TRACKS = [];
+
+Music.prototype.completeTracks = function()
+{
+	for (const musicType of Object.keys(this.MUSIC))
+		if (!this.tracks[musicType] || this.tracks[musicType].length === 0)
+			this.tracks[musicType] = this["DEFAULT_" + musicType + "_TRACKS"];
+};
+
 Music.prototype.resetTracks = function()
 {
-	this.tracks = {
-		"MENU": ["The_Governor.ogg"],
-		"PEACE": [],
-		"BATTLE": ["Taiko_1.ogg", "Taiko_2.ogg"],
-		"VICTORY": ["Going_Home.ogg"],
-		"DEFEAT": ["The_Climb.ogg"],
-		"CUSTOM": []
-	};
+	this.tracks = {};
+	for (const musicType of Object.keys(this.MUSIC))
+		this.tracks[musicType] = this["DEFAULT_" + musicType + "_TRACKS"];
 };
 
 // "reference" refers to this instance of Music (needed if called from the timer)
@@ -118,11 +142,13 @@ Music.prototype.updateState = function()
 
 Music.prototype.storeTracks = function(civMusic)
 {
-	this.resetTracks();
-	for (let music of civMusic)
+	for (const musicType of Object.keys(this.MUSIC))
+		this.tracks[musicType] = [];
+
+	for (const music of civMusic)
 	{
 		let type;
-		for (let i in this.MUSIC)
+		for (const i in this.MUSIC)
 			if (music.Type == this.MUSIC[i])
 			{
 				type = i;
@@ -137,12 +163,14 @@ Music.prototype.storeTracks = function(civMusic)
 
 		this.tracks[type].push(music.File);
 	}
+
+	this.completeTracks();
 };
 
 Music.prototype.startPlayList = function(tracks, fadeInPeriod, isLooping)
 {
 	Engine.ClearPlaylist();
-	for (let i in tracks)
+	for (const i in tracks)
 		Engine.AddPlaylistItem(this.RELATIVE_MUSIC_PATH + tracks[i]);
 
 	Engine.StartPlaylist(isLooping);
