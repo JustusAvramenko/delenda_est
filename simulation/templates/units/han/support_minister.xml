@@ -13,17 +13,26 @@
         <Hack>10</Hack>
       </Damage>
       <MaxRange>3</MaxRange>
-      <PrepareTime>500</PrepareTime>
+      <PrepareTime>900</PrepareTime>
       <RepeatTime>1000</RepeatTime>
       <PreferredClasses datatype="tokens">Unit+!Ship</PreferredClasses>
     </Melee>
+    <Slaughter>
+      <AttackName>Slaughter</AttackName>
+      <Damage>
+        <Hack>200.0</Hack>
+      </Damage>
+      <MaxRange>4.0</MaxRange>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">!Domestic</RestrictedClasses>
+    </Slaughter>
   </Attack>
   <Auras datatype="tokens">
     units/heroes/han_minister_cost
     units/heroes/han_minister_garrison
     units/heroes/han_minister_gathering
     units/heroes/han_minister_building
-    units/han_minister_garrison_ministry
   </Auras>
   <Cost>
     <Population>2</Population>
