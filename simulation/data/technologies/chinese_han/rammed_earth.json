@@ -1,0 +1,26 @@
+{
+	"genericName": "Rammed Earth",
+	"description": "",
+	"cost": {
+		"wood": 100,
+		"stone": 100
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any":[
+				{ "civ": "han" },
+				{ "civ": "xion" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "rammed_earth.png",
+	"researchTime": 50,
+	"tooltip": "Structures +2 crush armor.",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 2.0 }
+	],
+	"affects": ["NotField"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
