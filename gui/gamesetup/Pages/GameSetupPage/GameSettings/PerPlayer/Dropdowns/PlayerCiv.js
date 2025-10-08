@@ -9,6 +9,7 @@ PlayerSettingControls.PlayerCiv = class PlayerCiv extends GameSettingControlDrop
         this.items = this.getItems(false);
         this.allItems = this.getItems(true);
         this.wasLocked = undefined;
+        this.values = prepareForDropdown(this.items);
 
         this.rebuild();
     }
@@ -26,7 +27,7 @@ PlayerSettingControls.PlayerCiv = class PlayerCiv extends GameSettingControlDrop
 
     rebuild()
     {
-        const isLocked = g_GameSettings.playerCiv.locked[this.playerIndex];
+        const isLocked = g_GameSettings.playerCiv.locked[this.playerIndex] || this.isSavedGame;
         if (this.wasLocked !== isLocked)
         {
             this.wasLocked = isLocked;
@@ -50,38 +51,38 @@ PlayerSettingControls.PlayerCiv = class PlayerCiv extends GameSettingControlDrop
 
     getItems(allItems)
     {
-        let values = [];
+        const values = [];
 
-        for (let civ in g_CivData)
+        for (const civ in g_CivData)
             if (allItems || g_CivData[civ].SelectableInGameSetup)
                 values.push({
                     "name": g_CivData[civ].Name,
                     "autocomplete": g_CivData[civ].Name,
                     "tooltip": g_CivData[civ].History,
                     "civ": civ,
-					"random": false
+                    "random": false
                 });
 
-		values.sort(sortNameIgnoreCase);
+        values.sort(sortNameIgnoreCase);
 
-		let random_civ_groups = g_RandomCivGroups.map((group) => ({
-			'name': setStringTags('Random/' + group.Title,
-				group.Color ? { "color": group.Color } : this.RandomItemTags),
-			'civ': sprintf('random.%s', group.Code),
-			'autocomplete': group.Title,
-			'tooltip': group.Tooltip,
-			'gui_order': group.GUIOrder,
-			'random': true
-		})).sort((a, b) => a.gui_order - b.gui_order);
+        let random_civ_groups = g_RandomCivGroups.map((group) => ({
+            'name': setStringTags('Random/' + group.Title,
+                group.Color ? { "color": group.Color } : this.RandomItemTags),
+            'civ': sprintf('random.%s', group.Code),
+            'autocomplete': group.Title,
+            'tooltip': group.Tooltip,
+            'gui_order': group.GUIOrder,
+            'random': true
+        })).sort((a, b) => a.gui_order - b.gui_order);
 
-		values.unshift(... random_civ_groups);
+        values.unshift(... random_civ_groups);
 
         values.unshift({
             "name": setStringTags(this.RandomCivCaption, this.RandomItemTags),
             "autocomplete": this.RandomCivCaption,
             "tooltip": this.RandomCivTooltip,
             "civ": this.RandomCivId,
-			'random': true
+            'random': true
         });
 
         return values;
