@@ -1,0 +1,20 @@
+{
+	"genericName": "Phalanx Replenishment",
+	"description": "Calling up infantry levies in time of war helps bolster the ranks of a king's army.",
+	"cost": {
+		"coin": 400,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "helmet_phrygian_gold.png",
+	"researchTime": 40,
+	"tooltip": "Phalangite Pike Infantry −33% train time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.67 }
+	],
+	"affects": ["Infantry Pike"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
