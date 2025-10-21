@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="autobuild|template_structure_military_barracks">
+<Entity parent="autobuild|template_structure_military_academy">
   <Attack>
     <Ranged>
       <AttackName>Arrow</AttackName>
@@ -50,6 +50,7 @@
     <Resources>
       <wood>200</wood>
       <stone>0</stone>
+      <metal>0</metal>
       <glory>200</glory>
     </Resources>
   </Cost>
@@ -58,7 +59,7 @@
     <Height>12.0</Height>
   </Footprint>
   <GarrisonHolder>
-    <List datatype="tokens">Champion Hero</List>
+    <List datatype="tokens">Champion Hero Siege</List>
   </GarrisonHolder>
   <Health>
     <Max>1000</Max>
@@ -69,11 +70,12 @@
     <Lang>mandarin</Lang>
     <GenericName>Royal Yurt</GenericName>
     <SpecificName>Dìguó Xuéyuàn</SpecificName>
-    <Tooltip>Train Heroes, Champions and research Special Technologies.</Tooltip>
-    <VisibleClasses datatype="tokens">Village Royal_Yurt</VisibleClasses>
+    <Tooltip>Train Heroes, Champions and research Special Technologies. Must be built within 60 meters of a Civic Center.</Tooltip>
+    <VisibleClasses datatype="tokens">-City Village Royal_Yurt</VisibleClasses>
     <Icon>structures/academy_germ.png</Icon>
     <Requirements>
       <Techs datatype="tokens">
+        -phase_city
         phase_village
       </Techs>
     </Requirements>
@@ -86,10 +88,9 @@
   </Population>
   <Researcher>
     <Technologies datatype="tokens">
-      -training_levy_infantry_barracks
-      -training_mobilization
-      -training_total_war
+      pair_champ_02
       attack_capture_siege_ladders
+      successors/special_war_horses
     </Technologies>
   </Researcher>
   <Sound>
@@ -103,14 +104,6 @@
   <TerritoryInfluence disable=""/>
   <Trainer>
     <Entities datatype="tokens">
-      -units/{civ}/infantry_axeman_b
-      -units/{civ}/infantry_spearman_b
-      -units/{civ}/infantry_pikeman_b
-      -units/{civ}/infantry_swordsman_b
-      units/{civ}/champion_infantry_spearman
-      units/{civ}/champion_infantry_archer
-      units/{civ}/champion_cavalry
-      units/{civ}/champion_cavalry_archer
       units/{civ}/siege_ram
     </Entities>
   </Trainer>

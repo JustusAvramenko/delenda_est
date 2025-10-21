@@ -2,13 +2,12 @@
 	"genericName": "Migratory Resettlement",
 	"description": "The migration of the Cimbrian Confederation into Gaul gave rise to independent communities and settlements.",
 	"cost": {
-		"wood": 200,
-		"stone": 200,
-		"metal": 200
+		"food": 200,
+		"glory": 200
 	},
 	"requirements": {
 		"all": [
-			{ "tech": "phase_city" },
+			{ "tech": "phase_town" },
 			{"any": [
 				{ "civ": "germ" },
 				{ "civ": "cimb" },
@@ -20,10 +19,12 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "laurel_wreath.png",
 	"researchTime": 40,
-	"tooltip": "Non-defensive Structures do not decay to neutral or enemy territory.",
+	"tooltip": "Most Germanic Structures (except Fortresses and Walls) buildable in neutral and allied territory, but −25% health.",
 	"modifications": [
-		{ "value": "TerritoryDecay/DecayRate", "multiply": 0.00001 }
+		{ "value": "Health/Max", "multiply": 0.75 },
+		{ "value": "BuildRestrictions/Territory", "replace": "own neutral allied" },
+		{ "value": "TerritoryInfluence/Radius", "replace": 0 }
 	],
-	"affects": [ "Structure !Defensive" ],
+	"affects": [ "Structure !CivCentre !Fortress !Wall" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

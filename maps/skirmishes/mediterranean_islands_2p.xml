@@ -3,10 +3,10 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>cirrus</SkySet>
-		<SunColor r="0.956863" g="0.92549" b="0.807843"/>
+		<SunColor r="0.956863" g="0.921569" b="0.803922"/>
 		<SunElevation angle="0.738976"/>
 		<SunRotation angle="-0.529247"/>
-		<AmbientColor r="0.376471" g="0.368627" b="0.341176"/>
+		<AmbientColor r="0.376471" g="0.364706" b="0.337255"/>
 		<Fog>
 			<FogFactor>0.0012207</FogFactor>
 			<FogThickness>0.0351563</FogThickness>
@@ -15,8 +15,8 @@
 		<Water>
 			<WaterBody>
 				<Type>ocean</Type>
-				<Color r="0.196078" g="0.541176" b="0.819608"/>
-				<Tint r="0.4" g="1" b="0.835294"/>
+				<Color r="0.192157" g="0.537255" b="0.819608"/>
+				<Tint r="0.4" g="1" b="0.831373"/>
 				<Height>20.0394</Height>
 				<Waviness>5.00977</Waviness>
 				<Murkiness>0.882813</Murkiness>
@@ -32,42 +32,25 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="598.484" y="96.4977" z="914.08"/>
+		<Position x="599.584" y="95.026" z="912.223"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
-  "Name": "Unnamed map",
-  "Description": "Give an interesting description of your map.",
-  "PlayerData": [
-    null,
-    {
-      "Civ": "athen"
-    },
-    {
-      "Civ": "brit"
-    },
-    {
-      "Civ": "cart"
-    },
-    {
-      "Civ": "epir"
-    },
-    {
-      "Civ": "gaul"
-    },
-    {
-      "Civ": "han"
-    },
-    {
-      "Civ": "iber"
-    },
-    {
-      "Civ": "kush"
-    }
-  ],
+  "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
+  "Description": "Give an interesting description of your map.",
+  "Keywords": [],
+  "LockTeams": false,
+  "Name": "Mediterannean Islands (2 players)",
+  "PlayerData": [
+    {},
+    {}
+  ],
+  "Preview": "",
+  "RevealMap": false,
   "VictoryConditions": [
     "conquest_structures"
   ]

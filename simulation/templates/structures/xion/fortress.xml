@@ -3,6 +3,11 @@
   <BuildRestrictions>
     <Territory>own neutral ally</Territory>
   </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>5000</CapturePoints>
+    <RegenRate>0</RegenRate>
+    <GarrisonRegenRate>3</GarrisonRegenRate>
+  </Capturable>
   <Footprint>
     <Square width="30.0" depth="30.0"/>
     <Height>12.0</Height>
@@ -17,17 +22,20 @@
   </Obstruction>
   <Researcher>
     <Technologies datatype="tokens">
+      -pair_champ_02
+      -mauryas/health_warrior_caste
+      -successors/special_war_horses
+      -attack_capture_siege_ladders
+      -carthaginians/special_triple_walls
       range_defensive_loopholes
       range_defensive_murderholes
-      attack_capture_siege_ladders
     </Technologies>
   </Researcher>
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
   <Trainer>
     <Entities datatype="tokens">
-      units/{civ}/champion_cavalry
-      units/{civ}/siege_ram
+      units/xion/siege_catapult_packed
     </Entities>
   </Trainer>
   <VisualActor>

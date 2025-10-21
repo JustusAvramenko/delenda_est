@@ -1,6 +1,6 @@
 {
 	"genericName": "Ashoka's Proselytism",
-	"description": "All of the player's Temple technologies are free and research instantly.",
+	"description": "All of the player's Temple technologies are free of resource cost.",
 	"cost": {
 		"coin": 100, 
 		"glory": 100
@@ -14,15 +14,14 @@
 	"requirementsTooltip": "Unlocked in Town Phase after choosing the hero Ashoka.",
 	"icon": "high_priest.png",
 	"researchTime": 60,
-	"tooltip": "All Temple technologies are free and research instantly.",
+	"tooltip": "Temple technologies are free of resource cost, but still take time to research.",
 	"modifications": [
 		{ "value": "Researcher/TechCostMultiplier/wood", "replace": 0 },
 		{ "value": "Researcher/TechCostMultiplier/food", "replace": 0 },
 		{ "value": "Researcher/TechCostMultiplier/metal", "replace": 0 },
 		{ "value": "Researcher/TechCostMultiplier/stone", "replace": 0 },
 		{ "value": "Researcher/TechCostMultiplier/coin", "replace": 0 },
-		{ "value": "Researcher/TechCostMultiplier/glory", "replace": 0 },
-		{ "value": "Researcher/TechCostMultiplier/time", "replace": 0 }
+		{ "value": "Researcher/TechCostMultiplier/glory", "replace": 0 }
 	],
 	"affects": ["Temple"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
