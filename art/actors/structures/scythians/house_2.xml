@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Scythians House">
+      <textures>
+        <texture file="structural/scyth/struct.png" name="baseTex"/>
+        <texture file="structural/scyth/struct_spec.png" name="specTex"/>
+        <texture file="structural/scyth/struct_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="House 01">
+      <mesh>structural/scythians/house_01.dae</mesh>
+      <props>
+        <prop actor="props/structures/scythians/cloth.xml" attachpoint="cloth_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/cloth.xml" attachpoint="cloth_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/stool.xml" attachpoint="stool" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/food_sack_big.xml" attachpoint="sack_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/food_sack_big.xml" attachpoint="sack_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/pot.xml" attachpoint="jar" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/carpet_barrel.xml" attachpoint="carpet_barrel" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/barrel.xml" attachpoint="barrel_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/barrel.xml" attachpoint="barrel_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/house_carpets.xml" attachpoint="root"/>
+        <prop actor="props/structures/scythians/butter_mixer.xml" attachpoint="mixer" maxheight="20" minheight="-20"/>
+      </props>
+      <textures>
+        <texture file="structural/ao/scyth/house_01_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="House 02">
+      <mesh>structural/scythians/house_02.dae</mesh>
+      <props>
+        <prop actor="props/structures/scythians/cloth.xml" attachpoint="cloth" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/stool.xml" attachpoint="stool_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/stool.xml" attachpoint="stool_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/campfire.xml" attachpoint="campfire" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/sack_big.xml" attachpoint="sack_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/sack_bigger.xml" attachpoint="sack_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/sack_extra_big.xml" attachpoint="sack_03" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/sack_bigger.xml" attachpoint="sack_04" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/pot.xml" attachpoint="pot" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/barrel.xml" attachpoint="barrel" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/house_carpets.xml" attachpoint="root"/>
+        <prop actor="particle/smoke_curved.xml" attachpoint="smoke"/>
+      </props>
+      <textures>
+        <texture file="structural/ao/scyth/house_02_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="House 03">
+      <mesh>structural/scythians/house_03.dae</mesh>
+      <props>
+        <prop actor="props/structures/scythians/house_pelt.xml" attachpoint="root"/>
+        <prop actor="props/structures/scythians/cloth.xml" attachpoint="cloth" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/stool.xml" attachpoint="stool_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/stool.xml" attachpoint="stool_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/stool.xml" attachpoint="stool_03" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/sack_med.xml" attachpoint="sack_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/sack_big.xml" attachpoint="sack_03" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/sack_bigger.xml" attachpoint="sack_04" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/sack_extra_big.xml" attachpoint="sack_05" maxheight="20" minheight="-20"/>
+        <prop actor="props/special/eyecandy/box_pile.xml" attachpoint="box_pile" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/meat_stand.xml" attachpoint="meat_stand_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/meat_stand.xml" attachpoint="meat_stand_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/table_round.xml" attachpoint="table" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/meat_pieces.xml" attachpoint="meat_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/structures/scythians/meat_pieces.xml" attachpoint="meat_02" maxheight="20" minheight="-20"/>
+        <prop actor="particle/smoke_curved.xml" attachpoint="smoke"/>
+      </props>
+      <textures>
+        <texture file="structural/ao/scyth/house_03_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+    <!--<variant frequency="1" name="House 04">
+      <mesh>structural/scythians/house_04.dae</mesh>
+      <textures>
+        <texture file="structural/ao/scyth/house_04_ao.png" name="aoTex"/>
+      </textures>
+    </variant>-->
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant name="death">
+      <props>
+        <prop attachpoint="root"/>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_1x1.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
