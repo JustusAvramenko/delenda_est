@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="autobuild|template_structure_military_academy">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>20.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>50.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <Origin>
+        <X>0</X>
+        <Y>10</Y>
+        <Z>0</Z>
+      </Origin>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>3000</RepeatTime>
+      <Projectile>
+        <Speed>40.0</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>30.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.1</LineThickness>
+      </RangeOverlay>
+    </Ranged>
+  </Attack>
+  <Auras disable=""/>
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowMultiplier>0.5</GarrisonArrowMultiplier>
+    <MaxArrowCount>10</MaxArrowCount>
+  </BuildingAI>
+  <BuildRestrictions>
+    <Category>Royal_Yurt</Category>
+    <Distance>
+      <FromClass>CivicCenter</FromClass>
+      <MaxDistance>60</MaxDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <wood>200</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+      <glory>200</glory>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="15.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">Champion Hero Siege</List>
+  </GarrisonHolder>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+    <Lang>persian</Lang>
+    <GenericName>Royal Yurt</GenericName>
+    <SpecificName>Paddzahadon Ûrtæ</SpecificName>
+    <Tooltip>Train Heroes, Battering Rams, and Champions. Research Special Technologies. Must be built within 60 meters of a Civic Center.</Tooltip>
+    <VisibleClasses datatype="tokens">-City Village Royal_Yurt</VisibleClasses>
+    <Icon>structures/academy_scyth.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_village
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens">
+      pair_champ_02
+      attack_capture_siege_ladders
+      successors/special_war_horses
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_tholos.xml</select>
+      <constructed>interface/complete/building/complete_tholos.xml</constructed>
+      <upgraded>interface/complete/building/complete_tholos.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/hero_ateas_infantry
+      units/{civ}/hero_tomyris_infantry
+      units/{civ}/hero_skilurus_infantry
+      units/{civ}/siege_ram
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/scythians/champions_yurt_unpacked.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>
