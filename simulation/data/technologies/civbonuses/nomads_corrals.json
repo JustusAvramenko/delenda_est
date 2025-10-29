@@ -1,0 +1,24 @@
+{
+	"genericName": "Pastoralism",
+	"autoResearch": true,
+	"description": "Nomadic Tribes had a tradition of husbandry.",
+	"requirements": {
+		"any": [
+			{ "civ": "scyth" },
+			{ "civ": "sarm" },
+			{ "civ": "huns" },
+			{ "civ": "xion" }
+		]
+	},
+	"icon": "husbandry.png",
+	"tooltip": "Corral technologies −100% research time, but all other Technologies +20% resource cost.",
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/time", "replace": 0, "affects": "Corral" },
+		{ "value": "Researcher/TechCostMultiplier/wood", "multiply": 1.2, "affects": "Structure !CivilCentre !Corral" },
+		{ "value": "Researcher/TechCostMultiplier/food", "multiply": 1.2, "affects": "Structure !CivilCentre !Corral" },
+		{ "value": "Researcher/TechCostMultiplier/stone", "multiply": 1.2, "affects": "Structure !CivilCentre !Corral" },
+		{ "value": "Researcher/TechCostMultiplier/metal", "multiply": 1.2, "affects": "Structure !CivilCentre !Corral" },
+		{ "value": "Researcher/TechCostMultiplier/coin", "multiply": 1.2, "affects": "Structure !CivilCentre !Corral" },
+		{ "value": "Researcher/TechCostMultiplier/glory", "multiply": 1.2, "affects": "Structure !CivilCentre !Corral" }
+	]
+}

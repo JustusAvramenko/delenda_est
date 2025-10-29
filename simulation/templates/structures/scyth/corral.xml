@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="autobuild|template_structure_resource_corral">
+  <BuildRestrictions>
+    <Territory>own neutral ally enemy</Territory>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="15.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>scyth</Civ>
+  </Identity>
+  <Obstruction>
+    <Static width="26.0" depth="26.0"/>
+  </Obstruction>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      gaia/fauna_pig_trainable
+      gaia/fauna_sheep_trainable
+      gaia/fauna_cattle_cow_trainable
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <ConstructionPreview disable=""/>
+    <Actor>structures/scythians/corral.xml</Actor>
+    <FoundationActor>structures/scythians/corral_foundation.xml</FoundationActor>
+  </VisualActor>
+</Entity>
