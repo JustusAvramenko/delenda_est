@@ -2,27 +2,24 @@
 	"genericName": "Falconry",
 	"description": "Falconry is a steppe tradition.",
 	"cost": {
-		"food": 100,
-		"glory": 100
+		"food": 125,
+		"glory": 125
 	},
-	"requirements": { "all": [
-		{ "tech": "corral/training_animals_husbandry" },
-		{ "any":
-			[
-				{ "civ": "huns" },
-				{ "civ": "scyth" },
-				{ "civ": "xion" },
-				{ "civ": "parth" }
-			]
-		}
-	]},
-	"requirementsTooltip": "Requires “Advanced Husbandry” at the Corral.",
+	"requirements":  { "any":
+		[
+			{ "civ": "huns" },
+			{ "civ": "scyth" },
+			{ "civ": "xion" },
+			{ "civ": "parth" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Village Phase.",
 	"icon": "falconry.png",
 	"researchTime": 30,
-	"tooltip": "All Structures and Cavalry +25% vision range. Scouts +25% meat gathering rate.",
+	"tooltip": "All Structures and Cavalry +20% vision range. Scouts +100% meat gathering rate.",
 	"modifications": [
-		{ "value": "Vision/Range", "multiply": 1.25 },
-		{ "value": "ResourceGatherer/Rates/food.meat", "multiply": 1.25 }
+		{ "value": "Vision/Range", "multiply": 1.20 },
+		{ "value": "ResourceGatherer/Rates/food.meat", "multiply": 2.0 }
 	],
 	"affects": ["Structure", "Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

@@ -3,13 +3,31 @@
   <castshadow/>
   <group>
     <variant name="Decoration">
-      <mesh>structural/xion_temple_decoration.dae</mesh>
+      <mesh>structural/scythians/temple_decoration.dae</mesh>
       <textures>
         <texture file="structural/scyth_structure.png" name="baseTex"/>
         <texture file="structural/xion_structure_norm.png" name="normTex"/>
         <texture file="structural/xion_structure_spec.png" name="specTex"/>
         <texture file="structural/ao/xion_corral_ao.png" name="aoTex"/>
       </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_scyth.xml" attachpoint="garrisoned_01" selectable="false"/>
+        <prop actor="props/special/common/garrison_flag_scyth.xml" attachpoint="garrisoned_02" selectable="false"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="" attachpoint="garrisoned_01"/>
+        <prop actor="" attachpoint="garrisoned_02"/>
+      </props>
     </variant>
   </group>
   <material>player_trans_ao_parallax_spec.xml</material>

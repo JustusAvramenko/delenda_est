@@ -12,7 +12,7 @@
       <AttackName>Arrow</AttackName>
       <Damage>
         <Hack>0.0</Hack>
-        <Pierce>10.0</Pierce>
+        <Pierce>8.0</Pierce>
         <Crush>0.0</Crush>
       </Damage>
       <MaxRange>30.0</MaxRange>
@@ -47,15 +47,40 @@
     </Slaughter>
   </Attack>
   <Builder>
-    <Rate>0.75</Rate>
+    <Entities datatype="tokens">
+      -structures/wallset_palisade
+    </Entities>
   </Builder>
   <Identity>
     <Civ>scyth</Civ>
     <Lang>persian</Lang>
     <SpecificName>Scythian Commoner</SpecificName>
     <Icon>units/scyth/support_citizen.png</Icon>
-    <SelectionGroupName>units/{civ}/support_citizen</SelectionGroupName>
   </Identity>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>20</food>
+      <wood>20</wood>
+      <stone>20</stone>
+      <metal>20</metal>
+      <coin>20</coin>
+      <glory>1</glory>
+    </Capacities>
+    <Rates>
+      <food.fruit>0.5</food.fruit>
+      <food.grain>0.25</food.grain>
+      <food.meat>0.5</food.meat>
+      <wood.tree>0.5</wood.tree>
+      <wood.ruins>5.0</wood.ruins>
+      <stone.rock>0.5</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ruins>2</metal.ruins>
+      <metal.ore>0.5</metal.ore>
+      <coin.crops>0.25</coin.crops>
+    </Rates>
+  </ResourceGatherer>
   <VisualActor>
     <Actor>units/scythians/citizen_{phenotype}.xml</Actor>
   </VisualActor>
