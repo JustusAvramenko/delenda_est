@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support">
-  <VisualActor>
-    <Actor>units/hellenes/slave_{phenotype}.xml</Actor>
-  </VisualActor>
   <Capturable>
     <CapturePoints>25</CapturePoints>
     <RegenRate>0</RegenRate>
@@ -38,8 +35,6 @@
     <Phenotype datatype="tokens">
       female
       female
-      male
-      male
       male
     </Phenotype>
     <GenericName>Slave</GenericName>
@@ -123,4 +118,7 @@ Bad at: Defense and Loyalty.</Tooltip>
   <Vision>
     <Range>20</Range>
   </Vision>
+  <VisualActor>
+    <Actor>units/hellenes/slave_{phenotype}.xml</Actor>
+  </VisualActor>
 </Entity>
