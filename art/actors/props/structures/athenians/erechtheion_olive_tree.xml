@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>props/erechtheion_tree.dae.dae</mesh>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="Texture-Branches-1">
+      <textures>
+        <texture file="gaia/aleppo_pine.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Texture-Branches-2">
+      <textures>
+        <texture file="gaia/aleppo_pine_test.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Texture-Branches-3">
+      <textures>
+        <texture file="gaia/aleppo_pine_test2.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans_wind_norm_spec.xml</material>
+</actor>
