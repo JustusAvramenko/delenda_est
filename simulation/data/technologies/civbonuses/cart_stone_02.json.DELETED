@@ -1,0 +1,18 @@
+{
+	"genericName": "Servants",
+	"autoResearch": true,
+	"description": "Hire servants to help quarry stone. Increases stone gathering rates.",
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "cart"}
+		]
+	},
+	"icon": "mining_stone_02.png",
+	"tooltip": "Workers +25% stone gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/stone.rock", "multiply": 1.25 }
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
