@@ -17,7 +17,7 @@ Headquarters.prototype.gameAnalysis = function(gameState)
 {
 	// Analysis of the terrain and the different access regions
 	if (!this.regionAnalysis(gameState))
-		return;
+		return false;
 
 	this.attackManager.init(gameState);
 	this.buildManager.init(gameState);
@@ -57,6 +57,8 @@ Headquarters.prototype.gameAnalysis = function(gameState)
 	// configure our first base strategy
 	if (this.hasPotentialBase())
 		this.configFirstBase(gameState);
+
+	return true;
 };
 
 /**
