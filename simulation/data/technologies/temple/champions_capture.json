@@ -2,8 +2,8 @@
 	"genericName": "Military Cult",
 	"description": "Many cultures had a martial cult which bound warriors together in a brotherhood.",
 	"cost": {
-		"food": 400,
-		"glory": 300
+		"food": 500,
+		"glory": 400
 	},
 	"requirements": {
 		"tech": "phase_empire"
@@ -11,9 +11,10 @@
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "armor_corinthian.png",
 	"researchTime": 50,
-	"tooltip": "Champions +20% capture attack.",
+	"tooltip": "Citizen Soldiers +10% capture attack; Champions +20% capture attack.",
 	"modifications": [
-		{ "value": "Attack/Capture/Capture", "multiply": 1.1, "affects":"Champion" }
+		{ "value": "Attack/Capture/Capture", "multiply": 1.2, "affects":"Champion" },
+		{ "value": "Attack/Capture/Capture", "multiply": 1.1, "affects":"CitizenSoldier" }
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
