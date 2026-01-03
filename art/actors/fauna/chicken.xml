@@ -2,8 +2,7 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="100" name="Mesh">
-      <mesh>skeletal/chicken.dae</mesh>
+    <variant name="Base">
       <textures>
         <texture file="default_norm.png" name="normTex"/>
         <texture file="null_black.dds" name="specTex"/>
@@ -22,20 +21,28 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="feathers-red">
+    <variant frequency="1" name="Rooster">
+      <mesh>skeletal/rooster_01.dae</mesh>
+      <textures>
+        <texture file="skeletal/animal_rooster_01.png" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="4" name="Hen-red">
+      <mesh>skeletal/chicken.dae</mesh>
       <textures>
         <texture file="skeletal/animal_chicken.dds" name="baseTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="feathers-brown">
+    <variant frequency="4" name="Hen-brown">
+      <mesh>skeletal/chicken.dae</mesh>
       <textures>
         <texture file="skeletal/animal_chicken_b.dds" name="baseTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="100" name="Idle"/>
-    <variant name="death">
+    <variant frequency="1" name="Idle"/>
+    <variant frequency="0" name="death">
       <props>
         <prop actor="props/units/blood_01.xml" attachpoint="root"/>
       </props>
