@@ -2,6 +2,14 @@
 <actor version="1">
   <castshadow/>
   <group>
+    <variant>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
     <variant frequency="1" name="small">
       <mesh>props/heads/xion_head_longhair.dae</mesh>
       <props/>
@@ -63,5 +71,5 @@
       <color>205 205 205</color>
     </variant>
   </group>
-  <material>objectcolor.xml</material>
+  <material>objectcolor_norm_spec.xml</material>
 </actor>

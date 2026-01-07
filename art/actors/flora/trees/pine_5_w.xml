@@ -3,16 +3,24 @@
   <castshadow/>
   <group>
     <variant frequency="5" name="snow1">
-      <textures><texture file="gaia/pine_w.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="gaia/pine_w.dds" name="baseTex"/>
+      </textures>
     </variant>
     <variant frequency="4" name="snow2">
-      <textures><texture file="gaia/pine_w2.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="gaia/pine_w2.dds" name="baseTex"/>
+      </textures>
     </variant>
   </group>
   <group>
     <variant frequency="1" name="a5">
       <mesh>gaia/pine5.dae</mesh>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
     </variant>
   </group>
-  <material>basic_trans_wind.xml</material>
+  <material>basic_trans_wind_norm_spec.xml</material>
 </actor>

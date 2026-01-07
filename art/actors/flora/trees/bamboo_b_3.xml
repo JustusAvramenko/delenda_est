@@ -2,6 +2,14 @@
 <actor version="1">
   <castshadow/>
   <group>
+    <variant frequency="1" name="Base">
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
     <variant frequency="1" name="bamboo-g">
       <mesh>gaia/tree_bamboo_a.dae</mesh>
       <textures>
@@ -21,5 +29,5 @@
       </textures>
     </variant>
   </group>
-  <material>basic_trans_wind_grain.xml</material>
+  <material>basic_trans_wind_grain_norm_spec.xml</material>
 </actor>

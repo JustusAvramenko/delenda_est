@@ -11,7 +11,12 @@
         <prop actor="fauna/zebu_c.xml" attachpoint="zebu_e" maxheight="20" minheight="-20"/>
         <prop actor="structures/xiongnu/royal_yurt_charioth_packed.xml" attachpoint="charioth" maxheight="20" minheight="-20"/>
       </props>
-	  <textures><texture file="structural/wrld_wood.dds" name="baseTex"/></textures>
+      <textures>
+        <texture file="structural/wrld_wood.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
     </variant>
   </group>
+  <material>no_trans_norm_spec.xml</material>
 </actor>

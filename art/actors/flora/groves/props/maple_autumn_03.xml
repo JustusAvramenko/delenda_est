@@ -2,6 +2,14 @@
 <actor version="1">
   <castshadow/>
   <group>
+    <variant name="Base">
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
     <variant frequency="1" name="maple_13">
       <mesh>gaia/maple_a.dae</mesh>
       <props>
@@ -34,14 +42,6 @@
     <variant frequency="1" name="d-green3">
       <textures>
         <texture file="gaia/maple_tree_a.png" name="baseTex"/>
-      </textures>
-    </variant>
-  </group>
-  <group>
-    <variant>
-      <textures>
-        <texture file="default_norm.png" name="normTex"/>
-        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
   </group>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Roman Cult Statue">
+      <mesh>props/capitoline_wolf_pedestal.dae</mesh>
+      <props>
+        <prop actor="structures/romans/cult_statue.xml" attachpoint="statue"/>
+      </props>
+      <textures>
+        <texture file="props/wolf_pedestal_diffuse.png" name="baseTex"/>
+        <texture file="props/wolf_pedestal_norm.png" name="normTex"/>
+        <texture file="props/wolf_pedestal_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_small.xml"/>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

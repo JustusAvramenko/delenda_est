@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>structural/imp_romans/watch_tower.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/dirt_2x2.xml" attachpoint="root"/>
+        <prop actor="props/units/shields/clipeus_rome_03.xml" attachpoint="shield2"/>
+        <prop actor="props/units/shields/clipeus_rome_01.xml" attachpoint="shield3"/>
+      </props>
+      <textures>
+        <texture file="structural/imp_struct_2.png" name="baseTex"/>
+        <texture file="structural/imp_struct_2_norm.png" name="normTex"/>
+        <texture file="structural/imp_struct_2_spec.png" name="specTex"/>
+        <texture file="structural/ao/imp_watch_tower.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Shield_01">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_imp_rect_01.xml" attachpoint="shield1"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Shield_02">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_imp_rect_02.xml" attachpoint="shield1"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Shield_03">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_imp_rect_03.xml" attachpoint="shield1"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Shield_04">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_imp_rect_04.xml" attachpoint="shield1"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_small.xml">
+      <props>
+        <prop actor="props/units/shields/rome_parma_e.xml" attachpoint="shield2"/>
+        <prop actor="props/units/shields/rome_parma_a.xml" attachpoint="shield3"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>structural/imp_romans/capitoline.dae</mesh>
+      <props>
+        <prop actor="props/structures/romans_imperial/rome_quadriga_statue.xml" attachpoint="quadriga_statue"/>
+        <prop actor="props/structures/romans_imperial/rome_capitoline_pediment.xml" attachpoint="pediment"/>
+        <prop actor="props/structures/romans_imperial/rome_capitoline_statues.xml" attachpoint="statue"/>
+        <prop actor="props/structures/romans_imperial/rome_capitoline_statues_gold.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/imp_struct_capitol.png" name="baseTex"/>
+        <texture file="structural/imp_struct_capitol_norm.png" name="normTex"/>
+        <texture file="structural/imp_struct_capitol_spec.png" name="specTex"/>
+        <texture file="structural/ao/imp_capitoline.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned" selectable="false"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_large.xml">
+      <props>
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans_imperial/rome_capitoline_statues_gold.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

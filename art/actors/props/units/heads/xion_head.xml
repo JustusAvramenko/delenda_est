@@ -2,10 +2,17 @@
 <actor version="1">
   <castshadow/>
   <group>
+    <variant>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
     <variant name="base">
       <animations/>
       <mesh>props/new/dude_head.dae</mesh>
-      <props/>
     </variant>
   </group>
   <group>
@@ -46,5 +53,5 @@
       <color>205 205 205</color>
     </variant>
   </group>
-  <material>objectcolor.xml</material>
+  <material>objectcolor_norm_spec.xml</material>
 </actor>

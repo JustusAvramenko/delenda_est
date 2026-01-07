@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base" file="structures/defensive_building.xml">
+      <mesh>structural/imp_romans/fortress.dae</mesh>
+      <props>
+        <prop actor="props/structures/romans_imperial/fortress.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_6x6.xml" attachpoint="root"/>
+        <prop actor="props/structures/platforms/stone_24x24.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/imp_struct_2.png" name="baseTex"/>
+        <texture file="structural/imp_struct_2_norm.png" name="normTex"/>
+        <texture file="structural/imp_struct_2_spec.png" name="specTex"/>
+        <texture file="structural/ao/imp_fortress.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned" selectable="false"/>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned2" selectable="false"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_large.xml">
+      <props>
+        <prop actor="props/structures/romans_imperial/fortress.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

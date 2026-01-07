@@ -2,6 +2,14 @@
 <actor version="1">
   <castshadow/>
   <group>
+    <variant name="Base">
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
     <variant frequency="1" name="bush_1">
       <mesh>gaia/medit_bush_01.dae</mesh>
       <textures>
@@ -48,14 +56,6 @@
       <mesh>gaia/medit_bush_04.dae</mesh>
       <textures>
         <texture file="gaia/medit_bush_01.png" name="baseTex"/>
-      </textures>
-    </variant>
-  </group>
-  <group>
-    <variant>
-      <textures>
-        <texture file="default_norm.png" name="normTex"/>
-        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
   </group>

@@ -2,6 +2,16 @@
 <actor version="1">
   <castshadow/>
   <group>
+    <variant name="Base">
+      <textures>
+      <textures>
+        <texture file="gaia/tree_dead.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
     <variant frequency="1" name="Tree dead 1">
       <mesh>gaia/tree_dead_a_2.dae</mesh>
     </variant>
@@ -9,10 +19,5 @@
       <mesh>gaia/tree_dead_a_1.dae</mesh>
     </variant>
   </group>
-  <group>
-    <variant frequency="1" name="texture">
-      <textures><texture file="gaia/tree_dead.dds" name="baseTex"/></textures>
-    </variant>
-  </group>
-  <material>basic_trans.xml</material>
+  <material>no_trans_norm_spec.xml</material>
 </actor>

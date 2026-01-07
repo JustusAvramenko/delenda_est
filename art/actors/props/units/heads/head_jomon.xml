@@ -4,6 +4,10 @@
   <group>
     <variant name="mesh">
       <mesh>props/new/head_beard_wide.dae</mesh>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
     </variant>
   </group>
   <group>
@@ -18,10 +22,5 @@
       </textures>
     </variant>
   </group>
-  <group>
-    <variant frequency="1" name="hair-black">
-      <color>61 61 61</color>
-    </variant>
-  </group>
-  <material>player_trans.xml</material>
+  <material>no_trans_norm_spec.xml</material>
 </actor>

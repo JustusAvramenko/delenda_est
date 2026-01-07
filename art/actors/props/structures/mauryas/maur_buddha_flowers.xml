@@ -4,8 +4,12 @@
   <group>
     <variant>
       <mesh>props/maur_statue_buddha_flowers.dae</mesh>
-      <textures><texture file="props/structs_nature.png" name="baseTex"/></textures>
+      <textures>
+        <texture file="props/structs_nature.png" name="baseTex"/>
+		<texture file="props/structs_nature_spec.png" name="specTex"/>
+		<texture file="props/structs_nature_norm.png" name="normTex"/>
+      </textures>
     </variant>
   </group>
-  <material>basic_trans.xml</material>
+  <material>basic_trans_parallax_spec.xml</material>
 </actor>

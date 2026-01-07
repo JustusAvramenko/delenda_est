@@ -2,6 +2,14 @@
 <actor version="1">
   <castshadow/>
   <group>
+    <variant name="Base">
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
     <variant frequency="1" name="tree_trunk_14">
       <mesh>gaia/dead_deciduous.dae</mesh>
       <props>
@@ -96,14 +104,6 @@
       <mesh>gaia/eyecandy_tree_dead_e.dae</mesh>
       <textures>
         <texture file="gaia/prop_eyecandy_nature.png" name="baseTex"/>
-      </textures>
-    </variant>
-  </group>
-  <group>
-    <variant>
-      <textures>
-        <texture file="default_norm.png" name="normTex"/>
-        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
   </group>
