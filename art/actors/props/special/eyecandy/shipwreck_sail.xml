@@ -2,6 +2,14 @@
 <actor version="1">
   <castshadow/>
   <group>
+    <variant frequency="1" name="Base">
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
     <variant frequency="1" name="shipwreck sail 1">
       <mesh>props/special/shipwreck_sail.dae</mesh>
     </variant>
@@ -20,5 +28,5 @@
       <textures><texture file="props/hele_sail_runner.dds" name="baseTex"/></textures>
     </variant>
   </group>
-  <material>player_trans_norm_spec.xml</material>
+  <material>no_trans_norm_spec.xml</material>
 </actor>
