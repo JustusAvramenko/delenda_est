@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_hoplite">
+  <Auras datatype="tokens">
+    units/heroes/athen_hero_miltiades_hoplites
+    units/heroes/athen_hero_miltiades_civic_centers
+  </Auras>
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Memnon of Rhodes</SpecificName>
+    <Icon>units/achae/hero_memnon.png</Icon>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/pers/hero_memnon_mounted</Entity>
+      <Tooltip>This gives Memnon his War Horse, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/persians/hero_infantry_hoplite_memnon.xml</Actor>
+  </VisualActor>
+</Entity>
