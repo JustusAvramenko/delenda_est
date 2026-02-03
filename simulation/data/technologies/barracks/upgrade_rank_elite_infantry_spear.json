@@ -1,12 +1,12 @@
 {
-	"genericName": "Elite Citizen Sword Infantry",
+	"genericName": "Elite Citizen Spear Infantry",
 	"specificName": {
 		"hele": "Zeugites",
 		"mace": "Zeugites",
-		"spart": "Zeugites",
+		"spart": "Mothakes",
 		"athen": "Zeugites"
 	},
-	"description": "Upgrade all of your citizen swordsmen to Elite rank.",
+	"description": "Upgrade all of your citizen spearmen to Elite rank.",
 	"cost": {
 		"coin": 600,
 		"glory": 600
@@ -19,30 +19,28 @@
 					{ "notciv": "athen" },
 					{ "notciv": "cart" },
 					{ "notciv": "epir" },
+					{ "notciv": "huns" },
 					{ "notciv": "imp" },
 					{ "notciv": "mace" },
-					{ "notciv": "pers" },
 					{ "notciv": "ptol" },
-					{ "notciv": "scyth" },
-					{ "notciv": "sele" },
+					{ "notciv": "rome" },
 					{ "notciv": "spart" },
-					{ "notciv": "sueb" },
+					{ "notciv": "syrac" },
 					{ "notciv": "theb" },
-					{ "notciv": "xion" },
 					{ "notciv": "yayo" },
 					{ "notciv": "zapo" }
 				]
 			}
 		]
 	},
-	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Sword Infantry.”",
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Citizen Spear Infantry.”",
 	"icon": "upgrade_elite.png",
 	"researchTime": 40,
-	"supersedes": "upgrade_rank_advanced_infantry_sword",
-	"tooltip": "Upgrade all of your Citizen Sword Infantry to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.",
+	"supersedes": "barracks/upgrade_rank_advanced_infantry_spear",
+	"tooltip": "Upgrade all of your Citizen Spear Infantry to Elite rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%.",
 	"modifications": [
 		{ "value": "Promotion/RequiredXp", "replace": 0 }
 	],
-	"affects": ["Sword Infantry Advanced"],
+	"affects": ["Spear !Pike Infantry Advanced"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
