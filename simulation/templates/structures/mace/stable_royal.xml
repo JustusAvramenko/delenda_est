@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/mace/stable">
+  <Cost>
+    <BuildTime>400</BuildTime>
+    <Resources>
+      <stone>400</stone>
+      <glory>300</glory>
+    </Resources>
+  </Cost>
   <Health>
     <Max op="mul">1.5</Max>
   </Health>
   <Identity>
     <GenericName>Royal Stable</GenericName>
     <SpecificName>Hippōn Basileios</SpecificName>
-    <Icon>technologies/champions.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">-phase_village phase_empire</Techs>
+    </Requirements>
+    <Icon>structures/elite_cavalry.png</Icon>
   </Identity>
   <Researcher>
     <Technologies datatype="tokens">

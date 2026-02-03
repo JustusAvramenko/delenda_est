@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/mace/barracks">
+  <Cost>
+    <BuildTime>400</BuildTime>
+    <Resources>
+      <stone>400</stone>
+      <glory>300</glory>
+    </Resources>
+  </Cost>
   <Health>
     <Max op="mul">1.5</Max>
   </Health>
   <Identity>
     <GenericName>Royal Barracks</GenericName>
     <SpecificName>Stratopedon Basileios</SpecificName>
-    <Icon>technologies/champions.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">-phase_village phase_empire</Techs>
+    </Requirements>
+    <Icon>structures/elite.png</Icon>
   </Identity>
   <Researcher>
     <Technologies datatype="tokens">
-      hellenes/pair_champions_01
       macedonians/upgrade_silvershields
     </Technologies>
   </Researcher>

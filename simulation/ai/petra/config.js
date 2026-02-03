@@ -113,7 +113,9 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/statue",
 			"structures/{civ}/library",
 			"structures/{civ}/stoa_buildable",
-			"structures/{civ}/theater"
+			"structures/{civ}/academy",
+			"structures/{civ}/stable_royal",
+			"structures/{civ}/theater",
 		],
 		"maur": [
 			"structures/{civ}/statue",

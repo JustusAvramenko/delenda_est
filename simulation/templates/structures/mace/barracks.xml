@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <stone>250</stone>
+    </Resources>
+  </Cost>
   <Footprint>
     <Square width="25.0" depth="25.0"/>
     <Height>12.0</Height>
@@ -17,7 +23,7 @@
   </Obstruction>
   <Upgrade>
     <RoyalBarracks>
-      <Entity>structures/mace/barracks_royal</Entity>
+      <Entity>structures/mace/academy</Entity>
       <Tooltip>The Royal Barracks trains Elite Pezhetairoi pikemen, Shield Bearer champion hoplites, and Thorakites champion swordsmen. The Royal Barracks also has more technologies, and greater health and territory influence than a standard barracks.</Tooltip>
       <Requirements>
         <Techs datatype="tokens">phase_city</Techs>
@@ -27,6 +33,7 @@
         <glory>300</glory>
       </Cost>
       <Time>100</Time>
+      <Variant>upgrading</Variant>
     </RoyalBarracks>
   </Upgrade>
   <VisualActor>
