@@ -1,21 +1,23 @@
 {
 	"genericName": "Great King's Levy",
-	"supersedes": "persians/training_mobilization_infantry",
 	"description": "The Persian kings could call upon vast reserves of troops, assembled from the dozens of nations beneath the banner of the Achaemenid (Persian) Empire.",
 	"cost": {
-		"food": 500,
-		"glory": 300
+		"food": 800,
+		"glory": 500
 	},
 	"requirements": {
-		"tech": "phase_city"
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "pers" }
+		]
 	},
 	"requirementsTooltip": "Unlocked in City Phase.",
-	"icon": "fist_spear_fire.png",
+	"icon": "great_kings_levy.png",
 	"researchTime": 30,
-	"tooltip": "Barracks Units train extremely fast in large batches.",
+	"tooltip": "Batch Training of Units for all Structures boosted by 50%.",
 	"modifications": [
-		{ "value": "Trainer/BatchTimeModifier", "add": -0.3 }
+		{ "value": "Trainer/BatchTimeModifier", "add": -0.5 }
 	],
-	"affects": ["Barracks"],
+	"affects": ["Structure"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

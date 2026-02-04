@@ -1,0 +1,27 @@
+{
+	"genericName": "Nascent Human Rights",
+	"specificName": {
+		"pers": "Cyrus Cylinder"
+	},
+	"description": "The Cyrus Cylinder is one of the earliest examples of human rights in existence. The Persians were known for being benevolent rulers and promoted the rule of law. Even the Persian king was subject to the law and could not arbitrarily dismiss it.",
+	"cost": {
+		"glory": 300,
+		"coin": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "pers" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "cyrus_cylinder.png",
+	"researchTime": 40,
+	"tooltip": "Civilian Citizens +25% health, capturable buildings and units +25% capture points.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25, "affects": "Villager" },
+		{ "value": "Capturable/CapturePoints", "multiply": 1.25, "affects": "Structure" },
+		{ "value": "Capturable/CapturePoints", "multiply": 1.25, "affects": "Unit" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
