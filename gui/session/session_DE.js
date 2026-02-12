@@ -13,4 +13,4 @@ var g_WorkerTypes = ["IdleWorker"];
 /**
  * Order in which the panel entities are shown.
  */
-var g_PanelEntityOrder = ["Hero", "Minister", "Relic"];
+var g_PanelEntityOrder = ["Starter", "Hero", "Minister", "Relic"];
