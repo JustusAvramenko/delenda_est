@@ -11,24 +11,29 @@
 	<!-- Add a translucent black background to fade out whatever's behind this -->
 	<object type="image" sprite="BackgroundTranslucent"/>
 
-	<object type="image" sprite="ModernDialog" size="50%-250 50%-300 50%+250 50%+300">
+    <!-- Whole Dialogue Size and Position (Changed in DELENDA EST) -->
+	<object type="image" sprite="ModernDialog" size="50%-256 50%-360 50%+256 50%+300">
 		<object style="TitleText" type="text" size="50%-128 -18 50%+128 14">
 			<translatableAttribute id="caption">Information</translatableAttribute>
 		</object>
 
-		<object name="entityName" type="text" size="8 16 100%-8 48" text_align="center" text_valign="top" textcolor="white"/>
+        <!-- Entity Name Size and Position (Changed in DELENDA EST) -->
+		<object name="entityName" type="text" size="8 16 100%-8 64" text_align="center" text_valign="top" textcolor="white"/>
+
         <!-- Portrait Size and Position (Changed in DELENDA EST) -->
 		<object name="entityIcon" type="image"
-			size="-64 48 200-64 200+48"
+			size="-64 64 200-64 200+64"
 			sprite="stretched:pregame/shell/logo/wfg_logo_white.png"
 		>
 			<object type="image" style="IconFrame"/>
 			<object type="image" style="RankGlyph" name="entityRankGlyph"/>
 		</object>
 
-		<object name="entityStats" type="text" style="ModernText" size="128+20 44 100%-8 50%" scrollbar="false"/>
+        <!-- Entity Stats Size and Position (Changed in DELENDA EST) -->
+		<object name="entityStats" type="text" style="ModernText" size="128+20 60 100%-8 50%" scrollbar="false"/>
 
-		<object name="entityInfo" type="text" style="ModernText" size="16 128+48+8 100%-16 100%-48"/>
+        <!-- Entity Information Size and Position (Changed in DELENDA EST) -->
+		<object name="entityInfo" type="text" style="ModernText" size="16 128+48+8 100%-16 100%-70"/>
 
 		<!-- Close button -->
 		<include file="gui/reference/common/Buttons/CloseButton.xml"/>
