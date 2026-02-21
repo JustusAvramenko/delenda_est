@@ -25,10 +25,30 @@ Identity.prototype.Schema =
 		"</element>" +
 	"</optional>" +
 	"<element name='GenericName' a:help='Generic English-language name for this entity.'>" +
+		"<optional>" +
+			"<attribute name='context'>" +
+				"<text/>" +
+			"</attribute>" +
+		"</optional>" +
+		"<optional>" +
+			"<attribute name='comment'>" +
+				"<text/>" +
+			"</attribute>" +
+		"</optional>" +
 		"<text/>" +
 	"</element>" +
 	"<optional>" +
 		"<element name='SpecificName' a:help='Specific native-language name for this entity.'>" +
+			"<optional>" +
+				"<attribute name='context'>" +
+					"<text/>" +
+				"</attribute>" +
+			"</optional>" +
+			"<optional>" +
+				"<attribute name='comment'>" +
+					"<text/>" +
+				"</attribute>" +
+			"</optional>" +
 			"<text/>" +
 		"</element>" +
 	"</optional>" +
@@ -39,16 +59,46 @@ Identity.prototype.Schema =
 	"</optional>" +
 	"<optional>" +
 		"<element name='Tooltip'>" +
+			"<optional>" +
+				"<attribute name='context'>" +
+					"<text/>" +
+				"</attribute>" +
+			"</optional>" +
+			"<optional>" +
+				"<attribute name='comment'>" +
+					"<text/>" +
+				"</attribute>" +
+			"</optional>" +
 			"<text/>" +
 		"</element>" +
 	"</optional>" +
 	"<optional>" +
 		"<element name='History'>" +
+			"<optional>" +
+				"<attribute name='context'>" +
+					"<text/>" +
+				"</attribute>" +
+			"</optional>" +
+			"<optional>" +
+				"<attribute name='comment'>" +
+					"<text/>" +
+				"</attribute>" +
+			"</optional>" +
 			"<text/>" +
 		"</element>" +
 	"</optional>" +
 	"<optional>" +
 		"<element name='Rank'>" +
+			"<optional>" +
+				"<attribute name='context'>" +
+					"<text/>" +
+				"</attribute>" +
+			"</optional>" +
+			"<optional>" +
+				"<attribute name='comment'>" +
+					"<text/>" +
+				"</attribute>" +
+			"</optional>" +
 			"<choice>" +
 				"<value>Basic</value>" +
 				"<value>Advanced</value>" +
@@ -70,6 +120,16 @@ Identity.prototype.Schema =
 	"</optional>" +
 	"<optional>" +
 		"<element name='VisibleClasses' a:help='Optional list of space-separated classes applying to this entity. These classes will also be visible in various GUI elements. Choices include: Academy, Amphitheater, Archer, ArmyCamp, Arsenal, ArtilleryTower, Axeman, Barracks, BoltShooter, BoltTower, Bribable, Builder, Camel, Cavalry, Champion, Chariot, Citizen, City, Civic, CivilCentre, Colony, Corral, Council, Crossbowman, Defensive, Dock, Dog, Economic, Elephant, ElephantStable, Embassy, Farmstead, Field, Fireship, FishingBoat, Forge, Fortress, Gate, Gladiator, GreatTower, Gymnasium, Hall, Healer, Heavy, Hero, House, IceHouse, Immortal, ImperialCourt, ImperialMinistry, Infantry, Javelineer, LaoziGate, Library, Light, Lighthouse, Maceman, Medium, Melee, Market, Mercenary, Military, Minister, Monument, Naval, Outpost, Palace, Palisade, Pikeman, Pillar, Pyramid, Ram, Range, Ranged, Relic, Resource, SentryTower, Ship, Shipyard, Shrine, Siege, SiegeTower, SiegeWall, Slave, Slinger, Soldier, Spearman, Stable, Stoa, StoneThrower, StoneTower, Storehouse, Support, Swordsman, Syssiton, Temple, TempleOfAmun, TempleOfApedemak, TempleOfMars, TempleOfVesta, Tent, Theater, Tower, Town, Trade, Trader, TriumphalArch, Trumpeter, Village, Wall, Warship, Wonder, Worker.'>" +
+			"<optional>" +
+				"<attribute name='context'>" +
+					"<text/>" +
+				"</attribute>" +
+			"</optional>" +
+			"<optional>" +
+				"<attribute name='comment'>" +
+					"<text/>" +
+				"</attribute>" +
+			"</optional>" +
 			"<attribute name='datatype'>" +
 				"<value>tokens</value>" +
 			"</attribute>" +
@@ -109,7 +169,7 @@ Identity.prototype.Init = function()
 	this.controllable = this.template.Controllable ? this.template.Controllable == "true" : true;
 };
 
-Identity.prototype.Deserialize = function (data)
+Identity.prototype.Deserialize = function(data)
 {
 	this.Init();
 	this.phenotype = data.phenotype;
@@ -118,7 +178,7 @@ Identity.prototype.Deserialize = function (data)
 		this.name = data.name;
 };
 
- Identity.prototype.Serialize = function()
+Identity.prototype.Serialize = function()
 {
 	const result = {
 		"phenotype": this.phenotype,
@@ -131,7 +191,7 @@ Identity.prototype.Deserialize = function (data)
 
 Identity.prototype.GetCiv = function()
 {
-	return this.template.Civ ?? "gaia";
+	return this.template.Civ;
 };
 
 Identity.prototype.GetLang = function()
