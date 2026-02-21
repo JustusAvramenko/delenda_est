@@ -68,7 +68,7 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/theater"
 		],
 		"brit": [
-			"structures/{civ}/statue",
+			"structures/{civ}/statue"
 		],
 		"cart": [
 			"structures/{civ}/statue",
@@ -115,7 +115,7 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/academy",
 			"structures/{civ}/stable_royal",
-			"structures/{civ}/theater",
+			"structures/{civ}/theater"
 		],
 		"maur": [
 			"structures/{civ}/statue",
@@ -139,7 +139,7 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/temple_vesta"
 		],
 		"scyth": [
-			"structures/{civ}/statue",
+			"structures/{civ}/statue"
 		],
 		"sele": [
 			"structures/{civ}/statue",
@@ -172,7 +172,7 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/royal_yurt"
 		],
 		"yayo": [
-			"structures/{civ}/statue",
+			"structures/{civ}/statue"
 		],
 		"zapo": [
 			"structures/{civ}/ball_court"
