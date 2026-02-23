@@ -1,5 +1,5 @@
 {
-	"genericName": "Levy Melee Infantry",
+	"genericName": "Levy Ranged Infantry",
 	"description": "Calling up infantry levies in time of war helps bolster the ranks of a king's army.",
 	"cost": {
 		"food": 200,
@@ -9,12 +9,12 @@
 		"tech": "phase_town"
 	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
-	"icon": "fist.png",
-	"researchTime": 20,
-	"tooltip": "All Melee infantry −20% train time. Unlocks Mobilization.",
+	"icon": "fist_02.png",
+	"researchTime": 30,
+	"tooltip": "All Ranged Infantry −20% train time.",
 	"modifications": [
 		{ "value": "Cost/BuildTime", "multiply": 0.8 }
 	],
-	"affects": ["Citizen Infantry Melee"],
+	"affects": ["Citizen Infantry Ranged"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
