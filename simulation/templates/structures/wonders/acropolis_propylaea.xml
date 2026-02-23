@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic">
+  <BuildRestrictions>
+    <Category>Special</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>200</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="28.0" depth="32.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <Civ>hele</Civ>
+    <GenericName>Portico</GenericName>
+    <SpecificName>Propylaea</SpecificName>
+    <Tooltip>Add +10 to Population Cap.</Tooltip>
+    <Icon>technologies/ionic_column.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>10</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>75</stone>
+    <metal>75</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="26.0" depth="30.0"/>
+  </Obstruction>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <ProductionQueue disable=""/>
+  <Researcher disable=""/>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_greek_theater.xml</select>
+      <constructed>interface/complete/building/complete_greek_theater.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>40</Radius>
+    <Weight>65535</Weight>
+  </TerritoryInfluence>
+  <Trainer disable=""/>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/hellenes/propylaea.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>
