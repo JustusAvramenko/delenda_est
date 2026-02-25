@@ -18,42 +18,12 @@
 	],
 	"CivBonuses":
 	[
-		{
-			"Name":"Silver Owls",
-			"History":"The mines at Laureion in Attica provided Athens with a wealth of silver from which to mint her famous and highly prized coin, The Athenian Owl.",
-			"Description":"Metal mining gathering rates increased by +10% for each passing phase."
-		},
-		{
-			"Name":"Hellenization",
-			"History":"The Greeks were highly successful in Hellenising various foreigners. During the Hellenistic Age, Greek was the lingua franca of the Ancient World, spoken widely from Spain to India.",
-			"Description":"Buildings +20% territory influence while the Theatron stands."
-		},
-		{
-			"Name":"Greek Architecture",
-			"History":"The Greeks are famed for their rich architecture and extent buildings.",
-			"Description":"All Buildings +20% health as long as the Stoa stands."
-		},
-		{
-			"Name":"Othismos",
-			"History":"For centuries, Greek armies were composed of heavily armored citizen-militias arrayed in infantry phalanxes.",
-			"Description":"Athenians can use the powerful Shield Wall formation."
-		}
 	],
 	"TeamBonus":
 	[
-		{
-			"Name":"Delian League",
-			"History":"The Delian League is the great alliance of Greek states whose purpose is to combat the Persian Empire and free the Greek cities of Asia from the Persian yoke. This alliance grew out of the pan-Hellenic League of the 2nd Persian War and consists of the majority of the Greek cities of the Aegean basin. Most members of the League either provide money or ships, while Athens gives her entire fleet as well as leadership to the project.",
-			"Description":"Allied Warships −20% build time and −10% cost for as long as the Athenian player has a Shipyard."
-		}
 	],
 	"CivChoices":
 	[
-		"civ_choices/athen/miltiades",
-		"civ_choices/athen/themistocles",
-		"civ_choices/athen/aristides",
-		"civ_choices/athen/pericles",
-		"civ_choices/athen/iphicrates"
 	],
 	"WallSets":
 	[
@@ -63,22 +33,11 @@
 	"StartEntities":
 	[
 		{
-			"Template": "structures/athen/civil_centre"
+			"Template": "structures/hele/civil_centre"
 		},
 		{
-			"Template": "units/athen/support_citizen",
+			"Template": "units/hele/support_citizen",
 			"Count": 4
-		},
-		{
-			"Template": "units/athen/infantry_hoplite_b",
-			"Count": 2
-		},
-		{
-			"Template": "units/athen/infantry_slinger_b",
-			"Count": 2
-		},
-		{
-			"Template": "units/athen/cavalry_scout_starter"
 		}
 	],
 	"CivicCenterNames":
@@ -116,22 +75,6 @@
 	],
 	"SkirmishReplacements":
 	{
-		"skirmish/units/default_hero_1": "units/athen/hero_themistocles",
-		"skirmish/units/default_hero_2": "units/athen/hero_pericles",
-		"skirmish/units/default_hero_3": "units/athen/hero_iphicrates",
-		"skirmish/units/default_hero_4": "",
-		"skirmish/units/default_hero_5": "",
-		"skirmish/units/default_champion_infantry_1": "units/athen/champion_infantry_hoplite",
-		"skirmish/units/default_champion_infantry_2": "units/athen/champion_marine_swordsman",
-		"skirmish/units/default_champion_infantry_3": "units/athen/champion_ranged_archer",
-		"skirmish/units/default_champion_infantry_4": "units/athen/champion_ranged_gastraphetes",
-		"skirmish/units/default_champion_cavalry_1": "",
-		"skirmish/units/default_champion_cavalry_2": "",
-		"skirmish/units/default_infantry_ranged_b": "units/athen/infantry_slinger_b",
-		"skirmish/units/default_infantry_melee_b": "units/athen/infantry_hoplite_b",
-		"skirmish/structures/default_house_10": "structures/athen/house",
-		"skirmish/structures/special_starting_structure": "structures/athen/stoa_great",
-		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower"
 	},
 	"SelectableInGameSetup": false
 }
