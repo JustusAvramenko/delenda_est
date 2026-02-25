@@ -1,23 +1,24 @@
 {
+	"supersedes": "house/health_citizens_01",
 	"genericName": "Feminine Mystique",
 	"description": "Spartan women were some of the freest in the ancient world. They could own land and slaves and even exercise naked like Spartan men. It is said that only Spartan women gave birth to real men. Such tough-as-nails women more than once helped save their city from disaster, for example when after a lost battle against Pyrrhus of Epirus they overnight built an earthen rampart to protect the city while their men slept in preparation for the next day's siege.",
 	"cost": {
-		"food": 300, 
-		"glory": 200
+		"food": 300,
+		"glory": 300
 	},
 	"requirements": {
 		"all": [
-			{ "tech": "phase_town" }, 
+			{ "tech": "phase_town" },
 			{ "civ": "spart" }
 		]
 	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
-	"supersedes": "health_citizens_01",
 	"icon": "feminine_mystique.png",
 	"researchTime": 30,
-	"tooltip": "Spartan Women +4 attack.",
+	"tooltip": "Spartan Women +100% attack, +20% health.",
 	"modifications": [
-		{ "value": "Attack/Melee/Damage/Hack", "add": 4}
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 2},
+		{ "value": "Health/Max", "multiply": 1.2 }
 	],
 	"affects": ["Woman"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
