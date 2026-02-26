@@ -1,0 +1,19 @@
+{
+	"genericName": "Resplendence",
+	"description": "Increases metal gathering rates.",
+	"cost": {
+		"glory": 600
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "special_treasure.png",
+	"researchTime": 40,
+	"tooltip": "Gatherers +30% metal gathering rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.30 }
+	],
+	"affects": ["Gatherer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

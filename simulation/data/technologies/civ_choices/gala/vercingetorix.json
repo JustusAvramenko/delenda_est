@@ -1,0 +1,21 @@
+{
+	"genericName": "Vercingetorix",
+	"description": "Vercingetorix.",
+	"icon": "civ_choices/gaul_hero_vercingetorix.png",
+	"tooltip": "Select Vercingetorix to lead your civilization.",
+	"requirements": {
+		"civ": "gaul"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_viridomarus_infantry -units/{civ}/hero_brennus_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_brennus_mounted -units/{civ}/hero_viridomarus_mounted",
+			"affects": "Assembly"
+		}
+	]
+}
