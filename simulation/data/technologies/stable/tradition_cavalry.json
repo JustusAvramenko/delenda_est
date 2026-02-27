@@ -24,10 +24,10 @@
 	"requirementsTooltip": "Unlocked in Village Phase.",
 	"icon": "horse_rider.png",
 	"researchTime": 40,
-	"tooltip": "Cavalry −20% training time and +10% movement speed. Does not apply to Heroes or Champions.",
+	"tooltip": "Cavalry −20% training time and −50% experience required for promotion. Does not apply to Heroes or Champions.",
 	"modifications": [
-		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
-		{ "value": "Cost/BuildTime", "multiply": 0.8 }
+		{ "value": "Cost/BuildTime", "multiply": 0.8 },
+		{ "value": "Promotion/RequiredXp", "multiply": 0.5 }
 	],
 	"affects": ["Cavalry !Hero !Champion"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

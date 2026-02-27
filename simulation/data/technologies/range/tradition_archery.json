@@ -27,10 +27,10 @@
 	"requirementsTooltip": "Unlocked in Village Phase.",
 	"icon": "archery_tradition.png",
 	"researchTime": 40,
-	"tooltip": "Archers −20% training time and −10% attack rate. Does not apply to Heroes or Champions.",
+	"tooltip": "Archers −20% training time and −50% experience required for promotion. Does not apply to Heroes or Champions.",
 	"modifications": [
-		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.90 },
-		{ "value": "Cost/BuildTime", "multiply": 0.8 }
+		{ "value": "Cost/BuildTime", "multiply": 0.8 },
+		{ "value": "Promotion/RequiredXp", "multiply": 0.5 }
 	],
 	"affects": ["Archer !Hero !Champion"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
