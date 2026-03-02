@@ -18,13 +18,19 @@
         <prop actor="props/units/heads/new/head_indian_a.xml" attachpoint="head"/>
       </props>
     </variant>
-    <variant frequency="1" name="turban">
+    <variant frequency="1" name="maur_inf_turban">
       <props>
         <prop actor="props/units/heads/new/head_maur_short_hair.xml" attachpoint="head"/>
         <prop actor="props/units/heads/maur_inf_turban.xml" attachpoint="helmet"/>
       </props>
     </variant>
-    <variant frequency="1" name="helmet">
+    <variant frequency="2" name="maur_inf_battle_turban">
+      <props>
+        <prop actor="props/units/heads/new/head_maur_tall_hair.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/maur_inf_battle_turban.xml" attachpoint="helmet"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="maur_helmet_metal">
       <props>
         <prop actor="props/units/heads/new/head_maur_short_hair.xml" attachpoint="head"/>
         <prop actor="props/units/heads/maur_helmet_metal_plyr.xml" attachpoint="helmet"/>
@@ -32,19 +38,58 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="skirt_leather_01_01">
+    <variant frequency="1" name="falcata">
+      <props>
+        <prop actor="props/units/weapons/falcata.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="longsword_mauryan">
+      <props>
+        <prop actor="props/units/weapons/longsword_mauryan.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="axe_twohanded_mauryan">
+      <props>
+        <prop actor="props/units/weapons/axe_twohanded_mauryan.xml" attachpoint="weapon_R"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="scale_01_01">
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <textures>
+        <texture file="skeletal/maur/scale_01_01.png" name="baseTex"/>
+        <texture file="skeletal/maur/scale_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="scale_01_02">
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <textures>
+        <texture file="skeletal/maur/scale_01_02.png" name="baseTex"/>
+        <texture file="skeletal/maur/scale_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="2" name="tunic_leather_02_01">
+      <mesh>skeletal/new/m_armor_tunic_long.dae</mesh>
+      <textures>
+        <texture file="skeletal/maur/tunic_leather_02_01.png" name="baseTex"/>
+        <texture file="skeletal/maur/tunic_leather_02_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="2" name="skirt_leather_01_01">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
       <textures>
         <texture file="skeletal/maur/skirt_leather_01_01.png" name="baseTex"/>
         <texture file="skeletal/maur/skirt_leather_01_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="tunic_leather_01_01">
+    <variant frequency="2" name="tunic_leather_01_01">
       <textures>
         <texture file="skeletal/maur/tunic_leather_01_01.png" name="baseTex"/>
         <texture file="skeletal/maur/tunic_leather_01_spec.png" name="specTex"/>
       </textures>
     </variant>
-    <variant frequency="1" name="tunic_leather_01_02">
+    <variant frequency="2" name="tunic_leather_01_02">
       <textures>
         <texture file="skeletal/maur/tunic_leather_01_02.png" name="baseTex"/>
         <texture file="skeletal/maur/tunic_leather_01_spec.png" name="specTex"/>
@@ -52,19 +97,29 @@
     </variant>
   </group>
   <group>
-    <variant name="shield-1">
-      <props>
-        <prop actor="props/units/shields/maur_straight_b.xml" attachpoint="shield"/>
-      </props>
-    </variant>
-    <variant name="shield-2">
+    <variant name="maur_straight_a">
       <props>
         <prop actor="props/units/shields/maur_straight_a.xml" attachpoint="shield"/>
       </props>
     </variant>
-    <variant name="shields-3">
+    <variant name="maur_straight_b">
       <props>
-        <prop actor="props/units/shields/maur_bell_a.xml" attachpoint="shield"/>
+        <prop actor="props/units/shields/maur_straight_b.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant name="maur_straight_c">
+      <props>
+        <prop actor="props/units/shields/maur_straight_c.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant name="maur_bell_b">
+      <props>
+        <prop actor="props/units/shields/maur_bell_b.xml" attachpoint="shield"/>
+      </props>
+    </variant>
+    <variant name="maur_bell_c">
+      <props>
+        <prop actor="props/units/shields/maur_bell_c.xml" attachpoint="shield"/>
       </props>
     </variant>
   </group>
