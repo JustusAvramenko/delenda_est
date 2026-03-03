@@ -172,7 +172,7 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/royal_yurt"
 		],
 		"yayo": [
-			"structures/{civ}/statue"
+			"structures/{civ}/shrine_statue"
 		],
 		"zapo": [
 			"structures/{civ}/ball_court"
