@@ -14,14 +14,14 @@
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <Max>2000</Max>
+    <Max>3000</Max>
   </Health>
   <Identity>
     <Civ>spart</Civ>
     <GenericName>Spartan Senate</GenericName>
     <SpecificName>Gerousia</SpecificName>
-    <Tooltip>Train heroes.</Tooltip>
-    <Icon>structures/tholos.png</Icon>
+    <Tooltip>Train Heroes.</Tooltip>
+    <Icon>structures/assembly.png</Icon>
   </Identity>
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
@@ -36,7 +36,10 @@
   <Trainer>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/{civ}/hero_leonidas
+      units/spart/hero_leonidas_infantry
+      units/spart/hero_brasidas_infantry
+      units/spart/hero_lysander_infantry
+      units/spart/hero_cleomenes_infantry
     </Entities>
   </Trainer>
   <VisualActor>

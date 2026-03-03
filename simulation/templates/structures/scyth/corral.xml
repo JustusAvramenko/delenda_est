@@ -2,6 +2,7 @@
 <Entity parent="autobuild|template_structure_resource_corral">
   <BuildRestrictions>
     <Territory>own neutral ally enemy</Territory>
+    <Category>NomadCorral</Category>
   </BuildRestrictions>
   <Footprint replace="">
     <Circle radius="15.0"/>
@@ -23,7 +24,7 @@
   <TerritoryDecay disable=""/>
   <TerritoryInfluence disable=""/>
   <Trainer>
-    <Entities datatype="tokens">
+    <Entities datatype="tokens" replace="">
       gaia/fauna_pig_trainable
       gaia/fauna_sheep_trainable
       gaia/fauna_cattle_cow_trainable

@@ -4,9 +4,16 @@
     <SpawnEntityOnDeath>decay|rubble/rubble_hele_cc</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <Civ>hele</Civ>
+    <Civ>athen</Civ>
     <SpecificName>Agora</SpecificName>
   </Identity>
+  <Trainer>
+    <Entities datatype="tokens">
+      -units/{native}/support_citizen
+      units/hele/support_citizen
+      -units/{civ}/support_wagon
+    </Entities>
+  </Trainer>
   <VisualActor>
     <Actor>structures/thebans/civic_center.xml</Actor>
   </VisualActor>
