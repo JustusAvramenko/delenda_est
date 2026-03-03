@@ -6,7 +6,14 @@
 		"glory": 200
 	},
 	"requirements": {
-		"tech": "phase_town"
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any": [
+				{ "civ": "brit" },
+				{ "civ": "gala" },
+				{ "civ": "gaul" }]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "celtic_saddle.png",

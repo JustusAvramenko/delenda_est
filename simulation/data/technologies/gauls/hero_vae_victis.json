@@ -6,9 +6,14 @@
 	"cost": {
 		"glory": 500
 	},
-	"requirements": { "all": [
-			{ "tech": "phase_town" }, 
-			{ "civ": "gaul" }
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any": [
+				{ "civ": "brit" },
+				{ "civ": "gala" },
+				{ "civ": "gaul" }]
+			}
 		]
 	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
