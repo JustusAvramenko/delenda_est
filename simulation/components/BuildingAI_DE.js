@@ -32,3 +32,5 @@ BuildingAI.prototype.OnRangeUpdate = function(msg)
 	if (this.targetUnits.length)
 		this.StartTimer();
 };
+
+Engine.ReRegisterComponentType(IID_BuildingAI, "BuildingAI", BuildingAI);
