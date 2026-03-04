@@ -140,3 +140,5 @@ UnitAI.prototype.AttackEntitiesByPreference = function(ents)
 
 	return this.RespondToTargetedEntities(entsWithoutPref);
 };
+
+Engine.ReRegisterComponentType(IID_UnitAI, "UnitAI", UnitAI);
