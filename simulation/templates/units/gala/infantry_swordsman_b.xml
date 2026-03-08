@@ -4,11 +4,21 @@
     <Civ>gala</Civ>
     <SelectionGroupName>units/gala/infantry_swordsman_b</SelectionGroupName>
     <SpecificName>Tolistobogi Swordsman</SpecificName>
-    <Icon>units/gaul/infantry_swordsman.png</Icon>
+    <Icon>units/gala/infantry_swordsman.png</Icon>
   </Identity>
   <Promotion>
     <Entity>units/gala/infantry_swordsman_a</Entity>
   </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/gauls/infantry_swordsman_b.xml</Actor>
   </VisualActor>

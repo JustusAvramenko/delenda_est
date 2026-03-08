@@ -3,12 +3,22 @@
   <Identity>
     <Civ>gala</Civ>
     <SelectionGroupName>units/gala/cavalry_javelineer_b</SelectionGroupName>
-    <SpecificName>Galatian Light Cavalry</SpecificName>
-    <Icon>units/gaul/cavalry_javelinist.png</Icon>
+    <SpecificName>Daguteni Light Cavalry</SpecificName>
+    <Icon>units/gala/cavalry_javelinist.png</Icon>
   </Identity>
   <Promotion>
     <Entity>units/gala/cavalry_javelineer_a</Entity>
   </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/gauls/cavalry_javelinist_b_m.xml</Actor>
   </VisualActor>

@@ -1,0 +1,23 @@
+{
+	"genericName": "Celtic Warbands",
+	"description": "The roving Gallic tribes combined into large migratory war bands.",
+	"cost": {
+		"food": 800,
+		"glory": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "gala" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "warbands.png",
+	"researchTime": 40,
+	"tooltip": "All Soldiers −20% train time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.8 }
+	],
+	"affects": ["Soldier"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

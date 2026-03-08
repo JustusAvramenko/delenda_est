@@ -1,0 +1,21 @@
+{
+	"genericName": "Bolgios",
+	"description": "Bolgios.",
+	"icon": "civ_choices/gala_hero_bolgios.png",
+	"tooltip": "Select Bolgios to lead your civilization.",
+	"requirements": {
+		"civ": "gala"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_brennos_infantry -units/{civ}/hero_leonnorius_infantry -units/{civ}/hero_deiotarus_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_brennos_mounted -units/{civ}/hero_leonnorius_mounted -units/{civ}/hero_deiotarus_mounted",
+			"affects": "Assembly"
+		}
+	]
+}

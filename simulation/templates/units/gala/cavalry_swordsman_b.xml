@@ -5,11 +5,21 @@
     <SelectionGroupName>units/gala/cavalry_swordsman_b</SelectionGroupName>
     <SpecificName>Trocmian Cavalry</SpecificName>
     <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
-    <Icon>units/gaul/cavalry_swordsman.png</Icon>
+    <Icon>units/gala/cavalry_swordsman.png</Icon>
   </Identity>
   <Promotion>
     <Entity>units/gala/cavalry_swordsman_a</Entity>
   </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/gauls/cavalry_swordsman_b_m.xml</Actor>
   </VisualActor>

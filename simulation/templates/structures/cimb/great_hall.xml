@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_academy">
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <stone>200</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
   <Footprint>
     <Square width="17.0" depth="24.0"/>
     <Height>12.0</Height>
@@ -16,7 +23,7 @@
     <Requirements>
       <Techs datatype="tokens">
         -phase_city
-        phase_town
+        phase_village
       </Techs>
     </Requirements>
     <Icon>structures/assembly.png</Icon>
@@ -35,12 +42,6 @@
       spy_counter
     </Technologies>
   </Researcher>
-  <Sound>
-    <SoundGroups>
-      <select>interface/select/building/sel_gymnasium.xml</select>
-      <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
-    </SoundGroups>
-  </Sound>
   <TerritoryInfluence>
     <Root>false</Root>
     <Radius>38</Radius>
@@ -49,17 +50,14 @@
   <Trainer>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/{civ}/champion_infantry_axeman
-      units/{civ}/champion_cavalry
-      units/{civ}/siege_ram
       units/{civ}/hero_boiorix
       units/{civ}/hero_teutobod
       units/{civ}/hero_lugius
+      units/{civ}/champion_infantry_axeman
+      units/{civ}/champion_cavalry
+      units/{civ}/siege_ram
     </Entities>
   </Trainer>
-  <Vision>
-    <Range>40</Range>
-  </Vision>
   <VisualActor>
     <Actor>structures/germans/great_hall.xml</Actor>
     <FoundationActor>structures/fndn_4x6.xml</FoundationActor>

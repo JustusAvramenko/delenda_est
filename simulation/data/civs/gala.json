@@ -27,21 +27,22 @@
 	"CivBonuses":
 	[
 		{
-			"Name": "Ardiosmanae",
+			"Name": "Great Harvest",
 			"History": "Represents Celtic farming methods. ",
-			"Description": "When building a Rotary Mill, nearby Gatherers +20% farming rate of grain. " 
+			"Description": "When building a Rotary Mill, nearby Gatherers +20% farming rate of grain. "
 		},
 		{
 			"Name": "Deas Celtica",
 			"History": "Celtic religion and druidry inspired their warlike mindset. ",
-			"Description": "Druids increase attack rates of soldiers near them slightly." 
+			"Description": "Druids increase attack rates of soldiers near them slightly."
 		}
 	],
 	"CivChoices":
 	[
-		"civ_choices/gaul/brennus",
-		"civ_choices/gaul/viridomarus",
-		"civ_choices/gaul/vercingetorix"
+		"civ_choices/gala/brennos",
+		"civ_choices/gala/leonnorius",
+		"civ_choices/gala/bolgios",
+		"civ_choices/gala/deiotarus"
 	],
 	"WallSets":
 	[
@@ -51,56 +52,53 @@
 	"StartEntities":
 	[
 		{
-			"Template": "structures/gala/civil_centre" 
+			"Template": "structures/gala/civil_centre"
 		},
 		{
 			"Template": "units/gala/support_citizen",
 			"Count": 4
 		},
 		{
-			"Template": "units/gala/infantry_swordsman_b",
-			"Count": 2 
+			"Template": "units/gala/infantry_spearman_b",
+			"Count": 2
 		},
 		{
 			"Template": "units/gala/infantry_javelineer_b",
-			"Count": 2 
+			"Count": 2
 		},
 		{
-			"Template": "units/gala/champion_chariot" 
+			"Template": "units/gala/champion_chariot"
 		},
 		{
-			"Template": "units/gala/cavalry_scout_starter" 
+			"Template": "units/gala/cavalry_scout_starter"
 		}
 	],
 	"AINames":
 	[
-		"Divico",
-		"Ambiorix",
-		"Asterix",
 		"Acichorius",
+		"Amyntas",
+		"Bathanatos",
+		"Brogitarius",
+		"Castor",
 		"Cerethrius",
-		"Bolgios",
-		"Deiotarus",
-		"Liscus",
-		"Valetiacus",
-		"Viridovix",
-		"Cativolcus",
-		"Cingetorix"
+		"Combutis",
+		"Comontorius",
+		"Leogarios",
+		"Orestorius"
 	],
 	"SkirmishReplacements":
 	{
-		"skirmish/units/default_hero_1": "units/gaul/hero_brennus",
-		"skirmish/units/default_hero_2": "units/gaul/hero_viridomarus",
-		"skirmish/units/default_hero_3": "units/gaul/hero_vercingetorix",
-		"skirmish/units/default_hero_4": "",
+		"skirmish/units/default_hero_1": "units/gala/hero_brennos",
+		"skirmish/units/default_hero_2": "units/gala/hero_leonnorius",
+		"skirmish/units/default_hero_3": "units/gala/hero_bolgios",
+		"skirmish/units/default_hero_4": "units/gala/hero_deiotarus",
 		"skirmish/units/default_hero_5": "",
 		"skirmish/units/default_champion_infantry_1": "units/gala/champion_infantry",
 		"skirmish/units/default_champion_infantry_2": "units/gala/champion_infantry",
 		"skirmish/units/default_champion_infantry_3": "units/gala/champion_infantry",
 		"skirmish/units/default_champion_infantry_4": "units/gala/champion_infantry",
 		"skirmish/units/default_champion_cavalry_1": "units/gala/champion_chariot",
-		"skirmish/units/default_champion_cavalry_2": "units/gala/champion_cavalry",
-		"skirmish/units/default_infantry_melee_b": "units/gala/infantry_swordsman_b",
+		"skirmish/units/default_infantry_melee_b": "units/gala/infantry_spearman_b",
 		"skirmish/structures/default_house_5": "structures/{civ}/house",
 		"skirmish/structures/default_defense_tower": "structures/{civ}/defense_tower",
 		"skirmish/units/special_starting_unit": "units/gala/champion_chariot"

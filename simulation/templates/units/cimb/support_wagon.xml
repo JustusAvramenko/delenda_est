@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support_wagon">
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/field
+      structures/{civ}/field_cash_crops
+    </Entities>
+  </Builder>
   <Identity>
     <Civ>cimb</Civ>
+    <Icon>units/germ/support_wagon.png</Icon>
   </Identity>
-  <Promotion>
-    <Entity>units/cimb/support_wagon_house</Entity>
-    <RequiredXp>5000</RequiredXp>
-  </Promotion>
+  <Population>
+    <Bonus>0</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens">
+      gather_capacity_wheelbarrow
+      gather_capacity_handcarts
+    </Technologies>
+  </Researcher>
+  <VisualActor>
+    <Actor>structures/germans/wagon.xml</Actor>
+  </VisualActor>
 </Entity>
