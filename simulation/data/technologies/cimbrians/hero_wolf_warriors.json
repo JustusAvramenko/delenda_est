@@ -1,0 +1,24 @@
+{
+	"genericName": "Wolf Warriors",
+	"description": "",
+	"cost": {
+		"food": 300,
+		"glory": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "cimb" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "wolf.png",
+	"researchTime": 40,
+	"tooltip": "Champions +10% speed, +1 health regeneration per second when idle.",
+	"modifications": [
+		{ "value": "Health/IdleRegenRate", "add": 1 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 }
+	],
+	"affects": ["Champion"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

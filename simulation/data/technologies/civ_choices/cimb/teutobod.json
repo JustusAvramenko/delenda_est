@@ -1,0 +1,21 @@
+{
+	"genericName": "Teutobod",
+	"description": "Teutobod.",
+	"icon": "civ_choices/cimb_hero_teutobod.png",
+	"tooltip": "Select Teutobod to lead your civilization.",
+	"requirements": {
+		"civ": "cimb"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_boiorix -units/{civ}/hero_lugius",
+			"affects": "Academy"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-cimbrians/hero_wolf_warriors",
+			"affects": "Academy"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"genericName": "Boiorix",
+	"description": "Boiorix.",
+	"icon": "civ_choices/cimb_hero_boiorix.png",
+	"tooltip": "Select Boiorix to lead your civilization.",
+	"requirements": {
+		"civ": "cimb"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_lugius -units/{civ}/hero_teutobod",
+			"affects": "Academy"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "-cimbrians/hero_wolf_warriors",
+			"affects": "Academy"
+		}
+	]
+}
