@@ -58,3 +58,5 @@ ProductionQueue.prototype.ProgressTimeout = function(data, lateness)
 	if (!this.queue.length)
 		this.StopTimer();
 };
+
+Engine.ReRegisterComponentType(IID_ProductionQueue, "ProductionQueue", ProductionQueue);
