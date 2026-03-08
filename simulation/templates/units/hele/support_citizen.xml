@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support_citizen">
+  <Builder>
+    <Rate>1.25</Rate>
+    <Entities datatype="tokens" replace="">
+      structures/{native}/civil_centre
+      structures/{native}/house
+      structures/{native}/storehouse
+      structures/{native}/granary
+    </Entities>
+  </Builder>
   <Identity>
-    <Civ>hele</Civ>
+    <Civ>athen</Civ>
     <Lang>greek</Lang>
     <SpecificName>Greek Citizen</SpecificName>
     <Icon>units/hele/support_citizen.png</Icon>
