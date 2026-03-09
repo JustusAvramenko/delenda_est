@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee_maceman">
+  <Attack>
+    <Melee>
+      <AttackName>Club</AttackName>
+    </Melee>
+  </Attack>
   <Cost>
+    <Population>1</Population>
+    <BuildTime>2</BuildTime>
     <Resources>
-      <food>50</food>
-      <wood>30</wood>
-      <stone>20</stone>
+      <food>0</food>
+      <wood>50</wood>
+      <coin>50</coin>
     </Resources>
   </Cost>
+  <Health>
+    <Max>150</Max>
+    <IdleRegenRate>-3</IdleRegenRate>
+  </Health>
   <Identity>
     <Civ>cimb</Civ>
     <GenericName>Cimbrian Clubman Raider</GenericName>
-    <VisibleClasses datatype="tokens">Club</VisibleClasses>
+    <VisibleClasses datatype="tokens">Club -Maceman</VisibleClasses>
     <Requirements>
-      <Techs datatype="tokens">phase_village</Techs>
+      <Techs datatype="tokens">phase_town</Techs>
     </Requirements>
     <Icon>units/germ/infantry_clubman.png</Icon>
   </Identity>
@@ -26,6 +37,10 @@
     </Entity>
   </Resistance>
   <ResourceGatherer disable=""/>
+  <TrainingRestrictions>
+    <Category>Clubman</Category>
+    <MatchLimit>50</MatchLimit>
+  </TrainingRestrictions>
   <UnitMotion>
     <WalkSpeed op="mul">1.2</WalkSpeed>
   </UnitMotion>
