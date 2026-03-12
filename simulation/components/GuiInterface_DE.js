@@ -14,7 +14,7 @@ GuiInterface.prototype.GetSimulationState = function()
 		const cmpIdentity = Engine.QueryInterface(playerEnt, IID_Identity);
 		const cmpDiplomacy = Engine.QueryInterface(playerEnt, IID_Diplomacy);
 
-		// Work out which phase we are in. "phase_empire" added for Delenda Est.
+		// Work out which phase we are in. "phase_empire" added for Delenda Est.<<<<<<<<<
 		let phase = "";
 		const cmpTechnologyManager = Engine.QueryInterface(playerEnt, IID_TechnologyManager);
 		if (cmpTechnologyManager)
@@ -101,7 +101,7 @@ GuiInterface.prototype.GetSimulationState = function()
 
 	const cmpCinemaManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_CinemaManager);
 	if (cmpCinemaManager)
-		ret.cinemaPlaying = cmpCinemaManager.IsPlaying();
+		ret.cinemaPathPlaying = cmpCinemaManager.IsPlayingQueue();
 
 	const cmpEndGameManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_EndGameManager);
 	ret.victoryConditions = cmpEndGameManager.GetVictoryConditions();
