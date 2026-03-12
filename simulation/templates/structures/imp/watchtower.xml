@@ -12,13 +12,20 @@
     <Max>6</Max>
   </GarrisonHolder>
   <Health>
-    <Max>1800</Max>
+    <Max op="add">1000</Max>
   </Health>
   <Identity>
     <SpecificName>Vigilarium Limites</SpecificName>
     <GenericName>Frontier Watchtower</GenericName>
     <Icon>structures/defense_tower.png</Icon>
   </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      defense_tower/pair_tower_01
+      defense_tower/range_defensive_loopholes
+      defense_tower/range_defensive_murderholes
+    </Technologies>
+  </Researcher>
   <Upgrade disable=""/>
   <VisualActor>
     <Actor>structures/romans_imperial/outpost_frontier.xml</Actor>
