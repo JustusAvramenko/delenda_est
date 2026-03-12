@@ -8,6 +8,7 @@
 <script directory="gui/session/"/>
 <script directory="gui/session/campaigns/"/>
 <script directory="gui/session/chat/"/>
+<script directory="gui/session/cinema/"/>
 <script directory="gui/session/developer_overlay/"/>
 <script directory="gui/session/diplomacy/"/>
 <script directory="gui/session/diplomacy/playercontrols/"/>
@@ -16,7 +17,6 @@
 <script directory="gui/session/match_settings/"/>
 <script directory="gui/session/message_box/"/>
 <script directory="gui/session/minimap/"/>
-<script directory="gui/session/objectives/"/>
 <script directory="gui/session/top_panel/"/>
 <script directory="gui/session/top_panel/IconButtons/"/>
 <script directory="gui/session/trade/"/>
@@ -35,94 +35,99 @@
 		onSimulationUpdate();
 	</action>
 
-	<!-- Hotkeys won't work properly unless outside menu -->
-	<include directory="gui/session/hotkeys/"/>
-
-	<include file="gui/session/NetworkStatusOverlay.xml"/>
-	<include file="gui/session/NetworkDelayOverlay.xml"/>
-	<include file="gui/session/PauseOverlay.xml"/>
-	<include file="gui/session/TimeNotificationOverlay.xml"/>
-
-	<!-- Chat messages -->
-	<object name="chatPanel" size="0 180 100% 100%-240" z="0" absolute="true"> <!-- DELENDA EST changed 131 to 180	-->
-		<object name="chatLines">
-			<repeat count="25"> <!-- DELENDA EST changed 20 to 25	-->
-				<object name="chatLine[n]" size="3 0 100% 17" type="button" style="chatPanelOverlay" tooltip_style="sessionToolTipBottomBold" ghost="true" hidden="true"/>
-			</repeat>
+	<object name="primaryOverlays">
+		<!-- Chat messages -->
+		<object name="chatPanel" size="0 180 100% 100%-240" z="0" absolute="true"> <!-- DELENDA EST changed 131 to 180	-->
+			<object name="chatLines">
+				<repeat count="25"> <!-- DELENDA EST changed 20 to 25	-->
+					<object name="chatLine[n]" size="3 0 100% 17" type="button" style="chatPanelOverlay" tooltip_style="sessionToolTipBottomBold" ghost="true" hidden="true"/>
+				</repeat>
+			</object>
 		</object>
+
+		<include directory="gui/session/chat/"/>
+		<include directory="gui/session/developer_overlay/"/>
+		<include directory="gui/session/dialogs/"/>
+		<include directory="gui/session/diplomacy/"/>
+		<include directory="gui/session/match_settings/"/>
+		<include file="gui/session/GameSpeedControl.xml"/>
+		<include file="gui/session/PanelEntities.xml"/>
+		<include file="gui/session/ResearchProgress.xml"/>
+		<include file="gui/session/TimeNotificationOverlay.xml"/>
+		<include file="gui/session/TopPanel.xml"/>
+		<include file="gui/session/trade/TradeDialog.xml"/>
+		<include file="gui/session/tutorial_panel.xml"/>
+		<include file="gui/session/Menu.xml"/>
+
+		<!-- Contains miscellanious objects s.a.: the technology research -->
+		<!-- progress, group selection icons, and the hero selection icon -->
+		<include directory="gui/session/session_objects/"/>
+
+		<!-- Information tooltip -->
+		<!-- Follows the mouse around if 'independent' is set to 'true'. -->
+		<object name="informationTooltip" type="tooltip" independent="true" style="informationTooltip"/>
+
+		<!-- Structure placement info tooltip -->
+		<object name="placementTooltip" type="tooltip" independent="true" style="informationTooltip"/>
+
+		<object size="-7 100%-350 350 100%">
+			<include file="gui/session/minimap/MiniMap.xml"/>
+		</object>
+
+		<!-- START of BOTTOM PANEL -->
+		<!-- Limit to the minimal supported width of 1024 pixels. LOL -->
+		<object size="50%-512 0 50%+512 100%">
+
+			<!-- Supplemental Details Panel (left). -->
+			<object name="supplementalSelectionDetails"
+				size="50%-316 100%-166 50%-110 100%"
+				sprite="supplementalDetailsPanel"
+				type="image"
+				z="20"
+			>
+				<include directory="gui/session/selection_panels_left/"/>
+			</object>
+
+			<!-- Selection Details Panel (middle). -->
+			<object name="selectionDetails"
+				size="50%-114 100%-200 50%+114 100%"
+				sprite="selectionDetailsPanel"
+				type="image"
+			>
+				<include directory="gui/session/selection_panels_middle/"/>
+			</object>
+
+			<!-- Commands Panel (right). -->
+			<object name="unitCommands"
+				size="50%+110 100%-166 50%+512 100%"
+				sprite="unitCommandsPanel"
+				type="image"
+				z="20"
+			>
+				<include directory="gui/session/selection_panels_right/"/>
+			</object>
+		</object><!-- END OF BOTTOM PANEL -->
+	</object><!-- END OF PRIMARY OVERLAYS -->
+
+	<!-- Hotkeys of button objects can only be triggered while the object is neither set hidden nor disabled. -->
+	<!-- That is why they are placed outside of menus and overlays. -->
+	<!-- And this object can therefore be used to turn on and off all these hotkeys here at once. -->
+	<object name="hotkeys">
+		<include directory="gui/session/hotkeys/"/>
 	</object>
 
-	<include directory="gui/session/chat/"/>
-	<include directory="gui/session/developer_overlay/"/>
-	<include directory="gui/session/dialogs/"/>
-	<include directory="gui/session/match_settings/"/>
-	<include directory="gui/session/diplomacy/"/>
-	<include directory="gui/session/objectives/"/>
-	<include file="gui/session/GameSpeedControl.xml"/>
-	<include file="gui/session/PanelEntities.xml"/>
-	<include file="gui/session/ResearchProgress.xml"/>
-	<include file="gui/session/TopPanel.xml"/>
-	<include file="gui/session/trade/TradeDialog.xml"/>
-	<include file="gui/session/tutorial_panel.xml"/>
-	<include file="gui/session/Menu.xml"/>
+	<!-- Selection bandbox. -->
+	<!-- Placed outside the primary overlays, so it can be shown even when all overlays are hidden (e.g. with the hotkey)-->
+	<object name="bandbox" type="image" sprite="bandbox" ghost="true" hidden="true" z="200"/>
 
-	<!-- Contains miscellanious objects s.a.: the technology research -->
-	<!-- progress, group selection icons, and the hero selection icon -->
-	<include directory="gui/session/session_objects/"/>
+	<!-- Overlaps with the primary overlays, they're never shown both at once. -->
+	<include file="gui/session/cinema/CinemaOverlay.xml"/>
 
-	<!-- Information tooltip -->
-	<!-- Follows the mouse around if 'independent' is set to 'true'. -->
-	<object name="informationTooltip" type="tooltip" independent="true" style="informationTooltip"/>
-
-	<!-- Structure placement info tooltip -->
-	<object name="placementTooltip" type="tooltip" independent="true" style="informationTooltip"/>
-
-	<object size="-7 100%-350 350 100%">
-		<include file="gui/session/minimap/MiniMap.xml"/>
+	<!-- Objects that make sense to sometimes still show while the primary overlays are hidden. -->
+	<object name="supplimentaryOverlays">
+		<include file="gui/session/NetworkStatusOverlay.xml"/>
+		<include file="gui/session/NetworkDelayOverlay.xml"/>
+		<include file="gui/session/PauseOverlay.xml"/>
 	</object>
-
-	<!-- START of BOTTOM PANEL -->
-	<!-- Limit to the minimal supported width of 1024 pixels.  LOL -->
-	<object size="50%-512 0 50%+512 100%">
-
-		<!-- Supplemental Details Panel (left). -->
-		<object name="supplementalSelectionDetails"
-			size="50%-316 100%-166 50%-110 100%"
-			sprite="supplementalDetailsPanel"
-			type="image"
-			z="20"
-		>
-			<include directory="gui/session/selection_panels_left/"/>
-		</object>
-
-		<!-- Selection Details Panel (middle). -->
-		<object name="selectionDetails"
-			size="50%-114 100%-200 50%+114 100%"
-			sprite="selectionDetailsPanel"
-			type="image"
-		>
-			<include directory="gui/session/selection_panels_middle/"/>
-		</object>
-
-		<!-- Commands Panel (right). -->
-		<object name="unitCommands"
-			size="50%+110 100%-166 50%+512 100%"
-			sprite="unitCommandsPanel"
-			type="image"
-			z="20"
-		>
-			<include directory="gui/session/selection_panels_right/"/>
-		</object>
-	</object><!-- END OF BOTTOM PANEL -->
 </object> <!-- END OF SESSION OBJECT -->
-
-<!-- Selection bandbox -->
-<object name="bandbox" type="image" sprite="bandbox" ghost="true" hidden="true" z="200"/>
-
-<!-- Cinema overlay -->
-<object name="cinemaOverlay" hidden="true" ghost="true">
-	<object name="cinemaBarTop" type="image" sprite="color:0 0 0 255" size="0 0 100% 100" ghost="true"/>
-	<object name="cinemaBarBottom" type="image" sprite="color:0 0 0 255" size="0 100%-100 100% 100%" ghost="true"/>
-</object>
-
 </objects>
