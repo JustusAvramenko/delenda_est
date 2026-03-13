@@ -1,17 +1,22 @@
 backgrounds['spartans_gorgo'] = [
 	{
 		"offset": (time, width) => 0.10 * width * Math.cos(0.02 * time) + width/16,
-		"sprite": "background-gorgo1-0",
+		"sprite": "background-gorgo1-clouds",
 		"tiling": false,
 	},
 	{
 		"offset": (time, width) => 0.0 * width * Math.cos(0.0 * time),
-		"sprite": "background-gorgo1-1",
+		"sprite": "background-gorgo1-city",
 		"tiling": false,
 	},
 	{
 		"offset": (time, width) => 0.20 * width * Math.cos(0.04 * time) + width/16,
 		"sprite": "smoke-orange-g",
+		"tiling": false,
+	},
+	{
+		"offset": (time, width) => 0.0 * width * Math.cos(0.0 * time),
+		"sprite": "background-gorgo1-shield",
 		"tiling": false,
 	},
 	{
