@@ -1,0 +1,38 @@
+{
+	"supersedes": "forge/resistance_shield_pierce_02",
+	"genericName": "Iron Shield Bosses",
+	"specificName": {
+		"imp": "Umbo",
+		"rome": "Umbo"
+	},
+	"description": "",
+	"cost": {
+		"metal": 800,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "brit" },
+					{ "civ": "gala" },
+					{ "civ": "gaul" },
+					{ "civ": "goth" },
+					{ "civ": "imp" },
+					{ "civ": "rome" },
+					{ "civ": "sasa" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "shield_boss.png",
+	"researchTime": 60,
+	"tooltip": "Infantry and Cavalry +1 pierce armor level.",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1.0 }
+	],
+	"affects": ["Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

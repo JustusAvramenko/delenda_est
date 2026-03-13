@@ -1,0 +1,32 @@
+{
+	"supersedes": "forge/resistance_armor_hack_03",
+	"genericName": "Segmented Iron Armor",
+	"specificName": {
+		"imp": "Lorica Segmentata"
+	},
+	"description": "",
+	"cost": {
+		"metal": 1000,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "imp" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "armor_cuirass_empire.png",
+	"researchTime": 60,
+	"tooltip": "Infantry +1 hack armor level, but also +5 metal cost.",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 },
+		{ "value": "Cost/Resources/metal", "add": 5 }
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
