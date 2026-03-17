@@ -32,13 +32,15 @@
   <Identity>
     <GenericName>Infantry Barracks</GenericName>
     <SpecificName>Infantry Barracks</SpecificName>
-    <Tooltip>Train Melee Citizen-infantry. Research training improvements for melee infantry.</Tooltip>
     <VisibleClasses datatype="tokens">
       Village
       Barracks
     </VisibleClasses>
+    <Tooltip>Train Melee Citizen-infantry. Research training improvements for melee infantry.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_village</Techs>
+    </Requirements>
     <Icon>structures/barracks.png</Icon>
-    <Requirements><Techs datatype="tokens">phase_village</Techs></Requirements>
   </Identity>
   <Loot>
     <xp>300</xp>

@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_infantry_spearman">
+<Entity parent="gladiator|template_unit_champion_infantry_spearman">
   <Identity>
-    <VisibleClasses datatype="tokens">Gladiator</VisibleClasses>
-    <Civ>imp</Civ>
-    <Lang>latin</Lang>
     <SpecificName>Hoplomachus Gladiator</SpecificName>
     <Icon>units/imp/champion_infantry_gladiator_spear.png</Icon>
-    <Requirements>
-      <Techs datatype="tokens">romans_imperial/unlock_gladiators -phase_city</Techs>
-    </Requirements>
   </Identity>
   <Resistance>
     <Entity>
@@ -20,12 +14,6 @@
   <TrainingRestrictions>
     <Category>Gladiator</Category>
   </TrainingRestrictions>
-  <UnitMotion>
-    <WalkSpeed op="mul">1.5</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range op="mul">0.5</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/romans/infantry_gladiator_spearman.xml</Actor>
   </VisualActor>

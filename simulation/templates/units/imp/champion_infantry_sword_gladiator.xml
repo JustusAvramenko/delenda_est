@@ -1,32 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_infantry_swordsman">
+<Entity parent="gladiator|template_unit_champion_infantry_swordsman">
   <Identity>
-    <VisibleClasses datatype="tokens">Gladiator</VisibleClasses>
-    <Civ>imp</Civ>
-    <Lang>latin</Lang>
     <SpecificName>Murmillo Gladiator</SpecificName>
     <Icon>units/imp/champion_infantry_gladiator_sword.png</Icon>
-    <Requirements>
-      <Techs datatype="tokens">romans_imperial/unlock_gladiators -phase_city</Techs>
-    </Requirements>
   </Identity>
   <Resistance>
     <Entity>
       <Damage>
-        <Hack op="add">-1</Hack>
-        <Pierce op="add">-1</Pierce>
+        <Hack op="add">-2</Hack>
       </Damage>
     </Entity>
-  </Resistance>
-  <TrainingRestrictions>
-    <Category>Gladiator</Category>
-  </TrainingRestrictions>
-  <UnitMotion>
-    <WalkSpeed op="mul">1.4</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range op="mul">0.5</Range>
-  </Vision>
+  </Resistance>  
   <VisualActor>
     <Actor>units/romans/infantry_gladiator_swordsman.xml</Actor>
   </VisualActor>

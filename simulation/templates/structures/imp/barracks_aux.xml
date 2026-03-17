@@ -22,9 +22,10 @@
     <GenericName>Auxiliary Barracks</GenericName>
     <VisibleClasses datatype="tokens">
       AuxiliaryBarracks
-      Town
     </VisibleClasses>
-    <Requirements><Techs datatype="tokens">phase_village</Techs></Requirements>
+    <Requirements>
+      <Techs datatype="tokens">phase_village</Techs>
+    </Requirements>
     <Tooltip>Train Auxiliary mercenary soldiers here and research their improvements.</Tooltip>
     <Icon>structures/barracks_aux.png</Icon>
   </Identity>
@@ -32,11 +33,8 @@
     <Static width="22.0" depth="22.0"/>
   </Obstruction>
   <Researcher>
-    <Technologies datatype="tokens">
-      -barracks/training_01
-      -barracks/training_02
-      -barracks/training_03
-      romans_imperial/attack_cav_02
+    <Technologies datatype="tokens" replace="">
+      romans_imperial/cavalry_tournaments
     </Technologies>
   </Researcher>
   <Sound>
@@ -47,10 +45,7 @@
     </SoundGroups>
   </Sound>
   <Trainer>
-    <Entities datatype="tokens">
-      -units/{civ}/infantry_spearman_b
-      -units/{civ}/infantry_pikeman_b
-      -units/{civ}/infantry_swordsman_b
+    <Entities datatype="tokens" replace="">
       units/{civ}/cavalry_scout
       units/{civ}/merc_infantry_1
       units/{civ}/merc_infantry_2

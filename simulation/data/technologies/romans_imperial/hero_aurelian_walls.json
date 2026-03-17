@@ -1,0 +1,24 @@
+{
+	"genericName": "Aurelian Walls",
+	"description": "For the first time in centuries, the city of Rome was encircled in a network of defensive walls, known today as the “Aurelian Walls” (Latin: Moenia Aureliana). Built between 271 and 275 AD during the reigns of Emperors Aurelian and Probus, they served the city for nearly a thousand years until the advent of siege cannons rendered them obsolete. Large sections of these walls are still visible in Rome today.",
+	"cost": {
+		"stone": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "imp" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase after selecting Emperor Aurelian for your Hero.",
+	"icon": "aurelian_walls.png",
+	"researchTime": 60,
+	"tooltip": "Stone Walls +25% health, −25% build time.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25},
+		{ "value": "Cost/BuildTime", "multiply": 0.75 }
+	],
+	"affects": ["StoneWall"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

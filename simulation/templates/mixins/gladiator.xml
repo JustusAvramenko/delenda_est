@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack op="add">2</Hack>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Identity>
+    <VisibleClasses datatype="tokens">Gladiator</VisibleClasses>
+    <Civ>imp</Civ>
+    <Lang>latin</Lang>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        romans_imperial/hero_unlock_gladiators
+      </Techs>
+    </Requirements>
+  </Identity>
+  <TrainingRestrictions>
+    <Category>Gladiator</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range op="mul">0.5</Range>
+  </Vision>
+</Entity>
