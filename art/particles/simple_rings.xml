@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<particles>
+    <texture>art/textures/particles/ring.png</texture>
+    <blend mode="add"/>
+
+    <start_full/>
+    <use_local_space/>
+
+    <constant name="emissionrate" value="2.0"/>
+    <uniform name="lifetime" min="2.0" max="2.0"/>
+    <uniform name="velocity.y" min="1.0" max="1.0"/>
+    <constant name="size" value="2.0"/>
+
+    <force y="8.0"/>
+    <particle>
+        <fixed_orientation name="axisX" mode="absolute" x="1.0"/>
+        <fixed_orientation name="axisY" mode="absolute" z="1.0"/>
+    </particle>
+</particles>
