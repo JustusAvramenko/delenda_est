@@ -1,11 +1,13 @@
 {
-	"auraName": "Philosopher King",
-	"auraDescription": "Technologies research instantly from Town Phase onward, as long as Marcus lives.",
-	"overlayIcon": "art/textures/ui/session/auras/laurel.png",
-	"requiredTechnology": "phase_town",
 	"type": "global",
+	"auraName": "Philosopher King",
+	"requiredTechnology": "phase_town",
+	"auraDescription": "Technologies −50% research time from Town Phase onward, as long as Marcus lives, but cost +20% more coin and glory.",
 	"modifications": [
-		{ "value": "Researcher/TechCostMultiplier/time", "replace": 0 }
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.5 },
+		{ "value": "Researcher/TechCostMultiplier/coin", "multiply": 1.2 },
+		{ "value": "Researcher/TechCostMultiplier/glory", "multiply": 1.2 }
 	],
-	"affects": ["Structure"]
+	"affects": ["Structure"],
+	"overlayIcon": "art/textures/ui/session/auras/laurel.png"
 }

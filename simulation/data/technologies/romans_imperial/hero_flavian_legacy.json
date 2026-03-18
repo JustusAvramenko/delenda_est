@@ -1,0 +1,22 @@
+{
+	"genericName": "Flavian Legacy",
+	"description": "The Flavian dynasty left behind a rich legacy, including the building of one of the wonders of the world: The Colosseum.",
+	"cost": {
+		"coin": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "games.png",
+	"researchTime": 40,
+	"tooltip": "Wonders and Amphitheaters −50% build time, +50% health, +50% capture resistance.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.5 },
+		{ "value": "Health/Max", "multiply": 1.5 },
+		{ "value": "Capturable/CapturePoints", "multiply": 1.5 }
+	],
+	"affects": ["Wonder", "Amphitheater"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

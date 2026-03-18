@@ -1,7 +1,10 @@
 {
 	"genericName": "Face Masks",
 	"description": "Metal armor for a rider's face. Mostly ceremonial, but can be useful in some circumstances",
-	"cost": { "glory": 200, "metal": 200 },
+	"cost": {
+		"metal": 300,
+		"glory": 200
+	},
 	"requirements": {
 		"all": [
 			{ "tech": "phase_city" },
@@ -11,8 +14,10 @@
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "cavalry_masks.png",
 	"researchTime": 60,
-	"tooltip": "All cavalry +1 hack armor level.",
-	"modifications": [{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 }],
+	"tooltip": "All Cavalry +1 hack armor level.",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 }
+	],
 	"affects": ["Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
