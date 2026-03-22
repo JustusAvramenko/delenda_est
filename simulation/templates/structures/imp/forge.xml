@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_forge">
+  <Footprint>
+    <Square width="20.0" depth="20.0"/>
+  </Footprint>
   <Identity>
     <Civ>imp</Civ>
     <SpecificName>Armamentarium</SpecificName>
   </Identity>
+  <Obstruction>
+    <Static width="17.0" depth="17.0"/>
+  </Obstruction>
   <Upgrade>
     <Foundry>
       <Entity>structures/{civ}/foundry</Entity>
@@ -19,6 +25,6 @@
     </Foundry>
   </Upgrade>
   <VisualActor>
-    <Actor>structures/romans/blacksmith.xml</Actor>
+    <Actor>structures/romans_imperial/blacksmith.xml</Actor>
   </VisualActor>
 </Entity>
