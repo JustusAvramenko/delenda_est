@@ -4,10 +4,9 @@
 	"specificName": {
 		"imp": "Primus Pilus"
 	},
-	"description": "Reduce the experience required to upgrade to Centurion.",
+	"description": "The primus pilus, or primipilus, was the senior centurion of the first cohort in a Roman legion, a formation of five double-strength centuries of 160 men each; he was a career soldier and advisor to the legate (commander of the legion). The primus pilus would remain in command for one year. They could continue to serve in the army after their term ended if there was a vacancy in command or if they wished to become an independent commander of an auxilia unit or the praefectus castrorum. The primus pilus was a well paid position, earning around four times the standard centurion salary, or sixty times the base pay of a rank and file soldier. They could accumulate enough wealth to become part of the equestrian class. Even if they failed to gather such wealth, they were often promoted to the equestrian class after retiring.",
 	"cost": {
-		"glory": 600,
-		"coin": 600
+		"coin": 800
 	},
 	"requirements": {
 		"all": [
@@ -20,7 +19,7 @@
 	"researchTime": 60,
 	"tooltip": "Elite Legionary Infantry −50% experience needed for promotion to Centurion.",
 	"modifications": [
-		{ "value": "Promotion/RequiredXp", "replace": 150 }
+		{ "value": "Promotion/RequiredXp", "multiply": 0.50 }
 	],
 	"affects": ["Legion Sword Elite"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
