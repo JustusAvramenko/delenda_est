@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_wonder">
-  <BuildRestrictions>
-    <Territory>own neutral ally</Territory>
-  </BuildRestrictions>
   <Footprint replace="">
-    <Circle radius="30.0"/>
+    <Circle radius="42.0"/>
     <Height>10.0</Height>
   </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_20x20</SpawnEntityOnDeath>
+  </Health>
   <Identity>
     <Civ>scyth</Civ>
-    <SpecificName>Royal Burial Mound</SpecificName>
+    <SpecificName>Royal Kurgan</SpecificName>
   </Identity>
   <Obstruction>
-    <Static width="30.0" depth="30.0"/>
+    <Static width="68.0" depth="68.0"/>
   </Obstruction>
-  <TerritoryInfluence disable=""/>
+  <RallyPoint disable=""/>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <Trainer disable=""/>
   <VisualActor>
-    <Actor>structures/celts/stone_monument.xml</Actor>
+    <FoundationActor>props/structures/scythians/kurgan_foundation.xml</FoundationActor>
+    <Actor>structures/scythians/royal_kurgan.xml</Actor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
   </VisualActor>
 </Entity>

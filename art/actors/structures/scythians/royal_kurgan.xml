@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Royal Kurgan">
+      <mesh>props/structural/kurgan_hill.dae</mesh>
+      <props>
+	    <prop actor="props/structures/scythians/kurgan_base.xml" attachpoint="root"/>
+	    <prop actor="props/structures/scythians/kurgan_steles.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/kurgan_hill_diffuse.png" name="baseTex"/>
+        <texture file="structural/kurgan_hill_spec.png" name="specTex"/>
+        <texture file="structural/kurgan_hill_norm.png" name="normTex"/>
+        <texture file="structural/ao/scythian_kurgan.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant file="structures/destruction_large.xml"/>
+  </group>
+  <material>no_trans_norm_spec.xml</material>
+</actor>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_ruins">
+  <Footprint replace="">
+    <Circle radius="15.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Stone Resource</GenericName>
+    <SpecificName>Stone Heap</SpecificName>
+    <Icon>gaia/geology_stone.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="24.0"/>
+  </Obstruction>
+  <Position>
+    <Anchor>pitch-roll</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Max>3000</Max>
+    <Type>stone.ruins</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/resource/sel_stone.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>props/structures/scythians/stone_heap_large.xml</Actor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
+  </VisualActor>
+</Entity>
