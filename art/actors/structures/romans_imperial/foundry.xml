@@ -5,7 +5,10 @@
     <variant frequency="1" name="Blacksmith">
       <mesh>structural/imp_romans/blacksmith_struct_b.dae</mesh>
       <props>
-        <prop actor="particle/metal.xml" attachpoint="root"/>
+        <prop actor="particle/metal_low.xml" attachpoint="root"/>
+        <prop actor="particle/sparks_blacksmith.xml" attachpoint="smoke"/>
+        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke"/>
+        <prop actor="particle/flame.xml" attachpoint="fire"/>
         <prop actor="props/structures/romans_imperial/blacksmith_armorlegion.xml" attachpoint="root"/>
         <prop actor="props/structures/romans_imperial/blacksmith_armorstand_armor.xml" attachpoint="rome-armorstand"/>
         <prop actor="props/structures/romans_imperial/blacksmith_armorstand_wood.xml" attachpoint="rome-armorstand"/>
@@ -13,7 +16,8 @@
         <prop actor="props/structures/romans_imperial/blacksmith_barrels.xml" attachpoint="romebarrels"/>
         <prop actor="props/structures/romans_imperial/blacksmith_bucket_water.xml" attachpoint="bucket"/>
         <prop actor="props/structures/romans_imperial/blacksmith_bucket.xml" attachpoint="bucket"/>
-        <prop actor="props/structures/romans_imperial/blacksmith_shields.xml" attachpoint="romeshields"/>
+        <prop actor="props/units/shields/scutum_rome_imp_rect_01.xml" attachpoint="shield_01"/>
+        <prop actor="props/structures/romans_imperial/clipeus_rome_03_b.xml" attachpoint="shield_02"/>
         <prop actor="props/units/helmets/rome_gallic_type_i.xml" attachpoint="rome_helmet_b"/>
         <prop actor="props/units/helmets/rome_cavalry_type_a.xml" attachpoint="rome_helmet_b1"/>
         <prop actor="props/units/helmets/rome_gallic_type_h_cent_transversal.xml" attachpoint="rome_helmet_c"/>
@@ -39,33 +43,10 @@
     </variant>
   </group>
   <group>
-    <variant frequency="1" name="Idle"/>
-    <variant name="researching">
-      <props>
-        <prop actor="particle/sparks_blacksmith.xml" attachpoint="smoke"/>
-        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke"/>
-        <prop actor="particle/flame.xml" attachpoint="fire"/>
-      </props>
-    </variant>
-  </group>
-  <group>
     <variant name="alive" frequency="1"/>
     <variant file="structures/destruction_medium.xml">
       <props>
         <prop actor="props/structures/romans_imperial/blacksmith_armorlegion.xml" attachpoint="root"/>
-        <prop actor="props/structures/romans_imperial/blacksmith_armorstand_armor.xml" attachpoint="rome-armorstand"/>
-        <prop actor="props/structures/romans_imperial/blacksmith_armorstand_wood.xml" attachpoint="rome-armorstand"/>
-        <prop actor="props/structures/romans_imperial/blacksmith_barrel.xml" attachpoint="barrel"/>
-        <prop actor="props/structures/romans_imperial/blacksmith_barrels.xml" attachpoint="romebarrels"/>
-        <prop actor="props/structures/romans_imperial/blacksmith_bucket_water.xml" attachpoint="bucket"/>
-        <prop actor="props/structures/romans_imperial/blacksmith_bucket.xml" attachpoint="bucket"/>
-        <prop actor="props/structures/romans_imperial/blacksmith_shields.xml" attachpoint="romeshields"/>
-        <prop actor="props/units/helmets/rome_apulo_corinthian_b2.xml" attachpoint="rome_helmet_b"/>
-        <prop actor="props/units/helmets/rome_helmet_montefortino.xml" attachpoint="rome_helmet_b1"/>
-        <prop actor="props/units/helmets/rome_apulo_itallic_e1.xml" attachpoint="rome_helmet_c"/>
-        <prop actor="props/units/helmets/hele_attic_r2.xml" attachpoint="rome_helmet_c1"/>
-        <prop actor="props/units/helmets/rome_gallic_type_h_cent.xml" attachpoint="rome_helmet_c2"/>
-        <prop actor="props/units/helmets/rome_helmet_montefortino_c.xml" attachpoint="rome_helmet_c_3"/>
       </props>
     </variant>
   </group>
