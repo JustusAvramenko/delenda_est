@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/rome_hero_marcellus
+  </Auras>
+  <Identity>
+    <Civ>rome</Civ>
+    <Lang>latin</Lang>
+    <SpecificName>Gaius Marius</SpecificName>
+    <Icon>units/rome/hero_marcellus.png</Icon>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/rome/hero_marius_mounted</Entity>
+      <Tooltip>This gives Marius his War Horse, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/romans/hero_infantry_swordsman_marcellus.xml</Actor>
+  </VisualActor>
+</Entity>
