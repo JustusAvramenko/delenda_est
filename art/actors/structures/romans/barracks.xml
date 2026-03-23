@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="barracks">
+      <mesh>structural/republican_romans/barracks.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/dirt_6x6.xml" attachpoint="root"/>
+        <prop actor="props/units/shields/clipeus_rome_04.xml" attachpoint="shield_01" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/clipeus_rome_04.xml" attachpoint="shield_05"/>
+      </props>
+      <textures>
+        <texture file="structural/imp_struct_2.png" name="baseTex"/>
+        <texture file="structural/imp_struct_2_norm.png" name="normTex"/>
+        <texture file="structural/imp_struct_2_spec.png" name="specTex"/>
+        <texture file="structural/ao/imp_barracks.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="shields_01">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_10.xml" attachpoint="shield_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_09.xml" attachpoint="shield_03" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_01.xml" attachpoint="shield_04"/>
+        <prop actor="props/units/shields/rome_parma_a.xml" attachpoint="shield_06"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="shields_02">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_14.xml" attachpoint="shield_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_06.xml" attachpoint="shield_03" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_02.xml" attachpoint="shield_04"/>
+        <prop actor="props/units/shields/rome_parma_b.xml" attachpoint="shield_06"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="shields_03">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_05.xml" attachpoint="shield_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_02.xml" attachpoint="shield_03" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_03.xml" attachpoint="shield_04"/>
+        <prop actor="props/units/shields/rome_parma_e.xml" attachpoint="shield_06"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="shields_04">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_12.xml" attachpoint="shield_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_12.xml" attachpoint="shield_03" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_13.xml" attachpoint="shield_04"/>
+        <prop actor="props/units/shields/rome_parma_hero.xml" attachpoint="shield_06"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="shields_05">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_03.xml" attachpoint="shield_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_13.xml" attachpoint="shield_03" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_05.xml" attachpoint="shield_04"/>
+        <prop actor="props/units/shields/rome_parma_hero_2.xml" attachpoint="shield_06"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="shields_06">
+      <props>
+        <prop actor="props/units/shields/scutum_rome_isp_13.xml" attachpoint="shield_02" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_08.xml" attachpoint="shield_03" maxheight="20" minheight="-20"/>
+        <prop actor="props/units/shields/scutum_rome_isw_09.xml" attachpoint="shield_04"/>
+        <prop actor="props/units/shields/rome_parma_hero_3.xml" attachpoint="shield_06"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned" selectable="false"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_medium.xml"/>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
