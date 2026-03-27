@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero">
+  <Attack>
+    <Melee>
+      <AttackName>Dagger</AttackName>
+      <Damage>
+        <Hack>20</Hack>
+      </Damage>
+      <MaxRange>3</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">Permanent Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/rome_gracchi
+  </Auras>
+  <Identity>
+    <Civ>rome</Civ>
+    <Lang>latin</Lang>
+    <SpecificName>Tiberius Gracchus</SpecificName>
+    <Icon>units/rome/hero_gracchus_tiberius.png</Icon>
+  </Identity>
+  <TrainingRestrictions>
+    <Category>TiberiusGracchus</Category>
+    <MatchLimit>2</MatchLimit>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.9</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/romans/hero_gracchus_tiberius.xml</Actor>
+  </VisualActor>
+</Entity>

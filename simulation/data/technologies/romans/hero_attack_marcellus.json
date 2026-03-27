@@ -1,0 +1,29 @@
+{
+	"genericName": "Rich Spoils",
+	"specificName": {
+		"rome": "Spolia Opima",
+		"imp": "Spolia Opima"
+	},
+	"description": "Spolia Opima (“rich spoils” in Latin) was the highest, rarest military honor in ancient Rome, awarded only when a Roman commander personally killed the enemy leader in hand-to-hand combat. The arms of the vanquished were dedicated to Jupiter Feretrius in a prestigious ceremony, with only three instances historically recognized: by Romulus, Aulus Cornelius Cossus, and Marcus Claudius Marcellus.",
+	"cost": {
+		"coin": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "rome" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "armor_pectorales.png",
+	"researchTime": 50,
+	"tooltip": "Marcus Claudius Marcellus +100% attack bonus vs. enemy Heroes.",
+	"modifications": [
+		{ "value": "Attack/Ranged/Bonuses/BonusHero/Multiplier", "multiply": 2 }
+	],
+	"affects": ["Hero"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
+
+

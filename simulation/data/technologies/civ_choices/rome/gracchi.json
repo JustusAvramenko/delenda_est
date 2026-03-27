@@ -1,0 +1,16 @@
+{
+	"genericName": "The Gracchi",
+	"description": "The Gracchus Brothers.",
+	"icon": "civ_choices/rome_hero_gracchi.png",
+	"tooltip": "Select the Gracchus brothers to lead your civilization.",
+	"requirements": {
+		"civ": "rome"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_marcellus_infantry -units/{civ}/hero_maximus_infantry -units/{civ}/hero_marius_infantry -units/{civ}/hero_scipio_infantry",
+			"affects": "CivilCentre"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"genericName": "Gaius Marius",
+	"description": "Gaius Marius.",
+	"icon": "civ_choices/rome_hero_marius.png",
+	"tooltip": "Select Gaius Marius to lead your civilization.",
+	"requirements": {
+		"civ": "rome"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_marcellus_infantry -units/{civ}/hero_maximus_infantry -units/{civ}/hero_scipio_infantry -units/{civ}/hero_gracchus_gaius -units/{civ}/hero_gracchus_tiberius",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "romans/hero_marius_mules",
+			"affects": "Barracks"
+		}
+	]
+}
