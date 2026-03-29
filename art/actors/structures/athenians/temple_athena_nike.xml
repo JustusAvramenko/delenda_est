@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Temple of Athena Nike">
+      <mesh>structural/athena_nike_struct.dae</mesh>
+      <props>
+        <prop actor="props/structures/athenians/athena_nike_decor.xml" attachpoint="root"/>
+        <prop actor="props/structures/athenians/athena_nike_pediment.xml" attachpoint="root"/>
+        <prop actor="props/structures/athenians/athena_nike_props_a.xml" attachpoint="root"/>
+        <prop actor="props/structures/athenians/athena_nike_tile_c.xml" attachpoint="root"/>
+		<prop actor="props/structures/athenians/athena_nike_roof.xml" attachpoint="root"/>
+		<prop actor="props/structures/athenians/athena_nike_statues.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/hele_struct.dds" name="baseTex"/>
+        <texture file="structural/hele_struct_norm.png" name="normTex"/>
+        <texture file="structural/hele_struct_spec.png" name="specTex"/>
+        <texture file="structural/ao/athen_athena_nike.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_hele.xml" attachpoint="garrisoned" selectable="false"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_medium.xml">
+      <props>
+        <prop actor="props/structures/athenians/temple_decor.xml" attachpoint="root"/>
+        <prop actor="props/structures/athenians/temple_props_a.xml" attachpoint="root"/>
+        <prop actor="props/structures/athenians/temple_tile_c.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
