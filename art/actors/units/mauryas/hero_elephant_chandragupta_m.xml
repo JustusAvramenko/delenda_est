@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="quadraped/base_elephant_asian.xml">
+      <mesh>skeletal/elephant_asian_armored_02.dae</mesh>
+      <props>
+        <prop actor="units/mauryas/elephantry_c_d.xml" attachpoint="rider"/>
+        <prop actor="props/units/elephant/maur_hero_howdah.xml" attachpoint="turret"/>
+        <prop actor="particle/simple_rings_cav.xml" attachpoint="decals"/>
+      </props>
+      <textures>
+        <texture file="skeletal/maur/elephant_hero.png" name="baseTex"/>
+        <texture file="skeletal/maur/elephant_hero_spec.png" name="specTex"/>
+        <texture file="skeletal/maur/elephant_hero_normal.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant file="quadraped/base_elephant_death.xml"/>
+    <variant file="quadraped/base_elephant_run.xml"/>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

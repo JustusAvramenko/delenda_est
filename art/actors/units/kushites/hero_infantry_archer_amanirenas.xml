@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/new/f_dress.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/head_kush_fem_amanirenas.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/kush_skull_cap_crown.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/arrow_back.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/weapons/bow_recurve.xml" attachpoint="weapon_bow"/>
+        <prop actor="props/units/kush_quiver_hip.xml" attachpoint="sheath_L"/>
+        <prop actor="particle/simple_rings.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="skeletal/kush/scale_royal_female_01.png" name="baseTex"/>
+        <texture file="skeletal/kush/scale_royal_female_01_norm.png" name="normTex"/>
+        <texture file="skeletal/kush/scale_royal_female_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_archer_relax_fem.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/attack_ranged_archer_hip.xml"/>
+    <variant file="biped/female_base_walk.xml"/>
+    <variant file="biped/gather_praise.xml"/>
+    <variant file="biped/female_death.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

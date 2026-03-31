@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/horse_lusitano.dae</mesh>
+      <props>
+        <prop actor="units/iberians/hero_cavalry_spearman_indibil_r.xml" attachpoint="rider"/>
+        <prop actor="props/horse/chest_colorband_02.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_rein_leather.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_iber_basic.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_armor_iber.xml" attachpoint="root"/>
+        <prop actor="particle/simple_rings_cav.xml" attachpoint="decals"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant file="quadraped/horse/maneless_brown_spotted_01.xml" frequency="1" name="Brown-Spotted-01"/>
+  </group>
+  <group>
+    <variant file="quadraped/base_horse_trot.xml" frequency="1" name="Horse-Trot"/>
+    <variant file="quadraped/base_horse_death.xml"/>
+    <variant file="quadraped/base_horse_run.xml"/>
+  </group>
+  <material>no_trans_parallax_spec.xml</material>
+</actor>

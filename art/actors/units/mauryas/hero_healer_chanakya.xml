@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="biped/base_healer_male.xml">
+      <mesh>skeletal/new/m_dress.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_mauryan_chanakya.xml" attachpoint="head"/>
+        <prop actor="props/units/staff.xml" attachpoint="weapon_R"/>
+        <prop actor="particle/simple_rings.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="skeletal/maur/robes_teacher_01.png" name="baseTex"/>
+        <texture file="skeletal/maur/robes_teacher_01_spec.png" name="specTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="Idle" frequency="1"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>
