@@ -884,7 +884,7 @@
 			{
 				"type": "dropdown",
 				"label": "Lateral speed",
-				"tooltip": "Camera scrolling speed",
+				"tooltip": "Camera scrolling speed. REQUIRES GAME RESTART",
 				"config": "view.scroll.speed",
 				"list": [
 					{ "value": 100, "label": "Slow (100)" },
@@ -895,7 +895,7 @@
 			{
 				"type": "dropdown",
 				"label": "Rotation speed",
-				"tooltip": "Camera rotation speed",
+				"tooltip": "Camera rotation speed. REQUIRES GAME RESTART",
 				"config": "view.rotate.y.speed",
 				"list": [
 					{ "value": 0.6, "label": "Slow (0.6)" },
@@ -906,7 +906,7 @@
 			{
 				"type": "dropdown",
 				"label": "Zoom speed",
-				"tooltip": "Camera zoom speed",
+				"tooltip": "Camera zoom speed. REQUIRES GAME RESTART",
 				"config": "view.zoom.speed",
 				"list": [
 					{ "value": 0, "label": "Off (0)" },
@@ -917,23 +917,34 @@
 			},
 			{
 				"type": "dropdown",
+				"label": "Zoom default position",
+				"tooltip": "Default zoom value when starting a new game. REQUIRES GAME RESTART",
+				"config": "view.zoom.default",
+				"list": [
+					{ "value": 100, "label": "Close (100)" },
+					{ "value": 120, "label": "Medium (120)" },
+					{ "value": 140, "label": "Far (140)" }
+				]
+			},
+			{
+				"type": "dropdown",
 				"label": "Zoom minimum",
-				"tooltip": "Minimum camera zoom distance.",
+				"tooltip": "Minimum camera zoom distance. REQUIRES GAME RESTART",
 				"config": "view.zoom.min",
 				"list": [
 					{ "value": 20, "label": "Close (20)" },
 					{ "value": 40, "label": "Medium (40)" },
-					{ "value": 100, "label": "Far (100)" }
+					{ "value": 90, "label": "Far (90)" }
 				]
 			},
 			{
 				"type": "dropdown",
 				"label": "Zoom maximum",
-				"tooltip": "Maximum camera zoom distance.",
+				"tooltip": "Maximum camera zoom distance. REQUIRES GAME RESTART",
 				"config": "view.zoom.max",
 				"list": [
-					{ "value": 100, "label": "Close (100)" },
-					{ "value": 200, "label": "Medium (200)" },
+					{ "value": 150, "label": "Close (150)" },
+					{ "value": 225, "label": "Medium (225)" },
 					{ "value": 300, "label": "Far (300)" }
 				]
 			}
