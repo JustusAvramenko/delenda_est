@@ -887,9 +887,9 @@
 				"tooltip": "Camera scrolling speed. REQUIRES GAME RESTART",
 				"config": "view.scroll.speed",
 				"list": [
-					{ "value": 100, "label": "Slow (100)" },
-					{ "value": 150, "label": "Medium (150)" },
-					{ "value": 200, "label": "Fast (200)" }
+					{ "value": 100, "label": "Slow" },
+					{ "value": 150, "label": "Medium" },
+					{ "value": 200, "label": "Fast" }
 				]
 			},
 			{
@@ -898,21 +898,33 @@
 				"tooltip": "Camera rotation speed. REQUIRES GAME RESTART",
 				"config": "view.rotate.y.speed",
 				"list": [
-					{ "value": 0.6, "label": "Slow (0.6)" },
-					{ "value": 1.2, "label": "Medium (1.2)" },
-					{ "value": 1.8, "label": "Fast (1.8)" }
+					{ "value": 0.6, "label": "Slow" },
+					{ "value": 1.2, "label": "Medium" },
+					{ "value": 1.8, "label": "Fast" }
 				]
 			},
 			{
 				"type": "dropdown",
-				"label": "Zoom speed",
+				"label": "Zoom speed (keys)",
 				"tooltip": "Camera zoom speed. REQUIRES GAME RESTART",
 				"config": "view.zoom.speed",
 				"list": [
-					{ "value": 0, "label": "Off (0)" },
-					{ "value": 60, "label": "Slow (60)" },
-					{ "value": 120, "label": "Medium (120)" },
-					{ "value": 240, "label": "Fast (240)" }
+					{ "value": 0, "label": "Off" },
+					{ "value": 60, "label": "Slow" },
+					{ "value": 120, "label": "Medium" },
+					{ "value": 240, "label": "Fast" }
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "Zoom speed (mouse wheel)",
+				"tooltip": "Camera zoom speed. REQUIRES GAME RESTART",
+				"config": "view.zoom.speed.wheel",
+				"list": [
+					{ "value": 0, "label": "Off" },
+					{ "value": 16, "label": "Slow" },
+					{ "value": 32, "label": "Medium" },
+					{ "value": 48, "label": "Fast" }
 				]
 			},
 			{
@@ -921,9 +933,9 @@
 				"tooltip": "Default zoom value when starting a new game. REQUIRES GAME RESTART",
 				"config": "view.zoom.default",
 				"list": [
-					{ "value": 100, "label": "Close (100)" },
-					{ "value": 120, "label": "Medium (120)" },
-					{ "value": 140, "label": "Far (140)" }
+					{ "value": 90, "label": "Close" },
+					{ "value": 120, "label": "Medium" },
+					{ "value": 150, "label": "Far" }
 				]
 			},
 			{
@@ -932,9 +944,9 @@
 				"tooltip": "Minimum camera zoom distance. REQUIRES GAME RESTART",
 				"config": "view.zoom.min",
 				"list": [
-					{ "value": 20, "label": "Close (20)" },
-					{ "value": 40, "label": "Medium (40)" },
-					{ "value": 90, "label": "Far (90)" }
+					{ "value": 20, "label": "Close" },
+					{ "value": 40, "label": "Medium" },
+					{ "value": 80, "label": "Far" }
 				]
 			},
 			{
@@ -943,9 +955,9 @@
 				"tooltip": "Maximum camera zoom distance. REQUIRES GAME RESTART",
 				"config": "view.zoom.max",
 				"list": [
-					{ "value": 150, "label": "Close (150)" },
-					{ "value": 225, "label": "Medium (225)" },
-					{ "value": 300, "label": "Far (300)" }
+					{ "value": 160, "label": "Close" },
+					{ "value": 225, "label": "Medium" },
+					{ "value": 300, "label": "Far" }
 				]
 			}
 		]
