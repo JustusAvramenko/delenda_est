@@ -8,6 +8,13 @@
     <Max>100</Max>
     <Type>food.meat</Type>
     <MaxGatherers>8</MaxGatherers>
+    <Change>
+      <Rotting> <!-- Add your new effect, name it however you want -->
+        <Value>-1</Value>
+        <Interval>2000</Interval>
+        <State>dead</State> <!-- Add a state, "dead" or "alive" -->
+      </Rotting>
+    </Change>
   </ResourceSupply>
   <VisualActor>
     <SilhouetteDisplay>true</SilhouetteDisplay>
