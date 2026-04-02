@@ -402,8 +402,8 @@
 				"config": "sound.musicgain",
 				"function": "SetMusicGain",
 				"min": 0,
-				"max": 0.1,
-				"default": 0.05
+				"max": 0.2,
+				"default": 0.1
 			},
 			{
 				"type": "slider",
@@ -883,6 +883,17 @@
 		[
 			{
 				"type": "dropdown",
+				"label": "Field of view",
+				"tooltip": "Camera field of view. REQUIRES GAME RESTART",
+				"config": "view.fov",
+				"list": [
+					{ "value": 30, "label": "30°", "tooltip": "Narrow. \"Far\" zoom options suggested." },
+					{ "value": 45, "label": "45°", "tooltip": "Standard. \"Medium\" zoom options suggested." },
+					{ "value": 60, "label": "60°", "tooltip": "Wide. \"Near\" zoom options suggested." }
+				]
+			},
+			{
+				"type": "dropdown",
 				"label": "Lateral speed",
 				"tooltip": "Camera scrolling speed. REQUIRES GAME RESTART",
 				"config": "view.scroll.speed",
@@ -898,9 +909,9 @@
 				"tooltip": "Camera rotation speed. REQUIRES GAME RESTART",
 				"config": "view.rotate.y.speed",
 				"list": [
-					{ "value": 0.6, "label": "Slow" },
-					{ "value": 1.2, "label": "Medium" },
-					{ "value": 1.8, "label": "Fast" }
+					{ "value": 1.0, "label": "Slow" },
+					{ "value": 2.0, "label": "Medium" },
+					{ "value": 3.0, "label": "Fast" }
 				]
 			},
 			{
@@ -929,24 +940,24 @@
 			},
 			{
 				"type": "dropdown",
-				"label": "Zoom default position",
-				"tooltip": "Default zoom value when starting a new game. REQUIRES GAME RESTART",
-				"config": "view.zoom.default",
-				"list": [
-					{ "value": 90, "label": "Close" },
-					{ "value": 120, "label": "Medium" },
-					{ "value": 150, "label": "Far" }
-				]
-			},
-			{
-				"type": "dropdown",
 				"label": "Zoom minimum",
 				"tooltip": "Minimum camera zoom distance. REQUIRES GAME RESTART",
 				"config": "view.zoom.min",
 				"list": [
-					{ "value": 20, "label": "Close" },
+					{ "value": 20, "label": "Near" },
 					{ "value": 40, "label": "Medium" },
 					{ "value": 80, "label": "Far" }
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "Zoom default position",
+				"tooltip": "Default zoom value when starting a new game. REQUIRES GAME RESTART",
+				"config": "view.zoom.default",
+				"list": [
+					{ "value": 90, "label": "Near" },
+					{ "value": 120, "label": "Medium" },
+					{ "value": 150, "label": "Far" }
 				]
 			},
 			{
@@ -955,7 +966,7 @@
 				"tooltip": "Maximum camera zoom distance. REQUIRES GAME RESTART",
 				"config": "view.zoom.max",
 				"list": [
-					{ "value": 160, "label": "Close" },
+					{ "value": 160, "label": "Near" },
 					{ "value": 225, "label": "Medium" },
 					{ "value": 300, "label": "Far" }
 				]
