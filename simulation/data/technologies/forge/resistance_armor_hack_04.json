@@ -51,9 +51,10 @@
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "armor_cuirass_bronze.png",
 	"researchTime": 60,
-	"tooltip": "Champions and Heroes +1 hack armor level, but also +10 coin cost. Does not apply to Elephant units.",
+	"tooltip": "[font=\"sans-bold-14\"]• Champions +1 hack armor.\n• Champions +10 coin cost.\n• Heroes +1 hack armor.\n• Heroes +20 coin cost.\n• Does not apply to Elephant units.[/font]",
 	"modifications": [
 		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 },
+		{ "value": "Cost/Resources/coin", "add": 10, "affects": "Hero !Elephant" },
 		{ "value": "Cost/Resources/coin", "add": 10 }
 	],
 	"affects": ["Champion !Elephant", "Hero !Elephant"],

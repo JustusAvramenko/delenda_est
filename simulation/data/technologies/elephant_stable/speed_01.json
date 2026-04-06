@@ -1,0 +1,24 @@
+{
+	"genericName": "Numidian Mahouts",
+	"description": "The Numidians were adept at training and driving elephants.",
+	"cost": {
+		"food": 300,
+		"coin": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "cart" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "elephant_mahout.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• War Elephants +20% movement speed.[/font]",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.20 },
+		{ "value": "UnitMotion/Run/Speed", "multiply": 1.20 }
+	],
+	"affects": ["Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

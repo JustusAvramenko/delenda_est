@@ -1,19 +1,21 @@
 {
-	"genericName": "State Religion",
 	"supersedes": "temple/healer_gather_glory",
-	"description": ".",
+	"genericName": "State Religion",
+	"description": "In China, the Han dynasty (206 BCE – 220 CE) advocated Confucianism as the de facto state religion, establishing tests based on Confucian texts as an entrance requirement into government service—although, in fact, the “Confucianism” advocated by the Han emperors may be more properly termed a sort of Confucian Legalism or “State Confucianism.”\n\nNicene Christianity, as opposed to Arianism and other ideologies deemed heretical, was declared to be the state religion of the Roman Empire on 27 February 380 by the decree De fide catolica of Emperor Theodosius I.\n\nMilder forms of state religion were practiced in Hellenistic kingdoms, where the state officially recognized the deification of past rulers, such as Alexander the Great. This was seen as a unifying force in a world where several tribes or nations were often ruled by an otherwise foreign imperial dynasty.",
 	"cost": {
 		"coin": 500,
 		"glory": 500
 	},
-	"requirements": { "tech": "phase_empire" },
+	"requirements": {
+		"tech": "phase_empire"
+	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Entrenched Priesthood.”",
-	"icon": "deification.png",
+	"icon": "state_religion.png",
 	"researchTime": 30,
-	"tooltip": "Heroes and Healers +25% health.",
+	"tooltip": "[font=\"sans-bold-14\"]• Heroes +25% health.\n• Healers +25% health.\n• Temples +25% health.[/font]",
 	"modifications": [
 		{ "value": "Health/Max", "multiply": 1.25 }
 	],
-	"affects": ["Hero", "Healer"],
+	"affects": ["Hero", "Healer", "Temple"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

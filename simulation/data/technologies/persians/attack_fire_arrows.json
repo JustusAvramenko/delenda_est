@@ -1,4 +1,4 @@
-{
+{	"supersedes": "range/tradition_archery",
 	"genericName": "Fire Arrows",
 	"description": "Fire was a constant danger in a crowded town or city, even during peace time. In a siege, archers would typically loose flaming arrows over the enemy walls in a bid to set the enemy's buildings on fire.",
 	"cost": {
@@ -8,14 +8,14 @@
 	"requirements": {
 		"all": [
 			{ "tech": "phase_empire" },
-			{ "tech": "persians/upgrade_rank_elite_archers" },
+			{ "tech": "range/tradition_archery" },
 			{ "civ": "pers" }
 		]
 	},
-	"requirementsTooltip": "Unlocked in Empire Phase. Requires Elite Archers Upgrade.",
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Archery Tradition.”",
 	"icon": "fire_arrows.png",
 	"researchTime": 60,
-	"tooltip": "Infantry archers +5 crush attack (for a strong anti-building attack), but attack rate +50% slower and cost +10 Wood.",
+	"tooltip": "[font=\"sans-bold-14\"]Give your Archers a strong anti-building attack.\n• Archer Infantry +5 crush attack damage.\nArcher Infantry +50% slower attack rate.\n• Archer Infantry +10 wood cost.[/font]",
 	"modifications": [
 		{ "value": "Attack/Ranged/Damage/Crush", "add": 5.0 },
 		{ "value": "Attack/Ranged/RepeatTime", "multiply": 1.5 },

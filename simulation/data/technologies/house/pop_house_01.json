@@ -1,23 +1,30 @@
 {
 	"genericName": "Courtyards",
 	"specificName": {
-		"hele": "Peristyle",
-		"mace": "Peristyle",
-		"spart": "Peristyle",
-		"athen": "Peristyle",
-		"sele": "Peristyle",
-		"ptol": "Peristyle",
-		"rome": "Peristyle",
+		"hele": "Peristylon",
+		"mace": "Peristylon",
+		"spart": "Peristylon",
+		"athen": "Peristylon",
+		"sele": "Peristylon",
+		"ptol": "Peristylon",
+		"rome": "Peristylon",
 		"pers": "Paradeisa"
 	},
 	"description": "Home gardens ranged from simple fenced-in areas to large manicured and colonnaded enclosures or courtyards.",
-	"cost": { "wood": 300, "stone": 100 },
-	"requirements": { "tech": "phase_town" },
+	"cost": {
+		"wood": 300,
+		"stone": 100
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "courtyard.png",
 	"researchTime": 40,
-	"tooltip": "Houses +20% population cap bonus.",
-	"modifications": [{ "value": "Population/Bonus", "multiply": 1.2 }],
+	"tooltip": "[font=\"sans-bold-14\"]• Houses +20% population cap bonus.[/font]",
+	"modifications": [
+		{ "value": "Population/Bonus", "multiply": 1.2 }
+	],
 	"affects": ["House"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

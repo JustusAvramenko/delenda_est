@@ -1,6 +1,8 @@
 {
 	"genericName": "Flaming Pitch",
-	"specificName": { "generic": "Suzko Txabalina" },
+	"specificName": { 
+		"iber": "Suzko Txabalina"
+	},
 	"description": "Iberian tribesmen were noted for wrapping bundles of grass about the shafts of their throwing spears, soaking that in some sort of flammable pitch, then setting it afire just before throwing. Fire was a constant danger in a crowded town or city, even during peace time. In a siege, an army would typically loose flaming projectiles (like arrows and javelins) over the enemy walls in a bid to set the enemy's buildings on fire.",
 	"cost": {
 		"wood": 800,
@@ -10,15 +12,15 @@
 		"all": [
 			{ "tech": "phase_empire" },
 			{ "any": [
-				{ "tech": "techs_forge_cost" },
-				{ "tech": "techs_forge_speed" }]
+				{ "tech": "forge/techs_forge_cost" },
+				{ "tech": "forge/techs_forge_speed" }]
 			}
 		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Forging” or “Metallurgy.”",
 	"icon": "flaming_pitch.png",
 	"researchTime": 60,
-	"tooltip": "Javelin infantry +5 crush attack (for a strong anti-building attack),but −50% slower attack rate and +10 wood cost.",
+	"tooltip": "[font=\"sans-bold-14\"]Give your Skirmishers a strong, but slow, anti-building attack.\n• Javelin Infantry +5 crush attack.\n• Javelin Infantry −50% slower attack rate.\n• Javelin Infantry +10 wood cost.[/font]",
 	"modifications": [
 		{ "value": "Attack/Ranged/Damage/Crush", "add": 5.0 },
 		{ "value": "Attack/Ranged/RepeatTime", "multiply": 1.5 },

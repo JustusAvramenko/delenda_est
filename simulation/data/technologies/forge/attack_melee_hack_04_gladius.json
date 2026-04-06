@@ -2,8 +2,8 @@
 	"supersedes": "forge/attack_melee_hack_03",
 	"genericName": "Spanish Swords",
 	"specificName": {
-		"imp": "Gladius",
-		"rome": "Gladius"
+		"imp": "Gladii",
+		"rome": "Gladii"
 	},
 	"description": "The Gladius, famously wielded by Roman legionaries on their imperial conquest marches, was imported from Spain, then known as Iberia.",
 	"cost": {
@@ -24,9 +24,10 @@
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "sword_gladius.png",
 	"researchTime": 60,
-	"tooltip": "Sword Units +10% hack attack, but +5 metal cost.",
+	"tooltip": "[font=\"sans-bold-14\"]Equip your men with the famous Gladius sword.\n• Sword Units +10% attack damage.\n• Sword Units +5 metal cost.[/font]",
 	"modifications": [
 		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.1 },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.1 },
 		{ "value": "Cost/Resources/metal", "add": 5 }
 	],
 	"affects": ["Sword"],

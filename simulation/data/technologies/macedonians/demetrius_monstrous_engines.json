@@ -1,7 +1,5 @@
 {
 	"genericName": "Monstrous Engines",
-	"specificName": {},
-	"description": "",
 	"cost": {
 		"glory": 600
 	},
@@ -9,13 +7,13 @@
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "differential_gears.png",
 	"researchTime": 40,
-	"tooltip": "Siege Towers +20% health and +20% movement speed, but +20% cost.",
+	"tooltip": "[font=\"sans-bold-14\"]• Siege Towers +20% health.\n• Siege Towers +20% movement speed.\n• Siege Towers +20% cost.[/font]",
 	"modifications": [
 		{ "value": "Health/Max", "multiply": 1.2 },
 		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.2 },
 		{ "value": "Cost/Resources/wood", "multiply": 1.2 },
 		{ "value": "Cost/Resources/metal", "multiply": 1.2 }
 	],
-	"affects": ["Alexander"],
+	"affects": ["SiegeTower"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
