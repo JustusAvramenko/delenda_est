@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:COLLADA xmlns:ns0="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <ns0:asset>
+    <ns0:contributor>
+      <ns0:author>Alexander Morgado</ns0:author>
+      <ns0:authoring_tool>Blender 2.79.0 commit date:2018-03-22, commit time:14:10, hash:f4dc9f9d68b</ns0:authoring_tool>
+    </ns0:contributor>
+    <ns0:created>2018-11-06T14:41:12</ns0:created>
+    <ns0:modified>2018-11-06T14:41:12</ns0:modified>
+    <ns0:unit name="meter" meter="1" />
+    <ns0:up_axis>Z_UP</ns0:up_axis>
+  </ns0:asset>
+  <ns0:library_images />
+  <ns0:library_effects>
+    <ns0:effect id="Render_002-effect">
+      <ns0:profile_COMMON>
+        <ns0:technique sid="common">
+          <ns0:phong>
+            <ns0:emission>
+              <ns0:color sid="emission">0 0 0 1</ns0:color>
+            </ns0:emission>
+            <ns0:ambient>
+              <ns0:color sid="ambient">1 1 1 1</ns0:color>
+            </ns0:ambient>
+            <ns0:diffuse>
+              <ns0:color sid="diffuse">0.64 0.64 0.64 1</ns0:color>
+            </ns0:diffuse>
+            <ns0:specular>
+              <ns0:color sid="specular">0.5 0.5 0.5 1</ns0:color>
+            </ns0:specular>
+            <ns0:shininess>
+              <ns0:float sid="shininess">50</ns0:float>
+            </ns0:shininess>
+            <ns0:index_of_refraction>
+              <ns0:float sid="index_of_refraction">1</ns0:float>
+            </ns0:index_of_refraction>
+          </ns0:phong>
+        </ns0:technique>
+      </ns0:profile_COMMON>
+    </ns0:effect>
+  </ns0:library_effects>
+  <ns0:library_materials>
+    <ns0:material id="Render_002-material" name="Render_002">
+      <ns0:instance_effect url="#Render_002-effect" />
+    </ns0:material>
+  </ns0:library_materials>
+  <ns0:library_geometries>
+    <ns0:geometry id="longboat_350-mesh" name="longboat.350">
+      <ns0:mesh>
+        <ns0:source id="longboat_350-mesh-positions">
+          <ns0:float_array id="longboat_350-mesh-positions-array" count="75">-0.019124728 -2.6330008 0.064191779 -0.067174514 -2.63271265 0.034158236 -0.052142417 -2.6330739 -0.021072248 0.00520035015 -2.6335805 -0.0251768895 0.025605706 -2.633538 0.0275217165 -0.12023216 -4.102406 0.00027641235 -0.17389861 -4.10179655 0.035609407 -0.028345409 -4.10301035 0.044661278 0.11527598 -4.1043695 0.014923314 0.0584873185 -4.10399465 -0.012508668 -0.0340396355 -3.08136985 0.0428450745 -0.17959123 -3.0801569 0.0337927955 -0.125926395 -3.0807638 -0.0015397784 0.052794316 -3.08235415 -0.0143248715 0.109582935 -3.082729 0.0131071105 0.056040959 0.84913878 0.0173467235 0.0371557695 0.84946348 -0.036623389 0.0453062835 0.84932357 -0.015569688 -0.0312255065 0.8506392 -0.0020638459 0.0381707715 0.849445885 0.0319971195 0.0100679355 0.84992962 0.0523390985 -0.0180384365 0.8504114 0.031992453 -0.0372295835 0.8507429 0.019994975 -0.0204893605 0.8504539 -0.034985779 0.0024127182 0.8500612 -0.03662446</ns0:float_array>
+          <ns0:technique_common>
+            <ns0:accessor source="#longboat_350-mesh-positions-array" count="25" stride="3">
+              <ns0:param name="X" type="float" />
+              <ns0:param name="Y" type="float" />
+              <ns0:param name="Z" type="float" />
+            </ns0:accessor>
+          </ns0:technique_common>
+        </ns0:source>
+        <ns0:source id="longboat_350-mesh-normals">
+          <ns0:float_array id="longboat_350-mesh-normals-array" count="114">-0.5299905 -0.02272862 0.847699 -0.07137328 -0.002170979 -0.9974474 -0.919364 0.04626727 0.3906778 -0.9581127 0.007293999 -0.2862985 -0.6128847 0.0326249 -0.7894986 -0.06205731 0.001428365 0.9980716 0.06738632 -0.02316403 0.9974581 -0.003234982 0.003418087 0.9999889 -0.5581084 0.007843434 0.8297311 0.9549018 0.03708028 0.2945977 0.6105077 -0.002716183 0.7920057 -0.008601605 -0.9999544 0.004162013 -0.008600115 -0.9999542 0.004198729 -0.008595407 -0.9999546 0.004131257 -0.071599 -0.03169518 -0.9969299 -0.5436188 0.137256 -0.8280335 -0.9543315 0.1459096 -0.2606949 0.2028102 0.00649321 0.9791966 0.4349662 0.02436339 -0.9001172 0.9167728 0.1827887 -0.3551281 -0.5499382 -0.004549324 -0.835193 -0.03613436 -0.003296017 -0.9993415 0.5032051 0.03650128 -0.8633959 0.4349689 8.23093e-4 -0.9004451 0.2027825 0.002870738 0.9792197 0.9418426 -0.009460806 -0.3359211 -0.06194359 0.01474779 0.9979707 -0.07137382 -0.00217086 -0.9974474 -0.06206077 0.001428842 0.9980714 -0.9320873 0.009460926 0.3621104 -0.07164084 -0.0317049 -0.9969265 0.6325119 -0.05781364 0.77239 -0.5499312 -0.004549801 -0.8351976 0.4349693 8.23094e-4 -0.9004449 0.2027808 0.002870976 0.97922 0.562644 -0.007873833 -0.8266618 0.9598429 -0.007568597 0.2804361 -0.6169662 0.002441465 -0.7869859</ns0:float_array>
+          <ns0:technique_common>
+            <ns0:accessor source="#longboat_350-mesh-normals-array" count="38" stride="3">
+              <ns0:param name="X" type="float" />
+              <ns0:param name="Y" type="float" />
+              <ns0:param name="Z" type="float" />
+            </ns0:accessor>
+          </ns0:technique_common>
+        </ns0:source>
+        <ns0:source id="longboat_350-mesh-map-0">
+          <ns0:float_array id="longboat_350-mesh-map-0-array" count="228">0.5943538 0.6685031 0.640772 0.6612035 0.641464 0.665604 0.5438042 0.6851379 0.5956867 0.6769789 0.5930209 0.6600269 0.4701096 0.827981 0.7883654 0.8244681 0.4701096 0.8191854 0.544628 0.6903765 0.5424713 0.6766621 0.5943538 0.6685031 0.4701096 0.8367774 0.7883101 0.8367771 0.7883409 0.8314946 0.4701096 0.8455728 0.788295 0.8420588 0.4701096 0.8367774 0.544628 0.6903765 0.5403146 0.6629475 0.5424713 0.6766621 0.5438042 0.6851379 0.5403146 0.6629475 0.544628 0.6903765 0.5438042 0.6851379 0.5411384 0.6681859 0.5403146 0.6629475 0.5930209 0.6600269 0.5956867 0.6769789 0.6411997 0.6639234 0.641464 0.665604 0.5956867 0.6769789 0.5965105 0.6822176 0.5956867 0.6769789 0.641464 0.665604 0.6411997 0.6639234 0.5943538 0.6685031 0.5921971 0.6547885 0.6400799 0.6568027 0.6403442 0.6584834 0.5921971 0.6547885 0.5930209 0.6600269 0.5921971 0.6547885 0.6403442 0.6584834 0.6400799 0.6568027 0.544628 0.6903765 0.5965105 0.6822176 0.5956867 0.6769789 0.4701096 0.8631647 0.7883514 0.8596513 0.4701096 0.8543686 0.5411384 0.6681859 0.5930209 0.6600269 0.5921971 0.6547885 0.5424713 0.6766621 0.5403146 0.6629475 0.5921971 0.6547885 0.4701096 0.8543686 0.7883081 0.8508547 0.4701096 0.8455728 0.5965105 0.6822176 0.5943538 0.6685031 0.641464 0.665604 0.5411384 0.6681859 0.5438042 0.6851379 0.5930209 0.6600269 0.5965105 0.6822176 0.544628 0.6903765 0.5943538 0.6685031 0.4701096 0.827981 0.7883409 0.8314946 0.7883614 0.827981 0.6403442 0.6584834 0.5930209 0.6600269 0.6411997 0.6639234 0.640772 0.6612035 0.5943538 0.6685031 0.6400799 0.6568027 0.5438042 0.6851379 0.544628 0.6903765 0.5956867 0.6769789 0.5403146 0.6629475 0.5411384 0.6681859 0.5921971 0.6547885 0.5943538 0.6685031 0.5424713 0.6766621 0.5921971 0.6547885 0.788295 0.8420588 0.7883101 0.8367771 0.4701096 0.8367774 0.7883514 0.8596513 0.788323 0.8543686 0.4701096 0.8543686 0.7883081 0.8508547 0.7882863 0.8455728 0.4701096 0.8455728 0.7883654 0.8244681 0.7883695 0.8191854 0.4701096 0.8191854 0.4701096 0.827981 0.7883614 0.827981 0.7883654 0.8244681 0.4701096 0.8455728 0.7882863 0.8455728 0.788295 0.8420588 0.4701096 0.8631647 0.7883695 0.8631647 0.7883514 0.8596513 0.4701096 0.8543686 0.788323 0.8543686 0.7883081 0.8508547 0.4701096 0.827981 0.4701096 0.8367774 0.7883409 0.8314946</ns0:float_array>
+          <ns0:technique_common>
+            <ns0:accessor source="#longboat_350-mesh-map-0-array" count="114" stride="2">
+              <ns0:param name="S" type="float" />
+              <ns0:param name="T" type="float" />
+            </ns0:accessor>
+          </ns0:technique_common>
+        </ns0:source>
+        <ns0:vertices id="longboat_350-mesh-vertices">
+          <ns0:input semantic="POSITION" source="#longboat_350-mesh-positions" />
+        </ns0:vertices>
+        <ns0:triangles material="Render_002-material" count="38">
+          <ns0:input semantic="VERTEX" source="#longboat_350-mesh-vertices" offset="0" />
+          <ns0:input semantic="NORMAL" source="#longboat_350-mesh-normals" offset="1" />
+          <ns0:input semantic="TEXCOORD" source="#longboat_350-mesh-map-0" offset="2" set="0" />
+          <ns0:p>10 0 0 0 0 1 1 0 2 5 1 3 12 1 4 13 1 5 1 2 6 18 3 7 2 4 8 6 5 9 7 5 10 10 5 11 0 6 12 20 7 13 21 8 14 4 9 15 19 10 16 0 6 17 6 11 18 8 11 19 7 11 20 5 12 21 8 12 22 6 12 23 5 13 24 9 13 25 8 13 26 13 14 27 12 14 28 2 14 29 1 15 30 12 15 31 11 15 32 12 16 33 1 16 34 2 16 35 10 17 36 14 17 37 4 17 38 3 18 39 14 18 40 13 18 41 14 19 42 3 19 43 4 19 44 6 20 45 11 20 46 12 20 47 2 4 48 24 21 49 3 22 50 9 23 51 13 23 52 14 23 53 7 24 54 8 24 55 14 24 56 3 22 57 17 25 58 4 9 59 11 26 60 10 26 61 1 26 62 9 27 63 5 27 64 13 27 65 11 28 66 6 28 67 10 28 68 1 2 69 21 8 70 22 29 71 3 30 72 13 30 73 2 30 74 0 31 75 10 31 76 4 31 77 5 32 78 6 32 79 12 32 80 8 33 81 9 33 82 14 33 83 10 34 84 7 34 85 14 34 86 19 10 87 20 7 88 0 6 89 24 21 90 16 35 91 3 22 92 17 25 93 15 36 94 4 9 95 18 3 96 23 37 97 2 4 98 1 2 99 22 29 100 18 3 101 4 9 102 15 36 103 19 10 104 2 4 105 23 37 106 24 21 107 3 22 108 16 35 109 17 25 110 1 2 111 0 6 112 21 8 113</ns0:p>
+        </ns0:triangles>
+      </ns0:mesh>
+    </ns0:geometry>
+  </ns0:library_geometries>
+  <ns0:library_animations>
+    <ns0:animation id="oar_armature_Row_Root_pose_matrix">
+      <ns0:source id="oar_armature_Row_Root_pose_matrix-input">
+        <ns0:float_array id="oar_armature_Row_Root_pose_matrix-input-array" count="2">0 0.4166666</ns0:float_array>
+        <ns0:technique_common>
+          <ns0:accessor source="#oar_armature_Row_Root_pose_matrix-input-array" count="2" stride="1">
+            <ns0:param name="TIME" type="float" />
+          </ns0:accessor>
+        </ns0:technique_common>
+      </ns0:source>
+      <ns0:source id="oar_armature_Row_Root_pose_matrix-output">
+        <ns0:float_array id="oar_armature_Row_Root_pose_matrix-output-array" count="32">1 0 -3.89414e-07 0 0 -1 0 0 -3.89414e-07 0 -1 -0.39090956 0 0 0 1 1 0 -3.89414e-07 0 0 -1 0 0 -3.89414e-07 0 -1 -0.39090956 0 0 0 1</ns0:float_array>
+        <ns0:technique_common>
+          <ns0:accessor source="#oar_armature_Row_Root_pose_matrix-output-array" count="2" stride="16">
+            <ns0:param name="TRANSFORM" type="float4x4" />
+          </ns0:accessor>
+        </ns0:technique_common>
+      </ns0:source>
+      <ns0:source id="oar_armature_Row_Root_pose_matrix-interpolation">
+        <ns0:Name_array id="oar_armature_Row_Root_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</ns0:Name_array>
+        <ns0:technique_common>
+          <ns0:accessor source="#oar_armature_Row_Root_pose_matrix-interpolation-array" count="2" stride="1">
+            <ns0:param name="INTERPOLATION" type="name" />
+          </ns0:accessor>
+        </ns0:technique_common>
+      </ns0:source>
+      <ns0:sampler id="oar_armature_Row_Root_pose_matrix-sampler">
+        <ns0:input semantic="INPUT" source="#oar_armature_Row_Root_pose_matrix-input" />
+        <ns0:input semantic="OUTPUT" source="#oar_armature_Row_Root_pose_matrix-output" />
+        <ns0:input semantic="INTERPOLATION" source="#oar_armature_Row_Root_pose_matrix-interpolation" />
+      </ns0:sampler>
+      <ns0:channel source="#oar_armature_Row_Root_pose_matrix-sampler" target="oar_armature_Row_Root/transform" />
+    </ns0:animation>
+    <ns0:animation id="oar_armature_Row_Bone_pose_matrix">
+      <ns0:source id="oar_armature_Row_Bone_pose_matrix-input">
+        <ns0:float_array id="oar_armature_Row_Bone_pose_matrix-input-array" count="2">0 0.4166666</ns0:float_array>
+        <ns0:technique_common>
+          <ns0:accessor source="#oar_armature_Row_Bone_pose_matrix-input-array" count="2" stride="1">
+            <ns0:param name="TIME" type="float" />
+          </ns0:accessor>
+        </ns0:technique_common>
+      </ns0:source>
+      <ns0:source id="oar_armature_Row_Bone_pose_matrix-output">
+        <ns0:float_array id="oar_armature_Row_Bone_pose_matrix-output-array" count="32">0.98305 -0.1720118 -0.0634405 -1.5222565e-07 0.1423303 0.9341363 -0.3273095 -0.85 0.1155632 0.3127322 0.9427851 -0.390909645 0 0 0 1 0.98305 -0.1720118 -0.0634405 -1.5222565e-07 0.1423303 0.9341363 -0.3273095 -0.85 0.1155632 0.3127322 0.9427851 -0.390909645 0 0 0 1</ns0:float_array>
+        <ns0:technique_common>
+          <ns0:accessor source="#oar_armature_Row_Bone_pose_matrix-output-array" count="2" stride="16">
+            <ns0:param name="TRANSFORM" type="float4x4" />
+          </ns0:accessor>
+        </ns0:technique_common>
+      </ns0:source>
+      <ns0:source id="oar_armature_Row_Bone_pose_matrix-interpolation">
+        <ns0:Name_array id="oar_armature_Row_Bone_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</ns0:Name_array>
+        <ns0:technique_common>
+          <ns0:accessor source="#oar_armature_Row_Bone_pose_matrix-interpolation-array" count="2" stride="1">
+            <ns0:param name="INTERPOLATION" type="name" />
+          </ns0:accessor>
+        </ns0:technique_common>
+      </ns0:source>
+      <ns0:sampler id="oar_armature_Row_Bone_pose_matrix-sampler">
+        <ns0:input semantic="INPUT" source="#oar_armature_Row_Bone_pose_matrix-input" />
+        <ns0:input semantic="OUTPUT" source="#oar_armature_Row_Bone_pose_matrix-output" />
+        <ns0:input semantic="INTERPOLATION" source="#oar_armature_Row_Bone_pose_matrix-interpolation" />
+      </ns0:sampler>
+      <ns0:channel source="#oar_armature_Row_Bone_pose_matrix-sampler" target="oar_armature_Row_Bone/transform" />
+    </ns0:animation>
+  </ns0:library_animations>
+  <ns0:library_controllers>
+    <ns0:controller id="oar_armature_row_large-skin" name="oar_armature">
+      <ns0:skin source="#longboat_350-mesh">
+        <ns0:bind_shape_matrix>0.999963 -0.008596271 -9.4502e-8 0 0.008596301 0.999963 -1.12656e-6 -2.38419e-7 9.0791e-8 1.30502e-6 0.9999998 -1.90735e-6 0 0 0 1</ns0:bind_shape_matrix>
+        <ns0:source id="oar_armature_row_large-skin-joints">
+          <ns0:Name_array id="oar_armature_row_large-skin-joints-array" count="1">Row_Bone</ns0:Name_array>
+          <ns0:technique_common>
+            <ns0:accessor source="#oar_armature_row_large-skin-joints-array" count="1" stride="1">
+              <ns0:param name="JOINT" type="name" />
+            </ns0:accessor>
+          </ns0:technique_common>
+        </ns0:source>
+        <ns0:source id="oar_armature_row_large-skin-bind_poses">
+          <ns0:float_array id="oar_armature_row_large-skin-bind_poses-array" count="16">1 0 -1.27952e-06 0 0 -1 0 0.85 -1.27952e-06 0 -1 0 0 0 0 1</ns0:float_array>
+          <ns0:technique_common>
+            <ns0:accessor source="#oar_armature_row_large-skin-bind_poses-array" count="1" stride="16">
+              <ns0:param name="TRANSFORM" type="float4x4" />
+            </ns0:accessor>
+          </ns0:technique_common>
+        </ns0:source>
+        <ns0:source id="oar_armature_row_large-skin-weights">
+          <ns0:float_array id="oar_armature_row_large-skin-weights-array" count="25">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</ns0:float_array>
+          <ns0:technique_common>
+            <ns0:accessor source="#oar_armature_row_large-skin-weights-array" count="25" stride="1">
+              <ns0:param name="WEIGHT" type="float" />
+            </ns0:accessor>
+          </ns0:technique_common>
+        </ns0:source>
+        <ns0:joints>
+          <ns0:input semantic="JOINT" source="#oar_armature_row_large-skin-joints" />
+          <ns0:input semantic="INV_BIND_MATRIX" source="#oar_armature_row_large-skin-bind_poses" />
+        </ns0:joints>
+        <ns0:vertex_weights count="25">
+          <ns0:input semantic="JOINT" source="#oar_armature_row_large-skin-joints" offset="0" />
+          <ns0:input semantic="WEIGHT" source="#oar_armature_row_large-skin-weights" offset="1" />
+          <ns0:vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </ns0:vcount>
+          <ns0:v>0 0 0 1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0 21 0 22 0 23 0 24</ns0:v>
+        </ns0:vertex_weights>
+      </ns0:skin>
+    </ns0:controller>
+  </ns0:library_controllers>
+  <ns0:library_visual_scenes>
+    <ns0:visual_scene id="Finalizado" name="Finalizado">
+      <ns0:node id="oar_armature" name="oar_armature" type="NODE">
+        <ns0:matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</ns0:matrix>
+        <ns0:node id="oar_armature_Row_Root" name="Row_Root" sid="Row_Root" type="JOINT">
+          <ns0:matrix sid="transform">1 0 -3.89414e-07 0 0 -1 0 0 -3.89414e-07 0 -1 -0.39090956 0 0 0 1</ns0:matrix>
+          <ns0:node id="oar_armature_Row_Bone" name="Row_Bone" sid="Row_Bone" type="JOINT">
+            <ns0:matrix sid="transform">1 -1.42109e-14 -8.90101e-07 -1.5222565e-07 -3.88433e-14 1 -5.96046e-08 -0.849999915 8.90101e-07 5.96046e-08 1 -0.39090973 0 0 0 1</ns0:matrix>
+            <ns0:extra>
+              <ns0:technique profile="blender">
+                <ns0:layer sid="layer" type="string">0</ns0:layer>
+                <ns0:roll sid="roll" type="float">-3.141594</ns0:roll>
+                <ns0:tip_x sid="tip_x" type="float">0</ns0:tip_x>
+                <ns0:tip_y sid="tip_y" type="float">-1</ns0:tip_y>
+                <ns0:tip_z sid="tip_z" type="float">0</ns0:tip_z>
+              </ns0:technique>
+            </ns0:extra>
+          </ns0:node>
+          <ns0:extra>
+            <ns0:technique profile="blender">
+              <ns0:layer sid="layer" type="string">0</ns0:layer>
+              <ns0:roll sid="roll" type="float">-3.141593</ns0:roll>
+              <ns0:tip_x sid="tip_x" type="float">0</ns0:tip_x>
+              <ns0:tip_y sid="tip_y" type="float">-1</ns0:tip_y>
+              <ns0:tip_z sid="tip_z" type="float">0</ns0:tip_z>
+            </ns0:technique>
+          </ns0:extra>
+        </ns0:node>
+      </ns0:node>
+      <ns0:node id="row_large" name="row_large" type="NODE">
+        <ns0:translate sid="location">0 0 0</ns0:translate>
+        <ns0:rotate sid="rotationZ">0 0 1 0</ns0:rotate>
+        <ns0:rotate sid="rotationY">0 1 0 0</ns0:rotate>
+        <ns0:rotate sid="rotationX">1 0 0 0</ns0:rotate>
+        <ns0:scale sid="scale">1 1 1</ns0:scale>
+        <ns0:instance_controller url="#oar_armature_row_large-skin">
+          <ns0:skeleton>#oar_armature_Row_Root</ns0:skeleton>
+          <ns0:bind_material>
+            <ns0:technique_common>
+              <ns0:instance_material symbol="Render_002-material" target="#Render_002-material" />
+            </ns0:technique_common>
+          </ns0:bind_material>
+        </ns0:instance_controller>
+      </ns0:node>
+    </ns0:visual_scene>
+  </ns0:library_visual_scenes>
+  <ns0:scene>
+    <ns0:instance_visual_scene url="#Finalizado" />
+  </ns0:scene>
+</ns0:COLLADA>
