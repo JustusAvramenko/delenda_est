@@ -2,6 +2,11 @@
 <Entity parent="template_unit_hero_infantry_hoplite">
   <Attack>
     <Melee>
+      <AttackName>Pankration</AttackName>
+      <Damage>
+        <Hack op="add">-2</Hack>
+      </Damage>
+      <MaxRange op="add">-1</MaxRange>
       <Bonuses>
         <BonusCarths>
           <Civ>cart</Civ>
@@ -132,6 +137,6 @@ At the Second Greco-Persian War, Leonidas led the allied Greek forces in a last 
     <BatchTimeModifier>0.8</BatchTimeModifier>
   </Trainer>
   <VisualActor>
-    <Actor>units/spartans/hero_leonidas_no_helmet.xml</Actor>
+    <Actor>units/spartans/hero_leonidas_no_weapons.xml</Actor>
   </VisualActor>
 </Entity>
