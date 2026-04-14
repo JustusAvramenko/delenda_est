@@ -53,7 +53,7 @@ function Music()
 }
 
 Music.prototype.DEFAULT_MENU_TRACKS = [
-	"The_Governor.ogg"
+	"Age_of_Wonder.ogg"
 ];
 
 Music.prototype.DEFAULT_PEACE_TRACKS = [];
