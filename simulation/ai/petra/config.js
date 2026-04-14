@@ -65,7 +65,8 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/statue",
 			"structures/{civ}/prytaneion",
 			"structures/{civ}/stoa_buildable",
-			"structures/{civ}/theater"
+			"structures/{civ}/theater",
+			"structures/{civ}/temple_nike"
 		],
 		"brit": [
 			"structures/{civ}/statue"
@@ -86,9 +87,18 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/stoa_buildable",
 			"structures/{civ}/theater"
 		],
+		"gala": [
+			"structures/{civ}/statue",
+			"structures/{civ}/assembly"
+		],
 		"gaul": [
 			"structures/{civ}/statue",
 			"structures/{civ}/assembly"
+		],
+		"gupt": [
+			"structures/{civ}/statue",
+			"structures/{civ}/academy",
+			"structures/{civ}/library"
 		],
 		"han": [
 			"structures/{civ}/statue",
