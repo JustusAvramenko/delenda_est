@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Market Vendor">
+      <mesh>structural/guptas/market_stall_1.dae</mesh>
+      <props>
+        <prop actor="particle/coin.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/gupt_struct.png" name="baseTex"/>
+        <texture file="structural/gupt_struct_spec.png" name="specTex"/>
+        <texture file="structural/gupt_struct_norm.png" name="normTex"/>
+        <texture file="structural/ao/generic/ao_AO.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="alive"/>
+    <variant file="structures/destruction_small.xml"/>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
