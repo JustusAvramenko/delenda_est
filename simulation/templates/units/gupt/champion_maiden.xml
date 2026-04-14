@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Cost>
+    <BuildTime>24</BuildTime>
+  </Cost>
+  <Identity>
+    <Civ>gupt</Civ>
+    <Lang>hindi</Lang>
+    <SpecificName>Maiden Guard</SpecificName>
+    <Icon>units/maur/champion_maiden.png</Icon>
+    <Phenotype>female</Phenotype>
+    <SelectionGroupName>units/gupt/champion_maiden</SelectionGroupName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_town
+      </Techs>
+    </Requirements>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Crush op="add">5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Upgrade>
+    <SwitchToBow>
+      <Entity>units/gupt/champion_maiden_archer</Entity>
+      <Tooltip>Switch weapon from sword (melee) to longbow (ranged) with poison arrows (anti-unit).</Tooltip>
+      <Cost>
+        <wood>10</wood>
+      </Cost>
+      <Time>5</Time>
+    </SwitchToBow>
+    <UseFireArrows>
+      <Entity>units/gupt/champion_maiden_archer_fire</Entity>
+      <Tooltip>Switch projectiles from poison arrows (anti-unit) to fire arrows (anti-building).</Tooltip>
+      <Cost>
+        <wood>5</wood>
+      </Cost>
+      <Time>10</Time>
+    </UseFireArrows>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/mauryas/infantry_swordsman_c.xml</Actor>
+  </VisualActor>
+</Entity>

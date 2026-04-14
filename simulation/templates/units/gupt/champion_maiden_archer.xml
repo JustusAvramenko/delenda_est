@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_archer">
+  <Attack>
+    <Ranged>
+      <AttackName>Poison Arrow</AttackName>
+      <ApplyStatus>
+       <Poison>
+        <Interval>2000</Interval>
+          <Damage>
+            <Poison>1.0</Poison>
+          </Damage>
+          <Stackability>Extend</Stackability>
+          <Duration>10000</Duration>
+        </Poison>
+      </ApplyStatus>
+      <Bonuses>
+        <BonusCavalry>
+          <Classes>Cavalry</Classes>
+          <Multiplier>1.0</Multiplier>
+        </BonusCavalry>
+        <BonusElephant>
+          <Classes>Elephant</Classes>
+          <Multiplier>1.0</Multiplier>
+        </BonusElephant>
+        <BonusInfantry>
+          <Classes>Infantry</Classes>
+          <Multiplier>1.0</Multiplier>
+        </BonusInfantry>
+        <BonusSupport>
+          <Classes>Support</Classes>
+          <Multiplier>1.0</Multiplier>
+        </BonusSupport>
+      </Bonuses>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Civ>gupt</Civ>
+    <Lang>hindi</Lang>
+    <SpecificName>Poison Maiden Archer</SpecificName>
+    <Phenotype>female</Phenotype>
+    <Classes datatype="tokens">FireArrows</Classes>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <SelectionGroupName>units/gupt/champion_maiden_archer</SelectionGroupName>
+    <Tooltip>Traits: Long Range, Light Armor.
+Strong Against: Melee Infantry (1.25x).
+Weak Against: Spear Cavalry, Sword Cavalry.
+Bonus Attack: Poison vs. Units.</Tooltip>
+    <Icon>units/maur/champion_maiden_archer_poison.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Crush op="add">5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Upgrade>
+    <SwitchToSword>
+      <Entity>units/gupt/champion_maiden</Entity>
+      <Tooltip>Switch weapon back to sword (melee).</Tooltip>
+      <Cost>
+        <metal>5</metal>
+      </Cost>
+      <Time>5</Time>
+    </SwitchToSword>
+    <UseFireArrows>
+      <Entity>units/gupt/champion_maiden_archer_fire</Entity>
+      <Tooltip>Switch projectiles from poison arrows (anti-unit) to fire arrows (anti-building).</Tooltip>
+      <Cost>
+        <wood>5</wood>
+      </Cost>
+      <Time>10</Time>
+    </UseFireArrows>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/mauryas/infantry_archer_c.xml</Actor>
+  </VisualActor>
+</Entity>

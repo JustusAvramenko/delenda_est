@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_elephant_archer">
+  <Identity>
+    <Civ>gupt</Civ>
+    <GenericName>Elephant Archer</GenericName>
+    <SpecificName>Vachii Gaja</SpecificName>
+    <SelectionGroupName>units/gupt/elephant_archer_b</SelectionGroupName>
+    <Icon>units/maur/elephant_archer.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion>
+    <Entity>units/gupt/elephant_archer_a</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/mauryas/elephantry_archer_b_m.xml</Actor>
+  </VisualActor>
+</Entity>
