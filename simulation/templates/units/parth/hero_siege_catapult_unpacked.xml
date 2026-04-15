@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege_catapult_stationary">
+  <BuildRestrictions>
+    <Category>ScythianCatapult</Category>
+  </BuildRestrictions>
+  <Identity>
+    <Civ>parth</Civ>
+    <SpecificName>Lithobolos</SpecificName>
+    <Icon>units/hele/siege_lithobolos.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">-phase_city scythians/hero_skilurus_catapults</Techs>
+    </Requirements>
+  </Identity>
+  <Pack>
+    <Entity>units/parth/hero_siege_catapult_packed</Entity>
+    <State>unpacked</State>
+  </Pack>
+  <VisualActor>
+    <Actor>units/scythians/siege_lithobolos_light.xml</Actor>
+  </VisualActor>
+</Entity>

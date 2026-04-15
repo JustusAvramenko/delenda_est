@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege_ram_covered">
+  <Attack>
+    <Melee>
+      <MaxRange>8.0</MaxRange>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <wood>200</wood>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="7.0" depth="15.0"/>
+    <Height>3.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">Support Infantry</List>
+    <BuffHeal>1</BuffHeal>
+  </GarrisonHolder>
+  <Identity>
+    <Civ>sasa</Civ>
+    <SpecificName>Assyrian Siege Ram</SpecificName>
+    <Icon>units/achae/siege_ram.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/persians/siege_ram.xml</Actor>
+  </VisualActor>
+</Entity>

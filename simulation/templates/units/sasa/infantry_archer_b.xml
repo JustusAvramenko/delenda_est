@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_archer">
+  <Identity>
+    <Civ>sasa</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/sasa/infantry_archer_b</SelectionGroupName>
+    <SpecificName>Sogdian Archer</SpecificName>
+    <Icon>units/achae/infantry_archer.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/sasa/infantry_archer_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/persians/infantry_archer_b.xml</Actor>
+  </VisualActor>
+</Entity>

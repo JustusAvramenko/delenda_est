@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry_archer">
+  <Cost>
+    <Resources>
+      <coin>0</coin>
+      <food>0</food>
+      <wood>100</wood>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>parth</Civ>
+    <Lang>persian</Lang>
+    <SpecificName>Royal Cavalry Archer</SpecificName>
+    <VisibleClasses datatype="tokens">Cataphract</VisibleClasses>
+    <SelectionGroupName>units/scyth/champion_cavalry_archer</SelectionGroupName>
+    <Icon>units/scyth/champion_cavalry_archer.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">2</Hack>
+        <Pierce op="add">2</Pierce>
+        <Crush op="add">2</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.85</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/scythians/cavalry_archer_c_m.xml</Actor>
+  </VisualActor>
+</Entity>

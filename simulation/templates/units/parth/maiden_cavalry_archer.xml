@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_ranged_archer">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>12.0</Pierce>
+      </Damage>
+      <MaxRange>36.0</MaxRange>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <glory>120</glory>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>parth</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/scyth/maiden_cavalry_archer</SelectionGroupName>
+    <SpecificName>Royal Maiden Headhunter</SpecificName>
+    <Requirements>
+      <Techs datatype="tokens">-phase_town phase_city</Techs>
+    </Requirements>
+    <Phenotype>female</Phenotype>
+    <Icon>units/scyth/maiden_cavalry.png</Icon>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-1</Hack>
+        <Pierce op="add">-1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <TrainingRestrictions>
+    <Category>Maidens</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.2</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/scythians/maiden_cavalry_m.xml</Actor>
+  </VisualActor>
+</Entity>

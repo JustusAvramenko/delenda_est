@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_spearman">
+  <Auras datatype="tokens">
+    units/heroes/pers_hero_cyrus
+  </Auras>
+  <Identity>
+    <Civ>sasa</Civ>
+    <Lang>persian</Lang>
+    <SpecificName>Cyrus II The Great</SpecificName>
+    <Icon>units/achae/hero_cyrus.png</Icon>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/sasa/hero_cyrus_mounted</Entity>
+      <Tooltip>This gives Cyrus his War Horse, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/persians/hero_infantry_spearman_cyrus.xml</Actor>
+  </VisualActor>
+</Entity>

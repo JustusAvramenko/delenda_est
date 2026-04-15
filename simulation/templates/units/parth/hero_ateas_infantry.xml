@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/scyth_ateas_1
+    units/heroes/scyth_ateas_2
+  </Auras>
+  <Identity>
+    <Civ>parth</Civ>
+    <Lang>persian</Lang>
+    <SpecificName>Ateas</SpecificName>
+    <Icon>units/scyth/hero_ateas.png</Icon>
+  </Identity>
+  <Upgrade>
+    <AteasMount>
+      <Entity>units/parth/hero_ateas_mounted</Entity>
+      <Tooltip>This gives Ateas his War Horse, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_village</Techs>
+      </Requirements>
+      <Cost>
+        <food>200</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </AteasMount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/scythians/hero_infantry_swordsman_ateas.xml</Actor>
+  </VisualActor>
+</Entity>

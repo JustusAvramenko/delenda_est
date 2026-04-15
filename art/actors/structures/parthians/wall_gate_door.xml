@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Parthian Gate Door">
+      <animations>
+        <animation file="mechanical/parthian_wall_gate_closed.dae" name="gate_closed" speed="65"/>
+        <animation file="mechanical/parthian_wall_gate_opening.dae" name="gate_opening" speed="65"/>
+        <animation file="mechanical/parthian_wall_gate_open.dae" name="gate_open" speed="65"/>
+        <animation file="mechanical/parthian_wall_gate_closing.dae" name="gate_closing" speed="65"/>
+      </animations>
+      <mesh>structural/parthians/wall_gate_door.dae</mesh>
+      <textures>
+        <texture file="structural/parth/struct.png" name="baseTex"/>
+        <texture file="structural/parth/struct_spec.png" name="specTex"/>
+        <texture file="structural/parth/struct_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>no_trans_norm_spec.xml</material>
+</actor>

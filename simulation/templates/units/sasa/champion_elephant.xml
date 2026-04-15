@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_elephant_melee">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1</Hack>
+        <Pierce op="add">1</Pierce>
+        <Crush op="add">1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Cost>
+    <Resources>
+      <coin>0</coin>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>sasa</Civ>
+    <Lang>persian</Lang>
+    <SpecificName>Armored War Elephant</SpecificName>
+    <Icon>units/sele/champion_elephant.png</Icon>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.9</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/seleucids/elephantry_c_m.xml</Actor>
+  </VisualActor>
+</Entity>

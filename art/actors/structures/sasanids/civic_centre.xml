@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Sasanid Civic Centre" file="structures/defensive_building.xml">
+      <mesh>structural/sasanids/civic_centre.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/dirt_8x8.xml" attachpoint="root"/>
+        <prop actor="props/structures/sasanids/civic_centre_struct.xml" attachpoint="root"/>
+        <prop actor="props/structures/sasanids/civic_centre_bush.xml" attachpoint="root"/>
+        <prop actor="props/structures/platforms/rock_24x24.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/sasa/struct.png" name="baseTex"/>
+        <texture file="structural/sasa/struct_spec.png" name="specTex"/>
+        <texture file="structural/sasa/struct_norm.png" name="normTex"/>
+        <texture file="structural/ao/sasa/civic_centre_ao.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_persians.xml" attachpoint="garrisoned" selectable="false"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_large.xml">
+      <props>
+        <prop actor="props/structures/sasanids/civic_centre_struct.xml" attachpoint="root"/>
+        <prop actor="props/structures/sasanids/civic_centre_bush.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
