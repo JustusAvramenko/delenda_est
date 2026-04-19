@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <textures>
+        <texture file="props/hele_props_a.dds" name="baseTex"/>
+        <texture file="props/hele_props_a_norm.png" name="normTex"/>
+        <texture file="props/hele_props_a_spec.png" name="specTex"/>
+        <texture file="structural/ao/hele_market.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Market Stall 01">
+      <mesh>structural/hele_market_stall_01.dae</mesh>
+    </variant>
+    <variant frequency="1" name="Market Stall 02">
+      <mesh>structural/hele_market_stall_02.dae</mesh>
+    </variant>
+    <variant frequency="1" name="Market Stall 03">
+      <mesh>structural/hele_market_stall_03.dae</mesh>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>
