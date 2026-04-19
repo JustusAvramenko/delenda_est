@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_temple">
+  <Auras datatype="tokens">
+    structures/sasa_fire_temples
+  </Auras>
   <Footprint>
-    <Square width="18.0" depth="26.0"/>
+    <Square width="19.5.0" depth="27.5"/>
     <Height>12.0</Height>
   </Footprint>
   <Identity>
     <Civ>sasa</Civ>
+    <GenericName>Fire Temple</GenericName>
+    <SpecificName>Atashkodeh</SpecificName>
   </Identity>
   <Obstruction>
     <Static width="17.5" depth="25.5"/>
   </Obstruction>
   <VisualActor>
-    <Actor>structures/sasanids/temple.xml</Actor>
+    <Actor>structures/sasanians/temple.xml</Actor>
     <FoundationActor>structures/fndn_5x7.xml</FoundationActor>
   </VisualActor>
 </Entity>
