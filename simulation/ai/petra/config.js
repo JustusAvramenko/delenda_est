@@ -148,6 +148,10 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/temple_mars",
 			"structures/{civ}/temple_vesta"
 		],
+		"sasa": [
+			"structures/{civ}/statue",
+			"structures/{civ}/library"
+		],
 		"scyth": [
 			"structures/{civ}/statue"
 		],
