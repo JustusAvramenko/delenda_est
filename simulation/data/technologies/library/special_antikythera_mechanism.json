@@ -17,12 +17,25 @@
 		"glory": 500
 	},
 	"requirements": {
-		"tech": "phase_empire"
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "any": [
+				{ "civ": "athen" },
+				{ "civ": "epir" },
+				{ "civ": "imp" },
+				{ "civ": "mace" },
+				{ "civ": "ptol" },
+				{ "civ": "sele" },
+				{ "civ": "spart" },
+				{ "civ": "syrac" },
+				{ "civ": "theb" }]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "antikythera_mechanism.png",
 	"researchTime": 40,
-	"tooltip": "[font=\"sans-bold-14\"]• All Units +5% speed and +10% vision range.[/font]",
+	"tooltip": "[font=\"sans-bold-14\"]• Units +10% vision range.\n• Units +5% speed.[/font]",
 	"modifications": [
 		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.05 },
 		{ "value": "Vision/Range", "multiply": 1.1 }
