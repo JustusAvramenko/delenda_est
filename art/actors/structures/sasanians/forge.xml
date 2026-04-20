@@ -2,13 +2,11 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="Sasanid Forge">
-      <mesh>structural/sasanids/forge.dae</mesh>
+    <variant frequency="100" name="Sasanian Forge">
+      <mesh>structural/sasanians/forge.dae</mesh>
       <props>
         <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
-        <prop actor="props/structures/sasanids/forge_struct.xml" attachpoint="root"/>
-        <prop actor="particle/flame_firepit_2.xml" attachpoint="fire"/>
-        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke"/>
+        <prop actor="props/structures/sasanians/forge_struct.xml" attachpoint="root"/>
       </props>
       <textures>
         <texture file="structural/sasa/struct.png" name="baseTex"/>
@@ -19,10 +17,20 @@
     </variant>
   </group>
   <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="researching">
+      <props>
+        <prop actor="particle/sparks_blacksmith.xml" attachpoint="smoke"/>
+        <prop actor="particle/smoke_blacksmith.xml" attachpoint="smoke"/>
+        <prop actor="particle/flame.xml" attachpoint="fire"/>
+      </props>
+    </variant>
+  </group>
+  <group>
     <variant frequency="1" name="ungarrisoned"/>
     <variant name="garrisoned">
       <props>
-        <prop actor="props/special/common/garrison_flag_persians.xml" attachpoint="garrisoned" selectable="false"/>
+        <prop actor="props/special/common/garrison_flag_sasa.xml" attachpoint="garrisoned" selectable="false"/>
       </props>
     </variant>
   </group>
