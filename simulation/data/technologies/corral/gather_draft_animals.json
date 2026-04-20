@@ -11,9 +11,17 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "oxen.png",
 	"researchTime": 40,
-	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +10% gather rate for all resources.[/font]",
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +10% gather rates for all raw resources.[/font]",
 	"modifications": [
-		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 1.1 }
+		{ "value": "ResourceGatherer/Rates/food.meat", "multiply": 1.10 },
+		{ "value": "ResourceGatherer/Rates/food.fruit", "multiply": 1.10 },
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.10 },
+		{ "value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.10 },
+		{ "value": "ResourceGatherer/Rates/wood.ruin", "multiply": 1.10 },
+		{ "value": "ResourceGatherer/Rates/stone.rock", "multiply": 1.10 },
+		{ "value": "ResourceGatherer/Rates/stone.ruin", "multiply": 1.10 },
+		{ "value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.10 },
+		{ "value": "ResourceGatherer/Rates/metal.ruin", "multiply": 1.10 }
 	],
 	"affects": ["Gatherer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
