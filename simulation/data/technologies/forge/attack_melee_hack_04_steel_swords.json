@@ -2,8 +2,9 @@
 	"supersedes": "forge/attack_melee_hack_03",
 	"genericName": "Steel Working",
 	"specificName": {
-		"maur": "Wootz Steel",
-		"iber": "Toledo Steel"
+		"gupt": "Wootz Steel",
+		"iber": "Toledo Steel",
+		"maur": "Wootz Steel"
 	},
 	"description": "Secret steel working techniques give sword blades distinctive and beautiful markings. Not only that, but the steel's hardness is unparalleled.",
 	"cost": {
@@ -15,8 +16,9 @@
 			{ "tech": "phase_empire" },
 			{
 				"any": [
-					{ "civ": "maur" },
-					{ "civ": "iber" }
+					{ "civ": "gupt" },
+					{ "civ": "iber" },
+					{ "civ": "maur" }
 				]
 			}
 		]
@@ -30,6 +32,6 @@
 		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.2 },
 		{ "value": "Cost/Resources/metal", "add": 10 }
 	],
-	"affects": ["Sword", "Axe"],
+	"affects": ["Sword", "Axe", "Mace"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
