@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="builder_civilian|template_unit_support">
+  <Attack>
+    <Melee>
+      <AttackName>Tusks</AttackName>
+      <Damage>
+        <Hack>30.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Bonuses>
+        <BonusCav>
+          <Classes>Cavalry</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusCav>
+      </Bonuses>
+    </Melee>
+  </Attack>
   <Auras datatype="tokens">
     units/elephant_fear
   </Auras>
@@ -63,7 +82,7 @@
       <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
       <order_build>actor/fauna/animal/elephant_order.xml</order_build>
       <order_attack>actor/fauna/animal/elephant_attack_order.xml</order_attack>
-      <attack>actor/fauna/animal/elephant_attack.xml</attack>
+      <attack_melee>actor/fauna/animal/elephant_attack.xml</attack_melee>
       <death>actor/fauna/animal/elephant_death.xml</death>
       <trained>actor/fauna/animal/elephant_trained.xml</trained>
     </SoundGroups>
