@@ -1,0 +1,36 @@
+{
+	"supersedes": "barracks/tradition_hoplite_advanced",
+	"genericName": "Elite Hoplites",
+	"specificName": {
+		"athen": "Zeugitès",
+		"theb": "Zeugitès",
+		"spart": "Mothakes"
+	},
+	"description": "Upgrade all of your citizen hoplites to Elite rank.",
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "athen" },
+					{ "civ": "spart" },
+					{ "civ": "syrac" },
+					{ "civ": "theb" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Hoplites.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]Advanced Hoplites auto-promote to Elite Rank:\n• Hoplites +10% health.\n• Hoplites +10% attack damage and capture power.\n• Hoplites +10% train time and +5 food and wood costs.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Citizen Infantry Hoplite Advanced"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

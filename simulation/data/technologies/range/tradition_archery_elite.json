@@ -1,0 +1,44 @@
+{
+	"supersedes": "range/tradition_archery_advanced",
+	"genericName": "Elite Foot Archery",
+	"specificName": {
+		"hele": "Zeugites",
+		"mace": "Zeugites",
+		"spart": "Zeugites",
+		"athen": "Zeugites"
+	},
+	"description": "Upgrade all of your citizen archers to Elite rank.",
+	"cost": {
+		"coin": 600,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "gupt" },
+					{ "civ": "huns" },
+					{ "civ": "kush" },
+					{ "civ": "maur" },
+					{ "civ": "maya" },
+					{ "civ": "parth" },
+					{ "civ": "pers" },
+					{ "civ": "sasa" },
+					{ "civ": "scyth" },
+					{ "civ": "xion" },
+					{ "civ": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Advanced Foot Archery.”",
+	"icon": "upgrade_elite.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]Advanced Archer Infantry auto-promote to Elite Rank:\n• Archer Infantry +20% projectile range and vision range.\n• Archer Infantry +10% health and projectile accuracy.\n• Archer Infantry +10% train time and +5 food and wood costs.[/font]",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Archer Infantry Advanced"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
