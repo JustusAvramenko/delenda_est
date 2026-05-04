@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="0" name="Persian_Fortress_A" file="structures/defensive_building.xml">
+      <mesh>structural/achae_fortress.dae</mesh>
+      <props>
+        <prop actor="props/structures/achaemenids/fortress_paintings.xml" attachpoint="root"/>
+        <prop actor="props/structures/achaemenids/fortress_shields.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/achae_struct.png" name="baseTex"/>
+        <texture file="structural/achae_struct_norm.png" name="normTex"/>
+        <texture file="structural/achae_struct_spec.png" name="specTex"/>
+        <texture file="structural/ao/achae_fortress.png" name="aoTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Persian_Fortress_B" file="structures/defensive_building.xml">
+      <mesh>structural/achae_fortress_b.dae</mesh>
+      <props>
+        <prop actor="props/structures/achaemenids/fortress_b_shields.xml" attachpoint="root"/>
+        <prop actor="props/structures/achaemenids/fortress_b_paintings.xml" attachpoint="root"/>
+        <prop actor="props/structures/decals/dirt_5x5.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/achae_struct.png" name="baseTex"/>
+        <texture file="structural/achae_struct_norm.png" name="normTex"/>
+        <texture file="structural/achae_struct_spec.png" name="specTex"/>
+        <texture file="structural/ao/achae_fortress_b.png" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_achaemenids.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant file="structures/destruction_large.xml">
+      <props>
+        <prop actor="props/structures/achaemenids/fortress_b_shields.xml" attachpoint="root"/>
+        <prop actor="props/structures/achaemenids/fortress_b_paintings.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax_spec.xml</material>
+</actor>

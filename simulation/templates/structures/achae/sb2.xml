@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Cost>
+    <BuildTime>300</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>300</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="25.0" depth="25.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_6x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>achae</Civ>
+    <GenericName>Achaemenid Special Building</GenericName>
+    <SpecificName>Parihuvādā</SpecificName>
+    <Icon>structures/palace.png</Icon>
+    <Tooltip>Train Kardakes mercenaries.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_broch.xml</select>
+      <constructed>interface/complete/building/complete_broch.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>38</Radius>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/achae/kardakes_hoplite
+      units/achae/kardakes_skirmisher
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/achaemenids/hall.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -270,7 +270,8 @@ BaseManager.prototype.removeDropsite = function(gameState, ent)
 	if (!ent.id())
 		return;
 
-	const removeSupply = function(entId, supply){
+	const removeSupply = function(entId, supply)
+	{
 		for (let i = 0; i < supply.length; ++i)
 		{
 			// exhausted resource, remove it from this list
@@ -553,7 +554,8 @@ BaseManager.prototype.addGatherRates = function(gameState, currentRates)
 		// I use some logarithms.
 		// TODO: this should take into account for unit speed and/or distance to target
 
-		this.gatherersByType(gameState, res).forEach(ent => {
+		this.gatherersByType(gameState, res).forEach(ent =>
+		{
 			if (ent.isIdle() || !ent.position())
 				return;
 			const gRate = ent.currentGatherRate();
@@ -562,14 +564,16 @@ BaseManager.prototype.addGatherRates = function(gameState, currentRates)
 		});
 		if (res == "food")
 		{
-			this.workersBySubrole(gameState, Worker.SUBROLE_HUNTER).forEach(ent => {
+			this.workersBySubrole(gameState, Worker.SUBROLE_HUNTER).forEach(ent =>
+			{
 				if (ent.isIdle() || !ent.position())
 					return;
 				const gRate = ent.currentGatherRate();
 				if (gRate)
 					currentRates[res] += Math.log(1+gRate)/1.1;
 			});
-			this.workersBySubrole(gameState, Worker.SUBROLE_FISHER).forEach(ent => {
+			this.workersBySubrole(gameState, Worker.SUBROLE_FISHER).forEach(ent =>
+			{
 				if (ent.isIdle() || !ent.position())
 					return;
 				const gRate = ent.currentGatherRate();
@@ -653,15 +657,15 @@ BaseManager.prototype.setWorkersIdleByPriority = function(gameState)
 /**
  * Switch some gatherers (limited to number) from resource "from" to resource "to"
  * and return remaining number of possible switches.
- * Prefer Slaves for food and Villager, aka Citizen Civilians, for other resources.
+ * Prefer Slave for food and Civilian Citizen for other resources.
  */
 BaseManager.prototype.switchGatherer = function(gameState, from, to, number)
 {
 	let num = number;
 	let only;
 	const gatherers = this.gatherersByType(gameState, from);
-	if (from == "food" && gatherers.filter(filters.byClass("Villager")).hasEntities())
-		only = "Villager";
+	if (from == "food" && gatherers.filter(filters.byClass("Civilian")).hasEntities())
+		only = "Civilian";
 	else if (to == "food" && gatherers.filter(filters.byClass("Slave")).hasEntities())
 		only = "Slave";
 
@@ -753,7 +757,8 @@ BaseManager.prototype.gatherersByType = function(gameState, type)
  */
 BaseManager.prototype.pickBuilders = function(gameState, workers, number)
 {
-	const availableWorkers = this.workers.filter(ent => {
+	const availableWorkers = this.workers.filter(ent =>
+	{
 		if (!ent.position() || !ent.isBuilder())
 			return false;
 		if (ent.getMetadata(PlayerID, "plan") == -2 || ent.getMetadata(PlayerID, "plan") == -3)
@@ -762,7 +767,8 @@ BaseManager.prototype.pickBuilders = function(gameState, workers, number)
 			return false;
 		return true;
 	}).toEntityArray();
-	availableWorkers.sort((a, b) => {
+	availableWorkers.sort((a, b) =>
+	{
 		let vala = 0;
 		let valb = 0;
 		if (a.getMetadata(PlayerID, "subrole") === Worker.SUBROLE_BUILDER)
@@ -815,7 +821,8 @@ BaseManager.prototype.assignToFoundations = function(gameState, noRepair)
 	{
 		foundations = foundations.filter(filters.byMetadata(PlayerID, "baseAnchor", true));
 		const tID = foundations.toEntityArray()[0].id();
-		workers.forEach(ent => {
+		workers.forEach(ent =>
+		{
 			const target = ent.getMetadata(PlayerID, "target-foundation");
 			if (target && target != tID)
 			{
@@ -831,7 +838,8 @@ BaseManager.prototype.assignToFoundations = function(gameState, noRepair)
 		if (fromOtherBase)
 		{
 			const baseID = this.ID;
-			fromOtherBase.forEach(worker => {
+			fromOtherBase.forEach(worker =>
+			{
 				worker.setMetadata(PlayerID, "base", baseID);
 				worker.setMetadata(PlayerID, "subrole", Worker.SUBROLE_BUILDER);
 				workers.updateEnt(worker);
@@ -902,7 +910,8 @@ BaseManager.prototype.assignToFoundations = function(gameState, noRepair)
 
 		if (assigned >= targetNB)
 			continue;
-		idleBuilderWorkers.forEach(function(ent) {
+		idleBuilderWorkers.forEach(function(ent)
+		{
 			if (ent.getMetadata(PlayerID, "target-foundation") !== undefined)
 				return;
 			if (assigned >= targetNB || !ent.position() ||
@@ -916,7 +925,8 @@ BaseManager.prototype.assignToFoundations = function(gameState, noRepair)
 		});
 		if (assigned >= targetNB || builderTot >= maxTotalBuilders)
 			continue;
-		const nonBuilderWorkers = workers.filter(function(ent) {
+		const nonBuilderWorkers = workers.filter(function(ent)
+		{
 			if (ent.getMetadata(PlayerID, "subrole") === Worker.SUBROLE_BUILDER)
 				return false;
 			if (!ent.position())
@@ -928,7 +938,8 @@ BaseManager.prototype.assignToFoundations = function(gameState, noRepair)
 			return true;
 		}).toEntityArray();
 		const time = target.buildTime();
-		nonBuilderWorkers.sort((workerA, workerB) => {
+		nonBuilderWorkers.sort((workerA, workerB) =>
+		{
 			let coeffA = SquareVectorDistance(target.position(), workerA.position());
 			// elephant moves slowly, so when far away they are only useful if build time is long
 			if (workerA.hasClass("Elephant"))
@@ -992,7 +1003,8 @@ BaseManager.prototype.assignToFoundations = function(gameState, noRepair)
 
 		if (assigned >= targetNB)
 			continue;
-		idleBuilderWorkers.forEach(function(ent) {
+		idleBuilderWorkers.forEach(function(ent)
+		{
 			if (ent.getMetadata(PlayerID, "target-foundation") !== undefined)
 				return;
 			if (assigned >= targetNB || !ent.position() ||
@@ -1004,7 +1016,8 @@ BaseManager.prototype.assignToFoundations = function(gameState, noRepair)
 		});
 		if (assigned >= targetNB || builderTot >= maxTotalBuilders)
 			continue;
-		const nonBuilderWorkers = workers.filter(function(ent) {
+		const nonBuilderWorkers = workers.filter(function(ent)
+		{
 			if (ent.getMetadata(PlayerID, "subrole") === Worker.SUBROLE_BUILDER)
 				return false;
 			if (!ent.position())
@@ -1018,7 +1031,8 @@ BaseManager.prototype.assignToFoundations = function(gameState, noRepair)
 		const num = Math.min(nonBuilderWorkers.length, targetNB-assigned);
 		const nearestNonBuilders = nonBuilderWorkers.filterNearest(target.position(), num);
 
-		nearestNonBuilders.forEach(function(ent) {
+		nearestNonBuilders.forEach(function(ent)
+		{
 			++assigned;
 			++builderTot;
 			ent.stopMoving();

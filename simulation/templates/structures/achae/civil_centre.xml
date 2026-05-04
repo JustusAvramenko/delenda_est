@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Footprint>
+    <Square width="40.0" depth="24.0"/>
+    <Height>14.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>achae</Civ>
+    <GenericName>Provincial Governor</GenericName>
+    <SpecificName>Xšaçapāvan</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="38.5" depth="22.5"/>
+  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/hero_cyrus_infantry
+      units/{civ}/hero_cambyses_infantry
+      units/{civ}/hero_darius_I_infantry
+      units/{civ}/hero_xerxes_infantry
+      units/{civ}/hero_memnon_infantry
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/achaemenids/civil_centre.xml</Actor>
+    <FoundationActor>structures/fndn_9x7.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,31 @@
+{
+	"genericName": "Campaign Panoply",
+	"description": "Scale armor for the Immortals regiment, which Herodotus described looking like 'fish scales'.",
+	"cost": {
+		"metal": 800,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "achae" },
+			{ "any": [
+				{ "tech": "forge/techs_forge_cost" },
+				{ "tech": "forge/techs_forge_speed" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Forging” or “Metallurgy.”",
+	"icon": "armor_plates_iron_spear.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Champion Infantry (“Anusiya“) +1 all armor levels.\n• Champion Infantry +10 coin cost.[/font]",
+	"modifications": [
+		{ "value": "Cost/Resources/coin", "add": 10 },
+		{ "value": "VisualActor/Actor", "replace": "units/achaemenids/infantry_spearman_c2.xml" },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1.0 },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 1.0 }
+	],
+	"affects": ["Immortal"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

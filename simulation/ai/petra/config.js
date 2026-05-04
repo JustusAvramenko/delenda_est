@@ -61,6 +61,11 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 		"default": [
 			"structures/{civ}/statue"
 		],
+		"achae": [
+			"structures/{civ}/statue",
+			"structures/{civ}/ice_house",
+			"structures/{civ}/tachara"
+		],
 		"athen": [
 			"structures/{civ}/statue",
 			"structures/{civ}/prytaneion",
@@ -131,11 +136,6 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			"structures/{civ}/statue",
 			"structures/{civ}/palace",
 			"structures/{civ}/pillar_ashoka"
-		],
-		"pers": [
-			"structures/{civ}/statue",
-			"structures/{civ}/ice_house",
-			"structures/{civ}/tachara"
 		],
 		"ptol": [
 			"structures/{civ}/statue",

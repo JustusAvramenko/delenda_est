@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="chariot|template_unit_cavalry_ranged_archer">
+  <Auras datatype="tokens">
+    -units/chariot_trample_e
+    units/chariot_trample_b
+  </Auras>
+  <Footprint replace="">
+    <Square width="5.5" depth="10.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>achae</Civ>
+    <Lang>persian</Lang>
+    <SelectionGroupName>units/achae/chariot_archer_b</SelectionGroupName>
+    <SpecificName>Babylonian Scythed Chariot</SpecificName>
+    <Tooltip>Traits: Long Range, Fast Speed, Heavy Armor, Harassment, Trample.
+Strong Against: Pike Infantry (1.5x), Spear Infantry (1.5x), Sword Infantry (1.5x).
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
+    <Icon>units/achae/chariot_archer.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion>
+    <Entity>units/achae/chariot_archer_a</Entity>
+    <RequiredXp>10000</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/achaemenids/chariot_archer_b_m.xml</Actor>
+  </VisualActor>
+</Entity>

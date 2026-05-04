@@ -1,0 +1,23 @@
+{
+	"genericName": "Great King's Levy",
+	"description": "The Achaemenid kings could call upon vast reserves of troops, assembled from the dozens of nations beneath the banner of the Achaemenid Empire.",
+	"cost": {
+		"food": 800,
+		"glory": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "achae" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "great_kings_levy.png",
+	"researchTime": 30,
+	"tooltip": "[font=\"sans-bold-14\"]• Batch Training of units for all Buildings boosted by 50%.[/font]",
+	"modifications": [
+		{ "value": "Trainer/BatchTimeModifier", "add": -0.5 }
+	],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

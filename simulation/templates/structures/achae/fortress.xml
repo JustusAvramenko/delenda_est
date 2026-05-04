@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Footprint>
+    <Square width="26.0" depth="26.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>achae</Civ>
+    <SpecificName>Didā</SpecificName>
+    <Tooltip>Train Champion Cavalry and Chariots.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="24.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      achaemenids/upgrade_rank_medium_chariot
+      achaemenids/upgrade_rank_heavy_chariot
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_cavalry
+      units/{civ}/chariot_archer_b
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/achaemenids/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>24.5</Length>
+    <Indent>7.6</Indent>
+  </WallPiece>
+</Entity>

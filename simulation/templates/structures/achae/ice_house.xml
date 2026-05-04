@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+    structures/achae_ice_house_1
+  </Auras>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Category>Yakhchal</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <stone>100</stone>
+      <wood>100</wood>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="10.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder disable=""/>
+  <Health>
+    <Max>800</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>achae</Civ>
+    <GenericName>Ice House</GenericName>
+    <SpecificName>Yakhchāl</SpecificName>
+    <VisibleClasses datatype="tokens">-City Village IceHouse</VisibleClasses>
+    <Classes datatype="tokens">
+      -ConquestCritical
+      CivSpecific
+    </Classes>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_city
+        phase_village
+      </Techs>
+    </Requirements>
+    <Tooltip>Increase the health of all Achaemenid units and gain a trickle of Food resource for each Ice House built.</Tooltip>
+    <Icon>structures/yakhchal.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="16.0" depth="16.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      achaemenids/health_units_01
+      achaemenids/health_units_02
+    </Technologies>
+  </Researcher>
+  <ResourceTrickle>
+    <Rates>
+      <food>1.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>0.0</coin>
+      <glory>0.0</glory>
+    </Rates>
+    <Interval>4000</Interval>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_farmstead.xml</select>
+      <constructed>interface/complete/building/complete_farmstead.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence disable=""/>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/achaemenids/ice_house.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

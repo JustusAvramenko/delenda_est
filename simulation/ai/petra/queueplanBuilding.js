@@ -221,7 +221,8 @@ ConstructionPlan.prototype.findGoodPosition = function(gameState)
 
 		if (!HQ.requireHouses || !template.hasClass("House"))
 		{
-			gameState.getOwnStructures().forEach(function(ent) {
+			gameState.getOwnStructures().forEach(function(ent) 
+			{
 				const pos = ent.position();
 				const x = Math.round(pos[0] / cellSize);
 				const z = Math.round(pos[1] / cellSize);

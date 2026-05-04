@@ -407,7 +407,8 @@ Headquarters.prototype.trainMoreWorkers = function(gameState, queues)
 	// counting the workers that aren't part of a plan
 	let numberOfWorkers = 0;   // all workers
 	let numberOfSupports = 0;  // only support workers (i.e. non fighting)
-	gameState.getOwnUnits().forEach(ent => {
+	gameState.getOwnUnits().forEach(ent =>
+	{
 		if (ent.getMetadata(PlayerID, "role") === Worker.ROLE_WORKER && ent.getMetadata(PlayerID, "plan") === undefined)
 		{
 			++numberOfWorkers;
@@ -416,7 +417,8 @@ Headquarters.prototype.trainMoreWorkers = function(gameState, queues)
 		}
 	});
 	let numberInTraining = 0;
-	gameState.getOwnTrainingFacilities().forEach(function(ent) {
+	gameState.getOwnTrainingFacilities().forEach(function(ent)
+	{
 		for (const item of ent.trainingQueue())
 		{
 			numberInTraining += item.count;
@@ -541,7 +543,8 @@ Headquarters.prototype.findBestTrainableUnit = function(gameState, classes, requ
 			parameters.push(["costsResource", costsResource, type]);
 	}
 
-	units.sort((a, b) => {
+	units.sort((a, b) =>
+	{
 		const aCost = 1 + a[1].costSum();
 		const bCost = 1 + b[1].costSum();
 		let aValue = 0.1;
@@ -640,7 +643,8 @@ Headquarters.prototype.pickMostNeededResources = function(gameState, allowedReso
 	for (const res of allowedResources)
 		needed.push({ "type": res, "wanted": wantedRates[res], "current": currentRates[res] });
 
-	needed.sort((a, b) => {
+	needed.sort((a, b) =>
+	{
 		if (a.current < a.wanted && b.current < b.wanted)
 		{
 			if (a.current && b.current)
@@ -1324,13 +1328,13 @@ Headquarters.prototype.buildMarket = function(gameState, queues)
 	queues.economicBuilding.addPlan(plan);
 };
 
-/** Build a Granary */
+/** Build a granary */
 Headquarters.prototype.buildGranary = function(gameState, queues)
 {
 	// Only build one granary for the time being ("DropsiteFood" does not refer to CCs)
 	if (gameState.getOwnEntitiesByClass("Granary", true).hasEntities())
 		return;
-	// Wait to have at least one dropsite and house before the Granary
+	// Wait to have at least one dropsite and house before the granary
 	if (!gameState.getOwnEntitiesByClass("Storehouse", true).hasEntities())
 		return;
 	if (!gameState.getOwnEntitiesByClass("House", true).hasEntities())
@@ -1426,7 +1430,7 @@ Headquarters.prototype.manageCorral = function(gameState, queues)
  */
 Headquarters.prototype.buildMoreHouses = function(gameState, queues)
 {
-	let houseTemplateString = "structures/{civ}/apartment";
+	let houseTemplateString = "structures/{civ}/tenement";
 	if (!gameState.isTemplateAvailable(gameState.applyCiv(houseTemplateString)) ||
 		!this.canBuild(gameState, houseTemplateString))
 	{
