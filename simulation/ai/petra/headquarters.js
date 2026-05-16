@@ -39,7 +39,7 @@ import { Worker } from "simulation/ai/petra/worker.js";
  *  -picking new CC locations.
  */
 
-export function Headquarters(config)
+export function Headquarters(config, deserialized)
 {
 	this.Config = config;
 	this.phasing = 0;	// existing values: 0 means no, i > 0 means phasing towards phase i
@@ -69,7 +69,7 @@ export function Headquarters(config)
 	this.tradeManager = new TradeManager(this.Config);
 	this.navalManager = new NavalManager(this.Config);
 	this.researchManager = new ResearchManager(this.Config);
-	this.diplomacyManager = new DiplomacyManager(this.Config);
+	this.diplomacyManager = new DiplomacyManager(this.Config, deserialized);
 	this.garrisonManager = new GarrisonManager(this.Config);
 	this.victoryManager = new VictoryManager(this.Config);
 	this.emergencyManager = new EmergencyManager(this.Config);
@@ -104,7 +104,6 @@ Headquarters.prototype.init = function(gameState, queues)
 Headquarters.prototype.postinit = function(gameState)
 {
 	this.basesManager.postinit(gameState);
-	this.updateTerritories(gameState);
 };
 
 /**
@@ -130,9 +129,7 @@ Headquarters.prototype.getSeaBetweenIndices = function(gameState, index1, index2
 Headquarters.prototype.checkEvents = function(gameState, events)
 {
 	this.buildManager.checkEvents(gameState, events);
-
-	if (events.TerritoriesChanged.length || events.DiplomacyChanged.length)
-		this.updateTerritories(gameState);
+	this.updateTerritories(gameState);
 
 	for (const evt of events.DiplomacyChanged)
 	{
@@ -2419,7 +2416,7 @@ Headquarters.prototype.Deserialize = function(gameState, data)
 
 
 	this.basesManager = new BasesManager(this.Config);
-	this.basesManager.init(gameState);
+	this.basesManager.init(gameState, true);
 	this.basesManager.Deserialize(gameState, data.basesManager);
 
 	this.navalManager = new NavalManager(this.Config);
@@ -2444,7 +2441,7 @@ Headquarters.prototype.Deserialize = function(gameState, data)
 	this.researchManager = new ResearchManager(this.Config);
 	this.researchManager.Deserialize(data.researchManager);
 
-	this.diplomacyManager = new DiplomacyManager(this.Config);
+	this.diplomacyManager = new DiplomacyManager(this.Config, true);
 	this.diplomacyManager.Deserialize(data.diplomacyManager);
 
 	this.garrisonManager = new GarrisonManager(this.Config);

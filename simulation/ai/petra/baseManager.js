@@ -111,10 +111,10 @@ BaseManager.prototype.assignEntity = function(gameState, ent)
 	this.workers.updateEnt(ent);
 	this.buildings.updateEnt(ent);
 	if (ent.resourceDropsiteTypes() && !ent.hasClass("Unit"))
-		this.assignResourceToDropsite(gameState, ent);
+		this.assignResourceToDropsite(gameState, ent, false);
 };
 
-BaseManager.prototype.setAnchor = function(gameState, anchorEntity)
+BaseManager.prototype.setAnchor = function(gameState, anchorEntity, deserialize = false)
 {
 	if (!anchorEntity.hasClass("CivCentre"))
 	{
@@ -125,17 +125,19 @@ BaseManager.prototype.setAnchor = function(gameState, anchorEntity)
 	{
 		this.anchor = anchorEntity;
 		this.anchorId = anchorEntity.id();
-		this.anchor.setMetadata(PlayerID, "baseAnchor", true);
+		if (!deserialize)
+			this.anchor.setMetadata(PlayerID, "baseAnchor", true);
 		this.basesManager.resetBaseCache();
 	}
-	anchorEntity.setMetadata(PlayerID, "base", this.ID);
+	if (!deserialize)
+		anchorEntity.setMetadata(PlayerID, "base", this.ID);
 	this.buildings.updateEnt(anchorEntity);
 	this.accessIndex = getLandAccess(gameState, anchorEntity);
 	return true;
 };
 
 /* we lost our anchor. Let's reassign our units and buildings */
-BaseManager.prototype.anchorLost = function(gameState, ent)
+BaseManager.prototype.anchorLost = function(gameState)
 {
 	this.anchor = undefined;
 	this.anchorId = undefined;
@@ -144,7 +146,7 @@ BaseManager.prototype.anchorLost = function(gameState, ent)
 };
 
 /** Set a building of an anchorless base */
-BaseManager.prototype.setAnchorlessEntity = function(gameState, ent)
+BaseManager.prototype.setAnchorlessEntity = function(gameState, ent, deserialize = false)
 {
 	if (!this.buildings.hasEntities())
 	{
@@ -162,7 +164,8 @@ BaseManager.prototype.setAnchorlessEntity = function(gameState, ent)
 			getLandAccess(gameState, ent));
 	}
 
-	ent.setMetadata(PlayerID, "base", this.ID);
+	if (!deserialize)
+		ent.setMetadata(PlayerID, "base", this.ID);
 	this.buildings.updateEnt(ent);
 	return true;
 };
@@ -171,7 +174,7 @@ BaseManager.prototype.setAnchorlessEntity = function(gameState, ent)
  * Assign the resources around the dropsites of this basis in three areas according to distance, and sort them in each area.
  * Moving resources (animals) and buildable resources (fields) are treated elsewhere.
  */
-BaseManager.prototype.assignResourceToDropsite = function(gameState, dropsite)
+BaseManager.prototype.assignResourceToDropsite = function(gameState, dropsite, deserialized)
 {
 	if (this.dropsites[dropsite.id()])
 	{
@@ -214,11 +217,11 @@ BaseManager.prototype.assignResourceToDropsite = function(gameState, dropsite)
 			if (dist < maxDistResourceSquare)
 			{
 				if (dist < maxDistResourceSquare/16)        // distmax/4
-					nearby.push({ "dropsite": dropsiteId, "id": supply.id(), "ent": supply, "dist": dist });
+					nearby.push({ "dropsite": dropsiteId, "id": supply.id(), "dist": dist });
 				else if (dist < maxDistResourceSquare/4)    // distmax/2
-					medium.push({ "dropsite": dropsiteId, "id": supply.id(), "ent": supply, "dist": dist });
+					medium.push({ "dropsite": dropsiteId, "id": supply.id(), "dist": dist });
 				else
-					faraway.push({ "dropsite": dropsiteId, "id": supply.id(), "ent": supply, "dist": dist });
+					faraway.push({ "dropsite": dropsiteId, "id": supply.id(), "dist": dist });
 			}
 		});
 
@@ -231,17 +234,20 @@ BaseManager.prototype.assignResourceToDropsite = function(gameState, dropsite)
 		if (debug)
 		{
 			faraway.forEach(function(res){
-				Engine.PostCommand(PlayerID,{"type": "set-shading-color", "entities": [res.ent.id()], "rgb": [2,0,0]});
+				Engine.PostCommand(PlayerID,{"type": "set-shading-color", "entities": [res.id], "rgb": [2,0,0]});
 			});
 			medium.forEach(function(res){
-				Engine.PostCommand(PlayerID,{"type": "set-shading-color", "entities": [res.ent.id()], "rgb": [0,2,0]});
+				Engine.PostCommand(PlayerID,{"type": "set-shading-color", "entities": [res.id], "rgb": [0,2,0]});
 			});
 			nearby.forEach(function(res){
-				Engine.PostCommand(PlayerID,{"type": "set-shading-color", "entities": [res.ent.id()], "rgb": [0,0,2]});
+				Engine.PostCommand(PlayerID,{"type": "set-shading-color", "entities": [res.id], "rgb": [0,0,2]});
 			});
 		}
 		*/
 	}
+
+	if (deserialized)
+		return;
 
 	// Allows all allies to use this dropsite except if base anchor to be sure to keep
 	// a minimum of resources for this base
@@ -252,25 +258,27 @@ BaseManager.prototype.assignResourceToDropsite = function(gameState, dropsite)
 	});
 };
 
-BaseManager.prototype.removeFromAssignedDropsite = function(ent)
+BaseManager.prototype.removeFromAssignedDropsite = function(entityID)
 {
 	for (const type in this.dropsiteSupplies)
 		for (const proxim in this.dropsiteSupplies[type])
 		{
 			const resourcesList = this.dropsiteSupplies[type][proxim];
 			for (let i = 0; i < resourcesList.length; ++i)
-				if (resourcesList[i].id === ent.id())
+			{
+				if (resourcesList[i].id === entityID)
 					resourcesList.splice(i--, 1);
+			}
 		}
 };
 
 // completely remove the dropsite resources from our list.
-BaseManager.prototype.removeDropsite = function(gameState, ent)
+BaseManager.prototype.removeDropsite = function(gameState, entityID)
 {
-	if (!ent.id())
+	if (!entityID)
 		return;
 
-	const removeSupply = function(entId, supply)
+	const removeSupply = function(supply)
 	{
 		for (let i = 0; i < supply.length; ++i)
 		{
@@ -278,19 +286,19 @@ BaseManager.prototype.removeDropsite = function(gameState, ent)
 			if (!supply[i].ent || !gameState.getEntityById(supply[i].id))
 				supply.splice(i--, 1);
 			// resource assigned to the removed dropsite, remove it
-			else if (supply[i].dropsite == entId)
+			else if (supply[i].dropsite == entityID)
 				supply.splice(i--, 1);
 		}
 	};
 
 	for (const type in this.dropsiteSupplies)
 	{
-		removeSupply(ent.id(), this.dropsiteSupplies[type].nearby);
-		removeSupply(ent.id(), this.dropsiteSupplies[type].medium);
-		removeSupply(ent.id(), this.dropsiteSupplies[type].faraway);
+		removeSupply(this.dropsiteSupplies[type].nearby);
+		removeSupply(this.dropsiteSupplies[type].medium);
+		removeSupply(this.dropsiteSupplies[type].faraway);
 	}
 
-	this.dropsites[ent.id()] = undefined;
+	this.dropsites[entityID] = undefined;
 };
 
 /**
@@ -418,7 +426,9 @@ BaseManager.prototype.getResourceLevel = function(gameState, type, distances = [
 			if (check[supply.id])    // avoid double counting as same resource can appear several time
 				continue;
 			check[supply.id] = true;
-			count += supply.ent.resourceSupplyAmount();
+			const supplyEntity = gameState.getEntityById(supply.id);
+			if (supplyEntity)
+				count += supplyEntity.resourceSupplyAmount();
 		}
 	return count;
 };
@@ -440,7 +450,7 @@ BaseManager.prototype.checkResourceLevels = function(gameState, queues)
 					.length;  // including foundations
 				const numQueue = queues.field.countQueuedUnits();
 
-				// TODO  if not yet farms, add a check on time used/lost and build granary if needed
+				// TODO  if not yet farms, add a check on time used/lost and build Granary if needed
 				if (numFarms + numQueue == 0)	// starting game, rely on fruits as long as we have enough of them
 				{
 					if (count < 600)
@@ -1070,7 +1080,7 @@ BaseManager.prototype.update = function(gameState, queues, events)
 					continue;
 				}
 				if (ent.resourceDropsiteTypes())
-					this.removeDropsite(gameState, ent);
+					this.removeDropsite(gameState, ent.id());
 				bestBase.assignEntity(gameState, ent);
 			}
 		}
@@ -1120,7 +1130,7 @@ BaseManager.prototype.update = function(gameState, queues, events)
 			for (const ent of this.buildings.values())
 			{
 				if (ent.resourceDropsiteTypes())
-					this.removeDropsite(gameState, ent);
+					this.removeDropsite(gameState, ent.id());
 				reassignedBase.assignEntity(gameState, ent);
 			}
 			return false;
@@ -1208,7 +1218,8 @@ BaseManager.prototype.Serialize = function()
 		"gatherers": this.gatherers,
 		"neededDefenders": this.neededDefenders,
 		"territoryIndices": this.territoryIndices,
-		"timeNextIdleCheck": this.timeNextIdleCheck
+		"timeNextIdleCheck": this.timeNextIdleCheck,
+		"dropsiteSupplies": this.dropsiteSupplies
 	};
 };
 
