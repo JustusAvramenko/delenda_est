@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/new/m_tunic_short.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/dagger.xml" attachpoint="weapon_R"/>
+        <prop actor="props/units/heads/new/head_indian_a.xml" attachpoint="head"/>
+      </props>
+      <textures>
+        <texture file="skeletal/maur/skirt_01_02.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="skeletal/maur/skirt_01_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/rider/cavalry/base_swordsman_fast_relax.xml" frequency="1" name="Swordsman-Fast-Relax"/>
+    <variant file="biped/rider/carry_meat.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="biped/rider/promotion.xml"/>
+    <variant file="biped/rider/attack_slaughter_hele.xml"/>
+    <variant file="biped/gather_meat.xml"/>
+    <variant file="biped/build.xml"/>
+    <variant file="biped/rider/death.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

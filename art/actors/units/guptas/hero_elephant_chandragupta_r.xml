@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="biped/rider/elephantry/hero_maurya_idle.dae" name="Idle" speed="50"/>
+        <animation file="biped/rider/elephantry/hero_maurya_walk.dae" name="Walk" speed="20"/>
+        <animation file="biped/rider/elephantry/hero_maurya_walk.dae" name="Walk" speed="20"/>
+        <animation file="biped/rider/elephantry/hero_maurya_walk.dae" name="run" speed="20"/>
+        <animation file="biped/rider/elephantry/hero_maurya_idle.dae" name="attack_melee" speed="45"/>
+        <animation file="biped/rider/elephantry/hero_maurya_death.dae" name="death" id="death1" speed="100"/>
+        <animation file="biped/rider/elephantry/hero_maurya_death.dae" name="death" id="death2" speed="100"/>
+      </animations>
+      <mesh>skeletal/new/m_tunic_long.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/new/head_chandragupta.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/maur_earrings_1.xml" attachpoint="helmet"/>
+        <prop actor="props/units/heads/maur_hero_big_turban.xml" attachpoint="helmet"/>
+      </props>
+      <textures>
+        <texture file="skeletal/maur/scale_royal_01.png" name="baseTex"/>
+        <texture file="skeletal/maur/scale_royal_01_spec.png" name="specTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

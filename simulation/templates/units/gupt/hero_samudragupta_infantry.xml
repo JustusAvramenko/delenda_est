@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Identity>
+    <Civ>gupt</Civ>
+    <Lang>hindi</Lang>
+    <SpecificName>Samudragupta</SpecificName>
+    <VisibleClasses datatype="tokens">Guerilla</VisibleClasses>
+    <Classes datatype="tokens">Samudragupta</Classes>
+    <Icon>units/gupt/hero_4.png</Icon>
+  </Identity>
+  <Upgrade>
+    <Mount>
+      <Entity>units/gupt/hero_samudragupta_mounted</Entity>
+      <Tooltip>This gives Samudragupta his War Elephant, with trample effects and greater health.</Tooltip>
+      <Requirements>
+        <Techs datatype="tokens">phase_city</Techs>
+      </Requirements>
+      <Cost>
+        <food>400</food>
+        <glory>200</glory>
+      </Cost>
+      <Time>10</Time>
+    </Mount>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/guptas/hero_infantry_swordsman_bindusara.xml</Actor>
+  </VisualActor>
+</Entity>

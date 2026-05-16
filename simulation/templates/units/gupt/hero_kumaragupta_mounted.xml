@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="chariot|template_unit_hero_cavalry_archer">
+  <Attack>
+    <Ranged>
+      <Bonuses>
+        <BonusCavalry>
+          <Classes>Cavalry</Classes>
+          <Multiplier>1.0</Multiplier>
+        </BonusCavalry>
+        <BonusElephant>
+          <Classes>Elephant</Classes>
+          <Multiplier>1.0</Multiplier>
+        </BonusElephant>
+        <BonusInfantry>
+          <Classes>Infantry</Classes>
+          <Multiplier>1.0</Multiplier>
+        </BonusInfantry>
+        <BonusSupport>
+          <Classes>Support</Classes>
+          <Multiplier>1.0</Multiplier>
+        </BonusSupport>
+      </Bonuses>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/maur_hero_ashoka
+  </Auras>
+  <Footprint replace="">
+    <Square width="6.0" depth="12.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gupt</Civ>
+    <Lang>hindi</Lang>
+    <SpecificName>Kumaragupta</SpecificName>
+    <Classes datatype="tokens">Kumaragupta</Classes>
+    <Icon>units/gupt/hero_3.png</Icon>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>10</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>18.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/guptas/hero_chariot_archer_ashoka_m.xml</Actor>
+  </VisualActor>
+</Entity>
