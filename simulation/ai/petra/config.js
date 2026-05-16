@@ -33,9 +33,9 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 	};
 
 	this.Economy = {
-		"popPhase2": 30,	// How many units we want before aging to phase2.
-		"workPhase3": 60,	// How many workers we want before aging to phase3.
-		"workPhase4": 120,	// How many workers we want before aging to phase4 or higher.
+		"popPhase2": 50,	// How many units we want before aging to phase2.
+		"workPhase3": 100,	// How many workers we want before aging to phase3.
+		"workPhase4": 150,	// How many workers we want before aging to phase4 or higher.
 		"popForDock": 20,
 		"targetNumWorkers": 80,	// dummy, will be changed later
 		"targetNumTraders": 3,	// Target number of traders
@@ -47,151 +47,151 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 	// Note: attack settings are set directly in attack_plan.js
 	// defense
 	this.Defense =
-	{
-		"defenseRatio": { "ally": 1.4, "neutral": 1.8, "own": 2 },	// ratio of defenders/attackers.
-		"armyCompactSize": 2000,	// squared. Half-diameter of an army.
-		"armyBreakawaySize": 3500,	// squared.
-		"armyMergeSize": 1400	// squared.
-	};
+		{
+			"defenseRatio": { "ally": 1.4, "neutral": 1.8, "own": 2 },	// ratio of defenders/attackers.
+			"armyCompactSize": 2000,	// squared. Half-diameter of an army.
+			"armyBreakawaySize": 3500,	// squared.
+			"armyMergeSize": 1400	// squared.
+		};
 
 	// Additional buildings that the AI does not yet know when to build
 	// and that it will try to build on phase 3 when enough resources.
 	this.buildings =
-	{
-		"default": [
-			"structures/{civ}/statue"
-		],
-		"achae": [
-			"structures/{civ}/statue",
-			"structures/{civ}/ice_house",
-			"structures/{civ}/tachara"
-		],
-		"athen": [
-			"structures/{civ}/statue",
-			"structures/{civ}/prytaneion",
-			"structures/{civ}/stoa_buildable",
-			"structures/{civ}/theater",
-			"structures/{civ}/temple_nike"
-		],
-		"brit": [
-			"structures/{civ}/statue"
-		],
-		"cart": [
-			"structures/{civ}/statue",
-			"structures/{civ}/embassy_celtic",
-			"structures/{civ}/embassy_iberian",
-			"structures/{civ}/embassy_italic"
-		],
-		"cimb": [
-			"structures/{civ}/statue",
-			"structures/{civ}/encampment",
-			"structures/{civ}/great_hall"
-		],
-		"epir": [
-			"structures/{civ}/statue",
-			"structures/{civ}/stoa_buildable",
-			"structures/{civ}/theater"
-		],
-		"gala": [
-			"structures/{civ}/statue",
-			"structures/{civ}/assembly"
-		],
-		"gaul": [
-			"structures/{civ}/statue",
-			"structures/{civ}/assembly"
-		],
-		"gupt": [
-			"structures/{civ}/statue",
-			"structures/{civ}/academy",
-			"structures/{civ}/library"
-		],
-		"han": [
-			"structures/{civ}/statue",
-			"structures/{civ}/academy"
-		],
-		"iber": [
-			"structures/{civ}/statue"
-		],
-		"imp": [
-			"structures/{civ}/amphitheater",
-			"structures/{civ}/arch",
-			"structures/{civ}/army_camp",
-			"structures/{civ}/barracks_aux"
-		],
-		"kush": [
-			"structures/{civ}/statue",
-			"structures/{civ}/pyramid_large",
-			"structures/{civ}/pyramid_small",
-			"structures/{civ}/temple_amun"
-		],
-		"mace": [
-			"structures/{civ}/statue",
-			"structures/{civ}/library",
-			"structures/{civ}/stoa_buildable",
-			"structures/{civ}/academy",
-			"structures/{civ}/stable_royal",
-			"structures/{civ}/theater"
-		],
-		"maur": [
-			"structures/{civ}/statue",
-			"structures/{civ}/palace",
-			"structures/{civ}/pillar_ashoka"
-		],
-		"ptol": [
-			"structures/{civ}/statue",
-			"structures/{civ}/library",
-			"structures/{civ}/theater"
-		],
-		"rome": [
-			"structures/{civ}/statue",
-			"structures/{civ}/army_camp",
-			"structures/{civ}/temple_mars",
-			"structures/{civ}/temple_vesta"
-		],
-		"sasa": [
-			"structures/{civ}/statue",
-			"structures/{civ}/library"
-		],
-		"scyth": [
-			"structures/{civ}/statue"
-		],
-		"sele": [
-			"structures/{civ}/statue",
-			"structures/{civ}/library",
-			"structures/{civ}/theater"
-		],
-		"spart": [
-			"structures/{civ}/statue",
-			"structures/{civ}/stoa_buildable",
-			"structures/{civ}/theater"
-		],
-		"sueb": [
-			"structures/{civ}/statue",
-			"structures/{civ}/encampment",
-			"structures/{civ}/great_hall"
-		],
-		"syrac": [
-			"structures/{civ}/statue",
-			"structures/{civ}/stoa_buildable",
-			"structures/{civ}/library",
-			"structures/{civ}/theater"
-		],
-		"theb": [
-			"structures/{civ}/statue",
-			"structures/{civ}/stoa_buildable",
-			"structures/{civ}/theater"
-		],
-		"xion": [
-			"structures/{civ}/statue",
-			"structures/{civ}/royal_yurt"
-		],
-		"yayo": [
-			"structures/{civ}/shrine_statue"
-		],
-		"zapo": [
-			"structures/{civ}/ball_court"
-		]
-	};
+		{
+			"default": [
+				"structures/{civ}/statue"
+			],
+			"achae": [
+				"structures/{civ}/statue",
+				"structures/{civ}/ice_house",
+				"structures/{civ}/tachara"
+			],
+			"athen": [
+				"structures/{civ}/statue",
+				"structures/{civ}/prytaneion",
+				"structures/{civ}/stoa_buildable",
+				"structures/{civ}/theater",
+				"structures/{civ}/temple_nike"
+			],
+			"brit": [
+				"structures/{civ}/statue"
+			],
+			"cart": [
+				"structures/{civ}/statue",
+				"structures/{civ}/embassy_celtic",
+				"structures/{civ}/embassy_iberian",
+				"structures/{civ}/embassy_italic"
+			],
+			"cimb": [
+				"structures/{civ}/statue",
+				"structures/{civ}/encampment",
+				"structures/{civ}/great_hall"
+			],
+			"epir": [
+				"structures/{civ}/statue",
+				"structures/{civ}/stoa_buildable",
+				"structures/{civ}/theater"
+			],
+			"gala": [
+				"structures/{civ}/statue",
+				"structures/{civ}/assembly"
+			],
+			"gaul": [
+				"structures/{civ}/statue",
+				"structures/{civ}/assembly"
+			],
+			"gupt": [
+				"structures/{civ}/statue",
+				"structures/{civ}/academy",
+				"structures/{civ}/library"
+			],
+			"han": [
+				"structures/{civ}/statue",
+				"structures/{civ}/academy"
+			],
+			"iber": [
+				"structures/{civ}/statue"
+			],
+			"imp": [
+				"structures/{civ}/amphitheater",
+				"structures/{civ}/arch",
+				"structures/{civ}/army_camp",
+				"structures/{civ}/barracks_aux"
+			],
+			"kush": [
+				"structures/{civ}/statue",
+				"structures/{civ}/pyramid_large",
+				"structures/{civ}/pyramid_small",
+				"structures/{civ}/temple_amun"
+			],
+			"mace": [
+				"structures/{civ}/statue",
+				"structures/{civ}/library",
+				"structures/{civ}/stoa_buildable",
+				"structures/{civ}/academy",
+				"structures/{civ}/stable_royal",
+				"structures/{civ}/theater"
+			],
+			"maur": [
+				"structures/{civ}/statue",
+				"structures/{civ}/palace",
+				"structures/{civ}/pillar_ashoka"
+			],
+			"ptol": [
+				"structures/{civ}/statue",
+				"structures/{civ}/library",
+				"structures/{civ}/theater"
+			],
+			"rome": [
+				"structures/{civ}/statue",
+				"structures/{civ}/army_camp",
+				"structures/{civ}/temple_mars",
+				"structures/{civ}/temple_vesta"
+			],
+			"sasa": [
+				"structures/{civ}/statue",
+				"structures/{civ}/library"
+			],
+			"scyth": [
+				"structures/{civ}/statue"
+			],
+			"sele": [
+				"structures/{civ}/statue",
+				"structures/{civ}/library",
+				"structures/{civ}/theater"
+			],
+			"spart": [
+				"structures/{civ}/statue",
+				"structures/{civ}/stoa_buildable",
+				"structures/{civ}/theater"
+			],
+			"sueb": [
+				"structures/{civ}/statue",
+				"structures/{civ}/encampment",
+				"structures/{civ}/great_hall"
+			],
+			"syrac": [
+				"structures/{civ}/statue",
+				"structures/{civ}/stoa_buildable",
+				"structures/{civ}/library",
+				"structures/{civ}/theater"
+			],
+			"theb": [
+				"structures/{civ}/statue",
+				"structures/{civ}/stoa_buildable",
+				"structures/{civ}/theater"
+			],
+			"xion": [
+				"structures/{civ}/statue",
+				"structures/{civ}/royal_yurt"
+			],
+			"yayo": [
+				"structures/{civ}/shrine_statue"
+			],
+			"zapo": [
+				"structures/{civ}/ball_court"
+			]
+		};
 
 	this.priorities =
 	{
@@ -375,11 +375,12 @@ Config.prototype.setConfig = function(gameState)
 		this.Economy.workPhase4 = Math.floor(0.9 * this.Economy.workPhase4);
 	}
 
-	if (maxPop < 300)
-		this.popScaling *= Math.sqrt(maxPop / 300);
+	if (maxPop < 600)
+		this.popScaling *= Math.sqrt(maxPop / 600);
 
 	this.Military.popForBarracks1 = Math.min(Math.max(Math.floor(this.Military.popForBarracks1 * this.popScaling), 12), Math.floor(maxPop/5));
 	this.Military.popForBarracks2 = Math.min(Math.max(Math.floor(this.Military.popForBarracks2 * this.popScaling), 45), Math.floor(maxPop*2/3));
+	this.Military.popForShipyard = Math.min(Math.max(Math.floor(this.Military.popForShipyard * this.popScaling), 12), Math.floor(maxPop/5));
 	this.Military.popForForge = Math.min(Math.max(Math.floor(this.Military.popForForge * this.popScaling), 30), Math.floor(maxPop/2));
 	this.Economy.popPhase2 = Math.min(Math.max(Math.floor(this.Economy.popPhase2 * this.popScaling), 20), Math.floor(maxPop/2));
 	this.Economy.workPhase3 = Math.min(Math.max(Math.floor(this.Economy.workPhase3 * this.popScaling), 40), Math.floor(maxPop*2/3));
