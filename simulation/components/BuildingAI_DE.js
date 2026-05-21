@@ -1,3 +1,6 @@
+/**
+ * Called when units enter or leave range.
+ */
 BuildingAI.prototype.OnRangeUpdate = function(msg)
 {
 
@@ -5,24 +8,25 @@ BuildingAI.prototype.OnRangeUpdate = function(msg)
 	if (!cmpAttack)
 		return;
 
-	// Target enemy units except animals.
+	// Target enemy units except non-dangerous animals.
 	if (msg.tag == this.gaiaUnitsQuery)
 	{
-		msg.added = msg.added.filter(e => {
+		msg.added = msg.added.filter(e =>
+		{
 			const cmpUnitAI = Engine.QueryInterface(e, IID_UnitAI);
-			return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // << THIS HAS CHANGED.
+			return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // <<<<<<<<<<<<<<<<<<<<<<< THIS HAS CHANGED.
 		});
 	}
 	else if (msg.tag != this.enemyUnitsQuery)
 		return;
 
 	// Add new targets.
-	for (let entity of msg.added)
+	for (const entity of msg.added)
 		if (cmpAttack.CanAttack(entity))
 			this.targetUnits.push(entity);
 
 	// Remove targets outside of vision-range.
-	for (let entity of msg.removed)
+	for (const entity of msg.removed)
 	{
 		const index = this.targetUnits.indexOf(entity);
 		if (index > -1)
@@ -32,5 +36,3 @@ BuildingAI.prototype.OnRangeUpdate = function(msg)
 	if (this.targetUnits.length)
 		this.StartTimer();
 };
-
-Engine.ReRegisterComponentType(IID_BuildingAI, "BuildingAI", BuildingAI);
