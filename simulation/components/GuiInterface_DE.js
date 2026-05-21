@@ -14,13 +14,13 @@ GuiInterface.prototype.GetSimulationState = function()
 		const cmpIdentity = Engine.QueryInterface(playerEnt, IID_Identity);
 		const cmpDiplomacy = Engine.QueryInterface(playerEnt, IID_Diplomacy);
 
-		// Work out which phase we are in. "phase_empire" added for Delenda Est.<<<<<<<<<
+		// Work out which phase we are in.
 		let phase = "";
 		const cmpTechnologyManager = Engine.QueryInterface(playerEnt, IID_TechnologyManager);
 		if (cmpTechnologyManager)
 		{
 			if (cmpTechnologyManager.IsTechnologyResearched("phase_empire"))
-				phase = "empire";
+				phase = "empire";  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< THIS IS ADDED FOR DE.
 			else if (cmpTechnologyManager.IsTechnologyResearched("phase_city"))
 				phase = "city";
 			else if (cmpTechnologyManager.IsTechnologyResearched("phase_town"))
