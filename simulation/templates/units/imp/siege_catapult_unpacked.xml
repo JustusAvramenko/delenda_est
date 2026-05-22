@@ -2,9 +2,25 @@
 <Entity parent="template_unit_siege_catapult_stationary">
   <Attack>
     <Ranged>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>40.0</Crush>
+      </Damage>
       <Projectile>
         <LaunchPoint y="4"/>
+        <Count>3</Count>
+        <Spread>15.0</Spread>
       </Projectile>
+      <Splash>
+        <Damage>
+          <Hack>10.0</Hack>
+          <Crush>10.0</Crush>
+        </Damage>
+        <Shape>Circular</Shape>
+        <Range>8</Range>
+        <FriendlyFire>true</FriendlyFire>
+      </Splash>
     </Ranged>
   </Attack>
   <Footprint>
