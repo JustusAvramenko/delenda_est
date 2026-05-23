@@ -1549,7 +1549,7 @@ AttackPlan.prototype.update = function(gameState, events)
 		else
 			targetClassesSiege = { "attack": ["Unit", "Structure"], "avoid": [], "vetoEntities": veto };
 
-		// do not loose time destroying buildings which do not help enemy's defense and can be easily captured later
+		// do not loose time destroying buildings which do not help enemy's defense and can be easily captured later. <<<<<<<<<<<<<< DELENDA EST changes "Farmstead" to "Granary.">>>>>>>>>>>>>>>
 		if (this.target.hasDefensiveFire())
 		{
 			targetClassesUnit.avoid = targetClassesUnit.avoid.concat("House", "Storehouse", "Granary", "Field", "Forge");
