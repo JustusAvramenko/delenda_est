@@ -13,8 +13,10 @@ import { Worker } from "simulation/ai/petra/worker.js";
  * It deals with everything in an attack, from picking a target to picking a path to it
  * To making sure units are built, and pushing elements to the queue manager otherwise
  * It also handles the actual attack, though much work is needed on that.
+ * When @c deserialized is true, do not call any random function inside constructor
+ * as that would cause oos.
  */
-export function AttackPlan(gameState, config, uniqueID, type = AttackPlan.TYPE_DEFAULT, data)
+export function AttackPlan(gameState, config, uniqueID, type = AttackPlan.TYPE_DEFAULT, data, deserialized)
 {
 	this.Config = config;
 	this.name = uniqueID;
@@ -178,7 +180,7 @@ export function AttackPlan(gameState, config, uniqueID, type = AttackPlan.TYPE_D
 	}
 
 	// Put some randomness on the attack size
-	let variation = randFloat(0.8, 1.2);
+	let variation = deserialized ? 1 : randFloat(0.8, 1.2);
 	// and lower priority and smaller sizes for easier difficulty levels
 	if (this.Config.difficulty < difficulty.EASY)
 	{
@@ -217,10 +219,13 @@ export function AttackPlan(gameState, config, uniqueID, type = AttackPlan.TYPE_D
 		this.unitStat[cat].minSize = Math.ceil(this.Config.popScaling * this.unitStat[cat].minSize);
 	}
 
-	// TODO: there should probably be one queue per type of training building
-	gameState.ai.queueManager.addQueue("plan_" + this.name, priority);
-	gameState.ai.queueManager.addQueue("plan_" + this.name +"_champ", priority+1);
-	gameState.ai.queueManager.addQueue("plan_" + this.name +"_siege", priority);
+	if (!deserialized)
+	{
+		// TODO: there should probably be one queue per type of training building
+		gameState.ai.queueManager.addQueue("plan_" + this.name, priority);
+		gameState.ai.queueManager.addQueue("plan_" + this.name +"_champ", priority+1);
+		gameState.ai.queueManager.addQueue("plan_" + this.name +"_siege", priority);
+	}
 
 	// each array is [ratio, [associated classes], associated EntityColl, associated unitStat, name ]
 	this.buildOrders = [];
@@ -631,13 +636,22 @@ AttackPlan.prototype.trainMoreUnits = function(gameState)
 	}
 	this.buildOrders.sort((a, b) =>
 	{
-	let va = a[0]/a[3].targetSize - a[3].priority;
+		let va = a[0]/a[3].targetSize - a[3].priority;
 		if (a[0] >= a[3].targetSize)
 			va += 1000;
 		let vb = b[0]/b[3].targetSize - b[3].priority;
 		if (b[0] >= b[3].targetSize)
 			vb += 1000;
-		return va - vb;
+
+		const calcResult = va - vb;
+		if (calcResult !== 0)
+			return calcResult;
+
+		if (a[4] < b[4])
+			return 1;
+		if (a[4] > b[4])
+			return -1;
+		return 0;
 	});
 
 	if (this.Config.debug > 1 && gameState.ai.playedTurn%50 === 0)
@@ -1234,10 +1248,10 @@ AttackPlan.prototype.getPathToTarget = function(gameState, fixedRallyPoint = fal
 	const endPos = { "x": this.targetPos[0], "y": this.targetPos[1] };
 	const path = Engine.ComputePath(startPos, endPos, gameState.getPassabilityClassMask("large"));
 	this.path = [];
-	this.path.push(this.targetPos);
+	this.path.push(clone(this.targetPos));
 	for (const p in path)
 		this.path.push([path[p].x, path[p].y]);
-	this.path.push(this.rallyPoint);
+	this.path.push(clone(this.rallyPoint));
 	this.path.reverse();
 	// Change the rally point to something useful
 	if (!fixedRallyPoint)
@@ -1356,7 +1370,7 @@ AttackPlan.prototype.update = function(gameState, events)
 		this.startingAttack = true;
 		this.unitCollection.forEach(ent =>
 		{
-		ent.stopMoving();
+			ent.stopMoving();
 			ent.setMetadata(PlayerID, "subrole", Worker.SUBROLE_ATTACKING);
 		});
 		if (this.type === AttackPlan.TYPE_RUSH)   // try to find a better target for rush
@@ -1632,7 +1646,7 @@ AttackPlan.prototype.update = function(gameState, events)
 			{
 				const mStruct = enemyStructures.filter(enemy =>
 				{
-				if (!enemy.position() || !ent.canAttackTarget(enemy, allowCapture(gameState, ent, enemy)))
+					if (!enemy.position() || !ent.canAttackTarget(enemy, allowCapture(gameState, ent, enemy)))
 						return false;
 					if (SquareVectorDistance(enemy.position(), ent.position()) > range)
 						return false;
@@ -1646,7 +1660,7 @@ AttackPlan.prototype.update = function(gameState, events)
 				{
 					mStruct.sort((structa, structb) =>
 					{
-					let vala = structa.costSum();
+						let vala = structa.costSum();
 						if (structa.hasClass("Gate") && ent.canAttackClass("Wall"))
 							vala += 10000;
 						else if (structa.hasDefensiveFire())
@@ -1710,7 +1724,7 @@ AttackPlan.prototype.update = function(gameState, events)
 				{
 					mUnit.sort((unitA, unitB) =>
 					{
-					let vala = unitA.hasClass("Support") ? 50 : 0;
+						let vala = unitA.hasClass("Support") ? 50 : 0;
 						if (ent.counters(unitA))
 							vala += 100;
 						let valb = unitB.hasClass("Support") ? 50 : 0;
@@ -1754,7 +1768,7 @@ AttackPlan.prototype.update = function(gameState, events)
 				{
 					const mStruct = enemyStructures.filter(enemy =>
 					{
-					if (this.isBlocked && enemy.id() != this.target.id())
+						if (this.isBlocked && enemy.id() != this.target.id())
 							return false;
 						if (!enemy.position() || !ent.canAttackTarget(enemy, allowCapture(gameState, ent, enemy)))
 							return false;
@@ -1766,7 +1780,7 @@ AttackPlan.prototype.update = function(gameState, events)
 					}, this).toEntityArray();
 					if (mStruct.length)
 					{
-						mStruct.sort((structa, structb) => 
+						mStruct.sort((structa, structb) =>
 						{
 							let vala = structa.costSum();
 							if (structa.hasClass("Gate") && ent.canAttackClass("Wall"))
@@ -1792,7 +1806,7 @@ AttackPlan.prototype.update = function(gameState, events)
 					{
 						let distmin = Math.min();
 						let attacker;
-						this.unitCollection.forEach(unit => 
+						this.unitCollection.forEach(unit =>
 						{
 							if (!unit.position())
 								return;
@@ -1823,7 +1837,7 @@ AttackPlan.prototype.update = function(gameState, events)
 		if (this.target && this.target.owner() === 0 && this.targetPlayer !== 0)
 			this.target = undefined;
 	}
-	this.lastPosition = this.position;
+	this.lastPosition = clone(this.position);
 	Engine.ProfileStop();
 
 	return this.unitCollection.length;
@@ -1921,7 +1935,7 @@ AttackPlan.prototype.UpdateWalking = function(gameState, events)
 			farthestEnt.destroy();
 	}
 	if (gameState.ai.playedTurn % 5 === 0)
-		this.position5TurnsAgo = this.position;
+		this.position5TurnsAgo = clone(this.position);
 
 	if (this.lastPosition && SquareVectorDistance(this.position, this.lastPosition) < 16 &&
 		this.path.length > 0)
@@ -2169,6 +2183,10 @@ AttackPlan.prototype.checkEvents = function(gameState, events)
 		this.target = undefined;
 	}
 
+	this.unitCollection = gameState.getOwnUnits().filter(
+		filters.byMetadata(PlayerID, "plan", this.name));
+	this.unitCollection.registerUpdates();
+
 	if (!this.overseas || this.state !== AttackPlan.STATE_UNEXECUTED)
 		return;
 	// let's check if an enemy has built a structure at our access
@@ -2253,7 +2271,7 @@ AttackPlan.prototype.Serialize = function()
 		"type": this.type,
 		"state": this.state,
 		"forced": this.forced,
-		"rallyPoint": this.rallyPoint,
+		"rallyPoint": clone(this.rallyPoint),
 		"overseas": this.overseas,
 		"paused": this.paused,
 		"maxCompletingTime": this.maxCompletingTime,
@@ -2262,13 +2280,14 @@ AttackPlan.prototype.Serialize = function()
 		"siegeState": this.siegeState,
 		"position5TurnsAgo": this.position5TurnsAgo,
 		"lastPosition": this.lastPosition,
-		"position": this.position,
+		"position": clone(this.position),
 		"isBlocked": this.isBlocked,
 		"targetPlayer": this.targetPlayer,
 		"target": this.target !== undefined ? this.target.id() : undefined,
-		"targetPos": this.targetPos,
+		"targetPos": clone(this.targetPos),
 		"uniqueTargetId": this.uniqueTargetId,
-		"path": this.path
+		"path": this.path,
+		"unitCollUpdateArray": this.unitCollUpdateArray
 	};
 
 	return { "properties": properties };
