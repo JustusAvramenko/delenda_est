@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/cart/house">
   <BuildRestrictions>
-    <Category>Apartment</Category>
+    <Category>Tenement</Category>
   </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
   <GarrisonHolder>
     <Max>10</Max>
   </GarrisonHolder>
@@ -10,7 +16,18 @@
     <Max op="mul">1.5</Max>
   </Health>
   <Identity>
-    <GenericName>Apartment Building</GenericName>
+    <SpecificName>Insula</SpecificName>
+    <GenericName>Tenement Building</GenericName>
+    <VisibleClasses datatype="tokens">
+      -Village
+      Town
+    </VisibleClasses>
+    <Requirements>
+      <Techs datatype="tokens">
+        -phase_village
+        house/pop_house_01
+      </Techs>
+    </Requirements>
     <Icon>structures/apartment.png</Icon>
   </Identity>
   <Loot>

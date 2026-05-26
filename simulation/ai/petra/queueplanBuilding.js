@@ -904,7 +904,7 @@ ConstructionPlan.prototype.isGo = function(gameState)
 	if (this.goRequirement && this.goRequirement == "houseNeeded")
 	{
 		if (!gameState.ai.HQ.canBuild(gameState, "structures/{civ}/house") &&
-		    !gameState.ai.HQ.canBuild(gameState, "structures/{civ}/apartment"))
+		    !gameState.ai.HQ.canBuild(gameState, "structures/{civ}/tenement"))
 			return false;
 		if (gameState.getPopulationMax() <= gameState.getPopulationLimit())
 			return false;

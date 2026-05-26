@@ -16,11 +16,10 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 	this.popScaling = 1;	// scale factor depending on the max population
 
 	this.Military = {
-		"towerLapseTime": 360,	// Time to wait between building 2 towers
-		"fortressLapseTime": 390,	// Time to wait between building 2 fortresses
+		"towerLapseTime": 300,	// Time to wait between building 2 towers
+		"fortressLapseTime": 300,	// Time to wait between building 2 fortresses
 		"popForBarracks1": 25,
 		"popForBarracks2": 55,
-		"popForShipyard": 20,
 		"popForForge": 65,
 		"numSentryTowers": 1
 	};
@@ -33,15 +32,15 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 	};
 
 	this.Economy = {
-		"popPhase2": 50,	// How many units we want before aging to phase2.
-		"workPhase3": 100,	// How many workers we want before aging to phase3.
-		"workPhase4": 150,	// How many workers we want before aging to phase4 or higher.
-		"popForDock": 20,
-		"targetNumWorkers": 80,	// dummy, will be changed later
+		"popPhase2": 150,	// How many units we want before aging to phase2.
+		"workPhase3": 180,	// How many workers we want before aging to phase3.
+		"workPhase4": 200,	// How many workers we want before aging to phase4 or higher.
+		"popForDock": 25,
+		"targetNumWorkers": 60,	// dummy, will be changed later
 		"targetNumTraders": 3,	// Target number of traders
-		"targetNumFishers": 8,	// Target number of fishers per sea
+		"targetNumFishers": 5,	// Target number of fishers per sea
 		"supportRatio": 0.3,	// fraction of support workers among the workforce
-		"provisionFields": 3
+		"provisionFields": 2
 	};
 
 	// Note: attack settings are set directly in attack_plan.js
@@ -59,7 +58,7 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 	this.buildings =
 		{
 			"default": [
-				"structures/{civ}/statue"
+				"structures/{civ}/market_stall"
 			],
 			"achae": [
 				"structures/{civ}/statue",
@@ -74,10 +73,14 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 				"structures/{civ}/temple_nike"
 			],
 			"brit": [
-				"structures/{civ}/statue"
+				"structures/{civ}/statue",
+				"structures/{civ}/kennel",
+				"structures/{civ}/rotarymill"
 			],
 			"cart": [
 				"structures/{civ}/statue",
+				"structures/{civ}/tenement",
+				"structures/{civ}/tophet",
 				"structures/{civ}/embassy_celtic",
 				"structures/{civ}/embassy_iberian",
 				"structures/{civ}/embassy_italic"
@@ -94,6 +97,7 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 			],
 			"gala": [
 				"structures/{civ}/statue",
+				"structures/{civ}/rotarymill",
 				"structures/{civ}/assembly"
 			],
 			"gaul": [
@@ -113,8 +117,9 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 				"structures/{civ}/statue"
 			],
 			"imp": [
-				"structures/{civ}/amphitheater",
 				"structures/{civ}/arch",
+				"structures/{civ}/amphitheater",
+				"structures/{civ}/tenement",
 				"structures/{civ}/army_camp",
 				"structures/{civ}/barracks_aux"
 			],
@@ -153,7 +158,8 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 				"structures/{civ}/library"
 			],
 			"scyth": [
-				"structures/{civ}/statue"
+				"structures/{civ}/statue",
+				"structures/{civ}/royal_yurt"
 			],
 			"sele": [
 				"structures/{civ}/statue",
@@ -194,27 +200,26 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 		};
 
 	this.priorities =
-	{
-		"villager": 300,      // should be slightly lower than the citizen soldier one to not get all the food
-		"citizenSoldier": 600,
-		"trader": 1,
-		"healer": 20,
-		"ships": 100,
-		"warShips": 200,
-		"house": 250,
-		"dropsites": 950,
-		"field": 480,
-		"dock": 90,
-		"corral": 1,
-		"economicBuilding": 700,
-		"militaryBuilding": 330,
-		"defenseBuilding": 70,
-		"civilCentre": 1,
-		"majorTech": 700,
-		"minorTech": 250,
-		"wonder": 1,
-		"emergency": 1000    // used only in emergency situations, should be the highest one
-	};
+		{
+			"villager": 300,      // should be slightly lower than the citizen soldier one to not get all the food
+			"citizenSoldier": 600,
+			"trader": 5,
+			"healer": 20,
+			"ships": 100,
+			"house": 250,
+			"dropsites": 950,
+			"field": 480,
+			"dock": 120,
+			"corral": 1,
+			"economicBuilding": 700,
+			"militaryBuilding": 330,
+			"defenseBuilding": 90,
+			"civilCentre": 1,
+			"majorTech": 700,
+			"minorTech": 250,
+			"wonder": 1,
+			"emergency": 1000    // used only in emergency situations, should be the highest one
+		};
 
 	// Default personality (will be updated in setConfig)
 	this.personality =
@@ -226,24 +231,24 @@ export function Config(difficulty = difficultyLevel.MEDIUM, behavior)
 
 	// See QueueManager.prototype.wantedGatherRates()
 	this.queues =
-	{
-		"firstTurn": {
-			"food": 10,
-			"wood": 10,
-			"default": 0
-		},
-		"short": {
-			"food": 200,
-			"wood": 200,
-			"default": 100
-		},
-		"medium": {
-			"default": 0
-		},
-		"long": {
-			"default": 0
-		}
-	};
+		{
+			"firstTurn": {
+				"food": 10,
+				"wood": 10,
+				"default": 0
+			},
+			"short": {
+				"food": 200,
+				"wood": 200,
+				"default": 100
+			},
+			"medium": {
+				"default": 0
+			},
+			"long": {
+				"default": 0
+			}
+		};
 
 	this.garrisonHealthLevel = { "low": 0.4, "medium": 0.55, "high": 0.7 };
 
@@ -380,7 +385,6 @@ Config.prototype.setConfig = function(gameState)
 
 	this.Military.popForBarracks1 = Math.min(Math.max(Math.floor(this.Military.popForBarracks1 * this.popScaling), 12), Math.floor(maxPop/5));
 	this.Military.popForBarracks2 = Math.min(Math.max(Math.floor(this.Military.popForBarracks2 * this.popScaling), 45), Math.floor(maxPop*2/3));
-	this.Military.popForShipyard = Math.min(Math.max(Math.floor(this.Military.popForShipyard * this.popScaling), 12), Math.floor(maxPop/5));
 	this.Military.popForForge = Math.min(Math.max(Math.floor(this.Military.popForForge * this.popScaling), 30), Math.floor(maxPop/2));
 	this.Economy.popPhase2 = Math.min(Math.max(Math.floor(this.Economy.popPhase2 * this.popScaling), 20), Math.floor(maxPop/2));
 	this.Economy.workPhase3 = Math.min(Math.max(Math.floor(this.Economy.workPhase3 * this.popScaling), 40), Math.floor(maxPop*2/3));
