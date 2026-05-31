@@ -228,6 +228,16 @@ Attack.prototype.GetAttackTypes = function(wantedTypes)
 	      (!wantedTypesReal || !wantedTypesReal.length || wantedTypesReal.indexOf(type) != -1));
 };
 
+Attack.prototype.GetProjectileCount = function(type)
+{
+	if (!this.template[type] || !this.template[type].Projectile)
+		return 1;
+
+	let count = this.template[type].Projectile.Count ? +this.template[type].Projectile.Count : 1;
+	count = ApplyValueModificationsToEntity("Attack/" + type + "/Projectile/Count", count, this.entity);
+	return Math.max(1, Math.floor(count));
+};
+
 Attack.prototype.GetPreferredClasses = function(type)
 {
 	if (this.template[type] && this.template[type].PreferredClasses &&
