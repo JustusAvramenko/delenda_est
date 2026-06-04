@@ -1,0 +1,28 @@
+{
+	"genericName": "Shahanshah's Guard",
+	"specificName": {
+		"sasa": "Pushtigban"
+	},
+	"description": "The Pushtigban were an elite Sasanian Persian guard corps, often described as the emperor’s personal bodyguard and among the finest cavalry of the empire. Their name roughly means “those who guard the back,” implying close protection of the Shahanshah. Drawn from noble or highly trusted warrior families, they were heavily armored cavalrymen (likely Cataphracts) equipped with lances, swords, bows, and mail or scale armor. In battle, they likely served as shock cavalry and a royal reserve, protecting the king and striking at decisive moments. They embodied Sasanian aristocratic military prestige.",
+	"cost": {
+		"metal": 500,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "sasa" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "armor_cataphract.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Champion Cavalry +1 level of all armor types.[/font]",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 1 }
+	],
+	"affects": ["Champion Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
