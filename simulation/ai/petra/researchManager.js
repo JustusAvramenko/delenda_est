@@ -85,9 +85,7 @@ ResearchManager.prototype.researchWantedTechs = function(gameState, techs)
 	const numWorkers = phase1 ? gameState.getOwnEntitiesByRole(Worker.ROLE_WORKER, true).length : 0;
 	for (const tech of techs)
 	{
-		if (tech[0].indexOf("unlock_champions") == 0)
-			return { "name": tech[0], "increasePriority": true };
-		if (tech[0].indexOf("training_citizens_generic") == 0)
+		if (tech[0].indexOf("civic_center/training_citizens_generic") == 0)
 			return { "name": tech[0], "increasePriority": true };
 		if (tech[0].indexOf("gather_capacity_wheelbarrow") == 0)
 			return { "name": tech[0], "increasePriority": true };
@@ -99,9 +97,17 @@ ResearchManager.prototype.researchWantedTechs = function(gameState, techs)
 			return { "name": tech[0], "increasePriority": true };
 		if (tech[0] == "gather_lumbering_ironaxes" || tech[0] == "gather_mining_pickaxes")
 			return { "name": pickRandom(["gather_lumbering_ironaxes", "gather_mining_pickaxes"]), "increasePriority": true };
+		if (tech[0].indexOf("unlock_champions") == 0)
+			return { "name": tech[0], "increasePriority": true };
+		if (tech[0].indexOf("barracks/tradition_hoplite") == 0)
+			return { "name": tech[0], "increasePriority": true };
+		if (tech[0].indexOf("range/tradition_archery") == 0)
+			return { "name": tech[0], "increasePriority": true };
+		if (tech[0].indexOf("stable/tradition_cavalry") == 0)
+			return { "name": tech[0], "increasePriority": true };
 		if (tech[0] == "forge/techs_forge_cost" || tech[0] == "forge/techs_forge_speed")
 			return { "name": pickRandom(["forge/techs_forge_cost", "forge/techs_forge_speed"]), "increasePriority": true };
-		if (tech[0].indexOf("training_naval_shipwrights") == 0)
+		if (tech[0].indexOf("shipyard/training_naval_shipwrights") == 0)
 			return { "name": tech[0], "increasePriority": true };
 		if (tech[0].indexOf("celts/unlock_warships") == 0)
 			return { "name": tech[0], "increasePriority": true };
