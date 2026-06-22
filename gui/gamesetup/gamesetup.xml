@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+	<script directory="gui/common/"/>
+	<script directory="gui/maps/"/>
+	<script directory="gamesettings/"/>
+	<script directory="gamesettings/attributes/"/>
+	<script directory="gui/gamesetup/"/>
+	<script directory="gui/gamesetup/Controllers/"/>
+	<script directory="gui/gamesetup/NetMessages/"/>
+	<script directory="gui/gamesetup/Persistence/"/>
+
+
+	<object type="image" style="ModernWindow" name="setupWindow">
+
+		<object style="TitleText" type="text" size="50%-128 4 50%+128 36">
+			<translatableAttribute id="caption">Match Setup</translatableAttribute>
+		</object>
+
+		<include file="gui/gamesetup/Pages/LoadingPage/LoadingPage.xml"/>
+		<include file="gui/gamesetup/Pages/GameSetupPage/GameSetupPage.xml"/>
+		<include file="gui/gamesetup/Pages/AIConfigPage/AIConfigPage.xml"/>
+		<include file="gui/gamesetup/Pages/MapBrowserPage/MapBrowserPage.xml"/>
+		<include file="gui/gamesetup/Pages/CivBrowserPage/CivBrowserPage.xml"/>
+	</object>
+
+</objects>

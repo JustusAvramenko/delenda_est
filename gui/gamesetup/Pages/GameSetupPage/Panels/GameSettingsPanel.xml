@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object name="settingsPanelFrame">
+
+	<object name="settingsBackground" type="image" sprite="ModernDarkBoxGold"/>
+
+	<object name="settingsPanel" size="0 5 100% 100%-5" z="1">
+
+		<!-- There is currently only one button, so don't add un-necessary objects. -->
+        <repeat count="10" var="n">
+            <object>
+                <include file="gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingControlButton.xml"/>
+            </object>
+        </repeat>
+
+		<repeat count="40" var="n">
+			<object>
+				<include file="gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingControlDropdown.xml"/>
+			</object>
+		</repeat>
+
+		<repeat count="30" var="n">
+			<object>
+				<include file="gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingControlCheckbox.xml"/>
+			</object>
+		</repeat>
+
+		<repeat count="15" var="n">
+			<object>
+				<include file="gui/gamesetup/Pages/GameSetupPage/GameSettings/GameSettingControlSlider.xml"/>
+			</object>
+		</repeat>
+
+	</object>
+</object>

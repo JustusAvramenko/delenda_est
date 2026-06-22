@@ -30,7 +30,7 @@
 
 	<object size="1 36 100%-1 100%">
 	<repeat count="8">
-		<object name="playerFrame[n]" size="0 0 100% 30" hidden="true">
+		<object name="playerFrame[n]" size="0 0 100% 32" hidden="true">
 
 			<object name="playerBackgroundColor[n]" type="image"/>
 
@@ -43,7 +43,17 @@
 
 			<object name="aiConfigButton[n]" type="button" style="StoneButton" size="50%+40 4 50%+64 28" tooltip_style="onscreenToolTip" font="sans-bold-stroke-12" sprite="ModernGear" sprite_over="ModernGearHover" sprite_pressed="ModernGearPressed"/>
 
-			<object name="playerCiv[n]" type="dropdown" style="ModernDropDown" size="50%+69 2 85% 30" tooltip_style="onscreenToolTip" dropdown_size="424"/>
+			<object name="playerCiv[n]" type="dropdown" style="ModernDropDown" size="50%+69 2 85%-28 30" tooltip_style="onscreenToolTip" dropdown_size="424"/>
+
+			<object
+			name="playerCivBrowser[n]"
+			type="button"
+			style="IconButton"
+			sprite="iconInfoGold"
+			sprite_over="iconInfoWhite"
+			size="85%-22 6 85%-4 22"
+			tooltip="Open civilizations browser"/>
+
 			<object name="playerCivText[n]" type="text" style="ModernLabelText" size="50%+65 0 85% 30"/>
 
 			<object name="playerTeam[n]" type="dropdown" style="ModernDropDown" size="85%+5 2 100%-5 30" tooltip_style="onscreenToolTip"/>

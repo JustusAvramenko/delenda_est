@@ -1,0 +1,50 @@
+<object name="CivBrowserPage" z="300">
+
+    <script file="gui/civs/civbrowser/CivBrowser.js"/>
+    <script directory="gui/civs/civbrowser/controls/"/>
+	<script file="gui/civs/civbrowser/grid/CivGridBrowser.js"/>
+	<script file="gui/civs/civbrowser/grid/CivGridBrowserItem.js"/>
+
+    <object type="image" sprite="ModernFade"/>
+
+    <object
+        name="CivBrowserPageDialog"
+        type="image"
+        style="ModernDialog"
+        size="5% 5% 95% 95%">
+
+        <object
+            style="ModernLabelText"
+            type="text"
+            size="50%-128 -18 50%+128 14"
+            z="200">
+
+            <translatableAttribute id="caption">
+                Civ Browser
+            </translatableAttribute>
+
+        </object>
+
+        <!-- Civilizations Roster -->
+        <object
+            name="CivBrowserLeftPanel"
+            size="15 15 100%-400 100%-15">
+
+            <include
+                file="gui/civs/civbrowser/grid/CivGridBrowser.xml"/>
+
+        </object>
+
+        <!-- Right Panel -->
+        <object
+            name="CivBrowserRightPanel"
+            size="100%-390 15 100%-15 100%-15">
+
+            <include
+                file="gui/civs/civbrowser/controls/CivBrowserControls.xml"/>
+
+        </object>
+
+    </object>
+
+</object>

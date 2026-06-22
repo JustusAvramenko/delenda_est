@@ -18,36 +18,69 @@ PlayerSettingControls.PlayerCiv = class PlayerCiv extends GameSettingControlDrop
     {
         this.label = Engine.GetGUIObjectByName("playerCivText[" + this.playerIndex + "]");
         this.dropdown = Engine.GetGUIObjectByName("playerCiv[" + this.playerIndex + "]");
+		this.browserButton = Engine.TryGetGUIObjectByName("playerCivBrowser[" + this.playerIndex + "]");
+		if (this.browserButton)
+		{
+			this.browserButton.onPress =
+				this.openCivBrowser.bind(this);
+		}
     }
+
+	openCivBrowser()
+	{
+
+		let page =
+			g_SetupWindow.pages.CivBrowserPage;
+
+		if (!page)
+		{
+			error("CivBrowserPage Not Found");
+			return;
+		}
+
+		page.selectedPlayer =
+			this.playerIndex;
+
+		page.openPage(true);
+	}
 
     onHoverChange()
-    {
-        this.dropdown.tooltip = this.values && this.values.tooltip[this.dropdown.hovered] || this.Tooltip;
-    }
+	{
+		const hovered = this.dropdown.hovered;
+		this.dropdown.tooltip =
+			this.values && this.values.tooltip[hovered] !== undefined ?
+				this.values.tooltip[hovered] :
+				this.Tooltip;
+	}
 
     rebuild()
-    {
-        const isLocked = g_GameSettings.playerCiv.locked[this.playerIndex] || this.isSavedGame;
-        if (this.wasLocked !== isLocked)
-        {
-            this.wasLocked = isLocked;
-            this.values = prepareForDropdown(isLocked ? this.allItems : this.items);
+	{
+		const isLocked = g_GameSettings.playerCiv.locked[this.playerIndex] || this.isSavedGame;
+		if (this.wasLocked !== isLocked)
+		{
+			this.wasLocked = isLocked;
+			this.values = prepareForDropdown(isLocked ? this.allItems : this.items);
 
-            this.dropdown.list = this.values.name;
-            this.dropdown.list_data = this.values.civ;
+			this.dropdown.list = this.values.name;
+			this.dropdown.list_data = this.values.civ;
 
-            // If not locked, reset selection, else we can end up with empty label.
-            if (!isLocked && g_IsController && g_GameSettings.playerCiv.values[this.playerIndex])
-                this.onSelectionChange(0);
-        }
-        this.render();
-    }
+			if (!isLocked && g_IsController)
+			{
+				const current = g_GameSettings.playerCiv.values[this.playerIndex];
+				if (current && !this.values.civ.includes(current))
+					this.onSelectionChange(0);
+			}
+		}
+
+		this.render();
+	}
 
     render()
-    {
-        this.setEnabled(!g_GameSettings.playerCiv.locked[this.playerIndex]);
-        this.setSelectedValue(g_GameSettings.playerCiv.values[this.playerIndex]);
-    }
+	{
+		const isLocked = g_GameSettings.playerCiv.locked[this.playerIndex] || this.isSavedGame;
+		this.setEnabled(!isLocked);
+		this.setSelectedValue(g_GameSettings.playerCiv.values[this.playerIndex]);
+	}
 
     getItems(allItems)
     {
@@ -94,10 +127,13 @@ PlayerSettingControls.PlayerCiv = class PlayerCiv extends GameSettingControlDrop
     }
 
     onSelectionChange(itemIdx)
-    {
-        g_GameSettings.playerCiv.setValue(this.playerIndex, this.values.civ[itemIdx]);
-        this.gameSettingsController.setNetworkInitAttributes();
-    }
+	{
+		if (!this.values || !this.values.civ || itemIdx < 0 || itemIdx >= this.values.civ.length)
+			return;
+
+		g_GameSettings.playerCiv.setValue(this.playerIndex, this.values.civ[itemIdx]);
+		this.gameSettingsController.setNetworkInitAttributes();
+	}
 };
 
 PlayerSettingControls.PlayerCiv.prototype.Tooltip =

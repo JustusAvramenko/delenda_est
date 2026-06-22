@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+	<object type="image" sprite="ModernFade" size="-5 0 100%+5 100%"/>
+
+	<!-- Page controls -->
+	<object>
+		<object name="CivBrowserPageStatus" type="text" style="ModernLabelText" size="0 0 180 30"/>
+
+		<object size="180 0 100%-60 30">
+			<object name="CivBrowserPreviousButton" type="button" style="ModernButtonRed" size="0 0 50% 100%"/>
+			<object name="CivBrowserNextButton" type="button" style="ModernButtonRed" size="50% 0 100% 100%"/>
+		</object>
+		<object size="100%-60 0 100% 30">
+			<object name="CivsZoomIn" type="button" style="ModernButtonRed" size="0 0 50% 100%">
+				<translatableAttribute id="caption" context="zoom in">+</translatableAttribute>
+			</object>
+			<object name="CivsZoomOut" type="button" style="ModernButtonRed" size="50% 0 100% 100%">
+				<translatableAttribute id="caption" context="zoom out">−</translatableAttribute>
+			</object>
+		</object>
+	</object>
+
+	<object size="0 35 100% 100%-60">
+		<object size="0 0 100% 40">
+			<object name="CivBrowserSearchBoxLabel" type="text" style="ModernLeftLabelText" size="2 0 0 35">
+				<translatableAttribute id="caption">Search Civ:</translatableAttribute>
+			</object>
+			<object name="CivBrowserSearchBoxControl" type="input" size="0 5 100% 30" style="ModernInput" font="sans-16"/>
+		</object>
+		<object size="0 40 100% 80">
+			<object name="CivBrowserCivTypeLabel" type="text" size="2 0 0 35" style="ModernLeftLabelText">
+				<translatableAttribute id="caption">Civ Type:</translatableAttribute>
+			</object>
+			<object name="CivBrowserCivTypeControl" type="dropdown" size="0 5 100% 30" style="ModernDropDown"/>
+		</object>
+		<object size="0 80 100% 120">
+			<object name="CivBrowserCivFilterLabel" type="text" size="2 0 0 35" style="ModernLeftLabelText">
+				<translatableAttribute id="caption">Civ Filter:</translatableAttribute>
+			</object>
+			<object name="CivBrowserCivFilterControl" type="dropdown" size="0 5 100% 30" style="ModernDropDown"/>
+		</object>
+		<object size="0 120 100% 100%">
+			<include file="gui/civs/civbrowser/controls/CivDescription.xml"/>
+		</object>
+	</object>
+
+	<object name="CivBrowserPagePickRandom" type="button" style="ModernButtonRed" size="0 100%-60 100% 100%-30">
+		<translatableAttribute id="caption">Pick Random Civ</translatableAttribute>
+	</object>
+	<object name="CivBrowserPageClose" type="button" style="ModernButtonRed" hotkey="cancel" size="0 100%-30 50% 100%"/>
+	<object name="CivBrowserPageSelect" type="button" style="ModernButtonRed" size="50% 100%-30 100% 100%">
+		<translatableAttribute id="caption" context="Civ selection dialog">Select</translatableAttribute>
+	</object>
+
+</object>
