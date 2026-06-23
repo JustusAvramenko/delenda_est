@@ -153,9 +153,9 @@ class CivGridBrowser extends GridBrowser
 
 CivGridBrowser.prototype.ItemRatio = 1 / 1;
 
-CivGridBrowser.prototype.DefaultItemWidth = 200;
+CivGridBrowser.prototype.DefaultItemWidth = 180;
 
-CivGridBrowser.prototype.MinItemWidth = 150;
+CivGridBrowser.prototype.MinItemWidth = 128;
 
 CivGridBrowser.prototype.MaxItemWidth = 300;
 
