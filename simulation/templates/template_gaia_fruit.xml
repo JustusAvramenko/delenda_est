@@ -24,13 +24,15 @@
   </Obstruction>
   <ResourceSupply>
     <KillBeforeGather>false</KillBeforeGather>
-    <Max>200</Max>
+    <Initial>200</Initial>
+    <Max>300</Max>
     <Type>food.fruit</Type>
     <MaxGatherers>8</MaxGatherers>
     <Change>
       <Regrowth>
         <Value>1</Value>
-        <Interval>6000</Interval>
+        <Interval>2000</Interval>
+        <State>notGathered</State>
       </Regrowth>
     </Change>
   </ResourceSupply>
