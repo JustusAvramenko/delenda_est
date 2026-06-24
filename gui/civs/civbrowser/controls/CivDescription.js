@@ -2,7 +2,7 @@ CivBrowserPageControls.prototype.CivDescription = class
 {
 	constructor(CivBrowserPage, CivGridBrowser)
 	{
-		this.ImageRatio = 4 / 3;
+		this.ImageRatio = 1 / 1;
 
 		this.CivBrowserPage = CivBrowserPage;
 		this.CivGridBrowser = CivGridBrowser;
