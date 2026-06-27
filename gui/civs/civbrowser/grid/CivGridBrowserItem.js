@@ -53,13 +53,16 @@ class CivGridBrowserItem extends GridBrowserItem
 		if (!Civ)
 			return;
 
-		this.CivPreview.caption = Civ.name;
+		// this.CivPreview.caption = Civ.name;
 
 		this.imageObject.tooltip =
-			Civ.description + "\n" +
+				setStringTags(
+		Civ.name,
+				{ "font": "sans-bold-16" }
+			)
 			this.CivGridBrowser.container.tooltip;
 
-		this.CivPreview.sprite ="stretched:" + Civ.icon;
+			this.CivPreview.sprite ="stretched:" + Civ.icon;
 	}
 
 	onMouseLeftDoubleClick()
