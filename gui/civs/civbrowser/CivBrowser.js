@@ -35,6 +35,17 @@ class CivBrowser
 		this.open = false;
 		this.selectedPlayer = 0;
 
+		this.closePageCallback = data =>
+		{
+			this.closePage();
+
+			Engine.SwitchGuiPage(
+				data[Engine.openRequest].page,
+				data[Engine.openRequest].argument
+			);
+		};
+
+
 		this.CivList = this.loadCivs();
 		this.Regions = ["All"];
 
@@ -45,6 +56,17 @@ class CivBrowser
 		}
 
 		this.Regions.sort();
+
+		this.Cultures = ["All"];
+
+		for (let civ of this.CivList)
+		{
+			for (let culture of civ.Culture)
+				if (!this.Cultures.includes(culture))
+					this.Cultures.push(culture);
+		}
+
+		this.Cultures.sort();
 	}
 
 	loadCivs()
@@ -54,6 +76,9 @@ class CivBrowser
 		for (let code in g_CivData)
 		{
 			let civ = g_CivData[code];
+
+			if (civ.SelectableInGameSetup === false)
+				continue;
 
 			civs.push({
 				"file": code,
@@ -65,11 +90,11 @@ class CivBrowser
 
 				"icon": civ.Emblem || "",
 
-				"Region": civ.Region || "Other",
+				"Region": String(civ.Region || "Unknown"),
 
-				"CivType": civ.Region || "Other",
-
-				"filter": "default",
+				"Culture": Array.isArray(civ.Culture) ?
+					civ.Culture :
+					[civ.Culture || "Other"],
 
 				"civData": civ
 			});
@@ -117,6 +142,8 @@ class CivBrowser
 			handler
 		);
 	}
+
+
 
 	openPage(allowSelection)
 	{
