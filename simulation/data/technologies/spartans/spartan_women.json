@@ -15,10 +15,15 @@
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "feminine_mystique.png",
 	"researchTime": 30,
-	"tooltip": "[font=\"sans-bold-14\"]• Spartan Women +100% attack\n• Spartan Women +25% health.[/font]",
+	"tooltip": "[font=\"sans-bold-14\"]• Spartan Women +100% attack\n• Spartan Women +25% health.\n• Spartan Women +5 carry capacity for all resources.[/font]",
 	"modifications": [
 		{ "value": "Attack/Melee/Damage/Hack", "multiply": 2},
-		{ "value": "Health/Max", "multiply": 1.25 }
+		{ "value": "Health/Max", "multiply": 1.25 },
+		{ "value": "ResourceGatherer/Capacities/food", "add": 5 },
+		{ "value": "ResourceGatherer/Capacities/wood", "add": 5 },
+		{ "value": "ResourceGatherer/Capacities/stone", "add": 5 },
+		{ "value": "ResourceGatherer/Capacities/metal", "add": 5 },
+		{ "value": "ResourceGatherer/Capacities/coin", "add": 5 }
 	],
 	"affects": ["Woman"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

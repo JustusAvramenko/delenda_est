@@ -1,4 +1,5 @@
 {
+	"supersedes": "granary/gather_grain_water_wheel",
 	"genericName": "Well Sweep",
 	"specificName": {
 		"ptol": "Kēlōneion",
@@ -6,22 +7,21 @@
 		"kush": "Shaduf"
 	},
 	"cost": {
-		"stone": 200,
-		"glory": 200
+		"stone": 300,
+		"glory": 300
 	},
 	"requirements": {
 		"all": [
-			{ "tech": "phase_town" },
+			{ "tech": "phase_city" },
 			{ "civ": "ptol" }
 		]
 	},
-	"requirementsTooltip": "Unlocked in Town Phase.",
-	"supersedes": "successors/special_water_wheel",
+	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "well_sweep.png",
 	"researchTime": 40,
-	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +15% farming rate.[/font]",
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +10% farming rate.[/font]",
 	"modifications": [
-		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15 }
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.10 }
 	],
 	"affects": ["Gatherer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
