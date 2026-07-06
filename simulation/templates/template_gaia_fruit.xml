@@ -15,23 +15,22 @@
   </Minimap>
   <Obstruction>
     <Static width="4.0" depth="4.0"/>
-    <!-- Delete as a workaround to facilitate wall placement. -->
     <BlockMovement>false</BlockMovement>
     <BlockPathfinding>false</BlockPathfinding>
     <BlockFoundation>true</BlockFoundation>
     <BlockConstruction>true</BlockConstruction>
-    <DeleteUponConstruction>true</DeleteUponConstruction>
+    <DeleteUponConstruction>false</DeleteUponConstruction>
   </Obstruction>
   <ResourceSupply>
     <KillBeforeGather>false</KillBeforeGather>
-    <Initial>200</Initial>
+    <Initial>150</Initial>
     <Max>300</Max>
     <Type>food.fruit</Type>
     <MaxGatherers>8</MaxGatherers>
     <Change>
       <Regrowth>
         <Value>1</Value>
-        <Interval>2000</Interval>
+        <Interval>4000</Interval>
         <State>notGathered</State>
       </Regrowth>
     </Change>
