@@ -1,10 +1,5 @@
 backgrounds['spartans_dodona'] = [
 	{
-		"offset": (time, width) => 0.10 * width * Math.cos(0.02 * time) + width/16,
-		"sprite": "background-spartans2-0",
-		"tiling": false,
-	},
-	{
 		"offset": (time, width) => 0.0 * width * Math.cos(0.0 * time),
 		"sprite": "background-spartans2-1",
 		"tiling": false,
