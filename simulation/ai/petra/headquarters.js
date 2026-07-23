@@ -20,7 +20,7 @@ import { NavalManager } from "simulation/ai/petra/navalManager.js";
 import { ConstructionPlan } from "simulation/ai/petra/queueplanBuilding.js";
 import { TrainingPlan } from "simulation/ai/petra/queueplanTraining.js";
 import { ResearchManager } from "simulation/ai/petra/researchManager.js";
-import "simulation/ai/petra/startingStrategy.js";
+import { buildFirstBase, configFirstBase } from "simulation/ai/petra/startingStrategy.js";
 import { TradeManager } from "simulation/ai/petra/tradeManager.js";
 import { VictoryManager } from "simulation/ai/petra/victoryManager.js";
 import { Worker } from "simulation/ai/petra/worker.js";
