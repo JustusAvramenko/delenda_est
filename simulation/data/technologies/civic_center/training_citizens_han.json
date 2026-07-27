@@ -17,38 +17,7 @@
 	"researchTime": 40,
 	"requirements": {
 		"all": [
-			{ "tech": "phase_village" },
-			{
-				"any": [
-					{ "notciv": "athen" },
-					{ "notciv": "brit" },
-					{ "notciv": "cart" },
-					{ "notciv": "celti" },
-					{ "notciv": "cimb" },
-					{ "notciv": "epir" },
-					{ "notciv": "gala" },
-					{ "notciv": "gaul" },
-					{ "notciv": "goth" },
-					{ "notciv": "huns" },
-					{ "notciv": "iber" },
-					{ "notciv": "imp" },
-					{ "notciv": "kush" },
-					{ "notciv": "mace" },
-					{ "notciv": "noba" },
-					{ "notciv": "ptol" },
-					{ "notciv": "rome" },
-					{ "notciv": "sasa" },
-					{ "notciv": "scyth" },
-					{ "notciv": "sele" },
-					{ "notciv": "spart" },
-					{ "notciv": "sueb" },
-					{ "notciv": "syrac" },
-					{ "notciv": "theb" },
-					{ "notciv": "xion" },
-					{ "notciv": "yayo" },
-					{ "notciv": "zapo" }
-				]
-			}
+			{ "tech": "phase_village" }
 		]
 	},
 	"tooltip": "[font=\"sans-bold-14\"]• Civilian Citizens −25% training time.[/font]",
@@ -57,5 +26,6 @@
 		{ "value": "Cost/BuildTime", "add": -5 }
 	],
 	"affects": ["Villager"],
+	"placeBelow": "Citizen Civilian",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
