@@ -1,49 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <object name="minimapPanel"
-	size="0 0 100% 100%"
+	size="0 2 100% 100%"
 	sprite="mapPanel"
 	type="image"
 >
-	<!-- Civ background image-->
+	<!-- Civ background image -->
 	<object
-		type="image"
 		name="minimapBackgroundTexture"
-		size="10 24 100%-47 100%-33"
-		ghost="true"
-	/>
-	<!-- Background hover panel below the minimap -->
-	<object
 		type="image"
-		size="6 75%+15 100%-43 100%"
-		sprite="stretched:session/background_hover_panel.png"
+		size="4 4 100%-4 100%-4"
 		ghost="true"
 	/>
 
-	<!-- MiniMap -->
+	<!-- Background circle -->
 	<object
-		name="minimap"
-		size="9 22 100%-44 100%-31"
-		type="minimap"
-		mask="true"
-		flare_texture_count="16"
-		flare_render_size="32"
-		flare_animation_speed="11"
-		flare_interleave="true"
-		flare_lifetime_seconds="6"
+		name="minimapCircle"
+		type="image"
+		size="4 4 100%-4 100%-4"
+		sprite="stretched:session/minimap_circle_modern.png"
+		ghost="true"
 	/>
 
-	<!-- Minimap circle -->
+	<!-- Expanded minimap border -->
 	<object
+		name="minimapExpandedCircle"
 		type="image"
-		sprite="stretched:session/background_minimap_circle.png"
-		size="7 20 100%-42 100%-29"
+		size="4 4 100%-4 100%-4"
+		sprite="stretched:session/minimap_expanded_circle.png"
 		ghost="true"
+		hidden="true"
 	/>
 
 	<!-- Idle Worker Button -->
 	<object name="idleWorkerButton"
 		type="button"
-		size="74%+4 75%+19 89%-8 90%+7"
+		size="100%-119 100%-121 100%-4 100%-4"
 		tooltip_style="sessionToolTipBottom"
 		hotkey="selection.idleworker"
 		sprite="stretched:session/minimap-idle.png"
@@ -52,35 +43,49 @@
 		mouse_event_mask="texture:session/minimap-idle.png"
 		sound_pressed="audio/interface/ui/ui_button_click.ogg"
 	/>
+
 	<!-- Total number of idle workers -->
 	<object name="totalNumberIdleWorkers"
 		type="text"
-		size="74%+4 75%+19 89%-8 90%+7"
-		font="sans-bold-stroke-20"
-		ghost="true"
-		text_align="center"
-		text_valign="center"
-		z="10"
+		size="100%-119 100%-121 100%-3 100%-2"
+		style="totalNumberIdleWorkersCount"
+		text_align="right"
+		text_valign="bottom"
+	/>
+
+	<!-- Diplomacy Colors Button -->
+	<object name="diplomacyColorsButton"
+		type="button"
+		size="4 100%-121 118 100%-4"
+		tooltip_style="sessionToolTipBottom"
+		hotkey="session.diplomacycolors"
+		sound_pressed="audio/interface/ui/ui_button_click.ogg"
 	/>
 
 	<!-- Flare Button -->
 	<object
 		name="flareButton"
 		type="button"
-		size="62%+9 85%+8 77%-3 100%-4"
+		size="4 4 113 119"
 		tooltip_style="sessionToolTip"
 		hotkey="session.flareactivate"
+		sprite_disabled="stretched:session/minimap-flare-disabled.png"
 		mouse_event_mask="texture:session/minimap-player-flare.png"
 		sound_pressed="audio/interface/ui/ui_button_click.ogg"
 	/>
 
-	<!-- Diplomacy Colors Button -->
-	<object name="diplomacyColorsButton"
-		type="button"
-		size="13%+3 85%+8 28%-9 100%-4"
-		tooltip_style="sessionToolTip"
-		hotkey="session.diplomacycolors"
-		sound_pressed="audio/interface/ui/ui_button_click.ogg"
+	<!-- MiniMap -->
+	<object
+		name="minimap"
+		size="8 8 100%-8 100%-8"
+		type="minimap"
+		mask="true"
+		flare_texture_count="16"
+		flare_render_size="32"
+		flare_animation_speed="10.67"
+		flare_interleave="true"
+		flare_lifetime_seconds="6"
+		flare_start_fade_seconds="0.25"
+		flare_stop_fade_seconds="0.5"
 	/>
-
 </object>

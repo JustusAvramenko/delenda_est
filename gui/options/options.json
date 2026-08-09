@@ -724,12 +724,6 @@
 			},
 			{
 				"type": "boolean",
-				"label": "Minimap icons",
-				"tooltip": "Show special icons for some entities on the minimap.",
-				"config": "gui.session.minimap.icons.enabled"
-			},
-			{
-				"type": "boolean",
 				"label": "Rank icon above status bar",
 				"tooltip": "Show rank icons above status bars.",
 				"config": "gui.session.rankabovestatusbar"
@@ -781,6 +775,62 @@
 				"label": "Diplomacy colors: enemy",
 				"tooltip": "Color of enemies when diplomacy colors are enabled.",
 				"config": "gui.session.diplomacycolors.enemy"
+			}
+		]
+	},
+	{
+		"label": "Minimap",
+		"tooltip": "Customize the in-game minimap.",
+		"options":
+		[
+			{
+				"type": "boolean",
+				"label": "Minimap icons",
+				"tooltip": "Show special icons for some entities on the minimap.",
+				"config": "gui.session.minimap.icons.enabled"
+			},
+			{"type": "dropdown",
+				"label": "Minimap position",
+				"tooltip": "Choose where the minimap is displayed.",
+				"config": "gui.session.minimap.position",
+				"list": [
+					{
+						"value": "panel-left",
+						"label": "Panel Left",
+						"tooltip": "Display the minimap attached to the bottom panel."
+					},
+					{
+						"value": "screen-left",
+						"label": "Screen Left",
+						"tooltip": "Display the minimap in the bottom-left corner of the screen."
+					}
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "Minimap layout",
+				"tooltip": "Choose between square and round layout",
+				"config": "gui.session.minimap.shape",
+				"list": [
+					{
+						"value": "square",
+						"label": "Square",
+						"tooltip": "Original 0.A.D minimap"
+					},
+					{
+						"value": "round",
+						"label": "Round",
+						"tooltip": "Round version"
+					}
+				]
+			},
+			{
+				"type": "slider",
+				"label": "Minimap size",
+				"tooltip": "Choose the size of the minimap.",
+				"config": "gui.session.minimap.size",
+				"min": 1,
+				"max": 2
 			}
 		]
 	},
