@@ -20,6 +20,8 @@
 <script directory="gui/session/top_panel/"/>
 <script directory="gui/session/top_panel/IconButtons/"/>
 <script directory="gui/session/trade/"/>
+<script directory="gui/session/tutorial/"/>
+<script directory="gui/session/tutorial/panels/"/>
 
 <object name="session">
 
@@ -29,10 +31,6 @@
 
 	<action on="SavegameLoaded">
 		restoreSavedGameData(arguments[0]);
-	</action>
-
-	<action on="SimulationUpdate">
-		onSimulationUpdate();
 	</action>
 
 	<object name="primaryOverlays">
@@ -56,7 +54,7 @@
 		<include file="gui/session/TimeNotificationOverlay.xml"/>
 		<include file="gui/session/TopPanel.xml"/>
 		<include file="gui/session/trade/TradeDialog.xml"/>
-		<include file="gui/session/tutorial_panel.xml"/>
+		<include file="gui/session/tutorial/Tutorial.xml"/>
 		<include file="gui/session/Menu.xml"/>
 
 		<!-- Contains miscellanious objects s.a.: the technology research -->
@@ -70,13 +68,13 @@
 		<!-- Structure placement info tooltip -->
 		<object name="placementTooltip" type="tooltip" independent="true" style="informationTooltip"/>
 
-		<object size="-7 100%-350 350 100%">
-			<include file="gui/session/minimap/MiniMap.xml"/>
-		</object>
-
 		<!-- START of BOTTOM PANEL -->
-		<!-- Limit to the minimal supported width of 1024 pixels. LOL -->
+		<!-- Limit to the minimal supported width of 1024 pixels. -->
 		<object size="50%-512 0 50%+512 100%">
+
+			<object size="50%-512 100%-204 50%-312 100%">
+				<include file="gui/session/minimap/MiniMap.xml"/>
+			</object>
 
 			<!-- Supplemental Details Panel (left). -->
 			<object name="supplementalSelectionDetails"
