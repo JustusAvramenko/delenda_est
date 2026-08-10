@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_infantry_ranged_archer">
+<Entity parent="template_unit_infantry_ranged">
   <Attack>
     <Ranged>
-      <AttackName>Arrow</AttackName>
+      <AttackName>Bolt</AttackName>
       <Damage>
-        <Pierce op="mul">1.5</Pierce>
+        <Pierce op="add">5</Pierce>
       </Damage>
-      <MaxRange op="mul">1.2</MaxRange>
+      <MaxRange>50</MaxRange>
       <PrepareTime>1500</PrepareTime>
       <RepeatTime>3000</RepeatTime>
       <Projectile>
@@ -16,7 +16,7 @@
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>10</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>25</food>
       <wood>75</wood>
@@ -26,7 +26,16 @@
     <VisibleClasses datatype="tokens">Crossbow</VisibleClasses>
     <GenericName>Crossbow Infantry</GenericName>
     <Tooltip>Traits: Long Range, Light Armor, Fast Training.
-Strong Against: Melee Infantry (1.25x).
+Strong Against: Melee Infantry, Ranged Cavalry.
 Weak Against: Spear Cavalry, Sword Cavalry.</Tooltip>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>3</Pierce>
+        <Crush>2</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
 </Entity>

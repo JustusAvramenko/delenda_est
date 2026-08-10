@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_champion_infantry_archer">
+<Entity parent="template_unit_champion_infantry">
   <Attack>
     <Ranged>
       <AttackName>Bolt</AttackName>
@@ -7,18 +7,29 @@
         <Crush>12.0</Crush>
       </Damage>
       <MaxRange>60.0</MaxRange>
+      <MinRange>0.0</MinRange>
       <PrepareTime>2000</PrepareTime>
       <RepeatTime>4000</RepeatTime>
       <Projectile>
         <Speed>60.0</Speed>
         <Spread>4.0</Spread>
+        <Gravity>30.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
       </Projectile>
+      <Bonuses>
+        <BonusMeleeInfantry>
+          <Classes>Infantry Melee</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusMeleeInfantry>
+      </Bonuses>
       <PreferredClasses datatype="tokens">Structure Soldier</PreferredClasses>
+      <RestrictedClasses datatype="tokens">Permanent</RestrictedClasses>
     </Ranged>
   </Attack>
   <Cost>
     <Resources>
-      <coin>75</coin>
+      <coin>80</coin>
     </Resources>
   </Cost>
   <Health>
@@ -27,7 +38,7 @@
   <Identity>
     <Lang>greek</Lang>
     <GenericName>Siege Crossbow</GenericName>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+    <VisibleClasses datatype="tokens">Ranged Siege</VisibleClasses>
     <Tooltip>Traits: Long Range, Medium Armor, Siege.
 Strong Against: Melee Infantry (1.25x), Structures (Crush Damage).
 Weak Against: Spear Cavalry, Sword Cavalry.</Tooltip>
@@ -35,6 +46,21 @@ Weak Against: Spear Cavalry, Sword Cavalry.</Tooltip>
       <Techs>phase_empire</Techs>
     </Requirements>
   </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>3</Hack>
+        <Pierce>6</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <attack_impact_ranged>attack/impact/arrow_all.xml</attack_impact_ranged>
+    </SoundGroups>
+  </Sound>
   <TrainingRestrictions>
     <Category>Gastraphetes</Category>
   </TrainingRestrictions>
