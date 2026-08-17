@@ -1,0 +1,29 @@
+{
+	"supersedes": "forge/pair_techs_01",
+	"genericName": "Blast Furnace",
+	"description": "During the Han Dynasty, Chinese ironworkers developed and widely used blast furnaces capable of producing molten cast iron on a large scale. These furnaces were tall clay or masonry shafts charged with iron ore and fuel, while air was forced into the lower chamber through tuyères using bellows, creating temperatures high enough to melt the iron. The resulting cast iron could be poured directly into molds or further refined through decarburization and other processes to produce more useful wrought or steel-like material. This technology supported the Han state’s large-scale manufacture of agricultural tools, weapons, fittings, and infrastructure, and became closely associated with the empire’s highly organized iron industry and, at times, government control of iron production.",
+	"cost": {
+		"wood": 300,
+		"metal": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "han" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "blast_furnace.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Forge technologies −20% metal cost.\n• Siege Arsenal technologies −10% research time.\n• Gatherers +10% metal mining rate.[/font]",
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/metal", "multiply": 0.8, "affects": "Forge" },
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.9, "affects": "Arsenal" },
+		{ "value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.25, "affects": "Gatherer" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

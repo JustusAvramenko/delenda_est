@@ -1,9 +1,9 @@
 {
-	"genericName": "Sun Tzu's “The Art of War“",
+	"genericName": "Sun Tzu’s Art of War",
 	"specificName": {
 		"han": "Sūnzǐ BīngFǎ"
 	},
-	"description": "This famous and most important work of the Seven Military Classics teaches Chinese commanders everything about planning battles, maintaining armies, and defeating one's enemies.",
+	"description": "Sun Tzu’s Art of War was already an established military classic by the Han era and formed part of the broader tradition of strategic writing studied by commanders and court officials. Its teachings emphasized deception, intelligence, careful preparation, terrain, discipline, logistics, and defeating an enemy through superior positioning rather than reckless frontal combat. During the Han Dynasty, such principles were especially relevant to campaigns against rival states, frontier peoples, and the Xiongnu, where long-distance movement, supply, reconnaissance, and flexible cavalry operations were often decisive. In a Han context, the work represents the ideal of war conducted through calculation, organization, and strategic foresight.",
 	"cost": {
 		"food": 800,
 		"glory": 800
@@ -17,11 +17,12 @@
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "art_of_war.png",
 	"researchTime": 60,
-	"tooltip": "[font=\"sans-bold-14\"]• Military Units +5% health.\n• Military Units +10% vision range.[/font]",
+	"tooltip": "[font=\"sans-bold-14\"]• Infantry and Cavalry +10% movement speed.\n• Infantry and Cavalry +10% vision range.\n• Infantry and Cavalry −10% training time.[/font]",
 	"modifications": [
-		{ "value": "Health/Max", "multiply": 1.05 },
-		{ "value": "Vision/Range", "multiply": 1.1 }
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "Vision/Range", "multiply": 1.1 },
+		{ "value": "Cost/BuildTime", "multiply": 0.9 }
 	],
-	"affects": ["Soldier", "Siege", "Warship"],
+	"affects": ["Infantry", "Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
