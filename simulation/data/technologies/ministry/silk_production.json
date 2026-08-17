@@ -1,0 +1,21 @@
+{
+	"genericName": "Sericulture",
+	"description": "Sericulture (the cultivation of mulberry trees, raising of silkworms, and production of silk thread and cloth) was a major component of the Han household economy. Silk served not only as clothing and a valuable trade commodity but also as a form of wealth and payment, while official ideology strongly encouraged households to combine agriculture with spinning and weaving.",
+	"specificName": {
+		"han": "Cán Sāng"
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "silk_production.png",
+	"researchTime": 120,
+	"tooltip": "[font=\"sans-bold-14\"]• Gatherers +50% cash crops gather rate.[/font]",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/coin.crops", "multiply": 1.50 }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

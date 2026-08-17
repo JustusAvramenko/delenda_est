@@ -1,0 +1,24 @@
+{
+	"genericName": "Registered Households",
+	"description": "Han administration maintained detailed household registers recording families and taxable inhabitants. Registration allowed the government to assess land and poll taxes, organize labor obligations and military service, and measure the population available to the state, making household administration a fundamental instrument of imperial government.",
+	"specificName": {
+		"han": "Hù Jí"
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "registered_households.png",
+	"researchTime": 120,
+	"tooltip": "[font=\"sans-bold-14\"]• Houses +20% population bonus.\n• Houses give a small trickle of coin (10 coins every 1 minute) in taxes.\n• [color=\"red\"]Houses +10% cost.[/color][/font]",
+	"modifications": [
+		{ "value": "Population/Bonus", "multiply": 1.2 },
+		{ "value": "ResourceTrickle/Rates/coin", "add": 10 },
+		{ "value": "Cost/Resources/wood", "multiply": 1.1 }
+	],
+	"affects": ["House"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

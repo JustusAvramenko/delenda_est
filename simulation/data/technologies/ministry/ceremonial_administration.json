@@ -1,0 +1,25 @@
+{
+	"genericName": "Ceremonial Administration",
+	"description": "Han government was deeply intertwined with ritual, rank, and prescribed ceremony. Court audiences, sacrifices, official dress, titles, and diplomatic protocol reinforced the emperor’s authority and expressed the proper ordering of society, linking political administration with Confucian ideas of ritual propriety.",
+	"specificName": {
+		"han": "Lǐ Zhì"
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "ceremonial_administration.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Ministers −25% train time.\n• Ministers +20% health.\n• Healers −20% train time.\n• Healers +25% health.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.75, "affects": "Minister" },
+		{ "value": "Health/Max", "multiply": 1.2, "affects": "Minister" },
+		{ "value": "Cost/BuildTime", "multiply": 0.8, "affects": "Healer" },
+		{ "value": "Health/Max", "multiply": 1.25, "affects": "Healer" }
+	],
+	"placeBelow": "Minister",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

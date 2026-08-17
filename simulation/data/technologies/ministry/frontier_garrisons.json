@@ -1,0 +1,22 @@
+{
+	"genericName": "Frontier Garrisons",
+	"description": "Along distant frontiers, the Han established military-agricultural settlements where soldiers and colonists cultivated land while defending strategic territory. These tuntian communities helped supply isolated armies, secure newly conquered regions, and reduce the enormous cost of transporting grain to frontier garrisons.",
+	"specificName": {
+		"han": "Tún Tián"
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "frontier_garrisons.png",
+	"researchTime": 120,
+	"tooltip": "[font=\"sans-bold-14\"]• Defense Towers, Outposts, and Fortresses −20% build time.[/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.8 }
+	],
+	"affects": ["DefenseTower", "Outpost", "Fortress"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

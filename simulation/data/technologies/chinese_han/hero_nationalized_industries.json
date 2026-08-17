@@ -1,0 +1,27 @@
+{
+	"genericName": "Nationalized Industries",
+	"specificName": {
+		"han": "Yán Tiě"
+	},
+	"description": "Under Emperor Wu, the Han government brought major salt and iron production under state control, establishing official workshops and monopolies that generated revenue for the imperial treasury. These policies helped finance warfare and expansion but became controversial enough to inspire the famous Discourses on Salt and Iron debate in 81 BCE.",
+	"cost": {
+		"coin": 200,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_village" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "nationalized_industries.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Storehouses −100% build time.\n• Granaries −100% build time.\n• [color=\"red\"]Markets +100% build time.[/color][/font]",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "replace": 0, "affects": "Storehouse" },
+		{ "value": "Cost/BuildTime", "replace": 0, "affects": "Granary" },
+		{ "value": "Cost/BuildTime", "multiply": 2.0, "affects": "Market" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

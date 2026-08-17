@@ -17,7 +17,7 @@
     <Classes datatype="tokens">
       CivSpecific
     </Classes>
-    <Tooltip>This structure grants a free trickle of Coin as long as it stands. This is a free starting structure and cannot be rebuilt.</Tooltip>
+    <Tooltip>This structure grants a free trickle of raw resources (food, wood, stone, metal) as long as it stands. This is a free starting structure and cannot be rebuilt.</Tooltip>
     <Icon>structures/paifang.png</Icon>
   </Identity>
   <Obstruction>
@@ -28,7 +28,10 @@
   <ResourceSupply disable=""/>
   <ResourceTrickle>
     <Rates>
-      <coin>2.0</coin>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
     </Rates>
     <Interval>10000</Interval>
   </ResourceTrickle>

@@ -1,0 +1,27 @@
+{
+	"genericName": "Rammed Earth",
+	"description": "The Han Dynasty made extensive use of rammed earth (hāngtǔ) for walls, fortifications, foundations, and large public works. Builders packed layers of moist earth—often mixed with gravel, sand, or other local material—between wooden forms and repeatedly tamped them until they became dense and durable. This technique was especially important for city walls, frontier defenses, watchtowers, and sections of the early Great Wall, because it was inexpensive, relied on readily available materials, and could produce massive structures quickly. Well-compacted Han rammed earth could endure for centuries in dry climates.",
+	"cost": {
+		"wood": 200,
+		"stone": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "any":[
+				{ "civ": "han" },
+				{ "civ": "xion" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "rammed_earth.png",
+	"researchTime": 50,
+	"tooltip": "[font=\"sans-bold-14\"]• Structures +1 crush armor.\n• Structures +1 pierce armor.[/font]",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 1.0 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1.0 }
+	],
+	"affects": ["NotField"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

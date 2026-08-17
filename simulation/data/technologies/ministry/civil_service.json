@@ -1,0 +1,28 @@
+{
+	"genericName": "Civil Service",
+	"description": "The Han Empire relied on a large hierarchy of appointed officials to administer commanderies, counties, taxation, justice, public works, and the imperial court. Officials were increasingly selected through recommendations based on learning, ability, and moral reputation, laying important foundations for China’s later professional bureaucracy.",
+	"specificName": {
+		"han": "Xuǎn Lì"
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "han" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "civil_service.png",
+	"researchTime": 120,
+	"tooltip": "[font=\"sans-bold-14\"]• Technologies at all Buildings, except the Forge, −10% cost and research time.[/font]",
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/wood", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/food", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/metal", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/stone", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/coin", "multiply": 0.9},
+		{ "value": "Researcher/TechCostMultiplier/glory", "multiply": 0.9}
+	],
+	"affects": ["Structure !Forge"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
