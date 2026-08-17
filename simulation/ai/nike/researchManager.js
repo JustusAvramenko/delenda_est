@@ -71,8 +71,8 @@ export class ResearchManager
 			if (tech[1]._template.affects.indexOf("Trader") === -1)
 				continue;
 			// TODO may-be loop on all modifs and check if the effect if positive ?
-			if (tech[1]._template.modifications[0].value !== "UnitMotion/WalkSpeed" &&
-		              tech[1]._template.modifications[0].value !== "Trader/GainMultiplier")
+			if (tech[1]._template.modifications[0].value !== "Cost/BuildTime" &&
+		              tech[1]._template.modifications[0].value !== "UnitMotion/WalkSpeed")
 				continue;
 			queues.minorTech.addPlan(new ResearchPlan(gameState, tech[0]));
 			break;
@@ -87,10 +87,18 @@ export class ResearchManager
 		const numWorkers = phase1 ? gameState.getOwnEntitiesByRole(Worker.ROLE_WORKER, true).length : 0;
 		for (const tech of techs)
 		{
-			if (tech[0].indexOf("unlock_champion") == 0)
+			if (tech[0].indexOf("civic_center/training_citizens_generic") == 0)
 				return { "name": tech[0], "increasePriority": true };
-			if (tech[0] == "traditional_army_sele" || tech[0] == "reformed_army_sele")
-				return { "name": pickRandom(["traditional_army_sele", "reformed_army_sele"]), "increasePriority": true };
+			if (tech[0].indexOf("civic_center/training_citizens_gupt") == 0)
+				return { "name": tech[0], "increasePriority": true };
+			if (tech[0].indexOf("civic_center/training_citizens_han") == 0)
+				return { "name": tech[0], "increasePriority": true };
+			if (tech[0].indexOf("civic_center/training_citizens_kush") == 0)
+				return { "name": tech[0], "increasePriority": true };
+			if (tech[0].indexOf("civic_center/training_citizens_maur") == 0)
+				return { "name": tech[0], "increasePriority": true };
+			if (tech[0] == "gather_lumbering_ironaxes" || tech[0] == "gather_mining_pickaxes")
+				return { "name": pickRandom(["gather_lumbering_ironaxes", "gather_mining_pickaxes"]), "increasePriority": true };
 
 			if (!tech[1]._template.modifications)
 				continue;
@@ -107,15 +115,11 @@ export class ResearchManager
 			for (const i in template.modifications)
 			{
 				if (gameState.ai.HQ.navalMap && template.modifications[i].value === "ResourceGatherer/Rates/food.fish")
-					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 400 };
+					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 500 };
 				else if (template.modifications[i].value === "ResourceGatherer/Rates/food.fruit")
-					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 400 };
-				else if (template.modifications[i].value === "ResourceGatherer/Rates/food.grain")
-					return { "name": tech[0], "increasePriority": false };
+					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 500 };
 				else if (template.modifications[i].value === "ResourceGatherer/Rates/wood.tree")
-					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 400 };
-				else if (template.modifications[i].value.startsWith("ResourceGatherer/Capacities"))
-					return { "name": tech[0], "increasePriority": false };
+					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 500 };
 				else if (template.modifications[i].value === "Attack/Ranged/MaxRange")
 					return { "name": tech[0], "increasePriority": false };
 			}
@@ -131,6 +135,14 @@ export class ResearchManager
 		const numWorkers = phase2 ? gameState.getOwnEntitiesByRole(Worker.ROLE_WORKER, true).length : 0;
 		for (const tech of techs)
 		{
+			if (tech[0] == "forge/techs_forge_cost" || tech[0] == "forge/techs_forge_speed")
+				return { "name": pickRandom(["forge/techs_forge_cost", "forge/techs_forge_speed"]), "increasePriority": true };
+			if (tech[0] == "defense_tower/attack_tower_watch" || tech[0] == "defense_tower/attack_tower_crenellations")
+				return { "name": pickRandom(["defense_tower/attack_tower_watch", "defense_tower/attack_tower_crenellations"]), "increasePriority": true };
+			if (tech[0].indexOf("unlock_champions") == 0)
+				return { "name": tech[0], "increasePriority": true };
+
+						
 			if (!tech[1]._template.modifications)
 				continue;
 			const template = tech[1]._template;
@@ -146,14 +158,26 @@ export class ResearchManager
 			for (const i in template.modifications)
 			{
 				if (template.modifications[i].value === "ResourceGatherer/Rates/stone.rock")
-					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 400 };
+					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 800 };
 				else if (template.modifications[i].value === "ResourceGatherer/Rates/metal.ore")
-					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 400 };
+					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 800 };
 				else if (template.modifications[i].value === "BuildingAI/DefaultArrowCount")
-					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 400 };
+					return { "name": tech[0], "increasePriority": this.CostSum(template.cost) < 800 };
+				else if (template.modifications[i].value === "ResourceGatherer/Rates/food.grain")
+					return { "name": tech[0], "increasePriority": false };
+				else if (template.modifications[i].value.startsWith("ResourceGatherer/Capacities"))
+					return { "name": tech[0], "increasePriority": false };
+				else if (template.modifications[i].value.startsWith("Health/Max"))
+					return { "name": tech[0], "increasePriority": false };
 				else if (template.modifications[i].value === "Health/RegenRate")
 					return { "name": tech[0], "increasePriority": false };
 				else if (template.modifications[i].value === "Health/IdleRegenRate")
+					return { "name": tech[0], "increasePriority": false };
+				else if (template.modifications[i].value === "Attack/Melee/Damage/Hack")
+					return { "name": tech[0], "increasePriority": false };
+				else if (template.modifications[i].value === "Attack/Melee/Damage/Pierce")
+					return { "name": tech[0], "increasePriority": false };
+				else if (template.modifications[i].value === "Attack/Melee/Damage/Crush")
 					return { "name": tech[0], "increasePriority": false };
 			}
 		}

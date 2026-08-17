@@ -1429,7 +1429,7 @@ export class Headquarters
 	 */
 	buildMoreHouses(gameState, queues)
 	{
-		let houseTemplateString = "structures/{civ}/apartment";
+		let houseTemplateString = "structures/{civ}/tenement";
 		if (!gameState.isTemplateAvailable(gameState.applyCiv(houseTemplateString)) ||
 			!this.canBuild(gameState, houseTemplateString))
 		{
@@ -1441,7 +1441,7 @@ export class Headquarters
 			return;
 
 		const numPlanned = queues.house.length();
-		if (numPlanned < 3 || numPlanned < 5 && gameState.getPopulation() > 80)
+		if (numPlanned < 4 || numPlanned < 6 && gameState.getPopulation() > 80)
 		{
 			const plan = new ConstructionPlan(gameState, houseTemplateString);
 			// change the starting condition according to the situation.
@@ -1618,7 +1618,7 @@ export class Headquarters
 			}
 		}
 
-		if (this.Config.Military.numSentryTowers && this.currentPhase < 2 && this.canBuild(gameState, "structures/{civ}/sentry_tower"))
+		if (this.Config.Military.numSentryTowers && this.currentPhase < 2 && this.canBuild(gameState, "structures/{civ}/defense_tower"))
 		{
 			// Count all towers + wall towers.
 			const numTowers = gameState.getOwnEntitiesByClass("Tower", true).length + gameState.getOwnEntitiesByClass("WallTower", true).length;
@@ -1626,7 +1626,7 @@ export class Headquarters
 			if (numTowers < this.Config.Military.numSentryTowers && gameState.ai.elapsedTime > towerLapseTime + this.fortStartTime)
 			{
 				this.fortStartTime = gameState.ai.elapsedTime;
-				queues.defenseBuilding.addPlan(new ConstructionPlan(gameState, "structures/{civ}/sentry_tower"));
+				queues.defenseBuilding.addPlan(new ConstructionPlan(gameState, "structures/{civ}/defense_tower"));
 			}
 			return;
 		}

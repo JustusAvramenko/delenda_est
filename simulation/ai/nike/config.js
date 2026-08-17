@@ -199,7 +199,7 @@ export class Config
 			"trader": 1,
 			"healer": 20,
 			"ships": 1,
-			"house": 250,
+			"house": 500,
 			"dropsites": 950,
 			"field": 480,
 			"dock": 90,
@@ -415,7 +415,7 @@ export class Config
 		// rate apply on resource stockpiling as gathering and trading
 		// time apply on building, upgrading, packing, training and technologies
 		const rate = [ 0.42, 0.56, 0.75, 1.00, 1.25, 1.56 ];
-		const time = [ 1.40, 1.25, 1.10, 1.00, 1.00, 1.00 ];
+		const time = [ 1.40, 1.25, 1.10, 1.00, 0.95, 0.90 ];
 		const AIDiff = Math.min(this.difficulty, rate.length - 1);
 		SimEngine.QueryInterface(Sim.SYSTEM_ENTITY, Sim.IID_ModifiersManager).AddModifiers("AI Bonus", {
 			"ResourceGatherer/BaseSpeed": [{ "affects": ["Unit", "Structure"], "multiply": rate[AIDiff] }],

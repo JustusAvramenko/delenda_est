@@ -782,9 +782,7 @@ export class NavalManager
 		    gameState.ai.HQ.canBuild(gameState, "structures/{civ}/market"))
 			return;
 		let template;
-		if (gameState.ai.HQ.canBuild(gameState, "structures/{civ}/super_dock"))
-			template = "structures/{civ}/super_dock";
-		else if (gameState.ai.HQ.canBuild(gameState, "structures/{civ}/shipyard"))
+		if (gameState.ai.HQ.canBuild(gameState, "structures/{civ}/shipyard"))
 			template = "structures/{civ}/shipyard";
 		else
 			return;

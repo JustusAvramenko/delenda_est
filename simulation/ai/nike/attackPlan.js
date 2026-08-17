@@ -511,8 +511,8 @@ export class AttackPlan
 		if (gameState.getPopulationMax() - gameState.getPopulation() < 5)
 		{
 			let lengthMin = 16;
-			if (gameState.getPopulationMax() < 300)
-				lengthMin -= Math.floor(8 * (300 - gameState.getPopulationMax()) / 300);
+			if (gameState.getPopulationMax() < 600)
+				lengthMin -= Math.floor(8 * (600 - gameState.getPopulationMax()) / 600);
 			if (this.canStart() || this.unitCollection.length > lengthMin)
 			{
 				this.emptyQueues();

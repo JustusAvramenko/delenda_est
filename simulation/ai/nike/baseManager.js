@@ -455,7 +455,7 @@ export class BaseManager
 					// TODO  if not yet farms, add a check on time used/lost and build Granary if needed
 					if (numFarms + numQueue == 0)	// starting game, rely on fruits as long as we have enough of them
 					{
-						if (count < 500)
+						if (count < 300)
 						{
 							queues.field.addPlan(new ConstructionPlan(gameState,
 								"structures/{civ}/field", { "favoredBase": this.ID }));
@@ -668,17 +668,17 @@ export class BaseManager
 	/**
 	 * Switch some gatherers (limited to number) from resource "from" to resource "to"
 	 * and return remaining number of possible switches.
-	 * Prefer Slave for food and Villager (Civilian Citizens) for other resources.
+	 * Prefer Villager for food and Slave for other resources.
 	 */
 	switchGatherer(gameState, from, to, number)
 	{
 		let num = number;
 		let only;
 		const gatherers = this.gatherersByType(gameState, from);
-		if (from == "food" && gatherers.filter(filters.byClass("Slave")).hasEntities())
-			only = "Slave";
-		else if (to == "food" && gatherers.filter(filters.byClass("Villager")).hasEntities())
+		if (from == "food" && gatherers.filter(filters.byClass("Villager")).hasEntities())
 			only = "Villager";
+		else if (to == "food" && gatherers.filter(filters.byClass("Slave")).hasEntities())
+			only = "Slave";
 
 		for (const ent of gatherers.values())
 		{
