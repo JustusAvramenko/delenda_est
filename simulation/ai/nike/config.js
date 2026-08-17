@@ -32,8 +32,8 @@ export class Config
 		"workPhase4": 200,	// How many workers we want before aging to phase4 or higher.
 		"popForDock": 25,
 		"targetNumWorkers": 60,	// dummy, will be changed later
-		"targetNumTraders": 1,	// Target number of traders
-		"targetNumFishers": 1,	// Target number of fishers per sea
+		"targetNumTraders": 5,	// Target number of traders
+		"targetNumFishers": 5,	// Target number of fishers per sea
 		"supportRatio": 0.3,	// fraction of support workers among the workforce
 		"provisionFields": 2
 	};

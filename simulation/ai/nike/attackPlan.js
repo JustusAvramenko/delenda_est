@@ -1611,7 +1611,7 @@ export class AttackPlan
 					else if (attackedByStructure[ent.id()] && target.hasClass("Field"))
 						maybeUpdate = true;
 					else if (!ent.hasClass("FastMoving") && !ent.hasClass("Ranged") &&
-						target.hasClass("Civilian") && target.unitAIState().split(".")[1] == "FLEEING")
+						target.hasClass("Villager") && target.unitAIState().split(".")[1] == "FLEEING")
 						maybeUpdate = true;
 				}
 
@@ -1706,7 +1706,7 @@ export class AttackPlan
 							return false;
 						if (enemy.hasClass("Animal"))
 							return false;
-						if (nearby && enemy.hasClass("Civilian") && enemy.unitAIState().split(".")[1] == "FLEEING")
+						if (nearby && enemy.hasClass("Villager") && enemy.unitAIState().split(".")[1] == "FLEEING")
 							return false;
 						const dist = SquareVectorDistance(enemy.position(), ent.position());
 						if (dist > range)

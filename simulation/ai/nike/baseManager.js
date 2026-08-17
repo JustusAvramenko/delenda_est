@@ -668,17 +668,17 @@ export class BaseManager
 	/**
 	 * Switch some gatherers (limited to number) from resource "from" to resource "to"
 	 * and return remaining number of possible switches.
-	 * Prefer Civilian for food and CitizenSoldier for other resources.
+	 * Prefer Slave for food and Villager (Civilian Citizens) for other resources.
 	 */
 	switchGatherer(gameState, from, to, number)
 	{
 		let num = number;
 		let only;
 		const gatherers = this.gatherersByType(gameState, from);
-		if (from == "food" && gatherers.filter(filters.byClass("CitizenSoldier")).hasEntities())
-			only = "CitizenSoldier";
-		else if (to == "food" && gatherers.filter(filters.byClass("Civilian")).hasEntities())
-			only = "Civilian";
+		if (from == "food" && gatherers.filter(filters.byClass("Slave")).hasEntities())
+			only = "Slave";
+		else if (to == "food" && gatherers.filter(filters.byClass("Villager")).hasEntities())
+			only = "Villager";
 
 		for (const ent of gatherers.values())
 		{
