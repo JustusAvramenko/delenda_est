@@ -1,0 +1,30 @@
+{
+	"genericName": "Quilted Body Armor",
+	"specificName": {
+		"generic": "Gambeson"
+	},
+	"description": "Body armor for soldiers, made from layers of cloth stitched and/or glued together.",
+	"cost": {
+		"food": 400,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{
+				"any": [
+					{ "civ": "han" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "armor_cuirass_quilted_chinese.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Infantry +1 hack armor.\n• Cavalry +1 hack armor.\n• Unlock “Lacquered Leather Body Armor.”[/font]",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 }
+	],
+	"affects": ["Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -8,9 +8,18 @@
 		"food": 400,
 		"glory": 200
 	},
-	"requirements": { "tech": "phase_village" },
+	"requirements": {
+		"all": [
+			{ "tech": "phase_village" },
+			{
+				"any": [
+					{ "notciv": "han" }
+				]
+			}
+		]
+	},
 	"requirementsTooltip": "Unlocked in Town Phase (Village phase for Celtic factions).",
-	"icon": "armor_leather.png",
+	"icon": "armor_cuirass_leather.png",
 	"researchTime": 60,
 	"tooltip": "[font=\"sans-bold-14\"]• Infantry +1 hack armor.\n• Cavalry +1 hack armor.\n• Unlock “Laminated Linen Body Armor.”[/font]",
 	"modifications": [

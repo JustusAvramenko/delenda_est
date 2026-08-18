@@ -1,0 +1,29 @@
+{
+	"supersedes": "forge/resistance_armor_hack_03_wooden_lamellar",
+	"genericName": "Iron Lamellar Body Armor",
+	"cost": {
+		"metal": 1000,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "civ": "han" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "armor_cuirass_lamellar_chinese_03.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Champions +1 hack armor.\n• Heroes +1 hack armor.\n• [color=\"red\"]Champions +10 coin cost.[/color]\n• [color=\"red\"]Heroes +20 coin cost.[/color]\n• [color=\"red\"]Does not apply to Elephant units.[/color][/font]",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 },
+		{ "value": "Cost/Resources/coin", "add": 10, "affects": "Hero !Elephant" },
+		{ "value": "Cost/Resources/coin", "add": 10 }
+	],
+	"affects": ["Champion !Elephant", "Hero !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
