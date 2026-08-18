@@ -455,7 +455,7 @@ export class BaseManager
 					// TODO  if not yet farms, add a check on time used/lost and build Granary if needed
 					if (numFarms + numQueue == 0)	// starting game, rely on fruits as long as we have enough of them
 					{
-						if (count < 300)
+						if (count < 150)
 						{
 							queues.field.addPlan(new ConstructionPlan(gameState,
 								"structures/{civ}/field", { "favoredBase": this.ID }));
