@@ -5,7 +5,7 @@ backgrounds['kush_amanirenas'] = [
 		"tiling": true,
 	},
 	{
-		"offset": (time, width) => 0.20 * width * Math.cos(0.10 * time) + width/16,
+		"offset": (time, width) => 0.40 * width * Math.cos(0.10 * time) + width/16,
 		"sprite": "smoke-orange-k",
 		"tiling": false,
 	},
