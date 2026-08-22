@@ -934,8 +934,9 @@
 			{
 				"type": "dropdown",
 				"label": "Field of view",
-				"tooltip": "Camera field of view. REQUIRES GAME RESTART",
+				"tooltip": "Camera field of view.",
 				"config": "view.fov",
+				"function": "LoadCameraConfig",
 				"list": [
 					{ "value": 30, "label": "30°", "tooltip": "Narrow. \"Far\" zoom options suggested." },
 					{ "value": 45, "label": "45°", "tooltip": "Standard. \"Medium\" zoom options suggested." },
@@ -945,8 +946,9 @@
 			{
 				"type": "dropdown",
 				"label": "Lateral speed",
-				"tooltip": "Camera scrolling speed. REQUIRES GAME RESTART",
+				"tooltip": "Camera scrolling speed.",
 				"config": "view.scroll.speed",
+				"function": "LoadCameraConfig",
 				"list": [
 					{ "value": 100, "label": "Slow" },
 					{ "value": 150, "label": "Medium" },
@@ -956,8 +958,9 @@
 			{
 				"type": "dropdown",
 				"label": "Rotation speed",
-				"tooltip": "Camera rotation speed. REQUIRES GAME RESTART",
+				"tooltip": "Camera rotation speed.",
 				"config": "view.rotate.y.speed",
+				"function": "LoadCameraConfig",
 				"list": [
 					{ "value": 1.0, "label": "Slow" },
 					{ "value": 2.0, "label": "Medium" },
@@ -967,8 +970,9 @@
 			{
 				"type": "dropdown",
 				"label": "Zoom speed (keys)",
-				"tooltip": "Camera zoom speed. REQUIRES GAME RESTART",
+				"tooltip": "Camera zoom speed.",
 				"config": "view.zoom.speed",
+				"function": "LoadCameraConfig",
 				"list": [
 					{ "value": 0, "label": "Off" },
 					{ "value": 60, "label": "Slow" },
@@ -979,8 +983,9 @@
 			{
 				"type": "dropdown",
 				"label": "Zoom speed (mouse wheel)",
-				"tooltip": "Camera zoom speed. REQUIRES GAME RESTART",
+				"tooltip": "Camera zoom speed.",
 				"config": "view.zoom.speed.wheel",
+				"function": "LoadCameraConfig",
 				"list": [
 					{ "value": 0, "label": "Off" },
 					{ "value": 16, "label": "Slow" },
@@ -991,8 +996,9 @@
 			{
 				"type": "dropdown",
 				"label": "Zoom minimum",
-				"tooltip": "Minimum camera zoom distance. REQUIRES GAME RESTART",
+				"tooltip": "How close to the ground you can zoom the camera. This gives the player a good view of the small details of the game, but a poor view of the strategic situation. May help with micromanaging commands.",
 				"config": "view.zoom.min",
+				"function": "LoadCameraConfig",
 				"list": [
 					{ "value": 20, "label": "Near" },
 					{ "value": 40, "label": "Medium" },
@@ -1002,8 +1008,9 @@
 			{
 				"type": "dropdown",
 				"label": "Zoom default position",
-				"tooltip": "Default zoom value when starting a new game. REQUIRES GAME RESTART",
+				"tooltip": "Default zoom value. This is the zoom distance at which most players are comfortable playing the game.",
 				"config": "view.zoom.default",
+				"function": "LoadCameraConfig",
 				"list": [
 					{ "value": 90, "label": "Near" },
 					{ "value": 120, "label": "Medium" },
@@ -1013,13 +1020,41 @@
 			{
 				"type": "dropdown",
 				"label": "Zoom maximum",
-				"tooltip": "Maximum camera zoom distance. REQUIRES GAME RESTART",
+				"tooltip": "How high up into the sky you can pull back the camera. Farther zoom gives a good strategic view of the map, but it is difficult to see details or individual troop movements.",
 				"config": "view.zoom.max",
+				"function": "LoadCameraConfig",
 				"list": [
 					{ "value": 160, "label": "Near" },
 					{ "value": 225, "label": "Medium" },
 					{ "value": 300, "label": "Far" }
 				]
+			},
+			{
+				"type": "slider",
+				"label": "Pitch Minimum",
+				"tooltip": "Minimum camera pitch (at 10° the camera is looking almost horizontally across the map).",
+				"config": "view.rotate.x.min",
+				"function": "LoadCameraConfig",
+				"min": 10,
+				"max": 34
+			},
+			{
+				"type": "slider",
+				"label": "Pitch Maximum",
+				"tooltip": "Maximum camera pitch (use Birdeye View for 90°).",
+				"config": "view.rotate.x.max",
+				"function": "LoadCameraConfig",
+				"min": 45,
+				"max": 80
+			},
+			{
+				"type": "slider",
+				"label": "Pitch Default",
+				"tooltip": "Default camera pitch (35° is standard).",
+				"config": "view.rotate.x.default",
+				"function": "LoadCameraConfig",
+				"min": 10,
+				"max": 80
 			}
 		]
 	}
