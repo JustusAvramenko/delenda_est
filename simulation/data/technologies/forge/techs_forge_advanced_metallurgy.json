@@ -1,0 +1,28 @@
+{
+	"supersedes": "forge/pair_techs_01",
+	"genericName": "Advanced Metallurgy",
+	"description": "Scythian craftsmen produced swords, akinakai, spearheads, arrowheads, knives, tools, horse fittings and armor. Large production centers such as Kamianka show organized smelting, forging and metalworking involving iron as well as copper alloys, lead and precious metals.",
+	"cost": {
+		"wood": 300,
+		"metal": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{
+				"any": [
+					{ "civ": "scyth" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase. Requires “Forging” or “Metallurgy.",
+	"icon": "advanced_metallurgy.png",
+	"researchTime": 40,
+	"tooltip": "[font=\"sans-bold-14\"]• Forge −20% build time.\n• Forge technologies −20% research time.\n• Unlocks “Goldsmithing.”[/font]",
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.8, "affects": "Forge" },
+		{ "value": "Cost/BuildTime", "multiply": 0.8, "affects": "Forge" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

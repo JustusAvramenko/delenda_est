@@ -26,10 +26,11 @@
 	"requirementsTooltip": "Unlocked in Empire Phase.",
 	"icon": "armor_cataphract.png",
 	"researchTime": 80,
-	"tooltip": "[font=\"sans-bold-14\"]• Melee Cavalry +2 hack armor.\n• Melee Cavalry +1 pierce armor.[/font]",
+	"tooltip": "[font=\"sans-bold-14\"]• Melee Cavalry +2 hack armor.\n• Melee Cavalry +1 pierce armor.\n• [color=\"orange\"]Melee Cavalry −10% movement speed.[/color][/font]",
 	"modifications": [
 		{ "value": "Resistance/Entity/Damage/Hack", "add": 2 },
-		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 }
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.90 }
 	],
 	"affects": ["Melee Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
