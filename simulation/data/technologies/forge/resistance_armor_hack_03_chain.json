@@ -1,0 +1,57 @@
+{
+	"supersedes": "forge/resistance_armor_hack_02",
+	"genericName": "Chainmail Body Armor",
+	"description": "Chainmail armor, made from thousands of interlinked iron rings, was prized in many ancient cultures for combining strong protection with flexibility and relatively good mobility. First developed among Celtic peoples and later widely adopted by Romans, Hellenistic armies, and other Mediterranean and Eurasian societies, mail was especially effective against slashing blows and could be worn by infantry and cavalry alike. Although it was labor-intensive and expensive to produce, its durability, repairability, and adaptability made it a prestigious and long-lasting form of body armor throughout the ancient world.",
+	"cost": {
+		"metal": 800,
+		"glory": 600
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "achae" },
+					{ "notciv": "athen" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gupt" },
+					{ "notciv": "han" },
+					{ "notciv": "huns" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "maya" },
+					{ "notciv": "naba" },
+					{ "notciv": "noba" },
+					{ "notciv": "palm" },
+					{ "notciv": "parth" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "sasa" },
+					{ "notciv": "sarm" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "spart" },
+					{ "notciv": "sueb" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "armor_chain.png",
+	"researchTime": 60,
+	"tooltip": "[font=\"sans-bold-14\"]• Infantry +1 hack armor.\n• Cavalry +1 hack armor.[/font]",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 }
+	],
+	"affects": ["Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
