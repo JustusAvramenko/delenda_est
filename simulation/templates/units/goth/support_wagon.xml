@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support_wagon">
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/field
+      structures/{civ}/field_cash_crops
+    </Entities>
+  </Builder>
   <Identity>
     <Civ>goth</Civ>
+    <Icon>units/germ/support_wagon.png</Icon>
   </Identity>
-  <Promotion>
-    <Entity>units/goth/support_wagon_house</Entity>
-    <RequiredXp>5000</RequiredXp>
-  </Promotion>
+  <Population>
+    <Bonus>0</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens">
+      storehouse/gather_capacity_wheelbarrow
+      storehouse/gather_capacity_handcarts
+    </Technologies>
+  </Researcher>
+  <Upgrade>
+    <UnPackStorehouse>
+      <Entity>structures/goth/storehouse</Entity>
+      <Tooltip>Storehouses can train Slaves and research Technologies, while the Resource Wagon cannot.</Tooltip>
+      <Time>10</Time>
+      <CheckPlacementRestrictions/>
+    </UnPackStorehouse>
+    <UnPackHouse>
+      <Entity>structures/goth/house</Entity>
+      <Time>10</Time>
+      <CheckPlacementRestrictions/>
+    </UnPackHouse>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/germans/wagon.xml</Actor>
+  </VisualActor>
 </Entity>

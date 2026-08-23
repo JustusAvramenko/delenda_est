@@ -7,7 +7,15 @@
 		"glory": 300
 	},
 	"requirements": {
-		"tech": "phase_city"
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "gupt" },
+					{ "notciv": "maur" }
+				]
+			}
+		]
 	},
 	"requirementsTooltip": "Unlocked in City Phase. Requires “Wheelbarrows.”",
 	"icon": "handcart_empty.png",
