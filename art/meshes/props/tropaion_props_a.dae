@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.5.7 LTS commit date:2026-02-16, commit time:13:34, hash:a9874eeece8d</authoring_tool>
+    </contributor>
+    <created>2026-08-23T23:55:08</created>
+    <modified>2026-08-23T23:55:08</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="hele_props_a-effect">
+      <profile_COMMON>
+        <newparam sid="hele_props_a_dds-surface">
+          <surface type="2D">
+            <init_from>hele_props_a_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="hele_props_a_dds-sampler">
+          <sampler2D>
+            <source>hele_props_a_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="hele_props_a_dds-sampler" texcoord="ao_map"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="hele_props_a_dds" name="hele_props_a_dds">
+      <init_from>hele_props_a.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="hele_props_a-material" name="hele_props_a">
+      <instance_effect url="#hele_props_a-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="hele_props_a-mesh" name="hele_props_a">
+      <mesh>
+        <source id="hele_props_a-mesh-positions">
+          <float_array id="hele_props_a-mesh-positions-array" count="48">-0.4766754 0.2835909 6.096923 -0.1194391 0.5420171 6.096923 0.3159107 0.47215 6.096923 0.5743317 0.1149067 6.096923 0.5044698 -0.3204378 6.096923 0.1472247 -0.5788667 6.096923 -0.2881146 -0.5089986 6.096923 -0.5465496 -0.151758 6.096923 -0.4600987 -0.1316856 9.589861 -0.2414817 -0.4338861 9.589861 0.1267923 -0.4929918 9.589861 0.4289989 -0.2743774 9.589861 0.4881063 0.09389573 9.589861 0.2694893 0.3960954 9.589861 -0.09878468 0.4551993 9.589861 -0.4009913 0.2365839 9.589861</float_array>
+          <technique_common>
+            <accessor source="#hele_props_a-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="hele_props_a-mesh-normals">
+          <float_array id="hele_props_a-mesh-normals-array" count="48">-0.8512967 0.5240646 0.02549874 -0.2313665 0.9725313 0.02554082 -0.2313732 0.9725298 0.02554035 -0.8512719 0.5241048 0.02549839 0.5240653 0.8512964 0.02550059 0.5240985 0.851276 0.02549898 0.9725263 0.2314032 0.02540093 0.9725419 0.2313377 0.02540081 0.851306 -0.5240591 0.02530324 0.8512738 -0.5241113 0.02530449 0.2313691 -0.972538 0.02526354 0.2313646 -0.9725391 0.02526372 -0.5240976 -0.8512823 0.02530294 -0.5240622 -0.8513042 0.02530318 -0.9725417 -0.2313389 0.0253998 -0.9725261 -0.2314038 0.02539998</float_array>
+          <technique_common>
+            <accessor source="#hele_props_a-mesh-normals-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="hele_props_a-mesh-map-0">
+          <float_array id="hele_props_a-mesh-map-0-array" count="96">0.7840968 0.8207444 0.7415204 0.8199122 0.7404918 0.02218288 0.7840968 0.8207444 0.7404918 0.02218288 0.7825928 0.02316677 0.6983896 0.02316677 0.7404918 0.02218288 0.7415204 0.8199122 0.6983896 0.02316677 0.7415204 0.8199122 0.6989443 0.820744 0.7404913 0.02218663 0.7825927 0.0231651 0.7840451 0.8207408 0.7404913 0.02218663 0.7840451 0.8207408 0.741469 0.819913 0.6983897 0.02316528 0.7404913 0.02218663 0.741469 0.819913 0.6983897 0.02316528 0.741469 0.819913 0.698893 0.8207408 0.7404908 0.02219039 0.7825928 0.02316367 0.7840956 0.8207371 0.7404908 0.02219039 0.7840956 0.8207371 0.7415192 0.8199138 0.6983896 0.02316379 0.7404908 0.02219039 0.7415192 0.8199138 0.6983896 0.02316379 0.7415192 0.8199138 0.698943 0.8207371 0.7404913 0.02218675 0.7825933 0.02316504 0.7841467 0.8207405 0.7404913 0.02218675 0.7841467 0.8207405 0.7415707 0.819913 0.698995 0.8207405 0.6983891 0.02316522 0.7404913 0.02218675 0.698995 0.8207405 0.7404913 0.02218675 0.7415707 0.819913</float_array>
+          <technique_common>
+            <accessor source="#hele_props_a-mesh-map-0-array" count="48" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="hele_props_a-mesh-map-1">
+          <float_array id="hele_props_a-mesh-map-1-array" count="96">0.3391769 0.6464534 0.3393434 0.6344027 0.4989598 0.6344027 0.3391769 0.6464534 0.4989598 0.6344027 0.498763 0.6486477 0.498763 0.6142615 0.4989598 0.6344027 0.3393434 0.6344027 0.498763 0.6142615 0.3393434 0.6344027 0.3391769 0.6173648 0.6236998 0.6124732 0.6095093 0.6112092 0.6236998 0.4522401 0.4990263 0.6585989 0.6586271 0.6465755 0.6586271 0.658627 0.6536374 0.5201656 0.6334955 0.5201656 0.6350674 0.3605575 0.6536374 0.5201656 0.6350674 0.3605575 0.6521062 0.3605575 0.6344026 0.1894919 0.6486479 0.1896866 0.646453 0.3492719 0.6344026 0.1894919 0.646453 0.3492719 0.6344025 0.3491072 0.6142619 0.1896866 0.6344026 0.1894919 0.6344025 0.3491072 0.6142619 0.1896866 0.6344025 0.3491072 0.6173645 0.3492719 0.6661114 0.1646567 0.6518648 0.1646567 0.6540302 0.005055963 0.6661114 0.1646567 0.6540302 0.005055963 0.6660817 0.005055963 0.6395911 0.005048155 0.6411634 0.1646567 0.6210213 0.1646567 0.6395911 0.005048155 0.6210213 0.1646567 0.6225525 0.005048155</float_array>
+          <technique_common>
+            <accessor source="#hele_props_a-mesh-map-1-array" count="48" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="hele_props_a-mesh-vertices">
+          <input semantic="POSITION" source="#hele_props_a-mesh-positions"/>
+        </vertices>
+        <triangles material="hele_props_a-material" count="16">
+          <input semantic="VERTEX" source="#hele_props_a-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#hele_props_a-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#hele_props_a-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#hele_props_a-mesh-map-1" offset="2" set="1"/>
+          <p>15 0 0 14 1 1 1 2 2 15 0 3 1 2 4 0 3 5 2 4 6 1 2 7 14 1 8 2 4 9 14 1 10 13 5 11 3 6 12 2 4 13 13 5 14 3 6 15 13 5 16 12 7 17 4 8 18 3 6 19 12 7 20 4 8 21 12 7 22 11 9 23 5 10 24 4 8 25 11 9 26 5 10 27 11 9 28 10 11 29 6 12 30 5 10 31 10 11 32 6 12 33 10 11 34 9 13 35 7 14 36 6 12 37 9 13 38 7 14 39 9 13 40 8 15 41 15 0 42 0 3 43 7 14 44 15 0 45 7 14 46 8 15 47</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="hele_props_a" name="hele_props_a" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#hele_props_a-mesh" name="hele_props_a">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="hele_props_a-material" target="#hele_props_a-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="ao_map" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
