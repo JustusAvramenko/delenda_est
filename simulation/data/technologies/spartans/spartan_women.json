@@ -1,7 +1,6 @@
 {
-	"supersedes": "house/health_citizens_01",
-	"genericName": "Feminine Mystique",
-	"description": "Spartan women were some of the freest in the ancient world. They could own land and slaves and even exercise naked like Spartan men. It is said that only Spartan women gave birth to real men. Such tough-as-nails women more than once helped save their city from disaster, for example when after a lost battle against Pyrrhus of Epirus they overnight built an earthen rampart to protect the city while their men slept in preparation for the next day's siege.",
+	"genericName": "Athletic Dances",
+	"description": "Ancient Spartan dance was closely tied to education, athletic training, religion, and communal identity. Spartan boys and men practiced martial dances, especially the pyrrhichē, which imitated combat movements—dodging, striking, advancing, and retreating—and helped develop rhythm, agility, and coordination. Choral dancing was equally important at festivals such as the Gymnopaidiai and Hyakinthia, where age groups performed songs and dances that celebrated discipline, military virtue, civic continuity, and the gods. Spartan girls also received unusually extensive physical training by Greek standards, and dancing formed part of that culture of public athletic display.\n\nThe female Spartan dance usually called the bibasis (Greek βίβασις, sometimes rendered bibasis or confused in modern spelling as “babesis”) was an especially athletic form. Ancient descriptions portray dancers repeatedly leaping upward and striking or touching their buttocks with their heels while airborne, apparently counting the successful repetitions. It was therefore less like a restrained ceremonial dance and more like a combination of dance, jumping exercise, and competitive athletic display. Both young men and women could perform versions of it, but Spartan girls became particularly associated with the feat. One ancient anecdotal tradition even praises a girl for performing a thousand consecutive kicks or jumps, although such numbers should be treated as celebratory exaggeration rather than a precise athletic record.\n\nFor Spartan women, the bibasis fits the broader educational ideal attributed to Sparta: girls were encouraged to cultivate strength, stamina, coordination, and bodily confidence, rather than being confined exclusively to domestic accomplishments. The dance would most plausibly have been performed in a short, practical tunic, allowing freedom of leg movement, probably barefoot, and without armor. It was athletic, rhythmic, and distinctly Spartan in the way it blurred the boundary between dance and physical training.",
 	"cost": {
 		"food": 300,
 		"glory": 300
@@ -13,9 +12,9 @@
 		]
 	},
 	"requirementsTooltip": "Unlocked in Town Phase.",
-	"icon": "feminine_mystique.png",
+	"icon": "spartan_dancer.png",
 	"researchTime": 30,
-	"tooltip": "[font=\"sans-bold-14\"]• Spartan Women +100% attack\n• Spartan Women +25% health.\n• Spartan Women +5 carry capacity for all resources.[/font]",
+	"tooltip": "[font=\"sans-bold-14\"]• Spartan Women +100% attack damage.\n• Spartan Women +25% health.\n• Spartan Women +5 carry capacity for all resources.[/font]",
 	"modifications": [
 		{ "value": "Attack/Melee/Damage/Hack", "multiply": 2},
 		{ "value": "Health/Max", "multiply": 1.25 },
@@ -26,5 +25,6 @@
 		{ "value": "ResourceGatherer/Capacities/coin", "add": 5 }
 	],
 	"affects": ["Woman"],
+	"placeBelow": "{AffectedUnit}",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
