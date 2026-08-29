@@ -43,11 +43,11 @@ ProductionQueue.prototype.ProgressTimeout = function(data, lateness)
 
 			if (!this.AddItem(autoqueueData.templateName, "unit", autoqueueData.count, autoqueueData.metadata))
 			{
-				// this.DisableAutoQueue(); <<<<<<<<<<<<<<<<< THIS IS COMMENTED OUT IN DE
+				// this.DisableAutoQueue(); <<<<<<< THIS IS COMMENTED OUT IN DE, to prevent disruption of the queue.
 				const cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
 				cmpGUIInterface.PushNotification({
 					"players": [QueryOwnerInterface(this.entity).GetPlayerID()],
-					"message": markForTranslation("Could not auto-queue unit, skipping to next item."), //<<< DE - Wording
+					"message": markForTranslation("Could not auto-queue unit,skipping to next item."), //<<< DE - Wording
 					"translateMessage": true
 				});
 			}
@@ -58,5 +58,3 @@ ProductionQueue.prototype.ProgressTimeout = function(data, lateness)
 	if (!this.queue.length)
 		this.StopTimer();
 };
-
-Engine.ReRegisterComponentType(IID_ProductionQueue, "ProductionQueue", ProductionQueue);
