@@ -3,7 +3,6 @@
  */
 BuildingAI.prototype.OnRangeUpdate = function(msg)
 {
-
 	var cmpAttack = Engine.QueryInterface(this.entity, IID_Attack);
 	if (!cmpAttack)
 		return;
@@ -14,7 +13,7 @@ BuildingAI.prototype.OnRangeUpdate = function(msg)
 		msg.added = msg.added.filter(e =>
 		{
 			const cmpUnitAI = Engine.QueryInterface(e, IID_UnitAI);
-			return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // <<<<<<<<<<<<<<<<<<<<<<< THIS HAS CHANGED. Stops buildings from shooting at random animals that walk into range.
+			return cmpUnitAI && (!cmpUnitAI.IsAnimal()); // <<<<<< THIS HAS CHANGED. Stops buildings from shooting at random animals that walk into range.
 		});
 	}
 	else if (msg.tag != this.enemyUnitsQuery)
@@ -22,10 +21,10 @@ BuildingAI.prototype.OnRangeUpdate = function(msg)
 
 	// Add new targets.
 	for (const entity of msg.added)
-		if (cmpAttack.CanAttack(entity))
+		if (!this.targetUnits.includes(entity))
 			this.targetUnits.push(entity);
 
-	// Remove targets outside of vision-range.
+	// Remove targets out of range.
 	for (const entity of msg.removed)
 	{
 		const index = this.targetUnits.indexOf(entity);
