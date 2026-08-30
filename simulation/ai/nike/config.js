@@ -132,9 +132,8 @@ export class Config
 				"structures/{civ}/library"
 			],
 			"maur": [
-				"structures/{civ}/palace",
-				"structures/{civ}/pillar_ashoka",
-				"structures/{civ}/statue"
+				"structures/{civ}/statue",
+				"structures/{civ}/palace"
 			],
 			"ptol": [
 				"structures/{civ}/library",
