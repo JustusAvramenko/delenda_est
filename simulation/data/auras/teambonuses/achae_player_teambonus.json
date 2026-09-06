@@ -1,11 +1,15 @@
 {
+	"auraName": "Kshāyathiya Rāstā (Royal Road)",
+	"description": "The Persian Royal Road was a major imperial route developed under the Achaemenid Empire, especially during the reign of Darius I. Stretching from Susa in Persia to Sardis in western Anatolia, it linked key administrative centers across thousands of kilometers. A network of way stations, messengers, and fresh horses allowed royal dispatches and officials to travel with remarkable speed, helping the empire govern distant provinces, move armies, support trade, and maintain communication across its vast territory.",
+	"icon": "royal_road.png",
 	"type": "global",
-	"affects": ["Trader !Ship"],
 	"affectedPlayers": ["MutualAlly"],
+	"auraDescription": "[font=\"sans-bold-14\"]• All Civilian Units +5% movement speed.\n• Gatherers +5 capacity for all raw resources.[/font]",
 	"modifications": [
-		{ "value": "Trader/GainMultiplier", "multiply": 1.20 }
-	],
-	"auraName": "The Royal Road",
-	"auraDescription": "\n• Higher income (+20%) from land trade routes.",
-	"description": "Land Traders +20% trade income."
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.05, "affects":"Unit Support" },
+		{ "value": "ResourceGatherer/Capacities/food", "add": 5, "affects":"Gatherer" },
+		{ "value": "ResourceGatherer/Capacities/wood", "add": 5, "affects":"Gatherer" },
+		{ "value": "ResourceGatherer/Capacities/stone", "add": 5, "affects":"Gatherer" },
+		{ "value": "ResourceGatherer/Capacities/metal", "add": 5, "affects":"Gatherer" }
+	]
 }
