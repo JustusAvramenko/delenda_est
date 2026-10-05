@@ -320,7 +320,7 @@ export class Config
 		// and inversely for behavior="defensive"
 		this.personalityCut = { "weak": 0.3, "medium": 0.5, "strong": 0.7 };
 
-		if (gameState.playerData.teamsLocked)
+		if (gameState.playerData.teamLocked)
 			this.personality.cooperative = Math.min(1, this.personality.cooperative + 0.30);
 		else if (gameState.getAlliedVictory())
 			this.personality.cooperative = Math.min(1, this.personality.cooperative + 0.15);

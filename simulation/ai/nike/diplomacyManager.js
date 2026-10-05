@@ -293,7 +293,7 @@ export class DiplomacyManager
 	 */
 	lastManStandingCheck(gameState)
 	{
-		if (gameState.sharedScript.playersData[PlayerID].teamsLocked || gameState.isCeasefireActive() ||
+		if (gameState.sharedScript.playersData[PlayerID].teamLocked || gameState.isCeasefireActive() ||
 		    gameState.getAlliedVictory() && gameState.hasAllies())
 			return;
 
@@ -387,7 +387,7 @@ export class DiplomacyManager
 	 */
 	handleDiplomacyRequest(gameState, player, requestType)
 	{
-		if (gameState.sharedScript.playersData[PlayerID].teamsLocked)
+		if (gameState.sharedScript.playersData[PlayerID].teamLocked)
 			return;
 		let response;
 		let requiredTribute;
@@ -551,7 +551,7 @@ export class DiplomacyManager
 
 		this.checkRequestedTributes(gameState);
 
-		if (gameState.sharedScript.playersData[PlayerID].teamsLocked || gameState.isCeasefireActive())
+		if (gameState.sharedScript.playersData[PlayerID].teamLocked || gameState.isCeasefireActive())
 			return;
 
 		// Be unlikely to send diplomacy requests to other players
