@@ -5,6 +5,38 @@ import { TransportPlan } from "simulation/ai/nike/transportPlan.js";
 import { Worker } from "simulation/ai/nike/worker.js";
 
 /**
+ * Data about the foes needed by DefenseArmy.assignUnit. It depends neither on the unit to assign
+ * nor on the units already assigned, so it can be computed once and reused for all of them.
+ * The order of foeEntities is kept as it matters for the choice made in assignUnit.
+ */
+function getFoeInfo(gameState, foeEntities)
+{
+	const info = [];
+	for (const id of foeEntities)
+	{
+		const eEnt = gameState.getEntityById(id);
+		if (!eEnt)
+			continue;
+		const position = eEnt.position();
+		if (!position)    // probably can't happen.
+			continue;
+
+		// The id of the unit this foe is attacking, if any.
+		let attackTarget;
+		if (eEnt.hasClass("Unit"))
+		{
+			const orderData = eEnt.unitAIOrderData();
+			if (orderData && orderData.length && orderData[0].target)
+				attackTarget = orderData[0].target;
+		}
+		// "heavy" and "access" are filled lazily.
+		info.push({ "id": id, "ent": eEnt, "position": position, "attackTarget": attackTarget,
+			"heavy": undefined, "access": undefined });
+	}
+	return info;
+}
+
+/**
  * Armies used by the defense manager.
  * An army is a collection of own entities and enemy entities.
  *
@@ -34,6 +66,9 @@ export class DefenseArmy
 		this.assignedAgainst = {};
 		// who we assigned against, for quick removal.
 		this.assignedTo = {};
+		// Cache of the data about the foes used by assignUnit, see getFoeInfo.
+		// It is reset when the foes change and at the beginning of each update.
+		this.foeInfo = undefined;
 
 		this.foeEntities = [];
 		this.foeStrength = 0;
@@ -69,6 +104,7 @@ export class DefenseArmy
 			return false;
 
 		this.foeEntities.push(enemyId);
+		this.foeInfo = undefined;
 		this.assignedAgainst[enemyId] = [];
 		this.positionLastUpdate = 0;
 		this.evaluateStrength(ent);
@@ -88,6 +124,7 @@ export class DefenseArmy
 			return false;
 
 		this.foeEntities.splice(idx, 1);
+		this.foeInfo = undefined;
 
 		this.assignedAgainst[enemyId] = undefined;
 		for (const to in this.assignedTo)
@@ -304,72 +341,76 @@ export class DefenseArmy
 		// we'll also override any previous assignment
 
 		const ent = gameState.getEntityById(entID);
-		if (!ent || !ent.position())
+		if (!ent)
+			return false;
+		const pos = ent.position();
+		if (!pos)
 			return false;
 
 		// try to return its resources, and if any, the attack order will be queued
 		const queued = returnResources(gameState, ent);
 
-		let idMin;
+		let foeMin;
 		let distMin;
-		let idMinAll;
+		let foeMinAll;
 		let distMinAll;
-		for (const id of this.foeEntities)
+		if (this.foeInfo === undefined)
+			this.foeInfo = getFoeInfo(gameState, this.foeEntities);
+		for (const foe of this.foeInfo)
 		{
-			const eEnt = gameState.getEntityById(id);
-			if (!eEnt || !eEnt.position())	// probably can't happen.
-				continue;
-
+			const eEnt = foe.ent;
 			if (!ent.canAttackTarget(eEnt, allowCapture(gameState, ent, eEnt)))
 				continue;
 
-			if (eEnt.hasClass("Unit") && eEnt.unitAIOrderData() && eEnt.unitAIOrderData().length &&
-				eEnt.unitAIOrderData()[0].target && eEnt.unitAIOrderData()[0].target == entID)
+			if (foe.attackTarget === entID)
 			{   // being attacked  >>> target the unit
-				idMin = id;
+				foeMin = foe;
 				break;
 			}
 
 			// already enough units against it
-			if (this.assignedAgainst[id].length > 8 ||
-				this.assignedAgainst[id].length > 5 && !eEnt.hasClass("Hero") && !isSiegeUnit(eEnt))
+			const nAssigned = this.assignedAgainst[foe.id].length;
+			if (nAssigned > 8)
 				continue;
-
-			const dist = SquareVectorDistance(ent.position(), eEnt.position());
-			if (idMinAll === undefined || dist < distMinAll)
+			if (nAssigned > 5)
 			{
-				idMinAll = id;
+				if (foe.heavy === undefined)
+					foe.heavy = !!(eEnt.hasClass("Hero") || isSiegeUnit(eEnt));
+				if (!foe.heavy)
+					continue;
+			}
+
+			const dist = SquareVectorDistance(pos, foe.position);
+			if (foeMinAll === undefined || dist < distMinAll)
+			{
+				foeMinAll = foe;
 				distMinAll = dist;
 			}
-			if (this.assignedAgainst[id].length > 2)
+			if (nAssigned > 2)
 				continue;
-			if (idMin === undefined || dist < distMin)
+			if (foeMin === undefined || dist < distMin)
 			{
-				idMin = id;
+				foeMin = foe;
 				distMin = dist;
 			}
 		}
 
-		let idFoe;
-		if (idMin !== undefined)
-			idFoe = idMin;
-		else if (idMinAll !== undefined)
-			idFoe = idMinAll;
-		else
+		const chosen = foeMin !== undefined ? foeMin : foeMinAll;
+		if (chosen === undefined)
 			return false;
 
 		const ownIndex = getLandAccess(gameState, ent);
-		const foeEnt = gameState.getEntityById(idFoe);
-		const foePosition = foeEnt.position();
-		const foeIndex = gameState.ai.accessibility.getAccessValue(foePosition);
+		if (chosen.access === undefined)
+			chosen.access = gameState.ai.accessibility.getAccessValue(chosen.position);
+		const foeIndex = chosen.access;
 		if (ownIndex == foeIndex || ent.hasClass("Ship"))
 		{
-			this.assignedTo[entID] = idFoe;
-			this.assignedAgainst[idFoe].push(entID);
-			ent.attack(idFoe, allowCapture(gameState, ent, foeEnt), queued);
+			this.assignedTo[entID] = chosen.id;
+			this.assignedAgainst[chosen.id].push(entID);
+			ent.attack(chosen.id, allowCapture(gameState, ent, chosen.ent), queued);
 		}
 		else
-			gameState.ai.HQ.navalManager.requireTransport(gameState, ent, ownIndex, foeIndex, foePosition);
+			gameState.ai.HQ.navalManager.requireTransport(gameState, ent, ownIndex, foeIndex, chosen.position);
 		return true;
 	}
 
@@ -527,6 +568,7 @@ export class DefenseArmy
 					continue;
 				const idx = this.foeEntities.indexOf(evt.entity);
 				this.foeEntities[idx] = evt.newentity;
+				this.foeInfo = undefined;
 				this.assignedAgainst[evt.newentity] = this.assignedAgainst[evt.entity];
 				this.assignedAgainst[evt.entity] = undefined;
 				for (const to in this.assignedTo)
@@ -573,6 +615,9 @@ export class DefenseArmy
 
 	update(gameState)
 	{
+		// The foes may have moved or changed their orders since the previous turn.
+		this.foeInfo = undefined;
+
 		for (const entId of this.ownEntities)
 		{
 			const ent = gameState.getEntityById(entId);
